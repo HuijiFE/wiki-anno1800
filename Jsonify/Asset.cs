@@ -6,7 +6,78 @@ using System.Text;
 using System.Xml.Linq;
 
 namespace Anno1800.Jsonify {
-  class Asset {
+  partial class Asset {
+    int guid;
+    string? name;
+    string? icon;
+    int? description;
+
+    public Asset(XElement asset, Dictionary<string, XElement> map) {
+      var values = asset.Element("Values");
+      var standard = values.Element("Standard");
+
+      var guid = standard.Element("GUID").Value;
+      this.guid = int.Parse(guid);
+
+      this.name = standard.Element("Name")?.Value;
+      this.icon = standard.Element("IconFilename")?.Value;
+
+      var desc = standard.Element("InfoDescription")?.Value;
+      if (desc != null) {
+        this.description = int.Parse(desc);
+      }
+    }
+
+    // ================================
+    // global
+
+    static (Dictionary<string, XElement>, Dictionary<string, List<XElement>>) ResolveRaw(XDocument assetsDoc) {
+      // GUID assets map
+      var map = new Dictionary<string, XElement>();
+      // template assets map
+      var dict = new Dictionary<string, List<XElement>>();
+
+      Action<XElement> walk = null;
+      walk = (elem) => {
+        if (elem.Name == "Asset") {
+          var guid = elem.Element("Values")?.Element("Standard")?.Element("GUID")?.Value;
+          map.Add(guid, elem);
+          return;
+        }
+        foreach (var child in elem.Elements()) {
+          walk(child);
+        }
+      };
+      walk(assetsDoc.Root);
+
+      Func<XElement, string> getGUID = null;
+      getGUID = (asset) => {
+        var template = asset.Element("Template")?.Value;
+        if (template == null) {
+          var baseAssetGUID = asset.Element("BaseAssetGUID")?.Value;
+          if (baseAssetGUID == null) {
+            return "_Unknown";
+          }
+          var baseAsset = map.ContainsKey(baseAssetGUID) ? map[baseAssetGUID] : null;
+          if (baseAsset == null) {
+            return "_Unknown";
+          }
+          return getGUID(baseAsset);
+        }
+        return template;
+      };
+
+      foreach ((string guid, XElement asset) in map) {
+        var template = getGUID(asset);
+        if (dict.ContainsKey(template)) {
+          dict[template].Add(asset);
+        } else {
+          dict.Add(template, new List<XElement> { asset });
+        }
+      }
+
+      return (map, dict);
+    }
 
     static void ResolveInheritance(Dictionary<string, XElement> map) {
       Action<XElement, XElement> inherit = null;
@@ -63,59 +134,65 @@ namespace Anno1800.Jsonify {
       }
     }
 
-    static Dictionary<string, XElement> ResolveRaw(XDocument assetsDoc, string output) {
-      if (!Directory.Exists(output)) {
-        Directory.CreateDirectory(output);
-      }
-
-      // GUID assets map
-      var map = new Dictionary<string, XElement>();
-      // template assets map
-      var dict = new Dictionary<string, List<XElement>>();
+    static void ResolveTemplate(Dictionary<string, XElement> assetsMap, XDocument templatesDoc) {
+      var templatesMap = new Dictionary<string, XElement>();
 
       Action<XElement> walk = null;
       walk = (elem) => {
-        if (elem.Name == "Asset") {
-          var guid = elem.Element("Values")?.Element("Standard")?.Element("GUID")?.Value;
-          map.Add(guid, elem);
+        if (elem.Name == "Template") {
+          templatesMap.Add(elem.Element("Name").Value, elem);
           return;
         }
         foreach (var child in elem.Elements()) {
           walk(child);
         }
       };
-      walk(assetsDoc.Root);
 
-      Func<XElement, string> getGUID = null;
-      getGUID = (asset) => {
-        var template = asset.Element("Template")?.Value;
-        if (template == null) {
-          var baseAssetGUID = asset.Element("BaseAssetGUID")?.Value;
-          if (baseAssetGUID == null) {
-            return "_Unknown";
-          }
-          var baseAsset = map.ContainsKey(baseAssetGUID) ? map[baseAssetGUID] : null;
-          if (baseAsset == null) {
-            return "_Unknown";
-          }
-          return getGUID(baseAsset);
+      walk(templatesDoc.Root);
+
+      Action<XElement, XElement> resolve = null;
+      resolve = (target, source) => {
+        var targetChildren = target.Elements().ToList();
+        var sourceChildren = source.Elements().ToList();
+        if (targetChildren.Any(c => c.Name == "Item")) {
+          return;
         }
-        return template;
+        foreach (var sourceChild in sourceChildren) {
+          var targetChild = targetChildren.Find(c => c.Name == sourceChild.Name);
+          if (targetChild == null) {
+            target.Add(sourceChild);
+          } else if (sourceChild.HasElements) {
+            resolve(targetChild, sourceChild);
+          }
+        }
       };
 
-      foreach ((string guid, XElement asset) in map) {
-        var template = getGUID(asset);
-        if (dict.ContainsKey(template)) {
-          dict[template].Add(asset);
-        } else {
-          dict.Add(template, new List<XElement> { asset });
-        }
+      foreach ((string guid, XElement asset) in assetsMap) {
+        var templateName = asset.Element("Template").Value;
+        var template = templatesMap[templateName];
+        resolve(asset.Element("Values"), template.Element("Properties"));
+      }
+    }
+
+    static public void Convert(string input, string output) {
+      if (!Directory.Exists(output)) {
+        Directory.CreateDirectory(output);
+      }
+      var raw = Path.Combine(output, "raw");
+      if (!Directory.Exists(raw)) {
+        Directory.CreateDirectory(raw);
       }
 
+      var assetsDoc = XDocument.Load(Path.Combine(input, "assets.xml"));
+      var propertiesDoc = XDocument.Load(Path.Combine(input, "properties.xml"));
+      var templatesDoc = XDocument.Load(Path.Combine(input, "templates.xml"));
+
+      var (map, dict) = Asset.ResolveRaw(assetsDoc);
       Asset.ResolveInheritance(map);
+      Asset.ResolveTemplate(map, templatesDoc);
 
       foreach ((string template, List<XElement> list) in dict) {
-        var dest = Path.Combine(output, $"{template}.xml");
+        var dest = Path.Combine(raw, $"{template}.xml");
         var destDir = Path.GetDirectoryName(dest);
         if (!Directory.Exists(destDir)) {
           Directory.CreateDirectory(destDir);
@@ -124,20 +201,6 @@ namespace Anno1800.Jsonify {
       }
 
       Console.WriteLine($"Assets: {dict.Values.Aggregate(0, (total, list) => total += list.Count)}");
-
-      return map;
-    }
-
-    static public void Convert(string input, string output) {
-      if (!Directory.Exists(output)) {
-        Directory.CreateDirectory(output);
-      }
-
-      var assetsDoc = XDocument.Load(Path.Combine(input, "assets.xml"));
-      var propertiesDoc = XDocument.Load(Path.Combine(input, "properties.xml"));
-      var templatesDoc = XDocument.Load(Path.Combine(input, "templates.xml"));
-
-      var map = Asset.ResolveRaw(assetsDoc, Path.Combine(output, "raw"));
     }
   }
 }
