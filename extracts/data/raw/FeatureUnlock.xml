@@ -1,0 +1,907 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Assets Count="26">
+  <Asset>
+    <Template>FeatureUnlock</Template>
+    <Values>
+      <Standard>
+        <GUID>141488</GUID>
+        <Name>BuildmodeUnlock</Name>
+        <IconFilename>data/ui/2kimages/main/icons/icon_attractiveness_castle_big.png</IconFilename>
+        <ID>FeatureBuildmode</ID>
+      </Standard>
+      <Locked>
+        <DefaultLockedState>0</DefaultLockedState>
+      </Locked>
+      <Trigger>
+        <TriggerCondition>
+          <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+          <Values>
+            <Condition />
+            <ConditionAlwaysTrue />
+          </Values>
+          <Template>ConditionAlwaysTrue</Template>
+        </TriggerCondition>
+      </Trigger>
+      <TriggerSetup>
+        <AutoSelfUnlock>0</AutoSelfUnlock>
+        <AutoRegisterTrigger>1</AutoRegisterTrigger>
+        <UsedBySecondParties>1</UsedBySecondParties>
+      </TriggerSetup>
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>FeatureUnlock</Template>
+    <Values>
+      <Standard>
+        <GUID>140540</GUID>
+        <Name>NewspaperUnlock</Name>
+        <ID>NewspaperUnlock</ID>
+      </Standard>
+      <Locked />
+      <Trigger>
+        <TriggerCondition>
+          <Template>ConditionPlayerCounter</Template>
+          <Values>
+            <Condition />
+            <ConditionPlayerCounter>
+              <PlayerCounter>PopulationByLevel</PlayerCounter>
+              <Context>15000000</Context>
+              <CounterAmount>1</CounterAmount>
+            </ConditionPlayerCounter>
+            <ConditionAlwaysTrue />
+          </Values>
+        </TriggerCondition>
+      </Trigger>
+      <TriggerSetup>
+        <AutoRegisterTrigger>1</AutoRegisterTrigger>
+        <AutoSelfUnlock>1</AutoSelfUnlock>
+        <UsedBySecondParties>1</UsedBySecondParties>
+      </TriggerSetup>
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>FeatureUnlock</Template>
+    <Values>
+      <Standard>
+        <GUID>140595</GUID>
+        <Name>FireIncidents</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/icon_fire_house.png</IconFilename>
+      </Standard>
+      <Locked />
+      <Trigger>
+        <TriggerCondition>
+          <Template>ConditionUnlocked</Template>
+          <Values>
+            <Condition />
+            <ConditionUnlocked>
+              <UnlockNeeded>1010358</UnlockNeeded>
+            </ConditionUnlocked>
+            <ConditionAlwaysTrue />
+          </Values>
+        </TriggerCondition>
+      </Trigger>
+      <TriggerSetup>
+        <AutoRegisterTrigger>1</AutoRegisterTrigger>
+        <AutoSelfUnlock>1</AutoSelfUnlock>
+        <UsedBySecondParties>1</UsedBySecondParties>
+      </TriggerSetup>
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>FeatureUnlock</Template>
+    <Values>
+      <Standard>
+        <GUID>140596</GUID>
+        <Name>RiotIncidents</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/icon_police.png</IconFilename>
+      </Standard>
+      <Locked />
+      <Trigger>
+        <TriggerCondition>
+          <Template>ConditionUnlocked</Template>
+          <Values>
+            <Condition />
+            <ConditionUnlocked>
+              <UnlockNeeded>1010360</UnlockNeeded>
+            </ConditionUnlocked>
+            <ConditionAlwaysTrue />
+          </Values>
+        </TriggerCondition>
+      </Trigger>
+      <TriggerSetup>
+        <AutoRegisterTrigger>1</AutoRegisterTrigger>
+        <AutoSelfUnlock>1</AutoSelfUnlock>
+        <UsedBySecondParties>1</UsedBySecondParties>
+      </TriggerSetup>
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>FeatureUnlock</Template>
+    <Values>
+      <Standard>
+        <GUID>140597</GUID>
+        <Name>IllnessIncidents</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/icon_hospital.png</IconFilename>
+      </Standard>
+      <Locked />
+      <Trigger>
+        <TriggerCondition>
+          <Template>ConditionUnlocked</Template>
+          <Values>
+            <Condition />
+            <ConditionUnlocked>
+              <UnlockNeeded>1010362</UnlockNeeded>
+            </ConditionUnlocked>
+            <ConditionAlwaysTrue />
+          </Values>
+        </TriggerCondition>
+      </Trigger>
+      <TriggerSetup>
+        <AutoRegisterTrigger>1</AutoRegisterTrigger>
+        <AutoSelfUnlock>1</AutoSelfUnlock>
+        <UsedBySecondParties>1</UsedBySecondParties>
+      </TriggerSetup>
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>FeatureUnlock</Template>
+    <Values>
+      <Standard>
+        <GUID>141671</GUID>
+        <Name>ExplosionIncidents</Name>
+        <IconFilename>data/ui/2kimages/main/icons/icon_bomb.png</IconFilename>
+      </Standard>
+      <Locked />
+      <Trigger>
+        <TriggerCondition>
+          <Template>ConditionUnlocked</Template>
+          <Values>
+            <Condition />
+            <ConditionUnlocked>
+              <UnlockNeeded>1010358</UnlockNeeded>
+            </ConditionUnlocked>
+            <ConditionAlwaysTrue />
+          </Values>
+        </TriggerCondition>
+      </Trigger>
+      <TriggerSetup>
+        <AutoRegisterTrigger>1</AutoRegisterTrigger>
+        <AutoSelfUnlock>1</AutoSelfUnlock>
+        <UsedBySecondParties>1</UsedBySecondParties>
+      </TriggerSetup>
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>FeatureUnlock</Template>
+    <Values>
+      <Standard>
+        <GUID>140807</GUID>
+        <Name>ShipTrade</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/icon_sail_shipyard.png</IconFilename>
+        <ID>ShipTrade</ID>
+      </Standard>
+      <Locked>
+        <DefaultLockedState>0</DefaultLockedState>
+      </Locked>
+      <Trigger>
+        <TriggerCondition>
+          <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+          <Values>
+            <Condition />
+            <ConditionAlwaysTrue />
+          </Values>
+          <Template>ConditionAlwaysTrue</Template>
+        </TriggerCondition>
+      </Trigger>
+      <TriggerSetup>
+        <AutoSelfUnlock>0</AutoSelfUnlock>
+        <AutoRegisterTrigger>1</AutoRegisterTrigger>
+        <UsedBySecondParties>1</UsedBySecondParties>
+      </TriggerSetup>
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>FeatureUnlock</Template>
+    <Values>
+      <Standard>
+        <GUID>141468</GUID>
+        <Name>ExpeditionUnlock</Name>
+        <ID>ExpeditionUnlock</ID>
+      </Standard>
+      <Locked />
+      <Trigger>
+        <TriggerCondition>
+          <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+          <Values>
+            <Condition />
+            <ConditionAlwaysTrue />
+          </Values>
+          <Template>ConditionAlwaysTrue</Template>
+        </TriggerCondition>
+      </Trigger>
+      <TriggerSetup>
+        <AutoSelfUnlock>0</AutoSelfUnlock>
+        <AutoRegisterTrigger>1</AutoRegisterTrigger>
+        <UsedBySecondParties>1</UsedBySecondParties>
+      </TriggerSetup>
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>FeatureUnlock</Template>
+    <Values>
+      <Standard>
+        <GUID>141487</GUID>
+        <Name>ElectricityUnlock</Name>
+        <IconFilename>data/ui/2kimages/main/icons/icon_electricity.png</IconFilename>
+        <ID>ElectricityFeature</ID>
+      </Standard>
+      <Locked />
+      <Trigger>
+        <TriggerCondition>
+          <Template>ConditionUnlocked</Template>
+          <Values>
+            <Condition />
+            <ConditionUnlocked>
+              <UnlockNeeded>140504</UnlockNeeded>
+            </ConditionUnlocked>
+            <ConditionAlwaysTrue />
+          </Values>
+        </TriggerCondition>
+      </Trigger>
+      <TriggerSetup>
+        <AutoRegisterTrigger>1</AutoRegisterTrigger>
+        <AutoSelfUnlock>1</AutoSelfUnlock>
+        <UsedBySecondParties>1</UsedBySecondParties>
+      </TriggerSetup>
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>FeatureUnlock</Template>
+    <Values>
+      <Standard>
+        <GUID>141489</GUID>
+        <Name>ConstructionAI</Name>
+        <IconFilename>data/ui/2kimages/main/icons/icon_resource_worker_2.png</IconFilename>
+        <ID>ConstructionAIUnlock</ID>
+      </Standard>
+      <Locked>
+        <DefaultLockedState>0</DefaultLockedState>
+        <Scope>MetaGame</Scope>
+      </Locked>
+      <Trigger>
+        <TriggerCondition>
+          <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+          <Values>
+            <Condition />
+            <ConditionAlwaysTrue />
+          </Values>
+          <Template>ConditionAlwaysTrue</Template>
+        </TriggerCondition>
+      </Trigger>
+      <TriggerSetup>
+        <UsedBySecondParties>0</UsedBySecondParties>
+        <AutoRegisterTrigger>1</AutoRegisterTrigger>
+        <AutoSelfUnlock>1</AutoSelfUnlock>
+      </TriggerSetup>
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>FeatureUnlock</Template>
+    <Values>
+      <Standard>
+        <GUID>141571</GUID>
+        <Name>Diplomacy</Name>
+        <IconFilename>data/ui/2kimages/main/icons/icon_diplomacy.png</IconFilename>
+        <ID>FeatureDiplomacy</ID>
+      </Standard>
+      <Locked>
+        <DefaultLockedState>0</DefaultLockedState>
+      </Locked>
+      <Trigger>
+        <TriggerCondition>
+          <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+          <Values>
+            <Condition />
+            <ConditionAlwaysTrue />
+          </Values>
+          <Template>ConditionAlwaysTrue</Template>
+        </TriggerCondition>
+      </Trigger>
+      <TriggerSetup>
+        <AutoSelfUnlock>0</AutoSelfUnlock>
+        <AutoRegisterTrigger>1</AutoRegisterTrigger>
+        <UsedBySecondParties>1</UsedBySecondParties>
+      </TriggerSetup>
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>FeatureUnlock</Template>
+    <Values>
+      <Standard>
+        <GUID>141568</GUID>
+        <Name>TradeRoutes</Name>
+        <IconFilename>data/ui/2kimages/main/icons/icon_traderoutes.png</IconFilename>
+        <ID>FeatureTradeRoutes</ID>
+      </Standard>
+      <Locked>
+        <DefaultLockedState>0</DefaultLockedState>
+      </Locked>
+      <Trigger>
+        <TriggerCondition>
+          <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+          <Values>
+            <Condition />
+            <ConditionAlwaysTrue />
+          </Values>
+          <Template>ConditionAlwaysTrue</Template>
+        </TriggerCondition>
+      </Trigger>
+      <TriggerSetup>
+        <AutoSelfUnlock>0</AutoSelfUnlock>
+        <AutoRegisterTrigger>1</AutoRegisterTrigger>
+        <UsedBySecondParties>1</UsedBySecondParties>
+      </TriggerSetup>
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>FeatureUnlock</Template>
+    <Values>
+      <Standard>
+        <GUID>142310</GUID>
+        <Name>PrologueCompleted</Name>
+        <IconFilename>data/ui/2kimages/main/icons/icon_attractiveness_castle_big.png</IconFilename>
+        <ID>PrologueCompleted</ID>
+      </Standard>
+      <Locked>
+        <DefaultLockedState>0</DefaultLockedState>
+      </Locked>
+      <Trigger>
+        <TriggerCondition>
+          <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+          <Values>
+            <Condition />
+            <ConditionAlwaysTrue />
+          </Values>
+          <Template>ConditionAlwaysTrue</Template>
+        </TriggerCondition>
+      </Trigger>
+      <TriggerSetup>
+        <AutoSelfUnlock>0</AutoSelfUnlock>
+        <AutoRegisterTrigger>1</AutoRegisterTrigger>
+        <UsedBySecondParties>1</UsedBySecondParties>
+      </TriggerSetup>
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>FeatureUnlock</Template>
+    <Values>
+      <Standard>
+        <GUID>142428</GUID>
+        <Name>SharesUnlock</Name>
+        <ID>SharesUnlock</ID>
+      </Standard>
+      <Locked>
+        <DefaultLockedState>0</DefaultLockedState>
+      </Locked>
+      <Trigger>
+        <TriggerCondition>
+          <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+          <Values>
+            <Condition />
+            <ConditionAlwaysTrue />
+          </Values>
+          <Template>ConditionAlwaysTrue</Template>
+        </TriggerCondition>
+      </Trigger>
+      <TriggerSetup>
+        <AutoRegisterTrigger>0</AutoRegisterTrigger>
+        <AutoSelfUnlock>0</AutoSelfUnlock>
+        <UsedBySecondParties>1</UsedBySecondParties>
+      </TriggerSetup>
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>FeatureUnlock</Template>
+    <Values>
+      <Standard>
+        <GUID>142604</GUID>
+        <Name>Minimap</Name>
+        <IconFilename>data/ui/2kimages/main/icons/icon_attractiveness_castle_big.png</IconFilename>
+        <ID>MinimapUnlocked</ID>
+      </Standard>
+      <Locked>
+        <DefaultLockedState>0</DefaultLockedState>
+      </Locked>
+      <Trigger>
+        <TriggerCondition>
+          <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+          <Values>
+            <Condition />
+            <ConditionAlwaysTrue />
+          </Values>
+          <Template>ConditionAlwaysTrue</Template>
+        </TriggerCondition>
+      </Trigger>
+      <TriggerSetup>
+        <AutoSelfUnlock>0</AutoSelfUnlock>
+        <AutoRegisterTrigger>1</AutoRegisterTrigger>
+        <UsedBySecondParties>1</UsedBySecondParties>
+      </TriggerSetup>
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>FeatureUnlock</Template>
+    <Values>
+      <Standard>
+        <GUID>140885</GUID>
+        <Name>South America Discovery Expedition Unlock</Name>
+      </Standard>
+      <Locked />
+      <Trigger>
+        <TriggerCondition>
+          <Template>ConditionPlayerCounter</Template>
+          <Values>
+            <Condition />
+            <ConditionPlayerCounter>
+              <PlayerCounter>PopulationByLevel</PlayerCounter>
+              <Context>15000002</Context>
+              <CounterAmount>1</CounterAmount>
+            </ConditionPlayerCounter>
+            <ConditionAlwaysTrue />
+          </Values>
+        </TriggerCondition>
+        <TriggerActions>
+          <Item>
+            <TriggerAction>
+              <Template>ActionUnlockAsset</Template>
+              <Values>
+                <Action />
+                <ActionUnlockAsset>
+                  <UnlockAssets>
+                    <Item>
+                      <Asset>800777</Asset>
+                    </Item>
+                  </UnlockAssets>
+                </ActionUnlockAsset>
+              </Values>
+            </TriggerAction>
+          </Item>
+        </TriggerActions>
+      </Trigger>
+      <TriggerSetup>
+        <AutoRegisterTrigger>1</AutoRegisterTrigger>
+        <AutoSelfUnlock>1</AutoSelfUnlock>
+        <UsedBySecondParties>1</UsedBySecondParties>
+      </TriggerSetup>
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>FeatureUnlock</Template>
+    <Values>
+      <Standard>
+        <GUID>142568</GUID>
+        <Name>Zoological Expedition Unlock Delay</Name>
+      </Standard>
+      <Locked />
+      <Trigger>
+        <TriggerCondition>
+          <Template>ConditionPlayerCounter</Template>
+          <Values>
+            <Condition />
+            <ConditionPlayerCounter>
+              <PlayerCounter>PopulationByLevel</PlayerCounter>
+              <Context>15000002</Context>
+              <CounterAmount>500</CounterAmount>
+            </ConditionPlayerCounter>
+            <ConditionAlwaysTrue />
+          </Values>
+        </TriggerCondition>
+        <TriggerActions>
+          <Item>
+            <TriggerAction>
+              <Template>ActionDelayedActions</Template>
+              <Values>
+                <Action />
+                <ActionDelayedActions>
+                  <ExecutionDelay>10000</ExecutionDelay>
+                  <DelayedActions>
+                    <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+                    <Values>
+                      <ActionList>
+                        <Actions>
+                          <Item>
+                            <Action>
+                              <Template>ActionRegisterTrigger</Template>
+                              <Values>
+                                <Action />
+                                <ActionRegisterTrigger>
+                                  <TriggerAsset>142570</TriggerAsset>
+                                </ActionRegisterTrigger>
+                              </Values>
+                            </Action>
+                          </Item>
+                        </Actions>
+                      </ActionList>
+                    </Values>
+                  </DelayedActions>
+                </ActionDelayedActions>
+              </Values>
+            </TriggerAction>
+          </Item>
+        </TriggerActions>
+        <SubTriggers>
+          <Item>
+            <SubTrigger>
+              <Template>AutoCreateTrigger</Template>
+              <Values>
+                <Trigger>
+                  <TriggerCondition>
+                    <Template>ConditionUnlocked</Template>
+                    <Values>
+                      <Condition />
+                      <ConditionUnlocked>
+                        <UnlockNeeded>180025</UnlockNeeded>
+                      </ConditionUnlocked>
+                    </Values>
+                  </TriggerCondition>
+                </Trigger>
+              </Values>
+            </SubTrigger>
+          </Item>
+        </SubTriggers>
+      </Trigger>
+      <TriggerSetup>
+        <AutoRegisterTrigger>1</AutoRegisterTrigger>
+        <AutoSelfUnlock>1</AutoSelfUnlock>
+        <UsedBySecondParties>1</UsedBySecondParties>
+      </TriggerSetup>
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>FeatureUnlock</Template>
+    <Values>
+      <Standard>
+        <GUID>142570</GUID>
+        <Name>Zoological Expedition Unlock</Name>
+      </Standard>
+      <Locked />
+      <Trigger>
+        <TriggerCondition>
+          <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+          <Values>
+            <Condition />
+            <ConditionAlwaysTrue />
+          </Values>
+          <Template>ConditionAlwaysTrue</Template>
+        </TriggerCondition>
+        <TriggerActions>
+          <Item>
+            <TriggerAction>
+              <Template>ActionUnlockAsset</Template>
+              <Values>
+                <Action />
+                <ActionUnlockAsset>
+                  <UnlockAssets>
+                    <Item>
+                      <Asset>800409</Asset>
+                    </Item>
+                  </UnlockAssets>
+                </ActionUnlockAsset>
+              </Values>
+            </TriggerAction>
+          </Item>
+        </TriggerActions>
+      </Trigger>
+      <TriggerSetup>
+        <AutoRegisterTrigger>0</AutoRegisterTrigger>
+        <AutoSelfUnlock>1</AutoSelfUnlock>
+        <UsedBySecondParties>1</UsedBySecondParties>
+      </TriggerSetup>
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>FeatureUnlock</Template>
+    <Values>
+      <Standard>
+        <GUID>142569</GUID>
+        <Name>Archeological Expedition Unlock Delay</Name>
+      </Standard>
+      <Locked />
+      <Trigger>
+        <TriggerCondition>
+          <Template>ConditionPlayerCounter</Template>
+          <Values>
+            <Condition />
+            <ConditionPlayerCounter>
+              <PlayerCounter>PopulationByLevel</PlayerCounter>
+              <Context>15000002</Context>
+              <CounterAmount>1500</CounterAmount>
+            </ConditionPlayerCounter>
+            <ConditionAlwaysTrue />
+          </Values>
+        </TriggerCondition>
+        <TriggerActions>
+          <Item>
+            <TriggerAction>
+              <Template>ActionDelayedActions</Template>
+              <Values>
+                <Action />
+                <ActionDelayedActions>
+                  <ExecutionDelay>10000</ExecutionDelay>
+                  <DelayedActions>
+                    <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+                    <Values>
+                      <ActionList>
+                        <Actions>
+                          <Item>
+                            <Action>
+                              <Template>ActionRegisterTrigger</Template>
+                              <Values>
+                                <Action />
+                                <ActionRegisterTrigger>
+                                  <TriggerAsset>142571</TriggerAsset>
+                                </ActionRegisterTrigger>
+                              </Values>
+                            </Action>
+                          </Item>
+                        </Actions>
+                      </ActionList>
+                    </Values>
+                  </DelayedActions>
+                </ActionDelayedActions>
+              </Values>
+            </TriggerAction>
+          </Item>
+        </TriggerActions>
+        <SubTriggers>
+          <Item>
+            <SubTrigger>
+              <Template>AutoCreateTrigger</Template>
+              <Values>
+                <Trigger>
+                  <TriggerCondition>
+                    <Template>ConditionUnlocked</Template>
+                    <Values>
+                      <Condition />
+                      <ConditionUnlocked>
+                        <UnlockNeeded>180025</UnlockNeeded>
+                      </ConditionUnlocked>
+                    </Values>
+                  </TriggerCondition>
+                </Trigger>
+              </Values>
+            </SubTrigger>
+          </Item>
+        </SubTriggers>
+      </Trigger>
+      <TriggerSetup>
+        <AutoRegisterTrigger>1</AutoRegisterTrigger>
+        <AutoSelfUnlock>1</AutoSelfUnlock>
+        <UsedBySecondParties>1</UsedBySecondParties>
+      </TriggerSetup>
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>FeatureUnlock</Template>
+    <Values>
+      <Standard>
+        <GUID>142571</GUID>
+        <Name>Archeological Expedition Unlock</Name>
+      </Standard>
+      <Locked />
+      <Trigger>
+        <TriggerCondition>
+          <Template>ConditionPlayerCounter</Template>
+          <Values>
+            <Condition />
+            <ConditionPlayerCounter>
+              <PlayerCounter>PopulationByLevel</PlayerCounter>
+              <Context>15000002</Context>
+              <CounterAmount>1500</CounterAmount>
+            </ConditionPlayerCounter>
+            <ConditionAlwaysTrue />
+          </Values>
+        </TriggerCondition>
+        <TriggerActions>
+          <Item>
+            <TriggerAction>
+              <Template>ActionUnlockAsset</Template>
+              <Values>
+                <Action />
+                <ActionUnlockAsset>
+                  <UnlockAssets>
+                    <Item>
+                      <Asset>800863</Asset>
+                    </Item>
+                  </UnlockAssets>
+                </ActionUnlockAsset>
+              </Values>
+            </TriggerAction>
+          </Item>
+        </TriggerActions>
+        <SubTriggers>
+          <Item>
+            <SubTrigger>
+              <Template>AutoCreateTrigger</Template>
+              <Values>
+                <Trigger>
+                  <TriggerCondition>
+                    <Template>ConditionUnlocked</Template>
+                    <Values>
+                      <Condition />
+                      <ConditionUnlocked>
+                        <UnlockNeeded>180025</UnlockNeeded>
+                      </ConditionUnlocked>
+                    </Values>
+                  </TriggerCondition>
+                </Trigger>
+              </Values>
+            </SubTrigger>
+          </Item>
+        </SubTriggers>
+      </Trigger>
+      <TriggerSetup>
+        <AutoRegisterTrigger>0</AutoRegisterTrigger>
+        <AutoSelfUnlock>1</AutoSelfUnlock>
+        <UsedBySecondParties>1</UsedBySecondParties>
+      </TriggerSetup>
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>FeatureUnlock</Template>
+    <Values>
+      <Standard>
+        <GUID>141414</GUID>
+        <Name>CharterRouteUnlock</Name>
+      </Standard>
+      <Locked />
+      <Trigger>
+        <TriggerCondition>
+          <Template>ConditionPlayerCounter</Template>
+          <Values>
+            <Condition />
+            <ConditionPlayerCounter>
+              <PlayerCounter>IslandSettled</PlayerCounter>
+              <CounterAmount>2</CounterAmount>
+            </ConditionPlayerCounter>
+            <ConditionAlwaysTrue />
+          </Values>
+        </TriggerCondition>
+      </Trigger>
+      <TriggerSetup>
+        <UsedBySecondParties>0</UsedBySecondParties>
+        <AutoRegisterTrigger>1</AutoRegisterTrigger>
+        <AutoSelfUnlock>1</AutoSelfUnlock>
+      </TriggerSetup>
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>FeatureUnlock</Template>
+    <Values>
+      <Standard>
+        <GUID>141415</GUID>
+        <Name>CoalRouteUnlock</Name>
+      </Standard>
+      <Locked />
+      <Trigger>
+        <TriggerCondition>
+          <Template>ConditionUnlocked</Template>
+          <Values>
+            <Condition />
+            <ConditionUnlocked>
+              <UnlockNeeded>100781</UnlockNeeded>
+            </ConditionUnlocked>
+            <ConditionAlwaysTrue />
+          </Values>
+        </TriggerCondition>
+      </Trigger>
+      <TriggerSetup>
+        <UsedBySecondParties>0</UsedBySecondParties>
+        <AutoRegisterTrigger>1</AutoRegisterTrigger>
+        <AutoSelfUnlock>1</AutoSelfUnlock>
+      </TriggerSetup>
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>FeatureUnlock</Template>
+    <Values>
+      <Standard>
+        <GUID>141416</GUID>
+        <Name>OilRouteUnlock</Name>
+      </Standard>
+      <Locked />
+      <Trigger>
+        <TriggerCondition>
+          <Template>ConditionUnlocked</Template>
+          <Values>
+            <Condition />
+            <ConditionUnlocked>
+              <UnlockNeeded>100783</UnlockNeeded>
+            </ConditionUnlocked>
+            <ConditionAlwaysTrue />
+          </Values>
+        </TriggerCondition>
+      </Trigger>
+      <TriggerSetup>
+        <UsedBySecondParties>0</UsedBySecondParties>
+        <AutoRegisterTrigger>1</AutoRegisterTrigger>
+        <AutoSelfUnlock>1</AutoSelfUnlock>
+      </TriggerSetup>
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>FeatureUnlock</Template>
+    <Values>
+      <Standard>
+        <GUID>150637</GUID>
+        <Name>CampaignIsUnlocked</Name>
+      </Standard>
+      <Locked />
+      <Trigger>
+        <TriggerCondition>
+          <Template>ConditionAlwaysFalse</Template>
+          <Values>
+            <Condition />
+            <ConditionAlwaysFalse />
+            <ConditionAlwaysTrue />
+          </Values>
+        </TriggerCondition>
+      </Trigger>
+      <TriggerSetup>
+        <AutoRegisterTrigger>0</AutoRegisterTrigger>
+        <AutoSelfUnlock>0</AutoSelfUnlock>
+        <UsedBySecondParties>0</UsedBySecondParties>
+      </TriggerSetup>
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>FeatureUnlock</Template>
+    <Values>
+      <Standard>
+        <GUID>150638</GUID>
+        <Name>ShipyardLicenceAcquired</Name>
+      </Standard>
+      <Locked />
+      <Trigger>
+        <TriggerCondition>
+          <Template>ConditionAlwaysFalse</Template>
+          <Values>
+            <Condition />
+            <ConditionAlwaysFalse />
+            <ConditionAlwaysTrue />
+          </Values>
+        </TriggerCondition>
+      </Trigger>
+      <TriggerSetup>
+        <AutoRegisterTrigger>0</AutoRegisterTrigger>
+        <AutoSelfUnlock>0</AutoSelfUnlock>
+        <UsedBySecondParties>0</UsedBySecondParties>
+      </TriggerSetup>
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>FeatureUnlock</Template>
+    <Values>
+      <Standard>
+        <GUID>150691</GUID>
+        <Name>PassageToIronMineCleared</Name>
+      </Standard>
+      <Locked />
+      <Trigger>
+        <TriggerCondition>
+          <Template>ConditionAlwaysFalse</Template>
+          <Values>
+            <Condition />
+            <ConditionAlwaysFalse />
+            <ConditionAlwaysTrue />
+          </Values>
+        </TriggerCondition>
+      </Trigger>
+      <TriggerSetup>
+        <AutoRegisterTrigger>0</AutoRegisterTrigger>
+        <AutoSelfUnlock>0</AutoSelfUnlock>
+        <UsedBySecondParties>0</UsedBySecondParties>
+      </TriggerSetup>
+    </Values>
+  </Asset>
+</Assets>

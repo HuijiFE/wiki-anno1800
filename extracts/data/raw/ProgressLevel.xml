@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Assets Count="5">
+  <Asset>
+    <Template>ProgressLevel</Template>
+    <Values>
+      <Standard>
+        <GUID>140500</GUID>
+        <Name>EarlyMidGame</Name>
+      </Standard>
+      <Trigger>
+        <TriggerCondition>
+          <Template>ConditionPlayerCounter</Template>
+          <Values>
+            <Condition />
+            <ConditionPlayerCounter>
+              <PlayerCounter>PopulationByLevel</PlayerCounter>
+              <Context>15000001</Context>
+              <CounterAmount>35</CounterAmount>
+            </ConditionPlayerCounter>
+            <ConditionAlwaysTrue />
+          </Values>
+        </TriggerCondition>
+      </Trigger>
+      <ProgressLevel>
+        <Level>EarlyMidGame</Level>
+      </ProgressLevel>
+      <Locked />
+      <TriggerSetup>
+        <AutoRegisterTrigger>1</AutoRegisterTrigger>
+        <AutoSelfUnlock>1</AutoSelfUnlock>
+        <UsedBySecondParties>1</UsedBySecondParties>
+      </TriggerSetup>
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>ProgressLevel</Template>
+    <Values>
+      <Standard>
+        <GUID>140503</GUID>
+        <Name>MidGame</Name>
+      </Standard>
+      <Trigger>
+        <TriggerCondition>
+          <Template>ConditionPlayerCounter</Template>
+          <Values>
+            <Condition />
+            <ConditionPlayerCounter>
+              <PlayerCounter>PopulationByLevel</PlayerCounter>
+              <Context>15000002</Context>
+              <CounterAmount>1</CounterAmount>
+            </ConditionPlayerCounter>
+            <ConditionAlwaysTrue />
+          </Values>
+        </TriggerCondition>
+      </Trigger>
+      <ProgressLevel>
+        <Level>MidGame</Level>
+      </ProgressLevel>
+      <Locked />
+      <TriggerSetup>
+        <AutoRegisterTrigger>1</AutoRegisterTrigger>
+        <AutoSelfUnlock>1</AutoSelfUnlock>
+        <UsedBySecondParties>1</UsedBySecondParties>
+      </TriggerSetup>
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>ProgressLevel</Template>
+    <Values>
+      <Standard>
+        <GUID>140504</GUID>
+        <Name>LateMidGame</Name>
+      </Standard>
+      <Trigger>
+        <TriggerCondition>
+          <Template>ConditionPlayerCounter</Template>
+          <Values>
+            <Condition />
+            <ConditionPlayerCounter>
+              <PlayerCounter>PopulationByLevel</PlayerCounter>
+              <Context>15000003</Context>
+              <CounterAmount>1</CounterAmount>
+            </ConditionPlayerCounter>
+            <ConditionAlwaysTrue />
+          </Values>
+        </TriggerCondition>
+      </Trigger>
+      <ProgressLevel>
+        <Level>LateMidGame</Level>
+      </ProgressLevel>
+      <Locked />
+      <TriggerSetup>
+        <AutoRegisterTrigger>1</AutoRegisterTrigger>
+        <AutoSelfUnlock>1</AutoSelfUnlock>
+        <UsedBySecondParties>1</UsedBySecondParties>
+      </TriggerSetup>
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>ProgressLevel</Template>
+    <Values>
+      <Standard>
+        <GUID>140505</GUID>
+        <Name>LateGame</Name>
+      </Standard>
+      <Trigger>
+        <TriggerCondition>
+          <Template>ConditionPlayerCounter</Template>
+          <Values>
+            <Condition />
+            <ConditionPlayerCounter>
+              <PlayerCounter>PopulationByLevel</PlayerCounter>
+              <Context>15000004</Context>
+              <CounterAmount>1</CounterAmount>
+            </ConditionPlayerCounter>
+            <ConditionAlwaysTrue />
+          </Values>
+        </TriggerCondition>
+      </Trigger>
+      <ProgressLevel>
+        <Level>LateGame</Level>
+      </ProgressLevel>
+      <Locked />
+      <TriggerSetup>
+        <AutoRegisterTrigger>1</AutoRegisterTrigger>
+        <AutoSelfUnlock>1</AutoSelfUnlock>
+        <UsedBySecondParties>1</UsedBySecondParties>
+      </TriggerSetup>
+    </Values>
+  </Asset>
+  <Asset>
+    <Template>ProgressLevel</Template>
+    <Values>
+      <Standard>
+        <GUID>140506</GUID>
+        <Name>EndGame</Name>
+      </Standard>
+      <Trigger>
+        <TriggerCondition>
+          <Template>ConditionPlayerCounter</Template>
+          <Values>
+            <Condition />
+            <ConditionPlayerCounter>
+              <PlayerCounter>PopulationTotal</PlayerCounter>
+              <CounterAmount>20000</CounterAmount>
+            </ConditionPlayerCounter>
+            <ConditionAlwaysTrue />
+          </Values>
+        </TriggerCondition>
+      </Trigger>
+      <ProgressLevel>
+        <Level>EndGame</Level>
+      </ProgressLevel>
+      <Locked />
+      <TriggerSetup>
+        <AutoRegisterTrigger>1</AutoRegisterTrigger>
+        <AutoSelfUnlock>1</AutoSelfUnlock>
+        <UsedBySecondParties>1</UsedBySecondParties>
+      </TriggerSetup>
+    </Values>
+  </Asset>
+</Assets>

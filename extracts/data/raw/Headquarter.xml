@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Assets Count="1">
+  <Asset>
+    <Template>Headquarter</Template>
+    <Values>
+      <Standard>
+        <GUID>100769</GUID>
+        <Name>CQO_Headquarter (guild_house) (Hannah)</Name>
+        <IconFilename>data/ui/2kimages/main/3dicons/icon_guildhouse.png</IconFilename>
+        <InfoDescription>118031</InfoDescription>
+      </Standard>
+      <Building>
+        <Destructable>0</Destructable>
+        <BuildingType>Factory</BuildingType>
+        <BuildingCategoryName>100001</BuildingCategoryName>
+      </Building>
+      <Blocking />
+      <Cost>
+        <Costs>
+          <Item>
+            <Ingredient>1010017</Ingredient>
+            <Amount>500</Amount>
+          </Item>
+          <Item>
+            <Ingredient>1010196</Ingredient>
+            <Amount>15</Amount>
+          </Item>
+        </Costs>
+      </Cost>
+      <Object>
+        <Variations>
+          <Item>
+            <Filename>data/graphics/buildings/special/guild_house/guild_house.cfg</Filename>
+          </Item>
+        </Variations>
+        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+      </Object>
+      <Mesh />
+      <Selection>
+        <GUIType>Guildhouse</GUIType>
+        <AllowedDragType>ItemSocket;CargoItemStack;StorageItemStack</AllowedDragType>
+      </Selection>
+      <Text>
+        <LocaText>
+          <English>
+            <Text>Headquarters</Text>
+            <Status>Exported</Status>
+            <ExportCount>1</ExportCount>
+          </English>
+        </LocaText>
+        <LineID>25848</LineID>
+      </Text>
+      <Constructable>
+        <DestructionCategory>Production</DestructionCategory>
+      </Constructable>
+      <Locked />
+      <SoundEmitter>
+        <DestroySounds>
+          <Item>
+            <Sound>9818756</Sound>
+          </Item>
+        </DestroySounds>
+        <ConstructionSounds>
+          <BuildFailed>
+            <Item>
+              <Sound>9818387</Sound>
+            </Item>
+          </BuildFailed>
+          <BuildMoveStart>
+            <Item>
+              <Sound>9818755</Sound>
+            </Item>
+          </BuildMoveStart>
+          <BuildMoveSuccess>
+            <Item>
+              <Sound>200133</Sound>
+            </Item>
+          </BuildMoveSuccess>
+          <BuildMoveEnd>
+            <Item>
+              <Sound>200141</Sound>
+            </Item>
+          </BuildMoveEnd>
+        </ConstructionSounds>
+      </SoundEmitter>
+      <FeedbackController />
+      <Infolayer />
+      <RandomDummySpawner />
+      <ItemContainer>
+        <SocketScopeRadius>15</SocketScopeRadius>
+        <SocketCount>3</SocketCount>
+        <SocketAllocation>Headquarter</SocketAllocation>
+        <SocketScope>Radius</SocketScope>
+      </ItemContainer>
+      <UpgradeList />
+      <Attackable>
+        <MaximumHitPoints>500</MaximumHitPoints>
+        <HasRuinState>1</HasRuinState>
+      </Attackable>
+      <Pausable />
+      <Maintenance>
+        <Maintenances>
+          <Item>
+            <Product>1010017</Product>
+            <Amount>10</Amount>
+            <InactiveAmount>5</InactiveAmount>
+          </Item>
+        </Maintenances>
+      </Maintenance>
+      <IslandUnique>
+        <UniqueType>Headquarter</UniqueType>
+      </IslandUnique>
+    </Values>
+  </Asset>
+</Assets>

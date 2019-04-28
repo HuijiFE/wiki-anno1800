@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Assets Count="1">
+  <Asset>
+    <Template>PassiveTradeFeature</Template>
+    <Values>
+      <Standard>
+        <GUID>140115</GUID>
+        <Name>TradeBalancing</Name>
+        <ID>TradeBalancing</ID>
+      </Standard>
+      <PassiveTradeFeature>
+        <BalanceCalculationDuration>900000</BalanceCalculationDuration>
+        <GlobalProductSellPriceFactor>0.8</GlobalProductSellPriceFactor>
+        <GlobalProductBuyPriceFactor>2</GlobalProductBuyPriceFactor>
+        <GlobalItemSellPriceFactor>0.25</GlobalItemSellPriceFactor>
+        <GlobalItemBuyPriceFactor>1</GlobalItemBuyPriceFactor>
+      </PassiveTradeFeature>
+      <ActiveTradeFeature>
+        <SlotsForBuy>4</SlotsForBuy>
+        <SlotsForSell>4</SlotsForSell>
+      </ActiveTradeFeature>
+    </Values>
+  </Asset>
+</Assets>

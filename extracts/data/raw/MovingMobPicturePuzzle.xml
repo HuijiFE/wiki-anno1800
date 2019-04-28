@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Assets Count="1">
+  <Asset>
+    <Template>MovingMobPicturePuzzle</Template>
+    <Values>
+      <Standard>
+        <GUID>101213</GUID>
+        <Name>MovingMobPicturePuzzleDummy</Name>
+        <IconFilename>data/ui/2kimages/main/icons/icon_riot_quest.png</IconFilename>
+      </Standard>
+      <Mesh>
+        <ObjectPosition>Dynamic</ObjectPosition>
+        <MeshPlacement>OnTerrain</MeshPlacement>
+      </Mesh>
+      <Object>
+        <Variations>
+          <Item>
+            <Filename>data/graphics/emptyDummy/empty_dummy_picturepuzzle.cfg</Filename>
+          </Item>
+        </Variations>
+        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+      </Object>
+      <Infolayer />
+      <Selection>
+        <GUIType>Generic</GUIType>
+      </Selection>
+      <Collectable>
+        <DestroyOnCollect>1</DestroyOnCollect>
+        <CollectOnSelection>1</CollectOnSelection>
+      </Collectable>
+      <QuestObject />
+      <Text>
+        <LocaText>
+          <English>
+            <Text>Mob</Text>
+          </English>
+        </LocaText>
+      </Text>
+      <SoundEmitter>
+        <ActiveSounds>
+          <Item>
+            <Sound>222233</Sound>
+          </Item>
+        </ActiveSounds>
+        <CollectedSounds>
+          <Item>
+            <Sound>214110</Sound>
+          </Item>
+        </CollectedSounds>
+      </SoundEmitter>
+    </Values>
+  </Asset>
+</Assets>
