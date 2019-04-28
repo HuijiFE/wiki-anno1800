@@ -44,6 +44,14 @@ namespace Anno1800.Jsonify {
       return 0.0;
     }
 
+    public static bool Boolean(this XElement wrapper, string path) {
+      var content = wrapper.String(path);
+      if (content == "1") {
+        return true;
+      }
+      return false;
+    }
+
     public static T? Object<T>(this XElement wrapper, string path) where T : BaseAssetObject {
       var elem = wrapper.ElementByPath(path);
       if (elem != null) {
