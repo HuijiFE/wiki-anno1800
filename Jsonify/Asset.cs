@@ -208,15 +208,13 @@ namespace Anno1800.Jsonify {
         if (!Directory.Exists(destDir)) {
           Directory.CreateDirectory(destDir);
         }
-        new XDocument(new XElement("Assets", new XAttribute("Count", list.Count), list)).Save(dest);
+        new XDocument(new XElement("Assets", new XAttribute("Count", list.Count), list)).SaveXML(dest);
       }
 
       foreach ((string template, List<Asset> dataList) in dataDict) {
         var dest = Path.Combine(output, $"{template}.json");
-        using (var sw = File.CreateText(dest)) {
-          sw.Write(JsonConvert.SerializeObject(dataList, Formatting.Indented));
-          Console.WriteLine(dest);
-        }
+        IO.Save(JsonConvert.SerializeObject(dataList, Formatting.Indented), dest);
+        Console.WriteLine(dest);
       }
 
       var assetsTotal = assetsDict.Values.Aggregate(0, (total, list) => total += list.Count);
