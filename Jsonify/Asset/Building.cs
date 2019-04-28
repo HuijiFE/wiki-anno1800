@@ -50,5 +50,18 @@ namespace Anno1800.Jsonify {
         this.maintenance = values.Object<MaintenanceData>("Maintenance");
       }
     }
+
+    // ================================
+    // Electric
+
+    class ElectricData : BaseAssetObject {
+      public bool boost;
+      public bool mandatory;
+
+      public ElectricData(XElement element) : base(element) {
+        this.boost = element.Boolean("BoostedByElectricity") || element.Boolean("ProductivityBoost");
+        this.mandatory = element.Boolean("MandatoryElectricity");
+      }
+    }
   }
 }

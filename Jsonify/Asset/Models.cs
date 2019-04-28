@@ -64,18 +64,5 @@ namespace Anno1800.Jsonify {
         this.consumerPriority = elem.Int("ConsumerPriority");
       }
     }
-
-    // ================================
-    // Electric
-
-    class ElectricData : BaseAssetObject {
-      public bool boosted;
-      public bool mandatory;
-
-      public ElectricData(XElement element) : base(element) {
-        this.boosted = element.Boolean("BoostedByElectricity");
-        this.mandatory = element.Boolean("MandatoryElectricity");
-      }
-    }
   }
 }
