@@ -8,7 +8,7 @@ using Newtonsoft.Json;
 
 namespace Anno1800.Jsonify {
   class Tracker {
-    public static Dictionary<string, Dictionary<string, List<string>>> Track(
+    public static void Track(
       Dictionary<string, XElement> assetsMap,
       Dictionary<string, List<Asset>> dataDict,
       Dictionary<string, string> localization,
@@ -21,6 +21,8 @@ namespace Anno1800.Jsonify {
         );
 
       var paths = new List<string> {
+        "Factory7",
+        "FactoryBase",
         "Electric"
       };
 
@@ -47,11 +49,9 @@ namespace Anno1800.Jsonify {
         { "assets", assetsReport }
       };
 
-      IO.Save(JsonConvert.SerializeObject(report, Formatting.Indented), output);
-
-      Console.WriteLine($"Report: {output}");
-
-      return report;
+      var dest = Path.Combine(output, "report.json");
+      IO.Save(JsonConvert.SerializeObject(report, Formatting.Indented), dest);
+      Console.WriteLine($"Report: {dest}");
     }
   }
 }
