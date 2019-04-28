@@ -7,11 +7,22 @@ using System.Xml.Linq;
 
 namespace Anno1800.Jsonify {
   partial class Asset {
-    class ResidenceBuilding7 : Asset {
-      BuildingData building;
+    class Residence7 : BaseAssetObject {
+      public int population;
+      public int max;
+
+      public Residence7(XElement elem) : base(elem) {
+        this.population = elem.Int("PopulationLevel7");
+        this.max = elem.Int("ResidentMax");
+      }
+    }
+
+    [Adapter]
+    class ResidenceBuilding7 : Building {
+      public Residence7 residnece7;
 
       public ResidenceBuilding7(XElement asset, Dictionary<string, XElement> map) : base(asset, map) {
-        this.building = Asset.GetBuildingData(asset.Element("Building"));
+        this.residnece7 = asset.Object<Residence7>("Values/Residence7");
       }
     }
   }

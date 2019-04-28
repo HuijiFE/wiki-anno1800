@@ -16,9 +16,9 @@ namespace Anno1800.Jsonify {
 
       var dict = new Dictionary<string, string>();
       foreach (var text in xml.Root.Element("Texts").Elements()) {
-        dict.Add(text.Element("GUID").Value, text.Element("Text").Value);
+        dict.Add(text.String("GUID") ?? "0", text.String("Text") ?? "");
       }
-      var json = JsonConvert.SerializeObject(dict);
+      var json = JsonConvert.SerializeObject(dict, Formatting.Indented);
 
       using (var sw = File.CreateText(output)) {
         sw.Write(json);
