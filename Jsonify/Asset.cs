@@ -184,7 +184,7 @@ namespace Anno1800.Jsonify {
       return dataDict;
     }
 
-    static public void Convert(string input, string output) {
+    static public (Dictionary<string, XElement>, Dictionary<string, List<Asset>>) Convert(string input, string output) {
       if (!Directory.Exists(output)) {
         Directory.CreateDirectory(output);
       }
@@ -222,6 +222,8 @@ namespace Anno1800.Jsonify {
       var assetsTotal = assetsDict.Values.Aggregate(0, (total, list) => total += list.Count);
       var dataTotal = dataDict.Values.Aggregate(0, (total, list) => total += list.Count);
       Console.WriteLine($"Assets: {assetsTotal}, {dataTotal} extracted.");
+
+      return (assetsMap, dataDict);
     }
   }
 }

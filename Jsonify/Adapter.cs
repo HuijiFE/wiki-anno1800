@@ -28,12 +28,12 @@ namespace Anno1800.Jsonify {
       return wrapper.ElementByPath(path)?.Value;
     }
 
-    public static int Int(this XElement wrapper, string path) {
+    public static int Int(this XElement wrapper, string path, int defaultValue = 0) {
       var content = wrapper.String(path);
       if (content != null) {
         return int.Parse(content);
       }
-      return 0;
+      return defaultValue;
     }
 
     public static double Double(this XElement wrapper, string path) {

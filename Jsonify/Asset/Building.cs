@@ -39,7 +39,7 @@ namespace Anno1800.Jsonify {
       public BuildingData? building;
       public CostData? cost;
       public UpgradableData? upgradable;
-      public bool construtable;
+      public MaintenanceData? maintenance;
 
       public Building(XElement asset, Dictionary<string, XElement> map) : base(asset, map) {
         var values = asset.Element("Values");
@@ -47,7 +47,7 @@ namespace Anno1800.Jsonify {
         this.building = values.Object<BuildingData>("Building");
         this.cost = values.Object<CostData>("Cost");
         this.upgradable = values.Object<UpgradableData>("Upgradable");
-        this.construtable = values.Element("Constructable") != null;
+        this.maintenance = values.Object<MaintenanceData>("Maintenance");
       }
     }
   }

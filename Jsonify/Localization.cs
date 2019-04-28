@@ -11,20 +11,15 @@ using Newtonsoft.Json;
 namespace Anno1800.Jsonify {
   class Localization {
 
-    static void XmlToJson(string input, string output) {
+    static Dictionary<string, string> XmlToDict(string input) {
       var xml = XDocument.Load(input);
 
       var dict = new Dictionary<string, string>();
       foreach (var text in xml.Root.Element("Texts").Elements()) {
         dict.Add(text.String("GUID") ?? "0", text.String("Text") ?? "");
       }
-      var json = JsonConvert.SerializeObject(dict, Formatting.Indented);
 
-      using (var sw = File.CreateText(output)) {
-        sw.Write(json);
-      }
-
-      Console.WriteLine($"{input} => {output}");
+      return dict;
     }
 
     /// <summary>
@@ -32,13 +27,20 @@ namespace Anno1800.Jsonify {
     /// </summary>
     /// <param name="input">The directory for loading xml files.</param>
     /// <param name="output">The directory for saving json files.</param>
-    static public void Convert(string input, string output) {
+    static public Dictionary<string, Dictionary<string, string>> Convert(string input, string output) {
       if (!Directory.Exists(output)) {
         Directory.CreateDirectory(output);
       }
-      foreach (var file in Directory.EnumerateFiles(input, "texts_*.xml")) {
-        Localization.XmlToJson(file, Path.Combine(output, $"{Path.GetFileNameWithoutExtension(file).Replace("texts_", "")}.json"));
+      var map = new Dictionary<string, Dictionary<string, string>>();
+      foreach (var source in Directory.EnumerateFiles(input, "texts_*.xml")) {
+        var language = Path.GetFileNameWithoutExtension(source).Replace("texts_", "");
+        var dict = Localization.XmlToDict(source);
+        var dest = Path.Combine(output, $"{language}.json");
+        IO.Save(JsonConvert.SerializeObject(dict, Formatting.Indented), dest);
+        Console.WriteLine($"{source} => {dest}");
+        map.Add(language, dict);
       }
+      return map;
     }
   }
 }

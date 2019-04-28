@@ -38,9 +38,44 @@ namespace Anno1800.Jsonify {
     // ================================
     // Maintenance
 
-    class MaintenancePair {
+    class MaintenancePair : BaseAssetObject {
       public int product;
       public int amount;
+      public int inactiveAmount;
+
+      public MaintenancePair(XElement elem) : base(elem) {
+        this.product = elem.Int("Product");
+        this.amount = elem.Int("Amount");
+        this.inactiveAmount = elem.Int("InactiveAmount");
+      }
+    }
+
+    class MaintenanceData : BaseAssetObject {
+      public List<MaintenancePair> maintenances;
+      public int consumerPriority;
+
+      public MaintenanceData(XElement elem) : base(elem) {
+        this.maintenances = elem
+          .Element("Maintenances")
+          ?.Elements()
+          .Select(item => new MaintenancePair(item))
+          .ToList()
+          ?? new List<MaintenancePair>();
+        this.consumerPriority = elem.Int("ConsumerPriority");
+      }
+    }
+
+    // ================================
+    // Electric
+
+    class ElectricData : BaseAssetObject {
+      public bool boosted;
+      public bool mandatory;
+
+      public ElectricData(XElement element) : base(element) {
+        this.boosted = element.Boolean("BoostedByElectricity");
+        this.mandatory = element.Boolean("MandatoryElectricity");
+      }
     }
   }
 }
