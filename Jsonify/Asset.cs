@@ -42,7 +42,7 @@ namespace Anno1800.Jsonify {
       Action<XElement> walk = null;
       walk = (elem) => {
         if (elem.Name == "Asset") {
-          var guid = elem.Element("Values")?.Element("Standard")?.Element("GUID")?.Value;
+          var guid = elem.String("Values/Standard/GUID") ?? "0";
           map.Add(guid, elem);
           return;
         }
@@ -56,7 +56,7 @@ namespace Anno1800.Jsonify {
       getGUID = (asset) => {
         var template = asset.Element("Template")?.Value;
         if (template == null) {
-          var baseAssetGUID = asset.Element("BaseAssetGUID")?.Value;
+          var baseAssetGUID = asset.String("BaseAssetGUID");
           if (baseAssetGUID == null) {
             return "_Unknown";
           }
@@ -87,7 +87,7 @@ namespace Anno1800.Jsonify {
       Action<XElement> walk = null;
       walk = (elem) => {
         if (elem.Name == "Template") {
-          map.Add(elem.Element("Name").Value, elem);
+          map.Add(elem.String("Name") ?? "", elem);
           return;
         }
         foreach (var child in elem.Elements()) {
@@ -107,9 +107,9 @@ namespace Anno1800.Jsonify {
         var baseChildren = @base.Elements().ToList();
         if (derivedChildren.Any(c => c.Name == "Item") || baseChildren.Any(c => c.Name == "Item")) {
           foreach (var derivedItem in derivedChildren) {
-            var index = derivedItem.Element("VectorElement")?.Element("InheritanceMapV2")?.Element("Entry")?.Element("Index")?.Value;
+            var index = derivedItem.String("VectorElement/InheritanceMapV2/Entry/Index");
             if (index == null) {
-              index = derivedItem.Element("VectorElement")?.Element("InheritedIndex")?.Value;
+              index = derivedItem.String("VectorElement/InheritedIndex");
             }
             derivedItem.Element("VectorElement")?.Remove();
             if (index != null) {
@@ -154,7 +154,7 @@ namespace Anno1800.Jsonify {
         resolve(asset);
       }
       foreach ((string guid, XElement asset) in assetsMap) {
-        var templateName = asset.Element("Template").Value;
+        var templateName = asset.String("Template") ?? "";
         var template = templatesMap[templateName];
         inherit(asset.Element("Values"), template.Element("Properties"));
       }
@@ -167,21 +167,21 @@ namespace Anno1800.Jsonify {
         .Where(t => t.IsSubclassOf(typeof(Asset)) && t.GetCustomAttributes(true).Any(a => (a as AdapterAttribute) != null))
         .ToDictionary(a => a.Name, a => a);
 
-      var dataMap = new Dictionary<string, List<Asset>>();
+      var dataDict = new Dictionary<string, List<Asset>>();
 
       foreach ((string guid, XElement asset) in assetsMap) {
-        var template = asset.Element("Template").Value;
+        var template = asset.String("Template") ?? "";
         if (adaptersMap.ContainsKey(template)) {
           var data = (Asset)Activator.CreateInstance(adaptersMap[template], asset, assetsMap);
-          if (dataMap.ContainsKey(template)) {
-            dataMap[template].Add(data);
+          if (dataDict.ContainsKey(template)) {
+            dataDict[template].Add(data);
           } else {
-            dataMap.Add(template, new List<Asset> { data });
+            dataDict.Add(template, new List<Asset> { data });
           }
         }
       }
 
-      return dataMap;
+      return dataDict;
     }
 
     static public void Convert(string input, string output) {
@@ -197,12 +197,12 @@ namespace Anno1800.Jsonify {
       var propertiesDoc = XDocument.Load(Path.Combine(input, "properties.xml"));
       var templatesDoc = XDocument.Load(Path.Combine(input, "templates.xml"));
 
-      var (assetsMap, dict) = Asset.ResolveRaw(assetsDoc);
+      var (assetsMap, assetsDict) = Asset.ResolveRaw(assetsDoc);
       var templatesMap = Asset.ResolveTemplates(templatesDoc);
       Asset.ResolveInheritance(assetsMap, templatesMap);
-      var dataMap = Asset.AdaptAll(assetsMap);
+      var dataDict = Asset.AdaptAll(assetsMap);
 
-      foreach ((string template, List<XElement> list) in dict) {
+      foreach ((string template, List<XElement> list) in assetsDict) {
         var dest = Path.Combine(raw, $"{template}.xml");
         var destDir = Path.GetDirectoryName(dest);
         if (!Directory.Exists(destDir)) {
@@ -211,7 +211,7 @@ namespace Anno1800.Jsonify {
         new XDocument(new XElement("Assets", new XAttribute("Count", list.Count), list)).Save(dest);
       }
 
-      foreach ((string template, List<Asset> dataList) in dataMap) {
+      foreach ((string template, List<Asset> dataList) in dataDict) {
         var dest = Path.Combine(output, $"{template}.json");
         using (var sw = File.CreateText(dest)) {
           sw.Write(JsonConvert.SerializeObject(dataList, Formatting.Indented));
@@ -219,7 +219,9 @@ namespace Anno1800.Jsonify {
         }
       }
 
-      Console.WriteLine($"Assets: {dict.Values.Aggregate(0, (total, list) => total += list.Count)}");
+      var assetsTotal = assetsDict.Values.Aggregate(0, (total, list) => total += list.Count);
+      var dataTotal = dataDict.Values.Aggregate(0, (total, list) => total += list.Count);
+      Console.WriteLine($"Assets: {assetsTotal}, {dataTotal} extracted.");
     }
   }
 }

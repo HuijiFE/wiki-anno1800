@@ -7,7 +7,6 @@ using System.Xml.Linq;
 namespace Anno1800.Jsonify {
   class Program {
     static void Main(string[] args) {
-      var currentDirectory = Directory.GetCurrentDirectory();
       string input = args[0];
       string output = args[1];
 
