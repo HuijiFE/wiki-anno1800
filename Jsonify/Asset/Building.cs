@@ -58,11 +58,24 @@ namespace Anno1800.Jsonify {
       public string type;
       public int attractiveness;
       public bool hasPollution;
+      //public bool cultureSpawnGroup;
+      public List<int> setPages;
+      public int openSetPages;
 
       public CultureData(XElement element) : base(element) {
         this.type = element.String("CultureType") ?? "";
         this.attractiveness = element.Int("Attractiveness");
         this.hasPollution = element.Boolean("HasPollution");
+        //this.cultureSpawnGroup = element.Boolean("CultureSpawnGroup");
+        this.setPages = element
+          .Element("SetPages")
+          ?.Elements()
+          .Select(item => item.Element("Page")?.Elements())
+          .Aggregate((agg, cur) => agg.Concat(cur))
+          .Select(item => item.Int("Set"))
+          .ToList()
+          ?? new List<int>();
+        this.openSetPages = element.Int("OpenSetPages");
       }
     }
 

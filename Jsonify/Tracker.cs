@@ -27,6 +27,8 @@ namespace Anno1800.Jsonify {
         "Electric",
         "Pausable",
         "Culture",
+        "Culture/SetPages/Item",
+        "Culture/SetPages/Item/Page/Item",
         "Constructable",
         "Upgradable",
         "Upgradable/UpgradeCost/Item",
@@ -44,14 +46,16 @@ namespace Anno1800.Jsonify {
           var elements = assetsMap
             .Select(kvp => kvp.Value.Element("Values").ElementByPath(path))
             .Where(el => el != null);
-          if (isItem) {
+          if (isItem && elements.Count() > 0) {
             elements = elements.Select(el => el.Elements()).Aggregate((agg, cur) => agg.Concat(cur));
           }
-          return elements
-            .Select(el => el.Elements().Where(el => el.Name != "VectorElement").Select(el => el.Name.ToString()))
-            .Aggregate((agg, cur) => agg.Concat(cur))
-            .ToHashSet()
-            .ToList();
+          return elements.Count() > 0
+            ? elements
+              .Select(el => el.Elements().Where(el => el.Name != "VectorElement").Select(el => el.Name.ToString()))
+              .Aggregate((agg, cur) => agg.Concat(cur))
+              .ToHashSet()
+              .ToList()
+            : new List<string>();
         });
 
       var report = new Dictionary<string, Dictionary<string, List<string>>> {

@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Threading;
 using System.Xml.Linq;
 
 namespace Anno1800.Jsonify {
@@ -25,6 +26,8 @@ namespace Anno1800.Jsonify {
       }
       if (Directory.Exists(output)) {
         Directory.Delete(output, true);
+        // sleep 1 second
+        Thread.Sleep(1000);
         Directory.CreateDirectory(output);
       }
 
