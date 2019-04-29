@@ -25,9 +25,17 @@ namespace Anno1800.Jsonify {
         throw new DirectoryNotFoundException($"Directory input '${input}' no found.");
       }
       if (Directory.Exists(output)) {
-        Directory.Delete(output, true);
-        // sleep 2 seconds
-        Thread.Sleep(2000);
+        var success = false;
+        var count = 0;
+        while (count < 3 && !success) {
+          try {
+            Directory.Delete(output, true);
+          } catch (Exception) {
+            count++;
+          } finally {
+            success = true;
+          }
+        }
         Directory.CreateDirectory(output);
       }
 
