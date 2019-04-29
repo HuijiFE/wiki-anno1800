@@ -1,0 +1,160 @@
+[
+  {
+    "guid": 1010298,
+    "name": "heavy_03 (Coal Heavy Industry)",
+    "id": "CharcoalBurner",
+    "icon": "data/ui/2kimages/main/3dicons/icon_coal_burn.png",
+    "description": 11143,
+    "freeAreaProductivity": {
+      "radius": 11,
+      "neededAreaPercent": 0,
+      "worker": 102433,
+      "maxWorkers": 3,
+      "workerPause": 10000,
+      "wayTime": 10000,
+      "freeAreaType": null,
+      "cutTree": false
+    },
+    "maintenance": {
+      "maintenances": [
+        {
+          "product": 1010017,
+          "amount": 20,
+          "inactiveAmount": 10,
+          "shutdownThreshold": 0.0
+        },
+        {
+          "product": 1010115,
+          "amount": 10,
+          "inactiveAmount": 0,
+          "shutdownThreshold": 0.2
+        }
+      ],
+      "consumerPriority": 1
+    },
+    "neededFertility": 0,
+    "factory": {
+      "inputs": [],
+      "outputs": [
+        {
+          "product": 1010226,
+          "amount": 1,
+          "storage": 4
+        }
+      ],
+      "cycleTime": 30
+    },
+    "culture": {
+      "type": "Factory",
+      "attractiveness": -5,
+      "hasPollution": true,
+      "setPages": [],
+      "openSetPages": 0
+    },
+    "electic": {
+      "boost": false,
+      "mandatory": false
+    },
+    "building": {
+      "type": "Factory",
+      "terrian": null,
+      "region": "Moderate",
+      "category": 100000
+    },
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010017,
+          "amount": 500
+        },
+        {
+          "ingredient": 1010196,
+          "amount": 4
+        },
+        {
+          "ingredient": 1010205,
+          "amount": 5
+        }
+      ]
+    }
+  },
+  {
+    "guid": 100807,
+    "name": "CQO_UnclesIsland_CoalHeavyIndustry",
+    "id": null,
+    "icon": "data/ui/2kimages/main/3dicons/icon_coal_burn.png",
+    "description": 11143,
+    "freeAreaProductivity": {
+      "radius": 0,
+      "neededAreaPercent": 0,
+      "worker": 102433,
+      "maxWorkers": 3,
+      "workerPause": 10000,
+      "wayTime": 10000,
+      "freeAreaType": null,
+      "cutTree": false
+    },
+    "maintenance": {
+      "maintenances": [
+        {
+          "product": 1010017,
+          "amount": 30,
+          "inactiveAmount": 12,
+          "shutdownThreshold": 0.0
+        },
+        {
+          "product": 1010115,
+          "amount": 25,
+          "inactiveAmount": 0,
+          "shutdownThreshold": 0.2
+        }
+      ],
+      "consumerPriority": 1
+    },
+    "neededFertility": 0,
+    "factory": {
+      "inputs": [],
+      "outputs": [
+        {
+          "product": 1010226,
+          "amount": 1,
+          "storage": 3
+        }
+      ],
+      "cycleTime": 30
+    },
+    "culture": {
+      "type": "Factory",
+      "attractiveness": -2,
+      "hasPollution": false,
+      "setPages": [],
+      "openSetPages": 0
+    },
+    "electic": {
+      "boost": false,
+      "mandatory": false
+    },
+    "building": {
+      "type": "Factory",
+      "terrian": null,
+      "region": null,
+      "category": 100000
+    },
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010017,
+          "amount": 500
+        },
+        {
+          "ingredient": 1010196,
+          "amount": 3
+        },
+        {
+          "ingredient": 1010205,
+          "amount": 2
+        }
+      ]
+    }
+  }
+]
