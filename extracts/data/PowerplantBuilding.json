@@ -1,0 +1,158 @@
+[
+  {
+    "guid": 100779,
+    "name": "electricity_01 (Coal Power Plant)",
+    "id": "CoalPowerPlant",
+    "icon": "data/ui/2kimages/main/3dicons/icon_electric_works_coal.png",
+    "description": 10945,
+    "maintenance": {
+      "maintenances": [
+        {
+          "product": 1010017,
+          "amount": 150,
+          "inactiveAmount": 75,
+          "shutdownThreshold": 0.0
+        },
+        {
+          "product": 1010117,
+          "amount": 150,
+          "inactiveAmount": 0,
+          "shutdownThreshold": 1.0
+        }
+      ],
+      "consumerPriority": 1
+    },
+    "neededFertility": 0,
+    "factory": {
+      "inputs": [
+        {
+          "product": 120021,
+          "amount": 1,
+          "storage": 100
+        }
+      ],
+      "outputs": [],
+      "cycleTime": 5
+    },
+    "culture": {
+      "type": "Factory",
+      "attractiveness": -10,
+      "hasPollution": true,
+      "setPages": [],
+      "openSetPages": 0
+    },
+    "electic": null,
+    "building": {
+      "type": "Factory",
+      "terrian": null,
+      "region": "Moderate",
+      "category": 11169
+    },
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010017,
+          "amount": 25000
+        },
+        {
+          "ingredient": 1010196,
+          "amount": 30
+        },
+        {
+          "ingredient": 1010205,
+          "amount": 50
+        },
+        {
+          "ingredient": 1010218,
+          "amount": 40
+        },
+        {
+          "ingredient": 1010207,
+          "amount": 30
+        },
+        {
+          "ingredient": 1010202,
+          "amount": 25
+        }
+      ]
+    }
+  },
+  {
+    "guid": 100780,
+    "name": "electricity_02 (Oil Power Plant)",
+    "id": "OilPowerPlant",
+    "icon": "data/ui/2kimages/main/3dicons/icon_electric_works_oil.png",
+    "description": 10946,
+    "maintenance": {
+      "maintenances": [
+        {
+          "product": 1010017,
+          "amount": 400,
+          "inactiveAmount": 200,
+          "shutdownThreshold": 0.0
+        },
+        {
+          "product": 1010117,
+          "amount": 150,
+          "inactiveAmount": 0,
+          "shutdownThreshold": 1.0
+        }
+      ],
+      "consumerPriority": 1
+    },
+    "neededFertility": 0,
+    "factory": {
+      "inputs": [
+        {
+          "product": 1010566,
+          "amount": 1,
+          "storage": 100
+        }
+      ],
+      "outputs": [],
+      "cycleTime": 5
+    },
+    "culture": {
+      "type": "Factory",
+      "attractiveness": -15,
+      "hasPollution": true,
+      "setPages": [],
+      "openSetPages": 0
+    },
+    "electic": null,
+    "building": {
+      "type": "Factory",
+      "terrian": null,
+      "region": "Moderate",
+      "category": 11169
+    },
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010017,
+          "amount": 25000
+        },
+        {
+          "ingredient": 1010196,
+          "amount": 30
+        },
+        {
+          "ingredient": 1010205,
+          "amount": 50
+        },
+        {
+          "ingredient": 1010218,
+          "amount": 40
+        },
+        {
+          "ingredient": 1010207,
+          "amount": 30
+        },
+        {
+          "ingredient": 1010202,
+          "amount": 25
+        }
+      ]
+    }
+  }
+]
