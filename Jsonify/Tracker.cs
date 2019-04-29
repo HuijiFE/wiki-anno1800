@@ -40,6 +40,7 @@ namespace Anno1800.Jsonify {
         "Factory7",
         "FactoryBase",
         "FreeAreaProductivity",
+        "Slot",
       };
 
       Dictionary<string, List<string>> xmlReport = paths.ToDictionary(

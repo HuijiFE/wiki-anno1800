@@ -1,0 +1,725 @@
+[
+  {
+    "guid": 100416,
+    "name": "factory_11 (Clay Pit)",
+    "id": null,
+    "icon": "data/ui/2kimages/main/3dicons/icon_clay.png",
+    "description": 11143,
+    "slot": {
+      "type": "Clay",
+      "workArea": 100418,
+      "snapsToSlot": true,
+      "category": 0
+    },
+    "maintenance": {
+      "maintenances": [
+        {
+          "product": 1010017,
+          "amount": 10,
+          "inactiveAmount": 5,
+          "shutdownThreshold": 0.0
+        },
+        {
+          "product": 1010115,
+          "amount": 50,
+          "inactiveAmount": 0,
+          "shutdownThreshold": 0.0
+        }
+      ],
+      "consumerPriority": 1
+    },
+    "neededFertility": 0,
+    "factory": {
+      "inputs": [],
+      "outputs": [
+        {
+          "product": 1010201,
+          "amount": 1,
+          "storage": 4
+        }
+      ],
+      "cycleTime": 30
+    },
+    "culture": {
+      "type": "Culture",
+      "attractiveness": 0,
+      "hasPollution": false,
+      "setPages": [],
+      "openSetPages": 0
+    },
+    "electic": {
+      "boost": false,
+      "mandatory": false
+    },
+    "building": {
+      "type": "Factory",
+      "terrian": null,
+      "region": "Moderate",
+      "category": 100000
+    },
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010017,
+          "amount": 500
+        },
+        {
+          "ingredient": 1010196,
+          "amount": 4
+        }
+      ]
+    }
+  },
+  {
+    "guid": 1010304,
+    "name": "mining_01 (Coal Mine)",
+    "id": "CoalMine",
+    "icon": "data/ui/2kimages/main/3dicons/icon_coal_2.png",
+    "description": 11143,
+    "slot": {
+      "type": "Coal",
+      "workArea": 1010542,
+      "snapsToSlot": true,
+      "category": 0
+    },
+    "maintenance": {
+      "maintenances": [
+        {
+          "product": 1010017,
+          "amount": 50,
+          "inactiveAmount": 25,
+          "shutdownThreshold": 0.0
+        },
+        {
+          "product": 1010115,
+          "amount": 50,
+          "inactiveAmount": 0,
+          "shutdownThreshold": 0.0
+        }
+      ],
+      "consumerPriority": 1
+    },
+    "neededFertility": 0,
+    "factory": {
+      "inputs": [],
+      "outputs": [
+        {
+          "product": 1010226,
+          "amount": 1,
+          "storage": 8
+        }
+      ],
+      "cycleTime": 15
+    },
+    "culture": {
+      "type": "Culture",
+      "attractiveness": 0,
+      "hasPollution": false,
+      "setPages": [],
+      "openSetPages": 0
+    },
+    "electic": {
+      "boost": false,
+      "mandatory": false
+    },
+    "building": {
+      "type": "Factory",
+      "terrian": null,
+      "region": "Moderate",
+      "category": 100000
+    },
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010017,
+          "amount": 600
+        },
+        {
+          "ingredient": 1010196,
+          "amount": 4
+        },
+        {
+          "ingredient": 1010205,
+          "amount": 5
+        }
+      ]
+    }
+  },
+  {
+    "guid": 1010305,
+    "name": "mining_02 (Iron Mine)",
+    "id": null,
+    "icon": "data/ui/2kimages/main/3dicons/icon_iron.png",
+    "description": 11143,
+    "slot": {
+      "type": "Iron",
+      "workArea": 1010543,
+      "snapsToSlot": true,
+      "category": 0
+    },
+    "maintenance": {
+      "maintenances": [
+        {
+          "product": 1010017,
+          "amount": 50,
+          "inactiveAmount": 25,
+          "shutdownThreshold": 0.0
+        },
+        {
+          "product": 1010115,
+          "amount": 50,
+          "inactiveAmount": 0,
+          "shutdownThreshold": 0.0
+        }
+      ],
+      "consumerPriority": 1
+    },
+    "neededFertility": 0,
+    "factory": {
+      "inputs": [],
+      "outputs": [
+        {
+          "product": 1010227,
+          "amount": 1,
+          "storage": 8
+        }
+      ],
+      "cycleTime": 15
+    },
+    "culture": {
+      "type": "Culture",
+      "attractiveness": 0,
+      "hasPollution": false,
+      "setPages": [],
+      "openSetPages": 0
+    },
+    "electic": {
+      "boost": false,
+      "mandatory": false
+    },
+    "building": {
+      "type": "Factory",
+      "terrian": null,
+      "region": "Moderate",
+      "category": 100000
+    },
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010017,
+          "amount": 800
+        },
+        {
+          "ingredient": 1010196,
+          "amount": 4
+        },
+        {
+          "ingredient": 1010205,
+          "amount": 5
+        }
+      ]
+    }
+  },
+  {
+    "guid": 1010307,
+    "name": "mining_04 (Zinc Mine)",
+    "id": null,
+    "icon": "data/ui/2kimages/main/3dicons/icon_tin_ore.png",
+    "description": 11143,
+    "slot": {
+      "type": "Tin",
+      "workArea": 1010545,
+      "snapsToSlot": true,
+      "category": 0
+    },
+    "maintenance": {
+      "maintenances": [
+        {
+          "product": 1010017,
+          "amount": 250,
+          "inactiveAmount": 125,
+          "shutdownThreshold": 0.0
+        },
+        {
+          "product": 1010115,
+          "amount": 25,
+          "inactiveAmount": 0,
+          "shutdownThreshold": 0.0
+        }
+      ],
+      "consumerPriority": 1
+    },
+    "neededFertility": 0,
+    "factory": {
+      "inputs": [],
+      "outputs": [
+        {
+          "product": 1010229,
+          "amount": 1,
+          "storage": 4
+        }
+      ],
+      "cycleTime": 30
+    },
+    "culture": {
+      "type": "Culture",
+      "attractiveness": 0,
+      "hasPollution": false,
+      "setPages": [],
+      "openSetPages": 0
+    },
+    "electic": {
+      "boost": false,
+      "mandatory": false
+    },
+    "building": {
+      "type": "Factory",
+      "terrian": null,
+      "region": "Moderate",
+      "category": 100000
+    },
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010017,
+          "amount": 5000
+        },
+        {
+          "ingredient": 1010196,
+          "amount": 8
+        },
+        {
+          "ingredient": 1010205,
+          "amount": 15
+        },
+        {
+          "ingredient": 1010218,
+          "amount": 12
+        },
+        {
+          "ingredient": 1010207,
+          "amount": 10
+        },
+        {
+          "ingredient": 1010202,
+          "amount": 10
+        }
+      ]
+    }
+  },
+  {
+    "guid": 1010308,
+    "name": "mining_05 (Copper Mine)",
+    "id": null,
+    "icon": "data/ui/2kimages/main/3dicons/icon_copper.png",
+    "description": 11143,
+    "slot": {
+      "type": "Copper",
+      "workArea": 1010546,
+      "snapsToSlot": true,
+      "category": 0
+    },
+    "maintenance": {
+      "maintenances": [
+        {
+          "product": 1010017,
+          "amount": 250,
+          "inactiveAmount": 125,
+          "shutdownThreshold": 0.0
+        },
+        {
+          "product": 1010115,
+          "amount": 25,
+          "inactiveAmount": 0,
+          "shutdownThreshold": 0.0
+        }
+      ],
+      "consumerPriority": 1
+    },
+    "neededFertility": 0,
+    "factory": {
+      "inputs": [],
+      "outputs": [
+        {
+          "product": 1010230,
+          "amount": 1,
+          "storage": 4
+        }
+      ],
+      "cycleTime": 30
+    },
+    "culture": {
+      "type": "Culture",
+      "attractiveness": 0,
+      "hasPollution": false,
+      "setPages": [],
+      "openSetPages": 0
+    },
+    "electic": {
+      "boost": false,
+      "mandatory": false
+    },
+    "building": {
+      "type": "Factory",
+      "terrian": null,
+      "region": "Moderate",
+      "category": 100000
+    },
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010017,
+          "amount": 5000
+        },
+        {
+          "ingredient": 1010196,
+          "amount": 8
+        },
+        {
+          "ingredient": 1010205,
+          "amount": 15
+        },
+        {
+          "ingredient": 1010218,
+          "amount": 12
+        },
+        {
+          "ingredient": 1010207,
+          "amount": 10
+        },
+        {
+          "ingredient": 1010202,
+          "amount": 10
+        }
+      ]
+    }
+  },
+  {
+    "guid": 1010309,
+    "name": "mining_06 (Cement Mine)",
+    "id": null,
+    "icon": "data/ui/2kimages/main/3dicons/icon_cement.png",
+    "description": 11143,
+    "slot": {
+      "type": "Cement",
+      "workArea": 1010547,
+      "snapsToSlot": true,
+      "category": 0
+    },
+    "maintenance": {
+      "maintenances": [
+        {
+          "product": 1010017,
+          "amount": 250,
+          "inactiveAmount": 125,
+          "shutdownThreshold": 0.0
+        },
+        {
+          "product": 1010115,
+          "amount": 25,
+          "inactiveAmount": 0,
+          "shutdownThreshold": 0.0
+        }
+      ],
+      "consumerPriority": 1
+    },
+    "neededFertility": 0,
+    "factory": {
+      "inputs": [],
+      "outputs": [
+        {
+          "product": 1010231,
+          "amount": 1,
+          "storage": 4
+        }
+      ],
+      "cycleTime": 30
+    },
+    "culture": {
+      "type": "Culture",
+      "attractiveness": 0,
+      "hasPollution": false,
+      "setPages": [],
+      "openSetPages": 0
+    },
+    "electic": {
+      "boost": false,
+      "mandatory": false
+    },
+    "building": {
+      "type": "Factory",
+      "terrian": null,
+      "region": "Moderate",
+      "category": 100000
+    },
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010017,
+          "amount": 6000
+        },
+        {
+          "ingredient": 1010196,
+          "amount": 8
+        },
+        {
+          "ingredient": 1010205,
+          "amount": 15
+        },
+        {
+          "ingredient": 1010218,
+          "amount": 12
+        },
+        {
+          "ingredient": 1010207,
+          "amount": 10
+        }
+      ]
+    }
+  },
+  {
+    "guid": 1010311,
+    "name": "mining_08 (Gold Ore Mine)",
+    "id": null,
+    "icon": "data/ui/2kimages/main/3dicons/icon_gold_ore.png",
+    "description": 11143,
+    "slot": {
+      "type": "GoldOre",
+      "workArea": 1010549,
+      "snapsToSlot": true,
+      "category": 0
+    },
+    "maintenance": {
+      "maintenances": [
+        {
+          "product": 1010017,
+          "amount": 250,
+          "inactiveAmount": 125,
+          "shutdownThreshold": 0.0
+        },
+        {
+          "product": 1010115,
+          "amount": 25,
+          "inactiveAmount": 0,
+          "shutdownThreshold": 0.0
+        }
+      ],
+      "consumerPriority": 1
+    },
+    "neededFertility": 0,
+    "factory": {
+      "inputs": [],
+      "outputs": [
+        {
+          "product": 1010233,
+          "amount": 1,
+          "storage": 1
+        }
+      ],
+      "cycleTime": 150
+    },
+    "culture": {
+      "type": "Culture",
+      "attractiveness": 0,
+      "hasPollution": false,
+      "setPages": [],
+      "openSetPages": 0
+    },
+    "electic": {
+      "boost": false,
+      "mandatory": false
+    },
+    "building": {
+      "type": "Factory",
+      "terrian": null,
+      "region": "Moderate",
+      "category": 100000
+    },
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010017,
+          "amount": 12000
+        },
+        {
+          "ingredient": 1010196,
+          "amount": 8
+        },
+        {
+          "ingredient": 1010205,
+          "amount": 15
+        },
+        {
+          "ingredient": 1010218,
+          "amount": 12
+        },
+        {
+          "ingredient": 1010207,
+          "amount": 10
+        },
+        {
+          "ingredient": 1010202,
+          "amount": 10
+        }
+      ]
+    }
+  },
+  {
+    "guid": 101267,
+    "name": "factory_colony01_04 (Clay Pit)",
+    "id": null,
+    "icon": "data/ui/2kimages/main/3dicons/icon_clay.png",
+    "description": 11143,
+    "slot": {
+      "type": "Clay",
+      "workArea": 100418,
+      "snapsToSlot": true,
+      "category": 0
+    },
+    "maintenance": {
+      "maintenances": [
+        {
+          "product": 1010017,
+          "amount": 10,
+          "inactiveAmount": 5,
+          "shutdownThreshold": 0.0
+        },
+        {
+          "product": 1010367,
+          "amount": 100,
+          "inactiveAmount": 0,
+          "shutdownThreshold": 0.0
+        }
+      ],
+      "consumerPriority": 1
+    },
+    "neededFertility": 0,
+    "factory": {
+      "inputs": [],
+      "outputs": [
+        {
+          "product": 1010201,
+          "amount": 1,
+          "storage": 4
+        }
+      ],
+      "cycleTime": 30
+    },
+    "culture": {
+      "type": "Culture",
+      "attractiveness": 0,
+      "hasPollution": false,
+      "setPages": [],
+      "openSetPages": 0
+    },
+    "electic": {
+      "boost": false,
+      "mandatory": false
+    },
+    "building": {
+      "type": "Factory",
+      "terrian": null,
+      "region": "Colony01",
+      "category": 100000
+    },
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010017,
+          "amount": 2500
+        },
+        {
+          "ingredient": 1010196,
+          "amount": 4
+        }
+      ]
+    }
+  },
+  {
+    "guid": 101311,
+    "name": "mining_colony01_01 (Gold Ore Mine)",
+    "id": null,
+    "icon": "data/ui/2kimages/main/3dicons/icon_gold_ore.png",
+    "description": 11143,
+    "slot": {
+      "type": "GoldOre",
+      "workArea": 1010549,
+      "snapsToSlot": true,
+      "category": 0
+    },
+    "maintenance": {
+      "maintenances": [
+        {
+          "product": 1010017,
+          "amount": 250,
+          "inactiveAmount": 125,
+          "shutdownThreshold": 0.0
+        },
+        {
+          "product": 1010367,
+          "amount": 100,
+          "inactiveAmount": 0,
+          "shutdownThreshold": 0.0
+        }
+      ],
+      "consumerPriority": 1
+    },
+    "neededFertility": 0,
+    "factory": {
+      "inputs": [],
+      "outputs": [
+        {
+          "product": 1010233,
+          "amount": 1,
+          "storage": 1
+        }
+      ],
+      "cycleTime": 150
+    },
+    "culture": {
+      "type": "Culture",
+      "attractiveness": 0,
+      "hasPollution": false,
+      "setPages": [],
+      "openSetPages": 0
+    },
+    "electic": {
+      "boost": false,
+      "mandatory": false
+    },
+    "building": {
+      "type": "Factory",
+      "terrian": null,
+      "region": "Colony01",
+      "category": 100000
+    },
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010017,
+          "amount": 2500
+        },
+        {
+          "ingredient": 1010196,
+          "amount": 8
+        },
+        {
+          "ingredient": 1010205,
+          "amount": 15
+        },
+        {
+          "ingredient": 1010218,
+          "amount": 0
+        },
+        {
+          "ingredient": 1010207,
+          "amount": 0
+        },
+        {
+          "ingredient": 1010202,
+          "amount": 0
+        }
+      ]
+    }
+  }
+]
