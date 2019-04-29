@@ -21,6 +21,21 @@ namespace Anno1800.Jsonify {
       }
     }
 
+    class Building : Asset {
+      public BuildingData? building;
+      public CostData? cost;
+
+      public Building(XElement asset, Dictionary<string, XElement> map) : base(asset, map) {
+        var values = asset.Element("Values");
+
+        this.building = values.Object<BuildingData>("Building");
+        this.cost = values.Object<CostData>("Cost");
+      }
+    }
+
+    // ================================
+    // Upgradable
+
     class UpgradableData : BaseAssetObject {
       public int next;
       public List<CostPair> costs;
@@ -32,22 +47,6 @@ namespace Anno1800.Jsonify {
           .Select(item => new CostPair(item))
           .ToList()
           ?? new List<CostPair>();
-      }
-    }
-
-    class Building : Asset {
-      public BuildingData? building;
-      public CostData? cost;
-      public UpgradableData? upgradable;
-      public MaintenanceData? maintenance;
-
-      public Building(XElement asset, Dictionary<string, XElement> map) : base(asset, map) {
-        var values = asset.Element("Values");
-
-        this.building = values.Object<BuildingData>("Building");
-        this.cost = values.Object<CostData>("Cost");
-        this.upgradable = values.Object<UpgradableData>("Upgradable");
-        this.maintenance = values.Object<MaintenanceData>("Maintenance");
       }
     }
 
@@ -76,6 +75,26 @@ namespace Anno1800.Jsonify {
           .ToList()
           ?? new List<int>();
         this.openSetPages = element.Int("OpenSetPages");
+      }
+    }
+
+    // ================================
+    // ModuleOwner
+
+    class ModuleOwnerData : BaseAssetObject {
+      public List<int> options;
+      public int limit;
+      public int radius;
+
+      public ModuleOwnerData(XElement element) : base(element) {
+        this.options = element
+          .Element("ConstructionOptions")
+          ?.Elements()
+          .Select(item => item.Int("ModuleGUID"))
+          .ToList()
+          ?? new List<int>();
+        this.limit = element.Int("ModuleLimit");
+        this.radius = element.Int("ModuleBuildRadius");
       }
     }
 

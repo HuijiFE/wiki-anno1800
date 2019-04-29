@@ -36,6 +36,7 @@ namespace Anno1800.Jsonify {
         "Residence7/ResidenceStorage",
         "Factory7",
         "FactoryBase",
+        "ModuleOwner",
       };
 
       Dictionary<string, List<string>> xmlReport = paths.ToDictionary(

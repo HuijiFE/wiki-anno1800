@@ -44,6 +44,7 @@ namespace Anno1800.Jsonify {
 
     [Adapter]
     class FactoryBuilding7 : Building {
+      public MaintenanceData? maintenance;
       public int neededFertility;
       public FactoryData? factory;
       public CultureData? culture;
@@ -52,6 +53,7 @@ namespace Anno1800.Jsonify {
       public FactoryBuilding7(XElement asset, Dictionary<string, XElement> map) : base(asset, map) {
         var values = asset.Element("Values");
 
+        this.maintenance = values.Object<MaintenanceData>("Maintenance");
         this.neededFertility = values.Int("Factory7/NeededFertility");
         this.factory = values.Object<FactoryData>("FactoryBase");
         this.culture = values.Object<CultureData>("Culture");

@@ -5,24 +5,6 @@
     "id": null,
     "icon": "data/ui/2kimages/main/3dicons/icon_resident.png",
     "description": 163059,
-    "residnece7": {
-      "population": 15000000,
-      "max": 10
-    },
-    "building": {
-      "type": "Residence",
-      "terrian": null,
-      "region": "Moderate",
-      "category": 100004
-    },
-    "cost": {
-      "costs": [
-        {
-          "ingredient": 1010196,
-          "amount": 2
-        }
-      ]
-    },
     "upgradable": {
       "next": 1010344,
       "costs": [
@@ -52,17 +34,9 @@
         }
       ]
     },
-    "maintenance": null
-  },
-  {
-    "guid": 1010344,
-    "name": "residence_tier02",
-    "id": null,
-    "icon": "data/ui/2kimages/main/3dicons/icon_resident.png",
-    "description": 163059,
     "residnece7": {
-      "population": 15000001,
-      "max": 20
+      "population": 15000000,
+      "max": 10
     },
     "building": {
       "type": "Residence",
@@ -74,10 +48,17 @@
       "costs": [
         {
           "ingredient": 1010196,
-          "amount": 4
+          "amount": 2
         }
       ]
-    },
+    }
+  },
+  {
+    "guid": 1010344,
+    "name": "residence_tier02",
+    "id": null,
+    "icon": "data/ui/2kimages/main/3dicons/icon_resident.png",
+    "description": 163059,
     "upgradable": {
       "next": 1010345,
       "costs": [
@@ -107,17 +88,9 @@
         }
       ]
     },
-    "maintenance": null
-  },
-  {
-    "guid": 1010345,
-    "name": "residence_tier03",
-    "id": null,
-    "icon": "data/ui/2kimages/main/3dicons/icon_resident.png",
-    "description": 163059,
     "residnece7": {
-      "population": 15000002,
-      "max": 30
+      "population": 15000001,
+      "max": 20
     },
     "building": {
       "type": "Residence",
@@ -129,18 +102,17 @@
       "costs": [
         {
           "ingredient": 1010196,
-          "amount": 8
-        },
-        {
-          "ingredient": 1010205,
-          "amount": 5
-        },
-        {
-          "ingredient": 1010218,
           "amount": 4
         }
       ]
-    },
+    }
+  },
+  {
+    "guid": 1010345,
+    "name": "residence_tier03",
+    "id": null,
+    "icon": "data/ui/2kimages/main/3dicons/icon_resident.png",
+    "description": 163059,
     "upgradable": {
       "next": 1010346,
       "costs": [
@@ -170,17 +142,9 @@
         }
       ]
     },
-    "maintenance": null
-  },
-  {
-    "guid": 1010346,
-    "name": "residence_tier04",
-    "id": null,
-    "icon": "data/ui/2kimages/main/3dicons/icon_resident.png",
-    "description": 163059,
     "residnece7": {
-      "population": 15000003,
-      "max": 40
+      "population": 15000002,
+      "max": 30
     },
     "building": {
       "type": "Residence",
@@ -196,18 +160,21 @@
         },
         {
           "ingredient": 1010205,
-          "amount": 10
+          "amount": 5
         },
         {
           "ingredient": 1010218,
-          "amount": 8
-        },
-        {
-          "ingredient": 1010207,
-          "amount": 8
+          "amount": 4
         }
       ]
-    },
+    }
+  },
+  {
+    "guid": 1010346,
+    "name": "residence_tier04",
+    "id": null,
+    "icon": "data/ui/2kimages/main/3dicons/icon_resident.png",
+    "description": 163059,
     "upgradable": {
       "next": 1010347,
       "costs": [
@@ -237,7 +204,36 @@
         }
       ]
     },
-    "maintenance": null
+    "residnece7": {
+      "population": 15000003,
+      "max": 40
+    },
+    "building": {
+      "type": "Residence",
+      "terrian": null,
+      "region": "Moderate",
+      "category": 100004
+    },
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 8
+        },
+        {
+          "ingredient": 1010205,
+          "amount": 10
+        },
+        {
+          "ingredient": 1010218,
+          "amount": 8
+        },
+        {
+          "ingredient": 1010207,
+          "amount": 8
+        }
+      ]
+    }
   },
   {
     "guid": 1010347,
@@ -245,6 +241,35 @@
     "id": null,
     "icon": "data/ui/2kimages/main/3dicons/icon_resident.png",
     "description": 163059,
+    "upgradable": {
+      "next": 0,
+      "costs": [
+        {
+          "ingredient": 1010017,
+          "amount": 0
+        },
+        {
+          "ingredient": 1010196,
+          "amount": 0
+        },
+        {
+          "ingredient": 1010205,
+          "amount": 0
+        },
+        {
+          "ingredient": 1010218,
+          "amount": 0
+        },
+        {
+          "ingredient": 1010207,
+          "amount": 0
+        },
+        {
+          "ingredient": 1010202,
+          "amount": 0
+        }
+      ]
+    },
     "residnece7": {
       "population": 15000004,
       "max": 50
@@ -278,37 +303,7 @@
           "amount": 10
         }
       ]
-    },
-    "upgradable": {
-      "next": 0,
-      "costs": [
-        {
-          "ingredient": 1010017,
-          "amount": 0
-        },
-        {
-          "ingredient": 1010196,
-          "amount": 0
-        },
-        {
-          "ingredient": 1010205,
-          "amount": 0
-        },
-        {
-          "ingredient": 1010218,
-          "amount": 0
-        },
-        {
-          "ingredient": 1010207,
-          "amount": 0
-        },
-        {
-          "ingredient": 1010202,
-          "amount": 0
-        }
-      ]
-    },
-    "maintenance": null
+    }
   },
   {
     "guid": 101254,
@@ -316,24 +311,6 @@
     "id": null,
     "icon": "data/ui/2kimages/main/3dicons/icon_resident.png",
     "description": 163059,
-    "residnece7": {
-      "population": 15000005,
-      "max": 10
-    },
-    "building": {
-      "type": "Residence",
-      "terrian": null,
-      "region": "Colony01",
-      "category": 100004
-    },
-    "cost": {
-      "costs": [
-        {
-          "ingredient": 1010196,
-          "amount": 1
-        }
-      ]
-    },
     "upgradable": {
       "next": 101255,
       "costs": [
@@ -363,7 +340,24 @@
         }
       ]
     },
-    "maintenance": null
+    "residnece7": {
+      "population": 15000005,
+      "max": 10
+    },
+    "building": {
+      "type": "Residence",
+      "terrian": null,
+      "region": "Colony01",
+      "category": 100004
+    },
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 1
+        }
+      ]
+    }
   },
   {
     "guid": 101255,
@@ -371,6 +365,10 @@
     "id": null,
     "icon": "data/ui/2kimages/main/3dicons/icon_resident.png",
     "description": 163059,
+    "upgradable": {
+      "next": 0,
+      "costs": []
+    },
     "residnece7": {
       "population": 15000006,
       "max": 20
@@ -388,11 +386,6 @@
           "amount": 2
         }
       ]
-    },
-    "upgradable": {
-      "next": 0,
-      "costs": []
-    },
-    "maintenance": null
+    }
   }
 ]

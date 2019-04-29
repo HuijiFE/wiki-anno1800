@@ -19,10 +19,13 @@ namespace Anno1800.Jsonify {
 
     [Adapter]
     class ResidenceBuilding7 : Building {
-      public Residence7 residnece7;
+      public UpgradableData? upgradable;
+      public Residence7? residnece7;
 
       public ResidenceBuilding7(XElement asset, Dictionary<string, XElement> map) : base(asset, map) {
-        this.residnece7 = asset.Object<Residence7>("Values/Residence7");
+        var values = asset.Element("Values");
+        this.upgradable = values.Object<UpgradableData>("Upgradable");
+        this.residnece7 = values.Object<Residence7>("Residence7");
       }
     }
   }
