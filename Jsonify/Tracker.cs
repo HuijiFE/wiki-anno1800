@@ -14,14 +14,14 @@ namespace Anno1800.Jsonify {
       Dictionary<string, string> localization,
       string output
       ) {
-      Dictionary<string, List<string>> assetsReport = dataDict
+      SortedDictionary<string, List<string>> assetsReport = new SortedDictionary<string, List<string>>(dataDict
         .ToDictionary(
-        kvp => kvp.Key,
-        kvp => kvp
-          .Value
-          .Select(data => localization.ContainsKey(data.guid.ToString()) ? localization[data.guid.ToString()] : data.guid.ToString())
-          .ToList()
-        );
+          kvp => kvp.Key,
+          kvp => kvp
+            .Value
+            .Select(data => localization.ContainsKey(data.guid.ToString()) ? localization[data.guid.ToString()] : data.guid.ToString())
+            .ToList()
+          ));
 
       var paths = new List<string> {
         "Cost",
@@ -68,7 +68,7 @@ namespace Anno1800.Jsonify {
             : new List<string>();
         });
 
-      var report = new Dictionary<string, Dictionary<string, List<string>>> {
+      var report = new Dictionary<string, object> {
         { "xml", xmlReport },
         { "assets", assetsReport }
       };
