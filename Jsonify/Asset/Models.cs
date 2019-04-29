@@ -42,11 +42,13 @@ namespace Anno1800.Jsonify {
       public int product;
       public int amount;
       public int inactiveAmount;
+      public double shutdownThreshold;
 
       public MaintenancePair(XElement element) : base(element) {
         this.product = element.Int("Product");
         this.amount = element.Int("Amount");
         this.inactiveAmount = element.Int("InactiveAmount");
+        this.shutdownThreshold = element.Double("ShutdownThreshold");
       }
     }
 

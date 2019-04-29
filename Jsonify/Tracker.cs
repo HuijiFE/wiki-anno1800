@@ -23,20 +23,23 @@ namespace Anno1800.Jsonify {
       var paths = new List<string> {
         "Cost",
         "Cost/Costs/Item",
+        "Maintenance",
+        "Maintenance/Maintenances/Item",
         "Building",
-        "Electric",
-        "Pausable",
+        "Upgradable",
+        "Upgradable/UpgradeCost/Item",
         "Culture",
         "Culture/SetPages/Item",
         "Culture/SetPages/Item/Page/Item",
+        "ModuleOwner",
+        "Electric",
+        "Pausable",
         "Constructable",
-        "Upgradable",
-        "Upgradable/UpgradeCost/Item",
         "Residence7",
         "Residence7/ResidenceStorage",
         "Factory7",
         "FactoryBase",
-        "ModuleOwner",
+        "FreeAreaProductivity",
       };
 
       Dictionary<string, List<string>> xmlReport = paths.ToDictionary(

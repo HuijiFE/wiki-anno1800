@@ -10,6 +10,17 @@
       "Ingredient",
       "Amount"
     ],
+    "Maintenance": [
+      "Maintenances",
+      "ConsumerPriority",
+      "ConsumerPriorityAlarmed"
+    ],
+    "Maintenance/Maintenances/Item": [
+      "Product",
+      "Amount",
+      "InactiveAmount",
+      "ShutdownThreshold"
+    ],
     "Building": [
       "BuildingType",
       "SkipUnlockMessage",
@@ -29,13 +40,14 @@
       "TakeOverTransformation",
       "HasBorderRectOutline"
     ],
-    "Electric": [
-      "BoostedByElectricity",
-      "MandatoryElectricity",
-      "ProductivityBoost"
+    "Upgradable": [
+      "NextGUID",
+      "UpgradeCost",
+      "CurrentTier"
     ],
-    "Pausable": [
-      "CanPauseManually"
+    "Upgradable/UpgradeCost/Item": [
+      "Ingredient",
+      "Amount"
     ],
     "Culture": [
       "CultureType",
@@ -51,18 +63,25 @@
       "Page"
     ],
     "Culture/SetPages/Item/Page/Item": [],
+    "ModuleOwner": [
+      "ModuleLimit",
+      "ConstructionOptions",
+      "ModuleBuildRadius",
+      "HardFarmsConfig",
+      "ImplicitProductivityModules",
+      "ModulesRequiredForFullProductivity"
+    ],
+    "Electric": [
+      "BoostedByElectricity",
+      "MandatoryElectricity",
+      "ProductivityBoost"
+    ],
+    "Pausable": [
+      "CanPauseManually"
+    ],
     "Constructable": [
       "DestructionCategory",
       "ConstructionMode"
-    ],
-    "Upgradable": [
-      "NextGUID",
-      "UpgradeCost",
-      "CurrentTier"
-    ],
-    "Upgradable/UpgradeCost/Item": [
-      "Ingredient",
-      "Amount"
     ],
     "Residence7": [
       "ResidenceStorage",
@@ -84,13 +103,15 @@
       "ProductivityTimeMultiplier",
       "ProductivityPoints"
     ],
-    "ModuleOwner": [
-      "ModuleLimit",
-      "ConstructionOptions",
-      "ModuleBuildRadius",
-      "HardFarmsConfig",
-      "ImplicitProductivityModules",
-      "ModulesRequiredForFullProductivity"
+    "FreeAreaProductivity": [
+      "InfluenceRadius",
+      "NeededAreaPercent",
+      "WorkerUnit",
+      "MaxWorkerAmount",
+      "WorkerPause",
+      "WayTime",
+      "FreeAreaType",
+      "CutTree"
     ]
   },
   "assets": {
