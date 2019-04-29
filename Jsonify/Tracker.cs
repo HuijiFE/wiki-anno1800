@@ -17,7 +17,10 @@ namespace Anno1800.Jsonify {
       Dictionary<string, List<string>> assetsReport = dataDict
         .ToDictionary(
         kvp => kvp.Key,
-        kvp => kvp.Value.Select(data => localization[data.guid.ToString()]).ToList()
+        kvp => kvp
+          .Value
+          .Select(data => localization.ContainsKey(data.guid.ToString()) ? localization[data.guid.ToString()] : data.guid.ToString())
+          .ToList()
         );
 
       var paths = new List<string> {
@@ -41,6 +44,8 @@ namespace Anno1800.Jsonify {
         "FactoryBase",
         "FreeAreaProductivity",
         "Slot",
+        "Bridge",
+        "Street",
       };
 
       Dictionary<string, List<string>> xmlReport = paths.ToDictionary(

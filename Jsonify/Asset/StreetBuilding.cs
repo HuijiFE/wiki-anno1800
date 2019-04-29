@@ -8,8 +8,8 @@ using System.Xml.Linq;
 namespace Anno1800.Jsonify {
   partial class Asset {
     [Adapter]
-    class Farmfield : Building {
-      public Farmfield(XElement asset, Dictionary<string, XElement> map) : base(asset, map) {
+    class StreetBuilding : Street {
+      public StreetBuilding(XElement asset, Dictionary<string, XElement> map) : base(asset, map) {
         var values = asset.Element("Values");
       }
     }

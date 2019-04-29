@@ -26,8 +26,8 @@ namespace Anno1800.Jsonify {
       }
       if (Directory.Exists(output)) {
         Directory.Delete(output, true);
-        // sleep 1 second
-        Thread.Sleep(1000);
+        // sleep 2 seconds
+        Thread.Sleep(2000);
         Directory.CreateDirectory(output);
       }
 
