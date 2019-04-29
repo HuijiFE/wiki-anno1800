@@ -153,6 +153,31 @@
       "IsRailway",
       "IsRenderedExternally",
       "CheckComplexID"
+    ],
+    "Warehouse": [
+      "WarehouseStorage",
+      "StorageType"
+    ],
+    "Warehouse/WarehouseStorage": [
+      "StorageMax"
+    ],
+    "LogisticNode": [
+      "TransporterCountMax",
+      "TransporterAsset",
+      "NeedsTransporterQueue",
+      "REMOVE_THIS_LATER_FeedbackUnitTier",
+      "PathLayers",
+      "OilPumpsNeeded",
+      "QueueConfiguration"
+    ],
+    "LogisticNode/QueueConfiguration": [
+      "ProcessingQueueParallelCount"
+    ],
+    "StorageBase": [
+      "StoredProducts"
+    ],
+    "StorageBase/StoredProducts/Item": [
+      "Product"
     ]
   },
   "assets": {
@@ -265,6 +290,43 @@
       "狩猎小屋",
       "伐木工人棚屋",
       "爱德华的木材堆置场"
+    ],
+    "HarborDepot": [
+      "库房",
+      "煤矿仓库",
+      "储油槽",
+      "库房",
+      "储油槽"
+    ],
+    "HarborWarehouse7": [
+      "小型贸易站",
+      "中型贸易站",
+      "大型贸易站",
+      "[AssetData(1010517) Text]",
+      "中型皇家贸易站",
+      "大型皇家贸易站",
+      "小型贸易站",
+      "中型贸易站",
+      "大型贸易站",
+      "[AssetData(1010517) Text]",
+      "中型皇家贸易站",
+      "大型皇家贸易站",
+      "亚奇博德·布莱克的港口",
+      "安·哈洛的港口",
+      "尚·拉福图的港口",
+      "伊莎贝尔·萨曼托的港口",
+      "伊莱·布利克沃斯的港口",
+      "卡希纳女士的港口",
+      "桨轮蒸汽船办公室"
+    ],
+    "HarborWarehouseStrategic": [
+      "煤矿港口",
+      "大型原油港口",
+      "中型原油港口",
+      "小型原油港口",
+      "小型原油港口",
+      "中型原油港口",
+      "大型原油港口"
     ],
     "HeavyFactoryBuilding": [
       "炼钢厂",
@@ -525,6 +587,14 @@
       "码头",
       "码头",
       "码头"
+    ],
+    "Warehouse": [
+      "小型仓库",
+      "中型仓库",
+      "大型仓库",
+      "小型仓库",
+      "中型仓库",
+      "大型仓库"
     ]
   }
 }

@@ -46,6 +46,12 @@ namespace Anno1800.Jsonify {
         "Slot",
         "Bridge",
         "Street",
+        "Warehouse",
+        "Warehouse/WarehouseStorage",
+        "LogisticNode",
+        "LogisticNode/QueueConfiguration",
+        "StorageBase",
+        "StorageBase/StoredProducts/Item",
       };
 
       Dictionary<string, List<string>> xmlReport = paths.ToDictionary(
