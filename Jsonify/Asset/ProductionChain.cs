@@ -14,9 +14,9 @@ namespace Anno1800.Jsonify {
       public int building;
       public List<ProductionChainNode>? nodes;
 
-      public ProductionChainNode(XElement elem) : base(elem) {
-        this.building = elem.Int("Building");
-        this.nodes = elem
+      public ProductionChainNode(XElement element) : base(element) {
+        this.building = element.Int("Building");
+        this.nodes = element
           .Elements()
           .ToList()
           .Find(e => tiers.Contains(e.Name.ToString()))

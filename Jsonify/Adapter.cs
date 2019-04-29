@@ -7,21 +7,21 @@ using System.Xml.Linq;
 
 namespace Anno1800.Jsonify {
   abstract class BaseAssetObject {
-    public BaseAssetObject(XElement elem) {
+    public BaseAssetObject(XElement element) {
     }
   }
 
   static class Adapter {
     public static XElement? ElementByPath(this XElement wrapper, string path) {
       var pathNodes = path.Split('/');
-      XElement? elem = wrapper;
+      XElement? element = wrapper;
       foreach (var name in pathNodes) {
-        if (elem == null) {
+        if (element == null) {
           break;
         }
-        elem = elem.Element(name);
+        element = element.Element(name);
       }
-      return elem;
+      return element;
     }
 
     public static string? String(this XElement wrapper, string path) {
@@ -53,9 +53,9 @@ namespace Anno1800.Jsonify {
     }
 
     public static T? Object<T>(this XElement wrapper, string path) where T : BaseAssetObject {
-      var elem = wrapper.ElementByPath(path);
-      if (elem != null) {
-        return (T)Activator.CreateInstance(typeof(T), elem);
+      var element = wrapper.ElementByPath(path);
+      if (element != null) {
+        return (T)Activator.CreateInstance(typeof(T), element);
       }
       return null;
     }

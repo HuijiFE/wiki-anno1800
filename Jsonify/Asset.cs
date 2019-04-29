@@ -40,13 +40,13 @@ namespace Anno1800.Jsonify {
       var dict = new Dictionary<string, List<XElement>>();
 
       Action<XElement> walk = null;
-      walk = (elem) => {
-        if (elem.Name == "Asset") {
-          var guid = elem.String("Values/Standard/GUID") ?? "0";
-          map.Add(guid, elem);
+      walk = (element) => {
+        if (element.Name == "Asset") {
+          var guid = element.String("Values/Standard/GUID") ?? "0";
+          map.Add(guid, element);
           return;
         }
-        foreach (var child in elem.Elements()) {
+        foreach (var child in element.Elements()) {
           walk(child);
         }
       };
@@ -85,12 +85,12 @@ namespace Anno1800.Jsonify {
       var map = new Dictionary<string, XElement>();
 
       Action<XElement> walk = null;
-      walk = (elem) => {
-        if (elem.Name == "Template") {
-          map.Add(elem.String("Name") ?? "", elem);
+      walk = (element) => {
+        if (element.Name == "Template") {
+          map.Add(element.String("Name") ?? "", element);
           return;
         }
-        foreach (var child in elem.Elements()) {
+        foreach (var child in element.Elements()) {
           walk(child);
         }
       };

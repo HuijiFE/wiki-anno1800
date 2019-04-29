@@ -23,7 +23,8 @@ namespace Anno1800.Jsonify {
       if (!Directory.Exists(input)) {
         throw new DirectoryNotFoundException($"Directory input '${input}' no found.");
       }
-      if (!Directory.Exists(output)) {
+      if (Directory.Exists(output)) {
+        Directory.Delete(output, true);
         Directory.CreateDirectory(output);
       }
 

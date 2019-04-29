@@ -17,14 +17,14 @@ namespace Anno1800.Jsonify {
       public int full;
       public int no;
 
-      public PopulationInput(XElement elem) : base(elem) {
-        this.product = elem.Int("Product");
-        this.amount = elem.Double("Amount");
-        this.supply = elem.Int("SupplyWeight");
-        this.happiness = elem.Int("HappinessValue");
-        this.mouney = elem.Int("MoneyValue");
-        this.full = elem.Int("FullWeightPopulationCount");
-        this.no = elem.Int("NoWeightPopulationCount");
+      public PopulationInput(XElement element) : base(element) {
+        this.product = element.Int("Product");
+        this.amount = element.Double("Amount");
+        this.supply = element.Int("SupplyWeight");
+        this.happiness = element.Int("HappinessValue");
+        this.mouney = element.Int("MoneyValue");
+        this.full = element.Int("FullWeightPopulationCount");
+        this.no = element.Int("NoWeightPopulationCount");
       }
     }
 
@@ -32,9 +32,9 @@ namespace Anno1800.Jsonify {
       public int product;
       public int amount;
 
-      public PopulationOutput(XElement elem) : base(elem) {
-        this.product = elem.Int("Product");
-        this.amount = elem.Int("Amount");
+      public PopulationOutput(XElement element) : base(element) {
+        this.product = element.Int("Product");
+        this.amount = element.Int("Amount");
       }
     }
 
@@ -45,12 +45,12 @@ namespace Anno1800.Jsonify {
       public int happy;
       public int euphoric;
 
-      public MoodText(XElement elem) : base(elem) {
-        this.angry = elem.Int("Angry/Text");
-        this.unhappy = elem.Int("Unhappy/Text");
-        this.neutral = elem.Int("Neutral/Text");
-        this.happy = elem.Int("Happy/Text");
-        this.euphoric = elem.Int("Euphoric/Text");
+      public MoodText(XElement element) : base(element) {
+        this.angry = element.Int("Angry/Text");
+        this.unhappy = element.Int("Unhappy/Text");
+        this.neutral = element.Int("Neutral/Text");
+        this.happy = element.Int("Happy/Text");
+        this.euphoric = element.Int("Euphoric/Text");
       }
     }
 
@@ -60,14 +60,14 @@ namespace Anno1800.Jsonify {
       public string? categoryIcon;
       public MoodText? moods;
 
-      public Population7(XElement elem) : base(elem) {
-        this.inputs = elem
+      public Population7(XElement element) : base(element) {
+        this.inputs = element
           .Element("PopulationInputs")
           ?.Elements()
           .Select(item => new PopulationInput(item))
           .ToList()
           ?? new List<PopulationInput>();
-        this.outputs = elem
+        this.outputs = element
           .Element("PopulationOutputs")
           ?.Elements()
           .Where(item => item.Element("Amount") != null)
@@ -75,8 +75,8 @@ namespace Anno1800.Jsonify {
           .ToList()
           ?? new List<PopulationOutput>();
 
-        this.categoryIcon = elem.String("CategoryIcon");
-        this.moods = elem.Object<MoodText>("MoodText");
+        this.categoryIcon = element.String("CategoryIcon");
+        this.moods = element.Object<MoodText>("MoodText");
       }
     }
 

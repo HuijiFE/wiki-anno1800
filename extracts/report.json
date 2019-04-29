@@ -1,5 +1,74 @@
 {
   "xml": {
+    "Cost": [
+      "Costs",
+      "InfluenceCostType",
+      "InfluenceCostPoints",
+      "ItemsPerCost"
+    ],
+    "Cost/Costs/Item": [
+      "Ingredient",
+      "Amount"
+    ],
+    "Building": [
+      "BuildingType",
+      "SkipUnlockMessage",
+      "BuildModeRandomRotation",
+      "AssociatedRegions",
+      "BuildingCategoryName",
+      "InfluencedVariationDirection",
+      "PickingAsset",
+      "InfluencedByNeighbors",
+      "BuildingBlockPool",
+      "TerrainType",
+      "Destructable",
+      "Movable",
+      "DeactivateHideWhenClippingIntoCamera",
+      "DestructionConfirmation",
+      "SnapRadius",
+      "TakeOverTransformation",
+      "HasBorderRectOutline"
+    ],
+    "Electric": [
+      "BoostedByElectricity",
+      "MandatoryElectricity",
+      "ProductivityBoost"
+    ],
+    "Pausable": [
+      "CanPauseManually"
+    ],
+    "Culture": [
+      "CultureType",
+      "Attractiveness",
+      "HasPollution",
+      "CultureSpawnGroup",
+      "SetPages",
+      "UndiscoveredSet",
+      "ModuleListHeader",
+      "OpenSetPages"
+    ],
+    "Constructable": [
+      "DestructionCategory",
+      "ConstructionMode"
+    ],
+    "Upgradable": [
+      "NextGUID",
+      "UpgradeCost",
+      "CurrentTier"
+    ],
+    "Upgradable/UpgradeCost/Item": [
+      "Ingredient",
+      "Amount"
+    ],
+    "Residence7": [
+      "ResidenceStorage",
+      "PopulationLevel7",
+      "ResidentMax",
+      "InfluenceGeneration"
+    ],
+    "Residence7/ResidenceStorage": [
+      "InputStorageMax"
+    ],
     "Factory7": [
       "NeededFertility"
     ],
@@ -10,11 +79,6 @@
       "WarehouseTransporterAsset",
       "ProductivityTimeMultiplier",
       "ProductivityPoints"
-    ],
-    "Electric": [
-      "BoostedByElectricity",
-      "MandatoryElectricity",
-      "ProductivityBoost"
     ]
   },
   "assets": {

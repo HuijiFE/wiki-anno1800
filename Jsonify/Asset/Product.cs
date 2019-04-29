@@ -17,14 +17,14 @@ namespace Anno1800.Jsonify {
       public int basePrice;
       public int civLevel;
 
-      public ProductData(XElement elem) : base(elem) {
-        this.negative = elem.Boolean("CanBeNegative");
-        this.category = elem.Int("ProductCategory");
-        this.isWorkforce = elem.Boolean("IsWorkforce");
-        this.isAbstract = elem.Boolean("IsAbstract");
-        this.regions = elem.Element("AssociatedRegion")?.Value.Split(";").ToList();
-        this.basePrice = elem.Int("BasePrice");
-        this.civLevel = elem.Int("CivLevel");
+      public ProductData(XElement element) : base(element) {
+        this.negative = element.Boolean("CanBeNegative");
+        this.category = element.Int("ProductCategory");
+        this.isWorkforce = element.Boolean("IsWorkforce");
+        this.isAbstract = element.Boolean("IsAbstract");
+        this.regions = element.Element("AssociatedRegion")?.Value.Split(";").ToList();
+        this.basePrice = element.Int("BasePrice");
+        this.civLevel = element.Int("CivLevel");
       }
     }
 

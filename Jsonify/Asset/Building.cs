@@ -13,11 +13,11 @@ namespace Anno1800.Jsonify {
       public string? region;
       public int? category;
 
-      public BuildingData(XElement elem) : base(elem) {
-        this.type = elem.String("BuildingType");
-        this.terrian = elem.String("TerrainType");
-        this.region = elem.String("AssociatedRegions");
-        this.category = elem.Int("BuildingCategoryName");
+      public BuildingData(XElement element) : base(element) {
+        this.type = element.String("BuildingType");
+        this.terrian = element.String("TerrainType");
+        this.region = element.String("AssociatedRegions");
+        this.category = element.Int("BuildingCategoryName");
       }
     }
 
@@ -25,9 +25,9 @@ namespace Anno1800.Jsonify {
       public int next;
       public List<CostPair> costs;
 
-      public UpgradableData(XElement elem) : base(elem) {
-        this.next = elem.Int("NextGUID");
-        this.costs = elem.Element("UpgradeCost")
+      public UpgradableData(XElement element) : base(element) {
+        this.next = element.Int("NextGUID");
+        this.costs = element.Element("UpgradeCost")
           .Elements()
           .Select(item => new CostPair(item))
           .ToList()
@@ -48,6 +48,21 @@ namespace Anno1800.Jsonify {
         this.cost = values.Object<CostData>("Cost");
         this.upgradable = values.Object<UpgradableData>("Upgradable");
         this.maintenance = values.Object<MaintenanceData>("Maintenance");
+      }
+    }
+
+    // ================================
+    // Culture
+
+    class CultureData : BaseAssetObject {
+      public string type;
+      public int attractiveness;
+      public bool hasPollution;
+
+      public CultureData(XElement element) : base(element) {
+        this.type = element.String("CultureType") ?? "";
+        this.attractiveness = element.Int("Attractiveness");
+        this.hasPollution = element.Boolean("HasPollution");
       }
     }
 

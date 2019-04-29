@@ -21,9 +21,19 @@ namespace Anno1800.Jsonify {
         );
 
       var paths = new List<string> {
+        "Cost",
+        "Cost/Costs/Item",
+        "Building",
+        "Electric",
+        "Pausable",
+        "Culture",
+        "Constructable",
+        "Upgradable",
+        "Upgradable/UpgradeCost/Item",
+        "Residence7",
+        "Residence7/ResidenceStorage",
         "Factory7",
         "FactoryBase",
-        "Electric"
       };
 
       Dictionary<string, List<string>> xmlReport = paths.ToDictionary(
@@ -38,7 +48,7 @@ namespace Anno1800.Jsonify {
             elements = elements.Select(el => el.Elements()).Aggregate((agg, cur) => agg.Concat(cur));
           }
           return elements
-            .Select(el => el.Elements().Select(el => el.Name.ToString()))
+            .Select(el => el.Elements().Where(el => el.Name != "VectorElement").Select(el => el.Name.ToString()))
             .Aggregate((agg, cur) => agg.Concat(cur))
             .ToHashSet()
             .ToList();

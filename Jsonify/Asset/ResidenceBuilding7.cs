@@ -11,9 +11,9 @@ namespace Anno1800.Jsonify {
       public int population;
       public int max;
 
-      public Residence7(XElement elem) : base(elem) {
-        this.population = elem.Int("PopulationLevel7");
-        this.max = elem.Int("ResidentMax");
+      public Residence7(XElement element) : base(element) {
+        this.population = element.Int("PopulationLevel7");
+        this.max = element.Int("ResidentMax");
       }
     }
 
