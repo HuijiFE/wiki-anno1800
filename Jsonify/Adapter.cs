@@ -52,6 +52,18 @@ namespace Anno1800.Jsonify {
       return false;
     }
 
+    /// <summary>
+    /// Convert a number text to css hex color value.
+    /// </summary>
+    public static string Color(this XElement wrapper, string path) {
+      var content = wrapper.String(path);
+      if (content != null) {
+        var value = int.Parse(content);
+        return value.ToString("x8").Substring(2, 6);
+      }
+      return "ffffff";
+    }
+
     public static T? Object<T>(this XElement wrapper, string path) where T : BaseAssetObject {
       var element = wrapper.ElementByPath(path);
       if (element != null) {
