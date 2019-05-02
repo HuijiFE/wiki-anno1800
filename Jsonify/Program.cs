@@ -24,25 +24,14 @@ namespace Anno1800.Jsonify {
       if (!Directory.Exists(input)) {
         throw new DirectoryNotFoundException($"Directory input '${input}' no found.");
       }
-      if (Directory.Exists(output)) {
-        var success = false;
-        var count = 0;
-        while (count < 3 && !success) {
-          try {
-            Directory.Delete(output, true);
-          } catch (Exception) {
-            count++;
-          } finally {
-            success = true;
-          }
-        }
+      if (!Directory.Exists(output)) {
         Directory.CreateDirectory(output);
       }
 
       Console.WriteLine($"input: {input}");
       Console.WriteLine($"output: {output}");
 
-      var (assetsMap, dataDict) = Asset.Convert(Path.Combine(input, "config/export/main/asset"), Path.Combine(output, "data"));
+      var (assetsMap, dataDict) = Asset.Convert(Path.Combine(input, "config/export/main/asset"), Path.Combine(output, "db"));
       var localDictMap = Localization.Convert(Path.Combine(input, "config/gui"), Path.Combine(output, "localization"));
       Tracker.Track(assetsMap, dataDict, localDictMap["chinese"], output);
     }
