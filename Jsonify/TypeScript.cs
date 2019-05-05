@@ -6,6 +6,10 @@ using System.Text;
 using Newtonsoft.Json;
 
 namespace Anno1800.Jsonify {
+
+  [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property)]
+  class NullableAttribute : Attribute { }
+
   class TypeScript {
     public static string GetTypeScriptTypeName(Type type) {
       if (type.IsGenericType) {
