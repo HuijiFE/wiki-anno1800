@@ -30,8 +30,16 @@ function ConvertDDSToPNG([string]$path) {
   & $texconv -r $r -o $o -ft png -y
 }
 
-foreach ($subdir in @("ui")) {
+$allSubdirs = @("ui")
+
+foreach ($subdir in $allSubdirs) {
   Get-ChildItem -Path ([IO.Path]::Combine($input, $subdir)) -Include "*.dds" -Recurse -File | ForEach-Object {
     ConvertDDSToPNG($_.FullName)
+  }
+}
+
+foreach ($subdir in $allSubdirs) {
+  Get-ChildItem -Path ([IO.Path]::Combine($output, $subdir)) -Include "*.PNG" -Recurse -File | ForEach-Object {
+    Rename-Item -Path $_.FullName -NewName $_.Name.Replace("_0.PNG", ".png")
   }
 }
