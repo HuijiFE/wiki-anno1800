@@ -52,7 +52,7 @@ namespace Anno1800.Jsonify {
       [Nullable]
       public CultureData? culture;
       [Nullable]
-      public ElectricData? electic;
+      public ElectricData? electric;
 
       public FactoryBuilding7(XElement asset, Dictionary<string, XElement> map) : base(asset, map) {
         var values = asset.Element("Values");
@@ -61,7 +61,7 @@ namespace Anno1800.Jsonify {
         this.neededFertility = values.Int("Factory7/NeededFertility");
         this.factory = values.Object<FactoryData>("FactoryBase");
         this.culture = values.Object<CultureData>("Culture");
-        this.electic = values.Object<ElectricData>("Electric");
+        this.electric = values.Object<ElectricData>("Electric");
       }
     }
   }

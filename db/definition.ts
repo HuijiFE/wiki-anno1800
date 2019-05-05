@@ -22,7 +22,7 @@ export interface FactoryBuilding7 extends Building {
   neededFertility: number;
   factory?: FactoryData;
   culture?: CultureData;
-  electic?: ElectricData;
+  electric?: ElectricData;
 }
 
 export interface FarmBuilding extends FactoryBuilding7 {
