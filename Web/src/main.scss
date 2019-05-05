@@ -1,0 +1,10 @@
+@import url('~normalize.css');
+@import '~cep.scss';
+
+@import './components/base/index.scss';
+
+$namespace: 'c';
+@import './components/all.scss';
+
+$namespace: 'v';
+@import './views/all.scss';

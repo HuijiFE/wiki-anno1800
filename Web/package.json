@@ -1,0 +1,45 @@
+{
+  "name": "@huiji-wiki/anno1800",
+  "version": "0.1.0",
+  "license": "MIT",
+  "scripts": {
+    "clean:dist": "rimraf dist",
+    "gen-files": "yarn ts scripts/gen-files",
+    "env": "echo VUE_APP_WEB_VERSION=$npm_package_version > .env.local",
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build --report --report-json",
+    "lint:scss": "stylelint src/**/*.scss",
+    "lint:ts": "vue-cli-service lint",
+    "lint": "yarn lint:scss && yarn lint:ts",
+    "ts": "ts-node -r tsconfig-paths/register -P ../scripts/tsconfig.json"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1",
+    "register-service-worker": "^1.6.2",
+    "vue": "^2.6.10",
+    "vue-class-component": "^7.0.2",
+    "vue-property-decorator": "^7.3.0",
+    "vue-router": "^3.0.2"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.7.0",
+    "@vue/cli-plugin-eslint": "^3.7.0",
+    "@vue/cli-plugin-typescript": "^3.7.0",
+    "@vue/cli-service": "^3.7.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.2.2",
+    "fibers": "^3.1.1",
+    "sass": "^1.20.1",
+    "sass-loader": "^7.1.0",
+    "typescript": "^3.4.1",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie <= 8",
+    "not op_mini all"
+  ]
+}
