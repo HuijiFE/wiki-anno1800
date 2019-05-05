@@ -42,6 +42,7 @@ namespace Anno1800.Jsonify {
     }
 
     class ParticipantRepresentationFeatureData : BaseAssetObject {
+      [Nullable]
       public CompanyLevelData? companyLevel;
       public List<string> colors;
 
@@ -58,6 +59,7 @@ namespace Anno1800.Jsonify {
 
     [Adapter]
     class ParticipantRepresentationFeature : Asset {
+      [Nullable]
       public ParticipantRepresentationFeatureData? participant;
 
       public ParticipantRepresentationFeature(XElement asset, Dictionary<string, XElement> map) : base(asset, map) {

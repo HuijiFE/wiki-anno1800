@@ -13,7 +13,7 @@ namespace Anno1800.Jsonify {
       public int category;
       public bool isWorkforce;
       public bool isAbstract;
-      public List<string>? regions;
+      public List<string> regions;
       public int basePrice;
       public int civLevel;
 
@@ -22,7 +22,7 @@ namespace Anno1800.Jsonify {
         this.category = element.Int("ProductCategory");
         this.isWorkforce = element.Boolean("IsWorkforce");
         this.isAbstract = element.Boolean("IsAbstract");
-        this.regions = element.Element("AssociatedRegion")?.Value.Split(";").ToList();
+        this.regions = element.Element("AssociatedRegion")?.Value.Split(";").ToList() ?? new List<string>();
         this.basePrice = element.Int("BasePrice");
         this.civLevel = element.Int("CivLevel");
       }
@@ -30,6 +30,7 @@ namespace Anno1800.Jsonify {
 
     [Adapter]
     class Product : Asset {
+      [Nullable]
       public ProductData? product;
 
       public Product(XElement asset, Dictionary<string, XElement> map) : base(asset, map) {

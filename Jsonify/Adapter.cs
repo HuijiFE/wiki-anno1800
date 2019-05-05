@@ -6,6 +6,12 @@ using System.Text;
 using System.Xml.Linq;
 
 namespace Anno1800.Jsonify {
+  [AttributeUsage(AttributeTargets.Class)]
+  class AdapterAttribute : Attribute { }
+
+  [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property)]
+  class NullableAttribute : Attribute { }
+
   abstract class BaseAssetObject {
     public BaseAssetObject(XElement element) {
     }

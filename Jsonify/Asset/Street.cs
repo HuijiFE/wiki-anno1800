@@ -18,6 +18,7 @@ namespace Anno1800.Jsonify {
 
     [Adapter]
     class Street : Building {
+      [Nullable]
       public StreetData? street;
 
       public Street(XElement asset, Dictionary<string, XElement> map) : base(asset, map) {

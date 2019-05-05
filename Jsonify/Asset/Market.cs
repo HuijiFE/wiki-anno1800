@@ -19,6 +19,7 @@ namespace Anno1800.Jsonify {
 
     [Adapter]
     class Market : Building {
+      [Nullable]
       public MarketData? market;
       public List<int> storedProducts;
 

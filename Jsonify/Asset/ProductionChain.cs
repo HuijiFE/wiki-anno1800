@@ -12,6 +12,7 @@ namespace Anno1800.Jsonify {
       static List<string> tiers = Enumerable.Range(1, 10).Select(i => $"Tier{i}").ToList();
 
       public int building;
+      [Nullable]
       public List<ProductionChainNode>? nodes;
 
       public ProductionChainNode(XElement element) : base(element) {
@@ -28,6 +29,7 @@ namespace Anno1800.Jsonify {
 
     [Adapter]
     class ProductionChain : Asset {
+      [Nullable]
       public ProductionChainNode? chain;
 
       public ProductionChain(XElement asset, Dictionary<string, XElement> map) : base(asset, map) {

@@ -10,6 +10,7 @@ namespace Anno1800.Jsonify {
 
     [Adapter]
     class FarmBuilding : FactoryBuilding7 {
+      [Nullable]
       public ModuleOwnerData? moduleOwner;
 
       public FarmBuilding(XElement asset, Dictionary<string, XElement> map) : base(asset, map) {

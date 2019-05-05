@@ -217,6 +217,12 @@ namespace Anno1800.Jsonify {
         Console.WriteLine(dest);
       }
 
+      {
+        var dest = Path.Combine(output, "definition.ts");
+        IO.Save(TypeScript.GetAll(typeof(Asset), typeof(BaseAssetObject)), dest);
+        Console.WriteLine(dest);
+      }
+
       var assetsTotal = assetsDict.Values.Aggregate(0, (total, list) => total += list.Count);
       var dataTotal = dataDict.Values.Aggregate(0, (total, list) => total += list.Count);
       Console.WriteLine($"Assets: {assetsTotal}, {dataTotal} extracted.");

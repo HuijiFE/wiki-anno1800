@@ -19,7 +19,9 @@ namespace Anno1800.Jsonify {
 
     [Adapter]
     class ResidenceBuilding7 : Building {
+      [Nullable]
       public UpgradableData? upgradable;
+      [Nullable]
       public Residence7? residnece7;
 
       public ResidenceBuilding7(XElement asset, Dictionary<string, XElement> map) : base(asset, map) {

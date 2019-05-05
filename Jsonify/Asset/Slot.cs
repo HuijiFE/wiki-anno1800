@@ -24,6 +24,7 @@ namespace Anno1800.Jsonify {
 
     [Adapter]
     class Slot : Building {
+      [Nullable]
       public SlotData? slot;
 
       public Slot(XElement asset, Dictionary<string, XElement> map) : base(asset, map) {

@@ -58,6 +58,7 @@ namespace Anno1800.Jsonify {
       public List<PopulationInput> inputs;
       public List<PopulationOutput> outputs;
       public string? categoryIcon;
+      [Nullable]
       public MoodText? moods;
 
       public Population7(XElement element) : base(element) {
@@ -82,6 +83,7 @@ namespace Anno1800.Jsonify {
 
     [Adapter]
     class PopulationLevel7 : Asset {
+      [Nullable]
       public Population7? population7;
 
       public PopulationLevel7(XElement asset, Dictionary<string, XElement> map) : base(asset, map) {

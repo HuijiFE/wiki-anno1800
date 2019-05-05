@@ -44,10 +44,14 @@ namespace Anno1800.Jsonify {
 
     [Adapter]
     class FactoryBuilding7 : Building {
+      [Nullable]
       public MaintenanceData? maintenance;
       public int neededFertility;
+      [Nullable]
       public FactoryData? factory;
+      [Nullable]
       public CultureData? culture;
+      [Nullable]
       public ElectricData? electic;
 
       public FactoryBuilding7(XElement asset, Dictionary<string, XElement> map) : base(asset, map) {

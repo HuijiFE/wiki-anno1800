@@ -18,6 +18,7 @@ namespace Anno1800.Jsonify {
 
     [Adapter]
     class Monument : FactoryBuilding7 {
+      [Nullable]
       public MonumentData? monument;
 
       public Monument(XElement asset, Dictionary<string, XElement> map) : base(asset, map) {

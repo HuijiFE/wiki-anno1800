@@ -32,6 +32,7 @@ namespace Anno1800.Jsonify {
 
     [Adapter]
     class FreeAreaBuilding : FactoryBuilding7 {
+      [Nullable]
       public FreeAreaProductivity? freeAreaProductivity;
 
       public FreeAreaBuilding(XElement asset, Dictionary<string, XElement> map) : base(asset, map) {

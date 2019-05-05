@@ -22,8 +22,10 @@ namespace Anno1800.Jsonify {
     }
 
     class Building : Asset {
-      public BuildingData? building;
-      public CostData? cost;
+      [Nullable]
+      public BuildingData building;
+      [Nullable]
+      public CostData cost;
 
       public Building(XElement asset, Dictionary<string, XElement> map) : base(asset, map) {
         var values = asset.Element("Values");

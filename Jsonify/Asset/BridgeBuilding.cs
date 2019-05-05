@@ -20,7 +20,8 @@ namespace Anno1800.Jsonify {
 
     [Adapter]
     class BridgeBuilding : Building {
-      public BridgeData? bridge;
+      [Nullable]
+      public BridgeData bridge;
 
       public BridgeBuilding(XElement asset, Dictionary<string, XElement> map) : base(asset, map) {
         var values = asset.Element("Values");
