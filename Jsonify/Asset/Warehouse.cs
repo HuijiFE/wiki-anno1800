@@ -39,6 +39,13 @@ namespace Anno1800.Jsonify {
 
     [Adapter]
     class HarborWarehouse7 : Warehouse {
+      [Nullable]
+      [Element("Upgradable")]
+      public UpgradableData? upgradable;
+      [Nullable]
+      [Element("Attacker")]
+      public AttackerData attacker;
+
       public HarborWarehouse7(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { }
     }
 

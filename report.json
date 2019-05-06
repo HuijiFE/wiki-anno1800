@@ -26,6 +26,49 @@
       "ArmorType",
       "DisableGettingAutoAttacked"
     ],
+    "Attacker": [
+      "AttackRange",
+      "LineOfSightRange",
+      "ReloadTime",
+      "ProjectileAsset",
+      "BaseDamage",
+      "Turrets",
+      "AccuracyBase",
+      "AccuracyIncreaseOverDistance",
+      "MuzzleEffectAssets",
+      "EmitProjectileTimeAfterStartAnimation",
+      "TargetAngleVariation",
+      "ShootingTracking",
+      "TurretExplosionEffectAsset",
+      "AccuracyByDistance",
+      "ProjectileCount",
+      "AccuracySpeedDecay",
+      "FullVolleyTimeMin",
+      "FullVolleyTimeMax",
+      "VolleyMaxPerBulletRandomOffset",
+      "AttackRangeApproachPercentage",
+      "RememberTargetOnNewCommand",
+      "AttackType"
+    ],
+    "Attacker/AccuracyByDistance/Item": [
+      "AccuracyByDistancePair"
+    ],
+    "Attacker/AccuracyByDistance/Item/AccuracyByDistancePair": [],
+    "Projectile": [
+      "ProjectileType",
+      "ShotHeight",
+      "ProjectileSpeed",
+      "Effectivities",
+      "ShotAngle",
+      "TargetWhiteList",
+      "DamageType",
+      "StatusEffects"
+    ],
+    "ProjectileIncident": [
+      "CausedIncident",
+      "CausedIncidentBuff",
+      "CausedIncidentDuration"
+    ],
     "Cost": [
       "Costs",
       "InfluenceCostType",
@@ -251,6 +294,10 @@
       "PlazzaSize",
       "OrnamentIconInfotip"
     ],
+    "Buff": [
+      "AddedInfolayer",
+      "PossibleFluffTexts"
+    ],
     "Item": [],
     "ItemAction": [
       "ActionTarget",
@@ -401,11 +448,7 @@
       "MoralePowerUpgrade",
       "DamageReceiveFactor"
     ],
-    "ProjectileUpgrade": [],
-    "Buff": [
-      "AddedInfolayer",
-      "PossibleFluffTexts"
-    ]
+    "ProjectileUpgrade": []
   },
   "assets": {
     "BridgeBuilding": [
@@ -536,6 +579,18 @@
       "狩猎小屋",
       "伐木工人棚屋",
       "爱德华的木材堆置场"
+    ],
+    "HarborBuildingAttacker": [
+      "架枪",
+      "炮塔",
+      "大贝蒂",
+      "架枪",
+      "炮塔",
+      "大贝蒂",
+      "机枪",
+      "炮塔",
+      "大贝蒂",
+      "炮塔"
     ],
     "HarborDepot": [
       "库房",

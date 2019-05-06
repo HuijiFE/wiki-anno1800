@@ -44,7 +44,7 @@ namespace Anno1800.Jsonify {
 
       public UpgradableData(XElement element) : base(element) {
         this.costs = element.Element("UpgradeCost")
-          .Elements()
+          ?.Elements()
           .Select(item => new CostPair(item))
           .ToList()
           ?? new List<CostPair>();

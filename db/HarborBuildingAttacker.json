@@ -1,0 +1,962 @@
+[
+  {
+    "guid": 1010522,
+    "name": "harbor_04 (Tower 01, Puckle Gun)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_defense_tower_pucklegun.png",
+    "description": 3063,
+    "attacker": {
+      "type": "",
+      "range": 72,
+      "attackRangeApproachPercentage": 0.0,
+      "lineOfSightRange": 72,
+      "reloadTime": 0,
+      "projectile": 102217,
+      "baseDamage": 23,
+      "accuracyBase": 21.0,
+      "accuracyIncreaseOverDistance": 20,
+      "accuracySpeedDecay": 0,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 360,
+      "shootingTracking": "TurretFixed",
+      "projectileCount": 1,
+      "turrets": [
+        360
+      ]
+    },
+    "maintenance": {
+      "maintenances": [
+        {
+          "product": 1010017,
+          "amount": 10,
+          "inactiveAmount": 5,
+          "shutdownThreshold": 0.0
+        }
+      ],
+      "consumerPriority": 1
+    },
+    "culture": {
+      "type": "Military",
+      "attractiveness": 0,
+      "hasPollution": false,
+      "setPages": [],
+      "openSetPages": 0
+    },
+    "attackable": {
+      "maximumHitPoints": 3200,
+      "hasRuinState": true,
+      "selfHealPerHealTick": 5.0,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 50,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 2.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 0,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "building": {
+      "type": "",
+      "terrian": "Water",
+      "region": "Moderate",
+      "category": 11150
+    },
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010017,
+          "amount": 2000
+        },
+        {
+          "ingredient": 1010196,
+          "amount": 10
+        },
+        {
+          "ingredient": 1010205,
+          "amount": 10
+        },
+        {
+          "ingredient": 1010218,
+          "amount": 0
+        },
+        {
+          "ingredient": 1010207,
+          "amount": 0
+        },
+        {
+          "ingredient": 1010202,
+          "amount": 0
+        },
+        {
+          "ingredient": 1010221,
+          "amount": 5
+        }
+      ]
+    }
+  },
+  {
+    "guid": 1010523,
+    "name": "harbor_05 (Tower 02, Cannon Tower)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_defense_tower_cannon.png",
+    "description": 3062,
+    "attacker": {
+      "type": "",
+      "range": 92,
+      "attackRangeApproachPercentage": 0.0,
+      "lineOfSightRange": 92,
+      "reloadTime": 50,
+      "projectile": 101974,
+      "baseDamage": 150,
+      "accuracyBase": 1.0,
+      "accuracyIncreaseOverDistance": 100,
+      "accuracySpeedDecay": 0,
+      "emitProjectileTimeAfterStartAnimation": 0.3,
+      "targetAngleVariation": 360,
+      "shootingTracking": "TurretFixed",
+      "projectileCount": 1,
+      "turrets": [
+        360
+      ]
+    },
+    "maintenance": {
+      "maintenances": [
+        {
+          "product": 1010017,
+          "amount": 30,
+          "inactiveAmount": 15,
+          "shutdownThreshold": 0.0
+        }
+      ],
+      "consumerPriority": 1
+    },
+    "culture": {
+      "type": "Military",
+      "attractiveness": 0,
+      "hasPollution": false,
+      "setPages": [],
+      "openSetPages": 0
+    },
+    "attackable": {
+      "maximumHitPoints": 4800,
+      "hasRuinState": true,
+      "selfHealPerHealTick": 5.0,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 50,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 3.5,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 0,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "building": {
+      "type": "",
+      "terrian": "Water",
+      "region": "Moderate",
+      "category": 11150
+    },
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010017,
+          "amount": 4000
+        },
+        {
+          "ingredient": 1010196,
+          "amount": 10
+        },
+        {
+          "ingredient": 1010205,
+          "amount": 10
+        },
+        {
+          "ingredient": 1010218,
+          "amount": 8
+        },
+        {
+          "ingredient": 1010207,
+          "amount": 0
+        },
+        {
+          "ingredient": 1010202,
+          "amount": 0
+        },
+        {
+          "ingredient": 1010221,
+          "amount": 10
+        }
+      ]
+    }
+  },
+  {
+    "guid": 1010524,
+    "name": "harbor_06 (Tower 03, Monster Gun)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_defense_tower_monstergun.png",
+    "description": 3064,
+    "attacker": {
+      "type": "",
+      "range": 108,
+      "attackRangeApproachPercentage": 0.0,
+      "lineOfSightRange": 108,
+      "reloadTime": 150,
+      "projectile": 101955,
+      "baseDamage": 850,
+      "accuracyBase": 1.0,
+      "accuracyIncreaseOverDistance": 100,
+      "accuracySpeedDecay": 0,
+      "emitProjectileTimeAfterStartAnimation": 0.35,
+      "targetAngleVariation": 360,
+      "shootingTracking": "TurretFixed",
+      "projectileCount": 1,
+      "turrets": [
+        360
+      ]
+    },
+    "maintenance": {
+      "maintenances": [
+        {
+          "product": 1010017,
+          "amount": 350,
+          "inactiveAmount": 175,
+          "shutdownThreshold": 0.0
+        }
+      ],
+      "consumerPriority": 1
+    },
+    "culture": {
+      "type": "Military",
+      "attractiveness": 0,
+      "hasPollution": false,
+      "setPages": [],
+      "openSetPages": 0
+    },
+    "attackable": {
+      "maximumHitPoints": 7000,
+      "hasRuinState": true,
+      "selfHealPerHealTick": 5.0,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 100,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 10.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 0,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "building": {
+      "type": "",
+      "terrian": "Coast",
+      "region": "Moderate",
+      "category": 11150
+    },
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010017,
+          "amount": 22000
+        },
+        {
+          "ingredient": 1010196,
+          "amount": 40
+        },
+        {
+          "ingredient": 1010205,
+          "amount": 75
+        },
+        {
+          "ingredient": 1010218,
+          "amount": 60
+        },
+        {
+          "ingredient": 1010207,
+          "amount": 60
+        },
+        {
+          "ingredient": 1010202,
+          "amount": 50
+        },
+        {
+          "ingredient": 1010223,
+          "amount": 20
+        }
+      ]
+    }
+  },
+  {
+    "guid": 101563,
+    "name": "harbor_colony01_04 (Tower 01, Puckle Gun)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_defense_tower_pucklegun.png",
+    "description": 3063,
+    "attacker": {
+      "type": "",
+      "range": 72,
+      "attackRangeApproachPercentage": 0.0,
+      "lineOfSightRange": 72,
+      "reloadTime": 0,
+      "projectile": 102217,
+      "baseDamage": 23,
+      "accuracyBase": 21.0,
+      "accuracyIncreaseOverDistance": 20,
+      "accuracySpeedDecay": 0,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 360,
+      "shootingTracking": "TurretFixed",
+      "projectileCount": 1,
+      "turrets": [
+        360
+      ]
+    },
+    "maintenance": {
+      "maintenances": [
+        {
+          "product": 1010017,
+          "amount": 10,
+          "inactiveAmount": 5,
+          "shutdownThreshold": 0.0
+        }
+      ],
+      "consumerPriority": 1
+    },
+    "culture": {
+      "type": "Military",
+      "attractiveness": 0,
+      "hasPollution": false,
+      "setPages": [],
+      "openSetPages": 0
+    },
+    "attackable": {
+      "maximumHitPoints": 3200,
+      "hasRuinState": true,
+      "selfHealPerHealTick": 5.0,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 50,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 2.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 0,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "building": {
+      "type": "",
+      "terrian": "Water",
+      "region": "Colony01",
+      "category": 11150
+    },
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010017,
+          "amount": 5000
+        },
+        {
+          "ingredient": 1010196,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010205,
+          "amount": 10
+        },
+        {
+          "ingredient": 1010218,
+          "amount": 0
+        },
+        {
+          "ingredient": 1010207,
+          "amount": 0
+        },
+        {
+          "ingredient": 1010202,
+          "amount": 0
+        },
+        {
+          "ingredient": 1010221,
+          "amount": 5
+        }
+      ]
+    }
+  },
+  {
+    "guid": 101570,
+    "name": "harbor_colony01_05 (Tower 02, Cannon Tower)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_defense_tower_cannon.png",
+    "description": 3062,
+    "attacker": {
+      "type": "",
+      "range": 92,
+      "attackRangeApproachPercentage": 0.0,
+      "lineOfSightRange": 92,
+      "reloadTime": 50,
+      "projectile": 101974,
+      "baseDamage": 150,
+      "accuracyBase": 1.0,
+      "accuracyIncreaseOverDistance": 100,
+      "accuracySpeedDecay": 0,
+      "emitProjectileTimeAfterStartAnimation": 0.3,
+      "targetAngleVariation": 360,
+      "shootingTracking": "TurretFixed",
+      "projectileCount": 1,
+      "turrets": [
+        360
+      ]
+    },
+    "maintenance": {
+      "maintenances": [
+        {
+          "product": 1010017,
+          "amount": 30,
+          "inactiveAmount": 15,
+          "shutdownThreshold": 0.0
+        }
+      ],
+      "consumerPriority": 1
+    },
+    "culture": {
+      "type": "Military",
+      "attractiveness": 0,
+      "hasPollution": false,
+      "setPages": [],
+      "openSetPages": 0
+    },
+    "attackable": {
+      "maximumHitPoints": 4800,
+      "hasRuinState": true,
+      "selfHealPerHealTick": 5.0,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 50,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 3.5,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 0,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "building": {
+      "type": "",
+      "terrian": "Water",
+      "region": "Colony01",
+      "category": 11150
+    },
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010017,
+          "amount": 10000
+        },
+        {
+          "ingredient": 1010196,
+          "amount": 40
+        },
+        {
+          "ingredient": 1010205,
+          "amount": 40
+        },
+        {
+          "ingredient": 1010218,
+          "amount": 0
+        },
+        {
+          "ingredient": 1010207,
+          "amount": 0
+        },
+        {
+          "ingredient": 1010202,
+          "amount": 0
+        },
+        {
+          "ingredient": 1010221,
+          "amount": 10
+        }
+      ]
+    }
+  },
+  {
+    "guid": 101571,
+    "name": "harbor_colony01_06 (Tower 03, Monster Gun)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_defense_tower_monstergun.png",
+    "description": 3064,
+    "attacker": {
+      "type": "",
+      "range": 108,
+      "attackRangeApproachPercentage": 0.0,
+      "lineOfSightRange": 108,
+      "reloadTime": 150,
+      "projectile": 101955,
+      "baseDamage": 850,
+      "accuracyBase": 1.0,
+      "accuracyIncreaseOverDistance": 100,
+      "accuracySpeedDecay": 0,
+      "emitProjectileTimeAfterStartAnimation": 0.35,
+      "targetAngleVariation": 360,
+      "shootingTracking": "TurretFixed",
+      "projectileCount": 1,
+      "turrets": [
+        360
+      ]
+    },
+    "maintenance": {
+      "maintenances": [
+        {
+          "product": 1010017,
+          "amount": 350,
+          "inactiveAmount": 175,
+          "shutdownThreshold": 0.0
+        }
+      ],
+      "consumerPriority": 1
+    },
+    "culture": {
+      "type": "Military",
+      "attractiveness": 0,
+      "hasPollution": false,
+      "setPages": [],
+      "openSetPages": 0
+    },
+    "attackable": {
+      "maximumHitPoints": 7000,
+      "hasRuinState": true,
+      "selfHealPerHealTick": 5.0,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 100,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 10.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 0,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "building": {
+      "type": "",
+      "terrian": "Coast",
+      "region": "Colony01",
+      "category": 11150
+    },
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010017,
+          "amount": 20000
+        },
+        {
+          "ingredient": 1010196,
+          "amount": 80
+        },
+        {
+          "ingredient": 1010205,
+          "amount": 100
+        },
+        {
+          "ingredient": 1010218,
+          "amount": 0
+        },
+        {
+          "ingredient": 1010207,
+          "amount": 0
+        },
+        {
+          "ingredient": 1010202,
+          "amount": 0
+        },
+        {
+          "ingredient": 1010223,
+          "amount": 20
+        }
+      ]
+    }
+  },
+  {
+    "guid": 102448,
+    "name": "harbor_04 (Puckle Gun) - Pirates",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_defense_tower_pucklegun.png",
+    "description": 3063,
+    "attacker": {
+      "type": "",
+      "range": 72,
+      "attackRangeApproachPercentage": 0.0,
+      "lineOfSightRange": 72,
+      "reloadTime": 0,
+      "projectile": 102217,
+      "baseDamage": 12,
+      "accuracyBase": 10.0,
+      "accuracyIncreaseOverDistance": 20,
+      "accuracySpeedDecay": 0,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 360,
+      "shootingTracking": "TurretFixed",
+      "projectileCount": 1,
+      "turrets": [
+        360
+      ]
+    },
+    "maintenance": {
+      "maintenances": [
+        {
+          "product": 1010017,
+          "amount": 10,
+          "inactiveAmount": 5,
+          "shutdownThreshold": 0.0
+        }
+      ],
+      "consumerPriority": 1
+    },
+    "culture": {
+      "type": "Military",
+      "attractiveness": -5,
+      "hasPollution": false,
+      "setPages": [],
+      "openSetPages": 0
+    },
+    "attackable": {
+      "maximumHitPoints": 2500,
+      "hasRuinState": true,
+      "selfHealPerHealTick": 5.0,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 50,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 2.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 0,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "building": {
+      "type": "",
+      "terrian": "Water",
+      "region": "Moderate",
+      "category": 11150
+    },
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010017,
+          "amount": 2000
+        },
+        {
+          "ingredient": 1010196,
+          "amount": 10
+        },
+        {
+          "ingredient": 1010205,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010218,
+          "amount": 0
+        },
+        {
+          "ingredient": 1010207,
+          "amount": 0
+        },
+        {
+          "ingredient": 1010202,
+          "amount": 0
+        },
+        {
+          "ingredient": 1010221,
+          "amount": 3
+        }
+      ]
+    }
+  },
+  {
+    "guid": 102449,
+    "name": "harbor_05 (Cannon Tower) - Pirates",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_defense_tower_cannon.png",
+    "description": 3062,
+    "attacker": {
+      "type": "",
+      "range": 92,
+      "attackRangeApproachPercentage": 0.0,
+      "lineOfSightRange": 92,
+      "reloadTime": 100,
+      "projectile": 101974,
+      "baseDamage": 120,
+      "accuracyBase": 3.0,
+      "accuracyIncreaseOverDistance": 0,
+      "accuracySpeedDecay": 0,
+      "emitProjectileTimeAfterStartAnimation": 0.3,
+      "targetAngleVariation": 360,
+      "shootingTracking": "TurretFixed",
+      "projectileCount": 1,
+      "turrets": [
+        360
+      ]
+    },
+    "maintenance": {
+      "maintenances": [
+        {
+          "product": 1010017,
+          "amount": 30,
+          "inactiveAmount": 15,
+          "shutdownThreshold": 0.0
+        }
+      ],
+      "consumerPriority": 1
+    },
+    "culture": {
+      "type": "Military",
+      "attractiveness": -10,
+      "hasPollution": false,
+      "setPages": [],
+      "openSetPages": 0
+    },
+    "attackable": {
+      "maximumHitPoints": 4000,
+      "hasRuinState": true,
+      "selfHealPerHealTick": 5.0,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 50,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 4.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 0,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "building": {
+      "type": "",
+      "terrian": "Water",
+      "region": "Moderate",
+      "category": 11150
+    },
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010017,
+          "amount": 4000
+        },
+        {
+          "ingredient": 1010196,
+          "amount": 10
+        },
+        {
+          "ingredient": 1010205,
+          "amount": 10
+        },
+        {
+          "ingredient": 1010218,
+          "amount": 8
+        },
+        {
+          "ingredient": 1010207,
+          "amount": 0
+        },
+        {
+          "ingredient": 1010202,
+          "amount": 0
+        },
+        {
+          "ingredient": 1010221,
+          "amount": 5
+        }
+      ]
+    }
+  },
+  {
+    "guid": 102450,
+    "name": "harbor_06 (Monster Gun) - Pirates",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_defense_tower_monstergun.png",
+    "description": 3064,
+    "attacker": {
+      "type": "",
+      "range": 108,
+      "attackRangeApproachPercentage": 0.0,
+      "lineOfSightRange": 108,
+      "reloadTime": 200,
+      "projectile": 101955,
+      "baseDamage": 850,
+      "accuracyBase": 1.0,
+      "accuracyIncreaseOverDistance": 80,
+      "accuracySpeedDecay": 0,
+      "emitProjectileTimeAfterStartAnimation": 0.35,
+      "targetAngleVariation": 360,
+      "shootingTracking": "TurretFixed",
+      "projectileCount": 1,
+      "turrets": [
+        360
+      ]
+    },
+    "maintenance": {
+      "maintenances": [
+        {
+          "product": 1010017,
+          "amount": 350,
+          "inactiveAmount": 175,
+          "shutdownThreshold": 0.0
+        }
+      ],
+      "consumerPriority": 1
+    },
+    "culture": {
+      "type": "Military",
+      "attractiveness": -40,
+      "hasPollution": false,
+      "setPages": [],
+      "openSetPages": 0
+    },
+    "attackable": {
+      "maximumHitPoints": 6500,
+      "hasRuinState": true,
+      "selfHealPerHealTick": 5.0,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 100,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 8.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 0,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "building": {
+      "type": "",
+      "terrian": "Coast",
+      "region": "Moderate",
+      "category": 11150
+    },
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010017,
+          "amount": 10000
+        },
+        {
+          "ingredient": 1010196,
+          "amount": 40
+        },
+        {
+          "ingredient": 1010205,
+          "amount": 75
+        },
+        {
+          "ingredient": 1010218,
+          "amount": 60
+        },
+        {
+          "ingredient": 1010207,
+          "amount": 60
+        },
+        {
+          "ingredient": 1010202,
+          "amount": 50
+        },
+        {
+          "ingredient": 1010223,
+          "amount": 20
+        }
+      ]
+    }
+  },
+  {
+    "guid": 102666,
+    "name": "harbor_05 (Cannon Tower) - Navy",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_defense_tower_cannon.png",
+    "description": 3062,
+    "attacker": {
+      "type": "",
+      "range": 92,
+      "attackRangeApproachPercentage": 0.0,
+      "lineOfSightRange": 92,
+      "reloadTime": 100,
+      "projectile": 101974,
+      "baseDamage": 120,
+      "accuracyBase": 3.0,
+      "accuracyIncreaseOverDistance": 0,
+      "accuracySpeedDecay": 0,
+      "emitProjectileTimeAfterStartAnimation": 0.3,
+      "targetAngleVariation": 360,
+      "shootingTracking": "TurretFixed",
+      "projectileCount": 1,
+      "turrets": [
+        360
+      ]
+    },
+    "maintenance": {
+      "maintenances": [
+        {
+          "product": 1010017,
+          "amount": 30,
+          "inactiveAmount": 15,
+          "shutdownThreshold": 0.0
+        }
+      ],
+      "consumerPriority": 1
+    },
+    "culture": {
+      "type": "Military",
+      "attractiveness": -10,
+      "hasPollution": false,
+      "setPages": [],
+      "openSetPages": 0
+    },
+    "attackable": {
+      "maximumHitPoints": 4000,
+      "hasRuinState": true,
+      "selfHealPerHealTick": 5.0,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 50,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 4.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 0,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "building": {
+      "type": "",
+      "terrian": "Water",
+      "region": "Moderate",
+      "category": 11150
+    },
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010017,
+          "amount": 4000
+        },
+        {
+          "ingredient": 1010196,
+          "amount": 10
+        },
+        {
+          "ingredient": 1010205,
+          "amount": 10
+        },
+        {
+          "ingredient": 1010218,
+          "amount": 8
+        },
+        {
+          "ingredient": 1010207,
+          "amount": 0
+        },
+        {
+          "ingredient": 1010202,
+          "amount": 0
+        },
+        {
+          "ingredient": 1010221,
+          "amount": 5
+        }
+      ]
+    }
+  }
+]

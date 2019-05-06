@@ -41,6 +41,56 @@ namespace Anno1800.Jsonify {
     }
 
     // ================================
+    // Attacker
+    class AttackerData : BaseAssetObject {
+      [Element("AttackType")]
+      public string type;
+      [Element("AttackRange")]
+      public int range;
+      [Element("AttackRangeApproachPercentage")]
+      public double attackRangeApproachPercentage;
+      [Element("LineOfSightRange")]
+      public int lineOfSightRange;
+      [Element("ReloadTime")]
+      public int reloadTime;
+      [Element("ProjectileAsset")]
+      public int projectile;
+      [Element("BaseDamage")]
+      public int baseDamage;
+      [Element("AccuracyBase")]
+      public double accuracyBase;
+      [Element("AccuracyIncreaseOverDistance")]
+      public int accuracyIncreaseOverDistance;
+      [Element("AccuracySpeedDecay")]
+      public int accuracySpeedDecay;
+      [Element("EmitProjectileTimeAfterStartAnimation")]
+      public double emitProjectileTimeAfterStartAnimation;
+      [Element("TargetAngleVariation")]
+      public int targetAngleVariation;
+      [Element("ShootingTracking")]
+      public string shootingTracking;
+      [Element("ProjectileCount")]
+      public int projectileCount;
+      //[Element("FullVolleyTimeMin")]
+      //public double fullVolleyTimeMin;
+      //[Element("FullVolleyTimeMax")]
+      //public double fullVolleyTimeMax;
+      //[Element("VolleyMaxPerBulletRandomOffset")]
+      //public double volleyMaxPerBulletRandomOffset;
+
+      public List<int> turrets;
+
+      public AttackerData(XElement element) : base(element) {
+        this.turrets = element
+          .Element("Turrets")
+          ?.Elements()
+          .Select(item => item.Int("TurnSpan"))
+          .ToList()
+          ?? new List<int>();
+      }
+    }
+
+    // ================================
     // Cost
 
     class CostPair : BaseAssetObject {

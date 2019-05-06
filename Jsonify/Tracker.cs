@@ -25,6 +25,11 @@ namespace Anno1800.Jsonify {
 
       var paths = new List<string> {
         "Attackable",
+        "Attacker",
+        "Attacker/AccuracyByDistance/Item",
+        "Attacker/AccuracyByDistance/Item/AccuracyByDistancePair",
+        "Projectile",
+        "ProjectileIncident",
         "Cost",
         "Cost/Costs/Item",
         "Maintenance",
@@ -60,6 +65,7 @@ namespace Anno1800.Jsonify {
         "Market",
         "Monument",
         "Ornament",
+        "Buff",
         "Item",
         "ItemAction",
         "ExpeditionAttribute",
@@ -83,7 +89,6 @@ namespace Anno1800.Jsonify {
         "AttackerUpgrade",
         "AttackableUpgrade",
         "ProjectileUpgrade",
-        "Buff",
       };
 
       Dictionary<string, List<string>> xmlReport = paths.ToDictionary(

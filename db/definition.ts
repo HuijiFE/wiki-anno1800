@@ -60,6 +60,15 @@ export interface Monument extends FactoryBuilding7 {
   monument?: MonumentData;
 }
 
+export interface HarborBuilding extends Building {
+  maintenance?: MaintenanceData;
+  culture?: CultureData;
+}
+
+export interface HarborBuildingAttacker extends HarborBuilding {
+  attacker?: AttackerData;
+}
+
 export interface ItemBalancing extends Building {
   itemConfig?: ItemConfigData;
 }
@@ -119,6 +128,8 @@ export interface Warehouse extends Building {
 }
 
 export interface HarborWarehouse7 extends Warehouse {
+  upgradable?: UpgradableData;
+  attacker?: AttackerData;
 }
 
 export interface HarborWarehouseStrategic extends Warehouse {
@@ -247,6 +258,24 @@ export interface AttackableData extends BaseAssetObject {
   selfHealPausedTimeIfAttacked: number;
   armorType: string;
   disableGettingAutoAttacked: boolean;
+}
+
+export interface AttackerData extends BaseAssetObject {
+  type: string;
+  range: number;
+  attackRangeApproachPercentage: number;
+  lineOfSightRange: number;
+  reloadTime: number;
+  projectile: number;
+  baseDamage: number;
+  accuracyBase: number;
+  accuracyIncreaseOverDistance: number;
+  accuracySpeedDecay: number;
+  emitProjectileTimeAfterStartAnimation: number;
+  targetAngleVariation: number;
+  shootingTracking: string;
+  projectileCount: number;
+  turrets: number[];
 }
 
 export interface CostPair extends BaseAssetObject {
