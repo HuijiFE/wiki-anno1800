@@ -7,13 +7,30 @@ using System.Xml.Linq;
 
 namespace Anno1800.Jsonify {
   partial class Asset {
+    class InfluenceGeneration : BaseAssetObject {
+      [Element("ResidentsNeededToGain")]
+      public int gain;
+      [Element("ResidentsNeededToKeep")]
+      public int keep;
+      public InfluenceGeneration(XElement element) : base(element) { }
+    }
+
     class Residence7 : BaseAssetObject {
       [Element("PopulationLevel7")]
       public int population;
       [Element("ResidentMax")]
       public int max;
 
-      public Residence7(XElement element) : base(element) { }
+      public List<InfluenceGeneration> influenceGenerations;
+
+      public Residence7(XElement element) : base(element) {
+        this.influenceGenerations = element
+          .Element("InfluenceGeneration")
+          ?.Elements()
+          .Select(item => new InfluenceGeneration(item))
+          .ToList()
+          ?? new List<InfluenceGeneration>();
+      }
     }
 
     [Adapter]

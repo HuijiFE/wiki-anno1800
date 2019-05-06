@@ -338,9 +338,15 @@ export interface ProductionChainNode extends BaseAssetObject {
   nodes?: ProductionChainNode[];
 }
 
+export interface InfluenceGeneration extends BaseAssetObject {
+  gain: number;
+  keep: number;
+}
+
 export interface Residence7 extends BaseAssetObject {
   population: number;
   max: number;
+  influenceGenerations: InfluenceGeneration[];
 }
 
 export interface PopulationInput extends BaseAssetObject {
