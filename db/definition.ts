@@ -101,6 +101,9 @@ export interface ProductionChain extends Asset {
   chain?: ProductionChainNode;
 }
 
+export interface QuestLighthouse extends Building {
+}
+
 export interface ResidenceBuilding7 extends Building {
   upgradable?: UpgradableData;
   residnece7?: Residence7;
@@ -285,6 +288,8 @@ export interface CostPair extends BaseAssetObject {
 
 export interface CostData extends BaseAssetObject {
   costs: CostPair[];
+  influenceCostType: string;
+  influenceCostPoints: number;
 }
 
 export interface MaintenancePair extends BaseAssetObject {

@@ -104,6 +104,10 @@ namespace Anno1800.Jsonify {
 
     class CostData : BaseAssetObject {
       public List<CostPair> costs;
+      [Element("InfluenceCostType")]
+      public string influenceCostType;
+      [Element("InfluenceCostPoints")]
+      public int influenceCostPoints;
 
       public CostData(XElement element) : base(element) {
         this.costs = element
