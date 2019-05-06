@@ -11,9 +11,7 @@ namespace Anno1800.Jsonify {
     [Adapter]
     class HeavyFreeAreaBuilding : FreeAreaBuilding {
 
-      public HeavyFreeAreaBuilding(XElement asset, Dictionary<string, XElement> map) : base(asset, map) {
-        var values = asset.Element("Values");
-      }
+      public HeavyFreeAreaBuilding(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { }
     }
   }
 }

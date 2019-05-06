@@ -9,25 +9,21 @@ namespace Anno1800.Jsonify {
   partial class Asset {
 
     class BridgeData : BaseAssetObject {
+      [Element("MinLength")]
       public int minLength;
+      [Element("MaxLength")]
       public int maxLength;
 
-      public BridgeData(XElement element) : base(element) {
-        this.minLength = element.Int("MinLength");
-        this.maxLength = element.Int("MaxLength");
-      }
+      public BridgeData(XElement element) : base(element) { }
     }
 
     [Adapter]
     class BridgeBuilding : Building {
       [Nullable]
-      public BridgeData bridge;
+      [Element("Bridge")]
+      public BridgeData? bridge;
 
-      public BridgeBuilding(XElement asset, Dictionary<string, XElement> map) : base(asset, map) {
-        var values = asset.Element("Values");
-
-        this.bridge = values.Object<BridgeData>("Bridge");
-      }
+      public BridgeBuilding(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { }
     }
   }
 }

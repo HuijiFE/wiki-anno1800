@@ -14,10 +14,18 @@ namespace Anno1800.Jsonify {
   [AttributeUsage(AttributeTargets.Field)]
   class ElementAttribute : Attribute {
     public string path;
-    public ElementAttribute(string path) {
+    public object? defaultValue;
+    public ElementAttribute(string path, object? defaultValue = null) {
+      if (string.IsNullOrWhiteSpace(path)) {
+        throw new ArgumentNullException("path", "argument 'path' can't be null or empty or whitespace");
+      }
       this.path = path;
+      this.defaultValue = defaultValue;
     }
   }
+
+  [AttributeUsage(AttributeTargets.Field)]
+  class ColorAttribute : Attribute { }
 
   abstract class BaseAssetObject {
     public BaseAssetObject(XElement element) {
@@ -38,44 +46,44 @@ namespace Anno1800.Jsonify {
       return element;
     }
 
-    public static string String(this XElement wrapper, string path, string defaultValue = "") {
-      return wrapper.ElementByPath(path)?.Value ?? defaultValue;
+    public static string String(this XElement wrapper, string path, string? defaultValue = "") {
+      return wrapper.ElementByPath(path)?.Value ?? defaultValue ?? "";
     }
 
-    public static int Int(this XElement wrapper, string path, int defaultValue = 0) {
+    public static int Int(this XElement wrapper, string path, int? defaultValue = 0) {
       var content = wrapper.String(path);
       if (!string.IsNullOrWhiteSpace(content)) {
         return int.Parse(content);
       }
-      return defaultValue;
+      return defaultValue ?? 0;
     }
 
-    public static double Double(this XElement wrapper, string path, double defaultValue = 0.0) {
+    public static double Double(this XElement wrapper, string path, double? defaultValue = 0.0) {
       var content = wrapper.String(path);
       if (!string.IsNullOrWhiteSpace(content)) {
         return double.Parse(content);
       }
-      return defaultValue;
+      return defaultValue ?? 0.0;
     }
 
-    public static bool Boolean(this XElement wrapper, string path, bool defaultValue = false) {
+    public static bool Boolean(this XElement wrapper, string path, bool? defaultValue = false) {
       var content = wrapper.String(path);
       if (content == "1") {
         return true;
       }
-      return defaultValue;
+      return defaultValue ?? false;
     }
 
     /// <summary>
     /// Convert a number text to css hex color value.
     /// </summary>
-    public static string Color(this XElement wrapper, string path, string defaultValue = "ffffff") {
+    public static string Color(this XElement wrapper, string path, string? defaultValue = "ffffff") {
       var content = wrapper.String(path);
       if (!string.IsNullOrWhiteSpace(content)) {
         var value = int.Parse(content);
         return value.ToString("x8").Substring(2, 6);
       }
-      return defaultValue;
+      return defaultValue ?? "ffffff";
     }
 
     public static object? Object(this XElement wrapper, string path, Type objType) {
@@ -97,14 +105,20 @@ namespace Anno1800.Jsonify {
 
     public static void Deserialize(object obj, XElement element) {
       foreach (var field in obj.GetType().GetFields(BindingFlags.Instance | BindingFlags.Public)) {
-        var path = field.GetCustomAttribute<ElementAttribute>()?.path;
+        var elem = field.GetCustomAttribute<ElementAttribute>();
+        var path = elem?.path;
+        var color = field.GetCustomAttribute<ColorAttribute>();
         if (path != null) {
           if (field.FieldType == TYPE_STRING) {
-            field.SetValue(obj, element.String(path));
+            if (color != null) {
+              field.SetValue(obj, element.Color(path, elem.defaultValue as string));
+            } else {
+              field.SetValue(obj, element.String(path, elem.defaultValue as string));
+            }
           } else if (field.FieldType == TYPE_INT) {
-            field.SetValue(obj, element.Int(path));
+            field.SetValue(obj, element.Int(path, elem.defaultValue as int?));
           } else if (field.FieldType == TYPE_DOUBLE) {
-            field.SetValue(obj, element.Double(path));
+            field.SetValue(obj, element.Double(path, elem.defaultValue as double?));
           } else if (field.FieldType == TYPE_BOOLEAN) {
             field.SetValue(obj, element.Boolean(path));
           } else if (field.FieldType.IsSubclassOf(typeof(BaseAssetObject))) {

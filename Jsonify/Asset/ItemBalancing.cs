@@ -13,8 +13,12 @@ namespace Anno1800.Jsonify {
       public Dictionary<string, int> exclusiveGroupText;
       public Dictionary<string, int> allocationText;
       public Dictionary<string, string> allocationIcons;
+
+      [Element("ItemGenCrateAsset")]
       public int itemGenCrateAsset;
+      [Element("ItemGenCrateScale")]
       public double itemGenCrateScale;
+      [Element("BuffFluffIndexIncreaseTimer")]
       public int buffFluffIndexIncreaseTimer;
 
       static Dictionary<string, int> GetTextDict(XElement element) {
@@ -29,22 +33,16 @@ namespace Anno1800.Jsonify {
           .Element("AllocationIcons")
           .Elements()
           .ToDictionary<XElement, string, string>(el => el.String("Allocation") ?? "", el => el.String("AllocationIcon") ?? "");
-        this.itemGenCrateAsset = element.Int("ItemGenCrateAsset");
-        this.itemGenCrateScale = element.Double("ItemGenCrateScale");
-        this.buffFluffIndexIncreaseTimer = element.Int("BuffFluffIndexIncreaseTimer");
       }
     }
 
     [Adapter]
     class ItemBalancing : Building {
       [Nullable]
+      [Element("ItemConfig")]
       public ItemConfigData? itemConfig;
 
-      public ItemBalancing(XElement asset, Dictionary<string, XElement> map) : base(asset, map) {
-        var values = asset.Element("Values");
-
-        this.itemConfig = values.Object<ItemConfigData>("ItemConfig");
-      }
+      public ItemBalancing(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { }
     }
   }
 }

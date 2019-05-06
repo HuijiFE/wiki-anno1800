@@ -9,23 +9,19 @@ namespace Anno1800.Jsonify {
   partial class Asset {
 
     class StreetData : BaseAssetObject {
+      [Element("BridgeAsset")]
       public int bridge;
 
-      public StreetData(XElement element) : base(element) {
-        this.bridge = element.Int("BridgeAsset");
-      }
+      public StreetData(XElement element) : base(element) { }
     }
 
     [Adapter]
     class Street : Building {
       [Nullable]
+      [Element("Street")]
       public StreetData? street;
 
-      public Street(XElement asset, Dictionary<string, XElement> map) : base(asset, map) {
-        var values = asset.Element("Values");
-
-        this.street = values.Object<StreetData>("Street");
-      }
+      public Street(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { }
     }
   }
 }

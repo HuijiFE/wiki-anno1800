@@ -9,21 +9,23 @@ namespace Anno1800.Jsonify {
   partial class Asset {
 
     class FactoryInputOutputPair : BaseAssetObject {
+      [Element("Product")]
       public int product;
+      [Element("Amount")]
       public int amount;
+      [Element("StorageAmount")]
       public int storage;
 
-      public FactoryInputOutputPair(XElement element) : base(element) {
-        this.product = element.Int("Product");
-        this.amount = element.Int("Amount");
-        this.storage = element.Int("StorageAmount");
-      }
+      public FactoryInputOutputPair(XElement element) : base(element) { }
     }
 
     class FactoryData : BaseAssetObject {
       public List<FactoryInputOutputPair> inputs;
       public List<FactoryInputOutputPair> outputs;
+      [Element("CycleTime", 30)]
       public int cycleTime;
+
+      public int neededFertility;
 
       public FactoryData(XElement element) : base(element) {
         this.inputs = element
@@ -38,30 +40,27 @@ namespace Anno1800.Jsonify {
           .Select(item => new FactoryInputOutputPair(item))
           .ToList()
           ?? new List<FactoryInputOutputPair>();
-        this.cycleTime = element.Int("CycleTime", 30);
       }
     }
 
     [Adapter]
     class FactoryBuilding7 : Building {
       [Nullable]
+      [Element("Maintenance")]
       public MaintenanceData? maintenance;
-      public int neededFertility;
       [Nullable]
+      [Element("FactoryBase")]
       public FactoryData? factory;
       [Nullable]
+      [Element("Culture")]
       public CultureData? culture;
       [Nullable]
+      [Element("Electric")]
       public ElectricData? electric;
 
       public FactoryBuilding7(XElement asset, Dictionary<string, XElement> map) : base(asset, map) {
         var values = asset.Element("Values");
-
-        this.maintenance = values.Object<MaintenanceData>("Maintenance");
-        this.neededFertility = values.Int("Factory7/NeededFertility");
-        this.factory = values.Object<FactoryData>("FactoryBase");
-        this.culture = values.Object<CultureData>("Culture");
-        this.electric = values.Object<ElectricData>("Electric");
+        this.factory.neededFertility = values.Int("Factory7/NeededFertility");
       }
     }
   }

@@ -13,12 +13,26 @@ namespace Anno1800.Jsonify {
       public Dictionary<string, string> slotGhost;
       public Dictionary<string, string> questOutline;
       public Dictionary<string, string> itemRarity;
+      [Color]
+      [Element("BuildModeCurrentValidColor")]
       public string buildModeCurrentValidColor;
+      [Color]
+      [Element("BuildModeCurrentInvalidColor")]
       public string buildModeCurrentInvalidColor;
+      [Color]
+      [Element("PositiveValueColor")]
       public string positiveValueColor;
+      [Color]
+      [Element("NegativeValueColor")]
       public string negativeValueColor;
+      [Color]
+      [Element("BuildModeRadius")]
       public string buildModeRadius;
+      [Color]
+      [Element("BuildModeGridExtension")]
       public string buildModeGridExtension;
+      [Color]
+      [Element("BlueprintColor")]
       public string blueprintColor;
 
       static Dictionary<string, string> GetColorDict(XElement element) {
@@ -30,26 +44,16 @@ namespace Anno1800.Jsonify {
         this.slotGhost = GetColorDict(element.Element("SlotGhostColor"));
         this.questOutline = GetColorDict(element.Element("QuestOutlineColor"));
         this.itemRarity = GetColorDict(element.Element("ItemRarityColors"));
-        this.buildModeCurrentValidColor = element.Color("BuildModeCurrentValidColor");
-        this.buildModeCurrentInvalidColor = element.Color("BuildModeCurrentInvalidColor");
-        this.positiveValueColor = element.Color("PositiveValueColor");
-        this.negativeValueColor = element.Color("NegativeValueColor");
-        this.buildModeRadius = element.Color("BuildModeRadius");
-        this.buildModeGridExtension = element.Color("BuildModeGridExtension");
-        this.blueprintColor = element.Color("BlueprintColor");
       }
     }
 
     [Adapter]
     class ColorConfig : Building {
       [Nullable]
+      [Element("ColorConfig")]
       public ColorConfigData? colorConfig;
 
-      public ColorConfig(XElement asset, Dictionary<string, XElement> map) : base(asset, map) {
-        var values = asset.Element("Values");
-
-        this.colorConfig = values.Object<ColorConfigData>("ColorConfig");
-      }
+      public ColorConfig(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { }
     }
   }
 }

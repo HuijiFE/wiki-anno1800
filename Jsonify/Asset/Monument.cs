@@ -9,23 +9,19 @@ namespace Anno1800.Jsonify {
   partial class Asset {
 
     class MonumentData : BaseAssetObject {
+      [Element("UpgradeTarget")]
       public int upgradeTarget;
 
-      public MonumentData(XElement element) : base(element) {
-        this.upgradeTarget = element.Int("UpgradeTarget");
-      }
+      public MonumentData(XElement element) : base(element) { }
     }
 
     [Adapter]
     class Monument : FactoryBuilding7 {
       [Nullable]
+      [Element("Monument")]
       public MonumentData? monument;
 
-      public Monument(XElement asset, Dictionary<string, XElement> map) : base(asset, map) {
-        var values = asset.Element("Values");
-
-        this.monument = values.Object<MonumentData>("Monument");
-      }
+      public Monument(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { }
     }
   }
 }

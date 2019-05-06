@@ -9,9 +9,7 @@ namespace Anno1800.Jsonify {
   partial class Asset {
     [Adapter]
     class HarborDepot : Warehouse {
-      public HarborDepot(XElement asset, Dictionary<string, XElement> map) : base(asset, map) {
-        var values = asset.Element("Values");
-      }
+      public HarborDepot(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { }
     }
   }
 }

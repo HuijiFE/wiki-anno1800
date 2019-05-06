@@ -9,18 +9,16 @@ namespace Anno1800.Jsonify {
   partial class Asset {
 
     class ProductionChainNode : BaseAssetObject {
-      static List<string> tiers = Enumerable.Range(1, 10).Select(i => $"Tier{i}").ToList();
-
+      [Element("Building")]
       public int building;
       [Nullable]
       public List<ProductionChainNode>? nodes;
 
       public ProductionChainNode(XElement element) : base(element) {
-        this.building = element.Int("Building");
         this.nodes = element
           .Elements()
           .ToList()
-          .Find(e => tiers.Contains(e.Name.ToString()))
+          .Find(e => e.Name.ToString().StartsWith("Tier"))
           ?.Elements()
           .Select(item => new ProductionChainNode(item))
           .ToList();
@@ -30,12 +28,10 @@ namespace Anno1800.Jsonify {
     [Adapter]
     class ProductionChain : Asset {
       [Nullable]
+      [Element("ProductionChain")]
       public ProductionChainNode? chain;
 
-      public ProductionChain(XElement asset, Dictionary<string, XElement> map) : base(asset, map) {
-        var values = asset.Element("Values");
-        this.chain = values.Object<ProductionChainNode>("ProductionChain");
-      }
+      public ProductionChain(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { }
     }
   }
 }

@@ -24,7 +24,6 @@ export interface ColorConfig extends Building {
 
 export interface FactoryBuilding7 extends Building {
   maintenance?: MaintenanceData;
-  neededFertility: number;
   factory?: FactoryData;
   culture?: CultureData;
   electric?: ElectricData;
@@ -184,6 +183,7 @@ export interface FactoryData extends BaseAssetObject {
   inputs: FactoryInputOutputPair[];
   outputs: FactoryInputOutputPair[];
   cycleTime: number;
+  neededFertility: number;
 }
 
 export interface FreeAreaProductivity extends BaseAssetObject {
@@ -290,19 +290,11 @@ export interface PopulationOutput extends BaseAssetObject {
   amount: number;
 }
 
-export interface MoodText extends BaseAssetObject {
-  angry: number;
-  unhappy: number;
-  neutral: number;
-  happy: number;
-  euphoric: number;
-}
-
 export interface Population7 extends BaseAssetObject {
   inputs: PopulationInput[];
   outputs: PopulationOutput[];
   categoryIcon: string;
-  moods?: MoodText;
+  moods?: Record<string,number>;
 }
 
 export interface ProductData extends BaseAssetObject {

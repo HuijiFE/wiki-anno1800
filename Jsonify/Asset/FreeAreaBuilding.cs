@@ -9,36 +9,33 @@ namespace Anno1800.Jsonify {
   partial class Asset {
 
     class FreeAreaProductivity : BaseAssetObject {
+      [Element("InfluenceRadius")]
       public int radius;
+      [Element("NeededAreaPercent")]
       public int neededAreaPercent;
+      [Element("WorkerUnit")]
       public int worker;
+      [Element("MaxWorkerAmount")]
       public int maxWorkers;
+      [Element("WorkerPause")]
       public int workerPause;
+      [Element("WayTime")]
       public int wayTime;
-      public string? freeAreaType;
+      [Element("FreeAreaType")]
+      public string freeAreaType;
+      [Element("CutTree")]
       public bool cutTree;
 
-      public FreeAreaProductivity(XElement element) : base(element) {
-        this.radius = element.Int("InfluenceRadius");
-        this.neededAreaPercent = element.Int("NeededAreaPercent");
-        this.worker = element.Int("WorkerUnit");
-        this.maxWorkers = element.Int("MaxWorkerAmount");
-        this.workerPause = element.Int("WorkerPause");
-        this.wayTime = element.Int("WayTime");
-        this.freeAreaType = element.String("FreeAreaType");
-        this.cutTree = element.Boolean("CutTree");
-      }
+      public FreeAreaProductivity(XElement element) : base(element) { }
     }
 
     [Adapter]
     class FreeAreaBuilding : FactoryBuilding7 {
       [Nullable]
+      [Element("FreeAreaProductivity")]
       public FreeAreaProductivity? freeAreaProductivity;
 
-      public FreeAreaBuilding(XElement asset, Dictionary<string, XElement> map) : base(asset, map) {
-        var values = asset.Element("Values");
-        this.freeAreaProductivity = values.Object<FreeAreaProductivity>("FreeAreaProductivity");
-      }
+      public FreeAreaBuilding(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { }
     }
   }
 }

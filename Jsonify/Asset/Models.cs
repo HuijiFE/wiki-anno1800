@@ -37,22 +37,19 @@ namespace Anno1800.Jsonify {
       [Element("DisableGettingAutoAttacked")]
       public bool disableGettingAutoAttacked;
 
-      public AttackableData(XElement element) : base(element) {
-
-      }
+      public AttackableData(XElement element) : base(element) { }
     }
 
     // ================================
     // Cost
 
     class CostPair : BaseAssetObject {
+      [Element("Ingredient")]
       public int ingredient;
+      [Element("Amount")]
       public int amount;
 
-      public CostPair(XElement element) : base(element) {
-        this.ingredient = element.Int("Ingredient");
-        this.amount = element.Int("Amount");
-      }
+      public CostPair(XElement element) : base(element) { }
     }
 
     class CostData : BaseAssetObject {
@@ -72,21 +69,21 @@ namespace Anno1800.Jsonify {
     // Maintenance
 
     class MaintenancePair : BaseAssetObject {
+      [Element("Product")]
       public int product;
+      [Element("Amount")]
       public int amount;
+      [Element("InactiveAmount")]
       public int inactiveAmount;
+      [Element("ShutdownThreshold")]
       public double shutdownThreshold;
 
-      public MaintenancePair(XElement element) : base(element) {
-        this.product = element.Int("Product");
-        this.amount = element.Int("Amount");
-        this.inactiveAmount = element.Int("InactiveAmount");
-        this.shutdownThreshold = element.Double("ShutdownThreshold");
-      }
+      public MaintenancePair(XElement element) : base(element) { }
     }
 
     class MaintenanceData : BaseAssetObject {
       public List<MaintenancePair> maintenances;
+      [Element("ConsumerPriority")]
       public int consumerPriority;
 
       public MaintenanceData(XElement element) : base(element) {
@@ -96,7 +93,6 @@ namespace Anno1800.Jsonify {
           .Select(item => new MaintenancePair(item))
           .ToList()
           ?? new List<MaintenancePair>();
-        this.consumerPriority = element.Int("ConsumerPriority");
       }
     }
   }

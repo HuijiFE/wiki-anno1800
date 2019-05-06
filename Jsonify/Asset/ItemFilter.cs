@@ -8,11 +8,11 @@ using System.Xml.Linq;
 namespace Anno1800.Jsonify {
   partial class Asset {
     class ItemCategoryPair : BaseAssetObject {
+      [Element("CategoryAsset")]
       public int asset;
       public List<string> types;
 
       public ItemCategoryPair(XElement element) : base(element) {
-        this.asset = element.Int("CategoryAsset");
         this.types = (element.String("ItemTypes") ?? "").Split(';').ToList();
       }
     }
@@ -33,13 +33,10 @@ namespace Anno1800.Jsonify {
     [Adapter]
     class ItemFilter : Building {
       [Nullable]
+      [Element("ItemFilter")]
       public ItemFilterData? itemFilter;
 
-      public ItemFilter(XElement asset, Dictionary<string, XElement> map) : base(asset, map) {
-        var values = asset.Element("Values");
-
-        this.itemFilter = values.Object<ItemFilterData>("ItemFilter");
-      }
+      public ItemFilter(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { }
     }
   }
 }

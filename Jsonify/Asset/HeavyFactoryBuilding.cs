@@ -12,9 +12,7 @@ namespace Anno1800.Jsonify {
     class HeavyFactoryBuilding : FactoryBuilding7 {
 
 
-      public HeavyFactoryBuilding(XElement asset, Dictionary<string, XElement> map) : base(asset, map) {
-
-      }
+      public HeavyFactoryBuilding(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { }
     }
   }
 }

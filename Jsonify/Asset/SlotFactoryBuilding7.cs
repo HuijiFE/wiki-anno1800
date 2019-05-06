@@ -10,12 +10,10 @@ namespace Anno1800.Jsonify {
     [Adapter]
     class SlotFactoryBuilding7 : FactoryBuilding7 {
       [Nullable]
+      [Element("Slot")]
       public SlotData? slot;
 
-      public SlotFactoryBuilding7(XElement asset, Dictionary<string, XElement> map) : base(asset, map) {
-        var values = asset.Element("Values");
-        this.slot = values.Object<SlotData>("Slot");
-      }
+      public SlotFactoryBuilding7(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { }
     }
   }
 }

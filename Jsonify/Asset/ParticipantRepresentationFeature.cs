@@ -9,11 +9,17 @@ namespace Anno1800.Jsonify {
   partial class Asset {
 
     class CompanyLevelData : BaseAssetObject {
+      [Element("PopulationCountOffset")]
       public double populationCountOffset;
+      [Element("PopulationFactor")]
       public double populationFactor;
+      [Element("Exponent")]
       public double exponent;
+      [Element("SecondLevel")]
       public int secondLevel;
+      [Element("SecondPopulationFactor")]
       public double secondPopulationFactor;
+      [Element("SecondExponent")]
       public double secondExponent;
 
       public int Population(int level) {
@@ -28,13 +34,6 @@ namespace Anno1800.Jsonify {
       }
 
       public CompanyLevelData(XElement element) : base(element) {
-        this.populationCountOffset = element.Double("PopulationCountOffset");
-        this.populationFactor = element.Double("PopulationFactor");
-        this.exponent = element.Double("Exponent");
-        this.secondLevel = element.Int("SecondLevel");
-        this.secondPopulationFactor = element.Double("SecondPopulationFactor");
-        this.secondExponent = element.Double("SecondExponent");
-
         //for (int level = 1; level <= 64; level++) {
         //  Console.WriteLine($"{level.ToString().PadRight(3, ' ')}: {this.Population(level)}");
         //}
@@ -43,11 +42,11 @@ namespace Anno1800.Jsonify {
 
     class ParticipantRepresentationFeatureData : BaseAssetObject {
       [Nullable]
+      [Element("CompanyLevel")]
       public CompanyLevelData? companyLevel;
       public List<string> colors;
 
       public ParticipantRepresentationFeatureData(XElement element) : base(element) {
-        this.companyLevel = element.Object<CompanyLevelData>("CompanyLevel");
         this.colors = element
           .Element("ParticipantColors")
           ?.Elements()
@@ -60,13 +59,10 @@ namespace Anno1800.Jsonify {
     [Adapter]
     class ParticipantRepresentationFeature : Asset {
       [Nullable]
+      [Element("ParticipantRepresentationFeature")]
       public ParticipantRepresentationFeatureData? participant;
 
-      public ParticipantRepresentationFeature(XElement asset, Dictionary<string, XElement> map) : base(asset, map) {
-        var values = asset.Element("Values");
-
-        this.participant = values.Object<ParticipantRepresentationFeatureData>("ParticipantRepresentationFeature");
-      }
+      public ParticipantRepresentationFeature(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { }
     }
   }
 }

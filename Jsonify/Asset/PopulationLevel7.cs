@@ -9,57 +9,40 @@ namespace Anno1800.Jsonify {
   partial class Asset {
 
     class PopulationInput : BaseAssetObject {
+      [Element("Product")]
       public int product;
+      [Element("Amount")]
       public double amount;
+      [Element("SupplyWeight")]
       public int supply;
+      [Element("HappinessValue")]
       public int happiness;
+      [Element("MoneyValue")]
       public int mouney;
+      [Element("FullWeightPopulationCount")]
       public int full;
+      [Element("NoWeightPopulationCount")]
       public int no;
 
-      public PopulationInput(XElement element) : base(element) {
-        this.product = element.Int("Product");
-        this.amount = element.Double("Amount");
-        this.supply = element.Int("SupplyWeight");
-        this.happiness = element.Int("HappinessValue");
-        this.mouney = element.Int("MoneyValue");
-        this.full = element.Int("FullWeightPopulationCount");
-        this.no = element.Int("NoWeightPopulationCount");
-      }
+      public PopulationInput(XElement element) : base(element) { }
     }
 
     class PopulationOutput : BaseAssetObject {
+      [Element("Product")]
       public int product;
+      [Element("Amount")]
       public int amount;
 
-      public PopulationOutput(XElement element) : base(element) {
-        this.product = element.Int("Product");
-        this.amount = element.Int("Amount");
-      }
-    }
-
-    class MoodText : BaseAssetObject {
-      public int angry;
-      public int unhappy;
-      public int neutral;
-      public int happy;
-      public int euphoric;
-
-      public MoodText(XElement element) : base(element) {
-        this.angry = element.Int("Angry/Text");
-        this.unhappy = element.Int("Unhappy/Text");
-        this.neutral = element.Int("Neutral/Text");
-        this.happy = element.Int("Happy/Text");
-        this.euphoric = element.Int("Euphoric/Text");
-      }
+      public PopulationOutput(XElement element) : base(element) { }
     }
 
     class Population7 : BaseAssetObject {
       public List<PopulationInput> inputs;
       public List<PopulationOutput> outputs;
-      public string? categoryIcon;
+      [Element("CategoryIcon")]
+      public string categoryIcon;
       [Nullable]
-      public MoodText? moods;
+      public Dictionary<string, int> moods;
 
       public Population7(XElement element) : base(element) {
         this.inputs = element
@@ -76,19 +59,20 @@ namespace Anno1800.Jsonify {
           .ToList()
           ?? new List<PopulationOutput>();
 
-        this.categoryIcon = element.String("CategoryIcon");
-        this.moods = element.Object<MoodText>("MoodText");
+        this.moods = element
+          .Element("MoodText")
+          .Elements()
+          .ToDictionary(el => el.Name.ToString(), el => el.Int("Text"));
       }
     }
 
     [Adapter]
     class PopulationLevel7 : Asset {
       [Nullable]
+      [Element("PopulationLevel7")]
       public Population7? population7;
 
-      public PopulationLevel7(XElement asset, Dictionary<string, XElement> map) : base(asset, map) {
-        this.population7 = asset.Object<Population7>("Values/PopulationLevel7");
-      }
+      public PopulationLevel7(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { }
     }
   }
 }
