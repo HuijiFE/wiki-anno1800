@@ -59,6 +59,7 @@ namespace Anno1800.Jsonify {
         "StorageBase/StoredProducts/Item",
         "Market",
         "Monument",
+        "Ornament",
         "Item",
         "ItemAction",
         "ExpeditionAttribute",

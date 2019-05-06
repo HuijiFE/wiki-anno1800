@@ -9,11 +9,11 @@ namespace Anno1800.Jsonify {
   partial class Asset {
     class BuildingData : BaseAssetObject {
       [Element("BuildingType")]
-      public string? type;
+      public string type;
       [Element("TerrainType")]
-      public string? terrian;
+      public string terrian;
       [Element("AssociatedRegions")]
-      public string? region;
+      public string region;
       [Element("BuildingCategoryName")]
       public int category;
 

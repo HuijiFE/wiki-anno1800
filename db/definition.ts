@@ -56,6 +56,10 @@ export interface OilPumpBuilding extends Slot {
 export interface PowerplantBuilding extends FactoryBuilding7 {
 }
 
+export interface Monument extends FactoryBuilding7 {
+  monument?: MonumentData;
+}
+
 export interface ItemBalancing extends Building {
   itemConfig?: ItemConfigData;
 }
@@ -69,8 +73,11 @@ export interface Market extends Building {
   storedProducts: number[];
 }
 
-export interface Monument extends FactoryBuilding7 {
-  monument?: MonumentData;
+export interface OrnamentalBuilding extends Building {
+  ornament?: OrnamentData;
+}
+
+export interface BuildPermitBuilding extends OrnamentalBuilding {
 }
 
 export interface ParticipantRepresentationFeature extends Asset {
@@ -199,6 +206,10 @@ export interface SlotData extends BaseAssetObject {
   category: number;
 }
 
+export interface MonumentData extends BaseAssetObject {
+  upgradeTarget: number;
+}
+
 export interface ItemConfigData extends BaseAssetObject {
   rarityText: Record<string,number>;
   exclusiveGroupText: Record<string,number>;
@@ -259,8 +270,9 @@ export interface MaintenanceData extends BaseAssetObject {
   consumerPriority: number;
 }
 
-export interface MonumentData extends BaseAssetObject {
-  upgradeTarget: number;
+export interface OrnamentData extends BaseAssetObject {
+  unit: number;
+  description: number;
 }
 
 export interface CompanyLevelData extends BaseAssetObject {
