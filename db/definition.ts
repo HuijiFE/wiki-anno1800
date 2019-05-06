@@ -104,6 +104,11 @@ export interface ProductionChain extends Asset {
 export interface QuestLighthouse extends Building {
 }
 
+export interface RepairCrane extends Building {
+  maintenance?: MaintenanceData;
+  repairCrane?: RepairCraneData;
+}
+
 export interface ResidenceBuilding7 extends Building {
   upgradable?: UpgradableData;
   residnece7?: Residence7;
@@ -336,6 +341,12 @@ export interface ProductData extends BaseAssetObject {
 export interface ProductionChainNode extends BaseAssetObject {
   building: number;
   nodes?: ProductionChainNode[];
+}
+
+export interface RepairCraneData extends BaseAssetObject {
+  healRadius: number;
+  healPerMinute: number;
+  healBuildingsPerMinute: number;
 }
 
 export interface InfluenceGeneration extends BaseAssetObject {

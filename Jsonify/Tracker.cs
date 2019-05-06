@@ -65,6 +65,7 @@ namespace Anno1800.Jsonify {
         "Market",
         "Monument",
         "Ornament",
+        "RepairCrane",
         "Buff",
         "Item",
         "ItemAction",
