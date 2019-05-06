@@ -59,6 +59,10 @@ export interface ItemBalancing extends Building {
   itemConfig?: ItemConfigData;
 }
 
+export interface ItemFilter extends Building {
+  itemFilter?: ItemFilterData;
+}
+
 export interface Market extends Building {
   market?: MarketData;
   storedProducts: number[];
@@ -200,6 +204,15 @@ export interface ItemConfigData extends BaseAssetObject {
   itemGenCrateAsset: number;
   itemGenCrateScale: number;
   buffFluffIndexIncreaseTimer: number;
+}
+
+export interface ItemCategoryPair extends BaseAssetObject {
+  asset: number;
+  types: string[];
+}
+
+export interface ItemFilterData extends BaseAssetObject {
+  categories: ItemCategoryPair[];
 }
 
 export interface MarketData extends BaseAssetObject {

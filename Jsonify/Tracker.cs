@@ -58,7 +58,15 @@ namespace Anno1800.Jsonify {
         "StorageBase/StoredProducts/Item",
         "Market",
         "Monument",
-        // item ActiveItem CultureItem FluffItem GuildhouseItem HarborOfficeItem
+        /*
+          item
+          ActiveItem
+          CultureItem
+          FluffItem
+          GuildhouseItem
+          HarborOfficeItem
+          ItemSpecialAction
+         */
 
       };
 
