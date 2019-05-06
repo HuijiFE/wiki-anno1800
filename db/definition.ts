@@ -13,6 +13,7 @@ export interface BridgeBuilding extends Building {
 }
 
 export interface Building extends Asset {
+  attackable?: AttackableData;
   building?: BuildingData;
   cost?: CostData;
 }
@@ -218,6 +219,21 @@ export interface ItemFilterData extends BaseAssetObject {
 export interface MarketData extends BaseAssetObject {
   fullSupplyDistance: number;
   noSupplyDistance: number;
+}
+
+export interface AttackableData extends BaseAssetObject {
+  maximumHitPoints: number;
+  hasRuinState: boolean;
+  selfHealPerHealTick: number;
+  pausedTimeIfAttacked: boolean;
+  canBeAttackedByPlayer: boolean;
+  moralePower: number;
+  isInvulnerable: boolean;
+  militaryDefensePoints: number;
+  accuracyWidth: number;
+  selfHealPausedTimeIfAttacked: number;
+  armorType: string;
+  disableGettingAutoAttacked: boolean;
 }
 
 export interface CostPair extends BaseAssetObject {

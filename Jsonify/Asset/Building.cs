@@ -23,6 +23,8 @@ namespace Anno1800.Jsonify {
 
     class Building : Asset {
       [Nullable]
+      public AttackableData? attackable;
+      [Nullable]
       public BuildingData? building;
       [Nullable]
       public CostData? cost;
@@ -30,6 +32,7 @@ namespace Anno1800.Jsonify {
       public Building(XElement asset, Dictionary<string, XElement> map) : base(asset, map) {
         var values = asset.Element("Values");
 
+        this.attackable = values.Object<AttackableData>("Attackable");
         this.building = values.Object<BuildingData>("Building");
         this.cost = values.Object<CostData>("Cost");
       }

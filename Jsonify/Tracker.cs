@@ -24,6 +24,7 @@ namespace Anno1800.Jsonify {
           ));
 
       var paths = new List<string> {
+        "Attackable",
         "Cost",
         "Cost/Costs/Item",
         "Maintenance",

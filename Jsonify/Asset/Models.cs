@@ -9,6 +9,40 @@ namespace Anno1800.Jsonify {
   partial class Asset {
 
     // ================================
+    // Attackable
+
+    class AttackableData : BaseAssetObject {
+      [Element("MaximumHitPoints")]
+      public int maximumHitPoints;
+      [Element("HasRuinState")]
+      public bool hasRuinState;
+      [Element("SelfHealPerHealTick")]
+      public double selfHealPerHealTick;
+      [Element("PausedTimeIfAttacked")]
+      public bool pausedTimeIfAttacked;
+      [Element("CanBeAttackedByPlayer")]
+      public bool canBeAttackedByPlayer;
+      [Element("MoralePower")]
+      public int moralePower;
+      [Element("IsInvulnerable")]
+      public bool isInvulnerable;
+      [Element("MilitaryDefensePoints")]
+      public double militaryDefensePoints;
+      [Element("AccuracyWidth")]
+      public double accuracyWidth;
+      [Element("SelfHealPausedTimeIfAttacked")]
+      public int selfHealPausedTimeIfAttacked;
+      [Element("ArmorType")]
+      public string armorType;
+      [Element("DisableGettingAutoAttacked")]
+      public bool disableGettingAutoAttacked;
+
+      public AttackableData(XElement element) : base(element) {
+
+      }
+    }
+
+    // ================================
     // Cost
 
     class CostPair : BaseAssetObject {
