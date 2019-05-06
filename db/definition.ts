@@ -118,6 +118,12 @@ export interface PopulationLevel7 extends Asset {
   population7?: Population7;
 }
 
+export interface Shipyard extends Building {
+  maintenance?: MaintenanceData;
+  electric?: ElectricData;
+  shipyard?: ShipyardData;
+}
+
 export interface Street extends Building {
   street?: StreetData;
 }
@@ -380,6 +386,10 @@ export interface Population7 extends BaseAssetObject {
   outputs: PopulationOutput[];
   categoryIcon: string;
   moods?: Record<string, number>;
+}
+
+export interface ShipyardData extends BaseAssetObject {
+  assemblyOptions: number[];
 }
 
 export interface StreetData extends BaseAssetObject {

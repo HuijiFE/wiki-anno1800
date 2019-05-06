@@ -66,6 +66,7 @@ namespace Anno1800.Jsonify {
         "Monument",
         "Ornament",
         "RepairCrane",
+        "Shipyard",
         "Buff",
         "Item",
         "ItemAction",
