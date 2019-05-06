@@ -160,5 +160,21 @@ namespace Anno1800.Jsonify {
     class PowerplantBuilding : FactoryBuilding7 {
       public PowerplantBuilding(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { }
     }
+
+    class MonumentData : BaseAssetObject {
+      [Element("UpgradeTarget")]
+      public int upgradeTarget;
+
+      public MonumentData(XElement element) : base(element) { }
+    }
+
+    [Adapter]
+    class Monument : FactoryBuilding7 {
+      [Nullable]
+      [Element("Monument")]
+      public MonumentData? monument;
+
+      public Monument(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { }
+    }
   }
 }
