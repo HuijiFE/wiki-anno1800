@@ -135,6 +135,10 @@ export interface BridgeBuilding extends Building {
   bridge?: BridgeData;
 }
 
+export interface VisitorPier extends Building {
+  maintenance?: MaintenanceData;
+}
+
 export interface Warehouse extends Building {
   warehouse?: WarehouseData;
   queues: number;
