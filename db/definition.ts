@@ -55,6 +55,10 @@ export interface HeavyFactoryBuilding extends FactoryBuilding7 {
 export interface HeavyFreeAreaBuilding extends FreeAreaBuilding {
 }
 
+export interface ItemBalancing extends Building {
+  itemConfig?: ItemConfigData;
+}
+
 export interface Market extends Building {
   market?: MarketData;
   storedProducts: number[];
@@ -186,6 +190,16 @@ export interface FreeAreaProductivity extends BaseAssetObject {
   wayTime: number;
   freeAreaType: string;
   cutTree: boolean;
+}
+
+export interface ItemConfigData extends BaseAssetObject {
+  rarityText: Record<string,number>;
+  exclusiveGroupText: Record<string,number>;
+  allocationText: Record<string,number>;
+  allocationIcons: Record<string,string>;
+  itemGenCrateAsset: number;
+  itemGenCrateScale: number;
+  buffFluffIndexIncreaseTimer: number;
 }
 
 export interface MarketData extends BaseAssetObject {
