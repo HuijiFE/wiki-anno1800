@@ -8,10 +8,6 @@ export interface Asset {
   description?: number;
 }
 
-export interface BridgeBuilding extends Building {
-  bridge?: BridgeData;
-}
-
 export interface Building extends Asset {
   attackable?: AttackableData;
   building?: BuildingData;
@@ -29,6 +25,16 @@ export interface FactoryBuilding7 extends Building {
   electric?: ElectricData;
 }
 
+export interface HeavyFactoryBuilding extends FactoryBuilding7 {
+}
+
+export interface FreeAreaBuilding extends FactoryBuilding7 {
+  freeAreaProductivity?: FreeAreaProductivity;
+}
+
+export interface HeavyFreeAreaBuilding extends FreeAreaBuilding {
+}
+
 export interface FarmBuilding extends FactoryBuilding7 {
   moduleOwner?: ModuleOwnerData;
 }
@@ -36,23 +42,18 @@ export interface FarmBuilding extends FactoryBuilding7 {
 export interface Farmfield extends Building {
 }
 
-export interface FreeAreaBuilding extends FactoryBuilding7 {
-  freeAreaProductivity?: FreeAreaProductivity;
+export interface Slot extends Building {
+  slot?: SlotData;
 }
 
-export interface HarborDepot extends Warehouse {
+export interface SlotFactoryBuilding7 extends FactoryBuilding7 {
+  slot?: SlotData;
 }
 
-export interface HarborWarehouse7 extends Warehouse {
+export interface OilPumpBuilding extends Slot {
 }
 
-export interface HarborWarehouseStrategic extends Warehouse {
-}
-
-export interface HeavyFactoryBuilding extends FactoryBuilding7 {
-}
-
-export interface HeavyFreeAreaBuilding extends FreeAreaBuilding {
+export interface PowerplantBuilding extends FactoryBuilding7 {
 }
 
 export interface ItemBalancing extends Building {
@@ -72,18 +73,8 @@ export interface Monument extends FactoryBuilding7 {
   monument?: MonumentData;
 }
 
-export interface OilPumpBuilding extends Slot {
-}
-
 export interface ParticipantRepresentationFeature extends Asset {
   participant?: ParticipantRepresentationFeatureData;
-}
-
-export interface PopulationLevel7 extends Asset {
-  population7?: Population7;
-}
-
-export interface PowerplantBuilding extends FactoryBuilding7 {
 }
 
 export interface Product extends Asset {
@@ -99,12 +90,8 @@ export interface ResidenceBuilding7 extends Building {
   residnece7?: Residence7;
 }
 
-export interface Slot extends Building {
-  slot?: SlotData;
-}
-
-export interface SlotFactoryBuilding7 extends FactoryBuilding7 {
-  slot?: SlotData;
+export interface PopulationLevel7 extends Asset {
+  population7?: Population7;
 }
 
 export interface Street extends Building {
@@ -114,18 +101,26 @@ export interface Street extends Building {
 export interface StreetBuilding extends Street {
 }
 
+export interface BridgeBuilding extends Building {
+  bridge?: BridgeData;
+}
+
 export interface Warehouse extends Building {
   warehouse?: WarehouseData;
   queues: number;
   storedProducts: number[];
 }
 
-export interface BaseAssetObject {
+export interface HarborWarehouse7 extends Warehouse {
 }
 
-export interface BridgeData extends BaseAssetObject {
-  minLength: number;
-  maxLength: number;
+export interface HarborWarehouseStrategic extends Warehouse {
+}
+
+export interface HarborDepot extends Warehouse {
+}
+
+export interface BaseAssetObject {
 }
 
 export interface BuildingData extends BaseAssetObject {
@@ -195,6 +190,13 @@ export interface FreeAreaProductivity extends BaseAssetObject {
   wayTime: number;
   freeAreaType: string;
   cutTree: boolean;
+}
+
+export interface SlotData extends BaseAssetObject {
+  type: string;
+  workArea: number;
+  snapsToSlot: boolean;
+  category: number;
 }
 
 export interface ItemConfigData extends BaseAssetObject {
@@ -275,6 +277,26 @@ export interface ParticipantRepresentationFeatureData extends BaseAssetObject {
   colors: string[];
 }
 
+export interface ProductData extends BaseAssetObject {
+  negative: boolean;
+  category: number;
+  isWorkforce: boolean;
+  isAbstract: boolean;
+  regions: string[];
+  basePrice: number;
+  civLevel: number;
+}
+
+export interface ProductionChainNode extends BaseAssetObject {
+  building: number;
+  nodes?: ProductionChainNode[];
+}
+
+export interface Residence7 extends BaseAssetObject {
+  population: number;
+  max: number;
+}
+
 export interface PopulationInput extends BaseAssetObject {
   product: number;
   amount: number;
@@ -297,35 +319,13 @@ export interface Population7 extends BaseAssetObject {
   moods?: Record<string,number>;
 }
 
-export interface ProductData extends BaseAssetObject {
-  negative: boolean;
-  category: number;
-  isWorkforce: boolean;
-  isAbstract: boolean;
-  regions: string[];
-  basePrice: number;
-  civLevel: number;
-}
-
-export interface ProductionChainNode extends BaseAssetObject {
-  building: number;
-  nodes?: ProductionChainNode[];
-}
-
-export interface Residence7 extends BaseAssetObject {
-  population: number;
-  max: number;
-}
-
-export interface SlotData extends BaseAssetObject {
-  type: string;
-  workArea: number;
-  snapsToSlot: boolean;
-  category: number;
-}
-
 export interface StreetData extends BaseAssetObject {
   bridge: number;
+}
+
+export interface BridgeData extends BaseAssetObject {
+  minLength: number;
+  maxLength: number;
 }
 
 export interface WarehouseData extends BaseAssetObject {

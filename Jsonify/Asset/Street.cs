@@ -23,5 +23,28 @@ namespace Anno1800.Jsonify {
 
       public Street(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { }
     }
+
+    [Adapter]
+    class StreetBuilding : Street {
+      public StreetBuilding(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { }
+    }
+
+    class BridgeData : BaseAssetObject {
+      [Element("MinLength")]
+      public int minLength;
+      [Element("MaxLength")]
+      public int maxLength;
+
+      public BridgeData(XElement element) : base(element) { }
+    }
+
+    [Adapter]
+    class BridgeBuilding : Building {
+      [Nullable]
+      [Element("Bridge")]
+      public BridgeData? bridge;
+
+      public BridgeBuilding(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { }
+    }
   }
 }

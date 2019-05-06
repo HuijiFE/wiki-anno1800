@@ -36,5 +36,20 @@ namespace Anno1800.Jsonify {
           ?? new List<int>();
       }
     }
+
+    [Adapter]
+    class HarborWarehouse7 : Warehouse {
+      public HarborWarehouse7(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { }
+    }
+
+    [Adapter]
+    class HarborWarehouseStrategic : Warehouse {
+      public HarborWarehouseStrategic(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { }
+    }
+
+    [Adapter]
+    class HarborDepot : Warehouse {
+      public HarborDepot(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { }
+    }
   }
 }
