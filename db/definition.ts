@@ -156,6 +156,10 @@ export interface HarborWarehouseStrategic extends Warehouse {
 export interface HarborDepot extends Warehouse {
 }
 
+export interface WorkforceConnector extends Building {
+  maintenance?: MaintenanceData;
+}
+
 export interface BaseAssetObject {
 }
 
