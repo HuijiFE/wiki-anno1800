@@ -173,10 +173,10 @@ export interface ElectricData extends BaseAssetObject {
 }
 
 export interface ColorConfigData extends BaseAssetObject {
-  text: Record<string,string>;
-  slotGhost: Record<string,string>;
-  questOutline: Record<string,string>;
-  itemRarity: Record<string,string>;
+  text: Record<string, string>;
+  slotGhost: Record<string, string>;
+  questOutline: Record<string, string>;
+  itemRarity: Record<string, string>;
   buildModeCurrentValidColor: string;
   buildModeCurrentInvalidColor: string;
   positiveValueColor: string;
@@ -222,10 +222,10 @@ export interface MonumentData extends BaseAssetObject {
 }
 
 export interface ItemConfigData extends BaseAssetObject {
-  rarityText: Record<string,number>;
-  exclusiveGroupText: Record<string,number>;
-  allocationText: Record<string,number>;
-  allocationIcons: Record<string,string>;
+  rarityText: Record<string, number>;
+  exclusiveGroupText: Record<string, number>;
+  allocationText: Record<string, number>;
+  allocationIcons: Record<string, string>;
   itemGenCrateAsset: number;
   itemGenCrateScale: number;
   buffFluffIndexIncreaseTimer: number;
@@ -357,7 +357,7 @@ export interface Population7 extends BaseAssetObject {
   inputs: PopulationInput[];
   outputs: PopulationOutput[];
   categoryIcon: string;
-  moods?: Record<string,number>;
+  moods?: Record<string, number>;
 }
 
 export interface StreetData extends BaseAssetObject {

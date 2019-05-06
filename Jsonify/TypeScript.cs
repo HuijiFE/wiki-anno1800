@@ -18,7 +18,7 @@ namespace Anno1800.Jsonify {
           return $"{TypeScript.GetTypeScriptTypeName(type.GetGenericArguments()[0])}[]";
         }
         if (def == typeof(Dictionary<,>)) {
-          return $"Record<{TypeScript.GetTypeScriptTypeName(type.GetGenericArguments()[0])},{TypeScript.GetTypeScriptTypeName(type.GetGenericArguments()[1])}>";
+          return $"Record<{string.Join(", ", type.GetGenericArguments().Select(at => TypeScript.GetTypeScriptTypeName(at)))}>";
         }
       }
       switch (type.Name) {
