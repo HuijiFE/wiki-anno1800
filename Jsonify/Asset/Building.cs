@@ -8,45 +8,41 @@ using System.Xml.Linq;
 namespace Anno1800.Jsonify {
   partial class Asset {
     class BuildingData : BaseAssetObject {
+      [Element("BuildingType")]
       public string? type;
+      [Element("TerrainType")]
       public string? terrian;
+      [Element("AssociatedRegions")]
       public string? region;
-      public int? category;
+      [Element("BuildingCategoryName")]
+      public int category;
 
-      public BuildingData(XElement element) : base(element) {
-        this.type = element.String("BuildingType");
-        this.terrian = element.String("TerrainType");
-        this.region = element.String("AssociatedRegions");
-        this.category = element.Int("BuildingCategoryName");
-      }
+      public BuildingData(XElement element) : base(element) { }
     }
 
     class Building : Asset {
       [Nullable]
+      [Element("Attackable")]
       public AttackableData? attackable;
       [Nullable]
+      [Element("Building")]
       public BuildingData? building;
       [Nullable]
+      [Element("Cost")]
       public CostData? cost;
 
-      public Building(XElement asset, Dictionary<string, XElement> map) : base(asset, map) {
-        var values = asset.Element("Values");
-
-        this.attackable = values.Object<AttackableData>("Attackable");
-        this.building = values.Object<BuildingData>("Building");
-        this.cost = values.Object<CostData>("Cost");
-      }
+      public Building(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { }
     }
 
     // ================================
     // Upgradable
 
     class UpgradableData : BaseAssetObject {
+      [Element("NextGUID")]
       public int next;
       public List<CostPair> costs;
 
       public UpgradableData(XElement element) : base(element) {
-        this.next = element.Int("NextGUID");
         this.costs = element.Element("UpgradeCost")
           .Elements()
           .Select(item => new CostPair(item))
@@ -59,18 +55,19 @@ namespace Anno1800.Jsonify {
     // Culture
 
     class CultureData : BaseAssetObject {
+      [Element("CultureType")]
       public string type;
+      [Element("Attractiveness")]
       public int attractiveness;
+      [Element("HasPollution")]
       public bool hasPollution;
+      //[Element("CultureSpawnGroup")]
       //public bool cultureSpawnGroup;
       public List<int> setPages;
+      [Element("OpenSetPages")]
       public int openSetPages;
 
       public CultureData(XElement element) : base(element) {
-        this.type = element.String("CultureType") ?? "";
-        this.attractiveness = element.Int("Attractiveness");
-        this.hasPollution = element.Boolean("HasPollution");
-        //this.cultureSpawnGroup = element.Boolean("CultureSpawnGroup");
         this.setPages = element
           .Element("SetPages")
           ?.Elements()
@@ -79,7 +76,6 @@ namespace Anno1800.Jsonify {
           .Select(item => item.Int("Set"))
           .ToList()
           ?? new List<int>();
-        this.openSetPages = element.Int("OpenSetPages");
       }
     }
 
@@ -88,7 +84,9 @@ namespace Anno1800.Jsonify {
 
     class ModuleOwnerData : BaseAssetObject {
       public List<int> options;
+      [Element("ModuleLimit")]
       public int limit;
+      [Element("ModuleBuildRadius")]
       public int radius;
 
       public ModuleOwnerData(XElement element) : base(element) {
@@ -98,8 +96,6 @@ namespace Anno1800.Jsonify {
           .Select(item => item.Int("ModuleGUID"))
           .ToList()
           ?? new List<int>();
-        this.limit = element.Int("ModuleLimit");
-        this.radius = element.Int("ModuleBuildRadius");
       }
     }
 
@@ -108,11 +104,11 @@ namespace Anno1800.Jsonify {
 
     class ElectricData : BaseAssetObject {
       public bool boost;
+      [Element("MandatoryElectricity")]
       public bool mandatory;
 
       public ElectricData(XElement element) : base(element) {
         this.boost = element.Boolean("BoostedByElectricity") || element.Boolean("ProductivityBoost");
-        this.mandatory = element.Boolean("MandatoryElectricity");
       }
     }
   }

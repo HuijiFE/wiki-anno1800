@@ -62,7 +62,6 @@ namespace Anno1800.Jsonify {
         this.costs = element
           .Element("Costs")
           ?.Elements()
-          .Where(item => item.String("Amount") != null)
           .Select(item => new CostPair(item))
           .ToList()
           ?? new List<CostPair>();

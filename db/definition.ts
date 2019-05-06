@@ -133,7 +133,7 @@ export interface BuildingData extends BaseAssetObject {
   type: string;
   terrian: string;
   region: string;
-  category?: number;
+  category: number;
 }
 
 export interface UpgradableData extends BaseAssetObject {

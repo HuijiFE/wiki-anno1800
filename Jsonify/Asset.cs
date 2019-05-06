@@ -28,6 +28,8 @@ namespace Anno1800.Jsonify {
       this.id = standard.String("ID");
       this.icon = standard.String("IconFilename");
       this.description = standard.Int("InfoDescription");
+
+      Adapter.Deserialize(this, values);
     }
 
     // ================================
@@ -42,7 +44,7 @@ namespace Anno1800.Jsonify {
       Action<XElement> walk = null;
       walk = (element) => {
         if (element.Name == "Asset") {
-          var guid = element.String("Values/Standard/GUID") ?? "0";
+          var guid = element.String("Values/Standard/GUID", "0");
           map.Add(guid, element);
           return;
         }
@@ -57,7 +59,7 @@ namespace Anno1800.Jsonify {
         var template = asset.Element("Template")?.Value;
         if (template == null) {
           var baseAssetGUID = asset.String("BaseAssetGUID");
-          if (baseAssetGUID == null) {
+          if (string.IsNullOrWhiteSpace(baseAssetGUID)) {
             return "_Unknown";
           }
           var baseAsset = map.ContainsKey(baseAssetGUID) ? map[baseAssetGUID] : null;
@@ -87,7 +89,7 @@ namespace Anno1800.Jsonify {
       Action<XElement> walk = null;
       walk = (element) => {
         if (element.Name == "Template") {
-          map.Add(element.String("Name") ?? "", element);
+          map.Add(element.String("Name"), element);
           return;
         }
         foreach (var child in element.Elements()) {
@@ -108,11 +110,10 @@ namespace Anno1800.Jsonify {
         if (derivedChildren.Any(c => c.Name == "Item") || baseChildren.Any(c => c.Name == "Item")) {
           foreach (var derivedItem in derivedChildren) {
             var index = derivedItem.String("VectorElement/InheritanceMapV2/Entry/Index");
-            if (index == null) {
+            if (string.IsNullOrWhiteSpace(index)) {
               index = derivedItem.String("VectorElement/InheritedIndex");
             }
-            derivedItem.Element("VectorElement")?.Remove();
-            if (index != null) {
+            if (!string.IsNullOrWhiteSpace(index)) {
               var baseItem = baseChildren[int.Parse(index)];
               if (baseItem.HasElements) {
                 inherit(derivedItem, baseItem);
@@ -120,6 +121,7 @@ namespace Anno1800.Jsonify {
                 derivedItem.Value = baseItem.Value;
               }
             }
+            derivedItem.Element("VectorElement")?.Remove();
           }
         } else {
           foreach (var baseChild in baseChildren) {
@@ -154,7 +156,7 @@ namespace Anno1800.Jsonify {
         resolve(asset);
       }
       foreach ((string guid, XElement asset) in assetsMap) {
-        var templateName = asset.String("Template") ?? "";
+        var templateName = asset.String("Template");
         var template = templatesMap[templateName];
         inherit(asset.Element("Values"), template.Element("Properties"));
       }
@@ -170,7 +172,7 @@ namespace Anno1800.Jsonify {
       var dataDict = new Dictionary<string, List<Asset>>();
 
       foreach ((string guid, XElement asset) in assetsMap) {
-        var template = asset.String("Template") ?? "";
+        var template = asset.String("Template");
         if (adaptersMap.ContainsKey(template)) {
           var data = (Asset)Activator.CreateInstance(adaptersMap[template], asset, assetsMap);
           if (dataDict.ContainsKey(template)) {

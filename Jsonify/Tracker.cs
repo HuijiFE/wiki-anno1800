@@ -59,16 +59,30 @@ namespace Anno1800.Jsonify {
         "StorageBase/StoredProducts/Item",
         "Market",
         "Monument",
-        /*
-          item
-          ActiveItem
-          CultureItem
-          FluffItem
-          GuildhouseItem
-          HarborOfficeItem
-          ItemSpecialAction
-         */
-
+        "Item",
+        "ItemAction",
+        "ExpeditionAttribute",
+        "SpecialAction",
+        "BuildingUpgrade",
+        "IncidentInfluencerUpgrade",
+        "IncidentInfectableUpgrade",
+        "ResidenceUpgrade",
+        "PopulationUpgrade",
+        "ElectricUpgrade",
+        "ItemGeneratorUpgrade",
+        "FactoryUpgrade",
+        "ShipyardUpgrade",
+        "CultureUpgrade",
+        "ModuleOwnerUpgrade",
+        "VisitorHarborUpgrade",
+        "PassiveTradeGoodGenUpgrade",
+        "VehicleUpgrade",
+        "RepairCraneUpgrade",
+        "KontorUpgrade",
+        "AttackerUpgrade",
+        "AttackableUpgrade",
+        "ProjectileUpgrade",
+        "Buff",
       };
 
       Dictionary<string, List<string>> xmlReport = paths.ToDictionary(

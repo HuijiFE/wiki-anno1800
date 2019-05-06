@@ -38,54 +38,57 @@ namespace Anno1800.Jsonify {
       return element;
     }
 
-    public static string? String(this XElement wrapper, string path) {
-      return wrapper.ElementByPath(path)?.Value;
+    public static string String(this XElement wrapper, string path, string defaultValue = "") {
+      return wrapper.ElementByPath(path)?.Value ?? defaultValue;
     }
 
     public static int Int(this XElement wrapper, string path, int defaultValue = 0) {
       var content = wrapper.String(path);
-      if (content != null) {
+      if (!string.IsNullOrWhiteSpace(content)) {
         return int.Parse(content);
       }
       return defaultValue;
     }
 
-    public static double Double(this XElement wrapper, string path) {
+    public static double Double(this XElement wrapper, string path, double defaultValue = 0.0) {
       var content = wrapper.String(path);
-      if (content != null) {
+      if (!string.IsNullOrWhiteSpace(content)) {
         return double.Parse(content);
       }
-      return 0.0;
+      return defaultValue;
     }
 
-    public static bool Boolean(this XElement wrapper, string path) {
+    public static bool Boolean(this XElement wrapper, string path, bool defaultValue = false) {
       var content = wrapper.String(path);
       if (content == "1") {
         return true;
       }
-      return false;
+      return defaultValue;
     }
 
     /// <summary>
     /// Convert a number text to css hex color value.
     /// </summary>
-    public static string Color(this XElement wrapper, string path) {
+    public static string Color(this XElement wrapper, string path, string defaultValue = "ffffff") {
       var content = wrapper.String(path);
-      if (content != null) {
+      if (!string.IsNullOrWhiteSpace(content)) {
         var value = int.Parse(content);
         return value.ToString("x8").Substring(2, 6);
       }
-      return "ffffff";
+      return defaultValue;
     }
 
-    public static T? Object<T>(this XElement wrapper, string path) where T : BaseAssetObject {
+    public static object? Object(this XElement wrapper, string path, Type objType) {
       var element = wrapper.ElementByPath(path);
       if (element != null) {
-        return (T)Activator.CreateInstance(typeof(T), element);
+        return Activator.CreateInstance(objType, element);
       }
       return null;
     }
 
+    public static T? Object<T>(this XElement wrapper, string path) where T : BaseAssetObject {
+      return (T?)wrapper.Object(path, typeof(T));
+    }
 
     readonly static Type TYPE_STRING = typeof(string);
     readonly static Type TYPE_INT = typeof(int);
@@ -104,6 +107,8 @@ namespace Anno1800.Jsonify {
             field.SetValue(obj, element.Double(path));
           } else if (field.FieldType == TYPE_BOOLEAN) {
             field.SetValue(obj, element.Boolean(path));
+          } else if (field.FieldType.IsSubclassOf(typeof(BaseAssetObject))) {
+            field.SetValue(obj, element.Object(path, field.FieldType));
           } else {
             throw new Exception($"unsupported type '{field.FieldType.FullName}' for deserializing");
           }
