@@ -17,6 +17,10 @@ export interface Building extends Asset {
   cost?: CostData;
 }
 
+export interface ColorConfig extends Building {
+  colorConfig?: ColorConfigData;
+}
+
 export interface FactoryBuilding7 extends Building {
   maintenance?: MaintenanceData;
   neededFertility: number;
@@ -145,6 +149,20 @@ export interface ModuleOwnerData extends BaseAssetObject {
 export interface ElectricData extends BaseAssetObject {
   boost: boolean;
   mandatory: boolean;
+}
+
+export interface ColorConfigData extends BaseAssetObject {
+  text: Record<string,string>;
+  slotGhost: Record<string,string>;
+  questOutline: Record<string,string>;
+  itemRarity: Record<string,string>;
+  buildModeCurrentValidColor: string;
+  buildModeCurrentInvalidColor: string;
+  positiveValueColor: string;
+  negativeValueColor: string;
+  buildModeRadius: string;
+  buildModeGridExtension: string;
+  blueprintColor: string;
 }
 
 export interface FactoryInputOutputPair extends BaseAssetObject {
