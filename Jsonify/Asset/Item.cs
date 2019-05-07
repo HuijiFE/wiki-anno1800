@@ -35,6 +35,19 @@ namespace Anno1800.Jsonify {
       public ItemData(XElement element) : base(element) { }
     }
 
+    class ItemEffect : BaseAssetObject {
+      public List<int> targets;
+
+      public ItemEffect(XElement element) : base(element) {
+        this.targets = element
+          .Element("EffectTargets")
+          ?.Elements()
+          .Select(item => item.Int("GUID"))
+          .ToList()
+          ?? new List<int>();
+      }
+    }
+
     class ItemAction : BaseAssetObject {
       [Element("ActionTarget")]
       public int target;
@@ -102,12 +115,6 @@ namespace Anno1800.Jsonify {
     }
 
     class UpgradeData : BaseAssetObject {
-      [Nullable]
-      public Dictionary<string, UpgradePair>? upgrades;
-      public int replacingWorkforce;
-      [Nullable]
-      public Dictionary<string, OverrideIncidentAttractivenessPair>? OverrideIncidentAttractiveness;
-
       public static readonly List<string> upgradeWrappers = new List<string> {
         "IncidentInfluencerUpgrade",
         "PopulationUpgrade",
@@ -176,6 +183,14 @@ namespace Anno1800.Jsonify {
         "HealBuildingsPerMinuteUpgrade"
       };
 
+      public int replacingWorkforce;
+      [Nullable]
+      public Dictionary<string, OverrideIncidentAttractivenessPair>? OverrideIncidentAttractiveness;
+      public int ChangeModule;
+
+      [Nullable]
+      public Dictionary<string, UpgradePair>? upgrades;
+
       public UpgradeData(List<XElement> elements) : base(null) {
         var dict = elements
           .Where(el => el != null && el.HasElements)
@@ -197,6 +212,9 @@ namespace Anno1800.Jsonify {
       [Nullable]
       [Element("Item")]
       public ItemData item;
+      [Nullable]
+      [Element("ItemEffect")]
+      public ItemEffect itemEffect;
       [Nullable]
       [Element("ExpeditionAttribute")]
       public ExpeditionAttribute? expeditionAttribute;

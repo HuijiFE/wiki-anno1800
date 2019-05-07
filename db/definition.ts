@@ -83,6 +83,7 @@ export interface HarborBuildingAttacker extends HarborBuilding {
 
 export interface Item extends Asset {
   item?: ItemData;
+  itemEffect?: ItemEffect;
   expeditionAttribute?: ExpeditionAttribute;
   itemAction?: ItemAction;
   specialAction?: SpecialAction;
@@ -387,6 +388,10 @@ export interface ItemData extends BaseAssetObject {
   isDestroyedOnUnequip: boolean;
 }
 
+export interface ItemEffect extends BaseAssetObject {
+  targets: number[];
+}
+
 export interface ItemAction extends BaseAssetObject {
   target: number;
   distance: number;
@@ -422,9 +427,10 @@ export interface OverrideIncidentAttractivenessPair extends BaseAssetObject {
 }
 
 export interface UpgradeData extends BaseAssetObject {
-  upgrades?: Record<string, UpgradePair>;
   replacingWorkforce: number;
   OverrideIncidentAttractiveness?: Record<string, OverrideIncidentAttractivenessPair>;
+  ChangeModule: number;
+  upgrades?: Record<string, UpgradePair>;
 }
 
 export interface ItemConfigData extends BaseAssetObject {
