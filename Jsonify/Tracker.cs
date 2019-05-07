@@ -67,10 +67,39 @@ namespace Anno1800.Jsonify {
         "Ornament",
         "RepairCrane",
         "Shipyard",
-        // Item
+
+        "Item",
         "ItemAction",
-        "ExpeditionAttribute",
+        "ItemWithUI",
         "SpecialAction",
+        "ItemEffect",
+        "ExpeditionAttribute",
+        "IncidentInfluencerUpgrade",
+        "CultureUpgrade",
+        "BuildingUpgrade",
+        "PopulationUpgrade",
+        "ResidenceUpgrade",
+        "VisitorHarborUpgrade",
+        "IncidentInfectableUpgrade",
+        "Buff",
+        "FactoryUpgrade",
+        "ModuleOwnerUpgrade",
+        "ElectricUpgrade",
+        "ItemGeneratorUpgrade",
+        "AttackerUpgrade",
+        "PassiveTradeGoodGenUpgrade",
+        "ShipyardUpgrade",
+        "AttackableUpgrade",
+        "ProjectileUpgrade",
+        "VehicleUpgrade",
+        "RepairCraneUpgrade",
+        "KontorUpgrade",
+        "TradeShipUpgrade",
+        "ItemStartExpedition",
+        "ItemConstructionPlan",
+      };
+
+      var itemUpgrades = new List<string> {
         "BuildingUpgrade",
         "IncidentInfluencerUpgrade",
         "IncidentInfectableUpgrade",
@@ -90,13 +119,12 @@ namespace Anno1800.Jsonify {
         "AttackerUpgrade",
         "AttackableUpgrade",
         "ProjectileUpgrade",
-        "Buff",
       };
 
-      Dictionary<string, List<string>> xmlReport = paths.ToDictionary(
+      Dictionary<string, List<string>> xmlReport = new HashSet<string>(paths).ToDictionary(
         path => path,
         path => {
-          var isItem = path.EndsWith("Item");
+          var isItem = path.EndsWith("/Item");
           path = isItem ? path.Replace("/Item", "") : path;
           var elements = assetsMap
             .Select(kvp => kvp.Value.Element("Values").ElementByPath(path))
@@ -113,8 +141,33 @@ namespace Anno1800.Jsonify {
             : new List<string>();
         });
 
+      var items = assetsMap
+        .Values
+        .Where(a => a.ElementByPath("Values/Item") != null || a.ElementByPath("Values/Buff") != null)
+        .ToList();
+      var itemProps = items
+        .Aggregate(new List<XElement>(), (list, item) => {
+          list.AddRange(item.Element("Values").Elements());
+          return list;
+        });
+      var upgrades = itemProps
+        .Aggregate(new List<XElement>(), (list, prop) => {
+          list.AddRange(prop.Elements());
+          return list;
+        })
+        .Where(upg => upg.HasElements && !upg.Elements().Any(p => p.Name != "Value" && p.Name != "Percental"))
+        .ToList();
+
       var report = new Dictionary<string, object> {
         { "xml", xmlReport },
+        { "xmlItem", new {
+          items = items.Aggregate(new HashSet<string>(), (set, item) => {
+            set.Add(item.String("Template"));
+            return set;
+          }),
+          itemProps = new HashSet<string>(itemProps.Select(p => p.Name.ToString())),
+          upgrades = new HashSet<string>(upgrades.Select(p => p.Name.ToString())),
+        }},
         { "assets", assetsReport }
       };
 

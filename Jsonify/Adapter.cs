@@ -27,6 +27,9 @@ namespace Anno1800.Jsonify {
   [AttributeUsage(AttributeTargets.Field)]
   class ColorAttribute : Attribute { }
 
+  [AttributeUsage(AttributeTargets.Field)]
+  class NonEmptyElementAttribute : Attribute { }
+
   abstract class BaseAssetObject {
     public BaseAssetObject(XElement element) {
       Adapter.Deserialize(this, element);
@@ -94,8 +97,20 @@ namespace Anno1800.Jsonify {
       return null;
     }
 
+    public static object? ObjectNonEmpty(this XElement wrapper, string path, Type objType) {
+      var element = wrapper.ElementByPath(path);
+      if (element != null && element.HasElements) {
+        return Activator.CreateInstance(objType, element);
+      }
+      return null;
+    }
+
     public static T? Object<T>(this XElement wrapper, string path) where T : BaseAssetObject {
       return (T?)wrapper.Object(path, typeof(T));
+    }
+
+    public static T? ObjectNonEmpty<T>(this XElement wrapper, string path) where T : BaseAssetObject {
+      return (T?)wrapper.ObjectNonEmpty(path, typeof(T));
     }
 
     readonly static Type TYPE_STRING = typeof(string);
@@ -107,13 +122,14 @@ namespace Anno1800.Jsonify {
       foreach (var field in obj.GetType().GetFields(BindingFlags.Instance | BindingFlags.Public)) {
         var elemAttr = field.GetCustomAttribute<ElementAttribute>();
         var path = elemAttr?.path;
-        var color = field.GetCustomAttribute<ColorAttribute>();
+        var isColor = field.GetCustomAttribute<ColorAttribute>() != null;
+        var isNonEmpty = field.GetCustomAttribute<NonEmptyElementAttribute>() != null;
         if (path != null) {
           if (field.FieldType == typeof(List<string>)) {
             var content = element.String(path);
             field.SetValue(obj, string.IsNullOrWhiteSpace(content) ? new List<string>() : content.Split(';').ToList());
           } else if (field.FieldType == TYPE_STRING) {
-            if (color != null) {
+            if (isColor) {
               field.SetValue(obj, element.Color(path, elemAttr.defaultValue as string));
             } else {
               field.SetValue(obj, element.String(path, elemAttr.defaultValue as string));
@@ -125,7 +141,7 @@ namespace Anno1800.Jsonify {
           } else if (field.FieldType == TYPE_BOOLEAN) {
             field.SetValue(obj, element.Boolean(path));
           } else if (field.FieldType.IsSubclassOf(typeof(BaseAssetObject))) {
-            field.SetValue(obj, element.Object(path, field.FieldType));
+            field.SetValue(obj, isNonEmpty ? element.ObjectNonEmpty(path, field.FieldType) : element.Object(path, field.FieldType));
           } else {
             throw new Exception($"unsupported type '{field.FieldType.FullName}' for deserializing");
           }

@@ -8,14 +8,6 @@ export interface Asset {
   description?: number;
 }
 
-export interface Item extends Asset {
-  itemAction?: ItemAction;
-  expeditionAttribute?: ExpeditionAttribute;
-}
-
-export interface ActiveItem extends Item {
-}
-
 export interface Building extends Asset {
   attackable?: AttackableData;
   building?: BuildingData;
@@ -79,6 +71,35 @@ export interface HarborBuilding extends Building {
 
 export interface HarborBuildingAttacker extends HarborBuilding {
   attacker?: AttackerData;
+}
+
+export interface Item extends Asset {
+  item?: ItemData;
+  expeditionAttribute?: ExpeditionAttribute;
+  itemAction?: ItemAction;
+  specialAction?: SpecialAction;
+  upgrade?: UpgradeData;
+}
+
+export interface ActiveItem extends Item {
+}
+
+export interface GuildhouseItem extends Item {
+}
+
+export interface HarborOfficeItem extends Item {
+}
+
+export interface ItemSpecialAction extends Item {
+}
+
+export interface ItemSpecialActionVisualEffect extends Item {
+}
+
+export interface ShipSpecialist extends Item {
+}
+
+export interface TownhallItem extends Item {
 }
 
 export interface ItemBalancing extends Building {
@@ -189,22 +210,6 @@ export interface WorkforceConnector extends Building {
 }
 
 export interface BaseAssetObject {
-}
-
-export interface ItemAction extends BaseAssetObject {
-  target: number;
-  distance: number;
-  cooldown: number;
-  description: number;
-  stopMovementOnInteraction: boolean;
-  scope: string;
-  repairSpeed: number;
-  duration: number;
-  buff: number;
-  canEnd: boolean;
-  incidentTypes: string[];
-  isDestroyedAfterCooldown: boolean;
-  radiusBuffTargets: string[];
 }
 
 export interface BuildingData extends BaseAssetObject {
@@ -320,6 +325,60 @@ export interface SlotData extends BaseAssetObject {
 
 export interface MonumentData extends BaseAssetObject {
   upgradeTarget: number;
+}
+
+export interface ItemData extends BaseAssetObject {
+  flotsam: number;
+  allocation: string;
+  maxStackSize: number;
+  rarity: string;
+  hasAction: boolean;
+  tradePrice: boolean;
+  transferBlocked: boolean;
+  itemType: boolean;
+  itemSet: number;
+  exclusiveGroup: string;
+  isDestroyedOnUnequip: boolean;
+}
+
+export interface ItemAction extends BaseAssetObject {
+  target: number;
+  distance: number;
+  cooldown: number;
+  description: number;
+  stopMovementOnInteraction: boolean;
+  scope: string;
+  repairSpeed: number;
+  duration: number;
+  buff: number;
+  canEnd: boolean;
+  incidentTypes: string[];
+  isDestroyedAfterCooldown: boolean;
+  radiusBuffTargets: string[];
+}
+
+export interface SpecialAction extends BaseAssetObject {
+  projectile: number;
+  barrageCount: number;
+  barrageDuration: number;
+  actionRadius: number;
+  delay: number;
+}
+
+export interface UpgradePair extends BaseAssetObject {
+  value: number;
+  percental: boolean;
+}
+
+export interface OverrideIncidentAttractivenessPair extends BaseAssetObject {
+  attractiveness: number;
+  overrideEnabled: boolean;
+}
+
+export interface UpgradeData extends BaseAssetObject {
+  upgrades?: Record<string, UpgradePair>;
+  replacingWorkforce: number;
+  OverrideIncidentAttractiveness?: Record<string, OverrideIncidentAttractivenessPair>;
 }
 
 export interface ItemConfigData extends BaseAssetObject {
