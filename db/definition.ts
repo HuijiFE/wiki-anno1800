@@ -137,6 +137,21 @@ export interface Shipyard extends Building {
   shipyard?: ShipyardData;
 }
 
+export interface Text extends Asset {
+}
+
+export interface Icon extends Asset {
+}
+
+export interface NewspaperEffectIcon extends Icon {
+  effectColor: string;
+}
+
+export interface PlayerLogo extends Asset {
+  defaultLogo: string;
+  miniLogo: string;
+}
+
 export interface Street extends Building {
   street?: StreetData;
 }
