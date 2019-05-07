@@ -88,6 +88,7 @@ export interface Item extends Asset {
   itemAction?: ItemAction;
   specialAction?: SpecialAction;
   upgrade?: UpgradeData;
+  buff?: BuffData;
 }
 
 export interface QuestItem extends Item {
@@ -100,6 +101,21 @@ export interface ItemSpecialAction extends Item {
 }
 
 export interface QuestItemMagistrate extends Item {
+}
+
+export interface FestivalBuff extends Item {
+}
+
+export interface GuildhouseBuff extends Item {
+}
+
+export interface TownhallBuff extends Item {
+}
+
+export interface VehicleBuff extends Item {
+}
+
+export interface HarbourOfficeBuff extends Item {
 }
 
 export interface CultureItem extends Item {
@@ -374,6 +390,11 @@ export interface ProductFilterData extends BaseAssetObject {
   categories: ProductCategory[];
 }
 
+export interface BuffData extends BaseAssetObject {
+  addedInfolayer: number;
+  possibleFluffTexts: number[];
+}
+
 export interface ItemData extends BaseAssetObject {
   flotsam: number;
   allocation: string;
@@ -421,15 +442,95 @@ export interface UpgradePair extends BaseAssetObject {
   percental: boolean;
 }
 
-export interface OverrideIncidentAttractivenessPair extends BaseAssetObject {
+export interface InputBenefitModifier extends BaseAssetObject {
+  product: number;
+  additionalMoney: number;
+}
+
+export interface OverrideIncidentAttractiveness extends BaseAssetObject {
   attractiveness: number;
   overrideEnabled: boolean;
 }
 
+export interface GoodConsumptionUpgrade extends BaseAssetObject {
+  providedNeed: number;
+  amountInPercent: number;
+}
+
+export interface NeedProvideNeedUpgrade extends BaseAssetObject {
+  providedNeed: number;
+  substituteNeed: number;
+}
+
+export interface ChangedSupplyValueUpgrade extends BaseAssetObject {
+  need: number;
+  amountInPercent: number;
+}
+
+export interface AdditionalOutput extends BaseAssetObject {
+  product: number;
+  cycle: number;
+  amount: number;
+}
+
+export interface ReplaceInput extends BaseAssetObject {
+  oldInput: number;
+  newInput: number;
+}
+
+export interface InputAmountUpgrade extends BaseAssetObject {
+  product: number;
+  amount: number;
+}
+
+export interface AddStatusEffect extends BaseAssetObject {
+  effect: number;
+  duration: number;
+}
+
+export interface ReplaceAssemblyOption extends BaseAssetObject {
+  oldOption: number;
+  newOption: number;
+}
+
 export interface UpgradeData extends BaseAssetObject {
+  changeModule: number;
+  forcedFeedbackVariation: number;
+  additionalModuleSoundLoop: number;
   replacingWorkforce: number;
-  OverrideIncidentAttractiveness?: Record<string, OverrideIncidentAttractivenessPair>;
-  ChangeModule: number;
+  additionalHappiness: number;
+  taxModifierInPercent: number;
+  workforceModifierInPercent: number;
+  addedFertility: number;
+  needsElectricity: boolean;
+  provideElectricity: boolean;
+  attackSpeedUpgrade: number;
+  useProjectile: number;
+  genProbability: number;
+  genPool: number;
+  ConstructionCostInPercent: number;
+  ConstructionTimeInPercent: number;
+  activateWhiteFlag: boolean;
+  activatePirateFlag: boolean;
+  happinessIgnoresMorale: boolean;
+  blockHostileTakeover: boolean;
+  blockBuyShare: boolean;
+  activeTradePriceInPercent: number;
+  inputBenefitModifier: InputBenefitModifier[];
+  goodConsumptionUpgrade: GoodConsumptionUpgrade[];
+  needProvideNeedUpgrade: NeedProvideNeedUpgrade[];
+  changedSupplyValueUpgrade: ChangedSupplyValueUpgrade[];
+  overrideIncidentAttractiveness: Record<string, OverrideIncidentAttractiveness>;
+  additionalOutput: AdditionalOutput[];
+  replaceInputs: ReplaceInput[];
+  inputAmountUpgrade: InputAmountUpgrade[];
+  addStatusEffects: AddStatusEffect[];
+  damageFactor: Record<string, number>;
+  moraleDamage: number[];
+  hitpointDamage: number[];
+  addAssemblyOptions: number[];
+  replaceAssemblyOptions: ReplaceAssemblyOption[];
+  damageReceiveFactor: Record<string, number>;
   upgrades?: Record<string, UpgradePair>;
 }
 

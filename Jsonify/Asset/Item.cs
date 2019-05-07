@@ -8,6 +8,16 @@ using System.Xml.Linq;
 namespace Anno1800.Jsonify {
   partial class Asset {
 
+    class BuffData : BaseAssetObject {
+      [Element("AddedInfolayer")]
+      public int addedInfolayer;
+      public List<int> possibleFluffTexts;
+
+      public BuffData(XElement element) : base(element) {
+        this.possibleFluffTexts = element.ListOf("PossibleFluffTexts", item => item.Int("FluffText"));
+      }
+    }
+
     class ItemData : BaseAssetObject {
       [Element("Flotsam")]
       public int flotsam;
@@ -39,12 +49,7 @@ namespace Anno1800.Jsonify {
       public List<int> targets;
 
       public ItemEffect(XElement element) : base(element) {
-        this.targets = element
-          .Element("EffectTargets")
-          ?.Elements()
-          .Select(item => item.Int("GUID"))
-          .ToList()
-          ?? new List<int>();
+        this.targets = element.ListOf("EffectTargets", item => item.Int("GUID"));
       }
     }
 
@@ -105,13 +110,96 @@ namespace Anno1800.Jsonify {
       public UpgradePair(XElement element) : base(element) { }
     }
 
-    class OverrideIncidentAttractivenessPair : BaseAssetObject {
+    class InputBenefitModifier : BaseAssetObject {
+      [Element("Product")]
+      public int product;
+      [Element("AdditionalMoney")]
+      public int additionalMoney;
+
+      public InputBenefitModifier(XElement element) : base(element) { }
+    }
+
+    class OverrideIncidentAttractiveness : BaseAssetObject {
       [Element("Attractiveness")]
       public int attractiveness;
       [Element("OverrideEnabled")]
       public bool overrideEnabled;
 
-      public OverrideIncidentAttractivenessPair(XElement element) : base(element) { }
+      public OverrideIncidentAttractiveness(XElement element) : base(element) { }
+    }
+
+    class GoodConsumptionUpgrade : BaseAssetObject {
+      [Element("ProvidedNeed")]
+      public int providedNeed;
+      [Element("AmountInPercent")]
+      public int amountInPercent;
+
+      public GoodConsumptionUpgrade(XElement element) : base(element) { }
+    }
+
+    class NeedProvideNeedUpgrade : BaseAssetObject {
+      [Element("ProvidedNeed")]
+      public int providedNeed;
+      [Element("SubstituteNeed")]
+      public int substituteNeed;
+
+      public NeedProvideNeedUpgrade(XElement element) : base(element) { }
+    }
+
+    class ChangedSupplyValueUpgrade : BaseAssetObject {
+      [Element("Need")]
+      public int need;
+      [Element("AmountInPercent")]
+      public int amountInPercent;
+
+      public ChangedSupplyValueUpgrade(XElement element) : base(element) { }
+    }
+
+    class AdditionalOutput : BaseAssetObject {
+      [Element("Product")]
+      public int product;
+      [Element("AdditionalOutputCycle")]
+      public int cycle;
+      [Element("Amount")]
+      public int amount;
+
+      public AdditionalOutput(XElement element) : base(element) { }
+    }
+
+    class ReplaceInput : BaseAssetObject {
+      [Element("OldInput")]
+      public int oldInput;
+      [Element("NewInput")]
+      public int newInput;
+
+      public ReplaceInput(XElement element) : base(element) { }
+    }
+
+    class InputAmountUpgrade : BaseAssetObject {
+      [Element("Product")]
+      public int product;
+      [Element("Amount")]
+      public int amount;
+
+      public InputAmountUpgrade(XElement element) : base(element) { }
+    }
+
+    class AddStatusEffect : BaseAssetObject {
+      [Element("StatusEffect")]
+      public int effect;
+      [Element("StatusDuration")]
+      public int duration;
+
+      public AddStatusEffect(XElement element) : base(element) { }
+    }
+
+    class ReplaceAssemblyOption : BaseAssetObject {
+      [Element("OldOption")]
+      public int oldOption;
+      [Element("NewOption")]
+      public int newOption;
+
+      public ReplaceAssemblyOption(XElement element) : base(element) { }
     }
 
     class UpgradeData : BaseAssetObject {
@@ -138,7 +226,6 @@ namespace Anno1800.Jsonify {
         "ItemGeneratorUpgrade",
         "RepairCraneUpgrade",
       };
-
       public static readonly List<string> upgradeElementNames = new List<string> {
         "RiotInfluenceUpgrade",
         "WorkforceAmountUpgrade",
@@ -183,15 +270,88 @@ namespace Anno1800.Jsonify {
         "HealBuildingsPerMinuteUpgrade"
       };
 
+      [Element("CultureUpgrade/ChangeModule")]
+      public int changeModule;
+      [Element("CultureUpgrade/ForcedFeedbackVariation")]
+      public int forcedFeedbackVariation;
+      [Element("CultureUpgrade/AdditionalModuleSoundLoop")]
+      public int additionalModuleSoundLoop;
+      [Element("BuildingUpgrade/ReplacingWorkforce")]
       public int replacingWorkforce;
-      [Nullable]
-      public Dictionary<string, OverrideIncidentAttractivenessPair>? OverrideIncidentAttractiveness;
-      public int ChangeModule;
+      [Element("ResidenceUpgrade/AdditionalHappiness")]
+      public int additionalHappiness;
+      [Element("ResidenceUpgrade/TaxModifierInPercent")]
+      public int taxModifierInPercent;
+      [Element("ResidenceUpgrade/WorkforceModifierInPercent")]
+      public int workforceModifierInPercent;
+      [Element("FactoryUpgrade/AddedFertility")]
+      public int addedFertility;
+      [Element("FactoryUpgrade/NeedsElectricity")]
+      public bool needsElectricity;
+      [Element("ElectricUpgrade/ProvideElectricity")]
+      public bool provideElectricity;
+      [Element("AttackerUpgrade/AttackSpeedUpgrade")]
+      public int attackSpeedUpgrade;
+      [Element("AttackerUpgrade/UseProjectile")]
+      public int useProjectile;
+      [Element("PassiveTradeGoodGenUpgrade/GenProbability")]
+      public int genProbability;
+      [Element("PassiveTradeGoodGenUpgrade/GenPool")]
+      public int genPool;
+      [Element("ShipyardUpgrade/ConstructionCostInPercent")]
+      public int ConstructionCostInPercent;
+      [Element("ShipyardUpgrade/ConstructionTimeInPercent")]
+      public int ConstructionTimeInPercent;
+      [Element("VehicleUpgrade/ActivateWhiteFlag")]
+      public bool activateWhiteFlag;
+      [Element("VehicleUpgrade/ActivatePirateFlag")]
+      public bool activatePirateFlag;
+      [Element("KontorUpgrade/HappinessIgnoresMorale")]
+      public bool happinessIgnoresMorale;
+      [Element("KontorUpgrade/BlockHostileTakeover")]
+      public bool blockHostileTakeover;
+      [Element("KontorUpgrade/BlockBuyShare")]
+      public bool blockBuyShare;
+      [Element("TradeShipUpgrade/ActiveTradePriceInPercent")]
+      public int activeTradePriceInPercent;
+
+      public List<InputBenefitModifier> inputBenefitModifier;
+      public List<GoodConsumptionUpgrade> goodConsumptionUpgrade;
+      public List<NeedProvideNeedUpgrade> needProvideNeedUpgrade;
+      public List<ChangedSupplyValueUpgrade> changedSupplyValueUpgrade;
+      public Dictionary<string, OverrideIncidentAttractiveness> overrideIncidentAttractiveness;
+      public List<AdditionalOutput> additionalOutput;
+      public List<ReplaceInput> replaceInputs;
+      public List<InputAmountUpgrade> inputAmountUpgrade;
+      public List<AddStatusEffect> addStatusEffects;
+      public Dictionary<string, double> damageFactor;
+      public List<double> moraleDamage;
+      public List<double> hitpointDamage;
+      public List<int> addAssemblyOptions;
+      public List<ReplaceAssemblyOption> replaceAssemblyOptions;
+      public Dictionary<string, double> damageReceiveFactor;
 
       [Nullable]
       public Dictionary<string, UpgradePair>? upgrades;
 
-      public UpgradeData(List<XElement> elements) : base(null) {
+      public UpgradeData(IEnumerable<XElement> elements) : base(elements) {
+        this.inputBenefitModifier = elements.ListOf("PopulationUpgrade/InputBenefitModifier", item => new InputBenefitModifier(item));
+        this.goodConsumptionUpgrade = elements.ListOf("ResidenceUpgrade/GoodConsumptionUpgrade", item => new GoodConsumptionUpgrade(item));
+        this.needProvideNeedUpgrade = elements.ListOf("ResidenceUpgrade/NeedProvideNeedUpgrade", item => new NeedProvideNeedUpgrade(item));
+        this.changedSupplyValueUpgrade = elements.ListOf("ResidenceUpgrade/ChangedSupplyValueUpgrade", item => new ChangedSupplyValueUpgrade(item));
+        this.overrideIncidentAttractiveness = elements
+          .DictionaryOf("IncidentInfectableUpgrade/OverrideIncidentAttractiveness", el => el.Name.ToString(), el => new OverrideIncidentAttractiveness(el));
+        this.additionalOutput = elements.ListOf("FactoryUpgrade/AdditionalOutput", item => new AdditionalOutput(item));
+        this.replaceInputs = elements.ListOf("FactoryUpgrade/ReplaceInputs", item => new ReplaceInput(item));
+        this.inputAmountUpgrade = elements.ListOf("FactoryUpgrade/InputAmountUpgrade", item => new InputAmountUpgrade(item));
+        this.addStatusEffects = elements.ListOf("AttackerUpgrade/AddStatusEffects", item => new AddStatusEffect(item));
+        this.damageFactor = elements.DictionaryOf("AttackerUpgrade/DamageFactor", item => item.Name.ToString(), item => item.Double("Factor"));
+        this.moraleDamage = elements.ListOf("AttackerUpgrade/MoraleDamage", item => item.Double("MinDamageFactor"));
+        this.hitpointDamage = elements.ListOf("AttackerUpgrade/HitpointDamage", item => item.Double("MinDamageFactor"));
+        this.addAssemblyOptions = elements.ListOf("ShipyardUpgrade/AddAssemblyOptions", item => item.Int("NewOption"));
+        this.replaceAssemblyOptions = elements.ListOf("ShipyardUpgrade/ReplaceAssemblyOptions", item => new ReplaceAssemblyOption(item));
+        this.damageReceiveFactor = elements.DictionaryOf("AttackableUpgrade/DamageReceiveFactor", item => item.Name.ToString(), item => item.Double("Factor"));
+
         var dict = elements
           .Where(el => el != null && el.HasElements)
           .Select(el => el.Elements())
@@ -227,21 +387,15 @@ namespace Anno1800.Jsonify {
       public SpecialAction? specialAction;
       [Nullable]
       public UpgradeData upgrade;
+      [Nullable]
+      [Element("Buff")]
+      public BuffData? buff;
 
 
       public Item(XElement asset, Dictionary<string, XElement> map) : base(asset, map) {
         var values = asset.Element("Values");
 
-        this.upgrade = new UpgradeData(UpgradeData
-          .upgradeWrappers
-          .Select(name => values.Element(name))
-          .ToList()
-          );
-        this.upgrade.replacingWorkforce = values.Int("BuildingUpgrade/ReplacingWorkforce");
-        this.upgrade.OverrideIncidentAttractiveness = values
-          .ElementByPath("IncidentInfectableUpgrade/OverrideIncidentAttractiveness")
-          ?.Elements()
-          .ToDictionary(el => el.Name.ToString(), el => new OverrideIncidentAttractivenessPair(el));
+        this.upgrade = new UpgradeData(UpgradeData.upgradeWrappers.Select(name => values.Element(name)));
       }
     }
 
@@ -249,11 +403,11 @@ namespace Anno1800.Jsonify {
     [Adapter] class ItemWithUI : Item { public ItemWithUI(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { } }
     [Adapter] class ItemSpecialAction : Item { public ItemSpecialAction(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { } }
     [Adapter] class QuestItemMagistrate : Item { public QuestItemMagistrate(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { } }
-    //[Adapter] class FestivalBuff : Item { public FestivalBuff(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { } }
-    //[Adapter] class GuildhouseBuff : Item { public GuildhouseBuff(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { } }
-    //[Adapter] class TownhallBuff : Item { public TownhallBuff(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { } }
-    //[Adapter] class VehicleBuff : Item { public VehicleBuff(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { } }
-    //[Adapter] class HarbourOfficeBuff : Item { public HarbourOfficeBuff(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { } }
+    [Adapter] class FestivalBuff : Item { public FestivalBuff(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { } }
+    [Adapter] class GuildhouseBuff : Item { public GuildhouseBuff(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { } }
+    [Adapter] class TownhallBuff : Item { public TownhallBuff(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { } }
+    [Adapter] class VehicleBuff : Item { public VehicleBuff(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { } }
+    [Adapter] class HarbourOfficeBuff : Item { public HarbourOfficeBuff(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { } }
     [Adapter] class CultureItem : Item { public CultureItem(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { } }
     [Adapter] class TownhallItem : Item { public TownhallItem(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { } }
     [Adapter] class GuildhouseItem : Item { public GuildhouseItem(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { } }

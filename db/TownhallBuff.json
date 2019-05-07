@@ -1,41 +1,17 @@
 [
   {
-    "guid": 191824,
-    "name": "Square Rig",
+    "guid": 191910,
+    "name": "Medecine lvl1",
     "id": "",
-    "icon": "data/ui/2kimages/main/3dicons/icon_sail.png",
-    "description": 19684,
-    "item": {
-      "flotsam": 0,
-      "allocation": "SailShip",
-      "maxStackSize": 1,
-      "rarity": "Uncommon",
-      "hasAction": false,
-      "tradePrice": false,
-      "transferBlocked": false,
-      "itemType": false,
-      "itemSet": 0,
-      "exclusiveGroup": "",
-      "isDestroyedOnUnequip": false
+    "icon": "data/ui/2kimages/main/3dicons/machine_items/icon_vitamin_supplement_1.png",
+    "description": 0,
+    "item": null,
+    "itemEffect": {
+      "targets": [
+        192179
+      ]
     },
-    "itemEffect": null,
-    "expeditionAttribute": {
-      "attributes": [
-        {
-          "attribute": "Navigation",
-          "amount": 20
-        }
-      ],
-      "baseMorale": 0.0,
-      "fluff": [
-        "19684"
-      ],
-      "itemDifficulties": [
-        "Easy",
-        "Average"
-      ],
-      "itemRegions": []
-    },
+    "expeditionAttribute": null,
     "itemAction": null,
     "specialAction": null,
     "upgrade": {
@@ -77,52 +53,30 @@
       "replaceAssemblyOptions": [],
       "damageReceiveFactor": {},
       "upgrades": {
-        "ForwardSpeedUpgrade": {
-          "value": 7,
-          "percental": true
+        "IncidentIllnessIncreaseUpgrade": {
+          "value": -4,
+          "percental": false
         }
       }
     },
-    "buff": null
+    "buff": {
+      "addedInfolayer": 0,
+      "possibleFluffTexts": []
+    }
   },
   {
-    "guid": 191013,
-    "name": "Lateen Sails",
+    "guid": 191911,
+    "name": "Medecine lvl2",
     "id": "",
-    "icon": "data/ui/2kimages/main/3dicons/icon_lateen_sails.png",
-    "description": 19685,
-    "item": {
-      "flotsam": 0,
-      "allocation": "SailShip",
-      "maxStackSize": 1,
-      "rarity": "Rare",
-      "hasAction": false,
-      "tradePrice": false,
-      "transferBlocked": false,
-      "itemType": false,
-      "itemSet": 0,
-      "exclusiveGroup": "",
-      "isDestroyedOnUnequip": false
+    "icon": "data/ui/2kimages/main/3dicons/machine_items/icon_vitamin_supplement_2.png",
+    "description": 0,
+    "item": null,
+    "itemEffect": {
+      "targets": [
+        192179
+      ]
     },
-    "itemEffect": null,
-    "expeditionAttribute": {
-      "attributes": [
-        {
-          "attribute": "Navigation",
-          "amount": 30
-        }
-      ],
-      "baseMorale": 0.0,
-      "fluff": [
-        "19685"
-      ],
-      "itemDifficulties": [
-        "Easy",
-        "Average",
-        "Hard"
-      ],
-      "itemRegions": []
-    },
+    "expeditionAttribute": null,
     "itemAction": null,
     "specialAction": null,
     "upgrade": {
@@ -164,55 +118,30 @@
       "replaceAssemblyOptions": [],
       "damageReceiveFactor": {},
       "upgrades": {
-        "ForwardSpeedUpgrade": {
-          "value": 10,
-          "percental": true
-        },
-        "IgnoreWeightFactorUpgrade": {
-          "value": 25,
-          "percental": true
+        "IncidentIllnessIncreaseUpgrade": {
+          "value": -6,
+          "percental": false
         }
       }
     },
-    "buff": null
+    "buff": {
+      "addedInfolayer": 0,
+      "possibleFluffTexts": []
+    }
   },
   {
-    "guid": 191825,
-    "name": "Fore-and-aft Rig",
+    "guid": 191912,
+    "name": "Medecine lvl3",
     "id": "",
-    "icon": "data/ui/2kimages/main/3dicons/icon_sail.png",
-    "description": 19686,
-    "item": {
-      "flotsam": 0,
-      "allocation": "SailShip",
-      "maxStackSize": 1,
-      "rarity": "Epic",
-      "hasAction": false,
-      "tradePrice": false,
-      "transferBlocked": false,
-      "itemType": false,
-      "itemSet": 0,
-      "exclusiveGroup": "",
-      "isDestroyedOnUnequip": false
+    "icon": "data/ui/2kimages/main/3dicons/machine_items/icon_vitamin_supplement_3.png",
+    "description": 0,
+    "item": null,
+    "itemEffect": {
+      "targets": [
+        190762
+      ]
     },
-    "itemEffect": null,
-    "expeditionAttribute": {
-      "attributes": [
-        {
-          "attribute": "Navigation",
-          "amount": 40
-        }
-      ],
-      "baseMorale": 0.0,
-      "fluff": [
-        "19686"
-      ],
-      "itemDifficulties": [
-        "Average",
-        "Hard"
-      ],
-      "itemRegions": []
-    },
+    "expeditionAttribute": null,
     "itemAction": null,
     "specialAction": null,
     "upgrade": {
@@ -254,59 +183,34 @@
       "replaceAssemblyOptions": [],
       "damageReceiveFactor": {},
       "upgrades": {
-        "ForwardSpeedUpgrade": {
-          "value": 15,
+        "ResidentsUpgrade": {
+          "value": 20,
           "percental": true
         },
-        "IgnoreWeightFactorUpgrade": {
-          "value": 50,
-          "percental": true
-        },
-        "IgnoreDamageFactorUpgrade": {
-          "value": 50,
-          "percental": true
+        "IncidentIllnessIncreaseUpgrade": {
+          "value": -9,
+          "percental": false
         }
       }
     },
-    "buff": null
+    "buff": {
+      "addedInfolayer": 0,
+      "possibleFluffTexts": []
+    }
   },
   {
-    "guid": 191829,
-    "name": "Two-Turns Screw Propeller",
+    "guid": 191916,
+    "name": "Extinguisher lvl1",
     "id": "",
-    "icon": "data/ui/2kimages/main/3dicons/machine_items/icon_screw_propeller_1.png",
-    "description": 19687,
-    "item": {
-      "flotsam": 0,
-      "allocation": "SteamShip",
-      "maxStackSize": 1,
-      "rarity": "Uncommon",
-      "hasAction": false,
-      "tradePrice": false,
-      "transferBlocked": false,
-      "itemType": false,
-      "itemSet": 0,
-      "exclusiveGroup": "",
-      "isDestroyedOnUnequip": false
+    "icon": "data/ui/2kimages/main/3dicons/machine_items/icon_brewing_machine_1.png",
+    "description": 0,
+    "item": null,
+    "itemEffect": {
+      "targets": [
+        192179
+      ]
     },
-    "itemEffect": null,
-    "expeditionAttribute": {
-      "attributes": [
-        {
-          "attribute": "Navigation",
-          "amount": 10
-        }
-      ],
-      "baseMorale": 0.0,
-      "fluff": [
-        "19687"
-      ],
-      "itemDifficulties": [
-        "Easy",
-        "Average"
-      ],
-      "itemRegions": []
-    },
+    "expeditionAttribute": null,
     "itemAction": null,
     "specialAction": null,
     "upgrade": {
@@ -348,52 +252,30 @@
       "replaceAssemblyOptions": [],
       "damageReceiveFactor": {},
       "upgrades": {
-        "ForwardSpeedUpgrade": {
-          "value": 7,
-          "percental": true
+        "IncidentFireIncreaseUpgrade": {
+          "value": -4,
+          "percental": false
         }
       }
     },
-    "buff": null
+    "buff": {
+      "addedInfolayer": 0,
+      "possibleFluffTexts": []
+    }
   },
   {
-    "guid": 191830,
-    "name": "One-Turn Screw Propeller",
+    "guid": 191917,
+    "name": "Extinguisher lvl2",
     "id": "",
-    "icon": "data/ui/2kimages/main/3dicons/machine_items/icon_screw_propeller_2.png",
-    "description": 19688,
-    "item": {
-      "flotsam": 0,
-      "allocation": "SteamShip",
-      "maxStackSize": 1,
-      "rarity": "Rare",
-      "hasAction": false,
-      "tradePrice": false,
-      "transferBlocked": false,
-      "itemType": false,
-      "itemSet": 0,
-      "exclusiveGroup": "",
-      "isDestroyedOnUnequip": false
+    "icon": "data/ui/2kimages/main/3dicons/machine_items/icon_brewing_machine_1.png",
+    "description": 0,
+    "item": null,
+    "itemEffect": {
+      "targets": [
+        192179
+      ]
     },
-    "itemEffect": null,
-    "expeditionAttribute": {
-      "attributes": [
-        {
-          "attribute": "Navigation",
-          "amount": 20
-        }
-      ],
-      "baseMorale": 0.0,
-      "fluff": [
-        "19688"
-      ],
-      "itemDifficulties": [
-        "Easy",
-        "Average",
-        "Hard"
-      ],
-      "itemRegions": []
-    },
+    "expeditionAttribute": null,
     "itemAction": null,
     "specialAction": null,
     "upgrade": {
@@ -435,55 +317,30 @@
       "replaceAssemblyOptions": [],
       "damageReceiveFactor": {},
       "upgrades": {
-        "ForwardSpeedUpgrade": {
-          "value": 10,
-          "percental": true
-        },
-        "IgnoreWeightFactorUpgrade": {
-          "value": 25,
-          "percental": true
+        "IncidentFireIncreaseUpgrade": {
+          "value": -6,
+          "percental": false
         }
       }
     },
-    "buff": null
+    "buff": {
+      "addedInfolayer": 0,
+      "possibleFluffTexts": []
+    }
   },
   {
-    "guid": 191831,
-    "name": "Controllable-Pitch Propeller",
+    "guid": 191918,
+    "name": "Extinguisher lvl3",
     "id": "",
-    "icon": "data/ui/2kimages/main/3dicons/machine_items/icon_screw_propeller_3.png",
-    "description": 19689,
-    "item": {
-      "flotsam": 0,
-      "allocation": "SteamShip",
-      "maxStackSize": 1,
-      "rarity": "Epic",
-      "hasAction": false,
-      "tradePrice": false,
-      "transferBlocked": false,
-      "itemType": false,
-      "itemSet": 0,
-      "exclusiveGroup": "",
-      "isDestroyedOnUnequip": false
+    "icon": "data/ui/2kimages/main/3dicons/machine_items/icon_brewing_machine_1.png",
+    "description": 0,
+    "item": null,
+    "itemEffect": {
+      "targets": [
+        192179
+      ]
     },
-    "itemEffect": null,
-    "expeditionAttribute": {
-      "attributes": [
-        {
-          "attribute": "Navigation",
-          "amount": 30
-        }
-      ],
-      "baseMorale": 0.0,
-      "fluff": [
-        "19689"
-      ],
-      "itemDifficulties": [
-        "Average",
-        "Hard"
-      ],
-      "itemRegions": []
-    },
+    "expeditionAttribute": null,
     "itemAction": null,
     "specialAction": null,
     "upgrade": {
@@ -525,63 +382,30 @@
       "replaceAssemblyOptions": [],
       "damageReceiveFactor": {},
       "upgrades": {
-        "ForwardSpeedUpgrade": {
-          "value": 15,
-          "percental": true
-        },
-        "IgnoreWeightFactorUpgrade": {
-          "value": 50,
-          "percental": true
-        },
-        "IgnoreDamageFactorUpgrade": {
-          "value": 50,
-          "percental": true
+        "IncidentFireIncreaseUpgrade": {
+          "value": -9,
+          "percental": false
         }
       }
     },
-    "buff": null
+    "buff": {
+      "addedInfolayer": 0,
+      "possibleFluffTexts": []
+    }
   },
   {
-    "guid": 191838,
-    "name": "Spyglass",
+    "guid": 191928,
+    "name": "ExtinguisherGrenade lvl1",
     "id": "",
-    "icon": "data/ui/2kimages/main/3dicons/consumables/icon_telescope_1.png",
-    "description": 19695,
-    "item": {
-      "flotsam": 0,
-      "allocation": "",
-      "maxStackSize": 1,
-      "rarity": "Uncommon",
-      "hasAction": false,
-      "tradePrice": false,
-      "transferBlocked": false,
-      "itemType": false,
-      "itemSet": 0,
-      "exclusiveGroup": "Telescopes",
-      "isDestroyedOnUnequip": false
+    "icon": "data/ui/2kimages/main/3dicons/narative_item/icon_bottle.png",
+    "description": 0,
+    "item": null,
+    "itemEffect": {
+      "targets": [
+        6000018
+      ]
     },
-    "itemEffect": null,
-    "expeditionAttribute": {
-      "attributes": [
-        {
-          "attribute": "Navigation",
-          "amount": 20
-        },
-        {
-          "attribute": "Hunting",
-          "amount": 10
-        }
-      ],
-      "baseMorale": 0.0,
-      "fluff": [
-        "19695"
-      ],
-      "itemDifficulties": [
-        "Easy",
-        "Average"
-      ],
-      "itemRegions": []
-    },
+    "expeditionAttribute": null,
     "itemAction": null,
     "specialAction": null,
     "upgrade": {
@@ -623,60 +447,1975 @@
       "replaceAssemblyOptions": [],
       "damageReceiveFactor": {},
       "upgrades": {
-        "AttackRangeUpgrade": {
+        "IncidentFireIncreaseUpgrade": {
+          "value": -4,
+          "percental": false
+        }
+      }
+    },
+    "buff": {
+      "addedInfolayer": 0,
+      "possibleFluffTexts": []
+    }
+  },
+  {
+    "guid": 191929,
+    "name": "ExtinguisherGrenade lvl2",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/narative_item/icon_bottle.png",
+    "description": 0,
+    "item": null,
+    "itemEffect": {
+      "targets": [
+        6000018
+      ]
+    },
+    "expeditionAttribute": null,
+    "itemAction": null,
+    "specialAction": null,
+    "upgrade": {
+      "changeModule": 0,
+      "forcedFeedbackVariation": 0,
+      "additionalModuleSoundLoop": 0,
+      "replacingWorkforce": 0,
+      "additionalHappiness": 0,
+      "taxModifierInPercent": 0,
+      "workforceModifierInPercent": 0,
+      "addedFertility": 0,
+      "needsElectricity": false,
+      "provideElectricity": false,
+      "attackSpeedUpgrade": 0,
+      "useProjectile": 0,
+      "genProbability": 0,
+      "genPool": 0,
+      "ConstructionCostInPercent": 0,
+      "ConstructionTimeInPercent": 0,
+      "activateWhiteFlag": false,
+      "activatePirateFlag": false,
+      "happinessIgnoresMorale": false,
+      "blockHostileTakeover": false,
+      "blockBuyShare": false,
+      "activeTradePriceInPercent": 0,
+      "inputBenefitModifier": [],
+      "goodConsumptionUpgrade": [],
+      "needProvideNeedUpgrade": [],
+      "changedSupplyValueUpgrade": [],
+      "overrideIncidentAttractiveness": {},
+      "additionalOutput": [],
+      "replaceInputs": [],
+      "inputAmountUpgrade": [],
+      "addStatusEffects": [],
+      "damageFactor": {},
+      "moraleDamage": [],
+      "hitpointDamage": [],
+      "addAssemblyOptions": [],
+      "replaceAssemblyOptions": [],
+      "damageReceiveFactor": {},
+      "upgrades": {
+        "IncidentFireIncreaseUpgrade": {
+          "value": -6,
+          "percental": false
+        }
+      }
+    },
+    "buff": {
+      "addedInfolayer": 0,
+      "possibleFluffTexts": []
+    }
+  },
+  {
+    "guid": 191930,
+    "name": "ExtinguisherGrenade lvl3",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/narative_item/icon_bottle.png",
+    "description": 0,
+    "item": null,
+    "itemEffect": {
+      "targets": [
+        6000018
+      ]
+    },
+    "expeditionAttribute": null,
+    "itemAction": null,
+    "specialAction": null,
+    "upgrade": {
+      "changeModule": 0,
+      "forcedFeedbackVariation": 0,
+      "additionalModuleSoundLoop": 0,
+      "replacingWorkforce": 0,
+      "additionalHappiness": 0,
+      "taxModifierInPercent": 0,
+      "workforceModifierInPercent": 0,
+      "addedFertility": 0,
+      "needsElectricity": false,
+      "provideElectricity": false,
+      "attackSpeedUpgrade": 0,
+      "useProjectile": 0,
+      "genProbability": 0,
+      "genPool": 0,
+      "ConstructionCostInPercent": 0,
+      "ConstructionTimeInPercent": 0,
+      "activateWhiteFlag": false,
+      "activatePirateFlag": false,
+      "happinessIgnoresMorale": false,
+      "blockHostileTakeover": false,
+      "blockBuyShare": false,
+      "activeTradePriceInPercent": 0,
+      "inputBenefitModifier": [],
+      "goodConsumptionUpgrade": [],
+      "needProvideNeedUpgrade": [],
+      "changedSupplyValueUpgrade": [],
+      "overrideIncidentAttractiveness": {},
+      "additionalOutput": [],
+      "replaceInputs": [],
+      "inputAmountUpgrade": [],
+      "addStatusEffects": [],
+      "damageFactor": {},
+      "moraleDamage": [],
+      "hitpointDamage": [],
+      "addAssemblyOptions": [],
+      "replaceAssemblyOptions": [],
+      "damageReceiveFactor": {},
+      "upgrades": {
+        "IncidentFireIncreaseUpgrade": {
+          "value": -9,
+          "percental": false
+        }
+      }
+    },
+    "buff": {
+      "addedInfolayer": 0,
+      "possibleFluffTexts": []
+    }
+  },
+  {
+    "guid": 191934,
+    "name": "AlcoholCrate lvl1",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_beer_2.png",
+    "description": 0,
+    "item": null,
+    "itemEffect": {
+      "targets": [
+        190762
+      ]
+    },
+    "expeditionAttribute": null,
+    "itemAction": null,
+    "specialAction": null,
+    "upgrade": {
+      "changeModule": 0,
+      "forcedFeedbackVariation": 0,
+      "additionalModuleSoundLoop": 0,
+      "replacingWorkforce": 0,
+      "additionalHappiness": 0,
+      "taxModifierInPercent": 0,
+      "workforceModifierInPercent": 0,
+      "addedFertility": 0,
+      "needsElectricity": false,
+      "provideElectricity": false,
+      "attackSpeedUpgrade": 0,
+      "useProjectile": 0,
+      "genProbability": 0,
+      "genPool": 0,
+      "ConstructionCostInPercent": 0,
+      "ConstructionTimeInPercent": 0,
+      "activateWhiteFlag": false,
+      "activatePirateFlag": false,
+      "happinessIgnoresMorale": false,
+      "blockHostileTakeover": false,
+      "blockBuyShare": false,
+      "activeTradePriceInPercent": 0,
+      "inputBenefitModifier": [],
+      "goodConsumptionUpgrade": [],
+      "needProvideNeedUpgrade": [],
+      "changedSupplyValueUpgrade": [],
+      "overrideIncidentAttractiveness": {},
+      "additionalOutput": [],
+      "replaceInputs": [],
+      "inputAmountUpgrade": [],
+      "addStatusEffects": [],
+      "damageFactor": {},
+      "moraleDamage": [],
+      "hitpointDamage": [],
+      "addAssemblyOptions": [],
+      "replaceAssemblyOptions": [],
+      "damageReceiveFactor": {},
+      "upgrades": {
+        "IncidentRiotIncreaseUpgrade": {
+          "value": -4,
+          "percental": false
+        }
+      }
+    },
+    "buff": {
+      "addedInfolayer": 0,
+      "possibleFluffTexts": []
+    }
+  },
+  {
+    "guid": 191935,
+    "name": "AlcoholCrate lvl2",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_beer_2.png",
+    "description": 0,
+    "item": null,
+    "itemEffect": {
+      "targets": [
+        190762
+      ]
+    },
+    "expeditionAttribute": null,
+    "itemAction": null,
+    "specialAction": null,
+    "upgrade": {
+      "changeModule": 0,
+      "forcedFeedbackVariation": 0,
+      "additionalModuleSoundLoop": 0,
+      "replacingWorkforce": 0,
+      "additionalHappiness": 0,
+      "taxModifierInPercent": 0,
+      "workforceModifierInPercent": 0,
+      "addedFertility": 0,
+      "needsElectricity": false,
+      "provideElectricity": false,
+      "attackSpeedUpgrade": 0,
+      "useProjectile": 0,
+      "genProbability": 0,
+      "genPool": 0,
+      "ConstructionCostInPercent": 0,
+      "ConstructionTimeInPercent": 0,
+      "activateWhiteFlag": false,
+      "activatePirateFlag": false,
+      "happinessIgnoresMorale": false,
+      "blockHostileTakeover": false,
+      "blockBuyShare": false,
+      "activeTradePriceInPercent": 0,
+      "inputBenefitModifier": [],
+      "goodConsumptionUpgrade": [],
+      "needProvideNeedUpgrade": [],
+      "changedSupplyValueUpgrade": [],
+      "overrideIncidentAttractiveness": {},
+      "additionalOutput": [],
+      "replaceInputs": [],
+      "inputAmountUpgrade": [],
+      "addStatusEffects": [],
+      "damageFactor": {},
+      "moraleDamage": [],
+      "hitpointDamage": [],
+      "addAssemblyOptions": [],
+      "replaceAssemblyOptions": [],
+      "damageReceiveFactor": {},
+      "upgrades": {
+        "IncidentRiotIncreaseUpgrade": {
+          "value": -6,
+          "percental": false
+        }
+      }
+    },
+    "buff": {
+      "addedInfolayer": 0,
+      "possibleFluffTexts": []
+    }
+  },
+  {
+    "guid": 191936,
+    "name": "AlcoholCrate lvl3",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_beer_2.png",
+    "description": 0,
+    "item": null,
+    "itemEffect": {
+      "targets": [
+        190762
+      ]
+    },
+    "expeditionAttribute": null,
+    "itemAction": null,
+    "specialAction": null,
+    "upgrade": {
+      "changeModule": 0,
+      "forcedFeedbackVariation": 0,
+      "additionalModuleSoundLoop": 0,
+      "replacingWorkforce": 0,
+      "additionalHappiness": 5,
+      "taxModifierInPercent": 0,
+      "workforceModifierInPercent": 0,
+      "addedFertility": 0,
+      "needsElectricity": false,
+      "provideElectricity": false,
+      "attackSpeedUpgrade": 0,
+      "useProjectile": 0,
+      "genProbability": 0,
+      "genPool": 0,
+      "ConstructionCostInPercent": 0,
+      "ConstructionTimeInPercent": 0,
+      "activateWhiteFlag": false,
+      "activatePirateFlag": false,
+      "happinessIgnoresMorale": false,
+      "blockHostileTakeover": false,
+      "blockBuyShare": false,
+      "activeTradePriceInPercent": 0,
+      "inputBenefitModifier": [],
+      "goodConsumptionUpgrade": [],
+      "needProvideNeedUpgrade": [],
+      "changedSupplyValueUpgrade": [],
+      "overrideIncidentAttractiveness": {},
+      "additionalOutput": [],
+      "replaceInputs": [],
+      "inputAmountUpgrade": [],
+      "addStatusEffects": [],
+      "damageFactor": {},
+      "moraleDamage": [],
+      "hitpointDamage": [],
+      "addAssemblyOptions": [],
+      "replaceAssemblyOptions": [],
+      "damageReceiveFactor": {},
+      "upgrades": {
+        "IncidentRiotIncreaseUpgrade": {
+          "value": -9,
+          "percental": false
+        }
+      }
+    },
+    "buff": {
+      "addedInfolayer": 0,
+      "possibleFluffTexts": []
+    }
+  },
+  {
+    "guid": 191937,
+    "name": "MoneyBag lvl1",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_gold.png",
+    "description": 0,
+    "item": null,
+    "itemEffect": {
+      "targets": [
+        6000018
+      ]
+    },
+    "expeditionAttribute": null,
+    "itemAction": null,
+    "specialAction": null,
+    "upgrade": {
+      "changeModule": 0,
+      "forcedFeedbackVariation": 0,
+      "additionalModuleSoundLoop": 0,
+      "replacingWorkforce": 0,
+      "additionalHappiness": 0,
+      "taxModifierInPercent": 0,
+      "workforceModifierInPercent": 0,
+      "addedFertility": 0,
+      "needsElectricity": false,
+      "provideElectricity": false,
+      "attackSpeedUpgrade": 0,
+      "useProjectile": 0,
+      "genProbability": 0,
+      "genPool": 0,
+      "ConstructionCostInPercent": 0,
+      "ConstructionTimeInPercent": 0,
+      "activateWhiteFlag": false,
+      "activatePirateFlag": false,
+      "happinessIgnoresMorale": false,
+      "blockHostileTakeover": false,
+      "blockBuyShare": false,
+      "activeTradePriceInPercent": 0,
+      "inputBenefitModifier": [],
+      "goodConsumptionUpgrade": [],
+      "needProvideNeedUpgrade": [],
+      "changedSupplyValueUpgrade": [],
+      "overrideIncidentAttractiveness": {},
+      "additionalOutput": [],
+      "replaceInputs": [],
+      "inputAmountUpgrade": [],
+      "addStatusEffects": [],
+      "damageFactor": {},
+      "moraleDamage": [],
+      "hitpointDamage": [],
+      "addAssemblyOptions": [],
+      "replaceAssemblyOptions": [],
+      "damageReceiveFactor": {},
+      "upgrades": {
+        "IncidentRiotIncreaseUpgrade": {
+          "value": -4,
+          "percental": false
+        }
+      }
+    },
+    "buff": {
+      "addedInfolayer": 0,
+      "possibleFluffTexts": []
+    }
+  },
+  {
+    "guid": 191938,
+    "name": "MoneyBag lvl2",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_gold.png",
+    "description": 0,
+    "item": null,
+    "itemEffect": {
+      "targets": [
+        6000018
+      ]
+    },
+    "expeditionAttribute": null,
+    "itemAction": null,
+    "specialAction": null,
+    "upgrade": {
+      "changeModule": 0,
+      "forcedFeedbackVariation": 0,
+      "additionalModuleSoundLoop": 0,
+      "replacingWorkforce": 0,
+      "additionalHappiness": 0,
+      "taxModifierInPercent": 0,
+      "workforceModifierInPercent": 0,
+      "addedFertility": 0,
+      "needsElectricity": false,
+      "provideElectricity": false,
+      "attackSpeedUpgrade": 0,
+      "useProjectile": 0,
+      "genProbability": 0,
+      "genPool": 0,
+      "ConstructionCostInPercent": 0,
+      "ConstructionTimeInPercent": 0,
+      "activateWhiteFlag": false,
+      "activatePirateFlag": false,
+      "happinessIgnoresMorale": false,
+      "blockHostileTakeover": false,
+      "blockBuyShare": false,
+      "activeTradePriceInPercent": 0,
+      "inputBenefitModifier": [],
+      "goodConsumptionUpgrade": [],
+      "needProvideNeedUpgrade": [],
+      "changedSupplyValueUpgrade": [],
+      "overrideIncidentAttractiveness": {},
+      "additionalOutput": [],
+      "replaceInputs": [],
+      "inputAmountUpgrade": [],
+      "addStatusEffects": [],
+      "damageFactor": {},
+      "moraleDamage": [],
+      "hitpointDamage": [],
+      "addAssemblyOptions": [],
+      "replaceAssemblyOptions": [],
+      "damageReceiveFactor": {},
+      "upgrades": {
+        "IncidentRiotIncreaseUpgrade": {
+          "value": -6,
+          "percental": false
+        }
+      }
+    },
+    "buff": {
+      "addedInfolayer": 0,
+      "possibleFluffTexts": []
+    }
+  },
+  {
+    "guid": 191939,
+    "name": "MoneyBag lvl3",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_gold.png",
+    "description": 0,
+    "item": null,
+    "itemEffect": {
+      "targets": [
+        6000018
+      ]
+    },
+    "expeditionAttribute": null,
+    "itemAction": null,
+    "specialAction": null,
+    "upgrade": {
+      "changeModule": 0,
+      "forcedFeedbackVariation": 0,
+      "additionalModuleSoundLoop": 0,
+      "replacingWorkforce": 0,
+      "additionalHappiness": 0,
+      "taxModifierInPercent": 0,
+      "workforceModifierInPercent": 0,
+      "addedFertility": 0,
+      "needsElectricity": false,
+      "provideElectricity": false,
+      "attackSpeedUpgrade": 0,
+      "useProjectile": 0,
+      "genProbability": 0,
+      "genPool": 0,
+      "ConstructionCostInPercent": 0,
+      "ConstructionTimeInPercent": 0,
+      "activateWhiteFlag": false,
+      "activatePirateFlag": false,
+      "happinessIgnoresMorale": false,
+      "blockHostileTakeover": false,
+      "blockBuyShare": false,
+      "activeTradePriceInPercent": 0,
+      "inputBenefitModifier": [],
+      "goodConsumptionUpgrade": [],
+      "needProvideNeedUpgrade": [],
+      "changedSupplyValueUpgrade": [],
+      "overrideIncidentAttractiveness": {},
+      "additionalOutput": [],
+      "replaceInputs": [],
+      "inputAmountUpgrade": [],
+      "addStatusEffects": [],
+      "damageFactor": {},
+      "moraleDamage": [],
+      "hitpointDamage": [],
+      "addAssemblyOptions": [],
+      "replaceAssemblyOptions": [],
+      "damageReceiveFactor": {},
+      "upgrades": {
+        "WorkforceAmountUpgrade": {
+          "value": -15,
+          "percental": true
+        },
+        "IncidentRiotIncreaseUpgrade": {
+          "value": -9,
+          "percental": false
+        }
+      }
+    },
+    "buff": {
+      "addedInfolayer": 0,
+      "possibleFluffTexts": []
+    }
+  },
+  {
+    "guid": 191972,
+    "name": "Fireworks lvl1",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/narative_item/icon_fireworks.png",
+    "description": 0,
+    "item": null,
+    "itemEffect": {
+      "targets": [
+        190762
+      ]
+    },
+    "expeditionAttribute": null,
+    "itemAction": null,
+    "specialAction": null,
+    "upgrade": {
+      "changeModule": 0,
+      "forcedFeedbackVariation": 0,
+      "additionalModuleSoundLoop": 0,
+      "replacingWorkforce": 0,
+      "additionalHappiness": 7,
+      "taxModifierInPercent": 0,
+      "workforceModifierInPercent": 0,
+      "addedFertility": 0,
+      "needsElectricity": false,
+      "provideElectricity": false,
+      "attackSpeedUpgrade": 0,
+      "useProjectile": 0,
+      "genProbability": 0,
+      "genPool": 0,
+      "ConstructionCostInPercent": 0,
+      "ConstructionTimeInPercent": 0,
+      "activateWhiteFlag": false,
+      "activatePirateFlag": false,
+      "happinessIgnoresMorale": false,
+      "blockHostileTakeover": false,
+      "blockBuyShare": false,
+      "activeTradePriceInPercent": 0,
+      "inputBenefitModifier": [],
+      "goodConsumptionUpgrade": [],
+      "needProvideNeedUpgrade": [],
+      "changedSupplyValueUpgrade": [],
+      "overrideIncidentAttractiveness": {},
+      "additionalOutput": [],
+      "replaceInputs": [],
+      "inputAmountUpgrade": [],
+      "addStatusEffects": [],
+      "damageFactor": {},
+      "moraleDamage": [],
+      "hitpointDamage": [],
+      "addAssemblyOptions": [],
+      "replaceAssemblyOptions": [],
+      "damageReceiveFactor": {},
+      "upgrades": null
+    },
+    "buff": {
+      "addedInfolayer": 0,
+      "possibleFluffTexts": []
+    }
+  },
+  {
+    "guid": 191975,
+    "name": "Fireworks lvl2",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/narative_item/icon_fireworks.png",
+    "description": 0,
+    "item": null,
+    "itemEffect": {
+      "targets": [
+        190762
+      ]
+    },
+    "expeditionAttribute": null,
+    "itemAction": null,
+    "specialAction": null,
+    "upgrade": {
+      "changeModule": 0,
+      "forcedFeedbackVariation": 0,
+      "additionalModuleSoundLoop": 0,
+      "replacingWorkforce": 0,
+      "additionalHappiness": 10,
+      "taxModifierInPercent": 0,
+      "workforceModifierInPercent": 0,
+      "addedFertility": 0,
+      "needsElectricity": false,
+      "provideElectricity": false,
+      "attackSpeedUpgrade": 0,
+      "useProjectile": 0,
+      "genProbability": 0,
+      "genPool": 0,
+      "ConstructionCostInPercent": 0,
+      "ConstructionTimeInPercent": 0,
+      "activateWhiteFlag": false,
+      "activatePirateFlag": false,
+      "happinessIgnoresMorale": false,
+      "blockHostileTakeover": false,
+      "blockBuyShare": false,
+      "activeTradePriceInPercent": 0,
+      "inputBenefitModifier": [],
+      "goodConsumptionUpgrade": [],
+      "needProvideNeedUpgrade": [],
+      "changedSupplyValueUpgrade": [],
+      "overrideIncidentAttractiveness": {},
+      "additionalOutput": [],
+      "replaceInputs": [],
+      "inputAmountUpgrade": [],
+      "addStatusEffects": [],
+      "damageFactor": {},
+      "moraleDamage": [],
+      "hitpointDamage": [],
+      "addAssemblyOptions": [],
+      "replaceAssemblyOptions": [],
+      "damageReceiveFactor": {},
+      "upgrades": {
+        "AttractivenessUpgrade": {
+          "value": 1,
+          "percental": false
+        }
+      }
+    },
+    "buff": {
+      "addedInfolayer": 0,
+      "possibleFluffTexts": []
+    }
+  },
+  {
+    "guid": 191976,
+    "name": "Fireworks lvl3",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/narative_item/icon_fireworks.png",
+    "description": 0,
+    "item": null,
+    "itemEffect": {
+      "targets": [
+        190762
+      ]
+    },
+    "expeditionAttribute": null,
+    "itemAction": null,
+    "specialAction": null,
+    "upgrade": {
+      "changeModule": 0,
+      "forcedFeedbackVariation": 0,
+      "additionalModuleSoundLoop": 0,
+      "replacingWorkforce": 0,
+      "additionalHappiness": 15,
+      "taxModifierInPercent": 0,
+      "workforceModifierInPercent": 0,
+      "addedFertility": 0,
+      "needsElectricity": false,
+      "provideElectricity": false,
+      "attackSpeedUpgrade": 0,
+      "useProjectile": 0,
+      "genProbability": 0,
+      "genPool": 0,
+      "ConstructionCostInPercent": 0,
+      "ConstructionTimeInPercent": 0,
+      "activateWhiteFlag": false,
+      "activatePirateFlag": false,
+      "happinessIgnoresMorale": false,
+      "blockHostileTakeover": false,
+      "blockBuyShare": false,
+      "activeTradePriceInPercent": 0,
+      "inputBenefitModifier": [
+        {
+          "product": 1010216,
+          "additionalMoney": 3
+        },
+        {
+          "product": 1010214,
+          "additionalMoney": 3
+        },
+        {
+          "product": 1010257,
+          "additionalMoney": 3
+        },
+        {
+          "product": 120016,
+          "additionalMoney": 3
+        }
+      ],
+      "goodConsumptionUpgrade": [],
+      "needProvideNeedUpgrade": [],
+      "changedSupplyValueUpgrade": [],
+      "overrideIncidentAttractiveness": {},
+      "additionalOutput": [],
+      "replaceInputs": [],
+      "inputAmountUpgrade": [],
+      "addStatusEffects": [],
+      "damageFactor": {},
+      "moraleDamage": [],
+      "hitpointDamage": [],
+      "addAssemblyOptions": [],
+      "replaceAssemblyOptions": [],
+      "damageReceiveFactor": {},
+      "upgrades": {
+        "AttractivenessUpgrade": {
+          "value": 2,
+          "percental": false
+        }
+      }
+    },
+    "buff": {
+      "addedInfolayer": 0,
+      "possibleFluffTexts": []
+    }
+  },
+  {
+    "guid": 192020,
+    "name": "Armagnac Bottles",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_rum.png",
+    "description": 0,
+    "item": null,
+    "itemEffect": {
+      "targets": [
+        190762
+      ]
+    },
+    "expeditionAttribute": null,
+    "itemAction": null,
+    "specialAction": null,
+    "upgrade": {
+      "changeModule": 0,
+      "forcedFeedbackVariation": 0,
+      "additionalModuleSoundLoop": 0,
+      "replacingWorkforce": 0,
+      "additionalHappiness": 5,
+      "taxModifierInPercent": 0,
+      "workforceModifierInPercent": 0,
+      "addedFertility": 0,
+      "needsElectricity": false,
+      "provideElectricity": false,
+      "attackSpeedUpgrade": 0,
+      "useProjectile": 0,
+      "genProbability": 0,
+      "genPool": 0,
+      "ConstructionCostInPercent": 0,
+      "ConstructionTimeInPercent": 0,
+      "activateWhiteFlag": false,
+      "activatePirateFlag": false,
+      "happinessIgnoresMorale": false,
+      "blockHostileTakeover": false,
+      "blockBuyShare": false,
+      "activeTradePriceInPercent": 0,
+      "inputBenefitModifier": [],
+      "goodConsumptionUpgrade": [
+        {
+          "providedNeed": 1010214,
+          "amountInPercent": -100
+        },
+        {
+          "providedNeed": 1010216,
+          "amountInPercent": -100
+        },
+        {
+          "providedNeed": 120016,
+          "amountInPercent": -100
+        },
+        {
+          "providedNeed": 1010257,
+          "amountInPercent": -100
+        }
+      ],
+      "needProvideNeedUpgrade": [],
+      "changedSupplyValueUpgrade": [],
+      "overrideIncidentAttractiveness": {},
+      "additionalOutput": [],
+      "replaceInputs": [],
+      "inputAmountUpgrade": [],
+      "addStatusEffects": [],
+      "damageFactor": {},
+      "moraleDamage": [],
+      "hitpointDamage": [],
+      "addAssemblyOptions": [],
+      "replaceAssemblyOptions": [],
+      "damageReceiveFactor": {},
+      "upgrades": null
+    },
+    "buff": {
+      "addedInfolayer": 0,
+      "possibleFluffTexts": []
+    }
+  },
+  {
+    "guid": 192021,
+    "name": "Milk Demijohn",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_sheep_milk.png",
+    "description": 0,
+    "item": null,
+    "itemEffect": {
+      "targets": [
+        190762
+      ]
+    },
+    "expeditionAttribute": null,
+    "itemAction": null,
+    "specialAction": null,
+    "upgrade": {
+      "changeModule": 0,
+      "forcedFeedbackVariation": 0,
+      "additionalModuleSoundLoop": 0,
+      "replacingWorkforce": 0,
+      "additionalHappiness": 5,
+      "taxModifierInPercent": 0,
+      "workforceModifierInPercent": 0,
+      "addedFertility": 0,
+      "needsElectricity": false,
+      "provideElectricity": false,
+      "attackSpeedUpgrade": 0,
+      "useProjectile": 0,
+      "genProbability": 0,
+      "genPool": 0,
+      "ConstructionCostInPercent": 0,
+      "ConstructionTimeInPercent": 0,
+      "activateWhiteFlag": false,
+      "activatePirateFlag": false,
+      "happinessIgnoresMorale": false,
+      "blockHostileTakeover": false,
+      "blockBuyShare": false,
+      "activeTradePriceInPercent": 0,
+      "inputBenefitModifier": [],
+      "goodConsumptionUpgrade": [
+        {
+          "providedNeed": 120032,
+          "amountInPercent": -100
+        }
+      ],
+      "needProvideNeedUpgrade": [],
+      "changedSupplyValueUpgrade": [],
+      "overrideIncidentAttractiveness": {},
+      "additionalOutput": [],
+      "replaceInputs": [],
+      "inputAmountUpgrade": [],
+      "addStatusEffects": [],
+      "damageFactor": {},
+      "moraleDamage": [],
+      "hitpointDamage": [],
+      "addAssemblyOptions": [],
+      "replaceAssemblyOptions": [],
+      "damageReceiveFactor": {},
+      "upgrades": null
+    },
+    "buff": {
+      "addedInfolayer": 0,
+      "possibleFluffTexts": []
+    }
+  },
+  {
+    "guid": 192022,
+    "name": "Cheese Crate",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_sheep_cheese.png",
+    "description": 0,
+    "item": null,
+    "itemEffect": {
+      "targets": [
+        190762
+      ]
+    },
+    "expeditionAttribute": null,
+    "itemAction": null,
+    "specialAction": null,
+    "upgrade": {
+      "changeModule": 0,
+      "forcedFeedbackVariation": 0,
+      "additionalModuleSoundLoop": 0,
+      "replacingWorkforce": 0,
+      "additionalHappiness": 5,
+      "taxModifierInPercent": 0,
+      "workforceModifierInPercent": 0,
+      "addedFertility": 0,
+      "needsElectricity": false,
+      "provideElectricity": false,
+      "attackSpeedUpgrade": 0,
+      "useProjectile": 0,
+      "genProbability": 0,
+      "genPool": 0,
+      "ConstructionCostInPercent": 0,
+      "ConstructionTimeInPercent": 0,
+      "activateWhiteFlag": false,
+      "activatePirateFlag": false,
+      "happinessIgnoresMorale": false,
+      "blockHostileTakeover": false,
+      "blockBuyShare": false,
+      "activeTradePriceInPercent": 0,
+      "inputBenefitModifier": [],
+      "goodConsumptionUpgrade": [
+        {
+          "providedNeed": 1010238,
+          "amountInPercent": -100
+        }
+      ],
+      "needProvideNeedUpgrade": [],
+      "changedSupplyValueUpgrade": [],
+      "overrideIncidentAttractiveness": {},
+      "additionalOutput": [],
+      "replaceInputs": [],
+      "inputAmountUpgrade": [],
+      "addStatusEffects": [],
+      "damageFactor": {},
+      "moraleDamage": [],
+      "hitpointDamage": [],
+      "addAssemblyOptions": [],
+      "replaceAssemblyOptions": [],
+      "damageReceiveFactor": {},
+      "upgrades": null
+    },
+    "buff": {
+      "addedInfolayer": 0,
+      "possibleFluffTexts": []
+    }
+  },
+  {
+    "guid": 192023,
+    "name": "Fish Stew Plates",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_fish_stew.png",
+    "description": 0,
+    "item": null,
+    "itemEffect": {
+      "targets": [
+        190762
+      ]
+    },
+    "expeditionAttribute": null,
+    "itemAction": null,
+    "specialAction": null,
+    "upgrade": {
+      "changeModule": 0,
+      "forcedFeedbackVariation": 0,
+      "additionalModuleSoundLoop": 0,
+      "replacingWorkforce": 0,
+      "additionalHappiness": 5,
+      "taxModifierInPercent": 0,
+      "workforceModifierInPercent": 0,
+      "addedFertility": 0,
+      "needsElectricity": false,
+      "provideElectricity": false,
+      "attackSpeedUpgrade": 0,
+      "useProjectile": 0,
+      "genProbability": 0,
+      "genPool": 0,
+      "ConstructionCostInPercent": 0,
+      "ConstructionTimeInPercent": 0,
+      "activateWhiteFlag": false,
+      "activatePirateFlag": false,
+      "happinessIgnoresMorale": false,
+      "blockHostileTakeover": false,
+      "blockBuyShare": false,
+      "activeTradePriceInPercent": 0,
+      "inputBenefitModifier": [],
+      "goodConsumptionUpgrade": [
+        {
+          "providedNeed": 1010200,
+          "amountInPercent": -100
+        },
+        {
+          "providedNeed": 1010238,
+          "amountInPercent": -100
+        }
+      ],
+      "needProvideNeedUpgrade": [],
+      "changedSupplyValueUpgrade": [],
+      "overrideIncidentAttractiveness": {},
+      "additionalOutput": [],
+      "replaceInputs": [],
+      "inputAmountUpgrade": [],
+      "addStatusEffects": [],
+      "damageFactor": {},
+      "moraleDamage": [],
+      "hitpointDamage": [],
+      "addAssemblyOptions": [],
+      "replaceAssemblyOptions": [],
+      "damageReceiveFactor": {},
+      "upgrades": null
+    },
+    "buff": {
+      "addedInfolayer": 0,
+      "possibleFluffTexts": []
+    }
+  },
+  {
+    "guid": 192024,
+    "name": "Beef Potato Plates",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_beef_potatoes.png",
+    "description": 0,
+    "item": null,
+    "itemEffect": {
+      "targets": [
+        190762
+      ]
+    },
+    "expeditionAttribute": null,
+    "itemAction": null,
+    "specialAction": null,
+    "upgrade": {
+      "changeModule": 0,
+      "forcedFeedbackVariation": 0,
+      "additionalModuleSoundLoop": 0,
+      "replacingWorkforce": 0,
+      "additionalHappiness": 5,
+      "taxModifierInPercent": 0,
+      "workforceModifierInPercent": 0,
+      "addedFertility": 0,
+      "needsElectricity": false,
+      "provideElectricity": false,
+      "attackSpeedUpgrade": 0,
+      "useProjectile": 0,
+      "genProbability": 0,
+      "genPool": 0,
+      "ConstructionCostInPercent": 0,
+      "ConstructionTimeInPercent": 0,
+      "activateWhiteFlag": false,
+      "activatePirateFlag": false,
+      "happinessIgnoresMorale": false,
+      "blockHostileTakeover": false,
+      "blockBuyShare": false,
+      "activeTradePriceInPercent": 0,
+      "inputBenefitModifier": [],
+      "goodConsumptionUpgrade": [
+        {
+          "providedNeed": 1010217,
+          "amountInPercent": -100
+        },
+        {
+          "providedNeed": 1010238,
+          "amountInPercent": -100
+        },
+        {
+          "providedNeed": 1010200,
+          "amountInPercent": -100
+        },
+        {
+          "providedNeed": 120035,
+          "amountInPercent": -100
+        }
+      ],
+      "needProvideNeedUpgrade": [],
+      "changedSupplyValueUpgrade": [],
+      "overrideIncidentAttractiveness": {},
+      "additionalOutput": [],
+      "replaceInputs": [],
+      "inputAmountUpgrade": [],
+      "addStatusEffects": [],
+      "damageFactor": {},
+      "moraleDamage": [],
+      "hitpointDamage": [],
+      "addAssemblyOptions": [],
+      "replaceAssemblyOptions": [],
+      "damageReceiveFactor": {},
+      "upgrades": null
+    },
+    "buff": {
+      "addedInfolayer": 0,
+      "possibleFluffTexts": []
+    }
+  },
+  {
+    "guid": 192025,
+    "name": "Tools Crate",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_tools.png",
+    "description": 0,
+    "item": null,
+    "itemEffect": {
+      "targets": [
+        190762
+      ]
+    },
+    "expeditionAttribute": null,
+    "itemAction": null,
+    "specialAction": null,
+    "upgrade": {
+      "changeModule": 0,
+      "forcedFeedbackVariation": 0,
+      "additionalModuleSoundLoop": 0,
+      "replacingWorkforce": 0,
+      "additionalHappiness": 5,
+      "taxModifierInPercent": 0,
+      "workforceModifierInPercent": 0,
+      "addedFertility": 0,
+      "needsElectricity": false,
+      "provideElectricity": false,
+      "attackSpeedUpgrade": 0,
+      "useProjectile": 0,
+      "genProbability": 0,
+      "genPool": 0,
+      "ConstructionCostInPercent": 0,
+      "ConstructionTimeInPercent": 0,
+      "activateWhiteFlag": false,
+      "activatePirateFlag": false,
+      "happinessIgnoresMorale": false,
+      "blockHostileTakeover": false,
+      "blockBuyShare": false,
+      "activeTradePriceInPercent": 0,
+      "inputBenefitModifier": [],
+      "goodConsumptionUpgrade": [
+        {
+          "providedNeed": 1010245,
+          "amountInPercent": -100
+        }
+      ],
+      "needProvideNeedUpgrade": [],
+      "changedSupplyValueUpgrade": [],
+      "overrideIncidentAttractiveness": {},
+      "additionalOutput": [],
+      "replaceInputs": [],
+      "inputAmountUpgrade": [],
+      "addStatusEffects": [],
+      "damageFactor": {},
+      "moraleDamage": [],
+      "hitpointDamage": [],
+      "addAssemblyOptions": [],
+      "replaceAssemblyOptions": [],
+      "damageReceiveFactor": {},
+      "upgrades": null
+    },
+    "buff": {
+      "addedInfolayer": 0,
+      "possibleFluffTexts": []
+    }
+  },
+  {
+    "guid": 192026,
+    "name": "Sewing Thread",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_sheep_wool.png",
+    "description": 0,
+    "item": null,
+    "itemEffect": {
+      "targets": [
+        190762
+      ]
+    },
+    "expeditionAttribute": null,
+    "itemAction": null,
+    "specialAction": null,
+    "upgrade": {
+      "changeModule": 0,
+      "forcedFeedbackVariation": 0,
+      "additionalModuleSoundLoop": 0,
+      "replacingWorkforce": 0,
+      "additionalHappiness": 5,
+      "taxModifierInPercent": 0,
+      "workforceModifierInPercent": 0,
+      "addedFertility": 0,
+      "needsElectricity": false,
+      "provideElectricity": false,
+      "attackSpeedUpgrade": 0,
+      "useProjectile": 0,
+      "genProbability": 0,
+      "genPool": 0,
+      "ConstructionCostInPercent": 0,
+      "ConstructionTimeInPercent": 0,
+      "activateWhiteFlag": false,
+      "activatePirateFlag": false,
+      "happinessIgnoresMorale": false,
+      "blockHostileTakeover": false,
+      "blockBuyShare": false,
+      "activeTradePriceInPercent": 0,
+      "inputBenefitModifier": [],
+      "goodConsumptionUpgrade": [
+        {
+          "providedNeed": 1010206,
+          "amountInPercent": -100
+        },
+        {
+          "providedNeed": 1010247,
+          "amountInPercent": -100
+        }
+      ],
+      "needProvideNeedUpgrade": [],
+      "changedSupplyValueUpgrade": [],
+      "overrideIncidentAttractiveness": {},
+      "additionalOutput": [],
+      "replaceInputs": [],
+      "inputAmountUpgrade": [],
+      "addStatusEffects": [],
+      "damageFactor": {},
+      "moraleDamage": [],
+      "hitpointDamage": [],
+      "addAssemblyOptions": [],
+      "replaceAssemblyOptions": [],
+      "damageReceiveFactor": {},
+      "upgrades": null
+    },
+    "buff": {
+      "addedInfolayer": 0,
+      "possibleFluffTexts": []
+    }
+  },
+  {
+    "guid": 192027,
+    "name": "Fish Cans",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_canned_food.png",
+    "description": 0,
+    "item": null,
+    "itemEffect": {
+      "targets": [
+        190762
+      ]
+    },
+    "expeditionAttribute": null,
+    "itemAction": null,
+    "specialAction": null,
+    "upgrade": {
+      "changeModule": 0,
+      "forcedFeedbackVariation": 0,
+      "additionalModuleSoundLoop": 0,
+      "replacingWorkforce": 0,
+      "additionalHappiness": 5,
+      "taxModifierInPercent": 0,
+      "workforceModifierInPercent": 0,
+      "addedFertility": 0,
+      "needsElectricity": false,
+      "provideElectricity": false,
+      "attackSpeedUpgrade": 0,
+      "useProjectile": 0,
+      "genProbability": 0,
+      "genPool": 0,
+      "ConstructionCostInPercent": 0,
+      "ConstructionTimeInPercent": 0,
+      "activateWhiteFlag": false,
+      "activatePirateFlag": false,
+      "happinessIgnoresMorale": false,
+      "blockHostileTakeover": false,
+      "blockBuyShare": false,
+      "activeTradePriceInPercent": 0,
+      "inputBenefitModifier": [],
+      "goodConsumptionUpgrade": [
+        {
+          "providedNeed": 1010200,
+          "amountInPercent": -100
+        },
+        {
+          "providedNeed": 1010217,
+          "amountInPercent": -100
+        }
+      ],
+      "needProvideNeedUpgrade": [],
+      "changedSupplyValueUpgrade": [],
+      "overrideIncidentAttractiveness": {},
+      "additionalOutput": [],
+      "replaceInputs": [],
+      "inputAmountUpgrade": [],
+      "addStatusEffects": [],
+      "damageFactor": {},
+      "moraleDamage": [],
+      "hitpointDamage": [],
+      "addAssemblyOptions": [],
+      "replaceAssemblyOptions": [],
+      "damageReceiveFactor": {},
+      "upgrades": null
+    },
+    "buff": {
+      "addedInfolayer": 0,
+      "possibleFluffTexts": []
+    }
+  },
+  {
+    "guid": 191132,
+    "name": "andes",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/animals/icon_vulture_ver2.png",
+    "description": 15757,
+    "item": null,
+    "itemEffect": {
+      "targets": [
+        1010343,
+        101254
+      ]
+    },
+    "expeditionAttribute": null,
+    "itemAction": null,
+    "specialAction": null,
+    "upgrade": {
+      "changeModule": 0,
+      "forcedFeedbackVariation": 0,
+      "additionalModuleSoundLoop": 0,
+      "replacingWorkforce": 0,
+      "additionalHappiness": 0,
+      "taxModifierInPercent": 10,
+      "workforceModifierInPercent": 10,
+      "addedFertility": 0,
+      "needsElectricity": false,
+      "provideElectricity": false,
+      "attackSpeedUpgrade": 0,
+      "useProjectile": 0,
+      "genProbability": 0,
+      "genPool": 0,
+      "ConstructionCostInPercent": 0,
+      "ConstructionTimeInPercent": 0,
+      "activateWhiteFlag": false,
+      "activatePirateFlag": false,
+      "happinessIgnoresMorale": false,
+      "blockHostileTakeover": false,
+      "blockBuyShare": false,
+      "activeTradePriceInPercent": 0,
+      "inputBenefitModifier": [],
+      "goodConsumptionUpgrade": [],
+      "needProvideNeedUpgrade": [],
+      "changedSupplyValueUpgrade": [],
+      "overrideIncidentAttractiveness": {},
+      "additionalOutput": [],
+      "replaceInputs": [],
+      "inputAmountUpgrade": [],
+      "addStatusEffects": [],
+      "damageFactor": {},
+      "moraleDamage": [],
+      "hitpointDamage": [],
+      "addAssemblyOptions": [],
+      "replaceAssemblyOptions": [],
+      "damageReceiveFactor": {},
+      "upgrades": null
+    },
+    "buff": {
+      "addedInfolayer": 0,
+      "possibleFluffTexts": []
+    }
+  },
+  {
+    "guid": 191133,
+    "name": "boreal forests",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/animals/icon_moose.png",
+    "description": 15758,
+    "item": null,
+    "itemEffect": {
+      "targets": [
+        190762
+      ]
+    },
+    "expeditionAttribute": null,
+    "itemAction": null,
+    "specialAction": null,
+    "upgrade": {
+      "changeModule": 0,
+      "forcedFeedbackVariation": 0,
+      "additionalModuleSoundLoop": 0,
+      "replacingWorkforce": 0,
+      "additionalHappiness": 0,
+      "taxModifierInPercent": 0,
+      "workforceModifierInPercent": 0,
+      "addedFertility": 0,
+      "needsElectricity": false,
+      "provideElectricity": false,
+      "attackSpeedUpgrade": 0,
+      "useProjectile": 0,
+      "genProbability": 0,
+      "genPool": 0,
+      "ConstructionCostInPercent": 0,
+      "ConstructionTimeInPercent": 0,
+      "activateWhiteFlag": false,
+      "activatePirateFlag": false,
+      "happinessIgnoresMorale": false,
+      "blockHostileTakeover": false,
+      "blockBuyShare": false,
+      "activeTradePriceInPercent": 0,
+      "inputBenefitModifier": [],
+      "goodConsumptionUpgrade": [
+        {
+          "providedNeed": 1010200,
+          "amountInPercent": -5
+        },
+        {
+          "providedNeed": 1010213,
+          "amountInPercent": -5
+        },
+        {
+          "providedNeed": 1010215,
+          "amountInPercent": -5
+        },
+        {
+          "providedNeed": 1010217,
+          "amountInPercent": -5
+        },
+        {
+          "providedNeed": 1010238,
+          "amountInPercent": -5
+        },
+        {
+          "providedNeed": 1010258,
+          "amountInPercent": -5
+        },
+        {
+          "providedNeed": 120033,
+          "amountInPercent": -5
+        },
+        {
+          "providedNeed": 120035,
+          "amountInPercent": -5
+        }
+      ],
+      "needProvideNeedUpgrade": [],
+      "changedSupplyValueUpgrade": [],
+      "overrideIncidentAttractiveness": {},
+      "additionalOutput": [],
+      "replaceInputs": [],
+      "inputAmountUpgrade": [],
+      "addStatusEffects": [],
+      "damageFactor": {},
+      "moraleDamage": [],
+      "hitpointDamage": [],
+      "addAssemblyOptions": [],
+      "replaceAssemblyOptions": [],
+      "damageReceiveFactor": {},
+      "upgrades": null
+    },
+    "buff": {
+      "addedInfolayer": 0,
+      "possibleFluffTexts": []
+    }
+  },
+  {
+    "guid": 191134,
+    "name": "extinct animals",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/animals/icon_okapi.png",
+    "description": 15759,
+    "item": null,
+    "itemEffect": {
+      "targets": [
+        191561
+      ]
+    },
+    "expeditionAttribute": null,
+    "itemAction": null,
+    "specialAction": null,
+    "upgrade": {
+      "changeModule": 0,
+      "forcedFeedbackVariation": 0,
+      "additionalModuleSoundLoop": 0,
+      "replacingWorkforce": 0,
+      "additionalHappiness": 0,
+      "taxModifierInPercent": 0,
+      "workforceModifierInPercent": 0,
+      "addedFertility": 0,
+      "needsElectricity": false,
+      "provideElectricity": false,
+      "attackSpeedUpgrade": 0,
+      "useProjectile": 0,
+      "genProbability": 0,
+      "genPool": 0,
+      "ConstructionCostInPercent": 0,
+      "ConstructionTimeInPercent": 0,
+      "activateWhiteFlag": false,
+      "activatePirateFlag": false,
+      "happinessIgnoresMorale": false,
+      "blockHostileTakeover": false,
+      "blockBuyShare": false,
+      "activeTradePriceInPercent": 0,
+      "inputBenefitModifier": [],
+      "goodConsumptionUpgrade": [],
+      "needProvideNeedUpgrade": [],
+      "changedSupplyValueUpgrade": [],
+      "overrideIncidentAttractiveness": {},
+      "additionalOutput": [],
+      "replaceInputs": [],
+      "inputAmountUpgrade": [],
+      "addStatusEffects": [],
+      "damageFactor": {},
+      "moraleDamage": [],
+      "hitpointDamage": [],
+      "addAssemblyOptions": [],
+      "replaceAssemblyOptions": [],
+      "damageReceiveFactor": {},
+      "upgrades": {
+        "AttractivenessUpgrade": {
           "value": 5,
           "percental": true
+        }
+      }
+    },
+    "buff": {
+      "addedInfolayer": 0,
+      "possibleFluffTexts": []
+    }
+  },
+  {
+    "guid": 191136,
+    "name": "amazonia",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/animals/icon_parrot.png",
+    "description": 15761,
+    "item": null,
+    "itemEffect": {
+      "targets": [
+        191501
+      ]
+    },
+    "expeditionAttribute": null,
+    "itemAction": null,
+    "specialAction": null,
+    "upgrade": {
+      "changeModule": 0,
+      "forcedFeedbackVariation": 0,
+      "additionalModuleSoundLoop": 0,
+      "replacingWorkforce": 0,
+      "additionalHappiness": 0,
+      "taxModifierInPercent": 0,
+      "workforceModifierInPercent": 0,
+      "addedFertility": 0,
+      "needsElectricity": false,
+      "provideElectricity": false,
+      "attackSpeedUpgrade": 0,
+      "useProjectile": 0,
+      "genProbability": 0,
+      "genPool": 0,
+      "ConstructionCostInPercent": 0,
+      "ConstructionTimeInPercent": 0,
+      "activateWhiteFlag": false,
+      "activatePirateFlag": false,
+      "happinessIgnoresMorale": false,
+      "blockHostileTakeover": false,
+      "blockBuyShare": false,
+      "activeTradePriceInPercent": 0,
+      "inputBenefitModifier": [],
+      "goodConsumptionUpgrade": [],
+      "needProvideNeedUpgrade": [],
+      "changedSupplyValueUpgrade": [],
+      "overrideIncidentAttractiveness": {},
+      "additionalOutput": [],
+      "replaceInputs": [],
+      "inputAmountUpgrade": [],
+      "addStatusEffects": [],
+      "damageFactor": {},
+      "moraleDamage": [],
+      "hitpointDamage": [],
+      "addAssemblyOptions": [],
+      "replaceAssemblyOptions": [],
+      "damageReceiveFactor": {},
+      "upgrades": {
+        "AttractivenessUpgrade": {
+          "value": 1,
+          "percental": false
+        }
+      }
+    },
+    "buff": {
+      "addedInfolayer": 0,
+      "possibleFluffTexts": []
+    }
+  },
+  {
+    "guid": 191135,
+    "name": "ocean",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/animals/icon_lionfish.png",
+    "description": 15765,
+    "item": null,
+    "itemEffect": {
+      "targets": [
+        1010344,
+        1010345,
+        101255
+      ]
+    },
+    "expeditionAttribute": null,
+    "itemAction": null,
+    "specialAction": null,
+    "upgrade": {
+      "changeModule": 0,
+      "forcedFeedbackVariation": 0,
+      "additionalModuleSoundLoop": 0,
+      "replacingWorkforce": 0,
+      "additionalHappiness": 2,
+      "taxModifierInPercent": 0,
+      "workforceModifierInPercent": 0,
+      "addedFertility": 0,
+      "needsElectricity": false,
+      "provideElectricity": false,
+      "attackSpeedUpgrade": 0,
+      "useProjectile": 0,
+      "genProbability": 0,
+      "genPool": 0,
+      "ConstructionCostInPercent": 0,
+      "ConstructionTimeInPercent": 0,
+      "activateWhiteFlag": false,
+      "activatePirateFlag": false,
+      "happinessIgnoresMorale": false,
+      "blockHostileTakeover": false,
+      "blockBuyShare": false,
+      "activeTradePriceInPercent": 0,
+      "inputBenefitModifier": [],
+      "goodConsumptionUpgrade": [],
+      "needProvideNeedUpgrade": [],
+      "changedSupplyValueUpgrade": [],
+      "overrideIncidentAttractiveness": {},
+      "additionalOutput": [],
+      "replaceInputs": [],
+      "inputAmountUpgrade": [],
+      "addStatusEffects": [],
+      "damageFactor": {},
+      "moraleDamage": [],
+      "hitpointDamage": [],
+      "addAssemblyOptions": [],
+      "replaceAssemblyOptions": [],
+      "damageReceiveFactor": {},
+      "upgrades": null
+    },
+    "buff": {
+      "addedInfolayer": 0,
+      "possibleFluffTexts": []
+    }
+  },
+  {
+    "guid": 193194,
+    "name": "white animals",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/animals/icon_albinos_fennec.png",
+    "description": 22052,
+    "item": null,
+    "itemEffect": {
+      "targets": [
+        191561
+      ]
+    },
+    "expeditionAttribute": null,
+    "itemAction": null,
+    "specialAction": null,
+    "upgrade": {
+      "changeModule": 0,
+      "forcedFeedbackVariation": 0,
+      "additionalModuleSoundLoop": 0,
+      "replacingWorkforce": 0,
+      "additionalHappiness": 0,
+      "taxModifierInPercent": 0,
+      "workforceModifierInPercent": 0,
+      "addedFertility": 0,
+      "needsElectricity": false,
+      "provideElectricity": false,
+      "attackSpeedUpgrade": 0,
+      "useProjectile": 0,
+      "genProbability": 0,
+      "genPool": 0,
+      "ConstructionCostInPercent": 0,
+      "ConstructionTimeInPercent": 0,
+      "activateWhiteFlag": false,
+      "activatePirateFlag": false,
+      "happinessIgnoresMorale": false,
+      "blockHostileTakeover": false,
+      "blockBuyShare": false,
+      "activeTradePriceInPercent": 0,
+      "inputBenefitModifier": [],
+      "goodConsumptionUpgrade": [],
+      "needProvideNeedUpgrade": [],
+      "changedSupplyValueUpgrade": [],
+      "overrideIncidentAttractiveness": {},
+      "additionalOutput": [],
+      "replaceInputs": [],
+      "inputAmountUpgrade": [],
+      "addStatusEffects": [],
+      "damageFactor": {},
+      "moraleDamage": [],
+      "hitpointDamage": [],
+      "addAssemblyOptions": [],
+      "replaceAssemblyOptions": [],
+      "damageReceiveFactor": {},
+      "upgrades": {
+        "AttractivenessUpgrade": {
+          "value": 10,
+          "percental": true
         },
-        "LineOfSightRangeUpgrade": {
+        "MaintenanceUpgrade": {
+          "value": -50,
+          "percental": true
+        }
+      }
+    },
+    "buff": {
+      "addedInfolayer": 0,
+      "possibleFluffTexts": []
+    }
+  },
+  {
+    "guid": 191148,
+    "name": "roman",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/museum/icon_coin_common.png",
+    "description": 15766,
+    "item": null,
+    "itemEffect": {
+      "targets": [
+        190762
+      ]
+    },
+    "expeditionAttribute": null,
+    "itemAction": null,
+    "specialAction": null,
+    "upgrade": {
+      "changeModule": 0,
+      "forcedFeedbackVariation": 0,
+      "additionalModuleSoundLoop": 0,
+      "replacingWorkforce": 0,
+      "additionalHappiness": 0,
+      "taxModifierInPercent": 1,
+      "workforceModifierInPercent": 0,
+      "addedFertility": 0,
+      "needsElectricity": false,
+      "provideElectricity": false,
+      "attackSpeedUpgrade": 0,
+      "useProjectile": 0,
+      "genProbability": 0,
+      "genPool": 0,
+      "ConstructionCostInPercent": 0,
+      "ConstructionTimeInPercent": 0,
+      "activateWhiteFlag": false,
+      "activatePirateFlag": false,
+      "happinessIgnoresMorale": false,
+      "blockHostileTakeover": false,
+      "blockBuyShare": false,
+      "activeTradePriceInPercent": 0,
+      "inputBenefitModifier": [],
+      "goodConsumptionUpgrade": [],
+      "needProvideNeedUpgrade": [],
+      "changedSupplyValueUpgrade": [],
+      "overrideIncidentAttractiveness": {},
+      "additionalOutput": [],
+      "replaceInputs": [],
+      "inputAmountUpgrade": [],
+      "addStatusEffects": [],
+      "damageFactor": {},
+      "moraleDamage": [],
+      "hitpointDamage": [],
+      "addAssemblyOptions": [],
+      "replaceAssemblyOptions": [],
+      "damageReceiveFactor": {},
+      "upgrades": {
+        "IncidentFireIncreaseUpgrade": {
+          "value": -1,
+          "percental": false
+        },
+        "IncidentIllnessIncreaseUpgrade": {
+          "value": -1,
+          "percental": false
+        },
+        "IncidentRiotIncreaseUpgrade": {
+          "value": -1,
+          "percental": false
+        },
+        "IncidentExplosionIncreaseUpgrade": {
+          "value": -1,
+          "percental": false
+        }
+      }
+    },
+    "buff": {
+      "addedInfolayer": 0,
+      "possibleFluffTexts": []
+    }
+  },
+  {
+    "guid": 191142,
+    "name": "greek",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/museum/icon_scroll_anthology_myths.png",
+    "description": 15770,
+    "item": null,
+    "itemEffect": {
+      "targets": [
+        1010361,
+        191562
+      ]
+    },
+    "expeditionAttribute": null,
+    "itemAction": null,
+    "specialAction": null,
+    "upgrade": {
+      "changeModule": 0,
+      "forcedFeedbackVariation": 0,
+      "additionalModuleSoundLoop": 0,
+      "replacingWorkforce": 0,
+      "additionalHappiness": 0,
+      "taxModifierInPercent": 0,
+      "workforceModifierInPercent": 0,
+      "addedFertility": 0,
+      "needsElectricity": false,
+      "provideElectricity": false,
+      "attackSpeedUpgrade": 0,
+      "useProjectile": 0,
+      "genProbability": 0,
+      "genPool": 0,
+      "ConstructionCostInPercent": 0,
+      "ConstructionTimeInPercent": 0,
+      "activateWhiteFlag": false,
+      "activatePirateFlag": false,
+      "happinessIgnoresMorale": false,
+      "blockHostileTakeover": false,
+      "blockBuyShare": false,
+      "activeTradePriceInPercent": 0,
+      "inputBenefitModifier": [],
+      "goodConsumptionUpgrade": [],
+      "needProvideNeedUpgrade": [],
+      "changedSupplyValueUpgrade": [],
+      "overrideIncidentAttractiveness": {},
+      "additionalOutput": [],
+      "replaceInputs": [],
+      "inputAmountUpgrade": [],
+      "addStatusEffects": [],
+      "damageFactor": {},
+      "moraleDamage": [],
+      "hitpointDamage": [],
+      "addAssemblyOptions": [],
+      "replaceAssemblyOptions": [],
+      "damageReceiveFactor": {},
+      "upgrades": {
+        "AttractivenessUpgrade": {
           "value": 5,
+          "percental": false
+        },
+        "MaintenanceUpgrade": {
+          "value": -20,
           "percental": true
         }
       }
     },
-    "buff": null
+    "buff": {
+      "addedInfolayer": 0,
+      "possibleFluffTexts": [
+        15710,
+        15711,
+        15714,
+        15715,
+        15716,
+        15717,
+        15718,
+        15719,
+        15720,
+        15721,
+        15722,
+        15723,
+        15724,
+        15725,
+        15726,
+        15727,
+        15728,
+        15729,
+        15730,
+        15731,
+        15732,
+        15733,
+        15734,
+        15735,
+        15736,
+        15737,
+        15738,
+        15739,
+        15740,
+        15742,
+        15743,
+        15744,
+        15745,
+        15746,
+        15747
+      ]
+    }
   },
   {
-    "guid": 191839,
-    "name": "High-Powered Scope",
+    "guid": 191143,
+    "name": "jurassic",
     "id": "",
-    "icon": "data/ui/2kimages/main/3dicons/consumables/icon_telescope_2.png",
-    "description": 19696,
-    "item": {
-      "flotsam": 0,
-      "allocation": "",
-      "maxStackSize": 1,
-      "rarity": "Rare",
-      "hasAction": false,
-      "tradePrice": false,
-      "transferBlocked": false,
-      "itemType": false,
-      "itemSet": 0,
-      "exclusiveGroup": "Telescopes",
-      "isDestroyedOnUnequip": false
+    "icon": "data/ui/2kimages/main/3dicons/museum/icon_museum_t_rex.png",
+    "description": 15773,
+    "item": null,
+    "itemEffect": {
+      "targets": [
+        190762
+      ]
     },
-    "itemEffect": null,
-    "expeditionAttribute": {
-      "attributes": [
-        {
-          "attribute": "Navigation",
-          "amount": 30
-        },
-        {
-          "attribute": "Hunting",
-          "amount": 15
-        }
-      ],
-      "baseMorale": 0.0,
-      "fluff": [
-        "19696"
-      ],
-      "itemDifficulties": [
-        "Easy",
-        "Average",
-        "Hard"
-      ],
-      "itemRegions": []
+    "expeditionAttribute": null,
+    "itemAction": null,
+    "specialAction": null,
+    "upgrade": {
+      "changeModule": 0,
+      "forcedFeedbackVariation": 0,
+      "additionalModuleSoundLoop": 0,
+      "replacingWorkforce": 0,
+      "additionalHappiness": 2,
+      "taxModifierInPercent": 2,
+      "workforceModifierInPercent": 0,
+      "addedFertility": 0,
+      "needsElectricity": false,
+      "provideElectricity": false,
+      "attackSpeedUpgrade": 0,
+      "useProjectile": 0,
+      "genProbability": 0,
+      "genPool": 0,
+      "ConstructionCostInPercent": 0,
+      "ConstructionTimeInPercent": 0,
+      "activateWhiteFlag": false,
+      "activatePirateFlag": false,
+      "happinessIgnoresMorale": false,
+      "blockHostileTakeover": false,
+      "blockBuyShare": false,
+      "activeTradePriceInPercent": 0,
+      "inputBenefitModifier": [],
+      "goodConsumptionUpgrade": [],
+      "needProvideNeedUpgrade": [],
+      "changedSupplyValueUpgrade": [],
+      "overrideIncidentAttractiveness": {},
+      "additionalOutput": [],
+      "replaceInputs": [],
+      "inputAmountUpgrade": [],
+      "addStatusEffects": [],
+      "damageFactor": {},
+      "moraleDamage": [],
+      "hitpointDamage": [],
+      "addAssemblyOptions": [],
+      "replaceAssemblyOptions": [],
+      "damageReceiveFactor": {},
+      "upgrades": null
     },
+    "buff": {
+      "addedInfolayer": 0,
+      "possibleFluffTexts": []
+    }
+  },
+  {
+    "guid": 190110,
+    "name": "RealExistingSocialism",
+    "id": "",
+    "icon": "data/ui/2kimages/main/icons/icon_attractiveness_house_big.png",
+    "description": 0,
+    "item": null,
+    "itemEffect": {
+      "targets": [
+        190041
+      ]
+    },
+    "expeditionAttribute": null,
     "itemAction": null,
     "specialAction": null,
     "upgrade": {
@@ -718,2345 +2457,15 @@
       "replaceAssemblyOptions": [],
       "damageReceiveFactor": {},
       "upgrades": {
-        "AttackRangeUpgrade": {
+        "ResidentsUpgrade": {
           "value": 10,
-          "percental": true
-        },
-        "LineOfSightRangeUpgrade": {
-          "value": 10,
-          "percental": true
+          "percental": false
         }
       }
     },
-    "buff": null
-  },
-  {
-    "guid": 191840,
-    "name": "First Radar, the Telemobiloscope",
-    "id": "",
-    "icon": "data/ui/2kimages/main/3dicons/consumables/icon_telescope_3.png",
-    "description": 19697,
-    "item": {
-      "flotsam": 0,
-      "allocation": "",
-      "maxStackSize": 1,
-      "rarity": "Epic",
-      "hasAction": false,
-      "tradePrice": false,
-      "transferBlocked": false,
-      "itemType": false,
-      "itemSet": 0,
-      "exclusiveGroup": "Telescopes",
-      "isDestroyedOnUnequip": false
-    },
-    "itemEffect": null,
-    "expeditionAttribute": {
-      "attributes": [
-        {
-          "attribute": "Navigation",
-          "amount": 40
-        },
-        {
-          "attribute": "Hunting",
-          "amount": 20
-        }
-      ],
-      "baseMorale": 0.0,
-      "fluff": [
-        "19697"
-      ],
-      "itemDifficulties": [
-        "Average",
-        "Hard"
-      ],
-      "itemRegions": []
-    },
-    "itemAction": null,
-    "specialAction": null,
-    "upgrade": {
-      "changeModule": 0,
-      "forcedFeedbackVariation": 0,
-      "additionalModuleSoundLoop": 0,
-      "replacingWorkforce": 0,
-      "additionalHappiness": 0,
-      "taxModifierInPercent": 0,
-      "workforceModifierInPercent": 0,
-      "addedFertility": 0,
-      "needsElectricity": false,
-      "provideElectricity": false,
-      "attackSpeedUpgrade": 0,
-      "useProjectile": 0,
-      "genProbability": 0,
-      "genPool": 0,
-      "ConstructionCostInPercent": 0,
-      "ConstructionTimeInPercent": 0,
-      "activateWhiteFlag": false,
-      "activatePirateFlag": false,
-      "happinessIgnoresMorale": false,
-      "blockHostileTakeover": false,
-      "blockBuyShare": false,
-      "activeTradePriceInPercent": 0,
-      "inputBenefitModifier": [],
-      "goodConsumptionUpgrade": [],
-      "needProvideNeedUpgrade": [],
-      "changedSupplyValueUpgrade": [],
-      "overrideIncidentAttractiveness": {},
-      "additionalOutput": [],
-      "replaceInputs": [],
-      "inputAmountUpgrade": [],
-      "addStatusEffects": [],
-      "damageFactor": {},
-      "moraleDamage": [],
-      "hitpointDamage": [],
-      "addAssemblyOptions": [],
-      "replaceAssemblyOptions": [],
-      "damageReceiveFactor": {},
-      "upgrades": {
-        "AttackRangeUpgrade": {
-          "value": 15,
-          "percental": true
-        },
-        "LineOfSightRangeUpgrade": {
-          "value": 15,
-          "percental": true
-        }
-      }
-    },
-    "buff": null
-  },
-  {
-    "guid": 191848,
-    "name": "Wooden Plating",
-    "id": "",
-    "icon": "data/ui/2kimages/main/3dicons/consumables/icon_hull_1.png",
-    "description": 19698,
-    "item": {
-      "flotsam": 0,
-      "allocation": "",
-      "maxStackSize": 1,
-      "rarity": "Uncommon",
-      "hasAction": false,
-      "tradePrice": false,
-      "transferBlocked": false,
-      "itemType": false,
-      "itemSet": 0,
-      "exclusiveGroup": "",
-      "isDestroyedOnUnequip": false
-    },
-    "itemEffect": null,
-    "expeditionAttribute": {
-      "attributes": [
-        {
-          "attribute": "Might",
-          "amount": 10
-        }
-      ],
-      "baseMorale": 0.0,
-      "fluff": [
-        "19698"
-      ],
-      "itemDifficulties": [
-        "Easy",
-        "Average"
-      ],
-      "itemRegions": []
-    },
-    "itemAction": null,
-    "specialAction": null,
-    "upgrade": {
-      "changeModule": 0,
-      "forcedFeedbackVariation": 0,
-      "additionalModuleSoundLoop": 0,
-      "replacingWorkforce": 0,
-      "additionalHappiness": 0,
-      "taxModifierInPercent": 0,
-      "workforceModifierInPercent": 0,
-      "addedFertility": 0,
-      "needsElectricity": false,
-      "provideElectricity": false,
-      "attackSpeedUpgrade": 0,
-      "useProjectile": 0,
-      "genProbability": 0,
-      "genPool": 0,
-      "ConstructionCostInPercent": 0,
-      "ConstructionTimeInPercent": 0,
-      "activateWhiteFlag": false,
-      "activatePirateFlag": false,
-      "happinessIgnoresMorale": false,
-      "blockHostileTakeover": false,
-      "blockBuyShare": false,
-      "activeTradePriceInPercent": 0,
-      "inputBenefitModifier": [],
-      "goodConsumptionUpgrade": [],
-      "needProvideNeedUpgrade": [],
-      "changedSupplyValueUpgrade": [],
-      "overrideIncidentAttractiveness": {},
-      "additionalOutput": [],
-      "replaceInputs": [],
-      "inputAmountUpgrade": [],
-      "addStatusEffects": [],
-      "damageFactor": {},
-      "moraleDamage": [],
-      "hitpointDamage": [],
-      "addAssemblyOptions": [],
-      "replaceAssemblyOptions": [],
-      "damageReceiveFactor": {},
-      "upgrades": {
-        "MaxHitpointsUpgrade": {
-          "value": 20,
-          "percental": true
-        },
-        "ForwardSpeedUpgrade": {
-          "value": -10,
-          "percental": true
-        }
-      }
-    },
-    "buff": null
-  },
-  {
-    "guid": 191849,
-    "name": "Steel Plating",
-    "id": "",
-    "icon": "data/ui/2kimages/main/3dicons/consumables/icon_hull_2.png",
-    "description": 19699,
-    "item": {
-      "flotsam": 0,
-      "allocation": "",
-      "maxStackSize": 1,
-      "rarity": "Rare",
-      "hasAction": false,
-      "tradePrice": false,
-      "transferBlocked": false,
-      "itemType": false,
-      "itemSet": 0,
-      "exclusiveGroup": "",
-      "isDestroyedOnUnequip": false
-    },
-    "itemEffect": null,
-    "expeditionAttribute": {
-      "attributes": [
-        {
-          "attribute": "Might",
-          "amount": 25
-        }
-      ],
-      "baseMorale": 0.0,
-      "fluff": [
-        "19699"
-      ],
-      "itemDifficulties": [
-        "Easy",
-        "Average",
-        "Hard"
-      ],
-      "itemRegions": []
-    },
-    "itemAction": null,
-    "specialAction": null,
-    "upgrade": {
-      "changeModule": 0,
-      "forcedFeedbackVariation": 0,
-      "additionalModuleSoundLoop": 0,
-      "replacingWorkforce": 0,
-      "additionalHappiness": 0,
-      "taxModifierInPercent": 0,
-      "workforceModifierInPercent": 0,
-      "addedFertility": 0,
-      "needsElectricity": false,
-      "provideElectricity": false,
-      "attackSpeedUpgrade": 0,
-      "useProjectile": 0,
-      "genProbability": 0,
-      "genPool": 0,
-      "ConstructionCostInPercent": 0,
-      "ConstructionTimeInPercent": 0,
-      "activateWhiteFlag": false,
-      "activatePirateFlag": false,
-      "happinessIgnoresMorale": false,
-      "blockHostileTakeover": false,
-      "blockBuyShare": false,
-      "activeTradePriceInPercent": 0,
-      "inputBenefitModifier": [],
-      "goodConsumptionUpgrade": [],
-      "needProvideNeedUpgrade": [],
-      "changedSupplyValueUpgrade": [],
-      "overrideIncidentAttractiveness": {},
-      "additionalOutput": [],
-      "replaceInputs": [],
-      "inputAmountUpgrade": [],
-      "addStatusEffects": [],
-      "damageFactor": {},
-      "moraleDamage": [],
-      "hitpointDamage": [],
-      "addAssemblyOptions": [],
-      "replaceAssemblyOptions": [],
-      "damageReceiveFactor": {
-        "Cannon": 0.85,
-        "BigBertha": 0.85
-      },
-      "upgrades": {
-        "MaxHitpointsUpgrade": {
-          "value": 30,
-          "percental": true
-        },
-        "ForwardSpeedUpgrade": {
-          "value": -5,
-          "percental": true
-        }
-      }
-    },
-    "buff": null
-  },
-  {
-    "guid": 191850,
-    "name": "Bulkheads",
-    "id": "",
-    "icon": "data/ui/2kimages/main/3dicons/consumables/icon_hull_3.png",
-    "description": 19700,
-    "item": {
-      "flotsam": 0,
-      "allocation": "",
-      "maxStackSize": 1,
-      "rarity": "Epic",
-      "hasAction": false,
-      "tradePrice": false,
-      "transferBlocked": false,
-      "itemType": false,
-      "itemSet": 0,
-      "exclusiveGroup": "",
-      "isDestroyedOnUnequip": false
-    },
-    "itemEffect": null,
-    "expeditionAttribute": {
-      "attributes": [
-        {
-          "attribute": "Might",
-          "amount": 35
-        }
-      ],
-      "baseMorale": 0.0,
-      "fluff": [
-        "19700"
-      ],
-      "itemDifficulties": [
-        "Average",
-        "Hard"
-      ],
-      "itemRegions": []
-    },
-    "itemAction": null,
-    "specialAction": null,
-    "upgrade": {
-      "changeModule": 0,
-      "forcedFeedbackVariation": 0,
-      "additionalModuleSoundLoop": 0,
-      "replacingWorkforce": 0,
-      "additionalHappiness": 0,
-      "taxModifierInPercent": 0,
-      "workforceModifierInPercent": 0,
-      "addedFertility": 0,
-      "needsElectricity": false,
-      "provideElectricity": false,
-      "attackSpeedUpgrade": 0,
-      "useProjectile": 0,
-      "genProbability": 0,
-      "genPool": 0,
-      "ConstructionCostInPercent": 0,
-      "ConstructionTimeInPercent": 0,
-      "activateWhiteFlag": false,
-      "activatePirateFlag": false,
-      "happinessIgnoresMorale": false,
-      "blockHostileTakeover": false,
-      "blockBuyShare": false,
-      "activeTradePriceInPercent": 0,
-      "inputBenefitModifier": [],
-      "goodConsumptionUpgrade": [],
-      "needProvideNeedUpgrade": [],
-      "changedSupplyValueUpgrade": [],
-      "overrideIncidentAttractiveness": {},
-      "additionalOutput": [],
-      "replaceInputs": [],
-      "inputAmountUpgrade": [],
-      "addStatusEffects": [],
-      "damageFactor": {},
-      "moraleDamage": [],
-      "hitpointDamage": [],
-      "addAssemblyOptions": [],
-      "replaceAssemblyOptions": [],
-      "damageReceiveFactor": {
-        "Cannon": 0.75,
-        "BigBertha": 0.75
-      },
-      "upgrades": {
-        "MaxHitpointsUpgrade": {
-          "value": 40,
-          "percental": true
-        }
-      }
-    },
-    "buff": null
-  },
-  {
-    "guid": 191851,
-    "name": "Steel Double-Hull",
-    "id": "",
-    "icon": "data/ui/2kimages/main/3dicons/consumables/icon_hull_4.png",
-    "description": 19701,
-    "item": {
-      "flotsam": 0,
-      "allocation": "",
-      "maxStackSize": 1,
-      "rarity": "Legendary",
-      "hasAction": false,
-      "tradePrice": false,
-      "transferBlocked": false,
-      "itemType": false,
-      "itemSet": 0,
-      "exclusiveGroup": "",
-      "isDestroyedOnUnequip": false
-    },
-    "itemEffect": null,
-    "expeditionAttribute": {
-      "attributes": [
-        {
-          "attribute": "Might",
-          "amount": 50
-        }
-      ],
-      "baseMorale": 0.0,
-      "fluff": [
-        "19701"
-      ],
-      "itemDifficulties": [
-        "Hard"
-      ],
-      "itemRegions": []
-    },
-    "itemAction": null,
-    "specialAction": null,
-    "upgrade": {
-      "changeModule": 0,
-      "forcedFeedbackVariation": 0,
-      "additionalModuleSoundLoop": 0,
-      "replacingWorkforce": 0,
-      "additionalHappiness": 0,
-      "taxModifierInPercent": 0,
-      "workforceModifierInPercent": 0,
-      "addedFertility": 0,
-      "needsElectricity": false,
-      "provideElectricity": false,
-      "attackSpeedUpgrade": 0,
-      "useProjectile": 0,
-      "genProbability": 0,
-      "genPool": 0,
-      "ConstructionCostInPercent": 0,
-      "ConstructionTimeInPercent": 0,
-      "activateWhiteFlag": false,
-      "activatePirateFlag": false,
-      "happinessIgnoresMorale": false,
-      "blockHostileTakeover": false,
-      "blockBuyShare": false,
-      "activeTradePriceInPercent": 0,
-      "inputBenefitModifier": [],
-      "goodConsumptionUpgrade": [],
-      "needProvideNeedUpgrade": [],
-      "changedSupplyValueUpgrade": [],
-      "overrideIncidentAttractiveness": {},
-      "additionalOutput": [],
-      "replaceInputs": [],
-      "inputAmountUpgrade": [],
-      "addStatusEffects": [],
-      "damageFactor": {},
-      "moraleDamage": [],
-      "hitpointDamage": [],
-      "addAssemblyOptions": [],
-      "replaceAssemblyOptions": [],
-      "damageReceiveFactor": {
-        "Torpedo": 0.85,
-        "Cannon": 0.75,
-        "BigBertha": 0.75
-      },
-      "upgrades": {
-        "MaxHitpointsUpgrade": {
-          "value": 50,
-          "percental": true
-        }
-      }
-    },
-    "buff": null
-  },
-  {
-    "guid": 191852,
-    "name": "Congreve Rocket",
-    "id": "",
-    "icon": "data/ui/2kimages/main/3dicons/consumables/icon_cannon_0.png",
-    "description": 19702,
-    "item": {
-      "flotsam": 0,
-      "allocation": "Warship",
-      "maxStackSize": 1,
-      "rarity": "Uncommon",
-      "hasAction": false,
-      "tradePrice": false,
-      "transferBlocked": false,
-      "itemType": false,
-      "itemSet": 0,
-      "exclusiveGroup": "",
-      "isDestroyedOnUnequip": false
-    },
-    "itemEffect": null,
-    "expeditionAttribute": {
-      "attributes": [
-        {
-          "attribute": "Might",
-          "amount": 20
-        }
-      ],
-      "baseMorale": 0.0,
-      "fluff": [
-        "19702"
-      ],
-      "itemDifficulties": [
-        "Easy",
-        "Average"
-      ],
-      "itemRegions": []
-    },
-    "itemAction": null,
-    "specialAction": null,
-    "upgrade": {
-      "changeModule": 0,
-      "forcedFeedbackVariation": 0,
-      "additionalModuleSoundLoop": 0,
-      "replacingWorkforce": 0,
-      "additionalHappiness": 0,
-      "taxModifierInPercent": 0,
-      "workforceModifierInPercent": 0,
-      "addedFertility": 0,
-      "needsElectricity": false,
-      "provideElectricity": false,
-      "attackSpeedUpgrade": 0,
-      "useProjectile": 0,
-      "genProbability": 0,
-      "genPool": 0,
-      "ConstructionCostInPercent": 0,
-      "ConstructionTimeInPercent": 0,
-      "activateWhiteFlag": false,
-      "activatePirateFlag": false,
-      "happinessIgnoresMorale": false,
-      "blockHostileTakeover": false,
-      "blockBuyShare": false,
-      "activeTradePriceInPercent": 0,
-      "inputBenefitModifier": [],
-      "goodConsumptionUpgrade": [],
-      "needProvideNeedUpgrade": [],
-      "changedSupplyValueUpgrade": [],
-      "overrideIncidentAttractiveness": {},
-      "additionalOutput": [],
-      "replaceInputs": [],
-      "inputAmountUpgrade": [],
-      "addStatusEffects": [],
-      "damageFactor": {},
-      "moraleDamage": [],
-      "hitpointDamage": [],
-      "addAssemblyOptions": [],
-      "replaceAssemblyOptions": [],
-      "damageReceiveFactor": {},
-      "upgrades": {
-        "BaseDamageUpgrade": {
-          "value": 10,
-          "percental": true
-        }
-      }
-    },
-    "buff": null
-  },
-  {
-    "guid": 191853,
-    "name": "18-Pounder Long Gun",
-    "id": "",
-    "icon": "data/ui/2kimages/main/3dicons/consumables/icon_cannon_1.png",
-    "description": 19704,
-    "item": {
-      "flotsam": 0,
-      "allocation": "Warship",
-      "maxStackSize": 1,
-      "rarity": "Rare",
-      "hasAction": false,
-      "tradePrice": false,
-      "transferBlocked": false,
-      "itemType": false,
-      "itemSet": 0,
-      "exclusiveGroup": "",
-      "isDestroyedOnUnequip": false
-    },
-    "itemEffect": null,
-    "expeditionAttribute": {
-      "attributes": [
-        {
-          "attribute": "Might",
-          "amount": 30
-        }
-      ],
-      "baseMorale": 0.0,
-      "fluff": [
-        "19704"
-      ],
-      "itemDifficulties": [
-        "Easy",
-        "Average",
-        "Hard"
-      ],
-      "itemRegions": []
-    },
-    "itemAction": null,
-    "specialAction": null,
-    "upgrade": {
-      "changeModule": 0,
-      "forcedFeedbackVariation": 0,
-      "additionalModuleSoundLoop": 0,
-      "replacingWorkforce": 0,
-      "additionalHappiness": 0,
-      "taxModifierInPercent": 0,
-      "workforceModifierInPercent": 0,
-      "addedFertility": 0,
-      "needsElectricity": false,
-      "provideElectricity": false,
-      "attackSpeedUpgrade": 0,
-      "useProjectile": 0,
-      "genProbability": 0,
-      "genPool": 0,
-      "ConstructionCostInPercent": 0,
-      "ConstructionTimeInPercent": 0,
-      "activateWhiteFlag": false,
-      "activatePirateFlag": false,
-      "happinessIgnoresMorale": false,
-      "blockHostileTakeover": false,
-      "blockBuyShare": false,
-      "activeTradePriceInPercent": 0,
-      "inputBenefitModifier": [],
-      "goodConsumptionUpgrade": [],
-      "needProvideNeedUpgrade": [],
-      "changedSupplyValueUpgrade": [],
-      "overrideIncidentAttractiveness": {},
-      "additionalOutput": [],
-      "replaceInputs": [],
-      "inputAmountUpgrade": [],
-      "addStatusEffects": [],
-      "damageFactor": {},
-      "moraleDamage": [],
-      "hitpointDamage": [],
-      "addAssemblyOptions": [],
-      "replaceAssemblyOptions": [],
-      "damageReceiveFactor": {},
-      "upgrades": {
-        "BaseDamageUpgrade": {
-          "value": 15,
-          "percental": true
-        },
-        "AccuracyUpgrade": {
-          "value": 20,
-          "percental": true
-        }
-      }
-    },
-    "buff": null
-  },
-  {
-    "guid": 191854,
-    "name": "Paixhans Gun",
-    "id": "",
-    "icon": "data/ui/2kimages/main/3dicons/consumables/icon_cannon_2.png",
-    "description": 19705,
-    "item": {
-      "flotsam": 0,
-      "allocation": "Warship",
-      "maxStackSize": 1,
-      "rarity": "Epic",
-      "hasAction": false,
-      "tradePrice": false,
-      "transferBlocked": false,
-      "itemType": false,
-      "itemSet": 0,
-      "exclusiveGroup": "",
-      "isDestroyedOnUnequip": false
-    },
-    "itemEffect": null,
-    "expeditionAttribute": {
-      "attributes": [
-        {
-          "attribute": "Might",
-          "amount": 40
-        }
-      ],
-      "baseMorale": 0.0,
-      "fluff": [
-        "19705"
-      ],
-      "itemDifficulties": [
-        "Average",
-        "Hard"
-      ],
-      "itemRegions": []
-    },
-    "itemAction": null,
-    "specialAction": null,
-    "upgrade": {
-      "changeModule": 0,
-      "forcedFeedbackVariation": 0,
-      "additionalModuleSoundLoop": 0,
-      "replacingWorkforce": 0,
-      "additionalHappiness": 0,
-      "taxModifierInPercent": 0,
-      "workforceModifierInPercent": 0,
-      "addedFertility": 0,
-      "needsElectricity": false,
-      "provideElectricity": false,
-      "attackSpeedUpgrade": 0,
-      "useProjectile": 0,
-      "genProbability": 0,
-      "genPool": 0,
-      "ConstructionCostInPercent": 0,
-      "ConstructionTimeInPercent": 0,
-      "activateWhiteFlag": false,
-      "activatePirateFlag": false,
-      "happinessIgnoresMorale": false,
-      "blockHostileTakeover": false,
-      "blockBuyShare": false,
-      "activeTradePriceInPercent": 0,
-      "inputBenefitModifier": [],
-      "goodConsumptionUpgrade": [],
-      "needProvideNeedUpgrade": [],
-      "changedSupplyValueUpgrade": [],
-      "overrideIncidentAttractiveness": {},
-      "additionalOutput": [],
-      "replaceInputs": [],
-      "inputAmountUpgrade": [],
-      "addStatusEffects": [],
-      "damageFactor": {},
-      "moraleDamage": [],
-      "hitpointDamage": [],
-      "addAssemblyOptions": [],
-      "replaceAssemblyOptions": [],
-      "damageReceiveFactor": {},
-      "upgrades": {
-        "BaseDamageUpgrade": {
-          "value": 25,
-          "percental": true
-        },
-        "AccuracyUpgrade": {
-          "value": 35,
-          "percental": true
-        }
-      }
-    },
-    "buff": null
-  },
-  {
-    "guid": 191855,
-    "name": "Armstrong Gun",
-    "id": "",
-    "icon": "data/ui/2kimages/main/3dicons/consumables/icon_cannon_4.png",
-    "description": 19706,
-    "item": {
-      "flotsam": 0,
-      "allocation": "Warship",
-      "maxStackSize": 1,
-      "rarity": "Legendary",
-      "hasAction": false,
-      "tradePrice": false,
-      "transferBlocked": false,
-      "itemType": false,
-      "itemSet": 0,
-      "exclusiveGroup": "",
-      "isDestroyedOnUnequip": false
-    },
-    "itemEffect": null,
-    "expeditionAttribute": {
-      "attributes": [
-        {
-          "attribute": "Might",
-          "amount": 50
-        }
-      ],
-      "baseMorale": 0.0,
-      "fluff": [
-        "19706"
-      ],
-      "itemDifficulties": [
-        "Hard"
-      ],
-      "itemRegions": []
-    },
-    "itemAction": null,
-    "specialAction": null,
-    "upgrade": {
-      "changeModule": 0,
-      "forcedFeedbackVariation": 0,
-      "additionalModuleSoundLoop": 0,
-      "replacingWorkforce": 0,
-      "additionalHappiness": 0,
-      "taxModifierInPercent": 0,
-      "workforceModifierInPercent": 0,
-      "addedFertility": 0,
-      "needsElectricity": false,
-      "provideElectricity": false,
-      "attackSpeedUpgrade": 0,
-      "useProjectile": 0,
-      "genProbability": 0,
-      "genPool": 0,
-      "ConstructionCostInPercent": 0,
-      "ConstructionTimeInPercent": 0,
-      "activateWhiteFlag": false,
-      "activatePirateFlag": false,
-      "happinessIgnoresMorale": false,
-      "blockHostileTakeover": false,
-      "blockBuyShare": false,
-      "activeTradePriceInPercent": 0,
-      "inputBenefitModifier": [],
-      "goodConsumptionUpgrade": [],
-      "needProvideNeedUpgrade": [],
-      "changedSupplyValueUpgrade": [],
-      "overrideIncidentAttractiveness": {},
-      "additionalOutput": [],
-      "replaceInputs": [],
-      "inputAmountUpgrade": [],
-      "addStatusEffects": [],
-      "damageFactor": {},
-      "moraleDamage": [],
-      "hitpointDamage": [],
-      "addAssemblyOptions": [],
-      "replaceAssemblyOptions": [],
-      "damageReceiveFactor": {},
-      "upgrades": {
-        "BaseDamageUpgrade": {
-          "value": 35,
-          "percental": true
-        },
-        "AccuracyUpgrade": {
-          "value": 50,
-          "percental": true
-        }
-      }
-    },
-    "buff": null
-  },
-  {
-    "guid": 191856,
-    "name": "Exhaust Blower",
-    "id": "",
-    "icon": "data/ui/2kimages/main/3dicons/machine_items/icon_heatexchanger_1.png",
-    "description": 19707,
-    "item": {
-      "flotsam": 0,
-      "allocation": "SteamShip",
-      "maxStackSize": 1,
-      "rarity": "Uncommon",
-      "hasAction": false,
-      "tradePrice": false,
-      "transferBlocked": false,
-      "itemType": false,
-      "itemSet": 0,
-      "exclusiveGroup": "",
-      "isDestroyedOnUnequip": false
-    },
-    "itemEffect": null,
-    "expeditionAttribute": {
-      "attributes": [],
-      "baseMorale": 0.0,
-      "fluff": [],
-      "itemDifficulties": [
-        "Easy",
-        "Average"
-      ],
-      "itemRegions": []
-    },
-    "itemAction": null,
-    "specialAction": null,
-    "upgrade": {
-      "changeModule": 0,
-      "forcedFeedbackVariation": 0,
-      "additionalModuleSoundLoop": 0,
-      "replacingWorkforce": 0,
-      "additionalHappiness": 0,
-      "taxModifierInPercent": 0,
-      "workforceModifierInPercent": 0,
-      "addedFertility": 0,
-      "needsElectricity": false,
-      "provideElectricity": false,
-      "attackSpeedUpgrade": 0,
-      "useProjectile": 0,
-      "genProbability": 0,
-      "genPool": 0,
-      "ConstructionCostInPercent": 0,
-      "ConstructionTimeInPercent": 0,
-      "activateWhiteFlag": false,
-      "activatePirateFlag": false,
-      "happinessIgnoresMorale": false,
-      "blockHostileTakeover": false,
-      "blockBuyShare": false,
-      "activeTradePriceInPercent": 0,
-      "inputBenefitModifier": [],
-      "goodConsumptionUpgrade": [],
-      "needProvideNeedUpgrade": [],
-      "changedSupplyValueUpgrade": [],
-      "overrideIncidentAttractiveness": {},
-      "additionalOutput": [],
-      "replaceInputs": [],
-      "inputAmountUpgrade": [],
-      "addStatusEffects": [],
-      "damageFactor": {},
-      "moraleDamage": [],
-      "hitpointDamage": [],
-      "addAssemblyOptions": [],
-      "replaceAssemblyOptions": [],
-      "damageReceiveFactor": {},
-      "upgrades": {
-        "IgnoreDamageFactorUpgrade": {
-          "value": 35,
-          "percental": true
-        }
-      }
-    },
-    "buff": null
-  },
-  {
-    "guid": 191857,
-    "name": "Heat Exchanger",
-    "id": "",
-    "icon": "data/ui/2kimages/main/3dicons/machine_items/icon_heatexchanger_2.png",
-    "description": 19708,
-    "item": {
-      "flotsam": 0,
-      "allocation": "SteamShip",
-      "maxStackSize": 1,
-      "rarity": "Rare",
-      "hasAction": false,
-      "tradePrice": false,
-      "transferBlocked": false,
-      "itemType": false,
-      "itemSet": 0,
-      "exclusiveGroup": "",
-      "isDestroyedOnUnequip": false
-    },
-    "itemEffect": null,
-    "expeditionAttribute": {
-      "attributes": [],
-      "baseMorale": 10.0,
-      "fluff": [],
-      "itemDifficulties": [
-        "Easy",
-        "Average",
-        "Hard"
-      ],
-      "itemRegions": []
-    },
-    "itemAction": null,
-    "specialAction": null,
-    "upgrade": {
-      "changeModule": 0,
-      "forcedFeedbackVariation": 0,
-      "additionalModuleSoundLoop": 0,
-      "replacingWorkforce": 0,
-      "additionalHappiness": 0,
-      "taxModifierInPercent": 0,
-      "workforceModifierInPercent": 0,
-      "addedFertility": 0,
-      "needsElectricity": false,
-      "provideElectricity": false,
-      "attackSpeedUpgrade": 0,
-      "useProjectile": 0,
-      "genProbability": 0,
-      "genPool": 0,
-      "ConstructionCostInPercent": 0,
-      "ConstructionTimeInPercent": 0,
-      "activateWhiteFlag": false,
-      "activatePirateFlag": false,
-      "happinessIgnoresMorale": false,
-      "blockHostileTakeover": false,
-      "blockBuyShare": false,
-      "activeTradePriceInPercent": 0,
-      "inputBenefitModifier": [],
-      "goodConsumptionUpgrade": [],
-      "needProvideNeedUpgrade": [],
-      "changedSupplyValueUpgrade": [],
-      "overrideIncidentAttractiveness": {},
-      "additionalOutput": [],
-      "replaceInputs": [],
-      "inputAmountUpgrade": [],
-      "addStatusEffects": [],
-      "damageFactor": {},
-      "moraleDamage": [],
-      "hitpointDamage": [],
-      "addAssemblyOptions": [],
-      "replaceAssemblyOptions": [],
-      "damageReceiveFactor": {},
-      "upgrades": {
-        "MaxHitpointsUpgrade": {
-          "value": 15,
-          "percental": true
-        },
-        "IgnoreDamageFactorUpgrade": {
-          "value": 50,
-          "percental": true
-        }
-      }
-    },
-    "buff": null
-  },
-  {
-    "guid": 191858,
-    "name": "Plate Heat Exchanger",
-    "id": "",
-    "icon": "data/ui/2kimages/main/3dicons/machine_items/icon_heatexchanger_3.png",
-    "description": 19709,
-    "item": {
-      "flotsam": 0,
-      "allocation": "SteamShip",
-      "maxStackSize": 1,
-      "rarity": "Epic",
-      "hasAction": false,
-      "tradePrice": false,
-      "transferBlocked": false,
-      "itemType": false,
-      "itemSet": 0,
-      "exclusiveGroup": "",
-      "isDestroyedOnUnequip": false
-    },
-    "itemEffect": null,
-    "expeditionAttribute": {
-      "attributes": [],
-      "baseMorale": 15.0,
-      "fluff": [],
-      "itemDifficulties": [
-        "Average",
-        "Hard"
-      ],
-      "itemRegions": []
-    },
-    "itemAction": null,
-    "specialAction": null,
-    "upgrade": {
-      "changeModule": 0,
-      "forcedFeedbackVariation": 0,
-      "additionalModuleSoundLoop": 0,
-      "replacingWorkforce": 0,
-      "additionalHappiness": 0,
-      "taxModifierInPercent": 0,
-      "workforceModifierInPercent": 0,
-      "addedFertility": 0,
-      "needsElectricity": false,
-      "provideElectricity": false,
-      "attackSpeedUpgrade": 0,
-      "useProjectile": 0,
-      "genProbability": 0,
-      "genPool": 0,
-      "ConstructionCostInPercent": 0,
-      "ConstructionTimeInPercent": 0,
-      "activateWhiteFlag": false,
-      "activatePirateFlag": false,
-      "happinessIgnoresMorale": false,
-      "blockHostileTakeover": false,
-      "blockBuyShare": false,
-      "activeTradePriceInPercent": 0,
-      "inputBenefitModifier": [],
-      "goodConsumptionUpgrade": [],
-      "needProvideNeedUpgrade": [],
-      "changedSupplyValueUpgrade": [],
-      "overrideIncidentAttractiveness": {},
-      "additionalOutput": [],
-      "replaceInputs": [],
-      "inputAmountUpgrade": [],
-      "addStatusEffects": [],
-      "damageFactor": {},
-      "moraleDamage": [],
-      "hitpointDamage": [],
-      "addAssemblyOptions": [],
-      "replaceAssemblyOptions": [],
-      "damageReceiveFactor": {},
-      "upgrades": {
-        "MaxHitpointsUpgrade": {
-          "value": 30,
-          "percental": true
-        },
-        "IgnoreDamageFactorUpgrade": {
-          "value": 100,
-          "percental": true
-        }
-      }
-    },
-    "buff": null
-  },
-  {
-    "guid": 191878,
-    "name": "White Flag",
-    "id": "",
-    "icon": "data/ui/2kimages/main/3dicons/icon_white_flag.png",
-    "description": 19724,
-    "item": {
-      "flotsam": 0,
-      "allocation": "",
-      "maxStackSize": 1,
-      "rarity": "Epic",
-      "hasAction": false,
-      "tradePrice": false,
-      "transferBlocked": false,
-      "itemType": false,
-      "itemSet": 0,
-      "exclusiveGroup": "Flag",
-      "isDestroyedOnUnequip": false
-    },
-    "itemEffect": null,
-    "expeditionAttribute": {
-      "attributes": [
-        {
-          "attribute": "Diplomacy",
-          "amount": 10
-        }
-      ],
-      "baseMorale": 0.0,
-      "fluff": [
-        "19724"
-      ],
-      "itemDifficulties": [
-        "Average",
-        "Hard"
-      ],
-      "itemRegions": []
-    },
-    "itemAction": null,
-    "specialAction": null,
-    "upgrade": {
-      "changeModule": 0,
-      "forcedFeedbackVariation": 0,
-      "additionalModuleSoundLoop": 0,
-      "replacingWorkforce": 0,
-      "additionalHappiness": 0,
-      "taxModifierInPercent": 0,
-      "workforceModifierInPercent": 0,
-      "addedFertility": 0,
-      "needsElectricity": false,
-      "provideElectricity": false,
-      "attackSpeedUpgrade": 0,
-      "useProjectile": 0,
-      "genProbability": 0,
-      "genPool": 0,
-      "ConstructionCostInPercent": 0,
-      "ConstructionTimeInPercent": 0,
-      "activateWhiteFlag": true,
-      "activatePirateFlag": false,
-      "happinessIgnoresMorale": false,
-      "blockHostileTakeover": false,
-      "blockBuyShare": false,
-      "activeTradePriceInPercent": 0,
-      "inputBenefitModifier": [],
-      "goodConsumptionUpgrade": [],
-      "needProvideNeedUpgrade": [],
-      "changedSupplyValueUpgrade": [],
-      "overrideIncidentAttractiveness": {},
-      "additionalOutput": [],
-      "replaceInputs": [],
-      "inputAmountUpgrade": [],
-      "addStatusEffects": [],
-      "damageFactor": {},
-      "moraleDamage": [],
-      "hitpointDamage": [],
-      "addAssemblyOptions": [],
-      "replaceAssemblyOptions": [],
-      "damageReceiveFactor": {},
-      "upgrades": null
-    },
-    "buff": null
-  },
-  {
-    "guid": 191991,
-    "name": "Royal White Flag",
-    "id": "",
-    "icon": "data/ui/2kimages/main/3dicons/consumables/icon_white_flag_2.png",
-    "description": 19725,
-    "item": {
-      "flotsam": 0,
-      "allocation": "",
-      "maxStackSize": 1,
-      "rarity": "Legendary",
-      "hasAction": false,
-      "tradePrice": false,
-      "transferBlocked": false,
-      "itemType": false,
-      "itemSet": 0,
-      "exclusiveGroup": "Flag",
-      "isDestroyedOnUnequip": false
-    },
-    "itemEffect": null,
-    "expeditionAttribute": {
-      "attributes": [
-        {
-          "attribute": "Diplomacy",
-          "amount": 20
-        }
-      ],
-      "baseMorale": 0.0,
-      "fluff": [
-        "19725"
-      ],
-      "itemDifficulties": [
-        "Hard"
-      ],
-      "itemRegions": []
-    },
-    "itemAction": null,
-    "specialAction": null,
-    "upgrade": {
-      "changeModule": 0,
-      "forcedFeedbackVariation": 0,
-      "additionalModuleSoundLoop": 0,
-      "replacingWorkforce": 0,
-      "additionalHappiness": 0,
-      "taxModifierInPercent": 0,
-      "workforceModifierInPercent": 0,
-      "addedFertility": 0,
-      "needsElectricity": false,
-      "provideElectricity": false,
-      "attackSpeedUpgrade": 0,
-      "useProjectile": 0,
-      "genProbability": 0,
-      "genPool": 0,
-      "ConstructionCostInPercent": 0,
-      "ConstructionTimeInPercent": 0,
-      "activateWhiteFlag": true,
-      "activatePirateFlag": false,
-      "happinessIgnoresMorale": false,
-      "blockHostileTakeover": false,
-      "blockBuyShare": false,
-      "activeTradePriceInPercent": 85,
-      "inputBenefitModifier": [],
-      "goodConsumptionUpgrade": [],
-      "needProvideNeedUpgrade": [],
-      "changedSupplyValueUpgrade": [],
-      "overrideIncidentAttractiveness": {},
-      "additionalOutput": [],
-      "replaceInputs": [],
-      "inputAmountUpgrade": [],
-      "addStatusEffects": [],
-      "damageFactor": {},
-      "moraleDamage": [],
-      "hitpointDamage": [],
-      "addAssemblyOptions": [],
-      "replaceAssemblyOptions": [],
-      "damageReceiveFactor": {},
-      "upgrades": null
-    },
-    "buff": null
-  },
-  {
-    "guid": 190161,
-    "name": "Test Quest Item",
-    "id": "",
-    "icon": "data/ui/2kimages/main/3dicons/icon_ship.png",
-    "description": 0,
-    "item": {
-      "flotsam": 0,
-      "allocation": "",
-      "maxStackSize": 0,
-      "rarity": "Quest",
-      "hasAction": false,
-      "tradePrice": false,
-      "transferBlocked": false,
-      "itemType": false,
-      "itemSet": 0,
-      "exclusiveGroup": "",
-      "isDestroyedOnUnequip": false
-    },
-    "itemEffect": null,
-    "expeditionAttribute": {
-      "attributes": [],
-      "baseMorale": 0.0,
-      "fluff": [],
-      "itemDifficulties": [],
-      "itemRegions": []
-    },
-    "itemAction": null,
-    "specialAction": null,
-    "upgrade": {
-      "changeModule": 0,
-      "forcedFeedbackVariation": 0,
-      "additionalModuleSoundLoop": 0,
-      "replacingWorkforce": 0,
-      "additionalHappiness": 0,
-      "taxModifierInPercent": 0,
-      "workforceModifierInPercent": 0,
-      "addedFertility": 0,
-      "needsElectricity": false,
-      "provideElectricity": false,
-      "attackSpeedUpgrade": 0,
-      "useProjectile": 0,
-      "genProbability": 0,
-      "genPool": 0,
-      "ConstructionCostInPercent": 0,
-      "ConstructionTimeInPercent": 0,
-      "activateWhiteFlag": false,
-      "activatePirateFlag": false,
-      "happinessIgnoresMorale": false,
-      "blockHostileTakeover": false,
-      "blockBuyShare": false,
-      "activeTradePriceInPercent": 0,
-      "inputBenefitModifier": [],
-      "goodConsumptionUpgrade": [],
-      "needProvideNeedUpgrade": [],
-      "changedSupplyValueUpgrade": [],
-      "overrideIncidentAttractiveness": {},
-      "additionalOutput": [],
-      "replaceInputs": [],
-      "inputAmountUpgrade": [],
-      "addStatusEffects": [],
-      "damageFactor": {},
-      "moraleDamage": [],
-      "hitpointDamage": [],
-      "addAssemblyOptions": [],
-      "replaceAssemblyOptions": [],
-      "damageReceiveFactor": {},
-      "upgrades": null
-    },
-    "buff": null
-  },
-  {
-    "guid": 190024,
-    "name": "common sailship speed boost",
-    "id": "",
-    "icon": "data/ui/2kimages/main/3dicons/icon_sail.png",
-    "description": 0,
-    "item": {
-      "flotsam": 0,
-      "allocation": "SailShip",
-      "maxStackSize": 0,
-      "rarity": "",
-      "hasAction": false,
-      "tradePrice": false,
-      "transferBlocked": false,
-      "itemType": false,
-      "itemSet": 0,
-      "exclusiveGroup": "Sail",
-      "isDestroyedOnUnequip": false
-    },
-    "itemEffect": null,
-    "expeditionAttribute": {
-      "attributes": [
-        {
-          "attribute": "Navigation",
-          "amount": 10
-        }
-      ],
-      "baseMorale": 10.0,
-      "fluff": [
-        "2361"
-      ],
-      "itemDifficulties": [
-        "Easy",
-        "Average"
-      ],
-      "itemRegions": []
-    },
-    "itemAction": null,
-    "specialAction": null,
-    "upgrade": {
-      "changeModule": 0,
-      "forcedFeedbackVariation": 0,
-      "additionalModuleSoundLoop": 0,
-      "replacingWorkforce": 0,
-      "additionalHappiness": 0,
-      "taxModifierInPercent": 0,
-      "workforceModifierInPercent": 0,
-      "addedFertility": 0,
-      "needsElectricity": false,
-      "provideElectricity": false,
-      "attackSpeedUpgrade": 0,
-      "useProjectile": 0,
-      "genProbability": 0,
-      "genPool": 0,
-      "ConstructionCostInPercent": 0,
-      "ConstructionTimeInPercent": 0,
-      "activateWhiteFlag": false,
-      "activatePirateFlag": false,
-      "happinessIgnoresMorale": false,
-      "blockHostileTakeover": false,
-      "blockBuyShare": false,
-      "activeTradePriceInPercent": 0,
-      "inputBenefitModifier": [],
-      "goodConsumptionUpgrade": [],
-      "needProvideNeedUpgrade": [],
-      "changedSupplyValueUpgrade": [],
-      "overrideIncidentAttractiveness": {},
-      "additionalOutput": [],
-      "replaceInputs": [],
-      "inputAmountUpgrade": [],
-      "addStatusEffects": [],
-      "damageFactor": {},
-      "moraleDamage": [],
-      "hitpointDamage": [],
-      "addAssemblyOptions": [],
-      "replaceAssemblyOptions": [],
-      "damageReceiveFactor": {},
-      "upgrades": {
-        "ForwardSpeedUpgrade": {
-          "value": 25,
-          "percental": true
-        }
-      }
-    },
-    "buff": null
-  },
-  {
-    "guid": 190025,
-    "name": "common steamsip speed boost",
-    "id": "",
-    "icon": "data/ui/2kimages/main/icons/icon_forward.png",
-    "description": 0,
-    "item": {
-      "flotsam": 0,
-      "allocation": "SteamShip",
-      "maxStackSize": 0,
-      "rarity": "",
-      "hasAction": false,
-      "tradePrice": false,
-      "transferBlocked": false,
-      "itemType": false,
-      "itemSet": 0,
-      "exclusiveGroup": "Motor",
-      "isDestroyedOnUnequip": false
-    },
-    "itemEffect": null,
-    "expeditionAttribute": {
-      "attributes": [
-        {
-          "attribute": "Navigation",
-          "amount": 10
-        }
-      ],
-      "baseMorale": 10.0,
-      "fluff": [],
-      "itemDifficulties": [
-        "Easy",
-        "Average"
-      ],
-      "itemRegions": []
-    },
-    "itemAction": null,
-    "specialAction": null,
-    "upgrade": {
-      "changeModule": 0,
-      "forcedFeedbackVariation": 0,
-      "additionalModuleSoundLoop": 0,
-      "replacingWorkforce": 0,
-      "additionalHappiness": 0,
-      "taxModifierInPercent": 0,
-      "workforceModifierInPercent": 0,
-      "addedFertility": 0,
-      "needsElectricity": false,
-      "provideElectricity": false,
-      "attackSpeedUpgrade": 0,
-      "useProjectile": 0,
-      "genProbability": 0,
-      "genPool": 0,
-      "ConstructionCostInPercent": 0,
-      "ConstructionTimeInPercent": 0,
-      "activateWhiteFlag": false,
-      "activatePirateFlag": false,
-      "happinessIgnoresMorale": false,
-      "blockHostileTakeover": false,
-      "blockBuyShare": false,
-      "activeTradePriceInPercent": 0,
-      "inputBenefitModifier": [],
-      "goodConsumptionUpgrade": [],
-      "needProvideNeedUpgrade": [],
-      "changedSupplyValueUpgrade": [],
-      "overrideIncidentAttractiveness": {},
-      "additionalOutput": [],
-      "replaceInputs": [],
-      "inputAmountUpgrade": [],
-      "addStatusEffects": [],
-      "damageFactor": {},
-      "moraleDamage": [],
-      "hitpointDamage": [],
-      "addAssemblyOptions": [],
-      "replaceAssemblyOptions": [],
-      "damageReceiveFactor": {},
-      "upgrades": {
-        "ForwardSpeedUpgrade": {
-          "value": 25,
-          "percental": true
-        }
-      }
-    },
-    "buff": null
-  },
-  {
-    "guid": 6000004,
-    "name": "VehicleTestItem",
-    "id": "",
-    "icon": "data/ui/2kimages/main/3dicons/icon_ship.png",
-    "description": 0,
-    "item": {
-      "flotsam": 0,
-      "allocation": "SailShip",
-      "maxStackSize": 0,
-      "rarity": "",
-      "hasAction": false,
-      "tradePrice": false,
-      "transferBlocked": false,
-      "itemType": false,
-      "itemSet": 0,
-      "exclusiveGroup": "",
-      "isDestroyedOnUnequip": false
-    },
-    "itemEffect": null,
-    "expeditionAttribute": {
-      "attributes": [],
-      "baseMorale": 0.0,
-      "fluff": [],
-      "itemDifficulties": [],
-      "itemRegions": []
-    },
-    "itemAction": null,
-    "specialAction": null,
-    "upgrade": {
-      "changeModule": 0,
-      "forcedFeedbackVariation": 0,
-      "additionalModuleSoundLoop": 0,
-      "replacingWorkforce": 0,
-      "additionalHappiness": 0,
-      "taxModifierInPercent": 0,
-      "workforceModifierInPercent": 0,
-      "addedFertility": 0,
-      "needsElectricity": false,
-      "provideElectricity": false,
-      "attackSpeedUpgrade": 0,
-      "useProjectile": 0,
-      "genProbability": 0,
-      "genPool": 0,
-      "ConstructionCostInPercent": 0,
-      "ConstructionTimeInPercent": 0,
-      "activateWhiteFlag": false,
-      "activatePirateFlag": true,
-      "happinessIgnoresMorale": false,
-      "blockHostileTakeover": false,
-      "blockBuyShare": false,
-      "activeTradePriceInPercent": 0,
-      "inputBenefitModifier": [],
-      "goodConsumptionUpgrade": [],
-      "needProvideNeedUpgrade": [],
-      "changedSupplyValueUpgrade": [],
-      "overrideIncidentAttractiveness": {},
-      "additionalOutput": [],
-      "replaceInputs": [],
-      "inputAmountUpgrade": [],
-      "addStatusEffects": [],
-      "damageFactor": {
-        "Building": 2.0
-      },
-      "moraleDamage": [],
-      "hitpointDamage": [
-        10.0
-      ],
-      "addAssemblyOptions": [],
-      "replaceAssemblyOptions": [],
-      "damageReceiveFactor": {},
-      "upgrades": {
-        "IgnoreWeightFactorUpgrade": {
-          "value": 100,
-          "percental": true
-        },
-        "IgnoreDamageFactorUpgrade": {
-          "value": 50,
-          "percental": true
-        }
-      }
-    },
-    "buff": null
-  },
-  {
-    "guid": 190138,
-    "name": "ship speed",
-    "id": "",
-    "icon": "data/ui/2kimages/main/icons/icon_shipsymbol.png",
-    "description": 0,
-    "item": {
-      "flotsam": 0,
-      "allocation": "SailShip",
-      "maxStackSize": 0,
-      "rarity": "Epic",
-      "hasAction": false,
-      "tradePrice": false,
-      "transferBlocked": false,
-      "itemType": false,
-      "itemSet": 0,
-      "exclusiveGroup": "",
-      "isDestroyedOnUnequip": true
-    },
-    "itemEffect": null,
-    "expeditionAttribute": {
-      "attributes": [],
-      "baseMorale": 0.0,
-      "fluff": [
-        "2361"
-      ],
-      "itemDifficulties": [],
-      "itemRegions": []
-    },
-    "itemAction": null,
-    "specialAction": null,
-    "upgrade": {
-      "changeModule": 0,
-      "forcedFeedbackVariation": 0,
-      "additionalModuleSoundLoop": 0,
-      "replacingWorkforce": 0,
-      "additionalHappiness": 0,
-      "taxModifierInPercent": 0,
-      "workforceModifierInPercent": 0,
-      "addedFertility": 0,
-      "needsElectricity": false,
-      "provideElectricity": false,
-      "attackSpeedUpgrade": 0,
-      "useProjectile": 0,
-      "genProbability": 0,
-      "genPool": 0,
-      "ConstructionCostInPercent": 0,
-      "ConstructionTimeInPercent": 0,
-      "activateWhiteFlag": false,
-      "activatePirateFlag": false,
-      "happinessIgnoresMorale": false,
-      "blockHostileTakeover": false,
-      "blockBuyShare": false,
-      "activeTradePriceInPercent": 0,
-      "inputBenefitModifier": [],
-      "goodConsumptionUpgrade": [],
-      "needProvideNeedUpgrade": [],
-      "changedSupplyValueUpgrade": [],
-      "overrideIncidentAttractiveness": {},
-      "additionalOutput": [],
-      "replaceInputs": [],
-      "inputAmountUpgrade": [],
-      "addStatusEffects": [],
-      "damageFactor": {},
-      "moraleDamage": [],
-      "hitpointDamage": [],
-      "addAssemblyOptions": [],
-      "replaceAssemblyOptions": [],
-      "damageReceiveFactor": {},
-      "upgrades": {
-        "ForwardSpeedUpgrade": {
-          "value": 25,
-          "percental": true
-        }
-      }
-    },
-    "buff": null
-  },
-  {
-    "guid": 190591,
-    "name": "ShipMaintainanceItem",
-    "id": "",
-    "icon": "data/ui/2kimages/main/icons/icon_repair_crane_2d.png",
-    "description": 0,
-    "item": {
-      "flotsam": 0,
-      "allocation": "",
-      "maxStackSize": 0,
-      "rarity": "Epic",
-      "hasAction": false,
-      "tradePrice": false,
-      "transferBlocked": false,
-      "itemType": false,
-      "itemSet": 0,
-      "exclusiveGroup": "",
-      "isDestroyedOnUnequip": false
-    },
-    "itemEffect": null,
-    "expeditionAttribute": {
-      "attributes": [],
-      "baseMorale": 0.0,
-      "fluff": [],
-      "itemDifficulties": [],
-      "itemRegions": []
-    },
-    "itemAction": null,
-    "specialAction": null,
-    "upgrade": {
-      "changeModule": 0,
-      "forcedFeedbackVariation": 0,
-      "additionalModuleSoundLoop": 0,
-      "replacingWorkforce": 0,
-      "additionalHappiness": 0,
-      "taxModifierInPercent": 0,
-      "workforceModifierInPercent": 0,
-      "addedFertility": 0,
-      "needsElectricity": false,
-      "provideElectricity": false,
-      "attackSpeedUpgrade": 0,
-      "useProjectile": 0,
-      "genProbability": 0,
-      "genPool": 0,
-      "ConstructionCostInPercent": 0,
-      "ConstructionTimeInPercent": 0,
-      "activateWhiteFlag": false,
-      "activatePirateFlag": false,
-      "happinessIgnoresMorale": false,
-      "blockHostileTakeover": false,
-      "blockBuyShare": false,
-      "activeTradePriceInPercent": 0,
-      "inputBenefitModifier": [],
-      "goodConsumptionUpgrade": [],
-      "needProvideNeedUpgrade": [],
-      "changedSupplyValueUpgrade": [],
-      "overrideIncidentAttractiveness": {},
-      "additionalOutput": [],
-      "replaceInputs": [],
-      "inputAmountUpgrade": [],
-      "addStatusEffects": [],
-      "damageFactor": {},
-      "moraleDamage": [],
-      "hitpointDamage": [],
-      "addAssemblyOptions": [],
-      "replaceAssemblyOptions": [],
-      "damageReceiveFactor": {},
-      "upgrades": {
-        "MaintainanceUpgrade": {
-          "value": -100,
-          "percental": true
-        }
-      }
-    },
-    "buff": null
-  },
-  {
-    "guid": 190592,
-    "name": "ShipAccuracyItem",
-    "id": "",
-    "icon": "data/ui/2kimages/main/icons/ship_info/icon_accuracy.png",
-    "description": 0,
-    "item": {
-      "flotsam": 0,
-      "allocation": "",
-      "maxStackSize": 0,
-      "rarity": "Legendary",
-      "hasAction": false,
-      "tradePrice": false,
-      "transferBlocked": false,
-      "itemType": false,
-      "itemSet": 0,
-      "exclusiveGroup": "",
-      "isDestroyedOnUnequip": false
-    },
-    "itemEffect": null,
-    "expeditionAttribute": {
-      "attributes": [],
-      "baseMorale": 0.0,
-      "fluff": [],
-      "itemDifficulties": [],
-      "itemRegions": []
-    },
-    "itemAction": null,
-    "specialAction": null,
-    "upgrade": {
-      "changeModule": 0,
-      "forcedFeedbackVariation": 0,
-      "additionalModuleSoundLoop": 0,
-      "replacingWorkforce": 0,
-      "additionalHappiness": 0,
-      "taxModifierInPercent": 0,
-      "workforceModifierInPercent": 0,
-      "addedFertility": 0,
-      "needsElectricity": false,
-      "provideElectricity": false,
-      "attackSpeedUpgrade": 0,
-      "useProjectile": 0,
-      "genProbability": 0,
-      "genPool": 0,
-      "ConstructionCostInPercent": 0,
-      "ConstructionTimeInPercent": 0,
-      "activateWhiteFlag": false,
-      "activatePirateFlag": false,
-      "happinessIgnoresMorale": false,
-      "blockHostileTakeover": false,
-      "blockBuyShare": false,
-      "activeTradePriceInPercent": 0,
-      "inputBenefitModifier": [],
-      "goodConsumptionUpgrade": [],
-      "needProvideNeedUpgrade": [],
-      "changedSupplyValueUpgrade": [],
-      "overrideIncidentAttractiveness": {},
-      "additionalOutput": [],
-      "replaceInputs": [],
-      "inputAmountUpgrade": [],
-      "addStatusEffects": [],
-      "damageFactor": {},
-      "moraleDamage": [],
-      "hitpointDamage": [],
-      "addAssemblyOptions": [],
-      "replaceAssemblyOptions": [],
-      "damageReceiveFactor": {},
-      "upgrades": {
-        "AccuracyUpgrade": {
-          "value": 20,
-          "percental": true
-        }
-      }
-    },
-    "buff": null
-  },
-  {
-    "guid": 192086,
-    "name": "Basic Cannon Upgrade",
-    "id": "",
-    "icon": "data/ui/2kimages/main/3dicons/icon_weapons.png",
-    "description": 0,
-    "item": {
-      "flotsam": 0,
-      "allocation": "",
-      "maxStackSize": 1,
-      "rarity": "Uncommon",
-      "hasAction": false,
-      "tradePrice": false,
-      "transferBlocked": false,
-      "itemType": false,
-      "itemSet": 0,
-      "exclusiveGroup": "",
-      "isDestroyedOnUnequip": false
-    },
-    "itemEffect": null,
-    "expeditionAttribute": {
-      "attributes": [],
-      "baseMorale": 0.0,
-      "fluff": [
-        "15938"
-      ],
-      "itemDifficulties": [],
-      "itemRegions": []
-    },
-    "itemAction": null,
-    "specialAction": null,
-    "upgrade": {
-      "changeModule": 0,
-      "forcedFeedbackVariation": 0,
-      "additionalModuleSoundLoop": 0,
-      "replacingWorkforce": 0,
-      "additionalHappiness": 0,
-      "taxModifierInPercent": 0,
-      "workforceModifierInPercent": 0,
-      "addedFertility": 0,
-      "needsElectricity": false,
-      "provideElectricity": false,
-      "attackSpeedUpgrade": 0,
-      "useProjectile": 0,
-      "genProbability": 0,
-      "genPool": 0,
-      "ConstructionCostInPercent": 0,
-      "ConstructionTimeInPercent": 0,
-      "activateWhiteFlag": false,
-      "activatePirateFlag": false,
-      "happinessIgnoresMorale": false,
-      "blockHostileTakeover": false,
-      "blockBuyShare": false,
-      "activeTradePriceInPercent": 0,
-      "inputBenefitModifier": [],
-      "goodConsumptionUpgrade": [],
-      "needProvideNeedUpgrade": [],
-      "changedSupplyValueUpgrade": [],
-      "overrideIncidentAttractiveness": {},
-      "additionalOutput": [],
-      "replaceInputs": [],
-      "inputAmountUpgrade": [],
-      "addStatusEffects": [],
-      "damageFactor": {},
-      "moraleDamage": [],
-      "hitpointDamage": [],
-      "addAssemblyOptions": [],
-      "replaceAssemblyOptions": [],
-      "damageReceiveFactor": {},
-      "upgrades": {
-        "BaseDamageUpgrade": {
-          "value": 10,
-          "percental": true
-        }
-      }
-    },
-    "buff": null
-  },
-  {
-    "guid": 192087,
-    "name": "Cannon Upgrade",
-    "id": "",
-    "icon": "data/ui/2kimages/main/3dicons/icon_weapons.png",
-    "description": 0,
-    "item": {
-      "flotsam": 0,
-      "allocation": "",
-      "maxStackSize": 1,
-      "rarity": "Rare",
-      "hasAction": false,
-      "tradePrice": false,
-      "transferBlocked": false,
-      "itemType": false,
-      "itemSet": 0,
-      "exclusiveGroup": "",
-      "isDestroyedOnUnequip": false
-    },
-    "itemEffect": null,
-    "expeditionAttribute": {
-      "attributes": [],
-      "baseMorale": 0.0,
-      "fluff": [],
-      "itemDifficulties": [],
-      "itemRegions": []
-    },
-    "itemAction": null,
-    "specialAction": null,
-    "upgrade": {
-      "changeModule": 0,
-      "forcedFeedbackVariation": 0,
-      "additionalModuleSoundLoop": 0,
-      "replacingWorkforce": 0,
-      "additionalHappiness": 0,
-      "taxModifierInPercent": 0,
-      "workforceModifierInPercent": 0,
-      "addedFertility": 0,
-      "needsElectricity": false,
-      "provideElectricity": false,
-      "attackSpeedUpgrade": 20,
-      "useProjectile": 0,
-      "genProbability": 0,
-      "genPool": 0,
-      "ConstructionCostInPercent": 0,
-      "ConstructionTimeInPercent": 0,
-      "activateWhiteFlag": false,
-      "activatePirateFlag": false,
-      "happinessIgnoresMorale": false,
-      "blockHostileTakeover": false,
-      "blockBuyShare": false,
-      "activeTradePriceInPercent": 0,
-      "inputBenefitModifier": [],
-      "goodConsumptionUpgrade": [],
-      "needProvideNeedUpgrade": [],
-      "changedSupplyValueUpgrade": [],
-      "overrideIncidentAttractiveness": {},
-      "additionalOutput": [],
-      "replaceInputs": [],
-      "inputAmountUpgrade": [],
-      "addStatusEffects": [],
-      "damageFactor": {},
-      "moraleDamage": [],
-      "hitpointDamage": [],
-      "addAssemblyOptions": [],
-      "replaceAssemblyOptions": [],
-      "damageReceiveFactor": {},
-      "upgrades": {
-        "BaseDamageUpgrade": {
-          "value": 10,
-          "percental": true
-        },
-        "ReloadTimeUpgrade": {
-          "value": -17,
-          "percental": true
-        }
-      }
-    },
-    "buff": null
-  },
-  {
-    "guid": 192088,
-    "name": "Advanced Cannons",
-    "id": "",
-    "icon": "data/ui/2kimages/main/3dicons/icon_advanced_weaponry.png",
-    "description": 0,
-    "item": {
-      "flotsam": 0,
-      "allocation": "",
-      "maxStackSize": 1,
-      "rarity": "Epic",
-      "hasAction": false,
-      "tradePrice": false,
-      "transferBlocked": false,
-      "itemType": false,
-      "itemSet": 0,
-      "exclusiveGroup": "",
-      "isDestroyedOnUnequip": false
-    },
-    "itemEffect": null,
-    "expeditionAttribute": {
-      "attributes": [],
-      "baseMorale": 0.0,
-      "fluff": [
-        "15940"
-      ],
-      "itemDifficulties": [],
-      "itemRegions": []
-    },
-    "itemAction": null,
-    "specialAction": null,
-    "upgrade": {
-      "changeModule": 0,
-      "forcedFeedbackVariation": 0,
-      "additionalModuleSoundLoop": 0,
-      "replacingWorkforce": 0,
-      "additionalHappiness": 0,
-      "taxModifierInPercent": 0,
-      "workforceModifierInPercent": 0,
-      "addedFertility": 0,
-      "needsElectricity": false,
-      "provideElectricity": false,
-      "attackSpeedUpgrade": 20,
-      "useProjectile": 0,
-      "genProbability": 0,
-      "genPool": 0,
-      "ConstructionCostInPercent": 0,
-      "ConstructionTimeInPercent": 0,
-      "activateWhiteFlag": false,
-      "activatePirateFlag": false,
-      "happinessIgnoresMorale": false,
-      "blockHostileTakeover": false,
-      "blockBuyShare": false,
-      "activeTradePriceInPercent": 0,
-      "inputBenefitModifier": [],
-      "goodConsumptionUpgrade": [],
-      "needProvideNeedUpgrade": [],
-      "changedSupplyValueUpgrade": [],
-      "overrideIncidentAttractiveness": {},
-      "additionalOutput": [],
-      "replaceInputs": [],
-      "inputAmountUpgrade": [],
-      "addStatusEffects": [],
-      "damageFactor": {},
-      "moraleDamage": [],
-      "hitpointDamage": [],
-      "addAssemblyOptions": [],
-      "replaceAssemblyOptions": [],
-      "damageReceiveFactor": {},
-      "upgrades": {
-        "BaseDamageUpgrade": {
-          "value": 20,
-          "percental": true
-        },
-        "ReloadTimeUpgrade": {
-          "value": -17,
-          "percental": true
-        },
-        "AccuracyUpgrade": {
-          "value": 50,
-          "percental": true
-        }
-      }
-    },
-    "buff": null
-  },
-  {
-    "guid": 192089,
-    "name": "State-of-the-Art Cannons",
-    "id": "",
-    "icon": "data/ui/2kimages/main/3dicons/icon_advanced_weaponry.png",
-    "description": 0,
-    "item": {
-      "flotsam": 0,
-      "allocation": "",
-      "maxStackSize": 1,
-      "rarity": "Legendary",
-      "hasAction": false,
-      "tradePrice": false,
-      "transferBlocked": false,
-      "itemType": false,
-      "itemSet": 0,
-      "exclusiveGroup": "",
-      "isDestroyedOnUnequip": false
-    },
-    "itemEffect": null,
-    "expeditionAttribute": {
-      "attributes": [],
-      "baseMorale": 0.0,
-      "fluff": [
-        "15940"
-      ],
-      "itemDifficulties": [],
-      "itemRegions": []
-    },
-    "itemAction": null,
-    "specialAction": null,
-    "upgrade": {
-      "changeModule": 0,
-      "forcedFeedbackVariation": 0,
-      "additionalModuleSoundLoop": 0,
-      "replacingWorkforce": 0,
-      "additionalHappiness": 0,
-      "taxModifierInPercent": 0,
-      "workforceModifierInPercent": 0,
-      "addedFertility": 0,
-      "needsElectricity": false,
-      "provideElectricity": false,
-      "attackSpeedUpgrade": 20,
-      "useProjectile": 0,
-      "genProbability": 0,
-      "genPool": 0,
-      "ConstructionCostInPercent": 0,
-      "ConstructionTimeInPercent": 0,
-      "activateWhiteFlag": false,
-      "activatePirateFlag": false,
-      "happinessIgnoresMorale": false,
-      "blockHostileTakeover": false,
-      "blockBuyShare": false,
-      "activeTradePriceInPercent": 0,
-      "inputBenefitModifier": [],
-      "goodConsumptionUpgrade": [],
-      "needProvideNeedUpgrade": [],
-      "changedSupplyValueUpgrade": [],
-      "overrideIncidentAttractiveness": {},
-      "additionalOutput": [],
-      "replaceInputs": [],
-      "inputAmountUpgrade": [],
-      "addStatusEffects": [],
-      "damageFactor": {},
-      "moraleDamage": [],
-      "hitpointDamage": [],
-      "addAssemblyOptions": [],
-      "replaceAssemblyOptions": [],
-      "damageReceiveFactor": {},
-      "upgrades": {
-        "BaseDamageUpgrade": {
-          "value": 30,
-          "percental": true
-        },
-        "ReloadTimeUpgrade": {
-          "value": -17,
-          "percental": true
-        },
-        "AccuracyUpgrade": {
-          "value": 100,
-          "percental": true
-        }
-      }
-    },
-    "buff": null
-  },
-  {
-    "guid": 192112,
-    "name": "Sail Ship Annihilator",
-    "id": "",
-    "icon": "data/ui/2kimages/main/3dicons/ship_military/icon_pucklegun.png",
-    "description": 0,
-    "item": {
-      "flotsam": 0,
-      "allocation": "",
-      "maxStackSize": 1,
-      "rarity": "Epic",
-      "hasAction": false,
-      "tradePrice": false,
-      "transferBlocked": false,
-      "itemType": false,
-      "itemSet": 0,
-      "exclusiveGroup": "",
-      "isDestroyedOnUnequip": false
-    },
-    "itemEffect": null,
-    "expeditionAttribute": {
-      "attributes": [],
-      "baseMorale": 0.0,
-      "fluff": [
-        "15938"
-      ],
-      "itemDifficulties": [],
-      "itemRegions": []
-    },
-    "itemAction": null,
-    "specialAction": null,
-    "upgrade": {
-      "changeModule": 0,
-      "forcedFeedbackVariation": 0,
-      "additionalModuleSoundLoop": 0,
-      "replacingWorkforce": 0,
-      "additionalHappiness": 0,
-      "taxModifierInPercent": 0,
-      "workforceModifierInPercent": 0,
-      "addedFertility": 0,
-      "needsElectricity": false,
-      "provideElectricity": false,
-      "attackSpeedUpgrade": 0,
-      "useProjectile": 0,
-      "genProbability": 0,
-      "genPool": 0,
-      "ConstructionCostInPercent": 0,
-      "ConstructionTimeInPercent": 0,
-      "activateWhiteFlag": false,
-      "activatePirateFlag": false,
-      "happinessIgnoresMorale": false,
-      "blockHostileTakeover": false,
-      "blockBuyShare": false,
-      "activeTradePriceInPercent": 0,
-      "inputBenefitModifier": [],
-      "goodConsumptionUpgrade": [],
-      "needProvideNeedUpgrade": [],
-      "changedSupplyValueUpgrade": [],
-      "overrideIncidentAttractiveness": {},
-      "additionalOutput": [],
-      "replaceInputs": [],
-      "inputAmountUpgrade": [],
-      "addStatusEffects": [],
-      "damageFactor": {
-        "SailShip": 1.5
-      },
-      "moraleDamage": [],
-      "hitpointDamage": [],
-      "addAssemblyOptions": [],
-      "replaceAssemblyOptions": [],
-      "damageReceiveFactor": {},
-      "upgrades": null
-    },
-    "buff": null
-  },
-  {
-    "guid": 192113,
-    "name": "Steam Ship Annihilator",
-    "id": "",
-    "icon": "data/ui/2kimages/main/3dicons/ship_military/icon_pucklegun.png",
-    "description": 0,
-    "item": {
-      "flotsam": 0,
-      "allocation": "",
-      "maxStackSize": 1,
-      "rarity": "Epic",
-      "hasAction": false,
-      "tradePrice": false,
-      "transferBlocked": false,
-      "itemType": false,
-      "itemSet": 0,
-      "exclusiveGroup": "",
-      "isDestroyedOnUnequip": false
-    },
-    "itemEffect": null,
-    "expeditionAttribute": {
-      "attributes": [],
-      "baseMorale": 0.0,
-      "fluff": [
-        "15938"
-      ],
-      "itemDifficulties": [],
-      "itemRegions": []
-    },
-    "itemAction": null,
-    "specialAction": null,
-    "upgrade": {
-      "changeModule": 0,
-      "forcedFeedbackVariation": 0,
-      "additionalModuleSoundLoop": 0,
-      "replacingWorkforce": 0,
-      "additionalHappiness": 0,
-      "taxModifierInPercent": 0,
-      "workforceModifierInPercent": 0,
-      "addedFertility": 0,
-      "needsElectricity": false,
-      "provideElectricity": false,
-      "attackSpeedUpgrade": 0,
-      "useProjectile": 0,
-      "genProbability": 0,
-      "genPool": 0,
-      "ConstructionCostInPercent": 0,
-      "ConstructionTimeInPercent": 0,
-      "activateWhiteFlag": false,
-      "activatePirateFlag": false,
-      "happinessIgnoresMorale": false,
-      "blockHostileTakeover": false,
-      "blockBuyShare": false,
-      "activeTradePriceInPercent": 0,
-      "inputBenefitModifier": [],
-      "goodConsumptionUpgrade": [],
-      "needProvideNeedUpgrade": [],
-      "changedSupplyValueUpgrade": [],
-      "overrideIncidentAttractiveness": {},
-      "additionalOutput": [],
-      "replaceInputs": [],
-      "inputAmountUpgrade": [],
-      "addStatusEffects": [],
-      "damageFactor": {
-        "SteamShip": 1.5
-      },
-      "moraleDamage": [],
-      "hitpointDamage": [],
-      "addAssemblyOptions": [],
-      "replaceAssemblyOptions": [],
-      "damageReceiveFactor": {},
-      "upgrades": null
-    },
-    "buff": null
-  },
-  {
-    "guid": 192114,
-    "name": "Building Annihilator",
-    "id": "",
-    "icon": "data/ui/2kimages/main/3dicons/ship_military/icon_pucklegun.png",
-    "description": 0,
-    "item": {
-      "flotsam": 0,
-      "allocation": "",
-      "maxStackSize": 1,
-      "rarity": "Legendary",
-      "hasAction": false,
-      "tradePrice": false,
-      "transferBlocked": false,
-      "itemType": false,
-      "itemSet": 0,
-      "exclusiveGroup": "",
-      "isDestroyedOnUnequip": false
-    },
-    "itemEffect": null,
-    "expeditionAttribute": {
-      "attributes": [],
-      "baseMorale": 0.0,
-      "fluff": [
-        "15938"
-      ],
-      "itemDifficulties": [],
-      "itemRegions": []
-    },
-    "itemAction": null,
-    "specialAction": null,
-    "upgrade": {
-      "changeModule": 0,
-      "forcedFeedbackVariation": 0,
-      "additionalModuleSoundLoop": 0,
-      "replacingWorkforce": 0,
-      "additionalHappiness": 0,
-      "taxModifierInPercent": 0,
-      "workforceModifierInPercent": 0,
-      "addedFertility": 0,
-      "needsElectricity": false,
-      "provideElectricity": false,
-      "attackSpeedUpgrade": 0,
-      "useProjectile": 0,
-      "genProbability": 0,
-      "genPool": 0,
-      "ConstructionCostInPercent": 0,
-      "ConstructionTimeInPercent": 0,
-      "activateWhiteFlag": false,
-      "activatePirateFlag": false,
-      "happinessIgnoresMorale": false,
-      "blockHostileTakeover": false,
-      "blockBuyShare": false,
-      "activeTradePriceInPercent": 0,
-      "inputBenefitModifier": [],
-      "goodConsumptionUpgrade": [],
-      "needProvideNeedUpgrade": [],
-      "changedSupplyValueUpgrade": [],
-      "overrideIncidentAttractiveness": {},
-      "additionalOutput": [],
-      "replaceInputs": [],
-      "inputAmountUpgrade": [],
-      "addStatusEffects": [],
-      "damageFactor": {
-        "Building": 2.0
-      },
-      "moraleDamage": [],
-      "hitpointDamage": [],
-      "addAssemblyOptions": [],
-      "replaceAssemblyOptions": [],
-      "damageReceiveFactor": {},
-      "upgrades": null
-    },
-    "buff": null
+    "buff": {
+      "addedInfolayer": 0,
+      "possibleFluffTexts": []
+    }
   }
 ]

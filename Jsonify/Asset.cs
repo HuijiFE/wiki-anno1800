@@ -9,27 +9,23 @@ using Newtonsoft.Json;
 namespace Anno1800.Jsonify {
   partial class Asset {
     [JsonProperty(Order = -6)]
+    [Element("Standard/GUID")]
     public int guid;
     [JsonProperty(Order = -5)]
-    public string? name;
+    [Element("Standard/Name")]
+    public string name;
     [JsonProperty(Order = -4)]
-    public string? id;
+    [Element("Standard/ID")]
+    public string id;
     [JsonProperty(Order = -3)]
-    public string? icon;
+    [Element("Standard/IconFilename")]
+    public string icon;
     [JsonProperty(Order = -2)]
+    [Element("Standard/InfoDescription")]
     public int? description;
 
     public Asset(XElement asset, Dictionary<string, XElement> map) {
-      var values = asset.Element("Values");
-      var standard = values.Element("Standard");
-
-      this.guid = standard.Int("GUID");
-      this.name = standard.String("Name");
-      this.id = standard.String("ID");
-      this.icon = standard.String("IconFilename");
-      this.description = standard.Int("InfoDescription");
-
-      Adapter.Deserialize(this, values);
+      Adapter.Deserialize(this, asset.Element("Values").Elements());
     }
 
     // ================================
