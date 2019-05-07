@@ -161,10 +161,7 @@ namespace Anno1800.Jsonify {
       var report = new Dictionary<string, object> {
         { "xml", xmlReport },
         { "xmlItem", new {
-          items = items.Aggregate(new HashSet<string>(), (set, item) => {
-            set.Add(item.String("Template"));
-            return set;
-          }),
+          items = new HashSet<string>(items.Select(item => item.String("Template"))),
           itemProps = new HashSet<string>(itemProps.Select(p => p.Name.ToString())),
           upgrades = new HashSet<string>(upgrades.Select(p => p.Name.ToString())),
         }},
