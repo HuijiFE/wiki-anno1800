@@ -227,40 +227,26 @@ namespace Anno1800.Jsonify {
       }
     }
 
-    [Adapter]
-    class ActiveItem : Item {
+    [Adapter] class QuestItem : Item { public QuestItem(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { } }
+    [Adapter] class ItemWithUI : Item { public ItemWithUI(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { } }
+    [Adapter] class ItemSpecialAction : Item { public ItemSpecialAction(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { } }
+    [Adapter] class QuestItemMagistrate : Item { public QuestItemMagistrate(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { } }
+    //[Adapter] class FestivalBuff : Item { public FestivalBuff(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { } }
+    //[Adapter] class GuildhouseBuff : Item { public GuildhouseBuff(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { } }
+    //[Adapter] class TownhallBuff : Item { public TownhallBuff(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { } }
+    //[Adapter] class VehicleBuff : Item { public VehicleBuff(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { } }
+    //[Adapter] class HarbourOfficeBuff : Item { public HarbourOfficeBuff(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { } }
+    [Adapter] class CultureItem : Item { public CultureItem(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { } }
+    [Adapter] class TownhallItem : Item { public TownhallItem(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { } }
+    [Adapter] class GuildhouseItem : Item { public GuildhouseItem(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { } }
+    [Adapter] class HarborOfficeItem : Item { public HarborOfficeItem(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { } }
+    [Adapter] class ShipSpecialist : Item { public ShipSpecialist(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { } }
+    [Adapter] class VehicleItem : Item { public VehicleItem(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { } }
+    [Adapter] class ActiveItem : Item { public ActiveItem(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { } }
+    [Adapter] class ItemSpecialActionVisualEffect : Item { public ItemSpecialActionVisualEffect(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { } }
+    [Adapter] class FluffItem : Item { public FluffItem(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { } }
+    [Adapter] class StartExpeditionItem : Item { public StartExpeditionItem(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { } }
+    [Adapter] class ItemConstructionPlan : Item { public ItemConstructionPlan(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { } }
 
-      public ActiveItem(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { }
-    }
-
-    [Adapter]
-    class GuildhouseItem : Item {
-      public GuildhouseItem(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { }
-    }
-
-    [Adapter]
-    class HarborOfficeItem : Item {
-      public HarborOfficeItem(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { }
-    }
-
-    [Adapter]
-    class ItemSpecialAction : Item {
-      public ItemSpecialAction(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { }
-    }
-
-    [Adapter]
-    class ItemSpecialActionVisualEffect : Item {
-      public ItemSpecialActionVisualEffect(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { }
-    }
-
-    [Adapter]
-    class ShipSpecialist : Item {
-      public ShipSpecialist(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { }
-    }
-
-    [Adapter]
-    class TownhallItem : Item {
-      public TownhallItem(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { }
-    }
   }
 }

@@ -89,7 +89,22 @@ export interface Item extends Asset {
   upgrade?: UpgradeData;
 }
 
-export interface ActiveItem extends Item {
+export interface QuestItem extends Item {
+}
+
+export interface ItemWithUI extends Item {
+}
+
+export interface ItemSpecialAction extends Item {
+}
+
+export interface QuestItemMagistrate extends Item {
+}
+
+export interface CultureItem extends Item {
+}
+
+export interface TownhallItem extends Item {
 }
 
 export interface GuildhouseItem extends Item {
@@ -98,16 +113,25 @@ export interface GuildhouseItem extends Item {
 export interface HarborOfficeItem extends Item {
 }
 
-export interface ItemSpecialAction extends Item {
+export interface ShipSpecialist extends Item {
+}
+
+export interface VehicleItem extends Item {
+}
+
+export interface ActiveItem extends Item {
 }
 
 export interface ItemSpecialActionVisualEffect extends Item {
 }
 
-export interface ShipSpecialist extends Item {
+export interface FluffItem extends Item {
 }
 
-export interface TownhallItem extends Item {
+export interface StartExpeditionItem extends Item {
+}
+
+export interface ItemConstructionPlan extends Item {
 }
 
 export interface ItemBalancing extends Building {
