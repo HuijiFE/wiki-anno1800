@@ -8,6 +8,14 @@ export interface Asset {
   description?: number;
 }
 
+export interface Item extends Asset {
+  itemAction?: ItemAction;
+  expeditionAttribute?: ExpeditionAttribute;
+}
+
+export interface ActiveItem extends Item {
+}
+
 export interface Building extends Asset {
   attackable?: AttackableData;
   building?: BuildingData;
@@ -16,6 +24,10 @@ export interface Building extends Asset {
 
 export interface ColorConfig extends Building {
   colorConfig?: ColorConfigData;
+}
+
+export interface ExpeditionFeature extends Asset {
+  expeditionFeature: ExpeditionFeatureData;
 }
 
 export interface FactoryBuilding7 extends Building {
@@ -95,6 +107,7 @@ export interface ParticipantRepresentationFeature extends Asset {
 
 export interface Product extends Asset {
   product?: ProductData;
+  expeditionAttribute?: ExpeditionAttribute;
 }
 
 export interface ProductionChain extends Asset {
@@ -163,6 +176,22 @@ export interface WorkforceConnector extends Building {
 export interface BaseAssetObject {
 }
 
+export interface ItemAction extends BaseAssetObject {
+  target: number;
+  distance: number;
+  cooldown: number;
+  description: number;
+  stopMovementOnInteraction: boolean;
+  scope: string;
+  repairSpeed: number;
+  duration: number;
+  buff: number;
+  canEnd: boolean;
+  incidentTypes: string[];
+  isDestroyedAfterCooldown: boolean;
+  radiusBuffTargets: string[];
+}
+
 export interface BuildingData extends BaseAssetObject {
   type: string;
   terrian: string;
@@ -206,6 +235,41 @@ export interface ColorConfigData extends BaseAssetObject {
   buildModeRadius: string;
   buildModeGridExtension: string;
   blueprintColor: string;
+}
+
+export interface EventLimit extends BaseAssetObject {
+  minAmount: number;
+  maxAmount: number;
+  minAverageMoraleLoss: number;
+  minThreats: number;
+  maxThreats: number;
+  maxMorale: number;
+}
+
+export interface FeedOptionPair extends BaseAssetObject {
+  moraleFactor: number;
+  product: number;
+}
+
+export interface FeedOption extends BaseAssetObject {
+  options: FeedOptionPair[];
+  factorOnUse: number;
+  regainIfNotUsed: number;
+}
+
+export interface AttributeOptionPreparationLevel extends BaseAssetObject {
+  threshold: number;
+  name: number;
+  description: number;
+}
+
+export interface ExpeditionFeatureData extends BaseAssetObject {
+  eventLimits: Record<string, EventLimit>;
+  feadOption: FeedOption;
+  expeditionRegions: Record<string, number>;
+  attributeNames: Record<string, number>;
+  traits: Record<string, boolean>;
+  attributeOptionPreparationLevels: AttributeOptionPreparationLevel[];
 }
 
 export interface FactoryInputOutputPair extends BaseAssetObject {
@@ -350,6 +414,19 @@ export interface ProductData extends BaseAssetObject {
   regions: string[];
   basePrice: number;
   civLevel: number;
+}
+
+export interface ExpeditionAttributePair extends BaseAssetObject {
+  attribute: string;
+  amount: number;
+}
+
+export interface ExpeditionAttribute extends BaseAssetObject {
+  attributes: ExpeditionAttributePair[];
+  baseMorale: number;
+  fluff: string[];
+  itemDifficulties: string[];
+  itemRegions: string[];
 }
 
 export interface ProductionChainNode extends BaseAssetObject {

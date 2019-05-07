@@ -67,8 +67,7 @@ namespace Anno1800.Jsonify {
         "Ornament",
         "RepairCrane",
         "Shipyard",
-        "Buff",
-        "Item",
+        // Item
         "ItemAction",
         "ExpeditionAttribute",
         "SpecialAction",
@@ -91,6 +90,7 @@ namespace Anno1800.Jsonify {
         "AttackerUpgrade",
         "AttackableUpgrade",
         "ProjectileUpgrade",
+        "Buff",
       };
 
       Dictionary<string, List<string>> xmlReport = paths.ToDictionary(

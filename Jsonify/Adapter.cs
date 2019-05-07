@@ -105,20 +105,23 @@ namespace Anno1800.Jsonify {
 
     public static void Deserialize(object obj, XElement element) {
       foreach (var field in obj.GetType().GetFields(BindingFlags.Instance | BindingFlags.Public)) {
-        var elem = field.GetCustomAttribute<ElementAttribute>();
-        var path = elem?.path;
+        var elemAttr = field.GetCustomAttribute<ElementAttribute>();
+        var path = elemAttr?.path;
         var color = field.GetCustomAttribute<ColorAttribute>();
         if (path != null) {
-          if (field.FieldType == TYPE_STRING) {
+          if (field.FieldType == typeof(List<string>)) {
+            var content = element.String(path);
+            field.SetValue(obj, string.IsNullOrWhiteSpace(content) ? new List<string>() : content.Split(';').ToList());
+          } else if (field.FieldType == TYPE_STRING) {
             if (color != null) {
-              field.SetValue(obj, element.Color(path, elem.defaultValue as string));
+              field.SetValue(obj, element.Color(path, elemAttr.defaultValue as string));
             } else {
-              field.SetValue(obj, element.String(path, elem.defaultValue as string));
+              field.SetValue(obj, element.String(path, elemAttr.defaultValue as string));
             }
           } else if (field.FieldType == TYPE_INT) {
-            field.SetValue(obj, element.Int(path, elem.defaultValue as int?));
+            field.SetValue(obj, element.Int(path, elemAttr.defaultValue as int?));
           } else if (field.FieldType == TYPE_DOUBLE) {
-            field.SetValue(obj, element.Double(path, elem.defaultValue as double?));
+            field.SetValue(obj, element.Double(path, elemAttr.defaultValue as double?));
           } else if (field.FieldType == TYPE_BOOLEAN) {
             field.SetValue(obj, element.Boolean(path));
           } else if (field.FieldType.IsSubclassOf(typeof(BaseAssetObject))) {
