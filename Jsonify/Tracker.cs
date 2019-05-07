@@ -14,7 +14,7 @@ namespace Anno1800.Jsonify {
       Dictionary<string, string> localization,
       string output
       ) {
-      SortedDictionary<string, List<string>> assetsReport = new SortedDictionary<string, List<string>>(dataDict
+      var assetsReport = new SortedDictionary<string, List<string>>(dataDict
         .ToDictionary(
           kvp => kvp.Key,
           kvp => kvp
