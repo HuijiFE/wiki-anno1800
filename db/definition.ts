@@ -8,6 +8,9 @@ export interface Asset {
   description?: number;
 }
 
+export interface Anno extends Asset {
+}
+
 export interface Building extends Asset {
   attackable?: AttackableData;
   building?: BuildingData;
@@ -195,6 +198,21 @@ export interface ResidenceBuilding7 extends Building {
 
 export interface PopulationLevel7 extends Asset {
   population7?: Population7;
+}
+
+export interface Fertility extends Asset {
+}
+
+export interface ResourceSet extends Asset {
+  resourceSetCondition?: ResourceSetCondition;
+}
+
+export interface FertilitySet extends ResourceSet {
+  fertilities: number[];
+}
+
+export interface MineSlotSet extends ResourceSet {
+  mineSlots: number[];
 }
 
 export interface Shipyard extends Building {
@@ -689,6 +707,14 @@ export interface Population7 extends BaseAssetObject {
   outputs: PopulationOutput[];
   categoryIcon: string;
   moods?: Record<string, number>;
+}
+
+export interface ResourceSetCondition extends BaseAssetObject {
+  priority: number;
+  allowedRegion: string;
+  allowedIslandType: string[];
+  allowedIslandDifficulty: string[];
+  allowedResourceAmounts: string[];
 }
 
 export interface ShipyardData extends BaseAssetObject {

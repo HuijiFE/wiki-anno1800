@@ -14,14 +14,15 @@ namespace Anno1800.Jsonify {
       Dictionary<string, string> localization,
       string output
       ) {
-      var assetsReport = new SortedDictionary<string, List<string>>(dataDict
-        .ToDictionary(
-          kvp => kvp.Key,
-          kvp => kvp
-            .Value
-            .Select(data => localization.ContainsKey(data.guid.ToString()) ? localization[data.guid.ToString()] : data.guid.ToString())
-            .ToList()
-          ));
+
+      var flatProps = new HashSet<string> {
+        "Building",
+        "Slot",
+        "ModuleOwner",
+        "Fertility",
+        "Item",
+        "Buff",
+      };
 
       var paths = new List<string> {
         "Attackable",
@@ -67,6 +68,10 @@ namespace Anno1800.Jsonify {
         "Ornament",
         "RepairCrane",
         "Shipyard",
+        "ResourceSetCondition",
+        "Fertility",
+        "FertilitySet",
+        "MineSlotResourceSet",
 
         "Item",
         "ItemAction",
@@ -121,7 +126,13 @@ namespace Anno1800.Jsonify {
         "ProjectileUpgrade",
       };
 
-      Dictionary<string, List<string>> xmlReport = new HashSet<string>(paths).ToDictionary(
+      var props = new HashSet<string>(assetsMap
+        .Values
+        .Select(a => a.Element("Values").Elements())
+        .Aggregate((agg, cur) => agg.Concat(cur))
+        .Select(p => p.Name.ToString()));
+
+      var subProps = new HashSet<string>(paths).ToDictionary(
         path => path,
         path => {
           var isItem = path.EndsWith("/Item");
@@ -141,6 +152,14 @@ namespace Anno1800.Jsonify {
             : new List<string>();
         });
 
+      var templates = flatProps
+        .ToDictionary(
+          flag => flag,
+          flag => new HashSet<string>(assetsMap
+              .Values
+              .Where(a => a.ElementByPath($"Values/{flag}") != null)
+              .Select(a => a.String("Template"))));
+
       var items = assetsMap
         .Values
         .Where(a => a.ElementByPath("Values/Item") != null || a.ElementByPath("Values/Buff") != null)
@@ -158,8 +177,19 @@ namespace Anno1800.Jsonify {
         .Where(upg => upg.HasElements && !upg.Elements().Any(p => p.Name != "Value" && p.Name != "Percental"))
         .ToList();
 
+      var assetsReport = new SortedDictionary<string, List<string>>(dataDict
+        .ToDictionary(
+          kvp => kvp.Key,
+          kvp => kvp
+            .Value
+            .Select(data => localization.ContainsKey(data.guid.ToString()) ? localization[data.guid.ToString()] : data.guid.ToString())
+            .ToList()
+          ));
+
       var report = new Dictionary<string, object> {
-        { "xml", xmlReport },
+        { "xmlProps", props },
+        { "xmlTmpl", templates },
+        { "xmlSubProps", subProps },
         { "xmlItem", new {
           items = new HashSet<string>(items.Select(item => item.String("Template"))),
           itemProps = new HashSet<string>(itemProps.Select(p => p.Name.ToString())),
