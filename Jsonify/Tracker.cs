@@ -101,6 +101,16 @@ namespace Anno1800.Jsonify {
         "IncidentInfectable/IncidentInfectionChanceFactors/Item",
         "IncidentInfectable/PerIncidentProximityEffect/Item",
 
+        // Vehicle
+        "Walking",
+        "CommandQueue",
+        "Drifting",
+        "Draggable",
+        "Craftable",
+        "ShipMaintenance",
+        "Sellable",
+
+        // Item
         "Item",
         "ItemAction",
         "ItemWithUI",
@@ -132,6 +142,22 @@ namespace Anno1800.Jsonify {
         "ItemConstructionPlan",
         "NewspaperUpgrade",
         "DistributionUpgrade",
+      };
+
+      var vehicleTemplates = new List<string> {
+        "EventTradeShip",
+        "FeedbackVehicle",
+        "FeedbackVehiclePatrol",
+        "FeedbackVehicleWithTrailer",
+        "FleetDummy",
+        "IceFloeDestroyer",
+        "LandSpy",
+        "QuestVehicle",
+        "QuestVehicleTrade",
+        "SimpleVehicle",
+        "TradeFeedbackVehicle",
+        "TradeShip",
+        "WarShip",
       };
 
       var props = new HashSet<string>(assetsMap
@@ -185,6 +211,16 @@ namespace Anno1800.Jsonify {
         .Where(upg => upg.HasElements && !upg.Elements().Any(p => p.Name != "Value" && p.Name != "Percental"))
         .ToList();
 
+      var vehicleProps = new HashSet<string>(assetsMap
+        .Values
+        .Where(a => vehicleTemplates.Contains(a.String("Template")))
+        .Select(a => a.Element("Values").Elements())
+        .Aggregate(new List<XElement>(), (list, props) => {
+          list.AddRange(props);
+          return list;
+        })
+        .Select(p => p.Name.ToString()));
+
       var assetsReport = new SortedDictionary<string, List<string>>(dataDict
         .ToDictionary(
           kvp => kvp.Key,
@@ -203,6 +239,7 @@ namespace Anno1800.Jsonify {
           itemProps = new HashSet<string>(itemProps.Select(p => p.Name.ToString())),
           upgrades = new HashSet<string>(upgrades.Select(p => p.Name.ToString())),
         }},
+        { "xmlVehicle", vehicleProps },
         { "assets", assetsReport }
       };
 

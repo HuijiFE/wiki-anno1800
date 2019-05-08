@@ -1,0 +1,7507 @@
+[
+  {
+    "guid": 101121,
+    "name": "Flag Ship",
+    "id": "Flagship",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_commandship.png",
+    "description": 11466,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 40
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 25
+        },
+        {
+          "ingredient": 1010221,
+          "amount": 20
+        }
+      ],
+      "influenceCostType": "",
+      "influenceCostPoints": 0
+    },
+    "attackable": {
+      "maximumHitPoints": 2000,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.111,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 3.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 55,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 100,
+      "reloadTime": 40,
+      "projectile": 101974,
+      "baseDamage": 175,
+      "accuracyBase": 2.0,
+      "accuracyIncreaseOverDistance": 60,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 50,
+      "shootingTracking": "",
+      "projectileCount": 6,
+      "turrets": []
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 20
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 15
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSteamShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 0.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 100437,
+    "name": "Gunboat (Military)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_gunboat.png",
+    "description": 1082,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 10
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010221,
+          "amount": 7
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 4
+    },
+    "attackable": {
+      "maximumHitPoints": 850,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 0.708,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 2.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 40,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 100,
+      "reloadTime": 50,
+      "projectile": 102277,
+      "baseDamage": 105,
+      "accuracyBase": 1.0,
+      "accuracyIncreaseOverDistance": 80,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 30,
+      "shootingTracking": "Front",
+      "projectileCount": 2,
+      "turrets": []
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 10
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 0.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 100440,
+    "name": "Liner (Military)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_liner.png",
+    "description": 1086,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 60
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 30
+        },
+        {
+          "ingredient": 1010221,
+          "amount": 30
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 16
+    },
+    "attackable": {
+      "maximumHitPoints": 4000,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.667,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 4.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 68,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 100,
+      "reloadTime": 100,
+      "projectile": 102285,
+      "baseDamage": 525,
+      "accuracyBase": 0.0,
+      "accuracyIncreaseOverDistance": 100,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 50,
+      "shootingTracking": "",
+      "projectileCount": 32,
+      "turrets": []
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 50
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 0
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 0.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 100439,
+    "name": "Frigate (Military)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_frigatte.png",
+    "description": 1085,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 40
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010221,
+          "amount": 15
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 8
+    },
+    "attackable": {
+      "maximumHitPoints": 2000,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.389,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 3.75,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 55,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 100,
+      "reloadTime": 50,
+      "projectile": 102032,
+      "baseDamage": 140,
+      "accuracyBase": 3.0,
+      "accuracyIncreaseOverDistance": 90,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 50,
+      "shootingTracking": "",
+      "projectileCount": 14,
+      "turrets": []
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 20
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 10
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 0.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102437,
+    "name": "PreorderFlagship",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_commandship.png",
+    "description": 11466,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 40
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 25
+        },
+        {
+          "ingredient": 1010221,
+          "amount": 20
+        }
+      ],
+      "influenceCostType": "",
+      "influenceCostPoints": 0
+    },
+    "attackable": {
+      "maximumHitPoints": 2000,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.111,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 3.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 55,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 100,
+      "reloadTime": 40,
+      "projectile": 101974,
+      "baseDamage": 175,
+      "accuracyBase": 2.0,
+      "accuracyIncreaseOverDistance": 60,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 50,
+      "shootingTracking": "",
+      "projectileCount": 6,
+      "turrets": []
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 20
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 15
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSteamShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 0.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 100442,
+    "name": "Battle Cruiser (Military)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_battlecruiser.png",
+    "description": 1087,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010218,
+          "amount": 60
+        },
+        {
+          "ingredient": 1010224,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010223,
+          "amount": 25
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 24
+    },
+    "attackable": {
+      "maximumHitPoints": 5000,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.667,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 8.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 84,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 100,
+      "reloadTime": 70,
+      "projectile": 102033,
+      "baseDamage": 245,
+      "accuracyBase": 1.0,
+      "accuracyIncreaseOverDistance": 60,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 30,
+      "shootingTracking": "TurretFixed",
+      "projectileCount": 6,
+      "turrets": [
+        300,
+        300,
+        300
+      ]
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 70
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 0
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSteamShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 50.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 100443,
+    "name": "Monitor (Military)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_monitor.png",
+    "description": 1088,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010218,
+          "amount": 40
+        },
+        {
+          "ingredient": 1010224,
+          "amount": 10
+        },
+        {
+          "ingredient": 1010223,
+          "amount": 10
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 12
+    },
+    "attackable": {
+      "maximumHitPoints": 2500,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.389,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 2.5,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 48,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 100,
+      "reloadTime": 30,
+      "projectile": 102267,
+      "baseDamage": 93,
+      "accuracyBase": 1.0,
+      "accuracyIncreaseOverDistance": 60,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 30,
+      "shootingTracking": "TurretFixed",
+      "projectileCount": 2,
+      "turrets": [
+        320
+      ]
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 30
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSteamShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 50.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 101362,
+    "name": "Enhanced Gunboat (Military)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_ship_gunboat.png",
+    "description": 1082,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 10
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010221,
+          "amount": 10
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 5
+    },
+    "attackable": {
+      "maximumHitPoints": 600,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 10.0,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 2.0,
+      "selfHealPausedTimeIfAttacked": 0,
+      "armorType": "HeavyArmor",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "Explosive",
+      "range": 24,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 70,
+      "reloadTime": 50,
+      "projectile": 100501,
+      "baseDamage": 40,
+      "accuracyBase": 1.0,
+      "accuracyIncreaseOverDistance": 80,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 30,
+      "shootingTracking": "Front",
+      "projectileCount": 2,
+      "turrets": []
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 10
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 25
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 0.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 101364,
+    "name": "Enhanced Frigate (Military)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_military_ship_frigatte.png",
+    "description": 1085,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 40
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010221,
+          "amount": 25
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 8
+    },
+    "attackable": {
+      "maximumHitPoints": 4000,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 10.0,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 3.75,
+      "selfHealPausedTimeIfAttacked": 0,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 36,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 70,
+      "reloadTime": 50,
+      "projectile": 100501,
+      "baseDamage": 75,
+      "accuracyBase": 3.0,
+      "accuracyIncreaseOverDistance": 90,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 30,
+      "shootingTracking": "",
+      "projectileCount": 14,
+      "turrets": []
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 20
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 15
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 0.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 101365,
+    "name": "Enhanced Liner (Military)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_military_ship_liner.png",
+    "description": 1086,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 60
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 30
+        },
+        {
+          "ingredient": 1010221,
+          "amount": 45
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 15
+    },
+    "attackable": {
+      "maximumHitPoints": 4500,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 10.0,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 4.0,
+      "selfHealPausedTimeIfAttacked": 0,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 48,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 70,
+      "reloadTime": 50,
+      "projectile": 100501,
+      "baseDamage": 300,
+      "accuracyBase": 0.0,
+      "accuracyIncreaseOverDistance": 100,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 30,
+      "shootingTracking": "",
+      "projectileCount": 32,
+      "turrets": []
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 50
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 5
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 0.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 101368,
+    "name": "Enhanced Battle Cruiser (Military)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_ship_battle_cruiser.png",
+    "description": 1087,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010218,
+          "amount": 60
+        },
+        {
+          "ingredient": 1010224,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010223,
+          "amount": 20
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 23
+    },
+    "attackable": {
+      "maximumHitPoints": 5000,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 10.0,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 8.0,
+      "selfHealPausedTimeIfAttacked": 0,
+      "armorType": "HeavyArmor",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "HeavyArmor",
+      "range": 60,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 70,
+      "reloadTime": 40,
+      "projectile": 100501,
+      "baseDamage": 200,
+      "accuracyBase": 1.5,
+      "accuracyIncreaseOverDistance": 60,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 30,
+      "shootingTracking": "TurretFixed",
+      "projectileCount": 6,
+      "turrets": [
+        270,
+        270,
+        290
+      ]
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 70
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 5
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSteamShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 0.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 101369,
+    "name": "Enhanced Monitor (Military)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_military_ship_monitor.png",
+    "description": 1088,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010218,
+          "amount": 40
+        },
+        {
+          "ingredient": 1010224,
+          "amount": 10
+        },
+        {
+          "ingredient": 1010223,
+          "amount": 10
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 12
+    },
+    "attackable": {
+      "maximumHitPoints": 2500,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 10.0,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 2.5,
+      "selfHealPausedTimeIfAttacked": 0,
+      "armorType": "HeavyArmor",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "Explosive",
+      "range": 24,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 70,
+      "reloadTime": 25,
+      "projectile": 100501,
+      "baseDamage": 65,
+      "accuracyBase": 1.5,
+      "accuracyIncreaseOverDistance": 60,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 30,
+      "shootingTracking": "Front",
+      "projectileCount": 2,
+      "turrets": [
+        270
+      ]
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 30
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 25
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSteamShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 0.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 101373,
+    "name": "The Great Eastern (Military)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_great_eastern.png",
+    "description": 1087,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010218,
+          "amount": 80
+        },
+        {
+          "ingredient": 1010224,
+          "amount": 40
+        },
+        {
+          "ingredient": 1010223,
+          "amount": 40
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 40
+    },
+    "attackable": {
+      "maximumHitPoints": 7500,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 10.0,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 10.0,
+      "selfHealPausedTimeIfAttacked": 0,
+      "armorType": "HeavyArmor",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "HeavyArmor",
+      "range": 80,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 80,
+      "reloadTime": 25,
+      "projectile": 100501,
+      "baseDamage": 400,
+      "accuracyBase": 0.0,
+      "accuracyIncreaseOverDistance": 100,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 30,
+      "shootingTracking": "TurretFixed",
+      "projectileCount": 44,
+      "turrets": []
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 50
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 50
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSteamShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 0.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 101917,
+    "name": "Flag Ship",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_ship.png",
+    "description": 11466,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 40
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 25
+        },
+        {
+          "ingredient": 1010221,
+          "amount": 20
+        }
+      ],
+      "influenceCostType": "",
+      "influenceCostPoints": 0
+    },
+    "attackable": {
+      "maximumHitPoints": 3000,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 10.0,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 3.0,
+      "selfHealPausedTimeIfAttacked": 0,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 36,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 70,
+      "reloadTime": 50,
+      "projectile": 100501,
+      "baseDamage": 50,
+      "accuracyBase": 2.0,
+      "accuracyIncreaseOverDistance": 60,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 30,
+      "shootingTracking": "",
+      "projectileCount": 12,
+      "turrets": []
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 20
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 15
+        }
+      ],
+      "baseMorale": 0.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 101919,
+    "name": "Gunboat (Military)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_ship.png",
+    "description": 1082,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 10
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010221,
+          "amount": 10
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 5
+    },
+    "attackable": {
+      "maximumHitPoints": 600,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 10.0,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 2.0,
+      "selfHealPausedTimeIfAttacked": 0,
+      "armorType": "HeavyArmor",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "Explosive",
+      "range": 24,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 70,
+      "reloadTime": 50,
+      "projectile": 100501,
+      "baseDamage": 40,
+      "accuracyBase": 1.0,
+      "accuracyIncreaseOverDistance": 80,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 30,
+      "shootingTracking": "Front",
+      "projectileCount": 2,
+      "turrets": []
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 10
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 0.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 101921,
+    "name": "Frigate (Military)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_military_ship_frigatte.png",
+    "description": 1085,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 40
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010221,
+          "amount": 25
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 8
+    },
+    "attackable": {
+      "maximumHitPoints": 4000,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 10.0,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 3.75,
+      "selfHealPausedTimeIfAttacked": 0,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 36,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 70,
+      "reloadTime": 50,
+      "projectile": 100501,
+      "baseDamage": 75,
+      "accuracyBase": 3.0,
+      "accuracyIncreaseOverDistance": 90,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 30,
+      "shootingTracking": "",
+      "projectileCount": 14,
+      "turrets": []
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 20
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 10
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 0.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 101922,
+    "name": "Liner (Military)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_military_ship_liner.png",
+    "description": 1086,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 60
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 30
+        },
+        {
+          "ingredient": 1010221,
+          "amount": 45
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 15
+    },
+    "attackable": {
+      "maximumHitPoints": 4500,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 10.0,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 4.0,
+      "selfHealPausedTimeIfAttacked": 0,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 48,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 70,
+      "reloadTime": 50,
+      "projectile": 100501,
+      "baseDamage": 300,
+      "accuracyBase": 0.0,
+      "accuracyIncreaseOverDistance": 100,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 30,
+      "shootingTracking": "",
+      "projectileCount": 32,
+      "turrets": []
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 50
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 0
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 0.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 101929,
+    "name": "Battle Cruiser (Military)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_ship.png",
+    "description": 1087,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010218,
+          "amount": 60
+        },
+        {
+          "ingredient": 1010224,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010223,
+          "amount": 20
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 23
+    },
+    "attackable": {
+      "maximumHitPoints": 5000,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 10.0,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 8.0,
+      "selfHealPausedTimeIfAttacked": 0,
+      "armorType": "HeavyArmor",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "HeavyArmor",
+      "range": 60,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 70,
+      "reloadTime": 40,
+      "projectile": 100501,
+      "baseDamage": 200,
+      "accuracyBase": 1.5,
+      "accuracyIncreaseOverDistance": 60,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 30,
+      "shootingTracking": "TurretFixed",
+      "projectileCount": 6,
+      "turrets": [
+        270,
+        270,
+        290
+      ]
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 70
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 0
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 50.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 101930,
+    "name": "Monitor (Military)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_military_ship_monitor.png",
+    "description": 1088,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010218,
+          "amount": 40
+        },
+        {
+          "ingredient": 1010224,
+          "amount": 10
+        },
+        {
+          "ingredient": 1010223,
+          "amount": 10
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 12
+    },
+    "attackable": {
+      "maximumHitPoints": 2500,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 10.0,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 2.5,
+      "selfHealPausedTimeIfAttacked": 0,
+      "armorType": "HeavyArmor",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "Explosive",
+      "range": 24,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 70,
+      "reloadTime": 25,
+      "projectile": 100501,
+      "baseDamage": 65,
+      "accuracyBase": 1.5,
+      "accuracyIncreaseOverDistance": 60,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 30,
+      "shootingTracking": "Front",
+      "projectileCount": 2,
+      "turrets": [
+        270
+      ]
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 30
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 50.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 101997,
+    "name": "Frigate (Military) - LOADED",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_military_ship_frigatte.png",
+    "description": 1085,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 40
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010221,
+          "amount": 25
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 8
+    },
+    "attackable": {
+      "maximumHitPoints": 2000,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 10.0,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 3.75,
+      "selfHealPausedTimeIfAttacked": 0,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 36,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 70,
+      "reloadTime": 50,
+      "projectile": 100501,
+      "baseDamage": 200,
+      "accuracyBase": 3.0,
+      "accuracyIncreaseOverDistance": 90,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 30,
+      "shootingTracking": "",
+      "projectileCount": 14,
+      "turrets": []
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 20
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 10
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 0.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102429,
+    "name": "Pirate Gunboat",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_pirate_ship_gunboat.png",
+    "description": 1082,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 10
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010221,
+          "amount": 7
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 4
+    },
+    "attackable": {
+      "maximumHitPoints": 850,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 0.708,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 2.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 40,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 100,
+      "reloadTime": 50,
+      "projectile": 102277,
+      "baseDamage": 105,
+      "accuracyBase": 1.0,
+      "accuracyIncreaseOverDistance": 80,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 30,
+      "shootingTracking": "Front",
+      "projectileCount": 2,
+      "turrets": []
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 10
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 0.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102430,
+    "name": "Pirate Frigate",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_pirate_ship_frigatte.png",
+    "description": 1085,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 40
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010221,
+          "amount": 15
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 8
+    },
+    "attackable": {
+      "maximumHitPoints": 2000,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.389,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 3.75,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 55,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 100,
+      "reloadTime": 50,
+      "projectile": 102032,
+      "baseDamage": 140,
+      "accuracyBase": 3.0,
+      "accuracyIncreaseOverDistance": 90,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 50,
+      "shootingTracking": "",
+      "projectileCount": 14,
+      "turrets": []
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 20
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 10
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 0.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102431,
+    "name": "Pirate Liner",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_pirate_ship_liner.png",
+    "description": 1086,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 60
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 30
+        },
+        {
+          "ingredient": 1010221,
+          "amount": 30
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 16
+    },
+    "attackable": {
+      "maximumHitPoints": 4000,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.667,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 4.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 68,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 100,
+      "reloadTime": 100,
+      "projectile": 102285,
+      "baseDamage": 525,
+      "accuracyBase": 0.0,
+      "accuracyIncreaseOverDistance": 100,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 50,
+      "shootingTracking": "",
+      "projectileCount": 32,
+      "turrets": []
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 50
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 0
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 0.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102432,
+    "name": "Pirate Monitor",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_pirate_ship_monitor.png",
+    "description": 1088,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010218,
+          "amount": 40
+        },
+        {
+          "ingredient": 1010224,
+          "amount": 10
+        },
+        {
+          "ingredient": 1010223,
+          "amount": 10
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 12
+    },
+    "attackable": {
+      "maximumHitPoints": 2500,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.389,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 2.5,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 48,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 100,
+      "reloadTime": 30,
+      "projectile": 102267,
+      "baseDamage": 93,
+      "accuracyBase": 1.0,
+      "accuracyIncreaseOverDistance": 60,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 30,
+      "shootingTracking": "TurretFixed",
+      "projectileCount": 2,
+      "turrets": [
+        320
+      ]
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 30
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSteamShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 50.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102420,
+    "name": "Pirate Gunboat - For Sale",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_pirate_ship_gunboat.png",
+    "description": 1082,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 10
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010221,
+          "amount": 7
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 4
+    },
+    "attackable": {
+      "maximumHitPoints": 850,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 0.708,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 2.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 40,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 100,
+      "reloadTime": 40,
+      "projectile": 102277,
+      "baseDamage": 105,
+      "accuracyBase": 1.0,
+      "accuracyIncreaseOverDistance": 80,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 30,
+      "shootingTracking": "Front",
+      "projectileCount": 8,
+      "turrets": []
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 10
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 0.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102421,
+    "name": "Pirate Frigate - For Sale",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_pirate_ship_frigatte.png",
+    "description": 1085,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 40
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010221,
+          "amount": 15
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 8
+    },
+    "attackable": {
+      "maximumHitPoints": 2000,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.389,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 3.75,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 55,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 100,
+      "reloadTime": 40,
+      "projectile": 102032,
+      "baseDamage": 140,
+      "accuracyBase": 3.0,
+      "accuracyIncreaseOverDistance": 90,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 50,
+      "shootingTracking": "",
+      "projectileCount": 14,
+      "turrets": []
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 20
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 10
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 0.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102419,
+    "name": "Pirate Liner - For Sale",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_pirate_ship_liner.png",
+    "description": 1086,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 60
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 30
+        },
+        {
+          "ingredient": 1010221,
+          "amount": 30
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 16
+    },
+    "attackable": {
+      "maximumHitPoints": 4000,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.667,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 4.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 68,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 100,
+      "reloadTime": 80,
+      "projectile": 102285,
+      "baseDamage": 525,
+      "accuracyBase": 0.0,
+      "accuracyIncreaseOverDistance": 100,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 50,
+      "shootingTracking": "",
+      "projectileCount": 32,
+      "turrets": []
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 50
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 0
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 0.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102422,
+    "name": "Pirate Monitor - For Sale",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_pirate_ship_monitor.png",
+    "description": 1088,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010218,
+          "amount": 40
+        },
+        {
+          "ingredient": 1010224,
+          "amount": 10
+        },
+        {
+          "ingredient": 1010223,
+          "amount": 10
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 12
+    },
+    "attackable": {
+      "maximumHitPoints": 2500,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.389,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 2.5,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 48,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 100,
+      "reloadTime": 24,
+      "projectile": 102267,
+      "baseDamage": 93,
+      "accuracyBase": 1.0,
+      "accuracyIncreaseOverDistance": 60,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 30,
+      "shootingTracking": "TurretFixed",
+      "projectileCount": 2,
+      "turrets": [
+        320
+      ]
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 30
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSteamShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 50.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102423,
+    "name": "Pyrphorian Monitor - For Sale",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_pyphorian_ship_monitor.png",
+    "description": 1088,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010218,
+          "amount": 40
+        },
+        {
+          "ingredient": 1010224,
+          "amount": 10
+        },
+        {
+          "ingredient": 1010223,
+          "amount": 10
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 12
+    },
+    "attackable": {
+      "maximumHitPoints": 2500,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.389,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 2.5,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 24,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 100,
+      "reloadTime": 15,
+      "projectile": 102405,
+      "baseDamage": 55,
+      "accuracyBase": 1.0,
+      "accuracyIncreaseOverDistance": 60,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 30,
+      "shootingTracking": "TurretFixed",
+      "projectileCount": 2,
+      "turrets": [
+        320
+      ]
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 30
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSteamShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 50.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102425,
+    "name": "Pyrphorian Battle Cruiser - For Sale",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_pyphorian_battlecruiser.png",
+    "description": 1087,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010218,
+          "amount": 60
+        },
+        {
+          "ingredient": 1010224,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010223,
+          "amount": 20
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 24
+    },
+    "attackable": {
+      "maximumHitPoints": 5000,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 5.0,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 8.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 42,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 100,
+      "reloadTime": 35,
+      "projectile": 102405,
+      "baseDamage": 145,
+      "accuracyBase": 1.5,
+      "accuracyIncreaseOverDistance": 60,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 30,
+      "shootingTracking": "TurretFixed",
+      "projectileCount": 6,
+      "turrets": [
+        300,
+        300,
+        300
+      ]
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 70
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 0
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSteamShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 50.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102428,
+    "name": "Pyrphorian CommandoShip - For Sale",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_pyphorian_warship.png",
+    "description": 1088,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010218,
+          "amount": 50
+        },
+        {
+          "ingredient": 1010224,
+          "amount": 15
+        },
+        {
+          "ingredient": 1010223,
+          "amount": 15
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 18
+    },
+    "attackable": {
+      "maximumHitPoints": 3500,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 5.0,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 2.5,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 33,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 100,
+      "reloadTime": 0,
+      "projectile": 102405,
+      "baseDamage": 45,
+      "accuracyBase": 1.5,
+      "accuracyIncreaseOverDistance": 60,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 30,
+      "shootingTracking": "TurretFixed",
+      "projectileCount": 2,
+      "turrets": [
+        320,
+        300
+      ]
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 30
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSteamShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 50.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102427,
+    "name": "Royal Liner - For Sale",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_royal_liner.png",
+    "description": 1086,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 60
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 30
+        },
+        {
+          "ingredient": 1010221,
+          "amount": 30
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 16
+    },
+    "attackable": {
+      "maximumHitPoints": 4500,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.667,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 4.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 68,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 100,
+      "reloadTime": 100,
+      "projectile": 102285,
+      "baseDamage": 650,
+      "accuracyBase": 0.0,
+      "accuracyIncreaseOverDistance": 100,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 50,
+      "shootingTracking": "",
+      "projectileCount": 32,
+      "turrets": []
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 50
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 0
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 0.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 101400,
+    "name": "CQO_Pyro_CommandoShip (Samuel's murderer)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_pyrophorian_ship.png",
+    "description": 1083,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010218,
+          "amount": 50
+        },
+        {
+          "ingredient": 1010224,
+          "amount": 15
+        },
+        {
+          "ingredient": 1010223,
+          "amount": 15
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 18
+    },
+    "attackable": {
+      "maximumHitPoints": 500,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 5.0,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 2.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 33,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 100,
+      "reloadTime": 0,
+      "projectile": 102405,
+      "baseDamage": 40,
+      "accuracyBase": 1.5,
+      "accuracyIncreaseOverDistance": 60,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 30,
+      "shootingTracking": "TurretFixed",
+      "projectileCount": 2,
+      "turrets": [
+        320,
+        300
+      ]
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 30
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSteamShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 50.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 101143,
+    "name": "CQO_Pyro_Regular (Monitor)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_pyrophorian_ship.png",
+    "description": 1088,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010218,
+          "amount": 40
+        },
+        {
+          "ingredient": 1010224,
+          "amount": 10
+        },
+        {
+          "ingredient": 1010223,
+          "amount": 10
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 12
+    },
+    "attackable": {
+      "maximumHitPoints": 1000,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.389,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 2.5,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 48,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 100,
+      "reloadTime": 30,
+      "projectile": 102405,
+      "baseDamage": 100,
+      "accuracyBase": 1.0,
+      "accuracyIncreaseOverDistance": 60,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 30,
+      "shootingTracking": "TurretFixed",
+      "projectileCount": 2,
+      "turrets": [
+        320
+      ]
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 30
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSteamShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 50.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 101964,
+    "name": "CQO_Pyro_IsabelAttackers (Monitor)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_pyrophorian_ship.png",
+    "description": 1088,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010218,
+          "amount": 40
+        },
+        {
+          "ingredient": 1010224,
+          "amount": 10
+        },
+        {
+          "ingredient": 1010223,
+          "amount": 10
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 12
+    },
+    "attackable": {
+      "maximumHitPoints": 800,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 0.0,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 2.5,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 48,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 100,
+      "reloadTime": 30,
+      "projectile": 102267,
+      "baseDamage": 60,
+      "accuracyBase": 1.0,
+      "accuracyIncreaseOverDistance": 60,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 30,
+      "shootingTracking": "TurretFixed",
+      "projectileCount": 2,
+      "turrets": [
+        320
+      ]
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 30
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSteamShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 50.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102454,
+    "name": "CQO_Pyro_CommandoShip (Unique Pyro Ship)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_pyrophorian_ship.png",
+    "description": 1088,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010218,
+          "amount": 50
+        },
+        {
+          "ingredient": 1010224,
+          "amount": 15
+        },
+        {
+          "ingredient": 1010223,
+          "amount": 15
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 18
+    },
+    "attackable": {
+      "maximumHitPoints": 1000,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 0.0,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 2.5,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 33,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 100,
+      "reloadTime": 0,
+      "projectile": 102405,
+      "baseDamage": 60,
+      "accuracyBase": 1.5,
+      "accuracyIncreaseOverDistance": 60,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 30,
+      "shootingTracking": "TurretFixed",
+      "projectileCount": 2,
+      "turrets": [
+        320,
+        300
+      ]
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 30
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSteamShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 50.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102325,
+    "name": "CQO_Pyro_Bandit (Monitor)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_pyrophorian_ship.png",
+    "description": 1088,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010218,
+          "amount": 40
+        },
+        {
+          "ingredient": 1010224,
+          "amount": 10
+        },
+        {
+          "ingredient": 1010223,
+          "amount": 10
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 12
+    },
+    "attackable": {
+      "maximumHitPoints": 3000,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.389,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 2.5,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 48,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 100,
+      "reloadTime": 30,
+      "projectile": 102405,
+      "baseDamage": 100,
+      "accuracyBase": 1.0,
+      "accuracyIncreaseOverDistance": 60,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 30,
+      "shootingTracking": "TurretFixed",
+      "projectileCount": 2,
+      "turrets": [
+        320
+      ]
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 30
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSteamShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 50.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 101218,
+    "name": "CQO_Queen_01Flagship",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_liner.png",
+    "description": 1086,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 60
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 30
+        },
+        {
+          "ingredient": 1010221,
+          "amount": 30
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 16
+    },
+    "attackable": {
+      "maximumHitPoints": 7000,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.667,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 4.0,
+      "selfHealPausedTimeIfAttacked": 0,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 68,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 100,
+      "reloadTime": 100,
+      "projectile": 102285,
+      "baseDamage": 525,
+      "accuracyBase": 0.0,
+      "accuracyIncreaseOverDistance": 100,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 50,
+      "shootingTracking": "",
+      "projectileCount": 32,
+      "turrets": []
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 50
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 0
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 0.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 101981,
+    "name": "CQO_Queen_02EscortShip",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_liner.png",
+    "description": 1086,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 60
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 30
+        },
+        {
+          "ingredient": 1010221,
+          "amount": 30
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 16
+    },
+    "attackable": {
+      "maximumHitPoints": 4000,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.667,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 4.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 68,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 100,
+      "reloadTime": 100,
+      "projectile": 102285,
+      "baseDamage": 525,
+      "accuracyBase": 0.0,
+      "accuracyIncreaseOverDistance": 100,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 50,
+      "shootingTracking": "",
+      "projectileCount": 32,
+      "turrets": []
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 50
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 0
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 0.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102245,
+    "name": "CQO_Queen_03EscortShip",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_liner.png",
+    "description": 1086,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 60
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 30
+        },
+        {
+          "ingredient": 1010221,
+          "amount": 30
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 16
+    },
+    "attackable": {
+      "maximumHitPoints": 4000,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.667,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 4.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 68,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 100,
+      "reloadTime": 100,
+      "projectile": 102285,
+      "baseDamage": 525,
+      "accuracyBase": 0.0,
+      "accuracyIncreaseOverDistance": 100,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 50,
+      "shootingTracking": "",
+      "projectileCount": 32,
+      "turrets": []
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 50
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 0
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 0.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 101965,
+    "name": "CQO_Pyro_FinalBattle (Monitor)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_pyrophorian_ship.png",
+    "description": 1088,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010218,
+          "amount": 40
+        },
+        {
+          "ingredient": 1010224,
+          "amount": 10
+        },
+        {
+          "ingredient": 1010223,
+          "amount": 10
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 12
+    },
+    "attackable": {
+      "maximumHitPoints": 2400,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 0.0,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 2.5,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 24,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 100,
+      "reloadTime": 10,
+      "projectile": 102405,
+      "baseDamage": 31,
+      "accuracyBase": 1.0,
+      "accuracyIncreaseOverDistance": 60,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 30,
+      "shootingTracking": "TurretFixed",
+      "projectileCount": 2,
+      "turrets": [
+        320
+      ]
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 30
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSteamShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 50.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 101248,
+    "name": "CQO_Pyro_Battlecruiser_FinalBattle (Battle Cruiser)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_pyrophorian_ship.png",
+    "description": 1087,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010218,
+          "amount": 60
+        },
+        {
+          "ingredient": 1010224,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010223,
+          "amount": 20
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 24
+    },
+    "attackable": {
+      "maximumHitPoints": 5000,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 0.0,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 8.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 42,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 100,
+      "reloadTime": 35,
+      "projectile": 102405,
+      "baseDamage": 145,
+      "accuracyBase": 1.5,
+      "accuracyIncreaseOverDistance": 60,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 30,
+      "shootingTracking": "TurretFixed",
+      "projectileCount": 6,
+      "turrets": [
+        300,
+        300,
+        300
+      ]
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 70
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 0
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSteamShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 50.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102452,
+    "name": "CQO_Pyro_CommandoShip_FinalBattle (Unique Pyro Ship)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_pyrophorian_ship.png",
+    "description": 1088,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010218,
+          "amount": 50
+        },
+        {
+          "ingredient": 1010224,
+          "amount": 15
+        },
+        {
+          "ingredient": 1010223,
+          "amount": 15
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 18
+    },
+    "attackable": {
+      "maximumHitPoints": 3500,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 0.0,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 2.5,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 33,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 100,
+      "reloadTime": 0,
+      "projectile": 102405,
+      "baseDamage": 45,
+      "accuracyBase": 1.5,
+      "accuracyIncreaseOverDistance": 60,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 30,
+      "shootingTracking": "TurretFixed",
+      "projectileCount": 2,
+      "turrets": [
+        320,
+        300
+      ]
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 30
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSteamShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 50.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 101978,
+    "name": "CQO_Pyro_AttackerWaves (Monitor)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_pyrophorian_ship.png",
+    "description": 1088,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010218,
+          "amount": 40
+        },
+        {
+          "ingredient": 1010224,
+          "amount": 10
+        },
+        {
+          "ingredient": 1010223,
+          "amount": 10
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 12
+    },
+    "attackable": {
+      "maximumHitPoints": 2500,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.389,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 2.5,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 48,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 100,
+      "reloadTime": 30,
+      "projectile": 102405,
+      "baseDamage": 93,
+      "accuracyBase": 1.0,
+      "accuracyIncreaseOverDistance": 60,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 30,
+      "shootingTracking": "TurretFixed",
+      "projectileCount": 2,
+      "turrets": [
+        320
+      ]
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 30
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSteamShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 50.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102453,
+    "name": "CQO_Pyro_CommandoShip_AttackerWaves (Unique Pyro Ship)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_pyrophorian_ship.png",
+    "description": 1088,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010218,
+          "amount": 50
+        },
+        {
+          "ingredient": 1010224,
+          "amount": 15
+        },
+        {
+          "ingredient": 1010223,
+          "amount": 15
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 18
+    },
+    "attackable": {
+      "maximumHitPoints": 3500,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 0.0,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 2.5,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 33,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 100,
+      "reloadTime": 0,
+      "projectile": 102405,
+      "baseDamage": 45,
+      "accuracyBase": 1.5,
+      "accuracyIncreaseOverDistance": 60,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 30,
+      "shootingTracking": "TurretFixed",
+      "projectileCount": 2,
+      "turrets": [
+        320,
+        300
+      ]
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 30
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSteamShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 50.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 101995,
+    "name": "CQO_Pyro_PatrolShips (Monitor)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_pyrophorian_ship.png",
+    "description": 1088,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010218,
+          "amount": 40
+        },
+        {
+          "ingredient": 1010224,
+          "amount": 10
+        },
+        {
+          "ingredient": 1010223,
+          "amount": 10
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 12
+    },
+    "attackable": {
+      "maximumHitPoints": 2500,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.389,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 2.5,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 48,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 100,
+      "reloadTime": 30,
+      "projectile": 102405,
+      "baseDamage": 93,
+      "accuracyBase": 1.0,
+      "accuracyIncreaseOverDistance": 60,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 30,
+      "shootingTracking": "TurretFixed",
+      "projectileCount": 2,
+      "turrets": [
+        320
+      ]
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 30
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSteamShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 50.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 101982,
+    "name": "CQO_Isabel_01Flagship",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_frigatte.png",
+    "description": 1085,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 40
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010221,
+          "amount": 15
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 8
+    },
+    "attackable": {
+      "maximumHitPoints": 7000,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.389,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 3.75,
+      "selfHealPausedTimeIfAttacked": 0,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 55,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 100,
+      "reloadTime": 50,
+      "projectile": 102032,
+      "baseDamage": 140,
+      "accuracyBase": 3.0,
+      "accuracyIncreaseOverDistance": 90,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 50,
+      "shootingTracking": "",
+      "projectileCount": 14,
+      "turrets": []
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 20
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 10
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 0.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 101983,
+    "name": "CQO_Isabel_02EscortShip",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_gunboat.png",
+    "description": 1082,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 10
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010221,
+          "amount": 7
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 4
+    },
+    "attackable": {
+      "maximumHitPoints": 850,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 0.708,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 2.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 40,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 100,
+      "reloadTime": 50,
+      "projectile": 102277,
+      "baseDamage": 105,
+      "accuracyBase": 1.0,
+      "accuracyIncreaseOverDistance": 80,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 30,
+      "shootingTracking": "Front",
+      "projectileCount": 2,
+      "turrets": []
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 10
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 0.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102252,
+    "name": "CQO_Isabel_03EscortShip",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_gunboat.png",
+    "description": 1082,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 10
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010221,
+          "amount": 7
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 4
+    },
+    "attackable": {
+      "maximumHitPoints": 850,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 0.708,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 2.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 40,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 100,
+      "reloadTime": 50,
+      "projectile": 102277,
+      "baseDamage": 105,
+      "accuracyBase": 1.0,
+      "accuracyIncreaseOverDistance": 80,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 30,
+      "shootingTracking": "Front",
+      "projectileCount": 2,
+      "turrets": []
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 10
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 0.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 100563,
+    "name": "QO Gunboat (Military)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_gunboat.png",
+    "description": 1082,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 10
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010221,
+          "amount": 7
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 4
+    },
+    "attackable": {
+      "maximumHitPoints": 850,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 0.708,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 2.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 40,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 100,
+      "reloadTime": 50,
+      "projectile": 102277,
+      "baseDamage": 105,
+      "accuracyBase": 1.0,
+      "accuracyIncreaseOverDistance": 80,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 30,
+      "shootingTracking": "Front",
+      "projectileCount": 2,
+      "turrets": []
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 10
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 0.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 100565,
+    "name": "QO Frigate (Military)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_frigatte.png",
+    "description": 1085,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 40
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010221,
+          "amount": 15
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 8
+    },
+    "attackable": {
+      "maximumHitPoints": 2000,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.389,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 3.75,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 55,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 100,
+      "reloadTime": 50,
+      "projectile": 102032,
+      "baseDamage": 140,
+      "accuracyBase": 3.0,
+      "accuracyIncreaseOverDistance": 90,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 50,
+      "shootingTracking": "",
+      "projectileCount": 14,
+      "turrets": []
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 20
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 10
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 0.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 100566,
+    "name": "QO Liner (Military)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_liner.png",
+    "description": 1086,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 60
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 30
+        },
+        {
+          "ingredient": 1010221,
+          "amount": 30
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 16
+    },
+    "attackable": {
+      "maximumHitPoints": 4000,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.667,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 4.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 68,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 100,
+      "reloadTime": 100,
+      "projectile": 102285,
+      "baseDamage": 525,
+      "accuracyBase": 0.0,
+      "accuracyIncreaseOverDistance": 100,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 50,
+      "shootingTracking": "",
+      "projectileCount": 32,
+      "turrets": []
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 50
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 0
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 0.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 100568,
+    "name": "QO Battle Cruiser (Military)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_battlecruiser.png",
+    "description": 1087,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010218,
+          "amount": 60
+        },
+        {
+          "ingredient": 1010224,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010223,
+          "amount": 25
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 24
+    },
+    "attackable": {
+      "maximumHitPoints": 5000,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.667,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 8.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 84,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 100,
+      "reloadTime": 70,
+      "projectile": 102033,
+      "baseDamage": 245,
+      "accuracyBase": 1.0,
+      "accuracyIncreaseOverDistance": 60,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 30,
+      "shootingTracking": "TurretFixed",
+      "projectileCount": 6,
+      "turrets": [
+        300,
+        300,
+        300
+      ]
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 70
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 0
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSteamShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 50.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 100569,
+    "name": "QO Monitor (Military)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_monitor.png",
+    "description": 1088,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010218,
+          "amount": 40
+        },
+        {
+          "ingredient": 1010224,
+          "amount": 10
+        },
+        {
+          "ingredient": 1010223,
+          "amount": 10
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 12
+    },
+    "attackable": {
+      "maximumHitPoints": 2500,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.389,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 2.5,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 48,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 100,
+      "reloadTime": 30,
+      "projectile": 102267,
+      "baseDamage": 93,
+      "accuracyBase": 1.0,
+      "accuracyIncreaseOverDistance": 60,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 30,
+      "shootingTracking": "TurretFixed",
+      "projectileCount": 2,
+      "turrets": [
+        320
+      ]
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 30
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSteamShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 50.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102367,
+    "name": "QO Gunboat (Military) Escort",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_gunboat.png",
+    "description": 1082,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 10
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010221,
+          "amount": 7
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 4
+    },
+    "attackable": {
+      "maximumHitPoints": 1200,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 0.708,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 2.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 40,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 100,
+      "reloadTime": 50,
+      "projectile": 102277,
+      "baseDamage": 105,
+      "accuracyBase": 1.0,
+      "accuracyIncreaseOverDistance": 80,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 30,
+      "shootingTracking": "Front",
+      "projectileCount": 2,
+      "turrets": []
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 10
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 0.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102369,
+    "name": "QO Frigate (Military) Escort",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_frigatte.png",
+    "description": 1085,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 40
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010221,
+          "amount": 15
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 8
+    },
+    "attackable": {
+      "maximumHitPoints": 3000,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.389,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 3.75,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 55,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 100,
+      "reloadTime": 50,
+      "projectile": 102032,
+      "baseDamage": 140,
+      "accuracyBase": 3.0,
+      "accuracyIncreaseOverDistance": 90,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 50,
+      "shootingTracking": "",
+      "projectileCount": 14,
+      "turrets": []
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 20
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 10
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 0.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102370,
+    "name": "QO Liner (Military) Escort",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_liner.png",
+    "description": 1086,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 60
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 30
+        },
+        {
+          "ingredient": 1010221,
+          "amount": 30
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 16
+    },
+    "attackable": {
+      "maximumHitPoints": 5000,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.667,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 4.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 68,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 100,
+      "reloadTime": 100,
+      "projectile": 102285,
+      "baseDamage": 525,
+      "accuracyBase": 0.0,
+      "accuracyIncreaseOverDistance": 100,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 50,
+      "shootingTracking": "",
+      "projectileCount": 32,
+      "turrets": []
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 50
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 0
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 0.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102372,
+    "name": "QO Battle Cruiser (Military) Escort",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_battlecruiser.png",
+    "description": 1087,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010218,
+          "amount": 60
+        },
+        {
+          "ingredient": 1010224,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010223,
+          "amount": 25
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 24
+    },
+    "attackable": {
+      "maximumHitPoints": 5000,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.667,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 8.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 84,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 100,
+      "reloadTime": 70,
+      "projectile": 102033,
+      "baseDamage": 245,
+      "accuracyBase": 1.0,
+      "accuracyIncreaseOverDistance": 60,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 30,
+      "shootingTracking": "TurretFixed",
+      "projectileCount": 6,
+      "turrets": [
+        300,
+        300,
+        300
+      ]
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 70
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 0
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSteamShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 50.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102373,
+    "name": "QO Monitor (Military) Escort",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_monitor.png",
+    "description": 1088,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010218,
+          "amount": 40
+        },
+        {
+          "ingredient": 1010224,
+          "amount": 10
+        },
+        {
+          "ingredient": 1010223,
+          "amount": 10
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 12
+    },
+    "attackable": {
+      "maximumHitPoints": 3500,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.389,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 2.5,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 48,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 100,
+      "reloadTime": 30,
+      "projectile": 102267,
+      "baseDamage": 93,
+      "accuracyBase": 1.0,
+      "accuracyIncreaseOverDistance": 60,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 30,
+      "shootingTracking": "TurretFixed",
+      "projectileCount": 2,
+      "turrets": [
+        320
+      ]
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 30
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSteamShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 50.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102375,
+    "name": "QO Gunboat (Military) Attacker Front-Cannon",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_gunboat.png",
+    "description": 1082,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 10
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010221,
+          "amount": 7
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 4
+    },
+    "attackable": {
+      "maximumHitPoints": 750,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 0.708,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 2.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 40,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 100,
+      "reloadTime": 50,
+      "projectile": 102277,
+      "baseDamage": 70,
+      "accuracyBase": 1.0,
+      "accuracyIncreaseOverDistance": 80,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 30,
+      "shootingTracking": "Front",
+      "projectileCount": 2,
+      "turrets": []
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 10
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 0.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102377,
+    "name": "QO Frigate (Military) Attacker",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_frigatte.png",
+    "description": 1085,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 40
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010221,
+          "amount": 15
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 8
+    },
+    "attackable": {
+      "maximumHitPoints": 1800,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.389,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 3.75,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 55,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 100,
+      "reloadTime": 50,
+      "projectile": 102032,
+      "baseDamage": 90,
+      "accuracyBase": 3.0,
+      "accuracyIncreaseOverDistance": 90,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 50,
+      "shootingTracking": "",
+      "projectileCount": 14,
+      "turrets": []
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 20
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 10
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 0.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102378,
+    "name": "QO Liner (Military) Attacker",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_liner.png",
+    "description": 1086,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 60
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 30
+        },
+        {
+          "ingredient": 1010221,
+          "amount": 30
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 16
+    },
+    "attackable": {
+      "maximumHitPoints": 3000,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.667,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 4.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 68,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 100,
+      "reloadTime": 100,
+      "projectile": 102285,
+      "baseDamage": 450,
+      "accuracyBase": 0.0,
+      "accuracyIncreaseOverDistance": 100,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 50,
+      "shootingTracking": "",
+      "projectileCount": 32,
+      "turrets": []
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 50
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 0
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 0.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102380,
+    "name": "QO Battle Cruiser (Military) Attacker Front-Cannon",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_battlecruiser.png",
+    "description": 1087,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010218,
+          "amount": 60
+        },
+        {
+          "ingredient": 1010224,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010223,
+          "amount": 25
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 24
+    },
+    "attackable": {
+      "maximumHitPoints": 3500,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.667,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 8.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 84,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 100,
+      "reloadTime": 70,
+      "projectile": 102033,
+      "baseDamage": 180,
+      "accuracyBase": 1.0,
+      "accuracyIncreaseOverDistance": 60,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 30,
+      "shootingTracking": "TurretFixed",
+      "projectileCount": 6,
+      "turrets": [
+        300,
+        300,
+        300
+      ]
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 70
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 0
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSteamShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 50.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102381,
+    "name": "QO Monitor (Military) Attacker Front-Cannon",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_monitor.png",
+    "description": 1088,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010218,
+          "amount": 40
+        },
+        {
+          "ingredient": 1010224,
+          "amount": 10
+        },
+        {
+          "ingredient": 1010223,
+          "amount": 10
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 12
+    },
+    "attackable": {
+      "maximumHitPoints": 2000,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.389,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 2.5,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 48,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 100,
+      "reloadTime": 30,
+      "projectile": 102267,
+      "baseDamage": 60,
+      "accuracyBase": 1.0,
+      "accuracyIncreaseOverDistance": 60,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 30,
+      "shootingTracking": "TurretFixed",
+      "projectileCount": 2,
+      "turrets": [
+        320
+      ]
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 30
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSteamShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 50.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102610,
+    "name": "QO Slow Gunboat (Military)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_gunboat.png",
+    "description": 1082,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 10
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010221,
+          "amount": 7
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 4
+    },
+    "attackable": {
+      "maximumHitPoints": 850,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 0.708,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 2.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 40,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 100,
+      "reloadTime": 50,
+      "projectile": 102277,
+      "baseDamage": 105,
+      "accuracyBase": 1.0,
+      "accuracyIncreaseOverDistance": 80,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 30,
+      "shootingTracking": "Front",
+      "projectileCount": 2,
+      "turrets": []
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 10
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 0.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102612,
+    "name": "QO Slow Frigate (Military)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_frigatte.png",
+    "description": 1085,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 40
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010221,
+          "amount": 15
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 8
+    },
+    "attackable": {
+      "maximumHitPoints": 2000,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.389,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 3.75,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 55,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 100,
+      "reloadTime": 50,
+      "projectile": 102032,
+      "baseDamage": 140,
+      "accuracyBase": 3.0,
+      "accuracyIncreaseOverDistance": 90,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 50,
+      "shootingTracking": "",
+      "projectileCount": 14,
+      "turrets": []
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 20
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 10
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 0.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102613,
+    "name": "QO Slow Liner (Military)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_liner.png",
+    "description": 1086,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 60
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 30
+        },
+        {
+          "ingredient": 1010221,
+          "amount": 30
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 16
+    },
+    "attackable": {
+      "maximumHitPoints": 4000,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.667,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 4.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 68,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 100,
+      "reloadTime": 100,
+      "projectile": 102285,
+      "baseDamage": 525,
+      "accuracyBase": 0.0,
+      "accuracyIncreaseOverDistance": 100,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 50,
+      "shootingTracking": "",
+      "projectileCount": 32,
+      "turrets": []
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 50
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 0
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 0.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102615,
+    "name": "QO Slow Battle Cruiser (Military)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_battlecruiser.png",
+    "description": 1087,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010218,
+          "amount": 60
+        },
+        {
+          "ingredient": 1010224,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010223,
+          "amount": 25
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 24
+    },
+    "attackable": {
+      "maximumHitPoints": 5000,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.667,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 8.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 84,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 100,
+      "reloadTime": 70,
+      "projectile": 102033,
+      "baseDamage": 245,
+      "accuracyBase": 1.0,
+      "accuracyIncreaseOverDistance": 60,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 30,
+      "shootingTracking": "TurretFixed",
+      "projectileCount": 6,
+      "turrets": [
+        300,
+        300,
+        300
+      ]
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 70
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 0
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSteamShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 50.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102616,
+    "name": "QO Slow Monitor (Military)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_monitor.png",
+    "description": 1088,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010218,
+          "amount": 40
+        },
+        {
+          "ingredient": 1010224,
+          "amount": 10
+        },
+        {
+          "ingredient": 1010223,
+          "amount": 10
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 12
+    },
+    "attackable": {
+      "maximumHitPoints": 2500,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.389,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 2.5,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 48,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 100,
+      "reloadTime": 30,
+      "projectile": 102267,
+      "baseDamage": 93,
+      "accuracyBase": 1.0,
+      "accuracyIncreaseOverDistance": 60,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 30,
+      "shootingTracking": "TurretFixed",
+      "projectileCount": 2,
+      "turrets": [
+        320
+      ]
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 30
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSteamShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 50.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102305,
+    "name": "Battle Cruiser (Military) QingQuest",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_battlecruiser.png",
+    "description": 1087,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010218,
+          "amount": 60
+        },
+        {
+          "ingredient": 1010224,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010223,
+          "amount": 25
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 24
+    },
+    "attackable": {
+      "maximumHitPoints": 5000,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.667,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 8.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 84,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 100,
+      "reloadTime": 70,
+      "projectile": 102033,
+      "baseDamage": 245,
+      "accuracyBase": 1.0,
+      "accuracyIncreaseOverDistance": 60,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 30,
+      "shootingTracking": "TurretFixed",
+      "projectileCount": 6,
+      "turrets": [
+        300,
+        300,
+        300
+      ]
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 70
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 0
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSteamShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 50.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102385,
+    "name": "QO Frigate (Military) - AlonsoQuest - Escape Artist",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_frigatte.png",
+    "description": 1085,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 40
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010221,
+          "amount": 15
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 8
+    },
+    "attackable": {
+      "maximumHitPoints": 500,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.389,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 3.75,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 55,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 100,
+      "reloadTime": 50,
+      "projectile": 102032,
+      "baseDamage": 0,
+      "accuracyBase": 3.0,
+      "accuracyIncreaseOverDistance": 90,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 50,
+      "shootingTracking": "",
+      "projectileCount": 14,
+      "turrets": []
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 20
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 10
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 0.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102387,
+    "name": "QO Battle Cruiser (Military) Escort - superslow",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_battlecruiser.png",
+    "description": 1087,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010218,
+          "amount": 60
+        },
+        {
+          "ingredient": 1010224,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010223,
+          "amount": 25
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 24
+    },
+    "attackable": {
+      "maximumHitPoints": 10000,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.667,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 8.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 84,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 100,
+      "reloadTime": 70,
+      "projectile": 102033,
+      "baseDamage": 245,
+      "accuracyBase": 1.0,
+      "accuracyIncreaseOverDistance": 60,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 30,
+      "shootingTracking": "TurretFixed",
+      "projectileCount": 6,
+      "turrets": [
+        300,
+        300,
+        300
+      ]
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 70
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 0
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSteamShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 50.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102391,
+    "name": "QO Battle Cruiser (Military) - JLF Be prepared Photo",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_battlecruiser.png",
+    "description": 1087,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010218,
+          "amount": 60
+        },
+        {
+          "ingredient": 1010224,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010223,
+          "amount": 25
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 24
+    },
+    "attackable": {
+      "maximumHitPoints": 1800,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.667,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 8.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 1,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 100,
+      "reloadTime": 70,
+      "projectile": 102033,
+      "baseDamage": 0,
+      "accuracyBase": 1.0,
+      "accuracyIncreaseOverDistance": 60,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 30,
+      "shootingTracking": "TurretFixed",
+      "projectileCount": 6,
+      "turrets": [
+        300,
+        300,
+        300
+      ]
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 70
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 0
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSteamShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 50.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102571,
+    "name": "QO Monitor (Military) - JLF Be prepared Photo Fleet",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_monitor.png",
+    "description": 1088,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010218,
+          "amount": 40
+        },
+        {
+          "ingredient": 1010224,
+          "amount": 10
+        },
+        {
+          "ingredient": 1010223,
+          "amount": 10
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 12
+    },
+    "attackable": {
+      "maximumHitPoints": 1800,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.389,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 2.5,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 1,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 100,
+      "reloadTime": 30,
+      "projectile": 102267,
+      "baseDamage": 0,
+      "accuracyBase": 1.0,
+      "accuracyIncreaseOverDistance": 60,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 30,
+      "shootingTracking": "TurretFixed",
+      "projectileCount": 2,
+      "turrets": [
+        320
+      ]
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 30
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSteamShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 50.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102397,
+    "name": "QO Queen01Flagship - Escort",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_liner.png",
+    "description": 1086,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 60
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 30
+        },
+        {
+          "ingredient": 1010221,
+          "amount": 30
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 16
+    },
+    "attackable": {
+      "maximumHitPoints": 6000,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.667,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 4.0,
+      "selfHealPausedTimeIfAttacked": 0,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 68,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 100,
+      "reloadTime": 100,
+      "projectile": 102285,
+      "baseDamage": 525,
+      "accuracyBase": 0.0,
+      "accuracyIncreaseOverDistance": 100,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 50,
+      "shootingTracking": "",
+      "projectileCount": 32,
+      "turrets": []
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 50
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 0
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 0.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102403,
+    "name": "QO Small Pirate Ship (Military) - Escort",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_ship.png",
+    "description": 1082,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 10
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010221,
+          "amount": 10
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 5
+    },
+    "attackable": {
+      "maximumHitPoints": 2000,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 10.0,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 2.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 30,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 70,
+      "reloadTime": 50,
+      "projectile": 102032,
+      "baseDamage": 150,
+      "accuracyBase": 1.0,
+      "accuracyIncreaseOverDistance": 80,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 50,
+      "shootingTracking": "",
+      "projectileCount": 8,
+      "turrets": []
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 10
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 0.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102506,
+    "name": "Pirate Frigate Willie",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_frigatte.png",
+    "description": 1085,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 40
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010221,
+          "amount": 15
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 8
+    },
+    "attackable": {
+      "maximumHitPoints": 2000,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.389,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 3.75,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 55,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 100,
+      "reloadTime": 50,
+      "projectile": 102032,
+      "baseDamage": 140,
+      "accuracyBase": 3.0,
+      "accuracyIncreaseOverDistance": 90,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 50,
+      "shootingTracking": "",
+      "projectileCount": 14,
+      "turrets": []
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 20
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 10
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 0.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102519,
+    "name": "QO Frigate (Military) Alonso Errand Boy and Innocent delivery",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_frigatte.png",
+    "description": 1085,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 40
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010221,
+          "amount": 15
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 8
+    },
+    "attackable": {
+      "maximumHitPoints": 2000,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.389,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 3.75,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 55,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 100,
+      "reloadTime": 50,
+      "projectile": 102032,
+      "baseDamage": 140,
+      "accuracyBase": 3.0,
+      "accuracyIncreaseOverDistance": 90,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 50,
+      "shootingTracking": "",
+      "projectileCount": 14,
+      "turrets": []
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 20
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 10
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 0.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102556,
+    "name": "QO Gunboat (Military) Attacker Hunt Leave the party",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_gunboat.png",
+    "description": 1082,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 10
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010221,
+          "amount": 7
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 4
+    },
+    "attackable": {
+      "maximumHitPoints": 750,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 0.708,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 2.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 40,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 100,
+      "reloadTime": 50,
+      "projectile": 102277,
+      "baseDamage": 80,
+      "accuracyBase": 1.0,
+      "accuracyIncreaseOverDistance": 80,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 30,
+      "shootingTracking": "Front",
+      "projectileCount": 2,
+      "turrets": []
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 10
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 0.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102650,
+    "name": "QO Liner (Military) Follow Up Treasure ShipQingQuest",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_liner.png",
+    "description": 1086,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 60
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 30
+        },
+        {
+          "ingredient": 1010221,
+          "amount": 30
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 16
+    },
+    "attackable": {
+      "maximumHitPoints": 4000,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.667,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 4.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 68,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 100,
+      "reloadTime": 100,
+      "projectile": 102285,
+      "baseDamage": 525,
+      "accuracyBase": 0.0,
+      "accuracyIncreaseOverDistance": 100,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 50,
+      "shootingTracking": "",
+      "projectileCount": 32,
+      "turrets": []
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 50
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 0
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 0.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102656,
+    "name": "QO Liner (Military) Follow Up Treasure ShipQingQuest 2",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_liner.png",
+    "description": 1086,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 60
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 30
+        },
+        {
+          "ingredient": 1010221,
+          "amount": 30
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 16
+    },
+    "attackable": {
+      "maximumHitPoints": 4000,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.667,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 4.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 68,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 100,
+      "reloadTime": 100,
+      "projectile": 102285,
+      "baseDamage": 525,
+      "accuracyBase": 0.0,
+      "accuracyIncreaseOverDistance": 100,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 50,
+      "shootingTracking": "",
+      "projectileCount": 32,
+      "turrets": []
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 50
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 0
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 0.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102658,
+    "name": "QO Gunboat (Military) A Glorious Discovery 2B + 3",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_gunboat.png",
+    "description": 1082,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 10
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010221,
+          "amount": 7
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 4
+    },
+    "attackable": {
+      "maximumHitPoints": 850,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 0.708,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 2.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 40,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 100,
+      "reloadTime": 50,
+      "projectile": 102277,
+      "baseDamage": 105,
+      "accuracyBase": 1.0,
+      "accuracyIncreaseOverDistance": 80,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 30,
+      "shootingTracking": "Front",
+      "projectileCount": 2,
+      "turrets": []
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 10
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 0.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102880,
+    "name": "QO Slow Liner (Military) - Enemy Nest - Vicente",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_liner.png",
+    "description": 1086,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 60
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 30
+        },
+        {
+          "ingredient": 1010221,
+          "amount": 30
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 16
+    },
+    "attackable": {
+      "maximumHitPoints": 4000,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.667,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 4.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 68,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 100,
+      "reloadTime": 100,
+      "projectile": 102285,
+      "baseDamage": 525,
+      "accuracyBase": 0.0,
+      "accuracyIncreaseOverDistance": 100,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 50,
+      "shootingTracking": "",
+      "projectileCount": 32,
+      "turrets": []
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 50
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 0
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 0.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102881,
+    "name": "QO Slow Frigate (Military) - Enemy Nest Vicente",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_frigatte.png",
+    "description": 1085,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 40
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010221,
+          "amount": 15
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 8
+    },
+    "attackable": {
+      "maximumHitPoints": 2000,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.389,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 3.75,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 55,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 100,
+      "reloadTime": 50,
+      "projectile": 102032,
+      "baseDamage": 140,
+      "accuracyBase": 3.0,
+      "accuracyIncreaseOverDistance": 90,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 50,
+      "shootingTracking": "",
+      "projectileCount": 14,
+      "turrets": []
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 20
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 10
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 0.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102882,
+    "name": "QO Slow Gunboat (Military) - Enemy Nest Vicente",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_gunboat.png",
+    "description": 1082,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 10
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010221,
+          "amount": 7
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 4
+    },
+    "attackable": {
+      "maximumHitPoints": 850,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 0.708,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 2.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 40,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 100,
+      "reloadTime": 50,
+      "projectile": 102277,
+      "baseDamage": 105,
+      "accuracyBase": 1.0,
+      "accuracyIncreaseOverDistance": 80,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 30,
+      "shootingTracking": "Front",
+      "projectileCount": 2,
+      "turrets": []
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 10
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 0.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 103038,
+    "name": "QO Frigate (Military) - Alonso - Cupids Arrow 1",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_frigatte.png",
+    "description": 1085,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 40
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010221,
+          "amount": 15
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 8
+    },
+    "attackable": {
+      "maximumHitPoints": 2000,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.389,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 3.75,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 55,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 100,
+      "reloadTime": 50,
+      "projectile": 102032,
+      "baseDamage": 140,
+      "accuracyBase": 3.0,
+      "accuracyIncreaseOverDistance": 90,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 50,
+      "shootingTracking": "",
+      "projectileCount": 14,
+      "turrets": []
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 20
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 10
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 0.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 103039,
+    "name": "QO Frigate (Military) - Alonso - Cupids Arrow 2",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_frigatte.png",
+    "description": 1085,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 40
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010221,
+          "amount": 15
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 8
+    },
+    "attackable": {
+      "maximumHitPoints": 2000,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.389,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 3.75,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 55,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 100,
+      "reloadTime": 50,
+      "projectile": 102032,
+      "baseDamage": 140,
+      "accuracyBase": 3.0,
+      "accuracyIncreaseOverDistance": 90,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 50,
+      "shootingTracking": "",
+      "projectileCount": 14,
+      "turrets": []
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 20
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 10
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 0.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 103040,
+    "name": "QO Liner (Military) - Alonso - Question of Moral 2A",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_liner.png",
+    "description": 1086,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 60
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 30
+        },
+        {
+          "ingredient": 1010221,
+          "amount": 30
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 16
+    },
+    "attackable": {
+      "maximumHitPoints": 4000,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.667,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 4.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 68,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 100,
+      "reloadTime": 100,
+      "projectile": 102285,
+      "baseDamage": 525,
+      "accuracyBase": 0.0,
+      "accuracyIncreaseOverDistance": 100,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 50,
+      "shootingTracking": "",
+      "projectileCount": 32,
+      "turrets": []
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 50
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 0
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 0.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 103041,
+    "name": "QO Liner (Military) - Alonso - Question of Moral 2B",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_liner.png",
+    "description": 1086,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 60
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 30
+        },
+        {
+          "ingredient": 1010221,
+          "amount": 30
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 16
+    },
+    "attackable": {
+      "maximumHitPoints": 4000,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.667,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 4.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 68,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 100,
+      "reloadTime": 100,
+      "projectile": 102285,
+      "baseDamage": 525,
+      "accuracyBase": 0.0,
+      "accuracyIncreaseOverDistance": 100,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 50,
+      "shootingTracking": "",
+      "projectileCount": 32,
+      "turrets": []
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 50
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 0
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 0.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 103063,
+    "name": "QO Liner (Military) Willie competitor",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_liner.png",
+    "description": 1086,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 60
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 30
+        },
+        {
+          "ingredient": 1010221,
+          "amount": 30
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 16
+    },
+    "attackable": {
+      "maximumHitPoints": 4000,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.667,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 4.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 68,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 100,
+      "reloadTime": 100,
+      "projectile": 102285,
+      "baseDamage": 525,
+      "accuracyBase": 0.0,
+      "accuracyIncreaseOverDistance": 100,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 50,
+      "shootingTracking": "",
+      "projectileCount": 32,
+      "turrets": []
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 50
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 0
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 0.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 103070,
+    "name": "QO Pirate Frigate - slow",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_pirate_ship_frigatte.png",
+    "description": 1085,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 40
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010221,
+          "amount": 15
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 8
+    },
+    "attackable": {
+      "maximumHitPoints": 2000,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.389,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 3.75,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 55,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 100,
+      "reloadTime": 50,
+      "projectile": 102032,
+      "baseDamage": 140,
+      "accuracyBase": 3.0,
+      "accuracyIncreaseOverDistance": 90,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 50,
+      "shootingTracking": "",
+      "projectileCount": 14,
+      "turrets": []
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 20
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 10
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 0.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 103087,
+    "name": "QO Liner (Military) Escort - Cupid's Arrow",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_liner.png",
+    "description": 1086,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 60
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 30
+        },
+        {
+          "ingredient": 1010221,
+          "amount": 30
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 16
+    },
+    "attackable": {
+      "maximumHitPoints": 5000,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.667,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 4.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 68,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 100,
+      "reloadTime": 100,
+      "projectile": 102285,
+      "baseDamage": 525,
+      "accuracyBase": 0.0,
+      "accuracyIncreaseOverDistance": 100,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 50,
+      "shootingTracking": "",
+      "projectileCount": 32,
+      "turrets": []
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 50
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 0
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 0.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 103091,
+    "name": "Pirate Gunboat Willie Respecting Privacy",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_pirate_ship_gunboat.png",
+    "description": 1082,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 10
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010221,
+          "amount": 7
+        }
+      ],
+      "influenceCostType": "WarShip",
+      "influenceCostPoints": 4
+    },
+    "attackable": {
+      "maximumHitPoints": 850,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 0.708,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 2.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": {
+      "type": "",
+      "range": 40,
+      "attackRangeApproachPercentage": 0.85,
+      "lineOfSightRange": 100,
+      "reloadTime": 50,
+      "projectile": 102277,
+      "baseDamage": 105,
+      "accuracyBase": 1.0,
+      "accuracyIncreaseOverDistance": 80,
+      "accuracySpeedDecay": 20,
+      "emitProjectileTimeAfterStartAnimation": 0.0,
+      "targetAngleVariation": 30,
+      "shootingTracking": "Front",
+      "projectileCount": 2,
+      "turrets": []
+    },
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 10
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkMilitaryShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 0.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  }
+]

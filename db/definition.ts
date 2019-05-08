@@ -315,6 +315,52 @@ export interface BridgeBuilding extends Building {
   bridge?: BridgeData;
 }
 
+export interface Vehicle extends Asset {
+  cost?: CostData;
+  attackable?: AttackableData;
+  attacker?: AttackerData;
+  expeditionAttribute?: ExpeditionAttribute;
+}
+
+export interface EventTradeShip extends Vehicle {
+}
+
+export interface FeedbackVehicle extends Vehicle {
+}
+
+export interface FeedbackVehiclePatrol extends Vehicle {
+}
+
+export interface FeedbackVehicleWithTrailer extends Vehicle {
+}
+
+export interface FleetDummy extends Vehicle {
+}
+
+export interface IceFloeDestroyer extends Vehicle {
+}
+
+export interface LandSpy extends Vehicle {
+}
+
+export interface QuestVehicle extends Vehicle {
+}
+
+export interface QuestVehicleTrade extends Vehicle {
+}
+
+export interface SimpleVehicle extends Vehicle {
+}
+
+export interface TradeFeedbackVehicle extends Vehicle {
+}
+
+export interface TradeShip extends Vehicle {
+}
+
+export interface WarShip extends Vehicle {
+}
+
 export interface Warehouse extends Building {
   warehouse?: WarehouseData;
   queues: number;

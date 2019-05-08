@@ -1,0 +1,4035 @@
+[
+  {
+    "guid": 101321,
+    "name": "Tourism Ship (attackable)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_ship.png",
+    "description": 0,
+    "cost": null,
+    "attackable": {
+      "maximumHitPoints": 2000,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 300.0,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 0,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": null,
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 1
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 0.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 100438,
+    "name": "Schooner (Trade)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_schooner.png",
+    "description": 1083,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 10
+        }
+      ],
+      "influenceCostType": "TradeShip",
+      "influenceCostPoints": 2
+    },
+    "attackable": {
+      "maximumHitPoints": 1000,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 0.833,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": null,
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 0
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkTradeShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 10.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 100441,
+    "name": "Clipper (Trade)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_clipper.png",
+    "description": 1084,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 40
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 30
+        }
+      ],
+      "influenceCostType": "TradeShip",
+      "influenceCostPoints": 4
+    },
+    "attackable": {
+      "maximumHitPoints": 2500,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.389,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": null,
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 0
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkTradeShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 50.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 1010062,
+    "name": "Collier (Trade)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_collier.png",
+    "description": 1089,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010218,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010224,
+          "amount": 20
+        }
+      ],
+      "influenceCostType": "TradeShip",
+      "influenceCostPoints": 6
+    },
+    "attackable": {
+      "maximumHitPoints": 3500,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.667,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": null,
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 0
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkTradeShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSteamShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 70.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 100853,
+    "name": "Oil Tanker (Trade - Special)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_oil_tanker.png",
+    "description": 11425,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010218,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010224,
+          "amount": 20
+        }
+      ],
+      "influenceCostType": "TradeShip",
+      "influenceCostPoints": 10
+    },
+    "attackable": {
+      "maximumHitPoints": 5000,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.667,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": null,
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 0
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 0
+        },
+        {
+          "attribute": "PerkTradeShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSteamShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 0.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 101363,
+    "name": "Enhanced Schooner (Trade)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_tradeship_schooner.png",
+    "description": 1083,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 10
+        }
+      ],
+      "influenceCostType": "TradeShip",
+      "influenceCostPoints": 5
+    },
+    "attackable": {
+      "maximumHitPoints": 2000,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 10.0,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 0,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": null,
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 5
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 25
+        },
+        {
+          "attribute": "PerkTradeShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 0.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 101366,
+    "name": "Enhanced Clipper (Trade)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_tradeship_clipper.png",
+    "description": 1084,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 40
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 30
+        }
+      ],
+      "influenceCostType": "TradeShip",
+      "influenceCostPoints": 8
+    },
+    "attackable": {
+      "maximumHitPoints": 4000,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 10.0,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 0,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": null,
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 0
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 25
+        },
+        {
+          "attribute": "PerkTradeShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 0.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 101370,
+    "name": "Enhanced Collier (Trade)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_tradeship_collier.png",
+    "description": 1089,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010218,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010224,
+          "amount": 20
+        }
+      ],
+      "influenceCostType": "TradeShip",
+      "influenceCostPoints": 12
+    },
+    "attackable": {
+      "maximumHitPoints": 5000,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 10.0,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 0,
+      "armorType": "HeavyArmor",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": null,
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 0
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 25
+        },
+        {
+          "attribute": "PerkTradeShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSteamShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 0.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 101372,
+    "name": "Enhanced Oil Tanker (Trade - Special)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_tradeship_collier.png",
+    "description": 11425,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010218,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010224,
+          "amount": 20
+        }
+      ],
+      "influenceCostType": "TradeShip",
+      "influenceCostPoints": 20
+    },
+    "attackable": {
+      "maximumHitPoints": 5000,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 10.0,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 0,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": null,
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 0
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 5
+        },
+        {
+          "attribute": "PerkTradeShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSteamShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 0.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 101920,
+    "name": "Schooner (Trade)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_tradeship_schooner.png",
+    "description": 1083,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 10
+        }
+      ],
+      "influenceCostType": "TradeShip",
+      "influenceCostPoints": 5
+    },
+    "attackable": {
+      "maximumHitPoints": 2000,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 10.0,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 0,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": null,
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 0
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkTradeShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 10.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 101923,
+    "name": "Clipper (Trade)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_tradeship_clipper.png",
+    "description": 1084,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 40
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 30
+        }
+      ],
+      "influenceCostType": "TradeShip",
+      "influenceCostPoints": 8
+    },
+    "attackable": {
+      "maximumHitPoints": 4000,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 10.0,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 0,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": null,
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 0
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkTradeShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 50.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 101931,
+    "name": "Collier (Trade)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_tradeship_collier.png",
+    "description": 1089,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010218,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010224,
+          "amount": 20
+        }
+      ],
+      "influenceCostType": "TradeShip",
+      "influenceCostPoints": 12
+    },
+    "attackable": {
+      "maximumHitPoints": 5000,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 10.0,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 0,
+      "armorType": "HeavyArmor",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": null,
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 0
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkTradeShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 70.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 101932,
+    "name": "Oil Tanker (Trade - Special)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_tradeship_collier.png",
+    "description": 11425,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010218,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010224,
+          "amount": 20
+        }
+      ],
+      "influenceCostType": "TradeShip",
+      "influenceCostPoints": 20
+    },
+    "attackable": {
+      "maximumHitPoints": 5000,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 10.0,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 0,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": null,
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 0
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 0
+        },
+        {
+          "attribute": "PerkTradeShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 0.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102455,
+    "name": "Anno Union Ship - For Sale",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_anno_union.png",
+    "description": 1089,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010218,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010224,
+          "amount": 20
+        }
+      ],
+      "influenceCostType": "TradeShip",
+      "influenceCostPoints": 12
+    },
+    "attackable": {
+      "maximumHitPoints": 5000,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 5.0,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": null,
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 0
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkTradeShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSteamShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 70.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 100660,
+    "name": "Rented Ship - Schooner (Trade)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_schooner.png",
+    "description": 1083,
+    "cost": {
+      "costs": [],
+      "influenceCostType": "CharterRoutes",
+      "influenceCostPoints": 1
+    },
+    "attackable": {
+      "maximumHitPoints": 1000,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 0.833,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": null,
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 0
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkTradeShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 10.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 101198,
+    "name": "Fisher (Trade - Campaign Prologue Only)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_lateen_sails.png",
+    "description": 0,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 10
+        }
+      ],
+      "influenceCostType": "",
+      "influenceCostPoints": 0
+    },
+    "attackable": {
+      "maximumHitPoints": 2000,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 10.0,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": null,
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 0
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkTradeShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 0.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 101387,
+    "name": "CQO_Schooner01 (Edvard)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_ship.png",
+    "description": 1083,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 10
+        }
+      ],
+      "influenceCostType": "",
+      "influenceCostPoints": 0
+    },
+    "attackable": {
+      "maximumHitPoints": 200,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 300.0,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": null,
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 5
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkTradeShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 0.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102237,
+    "name": "CQO_Schooner02 (Edvard)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_ship.png",
+    "description": 1083,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 10
+        }
+      ],
+      "influenceCostType": "",
+      "influenceCostPoints": 0
+    },
+    "attackable": {
+      "maximumHitPoints": 200,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 300.0,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": null,
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 5
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkTradeShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 0.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102238,
+    "name": "CQO_Schooner03 (Edvard)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_ship.png",
+    "description": 1083,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 10
+        }
+      ],
+      "influenceCostType": "",
+      "influenceCostPoints": 0
+    },
+    "attackable": {
+      "maximumHitPoints": 200,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 300.0,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": null,
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 5
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkTradeShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 0.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 101153,
+    "name": "CQO_Clipper (Edvard)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_tradeship_clipper.png",
+    "description": 1084,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 40
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 30
+        }
+      ],
+      "influenceCostType": "",
+      "influenceCostPoints": 0
+    },
+    "attackable": {
+      "maximumHitPoints": 4000,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 300.0,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": null,
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 5
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 10
+        },
+        {
+          "attribute": "PerkTradeShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 0.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 101199,
+    "name": "CQO_Tradeship (Archibald)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_ship.png",
+    "description": 1083,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 10
+        }
+      ],
+      "influenceCostType": "",
+      "influenceCostPoints": 0
+    },
+    "attackable": {
+      "maximumHitPoints": 3500,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 300.0,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": null,
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 5
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkTradeShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 0.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 101151,
+    "name": "CQO_Tradeship (Jailor)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_ship.png",
+    "description": 1083,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 10
+        }
+      ],
+      "influenceCostType": "",
+      "influenceCostPoints": 0
+    },
+    "attackable": {
+      "maximumHitPoints": 200,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 300.0,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": null,
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 5
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkTradeShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 0.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 100679,
+    "name": "CQO_Schooner (Smuggler Ship)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_ship.png",
+    "description": 1083,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 10
+        }
+      ],
+      "influenceCostType": "",
+      "influenceCostPoints": 0
+    },
+    "attackable": {
+      "maximumHitPoints": 200,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 300.0,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": null,
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 5
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkTradeShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 0.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 100564,
+    "name": "QO Schooner (Trade)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_schooner.png",
+    "description": 1083,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 10
+        }
+      ],
+      "influenceCostType": "TradeShip",
+      "influenceCostPoints": 2
+    },
+    "attackable": {
+      "maximumHitPoints": 1000,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 0.833,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": null,
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 0
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkTradeShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 10.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 100567,
+    "name": "QO Clipper (Trade)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_clipper.png",
+    "description": 1084,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 40
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 30
+        }
+      ],
+      "influenceCostType": "TradeShip",
+      "influenceCostPoints": 4
+    },
+    "attackable": {
+      "maximumHitPoints": 2500,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.389,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": null,
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 0
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkTradeShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 50.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 100624,
+    "name": "QO Collier (Trade)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_collier.png",
+    "description": 1089,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010218,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010224,
+          "amount": 20
+        }
+      ],
+      "influenceCostType": "TradeShip",
+      "influenceCostPoints": 6
+    },
+    "attackable": {
+      "maximumHitPoints": 3500,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.667,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": null,
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 0
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkTradeShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSteamShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 70.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102368,
+    "name": "QO Schooner (Trade) Escort",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_schooner.png",
+    "description": 1083,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 10
+        }
+      ],
+      "influenceCostType": "TradeShip",
+      "influenceCostPoints": 2
+    },
+    "attackable": {
+      "maximumHitPoints": 2000,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 0.833,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": null,
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 0
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkTradeShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 10.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102371,
+    "name": "QO Clipper (Trade) Escort",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_clipper.png",
+    "description": 1084,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 40
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 30
+        }
+      ],
+      "influenceCostType": "TradeShip",
+      "influenceCostPoints": 4
+    },
+    "attackable": {
+      "maximumHitPoints": 3500,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.389,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": null,
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 0
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkTradeShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 50.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102374,
+    "name": "QO Collier (Trade) Escort",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_collier.png",
+    "description": 1089,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010218,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010224,
+          "amount": 20
+        }
+      ],
+      "influenceCostType": "TradeShip",
+      "influenceCostPoints": 6
+    },
+    "attackable": {
+      "maximumHitPoints": 4500,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.667,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": null,
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 0
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkTradeShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSteamShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 70.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102417,
+    "name": "QO Collier (Trade) Escort Qing",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_collier.png",
+    "description": 1089,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010218,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010224,
+          "amount": 20
+        }
+      ],
+      "influenceCostType": "TradeShip",
+      "influenceCostPoints": 6
+    },
+    "attackable": {
+      "maximumHitPoints": 3500,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.667,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": null,
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 0
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkTradeShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSteamShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 70.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102611,
+    "name": "QO Slow Schooner (Trade)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_schooner.png",
+    "description": 1083,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 10
+        }
+      ],
+      "influenceCostType": "TradeShip",
+      "influenceCostPoints": 2
+    },
+    "attackable": {
+      "maximumHitPoints": 1000,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 0.833,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": null,
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 0
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkTradeShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 10.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102614,
+    "name": "QO Slow Clipper (Trade)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_clipper.png",
+    "description": 1084,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 40
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 30
+        }
+      ],
+      "influenceCostType": "TradeShip",
+      "influenceCostPoints": 4
+    },
+    "attackable": {
+      "maximumHitPoints": 2500,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.389,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": null,
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 0
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkTradeShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 50.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102617,
+    "name": "QO Slow Collier (Trade)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_collier.png",
+    "description": 1089,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010218,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010224,
+          "amount": 20
+        }
+      ],
+      "influenceCostType": "TradeShip",
+      "influenceCostPoints": 6
+    },
+    "attackable": {
+      "maximumHitPoints": 3500,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.667,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": null,
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 0
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkTradeShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSteamShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 70.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102577,
+    "name": "Clipper (Bente Jorgensen)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_clipper.png",
+    "description": 1084,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 40
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 30
+        }
+      ],
+      "influenceCostType": "TradeShip",
+      "influenceCostPoints": 4
+    },
+    "attackable": {
+      "maximumHitPoints": 2500,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.389,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": true,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": true
+    },
+    "attacker": null,
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 0
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkTradeShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 50.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102578,
+    "name": "Clipper (Princess Qing)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_clipper.png",
+    "description": 1084,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 40
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 30
+        }
+      ],
+      "influenceCostType": "TradeShip",
+      "influenceCostPoints": 4
+    },
+    "attackable": {
+      "maximumHitPoints": 2500,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.389,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": true,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": true
+    },
+    "attacker": null,
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 0
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkTradeShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 50.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102579,
+    "name": "Clipper (Willie Wibblesock)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_clipper.png",
+    "description": 1084,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 40
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 30
+        }
+      ],
+      "influenceCostType": "TradeShip",
+      "influenceCostPoints": 4
+    },
+    "attackable": {
+      "maximumHitPoints": 2500,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.389,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": true,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": true
+    },
+    "attacker": null,
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 0
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkTradeShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 50.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102580,
+    "name": "Clipper (George Smith)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_clipper.png",
+    "description": 1084,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 40
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 30
+        }
+      ],
+      "influenceCostType": "TradeShip",
+      "influenceCostPoints": 4
+    },
+    "attackable": {
+      "maximumHitPoints": 2500,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.389,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": true,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": true
+    },
+    "attacker": null,
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 0
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkTradeShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 50.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102581,
+    "name": "Clipper (Beryl OMara)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_clipper.png",
+    "description": 1084,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 40
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 30
+        }
+      ],
+      "influenceCostType": "TradeShip",
+      "influenceCostPoints": 4
+    },
+    "attackable": {
+      "maximumHitPoints": 2500,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.389,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": true,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": true
+    },
+    "attacker": null,
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 0
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkTradeShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 50.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102582,
+    "name": "Clipper (Artur Gasparov)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_clipper.png",
+    "description": 1084,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 40
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 30
+        }
+      ],
+      "influenceCostType": "TradeShip",
+      "influenceCostPoints": 4
+    },
+    "attackable": {
+      "maximumHitPoints": 2500,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.389,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": true,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": true
+    },
+    "attacker": null,
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 0
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkTradeShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 50.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102583,
+    "name": "Clipper (Carl von Malching)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_clipper.png",
+    "description": 1084,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 40
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 30
+        }
+      ],
+      "influenceCostType": "TradeShip",
+      "influenceCostPoints": 4
+    },
+    "attackable": {
+      "maximumHitPoints": 2500,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.389,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": true,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": true
+    },
+    "attacker": null,
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 0
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkTradeShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 50.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102584,
+    "name": "Clipper (Alonso Gravez)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_clipper.png",
+    "description": 1084,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 40
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 30
+        }
+      ],
+      "influenceCostType": "TradeShip",
+      "influenceCostPoints": 4
+    },
+    "attackable": {
+      "maximumHitPoints": 2500,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.389,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": true,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": true
+    },
+    "attacker": null,
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 0
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkTradeShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 50.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102585,
+    "name": "Clipper (Vicente Silva)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_clipper.png",
+    "description": 1084,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 40
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 30
+        }
+      ],
+      "influenceCostType": "TradeShip",
+      "influenceCostPoints": 4
+    },
+    "attackable": {
+      "maximumHitPoints": 2500,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.389,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": true,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": true
+    },
+    "attacker": null,
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 0
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkTradeShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 50.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102586,
+    "name": "Clipper (Margaret Hunt)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_clipper.png",
+    "description": 1084,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 40
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 30
+        }
+      ],
+      "influenceCostType": "TradeShip",
+      "influenceCostPoints": 4
+    },
+    "attackable": {
+      "maximumHitPoints": 2500,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.389,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": true,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": true
+    },
+    "attacker": null,
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 0
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkTradeShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 50.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102587,
+    "name": "Clipper (Queen)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_clipper.png",
+    "description": 1084,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 40
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 30
+        }
+      ],
+      "influenceCostType": "TradeShip",
+      "influenceCostPoints": 4
+    },
+    "attackable": {
+      "maximumHitPoints": 2500,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.389,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": true,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": true
+    },
+    "attacker": null,
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 0
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkTradeShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 50.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102588,
+    "name": "Clipper (Archibald Blake)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_clipper.png",
+    "description": 1084,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 40
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 30
+        }
+      ],
+      "influenceCostType": "TradeShip",
+      "influenceCostPoints": 4
+    },
+    "attackable": {
+      "maximumHitPoints": 2500,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.389,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": true,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": true
+    },
+    "attacker": null,
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 0
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkTradeShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 50.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102589,
+    "name": "Clipper (Anne Harlow)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_clipper.png",
+    "description": 1084,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 40
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 30
+        }
+      ],
+      "influenceCostType": "TradeShip",
+      "influenceCostPoints": 4
+    },
+    "attackable": {
+      "maximumHitPoints": 2500,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.389,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": true,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": true
+    },
+    "attacker": null,
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 0
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkTradeShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 50.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102590,
+    "name": "Clipper (Jean La Fortune)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_clipper.png",
+    "description": 1084,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 40
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 30
+        }
+      ],
+      "influenceCostType": "TradeShip",
+      "influenceCostPoints": 4
+    },
+    "attackable": {
+      "maximumHitPoints": 2500,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.389,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": true,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": true
+    },
+    "attacker": null,
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 0
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkTradeShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 50.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102591,
+    "name": "Clipper (Isabel Sarmento)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_clipper.png",
+    "description": 1084,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 40
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 30
+        }
+      ],
+      "influenceCostType": "TradeShip",
+      "influenceCostPoints": 4
+    },
+    "attackable": {
+      "maximumHitPoints": 2500,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.389,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": true,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": true
+    },
+    "attacker": null,
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 0
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkTradeShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 50.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102592,
+    "name": "Clipper (Old Nate)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_clipper.png",
+    "description": 1084,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 40
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 30
+        }
+      ],
+      "influenceCostType": "TradeShip",
+      "influenceCostPoints": 4
+    },
+    "attackable": {
+      "maximumHitPoints": 2500,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.389,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": true,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": true
+    },
+    "attacker": null,
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 0
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkTradeShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 50.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102593,
+    "name": "Clipper (Eli Bleakworth)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_clipper.png",
+    "description": 1084,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 40
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 30
+        }
+      ],
+      "influenceCostType": "TradeShip",
+      "influenceCostPoints": 4
+    },
+    "attackable": {
+      "maximumHitPoints": 2500,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.389,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": true,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": true
+    },
+    "attacker": null,
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 0
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkTradeShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 50.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102594,
+    "name": "Clipper (Madame Kahina)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_clipper.png",
+    "description": 1084,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 40
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 30
+        }
+      ],
+      "influenceCostType": "TradeShip",
+      "influenceCostPoints": 4
+    },
+    "attackable": {
+      "maximumHitPoints": 2500,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.389,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": true,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": true
+    },
+    "attacker": null,
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 0
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkTradeShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 50.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102298,
+    "name": "QO Clipper (Trade) QingQuest",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_clipper.png",
+    "description": 1084,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 40
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 30
+        }
+      ],
+      "influenceCostType": "TradeShip",
+      "influenceCostPoints": 4
+    },
+    "attackable": {
+      "maximumHitPoints": 2500,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.389,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": null,
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 0
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkTradeShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 50.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102304,
+    "name": "QO Collier (Trade) QingQuest",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_collier.png",
+    "description": 1089,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010218,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010224,
+          "amount": 20
+        }
+      ],
+      "influenceCostType": "TradeShip",
+      "influenceCostPoints": 6
+    },
+    "attackable": {
+      "maximumHitPoints": 3500,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.667,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": null,
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 0
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkTradeShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSteamShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 70.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102388,
+    "name": "QO Schooner (Trade) - Destroy superslow",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_schooner.png",
+    "description": 1083,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 10
+        }
+      ],
+      "influenceCostType": "TradeShip",
+      "influenceCostPoints": 2
+    },
+    "attackable": {
+      "maximumHitPoints": 2000,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 0.833,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": null,
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 0
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkTradeShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 10.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102389,
+    "name": "QO Schooner (Trade) - OneHit Destruction superslow",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_schooner.png",
+    "description": 1083,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 10
+        }
+      ],
+      "influenceCostType": "TradeShip",
+      "influenceCostPoints": 2
+    },
+    "attackable": {
+      "maximumHitPoints": 1,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 0.833,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": null,
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 0
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkTradeShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 10.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102393,
+    "name": "QO Schooner (Trade) Anne Harlow Main arc",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_schooner.png",
+    "description": 1083,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 10
+        }
+      ],
+      "influenceCostType": "TradeShip",
+      "influenceCostPoints": 2
+    },
+    "attackable": {
+      "maximumHitPoints": 1000,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 0.833,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": null,
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 0
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkTradeShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 10.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102501,
+    "name": "QO Fashion Designer (Schooner)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_schooner.png",
+    "description": 1083,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 10
+        }
+      ],
+      "influenceCostType": "TradeShip",
+      "influenceCostPoints": 2
+    },
+    "attackable": {
+      "maximumHitPoints": 1000,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 0.833,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": null,
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 0
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkTradeShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 10.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102514,
+    "name": "QO Clipper Willie competitor",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_clipper.png",
+    "description": 1084,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 40
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 30
+        }
+      ],
+      "influenceCostType": "TradeShip",
+      "influenceCostPoints": 4
+    },
+    "attackable": {
+      "maximumHitPoints": 2500,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.389,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": null,
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 0
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkTradeShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 50.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102549,
+    "name": "QO Clipper (Trade) Von Malching money never sleeps",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_clipper.png",
+    "description": 1084,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 40
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 30
+        }
+      ],
+      "influenceCostType": "TradeShip",
+      "influenceCostPoints": 4
+    },
+    "attackable": {
+      "maximumHitPoints": 2500,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.389,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": null,
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 0
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkTradeShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 50.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102563,
+    "name": "QO Collier (Trade) Hunt Knowledge is power and Drink up",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_collier.png",
+    "description": 1089,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010218,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010224,
+          "amount": 20
+        }
+      ],
+      "influenceCostType": "TradeShip",
+      "influenceCostPoints": 6
+    },
+    "attackable": {
+      "maximumHitPoints": 3500,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.667,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": null,
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 0
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkTradeShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSteamShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 70.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102574,
+    "name": "QO Schooner (Trade) - Vicente Unpredictable Nemesis",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_schooner.png",
+    "description": 1083,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 10
+        }
+      ],
+      "influenceCostType": "TradeShip",
+      "influenceCostPoints": 2
+    },
+    "attackable": {
+      "maximumHitPoints": 1000,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 0.833,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": null,
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 0
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkTradeShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 10.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102630,
+    "name": "QO Collier (Trade) QingQuest EmbarassingVisit",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_collier.png",
+    "description": 1089,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010218,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010224,
+          "amount": 20
+        }
+      ],
+      "influenceCostType": "TradeShip",
+      "influenceCostPoints": 6
+    },
+    "attackable": {
+      "maximumHitPoints": 3500,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.667,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": null,
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 0
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkTradeShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSteamShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 70.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102669,
+    "name": "QO Clipper (Trade) - Alonso Main Arc 4",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_clipper.png",
+    "description": 1084,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 40
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 30
+        }
+      ],
+      "influenceCostType": "TradeShip",
+      "influenceCostPoints": 4
+    },
+    "attackable": {
+      "maximumHitPoints": 2500,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.389,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": null,
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 0
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkTradeShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 50.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102861,
+    "name": "QO Collier (Trade) - Old Lady Pain Vicentes Trading Ships",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_collier.png",
+    "description": 1089,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010218,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010224,
+          "amount": 20
+        }
+      ],
+      "influenceCostType": "TradeShip",
+      "influenceCostPoints": 6
+    },
+    "attackable": {
+      "maximumHitPoints": 3500,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.667,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": true
+    },
+    "attacker": null,
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 0
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkTradeShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSteamShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 70.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102886,
+    "name": "QO Schooner (Trade) - Vicente Informant",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_schooner.png",
+    "description": 1083,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 10
+        }
+      ],
+      "influenceCostType": "TradeShip",
+      "influenceCostPoints": 2
+    },
+    "attackable": {
+      "maximumHitPoints": 1000,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 0.833,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": null,
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 0
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkTradeShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 10.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 103079,
+    "name": "Clipper (Trade) Already Auctionned Art",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_clipper.png",
+    "description": 1084,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 40
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 30
+        }
+      ],
+      "influenceCostType": "TradeShip",
+      "influenceCostPoints": 4
+    },
+    "attackable": {
+      "maximumHitPoints": 3500,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.389,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": null,
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 0
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkTradeShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 50.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 103108,
+    "name": "TQO Clipper (Trade) with Starting Materials",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/ships/icon_ship_clipper.png",
+    "description": 1084,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 40
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 30
+        }
+      ],
+      "influenceCostType": "TradeShip",
+      "influenceCostPoints": 4
+    },
+    "attackable": {
+      "maximumHitPoints": 2500,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 1.389,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 60000,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": null,
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 0
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 20
+        },
+        {
+          "attribute": "PerkTradeShip",
+          "amount": 1
+        },
+        {
+          "attribute": "PerkSailingShip",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 50.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 102398,
+    "name": "Wreckage 03 - Trade Ship Behaviour",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_ship.png",
+    "description": 1082,
+    "cost": null,
+    "attackable": {
+      "maximumHitPoints": 10000,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 300.0,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 0,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": null,
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 1
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 0.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  },
+  {
+    "guid": 101206,
+    "name": "DynamiteFishShip",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_dynamite.png",
+    "description": 1083,
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010196,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010210,
+          "amount": 10
+        }
+      ],
+      "influenceCostType": "",
+      "influenceCostPoints": 0
+    },
+    "attackable": {
+      "maximumHitPoints": 0,
+      "hasRuinState": false,
+      "selfHealPerHealTick": 300.0,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 0,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "attacker": null,
+    "expeditionAttribute": {
+      "attributes": [
+        {
+          "attribute": "Might",
+          "amount": 1
+        },
+        {
+          "attribute": "Navigation",
+          "amount": 1
+        }
+      ],
+      "baseMorale": 0.0,
+      "fluff": [],
+      "itemDifficulties": [],
+      "itemRegions": []
+    }
+  }
+]
