@@ -15,5 +15,10 @@ namespace Anno1800.Jsonify {
 
       public Guildhouse(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { }
     }
+
+    [Adapter]
+    class HarborOffice : Building {
+      public HarborOffice(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { }
+    }
   }
 }

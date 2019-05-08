@@ -99,6 +99,9 @@ export interface Guildhouse extends Building {
   incidentInfluencer?: IncidentInfluencer;
 }
 
+export interface HarborOffice extends Building {
+}
+
 export interface HarborBuilding extends Building {
   maintenance?: MaintenanceData;
   culture?: CultureData;
@@ -294,6 +297,9 @@ export interface HarborWarehouseStrategic extends Warehouse {
 }
 
 export interface HarborDepot extends Warehouse {
+}
+
+export interface HarborLandingStage7 extends Warehouse {
 }
 
 export interface WorkforceConnector extends Building {
