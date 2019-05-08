@@ -49,6 +49,7 @@ namespace Anno1800.Jsonify {
         "Attacker/AccuracyByDistance/Item/AccuracyByDistancePair",
         "Projectile",
         "ProjectileIncident",
+        "Exploder",
         "Cost",
         "Cost/Costs/Item",
         "Maintenance",

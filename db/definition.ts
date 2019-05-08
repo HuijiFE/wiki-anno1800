@@ -216,6 +216,15 @@ export interface Product extends Asset {
   expeditionAttribute?: ExpeditionAttribute;
 }
 
+export interface Projectile extends Asset {
+  projectile?: ProjectileData;
+  projectileIncident?: ProjectileIncident;
+}
+
+export interface ExplodingProjectile extends Projectile {
+  exploder?: ExploderData;
+}
+
 export interface PublicServiceBuilding extends Building {
   publicService?: PublicServiceData;
 }
@@ -223,6 +232,10 @@ export interface PublicServiceBuilding extends Building {
 export interface Market extends PublicServiceBuilding {
   market?: MarketData;
   storedProducts: number[];
+}
+
+export interface Region extends Asset {
+  region: RegionData;
 }
 
 export interface RepairCrane extends Building {
@@ -729,6 +742,42 @@ export interface ExpeditionAttribute extends BaseAssetObject {
   itemRegions: string[];
 }
 
+export interface ProjectileEffectivitie extends BaseAssetObject {
+  guid: number;
+  factor: number;
+}
+
+export interface StatusEffect extends BaseAssetObject {
+  effect: number;
+  duration: number;
+}
+
+export interface ProjectileData extends BaseAssetObject {
+  type: string;
+  shotHeight: number;
+  speed: number;
+  ShotAngle: number;
+  targetWhiteList: string[];
+  effectivities: ProjectileEffectivitie[];
+  statusEffects: StatusEffect[];
+}
+
+export interface ProjectileIncident extends BaseAssetObject {
+  causedIncident: string;
+  causedIncidentBuff: number;
+  causedIncidentDuration: number;
+}
+
+export interface ExploderData extends BaseAssetObject {
+  innerDamageRadius: number;
+  outerDamageRadius: number;
+  minimumDamage: number;
+  innerDamage: number;
+  debrisForceY: number;
+  debrisCount: number;
+  FriendlyFireFactor: number;
+}
+
 export interface PublicServiceData extends BaseAssetObject {
   fullSatisfactionDistance: number;
   noSatisfactionDistance: number;
@@ -739,6 +788,12 @@ export interface PublicServiceData extends BaseAssetObject {
 export interface MarketData extends BaseAssetObject {
   fullSupplyDistance: number;
   noSupplyDistance: number;
+}
+
+export interface RegionData extends BaseAssetObject {
+  populationGroup: number;
+  cityNames: number[];
+  shipNames: number[];
 }
 
 export interface RepairCraneData extends BaseAssetObject {
