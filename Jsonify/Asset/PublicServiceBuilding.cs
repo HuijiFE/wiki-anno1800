@@ -7,6 +7,30 @@ using System.Xml.Linq;
 
 namespace Anno1800.Jsonify {
   partial class Asset {
+
+    class PublicServiceData : BaseAssetObject {
+      [Element("FullSatisfactionDistance")]
+      public int fullSatisfactionDistance;
+      [Element("NoSatisfactionDistance")]
+      public int noSatisfactionDistance;
+      public List<int> publicServiceOutputs;
+      [Element("FunctionDescription")]
+      public int functionDescription;
+
+      public PublicServiceData(XElement element) : base(element) {
+        this.publicServiceOutputs = element.ListOf("PublicServiceOutputs", item => item.Int("Product"));
+      }
+    }
+
+    [Adapter]
+    class PublicServiceBuilding : Building {
+      [Nullable]
+      [Element("PublicService")]
+      public PublicServiceData? publicService;
+
+      public PublicServiceBuilding(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { }
+    }
+
     class MarketData : BaseAssetObject {
       [Element("FullSupplyDistance")]
       public int fullSupplyDistance;
@@ -17,7 +41,7 @@ namespace Anno1800.Jsonify {
     }
 
     [Adapter]
-    class Market : Building {
+    class Market : PublicServiceBuilding {
       [Nullable]
       [Element("Market")]
       public MarketData? market;

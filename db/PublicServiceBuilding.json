@@ -1,48 +1,22 @@
 [
   {
-    "guid": 1010343,
-    "name": "residence_tier01",
+    "guid": 1010358,
+    "name": "service_01 (Pub)",
     "id": "",
-    "icon": "data/ui/2kimages/main/3dicons/icon_resident.png",
-    "description": 163059,
-    "upgradable": {
-      "next": 1010344,
-      "costs": [
-        {
-          "ingredient": 1010017,
-          "amount": 0
-        },
-        {
-          "ingredient": 1010196,
-          "amount": 4
-        },
-        {
-          "ingredient": 1010205,
-          "amount": 0
-        },
-        {
-          "ingredient": 1010218,
-          "amount": 0
-        },
-        {
-          "ingredient": 1010207,
-          "amount": 0
-        },
-        {
-          "ingredient": 1010202,
-          "amount": 0
-        }
-      ]
-    },
-    "residnece7": {
-      "population": 15000000,
-      "max": 10,
-      "influenceGenerations": []
+    "icon": "data/ui/2kimages/main/3dicons/icon_pub.png",
+    "description": 11144,
+    "publicService": {
+      "fullSatisfactionDistance": 30,
+      "noSatisfactionDistance": 60,
+      "publicServiceOutputs": [
+        1010349
+      ],
+      "functionDescription": 100364
     },
     "attackable": {
-      "maximumHitPoints": 1500,
+      "maximumHitPoints": 3250,
       "hasRuinState": true,
-      "selfHealPerHealTick": 0.0,
+      "selfHealPerHealTick": 4.0,
       "pausedTimeIfAttacked": false,
       "canBeAttackedByPlayer": false,
       "moralePower": 0,
@@ -54,239 +28,17 @@
       "disableGettingAutoAttacked": false
     },
     "building": {
-      "type": "Residence",
+      "type": "Factory",
       "terrian": "",
       "region": "Moderate",
-      "category": 100004,
+      "category": 100003,
       "pickingAsset": 0
     },
     "cost": {
       "costs": [
         {
           "ingredient": 1010017,
-          "amount": 0
-        },
-        {
-          "ingredient": 1010196,
-          "amount": 2
-        },
-        {
-          "ingredient": 1010205,
-          "amount": 0
-        },
-        {
-          "ingredient": 1010218,
-          "amount": 0
-        },
-        {
-          "ingredient": 1010207,
-          "amount": 0
-        },
-        {
-          "ingredient": 1010202,
-          "amount": 0
-        }
-      ],
-      "influenceCostType": "",
-      "influenceCostPoints": 0
-    }
-  },
-  {
-    "guid": 1010344,
-    "name": "residence_tier02",
-    "id": "",
-    "icon": "data/ui/2kimages/main/3dicons/icon_resident.png",
-    "description": 163059,
-    "upgradable": {
-      "next": 1010345,
-      "costs": [
-        {
-          "ingredient": 1010017,
-          "amount": 0
-        },
-        {
-          "ingredient": 1010196,
-          "amount": 6
-        },
-        {
-          "ingredient": 1010205,
-          "amount": 2
-        },
-        {
-          "ingredient": 1010218,
-          "amount": 2
-        },
-        {
-          "ingredient": 1010207,
-          "amount": 0
-        },
-        {
-          "ingredient": 1010202,
-          "amount": 0
-        }
-      ]
-    },
-    "residnece7": {
-      "population": 15000001,
-      "max": 20,
-      "influenceGenerations": []
-    },
-    "attackable": {
-      "maximumHitPoints": 2000,
-      "hasRuinState": true,
-      "selfHealPerHealTick": 0.0,
-      "pausedTimeIfAttacked": false,
-      "canBeAttackedByPlayer": false,
-      "moralePower": 0,
-      "isInvulnerable": false,
-      "militaryDefensePoints": 0.0,
-      "accuracyWidth": 0.0,
-      "selfHealPausedTimeIfAttacked": 0,
-      "armorType": "",
-      "disableGettingAutoAttacked": false
-    },
-    "building": {
-      "type": "Residence",
-      "terrian": "",
-      "region": "Moderate",
-      "category": 100004,
-      "pickingAsset": 1010343
-    },
-    "cost": {
-      "costs": [
-        {
-          "ingredient": 1010017,
-          "amount": 0
-        },
-        {
-          "ingredient": 1010196,
-          "amount": 4
-        },
-        {
-          "ingredient": 1010205,
-          "amount": 0
-        },
-        {
-          "ingredient": 1010218,
-          "amount": 0
-        },
-        {
-          "ingredient": 1010207,
-          "amount": 0
-        },
-        {
-          "ingredient": 1010202,
-          "amount": 0
-        }
-      ],
-      "influenceCostType": "",
-      "influenceCostPoints": 0
-    }
-  },
-  {
-    "guid": 1010345,
-    "name": "residence_tier03",
-    "id": "",
-    "icon": "data/ui/2kimages/main/3dicons/icon_resident.png",
-    "description": 163059,
-    "upgradable": {
-      "next": 1010346,
-      "costs": [
-        {
-          "ingredient": 1010017,
-          "amount": 0
-        },
-        {
-          "ingredient": 1010196,
-          "amount": 8
-        },
-        {
-          "ingredient": 1010205,
-          "amount": 3
-        },
-        {
-          "ingredient": 1010218,
-          "amount": 2
-        },
-        {
-          "ingredient": 1010207,
-          "amount": 2
-        },
-        {
-          "ingredient": 1010202,
-          "amount": 0
-        }
-      ]
-    },
-    "residnece7": {
-      "population": 15000002,
-      "max": 30,
-      "influenceGenerations": []
-    },
-    "attackable": {
-      "maximumHitPoints": 2500,
-      "hasRuinState": true,
-      "selfHealPerHealTick": 0.0,
-      "pausedTimeIfAttacked": false,
-      "canBeAttackedByPlayer": false,
-      "moralePower": 0,
-      "isInvulnerable": false,
-      "militaryDefensePoints": 0.0,
-      "accuracyWidth": 0.0,
-      "selfHealPausedTimeIfAttacked": 0,
-      "armorType": "",
-      "disableGettingAutoAttacked": false
-    },
-    "building": {
-      "type": "Residence",
-      "terrian": "",
-      "region": "Moderate",
-      "category": 100004,
-      "pickingAsset": 1010343
-    },
-    "cost": {
-      "costs": [
-        {
-          "ingredient": 1010017,
-          "amount": 0
-        },
-        {
-          "ingredient": 1010196,
-          "amount": 8
-        },
-        {
-          "ingredient": 1010205,
-          "amount": 5
-        },
-        {
-          "ingredient": 1010218,
-          "amount": 4
-        },
-        {
-          "ingredient": 1010207,
-          "amount": 0
-        },
-        {
-          "ingredient": 1010202,
-          "amount": 0
-        }
-      ],
-      "influenceCostType": "",
-      "influenceCostPoints": 0
-    }
-  },
-  {
-    "guid": 1010346,
-    "name": "residence_tier04",
-    "id": "",
-    "icon": "data/ui/2kimages/main/3dicons/icon_resident.png",
-    "description": 163059,
-    "upgradable": {
-      "next": 1010347,
-      "costs": [
-        {
-          "ingredient": 1010017,
-          "amount": 0
+          "amount": 500
         },
         {
           "ingredient": 1010196,
@@ -294,31 +46,241 @@
         },
         {
           "ingredient": 1010205,
-          "amount": 4
+          "amount": 0
         },
         {
           "ingredient": 1010218,
-          "amount": 3
+          "amount": 0
         },
         {
           "ingredient": 1010207,
-          "amount": 3
+          "amount": 0
         },
         {
           "ingredient": 1010202,
-          "amount": 3
+          "amount": 0
         }
-      ]
+      ],
+      "influenceCostType": "",
+      "influenceCostPoints": 0
+    }
+  },
+  {
+    "guid": 1010360,
+    "name": "service_02 (School)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_school.png",
+    "description": 11144,
+    "publicService": {
+      "fullSatisfactionDistance": 35,
+      "noSatisfactionDistance": 70,
+      "publicServiceOutputs": [
+        1010351
+      ],
+      "functionDescription": 100364
     },
-    "residnece7": {
-      "population": 15000003,
-      "max": 40,
-      "influenceGenerations": []
+    "attackable": {
+      "maximumHitPoints": 4000,
+      "hasRuinState": true,
+      "selfHealPerHealTick": 4.0,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": false,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 0,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "building": {
+      "type": "Factory",
+      "terrian": "",
+      "region": "Moderate",
+      "category": 100003,
+      "pickingAsset": 0
+    },
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010017,
+          "amount": 2500
+        },
+        {
+          "ingredient": 1010196,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010205,
+          "amount": 25
+        },
+        {
+          "ingredient": 1010218,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010207,
+          "amount": 0
+        },
+        {
+          "ingredient": 1010202,
+          "amount": 0
+        }
+      ],
+      "influenceCostType": "",
+      "influenceCostPoints": 0
+    }
+  },
+  {
+    "guid": 1010365,
+    "name": "service_03 (Bank)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_bank.png",
+    "description": 11144,
+    "publicService": {
+      "fullSatisfactionDistance": 45,
+      "noSatisfactionDistance": 90,
+      "publicServiceOutputs": [
+        1010356
+      ],
+      "functionDescription": 100364
+    },
+    "attackable": {
+      "maximumHitPoints": 8000,
+      "hasRuinState": true,
+      "selfHealPerHealTick": 4.0,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": false,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 0,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "building": {
+      "type": "Factory",
+      "terrian": "",
+      "region": "Moderate",
+      "category": 100003,
+      "pickingAsset": 0
+    },
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010017,
+          "amount": 100000
+        },
+        {
+          "ingredient": 1010196,
+          "amount": 40
+        },
+        {
+          "ingredient": 1010205,
+          "amount": 75
+        },
+        {
+          "ingredient": 1010218,
+          "amount": 60
+        },
+        {
+          "ingredient": 1010207,
+          "amount": 60
+        },
+        {
+          "ingredient": 1010202,
+          "amount": 50
+        }
+      ],
+      "influenceCostType": "",
+      "influenceCostPoints": 0
+    }
+  },
+  {
+    "guid": 1010359,
+    "name": "service_04 (Church)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_church.png",
+    "description": 11144,
+    "publicService": {
+      "fullSatisfactionDistance": 40,
+      "noSatisfactionDistance": 80,
+      "publicServiceOutputs": [
+        1010350
+      ],
+      "functionDescription": 100364
+    },
+    "attackable": {
+      "maximumHitPoints": 4750,
+      "hasRuinState": true,
+      "selfHealPerHealTick": 4.0,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": false,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 0,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "building": {
+      "type": "Factory",
+      "terrian": "",
+      "region": "Moderate",
+      "category": 100003,
+      "pickingAsset": 0
+    },
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010017,
+          "amount": 2500
+        },
+        {
+          "ingredient": 1010196,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010205,
+          "amount": 25
+        },
+        {
+          "ingredient": 1010218,
+          "amount": 0
+        },
+        {
+          "ingredient": 1010207,
+          "amount": 0
+        },
+        {
+          "ingredient": 1010202,
+          "amount": 0
+        }
+      ],
+      "influenceCostType": "",
+      "influenceCostPoints": 0
+    }
+  },
+  {
+    "guid": 1010361,
+    "name": "service_05 (Cabaret)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_cabaret.png",
+    "description": 11144,
+    "publicService": {
+      "fullSatisfactionDistance": 40,
+      "noSatisfactionDistance": 80,
+      "publicServiceOutputs": [
+        1010352
+      ],
+      "functionDescription": 100364
     },
     "attackable": {
       "maximumHitPoints": 3000,
       "hasRuinState": true,
-      "selfHealPerHealTick": 0.0,
+      "selfHealPerHealTick": 4.0,
       "pausedTimeIfAttacked": false,
       "canBeAttackedByPlayer": false,
       "moralePower": 0,
@@ -330,210 +292,219 @@
       "disableGettingAutoAttacked": false
     },
     "building": {
-      "type": "Residence",
+      "type": "Factory",
       "terrian": "",
       "region": "Moderate",
-      "category": 100004,
-      "pickingAsset": 1010343
-    },
-    "cost": {
-      "costs": [
-        {
-          "ingredient": 1010017,
-          "amount": 0
-        },
-        {
-          "ingredient": 1010196,
-          "amount": 8
-        },
-        {
-          "ingredient": 1010205,
-          "amount": 10
-        },
-        {
-          "ingredient": 1010218,
-          "amount": 8
-        },
-        {
-          "ingredient": 1010207,
-          "amount": 8
-        },
-        {
-          "ingredient": 1010202,
-          "amount": 0
-        }
-      ],
-      "influenceCostType": "",
-      "influenceCostPoints": 0
-    }
-  },
-  {
-    "guid": 1010347,
-    "name": "residence_tier05",
-    "id": "",
-    "icon": "data/ui/2kimages/main/3dicons/icon_resident.png",
-    "description": 163059,
-    "upgradable": {
-      "next": 0,
-      "costs": [
-        {
-          "ingredient": 1010017,
-          "amount": 0
-        },
-        {
-          "ingredient": 1010196,
-          "amount": 0
-        },
-        {
-          "ingredient": 1010205,
-          "amount": 0
-        },
-        {
-          "ingredient": 1010218,
-          "amount": 0
-        },
-        {
-          "ingredient": 1010207,
-          "amount": 0
-        },
-        {
-          "ingredient": 1010202,
-          "amount": 0
-        }
-      ]
-    },
-    "residnece7": {
-      "population": 15000004,
-      "max": 50,
-      "influenceGenerations": [
-        {
-          "gain": 40,
-          "keep": 1
-        }
-      ]
-    },
-    "attackable": {
-      "maximumHitPoints": 3500,
-      "hasRuinState": true,
-      "selfHealPerHealTick": 0.0,
-      "pausedTimeIfAttacked": false,
-      "canBeAttackedByPlayer": false,
-      "moralePower": 0,
-      "isInvulnerable": false,
-      "militaryDefensePoints": 0.0,
-      "accuracyWidth": 0.0,
-      "selfHealPausedTimeIfAttacked": 0,
-      "armorType": "",
-      "disableGettingAutoAttacked": false
-    },
-    "building": {
-      "type": "Residence",
-      "terrian": "",
-      "region": "Moderate",
-      "category": 100004,
-      "pickingAsset": 1010343
-    },
-    "cost": {
-      "costs": [
-        {
-          "ingredient": 1010017,
-          "amount": 0
-        },
-        {
-          "ingredient": 1010196,
-          "amount": 10
-        },
-        {
-          "ingredient": 1010205,
-          "amount": 15
-        },
-        {
-          "ingredient": 1010218,
-          "amount": 12
-        },
-        {
-          "ingredient": 1010207,
-          "amount": 10
-        },
-        {
-          "ingredient": 1010202,
-          "amount": 10
-        }
-      ],
-      "influenceCostType": "",
-      "influenceCostPoints": 0
-    }
-  },
-  {
-    "guid": 101254,
-    "name": "residence_colony01_tier01",
-    "id": "",
-    "icon": "data/ui/2kimages/main/3dicons/icon_resident.png",
-    "description": 163059,
-    "upgradable": {
-      "next": 101255,
-      "costs": [
-        {
-          "ingredient": 1010017,
-          "amount": 0
-        },
-        {
-          "ingredient": 1010196,
-          "amount": 2
-        },
-        {
-          "ingredient": 1010205,
-          "amount": 0
-        },
-        {
-          "ingredient": 1010218,
-          "amount": 0
-        },
-        {
-          "ingredient": 1010207,
-          "amount": 0
-        },
-        {
-          "ingredient": 1010202,
-          "amount": 0
-        }
-      ]
-    },
-    "residnece7": {
-      "population": 15000005,
-      "max": 10,
-      "influenceGenerations": []
-    },
-    "attackable": {
-      "maximumHitPoints": 1500,
-      "hasRuinState": true,
-      "selfHealPerHealTick": 0.0,
-      "pausedTimeIfAttacked": false,
-      "canBeAttackedByPlayer": false,
-      "moralePower": 0,
-      "isInvulnerable": false,
-      "militaryDefensePoints": 0.0,
-      "accuracyWidth": 0.0,
-      "selfHealPausedTimeIfAttacked": 0,
-      "armorType": "",
-      "disableGettingAutoAttacked": false
-    },
-    "building": {
-      "type": "Residence",
-      "terrian": "",
-      "region": "Colony01",
-      "category": 100004,
+      "category": 100003,
       "pickingAsset": 0
     },
     "cost": {
       "costs": [
         {
           "ingredient": 1010017,
-          "amount": 0
+          "amount": 10000
         },
         {
           "ingredient": 1010196,
-          "amount": 1
+          "amount": 30
+        },
+        {
+          "ingredient": 1010205,
+          "amount": 50
+        },
+        {
+          "ingredient": 1010218,
+          "amount": 40
+        },
+        {
+          "ingredient": 1010207,
+          "amount": 40
+        },
+        {
+          "ingredient": 1010202,
+          "amount": 0
+        }
+      ],
+      "influenceCostType": "",
+      "influenceCostPoints": 0
+    }
+  },
+  {
+    "guid": 1010362,
+    "name": "service_07 (University)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_university.png",
+    "description": 11144,
+    "publicService": {
+      "fullSatisfactionDistance": 45,
+      "noSatisfactionDistance": 90,
+      "publicServiceOutputs": [
+        1010353
+      ],
+      "functionDescription": 100364
+    },
+    "attackable": {
+      "maximumHitPoints": 4750,
+      "hasRuinState": true,
+      "selfHealPerHealTick": 4.0,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": false,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 0,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "building": {
+      "type": "Factory",
+      "terrian": "",
+      "region": "Moderate",
+      "category": 100003,
+      "pickingAsset": 0
+    },
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010017,
+          "amount": 15000
+        },
+        {
+          "ingredient": 1010196,
+          "amount": 30
+        },
+        {
+          "ingredient": 1010205,
+          "amount": 50
+        },
+        {
+          "ingredient": 1010218,
+          "amount": 40
+        },
+        {
+          "ingredient": 1010207,
+          "amount": 40
+        },
+        {
+          "ingredient": 1010202,
+          "amount": 0
+        }
+      ],
+      "influenceCostType": "",
+      "influenceCostPoints": 0
+    }
+  },
+  {
+    "guid": 1010364,
+    "name": "service_09 (Club House)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_club_house.png",
+    "description": 11144,
+    "publicService": {
+      "fullSatisfactionDistance": 35,
+      "noSatisfactionDistance": 70,
+      "publicServiceOutputs": [
+        1010355
+      ],
+      "functionDescription": 100364
+    },
+    "attackable": {
+      "maximumHitPoints": 3500,
+      "hasRuinState": true,
+      "selfHealPerHealTick": 4.0,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": false,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 0,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "building": {
+      "type": "Factory",
+      "terrian": "",
+      "region": "Moderate",
+      "category": 100003,
+      "pickingAsset": 0
+    },
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010017,
+          "amount": 50000
+        },
+        {
+          "ingredient": 1010196,
+          "amount": 50
+        },
+        {
+          "ingredient": 1010205,
+          "amount": 100
+        },
+        {
+          "ingredient": 1010218,
+          "amount": 80
+        },
+        {
+          "ingredient": 1010207,
+          "amount": 75
+        },
+        {
+          "ingredient": 1010202,
+          "amount": 75
+        }
+      ],
+      "influenceCostType": "",
+      "influenceCostPoints": 0
+    }
+  },
+  {
+    "guid": 101258,
+    "name": "service_colony01_02 (Chapel)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_church.png",
+    "description": 11144,
+    "publicService": {
+      "fullSatisfactionDistance": 30,
+      "noSatisfactionDistance": 60,
+      "publicServiceOutputs": [
+        120050
+      ],
+      "functionDescription": 100364
+    },
+    "attackable": {
+      "maximumHitPoints": 1500,
+      "hasRuinState": true,
+      "selfHealPerHealTick": 4.0,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": false,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 0,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "building": {
+      "type": "Factory",
+      "terrian": "",
+      "region": "Colony01",
+      "category": 100003,
+      "pickingAsset": 0
+    },
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010017,
+          "amount": 500
+        },
+        {
+          "ingredient": 1010196,
+          "amount": 10
         },
         {
           "ingredient": 1010205,
@@ -557,22 +528,87 @@
     }
   },
   {
-    "guid": 101255,
-    "name": "residence_colony01_tier02",
+    "guid": 101259,
+    "name": "service_colony01_03 (Boxing Arena)",
     "id": "",
-    "icon": "data/ui/2kimages/main/3dicons/icon_resident.png",
-    "description": 163059,
-    "upgradable": {
-      "next": 0,
-      "costs": []
-    },
-    "residnece7": {
-      "population": 15000006,
-      "max": 20,
-      "influenceGenerations": []
+    "icon": "data/ui/2kimages/main/3dicons/icon_box_arena.png",
+    "description": 11144,
+    "publicService": {
+      "fullSatisfactionDistance": 30,
+      "noSatisfactionDistance": 60,
+      "publicServiceOutputs": [
+        1010348
+      ],
+      "functionDescription": 100364
     },
     "attackable": {
-      "maximumHitPoints": 2000,
+      "maximumHitPoints": 3250,
+      "hasRuinState": true,
+      "selfHealPerHealTick": 4.0,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": false,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 0,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "building": {
+      "type": "Factory",
+      "terrian": "",
+      "region": "Colony01",
+      "category": 100003,
+      "pickingAsset": 0
+    },
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010017,
+          "amount": 5400
+        },
+        {
+          "ingredient": 1010196,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010205,
+          "amount": 25
+        },
+        {
+          "ingredient": 1010218,
+          "amount": 0
+        },
+        {
+          "ingredient": 1010207,
+          "amount": 0
+        },
+        {
+          "ingredient": 1010202,
+          "amount": 0
+        }
+      ],
+      "influenceCostType": "",
+      "influenceCostPoints": 0
+    }
+  },
+  {
+    "guid": 100767,
+    "name": "CQO_Uncle_Edvards_Church",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_church.png",
+    "description": 11144,
+    "publicService": {
+      "fullSatisfactionDistance": 40,
+      "noSatisfactionDistance": 80,
+      "publicServiceOutputs": [
+        1010350
+      ],
+      "functionDescription": 100364
+    },
+    "attackable": {
+      "maximumHitPoints": 500,
       "hasRuinState": true,
       "selfHealPerHealTick": 0.0,
       "pausedTimeIfAttacked": false,
@@ -586,25 +622,25 @@
       "disableGettingAutoAttacked": false
     },
     "building": {
-      "type": "Residence",
+      "type": "Factory",
       "terrian": "",
-      "region": "Colony01",
-      "category": 100004,
-      "pickingAsset": 101254
+      "region": "",
+      "category": 100003,
+      "pickingAsset": 0
     },
     "cost": {
       "costs": [
         {
           "ingredient": 1010017,
-          "amount": 0
+          "amount": 1250
         },
         {
           "ingredient": 1010196,
-          "amount": 2
+          "amount": 20
         },
         {
           "ingredient": 1010205,
-          "amount": 0
+          "amount": 20
         },
         {
           "ingredient": 1010218,

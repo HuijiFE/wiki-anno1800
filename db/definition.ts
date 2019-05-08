@@ -42,11 +42,20 @@ export interface FreeAreaBuilding extends FactoryBuilding7 {
 export interface HeavyFreeAreaBuilding extends FreeAreaBuilding {
 }
 
-export interface FarmBuilding extends FactoryBuilding7 {
+export interface ModuleOwnerBuilding extends FactoryBuilding7 {
   moduleOwner?: ModuleOwnerData;
 }
 
+export interface FarmBuilding extends ModuleOwnerBuilding {
+}
+
 export interface Farmfield extends Building {
+}
+
+export interface CultureBuilding extends ModuleOwnerBuilding {
+}
+
+export interface CultureModule extends Building {
 }
 
 export interface Slot extends Building {
@@ -61,6 +70,7 @@ export interface OilPumpBuilding extends Slot {
 }
 
 export interface PowerplantBuilding extends FactoryBuilding7 {
+  publicService?: PublicServiceData;
 }
 
 export interface Monument extends FactoryBuilding7 {
@@ -158,11 +168,6 @@ export interface ItemBalancing extends Building {
   itemConfig?: ItemConfigData;
 }
 
-export interface Market extends Building {
-  market?: MarketData;
-  storedProducts: number[];
-}
-
 export interface OrnamentalBuilding extends Building {
   ornament?: OrnamentData;
 }
@@ -181,6 +186,15 @@ export interface Product extends Asset {
 
 export interface ProductionChain extends Asset {
   chain?: ProductionChainNode;
+}
+
+export interface PublicServiceBuilding extends Building {
+  publicService?: PublicServiceData;
+}
+
+export interface Market extends PublicServiceBuilding {
+  market?: MarketData;
+  storedProducts: number[];
 }
 
 export interface QuestLighthouse extends Building {
@@ -280,6 +294,7 @@ export interface BuildingData extends BaseAssetObject {
   terrian: string;
   region: string;
   category: number;
+  pickingAsset: number;
 }
 
 export interface UpgradableData extends BaseAssetObject {
@@ -293,17 +308,6 @@ export interface CultureData extends BaseAssetObject {
   hasPollution: boolean;
   setPages: number[];
   openSetPages: number;
-}
-
-export interface ModuleOwnerData extends BaseAssetObject {
-  options: number[];
-  limit: number;
-  radius: number;
-}
-
-export interface ElectricData extends BaseAssetObject {
-  boost: boolean;
-  mandatory: boolean;
 }
 
 export interface ColorConfigData extends BaseAssetObject {
@@ -355,6 +359,11 @@ export interface ExpeditionFeatureData extends BaseAssetObject {
   attributeOptionPreparationLevels: AttributeOptionPreparationLevel[];
 }
 
+export interface ElectricData extends BaseAssetObject {
+  boost: boolean;
+  mandatory: boolean;
+}
+
 export interface FactoryInputOutputPair extends BaseAssetObject {
   product: number;
   amount: number;
@@ -362,9 +371,12 @@ export interface FactoryInputOutputPair extends BaseAssetObject {
 }
 
 export interface FactoryData extends BaseAssetObject {
+  cycleTime: number;
   inputs: FactoryInputOutputPair[];
   outputs: FactoryInputOutputPair[];
-  cycleTime: number;
+  warehouseTransporterAsset: number;
+  productivityTimeMultiplier: number;
+  productivityPoints: number;
   neededFertility: number;
 }
 
@@ -377,6 +389,12 @@ export interface FreeAreaProductivity extends BaseAssetObject {
   wayTime: number;
   freeAreaType: string;
   cutTree: boolean;
+}
+
+export interface ModuleOwnerData extends BaseAssetObject {
+  options: number[];
+  limit: number;
+  radius: number;
 }
 
 export interface SlotData extends BaseAssetObject {
@@ -562,11 +580,6 @@ export interface ItemConfigData extends BaseAssetObject {
   buffFluffIndexIncreaseTimer: number;
 }
 
-export interface MarketData extends BaseAssetObject {
-  fullSupplyDistance: number;
-  noSupplyDistance: number;
-}
-
 export interface AttackableData extends BaseAssetObject {
   maximumHitPoints: number;
   hasRuinState: boolean;
@@ -668,6 +681,18 @@ export interface ExpeditionAttribute extends BaseAssetObject {
 export interface ProductionChainNode extends BaseAssetObject {
   building: number;
   nodes?: ProductionChainNode[];
+}
+
+export interface PublicServiceData extends BaseAssetObject {
+  fullSatisfactionDistance: number;
+  noSatisfactionDistance: number;
+  publicServiceOutputs: number[];
+  functionDescription: number;
+}
+
+export interface MarketData extends BaseAssetObject {
+  fullSupplyDistance: number;
+  noSupplyDistance: number;
 }
 
 export interface RepairCraneData extends BaseAssetObject {

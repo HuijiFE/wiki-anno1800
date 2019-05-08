@@ -8,6 +8,16 @@ using System.Xml.Linq;
 namespace Anno1800.Jsonify {
   partial class Asset {
 
+    class ElectricData : BaseAssetObject {
+      public bool boost;
+      [Element("MandatoryElectricity")]
+      public bool mandatory;
+
+      public ElectricData(XElement element) : base(element) {
+        this.boost = element.Boolean("BoostedByElectricity") || element.Boolean("ProductivityBoost");
+      }
+    }
+
     class FactoryInputOutputPair : BaseAssetObject {
       [Element("Product")]
       public int product;
@@ -20,10 +30,16 @@ namespace Anno1800.Jsonify {
     }
 
     class FactoryData : BaseAssetObject {
-      public List<FactoryInputOutputPair> inputs;
-      public List<FactoryInputOutputPair> outputs;
       [Element("CycleTime", 30)]
       public int cycleTime;
+      public List<FactoryInputOutputPair> inputs;
+      public List<FactoryInputOutputPair> outputs;
+      [Element("WarehouseTransporterAsset")]
+      public int warehouseTransporterAsset;
+      [Element("ProductivityTimeMultiplier")]
+      public int productivityTimeMultiplier;
+      [Element("ProductivityPoints")]
+      public int productivityPoints;
 
       public int neededFertility;
 
@@ -64,6 +80,7 @@ namespace Anno1800.Jsonify {
       }
     }
 
+    // FreeAreaProductivity ================
 
     class FreeAreaProductivity : BaseAssetObject {
       [Element("InfluenceRadius")]
@@ -105,13 +122,35 @@ namespace Anno1800.Jsonify {
       public HeavyFreeAreaBuilding(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { }
     }
 
+    // ModuleOwner ================
 
-    [Adapter]
-    class FarmBuilding : FactoryBuilding7 {
+    class ModuleOwnerData : BaseAssetObject {
+      public List<int> options;
+      [Element("ModuleLimit")]
+      public int limit;
+      [Element("ModuleBuildRadius")]
+      public int radius;
+
+      public ModuleOwnerData(XElement element) : base(element) {
+        this.options = element
+          .Element("ConstructionOptions")
+          ?.Elements()
+          .Select(item => item.Int("ModuleGUID"))
+          .ToList()
+          ?? new List<int>();
+      }
+    }
+
+    class ModuleOwnerBuilding : FactoryBuilding7 {
       [Nullable]
       [Element("ModuleOwner")]
       public ModuleOwnerData? moduleOwner;
 
+      public ModuleOwnerBuilding(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { }
+    }
+
+    [Adapter]
+    class FarmBuilding : ModuleOwnerBuilding {
       public FarmBuilding(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { }
     }
 
@@ -119,6 +158,18 @@ namespace Anno1800.Jsonify {
     class Farmfield : Building {
       public Farmfield(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { }
     }
+
+    [Adapter]
+    class CultureBuilding : ModuleOwnerBuilding {
+      public CultureBuilding(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { }
+    }
+
+    [Adapter]
+    class CultureModule : Building {
+      public CultureModule(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { }
+    }
+
+    // Slot ================
 
     class SlotData : BaseAssetObject {
       [Element("SlotType")]
@@ -158,8 +209,14 @@ namespace Anno1800.Jsonify {
 
     [Adapter]
     class PowerplantBuilding : FactoryBuilding7 {
+      [Nullable]
+      [Element("PublicService")]
+      public PublicServiceData? publicService;
+
       public PowerplantBuilding(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { }
     }
+
+    // Monument ================
 
     class MonumentData : BaseAssetObject {
       [Element("UpgradeTarget")]

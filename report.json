@@ -441,6 +441,37 @@
       "Headquarter",
       "CampaignUncleMansion"
     ],
+    "Upgradable": [
+      "ResidenceBuilding7",
+      "Warehouse",
+      "HarborWarehouse7",
+      "HarborWarehouseStrategic"
+    ],
+    "Culture": [
+      "ResidenceBuilding7",
+      "FarmBuilding",
+      "FreeAreaBuilding",
+      "FactoryBuilding7",
+      "SlotFactoryBuilding7",
+      "HeavyFactoryBuilding",
+      "HeavyFreeAreaBuilding",
+      "PublicServiceBuilding",
+      "CityInstitutionBuilding",
+      "Market",
+      "CultureBuilding",
+      "Monument",
+      "PowerplantBuilding",
+      "Guildhouse",
+      "HarborOffice",
+      "HarborWarehouse7",
+      "HarborBuildingAttacker",
+      "VisitorPier",
+      "CampaignQuestObject",
+      "QuestObjectAttractiveness"
+    ],
+    "Fertility": [
+      "Fertility"
+    ],
     "Slot": [
       "SlotFactoryBuilding7",
       "Slot",
@@ -448,12 +479,81 @@
       "OilPumpBuilding",
       "WorkAreaSlot"
     ],
+    "Factory7": [
+      "FarmBuilding",
+      "FreeAreaBuilding",
+      "FactoryBuilding7",
+      "SlotFactoryBuilding7",
+      "HeavyFactoryBuilding",
+      "HeavyFreeAreaBuilding",
+      "CultureBuilding"
+    ],
+    "FactoryBase": [
+      "FarmBuilding",
+      "FreeAreaBuilding",
+      "FactoryBuilding7",
+      "SlotFactoryBuilding7",
+      "HeavyFactoryBuilding",
+      "HeavyFreeAreaBuilding",
+      "CultureBuilding",
+      "Monument",
+      "PowerplantBuilding"
+    ],
+    "FreeAreaProductivity": [
+      "FreeAreaBuilding",
+      "HeavyFreeAreaBuilding"
+    ],
     "ModuleOwner": [
       "FarmBuilding",
       "CultureBuilding"
     ],
-    "Fertility": [
-      "Fertility"
+    "Electric": [
+      "FactoryBuilding7",
+      "SlotFactoryBuilding7",
+      "HeavyFactoryBuilding",
+      "HeavyFreeAreaBuilding",
+      "PublicServiceBuilding",
+      "CultureBuilding",
+      "Monument",
+      "Shipyard"
+    ],
+    "Monument": [
+      "Monument"
+    ],
+    "PublicService": [
+      "PublicServiceBuilding",
+      "Market",
+      "PowerplantBuilding"
+    ],
+    "Market": [
+      "Market"
+    ],
+    "StorageBase": [
+      "Market",
+      "Warehouse",
+      "HarborWarehouse7",
+      "HarborDepot",
+      "HarborLandingStage7",
+      "HarborWarehouseStrategic"
+    ],
+    "Warehouse": [
+      "Warehouse",
+      "HarborWarehouse7",
+      "HarborDepot",
+      "HarborLandingStage7",
+      "HarborWarehouseStrategic"
+    ],
+    "Ornament": [
+      "OrnamentalBuilding",
+      "BuildPermitBuilding",
+      "BridgeBuilding",
+      "CampaignUncleMansion"
+    ],
+    "RepairCrane": [
+      "RepairCrane"
+    ],
+    "Shipyard": [
+      "Shipyard"
     ],
     "Item": [
       "QuestItem",
@@ -615,14 +715,6 @@
       "Page"
     ],
     "Culture/SetPages/Item/Page/Item": [],
-    "ModuleOwner": [
-      "ModuleLimit",
-      "ConstructionOptions",
-      "ModuleBuildRadius",
-      "HardFarmsConfig",
-      "ImplicitProductivityModules",
-      "ModulesRequiredForFullProductivity"
-    ],
     "Electric": [
       "BoostedByElectricity",
       "MandatoryElectricity",
@@ -634,6 +726,39 @@
     "Constructable": [
       "DestructionCategory",
       "ConstructionMode"
+    ],
+    "Bridge": [
+      "MinLength",
+      "MaxLength"
+    ],
+    "Street": [
+      "CfgFileName",
+      "InternalID",
+      "DecalMapping",
+      "DecalVariation",
+      "GroupBits",
+      "OnlyCheckGroupBits",
+      "StyleRows",
+      "StyleCols",
+      "OverbuildRule",
+      "IsLogicRoad",
+      "IsHarbour",
+      "IsPlazza",
+      "HasFeedbackPathPlanningPenalty",
+      "IsDeletable",
+      "IsGroundDecal",
+      "InvalidColor",
+      "CrossingAsset",
+      "BridgeAsset",
+      "HidePropsAfterBuilding",
+      "HidePropsWhileBuilding",
+      "Quality",
+      "CanBuildOnShore",
+      "SpeedFactor",
+      "AutoCreateStyle",
+      "IsRailway",
+      "IsRenderedExternally",
+      "CheckComplexID"
     ],
     "Residence7": [
       "ResidenceStorage",
@@ -669,6 +794,28 @@
       "Product",
       "Amount"
     ],
+    "ResourceSetCondition": [
+      "Priority",
+      "AllowedRegion",
+      "AllowedIslandType",
+      "AllowedIslandDifficulty",
+      "AllowedResourceAmounts"
+    ],
+    "Fertility": [],
+    "FertilitySet": [
+      "Fertilities"
+    ],
+    "MineSlotResourceSet": [
+      "MineSlots"
+    ],
+    "Slot": [
+      "SlotType",
+      "WorkArea",
+      "SnapsToSlot",
+      "AutoChangeVariation",
+      "WorkAreaPathSnapDummy",
+      "SlotCategoryName"
+    ],
     "Factory7": [
       "NeededFertility"
     ],
@@ -690,46 +837,43 @@
       "FreeAreaType",
       "CutTree"
     ],
-    "Slot": [
-      "SlotType",
-      "WorkArea",
-      "SnapsToSlot",
-      "AutoChangeVariation",
-      "WorkAreaPathSnapDummy",
-      "SlotCategoryName"
+    "ModuleOwner": [
+      "ModuleLimit",
+      "ConstructionOptions",
+      "ModuleBuildRadius",
+      "HardFarmsConfig",
+      "ImplicitProductivityModules",
+      "ModulesRequiredForFullProductivity"
     ],
-    "Bridge": [
-      "MinLength",
-      "MaxLength"
+    "Monument": [
+      "UpgradeTarget",
+      "MicrophaseCount",
+      "UnfinishedIcon",
+      "FinishedIcon",
+      "ShutdownText",
+      "ConstructionStateText",
+      "MonumentEventsCategories",
+      "FakePrerequisites",
+      "FinishButtonText"
     ],
-    "Street": [
-      "CfgFileName",
-      "InternalID",
-      "DecalMapping",
-      "DecalVariation",
-      "GroupBits",
-      "OnlyCheckGroupBits",
-      "StyleRows",
-      "StyleCols",
-      "OverbuildRule",
-      "IsLogicRoad",
-      "IsHarbour",
-      "IsPlazza",
-      "HasFeedbackPathPlanningPenalty",
-      "IsDeletable",
-      "IsGroundDecal",
-      "InvalidColor",
-      "CrossingAsset",
-      "BridgeAsset",
-      "HidePropsAfterBuilding",
-      "HidePropsWhileBuilding",
-      "Quality",
-      "CanBuildOnShore",
-      "SpeedFactor",
-      "AutoCreateStyle",
-      "IsRailway",
-      "IsRenderedExternally",
-      "CheckComplexID"
+    "Shipyard": [
+      "AssemblyOptions"
+    ],
+    "PublicService": [
+      "FullSatisfactionDistance",
+      "NoSatisfactionDistance",
+      "PublicServiceOutputs",
+      "FunctionDescription"
+    ],
+    "Market": [
+      "FullSupplyDistance",
+      "NoSupplyDistance"
+    ],
+    "StorageBase": [
+      "StoredProducts"
+    ],
+    "StorageBase/StoredProducts/Item": [
+      "Product"
     ],
     "Warehouse": [
       "WarehouseStorage",
@@ -750,27 +894,6 @@
     "LogisticNode/QueueConfiguration": [
       "ProcessingQueueParallelCount"
     ],
-    "StorageBase": [
-      "StoredProducts"
-    ],
-    "StorageBase/StoredProducts/Item": [
-      "Product"
-    ],
-    "Market": [
-      "FullSupplyDistance",
-      "NoSupplyDistance"
-    ],
-    "Monument": [
-      "UpgradeTarget",
-      "MicrophaseCount",
-      "UnfinishedIcon",
-      "FinishedIcon",
-      "ShutdownText",
-      "ConstructionStateText",
-      "MonumentEventsCategories",
-      "FakePrerequisites",
-      "FinishButtonText"
-    ],
     "Ornament": [
       "OrnamentUnit",
       "OrnamentDescritpion",
@@ -781,23 +904,6 @@
       "HealRadius",
       "HealPerMinute",
       "HealBuildingsPerMinute"
-    ],
-    "Shipyard": [
-      "AssemblyOptions"
-    ],
-    "ResourceSetCondition": [
-      "Priority",
-      "AllowedRegion",
-      "AllowedIslandType",
-      "AllowedIslandDifficulty",
-      "AllowedResourceAmounts"
-    ],
-    "Fertility": [],
-    "FertilitySet": [
-      "Fertilities"
-    ],
-    "MineSlotResourceSet": [
-      "MineSlots"
     ],
     "Item": [
       "Flotsam",
@@ -1144,6 +1250,13 @@
     "ColorConfig": [
       "140577"
     ],
+    "CultureBuilding": [
+      "动物园",
+      "博物馆",
+      "Zoo",
+      "动物园",
+      "博物馆"
+    ],
     "CultureItem": [
       "家猫",
       "牛",
@@ -1321,6 +1434,84 @@
       "女武神头盔",
       "《亡灵之书》",
       "鹿"
+    ],
+    "CultureModule": [
+      "鸟舍",
+      "苍翠鸟舍",
+      "苍翠鸟舍",
+      "苍翠鸟舍",
+      "干草原",
+      "花园喷泉",
+      "高山围场",
+      "草原围场",
+      "岩石围场",
+      "农场圈地",
+      "高山围场",
+      "高山围场",
+      "海豚馆",
+      "岩石水族馆",
+      "热带岛屿水族馆",
+      "冰原水族馆",
+      "冰原水族馆",
+      "海洋水族馆",
+      "河流水族馆",
+      "海盗岛屿水族馆",
+      "雨林深处展示馆",
+      "雨林展示馆",
+      "雨林展示馆",
+      "雨林空地展示馆",
+      "雨林展示馆",
+      "Rainforest Pavilion",
+      "动物饲育所",
+      "土生动物饲育所",
+      "蝴蝶花园",
+      "小型鸟舍",
+      "动物饲育所",
+      "爬虫类饲育所",
+      "水族馆",
+      "空围场",
+      "空围场",
+      "博物馆礼堂",
+      "博物馆礼堂",
+      "博物馆礼堂",
+      "博物馆礼堂",
+      "博物馆礼堂",
+      "博物馆侧厅",
+      "博物馆侧厅",
+      "博物馆侧厅",
+      "博物馆侧厅",
+      "博物馆侧厅",
+      "博物馆广场",
+      "博物馆广场",
+      "博物馆广场",
+      "博物馆广场",
+      "博物馆广场",
+      "博物馆大厅",
+      "博物馆大厅",
+      "博物馆大厅",
+      "博物馆大厅",
+      "博物馆大厅",
+      "博物馆大厅",
+      "博物馆大厅",
+      "博物馆大厅",
+      "博物馆大厅",
+      "博物馆大厅",
+      "博物馆大厅",
+      "博物馆大厅",
+      "空展间",
+      "空展间",
+      "博物馆大厅",
+      "博物馆大厅",
+      "博物馆大厅",
+      "博物馆大厅",
+      "博物馆大厅",
+      "博物馆大厅",
+      "博物馆大厅",
+      "博物馆大厅",
+      "博物馆大厅",
+      "博物馆大厅",
+      "博物馆大厅",
+      "博物馆大厅"
     ],
     "ExpeditionFeature": [
       "800111"
@@ -3225,6 +3416,18 @@
       "缝纫机",
       "啤酒",
       "Fur Coats"
+    ],
+    "PublicServiceBuilding": [
+      "酒吧",
+      "学校",
+      "银行",
+      "教堂",
+      "综艺剧场",
+      "大学",
+      "俱乐部",
+      "小礼拜堂",
+      "拳击场",
+      "爱德华的教堂"
     ],
     "QuestItem": [
       "Fishground",

@@ -16,6 +16,8 @@ namespace Anno1800.Jsonify {
       public string region;
       [Element("BuildingCategoryName")]
       public int category;
+      [Element("PickingAsset")]
+      public int pickingAsset;
 
       public BuildingData(XElement element) : base(element) { }
     }
@@ -76,39 +78,6 @@ namespace Anno1800.Jsonify {
           .Select(item => item.Int("Set"))
           .ToList()
           ?? new List<int>();
-      }
-    }
-
-    // ================================
-    // ModuleOwner
-
-    class ModuleOwnerData : BaseAssetObject {
-      public List<int> options;
-      [Element("ModuleLimit")]
-      public int limit;
-      [Element("ModuleBuildRadius")]
-      public int radius;
-
-      public ModuleOwnerData(XElement element) : base(element) {
-        this.options = element
-          .Element("ConstructionOptions")
-          ?.Elements()
-          .Select(item => item.Int("ModuleGUID"))
-          .ToList()
-          ?? new List<int>();
-      }
-    }
-
-    // ================================
-    // Electric
-
-    class ElectricData : BaseAssetObject {
-      public bool boost;
-      [Element("MandatoryElectricity")]
-      public bool mandatory;
-
-      public ElectricData(XElement element) : base(element) {
-        this.boost = element.Boolean("BoostedByElectricity") || element.Boolean("ProductivityBoost");
       }
     }
   }

@@ -1,371 +1,252 @@
 [
   {
-    "guid": 1010266,
-    "name": "agriculture_05 (Timber Yard)",
+    "guid": 1010470,
+    "name": "culture_01 (Zoo)",
     "id": "",
-    "icon": "data/ui/2kimages/main/3dicons/icon_wood_log.png",
-    "description": 11143,
-    "freeAreaProductivity": {
-      "radius": 9,
-      "neededAreaPercent": 80,
-      "worker": 102433,
-      "maxWorkers": 3,
-      "workerPause": 10000,
-      "wayTime": 10000,
-      "freeAreaType": "",
-      "cutTree": false
+    "icon": "data/ui/2kimages/main/3dicons/icon_zoo.png",
+    "description": 118025,
+    "moduleOwner": {
+      "options": [
+        100455
+      ],
+      "limit": 100,
+      "radius": 0
     },
     "maintenance": {
       "maintenances": [
         {
           "product": 1010017,
-          "amount": 10,
-          "inactiveAmount": 5,
+          "amount": 100,
+          "inactiveAmount": 100,
           "shutdownThreshold": 0.0
-        },
-        {
-          "product": 1010052,
-          "amount": 5,
-          "inactiveAmount": 0,
-          "shutdownThreshold": 0.2
         }
       ],
-      "consumerPriority": 1
-    },
-    "factory": {
-      "cycleTime": 15,
-      "inputs": [],
-      "outputs": [
-        {
-          "product": 120008,
-          "amount": 1,
-          "storage": 8
-        }
-      ],
-      "warehouseTransporterAsset": 0,
-      "productivityTimeMultiplier": 0,
-      "productivityPoints": 0,
-      "neededFertility": 0
-    },
-    "culture": {
-      "type": "Landscaping",
-      "attractiveness": 0,
-      "hasPollution": false,
-      "setPages": [],
-      "openSetPages": 0
-    },
-    "electric": null,
-    "attackable": {
-      "maximumHitPoints": 1500,
-      "hasRuinState": true,
-      "selfHealPerHealTick": 4.0,
-      "pausedTimeIfAttacked": false,
-      "canBeAttackedByPlayer": false,
-      "moralePower": 0,
-      "isInvulnerable": false,
-      "militaryDefensePoints": 0.0,
-      "accuracyWidth": 0.0,
-      "selfHealPausedTimeIfAttacked": 0,
-      "armorType": "",
-      "disableGettingAutoAttacked": false
-    },
-    "building": {
-      "type": "Factory",
-      "terrian": "",
-      "region": "Moderate",
-      "category": 100000,
-      "pickingAsset": 0
-    },
-    "cost": {
-      "costs": [
-        {
-          "ingredient": 1010017,
-          "amount": 100
-        },
-        {
-          "ingredient": 1010196,
-          "amount": 0
-        },
-        {
-          "ingredient": 1010205,
-          "amount": 0
-        },
-        {
-          "ingredient": 1010218,
-          "amount": 0
-        },
-        {
-          "ingredient": 1010207,
-          "amount": 0
-        },
-        {
-          "ingredient": 1010202,
-          "amount": 0
-        }
-      ],
-      "influenceCostType": "",
-      "influenceCostPoints": 0
-    }
-  },
-  {
-    "guid": 1010558,
-    "name": "agriculture_09 (Hunter's Cabin)",
-    "id": "",
-    "icon": "data/ui/2kimages/main/3dicons/icon_fur.png",
-    "description": 11143,
-    "freeAreaProductivity": {
-      "radius": 11,
-      "neededAreaPercent": 0,
-      "worker": 102433,
-      "maxWorkers": 2,
-      "workerPause": 10000,
-      "wayTime": 10000,
-      "freeAreaType": "Hunter",
-      "cutTree": false
-    },
-    "maintenance": {
-      "maintenances": [
-        {
-          "product": 1010017,
-          "amount": 50,
-          "inactiveAmount": 25,
-          "shutdownThreshold": 0.0
-        },
-        {
-          "product": 1010052,
-          "amount": 10,
-          "inactiveAmount": 0,
-          "shutdownThreshold": 0.2
-        }
-      ],
-      "consumerPriority": 1
-    },
-    "factory": {
-      "cycleTime": 60,
-      "inputs": [],
-      "outputs": [
-        {
-          "product": 1010209,
-          "amount": 1,
-          "storage": 4
-        }
-      ],
-      "warehouseTransporterAsset": 0,
-      "productivityTimeMultiplier": 0,
-      "productivityPoints": 0,
-      "neededFertility": 1010581
-    },
-    "culture": {
-      "type": "Landscaping",
-      "attractiveness": 0,
-      "hasPollution": false,
-      "setPages": [],
-      "openSetPages": 0
-    },
-    "electric": null,
-    "attackable": {
-      "maximumHitPoints": 1500,
-      "hasRuinState": true,
-      "selfHealPerHealTick": 4.0,
-      "pausedTimeIfAttacked": false,
-      "canBeAttackedByPlayer": false,
-      "moralePower": 0,
-      "isInvulnerable": false,
-      "militaryDefensePoints": 0.0,
-      "accuracyWidth": 0.0,
-      "selfHealPausedTimeIfAttacked": 0,
-      "armorType": "",
-      "disableGettingAutoAttacked": false
-    },
-    "building": {
-      "type": "Factory",
-      "terrian": "",
-      "region": "Moderate",
-      "category": 100000,
-      "pickingAsset": 0
-    },
-    "cost": {
-      "costs": [
-        {
-          "ingredient": 1010017,
-          "amount": 2000
-        },
-        {
-          "ingredient": 1010196,
-          "amount": 6
-        },
-        {
-          "ingredient": 1010205,
-          "amount": 0
-        },
-        {
-          "ingredient": 1010218,
-          "amount": 0
-        },
-        {
-          "ingredient": 1010207,
-          "amount": 0
-        },
-        {
-          "ingredient": 1010202,
-          "amount": 0
-        }
-      ],
-      "influenceCostType": "",
-      "influenceCostPoints": 0
-    }
-  },
-  {
-    "guid": 101260,
-    "name": "agriculture_colony01_06 (Timber Yard)",
-    "id": "",
-    "icon": "data/ui/2kimages/main/3dicons/icon_wood_log.png",
-    "description": 11143,
-    "freeAreaProductivity": {
-      "radius": 9,
-      "neededAreaPercent": 80,
-      "worker": 102434,
-      "maxWorkers": 3,
-      "workerPause": 10000,
-      "wayTime": 10000,
-      "freeAreaType": "",
-      "cutTree": false
-    },
-    "maintenance": {
-      "maintenances": [
-        {
-          "product": 1010017,
-          "amount": 10,
-          "inactiveAmount": 5,
-          "shutdownThreshold": 0.0
-        },
-        {
-          "product": 1010366,
-          "amount": 10,
-          "inactiveAmount": 0,
-          "shutdownThreshold": 0.2
-        }
-      ],
-      "consumerPriority": 1
-    },
-    "factory": {
-      "cycleTime": 15,
-      "inputs": [],
-      "outputs": [
-        {
-          "product": 120008,
-          "amount": 1,
-          "storage": 8
-        }
-      ],
-      "warehouseTransporterAsset": 0,
-      "productivityTimeMultiplier": 0,
-      "productivityPoints": 0,
-      "neededFertility": 0
-    },
-    "culture": {
-      "type": "Landscaping",
-      "attractiveness": 0,
-      "hasPollution": false,
-      "setPages": [],
-      "openSetPages": 0
-    },
-    "electric": null,
-    "attackable": {
-      "maximumHitPoints": 1500,
-      "hasRuinState": true,
-      "selfHealPerHealTick": 4.0,
-      "pausedTimeIfAttacked": false,
-      "canBeAttackedByPlayer": false,
-      "moralePower": 0,
-      "isInvulnerable": false,
-      "militaryDefensePoints": 0.0,
-      "accuracyWidth": 0.0,
-      "selfHealPausedTimeIfAttacked": 0,
-      "armorType": "",
-      "disableGettingAutoAttacked": false
-    },
-    "building": {
-      "type": "Factory",
-      "terrian": "",
-      "region": "Colony01",
-      "category": 100000,
-      "pickingAsset": 0
-    },
-    "cost": {
-      "costs": [
-        {
-          "ingredient": 1010017,
-          "amount": 500
-        },
-        {
-          "ingredient": 1010196,
-          "amount": 0
-        },
-        {
-          "ingredient": 1010205,
-          "amount": 0
-        },
-        {
-          "ingredient": 1010218,
-          "amount": 0
-        },
-        {
-          "ingredient": 1010207,
-          "amount": 0
-        },
-        {
-          "ingredient": 1010202,
-          "amount": 0
-        }
-      ],
-      "influenceCostType": "",
-      "influenceCostPoints": 0
-    }
-  },
-  {
-    "guid": 100806,
-    "name": "CQO_UnclesIsland_WoodFarm",
-    "id": "",
-    "icon": "data/ui/2kimages/main/3dicons/icon_wood_log.png",
-    "description": 11143,
-    "freeAreaProductivity": {
-      "radius": 0,
-      "neededAreaPercent": 0,
-      "worker": 1000127,
-      "maxWorkers": 3,
-      "workerPause": 10000,
-      "wayTime": 10000,
-      "freeAreaType": "",
-      "cutTree": false
-    },
-    "maintenance": {
-      "maintenances": [
-        {
-          "product": 1010017,
-          "amount": 15,
-          "inactiveAmount": 12,
-          "shutdownThreshold": 0.0
-        },
-        {
-          "product": 1010052,
-          "amount": 10,
-          "inactiveAmount": 0,
-          "shutdownThreshold": 0.2
-        }
-      ],
-      "consumerPriority": 1
+      "consumerPriority": 0
     },
     "factory": {
       "cycleTime": 30,
       "inputs": [],
-      "outputs": [
+      "outputs": [],
+      "warehouseTransporterAsset": 0,
+      "productivityTimeMultiplier": 0,
+      "productivityPoints": 0,
+      "neededFertility": 0
+    },
+    "culture": {
+      "type": "",
+      "attractiveness": 0,
+      "hasPollution": false,
+      "setPages": [
+        191114,
+        191115,
+        0,
+        191116,
+        191122,
+        191118,
+        193193,
+        191120,
+        191121,
+        191117
+      ],
+      "openSetPages": 13971
+    },
+    "electric": {
+      "boost": false,
+      "mandatory": false
+    },
+    "attackable": {
+      "maximumHitPoints": 3250,
+      "hasRuinState": true,
+      "selfHealPerHealTick": 4.0,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": false,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 0,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "building": {
+      "type": "",
+      "terrian": "",
+      "region": "Moderate",
+      "category": 100005,
+      "pickingAsset": 0
+    },
+    "cost": {
+      "costs": [
         {
-          "product": 120008,
-          "amount": 1,
-          "storage": 3
+          "ingredient": 1010017,
+          "amount": 10000
+        },
+        {
+          "ingredient": 1010196,
+          "amount": 30
+        },
+        {
+          "ingredient": 1010205,
+          "amount": 30
+        },
+        {
+          "ingredient": 1010218,
+          "amount": 10
+        },
+        {
+          "ingredient": 1010207,
+          "amount": 5
+        },
+        {
+          "ingredient": 1010202,
+          "amount": 0
         }
       ],
+      "influenceCostType": "",
+      "influenceCostPoints": 0
+    }
+  },
+  {
+    "guid": 1010471,
+    "name": "culture_02 (Museum)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_museum.png",
+    "description": 11663,
+    "moduleOwner": {
+      "options": [
+        100454
+      ],
+      "limit": 100,
+      "radius": 0
+    },
+    "maintenance": {
+      "maintenances": [
+        {
+          "product": 1010017,
+          "amount": 100,
+          "inactiveAmount": 100,
+          "shutdownThreshold": 0.0
+        }
+      ],
+      "consumerPriority": 0
+    },
+    "factory": {
+      "cycleTime": 30,
+      "inputs": [],
+      "outputs": [],
+      "warehouseTransporterAsset": 0,
+      "productivityTimeMultiplier": 0,
+      "productivityPoints": 0,
+      "neededFertility": 0
+    },
+    "culture": {
+      "type": "",
+      "attractiveness": 0,
+      "hasPollution": false,
+      "setPages": [
+        191130,
+        191127,
+        0,
+        191129,
+        191128,
+        191124,
+        191126,
+        191131,
+        191125,
+        191123
+      ],
+      "openSetPages": 13972
+    },
+    "electric": {
+      "boost": false,
+      "mandatory": false
+    },
+    "attackable": {
+      "maximumHitPoints": 4750,
+      "hasRuinState": true,
+      "selfHealPerHealTick": 4.0,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": false,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 0,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "building": {
+      "type": "",
+      "terrian": "",
+      "region": "Moderate",
+      "category": 100005,
+      "pickingAsset": 0
+    },
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010017,
+          "amount": 10000
+        },
+        {
+          "ingredient": 1010196,
+          "amount": 30
+        },
+        {
+          "ingredient": 1010205,
+          "amount": 30
+        },
+        {
+          "ingredient": 1010218,
+          "amount": 10
+        },
+        {
+          "ingredient": 1010207,
+          "amount": 5
+        },
+        {
+          "ingredient": 1010202,
+          "amount": 0
+        }
+      ],
+      "influenceCostType": "",
+      "influenceCostPoints": 0
+    }
+  },
+  {
+    "guid": 100448,
+    "name": "Fake Ornament [test 2nd party]",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_zoo.png",
+    "description": 118025,
+    "moduleOwner": {
+      "options": [
+        100455
+      ],
+      "limit": 0,
+      "radius": 0
+    },
+    "maintenance": {
+      "maintenances": [
+        {
+          "product": 1010017,
+          "amount": 0,
+          "inactiveAmount": 0,
+          "shutdownThreshold": 0.0
+        },
+        {
+          "product": 1010052,
+          "amount": 0,
+          "inactiveAmount": 0,
+          "shutdownThreshold": 0.0
+        }
+      ],
+      "consumerPriority": 0
+    },
+    "factory": {
+      "cycleTime": 30,
+      "inputs": [],
+      "outputs": [],
       "warehouseTransporterAsset": 0,
       "productivityTimeMultiplier": 0,
       "productivityPoints": 0,
@@ -378,11 +259,14 @@
       "setPages": [],
       "openSetPages": 0
     },
-    "electric": null,
+    "electric": {
+      "boost": false,
+      "mandatory": false
+    },
     "attackable": {
       "maximumHitPoints": 500,
       "hasRuinState": true,
-      "selfHealPerHealTick": 0.0,
+      "selfHealPerHealTick": 4.0,
       "pausedTimeIfAttacked": false,
       "canBeAttackedByPlayer": false,
       "moralePower": 0,
@@ -394,33 +278,222 @@
       "disableGettingAutoAttacked": false
     },
     "building": {
-      "type": "Factory",
+      "type": "",
       "terrian": "",
-      "region": "",
-      "category": 100000,
+      "region": "Moderate",
+      "category": 100005,
+      "pickingAsset": 0
+    },
+    "cost": {
+      "costs": [],
+      "influenceCostType": "",
+      "influenceCostPoints": 0
+    }
+  },
+  {
+    "guid": 102282,
+    "name": "culture_colony01_01 (Zoo)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_zoo.png",
+    "description": 118025,
+    "moduleOwner": {
+      "options": [
+        100455
+      ],
+      "limit": 100,
+      "radius": 0
+    },
+    "maintenance": {
+      "maintenances": [
+        {
+          "product": 1010017,
+          "amount": 100,
+          "inactiveAmount": 100,
+          "shutdownThreshold": 0.0
+        }
+      ],
+      "consumerPriority": 0
+    },
+    "factory": {
+      "cycleTime": 30,
+      "inputs": [],
+      "outputs": [],
+      "warehouseTransporterAsset": 0,
+      "productivityTimeMultiplier": 0,
+      "productivityPoints": 0,
+      "neededFertility": 0
+    },
+    "culture": {
+      "type": "",
+      "attractiveness": 0,
+      "hasPollution": false,
+      "setPages": [
+        191114,
+        191115,
+        0,
+        191116,
+        191122,
+        191118,
+        193193,
+        191120,
+        191121,
+        191117
+      ],
+      "openSetPages": 13971
+    },
+    "electric": {
+      "boost": false,
+      "mandatory": false
+    },
+    "attackable": {
+      "maximumHitPoints": 3250,
+      "hasRuinState": true,
+      "selfHealPerHealTick": 4.0,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": false,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 0,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "building": {
+      "type": "",
+      "terrian": "",
+      "region": "Colony01",
+      "category": 100005,
       "pickingAsset": 0
     },
     "cost": {
       "costs": [
         {
           "ingredient": 1010017,
-          "amount": 100
+          "amount": 10000
         },
         {
           "ingredient": 1010196,
-          "amount": 0
+          "amount": 30
         },
         {
           "ingredient": 1010205,
-          "amount": 0
+          "amount": 30
         },
         {
           "ingredient": 1010218,
-          "amount": 0
+          "amount": 10
         },
         {
           "ingredient": 1010207,
+          "amount": 5
+        },
+        {
+          "ingredient": 1010202,
           "amount": 0
+        }
+      ],
+      "influenceCostType": "",
+      "influenceCostPoints": 0
+    }
+  },
+  {
+    "guid": 102283,
+    "name": "culture_colony01_02 (Museum)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_museum.png",
+    "description": 11663,
+    "moduleOwner": {
+      "options": [
+        100454
+      ],
+      "limit": 100,
+      "radius": 0
+    },
+    "maintenance": {
+      "maintenances": [
+        {
+          "product": 1010017,
+          "amount": 100,
+          "inactiveAmount": 100,
+          "shutdownThreshold": 0.0
+        }
+      ],
+      "consumerPriority": 0
+    },
+    "factory": {
+      "cycleTime": 30,
+      "inputs": [],
+      "outputs": [],
+      "warehouseTransporterAsset": 0,
+      "productivityTimeMultiplier": 0,
+      "productivityPoints": 0,
+      "neededFertility": 0
+    },
+    "culture": {
+      "type": "",
+      "attractiveness": 0,
+      "hasPollution": false,
+      "setPages": [
+        191130,
+        191127,
+        0,
+        191129,
+        191128,
+        191124,
+        191126,
+        191131,
+        191125,
+        191123
+      ],
+      "openSetPages": 13972
+    },
+    "electric": {
+      "boost": false,
+      "mandatory": false
+    },
+    "attackable": {
+      "maximumHitPoints": 4750,
+      "hasRuinState": true,
+      "selfHealPerHealTick": 4.0,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": false,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 0,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "building": {
+      "type": "",
+      "terrian": "",
+      "region": "Colony01",
+      "category": 100005,
+      "pickingAsset": 0
+    },
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010017,
+          "amount": 10000
+        },
+        {
+          "ingredient": 1010196,
+          "amount": 30
+        },
+        {
+          "ingredient": 1010205,
+          "amount": 30
+        },
+        {
+          "ingredient": 1010218,
+          "amount": 10
+        },
+        {
+          "ingredient": 1010207,
+          "amount": 5
         },
         {
           "ingredient": 1010202,

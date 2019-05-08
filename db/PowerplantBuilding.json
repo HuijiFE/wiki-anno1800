@@ -5,6 +5,14 @@
     "id": "CoalPowerPlant",
     "icon": "data/ui/2kimages/main/3dicons/icon_electric_works_coal.png",
     "description": 10945,
+    "publicService": {
+      "fullSatisfactionDistance": 30,
+      "noSatisfactionDistance": 30,
+      "publicServiceOutputs": [
+        1010354
+      ],
+      "functionDescription": 0
+    },
     "maintenance": {
       "maintenances": [
         {
@@ -23,6 +31,7 @@
       "consumerPriority": 1
     },
     "factory": {
+      "cycleTime": 5,
       "inputs": [
         {
           "product": 120021,
@@ -31,7 +40,9 @@
         }
       ],
       "outputs": [],
-      "cycleTime": 5,
+      "warehouseTransporterAsset": 120025,
+      "productivityTimeMultiplier": 30,
+      "productivityPoints": 1,
       "neededFertility": 0
     },
     "culture": {
@@ -60,7 +71,8 @@
       "type": "Factory",
       "terrian": "",
       "region": "Moderate",
-      "category": 11169
+      "category": 11169,
+      "pickingAsset": 0
     },
     "cost": {
       "costs": [
@@ -99,6 +111,14 @@
     "id": "OilPowerPlant",
     "icon": "data/ui/2kimages/main/3dicons/icon_electric_works_oil.png",
     "description": 10946,
+    "publicService": {
+      "fullSatisfactionDistance": 35,
+      "noSatisfactionDistance": 35,
+      "publicServiceOutputs": [
+        1010354
+      ],
+      "functionDescription": 0
+    },
     "maintenance": {
       "maintenances": [
         {
@@ -117,6 +137,7 @@
       "consumerPriority": 1
     },
     "factory": {
+      "cycleTime": 5,
       "inputs": [
         {
           "product": 1010566,
@@ -125,7 +146,9 @@
         }
       ],
       "outputs": [],
-      "cycleTime": 5,
+      "warehouseTransporterAsset": 120025,
+      "productivityTimeMultiplier": 30,
+      "productivityPoints": 1,
       "neededFertility": 0
     },
     "culture": {
@@ -154,7 +177,8 @@
       "type": "Factory",
       "terrian": "",
       "region": "Moderate",
-      "category": 11169
+      "category": 11169,
+      "pickingAsset": 0
     },
     "cost": {
       "costs": [
