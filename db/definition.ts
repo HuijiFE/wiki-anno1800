@@ -25,10 +25,6 @@ export interface CityInstitutionBuilding extends Building {
 export interface IncidentResolverUnit extends Asset {
 }
 
-export interface ColorConfig extends Building {
-  colorConfig?: ColorConfigData;
-}
-
 export interface ExpeditionFeature extends Asset {
   expeditionFeature: ExpeditionFeatureData;
 }
@@ -119,11 +115,17 @@ export interface WorkforceConnector extends Building {
   maintenance?: MaintenanceData;
 }
 
+export interface InfluenceFeature extends Asset {
+}
+
+export interface InfluencePopup extends Asset {
+}
+
 export interface ItemBalancing extends Asset {
   itemConfig?: ItemConfigData;
 }
 
-export interface Item extends Asset {
+export interface ItemBuff extends Asset {
   item?: ItemData;
   itemEffect?: ItemEffect;
   expeditionAttribute?: ExpeditionAttribute;
@@ -133,64 +135,67 @@ export interface Item extends Asset {
   buff?: BuffData;
 }
 
-export interface QuestItem extends Item {
+export interface QuestItem extends ItemBuff {
 }
 
-export interface ItemWithUI extends Item {
+export interface ItemWithUI extends ItemBuff {
 }
 
-export interface ItemSpecialAction extends Item {
+export interface ItemSpecialAction extends ItemBuff {
 }
 
-export interface QuestItemMagistrate extends Item {
+export interface QuestItemMagistrate extends ItemBuff {
 }
 
-export interface FestivalBuff extends Item {
+export interface FestivalBuff extends ItemBuff {
 }
 
-export interface GuildhouseBuff extends Item {
+export interface GuildhouseBuff extends ItemBuff {
 }
 
-export interface TownhallBuff extends Item {
+export interface TownhallBuff extends ItemBuff {
 }
 
-export interface VehicleBuff extends Item {
+export interface VehicleBuff extends ItemBuff {
 }
 
-export interface HarbourOfficeBuff extends Item {
+export interface HarbourOfficeBuff extends ItemBuff {
 }
 
-export interface CultureItem extends Item {
+export interface CultureItem extends ItemBuff {
 }
 
-export interface TownhallItem extends Item {
+export interface TownhallItem extends ItemBuff {
 }
 
-export interface GuildhouseItem extends Item {
+export interface GuildhouseItem extends ItemBuff {
 }
 
-export interface HarborOfficeItem extends Item {
+export interface HarborOfficeItem extends ItemBuff {
 }
 
-export interface ShipSpecialist extends Item {
+export interface ShipSpecialist extends ItemBuff {
 }
 
-export interface VehicleItem extends Item {
+export interface VehicleItem extends ItemBuff {
 }
 
-export interface ActiveItem extends Item {
+export interface ActiveItem extends ItemBuff {
 }
 
-export interface ItemSpecialActionVisualEffect extends Item {
+export interface ItemSpecialActionVisualEffect extends ItemBuff {
 }
 
-export interface FluffItem extends Item {
+export interface FluffItem extends ItemBuff {
 }
 
-export interface StartExpeditionItem extends Item {
+export interface StartExpeditionItem extends ItemBuff {
 }
 
-export interface ItemConstructionPlan extends Item {
+export interface ItemConstructionPlan extends ItemBuff {
+}
+
+export interface InfluenceTitleBuff extends ItemBuff {
 }
 
 export interface OrnamentalBuilding extends Building {
@@ -278,6 +283,10 @@ export interface Shipyard extends Building {
 }
 
 export interface Text extends Asset {
+}
+
+export interface ColorConfig extends Asset {
+  colorConfig?: ColorConfigData;
 }
 
 export interface Icon extends Asset {
@@ -370,20 +379,6 @@ export interface Influence extends BaseAssetObject {
 
 export interface IncidentInfluencer extends BaseAssetObject {
   influence: Record<string, Influence>;
-}
-
-export interface ColorConfigData extends BaseAssetObject {
-  text: Record<string, string>;
-  slotGhost: Record<string, string>;
-  questOutline: Record<string, string>;
-  itemRarity: Record<string, string>;
-  buildModeCurrentValidColor: string;
-  buildModeCurrentInvalidColor: string;
-  positiveValueColor: string;
-  negativeValueColor: string;
-  buildModeRadius: string;
-  buildModeGridExtension: string;
-  blueprintColor: string;
 }
 
 export interface EventLimit extends BaseAssetObject {
@@ -601,6 +596,11 @@ export interface ReplaceAssemblyOption extends BaseAssetObject {
   newOption: number;
 }
 
+export interface DistributionUpgradeAddDelta extends BaseAssetObject {
+  product: number;
+  amount: number;
+}
+
 export interface UpgradeData extends BaseAssetObject {
   changeModule: number;
   forcedFeedbackVariation: number;
@@ -624,6 +624,7 @@ export interface UpgradeData extends BaseAssetObject {
   blockHostileTakeover: boolean;
   blockBuyShare: boolean;
   activeTradePriceInPercent: number;
+  newspaperArticleModifier: number;
   inputBenefitModifier: InputBenefitModifier[];
   goodConsumptionUpgrade: GoodConsumptionUpgrade[];
   needProvideNeedUpgrade: NeedProvideNeedUpgrade[];
@@ -639,6 +640,7 @@ export interface UpgradeData extends BaseAssetObject {
   addAssemblyOptions: number[];
   replaceAssemblyOptions: ReplaceAssemblyOption[];
   damageReceiveFactor: Record<string, number>;
+  distributionUpgrade: DistributionUpgradeAddDelta[];
   upgrades?: Record<string, UpgradePair>;
 }
 
@@ -848,6 +850,20 @@ export interface ResourceSetCondition extends BaseAssetObject {
 
 export interface ShipyardData extends BaseAssetObject {
   assemblyOptions: number[];
+}
+
+export interface ColorConfigData extends BaseAssetObject {
+  text: Record<string, string>;
+  slotGhost: Record<string, string>;
+  questOutline: Record<string, string>;
+  itemRarity: Record<string, string>;
+  buildModeCurrentValidColor: string;
+  buildModeCurrentInvalidColor: string;
+  positiveValueColor: string;
+  negativeValueColor: string;
+  buildModeRadius: string;
+  buildModeGridExtension: string;
+  blueprintColor: string;
 }
 
 export interface PlayerLogoData extends BaseAssetObject {

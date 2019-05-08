@@ -130,6 +130,8 @@ namespace Anno1800.Jsonify {
         "TradeShipUpgrade",
         "ItemStartExpedition",
         "ItemConstructionPlan",
+        "NewspaperUpgrade",
+        "DistributionUpgrade",
       };
 
       var props = new HashSet<string>(assetsMap
@@ -168,7 +170,7 @@ namespace Anno1800.Jsonify {
 
       var items = assetsMap
         .Values
-        .Where(a => a.ElementByPath("Values/Item") != null || a.ElementByPath("Values/Buff") != null)
+        .Where(a => a.ElementByPath("Values/Item") != null || a.ElementByPath("Values/ItemEffect") != null || a.ElementByPath("Values/Buff") != null)
         .ToList();
       var itemProps = items
         .Aggregate(new List<XElement>(), (list, item) => {

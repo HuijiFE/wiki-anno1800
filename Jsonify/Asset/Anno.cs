@@ -16,5 +16,15 @@ namespace Anno1800.Jsonify {
 
 /*
  * TODO:
- * ProgressLevel
+ * Ship
+ * Influence
+ * Newspaper
+ * Incident
+ * Happiness
+ * Festival
+ * CityAttractiveness
+ * BannerConfig
+ * Expedition
+ * Achievement
+ * ProgressLevel/Difficulty
  */

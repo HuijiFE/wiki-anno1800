@@ -239,6 +239,15 @@ namespace Anno1800.Jsonify {
       public ReplaceAssemblyOption(XElement element) : base(element) { }
     }
 
+    class DistributionUpgradeAddDelta : BaseAssetObject {
+      [Element("Product")]
+      public int product;
+      [Element("Amount")]
+      public int amount;
+
+      public DistributionUpgradeAddDelta(XElement element) : base(element) { }
+    }
+
     class UpgradeData : BaseAssetObject {
       public static readonly List<string> upgradeWrappers = new List<string> {
         "IncidentInfluencerUpgrade",
@@ -351,6 +360,8 @@ namespace Anno1800.Jsonify {
       public bool blockBuyShare;
       [Element("TradeShipUpgrade/ActiveTradePriceInPercent")]
       public int activeTradePriceInPercent;
+      [Element("NewspaperUpgrade/NewspaperArticleModifier")]
+      public int newspaperArticleModifier;
 
       public List<InputBenefitModifier> inputBenefitModifier;
       public List<GoodConsumptionUpgrade> goodConsumptionUpgrade;
@@ -367,6 +378,7 @@ namespace Anno1800.Jsonify {
       public List<int> addAssemblyOptions;
       public List<ReplaceAssemblyOption> replaceAssemblyOptions;
       public Dictionary<string, double> damageReceiveFactor;
+      public List<DistributionUpgradeAddDelta> distributionUpgrade;
 
       [Nullable]
       public Dictionary<string, UpgradePair>? upgrades;
@@ -388,6 +400,7 @@ namespace Anno1800.Jsonify {
         this.addAssemblyOptions = elements.ListOf("ShipyardUpgrade/AddAssemblyOptions", item => item.Int("NewOption"));
         this.replaceAssemblyOptions = elements.ListOf("ShipyardUpgrade/ReplaceAssemblyOptions", item => new ReplaceAssemblyOption(item));
         this.damageReceiveFactor = elements.DictionaryOf("AttackableUpgrade/DamageReceiveFactor", item => item.Name.ToString(), item => item.Double("Factor"));
+        this.distributionUpgrade = elements.ListOf("DistributionUpgrade/AddDeltas", item => new DistributionUpgradeAddDelta(item));
 
         var dict = elements
           .Where(el => el != null && el.HasElements)
@@ -404,8 +417,8 @@ namespace Anno1800.Jsonify {
       }
     }
 
-    // Item
-    class Item : Asset {
+    // Item Buff
+    class ItemBuff : Asset {
       [Nullable]
       [Element("Item")]
       public ItemData item;
@@ -429,33 +442,34 @@ namespace Anno1800.Jsonify {
       public BuffData? buff;
 
 
-      public Item(XElement asset, Dictionary<string, XElement> map) : base(asset, map) {
+      public ItemBuff(XElement asset, Dictionary<string, XElement> map) : base(asset, map) {
         var values = asset.Element("Values");
 
         this.upgrade = new UpgradeData(UpgradeData.upgradeWrappers.Select(name => values.Element(name)));
       }
     }
 
-    [Adapter] class QuestItem : Item { public QuestItem(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { } }
-    [Adapter] class ItemWithUI : Item { public ItemWithUI(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { } }
-    [Adapter] class ItemSpecialAction : Item { public ItemSpecialAction(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { } }
-    [Adapter] class QuestItemMagistrate : Item { public QuestItemMagistrate(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { } }
-    [Adapter] class FestivalBuff : Item { public FestivalBuff(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { } }
-    [Adapter] class GuildhouseBuff : Item { public GuildhouseBuff(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { } }
-    [Adapter] class TownhallBuff : Item { public TownhallBuff(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { } }
-    [Adapter] class VehicleBuff : Item { public VehicleBuff(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { } }
-    [Adapter] class HarbourOfficeBuff : Item { public HarbourOfficeBuff(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { } }
-    [Adapter] class CultureItem : Item { public CultureItem(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { } }
-    [Adapter] class TownhallItem : Item { public TownhallItem(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { } }
-    [Adapter] class GuildhouseItem : Item { public GuildhouseItem(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { } }
-    [Adapter] class HarborOfficeItem : Item { public HarborOfficeItem(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { } }
-    [Adapter] class ShipSpecialist : Item { public ShipSpecialist(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { } }
-    [Adapter] class VehicleItem : Item { public VehicleItem(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { } }
-    [Adapter] class ActiveItem : Item { public ActiveItem(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { } }
-    [Adapter] class ItemSpecialActionVisualEffect : Item { public ItemSpecialActionVisualEffect(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { } }
-    [Adapter] class FluffItem : Item { public FluffItem(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { } }
-    [Adapter] class StartExpeditionItem : Item { public StartExpeditionItem(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { } }
-    [Adapter] class ItemConstructionPlan : Item { public ItemConstructionPlan(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { } }
+    [Adapter] class QuestItem : ItemBuff { public QuestItem(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { } }
+    [Adapter] class ItemWithUI : ItemBuff { public ItemWithUI(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { } }
+    [Adapter] class ItemSpecialAction : ItemBuff { public ItemSpecialAction(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { } }
+    [Adapter] class QuestItemMagistrate : ItemBuff { public QuestItemMagistrate(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { } }
+    [Adapter] class FestivalBuff : ItemBuff { public FestivalBuff(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { } }
+    [Adapter] class GuildhouseBuff : ItemBuff { public GuildhouseBuff(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { } }
+    [Adapter] class TownhallBuff : ItemBuff { public TownhallBuff(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { } }
+    [Adapter] class VehicleBuff : ItemBuff { public VehicleBuff(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { } }
+    [Adapter] class HarbourOfficeBuff : ItemBuff { public HarbourOfficeBuff(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { } }
+    [Adapter] class CultureItem : ItemBuff { public CultureItem(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { } }
+    [Adapter] class TownhallItem : ItemBuff { public TownhallItem(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { } }
+    [Adapter] class GuildhouseItem : ItemBuff { public GuildhouseItem(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { } }
+    [Adapter] class HarborOfficeItem : ItemBuff { public HarborOfficeItem(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { } }
+    [Adapter] class ShipSpecialist : ItemBuff { public ShipSpecialist(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { } }
+    [Adapter] class VehicleItem : ItemBuff { public VehicleItem(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { } }
+    [Adapter] class ActiveItem : ItemBuff { public ActiveItem(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { } }
+    [Adapter] class ItemSpecialActionVisualEffect : ItemBuff { public ItemSpecialActionVisualEffect(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { } }
+    [Adapter] class FluffItem : ItemBuff { public FluffItem(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { } }
+    [Adapter] class StartExpeditionItem : ItemBuff { public StartExpeditionItem(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { } }
+    [Adapter] class ItemConstructionPlan : ItemBuff { public ItemConstructionPlan(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { } }
+    [Adapter] class InfluenceTitleBuff : ItemBuff { public InfluenceTitleBuff(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { } }
 
   }
 }
