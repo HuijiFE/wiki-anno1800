@@ -26,5 +26,22 @@ namespace Anno1800.Jsonify {
 
       public HarborBuildingAttacker(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { }
     }
+
+    [Adapter]
+    class VisitorPier : Building {
+      [Nullable]
+      [Element("Maintenance")]
+      public MaintenanceData? maintenance;
+      public VisitorPier(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { }
+    }
+
+    [Adapter]
+    class WorkforceConnector : Building {
+      [Nullable]
+      [Element("Maintenance")]
+      public MaintenanceData? maintenance;
+
+      public WorkforceConnector(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { }
+    }
   }
 }
