@@ -95,6 +95,10 @@ namespace Anno1800.Jsonify {
         "IncidentResolver",
         "IncidentInfluencer",
         "IncidentInfectable",
+        "IncidentInfectable/Explosion",
+        "IncidentInfectable/Infectable/Item",
+        "IncidentInfectable/IncidentInfectionChanceFactors/Item",
+        "IncidentInfectable/PerIncidentProximityEffect/Item",
 
         "Item",
         "ItemAction",

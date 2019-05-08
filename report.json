@@ -945,6 +945,35 @@
       "IncidentInfectionChanceFactors",
       "PerIncidentProximityEffect"
     ],
+    "IncidentInfectable/Explosion": [
+      "ExplosionCoreDamage",
+      "DamageExplosionChance",
+      "DamageExplosionCheckMax"
+    ],
+    "IncidentInfectable/Infectable/Item": [
+      "Base",
+      "Escalated",
+      "Communication",
+      "InitiallySpreadToSameGUID"
+    ],
+    "IncidentInfectable/IncidentInfectionChanceFactors/Item": [
+      "BaseChance",
+      "HitpointFactor",
+      "DensityFactor",
+      "DensityDistance",
+      "DilapidatedFactor",
+      "FactoryOvertimeFactor",
+      "FactoryUndertimeFactor",
+      "ResidenceFullOvertimeChance",
+      "ResidenceFullUndertimeChance",
+      "ResidenceHappinessFactor",
+      "HappinessThreshold",
+      "FactoryProductivityFactor",
+      "FactoryHappinessFactor"
+    ],
+    "IncidentInfectable/PerIncidentProximityEffect/Item": [
+      "ProximityEffect"
+    ],
     "Item": [
       "Flotsam",
       "Allocation",
@@ -2805,6 +2834,14 @@
       "501713",
       "501719",
       "501720"
+    ],
+    "IncidentResolverUnit": [
+      "消防员",
+      "消防志愿者",
+      "警察",
+      "守望相助队",
+      "医生",
+      "志愿护理师"
     ],
     "ItemBalancing": [
       "6000017"

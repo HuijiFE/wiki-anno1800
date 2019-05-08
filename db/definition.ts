@@ -22,6 +22,9 @@ export interface CityInstitutionBuilding extends Building {
   incidentInfluencer?: IncidentInfluencer;
 }
 
+export interface IncidentResolverUnit extends Asset {
+}
+
 export interface ColorConfig extends Building {
   colorConfig?: ColorConfigData;
 }

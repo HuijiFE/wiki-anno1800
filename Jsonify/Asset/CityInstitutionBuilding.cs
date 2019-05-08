@@ -63,5 +63,10 @@ namespace Anno1800.Jsonify {
 
       public CityInstitutionBuilding(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { }
     }
+
+    [Adapter]
+    class IncidentResolverUnit : Asset {
+      public IncidentResolverUnit(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { }
+    }
   }
 }
