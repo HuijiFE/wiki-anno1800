@@ -8,12 +8,12 @@ using Newtonsoft.Json;
 
 namespace Anno1800.Jsonify {
   partial class Asset {
-    //[JsonProperty(Order = -7)]
-    //public string template {
-    //  get {
-    //    return this.GetType().Name;
-    //  }
-    //}
+    [JsonProperty(Order = -7)]
+    public string template {
+      get {
+        return this.GetType().Name;
+      }
+    }
     [JsonProperty(Order = -6)]
     [Element("Standard/GUID")]
     public int guid;
