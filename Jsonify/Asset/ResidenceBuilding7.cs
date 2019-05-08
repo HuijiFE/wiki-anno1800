@@ -111,5 +111,15 @@ namespace Anno1800.Jsonify {
 
       public PopulationLevel7(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { }
     }
+
+    [Adapter]
+    class PopulationGroup7 : Asset {
+      public List<int> populationLevels;
+
+      public PopulationGroup7(XElement asset, Dictionary<string, XElement> map) : base(asset, map) {
+        var values = asset.Element("Values");
+        this.populationLevels = values.ListOf("PopulationGroup7/PopulationLevels", item => item.Int("Level"));
+      }
+    }
   }
 }

@@ -119,6 +119,10 @@ export interface WorkforceConnector extends Building {
   maintenance?: MaintenanceData;
 }
 
+export interface ItemBalancing extends Asset {
+  itemConfig?: ItemConfigData;
+}
+
 export interface Item extends Asset {
   item?: ItemData;
   itemEffect?: ItemEffect;
@@ -189,10 +193,6 @@ export interface StartExpeditionItem extends Item {
 export interface ItemConstructionPlan extends Item {
 }
 
-export interface ItemBalancing extends Building {
-  itemConfig?: ItemConfigData;
-}
-
 export interface OrnamentalBuilding extends Building {
   ornament?: OrnamentData;
 }
@@ -207,13 +207,13 @@ export interface ParticipantRepresentationFeature extends Asset {
   participant?: ParticipantRepresentationFeatureData;
 }
 
+export interface ProductionChain extends Asset {
+  chain?: ProductionChainNode;
+}
+
 export interface Product extends Asset {
   product?: ProductData;
   expeditionAttribute?: ExpeditionAttribute;
-}
-
-export interface ProductionChain extends Asset {
-  chain?: ProductionChainNode;
 }
 
 export interface PublicServiceBuilding extends Building {
@@ -237,6 +237,10 @@ export interface ResidenceBuilding7 extends Building {
 
 export interface PopulationLevel7 extends Asset {
   population7?: Population7;
+}
+
+export interface PopulationGroup7 extends Asset {
+  populationLevels: number[];
 }
 
 export interface Fertility extends Asset {
@@ -468,6 +472,16 @@ export interface ProductFilterData extends BaseAssetObject {
   categories: ProductCategory[];
 }
 
+export interface ItemConfigData extends BaseAssetObject {
+  rarityText: Record<string, number>;
+  exclusiveGroupText: Record<string, number>;
+  allocationText: Record<string, number>;
+  allocationIcons: Record<string, string>;
+  itemGenCrateAsset: number;
+  itemGenCrateScale: number;
+  buffFluffIndexIncreaseTimer: number;
+}
+
 export interface BuffData extends BaseAssetObject {
   addedInfolayer: number;
   possibleFluffTexts: number[];
@@ -612,16 +626,6 @@ export interface UpgradeData extends BaseAssetObject {
   upgrades?: Record<string, UpgradePair>;
 }
 
-export interface ItemConfigData extends BaseAssetObject {
-  rarityText: Record<string, number>;
-  exclusiveGroupText: Record<string, number>;
-  allocationText: Record<string, number>;
-  allocationIcons: Record<string, string>;
-  itemGenCrateAsset: number;
-  itemGenCrateScale: number;
-  buffFluffIndexIncreaseTimer: number;
-}
-
 export interface AttackableData extends BaseAssetObject {
   maximumHitPoints: number;
   hasRuinState: boolean;
@@ -697,6 +701,11 @@ export interface ParticipantRepresentationFeatureData extends BaseAssetObject {
   colors: string[];
 }
 
+export interface ProductionChainNode extends BaseAssetObject {
+  building: number;
+  nodes?: ProductionChainNode[];
+}
+
 export interface ProductData extends BaseAssetObject {
   negative: boolean;
   category: number;
@@ -718,11 +727,6 @@ export interface ExpeditionAttribute extends BaseAssetObject {
   fluff: string[];
   itemDifficulties: string[];
   itemRegions: string[];
-}
-
-export interface ProductionChainNode extends BaseAssetObject {
-  building: number;
-  nodes?: ProductionChainNode[];
 }
 
 export interface PublicServiceData extends BaseAssetObject {
