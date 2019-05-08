@@ -288,8 +288,11 @@ export interface NewspaperEffectIcon extends Icon {
 }
 
 export interface PlayerLogo extends Asset {
-  defaultLogo: string;
-  miniLogo: string;
+  playerLogo: PlayerLogoData;
+}
+
+export interface Portrait extends Asset {
+  portrait: PortraitData;
 }
 
 export interface Street extends Building {
@@ -845,6 +848,17 @@ export interface ResourceSetCondition extends BaseAssetObject {
 
 export interface ShipyardData extends BaseAssetObject {
   assemblyOptions: number[];
+}
+
+export interface PlayerLogoData extends BaseAssetObject {
+  defaultLogo: string;
+  miniLogo: string;
+}
+
+export interface PortraitData extends BaseAssetObject {
+  name: number;
+  color: string;
+  isFemale: boolean;
 }
 
 export interface StreetData extends BaseAssetObject {

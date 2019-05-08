@@ -13,3 +13,8 @@ namespace Anno1800.Jsonify {
     }
   }
 }
+
+/*
+ * TODO:
+ * ProgressLevel
+ */
