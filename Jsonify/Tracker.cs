@@ -34,6 +34,10 @@ namespace Anno1800.Jsonify {
         "Ornament",
         "RepairCrane",
         "Shipyard",
+        "IncidentResolver",
+        "IncidentInfluencer",
+        "IncidentInfectable",
+
         "Item",
         "Buff",
       };
@@ -77,7 +81,6 @@ namespace Anno1800.Jsonify {
         "FreeAreaProductivity",
         "ModuleOwner",
         "Monument",
-        "Shipyard",
         "PublicService",
         "Market",
         "StorageBase",
@@ -88,6 +91,10 @@ namespace Anno1800.Jsonify {
         "LogisticNode/QueueConfiguration",
         "Ornament",
         "RepairCrane",
+        "Shipyard",
+        "IncidentResolver",
+        "IncidentInfluencer",
+        "IncidentInfectable",
 
         "Item",
         "ItemAction",

@@ -80,6 +80,15 @@ namespace Anno1800.Jsonify {
       }
     }
 
+    [Adapter]
+    class HeavyFactoryBuilding : FactoryBuilding7 {
+      [Nullable]
+      [Element("IncidentInfluencer")]
+      public IncidentInfluencer incidentInfluencer;
+
+      public HeavyFactoryBuilding(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { }
+    }
+
     // FreeAreaProductivity ================
 
     class FreeAreaProductivity : BaseAssetObject {
@@ -104,11 +113,6 @@ namespace Anno1800.Jsonify {
     }
 
     [Adapter]
-    class HeavyFactoryBuilding : FactoryBuilding7 {
-      public HeavyFactoryBuilding(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { }
-    }
-
-    [Adapter]
     class FreeAreaBuilding : FactoryBuilding7 {
       [Nullable]
       [Element("FreeAreaProductivity")]
@@ -119,6 +123,10 @@ namespace Anno1800.Jsonify {
 
     [Adapter]
     class HeavyFreeAreaBuilding : FreeAreaBuilding {
+      [Nullable]
+      [Element("IncidentInfluencer")]
+      public IncidentInfluencer incidentInfluencer;
+
       public HeavyFreeAreaBuilding(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { }
     }
 

@@ -1,0 +1,538 @@
+[
+  {
+    "guid": 1010462,
+    "name": "institution_01 (Police)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_police.png",
+    "description": 3788,
+    "incidentResolver": {
+      "ResolverUnit": 100581,
+      "SpecialUnit": 100582,
+      "ResolvableIncident": "Riot",
+      "specialUnitThresholds": [
+        {
+          "unitAmount": 1,
+          "happinessThreshold": 10,
+          "populationCount": 100
+        },
+        {
+          "unitAmount": 2,
+          "happinessThreshold": 30,
+          "populationCount": 200
+        },
+        {
+          "unitAmount": 3,
+          "happinessThreshold": 50,
+          "populationCount": 300
+        }
+      ]
+    },
+    "incidentInfluencer": {
+      "influence": {
+        "Riot": {
+          "distance": 15,
+          "influence": -7.0
+        }
+      }
+    },
+    "attackable": {
+      "maximumHitPoints": 4500,
+      "hasRuinState": true,
+      "selfHealPerHealTick": 4.0,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": false,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 0,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "building": {
+      "type": "Factory",
+      "terrian": "",
+      "region": "Moderate",
+      "category": 100001,
+      "pickingAsset": 0
+    },
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010017,
+          "amount": 2500
+        },
+        {
+          "ingredient": 1010196,
+          "amount": 8
+        },
+        {
+          "ingredient": 1010205,
+          "amount": 10
+        },
+        {
+          "ingredient": 1010218,
+          "amount": 0
+        },
+        {
+          "ingredient": 1010207,
+          "amount": 0
+        },
+        {
+          "ingredient": 1010202,
+          "amount": 0
+        }
+      ],
+      "influenceCostType": "",
+      "influenceCostPoints": 0
+    }
+  },
+  {
+    "guid": 1010463,
+    "name": "institution_02 (Fire Department)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_fire_house.png",
+    "description": 118032,
+    "incidentResolver": {
+      "ResolverUnit": 100579,
+      "SpecialUnit": 100580,
+      "ResolvableIncident": "",
+      "specialUnitThresholds": [
+        {
+          "unitAmount": 1,
+          "happinessThreshold": 10,
+          "populationCount": 100
+        },
+        {
+          "unitAmount": 2,
+          "happinessThreshold": 30,
+          "populationCount": 200
+        },
+        {
+          "unitAmount": 3,
+          "happinessThreshold": 50,
+          "populationCount": 300
+        }
+      ]
+    },
+    "incidentInfluencer": {
+      "influence": {
+        "Fire": {
+          "distance": 15,
+          "influence": -7.0
+        },
+        "Explosion": {
+          "distance": 9,
+          "influence": -7.0
+        }
+      }
+    },
+    "attackable": {
+      "maximumHitPoints": 3500,
+      "hasRuinState": true,
+      "selfHealPerHealTick": 4.0,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": false,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 0,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "building": {
+      "type": "Factory",
+      "terrian": "",
+      "region": "Moderate",
+      "category": 100001,
+      "pickingAsset": 0
+    },
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010017,
+          "amount": 500
+        },
+        {
+          "ingredient": 1010196,
+          "amount": 4
+        },
+        {
+          "ingredient": 1010205,
+          "amount": 0
+        },
+        {
+          "ingredient": 1010218,
+          "amount": 0
+        },
+        {
+          "ingredient": 1010207,
+          "amount": 0
+        },
+        {
+          "ingredient": 1010202,
+          "amount": 0
+        }
+      ],
+      "influenceCostType": "",
+      "influenceCostPoints": 0
+    }
+  },
+  {
+    "guid": 1010464,
+    "name": "institution_03 (Hospital)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_hospital.png",
+    "description": 3789,
+    "incidentResolver": {
+      "ResolverUnit": 100583,
+      "SpecialUnit": 100584,
+      "ResolvableIncident": "Illness",
+      "specialUnitThresholds": [
+        {
+          "unitAmount": 1,
+          "happinessThreshold": 10,
+          "populationCount": 100
+        },
+        {
+          "unitAmount": 2,
+          "happinessThreshold": 30,
+          "populationCount": 200
+        },
+        {
+          "unitAmount": 3,
+          "happinessThreshold": 50,
+          "populationCount": 300
+        }
+      ]
+    },
+    "incidentInfluencer": {
+      "influence": {
+        "Illness": {
+          "distance": 20,
+          "influence": -7.0
+        }
+      }
+    },
+    "attackable": {
+      "maximumHitPoints": 5500,
+      "hasRuinState": true,
+      "selfHealPerHealTick": 4.0,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": false,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 0,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "building": {
+      "type": "Factory",
+      "terrian": "",
+      "region": "Moderate",
+      "category": 100001,
+      "pickingAsset": 0
+    },
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010017,
+          "amount": 10000
+        },
+        {
+          "ingredient": 1010196,
+          "amount": 12
+        },
+        {
+          "ingredient": 1010205,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010218,
+          "amount": 16
+        },
+        {
+          "ingredient": 1010207,
+          "amount": 40
+        },
+        {
+          "ingredient": 1010202,
+          "amount": 0
+        }
+      ],
+      "influenceCostType": "",
+      "influenceCostPoints": 0
+    }
+  },
+  {
+    "guid": 101274,
+    "name": "institution_colony01_01 (Police)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_police.png",
+    "description": 3788,
+    "incidentResolver": {
+      "ResolverUnit": 100581,
+      "SpecialUnit": 100582,
+      "ResolvableIncident": "Riot",
+      "specialUnitThresholds": [
+        {
+          "unitAmount": 1,
+          "happinessThreshold": 10,
+          "populationCount": 100
+        },
+        {
+          "unitAmount": 2,
+          "happinessThreshold": 30,
+          "populationCount": 200
+        },
+        {
+          "unitAmount": 3,
+          "happinessThreshold": 50,
+          "populationCount": 300
+        }
+      ]
+    },
+    "incidentInfluencer": {
+      "influence": {
+        "Riot": {
+          "distance": 15,
+          "influence": -7.0
+        }
+      }
+    },
+    "attackable": {
+      "maximumHitPoints": 4500,
+      "hasRuinState": true,
+      "selfHealPerHealTick": 4.0,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": false,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 0,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "building": {
+      "type": "Factory",
+      "terrian": "",
+      "region": "Colony01",
+      "category": 100001,
+      "pickingAsset": 0
+    },
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010017,
+          "amount": 2500
+        },
+        {
+          "ingredient": 1010196,
+          "amount": 6
+        },
+        {
+          "ingredient": 1010205,
+          "amount": 0
+        },
+        {
+          "ingredient": 1010218,
+          "amount": 0
+        },
+        {
+          "ingredient": 1010207,
+          "amount": 0
+        },
+        {
+          "ingredient": 1010202,
+          "amount": 0
+        }
+      ],
+      "influenceCostType": "",
+      "influenceCostPoints": 0
+    }
+  },
+  {
+    "guid": 101275,
+    "name": "institution_colony01_02 (Fire Department)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_fire_house.png",
+    "description": 118032,
+    "incidentResolver": {
+      "ResolverUnit": 100579,
+      "SpecialUnit": 100580,
+      "ResolvableIncident": "",
+      "specialUnitThresholds": [
+        {
+          "unitAmount": 1,
+          "happinessThreshold": 10,
+          "populationCount": 100
+        },
+        {
+          "unitAmount": 2,
+          "happinessThreshold": 30,
+          "populationCount": 200
+        },
+        {
+          "unitAmount": 3,
+          "happinessThreshold": 50,
+          "populationCount": 300
+        }
+      ]
+    },
+    "incidentInfluencer": {
+      "influence": {
+        "Fire": {
+          "distance": 15,
+          "influence": -7.0
+        },
+        "Explosion": {
+          "distance": 9,
+          "influence": -7.0
+        }
+      }
+    },
+    "attackable": {
+      "maximumHitPoints": 3500,
+      "hasRuinState": true,
+      "selfHealPerHealTick": 4.0,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": false,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 0,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "building": {
+      "type": "Factory",
+      "terrian": "",
+      "region": "Colony01",
+      "category": 100001,
+      "pickingAsset": 0
+    },
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010017,
+          "amount": 500
+        },
+        {
+          "ingredient": 1010196,
+          "amount": 4
+        },
+        {
+          "ingredient": 1010205,
+          "amount": 0
+        },
+        {
+          "ingredient": 1010218,
+          "amount": 0
+        },
+        {
+          "ingredient": 1010207,
+          "amount": 0
+        },
+        {
+          "ingredient": 1010202,
+          "amount": 0
+        }
+      ],
+      "influenceCostType": "",
+      "influenceCostPoints": 0
+    }
+  },
+  {
+    "guid": 101276,
+    "name": "institution_colony01_03 (Hospital)",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_hospital.png",
+    "description": 3789,
+    "incidentResolver": {
+      "ResolverUnit": 100583,
+      "SpecialUnit": 100584,
+      "ResolvableIncident": "Illness",
+      "specialUnitThresholds": [
+        {
+          "unitAmount": 1,
+          "happinessThreshold": 10,
+          "populationCount": 100
+        },
+        {
+          "unitAmount": 2,
+          "happinessThreshold": 30,
+          "populationCount": 200
+        },
+        {
+          "unitAmount": 3,
+          "happinessThreshold": 50,
+          "populationCount": 300
+        }
+      ]
+    },
+    "incidentInfluencer": {
+      "influence": {
+        "Illness": {
+          "distance": 20,
+          "influence": -7.0
+        }
+      }
+    },
+    "attackable": {
+      "maximumHitPoints": 5500,
+      "hasRuinState": true,
+      "selfHealPerHealTick": 4.0,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": false,
+      "moralePower": 0,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 0.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 0,
+      "armorType": "",
+      "disableGettingAutoAttacked": false
+    },
+    "building": {
+      "type": "Factory",
+      "terrian": "",
+      "region": "Colony01",
+      "category": 100001,
+      "pickingAsset": 0
+    },
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010017,
+          "amount": 10000
+        },
+        {
+          "ingredient": 1010196,
+          "amount": 12
+        },
+        {
+          "ingredient": 1010205,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010218,
+          "amount": 0
+        },
+        {
+          "ingredient": 1010207,
+          "amount": 0
+        },
+        {
+          "ingredient": 1010202,
+          "amount": 0
+        }
+      ],
+      "influenceCostType": "",
+      "influenceCostPoints": 0
+    }
+  }
+]

@@ -17,6 +17,11 @@ export interface Building extends Asset {
   cost?: CostData;
 }
 
+export interface CityInstitutionBuilding extends Building {
+  incidentResolver?: IncidentResolver;
+  incidentInfluencer?: IncidentInfluencer;
+}
+
 export interface ColorConfig extends Building {
   colorConfig?: ColorConfigData;
 }
@@ -33,6 +38,7 @@ export interface FactoryBuilding7 extends Building {
 }
 
 export interface HeavyFactoryBuilding extends FactoryBuilding7 {
+  incidentInfluencer?: IncidentInfluencer;
 }
 
 export interface FreeAreaBuilding extends FactoryBuilding7 {
@@ -40,6 +46,7 @@ export interface FreeAreaBuilding extends FactoryBuilding7 {
 }
 
 export interface HeavyFreeAreaBuilding extends FreeAreaBuilding {
+  incidentInfluencer?: IncidentInfluencer;
 }
 
 export interface ModuleOwnerBuilding extends FactoryBuilding7 {
@@ -83,6 +90,10 @@ export interface ItemFilter extends Asset {
 
 export interface ProductFilter extends Asset {
   productFilter?: ProductFilterData;
+}
+
+export interface Guildhouse extends Building {
+  incidentInfluencer?: IncidentInfluencer;
 }
 
 export interface HarborBuilding extends Building {
@@ -308,6 +319,28 @@ export interface CultureData extends BaseAssetObject {
   hasPollution: boolean;
   setPages: number[];
   openSetPages: number;
+}
+
+export interface SpecialUnitThreshold extends BaseAssetObject {
+  unitAmount: number;
+  happinessThreshold: number;
+  populationCount: number;
+}
+
+export interface IncidentResolver extends BaseAssetObject {
+  ResolverUnit: number;
+  SpecialUnit: number;
+  ResolvableIncident: string;
+  specialUnitThresholds: SpecialUnitThreshold[];
+}
+
+export interface Influence extends BaseAssetObject {
+  distance: number;
+  influence: number;
+}
+
+export interface IncidentInfluencer extends BaseAssetObject {
+  influence: Record<string, Influence>;
 }
 
 export interface ColorConfigData extends BaseAssetObject {
