@@ -111,6 +111,14 @@ export interface HarborBuildingAttacker extends HarborBuilding {
   attacker?: AttackerData;
 }
 
+export interface VisitorPier extends Building {
+  maintenance?: MaintenanceData;
+}
+
+export interface WorkforceConnector extends Building {
+  maintenance?: MaintenanceData;
+}
+
 export interface Item extends Asset {
   item?: ItemData;
   itemEffect?: ItemEffect;
@@ -192,6 +200,9 @@ export interface OrnamentalBuilding extends Building {
 export interface BuildPermitBuilding extends OrnamentalBuilding {
 }
 
+export interface QuestLighthouse extends Building {
+}
+
 export interface ParticipantRepresentationFeature extends Asset {
   participant?: ParticipantRepresentationFeatureData;
 }
@@ -212,9 +223,6 @@ export interface PublicServiceBuilding extends Building {
 export interface Market extends PublicServiceBuilding {
   market?: MarketData;
   storedProducts: number[];
-}
-
-export interface QuestLighthouse extends Building {
 }
 
 export interface RepairCrane extends Building {
@@ -278,10 +286,6 @@ export interface BridgeBuilding extends Building {
   bridge?: BridgeData;
 }
 
-export interface VisitorPier extends Building {
-  maintenance?: MaintenanceData;
-}
-
 export interface Warehouse extends Building {
   warehouse?: WarehouseData;
   queues: number;
@@ -293,17 +297,13 @@ export interface HarborWarehouse7 extends Warehouse {
   attacker?: AttackerData;
 }
 
-export interface HarborWarehouseStrategic extends Warehouse {
-}
-
 export interface HarborDepot extends Warehouse {
 }
 
 export interface HarborLandingStage7 extends Warehouse {
 }
 
-export interface WorkforceConnector extends Building {
-  maintenance?: MaintenanceData;
+export interface HarborWarehouseStrategic extends Warehouse {
 }
 
 export interface BaseAssetObject {
