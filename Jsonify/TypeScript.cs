@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using System.Text;
+using System.Xml.Linq;
 using Newtonsoft.Json;
 
 namespace Anno1800.Jsonify {
@@ -38,6 +39,12 @@ namespace Anno1800.Jsonify {
       public bool optional;
       public string type;
 
+      public PropertyInfo(string name, bool optional, string type) {
+        this.name = name;
+        this.optional = optional;
+        this.type = type;
+      }
+
       public PropertyInfo(FieldInfo info) {
         this.name = info.Name;
         this.optional = Nullable.GetUnderlyingType(info.FieldType) != null;
@@ -68,6 +75,11 @@ namespace Anno1800.Jsonify {
       public string? baseInterface;
       public string name;
       public List<PropertyInfo> properties;
+
+      public InterfaceInfo(string name, IEnumerable<PropertyInfo> properties) {
+        this.name = name;
+        this.properties = new List<PropertyInfo>(properties);
+      }
 
       public InterfaceInfo(Type type) {
         this.name = type.Name;
@@ -100,16 +112,28 @@ namespace Anno1800.Jsonify {
       }
     }
 
-    public static string GetAll(params Type[] baseTypes) {
+    public static string GetAll(Dictionary<string, List<Asset>> dataDict, params Type[] baseTypes) {
       var result = new List<string> { "/* eslint-disable */\n" };
+
+      result.Add($"export const allTemplates: string[] = [\n{string.Join('\n', dataDict.Keys.Select(k => $"  '{k}',"))}\n];\n");
+
+      result.Add(new InterfaceInfo("TemplateMap", dataDict.Keys.Select(k => new PropertyInfo(k, false, k)))
+        .ToTypeDefinition(true)
+        .ToString());
+
+      result.Add(new InterfaceInfo("AssetTemplateMap", dataDict
+          .Select(kvp => kvp.Value)
+          .Aggregate<IEnumerable<Asset>>((agg, assets) => assets.Count() > 0 ? agg.Concat(assets) : agg)
+          .Select(a => new PropertyInfo(a.guid.ToString(), false, a.template))
+          )
+        .ToTypeDefinition(true)
+        .ToString());
 
       foreach (var type in baseTypes) {
         var types = new List<Type> { type };
         types = types.Concat(type.Assembly.GetTypes().Where(t => t.IsSubclassOf(type))).ToList();
         var interfaces = types.Select(t => new InterfaceInfo(t));
-        result = result
-          .Concat(interfaces.Select(i => i.ToTypeDefinition(true).ToString()))
-          .ToList();
+        result.AddRange(interfaces.Select(i => i.ToTypeDefinition(true).ToString()));
       }
 
       return String.Join("\n", result);

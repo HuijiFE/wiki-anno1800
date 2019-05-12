@@ -165,27 +165,18 @@ namespace Anno1800.Jsonify {
     }
 
     static Dictionary<string, List<Asset>> AdaptAll(Dictionary<string, XElement> assetsMap) {
-      var adaptersMap = typeof(Asset)
+      return typeof(Asset)
         .Assembly
         .GetTypes()
-        .Where(t => t.IsSubclassOf(typeof(Asset)) && t.GetCustomAttributes(true).Any(a => (a as AdapterAttribute) != null))
-        .ToDictionary(a => a.Name, a => a);
-
-      var dataDict = new Dictionary<string, List<Asset>>();
-
-      foreach ((string guid, XElement asset) in assetsMap) {
-        var template = asset.String("Template");
-        if (adaptersMap.ContainsKey(template)) {
-          var data = (Asset)Activator.CreateInstance(adaptersMap[template], asset, assetsMap);
-          if (dataDict.ContainsKey(template)) {
-            dataDict[template].Add(data);
-          } else {
-            dataDict.Add(template, new List<Asset> { data });
-          }
-        }
-      }
-
-      return dataDict;
+        .Where(t => t.IsSubclassOf(typeof(Asset)) && t.GetCustomAttributes(false).Any(a => (a as AdapterAttribute) != null))
+        .ToDictionary(
+          adapter => adapter.Name,
+          adapter => assetsMap
+            .Values
+            .Where(asset => asset.String("Template") == adapter.Name)
+            .Select(asset => (Asset)Activator.CreateInstance(adapter, asset, assetsMap))
+            .ToList()
+        );
     }
 
     static public (Dictionary<string, XElement>, Dictionary<string, List<Asset>>) Convert(string input, string output) {
@@ -223,7 +214,7 @@ namespace Anno1800.Jsonify {
 
       {
         var dest = Path.Combine(output, "definition.ts");
-        IO.Save(TypeScript.GetAll(typeof(Asset), typeof(BaseAssetObject)), dest);
+        IO.Save(TypeScript.GetAll(dataDict, typeof(Asset), typeof(BaseAssetObject)), dest);
         Console.WriteLine(dest);
       }
 
