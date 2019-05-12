@@ -8,14 +8,13 @@ import {
   Provide,
   Watch,
 } from 'vue-property-decorator';
-import { resource } from '@src/utils/resource';
 
 /**
- * Component: Home
+ * Component: Localization
  */
 @Component
-export default class VHome extends Vue {
+export default class VLocalization extends Vue {
   private render(h: CreateElement): VNode {
-    return <div staticClass="v-home">home</div>;
+    return <router-view data-language={this.$route.params.language} />;
   }
 }

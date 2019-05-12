@@ -11,6 +11,14 @@ namespace Anno1800.Jsonify {
   [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property)]
   class NullableAttribute : Attribute { }
 
+  [AttributeUsage(AttributeTargets.Field | AttributeTargets.Property)]
+  class TypeAliasAttribute : Attribute {
+    public string alias;
+    public TypeAliasAttribute(string alias) {
+      this.alias = alias;
+    }
+  }
+
   class TypeScript {
     public static string GetTypeScriptTypeName(Type type) {
       if (type.IsGenericType) {
@@ -46,9 +54,10 @@ namespace Anno1800.Jsonify {
       }
 
       public PropertyInfo(FieldInfo info) {
+        var typeAlias = info.GetCustomAttribute<TypeAliasAttribute>()?.alias;
         this.name = info.Name;
         this.optional = Nullable.GetUnderlyingType(info.FieldType) != null;
-        this.type = TypeScript.GetTypeScriptTypeName(this.optional
+        this.type = typeAlias ?? TypeScript.GetTypeScriptTypeName(this.optional
           ? info.FieldType.GetGenericArguments()[0]
           : info.FieldType);
         if (info.GetCustomAttributes().Any(a => (a as NullableAttribute) != null)) {
@@ -120,6 +129,8 @@ namespace Anno1800.Jsonify {
       result.Add(new InterfaceInfo("TemplateMap", dataDict.Keys.Select(k => new PropertyInfo(k, false, k)))
         .ToTypeDefinition(true)
         .ToString());
+
+      result.Add($"export type Template = keyof TemplateMap;\n");
 
       result.Add(new InterfaceInfo("AssetTemplateMap", dataDict
           .Select(kvp => kvp.Value)

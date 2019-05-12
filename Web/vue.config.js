@@ -16,7 +16,10 @@ const options = {
    * @param {Config} config
    */
   chainWebpack: config => {
-    config.resolve.alias.delete('@').set('@src', resolvePath('src'));
+    config.resolve.alias
+      .delete('@')
+      .set('@src', resolvePath('src'))
+      .set('@public', resolvePath('public'));
 
     chainWebpackHash(options)(config);
   },

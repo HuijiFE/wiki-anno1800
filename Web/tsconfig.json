@@ -14,10 +14,12 @@
     "sourceMap": true,
     "baseUrl": ".",
     "paths": {
-      "@src/*": ["src/*"]
+      "@src/*": ["src/*"],
+      "@public/*": ["public/*"]
     }
   },
   "include": [
+    "public/**/*.ts",
     "src/**/*.ts",
     "src/**/*.tsx",
     "tests/**/*.ts",

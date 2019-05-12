@@ -188,6 +188,8 @@ export interface TemplateMap {
   HarborWarehouseStrategic: HarborWarehouseStrategic;
 }
 
+export type Template = keyof TemplateMap;
+
 export interface AssetTemplateMap {
   1010462: CityInstitutionBuilding;
   1010463: CityInstitutionBuilding;
@@ -3288,6 +3290,7 @@ export interface AssetTemplateMap {
 }
 
 export interface Asset {
+  template: Template;
   guid: number;
   name: string;
   id: string;

@@ -9,11 +9,8 @@ using Newtonsoft.Json;
 namespace Anno1800.Jsonify {
   partial class Asset {
     [JsonProperty(Order = -7)]
-    public string template {
-      get {
-        return this.GetType().Name;
-      }
-    }
+    [TypeAlias("Template")]
+    public string template;
     [JsonProperty(Order = -6)]
     [Element("Standard/GUID")]
     public int guid;
@@ -31,6 +28,7 @@ namespace Anno1800.Jsonify {
     public int? description;
 
     public Asset(XElement asset, Dictionary<string, XElement> map) {
+      this.template = asset.String("Template");
       Adapter.Deserialize(this, asset.Element("Values").Elements());
     }
 
