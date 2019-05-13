@@ -8,6 +8,10 @@ export interface AssetDict {
 }
 
 declare module 'vue/types/vue' {
+  interface VueConstructor<V extends Vue = Vue> {
+    $db: AssetDict;
+    $dbLoad: () => Promise<void>;
+  }
   interface Vue {
     $db: AssetDict;
     $dbLoad: () => Promise<void>;
@@ -21,7 +25,7 @@ export const database: PluginFunction<never> = ($Vue: typeof Vue) => {
   if ($$Vue && $$Vue === $Vue) {
     return;
   }
-  $Vue.prototype.$dbLoad = async (): Promise<void> => {
+  const dbLoad = async (): Promise<void> => {
     const dict: Record<string, Asset> = {};
     const dataDicts = await Promise.all(
       allTemplates.map(t => getResource<Asset[]>(`/db/${t}.json`)),
@@ -32,5 +36,8 @@ export const database: PluginFunction<never> = ($Vue: typeof Vue) => {
       });
     });
     $Vue.prototype.$db = dict;
+    $Vue.$db = dict;
   };
+  $Vue.prototype.$dbLoad = dbLoad;
+  $Vue.$dbLoad = dbLoad;
 };

@@ -1,0 +1,22 @@
+/**
+ * Component: Icon
+ */
+@include comp('icon') {
+  display: inline-flex;
+  position: relative;
+  flex: none;
+  max-width: 100%;
+  min-width: 0;
+  object-fit: contain;
+
+  @each $size in (16, 24, 32, 56, 64, 96, 128, 256, 512) {
+    @include prop(
+      (
+        'size': $size,
+      )
+    ) {
+      width: rem($size);
+      height: rem($size);
+    }
+  }
+}

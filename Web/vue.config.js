@@ -6,11 +6,20 @@ const { chainWebpackHash } = require('@huiji/vue-cli-utils');
 const { genPathResolve } = require('@huiji/shared-utils');
 
 const resolvePath = genPathResolve(__dirname);
+const publicPath = process.env.NODE_ENV === 'production' ? '/static/' : '/';
 
 const options = {
-  publicPath: process.env.NODE_ENV === 'production' ? '/static/' : '/',
+  publicPath,
   runtimeCompiler: true,
   parallel: false,
+
+  css: {
+    loaderOptions: {
+      sass: {
+        data: `$BASE_URL: '${publicPath}';`,
+      },
+    },
+  },
 
   /**
    * @param {Config} config

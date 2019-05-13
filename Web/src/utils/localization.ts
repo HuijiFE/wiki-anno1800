@@ -13,6 +13,10 @@ const languageMap: Record<Language, string> = {
 };
 
 declare module 'vue/types/vue' {
+  interface VueConstructor<V extends Vue = Vue> {
+    $l10n: LocalizationDict;
+    $l10nLoad: (language: Language) => Promise<void>;
+  }
   interface Vue {
     $l10n: LocalizationDict;
     $l10nLoad: (language: Language) => Promise<void>;
@@ -26,10 +30,13 @@ export const localization: PluginFunction<never> = ($Vue: typeof Vue) => {
   if ($$Vue && $$Vue === $Vue) {
     return;
   }
-  $Vue.prototype.$l10nLoad = async (language: Language): Promise<void> => {
+  const l10nLoad = async (language: Language): Promise<void> => {
     const dict = await getResource(
       `/localization/${languageMap[language] || language}.json`,
     );
     $Vue.prototype.$l10n = dict;
+    $Vue.$l10n = dict;
   };
+  $Vue.prototype.$l10nLoad = l10nLoad;
+  $Vue.$l10nLoad = l10nLoad;
 };

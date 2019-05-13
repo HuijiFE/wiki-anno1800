@@ -7,4 +7,4 @@
  * All components
  */
 
-export * from './label/label';
+export * from './common/common';
