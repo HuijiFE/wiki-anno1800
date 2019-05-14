@@ -7,6 +7,8 @@
         <GUID>101938</GUID>
         <Name>IncidentResolverFeedback</Name>
         <ID>IncidentResolverFeedback</ID>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Object>
         <Type>NotSerialized</Type>
@@ -15,11 +17,29 @@
             <Filename>data/graphics/emptyDummy/empty_dummy_picturepuzzle.cfg</Filename>
           </Item>
         </Variations>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <DefaultSequence>default</DefaultSequence>
+        <ObjectPosition>Static</ObjectPosition>
+        <MeshPlacement>Default</MeshPlacement>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
-      <FeedbackController />
+      <FeedbackController>
+        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
+        <UpdateMeshSequence>1</UpdateMeshSequence>
+      </FeedbackController>
       <DynamicVariation>
         <DynamicVariationType>SequenceAsset</DynamicVariationType>
       </DynamicVariation>

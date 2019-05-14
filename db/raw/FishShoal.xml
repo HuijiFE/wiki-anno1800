@@ -8,9 +8,21 @@
         <Name>FishShoal BlueWhale</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_rich_sea.png</IconFilename>
         <ID>Herd_Water_0</ID>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Mesh>
         <OnlyVisibleInEditor>1</OnlyVisibleInEditor>
+        <ObjectPosition>Static</ObjectPosition>
+        <MeshPlacement>Default</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Object>
         <Variations>
@@ -19,6 +31,13 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <FishShoal>
         <ShoalRadius>5</ShoalRadius>
@@ -37,6 +56,11 @@
         <UnitCountMax>5</UnitCountMax>
         <AutoSpawn_RelativeProbability>60</AutoSpawn_RelativeProbability>
         <Animal_AudioLoop>202314</Animal_AudioLoop>
+        <AutoSpawnDuringMapLoad>1</AutoSpawnDuringMapLoad>
+        <UnitCountMin>2</UnitCountMin>
+        <ScaleFactor>1</ScaleFactor>
+        <ScaleDeviationFactorMin>0.8</ScaleDeviationFactorMin>
+        <ScaleDeviationFactorMax>1</ScaleDeviationFactorMax>
       </AnimalBase>
     </Values>
   </Asset>
@@ -48,9 +72,21 @@
         <Name>FishShoal Dolphin</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_rich_sea.png</IconFilename>
         <ID>Herd_Water_1</ID>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Mesh>
         <OnlyVisibleInEditor>1</OnlyVisibleInEditor>
+        <ObjectPosition>Static</ObjectPosition>
+        <MeshPlacement>Default</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Object>
         <Variations>
@@ -59,6 +95,13 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <FishShoal>
         <ShoalRadius>6</ShoalRadius>
@@ -66,6 +109,7 @@
         <MinVelocity>1.8</MinVelocity>
         <MaxVelocity>2.7</MaxVelocity>
         <AttackableByFishes>1</AttackableByFishes>
+        <WaterLayer>Coast</WaterLayer>
       </FishShoal>
       <AnimalBase>
         <AnimalCFGs>
@@ -79,6 +123,10 @@
         <UnitCountMax>7</UnitCountMax>
         <AutoSpawn_RelativeProbability>50</AutoSpawn_RelativeProbability>
         <Animal_AudioLoop>202306</Animal_AudioLoop>
+        <AutoSpawnDuringMapLoad>1</AutoSpawnDuringMapLoad>
+        <ScaleFactor>1</ScaleFactor>
+        <ScaleDeviationFactorMin>0.8</ScaleDeviationFactorMin>
+        <ScaleDeviationFactorMax>1</ScaleDeviationFactorMax>
       </AnimalBase>
     </Values>
   </Asset>
@@ -90,9 +138,21 @@
         <Name>FishShoal Shark</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_rich_sea.png</IconFilename>
         <ID>Herd_Water_2</ID>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Mesh>
         <OnlyVisibleInEditor>1</OnlyVisibleInEditor>
+        <ObjectPosition>Static</ObjectPosition>
+        <MeshPlacement>Default</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Object>
         <Variations>
@@ -101,12 +161,20 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <FishShoal>
         <ShoalRadius>4</ShoalRadius>
         <MinVelocity>0.7</MinVelocity>
         <MaxVelocity>1.5</MaxVelocity>
         <AttackFishes>1</AttackFishes>
+        <WaterLayer>Coast</WaterLayer>
       </FishShoal>
       <AnimalBase>
         <AnimalCFGs>
@@ -117,6 +185,13 @@
         <AutoSpawn_Regions>Colony01</AutoSpawn_Regions>
         <UnitCountMax>5</UnitCountMax>
         <AutoSpawn_RelativeProbability>75</AutoSpawn_RelativeProbability>
+        <AutoSpawnDuringMapLoad>1</AutoSpawnDuringMapLoad>
+        <AutoSpawn_AmbientZones>North;Moderate;South</AutoSpawn_AmbientZones>
+        <UnitCountMin>2</UnitCountMin>
+        <Animal_AudioLoop>0</Animal_AudioLoop>
+        <ScaleFactor>1</ScaleFactor>
+        <ScaleDeviationFactorMin>0.8</ScaleDeviationFactorMin>
+        <ScaleDeviationFactorMax>1</ScaleDeviationFactorMax>
       </AnimalBase>
     </Values>
   </Asset>
@@ -128,9 +203,21 @@
         <Name>FishShoal SpermWhale</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_rich_sea.png</IconFilename>
         <ID>Herd_Water_3</ID>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Mesh>
         <OnlyVisibleInEditor>1</OnlyVisibleInEditor>
+        <ObjectPosition>Static</ObjectPosition>
+        <MeshPlacement>Default</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Object>
         <Variations>
@@ -139,6 +226,13 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <FishShoal>
         <ShoalRadius>5</ShoalRadius>
@@ -157,6 +251,12 @@
         <UnitCountMax>5</UnitCountMax>
         <AutoSpawn_RelativeProbability>60</AutoSpawn_RelativeProbability>
         <Animal_AudioLoop>202314</Animal_AudioLoop>
+        <AutoSpawnDuringMapLoad>1</AutoSpawnDuringMapLoad>
+        <AutoSpawn_AmbientZones>North;Moderate;South</AutoSpawn_AmbientZones>
+        <UnitCountMin>2</UnitCountMin>
+        <ScaleFactor>1</ScaleFactor>
+        <ScaleDeviationFactorMin>0.8</ScaleDeviationFactorMin>
+        <ScaleDeviationFactorMax>1</ScaleDeviationFactorMax>
       </AnimalBase>
     </Values>
   </Asset>
@@ -168,9 +268,21 @@
         <Name>FishShoal Swordfish</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_rich_sea.png</IconFilename>
         <ID>Herd_Water_4</ID>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Mesh>
         <OnlyVisibleInEditor>1</OnlyVisibleInEditor>
+        <ObjectPosition>Static</ObjectPosition>
+        <MeshPlacement>Default</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Object>
         <Variations>
@@ -179,6 +291,13 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <FishShoal>
         <ShoalRadius>2</ShoalRadius>
@@ -198,6 +317,12 @@
         <UnitCountMin>4</UnitCountMin>
         <UnitCountMax>7</UnitCountMax>
         <AutoSpawn_RelativeProbability>50</AutoSpawn_RelativeProbability>
+        <AutoSpawnDuringMapLoad>1</AutoSpawnDuringMapLoad>
+        <AutoSpawn_AmbientZones>North;Moderate;South</AutoSpawn_AmbientZones>
+        <Animal_AudioLoop>0</Animal_AudioLoop>
+        <ScaleFactor>1</ScaleFactor>
+        <ScaleDeviationFactorMin>0.8</ScaleDeviationFactorMin>
+        <ScaleDeviationFactorMax>1</ScaleDeviationFactorMax>
       </AnimalBase>
     </Values>
   </Asset>
@@ -209,9 +334,21 @@
         <Name>FishShoal Orca</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_rich_sea.png</IconFilename>
         <ID>Herd_Water_5</ID>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Mesh>
         <OnlyVisibleInEditor>1</OnlyVisibleInEditor>
+        <ObjectPosition>Static</ObjectPosition>
+        <MeshPlacement>Default</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Object>
         <Variations>
@@ -220,6 +357,13 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <FishShoal>
         <ShoalRadius>4</ShoalRadius>
@@ -239,6 +383,11 @@
         <UnitCountMax>6</UnitCountMax>
         <AutoSpawn_RelativeProbability>50</AutoSpawn_RelativeProbability>
         <Animal_AudioLoop>202314</Animal_AudioLoop>
+        <AutoSpawnDuringMapLoad>1</AutoSpawnDuringMapLoad>
+        <AutoSpawn_AmbientZones>North;Moderate;South</AutoSpawn_AmbientZones>
+        <ScaleFactor>1</ScaleFactor>
+        <ScaleDeviationFactorMin>0.8</ScaleDeviationFactorMin>
+        <ScaleDeviationFactorMax>1</ScaleDeviationFactorMax>
       </AnimalBase>
     </Values>
   </Asset>

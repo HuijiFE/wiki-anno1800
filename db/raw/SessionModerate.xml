@@ -7,6 +7,8 @@
         <GUID>180023</GUID>
         <Name>Moderate 01 - Start Session</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/animals/icon_cattle.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Session>
         <CameraLoopSequence1>11</CameraLoopSequence1>
@@ -74,6 +76,40 @@
         <WorldMapAsset>data/graphics/ui/3d_objects/world_map/clickable_moderate_01.cfg</WorldMapAsset>
         <Region>5000000</Region>
         <FixDayTime>13.5</FixDayTime>
+        <MapTemplate>0</MapTemplate>
+        <CameraSettings>data/config/game/camera.xml</CameraSettings>
+        <InMenuVisible>1</InMenuVisible>
+        <SpawnAreaBorderDistanceRange>
+          <Far>
+            <Min>30</Min>
+            <Max>100</Max>
+          </Far>
+          <Mid>
+            <Min>10</Min>
+            <Max>20</Max>
+          </Mid>
+          <Near>
+            <Min>3</Min>
+            <Max>7</Max>
+          </Near>
+        </SpawnAreaBorderDistanceRange>
+        <SpawnAreaIslandDistanceRange>
+          <Far>
+            <Min>50</Min>
+            <Max>70</Max>
+          </Far>
+          <Mid>
+            <Min>20</Min>
+            <Max>40</Max>
+          </Mid>
+          <Near>
+            <Min>5</Min>
+            <Max>10</Max>
+          </Near>
+        </SpawnAreaIslandDistanceRange>
+        <SpawnStartShipAndKontor>1</SpawnStartShipAndKontor>
+        <ShipTransferEnabled>1</ShipTransferEnabled>
+        <RouteSessionAsset>0</RouteSessionAsset>
       </Session>
       <Text>
         <LocaText>
@@ -84,12 +120,16 @@
           </English>
         </LocaText>
         <LineID>14153</LineID>
+        <Localize>1</Localize>
       </Text>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
       <WorldMapSound>
         <UIClickEvent>9818389</UIClickEvent>
+        <ActiveAudioEvent>0</ActiveAudioEvent>
       </WorldMapSound>
     </Values>
   </Asset>
@@ -101,6 +141,8 @@
         <Name>Campaign Prologue Test</Name>
         <IconFilename>data/ui/2kimages/main/icons/icon_attractiveness.png</IconFilename>
         <ID>SessionPrologue</ID>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Session>
         <Region>5000001</Region>
@@ -113,6 +155,38 @@
         <WorldMapCardBackground>500876</WorldMapCardBackground>
         <WorldMapAsset>data/graphics/ui/3d_objects/world_map/clickable_expedition_02.cfg</WorldMapAsset>
         <FixDayTime>13.5</FixDayTime>
+        <CameraSettings>data/config/game/camera.xml</CameraSettings>
+        <InMenuVisible>1</InMenuVisible>
+        <SpawnAreaBorderDistanceRange>
+          <Far>
+            <Min>30</Min>
+            <Max>100</Max>
+          </Far>
+          <Mid>
+            <Min>10</Min>
+            <Max>20</Max>
+          </Mid>
+          <Near>
+            <Min>3</Min>
+            <Max>7</Max>
+          </Near>
+        </SpawnAreaBorderDistanceRange>
+        <SpawnAreaIslandDistanceRange>
+          <Far>
+            <Min>50</Min>
+            <Max>70</Max>
+          </Far>
+          <Mid>
+            <Min>20</Min>
+            <Max>40</Max>
+          </Mid>
+          <Near>
+            <Min>5</Min>
+            <Max>10</Max>
+          </Near>
+        </SpawnAreaIslandDistanceRange>
+        <TransferData />
+        <RouteSessionAsset>0</RouteSessionAsset>
       </Session>
       <Text>
         <LocaText>
@@ -123,12 +197,16 @@
           </English>
         </LocaText>
         <LineID>30277</LineID>
+        <Localize>1</Localize>
       </Text>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
       <WorldMapSound>
         <UIClickEvent>9818389</UIClickEvent>
+        <ActiveAudioEvent>0</ActiveAudioEvent>
       </WorldMapSound>
     </Values>
   </Asset>
@@ -139,6 +217,8 @@
         <GUID>180008</GUID>
         <Name>Gamescom_Moderate01</Name>
         <IconFilename>data/ui/2kimages/main/icons/icon_attractiveness.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Session>
         <MapTemplate>141388</MapTemplate>
@@ -157,6 +237,37 @@
         <RouteSessionAsset>180023</RouteSessionAsset>
         <Region>5000000</Region>
         <FixDayTime>13.5</FixDayTime>
+        <CameraSettings>data/config/game/camera.xml</CameraSettings>
+        <InMenuVisible>1</InMenuVisible>
+        <SpawnAreaBorderDistanceRange>
+          <Far>
+            <Min>30</Min>
+            <Max>100</Max>
+          </Far>
+          <Mid>
+            <Min>10</Min>
+            <Max>20</Max>
+          </Mid>
+          <Near>
+            <Min>3</Min>
+            <Max>7</Max>
+          </Near>
+        </SpawnAreaBorderDistanceRange>
+        <SpawnAreaIslandDistanceRange>
+          <Far>
+            <Min>50</Min>
+            <Max>70</Max>
+          </Far>
+          <Mid>
+            <Min>20</Min>
+            <Max>40</Max>
+          </Mid>
+          <Near>
+            <Min>5</Min>
+            <Max>10</Max>
+          </Near>
+        </SpawnAreaIslandDistanceRange>
+        <ShipTransferEnabled>1</ShipTransferEnabled>
       </Session>
       <Text>
         <LocaText>
@@ -166,11 +277,17 @@
             <ExportCount>1</ExportCount>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
-      <WorldMapSound />
+      <WorldMapSound>
+        <ActiveAudioEvent>0</ActiveAudioEvent>
+        <UIClickEvent>0</UIClickEvent>
+      </WorldMapSound>
     </Values>
   </Asset>
   <Asset>
@@ -180,6 +297,8 @@
         <GUID>5100486</GUID>
         <Name>OLD FPP Moderate 01 (Norton Bay)</Name>
         <IconFilename>data/ui/2kimages/main/icons/icon_attractiveness.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Session>
         <MapTemplate>141382</MapTemplate>
@@ -190,6 +309,40 @@
         <InMenuVisible>0</InMenuVisible>
         <Region>5000000</Region>
         <FixDayTime>13.5</FixDayTime>
+        <CameraSettings>data/config/game/camera.xml</CameraSettings>
+        <SpawnAreaBorderDistanceRange>
+          <Far>
+            <Min>30</Min>
+            <Max>100</Max>
+          </Far>
+          <Mid>
+            <Min>10</Min>
+            <Max>20</Max>
+          </Mid>
+          <Near>
+            <Min>3</Min>
+            <Max>7</Max>
+          </Near>
+        </SpawnAreaBorderDistanceRange>
+        <SpawnAreaIslandDistanceRange>
+          <Far>
+            <Min>50</Min>
+            <Max>70</Max>
+          </Far>
+          <Mid>
+            <Min>20</Min>
+            <Max>40</Max>
+          </Mid>
+          <Near>
+            <Min>5</Min>
+            <Max>10</Max>
+          </Near>
+        </SpawnAreaIslandDistanceRange>
+        <TransferData />
+        <SpawnStartShipAndKontor>1</SpawnStartShipAndKontor>
+        <ShipTransferEnabled>1</ShipTransferEnabled>
+        <WorldMapCardBackground>0</WorldMapCardBackground>
+        <RouteSessionAsset>0</RouteSessionAsset>
       </Session>
       <Text>
         <LocaText>
@@ -199,11 +352,17 @@
           </English>
         </LocaText>
         <LineID>4283</LineID>
+        <Localize>1</Localize>
       </Text>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
-      <WorldMapSound />
+      <WorldMapSound>
+        <ActiveAudioEvent>0</ActiveAudioEvent>
+        <UIClickEvent>0</UIClickEvent>
+      </WorldMapSound>
     </Values>
   </Asset>
   <Asset>
@@ -213,6 +372,8 @@
         <GUID>5100488</GUID>
         <Name>Islands Overview </Name>
         <IconFilename>data/ui/2kimages/main/icons/icon_attractiveness.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Session>
         <MapTemplate>141383</MapTemplate>
@@ -221,6 +382,41 @@
         <AllowAdvancedCameraSettings>1</AllowAdvancedCameraSettings>
         <Region>5000000</Region>
         <FixDayTime>13.5</FixDayTime>
+        <CameraSettings>data/config/game/camera.xml</CameraSettings>
+        <InMenuVisible>1</InMenuVisible>
+        <SpawnAreaBorderDistanceRange>
+          <Far>
+            <Min>30</Min>
+            <Max>100</Max>
+          </Far>
+          <Mid>
+            <Min>10</Min>
+            <Max>20</Max>
+          </Mid>
+          <Near>
+            <Min>3</Min>
+            <Max>7</Max>
+          </Near>
+        </SpawnAreaBorderDistanceRange>
+        <SpawnAreaIslandDistanceRange>
+          <Far>
+            <Min>50</Min>
+            <Max>70</Max>
+          </Far>
+          <Mid>
+            <Min>20</Min>
+            <Max>40</Max>
+          </Mid>
+          <Near>
+            <Min>5</Min>
+            <Max>10</Max>
+          </Near>
+        </SpawnAreaIslandDistanceRange>
+        <TransferData />
+        <SpawnStartShipAndKontor>1</SpawnStartShipAndKontor>
+        <ShipTransferEnabled>1</ShipTransferEnabled>
+        <WorldMapCardBackground>0</WorldMapCardBackground>
+        <RouteSessionAsset>0</RouteSessionAsset>
       </Session>
       <Text>
         <LocaText>
@@ -230,11 +426,17 @@
             <ExportCount>1</ExportCount>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
-      <WorldMapSound />
+      <WorldMapSound>
+        <ActiveAudioEvent>0</ActiveAudioEvent>
+        <UIClickEvent>0</UIClickEvent>
+      </WorldMapSound>
     </Values>
   </Asset>
   <Asset>
@@ -245,6 +447,8 @@
         <Name>OLD FPP South America 01 (Puerto Colina)</Name>
         <IconFilename>data/ui/2kimages/main/icons/icon_attractiveness.png</IconFilename>
         <ID>FPPSouthAmerica</ID>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Session>
         <MapTemplate>141384</MapTemplate>
@@ -255,6 +459,40 @@
         <InMenuVisible>0</InMenuVisible>
         <Region>5000000</Region>
         <FixDayTime>13.5</FixDayTime>
+        <CameraSettings>data/config/game/camera.xml</CameraSettings>
+        <SpawnAreaBorderDistanceRange>
+          <Far>
+            <Min>30</Min>
+            <Max>100</Max>
+          </Far>
+          <Mid>
+            <Min>10</Min>
+            <Max>20</Max>
+          </Mid>
+          <Near>
+            <Min>3</Min>
+            <Max>7</Max>
+          </Near>
+        </SpawnAreaBorderDistanceRange>
+        <SpawnAreaIslandDistanceRange>
+          <Far>
+            <Min>50</Min>
+            <Max>70</Max>
+          </Far>
+          <Mid>
+            <Min>20</Min>
+            <Max>40</Max>
+          </Mid>
+          <Near>
+            <Min>5</Min>
+            <Max>10</Max>
+          </Near>
+        </SpawnAreaIslandDistanceRange>
+        <TransferData />
+        <SpawnStartShipAndKontor>1</SpawnStartShipAndKontor>
+        <ShipTransferEnabled>1</ShipTransferEnabled>
+        <WorldMapCardBackground>0</WorldMapCardBackground>
+        <RouteSessionAsset>0</RouteSessionAsset>
       </Session>
       <Text>
         <LocaText>
@@ -264,11 +502,17 @@
           </English>
         </LocaText>
         <LineID>4284</LineID>
+        <Localize>1</Localize>
       </Text>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
-      <WorldMapSound />
+      <WorldMapSound>
+        <ActiveAudioEvent>0</ActiveAudioEvent>
+        <UIClickEvent>0</UIClickEvent>
+      </WorldMapSound>
     </Values>
   </Asset>
   <Asset>
@@ -278,6 +522,8 @@
         <GUID>5100490</GUID>
         <Name>FPP Moderate 01</Name>
         <IconFilename>data/ui/2kimages/main/icons/icon_attractiveness.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Session>
         <MapTemplate>141385</MapTemplate>
@@ -286,6 +532,41 @@
         <AllowAdvancedCameraSettings>1</AllowAdvancedCameraSettings>
         <Region>5000000</Region>
         <FixDayTime>13.5</FixDayTime>
+        <CameraSettings>data/config/game/camera.xml</CameraSettings>
+        <InMenuVisible>1</InMenuVisible>
+        <SpawnAreaBorderDistanceRange>
+          <Far>
+            <Min>30</Min>
+            <Max>100</Max>
+          </Far>
+          <Mid>
+            <Min>10</Min>
+            <Max>20</Max>
+          </Mid>
+          <Near>
+            <Min>3</Min>
+            <Max>7</Max>
+          </Near>
+        </SpawnAreaBorderDistanceRange>
+        <SpawnAreaIslandDistanceRange>
+          <Far>
+            <Min>50</Min>
+            <Max>70</Max>
+          </Far>
+          <Mid>
+            <Min>20</Min>
+            <Max>40</Max>
+          </Mid>
+          <Near>
+            <Min>5</Min>
+            <Max>10</Max>
+          </Near>
+        </SpawnAreaIslandDistanceRange>
+        <TransferData />
+        <SpawnStartShipAndKontor>1</SpawnStartShipAndKontor>
+        <ShipTransferEnabled>1</ShipTransferEnabled>
+        <WorldMapCardBackground>0</WorldMapCardBackground>
+        <RouteSessionAsset>0</RouteSessionAsset>
       </Session>
       <Text>
         <LocaText>
@@ -295,11 +576,17 @@
             <ExportCount>1</ExportCount>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
-      <WorldMapSound />
+      <WorldMapSound>
+        <ActiveAudioEvent>0</ActiveAudioEvent>
+        <UIClickEvent>0</UIClickEvent>
+      </WorldMapSound>
     </Values>
   </Asset>
   <Asset>
@@ -309,6 +596,8 @@
         <GUID>5100491</GUID>
         <Name>Small Islands Test</Name>
         <IconFilename>data/ui/2kimages/main/icons/icon_attractiveness.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Session>
         <MapTemplate>141386</MapTemplate>
@@ -317,6 +606,41 @@
         <AllowAdvancedCameraSettings>1</AllowAdvancedCameraSettings>
         <Region>5000000</Region>
         <FixDayTime>13.5</FixDayTime>
+        <CameraSettings>data/config/game/camera.xml</CameraSettings>
+        <InMenuVisible>1</InMenuVisible>
+        <SpawnAreaBorderDistanceRange>
+          <Far>
+            <Min>30</Min>
+            <Max>100</Max>
+          </Far>
+          <Mid>
+            <Min>10</Min>
+            <Max>20</Max>
+          </Mid>
+          <Near>
+            <Min>3</Min>
+            <Max>7</Max>
+          </Near>
+        </SpawnAreaBorderDistanceRange>
+        <SpawnAreaIslandDistanceRange>
+          <Far>
+            <Min>50</Min>
+            <Max>70</Max>
+          </Far>
+          <Mid>
+            <Min>20</Min>
+            <Max>40</Max>
+          </Mid>
+          <Near>
+            <Min>5</Min>
+            <Max>10</Max>
+          </Near>
+        </SpawnAreaIslandDistanceRange>
+        <TransferData />
+        <SpawnStartShipAndKontor>1</SpawnStartShipAndKontor>
+        <ShipTransferEnabled>1</ShipTransferEnabled>
+        <WorldMapCardBackground>0</WorldMapCardBackground>
+        <RouteSessionAsset>0</RouteSessionAsset>
       </Session>
       <Text>
         <LocaText>
@@ -326,11 +650,17 @@
             <ExportCount>1</ExportCount>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
-      <WorldMapSound />
+      <WorldMapSound>
+        <ActiveAudioEvent>0</ActiveAudioEvent>
+        <UIClickEvent>0</UIClickEvent>
+      </WorldMapSound>
     </Values>
   </Asset>
   <Asset>
@@ -340,6 +670,8 @@
         <GUID>180020</GUID>
         <Name>DeleteStreet Test</Name>
         <IconFilename>data/ui/2kimages/main/icons/icon_attractiveness.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Session>
         <MapTemplate>141389</MapTemplate>
@@ -349,6 +681,40 @@
         <SpawnStartShipAndKontor>0</SpawnStartShipAndKontor>
         <Region>5000000</Region>
         <FixDayTime>13.5</FixDayTime>
+        <CameraSettings>data/config/game/camera.xml</CameraSettings>
+        <InMenuVisible>1</InMenuVisible>
+        <SpawnAreaBorderDistanceRange>
+          <Far>
+            <Min>30</Min>
+            <Max>100</Max>
+          </Far>
+          <Mid>
+            <Min>10</Min>
+            <Max>20</Max>
+          </Mid>
+          <Near>
+            <Min>3</Min>
+            <Max>7</Max>
+          </Near>
+        </SpawnAreaBorderDistanceRange>
+        <SpawnAreaIslandDistanceRange>
+          <Far>
+            <Min>50</Min>
+            <Max>70</Max>
+          </Far>
+          <Mid>
+            <Min>20</Min>
+            <Max>40</Max>
+          </Mid>
+          <Near>
+            <Min>5</Min>
+            <Max>10</Max>
+          </Near>
+        </SpawnAreaIslandDistanceRange>
+        <TransferData />
+        <ShipTransferEnabled>1</ShipTransferEnabled>
+        <WorldMapCardBackground>0</WorldMapCardBackground>
+        <RouteSessionAsset>0</RouteSessionAsset>
       </Session>
       <Text>
         <LocaText>
@@ -358,11 +724,17 @@
             <ExportCount>1</ExportCount>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
-      <WorldMapSound />
+      <WorldMapSound>
+        <ActiveAudioEvent>0</ActiveAudioEvent>
+        <UIClickEvent>0</UIClickEvent>
+      </WorldMapSound>
     </Values>
   </Asset>
   <Asset>
@@ -372,6 +744,8 @@
         <GUID>180040</GUID>
         <Name>Naval_Combat_Livestream</Name>
         <IconFilename>data/ui/2kimages/main/icons/icon_attractiveness.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Session>
         <MapTemplate>142196</MapTemplate>
@@ -381,6 +755,40 @@
         <SpawnStartShipAndKontor>0</SpawnStartShipAndKontor>
         <Region>5000000</Region>
         <FixDayTime>13.5</FixDayTime>
+        <CameraSettings>data/config/game/camera.xml</CameraSettings>
+        <InMenuVisible>1</InMenuVisible>
+        <SpawnAreaBorderDistanceRange>
+          <Far>
+            <Min>30</Min>
+            <Max>100</Max>
+          </Far>
+          <Mid>
+            <Min>10</Min>
+            <Max>20</Max>
+          </Mid>
+          <Near>
+            <Min>3</Min>
+            <Max>7</Max>
+          </Near>
+        </SpawnAreaBorderDistanceRange>
+        <SpawnAreaIslandDistanceRange>
+          <Far>
+            <Min>50</Min>
+            <Max>70</Max>
+          </Far>
+          <Mid>
+            <Min>20</Min>
+            <Max>40</Max>
+          </Mid>
+          <Near>
+            <Min>5</Min>
+            <Max>10</Max>
+          </Near>
+        </SpawnAreaIslandDistanceRange>
+        <TransferData />
+        <ShipTransferEnabled>1</ShipTransferEnabled>
+        <WorldMapCardBackground>0</WorldMapCardBackground>
+        <RouteSessionAsset>0</RouteSessionAsset>
       </Session>
       <Text>
         <LocaText>
@@ -390,11 +798,17 @@
             <ExportCount>1</ExportCount>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
-      <WorldMapSound />
+      <WorldMapSound>
+        <ActiveAudioEvent>0</ActiveAudioEvent>
+        <UIClickEvent>0</UIClickEvent>
+      </WorldMapSound>
     </Values>
   </Asset>
   <Asset>
@@ -405,6 +819,8 @@
         <Name>Minimal Small</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_general_module_01.png</IconFilename>
         <ID>SessionMinimalSmall</ID>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Session>
         <MapTemplate>141392</MapTemplate>
@@ -439,6 +855,40 @@
         </TransferData>
         <Region>5000000</Region>
         <FixDayTime>13.5</FixDayTime>
+        <CameraSettings>data/config/game/camera.xml</CameraSettings>
+        <InMenuVisible>1</InMenuVisible>
+        <SpawnAreaBorderDistanceRange>
+          <Far>
+            <Min>30</Min>
+            <Max>100</Max>
+          </Far>
+          <Mid>
+            <Min>10</Min>
+            <Max>20</Max>
+          </Mid>
+          <Near>
+            <Min>3</Min>
+            <Max>7</Max>
+          </Near>
+        </SpawnAreaBorderDistanceRange>
+        <SpawnAreaIslandDistanceRange>
+          <Far>
+            <Min>50</Min>
+            <Max>70</Max>
+          </Far>
+          <Mid>
+            <Min>20</Min>
+            <Max>40</Max>
+          </Mid>
+          <Near>
+            <Min>5</Min>
+            <Max>10</Max>
+          </Near>
+        </SpawnAreaIslandDistanceRange>
+        <SpawnStartShipAndKontor>1</SpawnStartShipAndKontor>
+        <ShipTransferEnabled>1</ShipTransferEnabled>
+        <WorldMapCardBackground>0</WorldMapCardBackground>
+        <RouteSessionAsset>0</RouteSessionAsset>
       </Session>
       <Text>
         <LocaText>
@@ -448,11 +898,17 @@
             <ExportCount>1</ExportCount>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
-      <WorldMapSound />
+      <WorldMapSound>
+        <ActiveAudioEvent>0</ActiveAudioEvent>
+        <UIClickEvent>0</UIClickEvent>
+      </WorldMapSound>
     </Values>
   </Asset>
   <Asset>
@@ -463,6 +919,8 @@
         <Name>Minimal Big</Name>
         <ID>SessionMinimalBig</ID>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_general_module_01.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Session>
         <MapTemplate>141393</MapTemplate>
@@ -498,6 +956,40 @@
         <AllowAdvancedCameraSettings>1</AllowAdvancedCameraSettings>
         <Region>5000000</Region>
         <FixDayTime>13.5</FixDayTime>
+        <CameraSettings>data/config/game/camera.xml</CameraSettings>
+        <InMenuVisible>1</InMenuVisible>
+        <SpawnAreaBorderDistanceRange>
+          <Far>
+            <Min>30</Min>
+            <Max>100</Max>
+          </Far>
+          <Mid>
+            <Min>10</Min>
+            <Max>20</Max>
+          </Mid>
+          <Near>
+            <Min>3</Min>
+            <Max>7</Max>
+          </Near>
+        </SpawnAreaBorderDistanceRange>
+        <SpawnAreaIslandDistanceRange>
+          <Far>
+            <Min>50</Min>
+            <Max>70</Max>
+          </Far>
+          <Mid>
+            <Min>20</Min>
+            <Max>40</Max>
+          </Mid>
+          <Near>
+            <Min>5</Min>
+            <Max>10</Max>
+          </Near>
+        </SpawnAreaIslandDistanceRange>
+        <SpawnStartShipAndKontor>1</SpawnStartShipAndKontor>
+        <ShipTransferEnabled>1</ShipTransferEnabled>
+        <WorldMapCardBackground>0</WorldMapCardBackground>
+        <RouteSessionAsset>0</RouteSessionAsset>
       </Session>
       <Text>
         <LocaText>
@@ -507,11 +999,17 @@
             <ExportCount>1</ExportCount>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
-      <WorldMapSound />
+      <WorldMapSound>
+        <ActiveAudioEvent>0</ActiveAudioEvent>
+        <UIClickEvent>0</UIClickEvent>
+      </WorldMapSound>
     </Values>
   </Asset>
   <Asset>
@@ -522,6 +1020,8 @@
         <Name>Minimal Multi</Name>
         <ID>SessionMinimalMulti</ID>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_general_module_01.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Session>
         <MapTemplate>141394</MapTemplate>
@@ -560,6 +1060,40 @@
         <AllowAdvancedCameraSettings>1</AllowAdvancedCameraSettings>
         <Region>5000000</Region>
         <FixDayTime>13.5</FixDayTime>
+        <CameraSettings>data/config/game/camera.xml</CameraSettings>
+        <InMenuVisible>1</InMenuVisible>
+        <SpawnAreaBorderDistanceRange>
+          <Far>
+            <Min>30</Min>
+            <Max>100</Max>
+          </Far>
+          <Mid>
+            <Min>10</Min>
+            <Max>20</Max>
+          </Mid>
+          <Near>
+            <Min>3</Min>
+            <Max>7</Max>
+          </Near>
+        </SpawnAreaBorderDistanceRange>
+        <SpawnAreaIslandDistanceRange>
+          <Far>
+            <Min>50</Min>
+            <Max>70</Max>
+          </Far>
+          <Mid>
+            <Min>20</Min>
+            <Max>40</Max>
+          </Mid>
+          <Near>
+            <Min>5</Min>
+            <Max>10</Max>
+          </Near>
+        </SpawnAreaIslandDistanceRange>
+        <SpawnStartShipAndKontor>1</SpawnStartShipAndKontor>
+        <ShipTransferEnabled>1</ShipTransferEnabled>
+        <WorldMapCardBackground>0</WorldMapCardBackground>
+        <RouteSessionAsset>0</RouteSessionAsset>
       </Session>
       <Text>
         <LocaText>
@@ -569,11 +1103,17 @@
             <ExportCount>1</ExportCount>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
-      <WorldMapSound />
+      <WorldMapSound>
+        <ActiveAudioEvent>0</ActiveAudioEvent>
+        <UIClickEvent>0</UIClickEvent>
+      </WorldMapSound>
     </Values>
   </Asset>
   <Asset>
@@ -584,6 +1124,8 @@
         <Name>Minimal Multi (South)</Name>
         <ID>SessionMinimalSouth</ID>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_general_module_01.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Session>
         <Region>5000001</Region>
@@ -622,6 +1164,40 @@
         <CameraLoopSequence2>10</CameraLoopSequence2>
         <AllowAdvancedCameraSettings>1</AllowAdvancedCameraSettings>
         <FixDayTime>13.5</FixDayTime>
+        <CameraSettings>data/config/game/camera.xml</CameraSettings>
+        <InMenuVisible>1</InMenuVisible>
+        <SpawnAreaBorderDistanceRange>
+          <Far>
+            <Min>30</Min>
+            <Max>100</Max>
+          </Far>
+          <Mid>
+            <Min>10</Min>
+            <Max>20</Max>
+          </Mid>
+          <Near>
+            <Min>3</Min>
+            <Max>7</Max>
+          </Near>
+        </SpawnAreaBorderDistanceRange>
+        <SpawnAreaIslandDistanceRange>
+          <Far>
+            <Min>50</Min>
+            <Max>70</Max>
+          </Far>
+          <Mid>
+            <Min>20</Min>
+            <Max>40</Max>
+          </Mid>
+          <Near>
+            <Min>5</Min>
+            <Max>10</Max>
+          </Near>
+        </SpawnAreaIslandDistanceRange>
+        <SpawnStartShipAndKontor>1</SpawnStartShipAndKontor>
+        <ShipTransferEnabled>1</ShipTransferEnabled>
+        <WorldMapCardBackground>0</WorldMapCardBackground>
+        <RouteSessionAsset>0</RouteSessionAsset>
       </Session>
       <Text>
         <LocaText>
@@ -631,11 +1207,17 @@
             <ExportCount>1</ExportCount>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
-      <WorldMapSound />
+      <WorldMapSound>
+        <ActiveAudioEvent>0</ActiveAudioEvent>
+        <UIClickEvent>0</UIClickEvent>
+      </WorldMapSound>
     </Values>
   </Asset>
   <Asset>
@@ -646,6 +1228,8 @@
         <Name>Minimal Multi + AI</Name>
         <ID>SessionMinimalAI</ID>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_general_module_01.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Session>
         <MapTemplate>141395</MapTemplate>
@@ -682,6 +1266,40 @@
         <AllowAdvancedCameraSettings>1</AllowAdvancedCameraSettings>
         <Region>5000000</Region>
         <FixDayTime>13.5</FixDayTime>
+        <CameraSettings>data/config/game/camera.xml</CameraSettings>
+        <InMenuVisible>1</InMenuVisible>
+        <SpawnAreaBorderDistanceRange>
+          <Far>
+            <Min>30</Min>
+            <Max>100</Max>
+          </Far>
+          <Mid>
+            <Min>10</Min>
+            <Max>20</Max>
+          </Mid>
+          <Near>
+            <Min>3</Min>
+            <Max>7</Max>
+          </Near>
+        </SpawnAreaBorderDistanceRange>
+        <SpawnAreaIslandDistanceRange>
+          <Far>
+            <Min>50</Min>
+            <Max>70</Max>
+          </Far>
+          <Mid>
+            <Min>20</Min>
+            <Max>40</Max>
+          </Mid>
+          <Near>
+            <Min>5</Min>
+            <Max>10</Max>
+          </Near>
+        </SpawnAreaIslandDistanceRange>
+        <SpawnStartShipAndKontor>1</SpawnStartShipAndKontor>
+        <ShipTransferEnabled>1</ShipTransferEnabled>
+        <WorldMapCardBackground>0</WorldMapCardBackground>
+        <RouteSessionAsset>0</RouteSessionAsset>
       </Session>
       <Text>
         <LocaText>
@@ -691,11 +1309,17 @@
             <ExportCount>1</ExportCount>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
-      <WorldMapSound />
+      <WorldMapSound>
+        <ActiveAudioEvent>0</ActiveAudioEvent>
+        <UIClickEvent>0</UIClickEvent>
+      </WorldMapSound>
     </Values>
   </Asset>
   <Asset>
@@ -706,6 +1330,8 @@
         <Name>Minimal Pirates</Name>
         <ID />
         <IconFilename>data/ui/2kimages/main/3dicons/icon_general_module_01.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Session>
         <MapTemplate>141396</MapTemplate>
@@ -741,6 +1367,40 @@
         <AllowAdvancedCameraSettings>1</AllowAdvancedCameraSettings>
         <Region>5000000</Region>
         <FixDayTime>13.5</FixDayTime>
+        <CameraSettings>data/config/game/camera.xml</CameraSettings>
+        <InMenuVisible>1</InMenuVisible>
+        <SpawnAreaBorderDistanceRange>
+          <Far>
+            <Min>30</Min>
+            <Max>100</Max>
+          </Far>
+          <Mid>
+            <Min>10</Min>
+            <Max>20</Max>
+          </Mid>
+          <Near>
+            <Min>3</Min>
+            <Max>7</Max>
+          </Near>
+        </SpawnAreaBorderDistanceRange>
+        <SpawnAreaIslandDistanceRange>
+          <Far>
+            <Min>50</Min>
+            <Max>70</Max>
+          </Far>
+          <Mid>
+            <Min>20</Min>
+            <Max>40</Max>
+          </Mid>
+          <Near>
+            <Min>5</Min>
+            <Max>10</Max>
+          </Near>
+        </SpawnAreaIslandDistanceRange>
+        <SpawnStartShipAndKontor>1</SpawnStartShipAndKontor>
+        <ShipTransferEnabled>1</ShipTransferEnabled>
+        <WorldMapCardBackground>0</WorldMapCardBackground>
+        <RouteSessionAsset>0</RouteSessionAsset>
       </Session>
       <Text>
         <LocaText>
@@ -750,11 +1410,17 @@
             <ExportCount>1</ExportCount>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
-      <WorldMapSound />
+      <WorldMapSound>
+        <ActiveAudioEvent>0</ActiveAudioEvent>
+        <UIClickEvent>0</UIClickEvent>
+      </WorldMapSound>
     </Values>
   </Asset>
   <Asset>
@@ -764,6 +1430,8 @@
         <GUID>180064</GUID>
         <Name>MovieCapture_Moderate</Name>
         <IconFilename>data/ui/2kimages/main/icons/icon_attractiveness.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Session>
         <MapTemplate>142572</MapTemplate>
@@ -773,6 +1441,40 @@
         <SpawnStartShipAndKontor>0</SpawnStartShipAndKontor>
         <Region>5000000</Region>
         <FixDayTime>13.5</FixDayTime>
+        <CameraSettings>data/config/game/camera.xml</CameraSettings>
+        <InMenuVisible>1</InMenuVisible>
+        <SpawnAreaBorderDistanceRange>
+          <Far>
+            <Min>30</Min>
+            <Max>100</Max>
+          </Far>
+          <Mid>
+            <Min>10</Min>
+            <Max>20</Max>
+          </Mid>
+          <Near>
+            <Min>3</Min>
+            <Max>7</Max>
+          </Near>
+        </SpawnAreaBorderDistanceRange>
+        <SpawnAreaIslandDistanceRange>
+          <Far>
+            <Min>50</Min>
+            <Max>70</Max>
+          </Far>
+          <Mid>
+            <Min>20</Min>
+            <Max>40</Max>
+          </Mid>
+          <Near>
+            <Min>5</Min>
+            <Max>10</Max>
+          </Near>
+        </SpawnAreaIslandDistanceRange>
+        <TransferData />
+        <ShipTransferEnabled>1</ShipTransferEnabled>
+        <WorldMapCardBackground>0</WorldMapCardBackground>
+        <RouteSessionAsset>0</RouteSessionAsset>
       </Session>
       <Text>
         <LocaText>
@@ -782,11 +1484,17 @@
             <ExportCount>1</ExportCount>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
-      <WorldMapSound />
+      <WorldMapSound>
+        <ActiveAudioEvent>0</ActiveAudioEvent>
+        <UIClickEvent>0</UIClickEvent>
+      </WorldMapSound>
     </Values>
   </Asset>
   <Asset>
@@ -796,6 +1504,8 @@
         <GUID>180065</GUID>
         <Name>MovieCapture_Colony01</Name>
         <IconFilename>data/ui/2kimages/main/icons/icon_attractiveness.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Session>
         <Region>5000001</Region>
@@ -805,6 +1515,40 @@
         <AllowAdvancedCameraSettings>1</AllowAdvancedCameraSettings>
         <SpawnStartShipAndKontor>0</SpawnStartShipAndKontor>
         <FixDayTime>13.5</FixDayTime>
+        <CameraSettings>data/config/game/camera.xml</CameraSettings>
+        <InMenuVisible>1</InMenuVisible>
+        <SpawnAreaBorderDistanceRange>
+          <Far>
+            <Min>30</Min>
+            <Max>100</Max>
+          </Far>
+          <Mid>
+            <Min>10</Min>
+            <Max>20</Max>
+          </Mid>
+          <Near>
+            <Min>3</Min>
+            <Max>7</Max>
+          </Near>
+        </SpawnAreaBorderDistanceRange>
+        <SpawnAreaIslandDistanceRange>
+          <Far>
+            <Min>50</Min>
+            <Max>70</Max>
+          </Far>
+          <Mid>
+            <Min>20</Min>
+            <Max>40</Max>
+          </Mid>
+          <Near>
+            <Min>5</Min>
+            <Max>10</Max>
+          </Near>
+        </SpawnAreaIslandDistanceRange>
+        <TransferData />
+        <ShipTransferEnabled>1</ShipTransferEnabled>
+        <WorldMapCardBackground>0</WorldMapCardBackground>
+        <RouteSessionAsset>0</RouteSessionAsset>
       </Session>
       <Text>
         <LocaText>
@@ -814,11 +1558,17 @@
             <ExportCount>1</ExportCount>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
-      <WorldMapSound />
+      <WorldMapSound>
+        <ActiveAudioEvent>0</ActiveAudioEvent>
+        <UIClickEvent>0</UIClickEvent>
+      </WorldMapSound>
     </Values>
   </Asset>
   <Asset>
@@ -828,6 +1578,8 @@
         <GUID>180066</GUID>
         <Name>MovieCapture_Torching_shot01</Name>
         <IconFilename>data/ui/2kimages/main/icons/icon_attractiveness.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Session>
         <MapTemplate>142512</MapTemplate>
@@ -837,6 +1589,40 @@
         <SpawnStartShipAndKontor>0</SpawnStartShipAndKontor>
         <Region>5000000</Region>
         <FixDayTime>13.5</FixDayTime>
+        <CameraSettings>data/config/game/camera.xml</CameraSettings>
+        <InMenuVisible>1</InMenuVisible>
+        <SpawnAreaBorderDistanceRange>
+          <Far>
+            <Min>30</Min>
+            <Max>100</Max>
+          </Far>
+          <Mid>
+            <Min>10</Min>
+            <Max>20</Max>
+          </Mid>
+          <Near>
+            <Min>3</Min>
+            <Max>7</Max>
+          </Near>
+        </SpawnAreaBorderDistanceRange>
+        <SpawnAreaIslandDistanceRange>
+          <Far>
+            <Min>50</Min>
+            <Max>70</Max>
+          </Far>
+          <Mid>
+            <Min>20</Min>
+            <Max>40</Max>
+          </Mid>
+          <Near>
+            <Min>5</Min>
+            <Max>10</Max>
+          </Near>
+        </SpawnAreaIslandDistanceRange>
+        <TransferData />
+        <ShipTransferEnabled>1</ShipTransferEnabled>
+        <WorldMapCardBackground>0</WorldMapCardBackground>
+        <RouteSessionAsset>0</RouteSessionAsset>
       </Session>
       <Text>
         <LocaText>
@@ -846,11 +1632,17 @@
             <ExportCount>1</ExportCount>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
-      <WorldMapSound />
+      <WorldMapSound>
+        <ActiveAudioEvent>0</ActiveAudioEvent>
+        <UIClickEvent>0</UIClickEvent>
+      </WorldMapSound>
     </Values>
   </Asset>
   <Asset>
@@ -860,6 +1652,8 @@
         <GUID>180067</GUID>
         <Name>MovieCapture_Torching_shot02</Name>
         <IconFilename>data/ui/2kimages/main/icons/icon_attractiveness.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Session>
         <MapTemplate>142513</MapTemplate>
@@ -869,6 +1663,40 @@
         <SpawnStartShipAndKontor>0</SpawnStartShipAndKontor>
         <Region>5000000</Region>
         <FixDayTime>13.5</FixDayTime>
+        <CameraSettings>data/config/game/camera.xml</CameraSettings>
+        <InMenuVisible>1</InMenuVisible>
+        <SpawnAreaBorderDistanceRange>
+          <Far>
+            <Min>30</Min>
+            <Max>100</Max>
+          </Far>
+          <Mid>
+            <Min>10</Min>
+            <Max>20</Max>
+          </Mid>
+          <Near>
+            <Min>3</Min>
+            <Max>7</Max>
+          </Near>
+        </SpawnAreaBorderDistanceRange>
+        <SpawnAreaIslandDistanceRange>
+          <Far>
+            <Min>50</Min>
+            <Max>70</Max>
+          </Far>
+          <Mid>
+            <Min>20</Min>
+            <Max>40</Max>
+          </Mid>
+          <Near>
+            <Min>5</Min>
+            <Max>10</Max>
+          </Near>
+        </SpawnAreaIslandDistanceRange>
+        <TransferData />
+        <ShipTransferEnabled>1</ShipTransferEnabled>
+        <WorldMapCardBackground>0</WorldMapCardBackground>
+        <RouteSessionAsset>0</RouteSessionAsset>
       </Session>
       <Text>
         <LocaText>
@@ -878,11 +1706,17 @@
             <ExportCount>1</ExportCount>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
-      <WorldMapSound />
+      <WorldMapSound>
+        <ActiveAudioEvent>0</ActiveAudioEvent>
+        <UIClickEvent>0</UIClickEvent>
+      </WorldMapSound>
     </Values>
   </Asset>
   <Asset>
@@ -892,6 +1726,8 @@
         <GUID>180068</GUID>
         <Name>MovieCapture_Torching_shot03</Name>
         <IconFilename>data/ui/2kimages/main/icons/icon_attractiveness.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Session>
         <MapTemplate>142514</MapTemplate>
@@ -901,6 +1737,40 @@
         <SpawnStartShipAndKontor>0</SpawnStartShipAndKontor>
         <Region>5000000</Region>
         <FixDayTime>13.5</FixDayTime>
+        <CameraSettings>data/config/game/camera.xml</CameraSettings>
+        <InMenuVisible>1</InMenuVisible>
+        <SpawnAreaBorderDistanceRange>
+          <Far>
+            <Min>30</Min>
+            <Max>100</Max>
+          </Far>
+          <Mid>
+            <Min>10</Min>
+            <Max>20</Max>
+          </Mid>
+          <Near>
+            <Min>3</Min>
+            <Max>7</Max>
+          </Near>
+        </SpawnAreaBorderDistanceRange>
+        <SpawnAreaIslandDistanceRange>
+          <Far>
+            <Min>50</Min>
+            <Max>70</Max>
+          </Far>
+          <Mid>
+            <Min>20</Min>
+            <Max>40</Max>
+          </Mid>
+          <Near>
+            <Min>5</Min>
+            <Max>10</Max>
+          </Near>
+        </SpawnAreaIslandDistanceRange>
+        <TransferData />
+        <ShipTransferEnabled>1</ShipTransferEnabled>
+        <WorldMapCardBackground>0</WorldMapCardBackground>
+        <RouteSessionAsset>0</RouteSessionAsset>
       </Session>
       <Text>
         <LocaText>
@@ -910,11 +1780,17 @@
             <ExportCount>1</ExportCount>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
-      <WorldMapSound />
+      <WorldMapSound>
+        <ActiveAudioEvent>0</ActiveAudioEvent>
+        <UIClickEvent>0</UIClickEvent>
+      </WorldMapSound>
     </Values>
   </Asset>
   <Asset>
@@ -924,6 +1800,8 @@
         <GUID>180069</GUID>
         <Name>MovieCapture_Torching_shot04</Name>
         <IconFilename>data/ui/2kimages/main/icons/icon_attractiveness.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Session>
         <MapTemplate>142515</MapTemplate>
@@ -933,6 +1811,40 @@
         <SpawnStartShipAndKontor>0</SpawnStartShipAndKontor>
         <Region>5000000</Region>
         <FixDayTime>13.5</FixDayTime>
+        <CameraSettings>data/config/game/camera.xml</CameraSettings>
+        <InMenuVisible>1</InMenuVisible>
+        <SpawnAreaBorderDistanceRange>
+          <Far>
+            <Min>30</Min>
+            <Max>100</Max>
+          </Far>
+          <Mid>
+            <Min>10</Min>
+            <Max>20</Max>
+          </Mid>
+          <Near>
+            <Min>3</Min>
+            <Max>7</Max>
+          </Near>
+        </SpawnAreaBorderDistanceRange>
+        <SpawnAreaIslandDistanceRange>
+          <Far>
+            <Min>50</Min>
+            <Max>70</Max>
+          </Far>
+          <Mid>
+            <Min>20</Min>
+            <Max>40</Max>
+          </Mid>
+          <Near>
+            <Min>5</Min>
+            <Max>10</Max>
+          </Near>
+        </SpawnAreaIslandDistanceRange>
+        <TransferData />
+        <ShipTransferEnabled>1</ShipTransferEnabled>
+        <WorldMapCardBackground>0</WorldMapCardBackground>
+        <RouteSessionAsset>0</RouteSessionAsset>
       </Session>
       <Text>
         <LocaText>
@@ -942,11 +1854,17 @@
             <ExportCount>1</ExportCount>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
-      <WorldMapSound />
+      <WorldMapSound>
+        <ActiveAudioEvent>0</ActiveAudioEvent>
+        <UIClickEvent>0</UIClickEvent>
+      </WorldMapSound>
     </Values>
   </Asset>
   <Asset>
@@ -956,6 +1874,8 @@
         <GUID>180080</GUID>
         <Name>MovieCapture_Torching_shot07</Name>
         <IconFilename>data/ui/2kimages/main/icons/icon_attractiveness.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Session>
         <MapTemplate>142572</MapTemplate>
@@ -965,6 +1885,40 @@
         <SpawnStartShipAndKontor>0</SpawnStartShipAndKontor>
         <Region>5000000</Region>
         <FixDayTime>13.5</FixDayTime>
+        <CameraSettings>data/config/game/camera.xml</CameraSettings>
+        <InMenuVisible>1</InMenuVisible>
+        <SpawnAreaBorderDistanceRange>
+          <Far>
+            <Min>30</Min>
+            <Max>100</Max>
+          </Far>
+          <Mid>
+            <Min>10</Min>
+            <Max>20</Max>
+          </Mid>
+          <Near>
+            <Min>3</Min>
+            <Max>7</Max>
+          </Near>
+        </SpawnAreaBorderDistanceRange>
+        <SpawnAreaIslandDistanceRange>
+          <Far>
+            <Min>50</Min>
+            <Max>70</Max>
+          </Far>
+          <Mid>
+            <Min>20</Min>
+            <Max>40</Max>
+          </Mid>
+          <Near>
+            <Min>5</Min>
+            <Max>10</Max>
+          </Near>
+        </SpawnAreaIslandDistanceRange>
+        <TransferData />
+        <ShipTransferEnabled>1</ShipTransferEnabled>
+        <WorldMapCardBackground>0</WorldMapCardBackground>
+        <RouteSessionAsset>0</RouteSessionAsset>
       </Session>
       <Text>
         <LocaText>
@@ -974,11 +1928,17 @@
             <ExportCount>1</ExportCount>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
-      <WorldMapSound />
+      <WorldMapSound>
+        <ActiveAudioEvent>0</ActiveAudioEvent>
+        <UIClickEvent>0</UIClickEvent>
+      </WorldMapSound>
     </Values>
   </Asset>
   <Asset>
@@ -988,6 +1948,8 @@
         <GUID>180070</GUID>
         <Name>MovieCapture_Torching_shot08</Name>
         <IconFilename>data/ui/2kimages/main/icons/icon_attractiveness.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Session>
         <MapTemplate>142516</MapTemplate>
@@ -997,6 +1959,40 @@
         <SpawnStartShipAndKontor>0</SpawnStartShipAndKontor>
         <Region>5000000</Region>
         <FixDayTime>13.5</FixDayTime>
+        <CameraSettings>data/config/game/camera.xml</CameraSettings>
+        <InMenuVisible>1</InMenuVisible>
+        <SpawnAreaBorderDistanceRange>
+          <Far>
+            <Min>30</Min>
+            <Max>100</Max>
+          </Far>
+          <Mid>
+            <Min>10</Min>
+            <Max>20</Max>
+          </Mid>
+          <Near>
+            <Min>3</Min>
+            <Max>7</Max>
+          </Near>
+        </SpawnAreaBorderDistanceRange>
+        <SpawnAreaIslandDistanceRange>
+          <Far>
+            <Min>50</Min>
+            <Max>70</Max>
+          </Far>
+          <Mid>
+            <Min>20</Min>
+            <Max>40</Max>
+          </Mid>
+          <Near>
+            <Min>5</Min>
+            <Max>10</Max>
+          </Near>
+        </SpawnAreaIslandDistanceRange>
+        <TransferData />
+        <ShipTransferEnabled>1</ShipTransferEnabled>
+        <WorldMapCardBackground>0</WorldMapCardBackground>
+        <RouteSessionAsset>0</RouteSessionAsset>
       </Session>
       <Text>
         <LocaText>
@@ -1006,11 +2002,17 @@
             <ExportCount>1</ExportCount>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
-      <WorldMapSound />
+      <WorldMapSound>
+        <ActiveAudioEvent>0</ActiveAudioEvent>
+        <UIClickEvent>0</UIClickEvent>
+      </WorldMapSound>
     </Values>
   </Asset>
   <Asset>
@@ -1020,6 +2022,8 @@
         <GUID>180071</GUID>
         <Name>MovieCapture_second_funeral</Name>
         <IconFilename>data/ui/2kimages/main/icons/icon_attractiveness.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Session>
         <MapTemplate>142517</MapTemplate>
@@ -1029,6 +2033,40 @@
         <SpawnStartShipAndKontor>0</SpawnStartShipAndKontor>
         <Region>5000000</Region>
         <FixDayTime>13.5</FixDayTime>
+        <CameraSettings>data/config/game/camera.xml</CameraSettings>
+        <InMenuVisible>1</InMenuVisible>
+        <SpawnAreaBorderDistanceRange>
+          <Far>
+            <Min>30</Min>
+            <Max>100</Max>
+          </Far>
+          <Mid>
+            <Min>10</Min>
+            <Max>20</Max>
+          </Mid>
+          <Near>
+            <Min>3</Min>
+            <Max>7</Max>
+          </Near>
+        </SpawnAreaBorderDistanceRange>
+        <SpawnAreaIslandDistanceRange>
+          <Far>
+            <Min>50</Min>
+            <Max>70</Max>
+          </Far>
+          <Mid>
+            <Min>20</Min>
+            <Max>40</Max>
+          </Mid>
+          <Near>
+            <Min>5</Min>
+            <Max>10</Max>
+          </Near>
+        </SpawnAreaIslandDistanceRange>
+        <TransferData />
+        <ShipTransferEnabled>1</ShipTransferEnabled>
+        <WorldMapCardBackground>0</WorldMapCardBackground>
+        <RouteSessionAsset>0</RouteSessionAsset>
       </Session>
       <Text>
         <LocaText>
@@ -1038,11 +2076,17 @@
             <ExportCount>1</ExportCount>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
-      <WorldMapSound />
+      <WorldMapSound>
+        <ActiveAudioEvent>0</ActiveAudioEvent>
+        <UIClickEvent>0</UIClickEvent>
+      </WorldMapSound>
     </Values>
   </Asset>
   <Asset>
@@ -1052,6 +2096,8 @@
         <GUID>180073</GUID>
         <Name>MovieCapture_fleet_arrival_colony01</Name>
         <IconFilename>data/ui/2kimages/main/icons/icon_attractiveness.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Session>
         <Region>5000001</Region>
@@ -1061,6 +2107,40 @@
         <AllowAdvancedCameraSettings>1</AllowAdvancedCameraSettings>
         <SpawnStartShipAndKontor>0</SpawnStartShipAndKontor>
         <FixDayTime>13.5</FixDayTime>
+        <CameraSettings>data/config/game/camera.xml</CameraSettings>
+        <InMenuVisible>1</InMenuVisible>
+        <SpawnAreaBorderDistanceRange>
+          <Far>
+            <Min>30</Min>
+            <Max>100</Max>
+          </Far>
+          <Mid>
+            <Min>10</Min>
+            <Max>20</Max>
+          </Mid>
+          <Near>
+            <Min>3</Min>
+            <Max>7</Max>
+          </Near>
+        </SpawnAreaBorderDistanceRange>
+        <SpawnAreaIslandDistanceRange>
+          <Far>
+            <Min>50</Min>
+            <Max>70</Max>
+          </Far>
+          <Mid>
+            <Min>20</Min>
+            <Max>40</Max>
+          </Mid>
+          <Near>
+            <Min>5</Min>
+            <Max>10</Max>
+          </Near>
+        </SpawnAreaIslandDistanceRange>
+        <TransferData />
+        <ShipTransferEnabled>1</ShipTransferEnabled>
+        <WorldMapCardBackground>0</WorldMapCardBackground>
+        <RouteSessionAsset>0</RouteSessionAsset>
       </Session>
       <Text>
         <LocaText>
@@ -1070,11 +2150,17 @@
             <ExportCount>1</ExportCount>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
-      <WorldMapSound />
+      <WorldMapSound>
+        <ActiveAudioEvent>0</ActiveAudioEvent>
+        <UIClickEvent>0</UIClickEvent>
+      </WorldMapSound>
     </Values>
   </Asset>
   <Asset>
@@ -1084,6 +2170,8 @@
         <GUID>180074</GUID>
         <Name>MovieCapture_fleet_arrival_colony01_v2</Name>
         <IconFilename>data/ui/2kimages/main/icons/icon_attractiveness.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Session>
         <Region>5000001</Region>
@@ -1093,6 +2181,40 @@
         <AllowAdvancedCameraSettings>1</AllowAdvancedCameraSettings>
         <SpawnStartShipAndKontor>0</SpawnStartShipAndKontor>
         <FixDayTime>13.5</FixDayTime>
+        <CameraSettings>data/config/game/camera.xml</CameraSettings>
+        <InMenuVisible>1</InMenuVisible>
+        <SpawnAreaBorderDistanceRange>
+          <Far>
+            <Min>30</Min>
+            <Max>100</Max>
+          </Far>
+          <Mid>
+            <Min>10</Min>
+            <Max>20</Max>
+          </Mid>
+          <Near>
+            <Min>3</Min>
+            <Max>7</Max>
+          </Near>
+        </SpawnAreaBorderDistanceRange>
+        <SpawnAreaIslandDistanceRange>
+          <Far>
+            <Min>50</Min>
+            <Max>70</Max>
+          </Far>
+          <Mid>
+            <Min>20</Min>
+            <Max>40</Max>
+          </Mid>
+          <Near>
+            <Min>5</Min>
+            <Max>10</Max>
+          </Near>
+        </SpawnAreaIslandDistanceRange>
+        <TransferData />
+        <ShipTransferEnabled>1</ShipTransferEnabled>
+        <WorldMapCardBackground>0</WorldMapCardBackground>
+        <RouteSessionAsset>0</RouteSessionAsset>
       </Session>
       <Text>
         <LocaText>
@@ -1102,11 +2224,17 @@
             <ExportCount>1</ExportCount>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
-      <WorldMapSound />
+      <WorldMapSound>
+        <ActiveAudioEvent>0</ActiveAudioEvent>
+        <UIClickEvent>0</UIClickEvent>
+      </WorldMapSound>
     </Values>
   </Asset>
   <Asset>
@@ -1116,6 +2244,8 @@
         <GUID>180075</GUID>
         <Name>MovieCapture_fleet_arrival_moderate01</Name>
         <IconFilename>data/ui/2kimages/main/icons/icon_attractiveness.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Session>
         <MapTemplate>142562</MapTemplate>
@@ -1125,6 +2255,40 @@
         <SpawnStartShipAndKontor>0</SpawnStartShipAndKontor>
         <Region>5000000</Region>
         <FixDayTime>13.5</FixDayTime>
+        <CameraSettings>data/config/game/camera.xml</CameraSettings>
+        <InMenuVisible>1</InMenuVisible>
+        <SpawnAreaBorderDistanceRange>
+          <Far>
+            <Min>30</Min>
+            <Max>100</Max>
+          </Far>
+          <Mid>
+            <Min>10</Min>
+            <Max>20</Max>
+          </Mid>
+          <Near>
+            <Min>3</Min>
+            <Max>7</Max>
+          </Near>
+        </SpawnAreaBorderDistanceRange>
+        <SpawnAreaIslandDistanceRange>
+          <Far>
+            <Min>50</Min>
+            <Max>70</Max>
+          </Far>
+          <Mid>
+            <Min>20</Min>
+            <Max>40</Max>
+          </Mid>
+          <Near>
+            <Min>5</Min>
+            <Max>10</Max>
+          </Near>
+        </SpawnAreaIslandDistanceRange>
+        <TransferData />
+        <ShipTransferEnabled>1</ShipTransferEnabled>
+        <WorldMapCardBackground>0</WorldMapCardBackground>
+        <RouteSessionAsset>0</RouteSessionAsset>
       </Session>
       <Text>
         <LocaText>
@@ -1134,11 +2298,17 @@
             <ExportCount>1</ExportCount>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
-      <WorldMapSound />
+      <WorldMapSound>
+        <ActiveAudioEvent>0</ActiveAudioEvent>
+        <UIClickEvent>0</UIClickEvent>
+      </WorldMapSound>
     </Values>
   </Asset>
   <Asset>
@@ -1148,6 +2318,8 @@
         <GUID>180076</GUID>
         <Name>MovieCapture_fishing</Name>
         <IconFilename>data/ui/2kimages/main/icons/icon_attractiveness.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Session>
         <Region>5000001</Region>
@@ -1157,6 +2329,40 @@
         <AllowAdvancedCameraSettings>1</AllowAdvancedCameraSettings>
         <SpawnStartShipAndKontor>0</SpawnStartShipAndKontor>
         <FixDayTime>13.5</FixDayTime>
+        <CameraSettings>data/config/game/camera.xml</CameraSettings>
+        <InMenuVisible>1</InMenuVisible>
+        <SpawnAreaBorderDistanceRange>
+          <Far>
+            <Min>30</Min>
+            <Max>100</Max>
+          </Far>
+          <Mid>
+            <Min>10</Min>
+            <Max>20</Max>
+          </Mid>
+          <Near>
+            <Min>3</Min>
+            <Max>7</Max>
+          </Near>
+        </SpawnAreaBorderDistanceRange>
+        <SpawnAreaIslandDistanceRange>
+          <Far>
+            <Min>50</Min>
+            <Max>70</Max>
+          </Far>
+          <Mid>
+            <Min>20</Min>
+            <Max>40</Max>
+          </Mid>
+          <Near>
+            <Min>5</Min>
+            <Max>10</Max>
+          </Near>
+        </SpawnAreaIslandDistanceRange>
+        <TransferData />
+        <ShipTransferEnabled>1</ShipTransferEnabled>
+        <WorldMapCardBackground>0</WorldMapCardBackground>
+        <RouteSessionAsset>0</RouteSessionAsset>
       </Session>
       <Text>
         <LocaText>
@@ -1166,11 +2372,17 @@
             <ExportCount>1</ExportCount>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
-      <WorldMapSound />
+      <WorldMapSound>
+        <ActiveAudioEvent>0</ActiveAudioEvent>
+        <UIClickEvent>0</UIClickEvent>
+      </WorldMapSound>
     </Values>
   </Asset>
   <Asset>
@@ -1180,6 +2392,8 @@
         <GUID>180077</GUID>
         <Name>MovieCapture_the_ambassador</Name>
         <IconFilename>data/ui/2kimages/main/icons/icon_attractiveness.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Session>
         <MapTemplate>142564</MapTemplate>
@@ -1189,6 +2403,40 @@
         <SpawnStartShipAndKontor>0</SpawnStartShipAndKontor>
         <Region>5000000</Region>
         <FixDayTime>13.5</FixDayTime>
+        <CameraSettings>data/config/game/camera.xml</CameraSettings>
+        <InMenuVisible>1</InMenuVisible>
+        <SpawnAreaBorderDistanceRange>
+          <Far>
+            <Min>30</Min>
+            <Max>100</Max>
+          </Far>
+          <Mid>
+            <Min>10</Min>
+            <Max>20</Max>
+          </Mid>
+          <Near>
+            <Min>3</Min>
+            <Max>7</Max>
+          </Near>
+        </SpawnAreaBorderDistanceRange>
+        <SpawnAreaIslandDistanceRange>
+          <Far>
+            <Min>50</Min>
+            <Max>70</Max>
+          </Far>
+          <Mid>
+            <Min>20</Min>
+            <Max>40</Max>
+          </Mid>
+          <Near>
+            <Min>5</Min>
+            <Max>10</Max>
+          </Near>
+        </SpawnAreaIslandDistanceRange>
+        <TransferData />
+        <ShipTransferEnabled>1</ShipTransferEnabled>
+        <WorldMapCardBackground>0</WorldMapCardBackground>
+        <RouteSessionAsset>0</RouteSessionAsset>
       </Session>
       <Text>
         <LocaText>
@@ -1198,11 +2446,17 @@
             <ExportCount>1</ExportCount>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
-      <WorldMapSound />
+      <WorldMapSound>
+        <ActiveAudioEvent>0</ActiveAudioEvent>
+        <UIClickEvent>0</UIClickEvent>
+      </WorldMapSound>
     </Values>
   </Asset>
   <Asset>
@@ -1212,6 +2466,8 @@
         <GUID>180078</GUID>
         <Name>MovieCapture_first_funeral_shot01</Name>
         <IconFilename>data/ui/2kimages/main/icons/icon_attractiveness.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Session>
         <Region>5000001</Region>
@@ -1221,6 +2477,40 @@
         <AllowAdvancedCameraSettings>1</AllowAdvancedCameraSettings>
         <SpawnStartShipAndKontor>0</SpawnStartShipAndKontor>
         <FixDayTime>13.5</FixDayTime>
+        <CameraSettings>data/config/game/camera.xml</CameraSettings>
+        <InMenuVisible>1</InMenuVisible>
+        <SpawnAreaBorderDistanceRange>
+          <Far>
+            <Min>30</Min>
+            <Max>100</Max>
+          </Far>
+          <Mid>
+            <Min>10</Min>
+            <Max>20</Max>
+          </Mid>
+          <Near>
+            <Min>3</Min>
+            <Max>7</Max>
+          </Near>
+        </SpawnAreaBorderDistanceRange>
+        <SpawnAreaIslandDistanceRange>
+          <Far>
+            <Min>50</Min>
+            <Max>70</Max>
+          </Far>
+          <Mid>
+            <Min>20</Min>
+            <Max>40</Max>
+          </Mid>
+          <Near>
+            <Min>5</Min>
+            <Max>10</Max>
+          </Near>
+        </SpawnAreaIslandDistanceRange>
+        <TransferData />
+        <ShipTransferEnabled>1</ShipTransferEnabled>
+        <WorldMapCardBackground>0</WorldMapCardBackground>
+        <RouteSessionAsset>0</RouteSessionAsset>
       </Session>
       <Text>
         <LocaText>
@@ -1230,11 +2520,17 @@
             <ExportCount>1</ExportCount>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
-      <WorldMapSound />
+      <WorldMapSound>
+        <ActiveAudioEvent>0</ActiveAudioEvent>
+        <UIClickEvent>0</UIClickEvent>
+      </WorldMapSound>
     </Values>
   </Asset>
   <Asset>
@@ -1244,6 +2540,8 @@
         <GUID>180079</GUID>
         <Name>MovieCapture_first_funeral_shot02</Name>
         <IconFilename>data/ui/2kimages/main/icons/icon_attractiveness.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Session>
         <MapTemplate>142566</MapTemplate>
@@ -1253,6 +2551,40 @@
         <SpawnStartShipAndKontor>0</SpawnStartShipAndKontor>
         <Region>5000000</Region>
         <FixDayTime>13.5</FixDayTime>
+        <CameraSettings>data/config/game/camera.xml</CameraSettings>
+        <InMenuVisible>1</InMenuVisible>
+        <SpawnAreaBorderDistanceRange>
+          <Far>
+            <Min>30</Min>
+            <Max>100</Max>
+          </Far>
+          <Mid>
+            <Min>10</Min>
+            <Max>20</Max>
+          </Mid>
+          <Near>
+            <Min>3</Min>
+            <Max>7</Max>
+          </Near>
+        </SpawnAreaBorderDistanceRange>
+        <SpawnAreaIslandDistanceRange>
+          <Far>
+            <Min>50</Min>
+            <Max>70</Max>
+          </Far>
+          <Mid>
+            <Min>20</Min>
+            <Max>40</Max>
+          </Mid>
+          <Near>
+            <Min>5</Min>
+            <Max>10</Max>
+          </Near>
+        </SpawnAreaIslandDistanceRange>
+        <TransferData />
+        <ShipTransferEnabled>1</ShipTransferEnabled>
+        <WorldMapCardBackground>0</WorldMapCardBackground>
+        <RouteSessionAsset>0</RouteSessionAsset>
       </Session>
       <Text>
         <LocaText>
@@ -1262,11 +2594,17 @@
             <ExportCount>1</ExportCount>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
-      <WorldMapSound />
+      <WorldMapSound>
+        <ActiveAudioEvent>0</ActiveAudioEvent>
+        <UIClickEvent>0</UIClickEvent>
+      </WorldMapSound>
     </Values>
   </Asset>
   <Asset>
@@ -1276,6 +2614,8 @@
         <GUID>180081</GUID>
         <Name>MovieCapture_the_prison</Name>
         <IconFilename>data/ui/2kimages/main/icons/icon_attractiveness.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Session>
         <MapTemplate>142573</MapTemplate>
@@ -1285,6 +2625,40 @@
         <SpawnStartShipAndKontor>0</SpawnStartShipAndKontor>
         <Region>5000000</Region>
         <FixDayTime>13.5</FixDayTime>
+        <CameraSettings>data/config/game/camera.xml</CameraSettings>
+        <InMenuVisible>1</InMenuVisible>
+        <SpawnAreaBorderDistanceRange>
+          <Far>
+            <Min>30</Min>
+            <Max>100</Max>
+          </Far>
+          <Mid>
+            <Min>10</Min>
+            <Max>20</Max>
+          </Mid>
+          <Near>
+            <Min>3</Min>
+            <Max>7</Max>
+          </Near>
+        </SpawnAreaBorderDistanceRange>
+        <SpawnAreaIslandDistanceRange>
+          <Far>
+            <Min>50</Min>
+            <Max>70</Max>
+          </Far>
+          <Mid>
+            <Min>20</Min>
+            <Max>40</Max>
+          </Mid>
+          <Near>
+            <Min>5</Min>
+            <Max>10</Max>
+          </Near>
+        </SpawnAreaIslandDistanceRange>
+        <TransferData />
+        <ShipTransferEnabled>1</ShipTransferEnabled>
+        <WorldMapCardBackground>0</WorldMapCardBackground>
+        <RouteSessionAsset>0</RouteSessionAsset>
       </Session>
       <Text>
         <LocaText>
@@ -1294,11 +2668,17 @@
             <ExportCount>1</ExportCount>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
-      <WorldMapSound />
+      <WorldMapSound>
+        <ActiveAudioEvent>0</ActiveAudioEvent>
+        <UIClickEvent>0</UIClickEvent>
+      </WorldMapSound>
     </Values>
   </Asset>
   <Asset>
@@ -1308,6 +2688,8 @@
         <GUID>180083</GUID>
         <Name>MovieCapture_confession</Name>
         <IconFilename>data/ui/2kimages/main/icons/icon_attractiveness.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Session>
         <MapTemplate>142575</MapTemplate>
@@ -1317,6 +2699,40 @@
         <SpawnStartShipAndKontor>0</SpawnStartShipAndKontor>
         <Region>5000000</Region>
         <FixDayTime>13.5</FixDayTime>
+        <CameraSettings>data/config/game/camera.xml</CameraSettings>
+        <InMenuVisible>1</InMenuVisible>
+        <SpawnAreaBorderDistanceRange>
+          <Far>
+            <Min>30</Min>
+            <Max>100</Max>
+          </Far>
+          <Mid>
+            <Min>10</Min>
+            <Max>20</Max>
+          </Mid>
+          <Near>
+            <Min>3</Min>
+            <Max>7</Max>
+          </Near>
+        </SpawnAreaBorderDistanceRange>
+        <SpawnAreaIslandDistanceRange>
+          <Far>
+            <Min>50</Min>
+            <Max>70</Max>
+          </Far>
+          <Mid>
+            <Min>20</Min>
+            <Max>40</Max>
+          </Mid>
+          <Near>
+            <Min>5</Min>
+            <Max>10</Max>
+          </Near>
+        </SpawnAreaIslandDistanceRange>
+        <TransferData />
+        <ShipTransferEnabled>1</ShipTransferEnabled>
+        <WorldMapCardBackground>0</WorldMapCardBackground>
+        <RouteSessionAsset>0</RouteSessionAsset>
       </Session>
       <Text>
         <LocaText>
@@ -1326,11 +2742,17 @@
             <ExportCount>1</ExportCount>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
-      <WorldMapSound />
+      <WorldMapSound>
+        <ActiveAudioEvent>0</ActiveAudioEvent>
+        <UIClickEvent>0</UIClickEvent>
+      </WorldMapSound>
     </Values>
   </Asset>
   <Asset>
@@ -1340,6 +2762,8 @@
         <GUID>180084</GUID>
         <Name>MovieCapture_the_tunnel</Name>
         <IconFilename>data/ui/2kimages/main/icons/icon_attractiveness.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Session>
         <MapTemplate>142577</MapTemplate>
@@ -1349,6 +2773,40 @@
         <SpawnStartShipAndKontor>0</SpawnStartShipAndKontor>
         <Region>5000000</Region>
         <FixDayTime>13.5</FixDayTime>
+        <CameraSettings>data/config/game/camera.xml</CameraSettings>
+        <InMenuVisible>1</InMenuVisible>
+        <SpawnAreaBorderDistanceRange>
+          <Far>
+            <Min>30</Min>
+            <Max>100</Max>
+          </Far>
+          <Mid>
+            <Min>10</Min>
+            <Max>20</Max>
+          </Mid>
+          <Near>
+            <Min>3</Min>
+            <Max>7</Max>
+          </Near>
+        </SpawnAreaBorderDistanceRange>
+        <SpawnAreaIslandDistanceRange>
+          <Far>
+            <Min>50</Min>
+            <Max>70</Max>
+          </Far>
+          <Mid>
+            <Min>20</Min>
+            <Max>40</Max>
+          </Mid>
+          <Near>
+            <Min>5</Min>
+            <Max>10</Max>
+          </Near>
+        </SpawnAreaIslandDistanceRange>
+        <TransferData />
+        <ShipTransferEnabled>1</ShipTransferEnabled>
+        <WorldMapCardBackground>0</WorldMapCardBackground>
+        <RouteSessionAsset>0</RouteSessionAsset>
       </Session>
       <Text>
         <LocaText>
@@ -1358,11 +2816,17 @@
             <ExportCount>1</ExportCount>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
-      <WorldMapSound />
+      <WorldMapSound>
+        <ActiveAudioEvent>0</ActiveAudioEvent>
+        <UIClickEvent>0</UIClickEvent>
+      </WorldMapSound>
     </Values>
   </Asset>
   <Asset>
@@ -1372,6 +2836,8 @@
         <GUID>180085</GUID>
         <Name>Debug_uncle_island_ruined_city</Name>
         <IconFilename>data/ui/2kimages/main/icons/icon_attractiveness.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Session>
         <MapTemplate>142580</MapTemplate>
@@ -1381,6 +2847,40 @@
         <SpawnStartShipAndKontor>0</SpawnStartShipAndKontor>
         <Region>5000000</Region>
         <FixDayTime>13.5</FixDayTime>
+        <CameraSettings>data/config/game/camera.xml</CameraSettings>
+        <InMenuVisible>1</InMenuVisible>
+        <SpawnAreaBorderDistanceRange>
+          <Far>
+            <Min>30</Min>
+            <Max>100</Max>
+          </Far>
+          <Mid>
+            <Min>10</Min>
+            <Max>20</Max>
+          </Mid>
+          <Near>
+            <Min>3</Min>
+            <Max>7</Max>
+          </Near>
+        </SpawnAreaBorderDistanceRange>
+        <SpawnAreaIslandDistanceRange>
+          <Far>
+            <Min>50</Min>
+            <Max>70</Max>
+          </Far>
+          <Mid>
+            <Min>20</Min>
+            <Max>40</Max>
+          </Mid>
+          <Near>
+            <Min>5</Min>
+            <Max>10</Max>
+          </Near>
+        </SpawnAreaIslandDistanceRange>
+        <TransferData />
+        <ShipTransferEnabled>1</ShipTransferEnabled>
+        <WorldMapCardBackground>0</WorldMapCardBackground>
+        <RouteSessionAsset>0</RouteSessionAsset>
       </Session>
       <Text>
         <LocaText>
@@ -1390,11 +2890,17 @@
             <ExportCount>1</ExportCount>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
-      <WorldMapSound />
+      <WorldMapSound>
+        <ActiveAudioEvent>0</ActiveAudioEvent>
+        <UIClickEvent>0</UIClickEvent>
+      </WorldMapSound>
     </Values>
   </Asset>
   <Asset>
@@ -1404,6 +2910,8 @@
         <GUID>180087</GUID>
         <Name>Debug_prosperity_island</Name>
         <IconFilename>data/ui/2kimages/main/icons/icon_attractiveness.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Session>
         <Region>5000001</Region>
@@ -1413,6 +2921,40 @@
         <AllowAdvancedCameraSettings>1</AllowAdvancedCameraSettings>
         <SpawnStartShipAndKontor>0</SpawnStartShipAndKontor>
         <FixDayTime>13.5</FixDayTime>
+        <CameraSettings>data/config/game/camera.xml</CameraSettings>
+        <InMenuVisible>1</InMenuVisible>
+        <SpawnAreaBorderDistanceRange>
+          <Far>
+            <Min>30</Min>
+            <Max>100</Max>
+          </Far>
+          <Mid>
+            <Min>10</Min>
+            <Max>20</Max>
+          </Mid>
+          <Near>
+            <Min>3</Min>
+            <Max>7</Max>
+          </Near>
+        </SpawnAreaBorderDistanceRange>
+        <SpawnAreaIslandDistanceRange>
+          <Far>
+            <Min>50</Min>
+            <Max>70</Max>
+          </Far>
+          <Mid>
+            <Min>20</Min>
+            <Max>40</Max>
+          </Mid>
+          <Near>
+            <Min>5</Min>
+            <Max>10</Max>
+          </Near>
+        </SpawnAreaIslandDistanceRange>
+        <TransferData />
+        <ShipTransferEnabled>1</ShipTransferEnabled>
+        <WorldMapCardBackground>0</WorldMapCardBackground>
+        <RouteSessionAsset>0</RouteSessionAsset>
       </Session>
       <Text>
         <LocaText>
@@ -1422,11 +2964,17 @@
             <ExportCount>1</ExportCount>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
-      <WorldMapSound />
+      <WorldMapSound>
+        <ActiveAudioEvent>0</ActiveAudioEvent>
+        <UIClickEvent>0</UIClickEvent>
+      </WorldMapSound>
     </Values>
   </Asset>
   <Asset>
@@ -1436,6 +2984,8 @@
         <GUID>5100492</GUID>
         <Name>Session Uneven Islands</Name>
         <IconFilename>data/ui/2kimages/main/icons/icon_attractiveness.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Session>
         <MapTemplate>141398</MapTemplate>
@@ -1444,6 +2994,41 @@
         <AllowAdvancedCameraSettings>1</AllowAdvancedCameraSettings>
         <Region>5000000</Region>
         <FixDayTime>13.5</FixDayTime>
+        <CameraSettings>data/config/game/camera.xml</CameraSettings>
+        <InMenuVisible>1</InMenuVisible>
+        <SpawnAreaBorderDistanceRange>
+          <Far>
+            <Min>30</Min>
+            <Max>100</Max>
+          </Far>
+          <Mid>
+            <Min>10</Min>
+            <Max>20</Max>
+          </Mid>
+          <Near>
+            <Min>3</Min>
+            <Max>7</Max>
+          </Near>
+        </SpawnAreaBorderDistanceRange>
+        <SpawnAreaIslandDistanceRange>
+          <Far>
+            <Min>50</Min>
+            <Max>70</Max>
+          </Far>
+          <Mid>
+            <Min>20</Min>
+            <Max>40</Max>
+          </Mid>
+          <Near>
+            <Min>5</Min>
+            <Max>10</Max>
+          </Near>
+        </SpawnAreaIslandDistanceRange>
+        <TransferData />
+        <SpawnStartShipAndKontor>1</SpawnStartShipAndKontor>
+        <ShipTransferEnabled>1</ShipTransferEnabled>
+        <WorldMapCardBackground>0</WorldMapCardBackground>
+        <RouteSessionAsset>0</RouteSessionAsset>
       </Session>
       <Text>
         <LocaText>
@@ -1453,11 +3038,17 @@
             <ExportCount>1</ExportCount>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
-      <WorldMapSound />
+      <WorldMapSound>
+        <ActiveAudioEvent>0</ActiveAudioEvent>
+        <UIClickEvent>0</UIClickEvent>
+      </WorldMapSound>
     </Values>
   </Asset>
   <Asset>
@@ -1466,6 +3057,8 @@
       <Standard>
         <GUID>5100007</GUID>
         <Name>Random Map Session</Name>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Session>
         <MapTemplate>141399</MapTemplate>
@@ -1475,6 +3068,40 @@
         <InMenuVisible>0</InMenuVisible>
         <Region>5000000</Region>
         <FixDayTime>13.5</FixDayTime>
+        <CameraSettings>data/config/game/camera.xml</CameraSettings>
+        <SpawnAreaBorderDistanceRange>
+          <Far>
+            <Min>30</Min>
+            <Max>100</Max>
+          </Far>
+          <Mid>
+            <Min>10</Min>
+            <Max>20</Max>
+          </Mid>
+          <Near>
+            <Min>3</Min>
+            <Max>7</Max>
+          </Near>
+        </SpawnAreaBorderDistanceRange>
+        <SpawnAreaIslandDistanceRange>
+          <Far>
+            <Min>50</Min>
+            <Max>70</Max>
+          </Far>
+          <Mid>
+            <Min>20</Min>
+            <Max>40</Max>
+          </Mid>
+          <Near>
+            <Min>5</Min>
+            <Max>10</Max>
+          </Near>
+        </SpawnAreaIslandDistanceRange>
+        <TransferData />
+        <SpawnStartShipAndKontor>1</SpawnStartShipAndKontor>
+        <ShipTransferEnabled>1</ShipTransferEnabled>
+        <WorldMapCardBackground>0</WorldMapCardBackground>
+        <RouteSessionAsset>0</RouteSessionAsset>
       </Session>
       <Text>
         <LocaText>
@@ -1484,11 +3111,17 @@
             <ExportCount>1</ExportCount>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
-      <WorldMapSound />
+      <WorldMapSound>
+        <ActiveAudioEvent>0</ActiveAudioEvent>
+        <UIClickEvent>0</UIClickEvent>
+      </WorldMapSound>
     </Values>
   </Asset>
   <Asset>
@@ -1498,6 +3131,8 @@
         <GUID>180048</GUID>
         <Name>Military_AI_Testing</Name>
         <IconFilename>data/ui/2kimages/main/icons/icon_attractiveness.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Session>
         <MapTemplate>141400</MapTemplate>
@@ -1506,6 +3141,41 @@
         <AllowAdvancedCameraSettings>1</AllowAdvancedCameraSettings>
         <Region>5000000</Region>
         <FixDayTime>13.5</FixDayTime>
+        <CameraSettings>data/config/game/camera.xml</CameraSettings>
+        <InMenuVisible>1</InMenuVisible>
+        <SpawnAreaBorderDistanceRange>
+          <Far>
+            <Min>30</Min>
+            <Max>100</Max>
+          </Far>
+          <Mid>
+            <Min>10</Min>
+            <Max>20</Max>
+          </Mid>
+          <Near>
+            <Min>3</Min>
+            <Max>7</Max>
+          </Near>
+        </SpawnAreaBorderDistanceRange>
+        <SpawnAreaIslandDistanceRange>
+          <Far>
+            <Min>50</Min>
+            <Max>70</Max>
+          </Far>
+          <Mid>
+            <Min>20</Min>
+            <Max>40</Max>
+          </Mid>
+          <Near>
+            <Min>5</Min>
+            <Max>10</Max>
+          </Near>
+        </SpawnAreaIslandDistanceRange>
+        <TransferData />
+        <SpawnStartShipAndKontor>1</SpawnStartShipAndKontor>
+        <ShipTransferEnabled>1</ShipTransferEnabled>
+        <WorldMapCardBackground>0</WorldMapCardBackground>
+        <RouteSessionAsset>0</RouteSessionAsset>
       </Session>
       <Text>
         <LocaText>
@@ -1515,11 +3185,17 @@
             <ExportCount>1</ExportCount>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
-      <WorldMapSound />
+      <WorldMapSound>
+        <ActiveAudioEvent>0</ActiveAudioEvent>
+        <UIClickEvent>0</UIClickEvent>
+      </WorldMapSound>
     </Values>
   </Asset>
   <Asset>
@@ -1529,6 +3205,8 @@
         <GUID>180062</GUID>
         <Name>Military_Blog</Name>
         <IconFilename>data/ui/2kimages/main/icons/icon_ship_tier03.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Session>
         <MapTemplate>142196</MapTemplate>
@@ -1537,6 +3215,41 @@
         <AllowAdvancedCameraSettings>1</AllowAdvancedCameraSettings>
         <Region>5000000</Region>
         <FixDayTime>13.5</FixDayTime>
+        <CameraSettings>data/config/game/camera.xml</CameraSettings>
+        <InMenuVisible>1</InMenuVisible>
+        <SpawnAreaBorderDistanceRange>
+          <Far>
+            <Min>30</Min>
+            <Max>100</Max>
+          </Far>
+          <Mid>
+            <Min>10</Min>
+            <Max>20</Max>
+          </Mid>
+          <Near>
+            <Min>3</Min>
+            <Max>7</Max>
+          </Near>
+        </SpawnAreaBorderDistanceRange>
+        <SpawnAreaIslandDistanceRange>
+          <Far>
+            <Min>50</Min>
+            <Max>70</Max>
+          </Far>
+          <Mid>
+            <Min>20</Min>
+            <Max>40</Max>
+          </Mid>
+          <Near>
+            <Min>5</Min>
+            <Max>10</Max>
+          </Near>
+        </SpawnAreaIslandDistanceRange>
+        <TransferData />
+        <SpawnStartShipAndKontor>1</SpawnStartShipAndKontor>
+        <ShipTransferEnabled>1</ShipTransferEnabled>
+        <WorldMapCardBackground>0</WorldMapCardBackground>
+        <RouteSessionAsset>0</RouteSessionAsset>
       </Session>
       <Text>
         <LocaText>
@@ -1546,11 +3259,17 @@
             <ExportCount>1</ExportCount>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
-      <WorldMapSound />
+      <WorldMapSound>
+        <ActiveAudioEvent>0</ActiveAudioEvent>
+        <UIClickEvent>0</UIClickEvent>
+      </WorldMapSound>
     </Values>
   </Asset>
   <Asset>
@@ -1560,6 +3279,8 @@
         <GUID>180072</GUID>
         <Name>Jans_Testing_Session</Name>
         <IconFilename>data/ui/2kimages/main/icons/icon_ship_tier03.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Session>
         <MapTemplate>141878</MapTemplate>
@@ -1568,6 +3289,41 @@
         <AllowAdvancedCameraSettings>1</AllowAdvancedCameraSettings>
         <Region>5000000</Region>
         <FixDayTime>13.5</FixDayTime>
+        <CameraSettings>data/config/game/camera.xml</CameraSettings>
+        <InMenuVisible>1</InMenuVisible>
+        <SpawnAreaBorderDistanceRange>
+          <Far>
+            <Min>30</Min>
+            <Max>100</Max>
+          </Far>
+          <Mid>
+            <Min>10</Min>
+            <Max>20</Max>
+          </Mid>
+          <Near>
+            <Min>3</Min>
+            <Max>7</Max>
+          </Near>
+        </SpawnAreaBorderDistanceRange>
+        <SpawnAreaIslandDistanceRange>
+          <Far>
+            <Min>50</Min>
+            <Max>70</Max>
+          </Far>
+          <Mid>
+            <Min>20</Min>
+            <Max>40</Max>
+          </Mid>
+          <Near>
+            <Min>5</Min>
+            <Max>10</Max>
+          </Near>
+        </SpawnAreaIslandDistanceRange>
+        <TransferData />
+        <SpawnStartShipAndKontor>1</SpawnStartShipAndKontor>
+        <ShipTransferEnabled>1</ShipTransferEnabled>
+        <WorldMapCardBackground>0</WorldMapCardBackground>
+        <RouteSessionAsset>0</RouteSessionAsset>
       </Session>
       <Text>
         <LocaText>
@@ -1577,11 +3333,17 @@
             <ExportCount>1</ExportCount>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
-      <WorldMapSound />
+      <WorldMapSound>
+        <ActiveAudioEvent>0</ActiveAudioEvent>
+        <UIClickEvent>0</UIClickEvent>
+      </WorldMapSound>
     </Values>
   </Asset>
   <Asset>
@@ -1591,6 +3353,8 @@
         <GUID>240034</GUID>
         <Name>Audio Map</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_brass_tube.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Session>
         <MapTemplate>240033</MapTemplate>
@@ -1625,6 +3389,40 @@
         </TransferData>
         <Region>5000000</Region>
         <FixDayTime>13.5</FixDayTime>
+        <CameraSettings>data/config/game/camera.xml</CameraSettings>
+        <InMenuVisible>1</InMenuVisible>
+        <SpawnAreaBorderDistanceRange>
+          <Far>
+            <Min>30</Min>
+            <Max>100</Max>
+          </Far>
+          <Mid>
+            <Min>10</Min>
+            <Max>20</Max>
+          </Mid>
+          <Near>
+            <Min>3</Min>
+            <Max>7</Max>
+          </Near>
+        </SpawnAreaBorderDistanceRange>
+        <SpawnAreaIslandDistanceRange>
+          <Far>
+            <Min>50</Min>
+            <Max>70</Max>
+          </Far>
+          <Mid>
+            <Min>20</Min>
+            <Max>40</Max>
+          </Mid>
+          <Near>
+            <Min>5</Min>
+            <Max>10</Max>
+          </Near>
+        </SpawnAreaIslandDistanceRange>
+        <SpawnStartShipAndKontor>1</SpawnStartShipAndKontor>
+        <ShipTransferEnabled>1</ShipTransferEnabled>
+        <WorldMapCardBackground>0</WorldMapCardBackground>
+        <RouteSessionAsset>0</RouteSessionAsset>
       </Session>
       <Text>
         <LocaText>
@@ -1632,11 +3430,17 @@
             <Text>Audio Test</Text>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
-      <WorldMapSound />
+      <WorldMapSound>
+        <ActiveAudioEvent>0</ActiveAudioEvent>
+        <UIClickEvent>0</UIClickEvent>
+      </WorldMapSound>
     </Values>
   </Asset>
 </Assets>

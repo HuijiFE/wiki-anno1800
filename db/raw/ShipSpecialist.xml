@@ -8,6 +8,7 @@
         <Name>Sailor</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/specialists/systemic/icon_navigator_704.png</IconFilename>
         <InfoDescription>19815</InfoDescription>
+        <Comments />
       </Standard>
       <Text>
         <LocaText>
@@ -18,18 +19,67 @@
           </English>
         </LocaText>
         <LineID>26702</LineID>
+        <Localize>1</Localize>
       </Text>
       <Item>
         <MaxStackSize>1</MaxStackSize>
         <TradePrice>6500</TradePrice>
+        <Allocation>Ship</Allocation>
+        <ItemType>Specialist</ItemType>
+        <Flotsam>100554</Flotsam>
+        <Rarity>Common</Rarity>
+        <ExclusiveGroup>None</ExclusiveGroup>
+        <ItemSet>0</ItemSet>
+        <ExpeditionType>None</ExpeditionType>
+        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
-      <Cost />
-      <ItemAction />
+      <Cost>
+        <Costs>
+          <Item>
+            <Ingredient>1010017</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010196</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010205</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010218</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010207</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010202</Ingredient>
+          </Item>
+        </Costs>
+        <ItemsPerCost>1</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
+      </Cost>
+      <ItemAction>
+        <ItemAction>NOACTION</ItemAction>
+        <ActionTarget>0</ActionTarget>
+        <ActionScope>Self</ActionScope>
+        <RadiusBuffTargets />
+        <ActionIncidentType />
+        <IncidentResolveRate>0.3</IncidentResolveRate>
+        <ActiveBuff>0</ActiveBuff>
+        <ActionDescription>0</ActionDescription>
+        <ActionCompletedEffect />
+        <CanEndItemAction>1</CanEndItemAction>
+        <StopMovementOnInteraction>1</StopMovementOnInteraction>
+      </ItemAction>
       <VehicleUpgrade>
         <ForwardSpeedUpgrade>
           <Value>5</Value>
           <Percental>1</Percental>
         </ForwardSpeedUpgrade>
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
       </VehicleUpgrade>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
@@ -51,14 +101,40 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Easy</ItemDifficulties>
         <FluffText>19815</FluffText>
+        <ItemRegions />
       </ExpeditionAttribute>
-      <AttackerUpgrade />
-      <AttackableUpgrade />
-      <TradeShipUpgrade />
+      <AttackerUpgrade>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
+      </AttackerUpgrade>
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
+      <TradeShipUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
+      </TradeShipUpgrade>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
-      <SpecialAction />
+      <SpecialAction>
+        <MouseEffect>0</MouseEffect>
+        <Projectile>0</Projectile>
+      </SpecialAction>
     </Values>
   </Asset>
   <Asset>
@@ -69,6 +145,7 @@
         <Name>Cadet</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/specialists/systemic/icon_worker_412.png</IconFilename>
         <InfoDescription>19816</InfoDescription>
+        <Comments />
       </Standard>
       <Text>
         <LocaText>
@@ -79,14 +156,65 @@
           </English>
         </LocaText>
         <LineID>26703</LineID>
+        <Localize>1</Localize>
       </Text>
       <Item>
         <MaxStackSize>1</MaxStackSize>
         <TradePrice>5400</TradePrice>
+        <Allocation>Ship</Allocation>
+        <ItemType>Specialist</ItemType>
+        <Flotsam>100554</Flotsam>
+        <Rarity>Common</Rarity>
+        <ExclusiveGroup>None</ExclusiveGroup>
+        <ItemSet>0</ItemSet>
+        <ExpeditionType>None</ExpeditionType>
+        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
-      <Cost />
-      <ItemAction />
-      <VehicleUpgrade />
+      <Cost>
+        <Costs>
+          <Item>
+            <Ingredient>1010017</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010196</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010205</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010218</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010207</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010202</Ingredient>
+          </Item>
+        </Costs>
+        <ItemsPerCost>1</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
+      </Cost>
+      <ItemAction>
+        <ItemAction>NOACTION</ItemAction>
+        <ActionTarget>0</ActionTarget>
+        <ActionScope>Self</ActionScope>
+        <RadiusBuffTargets />
+        <ActionIncidentType />
+        <IncidentResolveRate>0.3</IncidentResolveRate>
+        <ActiveBuff>0</ActiveBuff>
+        <ActionDescription>0</ActionDescription>
+        <ActionCompletedEffect />
+        <CanEndItemAction>1</CanEndItemAction>
+        <StopMovementOnInteraction>1</StopMovementOnInteraction>
+      </ItemAction>
+      <VehicleUpgrade>
+        <ForwardSpeedUpgrade />
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
+      </VehicleUpgrade>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
         <ExpeditionAttributes>
@@ -107,19 +235,43 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Easy</ItemDifficulties>
         <FluffText>19816</FluffText>
+        <ItemRegions />
       </ExpeditionAttribute>
-      <AttackerUpgrade />
+      <AttackerUpgrade>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
+      </AttackerUpgrade>
       <AttackableUpgrade>
         <SelfHealUpgrade>
           <Value>100</Value>
           <Percental>1</Percental>
         </SelfHealUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
       </AttackableUpgrade>
-      <TradeShipUpgrade />
+      <TradeShipUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
+      </TradeShipUpgrade>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
-      <SpecialAction />
+      <SpecialAction>
+        <MouseEffect>0</MouseEffect>
+        <Projectile>0</Projectile>
+      </SpecialAction>
     </Values>
   </Asset>
   <Asset>
@@ -130,6 +282,7 @@
         <Name>Mate</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/specialists/systemic/icon_worker_411.png</IconFilename>
         <InfoDescription>19817</InfoDescription>
+        <Comments />
       </Standard>
       <Text>
         <LocaText>
@@ -140,21 +293,68 @@
           </English>
         </LocaText>
         <LineID>26704</LineID>
+        <Localize>1</Localize>
       </Text>
       <Item>
         <MaxStackSize>1</MaxStackSize>
         <Rarity>Uncommon</Rarity>
         <TradePrice>29800</TradePrice>
+        <Allocation>Ship</Allocation>
+        <ItemType>Specialist</ItemType>
+        <Flotsam>100554</Flotsam>
+        <ExclusiveGroup>None</ExclusiveGroup>
+        <ItemSet>0</ItemSet>
+        <ExpeditionType>None</ExpeditionType>
+        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
-      <Cost />
+      <Cost>
+        <Costs>
+          <Item>
+            <Ingredient>1010017</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010196</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010205</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010218</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010207</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010202</Ingredient>
+          </Item>
+        </Costs>
+        <ItemsPerCost>1</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
+      </Cost>
       <ItemAction>
         <RepairSpeed>10</RepairSpeed>
+        <ItemAction>NOACTION</ItemAction>
+        <ActionTarget>0</ActionTarget>
+        <ActionScope>Self</ActionScope>
+        <RadiusBuffTargets />
+        <ActionIncidentType />
+        <IncidentResolveRate>0.3</IncidentResolveRate>
+        <ActiveBuff>0</ActiveBuff>
+        <ActionDescription>0</ActionDescription>
+        <ActionCompletedEffect />
+        <CanEndItemAction>1</CanEndItemAction>
+        <StopMovementOnInteraction>1</StopMovementOnInteraction>
       </ItemAction>
       <VehicleUpgrade>
         <ForwardSpeedUpgrade>
           <Value>10</Value>
           <Percental>1</Percental>
         </ForwardSpeedUpgrade>
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
       </VehicleUpgrade>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
@@ -179,14 +379,40 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Easy;Average</ItemDifficulties>
         <FluffText>19817</FluffText>
+        <ItemRegions />
       </ExpeditionAttribute>
-      <AttackerUpgrade />
-      <AttackableUpgrade />
-      <TradeShipUpgrade />
+      <AttackerUpgrade>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
+      </AttackerUpgrade>
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
+      <TradeShipUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
+      </TradeShipUpgrade>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
-      <SpecialAction />
+      <SpecialAction>
+        <MouseEffect>0</MouseEffect>
+        <Projectile>0</Projectile>
+      </SpecialAction>
     </Values>
   </Asset>
   <Asset>
@@ -197,6 +423,7 @@
         <Name>Seafarer</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/specialists/systemic/icon_worker_413.png</IconFilename>
         <InfoDescription>19818</InfoDescription>
+        <Comments />
       </Standard>
       <Text>
         <LocaText>
@@ -207,21 +434,68 @@
           </English>
         </LocaText>
         <LineID>26705</LineID>
+        <Localize>1</Localize>
       </Text>
       <Item>
         <MaxStackSize>1</MaxStackSize>
         <Rarity>Uncommon</Rarity>
         <TradePrice>25700</TradePrice>
+        <Allocation>Ship</Allocation>
+        <ItemType>Specialist</ItemType>
+        <Flotsam>100554</Flotsam>
+        <ExclusiveGroup>None</ExclusiveGroup>
+        <ItemSet>0</ItemSet>
+        <ExpeditionType>None</ExpeditionType>
+        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
-      <Cost />
+      <Cost>
+        <Costs>
+          <Item>
+            <Ingredient>1010017</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010196</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010205</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010218</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010207</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010202</Ingredient>
+          </Item>
+        </Costs>
+        <ItemsPerCost>1</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
+      </Cost>
       <ItemAction>
         <RepairSpeed>10</RepairSpeed>
+        <ItemAction>NOACTION</ItemAction>
+        <ActionTarget>0</ActionTarget>
+        <ActionScope>Self</ActionScope>
+        <RadiusBuffTargets />
+        <ActionIncidentType />
+        <IncidentResolveRate>0.3</IncidentResolveRate>
+        <ActiveBuff>0</ActiveBuff>
+        <ActionDescription>0</ActionDescription>
+        <ActionCompletedEffect />
+        <CanEndItemAction>1</CanEndItemAction>
+        <StopMovementOnInteraction>1</StopMovementOnInteraction>
       </ItemAction>
       <VehicleUpgrade>
         <IgnoreDamageFactorUpgrade>
           <Value>40</Value>
           <Percental>1</Percental>
         </IgnoreDamageFactorUpgrade>
+        <ForwardSpeedUpgrade />
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
       </VehicleUpgrade>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
@@ -246,14 +520,40 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Easy;Average</ItemDifficulties>
         <FluffText>19818</FluffText>
+        <ItemRegions />
       </ExpeditionAttribute>
-      <AttackerUpgrade />
-      <AttackableUpgrade />
-      <TradeShipUpgrade />
+      <AttackerUpgrade>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
+      </AttackerUpgrade>
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
+      <TradeShipUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
+      </TradeShipUpgrade>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
-      <SpecialAction />
+      <SpecialAction>
+        <MouseEffect>0</MouseEffect>
+        <Projectile>0</Projectile>
+      </SpecialAction>
     </Values>
   </Asset>
   <Asset>
@@ -264,6 +564,7 @@
         <Name>Pilot</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/specialists/icon_captain_common.png</IconFilename>
         <InfoDescription>19819</InfoDescription>
+        <Comments />
       </Standard>
       <Text>
         <LocaText>
@@ -274,15 +575,65 @@
           </English>
         </LocaText>
         <LineID>26706</LineID>
+        <Localize>1</Localize>
       </Text>
       <Item>
         <MaxStackSize>1</MaxStackSize>
         <Rarity>Rare</Rarity>
         <TradePrice>78400</TradePrice>
+        <Allocation>Ship</Allocation>
+        <ItemType>Specialist</ItemType>
+        <Flotsam>100554</Flotsam>
+        <ExclusiveGroup>None</ExclusiveGroup>
+        <ItemSet>0</ItemSet>
+        <ExpeditionType>None</ExpeditionType>
+        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
-      <Cost />
-      <ItemAction />
-      <VehicleUpgrade />
+      <Cost>
+        <Costs>
+          <Item>
+            <Ingredient>1010017</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010196</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010205</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010218</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010207</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010202</Ingredient>
+          </Item>
+        </Costs>
+        <ItemsPerCost>1</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
+      </Cost>
+      <ItemAction>
+        <ItemAction>NOACTION</ItemAction>
+        <ActionTarget>0</ActionTarget>
+        <ActionScope>Self</ActionScope>
+        <RadiusBuffTargets />
+        <ActionIncidentType />
+        <IncidentResolveRate>0.3</IncidentResolveRate>
+        <ActiveBuff>0</ActiveBuff>
+        <ActionDescription>0</ActionDescription>
+        <ActionCompletedEffect />
+        <CanEndItemAction>1</CanEndItemAction>
+        <StopMovementOnInteraction>1</StopMovementOnInteraction>
+      </ItemAction>
+      <VehicleUpgrade>
+        <ForwardSpeedUpgrade />
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
+      </VehicleUpgrade>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
         <ExpeditionAttributes>
@@ -306,8 +657,20 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Easy;Average;Hard</ItemDifficulties>
         <FluffText>19819</FluffText>
+        <ItemRegions />
       </ExpeditionAttribute>
-      <AttackerUpgrade />
+      <AttackerUpgrade>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
+      </AttackerUpgrade>
       <AttackableUpgrade>
         <MaxHitpointsUpgrade>
           <Value>600</Value>
@@ -316,12 +679,23 @@
           <Value>300</Value>
           <Percental>1</Percental>
         </SelfHealUpgrade>
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
       </AttackableUpgrade>
-      <TradeShipUpgrade />
+      <TradeShipUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
+      </TradeShipUpgrade>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
-      <SpecialAction />
+      <SpecialAction>
+        <MouseEffect>0</MouseEffect>
+        <Projectile>0</Projectile>
+      </SpecialAction>
     </Values>
   </Asset>
   <Asset>
@@ -332,6 +706,7 @@
         <Name>First Lieutenant</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/specialists/systemic/icon_captain_101.png</IconFilename>
         <InfoDescription>19820</InfoDescription>
+        <Comments />
       </Standard>
       <Text>
         <LocaText>
@@ -342,14 +717,58 @@
           </English>
         </LocaText>
         <LineID>26707</LineID>
+        <Localize>1</Localize>
       </Text>
       <Item>
         <MaxStackSize>1</MaxStackSize>
         <Rarity>Rare</Rarity>
         <TradePrice>82300</TradePrice>
+        <Allocation>Ship</Allocation>
+        <ItemType>Specialist</ItemType>
+        <Flotsam>100554</Flotsam>
+        <ExclusiveGroup>None</ExclusiveGroup>
+        <ItemSet>0</ItemSet>
+        <ExpeditionType>None</ExpeditionType>
+        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
-      <Cost />
-      <ItemAction />
+      <Cost>
+        <Costs>
+          <Item>
+            <Ingredient>1010017</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010196</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010205</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010218</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010207</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010202</Ingredient>
+          </Item>
+        </Costs>
+        <ItemsPerCost>1</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
+      </Cost>
+      <ItemAction>
+        <ItemAction>NOACTION</ItemAction>
+        <ActionTarget>0</ActionTarget>
+        <ActionScope>Self</ActionScope>
+        <RadiusBuffTargets />
+        <ActionIncidentType />
+        <IncidentResolveRate>0.3</IncidentResolveRate>
+        <ActiveBuff>0</ActiveBuff>
+        <ActionDescription>0</ActionDescription>
+        <ActionCompletedEffect />
+        <CanEndItemAction>1</CanEndItemAction>
+        <StopMovementOnInteraction>1</StopMovementOnInteraction>
+      </ItemAction>
       <VehicleUpgrade>
         <ForwardSpeedUpgrade>
           <Value>15</Value>
@@ -359,6 +778,9 @@
           <Value>60</Value>
           <Percental>1</Percental>
         </IgnoreDamageFactorUpgrade>
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
       </VehicleUpgrade>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
@@ -383,14 +805,40 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Easy;Average;Hard</ItemDifficulties>
         <FluffText>19820</FluffText>
+        <ItemRegions />
       </ExpeditionAttribute>
-      <AttackerUpgrade />
-      <AttackableUpgrade />
-      <TradeShipUpgrade />
+      <AttackerUpgrade>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
+      </AttackerUpgrade>
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
+      <TradeShipUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
+      </TradeShipUpgrade>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
-      <SpecialAction />
+      <SpecialAction>
+        <MouseEffect>0</MouseEffect>
+        <Projectile>0</Projectile>
+      </SpecialAction>
     </Values>
   </Asset>
   <Asset>
@@ -401,6 +849,7 @@
         <Name>Ship Captain</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/specialists/systemic/icon_captain_201.png</IconFilename>
         <InfoDescription>19821</InfoDescription>
+        <Comments />
       </Standard>
       <Text>
         <LocaText>
@@ -411,13 +860,45 @@
           </English>
         </LocaText>
         <LineID>15288</LineID>
+        <Localize>1</Localize>
       </Text>
       <Item>
         <MaxStackSize>1</MaxStackSize>
         <Rarity>Epic</Rarity>
         <TradePrice>362300</TradePrice>
+        <Allocation>Ship</Allocation>
+        <ItemType>Specialist</ItemType>
+        <Flotsam>100554</Flotsam>
+        <ExclusiveGroup>None</ExclusiveGroup>
+        <ItemSet>0</ItemSet>
+        <ExpeditionType>None</ExpeditionType>
+        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
-      <Cost />
+      <Cost>
+        <Costs>
+          <Item>
+            <Ingredient>1010017</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010196</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010205</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010218</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010207</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010202</Ingredient>
+          </Item>
+        </Costs>
+        <ItemsPerCost>1</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
+      </Cost>
       <ItemAction>
         <ItemAction>SHIELD</ItemAction>
         <ActionCooldown>60000</ActionCooldown>
@@ -426,8 +907,20 @@
         <ActionDescription>16513</ActionDescription>
         <CanEndItemAction>0</CanEndItemAction>
         <StopMovementOnInteraction>0</StopMovementOnInteraction>
+        <ActionTarget>0</ActionTarget>
+        <ActionScope>Self</ActionScope>
+        <RadiusBuffTargets />
+        <ActionIncidentType />
+        <IncidentResolveRate>0.3</IncidentResolveRate>
+        <ActionCompletedEffect />
       </ItemAction>
-      <VehicleUpgrade />
+      <VehicleUpgrade>
+        <ForwardSpeedUpgrade />
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
+      </VehicleUpgrade>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
         <ExpeditionAttributes>
@@ -451,8 +944,20 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Average;Hard</ItemDifficulties>
         <FluffText>19821</FluffText>
+        <ItemRegions />
       </ExpeditionAttribute>
-      <AttackerUpgrade />
+      <AttackerUpgrade>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
+      </AttackerUpgrade>
       <AttackableUpgrade>
         <SelfHealPausedTimeIfAttackedUpgrade>
           <Value>-100</Value>
@@ -463,10 +968,23 @@
             <Factor>0.8</Factor>
           </Normal>
         </DamageReceiveFactor>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <MoralePowerUpgrade />
       </AttackableUpgrade>
-      <TradeShipUpgrade />
-      <Locked />
-      <SpecialAction />
+      <TradeShipUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
+      </TradeShipUpgrade>
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
+      <SpecialAction>
+        <MouseEffect>0</MouseEffect>
+        <Projectile>0</Projectile>
+      </SpecialAction>
     </Values>
   </Asset>
   <Asset>
@@ -477,6 +995,7 @@
         <Name>Ship Master</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/specialists/systemic/icon_captain_402.png</IconFilename>
         <InfoDescription>19822</InfoDescription>
+        <Comments />
       </Standard>
       <Text>
         <LocaText>
@@ -487,13 +1006,45 @@
           </English>
         </LocaText>
         <LineID>26708</LineID>
+        <Localize>1</Localize>
       </Text>
       <Item>
         <MaxStackSize>1</MaxStackSize>
         <Rarity>Epic</Rarity>
         <TradePrice>301400</TradePrice>
+        <Allocation>Ship</Allocation>
+        <ItemType>Specialist</ItemType>
+        <Flotsam>100554</Flotsam>
+        <ExclusiveGroup>None</ExclusiveGroup>
+        <ItemSet>0</ItemSet>
+        <ExpeditionType>None</ExpeditionType>
+        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
-      <Cost />
+      <Cost>
+        <Costs>
+          <Item>
+            <Ingredient>1010017</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010196</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010205</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010218</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010207</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010202</Ingredient>
+          </Item>
+        </Costs>
+        <ItemsPerCost>1</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
+      </Cost>
       <ItemAction>
         <ItemAction>HEAL_INCIDENT</ItemAction>
         <ActionTarget>501232</ActionTarget>
@@ -503,12 +1054,22 @@
         <ActionCooldown>15000</ActionCooldown>
         <ActionDuration>5000</ActionDuration>
         <CanEndItemAction>0</CanEndItemAction>
+        <RadiusBuffTargets />
+        <IncidentResolveRate>0.3</IncidentResolveRate>
+        <ActiveBuff>0</ActiveBuff>
+        <ActionDescription>0</ActionDescription>
+        <ActionCompletedEffect />
+        <StopMovementOnInteraction>1</StopMovementOnInteraction>
       </ItemAction>
       <VehicleUpgrade>
         <ForwardSpeedUpgrade>
           <Value>20</Value>
           <Percental>1</Percental>
         </ForwardSpeedUpgrade>
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
       </VehicleUpgrade>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
@@ -533,17 +1094,43 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Average;Hard</ItemDifficulties>
         <FluffText>19822</FluffText>
+        <ItemRegions />
       </ExpeditionAttribute>
-      <AttackerUpgrade />
+      <AttackerUpgrade>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
+      </AttackerUpgrade>
       <AttackableUpgrade>
         <SelfHealUpgrade>
           <Value>400</Value>
           <Percental>1</Percental>
         </SelfHealUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
       </AttackableUpgrade>
-      <TradeShipUpgrade />
-      <Locked />
-      <SpecialAction />
+      <TradeShipUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
+      </TradeShipUpgrade>
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
+      <SpecialAction>
+        <MouseEffect>0</MouseEffect>
+        <Projectile>0</Projectile>
+      </SpecialAction>
     </Values>
   </Asset>
   <Asset>
@@ -554,6 +1141,7 @@
         <Name>Perry Winslow</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/specialists/systemic/icon_captain_401.png</IconFilename>
         <InfoDescription>19823</InfoDescription>
+        <Comments />
       </Standard>
       <Text>
         <LocaText>
@@ -564,13 +1152,45 @@
           </English>
         </LocaText>
         <LineID>26709</LineID>
+        <Localize>1</Localize>
       </Text>
       <Item>
         <MaxStackSize>1</MaxStackSize>
         <Rarity>Legendary</Rarity>
         <TradePrice>922100</TradePrice>
+        <Allocation>Ship</Allocation>
+        <ItemType>Specialist</ItemType>
+        <Flotsam>100554</Flotsam>
+        <ExclusiveGroup>None</ExclusiveGroup>
+        <ItemSet>0</ItemSet>
+        <ExpeditionType>None</ExpeditionType>
+        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
-      <Cost />
+      <Cost>
+        <Costs>
+          <Item>
+            <Ingredient>1010017</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010196</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010205</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010218</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010207</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010202</Ingredient>
+          </Item>
+        </Costs>
+        <ItemsPerCost>1</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
+      </Cost>
       <ItemAction>
         <ItemAction>REPAIR</ItemAction>
         <ActionTarget>2001748</ActionTarget>
@@ -578,12 +1198,24 @@
         <RepairSpeed>2</RepairSpeed>
         <ActionCooldown>60000</ActionCooldown>
         <ActionDuration>15000</ActionDuration>
+        <RadiusBuffTargets />
+        <ActionIncidentType />
+        <IncidentResolveRate>0.3</IncidentResolveRate>
+        <ActiveBuff>0</ActiveBuff>
+        <ActionDescription>0</ActionDescription>
+        <ActionCompletedEffect />
+        <CanEndItemAction>1</CanEndItemAction>
+        <StopMovementOnInteraction>1</StopMovementOnInteraction>
       </ItemAction>
       <VehicleUpgrade>
         <IgnoreDamageFactorUpgrade>
           <Value>100</Value>
           <Percental>1</Percental>
         </IgnoreDamageFactorUpgrade>
+        <ForwardSpeedUpgrade />
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
       </VehicleUpgrade>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
@@ -608,8 +1240,20 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Hard</ItemDifficulties>
         <FluffText>19823</FluffText>
+        <ItemRegions />
       </ExpeditionAttribute>
-      <AttackerUpgrade />
+      <AttackerUpgrade>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
+      </AttackerUpgrade>
       <AttackableUpgrade>
         <MaxHitpointsUpgrade>
           <Value>1000</Value>
@@ -618,10 +1262,23 @@
           <Value>-100</Value>
           <Percental>1</Percental>
         </SelfHealPausedTimeIfAttackedUpgrade>
+        <SelfHealUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
       </AttackableUpgrade>
-      <TradeShipUpgrade />
-      <Locked />
-      <SpecialAction />
+      <TradeShipUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
+      </TradeShipUpgrade>
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
+      <SpecialAction>
+        <MouseEffect>0</MouseEffect>
+        <Projectile>0</Projectile>
+      </SpecialAction>
     </Values>
   </Asset>
   <Asset>
@@ -632,6 +1289,7 @@
         <Name>Richard Murphy</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/specialists/icon_captain_rare.png</IconFilename>
         <InfoDescription>19824</InfoDescription>
+        <Comments />
       </Standard>
       <Text>
         <LocaText>
@@ -642,19 +1300,67 @@
           </English>
         </LocaText>
         <LineID>26710</LineID>
+        <Localize>1</Localize>
       </Text>
       <Item>
         <MaxStackSize>1</MaxStackSize>
         <Rarity>Legendary</Rarity>
         <TradePrice>886700</TradePrice>
+        <Allocation>Ship</Allocation>
+        <ItemType>Specialist</ItemType>
+        <Flotsam>100554</Flotsam>
+        <ExclusiveGroup>None</ExclusiveGroup>
+        <ItemSet>0</ItemSet>
+        <ExpeditionType>None</ExpeditionType>
+        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
-      <Cost />
-      <ItemAction />
+      <Cost>
+        <Costs>
+          <Item>
+            <Ingredient>1010017</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010196</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010205</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010218</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010207</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010202</Ingredient>
+          </Item>
+        </Costs>
+        <ItemsPerCost>1</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
+      </Cost>
+      <ItemAction>
+        <ItemAction>NOACTION</ItemAction>
+        <ActionTarget>0</ActionTarget>
+        <ActionScope>Self</ActionScope>
+        <RadiusBuffTargets />
+        <ActionIncidentType />
+        <IncidentResolveRate>0.3</IncidentResolveRate>
+        <ActiveBuff>0</ActiveBuff>
+        <ActionDescription>0</ActionDescription>
+        <ActionCompletedEffect />
+        <CanEndItemAction>1</CanEndItemAction>
+        <StopMovementOnInteraction>1</StopMovementOnInteraction>
+      </ItemAction>
       <VehicleUpgrade>
         <ForwardSpeedUpgrade>
           <Value>25</Value>
           <Percental>1</Percental>
         </ForwardSpeedUpgrade>
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
       </VehicleUpgrade>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
@@ -682,8 +1388,20 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Hard</ItemDifficulties>
         <FluffText>19824</FluffText>
+        <ItemRegions />
       </ExpeditionAttribute>
-      <AttackerUpgrade />
+      <AttackerUpgrade>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
+      </AttackerUpgrade>
       <AttackableUpgrade>
         <SelfHealUpgrade>
           <Value>500</Value>
@@ -694,10 +1412,23 @@
             <Factor>0.25</Factor>
           </Torpedo>
         </DamageReceiveFactor>
+        <MaxHitpointsUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
       </AttackableUpgrade>
-      <TradeShipUpgrade />
-      <Locked />
-      <SpecialAction />
+      <TradeShipUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
+      </TradeShipUpgrade>
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
+      <SpecialAction>
+        <MouseEffect>0</MouseEffect>
+        <Projectile>0</Projectile>
+      </SpecialAction>
     </Values>
   </Asset>
   <Asset>
@@ -708,6 +1439,7 @@
         <Name>Edward Smith - The Titanic Captain</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/specialists/icon_doctor_pirate.png</IconFilename>
         <InfoDescription>19825</InfoDescription>
+        <Comments />
       </Standard>
       <Text>
         <LocaText>
@@ -718,19 +1450,67 @@
           </English>
         </LocaText>
         <LineID>26711</LineID>
+        <Localize>1</Localize>
       </Text>
       <Item>
         <MaxStackSize>1</MaxStackSize>
         <Rarity>Legendary</Rarity>
         <TradePrice>901400</TradePrice>
+        <Allocation>Ship</Allocation>
+        <ItemType>Specialist</ItemType>
+        <Flotsam>100554</Flotsam>
+        <ExclusiveGroup>None</ExclusiveGroup>
+        <ItemSet>0</ItemSet>
+        <ExpeditionType>None</ExpeditionType>
+        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
-      <Cost />
-      <ItemAction />
+      <Cost>
+        <Costs>
+          <Item>
+            <Ingredient>1010017</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010196</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010205</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010218</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010207</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010202</Ingredient>
+          </Item>
+        </Costs>
+        <ItemsPerCost>1</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
+      </Cost>
+      <ItemAction>
+        <ItemAction>NOACTION</ItemAction>
+        <ActionTarget>0</ActionTarget>
+        <ActionScope>Self</ActionScope>
+        <RadiusBuffTargets />
+        <ActionIncidentType />
+        <IncidentResolveRate>0.3</IncidentResolveRate>
+        <ActiveBuff>0</ActiveBuff>
+        <ActionDescription>0</ActionDescription>
+        <ActionCompletedEffect />
+        <CanEndItemAction>1</CanEndItemAction>
+        <StopMovementOnInteraction>1</StopMovementOnInteraction>
+      </ItemAction>
       <VehicleUpgrade>
         <ForwardSpeedUpgrade>
           <Value>25</Value>
           <Percental>1</Percental>
         </ForwardSpeedUpgrade>
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
       </VehicleUpgrade>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
@@ -755,8 +1535,20 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Hard</ItemDifficulties>
         <FluffText>19825</FluffText>
+        <ItemRegions />
       </ExpeditionAttribute>
-      <AttackerUpgrade />
+      <AttackerUpgrade>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
+      </AttackerUpgrade>
       <AttackableUpgrade>
         <MaxHitpointsUpgrade>
           <Value>1000</Value>
@@ -766,10 +1558,23 @@
             <Factor>0.75</Factor>
           </Normal>
         </DamageReceiveFactor>
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
       </AttackableUpgrade>
-      <TradeShipUpgrade />
-      <Locked />
-      <SpecialAction />
+      <TradeShipUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
+      </TradeShipUpgrade>
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
+      <SpecialAction>
+        <MouseEffect>0</MouseEffect>
+        <Projectile>0</Projectile>
+      </SpecialAction>
     </Values>
   </Asset>
   <Asset>
@@ -780,6 +1585,7 @@
         <Name>Ensign</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/specialists/systemic/icon_custom_officer_101.png</IconFilename>
         <InfoDescription>19961</InfoDescription>
+        <Comments />
       </Standard>
       <Text>
         <LocaText>
@@ -790,15 +1596,65 @@
           </English>
         </LocaText>
         <LineID>26751</LineID>
+        <Localize>1</Localize>
       </Text>
       <Item>
         <Allocation>Warship</Allocation>
         <MaxStackSize>1</MaxStackSize>
         <TradePrice>10000</TradePrice>
+        <ItemType>Specialist</ItemType>
+        <Flotsam>100554</Flotsam>
+        <Rarity>Common</Rarity>
+        <ExclusiveGroup>None</ExclusiveGroup>
+        <ItemSet>0</ItemSet>
+        <ExpeditionType>None</ExpeditionType>
+        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
-      <Cost />
-      <ItemAction />
-      <VehicleUpgrade />
+      <Cost>
+        <Costs>
+          <Item>
+            <Ingredient>1010017</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010196</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010205</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010218</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010207</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010202</Ingredient>
+          </Item>
+        </Costs>
+        <ItemsPerCost>1</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
+      </Cost>
+      <ItemAction>
+        <ItemAction>NOACTION</ItemAction>
+        <ActionTarget>0</ActionTarget>
+        <ActionScope>Self</ActionScope>
+        <RadiusBuffTargets />
+        <ActionIncidentType />
+        <IncidentResolveRate>0.3</IncidentResolveRate>
+        <ActiveBuff>0</ActiveBuff>
+        <ActionDescription>0</ActionDescription>
+        <ActionCompletedEffect />
+        <CanEndItemAction>1</CanEndItemAction>
+        <StopMovementOnInteraction>1</StopMovementOnInteraction>
+      </ItemAction>
+      <VehicleUpgrade>
+        <ForwardSpeedUpgrade />
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
+      </VehicleUpgrade>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
         <ExpeditionAttributes>
@@ -819,6 +1675,7 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Easy</ItemDifficulties>
         <FluffText>19961</FluffText>
+        <ItemRegions />
       </ExpeditionAttribute>
       <AttackerUpgrade>
         <DamageFactor>
@@ -826,13 +1683,36 @@
             <Factor>1.1</Factor>
           </SailShip>
         </DamageFactor>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
       </AttackerUpgrade>
-      <AttackableUpgrade />
-      <TradeShipUpgrade />
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
+      <TradeShipUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
+      </TradeShipUpgrade>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
-      <SpecialAction />
+      <SpecialAction>
+        <MouseEffect>0</MouseEffect>
+        <Projectile>0</Projectile>
+      </SpecialAction>
     </Values>
   </Asset>
   <Asset>
@@ -843,6 +1723,7 @@
         <Name>Junior</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/specialists/systemic/icon_custom_officer_102.png</IconFilename>
         <InfoDescription>19962</InfoDescription>
+        <Comments />
       </Standard>
       <Text>
         <LocaText>
@@ -853,15 +1734,65 @@
           </English>
         </LocaText>
         <LineID>26752</LineID>
+        <Localize>1</Localize>
       </Text>
       <Item>
         <Allocation>Warship</Allocation>
         <MaxStackSize>1</MaxStackSize>
         <TradePrice>11200</TradePrice>
+        <ItemType>Specialist</ItemType>
+        <Flotsam>100554</Flotsam>
+        <Rarity>Common</Rarity>
+        <ExclusiveGroup>None</ExclusiveGroup>
+        <ItemSet>0</ItemSet>
+        <ExpeditionType>None</ExpeditionType>
+        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
-      <Cost />
-      <ItemAction />
-      <VehicleUpgrade />
+      <Cost>
+        <Costs>
+          <Item>
+            <Ingredient>1010017</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010196</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010205</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010218</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010207</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010202</Ingredient>
+          </Item>
+        </Costs>
+        <ItemsPerCost>1</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
+      </Cost>
+      <ItemAction>
+        <ItemAction>NOACTION</ItemAction>
+        <ActionTarget>0</ActionTarget>
+        <ActionScope>Self</ActionScope>
+        <RadiusBuffTargets />
+        <ActionIncidentType />
+        <IncidentResolveRate>0.3</IncidentResolveRate>
+        <ActiveBuff>0</ActiveBuff>
+        <ActionDescription>0</ActionDescription>
+        <ActionCompletedEffect />
+        <CanEndItemAction>1</CanEndItemAction>
+        <StopMovementOnInteraction>1</StopMovementOnInteraction>
+      </ItemAction>
+      <VehicleUpgrade>
+        <ForwardSpeedUpgrade />
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
+      </VehicleUpgrade>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
         <ExpeditionAttributes>
@@ -882,6 +1813,7 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Easy</ItemDifficulties>
         <FluffText>19962</FluffText>
+        <ItemRegions />
       </ExpeditionAttribute>
       <AttackerUpgrade>
         <DamageFactor>
@@ -889,13 +1821,36 @@
             <Factor>1.1</Factor>
           </SteamShip>
         </DamageFactor>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
       </AttackerUpgrade>
-      <AttackableUpgrade />
-      <TradeShipUpgrade />
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
+      <TradeShipUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
+      </TradeShipUpgrade>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
-      <SpecialAction />
+      <SpecialAction>
+        <MouseEffect>0</MouseEffect>
+        <Projectile>0</Projectile>
+      </SpecialAction>
     </Values>
   </Asset>
   <Asset>
@@ -906,6 +1861,7 @@
         <Name>Lieutenant</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/specialists/systemic/icon_navigator_102.png</IconFilename>
         <InfoDescription>19963</InfoDescription>
+        <Comments />
       </Standard>
       <Text>
         <LocaText>
@@ -916,16 +1872,65 @@
           </English>
         </LocaText>
         <LineID>26753</LineID>
+        <Localize>1</Localize>
       </Text>
       <Item>
         <Allocation>Warship</Allocation>
         <MaxStackSize>1</MaxStackSize>
         <Rarity>Uncommon</Rarity>
         <TradePrice>33400</TradePrice>
+        <ItemType>Specialist</ItemType>
+        <Flotsam>100554</Flotsam>
+        <ExclusiveGroup>None</ExclusiveGroup>
+        <ItemSet>0</ItemSet>
+        <ExpeditionType>None</ExpeditionType>
+        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
-      <Cost />
-      <ItemAction />
-      <VehicleUpgrade />
+      <Cost>
+        <Costs>
+          <Item>
+            <Ingredient>1010017</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010196</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010205</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010218</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010207</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010202</Ingredient>
+          </Item>
+        </Costs>
+        <ItemsPerCost>1</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
+      </Cost>
+      <ItemAction>
+        <ItemAction>NOACTION</ItemAction>
+        <ActionTarget>0</ActionTarget>
+        <ActionScope>Self</ActionScope>
+        <RadiusBuffTargets />
+        <ActionIncidentType />
+        <IncidentResolveRate>0.3</IncidentResolveRate>
+        <ActiveBuff>0</ActiveBuff>
+        <ActionDescription>0</ActionDescription>
+        <ActionCompletedEffect />
+        <CanEndItemAction>1</CanEndItemAction>
+        <StopMovementOnInteraction>1</StopMovementOnInteraction>
+      </ItemAction>
+      <VehicleUpgrade>
+        <ForwardSpeedUpgrade />
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
+      </VehicleUpgrade>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
         <ExpeditionAttributes>
@@ -949,19 +1954,43 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Easy;Average</ItemDifficulties>
         <FluffText>19963</FluffText>
+        <ItemRegions />
       </ExpeditionAttribute>
       <AttackerUpgrade>
         <BaseDamageUpgrade>
           <Value>10</Value>
           <Percental>1</Percental>
         </BaseDamageUpgrade>
+        <AttackRangeUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
       </AttackerUpgrade>
-      <AttackableUpgrade />
-      <TradeShipUpgrade />
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
+      <TradeShipUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
+      </TradeShipUpgrade>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
-      <SpecialAction />
+      <SpecialAction>
+        <MouseEffect>0</MouseEffect>
+        <Projectile>0</Projectile>
+      </SpecialAction>
     </Values>
   </Asset>
   <Asset>
@@ -972,6 +2001,7 @@
         <Name>Sergeant</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/specialists/systemic/icon_custom_officer_104.png</IconFilename>
         <InfoDescription>19964</InfoDescription>
+        <Comments />
       </Standard>
       <Text>
         <LocaText>
@@ -982,16 +2012,65 @@
           </English>
         </LocaText>
         <LineID>26754</LineID>
+        <Localize>1</Localize>
       </Text>
       <Item>
         <Allocation>Warship</Allocation>
         <MaxStackSize>1</MaxStackSize>
         <Rarity>Uncommon</Rarity>
         <TradePrice>31800</TradePrice>
+        <ItemType>Specialist</ItemType>
+        <Flotsam>100554</Flotsam>
+        <ExclusiveGroup>None</ExclusiveGroup>
+        <ItemSet>0</ItemSet>
+        <ExpeditionType>None</ExpeditionType>
+        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
-      <Cost />
-      <ItemAction />
-      <VehicleUpgrade />
+      <Cost>
+        <Costs>
+          <Item>
+            <Ingredient>1010017</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010196</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010205</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010218</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010207</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010202</Ingredient>
+          </Item>
+        </Costs>
+        <ItemsPerCost>1</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
+      </Cost>
+      <ItemAction>
+        <ItemAction>NOACTION</ItemAction>
+        <ActionTarget>0</ActionTarget>
+        <ActionScope>Self</ActionScope>
+        <RadiusBuffTargets />
+        <ActionIncidentType />
+        <IncidentResolveRate>0.3</IncidentResolveRate>
+        <ActiveBuff>0</ActiveBuff>
+        <ActionDescription>0</ActionDescription>
+        <ActionCompletedEffect />
+        <CanEndItemAction>1</CanEndItemAction>
+        <StopMovementOnInteraction>1</StopMovementOnInteraction>
+      </ItemAction>
+      <VehicleUpgrade>
+        <ForwardSpeedUpgrade />
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
+      </VehicleUpgrade>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
         <ExpeditionAttributes>
@@ -1012,6 +2091,7 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Easy;Average</ItemDifficulties>
         <FluffText>19964</FluffText>
+        <ItemRegions />
       </ExpeditionAttribute>
       <AttackerUpgrade>
         <ReloadTimeUpgrade>
@@ -1019,13 +2099,36 @@
           <Percental>1</Percental>
         </ReloadTimeUpgrade>
         <AttackSpeedUpgrade>10</AttackSpeedUpgrade>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
       </AttackerUpgrade>
-      <AttackableUpgrade />
-      <TradeShipUpgrade />
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
+      <TradeShipUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
+      </TradeShipUpgrade>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
-      <SpecialAction />
+      <SpecialAction>
+        <MouseEffect>0</MouseEffect>
+        <Projectile>0</Projectile>
+      </SpecialAction>
     </Values>
   </Asset>
   <Asset>
@@ -1036,6 +2139,7 @@
         <Name>Colonel</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/specialists/systemic/icon_custom_officer_103.png</IconFilename>
         <InfoDescription>19965</InfoDescription>
+        <Comments />
       </Standard>
       <Text>
         <LocaText>
@@ -1046,17 +2150,66 @@
           </English>
         </LocaText>
         <LineID>26755</LineID>
+        <Localize>1</Localize>
       </Text>
       <Item>
         <MaxStackSize>1</MaxStackSize>
         <Rarity>Rare</Rarity>
         <TradePrice>108500</TradePrice>
+        <Allocation>Ship</Allocation>
+        <ItemType>Specialist</ItemType>
+        <Flotsam>100554</Flotsam>
+        <ExclusiveGroup>None</ExclusiveGroup>
+        <ItemSet>0</ItemSet>
+        <ExpeditionType>None</ExpeditionType>
+        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
-      <Cost />
+      <Cost>
+        <Costs>
+          <Item>
+            <Ingredient>1010017</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010196</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010205</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010218</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010207</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010202</Ingredient>
+          </Item>
+        </Costs>
+        <ItemsPerCost>1</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
+      </Cost>
       <ItemAction>
         <ActionDistance>100</ActionDistance>
+        <ItemAction>NOACTION</ItemAction>
+        <ActionTarget>0</ActionTarget>
+        <ActionScope>Self</ActionScope>
+        <RadiusBuffTargets />
+        <ActionIncidentType />
+        <IncidentResolveRate>0.3</IncidentResolveRate>
+        <ActiveBuff>0</ActiveBuff>
+        <ActionDescription>0</ActionDescription>
+        <ActionCompletedEffect />
+        <CanEndItemAction>1</CanEndItemAction>
+        <StopMovementOnInteraction>1</StopMovementOnInteraction>
       </ItemAction>
-      <VehicleUpgrade />
+      <VehicleUpgrade>
+        <ForwardSpeedUpgrade />
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
+      </VehicleUpgrade>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
         <ExpeditionAttributes>
@@ -1077,6 +2230,7 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Easy;Average;Hard</ItemDifficulties>
         <FluffText>19965</FluffText>
+        <ItemRegions />
       </ExpeditionAttribute>
       <AttackerUpgrade>
         <DamageFactor>
@@ -1084,6 +2238,15 @@
             <Factor>1.3</Factor>
           </Building>
         </DamageFactor>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
       </AttackerUpgrade>
       <AttackableUpgrade>
         <DamageReceiveFactor>
@@ -1091,12 +2254,24 @@
             <Factor>0.85</Factor>
           </Normal>
         </DamageReceiveFactor>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
       </AttackableUpgrade>
-      <TradeShipUpgrade />
+      <TradeShipUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
+      </TradeShipUpgrade>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
-      <SpecialAction />
+      <SpecialAction>
+        <MouseEffect>0</MouseEffect>
+        <Projectile>0</Projectile>
+      </SpecialAction>
     </Values>
   </Asset>
   <Asset>
@@ -1107,6 +2282,7 @@
         <Name>General</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/specialists/systemic/icon_navigator_102_b.png</IconFilename>
         <InfoDescription>19966</InfoDescription>
+        <Comments />
       </Standard>
       <Text>
         <LocaText>
@@ -1117,15 +2293,65 @@
           </English>
         </LocaText>
         <LineID>26756</LineID>
+        <Localize>1</Localize>
       </Text>
       <Item>
         <MaxStackSize>1</MaxStackSize>
         <Rarity>Rare</Rarity>
         <TradePrice>112400</TradePrice>
+        <Allocation>Ship</Allocation>
+        <ItemType>Specialist</ItemType>
+        <Flotsam>100554</Flotsam>
+        <ExclusiveGroup>None</ExclusiveGroup>
+        <ItemSet>0</ItemSet>
+        <ExpeditionType>None</ExpeditionType>
+        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
-      <Cost />
-      <ItemAction />
-      <VehicleUpgrade />
+      <Cost>
+        <Costs>
+          <Item>
+            <Ingredient>1010017</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010196</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010205</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010218</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010207</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010202</Ingredient>
+          </Item>
+        </Costs>
+        <ItemsPerCost>1</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
+      </Cost>
+      <ItemAction>
+        <ItemAction>NOACTION</ItemAction>
+        <ActionTarget>0</ActionTarget>
+        <ActionScope>Self</ActionScope>
+        <RadiusBuffTargets />
+        <ActionIncidentType />
+        <IncidentResolveRate>0.3</IncidentResolveRate>
+        <ActiveBuff>0</ActiveBuff>
+        <ActionDescription>0</ActionDescription>
+        <ActionCompletedEffect />
+        <CanEndItemAction>1</CanEndItemAction>
+        <StopMovementOnInteraction>1</StopMovementOnInteraction>
+      </ItemAction>
+      <VehicleUpgrade>
+        <ForwardSpeedUpgrade />
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
+      </VehicleUpgrade>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
         <ExpeditionAttributes>
@@ -1149,6 +2375,7 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Easy;Average;Hard</ItemDifficulties>
         <FluffText>19966</FluffText>
+        <ItemRegions />
       </ExpeditionAttribute>
       <AttackerUpgrade>
         <DamageFactor>
@@ -1156,6 +2383,15 @@
             <Factor>1.3</Factor>
           </SteamShip>
         </DamageFactor>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
       </AttackerUpgrade>
       <AttackableUpgrade>
         <DamageReceiveFactor>
@@ -1163,12 +2399,24 @@
             <Factor>0.85</Factor>
           </Normal>
         </DamageReceiveFactor>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
       </AttackableUpgrade>
-      <TradeShipUpgrade />
+      <TradeShipUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
+      </TradeShipUpgrade>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
-      <SpecialAction />
+      <SpecialAction>
+        <MouseEffect>0</MouseEffect>
+        <Projectile>0</Projectile>
+      </SpecialAction>
     </Values>
   </Asset>
   <Asset>
@@ -1179,6 +2427,7 @@
         <Name>Corporal</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/specialists/systemic/icon_admiral_708.png</IconFilename>
         <InfoDescription>19967</InfoDescription>
+        <Comments />
       </Standard>
       <Text>
         <LocaText>
@@ -1189,15 +2438,65 @@
           </English>
         </LocaText>
         <LineID>26757</LineID>
+        <Localize>1</Localize>
       </Text>
       <Item>
         <MaxStackSize>1</MaxStackSize>
         <Rarity>Rare</Rarity>
         <TradePrice>103400</TradePrice>
+        <Allocation>Ship</Allocation>
+        <ItemType>Specialist</ItemType>
+        <Flotsam>100554</Flotsam>
+        <ExclusiveGroup>None</ExclusiveGroup>
+        <ItemSet>0</ItemSet>
+        <ExpeditionType>None</ExpeditionType>
+        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
-      <Cost />
-      <ItemAction />
-      <VehicleUpgrade />
+      <Cost>
+        <Costs>
+          <Item>
+            <Ingredient>1010017</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010196</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010205</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010218</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010207</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010202</Ingredient>
+          </Item>
+        </Costs>
+        <ItemsPerCost>1</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
+      </Cost>
+      <ItemAction>
+        <ItemAction>NOACTION</ItemAction>
+        <ActionTarget>0</ActionTarget>
+        <ActionScope>Self</ActionScope>
+        <RadiusBuffTargets />
+        <ActionIncidentType />
+        <IncidentResolveRate>0.3</IncidentResolveRate>
+        <ActiveBuff>0</ActiveBuff>
+        <ActionDescription>0</ActionDescription>
+        <ActionCompletedEffect />
+        <CanEndItemAction>1</CanEndItemAction>
+        <StopMovementOnInteraction>1</StopMovementOnInteraction>
+      </ItemAction>
+      <VehicleUpgrade>
+        <ForwardSpeedUpgrade />
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
+      </VehicleUpgrade>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
         <ExpeditionAttributes>
@@ -1218,6 +2517,7 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Easy;Average;Hard</ItemDifficulties>
         <FluffText>19967</FluffText>
+        <ItemRegions />
       </ExpeditionAttribute>
       <AttackerUpgrade>
         <DamageFactor>
@@ -1225,6 +2525,15 @@
             <Factor>1.3</Factor>
           </SailShip>
         </DamageFactor>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
       </AttackerUpgrade>
       <AttackableUpgrade>
         <DamageReceiveFactor>
@@ -1232,12 +2541,24 @@
             <Factor>0.85</Factor>
           </Normal>
         </DamageReceiveFactor>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
       </AttackableUpgrade>
-      <TradeShipUpgrade />
+      <TradeShipUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
+      </TradeShipUpgrade>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
-      <SpecialAction />
+      <SpecialAction>
+        <MouseEffect>0</MouseEffect>
+        <Projectile>0</Projectile>
+      </SpecialAction>
     </Values>
   </Asset>
   <Asset>
@@ -1248,6 +2569,7 @@
         <Name>Grand Admiral</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/specialists/systemic/icon_captain_103.png</IconFilename>
         <InfoDescription>19968</InfoDescription>
+        <Comments />
       </Standard>
       <Text>
         <LocaText>
@@ -1258,20 +2580,67 @@
           </English>
         </LocaText>
         <LineID>26758</LineID>
+        <Localize>1</Localize>
       </Text>
       <Item>
         <MaxStackSize>1</MaxStackSize>
         <Rarity>Epic</Rarity>
         <TradePrice>345000</TradePrice>
+        <Allocation>Ship</Allocation>
+        <ItemType>Specialist</ItemType>
+        <Flotsam>100554</Flotsam>
+        <ExclusiveGroup>None</ExclusiveGroup>
+        <ItemSet>0</ItemSet>
+        <ExpeditionType>None</ExpeditionType>
+        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
-      <Cost />
+      <Cost>
+        <Costs>
+          <Item>
+            <Ingredient>1010017</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010196</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010205</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010218</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010207</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010202</Ingredient>
+          </Item>
+        </Costs>
+        <ItemsPerCost>1</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
+      </Cost>
       <ItemAction>
         <ItemAction>KAMIKAZE</ItemAction>
         <ActionCooldown>60000</ActionCooldown>
         <ActionDuration>5000</ActionDuration>
         <StopMovementOnInteraction>0</StopMovementOnInteraction>
+        <ActionTarget>0</ActionTarget>
+        <ActionScope>Self</ActionScope>
+        <RadiusBuffTargets />
+        <ActionIncidentType />
+        <IncidentResolveRate>0.3</IncidentResolveRate>
+        <ActiveBuff>0</ActiveBuff>
+        <ActionDescription>0</ActionDescription>
+        <ActionCompletedEffect />
+        <CanEndItemAction>1</CanEndItemAction>
       </ItemAction>
-      <VehicleUpgrade />
+      <VehicleUpgrade>
+        <ForwardSpeedUpgrade />
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
+      </VehicleUpgrade>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
         <ExpeditionAttributes>
@@ -1292,8 +2661,20 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Average;Hard</ItemDifficulties>
         <FluffText>19968</FluffText>
+        <ItemRegions />
       </ExpeditionAttribute>
-      <AttackerUpgrade />
+      <AttackerUpgrade>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
+      </AttackerUpgrade>
       <AttackableUpgrade>
         <MaxHitpointsUpgrade>
           <Value>800</Value>
@@ -1302,10 +2683,23 @@
           <Value>-100</Value>
           <Percental>1</Percental>
         </SelfHealPausedTimeIfAttackedUpgrade>
+        <SelfHealUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
       </AttackableUpgrade>
-      <TradeShipUpgrade />
-      <Locked />
-      <SpecialAction />
+      <TradeShipUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
+      </TradeShipUpgrade>
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
+      <SpecialAction>
+        <MouseEffect>0</MouseEffect>
+        <Projectile>0</Projectile>
+      </SpecialAction>
     </Values>
   </Asset>
   <Asset>
@@ -1316,6 +2710,7 @@
         <Name>Chief of the Navy</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/specialists/icon_specialist_captain_legendary_female.png</IconFilename>
         <InfoDescription>19969</InfoDescription>
+        <Comments />
       </Standard>
       <Text>
         <LocaText>
@@ -1326,16 +2721,65 @@
           </English>
         </LocaText>
         <LineID>26759</LineID>
+        <Localize>1</Localize>
       </Text>
       <Item>
         <Allocation>Warship</Allocation>
         <MaxStackSize>1</MaxStackSize>
         <Rarity>Epic</Rarity>
         <TradePrice>365700</TradePrice>
+        <ItemType>Specialist</ItemType>
+        <Flotsam>100554</Flotsam>
+        <ExclusiveGroup>None</ExclusiveGroup>
+        <ItemSet>0</ItemSet>
+        <ExpeditionType>None</ExpeditionType>
+        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
-      <Cost />
-      <ItemAction />
-      <VehicleUpgrade />
+      <Cost>
+        <Costs>
+          <Item>
+            <Ingredient>1010017</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010196</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010205</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010218</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010207</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010202</Ingredient>
+          </Item>
+        </Costs>
+        <ItemsPerCost>1</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
+      </Cost>
+      <ItemAction>
+        <ItemAction>NOACTION</ItemAction>
+        <ActionTarget>0</ActionTarget>
+        <ActionScope>Self</ActionScope>
+        <RadiusBuffTargets />
+        <ActionIncidentType />
+        <IncidentResolveRate>0.3</IncidentResolveRate>
+        <ActiveBuff>0</ActiveBuff>
+        <ActionDescription>0</ActionDescription>
+        <ActionCompletedEffect />
+        <CanEndItemAction>1</CanEndItemAction>
+        <StopMovementOnInteraction>1</StopMovementOnInteraction>
+      </ItemAction>
+      <VehicleUpgrade>
+        <ForwardSpeedUpgrade />
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
+      </VehicleUpgrade>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
         <ExpeditionAttributes>
@@ -1356,6 +2800,7 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Average;Hard</ItemDifficulties>
         <FluffText>19969</FluffText>
+        <ItemRegions />
       </ExpeditionAttribute>
       <AttackerUpgrade>
         <AttackRangeUpgrade>
@@ -1370,11 +2815,34 @@
           <Value>10</Value>
           <Percental>1</Percental>
         </LineOfSightRangeUpgrade>
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
       </AttackerUpgrade>
-      <AttackableUpgrade />
-      <TradeShipUpgrade />
-      <Locked />
-      <SpecialAction />
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
+      <TradeShipUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
+      </TradeShipUpgrade>
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
+      <SpecialAction>
+        <MouseEffect>0</MouseEffect>
+        <Projectile>0</Projectile>
+      </SpecialAction>
     </Values>
   </Asset>
   <Asset>
@@ -1385,6 +2853,7 @@
         <Name>Admiral of the Fleet</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/specialists/systemic/icon_uniform_504.png</IconFilename>
         <InfoDescription>19970</InfoDescription>
+        <Comments />
       </Standard>
       <Text>
         <LocaText>
@@ -1395,13 +2864,45 @@
           </English>
         </LocaText>
         <LineID>26760</LineID>
+        <Localize>1</Localize>
       </Text>
       <Item>
         <MaxStackSize>1</MaxStackSize>
         <Rarity>Epic</Rarity>
         <TradePrice>294500</TradePrice>
+        <Allocation>Ship</Allocation>
+        <ItemType>Specialist</ItemType>
+        <Flotsam>100554</Flotsam>
+        <ExclusiveGroup>None</ExclusiveGroup>
+        <ItemSet>0</ItemSet>
+        <ExpeditionType>None</ExpeditionType>
+        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
-      <Cost />
+      <Cost>
+        <Costs>
+          <Item>
+            <Ingredient>1010017</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010196</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010205</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010218</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010207</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010202</Ingredient>
+          </Item>
+        </Costs>
+        <ItemsPerCost>1</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
+      </Cost>
       <ItemAction>
         <ItemAction>CHANNEL</ItemAction>
         <ActionTarget>500659</ActionTarget>
@@ -1411,12 +2912,23 @@
         <ActionCompletedEffect>
           <EffectAsset>101063</EffectAsset>
         </ActionCompletedEffect>
+        <RadiusBuffTargets />
+        <ActionIncidentType />
+        <IncidentResolveRate>0.3</IncidentResolveRate>
+        <ActiveBuff>0</ActiveBuff>
+        <ActionDescription>0</ActionDescription>
+        <CanEndItemAction>1</CanEndItemAction>
+        <StopMovementOnInteraction>1</StopMovementOnInteraction>
       </ItemAction>
       <VehicleUpgrade>
         <ForwardSpeedUpgrade>
           <Value>15</Value>
           <Percental>1</Percental>
         </ForwardSpeedUpgrade>
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
       </VehicleUpgrade>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
@@ -1438,6 +2950,7 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Average;Hard</ItemDifficulties>
         <FluffText>19970</FluffText>
+        <ItemRegions />
       </ExpeditionAttribute>
       <AttackerUpgrade>
         <AttackRangeUpgrade>
@@ -1448,11 +2961,35 @@
           <Value>10</Value>
           <Percental>1</Percental>
         </LineOfSightRangeUpgrade>
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
       </AttackerUpgrade>
-      <AttackableUpgrade />
-      <TradeShipUpgrade />
-      <Locked />
-      <SpecialAction />
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
+      <TradeShipUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
+      </TradeShipUpgrade>
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
+      <SpecialAction>
+        <MouseEffect>0</MouseEffect>
+        <Projectile>0</Projectile>
+      </SpecialAction>
     </Values>
   </Asset>
   <Asset>
@@ -1463,6 +3000,7 @@
         <Name>Senior Commodore</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/specialists/systemic/icon_admiral_513.png</IconFilename>
         <InfoDescription>19971</InfoDescription>
+        <Comments />
       </Standard>
       <Text>
         <LocaText>
@@ -1473,16 +3011,65 @@
           </English>
         </LocaText>
         <LineID>26761</LineID>
+        <Localize>1</Localize>
       </Text>
       <Item>
         <Allocation>Warship</Allocation>
         <MaxStackSize>1</MaxStackSize>
         <Rarity>Epic</Rarity>
         <TradePrice>365700</TradePrice>
+        <ItemType>Specialist</ItemType>
+        <Flotsam>100554</Flotsam>
+        <ExclusiveGroup>None</ExclusiveGroup>
+        <ItemSet>0</ItemSet>
+        <ExpeditionType>None</ExpeditionType>
+        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
-      <Cost />
-      <ItemAction />
-      <VehicleUpgrade />
+      <Cost>
+        <Costs>
+          <Item>
+            <Ingredient>1010017</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010196</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010205</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010218</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010207</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010202</Ingredient>
+          </Item>
+        </Costs>
+        <ItemsPerCost>1</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
+      </Cost>
+      <ItemAction>
+        <ItemAction>NOACTION</ItemAction>
+        <ActionTarget>0</ActionTarget>
+        <ActionScope>Self</ActionScope>
+        <RadiusBuffTargets />
+        <ActionIncidentType />
+        <IncidentResolveRate>0.3</IncidentResolveRate>
+        <ActiveBuff>0</ActiveBuff>
+        <ActionDescription>0</ActionDescription>
+        <ActionCompletedEffect />
+        <CanEndItemAction>1</CanEndItemAction>
+        <StopMovementOnInteraction>1</StopMovementOnInteraction>
+      </ItemAction>
+      <VehicleUpgrade>
+        <ForwardSpeedUpgrade />
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
+      </VehicleUpgrade>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
         <ExpeditionAttributes>
@@ -1503,6 +3090,7 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Average;Hard</ItemDifficulties>
         <FluffText>19971</FluffText>
+        <ItemRegions />
       </ExpeditionAttribute>
       <AttackerUpgrade>
         <AttackRangeUpgrade>
@@ -1518,11 +3106,34 @@
           <Percental>1</Percental>
         </LineOfSightRangeUpgrade>
         <AttackSpeedUpgrade>20</AttackSpeedUpgrade>
+        <BaseDamageUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
       </AttackerUpgrade>
-      <AttackableUpgrade />
-      <TradeShipUpgrade />
-      <Locked />
-      <SpecialAction />
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
+      <TradeShipUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
+      </TradeShipUpgrade>
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
+      <SpecialAction>
+        <MouseEffect>0</MouseEffect>
+        <Projectile>0</Projectile>
+      </SpecialAction>
     </Values>
   </Asset>
   <Asset>
@@ -1533,6 +3144,7 @@
         <Name>Willma von Tegetthoff</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/specialists/icon_navigator_pirate.png</IconFilename>
         <InfoDescription>19972</InfoDescription>
+        <Comments />
       </Standard>
       <Text>
         <LocaText>
@@ -1543,16 +3155,65 @@
           </English>
         </LocaText>
         <LineID>26762</LineID>
+        <Localize>1</Localize>
       </Text>
       <Item>
         <Allocation>Warship</Allocation>
         <MaxStackSize>1</MaxStackSize>
         <Rarity>Legendary</Rarity>
         <TradePrice>990000</TradePrice>
+        <ItemType>Specialist</ItemType>
+        <Flotsam>100554</Flotsam>
+        <ExclusiveGroup>None</ExclusiveGroup>
+        <ItemSet>0</ItemSet>
+        <ExpeditionType>None</ExpeditionType>
+        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
-      <Cost />
-      <ItemAction />
-      <VehicleUpgrade />
+      <Cost>
+        <Costs>
+          <Item>
+            <Ingredient>1010017</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010196</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010205</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010218</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010207</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010202</Ingredient>
+          </Item>
+        </Costs>
+        <ItemsPerCost>1</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
+      </Cost>
+      <ItemAction>
+        <ItemAction>NOACTION</ItemAction>
+        <ActionTarget>0</ActionTarget>
+        <ActionScope>Self</ActionScope>
+        <RadiusBuffTargets />
+        <ActionIncidentType />
+        <IncidentResolveRate>0.3</IncidentResolveRate>
+        <ActiveBuff>0</ActiveBuff>
+        <ActionDescription>0</ActionDescription>
+        <ActionCompletedEffect />
+        <CanEndItemAction>1</CanEndItemAction>
+        <StopMovementOnInteraction>1</StopMovementOnInteraction>
+      </ItemAction>
+      <VehicleUpgrade>
+        <ForwardSpeedUpgrade />
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
+      </VehicleUpgrade>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
         <ExpeditionAttributes>
@@ -1579,6 +3240,7 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Hard</ItemDifficulties>
         <FluffText>19972</FluffText>
+        <ItemRegions />
       </ExpeditionAttribute>
       <AttackerUpgrade>
         <ReloadTimeUpgrade>
@@ -1595,11 +3257,34 @@
           </Item>
         </HitpointDamage>
         <AttackSpeedUpgrade>25</AttackSpeedUpgrade>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <DamageFactor />
       </AttackerUpgrade>
-      <AttackableUpgrade />
-      <TradeShipUpgrade />
-      <Locked />
-      <SpecialAction />
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
+      <TradeShipUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
+      </TradeShipUpgrade>
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
+      <SpecialAction>
+        <MouseEffect>0</MouseEffect>
+        <Projectile>0</Projectile>
+      </SpecialAction>
     </Values>
   </Asset>
   <Asset>
@@ -1610,6 +3295,7 @@
         <Name>Horatio Nelson</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/specialists/systemic/icon_captain_102.png</IconFilename>
         <InfoDescription>19973</InfoDescription>
+        <Comments />
       </Standard>
       <Text>
         <LocaText>
@@ -1620,19 +3306,67 @@
           </English>
         </LocaText>
         <LineID>26763</LineID>
+        <Localize>1</Localize>
       </Text>
       <Item>
         <MaxStackSize>1</MaxStackSize>
         <Rarity>Legendary</Rarity>
         <TradePrice>930000</TradePrice>
+        <Allocation>Ship</Allocation>
+        <ItemType>Specialist</ItemType>
+        <Flotsam>100554</Flotsam>
+        <ExclusiveGroup>None</ExclusiveGroup>
+        <ItemSet>0</ItemSet>
+        <ExpeditionType>None</ExpeditionType>
+        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
-      <Cost />
-      <ItemAction />
+      <Cost>
+        <Costs>
+          <Item>
+            <Ingredient>1010017</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010196</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010205</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010218</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010207</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010202</Ingredient>
+          </Item>
+        </Costs>
+        <ItemsPerCost>1</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
+      </Cost>
+      <ItemAction>
+        <ItemAction>NOACTION</ItemAction>
+        <ActionTarget>0</ActionTarget>
+        <ActionScope>Self</ActionScope>
+        <RadiusBuffTargets />
+        <ActionIncidentType />
+        <IncidentResolveRate>0.3</IncidentResolveRate>
+        <ActiveBuff>0</ActiveBuff>
+        <ActionDescription>0</ActionDescription>
+        <ActionCompletedEffect />
+        <CanEndItemAction>1</CanEndItemAction>
+        <StopMovementOnInteraction>1</StopMovementOnInteraction>
+      </ItemAction>
       <VehicleUpgrade>
         <ForwardSpeedUpgrade>
           <Value>20</Value>
           <Percental>1</Percental>
         </ForwardSpeedUpgrade>
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
       </VehicleUpgrade>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
@@ -1657,6 +3391,7 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Hard</ItemDifficulties>
         <FluffText>19973</FluffText>
+        <ItemRegions />
       </ExpeditionAttribute>
       <AttackerUpgrade>
         <AddStatusEffects>
@@ -1670,11 +3405,35 @@
             <Factor>1.5</Factor>
           </SailShip>
         </DamageFactor>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
       </AttackerUpgrade>
-      <AttackableUpgrade />
-      <TradeShipUpgrade />
-      <Locked />
-      <SpecialAction />
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
+      <TradeShipUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
+      </TradeShipUpgrade>
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
+      <SpecialAction>
+        <MouseEffect>0</MouseEffect>
+        <Projectile>0</Projectile>
+      </SpecialAction>
     </Values>
   </Asset>
   <Asset>
@@ -1685,6 +3444,7 @@
         <Name>Geordy Duff</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/specialists/icon_specialist_captain_legendary_pirate.png</IconFilename>
         <InfoDescription>19974</InfoDescription>
+        <Comments />
       </Standard>
       <Text>
         <LocaText>
@@ -1695,18 +3455,66 @@
           </English>
         </LocaText>
         <LineID>26764</LineID>
+        <Localize>1</Localize>
       </Text>
       <Item>
         <MaxStackSize>1</MaxStackSize>
         <Rarity>Legendary</Rarity>
         <TradePrice>920000</TradePrice>
+        <Allocation>Ship</Allocation>
+        <ItemType>Specialist</ItemType>
+        <Flotsam>100554</Flotsam>
+        <ExclusiveGroup>None</ExclusiveGroup>
+        <ItemSet>0</ItemSet>
+        <ExpeditionType>None</ExpeditionType>
+        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
-      <Cost />
+      <Cost>
+        <Costs>
+          <Item>
+            <Ingredient>1010017</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010196</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010205</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010218</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010207</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010202</Ingredient>
+          </Item>
+        </Costs>
+        <ItemsPerCost>1</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
+      </Cost>
       <ItemAction>
         <ActionCooldown>30000</ActionCooldown>
         <ActiveBuff>191859</ActiveBuff>
+        <ItemAction>NOACTION</ItemAction>
+        <ActionTarget>0</ActionTarget>
+        <ActionScope>Self</ActionScope>
+        <RadiusBuffTargets />
+        <ActionIncidentType />
+        <IncidentResolveRate>0.3</IncidentResolveRate>
+        <ActionDescription>0</ActionDescription>
+        <ActionCompletedEffect />
+        <CanEndItemAction>1</CanEndItemAction>
+        <StopMovementOnInteraction>1</StopMovementOnInteraction>
       </ItemAction>
-      <VehicleUpgrade />
+      <VehicleUpgrade>
+        <ForwardSpeedUpgrade />
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
+      </VehicleUpgrade>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
         <ExpeditionAttributes>
@@ -1733,6 +3541,7 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Hard</ItemDifficulties>
         <FluffText>19974</FluffText>
+        <ItemRegions />
       </ExpeditionAttribute>
       <AttackerUpgrade>
         <DamageFactor>
@@ -1740,6 +3549,15 @@
             <Factor>1.5</Factor>
           </SailShip>
         </DamageFactor>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
       </AttackerUpgrade>
       <AttackableUpgrade>
         <SelfHealPausedTimeIfAttackedUpgrade>
@@ -1751,10 +3569,23 @@
             <Factor>0.75</Factor>
           </Normal>
         </DamageReceiveFactor>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <MoralePowerUpgrade />
       </AttackableUpgrade>
-      <TradeShipUpgrade />
-      <Locked />
-      <SpecialAction />
+      <TradeShipUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
+      </TradeShipUpgrade>
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
+      <SpecialAction>
+        <MouseEffect>0</MouseEffect>
+        <Projectile>0</Projectile>
+      </SpecialAction>
     </Values>
   </Asset>
   <Asset>
@@ -1765,6 +3596,7 @@
         <Name>James Lawrence</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/specialists/systemic/icon_admiral_701.png</IconFilename>
         <InfoDescription>19975</InfoDescription>
+        <Comments />
       </Standard>
       <Text>
         <LocaText>
@@ -1775,15 +3607,65 @@
           </English>
         </LocaText>
         <LineID>26765</LineID>
+        <Localize>1</Localize>
       </Text>
       <Item>
         <MaxStackSize>1</MaxStackSize>
         <Rarity>Legendary</Rarity>
         <TradePrice>910000</TradePrice>
+        <Allocation>Ship</Allocation>
+        <ItemType>Specialist</ItemType>
+        <Flotsam>100554</Flotsam>
+        <ExclusiveGroup>None</ExclusiveGroup>
+        <ItemSet>0</ItemSet>
+        <ExpeditionType>None</ExpeditionType>
+        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
-      <Cost />
-      <ItemAction />
-      <VehicleUpgrade />
+      <Cost>
+        <Costs>
+          <Item>
+            <Ingredient>1010017</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010196</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010205</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010218</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010207</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010202</Ingredient>
+          </Item>
+        </Costs>
+        <ItemsPerCost>1</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
+      </Cost>
+      <ItemAction>
+        <ItemAction>NOACTION</ItemAction>
+        <ActionTarget>0</ActionTarget>
+        <ActionScope>Self</ActionScope>
+        <RadiusBuffTargets />
+        <ActionIncidentType />
+        <IncidentResolveRate>0.3</IncidentResolveRate>
+        <ActiveBuff>0</ActiveBuff>
+        <ActionDescription>0</ActionDescription>
+        <ActionCompletedEffect />
+        <CanEndItemAction>1</CanEndItemAction>
+        <StopMovementOnInteraction>1</StopMovementOnInteraction>
+      </ItemAction>
+      <VehicleUpgrade>
+        <ForwardSpeedUpgrade />
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
+      </VehicleUpgrade>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
         <ExpeditionAttributes>
@@ -1807,6 +3689,7 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Hard</ItemDifficulties>
         <FluffText>19975</FluffText>
+        <ItemRegions />
       </ExpeditionAttribute>
       <AttackerUpgrade>
         <AttackRangeUpgrade>
@@ -1822,15 +3705,36 @@
             <Factor>1.5</Factor>
           </Building>
         </DamageFactor>
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <MoraleDamage />
+        <HitpointDamage />
       </AttackerUpgrade>
       <AttackableUpgrade>
         <MaxHitpointsUpgrade>
           <Value>1000</Value>
         </MaxHitpointsUpgrade>
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
       </AttackableUpgrade>
-      <TradeShipUpgrade />
-      <Locked />
-      <SpecialAction />
+      <TradeShipUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
+      </TradeShipUpgrade>
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
+      <SpecialAction>
+        <MouseEffect>0</MouseEffect>
+        <Projectile>0</Projectile>
+      </SpecialAction>
     </Values>
   </Asset>
   <Asset>
@@ -1841,6 +3745,7 @@
         <Name>Stephen Decatur</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/specialists/icon_police_officer_rare.png</IconFilename>
         <InfoDescription>19976</InfoDescription>
+        <Comments />
       </Standard>
       <Text>
         <LocaText>
@@ -1851,15 +3756,65 @@
           </English>
         </LocaText>
         <LineID>26766</LineID>
+        <Localize>1</Localize>
       </Text>
       <Item>
         <MaxStackSize>1</MaxStackSize>
         <Rarity>Legendary</Rarity>
         <TradePrice>855600</TradePrice>
+        <Allocation>Ship</Allocation>
+        <ItemType>Specialist</ItemType>
+        <Flotsam>100554</Flotsam>
+        <ExclusiveGroup>None</ExclusiveGroup>
+        <ItemSet>0</ItemSet>
+        <ExpeditionType>None</ExpeditionType>
+        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
-      <Cost />
-      <ItemAction />
-      <VehicleUpgrade />
+      <Cost>
+        <Costs>
+          <Item>
+            <Ingredient>1010017</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010196</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010205</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010218</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010207</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010202</Ingredient>
+          </Item>
+        </Costs>
+        <ItemsPerCost>1</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
+      </Cost>
+      <ItemAction>
+        <ItemAction>NOACTION</ItemAction>
+        <ActionTarget>0</ActionTarget>
+        <ActionScope>Self</ActionScope>
+        <RadiusBuffTargets />
+        <ActionIncidentType />
+        <IncidentResolveRate>0.3</IncidentResolveRate>
+        <ActiveBuff>0</ActiveBuff>
+        <ActionDescription>0</ActionDescription>
+        <ActionCompletedEffect />
+        <CanEndItemAction>1</CanEndItemAction>
+        <StopMovementOnInteraction>1</StopMovementOnInteraction>
+      </ItemAction>
+      <VehicleUpgrade>
+        <ForwardSpeedUpgrade />
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
+      </VehicleUpgrade>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
         <ExpeditionAttributes>
@@ -1883,8 +3838,20 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Hard</ItemDifficulties>
         <FluffText>19976</FluffText>
+        <ItemRegions />
       </ExpeditionAttribute>
-      <AttackerUpgrade />
+      <AttackerUpgrade>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
+      </AttackerUpgrade>
       <AttackableUpgrade>
         <DamageReceiveFactor>
           <Torpedo>
@@ -1897,10 +3864,24 @@
             <Factor>0.2</Factor>
           </BigBertha>
         </DamageReceiveFactor>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
       </AttackableUpgrade>
-      <TradeShipUpgrade />
-      <Locked />
-      <SpecialAction />
+      <TradeShipUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
+      </TradeShipUpgrade>
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
+      <SpecialAction>
+        <MouseEffect>0</MouseEffect>
+        <Projectile>0</Projectile>
+      </SpecialAction>
     </Values>
   </Asset>
   <Asset>
@@ -1911,6 +3892,7 @@
         <Name>Salesperson</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/specialists/systemic/icon_bartender_813.png</IconFilename>
         <InfoDescription>20018</InfoDescription>
+        <Comments />
       </Standard>
       <Text>
         <LocaText>
@@ -1921,14 +3903,65 @@
           </English>
         </LocaText>
         <LineID>26767</LineID>
+        <Localize>1</Localize>
       </Text>
       <Item>
         <MaxStackSize>1</MaxStackSize>
         <TradePrice>5000</TradePrice>
+        <Allocation>Ship</Allocation>
+        <ItemType>Specialist</ItemType>
+        <Flotsam>100554</Flotsam>
+        <Rarity>Common</Rarity>
+        <ExclusiveGroup>None</ExclusiveGroup>
+        <ItemSet>0</ItemSet>
+        <ExpeditionType>None</ExpeditionType>
+        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
-      <Cost />
-      <ItemAction />
-      <VehicleUpgrade />
+      <Cost>
+        <Costs>
+          <Item>
+            <Ingredient>1010017</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010196</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010205</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010218</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010207</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010202</Ingredient>
+          </Item>
+        </Costs>
+        <ItemsPerCost>1</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
+      </Cost>
+      <ItemAction>
+        <ItemAction>NOACTION</ItemAction>
+        <ActionTarget>0</ActionTarget>
+        <ActionScope>Self</ActionScope>
+        <RadiusBuffTargets />
+        <ActionIncidentType />
+        <IncidentResolveRate>0.3</IncidentResolveRate>
+        <ActiveBuff>0</ActiveBuff>
+        <ActionDescription>0</ActionDescription>
+        <ActionCompletedEffect />
+        <CanEndItemAction>1</CanEndItemAction>
+        <StopMovementOnInteraction>1</StopMovementOnInteraction>
+      </ItemAction>
+      <VehicleUpgrade>
+        <ForwardSpeedUpgrade />
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
+      </VehicleUpgrade>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
         <ExpeditionAttributes>
@@ -1946,19 +3979,43 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Easy</ItemDifficulties>
         <FluffText>20018</FluffText>
+        <ItemRegions />
       </ExpeditionAttribute>
-      <AttackerUpgrade />
-      <AttackableUpgrade />
+      <AttackerUpgrade>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
+      </AttackerUpgrade>
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
       <TradeShipUpgrade>
         <LoadingSpeedUpgrade>
           <Value>15</Value>
           <Percental>1</Percental>
         </LoadingSpeedUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
       </TradeShipUpgrade>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
-      <SpecialAction />
+      <SpecialAction>
+        <MouseEffect>0</MouseEffect>
+        <Projectile>0</Projectile>
+      </SpecialAction>
     </Values>
   </Asset>
   <Asset>
@@ -1969,6 +4026,7 @@
         <Name>Trafficker</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/specialists/systemic/icon_normal_dressed_105.png</IconFilename>
         <InfoDescription>20019</InfoDescription>
+        <Comments />
       </Standard>
       <Text>
         <LocaText>
@@ -1979,18 +4037,67 @@
           </English>
         </LocaText>
         <LineID>26768</LineID>
+        <Localize>1</Localize>
       </Text>
       <Item>
         <MaxStackSize>1</MaxStackSize>
         <TradePrice>6100</TradePrice>
+        <Allocation>Ship</Allocation>
+        <ItemType>Specialist</ItemType>
+        <Flotsam>100554</Flotsam>
+        <Rarity>Common</Rarity>
+        <ExclusiveGroup>None</ExclusiveGroup>
+        <ItemSet>0</ItemSet>
+        <ExpeditionType>None</ExpeditionType>
+        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
-      <Cost />
-      <ItemAction />
+      <Cost>
+        <Costs>
+          <Item>
+            <Ingredient>1010017</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010196</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010205</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010218</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010207</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010202</Ingredient>
+          </Item>
+        </Costs>
+        <ItemsPerCost>1</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
+      </Cost>
+      <ItemAction>
+        <ItemAction>NOACTION</ItemAction>
+        <ActionTarget>0</ActionTarget>
+        <ActionScope>Self</ActionScope>
+        <RadiusBuffTargets />
+        <ActionIncidentType />
+        <IncidentResolveRate>0.3</IncidentResolveRate>
+        <ActiveBuff>0</ActiveBuff>
+        <ActionDescription>0</ActionDescription>
+        <ActionCompletedEffect />
+        <CanEndItemAction>1</CanEndItemAction>
+        <StopMovementOnInteraction>1</StopMovementOnInteraction>
+      </ItemAction>
       <VehicleUpgrade>
         <IgnoreWeightFactorUpgrade>
           <Value>20</Value>
           <Percental>1</Percental>
         </IgnoreWeightFactorUpgrade>
+        <ForwardSpeedUpgrade />
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreDamageFactorUpgrade />
       </VehicleUpgrade>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
@@ -2009,14 +4116,40 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Easy</ItemDifficulties>
         <FluffText>20019</FluffText>
+        <ItemRegions />
       </ExpeditionAttribute>
-      <AttackerUpgrade />
-      <AttackableUpgrade />
-      <TradeShipUpgrade />
+      <AttackerUpgrade>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
+      </AttackerUpgrade>
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
+      <TradeShipUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
+      </TradeShipUpgrade>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
-      <SpecialAction />
+      <SpecialAction>
+        <MouseEffect>0</MouseEffect>
+        <Projectile>0</Projectile>
+      </SpecialAction>
     </Values>
   </Asset>
   <Asset>
@@ -2027,6 +4160,7 @@
         <Name>Merchant</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/specialists/systemic/icon_normaldress_308.png</IconFilename>
         <InfoDescription>20020</InfoDescription>
+        <Comments />
       </Standard>
       <Text>
         <LocaText>
@@ -2037,19 +4171,67 @@
           </English>
         </LocaText>
         <LineID>26769</LineID>
+        <Localize>1</Localize>
       </Text>
       <Item>
         <MaxStackSize>1</MaxStackSize>
         <Rarity>Uncommon</Rarity>
         <TradePrice>27600</TradePrice>
+        <Allocation>Ship</Allocation>
+        <ItemType>Specialist</ItemType>
+        <Flotsam>100554</Flotsam>
+        <ExclusiveGroup>None</ExclusiveGroup>
+        <ItemSet>0</ItemSet>
+        <ExpeditionType>None</ExpeditionType>
+        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
-      <Cost />
-      <ItemAction />
+      <Cost>
+        <Costs>
+          <Item>
+            <Ingredient>1010017</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010196</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010205</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010218</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010207</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010202</Ingredient>
+          </Item>
+        </Costs>
+        <ItemsPerCost>1</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
+      </Cost>
+      <ItemAction>
+        <ItemAction>NOACTION</ItemAction>
+        <ActionTarget>0</ActionTarget>
+        <ActionScope>Self</ActionScope>
+        <RadiusBuffTargets />
+        <ActionIncidentType />
+        <IncidentResolveRate>0.3</IncidentResolveRate>
+        <ActiveBuff>0</ActiveBuff>
+        <ActionDescription>0</ActionDescription>
+        <ActionCompletedEffect />
+        <CanEndItemAction>1</CanEndItemAction>
+        <StopMovementOnInteraction>1</StopMovementOnInteraction>
+      </ItemAction>
       <VehicleUpgrade>
         <MaintainanceUpgrade>
           <Value>-40</Value>
           <Percental>1</Percental>
         </MaintainanceUpgrade>
+        <ForwardSpeedUpgrade />
+        <UpgradeDescription>0</UpgradeDescription>
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
       </VehicleUpgrade>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
@@ -2068,14 +4250,40 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Easy;Average</ItemDifficulties>
         <FluffText>20020</FluffText>
+        <ItemRegions />
       </ExpeditionAttribute>
-      <AttackerUpgrade />
-      <AttackableUpgrade />
-      <TradeShipUpgrade />
+      <AttackerUpgrade>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
+      </AttackerUpgrade>
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
+      <TradeShipUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
+      </TradeShipUpgrade>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
-      <SpecialAction />
+      <SpecialAction>
+        <MouseEffect>0</MouseEffect>
+        <Projectile>0</Projectile>
+      </SpecialAction>
     </Values>
   </Asset>
   <Asset>
@@ -2086,6 +4294,7 @@
         <Name>Retailer</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/specialists/systemic/icon_normal_dressed_107.png</IconFilename>
         <InfoDescription>20021</InfoDescription>
+        <Comments />
       </Standard>
       <Text>
         <LocaText>
@@ -2096,15 +4305,65 @@
           </English>
         </LocaText>
         <LineID>26770</LineID>
+        <Localize>1</Localize>
       </Text>
       <Item>
         <MaxStackSize>1</MaxStackSize>
         <Rarity>Uncommon</Rarity>
         <TradePrice>29400</TradePrice>
+        <Allocation>Ship</Allocation>
+        <ItemType>Specialist</ItemType>
+        <Flotsam>100554</Flotsam>
+        <ExclusiveGroup>None</ExclusiveGroup>
+        <ItemSet>0</ItemSet>
+        <ExpeditionType>None</ExpeditionType>
+        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
-      <Cost />
-      <ItemAction />
-      <VehicleUpgrade />
+      <Cost>
+        <Costs>
+          <Item>
+            <Ingredient>1010017</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010196</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010205</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010218</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010207</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010202</Ingredient>
+          </Item>
+        </Costs>
+        <ItemsPerCost>1</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
+      </Cost>
+      <ItemAction>
+        <ItemAction>NOACTION</ItemAction>
+        <ActionTarget>0</ActionTarget>
+        <ActionScope>Self</ActionScope>
+        <RadiusBuffTargets />
+        <ActionIncidentType />
+        <IncidentResolveRate>0.3</IncidentResolveRate>
+        <ActiveBuff>0</ActiveBuff>
+        <ActionDescription>0</ActionDescription>
+        <ActionCompletedEffect />
+        <CanEndItemAction>1</CanEndItemAction>
+        <StopMovementOnInteraction>1</StopMovementOnInteraction>
+      </ItemAction>
+      <VehicleUpgrade>
+        <ForwardSpeedUpgrade />
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
+      </VehicleUpgrade>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
         <ExpeditionAttributes>
@@ -2122,19 +4381,43 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Easy;Average</ItemDifficulties>
         <FluffText>20021</FluffText>
+        <ItemRegions />
       </ExpeditionAttribute>
-      <AttackerUpgrade />
-      <AttackableUpgrade />
+      <AttackerUpgrade>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
+      </AttackerUpgrade>
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
       <TradeShipUpgrade>
         <LoadingSpeedUpgrade>
           <Value>30</Value>
           <Percental>1</Percental>
         </LoadingSpeedUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
       </TradeShipUpgrade>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
-      <SpecialAction />
+      <SpecialAction>
+        <MouseEffect>0</MouseEffect>
+        <Projectile>0</Projectile>
+      </SpecialAction>
     </Values>
   </Asset>
   <Asset>
@@ -2145,6 +4428,7 @@
         <Name>Businessman</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/specialists/systemic/icon_well_dressed_104.png</IconFilename>
         <InfoDescription>20022</InfoDescription>
+        <Comments />
       </Standard>
       <Text>
         <LocaText>
@@ -2155,14 +4439,58 @@
           </English>
         </LocaText>
         <LineID>26771</LineID>
+        <Localize>1</Localize>
       </Text>
       <Item>
         <MaxStackSize>1</MaxStackSize>
         <Rarity>Rare</Rarity>
         <TradePrice>94300</TradePrice>
+        <Allocation>Ship</Allocation>
+        <ItemType>Specialist</ItemType>
+        <Flotsam>100554</Flotsam>
+        <ExclusiveGroup>None</ExclusiveGroup>
+        <ItemSet>0</ItemSet>
+        <ExpeditionType>None</ExpeditionType>
+        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
-      <Cost />
-      <ItemAction />
+      <Cost>
+        <Costs>
+          <Item>
+            <Ingredient>1010017</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010196</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010205</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010218</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010207</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010202</Ingredient>
+          </Item>
+        </Costs>
+        <ItemsPerCost>1</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
+      </Cost>
+      <ItemAction>
+        <ItemAction>NOACTION</ItemAction>
+        <ActionTarget>0</ActionTarget>
+        <ActionScope>Self</ActionScope>
+        <RadiusBuffTargets />
+        <ActionIncidentType />
+        <IncidentResolveRate>0.3</IncidentResolveRate>
+        <ActiveBuff>0</ActiveBuff>
+        <ActionDescription>0</ActionDescription>
+        <ActionCompletedEffect />
+        <CanEndItemAction>1</CanEndItemAction>
+        <StopMovementOnInteraction>1</StopMovementOnInteraction>
+      </ItemAction>
       <VehicleUpgrade>
         <ForwardSpeedUpgrade>
           <Value>10</Value>
@@ -2172,6 +4500,9 @@
           <Value>60</Value>
           <Percental>1</Percental>
         </IgnoreWeightFactorUpgrade>
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreDamageFactorUpgrade />
       </VehicleUpgrade>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
@@ -2190,14 +4521,40 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Easy;Average;Hard</ItemDifficulties>
         <FluffText>20022</FluffText>
+        <ItemRegions />
       </ExpeditionAttribute>
-      <AttackerUpgrade />
-      <AttackableUpgrade />
-      <TradeShipUpgrade />
+      <AttackerUpgrade>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
+      </AttackerUpgrade>
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
+      <TradeShipUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
+      </TradeShipUpgrade>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
-      <SpecialAction />
+      <SpecialAction>
+        <MouseEffect>0</MouseEffect>
+        <Projectile>0</Projectile>
+      </SpecialAction>
     </Values>
   </Asset>
   <Asset>
@@ -2208,6 +4565,7 @@
         <Name>Exporter</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/specialists/systemic/icon_normaldress_303.png</IconFilename>
         <InfoDescription>20023</InfoDescription>
+        <Comments />
       </Standard>
       <Text>
         <LocaText>
@@ -2218,15 +4576,65 @@
           </English>
         </LocaText>
         <LineID>26772</LineID>
+        <Localize>1</Localize>
       </Text>
       <Item>
         <MaxStackSize>1</MaxStackSize>
         <Rarity>Rare</Rarity>
         <TradePrice>81300</TradePrice>
+        <Allocation>Ship</Allocation>
+        <ItemType>Specialist</ItemType>
+        <Flotsam>100554</Flotsam>
+        <ExclusiveGroup>None</ExclusiveGroup>
+        <ItemSet>0</ItemSet>
+        <ExpeditionType>None</ExpeditionType>
+        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
-      <Cost />
-      <ItemAction />
-      <VehicleUpgrade />
+      <Cost>
+        <Costs>
+          <Item>
+            <Ingredient>1010017</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010196</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010205</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010218</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010207</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010202</Ingredient>
+          </Item>
+        </Costs>
+        <ItemsPerCost>1</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
+      </Cost>
+      <ItemAction>
+        <ItemAction>NOACTION</ItemAction>
+        <ActionTarget>0</ActionTarget>
+        <ActionScope>Self</ActionScope>
+        <RadiusBuffTargets />
+        <ActionIncidentType />
+        <IncidentResolveRate>0.3</IncidentResolveRate>
+        <ActiveBuff>0</ActiveBuff>
+        <ActionDescription>0</ActionDescription>
+        <ActionCompletedEffect />
+        <CanEndItemAction>1</CanEndItemAction>
+        <StopMovementOnInteraction>1</StopMovementOnInteraction>
+      </ItemAction>
+      <VehicleUpgrade>
+        <ForwardSpeedUpgrade />
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
+      </VehicleUpgrade>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
         <ExpeditionAttributes>
@@ -2244,9 +4652,27 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Easy;Average;Hard</ItemDifficulties>
         <FluffText>20023</FluffText>
+        <ItemRegions />
       </ExpeditionAttribute>
-      <AttackerUpgrade />
-      <AttackableUpgrade />
+      <AttackerUpgrade>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
+      </AttackerUpgrade>
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
       <TradeShipUpgrade>
         <ActiveTradePriceInPercent>95</ActiveTradePriceInPercent>
         <LoadingSpeedUpgrade>
@@ -2256,8 +4682,13 @@
       </TradeShipUpgrade>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
-      <SpecialAction />
+      <SpecialAction>
+        <MouseEffect>0</MouseEffect>
+        <Projectile>0</Projectile>
+      </SpecialAction>
     </Values>
   </Asset>
   <Asset>
@@ -2268,6 +4699,7 @@
         <Name>International Exporter</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/specialists/systemic/icon_well_dressed_404.png</IconFilename>
         <InfoDescription>20024</InfoDescription>
+        <Comments />
       </Standard>
       <Text>
         <LocaText>
@@ -2278,19 +4710,67 @@
           </English>
         </LocaText>
         <LineID>26773</LineID>
+        <Localize>1</Localize>
       </Text>
       <Item>
         <MaxStackSize>1</MaxStackSize>
         <Rarity>Epic</Rarity>
         <TradePrice>266500</TradePrice>
+        <Allocation>Ship</Allocation>
+        <ItemType>Specialist</ItemType>
+        <Flotsam>100554</Flotsam>
+        <ExclusiveGroup>None</ExclusiveGroup>
+        <ItemSet>0</ItemSet>
+        <ExpeditionType>None</ExpeditionType>
+        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
-      <Cost />
-      <ItemAction />
+      <Cost>
+        <Costs>
+          <Item>
+            <Ingredient>1010017</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010196</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010205</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010218</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010207</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010202</Ingredient>
+          </Item>
+        </Costs>
+        <ItemsPerCost>1</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
+      </Cost>
+      <ItemAction>
+        <ItemAction>NOACTION</ItemAction>
+        <ActionTarget>0</ActionTarget>
+        <ActionScope>Self</ActionScope>
+        <RadiusBuffTargets />
+        <ActionIncidentType />
+        <IncidentResolveRate>0.3</IncidentResolveRate>
+        <ActiveBuff>0</ActiveBuff>
+        <ActionDescription>0</ActionDescription>
+        <ActionCompletedEffect />
+        <CanEndItemAction>1</CanEndItemAction>
+        <StopMovementOnInteraction>1</StopMovementOnInteraction>
+      </ItemAction>
       <VehicleUpgrade>
         <IgnoreWeightFactorUpgrade>
           <Value>80</Value>
           <Percental>1</Percental>
         </IgnoreWeightFactorUpgrade>
+        <ForwardSpeedUpgrade />
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreDamageFactorUpgrade />
       </VehicleUpgrade>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
@@ -2309,14 +4789,40 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Average;Hard</ItemDifficulties>
         <FluffText>20024</FluffText>
+        <ItemRegions />
       </ExpeditionAttribute>
-      <AttackerUpgrade />
-      <AttackableUpgrade />
+      <AttackerUpgrade>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
+      </AttackerUpgrade>
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
       <TradeShipUpgrade>
         <ActiveTradePriceInPercent>90</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
       </TradeShipUpgrade>
-      <Locked />
-      <SpecialAction />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
+      <SpecialAction>
+        <MouseEffect>0</MouseEffect>
+        <Projectile>0</Projectile>
+      </SpecialAction>
     </Values>
   </Asset>
   <Asset>
@@ -2327,6 +4833,7 @@
         <Name>Ship Company Owner</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/specialists/systemic/icon_normaldress_815.png</IconFilename>
         <InfoDescription>20025</InfoDescription>
+        <Comments />
       </Standard>
       <Text>
         <LocaText>
@@ -2337,15 +4844,65 @@
           </English>
         </LocaText>
         <LineID>26774</LineID>
+        <Localize>1</Localize>
       </Text>
       <Item>
         <MaxStackSize>1</MaxStackSize>
         <Rarity>Epic</Rarity>
         <TradePrice>250000</TradePrice>
+        <Allocation>Ship</Allocation>
+        <ItemType>Specialist</ItemType>
+        <Flotsam>100554</Flotsam>
+        <ExclusiveGroup>None</ExclusiveGroup>
+        <ItemSet>0</ItemSet>
+        <ExpeditionType>None</ExpeditionType>
+        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
-      <Cost />
-      <ItemAction />
-      <VehicleUpgrade />
+      <Cost>
+        <Costs>
+          <Item>
+            <Ingredient>1010017</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010196</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010205</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010218</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010207</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010202</Ingredient>
+          </Item>
+        </Costs>
+        <ItemsPerCost>1</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
+      </Cost>
+      <ItemAction>
+        <ItemAction>NOACTION</ItemAction>
+        <ActionTarget>0</ActionTarget>
+        <ActionScope>Self</ActionScope>
+        <RadiusBuffTargets />
+        <ActionIncidentType />
+        <IncidentResolveRate>0.3</IncidentResolveRate>
+        <ActiveBuff>0</ActiveBuff>
+        <ActionDescription>0</ActionDescription>
+        <ActionCompletedEffect />
+        <CanEndItemAction>1</CanEndItemAction>
+        <StopMovementOnInteraction>1</StopMovementOnInteraction>
+      </ItemAction>
+      <VehicleUpgrade>
+        <ForwardSpeedUpgrade />
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
+      </VehicleUpgrade>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
         <ExpeditionAttributes>
@@ -2363,9 +4920,27 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Average;Hard</ItemDifficulties>
         <FluffText>20025</FluffText>
+        <ItemRegions />
       </ExpeditionAttribute>
-      <AttackerUpgrade />
-      <AttackableUpgrade />
+      <AttackerUpgrade>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
+      </AttackerUpgrade>
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
       <TradeShipUpgrade>
         <ActiveTradePriceInPercent>90</ActiveTradePriceInPercent>
         <LoadingSpeedUpgrade>
@@ -2373,8 +4948,15 @@
           <Percental>1</Percental>
         </LoadingSpeedUpgrade>
       </TradeShipUpgrade>
-      <Locked />
-      <SpecialAction />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
+      <SpecialAction>
+        <MouseEffect>0</MouseEffect>
+        <Projectile>0</Projectile>
+      </SpecialAction>
     </Values>
   </Asset>
   <Asset>
@@ -2385,6 +4967,7 @@
         <Name>Renowned Diplomat</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/specialists/systemic/icon_welldress_806.png</IconFilename>
         <InfoDescription>20026</InfoDescription>
+        <Comments />
       </Standard>
       <Text>
         <LocaText>
@@ -2395,19 +4978,67 @@
           </English>
         </LocaText>
         <LineID>26775</LineID>
+        <Localize>1</Localize>
       </Text>
       <Item>
         <MaxStackSize>1</MaxStackSize>
         <Rarity>Epic</Rarity>
         <TradePrice>288100</TradePrice>
+        <Allocation>Ship</Allocation>
+        <ItemType>Specialist</ItemType>
+        <Flotsam>100554</Flotsam>
+        <ExclusiveGroup>None</ExclusiveGroup>
+        <ItemSet>0</ItemSet>
+        <ExpeditionType>None</ExpeditionType>
+        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
-      <Cost />
-      <ItemAction />
+      <Cost>
+        <Costs>
+          <Item>
+            <Ingredient>1010017</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010196</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010205</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010218</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010207</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010202</Ingredient>
+          </Item>
+        </Costs>
+        <ItemsPerCost>1</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
+      </Cost>
+      <ItemAction>
+        <ItemAction>NOACTION</ItemAction>
+        <ActionTarget>0</ActionTarget>
+        <ActionScope>Self</ActionScope>
+        <RadiusBuffTargets />
+        <ActionIncidentType />
+        <IncidentResolveRate>0.3</IncidentResolveRate>
+        <ActiveBuff>0</ActiveBuff>
+        <ActionDescription>0</ActionDescription>
+        <ActionCompletedEffect />
+        <CanEndItemAction>1</CanEndItemAction>
+        <StopMovementOnInteraction>1</StopMovementOnInteraction>
+      </ItemAction>
       <VehicleUpgrade>
         <MaintainanceUpgrade>
           <Value>-80</Value>
           <Percental>1</Percental>
         </MaintainanceUpgrade>
+        <ForwardSpeedUpgrade />
+        <UpgradeDescription>0</UpgradeDescription>
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
       </VehicleUpgrade>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
@@ -2426,14 +5057,40 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Average;Hard</ItemDifficulties>
         <FluffText>20026</FluffText>
+        <ItemRegions />
       </ExpeditionAttribute>
-      <AttackerUpgrade />
-      <AttackableUpgrade />
+      <AttackerUpgrade>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
+      </AttackerUpgrade>
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
       <TradeShipUpgrade>
         <ActiveTradePriceInPercent>90</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
       </TradeShipUpgrade>
-      <Locked />
-      <SpecialAction />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
+      <SpecialAction>
+        <MouseEffect>0</MouseEffect>
+        <Projectile>0</Projectile>
+      </SpecialAction>
     </Values>
   </Asset>
   <Asset>
@@ -2444,6 +5101,7 @@
         <Name>Kate Tyrell - The First Female Ship Merchant</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/specialists/systemic/icon_well_dressed_402.png</IconFilename>
         <InfoDescription>20027</InfoDescription>
+        <Comments />
       </Standard>
       <Text>
         <LocaText>
@@ -2454,14 +5112,58 @@
           </English>
         </LocaText>
         <LineID>26776</LineID>
+        <Localize>1</Localize>
       </Text>
       <Item>
         <MaxStackSize>1</MaxStackSize>
         <Rarity>Legendary</Rarity>
         <TradePrice>933200</TradePrice>
+        <Allocation>Ship</Allocation>
+        <ItemType>Specialist</ItemType>
+        <Flotsam>100554</Flotsam>
+        <ExclusiveGroup>None</ExclusiveGroup>
+        <ItemSet>0</ItemSet>
+        <ExpeditionType>None</ExpeditionType>
+        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
-      <Cost />
-      <ItemAction />
+      <Cost>
+        <Costs>
+          <Item>
+            <Ingredient>1010017</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010196</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010205</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010218</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010207</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010202</Ingredient>
+          </Item>
+        </Costs>
+        <ItemsPerCost>1</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
+      </Cost>
+      <ItemAction>
+        <ItemAction>NOACTION</ItemAction>
+        <ActionTarget>0</ActionTarget>
+        <ActionScope>Self</ActionScope>
+        <RadiusBuffTargets />
+        <ActionIncidentType />
+        <IncidentResolveRate>0.3</IncidentResolveRate>
+        <ActiveBuff>0</ActiveBuff>
+        <ActionDescription>0</ActionDescription>
+        <ActionCompletedEffect />
+        <CanEndItemAction>1</CanEndItemAction>
+        <StopMovementOnInteraction>1</StopMovementOnInteraction>
+      </ItemAction>
       <VehicleUpgrade>
         <ForwardSpeedUpgrade>
           <Value>20</Value>
@@ -2471,6 +5173,9 @@
           <Value>100</Value>
           <Percental>1</Percental>
         </IgnoreWeightFactorUpgrade>
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreDamageFactorUpgrade />
       </VehicleUpgrade>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
@@ -2489,17 +5194,43 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Hard</ItemDifficulties>
         <FluffText>20027</FluffText>
+        <ItemRegions />
       </ExpeditionAttribute>
-      <AttackerUpgrade />
-      <AttackableUpgrade />
+      <AttackerUpgrade>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
+      </AttackerUpgrade>
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
       <TradeShipUpgrade>
         <LoadingSpeedUpgrade>
           <Value>75</Value>
           <Percental>1</Percental>
         </LoadingSpeedUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
       </TradeShipUpgrade>
-      <Locked />
-      <SpecialAction />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
+      <SpecialAction>
+        <MouseEffect>0</MouseEffect>
+        <Projectile>0</Projectile>
+      </SpecialAction>
     </Values>
   </Asset>
   <Asset>
@@ -2510,6 +5241,7 @@
         <Name>Patricia Siddins</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/specialists/systemic/icon_entertainer_828.png</IconFilename>
         <InfoDescription>20028</InfoDescription>
+        <Comments />
       </Standard>
       <Text>
         <LocaText>
@@ -2520,14 +5252,58 @@
           </English>
         </LocaText>
         <LineID>26777</LineID>
+        <Localize>1</Localize>
       </Text>
       <Item>
         <MaxStackSize>1</MaxStackSize>
         <Rarity>Legendary</Rarity>
         <TradePrice>750000</TradePrice>
+        <Allocation>Ship</Allocation>
+        <ItemType>Specialist</ItemType>
+        <Flotsam>100554</Flotsam>
+        <ExclusiveGroup>None</ExclusiveGroup>
+        <ItemSet>0</ItemSet>
+        <ExpeditionType>None</ExpeditionType>
+        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
-      <Cost />
-      <ItemAction />
+      <Cost>
+        <Costs>
+          <Item>
+            <Ingredient>1010017</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010196</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010205</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010218</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010207</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010202</Ingredient>
+          </Item>
+        </Costs>
+        <ItemsPerCost>1</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
+      </Cost>
+      <ItemAction>
+        <ItemAction>NOACTION</ItemAction>
+        <ActionTarget>0</ActionTarget>
+        <ActionScope>Self</ActionScope>
+        <RadiusBuffTargets />
+        <ActionIncidentType />
+        <IncidentResolveRate>0.3</IncidentResolveRate>
+        <ActiveBuff>0</ActiveBuff>
+        <ActionDescription>0</ActionDescription>
+        <ActionCompletedEffect />
+        <CanEndItemAction>1</CanEndItemAction>
+        <StopMovementOnInteraction>1</StopMovementOnInteraction>
+      </ItemAction>
       <VehicleUpgrade>
         <ForwardSpeedUpgrade>
           <Value>20</Value>
@@ -2537,6 +5313,9 @@
           <Value>-100</Value>
           <Percental>1</Percental>
         </MaintainanceUpgrade>
+        <UpgradeDescription>0</UpgradeDescription>
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
       </VehicleUpgrade>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
@@ -2555,14 +5334,40 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Hard</ItemDifficulties>
         <FluffText>20028</FluffText>
+        <ItemRegions />
       </ExpeditionAttribute>
-      <AttackerUpgrade />
-      <AttackableUpgrade />
+      <AttackerUpgrade>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
+      </AttackerUpgrade>
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
       <TradeShipUpgrade>
         <ActiveTradePriceInPercent>85</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
       </TradeShipUpgrade>
-      <Locked />
-      <SpecialAction />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
+      <SpecialAction>
+        <MouseEffect>0</MouseEffect>
+        <Projectile>0</Projectile>
+      </SpecialAction>
     </Values>
   </Asset>
   <Asset>
@@ -2573,6 +5378,7 @@
         <Name>Hans Puggaard - The Leading Wholesaler</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/specialists/systemic/icon_well_dressed_111.png</IconFilename>
         <InfoDescription>20029</InfoDescription>
+        <Comments />
       </Standard>
       <Text>
         <LocaText>
@@ -2583,19 +5389,67 @@
           </English>
         </LocaText>
         <LineID>26778</LineID>
+        <Localize>1</Localize>
       </Text>
       <Item>
         <MaxStackSize>1</MaxStackSize>
         <Rarity>Legendary</Rarity>
         <TradePrice>798000</TradePrice>
+        <Allocation>Ship</Allocation>
+        <ItemType>Specialist</ItemType>
+        <Flotsam>100554</Flotsam>
+        <ExclusiveGroup>None</ExclusiveGroup>
+        <ItemSet>0</ItemSet>
+        <ExpeditionType>None</ExpeditionType>
+        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
-      <Cost />
-      <ItemAction />
+      <Cost>
+        <Costs>
+          <Item>
+            <Ingredient>1010017</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010196</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010205</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010218</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010207</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010202</Ingredient>
+          </Item>
+        </Costs>
+        <ItemsPerCost>1</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
+      </Cost>
+      <ItemAction>
+        <ItemAction>NOACTION</ItemAction>
+        <ActionTarget>0</ActionTarget>
+        <ActionScope>Self</ActionScope>
+        <RadiusBuffTargets />
+        <ActionIncidentType />
+        <IncidentResolveRate>0.3</IncidentResolveRate>
+        <ActiveBuff>0</ActiveBuff>
+        <ActionDescription>0</ActionDescription>
+        <ActionCompletedEffect />
+        <CanEndItemAction>1</CanEndItemAction>
+        <StopMovementOnInteraction>1</StopMovementOnInteraction>
+      </ItemAction>
       <VehicleUpgrade>
         <IgnoreWeightFactorUpgrade>
           <Value>100</Value>
           <Percental>1</Percental>
         </IgnoreWeightFactorUpgrade>
+        <ForwardSpeedUpgrade />
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreDamageFactorUpgrade />
       </VehicleUpgrade>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
@@ -2614,9 +5468,27 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Hard</ItemDifficulties>
         <FluffText>20029</FluffText>
+        <ItemRegions />
       </ExpeditionAttribute>
-      <AttackerUpgrade />
-      <AttackableUpgrade />
+      <AttackerUpgrade>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
+      </AttackerUpgrade>
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
       <TradeShipUpgrade>
         <ActiveTradePriceInPercent>85</ActiveTradePriceInPercent>
         <LoadingSpeedUpgrade>
@@ -2624,8 +5496,15 @@
           <Percental>1</Percental>
         </LoadingSpeedUpgrade>
       </TradeShipUpgrade>
-      <Locked />
-      <SpecialAction />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
+      <SpecialAction>
+        <MouseEffect>0</MouseEffect>
+        <Projectile>0</Projectile>
+      </SpecialAction>
     </Values>
   </Asset>
   <Asset>
@@ -2636,6 +5515,7 @@
         <Name>Drew Durnil</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/specialists/influencer/icon_influencer_drew_durnil_2.png</IconFilename>
         <InfoDescription>21343</InfoDescription>
+        <Comments />
       </Standard>
       <Text>
         <LocaText>
@@ -2646,19 +5526,67 @@
           </English>
         </LocaText>
         <LineID>29140</LineID>
+        <Localize>1</Localize>
       </Text>
       <Item>
         <MaxStackSize>1</MaxStackSize>
         <Rarity>Epic</Rarity>
         <TradePrice>360500</TradePrice>
+        <Allocation>Ship</Allocation>
+        <ItemType>Specialist</ItemType>
+        <Flotsam>100554</Flotsam>
+        <ExclusiveGroup>None</ExclusiveGroup>
+        <ItemSet>0</ItemSet>
+        <ExpeditionType>None</ExpeditionType>
+        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
-      <Cost />
-      <ItemAction />
+      <Cost>
+        <Costs>
+          <Item>
+            <Ingredient>1010017</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010196</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010205</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010218</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010207</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010202</Ingredient>
+          </Item>
+        </Costs>
+        <ItemsPerCost>1</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
+      </Cost>
+      <ItemAction>
+        <ItemAction>NOACTION</ItemAction>
+        <ActionTarget>0</ActionTarget>
+        <ActionScope>Self</ActionScope>
+        <RadiusBuffTargets />
+        <ActionIncidentType />
+        <IncidentResolveRate>0.3</IncidentResolveRate>
+        <ActiveBuff>0</ActiveBuff>
+        <ActionDescription>0</ActionDescription>
+        <ActionCompletedEffect />
+        <CanEndItemAction>1</CanEndItemAction>
+        <StopMovementOnInteraction>1</StopMovementOnInteraction>
+      </ItemAction>
       <VehicleUpgrade>
         <ForwardSpeedUpgrade>
           <Value>15</Value>
           <Percental>1</Percental>
         </ForwardSpeedUpgrade>
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
       </VehicleUpgrade>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
@@ -2677,14 +5605,40 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Average;Hard</ItemDifficulties>
         <FluffText>21343</FluffText>
+        <ItemRegions />
       </ExpeditionAttribute>
-      <AttackerUpgrade />
-      <AttackableUpgrade />
+      <AttackerUpgrade>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
+      </AttackerUpgrade>
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
       <TradeShipUpgrade>
         <ActiveTradePriceInPercent>85</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
       </TradeShipUpgrade>
-      <Locked />
-      <SpecialAction />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
+      <SpecialAction>
+        <MouseEffect>0</MouseEffect>
+        <Projectile>0</Projectile>
+      </SpecialAction>
     </Values>
   </Asset>
   <Asset>
@@ -2695,6 +5649,7 @@
         <Name>Lady Lu</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/specialists/influencer/icon_influencer_lady_lu.png</IconFilename>
         <InfoDescription>21352</InfoDescription>
+        <Comments />
       </Standard>
       <Text>
         <LocaText>
@@ -2705,18 +5660,66 @@
           </English>
         </LocaText>
         <LineID>29143</LineID>
+        <Localize>1</Localize>
       </Text>
       <Item>
         <MaxStackSize>1</MaxStackSize>
         <Rarity>Epic</Rarity>
         <TradePrice>365700</TradePrice>
+        <Allocation>Ship</Allocation>
+        <ItemType>Specialist</ItemType>
+        <Flotsam>100554</Flotsam>
+        <ExclusiveGroup>None</ExclusiveGroup>
+        <ItemSet>0</ItemSet>
+        <ExpeditionType>None</ExpeditionType>
+        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
-      <Cost />
+      <Cost>
+        <Costs>
+          <Item>
+            <Ingredient>1010017</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010196</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010205</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010218</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010207</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010202</Ingredient>
+          </Item>
+        </Costs>
+        <ItemsPerCost>1</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
+      </Cost>
       <ItemAction>
         <ActionDistance>15</ActionDistance>
         <ActionIncidentType>Fire;Riot;Illness;Explosion</ActionIncidentType>
+        <ItemAction>NOACTION</ItemAction>
+        <ActionTarget>0</ActionTarget>
+        <ActionScope>Self</ActionScope>
+        <RadiusBuffTargets />
+        <IncidentResolveRate>0.3</IncidentResolveRate>
+        <ActiveBuff>0</ActiveBuff>
+        <ActionDescription>0</ActionDescription>
+        <ActionCompletedEffect />
+        <CanEndItemAction>1</CanEndItemAction>
+        <StopMovementOnInteraction>1</StopMovementOnInteraction>
       </ItemAction>
-      <VehicleUpgrade />
+      <VehicleUpgrade>
+        <ForwardSpeedUpgrade />
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
+      </VehicleUpgrade>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
         <ExpeditionAttributes>
@@ -2737,8 +5740,20 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Average;Hard</ItemDifficulties>
         <FluffText>21352</FluffText>
+        <ItemRegions />
       </ExpeditionAttribute>
-      <AttackerUpgrade />
+      <AttackerUpgrade>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
+      </AttackerUpgrade>
       <AttackableUpgrade>
         <MaxHitpointsUpgrade>
           <Value>800</Value>
@@ -2751,10 +5766,22 @@
           <Value>-100</Value>
           <Percental>1</Percental>
         </SelfHealPausedTimeIfAttackedUpgrade>
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
       </AttackableUpgrade>
-      <TradeShipUpgrade />
-      <Locked />
-      <SpecialAction />
+      <TradeShipUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
+      </TradeShipUpgrade>
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
+      <SpecialAction>
+        <MouseEffect>0</MouseEffect>
+        <Projectile>0</Projectile>
+      </SpecialAction>
     </Values>
   </Asset>
   <Asset>
@@ -2765,6 +5792,7 @@
         <Name>Draegast</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/specialists/influencer/icon_influencer_draegast.png</IconFilename>
         <InfoDescription>21987</InfoDescription>
+        <Comments />
       </Standard>
       <Text>
         <LocaText>
@@ -2775,16 +5803,65 @@
           </English>
         </LocaText>
         <LineID>30103</LineID>
+        <Localize>1</Localize>
       </Text>
       <Item>
         <Allocation>Warship</Allocation>
         <MaxStackSize>1</MaxStackSize>
         <Rarity>Epic</Rarity>
         <TradePrice>356000</TradePrice>
+        <ItemType>Specialist</ItemType>
+        <Flotsam>100554</Flotsam>
+        <ExclusiveGroup>None</ExclusiveGroup>
+        <ItemSet>0</ItemSet>
+        <ExpeditionType>None</ExpeditionType>
+        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
-      <Cost />
-      <ItemAction />
-      <VehicleUpgrade />
+      <Cost>
+        <Costs>
+          <Item>
+            <Ingredient>1010017</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010196</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010205</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010218</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010207</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010202</Ingredient>
+          </Item>
+        </Costs>
+        <ItemsPerCost>1</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
+      </Cost>
+      <ItemAction>
+        <ItemAction>NOACTION</ItemAction>
+        <ActionTarget>0</ActionTarget>
+        <ActionScope>Self</ActionScope>
+        <RadiusBuffTargets />
+        <ActionIncidentType />
+        <IncidentResolveRate>0.3</IncidentResolveRate>
+        <ActiveBuff>0</ActiveBuff>
+        <ActionDescription>0</ActionDescription>
+        <ActionCompletedEffect />
+        <CanEndItemAction>1</CanEndItemAction>
+        <StopMovementOnInteraction>1</StopMovementOnInteraction>
+      </ItemAction>
+      <VehicleUpgrade>
+        <ForwardSpeedUpgrade />
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
+      </VehicleUpgrade>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
         <ExpeditionAttributes>
@@ -2808,6 +5885,7 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Average;Hard</ItemDifficulties>
         <FluffText>21987</FluffText>
+        <ItemRegions />
       </ExpeditionAttribute>
       <AttackerUpgrade>
         <DamageFactor>
@@ -2815,13 +5893,36 @@
             <Factor>1.5</Factor>
           </Building>
         </DamageFactor>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
       </AttackerUpgrade>
-      <AttackableUpgrade />
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
       <TradeShipUpgrade>
         <ActiveTradePriceInPercent>85</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
       </TradeShipUpgrade>
-      <Locked />
-      <SpecialAction />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
+      <SpecialAction>
+        <MouseEffect>0</MouseEffect>
+        <Projectile>0</Projectile>
+      </SpecialAction>
     </Values>
   </Asset>
   <Asset>
@@ -2832,6 +5933,7 @@
         <Name>Jack of all Traits</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/specialists/icon_craftsman_common.png</IconFilename>
         <InfoDescription>17225</InfoDescription>
+        <Comments />
       </Standard>
       <Text>
         <LocaText>
@@ -2839,16 +5941,65 @@
             <Text>Jack of all Traits</Text>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
       <Item>
         <MaxStackSize>1</MaxStackSize>
         <Rarity>Legendary</Rarity>
+        <Allocation>Ship</Allocation>
+        <ItemType>Specialist</ItemType>
+        <Flotsam>100554</Flotsam>
+        <ExclusiveGroup>None</ExclusiveGroup>
+        <ItemSet>0</ItemSet>
+        <ExpeditionType>None</ExpeditionType>
+        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
-      <Cost />
+      <Cost>
+        <Costs>
+          <Item>
+            <Ingredient>1010017</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010196</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010205</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010218</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010207</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010202</Ingredient>
+          </Item>
+        </Costs>
+        <ItemsPerCost>1</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
+      </Cost>
       <ItemAction>
         <ActionDistance>150</ActionDistance>
+        <ItemAction>NOACTION</ItemAction>
+        <ActionTarget>0</ActionTarget>
+        <ActionScope>Self</ActionScope>
+        <RadiusBuffTargets />
+        <ActionIncidentType />
+        <IncidentResolveRate>0.3</IncidentResolveRate>
+        <ActiveBuff>0</ActiveBuff>
+        <ActionDescription>0</ActionDescription>
+        <ActionCompletedEffect />
+        <CanEndItemAction>1</CanEndItemAction>
+        <StopMovementOnInteraction>1</StopMovementOnInteraction>
       </ItemAction>
-      <VehicleUpgrade />
+      <VehicleUpgrade>
+        <ForwardSpeedUpgrade />
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
+      </VehicleUpgrade>
       <ExpeditionAttribute>
         <BaseMorale>500</BaseMorale>
         <ExpeditionAttributes>
@@ -2925,12 +6076,42 @@
             <Amount>100</Amount>
           </Item>
         </ExpeditionAttributes>
+        <ItemRegions />
+        <ItemDifficulties />
+        <FluffText>0</FluffText>
       </ExpeditionAttribute>
-      <AttackerUpgrade />
-      <AttackableUpgrade />
-      <TradeShipUpgrade />
-      <Locked />
-      <SpecialAction />
+      <AttackerUpgrade>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
+      </AttackerUpgrade>
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
+      <TradeShipUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
+      </TradeShipUpgrade>
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
+      <SpecialAction>
+        <MouseEffect>0</MouseEffect>
+        <Projectile>0</Projectile>
+      </SpecialAction>
     </Values>
   </Asset>
   <Asset>
@@ -2940,6 +6121,8 @@
         <GUID>190105</GUID>
         <Name>Dr Snuggles</Name>
         <IconFilename>data/ui/2kimages/main/icons/icon_resource_worker_2.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -2947,22 +6130,85 @@
             <Text>Dr Snuggles</Text>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
       <Item>
         <HasAction>1</HasAction>
         <ExclusiveGroup>Specialist</ExclusiveGroup>
         <TradePrice>5000</TradePrice>
+        <Allocation>Ship</Allocation>
+        <ItemType>Specialist</ItemType>
+        <Flotsam>100554</Flotsam>
+        <Rarity>Common</Rarity>
+        <ItemSet>0</ItemSet>
+        <ExpeditionType>None</ExpeditionType>
+        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
-      <Cost />
+      <Cost>
+        <Costs>
+          <Item>
+            <Ingredient>1010017</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010196</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010205</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010218</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010207</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010202</Ingredient>
+          </Item>
+        </Costs>
+        <ItemsPerCost>1</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
+      </Cost>
       <ItemAction>
         <ItemAction>REPAIR</ItemAction>
         <ActionTarget>2001748</ActionTarget>
         <ActionScope>Target</ActionScope>
         <RepairSpeed>1</RepairSpeed>
+        <RadiusBuffTargets />
+        <ActionIncidentType />
+        <IncidentResolveRate>0.3</IncidentResolveRate>
+        <ActiveBuff>0</ActiveBuff>
+        <ActionDescription>0</ActionDescription>
+        <ActionCompletedEffect />
+        <CanEndItemAction>1</CanEndItemAction>
+        <StopMovementOnInteraction>1</StopMovementOnInteraction>
       </ItemAction>
-      <VehicleUpgrade />
-      <ExpeditionAttribute />
-      <AttackerUpgrade />
+      <VehicleUpgrade>
+        <ForwardSpeedUpgrade />
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
+      </VehicleUpgrade>
+      <ExpeditionAttribute>
+        <BaseMorale>20</BaseMorale>
+        <ExpeditionAttributes />
+        <ItemRegions />
+        <ItemDifficulties />
+        <FluffText>0</FluffText>
+      </ExpeditionAttribute>
+      <AttackerUpgrade>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
+      </AttackerUpgrade>
       <AttackableUpgrade>
         <MaxHitpointsUpgrade>
           <Value>200</Value>
@@ -2975,15 +6221,25 @@
           <Value>-100</Value>
           <Percental>1</Percental>
         </SelfHealPausedTimeIfAttackedUpgrade>
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
       </AttackableUpgrade>
       <TradeShipUpgrade>
         <LoadingSpeedUpgrade>
           <Value>50</Value>
           <Percental>1</Percental>
         </LoadingSpeedUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
       </TradeShipUpgrade>
-      <Locked />
-      <SpecialAction />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
+      <SpecialAction>
+        <MouseEffect>0</MouseEffect>
+        <Projectile>0</Projectile>
+      </SpecialAction>
     </Values>
   </Asset>
   <Asset>
@@ -2993,6 +6249,8 @@
         <GUID>190800</GUID>
         <Name>CaptainMorgan</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/specialists/icon_captain_epic.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -3003,24 +6261,104 @@
           </English>
         </LocaText>
         <LineID>27022</LineID>
+        <Localize>1</Localize>
       </Text>
       <Item>
         <MaxStackSize>1</MaxStackSize>
         <Rarity>Epic</Rarity>
         <ExclusiveGroup>Captain</ExclusiveGroup>
         <TradePrice>250000</TradePrice>
+        <Allocation>Ship</Allocation>
+        <ItemType>Specialist</ItemType>
+        <Flotsam>100554</Flotsam>
+        <ItemSet>0</ItemSet>
+        <ExpeditionType>None</ExpeditionType>
+        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
-      <Cost />
-      <ItemAction />
-      <VehicleUpgrade />
-      <ExpeditionAttribute />
-      <AttackerUpgrade />
-      <AttackableUpgrade />
+      <Cost>
+        <Costs>
+          <Item>
+            <Ingredient>1010017</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010196</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010205</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010218</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010207</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010202</Ingredient>
+          </Item>
+        </Costs>
+        <ItemsPerCost>1</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
+      </Cost>
+      <ItemAction>
+        <ItemAction>NOACTION</ItemAction>
+        <ActionTarget>0</ActionTarget>
+        <ActionScope>Self</ActionScope>
+        <RadiusBuffTargets />
+        <ActionIncidentType />
+        <IncidentResolveRate>0.3</IncidentResolveRate>
+        <ActiveBuff>0</ActiveBuff>
+        <ActionDescription>0</ActionDescription>
+        <ActionCompletedEffect />
+        <CanEndItemAction>1</CanEndItemAction>
+        <StopMovementOnInteraction>1</StopMovementOnInteraction>
+      </ItemAction>
+      <VehicleUpgrade>
+        <ForwardSpeedUpgrade />
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
+      </VehicleUpgrade>
+      <ExpeditionAttribute>
+        <BaseMorale>20</BaseMorale>
+        <ExpeditionAttributes />
+        <ItemRegions />
+        <ItemDifficulties />
+        <FluffText>0</FluffText>
+      </ExpeditionAttribute>
+      <AttackerUpgrade>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
+      </AttackerUpgrade>
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
       <TradeShipUpgrade>
         <ActiveTradePriceInPercent>80</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
       </TradeShipUpgrade>
-      <Locked />
-      <SpecialAction />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
+      <SpecialAction>
+        <MouseEffect>0</MouseEffect>
+        <Projectile>0</Projectile>
+      </SpecialAction>
     </Values>
   </Asset>
   <Asset>
@@ -3030,6 +6368,8 @@
         <GUID>192093</GUID>
         <Name>Pirate Cadet</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/specialists/systemic/icon_navigator_102.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -3040,19 +6380,67 @@
           </English>
         </LocaText>
         <LineID>27096</LineID>
+        <Localize>1</Localize>
       </Text>
       <Item>
         <MaxStackSize>1</MaxStackSize>
         <Rarity>Uncommon</Rarity>
         <TradePrice>15000</TradePrice>
+        <Allocation>Ship</Allocation>
+        <ItemType>Specialist</ItemType>
+        <Flotsam>100554</Flotsam>
+        <ExclusiveGroup>None</ExclusiveGroup>
+        <ItemSet>0</ItemSet>
+        <ExpeditionType>None</ExpeditionType>
+        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
-      <Cost />
-      <ItemAction />
+      <Cost>
+        <Costs>
+          <Item>
+            <Ingredient>1010017</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010196</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010205</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010218</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010207</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010202</Ingredient>
+          </Item>
+        </Costs>
+        <ItemsPerCost>1</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
+      </Cost>
+      <ItemAction>
+        <ItemAction>NOACTION</ItemAction>
+        <ActionTarget>0</ActionTarget>
+        <ActionScope>Self</ActionScope>
+        <RadiusBuffTargets />
+        <ActionIncidentType />
+        <IncidentResolveRate>0.3</IncidentResolveRate>
+        <ActiveBuff>0</ActiveBuff>
+        <ActionDescription>0</ActionDescription>
+        <ActionCompletedEffect />
+        <CanEndItemAction>1</CanEndItemAction>
+        <StopMovementOnInteraction>1</StopMovementOnInteraction>
+      </ItemAction>
       <VehicleUpgrade>
         <ForwardSpeedUpgrade>
           <Value>30</Value>
           <Percental>1</Percental>
         </ForwardSpeedUpgrade>
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
       </VehicleUpgrade>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
@@ -3075,12 +6463,41 @@
           </Item>
         </ExpeditionAttributes>
         <ItemDifficulties>Hard</ItemDifficulties>
+        <ItemRegions />
+        <FluffText>0</FluffText>
       </ExpeditionAttribute>
-      <AttackerUpgrade />
-      <AttackableUpgrade />
-      <TradeShipUpgrade />
-      <Locked />
-      <SpecialAction />
+      <AttackerUpgrade>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
+      </AttackerUpgrade>
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
+      <TradeShipUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
+      </TradeShipUpgrade>
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
+      <SpecialAction>
+        <MouseEffect>0</MouseEffect>
+        <Projectile>0</Projectile>
+      </SpecialAction>
     </Values>
   </Asset>
   <Asset>
@@ -3090,6 +6507,8 @@
         <GUID>192092</GUID>
         <Name>Willma von Tegetthoff</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/specialists/icon_navigator_pirate.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -3100,14 +6519,58 @@
           </English>
         </LocaText>
         <LineID>27097</LineID>
+        <Localize>1</Localize>
       </Text>
       <Item>
         <MaxStackSize>1</MaxStackSize>
         <Rarity>Rare</Rarity>
         <TradePrice>50000</TradePrice>
+        <Allocation>Ship</Allocation>
+        <ItemType>Specialist</ItemType>
+        <Flotsam>100554</Flotsam>
+        <ExclusiveGroup>None</ExclusiveGroup>
+        <ItemSet>0</ItemSet>
+        <ExpeditionType>None</ExpeditionType>
+        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
-      <Cost />
-      <ItemAction />
+      <Cost>
+        <Costs>
+          <Item>
+            <Ingredient>1010017</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010196</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010205</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010218</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010207</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010202</Ingredient>
+          </Item>
+        </Costs>
+        <ItemsPerCost>1</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
+      </Cost>
+      <ItemAction>
+        <ItemAction>NOACTION</ItemAction>
+        <ActionTarget>0</ActionTarget>
+        <ActionScope>Self</ActionScope>
+        <RadiusBuffTargets />
+        <ActionIncidentType />
+        <IncidentResolveRate>0.3</IncidentResolveRate>
+        <ActiveBuff>0</ActiveBuff>
+        <ActionDescription>0</ActionDescription>
+        <ActionCompletedEffect />
+        <CanEndItemAction>1</CanEndItemAction>
+        <StopMovementOnInteraction>1</StopMovementOnInteraction>
+      </ItemAction>
       <VehicleUpgrade>
         <ForwardSpeedUpgrade>
           <Value>30</Value>
@@ -3117,6 +6580,9 @@
           <Value>-50</Value>
           <Percental>1</Percental>
         </MaintainanceUpgrade>
+        <UpgradeDescription>0</UpgradeDescription>
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
       </VehicleUpgrade>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
@@ -3139,12 +6605,41 @@
           </Item>
         </ExpeditionAttributes>
         <ItemDifficulties>Hard</ItemDifficulties>
+        <ItemRegions />
+        <FluffText>0</FluffText>
       </ExpeditionAttribute>
-      <AttackerUpgrade />
-      <AttackableUpgrade />
-      <TradeShipUpgrade />
-      <Locked />
-      <SpecialAction />
+      <AttackerUpgrade>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
+      </AttackerUpgrade>
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
+      <TradeShipUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
+      </TradeShipUpgrade>
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
+      <SpecialAction>
+        <MouseEffect>0</MouseEffect>
+        <Projectile>0</Projectile>
+      </SpecialAction>
     </Values>
   </Asset>
   <Asset>
@@ -3155,6 +6650,7 @@
         <Name>Captain Moby, Old Dog of the Sea</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/specialists/systemic/icon_captain_103.png</IconFilename>
         <InfoDescription>12597</InfoDescription>
+        <Comments />
       </Standard>
       <Text>
         <LocaText>
@@ -3165,14 +6661,58 @@
           </English>
         </LocaText>
         <LineID>27098</LineID>
+        <Localize>1</Localize>
       </Text>
       <Item>
         <MaxStackSize>1</MaxStackSize>
         <Rarity>Epic</Rarity>
         <TradePrice>200000</TradePrice>
+        <Allocation>Ship</Allocation>
+        <ItemType>Specialist</ItemType>
+        <Flotsam>100554</Flotsam>
+        <ExclusiveGroup>None</ExclusiveGroup>
+        <ItemSet>0</ItemSet>
+        <ExpeditionType>None</ExpeditionType>
+        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
-      <Cost />
-      <ItemAction />
+      <Cost>
+        <Costs>
+          <Item>
+            <Ingredient>1010017</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010196</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010205</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010218</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010207</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010202</Ingredient>
+          </Item>
+        </Costs>
+        <ItemsPerCost>1</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
+      </Cost>
+      <ItemAction>
+        <ItemAction>NOACTION</ItemAction>
+        <ActionTarget>0</ActionTarget>
+        <ActionScope>Self</ActionScope>
+        <RadiusBuffTargets />
+        <ActionIncidentType />
+        <IncidentResolveRate>0.3</IncidentResolveRate>
+        <ActiveBuff>0</ActiveBuff>
+        <ActionDescription>0</ActionDescription>
+        <ActionCompletedEffect />
+        <CanEndItemAction>1</CanEndItemAction>
+        <StopMovementOnInteraction>1</StopMovementOnInteraction>
+      </ItemAction>
       <VehicleUpgrade>
         <ForwardSpeedUpgrade>
           <Value>30</Value>
@@ -3182,6 +6722,9 @@
           <Value>-50</Value>
           <Percental>1</Percental>
         </MaintainanceUpgrade>
+        <UpgradeDescription>0</UpgradeDescription>
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
       </VehicleUpgrade>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
@@ -3205,16 +6748,42 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Hard</ItemDifficulties>
         <FluffText>12519</FluffText>
+        <ItemRegions />
       </ExpeditionAttribute>
-      <AttackerUpgrade />
+      <AttackerUpgrade>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
+      </AttackerUpgrade>
       <AttackableUpgrade>
         <MaxHitpointsUpgrade>
           <Value>500</Value>
         </MaxHitpointsUpgrade>
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
       </AttackableUpgrade>
-      <TradeShipUpgrade />
-      <Locked />
-      <SpecialAction />
+      <TradeShipUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
+      </TradeShipUpgrade>
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
+      <SpecialAction>
+        <MouseEffect>0</MouseEffect>
+        <Projectile>0</Projectile>
+      </SpecialAction>
     </Values>
   </Asset>
   <Asset>
@@ -3225,6 +6794,7 @@
         <Name>Geordy Duff</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/specialists/icon_specialist_captain_legendary_pirate.png</IconFilename>
         <InfoDescription>10031</InfoDescription>
+        <Comments />
       </Standard>
       <Text>
         <LocaText>
@@ -3235,14 +6805,58 @@
           </English>
         </LocaText>
         <LineID>27099</LineID>
+        <Localize>1</Localize>
       </Text>
       <Item>
         <MaxStackSize>1</MaxStackSize>
         <Rarity>Legendary</Rarity>
         <TradePrice>400000</TradePrice>
+        <Allocation>Ship</Allocation>
+        <ItemType>Specialist</ItemType>
+        <Flotsam>100554</Flotsam>
+        <ExclusiveGroup>None</ExclusiveGroup>
+        <ItemSet>0</ItemSet>
+        <ExpeditionType>None</ExpeditionType>
+        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
-      <Cost />
-      <ItemAction />
+      <Cost>
+        <Costs>
+          <Item>
+            <Ingredient>1010017</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010196</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010205</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010218</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010207</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010202</Ingredient>
+          </Item>
+        </Costs>
+        <ItemsPerCost>1</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
+      </Cost>
+      <ItemAction>
+        <ItemAction>NOACTION</ItemAction>
+        <ActionTarget>0</ActionTarget>
+        <ActionScope>Self</ActionScope>
+        <RadiusBuffTargets />
+        <ActionIncidentType />
+        <IncidentResolveRate>0.3</IncidentResolveRate>
+        <ActiveBuff>0</ActiveBuff>
+        <ActionDescription>0</ActionDescription>
+        <ActionCompletedEffect />
+        <CanEndItemAction>1</CanEndItemAction>
+        <StopMovementOnInteraction>1</StopMovementOnInteraction>
+      </ItemAction>
       <VehicleUpgrade>
         <ForwardSpeedUpgrade>
           <Value>30</Value>
@@ -3256,6 +6870,8 @@
           <Value>-100</Value>
           <Percental>1</Percental>
         </IgnoreDamageFactorUpgrade>
+        <UpgradeDescription>0</UpgradeDescription>
+        <IgnoreWeightFactorUpgrade />
       </VehicleUpgrade>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
@@ -3278,16 +6894,43 @@
           </Item>
         </ExpeditionAttributes>
         <ItemDifficulties>Hard</ItemDifficulties>
+        <ItemRegions />
+        <FluffText>0</FluffText>
       </ExpeditionAttribute>
-      <AttackerUpgrade />
+      <AttackerUpgrade>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
+      </AttackerUpgrade>
       <AttackableUpgrade>
         <MaxHitpointsUpgrade>
           <Value>1000</Value>
         </MaxHitpointsUpgrade>
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
       </AttackableUpgrade>
-      <TradeShipUpgrade />
-      <Locked />
-      <SpecialAction />
+      <TradeShipUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
+      </TradeShipUpgrade>
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
+      <SpecialAction>
+        <MouseEffect>0</MouseEffect>
+        <Projectile>0</Projectile>
+      </SpecialAction>
     </Values>
   </Asset>
 </Assets>

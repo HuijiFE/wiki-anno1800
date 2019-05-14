@@ -8,6 +8,7 @@
         <Name>harbor_12 (Coal Harbor)</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_coal_habour.png</IconFilename>
         <InfoDescription>10949</InfoDescription>
+        <Comments />
       </Standard>
       <Text>
         <LocaText>
@@ -18,12 +19,18 @@
           </English>
         </LocaText>
         <LineID>7026</LineID>
+        <Localize>1</Localize>
       </Text>
       <Blocking>
         <GroundDecalAsset>100446</GroundDecalAsset>
         <GroundDecalInvisible>101008</GroundDecalInvisible>
         <HasBuildingBaseTiles>1</HasBuildingBaseTiles>
         <HarbourAreaExpand>1</HarbourAreaExpand>
+        <HidePropsRadius>1</HidePropsRadius>
+        <DeletePropsRadius>1</DeletePropsRadius>
+        <StreetOutside>0</StreetOutside>
+        <RemoveGrass>1</RemoveGrass>
+        <BlocksBuilding>1</BlocksBuilding>
       </Blocking>
       <Building>
         <BuildingCategoryName>11150</BuildingCategoryName>
@@ -31,6 +38,15 @@
         <AssociatedRegions>Moderate</AssociatedRegions>
         <BuildingType>Factory</BuildingType>
         <TerrainType>Coast</TerrainType>
+        <Movable>1</Movable>
+        <PickingAsset>0</PickingAsset>
+        <ConstructionMenuText>0</ConstructionMenuText>
+        <HasBorderRectOutline>1</HasBorderRectOutline>
+        <SnapRadius>2</SnapRadius>
+        <InfluencedByNeighbors />
+        <InfluencedVariationDirection />
+        <BuildingBlockPool />
+        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
       <Cost>
         <Costs>
@@ -59,10 +75,26 @@
             <Amount>15</Amount>
           </Item>
         </Costs>
+        <ItemsPerCost>1</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
       </Cost>
       <Selection>
         <GUIType>CoalOilHarbour</GUIType>
         <AllowedDragType>ItemSocket;CargoProductStack;CargoItemStack</AllowedDragType>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <InteractionDistance>15</InteractionDistance>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
       </Selection>
       <Object>
         <Variations>
@@ -71,11 +103,31 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Constructable>
         <DestructionCategory>Production</DestructionCategory>
+        <ConstructionMode>Default</ConstructionMode>
+        <DestructionType>0</DestructionType>
       </Constructable>
-      <Mesh />
+      <Mesh>
+        <ObjectPosition>Static</ObjectPosition>
+        <MeshPlacement>Default</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
+      </Mesh>
       <SoundEmitter>
         <ActiveSounds>
           <Item>
@@ -119,27 +171,70 @@
             </Item>
           </BuildMoveEnd>
         </ConstructionSounds>
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
-      <Locked />
-      <Infolayer />
-      <FeedbackController />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
+      <Infolayer>
+        <DefaultInfoLayer>0</DefaultInfoLayer>
+      </Infolayer>
+      <FeedbackController>
+        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
+        <UpdateMeshSequence>1</UpdateMeshSequence>
+      </FeedbackController>
       <Warehouse>
         <WarehouseStorage>
           <StorageMax>500</StorageMax>
         </WarehouseStorage>
+        <StorageType>Kontor</StorageType>
+        <OverflowFlotsam>
+          <OverflowSpawnPercentage>0.15</OverflowSpawnPercentage>
+          <MaxFlotsamCount>5</MaxFlotsamCount>
+        </OverflowFlotsam>
       </Warehouse>
       <LogisticNode>
         <TransporterCountMax>0</TransporterCountMax>
         <QueueConfiguration>
           <ProcessingQueueParallelCount>2</ProcessingQueueParallelCount>
+          <LoadingTimeModifier>1</LoadingTimeModifier>
+          <UnloadingTimeModifier>1</UnloadingTimeModifier>
         </QueueConfiguration>
         <PathLayers>Railway</PathLayers>
+        <TransporterAsset>1010104</TransporterAsset>
+        <TrainAsset>120025</TrainAsset>
+        <REMOVE_THIS_LATER_FeedbackUnitTier>Level1</REMOVE_THIS_LATER_FeedbackUnitTier>
+        <NeedsTransporterQueue>1</NeedsTransporterQueue>
       </LogisticNode>
       <MinimapToken>
         <TokenAsset>2001544</TokenAsset>
+        <StrategicMapAsset>0</StrategicMapAsset>
       </MinimapToken>
       <AmbientMoodProvider>
         <Murmur>Harbor</Murmur>
+        <AmbientMood>None</AmbientMood>
+        <AttractivityDependentMurmur />
+        <ProductivityDependentMurmur />
+        <SatisfactionDependentMurmur />
+        <DynamicEnvironmentType>None</DynamicEnvironmentType>
+        <HappinessDependentMurmur />
+        <IslandAttractivityDependentMurmur />
       </AmbientMoodProvider>
       <LoadingPier>
         <NumOfPiers>1</NumOfPiers>
@@ -176,8 +271,13 @@
         <ExplosionEffects>
           <Item />
         </ExplosionEffects>
+        <SelfHealPausedTimeIfAttacked>15000</SelfHealPausedTimeIfAttacked>
+        <ArmorType>Default</ArmorType>
       </Attackable>
-      <Upgradable />
+      <Upgradable>
+        <NextGUID>0</NextGUID>
+        <UpgradeCost />
+      </Upgradable>
       <Maintenance>
         <Maintenances>
           <Item>
@@ -186,13 +286,17 @@
             <InactiveAmount>100</InactiveAmount>
           </Item>
         </Maintenances>
+        <MaintenanceAmountFactor>1</MaintenanceAmountFactor>
+        <WorkforceAmountFactor>1</WorkforceAmountFactor>
       </Maintenance>
       <Pausable />
       <IslandUnique>
         <UniqueType>CoalHarbor</UniqueType>
       </IslandUnique>
       <UpgradeList />
-      <TrainStation />
+      <TrainStation>
+        <MaxTrainCount>1</MaxTrainCount>
+      </TrainStation>
       <QuestObject />
     </Values>
   </Asset>
@@ -204,6 +308,7 @@
         <Name>harbor_14c (Oil Harbor III)</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_oil_habour_01.png</IconFilename>
         <InfoDescription>10951</InfoDescription>
+        <Comments />
       </Standard>
       <Text>
         <LocaText>
@@ -214,12 +319,18 @@
           </English>
         </LocaText>
         <LineID>13041</LineID>
+        <Localize>1</Localize>
       </Text>
       <Blocking>
         <GroundDecalAsset>100446</GroundDecalAsset>
         <GroundDecalInvisible>101008</GroundDecalInvisible>
         <HasBuildingBaseTiles>1</HasBuildingBaseTiles>
         <HarbourAreaExpand>1</HarbourAreaExpand>
+        <HidePropsRadius>1</HidePropsRadius>
+        <DeletePropsRadius>1</DeletePropsRadius>
+        <StreetOutside>0</StreetOutside>
+        <RemoveGrass>1</RemoveGrass>
+        <BlocksBuilding>1</BlocksBuilding>
       </Blocking>
       <Building>
         <BuildingCategoryName>11150</BuildingCategoryName>
@@ -227,6 +338,15 @@
         <AssociatedRegions>Moderate</AssociatedRegions>
         <BuildingType>Factory</BuildingType>
         <TerrainType>Coast</TerrainType>
+        <Movable>1</Movable>
+        <PickingAsset>0</PickingAsset>
+        <ConstructionMenuText>0</ConstructionMenuText>
+        <HasBorderRectOutline>1</HasBorderRectOutline>
+        <SnapRadius>2</SnapRadius>
+        <InfluencedByNeighbors />
+        <InfluencedVariationDirection />
+        <BuildingBlockPool />
+        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
       <Cost>
         <Costs>
@@ -255,10 +375,26 @@
             <Amount>15</Amount>
           </Item>
         </Costs>
+        <ItemsPerCost>1</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
       </Cost>
       <Selection>
         <GUIType>CoalOilHarbour</GUIType>
         <AllowedDragType>ItemSocket;CargoProductStack;CargoItemStack</AllowedDragType>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <InteractionDistance>15</InteractionDistance>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
       </Selection>
       <Object>
         <Variations>
@@ -267,11 +403,31 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Constructable>
         <DestructionCategory>Production</DestructionCategory>
+        <ConstructionMode>Default</ConstructionMode>
+        <DestructionType>0</DestructionType>
       </Constructable>
-      <Mesh />
+      <Mesh>
+        <ObjectPosition>Static</ObjectPosition>
+        <MeshPlacement>Default</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
+      </Mesh>
       <SoundEmitter>
         <ActiveSounds>
           <Item>
@@ -318,27 +474,70 @@
             </Item>
           </BuildMoveEnd>
         </ConstructionSounds>
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
-      <Locked />
-      <Infolayer />
-      <FeedbackController />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
+      <Infolayer>
+        <DefaultInfoLayer>0</DefaultInfoLayer>
+      </Infolayer>
+      <FeedbackController>
+        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
+        <UpdateMeshSequence>1</UpdateMeshSequence>
+      </FeedbackController>
       <Warehouse>
         <WarehouseStorage>
           <StorageMax>1000</StorageMax>
         </WarehouseStorage>
+        <StorageType>Kontor</StorageType>
+        <OverflowFlotsam>
+          <OverflowSpawnPercentage>0.15</OverflowSpawnPercentage>
+          <MaxFlotsamCount>5</MaxFlotsamCount>
+        </OverflowFlotsam>
       </Warehouse>
       <LogisticNode>
         <TransporterCountMax>0</TransporterCountMax>
         <QueueConfiguration>
           <ProcessingQueueParallelCount>2</ProcessingQueueParallelCount>
+          <LoadingTimeModifier>1</LoadingTimeModifier>
+          <UnloadingTimeModifier>1</UnloadingTimeModifier>
         </QueueConfiguration>
         <PathLayers>Railway</PathLayers>
+        <TransporterAsset>1010104</TransporterAsset>
+        <TrainAsset>120025</TrainAsset>
+        <REMOVE_THIS_LATER_FeedbackUnitTier>Level1</REMOVE_THIS_LATER_FeedbackUnitTier>
+        <NeedsTransporterQueue>1</NeedsTransporterQueue>
       </LogisticNode>
       <MinimapToken>
         <TokenAsset>2001544</TokenAsset>
+        <StrategicMapAsset>0</StrategicMapAsset>
       </MinimapToken>
       <AmbientMoodProvider>
         <Murmur>Harbor</Murmur>
+        <AmbientMood>None</AmbientMood>
+        <AttractivityDependentMurmur />
+        <ProductivityDependentMurmur />
+        <SatisfactionDependentMurmur />
+        <DynamicEnvironmentType>None</DynamicEnvironmentType>
+        <HappinessDependentMurmur />
+        <IslandAttractivityDependentMurmur />
       </AmbientMoodProvider>
       <LoadingPier>
         <NumOfPiers>1</NumOfPiers>
@@ -378,9 +577,14 @@
         <RuinSmokeParticlesMin>1</RuinSmokeParticlesMin>
         <RuinSmokeParticlesMax>3</RuinSmokeParticlesMax>
         <RuinSmokeParticleRectBorderPercent>0.2</RuinSmokeParticleRectBorderPercent>
+        <HPBarOffset>6</HPBarOffset>
+        <SelfHealPausedTimeIfAttacked>15000</SelfHealPausedTimeIfAttacked>
+        <ArmorType>Default</ArmorType>
       </Attackable>
       <Upgradable>
         <CurrentTier>3</CurrentTier>
+        <NextGUID>0</NextGUID>
+        <UpgradeCost />
       </Upgradable>
       <Maintenance>
         <Maintenances>
@@ -390,6 +594,8 @@
             <InactiveAmount>200</InactiveAmount>
           </Item>
         </Maintenances>
+        <MaintenanceAmountFactor>1</MaintenanceAmountFactor>
+        <WorkforceAmountFactor>1</WorkforceAmountFactor>
       </Maintenance>
       <Pausable />
       <IslandUnique>
@@ -410,6 +616,7 @@
         <Name>harbor_14b (Oil Harbor II)</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_oil_habour_01.png</IconFilename>
         <InfoDescription>10951</InfoDescription>
+        <Comments />
       </Standard>
       <Text>
         <LocaText>
@@ -420,12 +627,18 @@
           </English>
         </LocaText>
         <LineID>13040</LineID>
+        <Localize>1</Localize>
       </Text>
       <Blocking>
         <GroundDecalAsset>100446</GroundDecalAsset>
         <GroundDecalInvisible>101008</GroundDecalInvisible>
         <HasBuildingBaseTiles>1</HasBuildingBaseTiles>
         <HarbourAreaExpand>1</HarbourAreaExpand>
+        <HidePropsRadius>1</HidePropsRadius>
+        <DeletePropsRadius>1</DeletePropsRadius>
+        <StreetOutside>0</StreetOutside>
+        <RemoveGrass>1</RemoveGrass>
+        <BlocksBuilding>1</BlocksBuilding>
       </Blocking>
       <Building>
         <BuildingCategoryName>11150</BuildingCategoryName>
@@ -433,6 +646,15 @@
         <AssociatedRegions>Moderate</AssociatedRegions>
         <BuildingType>Factory</BuildingType>
         <TerrainType>Coast</TerrainType>
+        <Movable>1</Movable>
+        <PickingAsset>0</PickingAsset>
+        <ConstructionMenuText>0</ConstructionMenuText>
+        <HasBorderRectOutline>1</HasBorderRectOutline>
+        <SnapRadius>2</SnapRadius>
+        <InfluencedByNeighbors />
+        <InfluencedVariationDirection />
+        <BuildingBlockPool />
+        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
       <Cost>
         <Costs>
@@ -461,10 +683,26 @@
             <Amount>15</Amount>
           </Item>
         </Costs>
+        <ItemsPerCost>1</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
       </Cost>
       <Selection>
         <GUIType>CoalOilHarbour</GUIType>
         <AllowedDragType>ItemSocket;CargoProductStack;CargoItemStack</AllowedDragType>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <InteractionDistance>15</InteractionDistance>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
       </Selection>
       <Object>
         <Variations>
@@ -473,11 +711,31 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Constructable>
         <DestructionCategory>Production</DestructionCategory>
+        <ConstructionMode>Default</ConstructionMode>
+        <DestructionType>0</DestructionType>
       </Constructable>
-      <Mesh />
+      <Mesh>
+        <ObjectPosition>Static</ObjectPosition>
+        <MeshPlacement>Default</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
+      </Mesh>
       <SoundEmitter>
         <ActiveSounds>
           <Item>
@@ -524,27 +782,70 @@
             </Item>
           </BuildMoveEnd>
         </ConstructionSounds>
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
-      <Locked />
-      <Infolayer />
-      <FeedbackController />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
+      <Infolayer>
+        <DefaultInfoLayer>0</DefaultInfoLayer>
+      </Infolayer>
+      <FeedbackController>
+        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
+        <UpdateMeshSequence>1</UpdateMeshSequence>
+      </FeedbackController>
       <Warehouse>
         <WarehouseStorage>
           <StorageMax>750</StorageMax>
         </WarehouseStorage>
+        <StorageType>Kontor</StorageType>
+        <OverflowFlotsam>
+          <OverflowSpawnPercentage>0.15</OverflowSpawnPercentage>
+          <MaxFlotsamCount>5</MaxFlotsamCount>
+        </OverflowFlotsam>
       </Warehouse>
       <LogisticNode>
         <TransporterCountMax>0</TransporterCountMax>
         <QueueConfiguration>
           <ProcessingQueueParallelCount>2</ProcessingQueueParallelCount>
+          <LoadingTimeModifier>1</LoadingTimeModifier>
+          <UnloadingTimeModifier>1</UnloadingTimeModifier>
         </QueueConfiguration>
         <PathLayers>Railway</PathLayers>
+        <TransporterAsset>1010104</TransporterAsset>
+        <TrainAsset>120025</TrainAsset>
+        <REMOVE_THIS_LATER_FeedbackUnitTier>Level1</REMOVE_THIS_LATER_FeedbackUnitTier>
+        <NeedsTransporterQueue>1</NeedsTransporterQueue>
       </LogisticNode>
       <MinimapToken>
         <TokenAsset>2001544</TokenAsset>
+        <StrategicMapAsset>0</StrategicMapAsset>
       </MinimapToken>
       <AmbientMoodProvider>
         <Murmur>Harbor</Murmur>
+        <AmbientMood>None</AmbientMood>
+        <AttractivityDependentMurmur />
+        <ProductivityDependentMurmur />
+        <SatisfactionDependentMurmur />
+        <DynamicEnvironmentType>None</DynamicEnvironmentType>
+        <HappinessDependentMurmur />
+        <IslandAttractivityDependentMurmur />
       </AmbientMoodProvider>
       <LoadingPier>
         <NumOfPiers>1</NumOfPiers>
@@ -584,6 +885,9 @@
         <RuinSmokeParticlesMin>1</RuinSmokeParticlesMin>
         <RuinSmokeParticlesMax>3</RuinSmokeParticlesMax>
         <RuinSmokeParticleRectBorderPercent>0.2</RuinSmokeParticleRectBorderPercent>
+        <HPBarOffset>6</HPBarOffset>
+        <SelfHealPausedTimeIfAttacked>15000</SelfHealPausedTimeIfAttacked>
+        <ArmorType>Default</ArmorType>
       </Attackable>
       <Upgradable>
         <NextGUID>101404</NextGUID>
@@ -623,6 +927,8 @@
             <InactiveAmount>150</InactiveAmount>
           </Item>
         </Maintenances>
+        <MaintenanceAmountFactor>1</MaintenanceAmountFactor>
+        <WorkforceAmountFactor>1</WorkforceAmountFactor>
       </Maintenance>
       <Pausable />
       <IslandUnique>
@@ -643,6 +949,7 @@
         <Name>harbor_14a (Oil Harbor I)</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_oil_habour_01.png</IconFilename>
         <InfoDescription>10951</InfoDescription>
+        <Comments />
       </Standard>
       <Text>
         <LocaText>
@@ -653,12 +960,18 @@
           </English>
         </LocaText>
         <LineID>7028</LineID>
+        <Localize>1</Localize>
       </Text>
       <Blocking>
         <GroundDecalAsset>100446</GroundDecalAsset>
         <GroundDecalInvisible>101008</GroundDecalInvisible>
         <HasBuildingBaseTiles>1</HasBuildingBaseTiles>
         <HarbourAreaExpand>1</HarbourAreaExpand>
+        <HidePropsRadius>1</HidePropsRadius>
+        <DeletePropsRadius>1</DeletePropsRadius>
+        <StreetOutside>0</StreetOutside>
+        <RemoveGrass>1</RemoveGrass>
+        <BlocksBuilding>1</BlocksBuilding>
       </Blocking>
       <Building>
         <BuildingCategoryName>11150</BuildingCategoryName>
@@ -666,6 +979,15 @@
         <AssociatedRegions>Moderate</AssociatedRegions>
         <BuildingType>Factory</BuildingType>
         <TerrainType>Coast</TerrainType>
+        <Movable>1</Movable>
+        <PickingAsset>0</PickingAsset>
+        <ConstructionMenuText>0</ConstructionMenuText>
+        <HasBorderRectOutline>1</HasBorderRectOutline>
+        <SnapRadius>2</SnapRadius>
+        <InfluencedByNeighbors />
+        <InfluencedVariationDirection />
+        <BuildingBlockPool />
+        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
       <Cost>
         <Costs>
@@ -694,10 +1016,26 @@
             <Amount>15</Amount>
           </Item>
         </Costs>
+        <ItemsPerCost>1</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
       </Cost>
       <Selection>
         <GUIType>CoalOilHarbour</GUIType>
         <AllowedDragType>ItemSocket;CargoProductStack;CargoItemStack</AllowedDragType>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <InteractionDistance>15</InteractionDistance>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
       </Selection>
       <Object>
         <Variations>
@@ -706,11 +1044,31 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Constructable>
         <DestructionCategory>Production</DestructionCategory>
+        <ConstructionMode>Default</ConstructionMode>
+        <DestructionType>0</DestructionType>
       </Constructable>
-      <Mesh />
+      <Mesh>
+        <ObjectPosition>Static</ObjectPosition>
+        <MeshPlacement>Default</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
+      </Mesh>
       <SoundEmitter>
         <ActiveSounds>
           <Item>
@@ -757,27 +1115,70 @@
             </Item>
           </BuildMoveEnd>
         </ConstructionSounds>
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
-      <Locked />
-      <Infolayer />
-      <FeedbackController />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
+      <Infolayer>
+        <DefaultInfoLayer>0</DefaultInfoLayer>
+      </Infolayer>
+      <FeedbackController>
+        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
+        <UpdateMeshSequence>1</UpdateMeshSequence>
+      </FeedbackController>
       <Warehouse>
         <WarehouseStorage>
           <StorageMax>500</StorageMax>
         </WarehouseStorage>
+        <StorageType>Kontor</StorageType>
+        <OverflowFlotsam>
+          <OverflowSpawnPercentage>0.15</OverflowSpawnPercentage>
+          <MaxFlotsamCount>5</MaxFlotsamCount>
+        </OverflowFlotsam>
       </Warehouse>
       <LogisticNode>
         <TransporterCountMax>0</TransporterCountMax>
         <QueueConfiguration>
           <ProcessingQueueParallelCount>2</ProcessingQueueParallelCount>
+          <LoadingTimeModifier>1</LoadingTimeModifier>
+          <UnloadingTimeModifier>1</UnloadingTimeModifier>
         </QueueConfiguration>
         <PathLayers>Railway</PathLayers>
+        <TransporterAsset>1010104</TransporterAsset>
+        <TrainAsset>120025</TrainAsset>
+        <REMOVE_THIS_LATER_FeedbackUnitTier>Level1</REMOVE_THIS_LATER_FeedbackUnitTier>
+        <NeedsTransporterQueue>1</NeedsTransporterQueue>
       </LogisticNode>
       <MinimapToken>
         <TokenAsset>2001544</TokenAsset>
+        <StrategicMapAsset>0</StrategicMapAsset>
       </MinimapToken>
       <AmbientMoodProvider>
         <Murmur>Harbor</Murmur>
+        <AmbientMood>None</AmbientMood>
+        <AttractivityDependentMurmur />
+        <ProductivityDependentMurmur />
+        <SatisfactionDependentMurmur />
+        <DynamicEnvironmentType>None</DynamicEnvironmentType>
+        <HappinessDependentMurmur />
+        <IslandAttractivityDependentMurmur />
       </AmbientMoodProvider>
       <LoadingPier>
         <NumOfPiers>1</NumOfPiers>
@@ -818,6 +1219,8 @@
         <RuinSmokeParticlesMin>1</RuinSmokeParticlesMin>
         <RuinSmokeParticlesMax>3</RuinSmokeParticlesMax>
         <RuinSmokeParticleRectBorderPercent>0.2</RuinSmokeParticleRectBorderPercent>
+        <SelfHealPausedTimeIfAttacked>15000</SelfHealPausedTimeIfAttacked>
+        <ArmorType>Default</ArmorType>
       </Attackable>
       <Upgradable>
         <NextGUID>101403</NextGUID>
@@ -857,6 +1260,8 @@
             <InactiveAmount>100</InactiveAmount>
           </Item>
         </Maintenances>
+        <MaintenanceAmountFactor>1</MaintenanceAmountFactor>
+        <WorkforceAmountFactor>1</WorkforceAmountFactor>
       </Maintenance>
       <Pausable />
       <IslandUnique>
@@ -877,6 +1282,7 @@
         <Name>harbor_colony01_14a (Oil Harbor I)</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_oil_habour_01.png</IconFilename>
         <InfoDescription>10951</InfoDescription>
+        <Comments />
       </Standard>
       <Text>
         <LineID>11039</LineID>
@@ -887,12 +1293,18 @@
             <ExportCount>2</ExportCount>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
       <Blocking>
         <GroundDecalAsset>102460</GroundDecalAsset>
         <GroundDecalInvisible>102459</GroundDecalInvisible>
         <HasBuildingBaseTiles>1</HasBuildingBaseTiles>
         <HarbourAreaExpand>1</HarbourAreaExpand>
+        <HidePropsRadius>1</HidePropsRadius>
+        <DeletePropsRadius>1</DeletePropsRadius>
+        <StreetOutside>0</StreetOutside>
+        <RemoveGrass>1</RemoveGrass>
+        <BlocksBuilding>1</BlocksBuilding>
       </Blocking>
       <Building>
         <AssociatedRegions>Colony01</AssociatedRegions>
@@ -900,6 +1312,15 @@
         <Destructable>1</Destructable>
         <BuildingType>Factory</BuildingType>
         <TerrainType>Coast</TerrainType>
+        <Movable>1</Movable>
+        <PickingAsset>0</PickingAsset>
+        <ConstructionMenuText>0</ConstructionMenuText>
+        <HasBorderRectOutline>1</HasBorderRectOutline>
+        <SnapRadius>2</SnapRadius>
+        <InfluencedByNeighbors />
+        <InfluencedVariationDirection />
+        <BuildingBlockPool />
+        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
       <Cost>
         <Costs>
@@ -928,10 +1349,26 @@
             <Ingredient>1010202</Ingredient>
           </Item>
         </Costs>
+        <ItemsPerCost>1</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
       </Cost>
       <Selection>
         <GUIType>CoalOilHarbour</GUIType>
         <AllowedDragType>ItemSocket;CargoProductStack;CargoItemStack</AllowedDragType>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <InteractionDistance>15</InteractionDistance>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
       </Selection>
       <Object>
         <Variations>
@@ -940,11 +1377,31 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Constructable>
         <DestructionCategory>Production</DestructionCategory>
+        <ConstructionMode>Default</ConstructionMode>
+        <DestructionType>0</DestructionType>
       </Constructable>
-      <Mesh />
+      <Mesh>
+        <ObjectPosition>Static</ObjectPosition>
+        <MeshPlacement>Default</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
+      </Mesh>
       <SoundEmitter>
         <ActiveSounds>
           <Item>
@@ -991,27 +1448,70 @@
             </Item>
           </BuildMoveEnd>
         </ConstructionSounds>
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
-      <Locked />
-      <Infolayer />
-      <FeedbackController />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
+      <Infolayer>
+        <DefaultInfoLayer>0</DefaultInfoLayer>
+      </Infolayer>
+      <FeedbackController>
+        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
+        <UpdateMeshSequence>1</UpdateMeshSequence>
+      </FeedbackController>
       <Warehouse>
         <WarehouseStorage>
           <StorageMax>500</StorageMax>
         </WarehouseStorage>
+        <StorageType>Kontor</StorageType>
+        <OverflowFlotsam>
+          <OverflowSpawnPercentage>0.15</OverflowSpawnPercentage>
+          <MaxFlotsamCount>5</MaxFlotsamCount>
+        </OverflowFlotsam>
       </Warehouse>
       <LogisticNode>
         <TransporterCountMax>0</TransporterCountMax>
         <QueueConfiguration>
           <ProcessingQueueParallelCount>2</ProcessingQueueParallelCount>
+          <LoadingTimeModifier>1</LoadingTimeModifier>
+          <UnloadingTimeModifier>1</UnloadingTimeModifier>
         </QueueConfiguration>
         <PathLayers>Railway</PathLayers>
+        <TransporterAsset>1010104</TransporterAsset>
+        <TrainAsset>120025</TrainAsset>
+        <REMOVE_THIS_LATER_FeedbackUnitTier>Level1</REMOVE_THIS_LATER_FeedbackUnitTier>
+        <NeedsTransporterQueue>1</NeedsTransporterQueue>
       </LogisticNode>
       <MinimapToken>
         <TokenAsset>2001544</TokenAsset>
+        <StrategicMapAsset>0</StrategicMapAsset>
       </MinimapToken>
       <AmbientMoodProvider>
         <Murmur>Harbor</Murmur>
+        <AmbientMood>None</AmbientMood>
+        <AttractivityDependentMurmur />
+        <ProductivityDependentMurmur />
+        <SatisfactionDependentMurmur />
+        <DynamicEnvironmentType>None</DynamicEnvironmentType>
+        <HappinessDependentMurmur />
+        <IslandAttractivityDependentMurmur />
       </AmbientMoodProvider>
       <LoadingPier>
         <NumOfPiers>1</NumOfPiers>
@@ -1052,6 +1552,8 @@
         <RuinSmokeParticlesMin>1</RuinSmokeParticlesMin>
         <RuinSmokeParticlesMax>3</RuinSmokeParticlesMax>
         <RuinSmokeParticleRectBorderPercent>0.2</RuinSmokeParticleRectBorderPercent>
+        <SelfHealPausedTimeIfAttacked>15000</SelfHealPausedTimeIfAttacked>
+        <ArmorType>Default</ArmorType>
       </Attackable>
       <Upgradable>
         <NextGUID>101405</NextGUID>
@@ -1091,6 +1593,8 @@
             <InactiveAmount>100</InactiveAmount>
           </Item>
         </Maintenances>
+        <MaintenanceAmountFactor>1</MaintenanceAmountFactor>
+        <WorkforceAmountFactor>1</WorkforceAmountFactor>
       </Maintenance>
       <Pausable />
       <IslandUnique>
@@ -1111,6 +1615,7 @@
         <Name>harbor_colony01_14b (Oil Harbor II)</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_oil_habour_01.png</IconFilename>
         <InfoDescription>10951</InfoDescription>
+        <Comments />
       </Standard>
       <Text>
         <LineID>13049</LineID>
@@ -1121,12 +1626,18 @@
             <ExportCount>2</ExportCount>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
       <Blocking>
         <GroundDecalAsset>102460</GroundDecalAsset>
         <GroundDecalInvisible>102459</GroundDecalInvisible>
         <HasBuildingBaseTiles>1</HasBuildingBaseTiles>
         <HarbourAreaExpand>1</HarbourAreaExpand>
+        <HidePropsRadius>1</HidePropsRadius>
+        <DeletePropsRadius>1</DeletePropsRadius>
+        <StreetOutside>0</StreetOutside>
+        <RemoveGrass>1</RemoveGrass>
+        <BlocksBuilding>1</BlocksBuilding>
       </Blocking>
       <Building>
         <AssociatedRegions>Colony01</AssociatedRegions>
@@ -1134,6 +1645,15 @@
         <Destructable>1</Destructable>
         <BuildingType>Factory</BuildingType>
         <TerrainType>Coast</TerrainType>
+        <Movable>1</Movable>
+        <PickingAsset>0</PickingAsset>
+        <ConstructionMenuText>0</ConstructionMenuText>
+        <HasBorderRectOutline>1</HasBorderRectOutline>
+        <SnapRadius>2</SnapRadius>
+        <InfluencedByNeighbors />
+        <InfluencedVariationDirection />
+        <BuildingBlockPool />
+        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
       <Cost>
         <Costs>
@@ -1162,10 +1682,26 @@
             <Ingredient>1010202</Ingredient>
           </Item>
         </Costs>
+        <ItemsPerCost>1</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
       </Cost>
       <Selection>
         <GUIType>CoalOilHarbour</GUIType>
         <AllowedDragType>ItemSocket;CargoProductStack;CargoItemStack</AllowedDragType>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <InteractionDistance>15</InteractionDistance>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
       </Selection>
       <Object>
         <Variations>
@@ -1174,11 +1710,31 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Constructable>
         <DestructionCategory>Production</DestructionCategory>
+        <ConstructionMode>Default</ConstructionMode>
+        <DestructionType>0</DestructionType>
       </Constructable>
-      <Mesh />
+      <Mesh>
+        <ObjectPosition>Static</ObjectPosition>
+        <MeshPlacement>Default</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
+      </Mesh>
       <SoundEmitter>
         <ActiveSounds>
           <Item>
@@ -1225,27 +1781,70 @@
             </Item>
           </BuildMoveEnd>
         </ConstructionSounds>
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
-      <Locked />
-      <Infolayer />
-      <FeedbackController />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
+      <Infolayer>
+        <DefaultInfoLayer>0</DefaultInfoLayer>
+      </Infolayer>
+      <FeedbackController>
+        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
+        <UpdateMeshSequence>1</UpdateMeshSequence>
+      </FeedbackController>
       <Warehouse>
         <WarehouseStorage>
           <StorageMax>750</StorageMax>
         </WarehouseStorage>
+        <StorageType>Kontor</StorageType>
+        <OverflowFlotsam>
+          <OverflowSpawnPercentage>0.15</OverflowSpawnPercentage>
+          <MaxFlotsamCount>5</MaxFlotsamCount>
+        </OverflowFlotsam>
       </Warehouse>
       <LogisticNode>
         <TransporterCountMax>0</TransporterCountMax>
         <QueueConfiguration>
           <ProcessingQueueParallelCount>2</ProcessingQueueParallelCount>
+          <LoadingTimeModifier>1</LoadingTimeModifier>
+          <UnloadingTimeModifier>1</UnloadingTimeModifier>
         </QueueConfiguration>
         <PathLayers>Railway</PathLayers>
+        <TransporterAsset>1010104</TransporterAsset>
+        <TrainAsset>120025</TrainAsset>
+        <REMOVE_THIS_LATER_FeedbackUnitTier>Level1</REMOVE_THIS_LATER_FeedbackUnitTier>
+        <NeedsTransporterQueue>1</NeedsTransporterQueue>
       </LogisticNode>
       <MinimapToken>
         <TokenAsset>2001544</TokenAsset>
+        <StrategicMapAsset>0</StrategicMapAsset>
       </MinimapToken>
       <AmbientMoodProvider>
         <Murmur>Harbor</Murmur>
+        <AmbientMood>None</AmbientMood>
+        <AttractivityDependentMurmur />
+        <ProductivityDependentMurmur />
+        <SatisfactionDependentMurmur />
+        <DynamicEnvironmentType>None</DynamicEnvironmentType>
+        <HappinessDependentMurmur />
+        <IslandAttractivityDependentMurmur />
       </AmbientMoodProvider>
       <LoadingPier>
         <NumOfPiers>1</NumOfPiers>
@@ -1285,6 +1884,9 @@
         <RuinSmokeParticlesMin>1</RuinSmokeParticlesMin>
         <RuinSmokeParticlesMax>3</RuinSmokeParticlesMax>
         <RuinSmokeParticleRectBorderPercent>0.2</RuinSmokeParticleRectBorderPercent>
+        <HPBarOffset>6</HPBarOffset>
+        <SelfHealPausedTimeIfAttacked>15000</SelfHealPausedTimeIfAttacked>
+        <ArmorType>Default</ArmorType>
       </Attackable>
       <Upgradable>
         <NextGUID>101406</NextGUID>
@@ -1324,6 +1926,8 @@
             <InactiveAmount>150</InactiveAmount>
           </Item>
         </Maintenances>
+        <MaintenanceAmountFactor>1</MaintenanceAmountFactor>
+        <WorkforceAmountFactor>1</WorkforceAmountFactor>
       </Maintenance>
       <Pausable />
       <IslandUnique>
@@ -1344,6 +1948,7 @@
         <Name>harbor_colony01_14c (Oil Harbor III)</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_oil_habour_01.png</IconFilename>
         <InfoDescription>10951</InfoDescription>
+        <Comments />
       </Standard>
       <Text>
         <LineID>13050</LineID>
@@ -1354,12 +1959,18 @@
             <ExportCount>2</ExportCount>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
       <Blocking>
         <GroundDecalAsset>102460</GroundDecalAsset>
         <GroundDecalInvisible>102459</GroundDecalInvisible>
         <HasBuildingBaseTiles>1</HasBuildingBaseTiles>
         <HarbourAreaExpand>1</HarbourAreaExpand>
+        <HidePropsRadius>1</HidePropsRadius>
+        <DeletePropsRadius>1</DeletePropsRadius>
+        <StreetOutside>0</StreetOutside>
+        <RemoveGrass>1</RemoveGrass>
+        <BlocksBuilding>1</BlocksBuilding>
       </Blocking>
       <Building>
         <AssociatedRegions>Colony01</AssociatedRegions>
@@ -1367,6 +1978,15 @@
         <Destructable>1</Destructable>
         <BuildingType>Factory</BuildingType>
         <TerrainType>Coast</TerrainType>
+        <Movable>1</Movable>
+        <PickingAsset>0</PickingAsset>
+        <ConstructionMenuText>0</ConstructionMenuText>
+        <HasBorderRectOutline>1</HasBorderRectOutline>
+        <SnapRadius>2</SnapRadius>
+        <InfluencedByNeighbors />
+        <InfluencedVariationDirection />
+        <BuildingBlockPool />
+        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
       <Cost>
         <Costs>
@@ -1395,10 +2015,26 @@
             <Ingredient>1010202</Ingredient>
           </Item>
         </Costs>
+        <ItemsPerCost>1</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
       </Cost>
       <Selection>
         <GUIType>CoalOilHarbour</GUIType>
         <AllowedDragType>ItemSocket;CargoProductStack;CargoItemStack</AllowedDragType>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <InteractionDistance>15</InteractionDistance>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
       </Selection>
       <Object>
         <Variations>
@@ -1407,11 +2043,31 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Constructable>
         <DestructionCategory>Production</DestructionCategory>
+        <ConstructionMode>Default</ConstructionMode>
+        <DestructionType>0</DestructionType>
       </Constructable>
-      <Mesh />
+      <Mesh>
+        <ObjectPosition>Static</ObjectPosition>
+        <MeshPlacement>Default</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
+      </Mesh>
       <SoundEmitter>
         <ActiveSounds>
           <Item>
@@ -1458,27 +2114,70 @@
             </Item>
           </BuildMoveEnd>
         </ConstructionSounds>
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
-      <Locked />
-      <Infolayer />
-      <FeedbackController />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
+      <Infolayer>
+        <DefaultInfoLayer>0</DefaultInfoLayer>
+      </Infolayer>
+      <FeedbackController>
+        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
+        <UpdateMeshSequence>1</UpdateMeshSequence>
+      </FeedbackController>
       <Warehouse>
         <WarehouseStorage>
           <StorageMax>1000</StorageMax>
         </WarehouseStorage>
+        <StorageType>Kontor</StorageType>
+        <OverflowFlotsam>
+          <OverflowSpawnPercentage>0.15</OverflowSpawnPercentage>
+          <MaxFlotsamCount>5</MaxFlotsamCount>
+        </OverflowFlotsam>
       </Warehouse>
       <LogisticNode>
         <TransporterCountMax>0</TransporterCountMax>
         <QueueConfiguration>
           <ProcessingQueueParallelCount>2</ProcessingQueueParallelCount>
+          <LoadingTimeModifier>1</LoadingTimeModifier>
+          <UnloadingTimeModifier>1</UnloadingTimeModifier>
         </QueueConfiguration>
         <PathLayers>Railway</PathLayers>
+        <TransporterAsset>1010104</TransporterAsset>
+        <TrainAsset>120025</TrainAsset>
+        <REMOVE_THIS_LATER_FeedbackUnitTier>Level1</REMOVE_THIS_LATER_FeedbackUnitTier>
+        <NeedsTransporterQueue>1</NeedsTransporterQueue>
       </LogisticNode>
       <MinimapToken>
         <TokenAsset>2001544</TokenAsset>
+        <StrategicMapAsset>0</StrategicMapAsset>
       </MinimapToken>
       <AmbientMoodProvider>
         <Murmur>Harbor</Murmur>
+        <AmbientMood>None</AmbientMood>
+        <AttractivityDependentMurmur />
+        <ProductivityDependentMurmur />
+        <SatisfactionDependentMurmur />
+        <DynamicEnvironmentType>None</DynamicEnvironmentType>
+        <HappinessDependentMurmur />
+        <IslandAttractivityDependentMurmur />
       </AmbientMoodProvider>
       <LoadingPier>
         <NumOfPiers>1</NumOfPiers>
@@ -1518,9 +2217,14 @@
         <RuinSmokeParticlesMin>1</RuinSmokeParticlesMin>
         <RuinSmokeParticlesMax>3</RuinSmokeParticlesMax>
         <RuinSmokeParticleRectBorderPercent>0.2</RuinSmokeParticleRectBorderPercent>
+        <HPBarOffset>6</HPBarOffset>
+        <SelfHealPausedTimeIfAttacked>15000</SelfHealPausedTimeIfAttacked>
+        <ArmorType>Default</ArmorType>
       </Attackable>
       <Upgradable>
         <CurrentTier>3</CurrentTier>
+        <NextGUID>0</NextGUID>
+        <UpgradeCost />
       </Upgradable>
       <Maintenance>
         <Maintenances>
@@ -1530,6 +2234,8 @@
             <InactiveAmount>200</InactiveAmount>
           </Item>
         </Maintenances>
+        <MaintenanceAmountFactor>1</MaintenanceAmountFactor>
+        <WorkforceAmountFactor>1</WorkforceAmountFactor>
       </Maintenance>
       <Pausable />
       <IslandUnique>

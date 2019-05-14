@@ -19,7 +19,7 @@
       "type": "Arc",
       "shotHeight": 5.0,
       "speed": 4.0,
-      "ShotAngle": 0,
+      "ShotAngle": 45,
       "targetWhiteList": [],
       "effectivities": [
         {
@@ -45,7 +45,11 @@
       ],
       "statusEffects": []
     },
-    "projectileIncident": null
+    "projectileIncident": {
+      "causedIncident": "[NONE]",
+      "causedIncidentBuff": 0,
+      "causedIncidentDuration": 10000
+    }
   },
   {
     "template": "ExplodingProjectile",
@@ -67,7 +71,7 @@
       "type": "Arc",
       "shotHeight": 5.0,
       "speed": 4.0,
-      "ShotAngle": 0,
+      "ShotAngle": 45,
       "targetWhiteList": [],
       "effectivities": [
         {
@@ -93,7 +97,11 @@
       ],
       "statusEffects": []
     },
-    "projectileIncident": null
+    "projectileIncident": {
+      "causedIncident": "[NONE]",
+      "causedIncidentBuff": 0,
+      "causedIncidentDuration": 10000
+    }
   },
   {
     "template": "ExplodingProjectile",
@@ -115,7 +123,7 @@
       "type": "Arc",
       "shotHeight": 5.0,
       "speed": 4.0,
-      "ShotAngle": 0,
+      "ShotAngle": 45,
       "targetWhiteList": [],
       "effectivities": [
         {
@@ -141,7 +149,11 @@
       ],
       "statusEffects": []
     },
-    "projectileIncident": null
+    "projectileIncident": {
+      "causedIncident": "[NONE]",
+      "causedIncidentBuff": 0,
+      "causedIncidentDuration": 10000
+    }
   },
   {
     "template": "ExplodingProjectile",
@@ -191,7 +203,11 @@
       ],
       "statusEffects": []
     },
-    "projectileIncident": null
+    "projectileIncident": {
+      "causedIncident": "[NONE]",
+      "causedIncidentBuff": 0,
+      "causedIncidentDuration": 10000
+    }
   },
   {
     "template": "ExplodingProjectile",
@@ -213,7 +229,7 @@
       "type": "Arc",
       "shotHeight": 1.0,
       "speed": 15.0,
-      "ShotAngle": 0,
+      "ShotAngle": 45,
       "targetWhiteList": [
         "Neutral"
       ],
@@ -296,9 +312,9 @@
       "statusEffects": []
     },
     "projectileIncident": {
-      "causedIncident": "",
+      "causedIncident": "[NONE]",
       "causedIncidentBuff": 192003,
-      "causedIncidentDuration": 0
+      "causedIncidentDuration": 10000
     }
   },
   {
@@ -321,7 +337,7 @@
       "type": "Arc",
       "shotHeight": 1.0,
       "speed": 15.0,
-      "ShotAngle": 0,
+      "ShotAngle": 45,
       "targetWhiteList": [],
       "effectivities": [
         {
@@ -347,7 +363,11 @@
       ],
       "statusEffects": []
     },
-    "projectileIncident": null
+    "projectileIncident": {
+      "causedIncident": "[NONE]",
+      "causedIncidentBuff": 0,
+      "causedIncidentDuration": 10000
+    }
   },
   {
     "template": "ExplodingProjectile",
@@ -369,7 +389,7 @@
       "type": "Arc",
       "shotHeight": 1.0,
       "speed": 22.0,
-      "ShotAngle": 0,
+      "ShotAngle": 45,
       "targetWhiteList": [],
       "effectivities": [
         {
@@ -395,7 +415,11 @@
       ],
       "statusEffects": []
     },
-    "projectileIncident": null
+    "projectileIncident": {
+      "causedIncident": "[NONE]",
+      "causedIncidentBuff": 0,
+      "causedIncidentDuration": 10000
+    }
   },
   {
     "template": "ExplodingProjectile",
@@ -417,7 +441,7 @@
       "type": "Arc",
       "shotHeight": 1.0,
       "speed": 30.0,
-      "ShotAngle": 0,
+      "ShotAngle": 45,
       "targetWhiteList": [],
       "effectivities": [
         {
@@ -443,7 +467,11 @@
       ],
       "statusEffects": []
     },
-    "projectileIncident": null
+    "projectileIncident": {
+      "causedIncident": "[NONE]",
+      "causedIncidentBuff": 0,
+      "causedIncidentDuration": 10000
+    }
   },
   {
     "template": "ExplodingProjectile",
@@ -465,7 +493,7 @@
       "type": "Arc",
       "shotHeight": 1.0,
       "speed": 15.0,
-      "ShotAngle": 0,
+      "ShotAngle": 45,
       "targetWhiteList": [
         "Neutral"
       ],
@@ -516,15 +544,19 @@
       "FriendlyFireFactor": 0
     },
     "projectile": {
-      "type": "",
+      "type": "HomingStraight",
       "shotHeight": 0.5,
       "speed": 1.5,
-      "ShotAngle": 0,
+      "ShotAngle": 45,
       "targetWhiteList": [],
       "effectivities": [],
       "statusEffects": []
     },
-    "projectileIncident": null
+    "projectileIncident": {
+      "causedIncident": "[NONE]",
+      "causedIncidentBuff": 0,
+      "causedIncidentDuration": 10000
+    }
   },
   {
     "template": "ExplodingProjectile",
@@ -543,15 +575,19 @@
       "FriendlyFireFactor": 0
     },
     "projectile": {
-      "type": "",
+      "type": "HomingStraight",
       "shotHeight": 0.5,
       "speed": 1.2,
-      "ShotAngle": 0,
+      "ShotAngle": 45,
       "targetWhiteList": [],
       "effectivities": [],
       "statusEffects": []
     },
-    "projectileIncident": null
+    "projectileIncident": {
+      "causedIncident": "[NONE]",
+      "causedIncidentBuff": 0,
+      "causedIncidentDuration": 10000
+    }
   },
   {
     "template": "ExplodingProjectile",
@@ -570,15 +606,19 @@
       "FriendlyFireFactor": 0
     },
     "projectile": {
-      "type": "",
+      "type": "HomingStraight",
       "shotHeight": 0.5,
       "speed": 1.0,
-      "ShotAngle": 0,
+      "ShotAngle": 45,
       "targetWhiteList": [],
       "effectivities": [],
       "statusEffects": []
     },
-    "projectileIncident": null
+    "projectileIncident": {
+      "causedIncident": "[NONE]",
+      "causedIncidentBuff": 0,
+      "causedIncidentDuration": 10000
+    }
   },
   {
     "template": "ExplodingProjectile",
@@ -597,15 +637,19 @@
       "FriendlyFireFactor": 0
     },
     "projectile": {
-      "type": "",
+      "type": "HomingStraight",
       "shotHeight": 0.5,
       "speed": 1.5,
-      "ShotAngle": 0,
+      "ShotAngle": 45,
       "targetWhiteList": [],
       "effectivities": [],
       "statusEffects": []
     },
-    "projectileIncident": null
+    "projectileIncident": {
+      "causedIncident": "[NONE]",
+      "causedIncidentBuff": 0,
+      "causedIncidentDuration": 10000
+    }
   },
   {
     "template": "ExplodingProjectile",
@@ -624,15 +668,19 @@
       "FriendlyFireFactor": 0
     },
     "projectile": {
-      "type": "",
+      "type": "HomingStraight",
       "shotHeight": 0.5,
       "speed": 2.5,
-      "ShotAngle": 0,
+      "ShotAngle": 45,
       "targetWhiteList": [],
       "effectivities": [],
       "statusEffects": []
     },
-    "projectileIncident": null
+    "projectileIncident": {
+      "causedIncident": "[NONE]",
+      "causedIncidentBuff": 0,
+      "causedIncidentDuration": 10000
+    }
   },
   {
     "template": "ExplodingProjectile",
@@ -651,15 +699,19 @@
       "FriendlyFireFactor": 0
     },
     "projectile": {
-      "type": "",
+      "type": "HomingStraight",
       "shotHeight": 0.5,
       "speed": 3.5,
-      "ShotAngle": 0,
+      "ShotAngle": 45,
       "targetWhiteList": [],
       "effectivities": [],
       "statusEffects": []
     },
-    "projectileIncident": null
+    "projectileIncident": {
+      "causedIncident": "[NONE]",
+      "causedIncidentBuff": 0,
+      "causedIncidentDuration": 10000
+    }
   },
   {
     "template": "ExplodingProjectile",
@@ -686,7 +738,11 @@
       "effectivities": [],
       "statusEffects": []
     },
-    "projectileIncident": null
+    "projectileIncident": {
+      "causedIncident": "[NONE]",
+      "causedIncidentBuff": 0,
+      "causedIncidentDuration": 10000
+    }
   },
   {
     "template": "ExplodingProjectile",
@@ -713,7 +769,11 @@
       "effectivities": [],
       "statusEffects": []
     },
-    "projectileIncident": null
+    "projectileIncident": {
+      "causedIncident": "[NONE]",
+      "causedIncidentBuff": 0,
+      "causedIncidentDuration": 10000
+    }
   },
   {
     "template": "ExplodingProjectile",
@@ -740,7 +800,11 @@
       "effectivities": [],
       "statusEffects": []
     },
-    "projectileIncident": null
+    "projectileIncident": {
+      "causedIncident": "[NONE]",
+      "causedIncidentBuff": 0,
+      "causedIncidentDuration": 10000
+    }
   },
   {
     "template": "ExplodingProjectile",
@@ -767,7 +831,11 @@
       "effectivities": [],
       "statusEffects": []
     },
-    "projectileIncident": null
+    "projectileIncident": {
+      "causedIncident": "[NONE]",
+      "causedIncidentBuff": 0,
+      "causedIncidentDuration": 10000
+    }
   },
   {
     "template": "ExplodingProjectile",
@@ -786,15 +854,19 @@
       "FriendlyFireFactor": 0
     },
     "projectile": {
-      "type": "",
+      "type": "HomingStraight",
       "shotHeight": 0.0,
       "speed": 2.0,
-      "ShotAngle": 0,
+      "ShotAngle": 45,
       "targetWhiteList": [],
       "effectivities": [],
       "statusEffects": []
     },
-    "projectileIncident": null
+    "projectileIncident": {
+      "causedIncident": "[NONE]",
+      "causedIncidentBuff": 0,
+      "causedIncidentDuration": 10000
+    }
   },
   {
     "template": "ExplodingProjectile",
@@ -813,15 +885,19 @@
       "FriendlyFireFactor": 0
     },
     "projectile": {
-      "type": "",
+      "type": "HomingStraight",
       "shotHeight": 0.0,
       "speed": 2.0,
-      "ShotAngle": 0,
+      "ShotAngle": 45,
       "targetWhiteList": [],
       "effectivities": [],
       "statusEffects": []
     },
-    "projectileIncident": null
+    "projectileIncident": {
+      "causedIncident": "[NONE]",
+      "causedIncidentBuff": 0,
+      "causedIncidentDuration": 10000
+    }
   },
   {
     "template": "ExplodingProjectile",
@@ -840,15 +916,19 @@
       "FriendlyFireFactor": 0
     },
     "projectile": {
-      "type": "",
+      "type": "HomingStraight",
       "shotHeight": 0.5,
       "speed": 1.5,
-      "ShotAngle": 0,
+      "ShotAngle": 45,
       "targetWhiteList": [],
       "effectivities": [],
       "statusEffects": []
     },
-    "projectileIncident": null
+    "projectileIncident": {
+      "causedIncident": "[NONE]",
+      "causedIncidentBuff": 0,
+      "causedIncidentDuration": 10000
+    }
   },
   {
     "template": "ExplodingProjectile",
@@ -870,7 +950,7 @@
       "type": "Arc",
       "shotHeight": 5.0,
       "speed": 20.0,
-      "ShotAngle": 0,
+      "ShotAngle": 45,
       "targetWhiteList": [],
       "effectivities": [
         {
@@ -896,7 +976,11 @@
       ],
       "statusEffects": []
     },
-    "projectileIncident": null
+    "projectileIncident": {
+      "causedIncident": "[NONE]",
+      "causedIncidentBuff": 0,
+      "causedIncidentDuration": 10000
+    }
   },
   {
     "template": "ExplodingProjectile",
@@ -915,15 +999,19 @@
       "FriendlyFireFactor": 0
     },
     "projectile": {
-      "type": "",
+      "type": "HomingStraight",
       "shotHeight": 0.5,
       "speed": 1.5,
-      "ShotAngle": 0,
+      "ShotAngle": 45,
       "targetWhiteList": [],
       "effectivities": [],
       "statusEffects": []
     },
-    "projectileIncident": null
+    "projectileIncident": {
+      "causedIncident": "[NONE]",
+      "causedIncidentBuff": 0,
+      "causedIncidentDuration": 10000
+    }
   },
   {
     "template": "ExplodingProjectile",
@@ -942,15 +1030,19 @@
       "FriendlyFireFactor": 0
     },
     "projectile": {
-      "type": "",
+      "type": "HomingStraight",
       "shotHeight": 0.5,
       "speed": 2.5,
-      "ShotAngle": 0,
+      "ShotAngle": 45,
       "targetWhiteList": [],
       "effectivities": [],
       "statusEffects": []
     },
-    "projectileIncident": null
+    "projectileIncident": {
+      "causedIncident": "[NONE]",
+      "causedIncidentBuff": 0,
+      "causedIncidentDuration": 10000
+    }
   },
   {
     "template": "ExplodingProjectile",
@@ -969,15 +1061,19 @@
       "FriendlyFireFactor": 0
     },
     "projectile": {
-      "type": "",
+      "type": "HomingStraight",
       "shotHeight": 0.5,
       "speed": 3.5,
-      "ShotAngle": 0,
+      "ShotAngle": 45,
       "targetWhiteList": [],
       "effectivities": [],
       "statusEffects": []
     },
-    "projectileIncident": null
+    "projectileIncident": {
+      "causedIncident": "[NONE]",
+      "causedIncidentBuff": 0,
+      "causedIncidentDuration": 10000
+    }
   },
   {
     "template": "ExplodingProjectile",
@@ -999,7 +1095,7 @@
       "type": "Arc",
       "shotHeight": 5.0,
       "speed": 20.0,
-      "ShotAngle": 0,
+      "ShotAngle": 45,
       "targetWhiteList": [],
       "effectivities": [
         {
@@ -1025,7 +1121,11 @@
       ],
       "statusEffects": []
     },
-    "projectileIncident": null
+    "projectileIncident": {
+      "causedIncident": "[NONE]",
+      "causedIncidentBuff": 0,
+      "causedIncidentDuration": 10000
+    }
   },
   {
     "template": "ExplodingProjectile",
@@ -1047,7 +1147,7 @@
       "type": "Arc",
       "shotHeight": 5.0,
       "speed": 30.0,
-      "ShotAngle": 0,
+      "ShotAngle": 45,
       "targetWhiteList": [],
       "effectivities": [
         {
@@ -1073,7 +1173,11 @@
       ],
       "statusEffects": []
     },
-    "projectileIncident": null
+    "projectileIncident": {
+      "causedIncident": "[NONE]",
+      "causedIncidentBuff": 0,
+      "causedIncidentDuration": 10000
+    }
   },
   {
     "template": "ExplodingProjectile",
@@ -1095,7 +1199,7 @@
       "type": "Arc",
       "shotHeight": 5.0,
       "speed": 40.0,
-      "ShotAngle": 0,
+      "ShotAngle": 45,
       "targetWhiteList": [],
       "effectivities": [
         {
@@ -1121,6 +1225,10 @@
       ],
       "statusEffects": []
     },
-    "projectileIncident": null
+    "projectileIncident": {
+      "causedIncident": "[NONE]",
+      "causedIncidentBuff": 0,
+      "causedIncidentDuration": 10000
+    }
   }
 ]

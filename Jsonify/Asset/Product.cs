@@ -68,7 +68,7 @@ namespace Anno1800.Jsonify {
       [Element("BaseMorale")]
       public double baseMorale;
       [Element("FluffText")]
-      public List<string> fluff;
+      public int fluff;
       [Element("ItemDifficulties")]
       public List<string> itemDifficulties;
       [Element("ItemRegions")]

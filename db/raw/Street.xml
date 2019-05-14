@@ -9,6 +9,7 @@
         <IconFilename>data/ui/2kimages/main/3dicons/icon_quay.png</IconFilename>
         <ID>QuaySystemModerate</ID>
         <InfoDescription>12752</InfoDescription>
+        <Comments />
       </Standard>
       <Cost>
         <Costs>
@@ -17,62 +18,25 @@
             <Amount>5</Amount>
           </Item>
           <Item>
-            <VectorElement>
-              <InheritedIndex>1</InheritedIndex>
-              <InheritanceMapV2>
-                <Entry>
-                  <TemplateName>Street</TemplateName>
-                  <Index>1</Index>
-                </Entry>
-              </InheritanceMapV2>
-            </VectorElement>
+            <Ingredient>1010196</Ingredient>
           </Item>
           <Item>
-            <VectorElement>
-              <InheritedIndex>2</InheritedIndex>
-              <InheritanceMapV2>
-                <Entry>
-                  <TemplateName>Street</TemplateName>
-                  <Index>2</Index>
-                </Entry>
-              </InheritanceMapV2>
-            </VectorElement>
             <Amount>1</Amount>
+            <Ingredient>1010205</Ingredient>
           </Item>
           <Item>
-            <VectorElement>
-              <InheritedIndex>3</InheritedIndex>
-              <InheritanceMapV2>
-                <Entry>
-                  <TemplateName>Street</TemplateName>
-                  <Index>3</Index>
-                </Entry>
-              </InheritanceMapV2>
-            </VectorElement>
+            <Ingredient>1010218</Ingredient>
           </Item>
           <Item>
-            <VectorElement>
-              <InheritedIndex>4</InheritedIndex>
-              <InheritanceMapV2>
-                <Entry>
-                  <TemplateName>Street</TemplateName>
-                  <Index>4</Index>
-                </Entry>
-              </InheritanceMapV2>
-            </VectorElement>
+            <Ingredient>1010207</Ingredient>
           </Item>
           <Item>
-            <VectorElement>
-              <InheritedIndex>5</InheritedIndex>
-              <InheritanceMapV2>
-                <Entry>
-                  <TemplateName>Street</TemplateName>
-                  <Index>5</Index>
-                </Entry>
-              </InheritanceMapV2>
-            </VectorElement>
+            <Ingredient>1010202</Ingredient>
           </Item>
         </Costs>
+        <ItemsPerCost>1</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
       </Cost>
       <Street>
         <CfgFileName>data/graphics/buildings/special/quay_system_01/props/quay_system_01.cfg</CfgFileName>
@@ -88,11 +52,24 @@
         <IsHarbour>1</IsHarbour>
         <IsPlazza>1</IsPlazza>
         <HasFeedbackPathPlanningPenalty>0</HasFeedbackPathPlanningPenalty>
+        <AutoCreateStyle>1</AutoCreateStyle>
+        <NormalColor>-1</NormalColor>
+        <InvalidColor>-44976</InvalidColor>
+        <CrossingAsset>0</CrossingAsset>
+        <BridgeAsset>0</BridgeAsset>
+        <SpeedFactor>1</SpeedFactor>
+        <IsDeletable>1</IsDeletable>
       </Street>
       <Constructable>
         <ConstructionMode>Street</ConstructionMode>
+        <DestructionCategory>Other</DestructionCategory>
+        <DestructionType>0</DestructionType>
       </Constructable>
-      <Locked />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
       <SoundEmitter>
         <ConstructionSounds>
           <BuildSuccessful>
@@ -128,6 +105,24 @@
             </Item>
           </BuildAddWaypoint>
         </ConstructionStreetSounds>
+        <ActiveSounds />
+        <DestroySounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <Text>
         <LocaText>
@@ -138,10 +133,23 @@
           </English>
         </LocaText>
         <LineID>7001</LineID>
+        <Localize>1</Localize>
       </Text>
       <Building>
         <BuildingCategoryName>11150</BuildingCategoryName>
         <TerrainType>Water</TerrainType>
+        <BuildingType>Other</BuildingType>
+        <Destructable>1</Destructable>
+        <Movable>1</Movable>
+        <PickingAsset>0</PickingAsset>
+        <ConstructionMenuText>0</ConstructionMenuText>
+        <HasBorderRectOutline>1</HasBorderRectOutline>
+        <SnapRadius>2</SnapRadius>
+        <InfluencedByNeighbors />
+        <InfluencedVariationDirection />
+        <AssociatedRegions>Meta;Moderate;Colony01;Arctic</AssociatedRegions>
+        <BuildingBlockPool />
+        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
     </Values>
   </Asset>
@@ -153,8 +161,33 @@
         <Name>Quay System Base</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_quay.png</IconFilename>
         <InfoDescription>12752</InfoDescription>
+        <Comments />
       </Standard>
-      <Cost />
+      <Cost>
+        <Costs>
+          <Item>
+            <Ingredient>1010017</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010196</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010205</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010218</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010207</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010202</Ingredient>
+          </Item>
+        </Costs>
+        <ItemsPerCost>1</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
+      </Cost>
       <Street>
         <CfgFileName>data/graphics/buildings/special/quay_system_01/props/quay_system_01.cfg</CfgFileName>
         <InternalID>12</InternalID>
@@ -169,11 +202,24 @@
         <IsPlazza>1</IsPlazza>
         <IsDeletable>0</IsDeletable>
         <HasFeedbackPathPlanningPenalty>0</HasFeedbackPathPlanningPenalty>
+        <AutoCreateStyle>1</AutoCreateStyle>
+        <NormalColor>-1</NormalColor>
+        <InvalidColor>-44976</InvalidColor>
+        <CrossingAsset>0</CrossingAsset>
+        <BridgeAsset>0</BridgeAsset>
+        <OverbuildRule>Default</OverbuildRule>
+        <SpeedFactor>1</SpeedFactor>
       </Street>
       <Constructable>
         <ConstructionMode>Street</ConstructionMode>
+        <DestructionCategory>Other</DestructionCategory>
+        <DestructionType>0</DestructionType>
       </Constructable>
-      <Locked />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
       <SoundEmitter>
         <ConstructionSounds>
           <BuildSuccessful>
@@ -209,6 +255,24 @@
             </Item>
           </BuildAddWaypoint>
         </ConstructionStreetSounds>
+        <ActiveSounds />
+        <DestroySounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <Text>
         <LocaText>
@@ -219,9 +283,23 @@
           </English>
         </LocaText>
         <LineID>7002</LineID>
+        <Localize>1</Localize>
       </Text>
       <Building>
         <BuildingCategoryName>11150</BuildingCategoryName>
+        <BuildingType>Other</BuildingType>
+        <Destructable>1</Destructable>
+        <Movable>1</Movable>
+        <PickingAsset>0</PickingAsset>
+        <ConstructionMenuText>0</ConstructionMenuText>
+        <HasBorderRectOutline>1</HasBorderRectOutline>
+        <SnapRadius>2</SnapRadius>
+        <TerrainType>Terrain</TerrainType>
+        <InfluencedByNeighbors />
+        <InfluencedVariationDirection />
+        <AssociatedRegions>Meta;Moderate;Colony01;Arctic</AssociatedRegions>
+        <BuildingBlockPool />
+        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
     </Values>
   </Asset>
@@ -233,8 +311,33 @@
         <Name>Quay System Base Invisible</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_quay.png</IconFilename>
         <InfoDescription>12752</InfoDescription>
+        <Comments />
       </Standard>
-      <Cost />
+      <Cost>
+        <Costs>
+          <Item>
+            <Ingredient>1010017</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010196</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010205</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010218</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010207</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010202</Ingredient>
+          </Item>
+        </Costs>
+        <ItemsPerCost>1</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
+      </Cost>
       <Street>
         <CfgFileName>data/graphics/buildings/special/quay_system_01/props_no_fence/quay_system_01_no_fence.cfg</CfgFileName>
         <InternalID>17</InternalID>
@@ -249,11 +352,24 @@
         <IsPlazza>1</IsPlazza>
         <IsDeletable>0</IsDeletable>
         <HasFeedbackPathPlanningPenalty>0</HasFeedbackPathPlanningPenalty>
+        <AutoCreateStyle>1</AutoCreateStyle>
+        <NormalColor>-1</NormalColor>
+        <InvalidColor>-44976</InvalidColor>
+        <CrossingAsset>0</CrossingAsset>
+        <BridgeAsset>0</BridgeAsset>
+        <OverbuildRule>Default</OverbuildRule>
+        <SpeedFactor>1</SpeedFactor>
       </Street>
       <Constructable>
         <ConstructionMode>Street</ConstructionMode>
+        <DestructionCategory>Other</DestructionCategory>
+        <DestructionType>0</DestructionType>
       </Constructable>
-      <Locked />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
       <SoundEmitter>
         <ConstructionSounds>
           <BuildSuccessful>
@@ -289,6 +405,24 @@
             </Item>
           </BuildAddWaypoint>
         </ConstructionStreetSounds>
+        <ActiveSounds />
+        <DestroySounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <Text>
         <LocaText>
@@ -299,9 +433,23 @@
           </English>
         </LocaText>
         <LineID>7007</LineID>
+        <Localize>1</Localize>
       </Text>
       <Building>
         <BuildingCategoryName>11150</BuildingCategoryName>
+        <BuildingType>Other</BuildingType>
+        <Destructable>1</Destructable>
+        <Movable>1</Movable>
+        <PickingAsset>0</PickingAsset>
+        <ConstructionMenuText>0</ConstructionMenuText>
+        <HasBorderRectOutline>1</HasBorderRectOutline>
+        <SnapRadius>2</SnapRadius>
+        <TerrainType>Terrain</TerrainType>
+        <InfluencedByNeighbors />
+        <InfluencedVariationDirection />
+        <AssociatedRegions>Meta;Moderate;Colony01;Arctic</AssociatedRegions>
+        <BuildingBlockPool />
+        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
     </Values>
   </Asset>
@@ -314,6 +462,7 @@
         <IconFilename>data/ui/2kimages/main/3dicons/icon_street01.png</IconFilename>
         <ID>EarthStreet</ID>
         <InfoDescription>12750</InfoDescription>
+        <Comments />
       </Standard>
       <Cost>
         <Costs>
@@ -338,6 +487,8 @@
           </Item>
         </Costs>
         <ItemsPerCost>4</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
       </Cost>
       <Street>
         <CfgFileName>data/graphics/effects/street/earth/earth_street_01/earth_street_01.cfg</CfgFileName>
@@ -355,12 +506,24 @@
         <OverbuildRule>BadStreet</OverbuildRule>
         <CanBuildOnShore>1</CanBuildOnShore>
         <HasFeedbackPathPlanningPenalty>0</HasFeedbackPathPlanningPenalty>
+        <AutoCreateStyle>1</AutoCreateStyle>
+        <NormalColor>-1</NormalColor>
+        <StyleRows>9</StyleRows>
+        <StyleCols>4</StyleCols>
+        <SpeedFactor>1</SpeedFactor>
+        <IsLogicRoad>1</IsLogicRoad>
+        <IsDeletable>1</IsDeletable>
       </Street>
       <Constructable>
         <DestructionCategory>StreetsAndBridges</DestructionCategory>
         <ConstructionMode>Street</ConstructionMode>
+        <DestructionType>0</DestructionType>
       </Constructable>
-      <Locked />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
       <SoundEmitter>
         <DestroySounds>
           <Item>
@@ -387,6 +550,22 @@
           </BuildAddWaypoint>
         </ConstructionStreetSounds>
         <MaterialType>Street_Dirt</MaterialType>
+        <ActiveSounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
       </SoundEmitter>
       <Text>
         <LocaText>
@@ -397,11 +576,24 @@
           </English>
         </LocaText>
         <LineID>4223</LineID>
+        <Localize>1</Localize>
       </Text>
       <Building>
         <SkipUnlockMessage>1</SkipUnlockMessage>
         <AssociatedRegions>Moderate</AssociatedRegions>
         <BuildingCategoryName>11153</BuildingCategoryName>
+        <BuildingType>Other</BuildingType>
+        <Destructable>1</Destructable>
+        <Movable>1</Movable>
+        <PickingAsset>0</PickingAsset>
+        <ConstructionMenuText>0</ConstructionMenuText>
+        <HasBorderRectOutline>1</HasBorderRectOutline>
+        <SnapRadius>2</SnapRadius>
+        <TerrainType>Terrain</TerrainType>
+        <InfluencedByNeighbors />
+        <InfluencedVariationDirection />
+        <BuildingBlockPool />
+        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
     </Values>
   </Asset>
@@ -414,6 +606,7 @@
         <IconFilename>data/ui/2kimages/main/3dicons/icon_brick_road.png</IconFilename>
         <ID>EarthStreetStone</ID>
         <InfoDescription>12751</InfoDescription>
+        <Comments />
       </Standard>
       <Cost>
         <Costs>
@@ -439,6 +632,8 @@
           </Item>
         </Costs>
         <ItemsPerCost>4</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
       </Cost>
       <Street>
         <CfgFileName>data/graphics/effects/street/earth/earth_street_02/earth_street_02.cfg</CfgFileName>
@@ -456,12 +651,24 @@
         <OverbuildRule>GoodStreet</OverbuildRule>
         <SpeedFactor>1.5</SpeedFactor>
         <CanBuildOnShore>1</CanBuildOnShore>
+        <AutoCreateStyle>1</AutoCreateStyle>
+        <NormalColor>-1</NormalColor>
+        <InvalidColor>-44976</InvalidColor>
+        <StyleCols>4</StyleCols>
+        <IsLogicRoad>1</IsLogicRoad>
+        <IsDeletable>1</IsDeletable>
+        <HasFeedbackPathPlanningPenalty>1</HasFeedbackPathPlanningPenalty>
       </Street>
       <Constructable>
         <DestructionCategory>StreetsAndBridges</DestructionCategory>
         <ConstructionMode>Street</ConstructionMode>
+        <DestructionType>0</DestructionType>
       </Constructable>
-      <Locked />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
       <SoundEmitter>
         <DestroySounds>
           <Item>
@@ -488,6 +695,22 @@
           </BuildAddWaypoint>
         </ConstructionStreetSounds>
         <MaterialType>Street_Brick</MaterialType>
+        <ActiveSounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
       </SoundEmitter>
       <Text>
         <LocaText>
@@ -498,10 +721,23 @@
           </English>
         </LocaText>
         <LineID>4224</LineID>
+        <Localize>1</Localize>
       </Text>
       <Building>
         <AssociatedRegions>Moderate</AssociatedRegions>
         <BuildingCategoryName>11153</BuildingCategoryName>
+        <BuildingType>Other</BuildingType>
+        <Destructable>1</Destructable>
+        <Movable>1</Movable>
+        <PickingAsset>0</PickingAsset>
+        <ConstructionMenuText>0</ConstructionMenuText>
+        <HasBorderRectOutline>1</HasBorderRectOutline>
+        <SnapRadius>2</SnapRadius>
+        <TerrainType>Terrain</TerrainType>
+        <InfluencedByNeighbors />
+        <InfluencedVariationDirection />
+        <BuildingBlockPool />
+        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
     </Values>
   </Asset>
@@ -514,6 +750,7 @@
         <IconFilename>data/ui/2kimages/main/3dicons/icon_railway.png</IconFilename>
         <ID>Railway</ID>
         <InfoDescription>10947</InfoDescription>
+        <Comments />
       </Standard>
       <Cost>
         <Costs>
@@ -540,6 +777,8 @@
           </Item>
         </Costs>
         <ItemsPerCost>4</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
       </Cost>
       <Street>
         <AutoCreateStyle>0</AutoCreateStyle>
@@ -558,11 +797,25 @@
         <IsRailway>1</IsRailway>
         <CanBuildOnShore>1</CanBuildOnShore>
         <IsRenderedExternally>1</IsRenderedExternally>
+        <NormalColor>-1</NormalColor>
+        <InvalidColor>-44976</InvalidColor>
+        <CrossingAsset>0</CrossingAsset>
+        <StyleRows>9</StyleRows>
+        <StyleCols>4</StyleCols>
+        <SpeedFactor>1</SpeedFactor>
+        <IsDeletable>1</IsDeletable>
+        <HasFeedbackPathPlanningPenalty>1</HasFeedbackPathPlanningPenalty>
       </Street>
       <Constructable>
         <ConstructionMode>Railway</ConstructionMode>
+        <DestructionCategory>Other</DestructionCategory>
+        <DestructionType>0</DestructionType>
       </Constructable>
-      <Locked />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
       <SoundEmitter>
         <DestroySounds>
           <Item>
@@ -588,6 +841,23 @@
             </Item>
           </BuildAddWaypoint>
         </ConstructionStreetSounds>
+        <ActiveSounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <Text>
         <LocaText>
@@ -598,10 +868,23 @@
           </English>
         </LocaText>
         <LineID>4225</LineID>
+        <Localize>1</Localize>
       </Text>
       <Building>
         <BuildingCategoryName>11154</BuildingCategoryName>
         <AssociatedRegions>Moderate;Colony01</AssociatedRegions>
+        <BuildingType>Other</BuildingType>
+        <Destructable>1</Destructable>
+        <Movable>1</Movable>
+        <PickingAsset>0</PickingAsset>
+        <ConstructionMenuText>0</ConstructionMenuText>
+        <HasBorderRectOutline>1</HasBorderRectOutline>
+        <SnapRadius>2</SnapRadius>
+        <TerrainType>Terrain</TerrainType>
+        <InfluencedByNeighbors />
+        <InfluencedVariationDirection />
+        <BuildingBlockPool />
+        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
     </Values>
   </Asset>
@@ -614,9 +897,32 @@
         <IconFilename>data/ui/2kimages/main/3dicons/icon_railway.png</IconFilename>
         <ID>RailCrossing</ID>
         <InfoDescription>10947</InfoDescription>
+        <Comments />
       </Standard>
       <Cost>
         <ItemsPerCost>4</ItemsPerCost>
+        <Costs>
+          <Item>
+            <Ingredient>1010017</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010196</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010205</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010218</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010207</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010202</Ingredient>
+          </Item>
+        </Costs>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
       </Cost>
       <Street>
         <CfgFileName>data/graphics/effects/street/earth/earth_street_03/earth_street_03.cfg</CfgFileName>
@@ -630,12 +936,27 @@
         <IsRailway>1</IsRailway>
         <CanBuildOnShore>1</CanBuildOnShore>
         <IsRenderedExternally>1</IsRenderedExternally>
+        <AutoCreateStyle>1</AutoCreateStyle>
+        <NormalColor>-1</NormalColor>
+        <InvalidColor>-44976</InvalidColor>
+        <CrossingAsset>0</CrossingAsset>
+        <BridgeAsset>0</BridgeAsset>
+        <StyleRows>9</StyleRows>
+        <StyleCols>4</StyleCols>
+        <SpeedFactor>1</SpeedFactor>
+        <IsLogicRoad>1</IsLogicRoad>
+        <IsDeletable>1</IsDeletable>
+        <HasFeedbackPathPlanningPenalty>1</HasFeedbackPathPlanningPenalty>
       </Street>
       <Constructable>
         <ConstructionMode>Street</ConstructionMode>
+        <DestructionCategory>Other</DestructionCategory>
+        <DestructionType>0</DestructionType>
       </Constructable>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
       <SoundEmitter>
         <DestroySounds>
@@ -662,6 +983,23 @@
             </Item>
           </BuildAddWaypoint>
         </ConstructionStreetSounds>
+        <ActiveSounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <Text>
         <LocaText>
@@ -672,10 +1010,23 @@
           </English>
         </LocaText>
         <LineID>7030</LineID>
+        <Localize>1</Localize>
       </Text>
       <Building>
         <BuildingCategoryName>11154</BuildingCategoryName>
         <AssociatedRegions>Moderate</AssociatedRegions>
+        <BuildingType>Other</BuildingType>
+        <Destructable>1</Destructable>
+        <Movable>1</Movable>
+        <PickingAsset>0</PickingAsset>
+        <ConstructionMenuText>0</ConstructionMenuText>
+        <HasBorderRectOutline>1</HasBorderRectOutline>
+        <SnapRadius>2</SnapRadius>
+        <TerrainType>Terrain</TerrainType>
+        <InfluencedByNeighbors />
+        <InfluencedVariationDirection />
+        <BuildingBlockPool />
+        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
     </Values>
   </Asset>
@@ -688,9 +1039,32 @@
         <IconFilename>data/ui/2kimages/main/3dicons/icon_railway.png</IconFilename>
         <ID>RailCrossingFast</ID>
         <InfoDescription>10947</InfoDescription>
+        <Comments />
       </Standard>
       <Cost>
         <ItemsPerCost>4</ItemsPerCost>
+        <Costs>
+          <Item>
+            <Ingredient>1010017</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010196</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010205</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010218</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010207</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010202</Ingredient>
+          </Item>
+        </Costs>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
       </Cost>
       <Street>
         <CfgFileName>data/graphics/effects/street/earth/earth_street_03/earth_street_03.cfg</CfgFileName>
@@ -704,12 +1078,27 @@
         <IsRailway>1</IsRailway>
         <CanBuildOnShore>1</CanBuildOnShore>
         <IsRenderedExternally>1</IsRenderedExternally>
+        <AutoCreateStyle>1</AutoCreateStyle>
+        <NormalColor>-1</NormalColor>
+        <InvalidColor>-44976</InvalidColor>
+        <CrossingAsset>0</CrossingAsset>
+        <BridgeAsset>0</BridgeAsset>
+        <StyleRows>9</StyleRows>
+        <StyleCols>4</StyleCols>
+        <SpeedFactor>1</SpeedFactor>
+        <IsLogicRoad>1</IsLogicRoad>
+        <IsDeletable>1</IsDeletable>
+        <HasFeedbackPathPlanningPenalty>1</HasFeedbackPathPlanningPenalty>
       </Street>
       <Constructable>
         <ConstructionMode>Street</ConstructionMode>
+        <DestructionCategory>Other</DestructionCategory>
+        <DestructionType>0</DestructionType>
       </Constructable>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
       <SoundEmitter>
         <DestroySounds>
@@ -736,6 +1125,23 @@
             </Item>
           </BuildAddWaypoint>
         </ConstructionStreetSounds>
+        <ActiveSounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <Text>
         <LocaText>
@@ -746,10 +1152,23 @@
           </English>
         </LocaText>
         <LineID>21448</LineID>
+        <Localize>1</Localize>
       </Text>
       <Building>
         <BuildingCategoryName>11154</BuildingCategoryName>
         <AssociatedRegions>Moderate</AssociatedRegions>
+        <BuildingType>Other</BuildingType>
+        <Destructable>1</Destructable>
+        <Movable>1</Movable>
+        <PickingAsset>0</PickingAsset>
+        <ConstructionMenuText>0</ConstructionMenuText>
+        <HasBorderRectOutline>1</HasBorderRectOutline>
+        <SnapRadius>2</SnapRadius>
+        <TerrainType>Terrain</TerrainType>
+        <InfluencedByNeighbors />
+        <InfluencedVariationDirection />
+        <BuildingBlockPool />
+        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
     </Values>
   </Asset>
@@ -761,9 +1180,32 @@
         <Name>RailsUnderBuilding</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_railway.png</IconFilename>
         <InfoDescription>10947</InfoDescription>
+        <Comments />
       </Standard>
       <Cost>
         <ItemsPerCost>4</ItemsPerCost>
+        <Costs>
+          <Item>
+            <Ingredient>1010017</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010196</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010205</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010218</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010207</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010202</Ingredient>
+          </Item>
+        </Costs>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
       </Cost>
       <Street>
         <InternalID>7</InternalID>
@@ -777,12 +1219,26 @@
         <CanBuildOnShore>1</CanBuildOnShore>
         <IsRenderedExternally>1</IsRenderedExternally>
         <IsDeletable>0</IsDeletable>
+        <AutoCreateStyle>1</AutoCreateStyle>
+        <NormalColor>-1</NormalColor>
+        <InvalidColor>-44976</InvalidColor>
+        <CrossingAsset>0</CrossingAsset>
+        <BridgeAsset>0</BridgeAsset>
+        <StyleRows>9</StyleRows>
+        <StyleCols>4</StyleCols>
+        <OverbuildRule>Default</OverbuildRule>
+        <SpeedFactor>1</SpeedFactor>
+        <HasFeedbackPathPlanningPenalty>1</HasFeedbackPathPlanningPenalty>
       </Street>
       <Constructable>
         <ConstructionMode>Street</ConstructionMode>
+        <DestructionCategory>Other</DestructionCategory>
+        <DestructionType>0</DestructionType>
       </Constructable>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
       <SoundEmitter>
         <DestroySounds>
@@ -818,13 +1274,44 @@
             </Item>
           </BuildAddWaypoint>
         </ConstructionStreetSounds>
+        <ActiveSounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <Text>
         <LineID>3740</LineID>
+        <LocaText />
+        <Localize>1</Localize>
       </Text>
       <Building>
         <BuildingCategoryName>11154</BuildingCategoryName>
         <AssociatedRegions>Moderate</AssociatedRegions>
+        <BuildingType>Other</BuildingType>
+        <Destructable>1</Destructable>
+        <Movable>1</Movable>
+        <PickingAsset>0</PickingAsset>
+        <ConstructionMenuText>0</ConstructionMenuText>
+        <HasBorderRectOutline>1</HasBorderRectOutline>
+        <SnapRadius>2</SnapRadius>
+        <TerrainType>Terrain</TerrainType>
+        <InfluencedByNeighbors />
+        <InfluencedVariationDirection />
+        <BuildingBlockPool />
+        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
     </Values>
   </Asset>
@@ -836,9 +1323,33 @@
         <Name>RailsNonblockingDeko</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_railway.png</IconFilename>
         <ID>RailDekoPattern</ID>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Cost>
         <ItemsPerCost>4</ItemsPerCost>
+        <Costs>
+          <Item>
+            <Ingredient>1010017</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010196</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010205</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010218</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010207</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010202</Ingredient>
+          </Item>
+        </Costs>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
       </Cost>
       <Street>
         <CfgFileName>data/graphics/effects/street/earth/earth_street_03/earth_street_03.cfg</CfgFileName>
@@ -847,12 +1358,27 @@
         <HidePropsWhileBuilding>1</HidePropsWhileBuilding>
         <IsLogicRoad>0</IsLogicRoad>
         <IsRenderedExternally>1</IsRenderedExternally>
+        <AutoCreateStyle>1</AutoCreateStyle>
+        <NormalColor>-1</NormalColor>
+        <InvalidColor>-44976</InvalidColor>
+        <CrossingAsset>0</CrossingAsset>
+        <BridgeAsset>0</BridgeAsset>
+        <StyleRows>9</StyleRows>
+        <StyleCols>4</StyleCols>
+        <OverbuildRule>Default</OverbuildRule>
+        <SpeedFactor>1</SpeedFactor>
+        <IsDeletable>1</IsDeletable>
+        <HasFeedbackPathPlanningPenalty>1</HasFeedbackPathPlanningPenalty>
       </Street>
       <Constructable>
         <ConstructionMode>Street</ConstructionMode>
+        <DestructionCategory>Other</DestructionCategory>
+        <DestructionType>0</DestructionType>
       </Constructable>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
       <SoundEmitter>
         <DestroySounds>
@@ -888,11 +1414,43 @@
             </Item>
           </BuildAddWaypoint>
         </ConstructionStreetSounds>
+        <ActiveSounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
-      <Text />
+      <Text>
+        <LocaText />
+        <Localize>1</Localize>
+      </Text>
       <Building>
         <BuildingCategoryName>11154</BuildingCategoryName>
         <AssociatedRegions>Moderate</AssociatedRegions>
+        <BuildingType>Other</BuildingType>
+        <Destructable>1</Destructable>
+        <Movable>1</Movable>
+        <PickingAsset>0</PickingAsset>
+        <ConstructionMenuText>0</ConstructionMenuText>
+        <HasBorderRectOutline>1</HasBorderRectOutline>
+        <SnapRadius>2</SnapRadius>
+        <TerrainType>Terrain</TerrainType>
+        <InfluencedByNeighbors />
+        <InfluencedVariationDirection />
+        <BuildingBlockPool />
+        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
     </Values>
   </Asset>
@@ -903,6 +1461,8 @@
         <GUID>101064</GUID>
         <Name>BasePlateFenceHidden</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_street01.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Cost>
         <Costs>
@@ -927,6 +1487,8 @@
           </Item>
         </Costs>
         <ItemsPerCost>4</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
       </Cost>
       <Street>
         <InvalidColor>-50116</InvalidColor>
@@ -944,12 +1506,23 @@
         <IsDeletable>0</IsDeletable>
         <CheckComplexID>1</CheckComplexID>
         <HasFeedbackPathPlanningPenalty>0</HasFeedbackPathPlanningPenalty>
+        <AutoCreateStyle>1</AutoCreateStyle>
+        <NormalColor>-1</NormalColor>
+        <CrossingAsset>0</CrossingAsset>
+        <BridgeAsset>0</BridgeAsset>
+        <OverbuildRule>Default</OverbuildRule>
+        <SpeedFactor>1</SpeedFactor>
       </Street>
       <Constructable>
         <DestructionCategory>StreetsAndBridges</DestructionCategory>
         <ConstructionMode>Street</ConstructionMode>
+        <DestructionType>0</DestructionType>
       </Constructable>
-      <Locked />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
       <SoundEmitter>
         <DestroySounds>
           <Item>
@@ -968,6 +1541,24 @@
             </Item>
           </BuildFailed>
         </ConstructionSounds>
+        <ActiveSounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <Text>
         <LocaText>
@@ -978,10 +1569,23 @@
           </English>
         </LocaText>
         <LineID>28518</LineID>
+        <Localize>1</Localize>
       </Text>
       <Building>
         <AssociatedRegions>Moderate</AssociatedRegions>
         <BuildingCategoryName>11153</BuildingCategoryName>
+        <BuildingType>Other</BuildingType>
+        <Destructable>1</Destructable>
+        <Movable>1</Movable>
+        <PickingAsset>0</PickingAsset>
+        <ConstructionMenuText>0</ConstructionMenuText>
+        <HasBorderRectOutline>1</HasBorderRectOutline>
+        <SnapRadius>2</SnapRadius>
+        <TerrainType>Terrain</TerrainType>
+        <InfluencedByNeighbors />
+        <InfluencedVariationDirection />
+        <BuildingBlockPool />
+        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
     </Values>
   </Asset>
@@ -992,6 +1596,8 @@
         <GUID>101058</GUID>
         <Name>BasePlateFenceAgriculture04</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_street01.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Cost>
         <Costs>
@@ -1016,6 +1622,8 @@
           </Item>
         </Costs>
         <ItemsPerCost>4</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
       </Cost>
       <Street>
         <CfgFileName>data/graphics/buildings/production/agriculture_04/props/agriculture_04_fence_system.cfg</CfgFileName>
@@ -1030,12 +1638,25 @@
         <IsPlazza>1</IsPlazza>
         <IsDeletable>0</IsDeletable>
         <HasFeedbackPathPlanningPenalty>0</HasFeedbackPathPlanningPenalty>
+        <AutoCreateStyle>1</AutoCreateStyle>
+        <NormalColor>-1</NormalColor>
+        <CrossingAsset>0</CrossingAsset>
+        <BridgeAsset>0</BridgeAsset>
+        <StyleRows>9</StyleRows>
+        <StyleCols>4</StyleCols>
+        <OverbuildRule>Default</OverbuildRule>
+        <SpeedFactor>1</SpeedFactor>
       </Street>
       <Constructable>
         <DestructionCategory>StreetsAndBridges</DestructionCategory>
         <ConstructionMode>Street</ConstructionMode>
+        <DestructionType>0</DestructionType>
       </Constructable>
-      <Locked />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
       <SoundEmitter>
         <DestroySounds>
           <Item>
@@ -1054,6 +1675,24 @@
             </Item>
           </BuildFailed>
         </ConstructionSounds>
+        <ActiveSounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <Text>
         <LocaText>
@@ -1064,10 +1703,23 @@
           </English>
         </LocaText>
         <LineID>28519</LineID>
+        <Localize>1</Localize>
       </Text>
       <Building>
         <AssociatedRegions>Moderate</AssociatedRegions>
         <BuildingCategoryName>11153</BuildingCategoryName>
+        <BuildingType>Other</BuildingType>
+        <Destructable>1</Destructable>
+        <Movable>1</Movable>
+        <PickingAsset>0</PickingAsset>
+        <ConstructionMenuText>0</ConstructionMenuText>
+        <HasBorderRectOutline>1</HasBorderRectOutline>
+        <SnapRadius>2</SnapRadius>
+        <TerrainType>Terrain</TerrainType>
+        <InfluencedByNeighbors />
+        <InfluencedVariationDirection />
+        <BuildingBlockPool />
+        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
     </Values>
   </Asset>
@@ -1078,6 +1730,8 @@
         <GUID>101200</GUID>
         <Name>BasePlateFenceAgriculture01</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_street01.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Cost>
         <Costs>
@@ -1102,6 +1756,8 @@
           </Item>
         </Costs>
         <ItemsPerCost>4</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
       </Cost>
       <Street>
         <CfgFileName>data/graphics/buildings/production/agriculture_01/props/agriculture_01_fence_system.cfg</CfgFileName>
@@ -1116,12 +1772,25 @@
         <IsPlazza>1</IsPlazza>
         <IsDeletable>0</IsDeletable>
         <HasFeedbackPathPlanningPenalty>0</HasFeedbackPathPlanningPenalty>
+        <AutoCreateStyle>1</AutoCreateStyle>
+        <NormalColor>-1</NormalColor>
+        <CrossingAsset>0</CrossingAsset>
+        <BridgeAsset>0</BridgeAsset>
+        <StyleRows>9</StyleRows>
+        <StyleCols>4</StyleCols>
+        <OverbuildRule>Default</OverbuildRule>
+        <SpeedFactor>1</SpeedFactor>
       </Street>
       <Constructable>
         <DestructionCategory>StreetsAndBridges</DestructionCategory>
         <ConstructionMode>Street</ConstructionMode>
+        <DestructionType>0</DestructionType>
       </Constructable>
-      <Locked />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
       <SoundEmitter>
         <DestroySounds>
           <Item>
@@ -1140,6 +1809,24 @@
             </Item>
           </BuildFailed>
         </ConstructionSounds>
+        <ActiveSounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <Text>
         <LocaText>
@@ -1150,10 +1837,23 @@
           </English>
         </LocaText>
         <LineID>28520</LineID>
+        <Localize>1</Localize>
       </Text>
       <Building>
         <AssociatedRegions>Moderate</AssociatedRegions>
         <BuildingCategoryName>11153</BuildingCategoryName>
+        <BuildingType>Other</BuildingType>
+        <Destructable>1</Destructable>
+        <Movable>1</Movable>
+        <PickingAsset>0</PickingAsset>
+        <ConstructionMenuText>0</ConstructionMenuText>
+        <HasBorderRectOutline>1</HasBorderRectOutline>
+        <SnapRadius>2</SnapRadius>
+        <TerrainType>Terrain</TerrainType>
+        <InfluencedByNeighbors />
+        <InfluencedVariationDirection />
+        <BuildingBlockPool />
+        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
     </Values>
   </Asset>
@@ -1164,6 +1864,8 @@
         <GUID>101201</GUID>
         <Name>BasePlateFenceAgriculture03</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_street01.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Cost>
         <Costs>
@@ -1188,6 +1890,8 @@
           </Item>
         </Costs>
         <ItemsPerCost>4</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
       </Cost>
       <Street>
         <CfgFileName>data/graphics/buildings/production/agriculture_03/props/agriculture_03_fence_system.cfg</CfgFileName>
@@ -1202,12 +1906,25 @@
         <IsPlazza>1</IsPlazza>
         <IsDeletable>0</IsDeletable>
         <HasFeedbackPathPlanningPenalty>0</HasFeedbackPathPlanningPenalty>
+        <AutoCreateStyle>1</AutoCreateStyle>
+        <NormalColor>-1</NormalColor>
+        <CrossingAsset>0</CrossingAsset>
+        <BridgeAsset>0</BridgeAsset>
+        <StyleRows>9</StyleRows>
+        <StyleCols>4</StyleCols>
+        <OverbuildRule>Default</OverbuildRule>
+        <SpeedFactor>1</SpeedFactor>
       </Street>
       <Constructable>
         <DestructionCategory>StreetsAndBridges</DestructionCategory>
         <ConstructionMode>Street</ConstructionMode>
+        <DestructionType>0</DestructionType>
       </Constructable>
-      <Locked />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
       <SoundEmitter>
         <DestroySounds>
           <Item>
@@ -1226,6 +1943,24 @@
             </Item>
           </BuildFailed>
         </ConstructionSounds>
+        <ActiveSounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <Text>
         <LocaText>
@@ -1236,10 +1971,23 @@
           </English>
         </LocaText>
         <LineID>28521</LineID>
+        <Localize>1</Localize>
       </Text>
       <Building>
         <AssociatedRegions>Moderate</AssociatedRegions>
         <BuildingCategoryName>11153</BuildingCategoryName>
+        <BuildingType>Other</BuildingType>
+        <Destructable>1</Destructable>
+        <Movable>1</Movable>
+        <PickingAsset>0</PickingAsset>
+        <ConstructionMenuText>0</ConstructionMenuText>
+        <HasBorderRectOutline>1</HasBorderRectOutline>
+        <SnapRadius>2</SnapRadius>
+        <TerrainType>Terrain</TerrainType>
+        <InfluencedByNeighbors />
+        <InfluencedVariationDirection />
+        <BuildingBlockPool />
+        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
     </Values>
   </Asset>
@@ -1250,6 +1998,8 @@
         <GUID>101202</GUID>
         <Name>BasePlateFenceAgricultureTest3</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_street01.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Cost>
         <Costs>
@@ -1274,6 +2024,8 @@
           </Item>
         </Costs>
         <ItemsPerCost>4</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
       </Cost>
       <Street>
         <CfgFileName>data/graphics/buildings/production/agriculture_04/props/agriculture_04_fence_system.cfg</CfgFileName>
@@ -1288,12 +2040,25 @@
         <IsPlazza>1</IsPlazza>
         <IsDeletable>0</IsDeletable>
         <HasFeedbackPathPlanningPenalty>0</HasFeedbackPathPlanningPenalty>
+        <AutoCreateStyle>1</AutoCreateStyle>
+        <NormalColor>-1</NormalColor>
+        <CrossingAsset>0</CrossingAsset>
+        <BridgeAsset>0</BridgeAsset>
+        <StyleRows>9</StyleRows>
+        <StyleCols>4</StyleCols>
+        <OverbuildRule>Default</OverbuildRule>
+        <SpeedFactor>1</SpeedFactor>
       </Street>
       <Constructable>
         <DestructionCategory>StreetsAndBridges</DestructionCategory>
         <ConstructionMode>Street</ConstructionMode>
+        <DestructionType>0</DestructionType>
       </Constructable>
-      <Locked />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
       <SoundEmitter>
         <DestroySounds>
           <Item>
@@ -1312,6 +2077,24 @@
             </Item>
           </BuildFailed>
         </ConstructionSounds>
+        <ActiveSounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <Text>
         <LocaText>
@@ -1322,10 +2105,23 @@
           </English>
         </LocaText>
         <LineID>28522</LineID>
+        <Localize>1</Localize>
       </Text>
       <Building>
         <AssociatedRegions>Moderate</AssociatedRegions>
         <BuildingCategoryName>11153</BuildingCategoryName>
+        <BuildingType>Other</BuildingType>
+        <Destructable>1</Destructable>
+        <Movable>1</Movable>
+        <PickingAsset>0</PickingAsset>
+        <ConstructionMenuText>0</ConstructionMenuText>
+        <HasBorderRectOutline>1</HasBorderRectOutline>
+        <SnapRadius>2</SnapRadius>
+        <TerrainType>Terrain</TerrainType>
+        <InfluencedByNeighbors />
+        <InfluencedVariationDirection />
+        <BuildingBlockPool />
+        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
     </Values>
   </Asset>
@@ -1336,6 +2132,8 @@
         <GUID>102476</GUID>
         <Name>InvisibleStreetGround</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_street01.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Cost>
         <Costs>
@@ -1360,6 +2158,8 @@
           </Item>
         </Costs>
         <ItemsPerCost>4</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
       </Cost>
       <Street>
         <InvalidColor>-50116</InvalidColor>
@@ -1378,12 +2178,22 @@
         <IsDeletable>0</IsDeletable>
         <CheckComplexID>1</CheckComplexID>
         <HasFeedbackPathPlanningPenalty>0</HasFeedbackPathPlanningPenalty>
+        <AutoCreateStyle>1</AutoCreateStyle>
+        <NormalColor>-1</NormalColor>
+        <CrossingAsset>0</CrossingAsset>
+        <BridgeAsset>0</BridgeAsset>
+        <IsLogicRoad>1</IsLogicRoad>
       </Street>
       <Constructable>
         <DestructionCategory>StreetsAndBridges</DestructionCategory>
         <ConstructionMode>Street</ConstructionMode>
+        <DestructionType>0</DestructionType>
       </Constructable>
-      <Locked />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
       <SoundEmitter>
         <DestroySounds>
           <Item>
@@ -1402,6 +2212,24 @@
             </Item>
           </BuildFailed>
         </ConstructionSounds>
+        <ActiveSounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <Text>
         <LocaText>
@@ -1412,10 +2240,23 @@
           </English>
         </LocaText>
         <LineID>28523</LineID>
+        <Localize>1</Localize>
       </Text>
       <Building>
         <AssociatedRegions>Moderate</AssociatedRegions>
         <BuildingCategoryName>11153</BuildingCategoryName>
+        <BuildingType>Other</BuildingType>
+        <Destructable>1</Destructable>
+        <Movable>1</Movable>
+        <PickingAsset>0</PickingAsset>
+        <ConstructionMenuText>0</ConstructionMenuText>
+        <HasBorderRectOutline>1</HasBorderRectOutline>
+        <SnapRadius>2</SnapRadius>
+        <TerrainType>Terrain</TerrainType>
+        <InfluencedByNeighbors />
+        <InfluencedVariationDirection />
+        <BuildingBlockPool />
+        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
     </Values>
   </Asset>
@@ -1426,6 +2267,8 @@
         <GUID>102507</GUID>
         <Name>BasePlateFenceAgriculture05</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_street01.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Cost>
         <Costs>
@@ -1450,6 +2293,8 @@
           </Item>
         </Costs>
         <ItemsPerCost>4</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
       </Cost>
       <Street>
         <CfgFileName>data/graphics/buildings/production/agriculture_04/props/agriculture_04_fence_system.cfg</CfgFileName>
@@ -1464,12 +2309,25 @@
         <IsPlazza>1</IsPlazza>
         <IsDeletable>0</IsDeletable>
         <HasFeedbackPathPlanningPenalty>0</HasFeedbackPathPlanningPenalty>
+        <AutoCreateStyle>1</AutoCreateStyle>
+        <NormalColor>-1</NormalColor>
+        <CrossingAsset>0</CrossingAsset>
+        <BridgeAsset>0</BridgeAsset>
+        <StyleRows>9</StyleRows>
+        <StyleCols>4</StyleCols>
+        <OverbuildRule>Default</OverbuildRule>
+        <SpeedFactor>1</SpeedFactor>
       </Street>
       <Constructable>
         <DestructionCategory>StreetsAndBridges</DestructionCategory>
         <ConstructionMode>Street</ConstructionMode>
+        <DestructionType>0</DestructionType>
       </Constructable>
-      <Locked />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
       <SoundEmitter>
         <DestroySounds>
           <Item>
@@ -1488,6 +2346,24 @@
             </Item>
           </BuildFailed>
         </ConstructionSounds>
+        <ActiveSounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <Text>
         <LocaText>
@@ -1498,10 +2374,23 @@
           </English>
         </LocaText>
         <LineID>28524</LineID>
+        <Localize>1</Localize>
       </Text>
       <Building>
         <AssociatedRegions>Moderate</AssociatedRegions>
         <BuildingCategoryName>11153</BuildingCategoryName>
+        <BuildingType>Other</BuildingType>
+        <Destructable>1</Destructable>
+        <Movable>1</Movable>
+        <PickingAsset>0</PickingAsset>
+        <ConstructionMenuText>0</ConstructionMenuText>
+        <HasBorderRectOutline>1</HasBorderRectOutline>
+        <SnapRadius>2</SnapRadius>
+        <TerrainType>Terrain</TerrainType>
+        <InfluencedByNeighbors />
+        <InfluencedVariationDirection />
+        <BuildingBlockPool />
+        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
     </Values>
   </Asset>
@@ -1512,6 +2401,8 @@
         <GUID>102508</GUID>
         <Name>BasePlateFenceAgriculture06</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_street01.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Cost>
         <Costs>
@@ -1536,6 +2427,8 @@
           </Item>
         </Costs>
         <ItemsPerCost>4</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
       </Cost>
       <Street>
         <CfgFileName>data/graphics/buildings/production/agriculture_04/props/agriculture_04_fence_system.cfg</CfgFileName>
@@ -1550,12 +2443,25 @@
         <IsPlazza>1</IsPlazza>
         <IsDeletable>0</IsDeletable>
         <HasFeedbackPathPlanningPenalty>0</HasFeedbackPathPlanningPenalty>
+        <AutoCreateStyle>1</AutoCreateStyle>
+        <NormalColor>-1</NormalColor>
+        <CrossingAsset>0</CrossingAsset>
+        <BridgeAsset>0</BridgeAsset>
+        <StyleRows>9</StyleRows>
+        <StyleCols>4</StyleCols>
+        <OverbuildRule>Default</OverbuildRule>
+        <SpeedFactor>1</SpeedFactor>
       </Street>
       <Constructable>
         <DestructionCategory>StreetsAndBridges</DestructionCategory>
         <ConstructionMode>Street</ConstructionMode>
+        <DestructionType>0</DestructionType>
       </Constructable>
-      <Locked />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
       <SoundEmitter>
         <DestroySounds>
           <Item>
@@ -1574,6 +2480,24 @@
             </Item>
           </BuildFailed>
         </ConstructionSounds>
+        <ActiveSounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <Text>
         <LocaText>
@@ -1584,10 +2508,23 @@
           </English>
         </LocaText>
         <LineID>28525</LineID>
+        <Localize>1</Localize>
       </Text>
       <Building>
         <AssociatedRegions>Moderate</AssociatedRegions>
         <BuildingCategoryName>11153</BuildingCategoryName>
+        <BuildingType>Other</BuildingType>
+        <Destructable>1</Destructable>
+        <Movable>1</Movable>
+        <PickingAsset>0</PickingAsset>
+        <ConstructionMenuText>0</ConstructionMenuText>
+        <HasBorderRectOutline>1</HasBorderRectOutline>
+        <SnapRadius>2</SnapRadius>
+        <TerrainType>Terrain</TerrainType>
+        <InfluencedByNeighbors />
+        <InfluencedVariationDirection />
+        <BuildingBlockPool />
+        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
     </Values>
   </Asset>
@@ -1598,6 +2535,8 @@
         <GUID>102509</GUID>
         <Name>BasePlateFenceAgriculture07</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_street01.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Cost>
         <Costs>
@@ -1622,6 +2561,8 @@
           </Item>
         </Costs>
         <ItemsPerCost>4</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
       </Cost>
       <Street>
         <CfgFileName>data/graphics/buildings/production/agriculture_04/props/agriculture_04_fence_system.cfg</CfgFileName>
@@ -1636,12 +2577,25 @@
         <IsPlazza>1</IsPlazza>
         <IsDeletable>0</IsDeletable>
         <HasFeedbackPathPlanningPenalty>0</HasFeedbackPathPlanningPenalty>
+        <AutoCreateStyle>1</AutoCreateStyle>
+        <NormalColor>-1</NormalColor>
+        <CrossingAsset>0</CrossingAsset>
+        <BridgeAsset>0</BridgeAsset>
+        <StyleRows>9</StyleRows>
+        <StyleCols>4</StyleCols>
+        <OverbuildRule>Default</OverbuildRule>
+        <SpeedFactor>1</SpeedFactor>
       </Street>
       <Constructable>
         <DestructionCategory>StreetsAndBridges</DestructionCategory>
         <ConstructionMode>Street</ConstructionMode>
+        <DestructionType>0</DestructionType>
       </Constructable>
-      <Locked />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
       <SoundEmitter>
         <DestroySounds>
           <Item>
@@ -1660,6 +2614,24 @@
             </Item>
           </BuildFailed>
         </ConstructionSounds>
+        <ActiveSounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <Text>
         <LocaText>
@@ -1670,10 +2642,23 @@
           </English>
         </LocaText>
         <LineID>28526</LineID>
+        <Localize>1</Localize>
       </Text>
       <Building>
         <AssociatedRegions>Moderate</AssociatedRegions>
         <BuildingCategoryName>11153</BuildingCategoryName>
+        <BuildingType>Other</BuildingType>
+        <Destructable>1</Destructable>
+        <Movable>1</Movable>
+        <PickingAsset>0</PickingAsset>
+        <ConstructionMenuText>0</ConstructionMenuText>
+        <HasBorderRectOutline>1</HasBorderRectOutline>
+        <SnapRadius>2</SnapRadius>
+        <TerrainType>Terrain</TerrainType>
+        <InfluencedByNeighbors />
+        <InfluencedVariationDirection />
+        <BuildingBlockPool />
+        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
     </Values>
   </Asset>
@@ -1684,6 +2669,8 @@
         <GUID>102510</GUID>
         <Name>BasePlateFenceAgriculture08</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_street01.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Cost>
         <Costs>
@@ -1708,6 +2695,8 @@
           </Item>
         </Costs>
         <ItemsPerCost>4</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
       </Cost>
       <Street>
         <CfgFileName>data/graphics/buildings/production/agriculture_04/props/agriculture_04_fence_system.cfg</CfgFileName>
@@ -1722,12 +2711,25 @@
         <IsPlazza>1</IsPlazza>
         <IsDeletable>0</IsDeletable>
         <HasFeedbackPathPlanningPenalty>0</HasFeedbackPathPlanningPenalty>
+        <AutoCreateStyle>1</AutoCreateStyle>
+        <NormalColor>-1</NormalColor>
+        <CrossingAsset>0</CrossingAsset>
+        <BridgeAsset>0</BridgeAsset>
+        <StyleRows>9</StyleRows>
+        <StyleCols>4</StyleCols>
+        <OverbuildRule>Default</OverbuildRule>
+        <SpeedFactor>1</SpeedFactor>
       </Street>
       <Constructable>
         <DestructionCategory>StreetsAndBridges</DestructionCategory>
         <ConstructionMode>Street</ConstructionMode>
+        <DestructionType>0</DestructionType>
       </Constructable>
-      <Locked />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
       <SoundEmitter>
         <DestroySounds>
           <Item>
@@ -1746,6 +2748,24 @@
             </Item>
           </BuildFailed>
         </ConstructionSounds>
+        <ActiveSounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <Text>
         <LocaText>
@@ -1756,10 +2776,23 @@
           </English>
         </LocaText>
         <LineID>28527</LineID>
+        <Localize>1</Localize>
       </Text>
       <Building>
         <AssociatedRegions>Moderate</AssociatedRegions>
         <BuildingCategoryName>11153</BuildingCategoryName>
+        <BuildingType>Other</BuildingType>
+        <Destructable>1</Destructable>
+        <Movable>1</Movable>
+        <PickingAsset>0</PickingAsset>
+        <ConstructionMenuText>0</ConstructionMenuText>
+        <HasBorderRectOutline>1</HasBorderRectOutline>
+        <SnapRadius>2</SnapRadius>
+        <TerrainType>Terrain</TerrainType>
+        <InfluencedByNeighbors />
+        <InfluencedVariationDirection />
+        <BuildingBlockPool />
+        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
     </Values>
   </Asset>
@@ -1770,6 +2803,8 @@
         <GUID>102511</GUID>
         <Name>BasePlateFenceAgriculture09</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_street01.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Cost>
         <Costs>
@@ -1794,6 +2829,8 @@
           </Item>
         </Costs>
         <ItemsPerCost>4</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
       </Cost>
       <Street>
         <CfgFileName>data/graphics/buildings/production/agriculture_04/props/agriculture_04_fence_system.cfg</CfgFileName>
@@ -1808,12 +2845,25 @@
         <IsPlazza>1</IsPlazza>
         <IsDeletable>0</IsDeletable>
         <HasFeedbackPathPlanningPenalty>0</HasFeedbackPathPlanningPenalty>
+        <AutoCreateStyle>1</AutoCreateStyle>
+        <NormalColor>-1</NormalColor>
+        <CrossingAsset>0</CrossingAsset>
+        <BridgeAsset>0</BridgeAsset>
+        <StyleRows>9</StyleRows>
+        <StyleCols>4</StyleCols>
+        <OverbuildRule>Default</OverbuildRule>
+        <SpeedFactor>1</SpeedFactor>
       </Street>
       <Constructable>
         <DestructionCategory>StreetsAndBridges</DestructionCategory>
         <ConstructionMode>Street</ConstructionMode>
+        <DestructionType>0</DestructionType>
       </Constructable>
-      <Locked />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
       <SoundEmitter>
         <DestroySounds>
           <Item>
@@ -1832,6 +2882,24 @@
             </Item>
           </BuildFailed>
         </ConstructionSounds>
+        <ActiveSounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <Text>
         <LocaText>
@@ -1842,10 +2910,23 @@
           </English>
         </LocaText>
         <LineID>28528</LineID>
+        <Localize>1</Localize>
       </Text>
       <Building>
         <AssociatedRegions>Moderate</AssociatedRegions>
         <BuildingCategoryName>11153</BuildingCategoryName>
+        <BuildingType>Other</BuildingType>
+        <Destructable>1</Destructable>
+        <Movable>1</Movable>
+        <PickingAsset>0</PickingAsset>
+        <ConstructionMenuText>0</ConstructionMenuText>
+        <HasBorderRectOutline>1</HasBorderRectOutline>
+        <SnapRadius>2</SnapRadius>
+        <TerrainType>Terrain</TerrainType>
+        <InfluencedByNeighbors />
+        <InfluencedVariationDirection />
+        <BuildingBlockPool />
+        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
     </Values>
   </Asset>
@@ -1856,6 +2937,8 @@
         <GUID>102512</GUID>
         <Name>BasePlateFenceAgriculture10</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_street01.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Cost>
         <Costs>
@@ -1880,6 +2963,8 @@
           </Item>
         </Costs>
         <ItemsPerCost>4</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
       </Cost>
       <Street>
         <CfgFileName>data/graphics/buildings/production/agriculture_04/props/agriculture_04_fence_system.cfg</CfgFileName>
@@ -1894,12 +2979,25 @@
         <IsPlazza>1</IsPlazza>
         <IsDeletable>0</IsDeletable>
         <HasFeedbackPathPlanningPenalty>0</HasFeedbackPathPlanningPenalty>
+        <AutoCreateStyle>1</AutoCreateStyle>
+        <NormalColor>-1</NormalColor>
+        <CrossingAsset>0</CrossingAsset>
+        <BridgeAsset>0</BridgeAsset>
+        <StyleRows>9</StyleRows>
+        <StyleCols>4</StyleCols>
+        <OverbuildRule>Default</OverbuildRule>
+        <SpeedFactor>1</SpeedFactor>
       </Street>
       <Constructable>
         <DestructionCategory>StreetsAndBridges</DestructionCategory>
         <ConstructionMode>Street</ConstructionMode>
+        <DestructionType>0</DestructionType>
       </Constructable>
-      <Locked />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
       <SoundEmitter>
         <DestroySounds>
           <Item>
@@ -1918,6 +3016,24 @@
             </Item>
           </BuildFailed>
         </ConstructionSounds>
+        <ActiveSounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <Text>
         <LocaText>
@@ -1928,10 +3044,23 @@
           </English>
         </LocaText>
         <LineID>28529</LineID>
+        <Localize>1</Localize>
       </Text>
       <Building>
         <AssociatedRegions>Moderate</AssociatedRegions>
         <BuildingCategoryName>11153</BuildingCategoryName>
+        <BuildingType>Other</BuildingType>
+        <Destructable>1</Destructable>
+        <Movable>1</Movable>
+        <PickingAsset>0</PickingAsset>
+        <ConstructionMenuText>0</ConstructionMenuText>
+        <HasBorderRectOutline>1</HasBorderRectOutline>
+        <SnapRadius>2</SnapRadius>
+        <TerrainType>Terrain</TerrainType>
+        <InfluencedByNeighbors />
+        <InfluencedVariationDirection />
+        <BuildingBlockPool />
+        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
     </Values>
   </Asset>
@@ -1942,6 +3071,8 @@
         <GUID>101383</GUID>
         <Name>Dirt Bridge Groundplate</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_street01.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Cost>
         <Costs>
@@ -1966,6 +3097,8 @@
           </Item>
         </Costs>
         <ItemsPerCost>4</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
       </Cost>
       <Street>
         <InvalidColor>-50116</InvalidColor>
@@ -1981,12 +3114,24 @@
         <CanBuildOnShore>1</CanBuildOnShore>
         <IsDeletable>0</IsDeletable>
         <HasFeedbackPathPlanningPenalty>0</HasFeedbackPathPlanningPenalty>
+        <AutoCreateStyle>1</AutoCreateStyle>
+        <NormalColor>-1</NormalColor>
+        <CrossingAsset>0</CrossingAsset>
+        <BridgeAsset>0</BridgeAsset>
+        <OverbuildRule>Default</OverbuildRule>
+        <SpeedFactor>1</SpeedFactor>
+        <IsLogicRoad>1</IsLogicRoad>
       </Street>
       <Constructable>
         <DestructionCategory>StreetsAndBridges</DestructionCategory>
         <ConstructionMode>Street</ConstructionMode>
+        <DestructionType>0</DestructionType>
       </Constructable>
-      <Locked />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
       <SoundEmitter>
         <DestroySounds>
           <Item>
@@ -2015,6 +3160,23 @@
             </Item>
           </BuildAddWaypoint>
         </ConstructionStreetSounds>
+        <ActiveSounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <Text>
         <LocaText>
@@ -2025,10 +3187,23 @@
           </English>
         </LocaText>
         <LineID>11649</LineID>
+        <Localize>1</Localize>
       </Text>
       <Building>
         <AssociatedRegions>Moderate</AssociatedRegions>
         <BuildingCategoryName>11153</BuildingCategoryName>
+        <BuildingType>Other</BuildingType>
+        <Destructable>1</Destructable>
+        <Movable>1</Movable>
+        <PickingAsset>0</PickingAsset>
+        <ConstructionMenuText>0</ConstructionMenuText>
+        <HasBorderRectOutline>1</HasBorderRectOutline>
+        <SnapRadius>2</SnapRadius>
+        <TerrainType>Terrain</TerrainType>
+        <InfluencedByNeighbors />
+        <InfluencedVariationDirection />
+        <BuildingBlockPool />
+        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
     </Values>
   </Asset>
@@ -2039,6 +3214,8 @@
         <GUID>101385</GUID>
         <Name>Rails Bridge Groundplate</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_street01.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Cost>
         <Costs>
@@ -2063,6 +3240,8 @@
           </Item>
         </Costs>
         <ItemsPerCost>4</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
       </Cost>
       <Street>
         <InvalidColor>-50116</InvalidColor>
@@ -2078,12 +3257,24 @@
         <CanBuildOnShore>1</CanBuildOnShore>
         <IsDeletable>0</IsDeletable>
         <HasFeedbackPathPlanningPenalty>0</HasFeedbackPathPlanningPenalty>
+        <AutoCreateStyle>1</AutoCreateStyle>
+        <NormalColor>-1</NormalColor>
+        <CrossingAsset>0</CrossingAsset>
+        <BridgeAsset>0</BridgeAsset>
+        <OverbuildRule>Default</OverbuildRule>
+        <SpeedFactor>1</SpeedFactor>
+        <IsLogicRoad>1</IsLogicRoad>
       </Street>
       <Constructable>
         <DestructionCategory>StreetsAndBridges</DestructionCategory>
         <ConstructionMode>Street</ConstructionMode>
+        <DestructionType>0</DestructionType>
       </Constructable>
-      <Locked />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
       <SoundEmitter>
         <DestroySounds>
           <Item>
@@ -2112,6 +3303,23 @@
             </Item>
           </BuildAddWaypoint>
         </ConstructionStreetSounds>
+        <ActiveSounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <Text>
         <LocaText>
@@ -2122,10 +3330,23 @@
           </English>
         </LocaText>
         <LineID>11650</LineID>
+        <Localize>1</Localize>
       </Text>
       <Building>
         <AssociatedRegions>Moderate</AssociatedRegions>
         <BuildingCategoryName>11153</BuildingCategoryName>
+        <BuildingType>Other</BuildingType>
+        <Destructable>1</Destructable>
+        <Movable>1</Movable>
+        <PickingAsset>0</PickingAsset>
+        <ConstructionMenuText>0</ConstructionMenuText>
+        <HasBorderRectOutline>1</HasBorderRectOutline>
+        <SnapRadius>2</SnapRadius>
+        <TerrainType>Terrain</TerrainType>
+        <InfluencedByNeighbors />
+        <InfluencedVariationDirection />
+        <BuildingBlockPool />
+        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
     </Values>
   </Asset>
@@ -2136,6 +3357,8 @@
         <GUID>101588</GUID>
         <Name>Stone Bridge Groundplate</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_street01.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Cost>
         <Costs>
@@ -2160,6 +3383,8 @@
           </Item>
         </Costs>
         <ItemsPerCost>4</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
       </Cost>
       <Street>
         <InvalidColor>-50116</InvalidColor>
@@ -2176,12 +3401,23 @@
         <CanBuildOnShore>1</CanBuildOnShore>
         <IsDeletable>0</IsDeletable>
         <HasFeedbackPathPlanningPenalty>0</HasFeedbackPathPlanningPenalty>
+        <AutoCreateStyle>1</AutoCreateStyle>
+        <NormalColor>-1</NormalColor>
+        <CrossingAsset>0</CrossingAsset>
+        <BridgeAsset>0</BridgeAsset>
+        <OverbuildRule>Default</OverbuildRule>
+        <IsLogicRoad>1</IsLogicRoad>
       </Street>
       <Constructable>
         <DestructionCategory>StreetsAndBridges</DestructionCategory>
         <ConstructionMode>Street</ConstructionMode>
+        <DestructionType>0</DestructionType>
       </Constructable>
-      <Locked />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
       <SoundEmitter>
         <DestroySounds>
           <Item>
@@ -2210,6 +3446,23 @@
             </Item>
           </BuildAddWaypoint>
         </ConstructionStreetSounds>
+        <ActiveSounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <Text>
         <LocaText>
@@ -2220,10 +3473,23 @@
           </English>
         </LocaText>
         <LineID>14134</LineID>
+        <Localize>1</Localize>
       </Text>
       <Building>
         <AssociatedRegions>Moderate</AssociatedRegions>
         <BuildingCategoryName>11153</BuildingCategoryName>
+        <BuildingType>Other</BuildingType>
+        <Destructable>1</Destructable>
+        <Movable>1</Movable>
+        <PickingAsset>0</PickingAsset>
+        <ConstructionMenuText>0</ConstructionMenuText>
+        <HasBorderRectOutline>1</HasBorderRectOutline>
+        <SnapRadius>2</SnapRadius>
+        <TerrainType>Terrain</TerrainType>
+        <InfluencedByNeighbors />
+        <InfluencedVariationDirection />
+        <BuildingBlockPool />
+        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
     </Values>
   </Asset>
@@ -2236,6 +3502,7 @@
         <ID>Colony01Street</ID>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_street01.png</IconFilename>
         <InfoDescription>12750</InfoDescription>
+        <Comments />
       </Standard>
       <Cost>
         <Costs>
@@ -2260,6 +3527,8 @@
           </Item>
         </Costs>
         <ItemsPerCost>4</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
       </Cost>
       <Street>
         <InternalID>25</InternalID>
@@ -2277,12 +3546,24 @@
         <OverbuildRule>BadStreet</OverbuildRule>
         <CanBuildOnShore>1</CanBuildOnShore>
         <HasFeedbackPathPlanningPenalty>0</HasFeedbackPathPlanningPenalty>
+        <AutoCreateStyle>1</AutoCreateStyle>
+        <NormalColor>-1</NormalColor>
+        <StyleRows>9</StyleRows>
+        <StyleCols>4</StyleCols>
+        <SpeedFactor>1</SpeedFactor>
+        <IsLogicRoad>1</IsLogicRoad>
+        <IsDeletable>1</IsDeletable>
       </Street>
       <Constructable>
         <DestructionCategory>StreetsAndBridges</DestructionCategory>
         <ConstructionMode>Street</ConstructionMode>
+        <DestructionType>0</DestructionType>
       </Constructable>
-      <Locked />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
       <SoundEmitter>
         <DestroySounds>
           <Item>
@@ -2309,6 +3590,22 @@
           </BuildAddWaypoint>
         </ConstructionStreetSounds>
         <MaterialType>Street_Dirt</MaterialType>
+        <ActiveSounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
       </SoundEmitter>
       <Text>
         <LineID>11041</LineID>
@@ -2319,11 +3616,24 @@
             <ExportCount>3</ExportCount>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
       <Building>
         <AssociatedRegions>Colony01</AssociatedRegions>
         <SkipUnlockMessage>1</SkipUnlockMessage>
         <BuildingCategoryName>11153</BuildingCategoryName>
+        <BuildingType>Other</BuildingType>
+        <Destructable>1</Destructable>
+        <Movable>1</Movable>
+        <PickingAsset>0</PickingAsset>
+        <ConstructionMenuText>0</ConstructionMenuText>
+        <HasBorderRectOutline>1</HasBorderRectOutline>
+        <SnapRadius>2</SnapRadius>
+        <TerrainType>Terrain</TerrainType>
+        <InfluencedByNeighbors />
+        <InfluencedVariationDirection />
+        <BuildingBlockPool />
+        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
     </Values>
   </Asset>
@@ -2336,6 +3646,7 @@
         <ID>Colony01StreetStone</ID>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_brick_road.png</IconFilename>
         <InfoDescription>12751</InfoDescription>
+        <Comments />
       </Standard>
       <Cost>
         <Costs>
@@ -2361,6 +3672,8 @@
           </Item>
         </Costs>
         <ItemsPerCost>4</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
       </Cost>
       <Street>
         <InternalID>26</InternalID>
@@ -2378,12 +3691,24 @@
         <OverbuildRule>GoodStreet</OverbuildRule>
         <SpeedFactor>1.5</SpeedFactor>
         <CanBuildOnShore>1</CanBuildOnShore>
+        <AutoCreateStyle>1</AutoCreateStyle>
+        <NormalColor>-1</NormalColor>
+        <InvalidColor>-44976</InvalidColor>
+        <StyleCols>4</StyleCols>
+        <IsLogicRoad>1</IsLogicRoad>
+        <IsDeletable>1</IsDeletable>
+        <HasFeedbackPathPlanningPenalty>1</HasFeedbackPathPlanningPenalty>
       </Street>
       <Constructable>
         <DestructionCategory>StreetsAndBridges</DestructionCategory>
         <ConstructionMode>Street</ConstructionMode>
+        <DestructionType>0</DestructionType>
       </Constructable>
-      <Locked />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
       <SoundEmitter>
         <DestroySounds>
           <Item>
@@ -2410,6 +3735,22 @@
           </BuildAddWaypoint>
         </ConstructionStreetSounds>
         <MaterialType>Street_Brick</MaterialType>
+        <ActiveSounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
       </SoundEmitter>
       <Text>
         <LineID>11042</LineID>
@@ -2420,10 +3761,23 @@
             <ExportCount>2</ExportCount>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
       <Building>
         <AssociatedRegions>Colony01</AssociatedRegions>
         <BuildingCategoryName>11153</BuildingCategoryName>
+        <BuildingType>Other</BuildingType>
+        <Destructable>1</Destructable>
+        <Movable>1</Movable>
+        <PickingAsset>0</PickingAsset>
+        <ConstructionMenuText>0</ConstructionMenuText>
+        <HasBorderRectOutline>1</HasBorderRectOutline>
+        <SnapRadius>2</SnapRadius>
+        <TerrainType>Terrain</TerrainType>
+        <InfluencedByNeighbors />
+        <InfluencedVariationDirection />
+        <BuildingBlockPool />
+        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
     </Values>
   </Asset>
@@ -2436,6 +3790,7 @@
         <ID>QuaySystemColony01</ID>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_quay.png</IconFilename>
         <InfoDescription>12752</InfoDescription>
+        <Comments />
       </Standard>
       <Cost>
         <Costs>
@@ -2451,6 +3806,9 @@
           <Item />
           <Item />
         </Costs>
+        <ItemsPerCost>1</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
       </Cost>
       <Street>
         <CfgFileName>data/graphics/buildings/special/quay_system_colony01_01/props/quay_system_colony01_01.cfg</CfgFileName>
@@ -2466,11 +3824,24 @@
         <IsHarbour>1</IsHarbour>
         <IsPlazza>1</IsPlazza>
         <HasFeedbackPathPlanningPenalty>0</HasFeedbackPathPlanningPenalty>
+        <AutoCreateStyle>1</AutoCreateStyle>
+        <NormalColor>-1</NormalColor>
+        <InvalidColor>-44976</InvalidColor>
+        <CrossingAsset>0</CrossingAsset>
+        <BridgeAsset>0</BridgeAsset>
+        <SpeedFactor>1</SpeedFactor>
+        <IsDeletable>1</IsDeletable>
       </Street>
       <Constructable>
         <ConstructionMode>Street</ConstructionMode>
+        <DestructionCategory>Other</DestructionCategory>
+        <DestructionType>0</DestructionType>
       </Constructable>
-      <Locked />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
       <SoundEmitter>
         <ConstructionSounds>
           <BuildSuccessful>
@@ -2506,6 +3877,24 @@
             </Item>
           </BuildAddWaypoint>
         </ConstructionStreetSounds>
+        <ActiveSounds />
+        <DestroySounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <Text>
         <LineID>11037</LineID>
@@ -2516,10 +3905,23 @@
             <ExportCount>1</ExportCount>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
       <Building>
         <BuildingCategoryName>11150</BuildingCategoryName>
         <TerrainType>Water</TerrainType>
+        <BuildingType>Other</BuildingType>
+        <Destructable>1</Destructable>
+        <Movable>1</Movable>
+        <PickingAsset>0</PickingAsset>
+        <ConstructionMenuText>0</ConstructionMenuText>
+        <HasBorderRectOutline>1</HasBorderRectOutline>
+        <SnapRadius>2</SnapRadius>
+        <InfluencedByNeighbors />
+        <InfluencedVariationDirection />
+        <AssociatedRegions>Meta;Moderate;Colony01;Arctic</AssociatedRegions>
+        <BuildingBlockPool />
+        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
     </Values>
   </Asset>
@@ -2531,8 +3933,33 @@
         <Name>Quay System Colony01 Base</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_quay.png</IconFilename>
         <InfoDescription>12752</InfoDescription>
+        <Comments />
       </Standard>
-      <Cost />
+      <Cost>
+        <Costs>
+          <Item>
+            <Ingredient>1010017</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010196</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010205</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010218</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010207</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010202</Ingredient>
+          </Item>
+        </Costs>
+        <ItemsPerCost>1</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
+      </Cost>
       <Street>
         <CfgFileName>data/graphics/buildings/special/quay_system_colony01_01/props/quay_system_colony01_01.cfg</CfgFileName>
         <InternalID>31</InternalID>
@@ -2547,11 +3974,24 @@
         <IsPlazza>1</IsPlazza>
         <IsDeletable>0</IsDeletable>
         <HasFeedbackPathPlanningPenalty>0</HasFeedbackPathPlanningPenalty>
+        <AutoCreateStyle>1</AutoCreateStyle>
+        <NormalColor>-1</NormalColor>
+        <InvalidColor>-44976</InvalidColor>
+        <CrossingAsset>0</CrossingAsset>
+        <BridgeAsset>0</BridgeAsset>
+        <OverbuildRule>Default</OverbuildRule>
+        <SpeedFactor>1</SpeedFactor>
       </Street>
       <Constructable>
         <ConstructionMode>Street</ConstructionMode>
+        <DestructionCategory>Other</DestructionCategory>
+        <DestructionType>0</DestructionType>
       </Constructable>
-      <Locked />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
       <SoundEmitter>
         <ConstructionSounds>
           <BuildSuccessful>
@@ -2572,6 +4012,24 @@
             </Item>
           </BuildAddWaypoint>
         </ConstructionStreetSounds>
+        <ActiveSounds />
+        <DestroySounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <Text>
         <LocaText>
@@ -2582,9 +4040,23 @@
           </English>
         </LocaText>
         <LineID>22161</LineID>
+        <Localize>1</Localize>
       </Text>
       <Building>
         <BuildingCategoryName>11150</BuildingCategoryName>
+        <BuildingType>Other</BuildingType>
+        <Destructable>1</Destructable>
+        <Movable>1</Movable>
+        <PickingAsset>0</PickingAsset>
+        <ConstructionMenuText>0</ConstructionMenuText>
+        <HasBorderRectOutline>1</HasBorderRectOutline>
+        <SnapRadius>2</SnapRadius>
+        <TerrainType>Terrain</TerrainType>
+        <InfluencedByNeighbors />
+        <InfluencedVariationDirection />
+        <AssociatedRegions>Meta;Moderate;Colony01;Arctic</AssociatedRegions>
+        <BuildingBlockPool />
+        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
     </Values>
   </Asset>
@@ -2596,8 +4068,33 @@
         <Name>Quay System Colony01 Base Invisible</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_quay.png</IconFilename>
         <InfoDescription>12752</InfoDescription>
+        <Comments />
       </Standard>
-      <Cost />
+      <Cost>
+        <Costs>
+          <Item>
+            <Ingredient>1010017</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010196</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010205</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010218</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010207</Ingredient>
+          </Item>
+          <Item>
+            <Ingredient>1010202</Ingredient>
+          </Item>
+        </Costs>
+        <ItemsPerCost>1</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
+      </Cost>
       <Street>
         <CfgFileName>data/graphics/buildings/special/quay_system_colony01_01/props_no_fence/quay_system_colony01_01_no_fence.cfg</CfgFileName>
         <InternalID>32</InternalID>
@@ -2612,11 +4109,24 @@
         <IsPlazza>1</IsPlazza>
         <IsDeletable>0</IsDeletable>
         <HasFeedbackPathPlanningPenalty>0</HasFeedbackPathPlanningPenalty>
+        <AutoCreateStyle>1</AutoCreateStyle>
+        <NormalColor>-1</NormalColor>
+        <InvalidColor>-44976</InvalidColor>
+        <CrossingAsset>0</CrossingAsset>
+        <BridgeAsset>0</BridgeAsset>
+        <OverbuildRule>Default</OverbuildRule>
+        <SpeedFactor>1</SpeedFactor>
       </Street>
       <Constructable>
         <ConstructionMode>Street</ConstructionMode>
+        <DestructionCategory>Other</DestructionCategory>
+        <DestructionType>0</DestructionType>
       </Constructable>
-      <Locked />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
       <SoundEmitter>
         <ConstructionSounds>
           <BuildSuccessful>
@@ -2637,6 +4147,24 @@
             </Item>
           </BuildAddWaypoint>
         </ConstructionStreetSounds>
+        <ActiveSounds />
+        <DestroySounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <Text>
         <LocaText>
@@ -2647,9 +4175,23 @@
           </English>
         </LocaText>
         <LineID>22162</LineID>
+        <Localize>1</Localize>
       </Text>
       <Building>
         <BuildingCategoryName>11150</BuildingCategoryName>
+        <BuildingType>Other</BuildingType>
+        <Destructable>1</Destructable>
+        <Movable>1</Movable>
+        <PickingAsset>0</PickingAsset>
+        <ConstructionMenuText>0</ConstructionMenuText>
+        <HasBorderRectOutline>1</HasBorderRectOutline>
+        <SnapRadius>2</SnapRadius>
+        <TerrainType>Terrain</TerrainType>
+        <InfluencedByNeighbors />
+        <InfluencedVariationDirection />
+        <AssociatedRegions>Meta;Moderate;Colony01;Arctic</AssociatedRegions>
+        <BuildingBlockPool />
+        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
     </Values>
   </Asset>

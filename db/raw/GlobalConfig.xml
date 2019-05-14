@@ -8,6 +8,8 @@
         <Name>GlobalBalancing</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_parrot.png</IconFilename>
         <ID>GlobalBalancing</ID>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <GlobalConfig>
         <AnimalFrights>
@@ -61,6 +63,8 @@
           </laydown01>
           <laydown02>
             <AllowRandomizeStartOffset>0</AllowRandomizeStartOffset>
+            <RequiredPreSequence>laydown01</RequiredPreSequence>
+            <RequiredPostSequence>laydown03</RequiredPostSequence>
           </laydown02>
           <laydown03>
             <AllowRandomizeStartOffset>0</AllowRandomizeStartOffset>
@@ -121,6 +125,8 @@
           </work_staged01>
           <work_staged02>
             <ShouldBeMimickedByGroupFollowers>1</ShouldBeMimickedByGroupFollowers>
+            <RequiredPreSequence>work_staged01</RequiredPreSequence>
+            <RequiredPostSequence>work_staged03</RequiredPostSequence>
           </work_staged02>
           <work_staged03>
             <ShouldBeMimickedByGroupFollowers>1</ShouldBeMimickedByGroupFollowers>
@@ -128,48 +134,83 @@
           <run01>
             <CompatibleRunSequence>run01</CompatibleRunSequence>
           </run01>
+          <walk01>
+            <CompatibleRunSequence>run01</CompatibleRunSequence>
+          </walk01>
+          <protestwalk01>
+            <CompatibleIdleSequence>protest02</CompatibleIdleSequence>
+          </protestwalk01>
+          <protestwalk02>
+            <CompatibleIdleSequence>protest03</CompatibleIdleSequence>
+          </protestwalk02>
+          <protestwalk03>
+            <CompatibleIdleSequence>protest03</CompatibleIdleSequence>
+          </protestwalk03>
         </SequenceMetaInfos>
         <Languages>
           <English>
             <AudioLanguage>en_us</AudioLanguage>
             <AdditionalInteractionTime>500</AdditionalInteractionTime>
             <SteamLanguageId>english</SteamLanguageId>
+            <Locale>en-US</Locale>
+            <OasisLanguage>en_us</OasisLanguage>
+            <LanguagePack>4100025</LanguagePack>
+            <AudioBinkTrackID>1</AudioBinkTrackID>
           </English>
           <Polish>
             <AudioLanguage>en_us</AudioLanguage>
             <AudioBinkTrackID>1</AudioBinkTrackID>
             <AdditionalInteractionTime>2000</AdditionalInteractionTime>
             <SteamLanguageId>polish</SteamLanguageId>
+            <Locale>pl-PL</Locale>
+            <OasisLanguage>pl_pl</OasisLanguage>
+            <LanguagePack>4100029</LanguagePack>
           </Polish>
           <Spanish>
             <AudioLanguage>en_us</AudioLanguage>
             <AudioBinkTrackID>1</AudioBinkTrackID>
             <AdditionalInteractionTime>2000</AdditionalInteractionTime>
             <SteamLanguageId>spanish</SteamLanguageId>
+            <Locale>es-ES</Locale>
+            <OasisLanguage>sp_sp</OasisLanguage>
+            <LanguagePack>4100028</LanguagePack>
           </Spanish>
           <German>
             <AudioLanguage>de_de</AudioLanguage>
             <AudioBinkTrackID>1</AudioBinkTrackID>
             <AdditionalInteractionTime>500</AdditionalInteractionTime>
             <SteamLanguageId>german</SteamLanguageId>
+            <Locale>de-DE</Locale>
+            <OasisLanguage>de_de</OasisLanguage>
+            <LanguagePack>4100027</LanguagePack>
+            <AudioLanguageType>German</AudioLanguageType>
           </German>
           <Chinese>
             <AudioLanguage>en_us</AudioLanguage>
             <LanguagePack>4100033</LanguagePack>
             <AdditionalInteractionTime>2000</AdditionalInteractionTime>
             <SteamLanguageId>schinese</SteamLanguageId>
+            <Locale>zh-CN</Locale>
+            <OasisLanguage>ch_ch</OasisLanguage>
+            <AudioBinkTrackID>1</AudioBinkTrackID>
           </Chinese>
           <Italian>
             <AudioLanguage>en_us</AudioLanguage>
             <LanguagePack>410002</LanguagePack>
             <AdditionalInteractionTime>2000</AdditionalInteractionTime>
             <SteamLanguageId>italian</SteamLanguageId>
+            <Locale>it-IT</Locale>
+            <OasisLanguage>it_IT</OasisLanguage>
+            <AudioBinkTrackID>1</AudioBinkTrackID>
           </Italian>
           <Japanese>
             <AudioLanguage>en_us</AudioLanguage>
             <LanguagePack>4100037</LanguagePack>
             <AdditionalInteractionTime>2000</AdditionalInteractionTime>
             <SteamLanguageId>japanese</SteamLanguageId>
+            <Locale>ja-JP</Locale>
+            <OasisLanguage>jp_JP</OasisLanguage>
+            <AudioBinkTrackID>1</AudioBinkTrackID>
           </Japanese>
           <Korean>
             <Locale>ko-KR</Locale>
@@ -177,24 +218,37 @@
             <LanguagePack>4100035</LanguagePack>
             <AdditionalInteractionTime>2000</AdditionalInteractionTime>
             <SteamLanguageId>koreana</SteamLanguageId>
+            <OasisLanguage>ko_KO</OasisLanguage>
+            <AudioBinkTrackID>1</AudioBinkTrackID>
           </Korean>
           <Taiwanese>
             <AudioLanguage>en_us</AudioLanguage>
             <LanguagePack>4100034</LanguagePack>
             <AdditionalInteractionTime>2000</AdditionalInteractionTime>
             <SteamLanguageId>tchinese</SteamLanguageId>
+            <Locale>zh-TW</Locale>
+            <OasisLanguage>ch_TW</OasisLanguage>
+            <AudioBinkTrackID>1</AudioBinkTrackID>
           </Taiwanese>
           <French>
             <AudioLanguage>fr_fr</AudioLanguage>
             <AudioBinkTrackID>1</AudioBinkTrackID>
             <AdditionalInteractionTime>2000</AdditionalInteractionTime>
             <SteamLanguageId>french</SteamLanguageId>
+            <Locale>fr-FR</Locale>
+            <OasisLanguage>fr_fr</OasisLanguage>
+            <LanguagePack>4100026</LanguagePack>
+            <AudioLanguageType>French</AudioLanguageType>
           </French>
           <Russian>
             <AudioLanguage>ru_ru</AudioLanguage>
             <AudioBinkTrackID>1</AudioBinkTrackID>
             <AdditionalInteractionTime>2000</AdditionalInteractionTime>
             <SteamLanguageId>russian</SteamLanguageId>
+            <Locale>ru-RU</Locale>
+            <OasisLanguage>ru_ru</OasisLanguage>
+            <LanguagePack>4100030</LanguagePack>
+            <AudioLanguageType>Russian</AudioLanguageType>
           </Russian>
         </Languages>
         <GlobalPreloads>
@@ -670,6 +724,99 @@
             <PossessionAsset>142556</PossessionAsset>
           </PreorderRailway>
         </PlayerPossessionsGuidReplacement>
+        <FirstLoadSession>0</FirstLoadSession>
+        <FeedbackSequenceIDs>
+          <Work>1</Work>
+          <LowProductivity>2</LowProductivity>
+          <Cheer>3</Cheer>
+          <Boosted>4</Boosted>
+          <Riot>5</Riot>
+          <RiotSpecial01>6</RiotSpecial01>
+          <RiotSpecial02>7</RiotSpecial02>
+          <RiotSpecial03>8</RiotSpecial03>
+        </FeedbackSequenceIDs>
+        <WaypointMarker>data/graphics/ui/3d_objects/pointer_ground/pointer_ground.cfg</WaypointMarker>
+        <RenderConditionIDs>
+          <ColorTransform>1</ColorTransform>
+          <PhysicsTransform>2</PhysicsTransform>
+          <DestructionTransform>3</DestructionTransform>
+          <Selected>4</Selected>
+          <Unselected>5</Unselected>
+          <Common01>6</Common01>
+          <Common02>7</Common02>
+          <Common03>8</Common03>
+          <Common04>9</Common04>
+          <Common05>10</Common05>
+          <Common06>11</Common06>
+          <Common07>12</Common07>
+          <Common08>13</Common08>
+          <Common09>14</Common09>
+          <Common10>15</Common10>
+          <Common11>16</Common11>
+          <Common12>17</Common12>
+          <EffectShield>18</EffectShield>
+          <EffectRepair>19</EffectRepair>
+          <EffectStun>20</EffectStun>
+          <EffectBurn>21</EffectBurn>
+          <ShowWarningLights>22</ShowWarningLights>
+          <Riot>23</Riot>
+          <RiotSpecial01>24</RiotSpecial01>
+          <NoInhabitants>25</NoInhabitants>
+          <Ruin>26</Ruin>
+        </RenderConditionIDs>
+        <SlotGhostsFadingSpeed>38</SlotGhostsFadingSpeed>
+        <MoveModeDragThreshold>10</MoveModeDragThreshold>
+        <AdditionalVideoDisplayTime>2000</AdditionalVideoDisplayTime>
+        <SpawnAreaConfig>
+          <ConstructionArea>
+            <SpawnAreaColor>-720896</SpawnAreaColor>
+          </ConstructionArea>
+          <Water>
+            <SpawnAreaColor>-16314230</SpawnAreaColor>
+          </Water>
+          <Water_01>
+            <SpawnAreaColor>-13188407</SpawnAreaColor>
+          </Water_01>
+          <Water_02>
+            <SpawnAreaColor>-14061901</SpawnAreaColor>
+          </Water_02>
+          <Campaign_01>
+            <SpawnAreaColor>-65281</SpawnAreaColor>
+          </Campaign_01>
+          <Campaign_02>
+            <SpawnAreaColor>-3781255</SpawnAreaColor>
+          </Campaign_02>
+          <Campaign_03>
+            <SpawnAreaColor>-6749953</SpawnAreaColor>
+          </Campaign_03>
+          <Campaign_04>
+            <SpawnAreaColor>-10203481</SpawnAreaColor>
+          </Campaign_04>
+          <Land_01>
+            <SpawnAreaColor>-7355267</SpawnAreaColor>
+          </Land_01>
+          <Land_02>
+            <SpawnAreaColor>-6759</SpawnAreaColor>
+          </Land_02>
+          <Land_03>
+            <SpawnAreaColor>-13076963</SpawnAreaColor>
+          </Land_03>
+          <Land_04>
+            <SpawnAreaColor>-933326</SpawnAreaColor>
+          </Land_04>
+          <Mountain_01>
+            <SpawnAreaColor>-26368</SpawnAreaColor>
+          </Mountain_01>
+          <Mountain_02>
+            <SpawnAreaColor>-4956410</SpawnAreaColor>
+          </Mountain_02>
+          <Underwater_01>
+            <SpawnAreaColor>-13928220</SpawnAreaColor>
+          </Underwater_01>
+          <Underwater_02>
+            <SpawnAreaColor>-16231532</SpawnAreaColor>
+          </Underwater_02>
+        </SpawnAreaConfig>
       </GlobalConfig>
     </Values>
   </Asset>

@@ -158,18 +158,42 @@ namespace Anno1800.Jsonify {
       return wrapper.Elements().ObjectNonEmpty<T>(path);
     }
 
-    public static List<T> ListOf<T>(this IEnumerable<XElement> elements, string path, Func<XElement, T> selector) {
-      return elements.ElementByPath(path)?.Elements().Select(selector).ToList() ?? new List<T>();
+    public static List<T> ListOf<T>(
+      this IEnumerable<XElement> elements,
+      string path,
+      Func<XElement, T> selector,
+      Func<XElement, bool>? predicate = null) {
+      return elements
+        .ElementByPath(path)
+        ?.Elements()
+        .Where(predicate ?? (el => true))
+        .Select(selector)
+        .ToList()
+        ?? new List<T>();
     }
-    public static List<T> ListOf<T>(this XElement wrapper, string path, Func<XElement, T> selector) {
-      return wrapper.Elements().ListOf(path, selector);
+    public static List<T> ListOf<T>(
+      this XElement wrapper,
+      string path,
+      Func<XElement, T> selector,
+      Func<XElement, bool>? predicate = null) {
+      return wrapper.Elements().ListOf(path, selector, predicate);
     }
 
-    public static Dictionary<TKey, TElement> DictionaryOf<TKey, TElement>(this IEnumerable<XElement> elements, string path, Func<XElement, TKey> keySelector, Func<XElement, TElement> elementSelector) {
-      return elements.ElementByPath(path)?.Elements().ToDictionary(keySelector, elementSelector) ?? new Dictionary<TKey, TElement>();
+    public static Dictionary<TKey, TElement> DictionaryOf<TKey, TElement>(
+      this IEnumerable<XElement> elements,
+      string path,
+      Func<XElement, TKey> keySelector,
+      Func<XElement, TElement> elementSelector,
+      Func<XElement, bool>? predicate = null) {
+      return elements.ElementByPath(path)?.Elements().Where(predicate ?? (el => true)).ToDictionary(keySelector, elementSelector) ?? new Dictionary<TKey, TElement>();
     }
-    public static Dictionary<TKey, TElement> DictionaryOf<TKey, TElement>(this XElement wrapper, string path, Func<XElement, TKey> keySelector, Func<XElement, TElement> elementSelector) {
-      return wrapper.Elements().DictionaryOf(path, keySelector, elementSelector);
+    public static Dictionary<TKey, TElement> DictionaryOf<TKey, TElement>(
+      this XElement wrapper,
+      string path,
+      Func<XElement, TKey> keySelector,
+      Func<XElement, TElement> elementSelector,
+      Func<XElement, bool>? predicate = null) {
+      return wrapper.Elements().DictionaryOf(path, keySelector, elementSelector, predicate);
     }
 
     readonly static Type TYPE_STRING = typeof(string);

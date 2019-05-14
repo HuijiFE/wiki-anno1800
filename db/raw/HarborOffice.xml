@@ -8,6 +8,7 @@
         <Name>harbor_office</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_harbour_kontor.png</IconFilename>
         <InfoDescription>11422</InfoDescription>
+        <Comments />
       </Standard>
       <Building>
         <BuildingCategoryName>11152</BuildingCategoryName>
@@ -15,11 +16,26 @@
         <AssociatedRegions>Moderate</AssociatedRegions>
         <BuildingType>Factory</BuildingType>
         <TerrainType>Water</TerrainType>
+        <Destructable>1</Destructable>
+        <Movable>1</Movable>
+        <PickingAsset>0</PickingAsset>
+        <ConstructionMenuText>0</ConstructionMenuText>
+        <HasBorderRectOutline>1</HasBorderRectOutline>
+        <SnapRadius>2</SnapRadius>
+        <InfluencedByNeighbors />
+        <InfluencedVariationDirection />
+        <BuildingBlockPool />
+        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
       <Blocking>
         <GroundDecalAsset>100446</GroundDecalAsset>
         <GroundDecalInvisible>101008</GroundDecalInvisible>
         <HasBuildingBaseTiles>1</HasBuildingBaseTiles>
+        <HidePropsRadius>1</HidePropsRadius>
+        <DeletePropsRadius>1</DeletePropsRadius>
+        <StreetOutside>0</StreetOutside>
+        <RemoveGrass>1</RemoveGrass>
+        <BlocksBuilding>1</BlocksBuilding>
       </Blocking>
       <Cost>
         <Costs>
@@ -46,6 +62,8 @@
           </Item>
         </Costs>
         <InfluenceCostType>HarborOffice</InfluenceCostType>
+        <ItemsPerCost>1</ItemsPerCost>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
       </Cost>
       <Object>
         <Variations>
@@ -54,14 +72,44 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <Mesh />
+      <Mesh>
+        <ObjectPosition>Static</ObjectPosition>
+        <MeshPlacement>Default</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
+      </Mesh>
       <Selection>
         <Colors>
           <WeakSelectionColorType>NoColor</WeakSelectionColorType>
         </Colors>
         <GUIType>Guildhouse</GUIType>
         <AllowedDragType>ItemSocket;CargoItemStack;StorageItemStack</AllowedDragType>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <InteractionDistance>15</InteractionDistance>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
       </Selection>
       <Text>
         <LocaText>
@@ -72,11 +120,18 @@
           </English>
         </LocaText>
         <LineID>7008</LineID>
+        <Localize>1</Localize>
       </Text>
       <Constructable>
         <DestructionCategory>Production</DestructionCategory>
+        <ConstructionMode>Default</ConstructionMode>
+        <DestructionType>0</DestructionType>
       </Constructable>
-      <Locked />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
       <SoundEmitter>
         <ConstructionSounds>
           <BuildSuccessful>
@@ -118,15 +173,45 @@
             <Sound>9818756</Sound>
           </Item>
         </DestroySounds>
+        <ActiveSounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
-      <FeedbackController />
-      <Infolayer />
-      <RandomDummySpawner />
+      <FeedbackController>
+        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
+        <UpdateMeshSequence>1</UpdateMeshSequence>
+      </FeedbackController>
+      <Infolayer>
+        <DefaultInfoLayer>0</DefaultInfoLayer>
+      </Infolayer>
+      <RandomDummySpawner>
+        <RandomAssets />
+      </RandomDummySpawner>
       <ItemContainer>
         <SocketCount>3</SocketCount>
         <SocketAllocation>RadiusBuilding;HarborOffice</SocketAllocation>
         <SocketScope>Radius</SocketScope>
         <SocketScopeRadius>20</SocketScopeRadius>
+        <StackLimit>50</StackLimit>
+        <InitSocketItems />
+        <InitSlotItems />
+        <EmptySocketIcon>data/ui/2kimages/main/icons/icon_plus.png</EmptySocketIcon>
+        <EmptySocketItemNonModifiable>data/ui/2kimages/main/icons/icon_goods_storage.png</EmptySocketItemNonModifiable>
+        <SpawnsFlotsam>1</SpawnsFlotsam>
+        <FixedSlotContent>0</FixedSlotContent>
       </ItemContainer>
       <UpgradeList />
       <Attackable>
@@ -155,6 +240,9 @@
         <ExplosionEffectsMax>2</ExplosionEffectsMax>
         <HasRuinState>1</HasRuinState>
         <CanBeAttackedByPlayer>1</CanBeAttackedByPlayer>
+        <HPBarOffset>6</HPBarOffset>
+        <SelfHealPausedTimeIfAttacked>15000</SelfHealPausedTimeIfAttacked>
+        <ArmorType>Default</ArmorType>
       </Attackable>
       <Pausable />
       <Maintenance>
@@ -165,8 +253,16 @@
             <InactiveAmount>25</InactiveAmount>
           </Item>
         </Maintenances>
+        <MaintenanceAmountFactor>1</MaintenanceAmountFactor>
+        <WorkforceAmountFactor>1</WorkforceAmountFactor>
       </Maintenance>
-      <Culture />
+      <Culture>
+        <CultureType>Culture</CultureType>
+        <SetPages />
+        <UndiscoveredSet>0</UndiscoveredSet>
+        <ModuleListHeader>0</ModuleListHeader>
+        <OpenSetPages>0</OpenSetPages>
+      </Culture>
     </Values>
   </Asset>
   <Asset>
@@ -177,6 +273,7 @@
         <Name>harbor_office_colony01</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_harbour_kontor.png</IconFilename>
         <InfoDescription>11422</InfoDescription>
+        <Comments />
       </Standard>
       <Building>
         <AssociatedRegions>Colony01</AssociatedRegions>
@@ -184,11 +281,26 @@
         <BuildModeRandomRotation>90</BuildModeRandomRotation>
         <BuildingType>Factory</BuildingType>
         <TerrainType>Water</TerrainType>
+        <Destructable>1</Destructable>
+        <Movable>1</Movable>
+        <PickingAsset>0</PickingAsset>
+        <ConstructionMenuText>0</ConstructionMenuText>
+        <HasBorderRectOutline>1</HasBorderRectOutline>
+        <SnapRadius>2</SnapRadius>
+        <InfluencedByNeighbors />
+        <InfluencedVariationDirection />
+        <BuildingBlockPool />
+        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
       <Blocking>
         <GroundDecalAsset>102460</GroundDecalAsset>
         <GroundDecalInvisible>102459</GroundDecalInvisible>
         <HasBuildingBaseTiles>1</HasBuildingBaseTiles>
+        <HidePropsRadius>1</HidePropsRadius>
+        <DeletePropsRadius>1</DeletePropsRadius>
+        <StreetOutside>0</StreetOutside>
+        <RemoveGrass>1</RemoveGrass>
+        <BlocksBuilding>1</BlocksBuilding>
       </Blocking>
       <Cost>
         <Costs>
@@ -215,6 +327,8 @@
           </Item>
         </Costs>
         <InfluenceCostType>HarborOffice</InfluenceCostType>
+        <ItemsPerCost>1</ItemsPerCost>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
       </Cost>
       <Object>
         <Variations>
@@ -223,14 +337,44 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <Mesh />
+      <Mesh>
+        <ObjectPosition>Static</ObjectPosition>
+        <MeshPlacement>Default</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
+      </Mesh>
       <Selection>
         <Colors>
           <WeakSelectionColorType>NoColor</WeakSelectionColorType>
         </Colors>
         <GUIType>Guildhouse</GUIType>
         <AllowedDragType>ItemSocket;CargoItemStack;StorageItemStack</AllowedDragType>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <InteractionDistance>15</InteractionDistance>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
       </Selection>
       <Text>
         <LineID>8505</LineID>
@@ -241,11 +385,18 @@
             <ExportCount>2</ExportCount>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
       <Constructable>
         <DestructionCategory>Production</DestructionCategory>
+        <ConstructionMode>Default</ConstructionMode>
+        <DestructionType>0</DestructionType>
       </Constructable>
-      <Locked />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
       <SoundEmitter>
         <ConstructionSounds>
           <BuildSuccessful>
@@ -287,15 +438,45 @@
             <Sound>9818756</Sound>
           </Item>
         </DestroySounds>
+        <ActiveSounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
-      <FeedbackController />
-      <Infolayer />
-      <RandomDummySpawner />
+      <FeedbackController>
+        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
+        <UpdateMeshSequence>1</UpdateMeshSequence>
+      </FeedbackController>
+      <Infolayer>
+        <DefaultInfoLayer>0</DefaultInfoLayer>
+      </Infolayer>
+      <RandomDummySpawner>
+        <RandomAssets />
+      </RandomDummySpawner>
       <ItemContainer>
         <SocketCount>3</SocketCount>
         <SocketAllocation>RadiusBuilding;HarborOffice</SocketAllocation>
         <SocketScope>Radius</SocketScope>
         <SocketScopeRadius>20</SocketScopeRadius>
+        <StackLimit>50</StackLimit>
+        <InitSocketItems />
+        <InitSlotItems />
+        <EmptySocketIcon>data/ui/2kimages/main/icons/icon_plus.png</EmptySocketIcon>
+        <EmptySocketItemNonModifiable>data/ui/2kimages/main/icons/icon_goods_storage.png</EmptySocketItemNonModifiable>
+        <SpawnsFlotsam>1</SpawnsFlotsam>
+        <FixedSlotContent>0</FixedSlotContent>
       </ItemContainer>
       <UpgradeList />
       <Attackable>
@@ -324,6 +505,9 @@
         <ExplosionEffectsMax>2</ExplosionEffectsMax>
         <HasRuinState>1</HasRuinState>
         <CanBeAttackedByPlayer>1</CanBeAttackedByPlayer>
+        <HPBarOffset>6</HPBarOffset>
+        <SelfHealPausedTimeIfAttacked>15000</SelfHealPausedTimeIfAttacked>
+        <ArmorType>Default</ArmorType>
       </Attackable>
       <Pausable />
       <Maintenance>
@@ -334,8 +518,16 @@
             <InactiveAmount>25</InactiveAmount>
           </Item>
         </Maintenances>
+        <MaintenanceAmountFactor>1</MaintenanceAmountFactor>
+        <WorkforceAmountFactor>1</WorkforceAmountFactor>
       </Maintenance>
-      <Culture />
+      <Culture>
+        <CultureType>Culture</CultureType>
+        <SetPages />
+        <UndiscoveredSet>0</UndiscoveredSet>
+        <ModuleListHeader>0</ModuleListHeader>
+        <OpenSetPages>0</OpenSetPages>
+      </Culture>
     </Values>
   </Asset>
 </Assets>

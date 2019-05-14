@@ -6,6 +6,8 @@
       <Standard>
         <GUID>1003056</GUID>
         <Name>wisent</Name>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Object>
         <Variations>
@@ -14,10 +16,25 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <ObjectPosition>Dynamic</ObjectPosition>
         <MeshPlacement>OnTerrain</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Walking>
         <SpecialMovementType />
@@ -27,6 +44,31 @@
         <TurnDeceleration>0</TurnDeceleration>
         <CurveSegmentDensity>Low</CurveSegmentDensity>
         <CreatePathPlannerUnit>0</CreatePathPlannerUnit>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <PathPlannerLayer>Land</PathPlannerLayer>
+        <TurnAroundRadius>2</TurnAroundRadius>
+        <Deceleration>6</Deceleration>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <TurnMovement>100</TurnMovement>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <ForwardSpeed>1</ForwardSpeed>
+        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
       </Walking>
     </Values>
   </Asset>
@@ -36,6 +78,8 @@
       <Standard>
         <GUID>1003055</GUID>
         <Name>wolf</Name>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Object>
         <Variations>
@@ -44,10 +88,25 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <ObjectPosition>Dynamic</ObjectPosition>
         <MeshPlacement>OnTerrain</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Walking>
         <SpecialMovementType />
@@ -57,6 +116,31 @@
         <TurnDeceleration>0</TurnDeceleration>
         <CurveSegmentDensity>Low</CurveSegmentDensity>
         <CreatePathPlannerUnit>0</CreatePathPlannerUnit>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <PathPlannerLayer>Land</PathPlannerLayer>
+        <TurnAroundRadius>2</TurnAroundRadius>
+        <Deceleration>6</Deceleration>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <TurnMovement>100</TurnMovement>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <ForwardSpeed>1</ForwardSpeed>
+        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
       </Walking>
     </Values>
   </Asset>
@@ -66,6 +150,8 @@
       <Standard>
         <GUID>1000039</GUID>
         <Name>zebra</Name>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Object>
         <Variations>
@@ -74,10 +160,25 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <ObjectPosition>Dynamic</ObjectPosition>
         <MeshPlacement>OnTerrain</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Walking>
         <SpecialMovementType />
@@ -87,6 +188,31 @@
         <TurnDeceleration>0</TurnDeceleration>
         <CurveSegmentDensity>Low</CurveSegmentDensity>
         <CreatePathPlannerUnit>0</CreatePathPlannerUnit>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <PathPlannerLayer>Land</PathPlannerLayer>
+        <TurnAroundRadius>2</TurnAroundRadius>
+        <Deceleration>6</Deceleration>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <TurnMovement>100</TurnMovement>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <ForwardSpeed>1</ForwardSpeed>
+        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
       </Walking>
     </Values>
   </Asset>
@@ -96,6 +222,8 @@
       <Standard>
         <GUID>1000040</GUID>
         <Name>old_white_tiger</Name>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Object>
         <Variations>
@@ -104,10 +232,25 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <ObjectPosition>Dynamic</ObjectPosition>
         <MeshPlacement>OnTerrain</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Walking>
         <SpecialMovementType />
@@ -117,6 +260,31 @@
         <TurnDeceleration>0</TurnDeceleration>
         <CurveSegmentDensity>Low</CurveSegmentDensity>
         <CreatePathPlannerUnit>0</CreatePathPlannerUnit>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <PathPlannerLayer>Land</PathPlannerLayer>
+        <TurnAroundRadius>2</TurnAroundRadius>
+        <Deceleration>6</Deceleration>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <TurnMovement>100</TurnMovement>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <ForwardSpeed>1</ForwardSpeed>
+        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
       </Walking>
     </Values>
   </Asset>
@@ -126,6 +294,8 @@
       <Standard>
         <GUID>1003003</GUID>
         <Name>water buffalo</Name>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Object>
         <Variations>
@@ -134,10 +304,25 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <ObjectPosition>Dynamic</ObjectPosition>
         <MeshPlacement>OnTerrain</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Walking>
         <SpecialMovementType />
@@ -147,6 +332,31 @@
         <TurnDeceleration>0</TurnDeceleration>
         <CurveSegmentDensity>Low</CurveSegmentDensity>
         <CreatePathPlannerUnit>0</CreatePathPlannerUnit>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <PathPlannerLayer>Land</PathPlannerLayer>
+        <TurnAroundRadius>2</TurnAroundRadius>
+        <Deceleration>6</Deceleration>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <TurnMovement>100</TurnMovement>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <ForwardSpeed>1</ForwardSpeed>
+        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
       </Walking>
     </Values>
   </Asset>
@@ -156,6 +366,8 @@
       <Standard>
         <GUID>1000145</GUID>
         <Name>sheep</Name>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Object>
         <Variations>
@@ -164,10 +376,25 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <ObjectPosition>Dynamic</ObjectPosition>
         <MeshPlacement>OnTerrain</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Walking>
         <SpecialMovementType />
@@ -178,6 +405,30 @@
         <TurnMovement>50</TurnMovement>
         <CurveSegmentDensity>Low</CurveSegmentDensity>
         <CreatePathPlannerUnit>0</CreatePathPlannerUnit>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <PathPlannerLayer>Land</PathPlannerLayer>
+        <TurnAroundRadius>2</TurnAroundRadius>
+        <Deceleration>6</Deceleration>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <ForwardSpeed>1</ForwardSpeed>
+        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
       </Walking>
     </Values>
   </Asset>
@@ -187,6 +438,8 @@
       <Standard>
         <GUID>1000041</GUID>
         <Name>pig</Name>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Object>
         <Variations>
@@ -198,10 +451,25 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <ObjectPosition>Dynamic</ObjectPosition>
         <MeshPlacement>OnTerrain</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Walking>
         <SpecialMovementType />
@@ -211,6 +479,31 @@
         <TurnDeceleration>0</TurnDeceleration>
         <CurveSegmentDensity>Low</CurveSegmentDensity>
         <CreatePathPlannerUnit>0</CreatePathPlannerUnit>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <PathPlannerLayer>Land</PathPlannerLayer>
+        <TurnAroundRadius>2</TurnAroundRadius>
+        <Deceleration>6</Deceleration>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <TurnMovement>100</TurnMovement>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <ForwardSpeed>1</ForwardSpeed>
+        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
       </Walking>
     </Values>
   </Asset>
@@ -220,6 +513,8 @@
       <Standard>
         <GUID>1000042</GUID>
         <Name>chicken</Name>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Object>
         <Variations>
@@ -240,10 +535,25 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <ObjectPosition>Dynamic</ObjectPosition>
         <MeshPlacement>OnTerrain</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Walking>
         <SpecialMovementType />
@@ -253,6 +563,31 @@
         <TurnDeceleration>0</TurnDeceleration>
         <CurveSegmentDensity>Low</CurveSegmentDensity>
         <CreatePathPlannerUnit>0</CreatePathPlannerUnit>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <PathPlannerLayer>Land</PathPlannerLayer>
+        <TurnAroundRadius>2</TurnAroundRadius>
+        <Deceleration>6</Deceleration>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <TurnMovement>100</TurnMovement>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <ForwardSpeed>1</ForwardSpeed>
+        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
       </Walking>
     </Values>
   </Asset>
@@ -262,6 +597,8 @@
       <Standard>
         <GUID>1000043</GUID>
         <Name>ostrich</Name>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Object>
         <Variations>
@@ -270,10 +607,25 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <ObjectPosition>Dynamic</ObjectPosition>
         <MeshPlacement>OnTerrain</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Walking>
         <SpecialMovementType />
@@ -283,6 +635,31 @@
         <TurnDeceleration>0</TurnDeceleration>
         <CurveSegmentDensity>Low</CurveSegmentDensity>
         <CreatePathPlannerUnit>0</CreatePathPlannerUnit>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <PathPlannerLayer>Land</PathPlannerLayer>
+        <TurnAroundRadius>2</TurnAroundRadius>
+        <Deceleration>6</Deceleration>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <TurnMovement>100</TurnMovement>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <ForwardSpeed>1</ForwardSpeed>
+        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
       </Walking>
     </Values>
   </Asset>
@@ -292,6 +669,8 @@
       <Standard>
         <GUID>1000044</GUID>
         <Name>oxen</Name>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Object>
         <Variations>
@@ -300,10 +679,25 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <ObjectPosition>Dynamic</ObjectPosition>
         <MeshPlacement>OnTerrain</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Walking>
         <SpecialMovementType />
@@ -313,6 +707,31 @@
         <TurnDeceleration>0</TurnDeceleration>
         <CurveSegmentDensity>Low</CurveSegmentDensity>
         <CreatePathPlannerUnit>0</CreatePathPlannerUnit>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <PathPlannerLayer>Land</PathPlannerLayer>
+        <TurnAroundRadius>2</TurnAroundRadius>
+        <Deceleration>6</Deceleration>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <TurnMovement>100</TurnMovement>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <ForwardSpeed>1</ForwardSpeed>
+        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
       </Walking>
     </Values>
   </Asset>
@@ -322,6 +741,8 @@
       <Standard>
         <GUID>103126</GUID>
         <Name>albino peacock</Name>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Object>
         <Variations>
@@ -330,10 +751,25 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <ObjectPosition>Dynamic</ObjectPosition>
         <MeshPlacement>OnTerrain</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Walking>
         <SpecialMovementType />
@@ -343,6 +779,31 @@
         <TurnDeceleration>0</TurnDeceleration>
         <CurveSegmentDensity>Low</CurveSegmentDensity>
         <CreatePathPlannerUnit>0</CreatePathPlannerUnit>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <PathPlannerLayer>Land</PathPlannerLayer>
+        <TurnAroundRadius>2</TurnAroundRadius>
+        <Deceleration>6</Deceleration>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <TurnMovement>100</TurnMovement>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <ForwardSpeed>1</ForwardSpeed>
+        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
       </Walking>
     </Values>
   </Asset>
@@ -352,6 +813,8 @@
       <Standard>
         <GUID>1000047</GUID>
         <Name>peacock</Name>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Object>
         <Variations>
@@ -360,10 +823,25 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <ObjectPosition>Dynamic</ObjectPosition>
         <MeshPlacement>OnTerrain</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Walking>
         <SpecialMovementType />
@@ -373,6 +851,31 @@
         <TurnDeceleration>0</TurnDeceleration>
         <CurveSegmentDensity>Low</CurveSegmentDensity>
         <CreatePathPlannerUnit>0</CreatePathPlannerUnit>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <PathPlannerLayer>Land</PathPlannerLayer>
+        <TurnAroundRadius>2</TurnAroundRadius>
+        <Deceleration>6</Deceleration>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <TurnMovement>100</TurnMovement>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <ForwardSpeed>1</ForwardSpeed>
+        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
       </Walking>
     </Values>
   </Asset>
@@ -382,6 +885,8 @@
       <Standard>
         <GUID>1000052</GUID>
         <Name>muskox</Name>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Object>
         <Variations>
@@ -396,10 +901,25 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <ObjectPosition>Dynamic</ObjectPosition>
         <MeshPlacement>OnTerrain</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Walking>
         <SpecialMovementType />
@@ -409,6 +929,31 @@
         <TurnDeceleration>0</TurnDeceleration>
         <CurveSegmentDensity>Low</CurveSegmentDensity>
         <CreatePathPlannerUnit>0</CreatePathPlannerUnit>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <PathPlannerLayer>Land</PathPlannerLayer>
+        <TurnAroundRadius>2</TurnAroundRadius>
+        <Deceleration>6</Deceleration>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <TurnMovement>100</TurnMovement>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <ForwardSpeed>1</ForwardSpeed>
+        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
       </Walking>
     </Values>
   </Asset>
@@ -418,6 +963,8 @@
       <Standard>
         <GUID>1000141</GUID>
         <Name>horse</Name>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Object>
         <Variations>
@@ -435,10 +982,25 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <ObjectPosition>Dynamic</ObjectPosition>
         <MeshPlacement>OnTerrain</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Walking>
         <SpecialMovementType />
@@ -448,6 +1010,31 @@
         <TurnDeceleration>0</TurnDeceleration>
         <CurveSegmentDensity>Low</CurveSegmentDensity>
         <CreatePathPlannerUnit>0</CreatePathPlannerUnit>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <PathPlannerLayer>Land</PathPlannerLayer>
+        <TurnAroundRadius>2</TurnAroundRadius>
+        <Deceleration>6</Deceleration>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <TurnMovement>100</TurnMovement>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <ForwardSpeed>1</ForwardSpeed>
+        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
       </Walking>
     </Values>
   </Asset>
@@ -457,6 +1044,8 @@
       <Standard>
         <GUID>1000053</GUID>
         <Name>hyaena</Name>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Object>
         <Variations>
@@ -465,10 +1054,25 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <ObjectPosition>Dynamic</ObjectPosition>
         <MeshPlacement>OnTerrain</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Walking>
         <SpecialMovementType />
@@ -478,6 +1082,31 @@
         <TurnDeceleration>0</TurnDeceleration>
         <CurveSegmentDensity>Low</CurveSegmentDensity>
         <CreatePathPlannerUnit>0</CreatePathPlannerUnit>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <PathPlannerLayer>Land</PathPlannerLayer>
+        <TurnAroundRadius>2</TurnAroundRadius>
+        <Deceleration>6</Deceleration>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <TurnMovement>100</TurnMovement>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <ForwardSpeed>1</ForwardSpeed>
+        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
       </Walking>
     </Values>
   </Asset>
@@ -487,6 +1116,8 @@
       <Standard>
         <GUID>1000054</GUID>
         <Name>indian_cow</Name>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Object>
         <Variations>
@@ -495,10 +1126,25 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <ObjectPosition>Dynamic</ObjectPosition>
         <MeshPlacement>OnTerrain</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Walking>
         <SpecialMovementType />
@@ -508,6 +1154,31 @@
         <TurnDeceleration>0</TurnDeceleration>
         <CurveSegmentDensity>Low</CurveSegmentDensity>
         <CreatePathPlannerUnit>0</CreatePathPlannerUnit>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <PathPlannerLayer>Land</PathPlannerLayer>
+        <TurnAroundRadius>2</TurnAroundRadius>
+        <Deceleration>6</Deceleration>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <TurnMovement>100</TurnMovement>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <ForwardSpeed>1</ForwardSpeed>
+        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
       </Walking>
     </Values>
   </Asset>
@@ -517,6 +1188,8 @@
       <Standard>
         <GUID>103127</GUID>
         <Name>albino gorilla</Name>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Object>
         <Variations>
@@ -525,10 +1198,25 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <ObjectPosition>Dynamic</ObjectPosition>
         <MeshPlacement>OnTerrain</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Walking>
         <SpecialMovementType />
@@ -538,6 +1226,31 @@
         <TurnDeceleration>0</TurnDeceleration>
         <CurveSegmentDensity>Low</CurveSegmentDensity>
         <CreatePathPlannerUnit>0</CreatePathPlannerUnit>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <PathPlannerLayer>Land</PathPlannerLayer>
+        <TurnAroundRadius>2</TurnAroundRadius>
+        <Deceleration>6</Deceleration>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <TurnMovement>100</TurnMovement>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <ForwardSpeed>1</ForwardSpeed>
+        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
       </Walking>
     </Values>
   </Asset>
@@ -547,6 +1260,8 @@
       <Standard>
         <GUID>1000056</GUID>
         <Name>gorilla</Name>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Object>
         <Variations>
@@ -555,10 +1270,25 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <ObjectPosition>Dynamic</ObjectPosition>
         <MeshPlacement>OnTerrain</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Walking>
         <SpecialMovementType />
@@ -568,6 +1298,31 @@
         <TurnDeceleration>0</TurnDeceleration>
         <CurveSegmentDensity>Low</CurveSegmentDensity>
         <CreatePathPlannerUnit>0</CreatePathPlannerUnit>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <PathPlannerLayer>Land</PathPlannerLayer>
+        <TurnAroundRadius>2</TurnAroundRadius>
+        <Deceleration>6</Deceleration>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <TurnMovement>100</TurnMovement>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <ForwardSpeed>1</ForwardSpeed>
+        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
       </Walking>
     </Values>
   </Asset>
@@ -577,6 +1332,8 @@
       <Standard>
         <GUID>1002982</GUID>
         <Name>goat</Name>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Object>
         <Variations>
@@ -588,10 +1345,25 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <ObjectPosition>Dynamic</ObjectPosition>
         <MeshPlacement>OnTerrain</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Walking>
         <SpecialMovementType />
@@ -601,6 +1373,31 @@
         <TurnDeceleration>0</TurnDeceleration>
         <CurveSegmentDensity>Low</CurveSegmentDensity>
         <CreatePathPlannerUnit>0</CreatePathPlannerUnit>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <PathPlannerLayer>Land</PathPlannerLayer>
+        <TurnAroundRadius>2</TurnAroundRadius>
+        <Deceleration>6</Deceleration>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <TurnMovement>100</TurnMovement>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <ForwardSpeed>1</ForwardSpeed>
+        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
       </Walking>
     </Values>
   </Asset>
@@ -610,6 +1407,8 @@
       <Standard>
         <GUID>1000058</GUID>
         <Name>fox_brown</Name>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Object>
         <Variations>
@@ -618,10 +1417,25 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <ObjectPosition>Dynamic</ObjectPosition>
         <MeshPlacement>OnTerrain</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Walking>
         <SpecialMovementType />
@@ -631,6 +1445,31 @@
         <TurnDeceleration>0</TurnDeceleration>
         <CurveSegmentDensity>Low</CurveSegmentDensity>
         <CreatePathPlannerUnit>0</CreatePathPlannerUnit>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <PathPlannerLayer>Land</PathPlannerLayer>
+        <TurnAroundRadius>2</TurnAroundRadius>
+        <Deceleration>6</Deceleration>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <TurnMovement>100</TurnMovement>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <ForwardSpeed>1</ForwardSpeed>
+        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
       </Walking>
     </Values>
   </Asset>
@@ -640,6 +1479,8 @@
       <Standard>
         <GUID>1000060</GUID>
         <Name>flamingo</Name>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Object>
         <Variations>
@@ -657,10 +1498,25 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <ObjectPosition>Dynamic</ObjectPosition>
         <MeshPlacement>OnTerrain</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Walking>
         <SpecialMovementType />
@@ -670,6 +1526,31 @@
         <TurnDeceleration>0</TurnDeceleration>
         <CurveSegmentDensity>Low</CurveSegmentDensity>
         <CreatePathPlannerUnit>0</CreatePathPlannerUnit>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <PathPlannerLayer>Land</PathPlannerLayer>
+        <TurnAroundRadius>2</TurnAroundRadius>
+        <Deceleration>6</Deceleration>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <TurnMovement>100</TurnMovement>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <ForwardSpeed>1</ForwardSpeed>
+        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
       </Walking>
     </Values>
   </Asset>
@@ -679,6 +1560,8 @@
       <Standard>
         <GUID>1000140</GUID>
         <Name>elk</Name>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Object>
         <Variations>
@@ -687,10 +1570,25 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <ObjectPosition>Dynamic</ObjectPosition>
         <MeshPlacement>OnTerrain</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Walking>
         <SpecialMovementType />
@@ -700,6 +1598,31 @@
         <TurnDeceleration>0</TurnDeceleration>
         <CurveSegmentDensity>Low</CurveSegmentDensity>
         <CreatePathPlannerUnit>0</CreatePathPlannerUnit>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <PathPlannerLayer>Land</PathPlannerLayer>
+        <TurnAroundRadius>2</TurnAroundRadius>
+        <Deceleration>6</Deceleration>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <TurnMovement>100</TurnMovement>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <ForwardSpeed>1</ForwardSpeed>
+        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
       </Walking>
     </Values>
   </Asset>
@@ -709,6 +1632,8 @@
       <Standard>
         <GUID>1000062</GUID>
         <Name>elephant</Name>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Object>
         <Variations>
@@ -717,10 +1642,25 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <ObjectPosition>Dynamic</ObjectPosition>
         <MeshPlacement>OnTerrain</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Walking>
         <SpecialMovementType />
@@ -730,6 +1670,31 @@
         <TurnDeceleration>0</TurnDeceleration>
         <CurveSegmentDensity>Low</CurveSegmentDensity>
         <CreatePathPlannerUnit>0</CreatePathPlannerUnit>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <PathPlannerLayer>Land</PathPlannerLayer>
+        <TurnAroundRadius>2</TurnAroundRadius>
+        <Deceleration>6</Deceleration>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <TurnMovement>100</TurnMovement>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <ForwardSpeed>1</ForwardSpeed>
+        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
       </Walking>
     </Values>
   </Asset>
@@ -739,6 +1704,8 @@
       <Standard>
         <GUID>1000063</GUID>
         <Name>dromedary</Name>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Object>
         <Variations>
@@ -747,10 +1714,25 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <ObjectPosition>Dynamic</ObjectPosition>
         <MeshPlacement>OnTerrain</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Walking>
         <SpecialMovementType />
@@ -760,6 +1742,31 @@
         <TurnDeceleration>0</TurnDeceleration>
         <CurveSegmentDensity>Low</CurveSegmentDensity>
         <CreatePathPlannerUnit>0</CreatePathPlannerUnit>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <PathPlannerLayer>Land</PathPlannerLayer>
+        <TurnAroundRadius>2</TurnAroundRadius>
+        <Deceleration>6</Deceleration>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <TurnMovement>100</TurnMovement>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <ForwardSpeed>1</ForwardSpeed>
+        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
       </Walking>
     </Values>
   </Asset>
@@ -769,6 +1776,8 @@
       <Standard>
         <GUID>1000136</GUID>
         <Name>deer</Name>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Object>
         <Variations>
@@ -783,10 +1792,25 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <ObjectPosition>Dynamic</ObjectPosition>
         <MeshPlacement>OnTerrain</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Walking>
         <SpecialMovementType />
@@ -796,6 +1820,31 @@
         <TurnDeceleration>0</TurnDeceleration>
         <CurveSegmentDensity>Low</CurveSegmentDensity>
         <CreatePathPlannerUnit>0</CreatePathPlannerUnit>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <PathPlannerLayer>Land</PathPlannerLayer>
+        <TurnAroundRadius>2</TurnAroundRadius>
+        <Deceleration>6</Deceleration>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <TurnMovement>100</TurnMovement>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <ForwardSpeed>1</ForwardSpeed>
+        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
       </Walking>
     </Values>
   </Asset>
@@ -805,6 +1854,8 @@
       <Standard>
         <GUID>1000137</GUID>
         <Name>dog</Name>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Object>
         <Variations>
@@ -816,10 +1867,25 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <ObjectPosition>Dynamic</ObjectPosition>
         <MeshPlacement>OnTerrain</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Walking>
         <SpecialMovementType />
@@ -829,6 +1895,31 @@
         <TurnDeceleration>0</TurnDeceleration>
         <CurveSegmentDensity>Low</CurveSegmentDensity>
         <CreatePathPlannerUnit>0</CreatePathPlannerUnit>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <PathPlannerLayer>Land</PathPlannerLayer>
+        <TurnAroundRadius>2</TurnAroundRadius>
+        <Deceleration>6</Deceleration>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <TurnMovement>100</TurnMovement>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <ForwardSpeed>1</ForwardSpeed>
+        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
       </Walking>
     </Values>
   </Asset>
@@ -838,6 +1929,8 @@
       <Standard>
         <GUID>1000067</GUID>
         <Name>crocodile</Name>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Object>
         <Variations>
@@ -849,10 +1942,25 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <ObjectPosition>Dynamic</ObjectPosition>
         <MeshPlacement>OnTerrain</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Walking>
         <SpecialMovementType />
@@ -862,6 +1970,31 @@
         <TurnDeceleration>0</TurnDeceleration>
         <CurveSegmentDensity>Low</CurveSegmentDensity>
         <CreatePathPlannerUnit>0</CreatePathPlannerUnit>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <PathPlannerLayer>Land</PathPlannerLayer>
+        <TurnAroundRadius>2</TurnAroundRadius>
+        <Deceleration>6</Deceleration>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <TurnMovement>100</TurnMovement>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <ForwardSpeed>1</ForwardSpeed>
+        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
       </Walking>
     </Values>
   </Asset>
@@ -871,6 +2004,8 @@
       <Standard>
         <GUID>1000135</GUID>
         <Name>cattle</Name>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Object>
         <Variations>
@@ -882,10 +2017,25 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <ObjectPosition>Dynamic</ObjectPosition>
         <MeshPlacement>OnTerrain</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Walking>
         <SpecialMovementType />
@@ -895,6 +2045,31 @@
         <TurnDeceleration>0</TurnDeceleration>
         <CurveSegmentDensity>Low</CurveSegmentDensity>
         <CreatePathPlannerUnit>0</CreatePathPlannerUnit>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <PathPlannerLayer>Land</PathPlannerLayer>
+        <TurnAroundRadius>2</TurnAroundRadius>
+        <Deceleration>6</Deceleration>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <TurnMovement>100</TurnMovement>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <ForwardSpeed>1</ForwardSpeed>
+        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
       </Walking>
     </Values>
   </Asset>
@@ -904,6 +2079,8 @@
       <Standard>
         <GUID>1000134</GUID>
         <Name>cat</Name>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Object>
         <Variations>
@@ -912,10 +2089,25 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <ObjectPosition>Dynamic</ObjectPosition>
         <MeshPlacement>OnTerrain</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Walking>
         <SpecialMovementType />
@@ -925,6 +2117,31 @@
         <TurnDeceleration>0</TurnDeceleration>
         <CurveSegmentDensity>Low</CurveSegmentDensity>
         <CreatePathPlannerUnit>0</CreatePathPlannerUnit>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <PathPlannerLayer>Land</PathPlannerLayer>
+        <TurnAroundRadius>2</TurnAroundRadius>
+        <Deceleration>6</Deceleration>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <TurnMovement>100</TurnMovement>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <ForwardSpeed>1</ForwardSpeed>
+        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
       </Walking>
     </Values>
   </Asset>
@@ -934,6 +2151,8 @@
       <Standard>
         <GUID>1000132</GUID>
         <Name>bear</Name>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Object>
         <Variations>
@@ -942,10 +2161,25 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <ObjectPosition>Dynamic</ObjectPosition>
         <MeshPlacement>OnTerrain</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Walking>
         <SpecialMovementType />
@@ -955,6 +2189,31 @@
         <TurnDeceleration>0</TurnDeceleration>
         <CurveSegmentDensity>Low</CurveSegmentDensity>
         <CreatePathPlannerUnit>0</CreatePathPlannerUnit>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <PathPlannerLayer>Land</PathPlannerLayer>
+        <TurnAroundRadius>2</TurnAroundRadius>
+        <Deceleration>6</Deceleration>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <TurnMovement>100</TurnMovement>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <ForwardSpeed>1</ForwardSpeed>
+        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
       </Walking>
     </Values>
   </Asset>
@@ -964,6 +2223,8 @@
       <Standard>
         <GUID>1000069</GUID>
         <Name>antelope</Name>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Object>
         <Variations>
@@ -972,10 +2233,25 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <ObjectPosition>Dynamic</ObjectPosition>
         <MeshPlacement>OnTerrain</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Walking>
         <SpecialMovementType />
@@ -985,6 +2261,31 @@
         <TurnDeceleration>0</TurnDeceleration>
         <CurveSegmentDensity>Low</CurveSegmentDensity>
         <CreatePathPlannerUnit>0</CreatePathPlannerUnit>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <PathPlannerLayer>Land</PathPlannerLayer>
+        <TurnAroundRadius>2</TurnAroundRadius>
+        <Deceleration>6</Deceleration>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <TurnMovement>100</TurnMovement>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <ForwardSpeed>1</ForwardSpeed>
+        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
       </Walking>
     </Values>
   </Asset>
@@ -994,6 +2295,8 @@
       <Standard>
         <GUID>1000070</GUID>
         <Name>donkey</Name>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Object>
         <Variations>
@@ -1008,10 +2311,25 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <ObjectPosition>Dynamic</ObjectPosition>
         <MeshPlacement>OnTerrain</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Walking>
         <SpecialMovementType />
@@ -1021,6 +2339,31 @@
         <TurnDeceleration>0</TurnDeceleration>
         <CurveSegmentDensity>Low</CurveSegmentDensity>
         <CreatePathPlannerUnit>0</CreatePathPlannerUnit>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <PathPlannerLayer>Land</PathPlannerLayer>
+        <TurnAroundRadius>2</TurnAroundRadius>
+        <Deceleration>6</Deceleration>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <TurnMovement>100</TurnMovement>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <ForwardSpeed>1</ForwardSpeed>
+        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
       </Walking>
     </Values>
   </Asset>
@@ -1030,6 +2373,8 @@
       <Standard>
         <GUID>1000184</GUID>
         <Name>tiger</Name>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Object>
         <Variations>
@@ -1038,10 +2383,25 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <ObjectPosition>Dynamic</ObjectPosition>
         <MeshPlacement>OnTerrain</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Walking>
         <SpecialMovementType />
@@ -1051,6 +2411,31 @@
         <TurnDeceleration>0</TurnDeceleration>
         <CurveSegmentDensity>Low</CurveSegmentDensity>
         <CreatePathPlannerUnit>0</CreatePathPlannerUnit>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <PathPlannerLayer>Land</PathPlannerLayer>
+        <TurnAroundRadius>2</TurnAroundRadius>
+        <Deceleration>6</Deceleration>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <TurnMovement>100</TurnMovement>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <ForwardSpeed>1</ForwardSpeed>
+        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
       </Walking>
     </Values>
   </Asset>
@@ -1060,6 +2445,8 @@
       <Standard>
         <GUID>100822</GUID>
         <Name>panther</Name>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Object>
         <Variations>
@@ -1068,10 +2455,25 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <ObjectPosition>Dynamic</ObjectPosition>
         <MeshPlacement>OnTerrain</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Walking>
         <SpecialMovementType />
@@ -1081,6 +2483,31 @@
         <TurnDeceleration>0</TurnDeceleration>
         <CurveSegmentDensity>Low</CurveSegmentDensity>
         <CreatePathPlannerUnit>0</CreatePathPlannerUnit>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <PathPlannerLayer>Land</PathPlannerLayer>
+        <TurnAroundRadius>2</TurnAroundRadius>
+        <Deceleration>6</Deceleration>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <TurnMovement>100</TurnMovement>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <ForwardSpeed>1</ForwardSpeed>
+        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
       </Walking>
     </Values>
   </Asset>
@@ -1090,6 +2517,8 @@
       <Standard>
         <GUID>101050</GUID>
         <Name>bear_polar</Name>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Object>
         <Variations>
@@ -1098,10 +2527,25 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <ObjectPosition>Dynamic</ObjectPosition>
         <MeshPlacement>OnTerrain</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Walking>
         <SpecialMovementType />
@@ -1111,6 +2555,31 @@
         <TurnDeceleration>0</TurnDeceleration>
         <CurveSegmentDensity>Low</CurveSegmentDensity>
         <CreatePathPlannerUnit>0</CreatePathPlannerUnit>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <PathPlannerLayer>Land</PathPlannerLayer>
+        <TurnAroundRadius>2</TurnAroundRadius>
+        <Deceleration>6</Deceleration>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <TurnMovement>100</TurnMovement>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <ForwardSpeed>1</ForwardSpeed>
+        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
       </Walking>
     </Values>
   </Asset>
@@ -1120,6 +2589,8 @@
       <Standard>
         <GUID>101051</GUID>
         <Name>seal</Name>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Object>
         <Variations>
@@ -1128,10 +2599,25 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <ObjectPosition>Dynamic</ObjectPosition>
         <MeshPlacement>OnTerrain</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Walking>
         <SpecialMovementType />
@@ -1141,6 +2627,31 @@
         <TurnDeceleration>0</TurnDeceleration>
         <CurveSegmentDensity>Low</CurveSegmentDensity>
         <CreatePathPlannerUnit>0</CreatePathPlannerUnit>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <PathPlannerLayer>Land</PathPlannerLayer>
+        <TurnAroundRadius>2</TurnAroundRadius>
+        <Deceleration>6</Deceleration>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <TurnMovement>100</TurnMovement>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <ForwardSpeed>1</ForwardSpeed>
+        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
       </Walking>
     </Values>
   </Asset>
@@ -1150,6 +2661,8 @@
       <Standard>
         <GUID>101766</GUID>
         <Name>black_bear</Name>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Object>
         <Variations>
@@ -1158,10 +2671,25 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <ObjectPosition>Dynamic</ObjectPosition>
         <MeshPlacement>OnTerrain</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Walking>
         <SpecialMovementType />
@@ -1171,6 +2699,31 @@
         <TurnDeceleration>0</TurnDeceleration>
         <CurveSegmentDensity>Low</CurveSegmentDensity>
         <CreatePathPlannerUnit>0</CreatePathPlannerUnit>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <PathPlannerLayer>Land</PathPlannerLayer>
+        <TurnAroundRadius>2</TurnAroundRadius>
+        <Deceleration>6</Deceleration>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <TurnMovement>100</TurnMovement>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <ForwardSpeed>1</ForwardSpeed>
+        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
       </Walking>
     </Values>
   </Asset>
@@ -1180,6 +2733,8 @@
       <Standard>
         <GUID>101767</GUID>
         <Name>black_panther</Name>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Object>
         <Variations>
@@ -1188,10 +2743,25 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <ObjectPosition>Dynamic</ObjectPosition>
         <MeshPlacement>OnTerrain</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Walking>
         <SpecialMovementType />
@@ -1201,6 +2771,31 @@
         <TurnDeceleration>0</TurnDeceleration>
         <CurveSegmentDensity>Low</CurveSegmentDensity>
         <CreatePathPlannerUnit>0</CreatePathPlannerUnit>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <PathPlannerLayer>Land</PathPlannerLayer>
+        <TurnAroundRadius>2</TurnAroundRadius>
+        <Deceleration>6</Deceleration>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <TurnMovement>100</TurnMovement>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <ForwardSpeed>1</ForwardSpeed>
+        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
       </Walking>
     </Values>
   </Asset>
@@ -1210,6 +2805,8 @@
       <Standard>
         <GUID>101768</GUID>
         <Name>spectacled_bear</Name>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Object>
         <Variations>
@@ -1218,10 +2815,25 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <ObjectPosition>Dynamic</ObjectPosition>
         <MeshPlacement>OnTerrain</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Walking>
         <SpecialMovementType />
@@ -1231,6 +2843,31 @@
         <TurnDeceleration>0</TurnDeceleration>
         <CurveSegmentDensity>Low</CurveSegmentDensity>
         <CreatePathPlannerUnit>0</CreatePathPlannerUnit>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <PathPlannerLayer>Land</PathPlannerLayer>
+        <TurnAroundRadius>2</TurnAroundRadius>
+        <Deceleration>6</Deceleration>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <TurnMovement>100</TurnMovement>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <ForwardSpeed>1</ForwardSpeed>
+        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
       </Walking>
     </Values>
   </Asset>
@@ -1240,6 +2877,8 @@
       <Standard>
         <GUID>101769</GUID>
         <Name>kolponomos</Name>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Object>
         <Variations>
@@ -1248,10 +2887,25 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <ObjectPosition>Dynamic</ObjectPosition>
         <MeshPlacement>OnTerrain</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Walking>
         <SpecialMovementType />
@@ -1261,6 +2915,31 @@
         <TurnDeceleration>0</TurnDeceleration>
         <CurveSegmentDensity>Low</CurveSegmentDensity>
         <CreatePathPlannerUnit>0</CreatePathPlannerUnit>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <PathPlannerLayer>Land</PathPlannerLayer>
+        <TurnAroundRadius>2</TurnAroundRadius>
+        <Deceleration>6</Deceleration>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <TurnMovement>100</TurnMovement>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <ForwardSpeed>1</ForwardSpeed>
+        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
       </Walking>
     </Values>
   </Asset>
@@ -1270,6 +2949,8 @@
       <Standard>
         <GUID>101770</GUID>
         <Name>white_tiger</Name>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Object>
         <Variations>
@@ -1278,10 +2959,25 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <ObjectPosition>Dynamic</ObjectPosition>
         <MeshPlacement>OnTerrain</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Walking>
         <SpecialMovementType />
@@ -1291,6 +2987,31 @@
         <TurnDeceleration>0</TurnDeceleration>
         <CurveSegmentDensity>Low</CurveSegmentDensity>
         <CreatePathPlannerUnit>0</CreatePathPlannerUnit>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <PathPlannerLayer>Land</PathPlannerLayer>
+        <TurnAroundRadius>2</TurnAroundRadius>
+        <Deceleration>6</Deceleration>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <TurnMovement>100</TurnMovement>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <ForwardSpeed>1</ForwardSpeed>
+        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
       </Walking>
     </Values>
   </Asset>
@@ -1300,6 +3021,8 @@
       <Standard>
         <GUID>101771</GUID>
         <Name>black_panther</Name>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Object>
         <Variations>
@@ -1308,10 +3031,25 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <ObjectPosition>Dynamic</ObjectPosition>
         <MeshPlacement>OnTerrain</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Walking>
         <SpecialMovementType />
@@ -1321,6 +3059,31 @@
         <TurnDeceleration>0</TurnDeceleration>
         <CurveSegmentDensity>Low</CurveSegmentDensity>
         <CreatePathPlannerUnit>0</CreatePathPlannerUnit>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <PathPlannerLayer>Land</PathPlannerLayer>
+        <TurnAroundRadius>2</TurnAroundRadius>
+        <Deceleration>6</Deceleration>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <TurnMovement>100</TurnMovement>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <ForwardSpeed>1</ForwardSpeed>
+        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
       </Walking>
     </Values>
   </Asset>
@@ -1330,6 +3093,8 @@
       <Standard>
         <GUID>101772</GUID>
         <Name>jaguar</Name>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Object>
         <Variations>
@@ -1338,10 +3103,25 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <ObjectPosition>Dynamic</ObjectPosition>
         <MeshPlacement>OnTerrain</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Walking>
         <SpecialMovementType />
@@ -1351,6 +3131,31 @@
         <TurnDeceleration>0</TurnDeceleration>
         <CurveSegmentDensity>Low</CurveSegmentDensity>
         <CreatePathPlannerUnit>0</CreatePathPlannerUnit>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <PathPlannerLayer>Land</PathPlannerLayer>
+        <TurnAroundRadius>2</TurnAroundRadius>
+        <Deceleration>6</Deceleration>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <TurnMovement>100</TurnMovement>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <ForwardSpeed>1</ForwardSpeed>
+        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
       </Walking>
     </Values>
   </Asset>
@@ -1360,6 +3165,8 @@
       <Standard>
         <GUID>101773</GUID>
         <Name>zanzibar_leopard</Name>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Object>
         <Variations>
@@ -1368,10 +3175,25 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <ObjectPosition>Dynamic</ObjectPosition>
         <MeshPlacement>OnTerrain</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Walking>
         <SpecialMovementType />
@@ -1381,6 +3203,31 @@
         <TurnDeceleration>0</TurnDeceleration>
         <CurveSegmentDensity>Low</CurveSegmentDensity>
         <CreatePathPlannerUnit>0</CreatePathPlannerUnit>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <PathPlannerLayer>Land</PathPlannerLayer>
+        <TurnAroundRadius>2</TurnAroundRadius>
+        <Deceleration>6</Deceleration>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <TurnMovement>100</TurnMovement>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <ForwardSpeed>1</ForwardSpeed>
+        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
       </Walking>
     </Values>
   </Asset>
@@ -1390,6 +3237,8 @@
       <Standard>
         <GUID>101777</GUID>
         <Name>reindeer</Name>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Object>
         <Variations>
@@ -1398,10 +3247,25 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <ObjectPosition>Dynamic</ObjectPosition>
         <MeshPlacement>OnTerrain</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Walking>
         <SpecialMovementType />
@@ -1411,6 +3275,31 @@
         <TurnDeceleration>0</TurnDeceleration>
         <CurveSegmentDensity>Low</CurveSegmentDensity>
         <CreatePathPlannerUnit>0</CreatePathPlannerUnit>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <PathPlannerLayer>Land</PathPlannerLayer>
+        <TurnAroundRadius>2</TurnAroundRadius>
+        <Deceleration>6</Deceleration>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <TurnMovement>100</TurnMovement>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <ForwardSpeed>1</ForwardSpeed>
+        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
       </Walking>
     </Values>
   </Asset>
@@ -1420,6 +3309,8 @@
       <Standard>
         <GUID>101778</GUID>
         <Name>chital</Name>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Object>
         <Variations>
@@ -1428,10 +3319,25 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <ObjectPosition>Dynamic</ObjectPosition>
         <MeshPlacement>OnTerrain</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Walking>
         <SpecialMovementType />
@@ -1441,6 +3347,31 @@
         <TurnDeceleration>0</TurnDeceleration>
         <CurveSegmentDensity>Low</CurveSegmentDensity>
         <CreatePathPlannerUnit>0</CreatePathPlannerUnit>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <PathPlannerLayer>Land</PathPlannerLayer>
+        <TurnAroundRadius>2</TurnAroundRadius>
+        <Deceleration>6</Deceleration>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <TurnMovement>100</TurnMovement>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <ForwardSpeed>1</ForwardSpeed>
+        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
       </Walking>
     </Values>
   </Asset>
@@ -1450,6 +3381,8 @@
       <Standard>
         <GUID>101780</GUID>
         <Name>irish_elk</Name>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Object>
         <Variations>
@@ -1458,10 +3391,25 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <ObjectPosition>Dynamic</ObjectPosition>
         <MeshPlacement>OnTerrain</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Walking>
         <SpecialMovementType />
@@ -1471,6 +3419,31 @@
         <TurnDeceleration>0</TurnDeceleration>
         <CurveSegmentDensity>Low</CurveSegmentDensity>
         <CreatePathPlannerUnit>0</CreatePathPlannerUnit>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <PathPlannerLayer>Land</PathPlannerLayer>
+        <TurnAroundRadius>2</TurnAroundRadius>
+        <Deceleration>6</Deceleration>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <TurnMovement>100</TurnMovement>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <ForwardSpeed>1</ForwardSpeed>
+        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
       </Walking>
     </Values>
   </Asset>
@@ -1480,6 +3453,8 @@
       <Standard>
         <GUID>101781</GUID>
         <Name>alaskan_moose</Name>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Object>
         <Variations>
@@ -1488,10 +3463,25 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <ObjectPosition>Dynamic</ObjectPosition>
         <MeshPlacement>OnTerrain</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Walking>
         <SpecialMovementType />
@@ -1501,6 +3491,31 @@
         <TurnDeceleration>0</TurnDeceleration>
         <CurveSegmentDensity>Low</CurveSegmentDensity>
         <CreatePathPlannerUnit>0</CreatePathPlannerUnit>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <PathPlannerLayer>Land</PathPlannerLayer>
+        <TurnAroundRadius>2</TurnAroundRadius>
+        <Deceleration>6</Deceleration>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <TurnMovement>100</TurnMovement>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <ForwardSpeed>1</ForwardSpeed>
+        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
       </Walking>
     </Values>
   </Asset>
@@ -1510,6 +3525,8 @@
       <Standard>
         <GUID>101785</GUID>
         <Name>antarctic_wolf</Name>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Object>
         <Variations>
@@ -1518,10 +3535,25 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <ObjectPosition>Dynamic</ObjectPosition>
         <MeshPlacement>OnTerrain</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Walking>
         <SpecialMovementType />
@@ -1531,6 +3563,31 @@
         <TurnDeceleration>0</TurnDeceleration>
         <CurveSegmentDensity>Low</CurveSegmentDensity>
         <CreatePathPlannerUnit>0</CreatePathPlannerUnit>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <PathPlannerLayer>Land</PathPlannerLayer>
+        <TurnAroundRadius>2</TurnAroundRadius>
+        <Deceleration>6</Deceleration>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <TurnMovement>100</TurnMovement>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <ForwardSpeed>1</ForwardSpeed>
+        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
       </Walking>
     </Values>
   </Asset>
@@ -1540,6 +3597,8 @@
       <Standard>
         <GUID>101786</GUID>
         <Name>bat_eared_fennec</Name>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Object>
         <Variations>
@@ -1548,10 +3607,25 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <ObjectPosition>Dynamic</ObjectPosition>
         <MeshPlacement>OnTerrain</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Walking>
         <SpecialMovementType />
@@ -1561,6 +3635,31 @@
         <TurnDeceleration>0</TurnDeceleration>
         <CurveSegmentDensity>Low</CurveSegmentDensity>
         <CreatePathPlannerUnit>0</CreatePathPlannerUnit>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <PathPlannerLayer>Land</PathPlannerLayer>
+        <TurnAroundRadius>2</TurnAroundRadius>
+        <Deceleration>6</Deceleration>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <TurnMovement>100</TurnMovement>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <ForwardSpeed>1</ForwardSpeed>
+        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
       </Walking>
     </Values>
   </Asset>
@@ -1570,6 +3669,8 @@
       <Standard>
         <GUID>101787</GUID>
         <Name>albinos_fennec</Name>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Object>
         <Variations>
@@ -1578,10 +3679,25 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <ObjectPosition>Dynamic</ObjectPosition>
         <MeshPlacement>OnTerrain</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Walking>
         <SpecialMovementType />
@@ -1591,6 +3707,31 @@
         <TurnDeceleration>0</TurnDeceleration>
         <CurveSegmentDensity>Low</CurveSegmentDensity>
         <CreatePathPlannerUnit>0</CreatePathPlannerUnit>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <PathPlannerLayer>Land</PathPlannerLayer>
+        <TurnAroundRadius>2</TurnAroundRadius>
+        <Deceleration>6</Deceleration>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <TurnMovement>100</TurnMovement>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <ForwardSpeed>1</ForwardSpeed>
+        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
       </Walking>
     </Values>
   </Asset>
@@ -1600,6 +3741,8 @@
       <Standard>
         <GUID>101788</GUID>
         <Name>dire_wolf</Name>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Object>
         <Variations>
@@ -1608,10 +3751,25 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <ObjectPosition>Dynamic</ObjectPosition>
         <MeshPlacement>OnTerrain</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Walking>
         <SpecialMovementType />
@@ -1621,6 +3779,31 @@
         <TurnDeceleration>0</TurnDeceleration>
         <CurveSegmentDensity>Low</CurveSegmentDensity>
         <CreatePathPlannerUnit>0</CreatePathPlannerUnit>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <PathPlannerLayer>Land</PathPlannerLayer>
+        <TurnAroundRadius>2</TurnAroundRadius>
+        <Deceleration>6</Deceleration>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <TurnMovement>100</TurnMovement>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <ForwardSpeed>1</ForwardSpeed>
+        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
       </Walking>
     </Values>
   </Asset>
@@ -1630,6 +3813,8 @@
       <Standard>
         <GUID>101789</GUID>
         <Name>fennec</Name>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Object>
         <Variations>
@@ -1638,10 +3823,25 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <ObjectPosition>Dynamic</ObjectPosition>
         <MeshPlacement>OnTerrain</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Walking>
         <SpecialMovementType />
@@ -1651,6 +3851,31 @@
         <TurnDeceleration>0</TurnDeceleration>
         <CurveSegmentDensity>Low</CurveSegmentDensity>
         <CreatePathPlannerUnit>0</CreatePathPlannerUnit>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <PathPlannerLayer>Land</PathPlannerLayer>
+        <TurnAroundRadius>2</TurnAroundRadius>
+        <Deceleration>6</Deceleration>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <TurnMovement>100</TurnMovement>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <ForwardSpeed>1</ForwardSpeed>
+        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
       </Walking>
     </Values>
   </Asset>
@@ -1660,6 +3885,8 @@
       <Standard>
         <GUID>101790</GUID>
         <Name>blandford_fox</Name>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Object>
         <Variations>
@@ -1668,10 +3895,25 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <ObjectPosition>Dynamic</ObjectPosition>
         <MeshPlacement>OnTerrain</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Walking>
         <SpecialMovementType />
@@ -1681,6 +3923,31 @@
         <TurnDeceleration>0</TurnDeceleration>
         <CurveSegmentDensity>Low</CurveSegmentDensity>
         <CreatePathPlannerUnit>0</CreatePathPlannerUnit>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <PathPlannerLayer>Land</PathPlannerLayer>
+        <TurnAroundRadius>2</TurnAroundRadius>
+        <Deceleration>6</Deceleration>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <TurnMovement>100</TurnMovement>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <ForwardSpeed>1</ForwardSpeed>
+        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
       </Walking>
     </Values>
   </Asset>
@@ -1690,6 +3957,8 @@
       <Standard>
         <GUID>101791</GUID>
         <Name>orangutan</Name>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Object>
         <Variations>
@@ -1698,10 +3967,25 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <ObjectPosition>Dynamic</ObjectPosition>
         <MeshPlacement>OnTerrain</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Walking>
         <SpecialMovementType />
@@ -1711,6 +3995,31 @@
         <TurnDeceleration>0</TurnDeceleration>
         <CurveSegmentDensity>Low</CurveSegmentDensity>
         <CreatePathPlannerUnit>0</CreatePathPlannerUnit>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <PathPlannerLayer>Land</PathPlannerLayer>
+        <TurnAroundRadius>2</TurnAroundRadius>
+        <Deceleration>6</Deceleration>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <TurnMovement>100</TurnMovement>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <ForwardSpeed>1</ForwardSpeed>
+        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
       </Walking>
     </Values>
   </Asset>
@@ -1720,6 +4029,8 @@
       <Standard>
         <GUID>101792</GUID>
         <Name>bornean_orangutan</Name>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Object>
         <Variations>
@@ -1728,10 +4039,25 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <ObjectPosition>Dynamic</ObjectPosition>
         <MeshPlacement>OnTerrain</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Walking>
         <SpecialMovementType />
@@ -1741,6 +4067,31 @@
         <TurnDeceleration>0</TurnDeceleration>
         <CurveSegmentDensity>Low</CurveSegmentDensity>
         <CreatePathPlannerUnit>0</CreatePathPlannerUnit>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <PathPlannerLayer>Land</PathPlannerLayer>
+        <TurnAroundRadius>2</TurnAroundRadius>
+        <Deceleration>6</Deceleration>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <TurnMovement>100</TurnMovement>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <ForwardSpeed>1</ForwardSpeed>
+        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
       </Walking>
     </Values>
   </Asset>
@@ -1750,6 +4101,8 @@
       <Standard>
         <GUID>101793</GUID>
         <Name>silverback_orangutan</Name>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Object>
         <Variations>
@@ -1758,10 +4111,25 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <ObjectPosition>Dynamic</ObjectPosition>
         <MeshPlacement>OnTerrain</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Walking>
         <SpecialMovementType />
@@ -1771,6 +4139,31 @@
         <TurnDeceleration>0</TurnDeceleration>
         <CurveSegmentDensity>Low</CurveSegmentDensity>
         <CreatePathPlannerUnit>0</CreatePathPlannerUnit>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <PathPlannerLayer>Land</PathPlannerLayer>
+        <TurnAroundRadius>2</TurnAroundRadius>
+        <Deceleration>6</Deceleration>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <TurnMovement>100</TurnMovement>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <ForwardSpeed>1</ForwardSpeed>
+        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
       </Walking>
     </Values>
   </Asset>
@@ -1780,6 +4173,8 @@
       <Standard>
         <GUID>102051</GUID>
         <Name>black_caiman</Name>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Object>
         <Variations>
@@ -1788,10 +4183,25 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <ObjectPosition>Dynamic</ObjectPosition>
         <MeshPlacement>OnTerrain</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Walking>
         <SpecialMovementType />
@@ -1801,6 +4211,31 @@
         <TurnDeceleration>0</TurnDeceleration>
         <CurveSegmentDensity>Low</CurveSegmentDensity>
         <CreatePathPlannerUnit>0</CreatePathPlannerUnit>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <PathPlannerLayer>Land</PathPlannerLayer>
+        <TurnAroundRadius>2</TurnAroundRadius>
+        <Deceleration>6</Deceleration>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <TurnMovement>100</TurnMovement>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <ForwardSpeed>1</ForwardSpeed>
+        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
       </Walking>
     </Values>
   </Asset>
@@ -1810,6 +4245,8 @@
       <Standard>
         <GUID>102052</GUID>
         <Name>crocodile_albino</Name>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Object>
         <Variations>
@@ -1818,10 +4255,25 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <ObjectPosition>Dynamic</ObjectPosition>
         <MeshPlacement>OnTerrain</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Walking>
         <SpecialMovementType />
@@ -1831,6 +4283,31 @@
         <TurnDeceleration>0</TurnDeceleration>
         <CurveSegmentDensity>Low</CurveSegmentDensity>
         <CreatePathPlannerUnit>0</CreatePathPlannerUnit>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <PathPlannerLayer>Land</PathPlannerLayer>
+        <TurnAroundRadius>2</TurnAroundRadius>
+        <Deceleration>6</Deceleration>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <TurnMovement>100</TurnMovement>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <ForwardSpeed>1</ForwardSpeed>
+        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
       </Walking>
     </Values>
   </Asset>
@@ -1840,6 +4317,8 @@
       <Standard>
         <GUID>102290</GUID>
         <Name>Alpacca</Name>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Object>
         <Variations>
@@ -1854,10 +4333,25 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <ObjectPosition>Dynamic</ObjectPosition>
         <MeshPlacement>OnTerrain</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Walking>
         <SpecialMovementType />
@@ -1867,6 +4361,31 @@
         <TurnDeceleration>0</TurnDeceleration>
         <CurveSegmentDensity>Low</CurveSegmentDensity>
         <CreatePathPlannerUnit>0</CreatePathPlannerUnit>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <PathPlannerLayer>Land</PathPlannerLayer>
+        <TurnAroundRadius>2</TurnAroundRadius>
+        <Deceleration>6</Deceleration>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <TurnMovement>100</TurnMovement>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <ForwardSpeed>1</ForwardSpeed>
+        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
       </Walking>
     </Values>
   </Asset>
@@ -1876,6 +4395,8 @@
       <Standard>
         <GUID>103062</GUID>
         <Name>unicorn</Name>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Object>
         <Variations>
@@ -1884,10 +4405,25 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <ObjectPosition>Dynamic</ObjectPosition>
         <MeshPlacement>OnTerrain</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Walking>
         <SpecialMovementType />
@@ -1897,6 +4433,31 @@
         <TurnDeceleration>0</TurnDeceleration>
         <CurveSegmentDensity>Low</CurveSegmentDensity>
         <CreatePathPlannerUnit>0</CreatePathPlannerUnit>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <PathPlannerLayer>Land</PathPlannerLayer>
+        <TurnAroundRadius>2</TurnAroundRadius>
+        <Deceleration>6</Deceleration>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <TurnMovement>100</TurnMovement>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <ForwardSpeed>1</ForwardSpeed>
+        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
       </Walking>
     </Values>
   </Asset>
@@ -1906,6 +4467,8 @@
       <Standard>
         <GUID>103077</GUID>
         <Name>cat</Name>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Object>
         <Variations>
@@ -1917,10 +4480,25 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <ObjectPosition>Dynamic</ObjectPosition>
         <MeshPlacement>OnTerrain</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Walking>
         <SpecialMovementType />
@@ -1930,6 +4508,31 @@
         <TurnDeceleration>0</TurnDeceleration>
         <CurveSegmentDensity>Low</CurveSegmentDensity>
         <CreatePathPlannerUnit>0</CreatePathPlannerUnit>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <PathPlannerLayer>Land</PathPlannerLayer>
+        <TurnAroundRadius>2</TurnAroundRadius>
+        <Deceleration>6</Deceleration>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <TurnMovement>100</TurnMovement>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <ForwardSpeed>1</ForwardSpeed>
+        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
       </Walking>
     </Values>
   </Asset>

@@ -7,6 +7,8 @@
         <GUID>51</GUID>
         <Name>Third_enemy_01 (Edvard Goode)</Name>
         <IconFilename>data/ui/2kimages/main/profiles/enemy_01.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -17,6 +19,7 @@
           </English>
         </LocaText>
         <LineID>3768</LineID>
+        <Localize>1</Localize>
       </Text>
       <Profile>
         <ProfilePicture>data/ui/2kimages/main/profiles/enemy_01.png</ProfilePicture>
@@ -34,33 +37,100 @@
         <CreateModeSession>AutoCreate_OnlyCampaign</CreateModeSession>
         <HostileTakeoverEnabled>0</HostileTakeoverEnabled>
         <AttackableThroughPirateFlagItem>0</AttackableThroughPirateFlagItem>
+        <ProfileType>ThirdParty</ProfileType>
+        <QuestPoolList />
+        <BackgroundText>0</BackgroundText>
+        <ShipDropRewardPool>0</ShipDropRewardPool>
+        <ChooseNPC />
       </Profile>
       <Diplomacy>
         <DiplomacyActionBalancing>
           <CancelTraderights>
             <AgreementThreshold>-999</AgreementThreshold>
             <PartialAgreementThreshold>-999</PartialAgreementThreshold>
+            <ActionWeight>80</ActionWeight>
           </CancelTraderights>
           <RequestAlliance>
             <AgreementThreshold>80</AgreementThreshold>
             <PartialAgreementThreshold>50</PartialAgreementThreshold>
+            <ActionWeight>100</ActionWeight>
           </RequestAlliance>
           <RequestPeace>
             <AgreementThreshold>45</AgreementThreshold>
             <PartialAgreementThreshold>15</PartialAgreementThreshold>
+            <ActionWeight>190</ActionWeight>
           </RequestPeace>
           <RequestTraderights>
             <AgreementThreshold>90</AgreementThreshold>
             <PartialAgreementThreshold>60</PartialAgreementThreshold>
+            <ActionWeight>90</ActionWeight>
           </RequestTraderights>
           <ThreatWar>
             <AgreementThreshold>-20</AgreementThreshold>
             <PartialAgreementThreshold>-20</PartialAgreementThreshold>
+            <ActionWeight>200</ActionWeight>
           </ThreatWar>
           <RequestCeaseFire>
             <ActionWeight>120</ActionWeight>
             <AgreementThreshold>80</AgreementThreshold>
+            <PartialAgreementThreshold>10</PartialAgreementThreshold>
           </RequestCeaseFire>
+          <CancelAlliance>
+            <ActionWeight>100</ActionWeight>
+            <AgreementThreshold>80</AgreementThreshold>
+            <PartialAgreementThreshold>50</PartialAgreementThreshold>
+          </CancelAlliance>
+          <DeclareWar>
+            <ActionWeight>200</ActionWeight>
+            <AgreementThreshold>-999</AgreementThreshold>
+            <PartialAgreementThreshold>-999</PartialAgreementThreshold>
+          </DeclareWar>
+          <DemandQuest>
+            <ActionWeight>50</ActionWeight>
+            <AgreementThreshold>-999</AgreementThreshold>
+            <PartialAgreementThreshold>-999</PartialAgreementThreshold>
+          </DemandQuest>
+          <Flatter>
+            <ActionWeight>20</ActionWeight>
+            <AgreementThreshold>-999</AgreementThreshold>
+            <PartialAgreementThreshold>-999</PartialAgreementThreshold>
+          </Flatter>
+          <GiftMoneyOneTimeGenerous>
+            <ActionWeight>5</ActionWeight>
+            <AgreementThreshold>-999</AgreementThreshold>
+            <PartialAgreementThreshold>-999</PartialAgreementThreshold>
+          </GiftMoneyOneTimeGenerous>
+          <GiftMoneyOneTimeOrdinary>
+            <ActionWeight>5</ActionWeight>
+            <AgreementThreshold>-999</AgreementThreshold>
+            <PartialAgreementThreshold>-999</PartialAgreementThreshold>
+          </GiftMoneyOneTimeOrdinary>
+          <GiftMoneyOneTimeSmall>
+            <ActionWeight>5</ActionWeight>
+            <AgreementThreshold>-999</AgreementThreshold>
+            <PartialAgreementThreshold>-999</PartialAgreementThreshold>
+          </GiftMoneyOneTimeSmall>
+          <Insult>
+            <ActionWeight>5</ActionWeight>
+            <AgreementThreshold>-999</AgreementThreshold>
+            <PartialAgreementThreshold>-999</PartialAgreementThreshold>
+          </Insult>
+          <PaymentDecreaseReputation>
+            <ActionWeight>1</ActionWeight>
+            <AgreementThreshold>50</AgreementThreshold>
+            <PartialAgreementThreshold>50</PartialAgreementThreshold>
+          </PaymentDecreaseReputation>
+          <PaymentIncreaseReputation>
+            <ActionWeight>1</ActionWeight>
+            <AgreementThreshold>50</AgreementThreshold>
+            <PartialAgreementThreshold>50</PartialAgreementThreshold>
+          </PaymentIncreaseReputation>
+          <ThreatCancelAlliance>
+            <ActionWeight>200</ActionWeight>
+          </ThreatCancelAlliance>
+          <ThreatCancelTrade>
+            <ActionWeight>200</ActionWeight>
+          </ThreatCancelTrade>
         </DiplomacyActionBalancing>
         <ReputationChangeCalculation>
           <PaymentGivingMoney>
@@ -68,6 +138,7 @@
           </PaymentGivingMoney>
           <PaymentReceivingMoney>
             <ReputationAddedLimit>40</ReputationAddedLimit>
+            <ReputationAddedSteepness>0.025</ReputationAddedSteepness>
           </PaymentReceivingMoney>
           <Treaties>
             <ReputationValues>
@@ -81,6 +152,7 @@
               </CeaseFire>
               <Peace>
                 <AddingTreaty>20</AddingTreaty>
+                <RemovingTreaty>-40</RemovingTreaty>
               </Peace>
               <TradeRights>
                 <AddingTreaty>10</AddingTreaty>
@@ -88,53 +160,82 @@
               </TradeRights>
             </ReputationValues>
           </Treaties>
+          <GlobalLimitTempReputation>
+            <NegBorderMin>-70</NegBorderMin>
+            <NegBorderMax>-100</NegBorderMax>
+            <PosBorderMin>25</PosBorderMin>
+            <PosBorderMax>40</PosBorderMax>
+          </GlobalLimitTempReputation>
+          <EconomyPowerTempReputation>
+            <NegBorderMin>-40</NegBorderMin>
+            <NegBorderMax>-80</NegBorderMax>
+            <PosBorderMin>10</PosBorderMin>
+            <PosBorderMax>30</PosBorderMax>
+            <NegativeReputationChanged>1</NegativeReputationChanged>
+            <PositiveReputationChanged>1</PositiveReputationChanged>
+          </EconomyPowerTempReputation>
+          <MilitaryPowerTempReputation>
+            <NegBorderMin>-40</NegBorderMin>
+            <NegBorderMax>-80</NegBorderMax>
+            <PosBorderMin>10</PosBorderMin>
+            <PosBorderMax>30</PosBorderMax>
+            <NegativeReputationChanged>3</NegativeReputationChanged>
+            <PositiveReputationChanged>3</PositiveReputationChanged>
+          </MilitaryPowerTempReputation>
         </ReputationChangeCalculation>
         <GiftBalancing>
           <giveGenerous>
             <BaseValue>2000</BaseValue>
+            <IncreasePerLevel>3</IncreasePerLevel>
           </giveGenerous>
           <giveOrdinary>
             <BaseValue>1000</BaseValue>
+            <IncreasePerLevel>3</IncreasePerLevel>
           </giveOrdinary>
           <giveSmall>
             <BaseValue>500</BaseValue>
+            <IncreasePerLevel>3</IncreasePerLevel>
           </giveSmall>
           <receiveGenerous>
             <BaseValue>10000</BaseValue>
+            <IncreasePerLevel>3</IncreasePerLevel>
           </receiveGenerous>
           <receiveOrdinary>
             <BaseValue>4000</BaseValue>
+            <IncreasePerLevel>3</IncreasePerLevel>
           </receiveOrdinary>
+          <counterProposal>
+            <BaseValue>1000</BaseValue>
+            <IncreasePerLevel>3</IncreasePerLevel>
+          </counterProposal>
+          <receivePayment>
+            <BaseValue>400</BaseValue>
+            <IncreasePerLevel>3</IncreasePerLevel>
+          </receivePayment>
+          <receiveSmall>
+            <BaseValue>2000</BaseValue>
+            <IncreasePerLevel>3</IncreasePerLevel>
+          </receiveSmall>
+          <givePayment>
+            <BaseValue>400</BaseValue>
+            <IncreasePerLevel>3</IncreasePerLevel>
+          </givePayment>
         </GiftBalancing>
         <RepeatableActionBalancing>
           <Actions>
             <Flatter>
               <Subdivisions>
                 <Item>
-                  <VectorElement>
-                    <InheritedIndex>0</InheritedIndex>
-                    <InheritanceMapV2>
-                      <Entry>
-                        <TemplateName>3rdParty_Male</TemplateName>
-                        <Index>0</Index>
-                      </Entry>
-                      <Entry>
-                        <TemplateName>3rdParty</TemplateName>
-                        <Index>0</Index>
-                      </Entry>
-                      <Entry>
-                        <TemplateName>Profile_3rdParty</TemplateName>
-                        <Index>0</Index>
-                      </Entry>
-                    </InheritanceMapV2>
-                  </VectorElement>
                   <SuccessChance>30</SuccessChance>
+                  <ReputationGain>5</ReputationGain>
+                  <ReputationLoss>-3</ReputationLoss>
                 </Item>
                 <Item>
                   <ReputationLoss>-3</ReputationLoss>
                 </Item>
                 <Item />
               </Subdivisions>
+              <ForgettingTime>900000</ForgettingTime>
             </Flatter>
             <Insult>
               <Subdivisions>
@@ -143,7 +244,17 @@
                 </Item>
                 <Item />
               </Subdivisions>
+              <ForgettingTime>900000</ForgettingTime>
             </Insult>
+            <Gift>
+              <Subdivisions>
+                <Item>
+                  <SuccessChance>50</SuccessChance>
+                  <ReputationGain>2</ReputationGain>
+                </Item>
+              </Subdivisions>
+              <ForgettingTime>900000</ForgettingTime>
+            </Gift>
           </Actions>
         </RepeatableActionBalancing>
         <ActionDebuffs>
@@ -157,10 +268,12 @@
             <Peace>
               <DiceDebuff>50</DiceDebuff>
               <DebuffTime>3600000</DebuffTime>
+              <DiminishingDebuff>1</DiminishingDebuff>
             </Peace>
             <Trade>
               <DiceDebuff>50</DiceDebuff>
               <DebuffTime>4500000</DebuffTime>
+              <DiminishingDebuff>1</DiminishingDebuff>
             </Trade>
           </DebuffSettings>
         </ActionDebuffs>
@@ -170,6 +283,8 @@
           <CounterProposalPartial>33</CounterProposalPartial>
           <CounterProposalDeclineStart>50</CounterProposalDeclineStart>
           <CounterProposalIncreaseModifierPercentage>1000</CounterProposalIncreaseModifierPercentage>
+          <DiceRollCounterMin>-25</DiceRollCounterMin>
+          <CounterProposalDeclineIncrease>10</CounterProposalDeclineIncrease>
         </CounterProposal>
         <InitialRelation>
           <DefaultTreaties>Peace</DefaultTreaties>
@@ -182,31 +297,95 @@
           </Exceptions>
           <DefaultMemory>50</DefaultMemory>
           <DefaultTreatiesUndiscovered>Peace</DefaultTreatiesUndiscovered>
+          <DefaultReputation>50</DefaultReputation>
         </InitialRelation>
         <Memory>
           <UpdateTable>
             <Item>
-              <VectorElement>
-                <InheritedIndex>0</InheritedIndex>
-              </VectorElement>
               <Change>10</Change>
+              <Difference>20</Difference>
             </Item>
             <Item>
-              <VectorElement>
-                <InheritedIndex>1</InheritedIndex>
-              </VectorElement>
               <Change>20</Change>
+              <Difference>30</Difference>
             </Item>
             <Item>
-              <VectorElement>
-                <InheritedIndex>2</InheritedIndex>
-              </VectorElement>
               <Change>40</Change>
+              <Difference>50</Difference>
             </Item>
           </UpdateTable>
           <ReputationUpdateTimer>1200000</ReputationUpdateTimer>
           <NegReputationCorrectionMax>3</NegReputationCorrectionMax>
+          <ShortTimeChange>30</ShortTimeChange>
         </Memory>
+        <DiceRollProposalMin>-10</DiceRollProposalMin>
+        <DiceRollProposalMax>30</DiceRollProposalMax>
+        <DiceRollThreatMin>15</DiceRollThreatMin>
+        <DiceRollThreatMax>40</DiceRollThreatMax>
+        <ChancePreview>
+          <IdleTime>480000</IdleTime>
+          <RatingStates>
+            <SuccessLvl3>
+              <BelowChance>30</BelowChance>
+              <Text>10598</Text>
+            </SuccessLvl3>
+            <SuccessLvl1>
+              <BelowChance>10</BelowChance>
+              <Text>10597</Text>
+            </SuccessLvl1>
+            <SuccessLvl2>
+              <BelowChance>20</BelowChance>
+              <Text>10596</Text>
+            </SuccessLvl2>
+            <SuccessLvl4>
+              <BelowChance>40</BelowChance>
+              <Text>10594</Text>
+            </SuccessLvl4>
+            <SuccessLvl0>
+              <Text>10595</Text>
+            </SuccessLvl0>
+            <SuccessLvl10>
+              <BelowChance>99</BelowChance>
+              <Text>13040</Text>
+            </SuccessLvl10>
+            <SuccessLvl11>
+              <BelowChance>100</BelowChance>
+              <Text>13041</Text>
+            </SuccessLvl11>
+            <SuccessLvl5>
+              <BelowChance>50</BelowChance>
+              <Text>13035</Text>
+            </SuccessLvl5>
+            <SuccessLvl6>
+              <BelowChance>60</BelowChance>
+              <Text>13036</Text>
+            </SuccessLvl6>
+            <SuccessLvl7>
+              <BelowChance>70</BelowChance>
+              <Text>13037</Text>
+            </SuccessLvl7>
+            <SuccessLvl8>
+              <BelowChance>80</BelowChance>
+              <Text>13038</Text>
+            </SuccessLvl8>
+            <SuccessLvl9>
+              <BelowChance>90</BelowChance>
+              <Text>13039</Text>
+            </SuccessLvl9>
+          </RatingStates>
+        </ChancePreview>
+        <DiplomacyAI>
+          <ReputationTriggerDelayMin>10000</ReputationTriggerDelayMin>
+          <ReputationTriggerDelayMax>20000</ReputationTriggerDelayMax>
+          <ReputationMinDice>-10</ReputationMinDice>
+          <ReputationMaxDice>10</ReputationMaxDice>
+          <MinMoney>3</MinMoney>
+          <MaxMoneyOffering>10</MaxMoneyOffering>
+          <MaxMoneyRequest>15</MaxMoneyRequest>
+          <GenericTimerStartDelay>600000</GenericTimerStartDelay>
+          <GenericTimerRepeat>1800000</GenericTimerRepeat>
+        </DiplomacyAI>
+        <AutomaticDiscovery />
       </Diplomacy>
       <ParticipantMessages>
         <MessageTriggers>
@@ -868,6 +1047,9 @@
         <AddToEditorObjectGrid>0</AddToEditorObjectGrid>
         <PlacableInEditor>0</PlacableInEditor>
         <SelectableInEditor>0</SelectableInEditor>
+        <Type>GameObject</Type>
+        <Variations />
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Trader>
         <SellShipRequestNotification>500399</SellShipRequestNotification>
@@ -1422,8 +1604,74 @@
         <TraderRerollInterval>300000</TraderRerollInterval>
         <TraderItemRerollCosts>5000</TraderItemRerollCosts>
         <TraderItemRerollCostIncrease>5000</TraderItemRerollCostIncrease>
+        <SellShipCooldown>900000</SellShipCooldown>
+        <BuyShipRequestNotification>0</BuyShipRequestNotification>
+        <BuyShipRequestNoTradeAgreementNotification>0</BuyShipRequestNoTradeAgreementNotification>
       </Trader>
-      <ThirdParty />
+      <ThirdParty>
+        <AllowedRegions />
+        <IslandPlacement>NoIsland</IslandPlacement>
+        <ReservationPause>600000</ReservationPause>
+        <DecoBuildings>
+          <Item>
+            <Asset>100689</Asset>
+          </Item>
+          <Item>
+            <Asset>100690</Asset>
+          </Item>
+          <Item>
+            <Asset>100720</Asset>
+          </Item>
+          <Item>
+            <Asset>100723</Asset>
+          </Item>
+          <Item>
+            <Asset>100724</Asset>
+          </Item>
+          <Item>
+            <Asset>100725</Asset>
+          </Item>
+          <Item>
+            <Asset>100726</Asset>
+          </Item>
+          <Item>
+            <Asset>100731</Asset>
+          </Item>
+          <Item>
+            <Asset>100733</Asset>
+          </Item>
+          <Item>
+            <Asset>100734</Asset>
+          </Item>
+          <Item>
+            <Asset>100735</Asset>
+          </Item>
+          <Item>
+            <Asset>100736</Asset>
+          </Item>
+          <Item>
+            <Asset>1000101</Asset>
+          </Item>
+          <Item>
+            <Asset>1000103</Asset>
+          </Item>
+          <Item>
+            <Asset>1000110</Asset>
+          </Item>
+          <Item>
+            <Asset>1000156</Asset>
+          </Item>
+          <Item>
+            <Asset>1000222</Asset>
+          </Item>
+          <Item>
+            <Asset>1000226</Asset>
+          </Item>
+          <Item>
+            <Asset>1000228</Asset>
+          </Item>
+        </DecoBuildings>
+      </ThirdParty>
       <ParticipantMessageObject>
         <ParticipantMessages>142</ParticipantMessages>
       </ParticipantMessageObject>
@@ -1431,11 +1679,19 @@
         <PaMSyTrade>
           <ActiveTrade>
             <TradeAmount>500</TradeAmount>
+            <TradeAmountFactor>500</TradeAmountFactor>
+            <TradeMessage>ActiveTradeConfirmation</TradeMessage>
           </ActiveTrade>
           <PassiveTrade>
             <TradeAmount>5000</TradeAmount>
+            <TradeAmountFactor>5000</TradeAmountFactor>
+            <TradeMessage>PassiveTradeConfirmation</TradeMessage>
           </PassiveTrade>
         </PaMSyTrade>
+        <NewspaperPropaganda />
+        <PaMSyMilitaryStrength />
+        <PaMSyAttractiveness />
+        <PaMSyIslandPollution />
       </Interaction>
     </Values>
   </Asset>
@@ -1447,6 +1703,8 @@
         <Name>Third_party_02 (Archibald Blake)</Name>
         <IconFilename>data/ui/2kimages/main/profiles/3rd_party_02.png</IconFilename>
         <ID>ProfileBlake</ID>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -1457,6 +1715,7 @@
           </English>
         </LocaText>
         <LineID>3770</LineID>
+        <Localize>1</Localize>
       </Text>
       <Profile>
         <ProfilePicture>data/ui/2kimages/main/profiles/3rd_party_02.png</ProfilePicture>
@@ -1480,32 +1739,100 @@
         <CreateModeMeta>AutoCreate_Always</CreateModeMeta>
         <HostileTakeoverEnabled>0</HostileTakeoverEnabled>
         <AttackableThroughPirateFlagItem>0</AttackableThroughPirateFlagItem>
+        <ProfileType>ThirdParty</ProfileType>
+        <BackgroundText>0</BackgroundText>
+        <TakeoverBehaviour>Destroy</TakeoverBehaviour>
+        <ShipDropRewardPool>0</ShipDropRewardPool>
+        <CreateModeSession>Dynamically_MaploadOrSessionEnter</CreateModeSession>
+        <ChooseNPC />
       </Profile>
       <Diplomacy>
         <DiplomacyActionBalancing>
           <CancelTraderights>
             <AgreementThreshold>-999</AgreementThreshold>
             <PartialAgreementThreshold>-999</PartialAgreementThreshold>
+            <ActionWeight>80</ActionWeight>
           </CancelTraderights>
           <RequestAlliance>
             <AgreementThreshold>80</AgreementThreshold>
             <PartialAgreementThreshold>50</PartialAgreementThreshold>
+            <ActionWeight>100</ActionWeight>
           </RequestAlliance>
           <RequestPeace>
             <AgreementThreshold>45</AgreementThreshold>
             <PartialAgreementThreshold>15</PartialAgreementThreshold>
+            <ActionWeight>190</ActionWeight>
           </RequestPeace>
           <RequestTraderights>
             <AgreementThreshold>55</AgreementThreshold>
             <PartialAgreementThreshold>25</PartialAgreementThreshold>
+            <ActionWeight>90</ActionWeight>
           </RequestTraderights>
           <ThreatWar>
             <AgreementThreshold>-30</AgreementThreshold>
+            <ActionWeight>200</ActionWeight>
           </ThreatWar>
           <RequestCeaseFire>
             <ActionWeight>120</ActionWeight>
             <AgreementThreshold>80</AgreementThreshold>
+            <PartialAgreementThreshold>10</PartialAgreementThreshold>
           </RequestCeaseFire>
+          <CancelAlliance>
+            <ActionWeight>100</ActionWeight>
+            <AgreementThreshold>80</AgreementThreshold>
+            <PartialAgreementThreshold>50</PartialAgreementThreshold>
+          </CancelAlliance>
+          <DeclareWar>
+            <ActionWeight>200</ActionWeight>
+            <AgreementThreshold>-999</AgreementThreshold>
+            <PartialAgreementThreshold>-999</PartialAgreementThreshold>
+          </DeclareWar>
+          <DemandQuest>
+            <ActionWeight>50</ActionWeight>
+            <AgreementThreshold>-999</AgreementThreshold>
+            <PartialAgreementThreshold>-999</PartialAgreementThreshold>
+          </DemandQuest>
+          <Flatter>
+            <ActionWeight>20</ActionWeight>
+            <AgreementThreshold>-999</AgreementThreshold>
+            <PartialAgreementThreshold>-999</PartialAgreementThreshold>
+          </Flatter>
+          <GiftMoneyOneTimeGenerous>
+            <ActionWeight>5</ActionWeight>
+            <AgreementThreshold>-999</AgreementThreshold>
+            <PartialAgreementThreshold>-999</PartialAgreementThreshold>
+          </GiftMoneyOneTimeGenerous>
+          <GiftMoneyOneTimeOrdinary>
+            <ActionWeight>5</ActionWeight>
+            <AgreementThreshold>-999</AgreementThreshold>
+            <PartialAgreementThreshold>-999</PartialAgreementThreshold>
+          </GiftMoneyOneTimeOrdinary>
+          <GiftMoneyOneTimeSmall>
+            <ActionWeight>5</ActionWeight>
+            <AgreementThreshold>-999</AgreementThreshold>
+            <PartialAgreementThreshold>-999</PartialAgreementThreshold>
+          </GiftMoneyOneTimeSmall>
+          <Insult>
+            <ActionWeight>5</ActionWeight>
+            <AgreementThreshold>-999</AgreementThreshold>
+            <PartialAgreementThreshold>-999</PartialAgreementThreshold>
+          </Insult>
+          <PaymentDecreaseReputation>
+            <ActionWeight>1</ActionWeight>
+            <AgreementThreshold>50</AgreementThreshold>
+            <PartialAgreementThreshold>50</PartialAgreementThreshold>
+          </PaymentDecreaseReputation>
+          <PaymentIncreaseReputation>
+            <ActionWeight>1</ActionWeight>
+            <AgreementThreshold>50</AgreementThreshold>
+            <PartialAgreementThreshold>50</PartialAgreementThreshold>
+          </PaymentIncreaseReputation>
+          <ThreatCancelAlliance>
+            <ActionWeight>200</ActionWeight>
+          </ThreatCancelAlliance>
+          <ThreatCancelTrade>
+            <ActionWeight>200</ActionWeight>
+          </ThreatCancelTrade>
         </DiplomacyActionBalancing>
         <ReputationChangeCalculation>
           <PaymentGivingMoney>
@@ -1519,6 +1846,7 @@
             <ReputationValues>
               <Alliance>
                 <RemovingTreaty>-10</RemovingTreaty>
+                <AddingTreaty>25</AddingTreaty>
               </Alliance>
               <CeaseFire>
                 <AddingTreaty>10</AddingTreaty>
@@ -1530,60 +1858,79 @@
               </Peace>
               <TradeRights>
                 <RemovingTreaty>-10</RemovingTreaty>
+                <AddingTreaty>25</AddingTreaty>
               </TradeRights>
             </ReputationValues>
           </Treaties>
+          <GlobalLimitTempReputation>
+            <NegBorderMin>-70</NegBorderMin>
+            <NegBorderMax>-100</NegBorderMax>
+            <PosBorderMin>25</PosBorderMin>
+            <PosBorderMax>40</PosBorderMax>
+          </GlobalLimitTempReputation>
+          <EconomyPowerTempReputation>
+            <NegBorderMin>-40</NegBorderMin>
+            <NegBorderMax>-80</NegBorderMax>
+            <PosBorderMin>10</PosBorderMin>
+            <PosBorderMax>30</PosBorderMax>
+            <NegativeReputationChanged>1</NegativeReputationChanged>
+            <PositiveReputationChanged>1</PositiveReputationChanged>
+          </EconomyPowerTempReputation>
+          <MilitaryPowerTempReputation>
+            <NegBorderMin>-40</NegBorderMin>
+            <NegBorderMax>-80</NegBorderMax>
+            <PosBorderMin>10</PosBorderMin>
+            <PosBorderMax>30</PosBorderMax>
+            <NegativeReputationChanged>3</NegativeReputationChanged>
+            <PositiveReputationChanged>3</PositiveReputationChanged>
+          </MilitaryPowerTempReputation>
         </ReputationChangeCalculation>
         <GiftBalancing>
           <giveGenerous>
             <BaseValue>4000</BaseValue>
+            <IncreasePerLevel>3</IncreasePerLevel>
           </giveGenerous>
           <giveOrdinary>
             <BaseValue>2000</BaseValue>
+            <IncreasePerLevel>3</IncreasePerLevel>
           </giveOrdinary>
           <giveSmall>
             <BaseValue>1000</BaseValue>
+            <IncreasePerLevel>3</IncreasePerLevel>
           </giveSmall>
           <receivePayment>
             <BaseValue>200</BaseValue>
+            <IncreasePerLevel>3</IncreasePerLevel>
           </receivePayment>
           <receiveGenerous>
             <BaseValue>2000</BaseValue>
+            <IncreasePerLevel>3</IncreasePerLevel>
           </receiveGenerous>
           <receiveOrdinary>
             <BaseValue>1000</BaseValue>
+            <IncreasePerLevel>3</IncreasePerLevel>
           </receiveOrdinary>
           <receiveSmall>
             <BaseValue>500</BaseValue>
+            <IncreasePerLevel>3</IncreasePerLevel>
           </receiveSmall>
           <givePayment>
             <BaseValue>500</BaseValue>
+            <IncreasePerLevel>3</IncreasePerLevel>
           </givePayment>
+          <counterProposal>
+            <BaseValue>1000</BaseValue>
+            <IncreasePerLevel>3</IncreasePerLevel>
+          </counterProposal>
         </GiftBalancing>
         <RepeatableActionBalancing>
           <Actions>
             <Flatter>
               <Subdivisions>
                 <Item>
-                  <VectorElement>
-                    <InheritedIndex>0</InheritedIndex>
-                    <InheritanceMapV2>
-                      <Entry>
-                        <TemplateName>3rdParty_Male</TemplateName>
-                        <Index>0</Index>
-                      </Entry>
-                      <Entry>
-                        <TemplateName>3rdParty</TemplateName>
-                        <Index>0</Index>
-                      </Entry>
-                      <Entry>
-                        <TemplateName>Profile_3rdParty</TemplateName>
-                        <Index>0</Index>
-                      </Entry>
-                    </InheritanceMapV2>
-                  </VectorElement>
                   <SuccessChance>90</SuccessChance>
                   <ReputationLoss>-1</ReputationLoss>
+                  <ReputationGain>5</ReputationGain>
                 </Item>
                 <Item>
                   <SuccessChance>65</SuccessChance>
@@ -1609,23 +1956,6 @@
             <Gift>
               <Subdivisions>
                 <Item>
-                  <VectorElement>
-                    <InheritedIndex>0</InheritedIndex>
-                    <InheritanceMapV2>
-                      <Entry>
-                        <TemplateName>3rdParty_Male</TemplateName>
-                        <Index>0</Index>
-                      </Entry>
-                      <Entry>
-                        <TemplateName>3rdParty</TemplateName>
-                        <Index>0</Index>
-                      </Entry>
-                      <Entry>
-                        <TemplateName>Profile_3rdParty</TemplateName>
-                        <Index>0</Index>
-                      </Entry>
-                    </InheritanceMapV2>
-                  </VectorElement>
                   <SuccessChance>100</SuccessChance>
                   <ReputationGain>3</ReputationGain>
                 </Item>
@@ -1653,6 +1983,7 @@
           </UpdateTable>
           <ReputationUpdateTimer>1200000</ReputationUpdateTimer>
           <NegReputationCorrectionMax>3</NegReputationCorrectionMax>
+          <ShortTimeChange>30</ShortTimeChange>
         </Memory>
         <DiplomacyAI>
           <SpecialTrigger>
@@ -1679,19 +2010,105 @@
           </SpecialTrigger>
           <GenericTimerStartDelay>1800000</GenericTimerStartDelay>
           <GenericTimerRepeat>14400000</GenericTimerRepeat>
+          <ReputationTriggerDelayMin>10000</ReputationTriggerDelayMin>
+          <ReputationTriggerDelayMax>20000</ReputationTriggerDelayMax>
+          <ReputationMinDice>-10</ReputationMinDice>
+          <ReputationMaxDice>10</ReputationMaxDice>
+          <MinMoney>3</MinMoney>
+          <MaxMoneyOffering>10</MaxMoneyOffering>
+          <MaxMoneyRequest>15</MaxMoneyRequest>
         </DiplomacyAI>
         <ActionDebuffs>
           <DebuffSettings>
             <ThreatWar>
               <ApplyWhenSuccesful>1</ApplyWhenSuccesful>
+              <DiceDebuff>25</DiceDebuff>
+              <DebuffTime>900000</DebuffTime>
             </ThreatWar>
+            <Peace>
+              <DiceDebuff>15</DiceDebuff>
+              <DebuffTime>900000</DebuffTime>
+              <DiminishingDebuff>1</DiminishingDebuff>
+            </Peace>
+            <Trade>
+              <DiceDebuff>15</DiceDebuff>
+              <DebuffTime>900000</DebuffTime>
+              <DiminishingDebuff>1</DiminishingDebuff>
+            </Trade>
           </DebuffSettings>
         </ActionDebuffs>
         <InitialRelation>
           <DefaultMemory>50</DefaultMemory>
           <DefaultTreaties>Peace;TradeRights</DefaultTreaties>
           <DefaultTreatiesUndiscovered>Peace</DefaultTreatiesUndiscovered>
+          <DefaultReputation>50</DefaultReputation>
         </InitialRelation>
+        <DiceRollProposalMin>-10</DiceRollProposalMin>
+        <DiceRollProposalMax>30</DiceRollProposalMax>
+        <DiceRollThreatMin>15</DiceRollThreatMin>
+        <DiceRollThreatMax>40</DiceRollThreatMax>
+        <CounterProposal>
+          <DiceRollCounterMin>-25</DiceRollCounterMin>
+          <DiceRollCounterMax>25</DiceRollCounterMax>
+          <CounterProposalAgree>66</CounterProposalAgree>
+          <CounterProposalPartial>13</CounterProposalPartial>
+          <CounterProposalDeclineStart>10</CounterProposalDeclineStart>
+          <CounterProposalDeclineIncrease>10</CounterProposalDeclineIncrease>
+          <CounterProposalIncreaseModifierPercentage>100</CounterProposalIncreaseModifierPercentage>
+        </CounterProposal>
+        <ChancePreview>
+          <IdleTime>480000</IdleTime>
+          <RatingStates>
+            <SuccessLvl3>
+              <BelowChance>30</BelowChance>
+              <Text>10598</Text>
+            </SuccessLvl3>
+            <SuccessLvl1>
+              <BelowChance>10</BelowChance>
+              <Text>10597</Text>
+            </SuccessLvl1>
+            <SuccessLvl2>
+              <BelowChance>20</BelowChance>
+              <Text>10596</Text>
+            </SuccessLvl2>
+            <SuccessLvl4>
+              <BelowChance>40</BelowChance>
+              <Text>10594</Text>
+            </SuccessLvl4>
+            <SuccessLvl0>
+              <Text>10595</Text>
+            </SuccessLvl0>
+            <SuccessLvl10>
+              <BelowChance>99</BelowChance>
+              <Text>13040</Text>
+            </SuccessLvl10>
+            <SuccessLvl11>
+              <BelowChance>100</BelowChance>
+              <Text>13041</Text>
+            </SuccessLvl11>
+            <SuccessLvl5>
+              <BelowChance>50</BelowChance>
+              <Text>13035</Text>
+            </SuccessLvl5>
+            <SuccessLvl6>
+              <BelowChance>60</BelowChance>
+              <Text>13036</Text>
+            </SuccessLvl6>
+            <SuccessLvl7>
+              <BelowChance>70</BelowChance>
+              <Text>13037</Text>
+            </SuccessLvl7>
+            <SuccessLvl8>
+              <BelowChance>80</BelowChance>
+              <Text>13038</Text>
+            </SuccessLvl8>
+            <SuccessLvl9>
+              <BelowChance>90</BelowChance>
+              <Text>13039</Text>
+            </SuccessLvl9>
+          </RatingStates>
+        </ChancePreview>
+        <AutomaticDiscovery />
       </Diplomacy>
       <ParticipantMessages>
         <MessageTriggers>
@@ -2550,6 +2967,9 @@
         <AddToEditorObjectGrid>0</AddToEditorObjectGrid>
         <PlacableInEditor>0</PlacableInEditor>
         <SelectableInEditor>0</SelectableInEditor>
+        <Type>GameObject</Type>
+        <Variations />
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Trader>
         <ShipTrader>1</ShipTrader>
@@ -2998,10 +3418,71 @@
         <TraderRerollInterval>300000</TraderRerollInterval>
         <TraderItemRerollCosts>5000</TraderItemRerollCosts>
         <TraderItemRerollCostIncrease>5000</TraderItemRerollCostIncrease>
+        <BuyShipRequestNoTradeAgreementNotification>0</BuyShipRequestNoTradeAgreementNotification>
       </Trader>
       <ThirdParty>
         <AllowedRegions>Moderate</AllowedRegions>
         <IslandPlacement>InFirstSessionUnique</IslandPlacement>
+        <ReservationPause>600000</ReservationPause>
+        <DecoBuildings>
+          <Item>
+            <Asset>100689</Asset>
+          </Item>
+          <Item>
+            <Asset>100690</Asset>
+          </Item>
+          <Item>
+            <Asset>100720</Asset>
+          </Item>
+          <Item>
+            <Asset>100723</Asset>
+          </Item>
+          <Item>
+            <Asset>100724</Asset>
+          </Item>
+          <Item>
+            <Asset>100725</Asset>
+          </Item>
+          <Item>
+            <Asset>100726</Asset>
+          </Item>
+          <Item>
+            <Asset>100731</Asset>
+          </Item>
+          <Item>
+            <Asset>100733</Asset>
+          </Item>
+          <Item>
+            <Asset>100734</Asset>
+          </Item>
+          <Item>
+            <Asset>100735</Asset>
+          </Item>
+          <Item>
+            <Asset>100736</Asset>
+          </Item>
+          <Item>
+            <Asset>1000101</Asset>
+          </Item>
+          <Item>
+            <Asset>1000103</Asset>
+          </Item>
+          <Item>
+            <Asset>1000110</Asset>
+          </Item>
+          <Item>
+            <Asset>1000156</Asset>
+          </Item>
+          <Item>
+            <Asset>1000222</Asset>
+          </Item>
+          <Item>
+            <Asset>1000226</Asset>
+          </Item>
+          <Item>
+            <Asset>1000228</Asset>
+          </Item>
+        </DecoBuildings>
       </ThirdParty>
       <ParticipantMessageObject>
         <ParticipantMessages>144</ParticipantMessages>
@@ -3010,11 +3491,19 @@
         <PaMSyTrade>
           <ActiveTrade>
             <TradeAmount>500</TradeAmount>
+            <TradeAmountFactor>500</TradeAmountFactor>
+            <TradeMessage>ActiveTradeConfirmation</TradeMessage>
           </ActiveTrade>
           <PassiveTrade>
             <TradeAmount>5000</TradeAmount>
+            <TradeAmountFactor>5000</TradeAmountFactor>
+            <TradeMessage>PassiveTradeConfirmation</TradeMessage>
           </PassiveTrade>
         </PaMSyTrade>
+        <NewspaperPropaganda />
+        <PaMSyMilitaryStrength />
+        <PaMSyAttractiveness />
+        <PaMSyIslandPollution />
       </Interaction>
     </Values>
   </Asset>
@@ -3025,6 +3514,8 @@
         <GUID>29</GUID>
         <Name>Third_party_05 (Isabel Sarmento)</Name>
         <IconFilename>data/ui/2kimages/main/profiles/3rd_party_05.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -3035,6 +3526,7 @@
           </English>
         </LocaText>
         <LineID>4280</LineID>
+        <Localize>1</Localize>
       </Text>
       <Profile>
         <ProfilePicture>data/ui/2kimages/main/profiles/3rd_party_05.png</ProfilePicture>
@@ -3058,33 +3550,101 @@
         <MoodImage>data/ui/2kimages/main/assets/thirdparty_islandbar/bg_islandbar_isabel.png</MoodImage>
         <HostileTakeoverEnabled>0</HostileTakeoverEnabled>
         <AttackableThroughPirateFlagItem>0</AttackableThroughPirateFlagItem>
+        <ProfileType>ThirdParty</ProfileType>
+        <TakeoverBehaviour>Destroy</TakeoverBehaviour>
+        <ShipDropRewardPool>0</ShipDropRewardPool>
+        <CreateModeMeta>Dynamically_GameSetupOrMapload</CreateModeMeta>
+        <CreateModeSession>Dynamically_MaploadOrSessionEnter</CreateModeSession>
+        <ChooseNPC />
       </Profile>
       <Diplomacy>
         <DiplomacyActionBalancing>
           <CancelTraderights>
             <AgreementThreshold>-999</AgreementThreshold>
             <PartialAgreementThreshold>-999</PartialAgreementThreshold>
+            <ActionWeight>80</ActionWeight>
           </CancelTraderights>
           <RequestAlliance>
             <AgreementThreshold>80</AgreementThreshold>
             <PartialAgreementThreshold>50</PartialAgreementThreshold>
+            <ActionWeight>100</ActionWeight>
           </RequestAlliance>
           <RequestPeace>
             <AgreementThreshold>45</AgreementThreshold>
             <PartialAgreementThreshold>15</PartialAgreementThreshold>
+            <ActionWeight>190</ActionWeight>
           </RequestPeace>
           <RequestTraderights>
             <AgreementThreshold>90</AgreementThreshold>
             <PartialAgreementThreshold>60</PartialAgreementThreshold>
+            <ActionWeight>90</ActionWeight>
           </RequestTraderights>
           <ThreatWar>
             <AgreementThreshold>-20</AgreementThreshold>
             <PartialAgreementThreshold>-20</PartialAgreementThreshold>
+            <ActionWeight>200</ActionWeight>
           </ThreatWar>
           <RequestCeaseFire>
             <ActionWeight>120</ActionWeight>
             <AgreementThreshold>80</AgreementThreshold>
+            <PartialAgreementThreshold>10</PartialAgreementThreshold>
           </RequestCeaseFire>
+          <CancelAlliance>
+            <ActionWeight>100</ActionWeight>
+            <AgreementThreshold>80</AgreementThreshold>
+            <PartialAgreementThreshold>50</PartialAgreementThreshold>
+          </CancelAlliance>
+          <DeclareWar>
+            <ActionWeight>200</ActionWeight>
+            <AgreementThreshold>-999</AgreementThreshold>
+            <PartialAgreementThreshold>-999</PartialAgreementThreshold>
+          </DeclareWar>
+          <DemandQuest>
+            <ActionWeight>50</ActionWeight>
+            <AgreementThreshold>-999</AgreementThreshold>
+            <PartialAgreementThreshold>-999</PartialAgreementThreshold>
+          </DemandQuest>
+          <Flatter>
+            <ActionWeight>20</ActionWeight>
+            <AgreementThreshold>-999</AgreementThreshold>
+            <PartialAgreementThreshold>-999</PartialAgreementThreshold>
+          </Flatter>
+          <GiftMoneyOneTimeGenerous>
+            <ActionWeight>5</ActionWeight>
+            <AgreementThreshold>-999</AgreementThreshold>
+            <PartialAgreementThreshold>-999</PartialAgreementThreshold>
+          </GiftMoneyOneTimeGenerous>
+          <GiftMoneyOneTimeOrdinary>
+            <ActionWeight>5</ActionWeight>
+            <AgreementThreshold>-999</AgreementThreshold>
+            <PartialAgreementThreshold>-999</PartialAgreementThreshold>
+          </GiftMoneyOneTimeOrdinary>
+          <GiftMoneyOneTimeSmall>
+            <ActionWeight>5</ActionWeight>
+            <AgreementThreshold>-999</AgreementThreshold>
+            <PartialAgreementThreshold>-999</PartialAgreementThreshold>
+          </GiftMoneyOneTimeSmall>
+          <Insult>
+            <ActionWeight>5</ActionWeight>
+            <AgreementThreshold>-999</AgreementThreshold>
+            <PartialAgreementThreshold>-999</PartialAgreementThreshold>
+          </Insult>
+          <PaymentDecreaseReputation>
+            <ActionWeight>1</ActionWeight>
+            <AgreementThreshold>50</AgreementThreshold>
+            <PartialAgreementThreshold>50</PartialAgreementThreshold>
+          </PaymentDecreaseReputation>
+          <PaymentIncreaseReputation>
+            <ActionWeight>1</ActionWeight>
+            <AgreementThreshold>50</AgreementThreshold>
+            <PartialAgreementThreshold>50</PartialAgreementThreshold>
+          </PaymentIncreaseReputation>
+          <ThreatCancelAlliance>
+            <ActionWeight>200</ActionWeight>
+          </ThreatCancelAlliance>
+          <ThreatCancelTrade>
+            <ActionWeight>200</ActionWeight>
+          </ThreatCancelTrade>
         </DiplomacyActionBalancing>
         <ReputationChangeCalculation>
           <PaymentGivingMoney>
@@ -3092,6 +3652,7 @@
           </PaymentGivingMoney>
           <PaymentReceivingMoney>
             <ReputationAddedLimit>40</ReputationAddedLimit>
+            <ReputationAddedSteepness>0.025</ReputationAddedSteepness>
           </PaymentReceivingMoney>
           <Treaties>
             <ReputationValues>
@@ -3105,6 +3666,7 @@
               </CeaseFire>
               <Peace>
                 <AddingTreaty>20</AddingTreaty>
+                <RemovingTreaty>-40</RemovingTreaty>
               </Peace>
               <TradeRights>
                 <AddingTreaty>10</AddingTreaty>
@@ -3112,47 +3674,82 @@
               </TradeRights>
             </ReputationValues>
           </Treaties>
+          <GlobalLimitTempReputation>
+            <NegBorderMin>-70</NegBorderMin>
+            <NegBorderMax>-100</NegBorderMax>
+            <PosBorderMin>25</PosBorderMin>
+            <PosBorderMax>40</PosBorderMax>
+          </GlobalLimitTempReputation>
+          <EconomyPowerTempReputation>
+            <NegBorderMin>-40</NegBorderMin>
+            <NegBorderMax>-80</NegBorderMax>
+            <PosBorderMin>10</PosBorderMin>
+            <PosBorderMax>30</PosBorderMax>
+            <NegativeReputationChanged>1</NegativeReputationChanged>
+            <PositiveReputationChanged>1</PositiveReputationChanged>
+          </EconomyPowerTempReputation>
+          <MilitaryPowerTempReputation>
+            <NegBorderMin>-40</NegBorderMin>
+            <NegBorderMax>-80</NegBorderMax>
+            <PosBorderMin>10</PosBorderMin>
+            <PosBorderMax>30</PosBorderMax>
+            <NegativeReputationChanged>3</NegativeReputationChanged>
+            <PositiveReputationChanged>3</PositiveReputationChanged>
+          </MilitaryPowerTempReputation>
         </ReputationChangeCalculation>
         <GiftBalancing>
           <giveGenerous>
             <BaseValue>2000</BaseValue>
+            <IncreasePerLevel>3</IncreasePerLevel>
           </giveGenerous>
           <giveOrdinary>
             <BaseValue>1000</BaseValue>
+            <IncreasePerLevel>3</IncreasePerLevel>
           </giveOrdinary>
           <giveSmall>
             <BaseValue>500</BaseValue>
+            <IncreasePerLevel>3</IncreasePerLevel>
           </giveSmall>
           <receiveGenerous>
             <BaseValue>10000</BaseValue>
+            <IncreasePerLevel>3</IncreasePerLevel>
           </receiveGenerous>
           <receiveOrdinary>
             <BaseValue>5500</BaseValue>
+            <IncreasePerLevel>3</IncreasePerLevel>
           </receiveOrdinary>
           <receiveSmall>
             <BaseValue>3000</BaseValue>
+            <IncreasePerLevel>3</IncreasePerLevel>
           </receiveSmall>
+          <counterProposal>
+            <BaseValue>1000</BaseValue>
+            <IncreasePerLevel>3</IncreasePerLevel>
+          </counterProposal>
+          <receivePayment>
+            <BaseValue>400</BaseValue>
+            <IncreasePerLevel>3</IncreasePerLevel>
+          </receivePayment>
+          <givePayment>
+            <BaseValue>400</BaseValue>
+            <IncreasePerLevel>3</IncreasePerLevel>
+          </givePayment>
         </GiftBalancing>
         <RepeatableActionBalancing>
           <Actions>
             <Flatter>
               <Subdivisions>
                 <Item>
-                  <VectorElement>
-                    <InheritanceMapV2>
-                      <Entry>
-                        <TemplateName>3rdParty_Female</TemplateName>
-                        <Index>0</Index>
-                      </Entry>
-                    </InheritanceMapV2>
-                  </VectorElement>
                   <SuccessChance>60</SuccessChance>
+                  <ReputationGain>5</ReputationGain>
+                  <ReputationLoss>-3</ReputationLoss>
                 </Item>
                 <Item>
                   <ReputationLoss>-3</ReputationLoss>
                 </Item>
                 <Item />
               </Subdivisions>
+              <ForgettingTime>900000</ForgettingTime>
             </Flatter>
             <Insult>
               <Subdivisions>
@@ -3161,7 +3758,17 @@
                 </Item>
                 <Item />
               </Subdivisions>
+              <ForgettingTime>900000</ForgettingTime>
             </Insult>
+            <Gift>
+              <Subdivisions>
+                <Item>
+                  <SuccessChance>50</SuccessChance>
+                  <ReputationGain>2</ReputationGain>
+                </Item>
+              </Subdivisions>
+              <ForgettingTime>900000</ForgettingTime>
+            </Gift>
           </Actions>
         </RepeatableActionBalancing>
         <InitialRelation>
@@ -3178,38 +3785,123 @@
           <DefaultMemory>50</DefaultMemory>
           <DefaultTreaties>Peace;TradeRights</DefaultTreaties>
           <DefaultTreatiesUndiscovered>Peace</DefaultTreatiesUndiscovered>
+          <DefaultReputation>50</DefaultReputation>
         </InitialRelation>
         <Memory>
           <UpdateTable>
             <Item>
-              <VectorElement>
-                <InheritedIndex>0</InheritedIndex>
-              </VectorElement>
               <Change>10</Change>
+              <Difference>20</Difference>
             </Item>
             <Item>
-              <VectorElement>
-                <InheritedIndex>1</InheritedIndex>
-              </VectorElement>
               <Change>20</Change>
+              <Difference>30</Difference>
             </Item>
             <Item>
-              <VectorElement>
-                <InheritedIndex>2</InheritedIndex>
-              </VectorElement>
               <Change>40</Change>
+              <Difference>50</Difference>
             </Item>
           </UpdateTable>
           <ReputationUpdateTimer>1200000</ReputationUpdateTimer>
           <NegReputationCorrectionMax>3</NegReputationCorrectionMax>
+          <ShortTimeChange>30</ShortTimeChange>
         </Memory>
         <ActionDebuffs>
           <DebuffSettings>
             <ThreatWar>
               <ApplyWhenSuccesful>1</ApplyWhenSuccesful>
+              <DiceDebuff>25</DiceDebuff>
+              <DebuffTime>900000</DebuffTime>
             </ThreatWar>
+            <Peace>
+              <DiceDebuff>15</DiceDebuff>
+              <DebuffTime>900000</DebuffTime>
+              <DiminishingDebuff>1</DiminishingDebuff>
+            </Peace>
+            <Trade>
+              <DiceDebuff>15</DiceDebuff>
+              <DebuffTime>900000</DebuffTime>
+              <DiminishingDebuff>1</DiminishingDebuff>
+            </Trade>
           </DebuffSettings>
         </ActionDebuffs>
+        <DiceRollProposalMin>-10</DiceRollProposalMin>
+        <DiceRollProposalMax>30</DiceRollProposalMax>
+        <DiceRollThreatMin>15</DiceRollThreatMin>
+        <DiceRollThreatMax>40</DiceRollThreatMax>
+        <CounterProposal>
+          <DiceRollCounterMin>-25</DiceRollCounterMin>
+          <DiceRollCounterMax>25</DiceRollCounterMax>
+          <CounterProposalAgree>66</CounterProposalAgree>
+          <CounterProposalPartial>13</CounterProposalPartial>
+          <CounterProposalDeclineStart>10</CounterProposalDeclineStart>
+          <CounterProposalDeclineIncrease>10</CounterProposalDeclineIncrease>
+          <CounterProposalIncreaseModifierPercentage>100</CounterProposalIncreaseModifierPercentage>
+        </CounterProposal>
+        <ChancePreview>
+          <IdleTime>480000</IdleTime>
+          <RatingStates>
+            <SuccessLvl3>
+              <BelowChance>30</BelowChance>
+              <Text>10598</Text>
+            </SuccessLvl3>
+            <SuccessLvl1>
+              <BelowChance>10</BelowChance>
+              <Text>10597</Text>
+            </SuccessLvl1>
+            <SuccessLvl2>
+              <BelowChance>20</BelowChance>
+              <Text>10596</Text>
+            </SuccessLvl2>
+            <SuccessLvl4>
+              <BelowChance>40</BelowChance>
+              <Text>10594</Text>
+            </SuccessLvl4>
+            <SuccessLvl0>
+              <Text>10595</Text>
+            </SuccessLvl0>
+            <SuccessLvl10>
+              <BelowChance>99</BelowChance>
+              <Text>13040</Text>
+            </SuccessLvl10>
+            <SuccessLvl11>
+              <BelowChance>100</BelowChance>
+              <Text>13041</Text>
+            </SuccessLvl11>
+            <SuccessLvl5>
+              <BelowChance>50</BelowChance>
+              <Text>13035</Text>
+            </SuccessLvl5>
+            <SuccessLvl6>
+              <BelowChance>60</BelowChance>
+              <Text>13036</Text>
+            </SuccessLvl6>
+            <SuccessLvl7>
+              <BelowChance>70</BelowChance>
+              <Text>13037</Text>
+            </SuccessLvl7>
+            <SuccessLvl8>
+              <BelowChance>80</BelowChance>
+              <Text>13038</Text>
+            </SuccessLvl8>
+            <SuccessLvl9>
+              <BelowChance>90</BelowChance>
+              <Text>13039</Text>
+            </SuccessLvl9>
+          </RatingStates>
+        </ChancePreview>
+        <DiplomacyAI>
+          <ReputationTriggerDelayMin>10000</ReputationTriggerDelayMin>
+          <ReputationTriggerDelayMax>20000</ReputationTriggerDelayMax>
+          <ReputationMinDice>-10</ReputationMinDice>
+          <ReputationMaxDice>10</ReputationMaxDice>
+          <MinMoney>3</MinMoney>
+          <MaxMoneyOffering>10</MaxMoneyOffering>
+          <MaxMoneyRequest>15</MaxMoneyRequest>
+          <GenericTimerStartDelay>600000</GenericTimerStartDelay>
+          <GenericTimerRepeat>1800000</GenericTimerRepeat>
+        </DiplomacyAI>
+        <AutomaticDiscovery />
       </Diplomacy>
       <ParticipantMessages>
         <MessageTriggers>
@@ -3886,6 +4578,9 @@
         <AddToEditorObjectGrid>0</AddToEditorObjectGrid>
         <PlacableInEditor>0</PlacableInEditor>
         <SelectableInEditor>0</SelectableInEditor>
+        <Type>GameObject</Type>
+        <Variations />
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Trader>
         <ShipTrader>1</ShipTrader>
@@ -4388,10 +5083,72 @@
         <TraderRerollInterval>300000</TraderRerollInterval>
         <TraderItemRerollCosts>5000</TraderItemRerollCosts>
         <TraderItemRerollCostIncrease>5000</TraderItemRerollCostIncrease>
+        <SellShipCooldown>900000</SellShipCooldown>
+        <BuyShipRequestNoTradeAgreementNotification>0</BuyShipRequestNoTradeAgreementNotification>
       </Trader>
       <ThirdParty>
         <AllowedRegions>Colony01</AllowedRegions>
         <IslandPlacement>Optional</IslandPlacement>
+        <ReservationPause>600000</ReservationPause>
+        <DecoBuildings>
+          <Item>
+            <Asset>100689</Asset>
+          </Item>
+          <Item>
+            <Asset>100690</Asset>
+          </Item>
+          <Item>
+            <Asset>100720</Asset>
+          </Item>
+          <Item>
+            <Asset>100723</Asset>
+          </Item>
+          <Item>
+            <Asset>100724</Asset>
+          </Item>
+          <Item>
+            <Asset>100725</Asset>
+          </Item>
+          <Item>
+            <Asset>100726</Asset>
+          </Item>
+          <Item>
+            <Asset>100731</Asset>
+          </Item>
+          <Item>
+            <Asset>100733</Asset>
+          </Item>
+          <Item>
+            <Asset>100734</Asset>
+          </Item>
+          <Item>
+            <Asset>100735</Asset>
+          </Item>
+          <Item>
+            <Asset>100736</Asset>
+          </Item>
+          <Item>
+            <Asset>1000101</Asset>
+          </Item>
+          <Item>
+            <Asset>1000103</Asset>
+          </Item>
+          <Item>
+            <Asset>1000110</Asset>
+          </Item>
+          <Item>
+            <Asset>1000156</Asset>
+          </Item>
+          <Item>
+            <Asset>1000222</Asset>
+          </Item>
+          <Item>
+            <Asset>1000226</Asset>
+          </Item>
+          <Item>
+            <Asset>1000228</Asset>
+          </Item>
+        </DecoBuildings>
       </ThirdParty>
       <ParticipantMessageObject>
         <ParticipantMessages>145</ParticipantMessages>
@@ -4400,11 +5157,19 @@
         <PaMSyTrade>
           <ActiveTrade>
             <TradeAmount>500</TradeAmount>
+            <TradeAmountFactor>500</TradeAmountFactor>
+            <TradeMessage>ActiveTradeConfirmation</TradeMessage>
           </ActiveTrade>
           <PassiveTrade>
             <TradeAmount>5000</TradeAmount>
+            <TradeAmountFactor>5000</TradeAmountFactor>
+            <TradeMessage>PassiveTradeConfirmation</TradeMessage>
           </PassiveTrade>
         </PaMSyTrade>
+        <NewspaperPropaganda />
+        <PaMSyMilitaryStrength />
+        <PaMSyAttractiveness />
+        <PaMSyIslandPollution />
       </Interaction>
     </Values>
   </Asset>
@@ -4415,6 +5180,8 @@
         <GUID>199</GUID>
         <Name>Third_party_05b (Isabel Sarmento Prosperity Campaign)</Name>
         <IconFilename>data/ui/2kimages/main/profiles/3rd_party_05.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -4425,6 +5192,7 @@
           </English>
         </LocaText>
         <LineID>17954</LineID>
+        <Localize>1</Localize>
       </Text>
       <Profile>
         <ParticipantID>Third_party_05b_Sarmento_Prosperity_Campaign</ParticipantID>
@@ -4450,6 +5218,10 @@
         <MoodImage>data/ui/2kimages/main/assets/thirdparty_islandbar/bg_islandbar_isabel.png</MoodImage>
         <HostileTakeoverEnabled>0</HostileTakeoverEnabled>
         <AttackableThroughPirateFlagItem>0</AttackableThroughPirateFlagItem>
+        <ProfileType>ThirdParty</ProfileType>
+        <TakeoverBehaviour>Destroy</TakeoverBehaviour>
+        <ShipDropRewardPool>0</ShipDropRewardPool>
+        <ChooseNPC />
       </Profile>
       <Diplomacy>
         <IsDiscoveredOnStart>1</IsDiscoveredOnStart>
@@ -4457,27 +5229,89 @@
           <CancelTraderights>
             <AgreementThreshold>-999</AgreementThreshold>
             <PartialAgreementThreshold>-999</PartialAgreementThreshold>
+            <ActionWeight>80</ActionWeight>
           </CancelTraderights>
           <RequestAlliance>
             <AgreementThreshold>80</AgreementThreshold>
             <PartialAgreementThreshold>50</PartialAgreementThreshold>
+            <ActionWeight>100</ActionWeight>
           </RequestAlliance>
           <RequestPeace>
             <AgreementThreshold>45</AgreementThreshold>
             <PartialAgreementThreshold>15</PartialAgreementThreshold>
+            <ActionWeight>190</ActionWeight>
           </RequestPeace>
           <RequestTraderights>
             <AgreementThreshold>90</AgreementThreshold>
             <PartialAgreementThreshold>60</PartialAgreementThreshold>
+            <ActionWeight>90</ActionWeight>
           </RequestTraderights>
           <ThreatWar>
             <AgreementThreshold>-20</AgreementThreshold>
             <PartialAgreementThreshold>-20</PartialAgreementThreshold>
+            <ActionWeight>200</ActionWeight>
           </ThreatWar>
           <RequestCeaseFire>
             <ActionWeight>120</ActionWeight>
             <AgreementThreshold>80</AgreementThreshold>
+            <PartialAgreementThreshold>10</PartialAgreementThreshold>
           </RequestCeaseFire>
+          <CancelAlliance>
+            <ActionWeight>100</ActionWeight>
+            <AgreementThreshold>80</AgreementThreshold>
+            <PartialAgreementThreshold>50</PartialAgreementThreshold>
+          </CancelAlliance>
+          <DeclareWar>
+            <ActionWeight>200</ActionWeight>
+            <AgreementThreshold>-999</AgreementThreshold>
+            <PartialAgreementThreshold>-999</PartialAgreementThreshold>
+          </DeclareWar>
+          <DemandQuest>
+            <ActionWeight>50</ActionWeight>
+            <AgreementThreshold>-999</AgreementThreshold>
+            <PartialAgreementThreshold>-999</PartialAgreementThreshold>
+          </DemandQuest>
+          <Flatter>
+            <ActionWeight>20</ActionWeight>
+            <AgreementThreshold>-999</AgreementThreshold>
+            <PartialAgreementThreshold>-999</PartialAgreementThreshold>
+          </Flatter>
+          <GiftMoneyOneTimeGenerous>
+            <ActionWeight>5</ActionWeight>
+            <AgreementThreshold>-999</AgreementThreshold>
+            <PartialAgreementThreshold>-999</PartialAgreementThreshold>
+          </GiftMoneyOneTimeGenerous>
+          <GiftMoneyOneTimeOrdinary>
+            <ActionWeight>5</ActionWeight>
+            <AgreementThreshold>-999</AgreementThreshold>
+            <PartialAgreementThreshold>-999</PartialAgreementThreshold>
+          </GiftMoneyOneTimeOrdinary>
+          <GiftMoneyOneTimeSmall>
+            <ActionWeight>5</ActionWeight>
+            <AgreementThreshold>-999</AgreementThreshold>
+            <PartialAgreementThreshold>-999</PartialAgreementThreshold>
+          </GiftMoneyOneTimeSmall>
+          <Insult>
+            <ActionWeight>5</ActionWeight>
+            <AgreementThreshold>-999</AgreementThreshold>
+            <PartialAgreementThreshold>-999</PartialAgreementThreshold>
+          </Insult>
+          <PaymentDecreaseReputation>
+            <ActionWeight>1</ActionWeight>
+            <AgreementThreshold>50</AgreementThreshold>
+            <PartialAgreementThreshold>50</PartialAgreementThreshold>
+          </PaymentDecreaseReputation>
+          <PaymentIncreaseReputation>
+            <ActionWeight>1</ActionWeight>
+            <AgreementThreshold>50</AgreementThreshold>
+            <PartialAgreementThreshold>50</PartialAgreementThreshold>
+          </PaymentIncreaseReputation>
+          <ThreatCancelAlliance>
+            <ActionWeight>200</ActionWeight>
+          </ThreatCancelAlliance>
+          <ThreatCancelTrade>
+            <ActionWeight>200</ActionWeight>
+          </ThreatCancelTrade>
         </DiplomacyActionBalancing>
         <ReputationChangeCalculation>
           <PaymentGivingMoney>
@@ -4485,6 +5319,7 @@
           </PaymentGivingMoney>
           <PaymentReceivingMoney>
             <ReputationAddedLimit>40</ReputationAddedLimit>
+            <ReputationAddedSteepness>0.025</ReputationAddedSteepness>
           </PaymentReceivingMoney>
           <Treaties>
             <ReputationValues>
@@ -4498,6 +5333,7 @@
               </CeaseFire>
               <Peace>
                 <AddingTreaty>20</AddingTreaty>
+                <RemovingTreaty>-40</RemovingTreaty>
               </Peace>
               <TradeRights>
                 <AddingTreaty>10</AddingTreaty>
@@ -4505,47 +5341,82 @@
               </TradeRights>
             </ReputationValues>
           </Treaties>
+          <GlobalLimitTempReputation>
+            <NegBorderMin>-70</NegBorderMin>
+            <NegBorderMax>-100</NegBorderMax>
+            <PosBorderMin>25</PosBorderMin>
+            <PosBorderMax>40</PosBorderMax>
+          </GlobalLimitTempReputation>
+          <EconomyPowerTempReputation>
+            <NegBorderMin>-40</NegBorderMin>
+            <NegBorderMax>-80</NegBorderMax>
+            <PosBorderMin>10</PosBorderMin>
+            <PosBorderMax>30</PosBorderMax>
+            <NegativeReputationChanged>1</NegativeReputationChanged>
+            <PositiveReputationChanged>1</PositiveReputationChanged>
+          </EconomyPowerTempReputation>
+          <MilitaryPowerTempReputation>
+            <NegBorderMin>-40</NegBorderMin>
+            <NegBorderMax>-80</NegBorderMax>
+            <PosBorderMin>10</PosBorderMin>
+            <PosBorderMax>30</PosBorderMax>
+            <NegativeReputationChanged>3</NegativeReputationChanged>
+            <PositiveReputationChanged>3</PositiveReputationChanged>
+          </MilitaryPowerTempReputation>
         </ReputationChangeCalculation>
         <GiftBalancing>
           <giveGenerous>
             <BaseValue>2000</BaseValue>
+            <IncreasePerLevel>3</IncreasePerLevel>
           </giveGenerous>
           <giveOrdinary>
             <BaseValue>1000</BaseValue>
+            <IncreasePerLevel>3</IncreasePerLevel>
           </giveOrdinary>
           <giveSmall>
             <BaseValue>500</BaseValue>
+            <IncreasePerLevel>3</IncreasePerLevel>
           </giveSmall>
           <receiveGenerous>
             <BaseValue>10000</BaseValue>
+            <IncreasePerLevel>3</IncreasePerLevel>
           </receiveGenerous>
           <receiveOrdinary>
             <BaseValue>5500</BaseValue>
+            <IncreasePerLevel>3</IncreasePerLevel>
           </receiveOrdinary>
           <receiveSmall>
             <BaseValue>3000</BaseValue>
+            <IncreasePerLevel>3</IncreasePerLevel>
           </receiveSmall>
+          <counterProposal>
+            <BaseValue>1000</BaseValue>
+            <IncreasePerLevel>3</IncreasePerLevel>
+          </counterProposal>
+          <receivePayment>
+            <BaseValue>400</BaseValue>
+            <IncreasePerLevel>3</IncreasePerLevel>
+          </receivePayment>
+          <givePayment>
+            <BaseValue>400</BaseValue>
+            <IncreasePerLevel>3</IncreasePerLevel>
+          </givePayment>
         </GiftBalancing>
         <RepeatableActionBalancing>
           <Actions>
             <Flatter>
               <Subdivisions>
                 <Item>
-                  <VectorElement>
-                    <InheritanceMapV2>
-                      <Entry>
-                        <TemplateName>3rdParty_Female</TemplateName>
-                        <Index>0</Index>
-                      </Entry>
-                    </InheritanceMapV2>
-                  </VectorElement>
                   <SuccessChance>60</SuccessChance>
+                  <ReputationGain>5</ReputationGain>
+                  <ReputationLoss>-3</ReputationLoss>
                 </Item>
                 <Item>
                   <ReputationLoss>-3</ReputationLoss>
                 </Item>
                 <Item />
               </Subdivisions>
+              <ForgettingTime>900000</ForgettingTime>
             </Flatter>
             <Insult>
               <Subdivisions>
@@ -4554,7 +5425,17 @@
                 </Item>
                 <Item />
               </Subdivisions>
+              <ForgettingTime>900000</ForgettingTime>
             </Insult>
+            <Gift>
+              <Subdivisions>
+                <Item>
+                  <SuccessChance>50</SuccessChance>
+                  <ReputationGain>2</ReputationGain>
+                </Item>
+              </Subdivisions>
+              <ForgettingTime>900000</ForgettingTime>
+            </Gift>
           </Actions>
         </RepeatableActionBalancing>
         <InitialRelation>
@@ -4571,38 +5452,123 @@
           <DefaultMemory>50</DefaultMemory>
           <DefaultTreaties>Peace;TradeRights</DefaultTreaties>
           <DefaultTreatiesUndiscovered>Peace</DefaultTreatiesUndiscovered>
+          <DefaultReputation>50</DefaultReputation>
         </InitialRelation>
         <Memory>
           <UpdateTable>
             <Item>
-              <VectorElement>
-                <InheritedIndex>0</InheritedIndex>
-              </VectorElement>
               <Change>10</Change>
+              <Difference>20</Difference>
             </Item>
             <Item>
-              <VectorElement>
-                <InheritedIndex>1</InheritedIndex>
-              </VectorElement>
               <Change>20</Change>
+              <Difference>30</Difference>
             </Item>
             <Item>
-              <VectorElement>
-                <InheritedIndex>2</InheritedIndex>
-              </VectorElement>
               <Change>40</Change>
+              <Difference>50</Difference>
             </Item>
           </UpdateTable>
           <ReputationUpdateTimer>1200000</ReputationUpdateTimer>
           <NegReputationCorrectionMax>3</NegReputationCorrectionMax>
+          <ShortTimeChange>30</ShortTimeChange>
         </Memory>
         <ActionDebuffs>
           <DebuffSettings>
             <ThreatWar>
               <ApplyWhenSuccesful>1</ApplyWhenSuccesful>
+              <DiceDebuff>25</DiceDebuff>
+              <DebuffTime>900000</DebuffTime>
             </ThreatWar>
+            <Peace>
+              <DiceDebuff>15</DiceDebuff>
+              <DebuffTime>900000</DebuffTime>
+              <DiminishingDebuff>1</DiminishingDebuff>
+            </Peace>
+            <Trade>
+              <DiceDebuff>15</DiceDebuff>
+              <DebuffTime>900000</DebuffTime>
+              <DiminishingDebuff>1</DiminishingDebuff>
+            </Trade>
           </DebuffSettings>
         </ActionDebuffs>
+        <DiceRollProposalMin>-10</DiceRollProposalMin>
+        <DiceRollProposalMax>30</DiceRollProposalMax>
+        <DiceRollThreatMin>15</DiceRollThreatMin>
+        <DiceRollThreatMax>40</DiceRollThreatMax>
+        <CounterProposal>
+          <DiceRollCounterMin>-25</DiceRollCounterMin>
+          <DiceRollCounterMax>25</DiceRollCounterMax>
+          <CounterProposalAgree>66</CounterProposalAgree>
+          <CounterProposalPartial>13</CounterProposalPartial>
+          <CounterProposalDeclineStart>10</CounterProposalDeclineStart>
+          <CounterProposalDeclineIncrease>10</CounterProposalDeclineIncrease>
+          <CounterProposalIncreaseModifierPercentage>100</CounterProposalIncreaseModifierPercentage>
+        </CounterProposal>
+        <ChancePreview>
+          <IdleTime>480000</IdleTime>
+          <RatingStates>
+            <SuccessLvl3>
+              <BelowChance>30</BelowChance>
+              <Text>10598</Text>
+            </SuccessLvl3>
+            <SuccessLvl1>
+              <BelowChance>10</BelowChance>
+              <Text>10597</Text>
+            </SuccessLvl1>
+            <SuccessLvl2>
+              <BelowChance>20</BelowChance>
+              <Text>10596</Text>
+            </SuccessLvl2>
+            <SuccessLvl4>
+              <BelowChance>40</BelowChance>
+              <Text>10594</Text>
+            </SuccessLvl4>
+            <SuccessLvl0>
+              <Text>10595</Text>
+            </SuccessLvl0>
+            <SuccessLvl10>
+              <BelowChance>99</BelowChance>
+              <Text>13040</Text>
+            </SuccessLvl10>
+            <SuccessLvl11>
+              <BelowChance>100</BelowChance>
+              <Text>13041</Text>
+            </SuccessLvl11>
+            <SuccessLvl5>
+              <BelowChance>50</BelowChance>
+              <Text>13035</Text>
+            </SuccessLvl5>
+            <SuccessLvl6>
+              <BelowChance>60</BelowChance>
+              <Text>13036</Text>
+            </SuccessLvl6>
+            <SuccessLvl7>
+              <BelowChance>70</BelowChance>
+              <Text>13037</Text>
+            </SuccessLvl7>
+            <SuccessLvl8>
+              <BelowChance>80</BelowChance>
+              <Text>13038</Text>
+            </SuccessLvl8>
+            <SuccessLvl9>
+              <BelowChance>90</BelowChance>
+              <Text>13039</Text>
+            </SuccessLvl9>
+          </RatingStates>
+        </ChancePreview>
+        <DiplomacyAI>
+          <ReputationTriggerDelayMin>10000</ReputationTriggerDelayMin>
+          <ReputationTriggerDelayMax>20000</ReputationTriggerDelayMax>
+          <ReputationMinDice>-10</ReputationMinDice>
+          <ReputationMaxDice>10</ReputationMaxDice>
+          <MinMoney>3</MinMoney>
+          <MaxMoneyOffering>10</MaxMoneyOffering>
+          <MaxMoneyRequest>15</MaxMoneyRequest>
+          <GenericTimerStartDelay>600000</GenericTimerStartDelay>
+          <GenericTimerRepeat>1800000</GenericTimerRepeat>
+        </DiplomacyAI>
+        <AutomaticDiscovery />
       </Diplomacy>
       <ParticipantMessages>
         <MessageTriggers>
@@ -5279,6 +6245,9 @@
         <AddToEditorObjectGrid>0</AddToEditorObjectGrid>
         <PlacableInEditor>0</PlacableInEditor>
         <SelectableInEditor>0</SelectableInEditor>
+        <Type>GameObject</Type>
+        <Variations />
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Trader>
         <ShipTrader>0</ShipTrader>
@@ -5723,10 +6692,72 @@
         <TraderRerollInterval>300000</TraderRerollInterval>
         <TraderItemRerollCosts>5000</TraderItemRerollCosts>
         <TraderItemRerollCostIncrease>5000</TraderItemRerollCostIncrease>
+        <SellShipCooldown>900000</SellShipCooldown>
+        <BuyShipRequestNoTradeAgreementNotification>0</BuyShipRequestNoTradeAgreementNotification>
       </Trader>
       <ThirdParty>
         <AllowedRegions>Colony01</AllowedRegions>
         <IslandPlacement>Optional</IslandPlacement>
+        <ReservationPause>600000</ReservationPause>
+        <DecoBuildings>
+          <Item>
+            <Asset>100689</Asset>
+          </Item>
+          <Item>
+            <Asset>100690</Asset>
+          </Item>
+          <Item>
+            <Asset>100720</Asset>
+          </Item>
+          <Item>
+            <Asset>100723</Asset>
+          </Item>
+          <Item>
+            <Asset>100724</Asset>
+          </Item>
+          <Item>
+            <Asset>100725</Asset>
+          </Item>
+          <Item>
+            <Asset>100726</Asset>
+          </Item>
+          <Item>
+            <Asset>100731</Asset>
+          </Item>
+          <Item>
+            <Asset>100733</Asset>
+          </Item>
+          <Item>
+            <Asset>100734</Asset>
+          </Item>
+          <Item>
+            <Asset>100735</Asset>
+          </Item>
+          <Item>
+            <Asset>100736</Asset>
+          </Item>
+          <Item>
+            <Asset>1000101</Asset>
+          </Item>
+          <Item>
+            <Asset>1000103</Asset>
+          </Item>
+          <Item>
+            <Asset>1000110</Asset>
+          </Item>
+          <Item>
+            <Asset>1000156</Asset>
+          </Item>
+          <Item>
+            <Asset>1000222</Asset>
+          </Item>
+          <Item>
+            <Asset>1000226</Asset>
+          </Item>
+          <Item>
+            <Asset>1000228</Asset>
+          </Item>
+        </DecoBuildings>
       </ThirdParty>
       <ParticipantMessageObject>
         <ParticipantMessages>145</ParticipantMessages>
@@ -5735,11 +6766,19 @@
         <PaMSyTrade>
           <ActiveTrade>
             <TradeAmount>500</TradeAmount>
+            <TradeAmountFactor>500</TradeAmountFactor>
+            <TradeMessage>ActiveTradeConfirmation</TradeMessage>
           </ActiveTrade>
           <PassiveTrade>
             <TradeAmount>5000</TradeAmount>
+            <TradeAmountFactor>5000</TradeAmountFactor>
+            <TradeMessage>PassiveTradeConfirmation</TradeMessage>
           </PassiveTrade>
         </PaMSyTrade>
+        <NewspaperPropaganda />
+        <PaMSyMilitaryStrength />
+        <PaMSyAttractiveness />
+        <PaMSyIslandPollution />
       </Interaction>
     </Values>
   </Asset>
@@ -5750,6 +6789,8 @@
         <GUID>200</GUID>
         <Name>Third_party_05c (Isabel Sarmento Attackable Campaign)</Name>
         <IconFilename>data/ui/2kimages/main/profiles/3rd_party_05.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -5760,6 +6801,7 @@
           </English>
         </LocaText>
         <LineID>17955</LineID>
+        <Localize>1</Localize>
       </Text>
       <Profile>
         <ParticipantID>Third_party_05c_Sarmento_Attackable_Campaign</ParticipantID>
@@ -5785,6 +6827,10 @@
         <MoodImage>data/ui/2kimages/main/assets/thirdparty_islandbar/bg_islandbar_isabel.png</MoodImage>
         <HostileTakeoverEnabled>0</HostileTakeoverEnabled>
         <AttackableThroughPirateFlagItem>0</AttackableThroughPirateFlagItem>
+        <ProfileType>ThirdParty</ProfileType>
+        <TakeoverBehaviour>Destroy</TakeoverBehaviour>
+        <ShipDropRewardPool>0</ShipDropRewardPool>
+        <ChooseNPC />
       </Profile>
       <Diplomacy>
         <InitialRelation>
@@ -5812,33 +6858,96 @@
           <DefaultMemory>50</DefaultMemory>
           <DefaultTreaties>Peace;TradeRights</DefaultTreaties>
           <DefaultTreatiesUndiscovered>Peace</DefaultTreatiesUndiscovered>
+          <DefaultReputation>50</DefaultReputation>
         </InitialRelation>
         <IsDiscoveredOnStart>1</IsDiscoveredOnStart>
         <DiplomacyActionBalancing>
           <CancelTraderights>
             <AgreementThreshold>-999</AgreementThreshold>
             <PartialAgreementThreshold>-999</PartialAgreementThreshold>
+            <ActionWeight>80</ActionWeight>
           </CancelTraderights>
           <RequestAlliance>
             <AgreementThreshold>80</AgreementThreshold>
             <PartialAgreementThreshold>50</PartialAgreementThreshold>
+            <ActionWeight>100</ActionWeight>
           </RequestAlliance>
           <RequestPeace>
             <AgreementThreshold>45</AgreementThreshold>
             <PartialAgreementThreshold>15</PartialAgreementThreshold>
+            <ActionWeight>190</ActionWeight>
           </RequestPeace>
           <RequestTraderights>
             <AgreementThreshold>90</AgreementThreshold>
             <PartialAgreementThreshold>60</PartialAgreementThreshold>
+            <ActionWeight>90</ActionWeight>
           </RequestTraderights>
           <ThreatWar>
             <AgreementThreshold>-20</AgreementThreshold>
             <PartialAgreementThreshold>-20</PartialAgreementThreshold>
+            <ActionWeight>200</ActionWeight>
           </ThreatWar>
           <RequestCeaseFire>
             <ActionWeight>120</ActionWeight>
             <AgreementThreshold>80</AgreementThreshold>
+            <PartialAgreementThreshold>10</PartialAgreementThreshold>
           </RequestCeaseFire>
+          <CancelAlliance>
+            <ActionWeight>100</ActionWeight>
+            <AgreementThreshold>80</AgreementThreshold>
+            <PartialAgreementThreshold>50</PartialAgreementThreshold>
+          </CancelAlliance>
+          <DeclareWar>
+            <ActionWeight>200</ActionWeight>
+            <AgreementThreshold>-999</AgreementThreshold>
+            <PartialAgreementThreshold>-999</PartialAgreementThreshold>
+          </DeclareWar>
+          <DemandQuest>
+            <ActionWeight>50</ActionWeight>
+            <AgreementThreshold>-999</AgreementThreshold>
+            <PartialAgreementThreshold>-999</PartialAgreementThreshold>
+          </DemandQuest>
+          <Flatter>
+            <ActionWeight>20</ActionWeight>
+            <AgreementThreshold>-999</AgreementThreshold>
+            <PartialAgreementThreshold>-999</PartialAgreementThreshold>
+          </Flatter>
+          <GiftMoneyOneTimeGenerous>
+            <ActionWeight>5</ActionWeight>
+            <AgreementThreshold>-999</AgreementThreshold>
+            <PartialAgreementThreshold>-999</PartialAgreementThreshold>
+          </GiftMoneyOneTimeGenerous>
+          <GiftMoneyOneTimeOrdinary>
+            <ActionWeight>5</ActionWeight>
+            <AgreementThreshold>-999</AgreementThreshold>
+            <PartialAgreementThreshold>-999</PartialAgreementThreshold>
+          </GiftMoneyOneTimeOrdinary>
+          <GiftMoneyOneTimeSmall>
+            <ActionWeight>5</ActionWeight>
+            <AgreementThreshold>-999</AgreementThreshold>
+            <PartialAgreementThreshold>-999</PartialAgreementThreshold>
+          </GiftMoneyOneTimeSmall>
+          <Insult>
+            <ActionWeight>5</ActionWeight>
+            <AgreementThreshold>-999</AgreementThreshold>
+            <PartialAgreementThreshold>-999</PartialAgreementThreshold>
+          </Insult>
+          <PaymentDecreaseReputation>
+            <ActionWeight>1</ActionWeight>
+            <AgreementThreshold>50</AgreementThreshold>
+            <PartialAgreementThreshold>50</PartialAgreementThreshold>
+          </PaymentDecreaseReputation>
+          <PaymentIncreaseReputation>
+            <ActionWeight>1</ActionWeight>
+            <AgreementThreshold>50</AgreementThreshold>
+            <PartialAgreementThreshold>50</PartialAgreementThreshold>
+          </PaymentIncreaseReputation>
+          <ThreatCancelAlliance>
+            <ActionWeight>200</ActionWeight>
+          </ThreatCancelAlliance>
+          <ThreatCancelTrade>
+            <ActionWeight>200</ActionWeight>
+          </ThreatCancelTrade>
         </DiplomacyActionBalancing>
         <ReputationChangeCalculation>
           <PaymentGivingMoney>
@@ -5846,6 +6955,7 @@
           </PaymentGivingMoney>
           <PaymentReceivingMoney>
             <ReputationAddedLimit>40</ReputationAddedLimit>
+            <ReputationAddedSteepness>0.025</ReputationAddedSteepness>
           </PaymentReceivingMoney>
           <Treaties>
             <ReputationValues>
@@ -5859,6 +6969,7 @@
               </CeaseFire>
               <Peace>
                 <AddingTreaty>20</AddingTreaty>
+                <RemovingTreaty>-40</RemovingTreaty>
               </Peace>
               <TradeRights>
                 <AddingTreaty>10</AddingTreaty>
@@ -5866,47 +6977,82 @@
               </TradeRights>
             </ReputationValues>
           </Treaties>
+          <GlobalLimitTempReputation>
+            <NegBorderMin>-70</NegBorderMin>
+            <NegBorderMax>-100</NegBorderMax>
+            <PosBorderMin>25</PosBorderMin>
+            <PosBorderMax>40</PosBorderMax>
+          </GlobalLimitTempReputation>
+          <EconomyPowerTempReputation>
+            <NegBorderMin>-40</NegBorderMin>
+            <NegBorderMax>-80</NegBorderMax>
+            <PosBorderMin>10</PosBorderMin>
+            <PosBorderMax>30</PosBorderMax>
+            <NegativeReputationChanged>1</NegativeReputationChanged>
+            <PositiveReputationChanged>1</PositiveReputationChanged>
+          </EconomyPowerTempReputation>
+          <MilitaryPowerTempReputation>
+            <NegBorderMin>-40</NegBorderMin>
+            <NegBorderMax>-80</NegBorderMax>
+            <PosBorderMin>10</PosBorderMin>
+            <PosBorderMax>30</PosBorderMax>
+            <NegativeReputationChanged>3</NegativeReputationChanged>
+            <PositiveReputationChanged>3</PositiveReputationChanged>
+          </MilitaryPowerTempReputation>
         </ReputationChangeCalculation>
         <GiftBalancing>
           <giveGenerous>
             <BaseValue>2000</BaseValue>
+            <IncreasePerLevel>3</IncreasePerLevel>
           </giveGenerous>
           <giveOrdinary>
             <BaseValue>1000</BaseValue>
+            <IncreasePerLevel>3</IncreasePerLevel>
           </giveOrdinary>
           <giveSmall>
             <BaseValue>500</BaseValue>
+            <IncreasePerLevel>3</IncreasePerLevel>
           </giveSmall>
           <receiveGenerous>
             <BaseValue>10000</BaseValue>
+            <IncreasePerLevel>3</IncreasePerLevel>
           </receiveGenerous>
           <receiveOrdinary>
             <BaseValue>5500</BaseValue>
+            <IncreasePerLevel>3</IncreasePerLevel>
           </receiveOrdinary>
           <receiveSmall>
             <BaseValue>3000</BaseValue>
+            <IncreasePerLevel>3</IncreasePerLevel>
           </receiveSmall>
+          <counterProposal>
+            <BaseValue>1000</BaseValue>
+            <IncreasePerLevel>3</IncreasePerLevel>
+          </counterProposal>
+          <receivePayment>
+            <BaseValue>400</BaseValue>
+            <IncreasePerLevel>3</IncreasePerLevel>
+          </receivePayment>
+          <givePayment>
+            <BaseValue>400</BaseValue>
+            <IncreasePerLevel>3</IncreasePerLevel>
+          </givePayment>
         </GiftBalancing>
         <RepeatableActionBalancing>
           <Actions>
             <Flatter>
               <Subdivisions>
                 <Item>
-                  <VectorElement>
-                    <InheritanceMapV2>
-                      <Entry>
-                        <TemplateName>3rdParty_Female</TemplateName>
-                        <Index>0</Index>
-                      </Entry>
-                    </InheritanceMapV2>
-                  </VectorElement>
                   <SuccessChance>60</SuccessChance>
+                  <ReputationGain>5</ReputationGain>
+                  <ReputationLoss>-3</ReputationLoss>
                 </Item>
                 <Item>
                   <ReputationLoss>-3</ReputationLoss>
                 </Item>
                 <Item />
               </Subdivisions>
+              <ForgettingTime>900000</ForgettingTime>
             </Flatter>
             <Insult>
               <Subdivisions>
@@ -5915,40 +7061,134 @@
                 </Item>
                 <Item />
               </Subdivisions>
+              <ForgettingTime>900000</ForgettingTime>
             </Insult>
+            <Gift>
+              <Subdivisions>
+                <Item>
+                  <SuccessChance>50</SuccessChance>
+                  <ReputationGain>2</ReputationGain>
+                </Item>
+              </Subdivisions>
+              <ForgettingTime>900000</ForgettingTime>
+            </Gift>
           </Actions>
         </RepeatableActionBalancing>
         <Memory>
           <UpdateTable>
             <Item>
-              <VectorElement>
-                <InheritedIndex>0</InheritedIndex>
-              </VectorElement>
               <Change>10</Change>
+              <Difference>20</Difference>
             </Item>
             <Item>
-              <VectorElement>
-                <InheritedIndex>1</InheritedIndex>
-              </VectorElement>
               <Change>20</Change>
+              <Difference>30</Difference>
             </Item>
             <Item>
-              <VectorElement>
-                <InheritedIndex>2</InheritedIndex>
-              </VectorElement>
               <Change>40</Change>
+              <Difference>50</Difference>
             </Item>
           </UpdateTable>
           <ReputationUpdateTimer>1200000</ReputationUpdateTimer>
           <NegReputationCorrectionMax>3</NegReputationCorrectionMax>
+          <ShortTimeChange>30</ShortTimeChange>
         </Memory>
         <ActionDebuffs>
           <DebuffSettings>
             <ThreatWar>
               <ApplyWhenSuccesful>1</ApplyWhenSuccesful>
+              <DiceDebuff>25</DiceDebuff>
+              <DebuffTime>900000</DebuffTime>
             </ThreatWar>
+            <Peace>
+              <DiceDebuff>15</DiceDebuff>
+              <DebuffTime>900000</DebuffTime>
+              <DiminishingDebuff>1</DiminishingDebuff>
+            </Peace>
+            <Trade>
+              <DiceDebuff>15</DiceDebuff>
+              <DebuffTime>900000</DebuffTime>
+              <DiminishingDebuff>1</DiminishingDebuff>
+            </Trade>
           </DebuffSettings>
         </ActionDebuffs>
+        <DiceRollProposalMin>-10</DiceRollProposalMin>
+        <DiceRollProposalMax>30</DiceRollProposalMax>
+        <DiceRollThreatMin>15</DiceRollThreatMin>
+        <DiceRollThreatMax>40</DiceRollThreatMax>
+        <CounterProposal>
+          <DiceRollCounterMin>-25</DiceRollCounterMin>
+          <DiceRollCounterMax>25</DiceRollCounterMax>
+          <CounterProposalAgree>66</CounterProposalAgree>
+          <CounterProposalPartial>13</CounterProposalPartial>
+          <CounterProposalDeclineStart>10</CounterProposalDeclineStart>
+          <CounterProposalDeclineIncrease>10</CounterProposalDeclineIncrease>
+          <CounterProposalIncreaseModifierPercentage>100</CounterProposalIncreaseModifierPercentage>
+        </CounterProposal>
+        <ChancePreview>
+          <IdleTime>480000</IdleTime>
+          <RatingStates>
+            <SuccessLvl3>
+              <BelowChance>30</BelowChance>
+              <Text>10598</Text>
+            </SuccessLvl3>
+            <SuccessLvl1>
+              <BelowChance>10</BelowChance>
+              <Text>10597</Text>
+            </SuccessLvl1>
+            <SuccessLvl2>
+              <BelowChance>20</BelowChance>
+              <Text>10596</Text>
+            </SuccessLvl2>
+            <SuccessLvl4>
+              <BelowChance>40</BelowChance>
+              <Text>10594</Text>
+            </SuccessLvl4>
+            <SuccessLvl0>
+              <Text>10595</Text>
+            </SuccessLvl0>
+            <SuccessLvl10>
+              <BelowChance>99</BelowChance>
+              <Text>13040</Text>
+            </SuccessLvl10>
+            <SuccessLvl11>
+              <BelowChance>100</BelowChance>
+              <Text>13041</Text>
+            </SuccessLvl11>
+            <SuccessLvl5>
+              <BelowChance>50</BelowChance>
+              <Text>13035</Text>
+            </SuccessLvl5>
+            <SuccessLvl6>
+              <BelowChance>60</BelowChance>
+              <Text>13036</Text>
+            </SuccessLvl6>
+            <SuccessLvl7>
+              <BelowChance>70</BelowChance>
+              <Text>13037</Text>
+            </SuccessLvl7>
+            <SuccessLvl8>
+              <BelowChance>80</BelowChance>
+              <Text>13038</Text>
+            </SuccessLvl8>
+            <SuccessLvl9>
+              <BelowChance>90</BelowChance>
+              <Text>13039</Text>
+            </SuccessLvl9>
+          </RatingStates>
+        </ChancePreview>
+        <DiplomacyAI>
+          <ReputationTriggerDelayMin>10000</ReputationTriggerDelayMin>
+          <ReputationTriggerDelayMax>20000</ReputationTriggerDelayMax>
+          <ReputationMinDice>-10</ReputationMinDice>
+          <ReputationMaxDice>10</ReputationMaxDice>
+          <MinMoney>3</MinMoney>
+          <MaxMoneyOffering>10</MaxMoneyOffering>
+          <MaxMoneyRequest>15</MaxMoneyRequest>
+          <GenericTimerStartDelay>600000</GenericTimerStartDelay>
+          <GenericTimerRepeat>1800000</GenericTimerRepeat>
+        </DiplomacyAI>
+        <AutomaticDiscovery />
       </Diplomacy>
       <ParticipantMessages>
         <MessageTriggers>
@@ -6625,6 +7865,9 @@
         <AddToEditorObjectGrid>0</AddToEditorObjectGrid>
         <PlacableInEditor>0</PlacableInEditor>
         <SelectableInEditor>0</SelectableInEditor>
+        <Type>GameObject</Type>
+        <Variations />
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Trader>
         <ShipTrader>1</ShipTrader>
@@ -7127,10 +8370,72 @@
         <TraderRerollInterval>300000</TraderRerollInterval>
         <TraderItemRerollCosts>5000</TraderItemRerollCosts>
         <TraderItemRerollCostIncrease>5000</TraderItemRerollCostIncrease>
+        <SellShipCooldown>900000</SellShipCooldown>
+        <BuyShipRequestNoTradeAgreementNotification>0</BuyShipRequestNoTradeAgreementNotification>
       </Trader>
       <ThirdParty>
         <AllowedRegions>Colony01</AllowedRegions>
         <IslandPlacement>Optional</IslandPlacement>
+        <ReservationPause>600000</ReservationPause>
+        <DecoBuildings>
+          <Item>
+            <Asset>100689</Asset>
+          </Item>
+          <Item>
+            <Asset>100690</Asset>
+          </Item>
+          <Item>
+            <Asset>100720</Asset>
+          </Item>
+          <Item>
+            <Asset>100723</Asset>
+          </Item>
+          <Item>
+            <Asset>100724</Asset>
+          </Item>
+          <Item>
+            <Asset>100725</Asset>
+          </Item>
+          <Item>
+            <Asset>100726</Asset>
+          </Item>
+          <Item>
+            <Asset>100731</Asset>
+          </Item>
+          <Item>
+            <Asset>100733</Asset>
+          </Item>
+          <Item>
+            <Asset>100734</Asset>
+          </Item>
+          <Item>
+            <Asset>100735</Asset>
+          </Item>
+          <Item>
+            <Asset>100736</Asset>
+          </Item>
+          <Item>
+            <Asset>1000101</Asset>
+          </Item>
+          <Item>
+            <Asset>1000103</Asset>
+          </Item>
+          <Item>
+            <Asset>1000110</Asset>
+          </Item>
+          <Item>
+            <Asset>1000156</Asset>
+          </Item>
+          <Item>
+            <Asset>1000222</Asset>
+          </Item>
+          <Item>
+            <Asset>1000226</Asset>
+          </Item>
+          <Item>
+            <Asset>1000228</Asset>
+          </Item>
+        </DecoBuildings>
       </ThirdParty>
       <ParticipantMessageObject>
         <ParticipantMessages>145</ParticipantMessages>
@@ -7139,11 +8444,19 @@
         <PaMSyTrade>
           <ActiveTrade>
             <TradeAmount>500</TradeAmount>
+            <TradeAmountFactor>500</TradeAmountFactor>
+            <TradeMessage>ActiveTradeConfirmation</TradeMessage>
           </ActiveTrade>
           <PassiveTrade>
             <TradeAmount>5000</TradeAmount>
+            <TradeAmountFactor>5000</TradeAmountFactor>
+            <TradeMessage>PassiveTradeConfirmation</TradeMessage>
           </PassiveTrade>
         </PaMSyTrade>
+        <NewspaperPropaganda />
+        <PaMSyMilitaryStrength />
+        <PaMSyAttractiveness />
+        <PaMSyIslandPollution />
       </Interaction>
     </Values>
   </Asset>
@@ -7154,6 +8467,8 @@
         <GUID>46</GUID>
         <Name>Third_party_07 (Eli Bleakworth)</Name>
         <IconFilename>data/ui/2kimages/main/profiles/3rd_party_07.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -7164,6 +8479,7 @@
           </English>
         </LocaText>
         <LineID>3772</LineID>
+        <Localize>1</Localize>
       </Text>
       <Profile>
         <ProfilePicture>data/ui/2kimages/main/profiles/3rd_party_07.png</ProfilePicture>
@@ -7187,68 +8503,342 @@
         <MoodImage>data/ui/2kimages/main/assets/thirdparty_islandbar/bg_islandbar_prison.png</MoodImage>
         <HostileTakeoverEnabled>0</HostileTakeoverEnabled>
         <AttackableThroughPirateFlagItem>0</AttackableThroughPirateFlagItem>
+        <ProfileType>ThirdParty</ProfileType>
+        <TakeoverBehaviour>Destroy</TakeoverBehaviour>
+        <ShipDropRewardPool>0</ShipDropRewardPool>
+        <CreateModeMeta>Dynamically_GameSetupOrMapload</CreateModeMeta>
+        <CreateModeSession>Dynamically_MaploadOrSessionEnter</CreateModeSession>
+        <ChooseNPC />
       </Profile>
       <Diplomacy>
         <DiplomacyActionBalancing>
           <CancelTraderights>
             <AgreementThreshold>-999</AgreementThreshold>
             <PartialAgreementThreshold>-999</PartialAgreementThreshold>
+            <ActionWeight>80</ActionWeight>
           </CancelTraderights>
           <RequestCeaseFire>
             <ActionWeight>120</ActionWeight>
             <AgreementThreshold>80</AgreementThreshold>
+            <PartialAgreementThreshold>10</PartialAgreementThreshold>
           </RequestCeaseFire>
+          <CancelAlliance>
+            <ActionWeight>100</ActionWeight>
+            <AgreementThreshold>80</AgreementThreshold>
+            <PartialAgreementThreshold>50</PartialAgreementThreshold>
+          </CancelAlliance>
+          <DeclareWar>
+            <ActionWeight>200</ActionWeight>
+            <AgreementThreshold>-999</AgreementThreshold>
+            <PartialAgreementThreshold>-999</PartialAgreementThreshold>
+          </DeclareWar>
+          <DemandQuest>
+            <ActionWeight>50</ActionWeight>
+            <AgreementThreshold>-999</AgreementThreshold>
+            <PartialAgreementThreshold>-999</PartialAgreementThreshold>
+          </DemandQuest>
+          <Flatter>
+            <ActionWeight>20</ActionWeight>
+            <AgreementThreshold>-999</AgreementThreshold>
+            <PartialAgreementThreshold>-999</PartialAgreementThreshold>
+          </Flatter>
+          <GiftMoneyOneTimeGenerous>
+            <ActionWeight>5</ActionWeight>
+            <AgreementThreshold>-999</AgreementThreshold>
+            <PartialAgreementThreshold>-999</PartialAgreementThreshold>
+          </GiftMoneyOneTimeGenerous>
+          <GiftMoneyOneTimeOrdinary>
+            <ActionWeight>5</ActionWeight>
+            <AgreementThreshold>-999</AgreementThreshold>
+            <PartialAgreementThreshold>-999</PartialAgreementThreshold>
+          </GiftMoneyOneTimeOrdinary>
+          <GiftMoneyOneTimeSmall>
+            <ActionWeight>5</ActionWeight>
+            <AgreementThreshold>-999</AgreementThreshold>
+            <PartialAgreementThreshold>-999</PartialAgreementThreshold>
+          </GiftMoneyOneTimeSmall>
+          <Insult>
+            <ActionWeight>5</ActionWeight>
+            <AgreementThreshold>-999</AgreementThreshold>
+            <PartialAgreementThreshold>-999</PartialAgreementThreshold>
+          </Insult>
+          <PaymentDecreaseReputation>
+            <ActionWeight>1</ActionWeight>
+            <AgreementThreshold>50</AgreementThreshold>
+            <PartialAgreementThreshold>50</PartialAgreementThreshold>
+          </PaymentDecreaseReputation>
+          <PaymentIncreaseReputation>
+            <ActionWeight>1</ActionWeight>
+            <AgreementThreshold>50</AgreementThreshold>
+            <PartialAgreementThreshold>50</PartialAgreementThreshold>
+          </PaymentIncreaseReputation>
+          <RequestAlliance>
+            <ActionWeight>100</ActionWeight>
+            <AgreementThreshold>90</AgreementThreshold>
+            <PartialAgreementThreshold>45</PartialAgreementThreshold>
+          </RequestAlliance>
+          <RequestPeace>
+            <ActionWeight>190</ActionWeight>
+            <AgreementThreshold>65</AgreementThreshold>
+            <PartialAgreementThreshold>10</PartialAgreementThreshold>
+          </RequestPeace>
+          <RequestTraderights>
+            <ActionWeight>90</ActionWeight>
+            <AgreementThreshold>75</AgreementThreshold>
+            <PartialAgreementThreshold>20</PartialAgreementThreshold>
+          </RequestTraderights>
+          <ThreatWar>
+            <ActionWeight>200</ActionWeight>
+          </ThreatWar>
+          <ThreatCancelAlliance>
+            <ActionWeight>200</ActionWeight>
+          </ThreatCancelAlliance>
+          <ThreatCancelTrade>
+            <ActionWeight>200</ActionWeight>
+          </ThreatCancelTrade>
         </DiplomacyActionBalancing>
         <RepeatableActionBalancing>
           <Actions>
             <Insult>
               <Subdivisions>
                 <Item>
-                  <VectorElement>
-                    <InheritedIndex>0</InheritedIndex>
-                  </VectorElement>
                   <SuccessChance>75</SuccessChance>
+                  <ReputationGain>-5</ReputationGain>
                 </Item>
               </Subdivisions>
+              <ForgettingTime>900000</ForgettingTime>
             </Insult>
+            <Flatter>
+              <Subdivisions>
+                <Item>
+                  <SuccessChance>50</SuccessChance>
+                  <ReputationGain>5</ReputationGain>
+                  <ReputationLoss>-3</ReputationLoss>
+                </Item>
+              </Subdivisions>
+              <ForgettingTime>900000</ForgettingTime>
+            </Flatter>
+            <Gift>
+              <Subdivisions>
+                <Item>
+                  <SuccessChance>50</SuccessChance>
+                  <ReputationGain>2</ReputationGain>
+                </Item>
+              </Subdivisions>
+              <ForgettingTime>900000</ForgettingTime>
+            </Gift>
           </Actions>
         </RepeatableActionBalancing>
         <Memory>
           <UpdateTable>
             <Item>
-              <VectorElement>
-                <InheritedIndex>0</InheritedIndex>
-              </VectorElement>
               <Change>10</Change>
+              <Difference>20</Difference>
             </Item>
             <Item>
-              <VectorElement>
-                <InheritedIndex>1</InheritedIndex>
-              </VectorElement>
               <Change>20</Change>
+              <Difference>30</Difference>
             </Item>
             <Item>
-              <VectorElement>
-                <InheritedIndex>2</InheritedIndex>
-              </VectorElement>
               <Change>40</Change>
+              <Difference>50</Difference>
             </Item>
           </UpdateTable>
           <ReputationUpdateTimer>1200000</ReputationUpdateTimer>
           <NegReputationCorrectionMax>3</NegReputationCorrectionMax>
+          <ShortTimeChange>30</ShortTimeChange>
         </Memory>
         <ActionDebuffs>
           <DebuffSettings>
             <ThreatWar>
               <ApplyWhenSuccesful>1</ApplyWhenSuccesful>
+              <DiceDebuff>25</DiceDebuff>
+              <DebuffTime>900000</DebuffTime>
             </ThreatWar>
+            <Peace>
+              <DiceDebuff>15</DiceDebuff>
+              <DebuffTime>900000</DebuffTime>
+              <DiminishingDebuff>1</DiminishingDebuff>
+            </Peace>
+            <Trade>
+              <DiceDebuff>15</DiceDebuff>
+              <DebuffTime>900000</DebuffTime>
+              <DiminishingDebuff>1</DiminishingDebuff>
+            </Trade>
           </DebuffSettings>
         </ActionDebuffs>
         <InitialRelation>
           <DefaultMemory>50</DefaultMemory>
           <DefaultTreaties>Peace;TradeRights</DefaultTreaties>
           <DefaultTreatiesUndiscovered>Peace</DefaultTreatiesUndiscovered>
+          <DefaultReputation>50</DefaultReputation>
         </InitialRelation>
+        <DiceRollProposalMin>-10</DiceRollProposalMin>
+        <DiceRollProposalMax>30</DiceRollProposalMax>
+        <DiceRollThreatMin>15</DiceRollThreatMin>
+        <DiceRollThreatMax>40</DiceRollThreatMax>
+        <ReputationChangeCalculation>
+          <PaymentGivingMoney>
+            <MaxPossibleReputation>12</MaxPossibleReputation>
+          </PaymentGivingMoney>
+          <PaymentReceivingMoney>
+            <ReputationAddedLimit>50</ReputationAddedLimit>
+            <ReputationAddedSteepness>0.025</ReputationAddedSteepness>
+          </PaymentReceivingMoney>
+          <Treaties>
+            <ReputationValues>
+              <Alliance>
+                <AddingTreaty>25</AddingTreaty>
+                <RemovingTreaty>35</RemovingTreaty>
+              </Alliance>
+              <CeaseFire>
+                <AddingTreaty>15</AddingTreaty>
+                <RemovingTreaty>20</RemovingTreaty>
+              </CeaseFire>
+              <Peace>
+                <AddingTreaty>30</AddingTreaty>
+                <RemovingTreaty>-40</RemovingTreaty>
+              </Peace>
+              <TradeRights>
+                <AddingTreaty>25</AddingTreaty>
+                <RemovingTreaty>35</RemovingTreaty>
+              </TradeRights>
+            </ReputationValues>
+          </Treaties>
+          <GlobalLimitTempReputation>
+            <NegBorderMin>-70</NegBorderMin>
+            <NegBorderMax>-100</NegBorderMax>
+            <PosBorderMin>25</PosBorderMin>
+            <PosBorderMax>40</PosBorderMax>
+          </GlobalLimitTempReputation>
+          <EconomyPowerTempReputation>
+            <NegBorderMin>-40</NegBorderMin>
+            <NegBorderMax>-80</NegBorderMax>
+            <PosBorderMin>10</PosBorderMin>
+            <PosBorderMax>30</PosBorderMax>
+            <NegativeReputationChanged>1</NegativeReputationChanged>
+            <PositiveReputationChanged>1</PositiveReputationChanged>
+          </EconomyPowerTempReputation>
+          <MilitaryPowerTempReputation>
+            <NegBorderMin>-40</NegBorderMin>
+            <NegBorderMax>-80</NegBorderMax>
+            <PosBorderMin>10</PosBorderMin>
+            <PosBorderMax>30</PosBorderMax>
+            <NegativeReputationChanged>3</NegativeReputationChanged>
+            <PositiveReputationChanged>3</PositiveReputationChanged>
+          </MilitaryPowerTempReputation>
+        </ReputationChangeCalculation>
+        <GiftBalancing>
+          <counterProposal>
+            <BaseValue>1000</BaseValue>
+            <IncreasePerLevel>3</IncreasePerLevel>
+          </counterProposal>
+          <giveGenerous>
+            <BaseValue>5250</BaseValue>
+            <IncreasePerLevel>3</IncreasePerLevel>
+          </giveGenerous>
+          <giveOrdinary>
+            <BaseValue>3650</BaseValue>
+            <IncreasePerLevel>3</IncreasePerLevel>
+          </giveOrdinary>
+          <giveSmall>
+            <BaseValue>2000</BaseValue>
+            <IncreasePerLevel>3</IncreasePerLevel>
+          </giveSmall>
+          <receivePayment>
+            <BaseValue>400</BaseValue>
+            <IncreasePerLevel>3</IncreasePerLevel>
+          </receivePayment>
+          <receiveGenerous>
+            <BaseValue>5250</BaseValue>
+            <IncreasePerLevel>3</IncreasePerLevel>
+          </receiveGenerous>
+          <receiveOrdinary>
+            <BaseValue>3650</BaseValue>
+            <IncreasePerLevel>3</IncreasePerLevel>
+          </receiveOrdinary>
+          <receiveSmall>
+            <BaseValue>2000</BaseValue>
+            <IncreasePerLevel>3</IncreasePerLevel>
+          </receiveSmall>
+          <givePayment>
+            <BaseValue>400</BaseValue>
+            <IncreasePerLevel>3</IncreasePerLevel>
+          </givePayment>
+        </GiftBalancing>
+        <CounterProposal>
+          <DiceRollCounterMin>-25</DiceRollCounterMin>
+          <DiceRollCounterMax>25</DiceRollCounterMax>
+          <CounterProposalAgree>66</CounterProposalAgree>
+          <CounterProposalPartial>13</CounterProposalPartial>
+          <CounterProposalDeclineStart>10</CounterProposalDeclineStart>
+          <CounterProposalDeclineIncrease>10</CounterProposalDeclineIncrease>
+          <CounterProposalIncreaseModifierPercentage>100</CounterProposalIncreaseModifierPercentage>
+        </CounterProposal>
+        <ChancePreview>
+          <IdleTime>480000</IdleTime>
+          <RatingStates>
+            <SuccessLvl3>
+              <BelowChance>30</BelowChance>
+              <Text>10598</Text>
+            </SuccessLvl3>
+            <SuccessLvl1>
+              <BelowChance>10</BelowChance>
+              <Text>10597</Text>
+            </SuccessLvl1>
+            <SuccessLvl2>
+              <BelowChance>20</BelowChance>
+              <Text>10596</Text>
+            </SuccessLvl2>
+            <SuccessLvl4>
+              <BelowChance>40</BelowChance>
+              <Text>10594</Text>
+            </SuccessLvl4>
+            <SuccessLvl0>
+              <Text>10595</Text>
+            </SuccessLvl0>
+            <SuccessLvl10>
+              <BelowChance>99</BelowChance>
+              <Text>13040</Text>
+            </SuccessLvl10>
+            <SuccessLvl11>
+              <BelowChance>100</BelowChance>
+              <Text>13041</Text>
+            </SuccessLvl11>
+            <SuccessLvl5>
+              <BelowChance>50</BelowChance>
+              <Text>13035</Text>
+            </SuccessLvl5>
+            <SuccessLvl6>
+              <BelowChance>60</BelowChance>
+              <Text>13036</Text>
+            </SuccessLvl6>
+            <SuccessLvl7>
+              <BelowChance>70</BelowChance>
+              <Text>13037</Text>
+            </SuccessLvl7>
+            <SuccessLvl8>
+              <BelowChance>80</BelowChance>
+              <Text>13038</Text>
+            </SuccessLvl8>
+            <SuccessLvl9>
+              <BelowChance>90</BelowChance>
+              <Text>13039</Text>
+            </SuccessLvl9>
+          </RatingStates>
+        </ChancePreview>
+        <DiplomacyAI>
+          <ReputationTriggerDelayMin>10000</ReputationTriggerDelayMin>
+          <ReputationTriggerDelayMax>20000</ReputationTriggerDelayMax>
+          <ReputationMinDice>-10</ReputationMinDice>
+          <ReputationMaxDice>10</ReputationMaxDice>
+          <MinMoney>3</MinMoney>
+          <MaxMoneyOffering>10</MaxMoneyOffering>
+          <MaxMoneyRequest>15</MaxMoneyRequest>
+          <GenericTimerStartDelay>600000</GenericTimerStartDelay>
+          <GenericTimerRepeat>1800000</GenericTimerRepeat>
+        </DiplomacyAI>
+        <AutomaticDiscovery />
       </Diplomacy>
       <ParticipantMessages>
         <MessageTriggers>
@@ -7930,6 +9520,9 @@
         <AddToEditorObjectGrid>0</AddToEditorObjectGrid>
         <PlacableInEditor>0</PlacableInEditor>
         <SelectableInEditor>0</SelectableInEditor>
+        <Type>GameObject</Type>
+        <Variations />
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Trader>
         <SellShipCooldown>300000</SellShipCooldown>
@@ -8251,10 +9844,71 @@
         <TraderRerollInterval>300000</TraderRerollInterval>
         <TraderItemRerollCosts>5000</TraderItemRerollCosts>
         <TraderItemRerollCostIncrease>5000</TraderItemRerollCostIncrease>
+        <BuyShipRequestNoTradeAgreementNotification>0</BuyShipRequestNoTradeAgreementNotification>
       </Trader>
       <ThirdParty>
         <AllowedRegions>Moderate</AllowedRegions>
         <IslandPlacement>Optional</IslandPlacement>
+        <ReservationPause>600000</ReservationPause>
+        <DecoBuildings>
+          <Item>
+            <Asset>100689</Asset>
+          </Item>
+          <Item>
+            <Asset>100690</Asset>
+          </Item>
+          <Item>
+            <Asset>100720</Asset>
+          </Item>
+          <Item>
+            <Asset>100723</Asset>
+          </Item>
+          <Item>
+            <Asset>100724</Asset>
+          </Item>
+          <Item>
+            <Asset>100725</Asset>
+          </Item>
+          <Item>
+            <Asset>100726</Asset>
+          </Item>
+          <Item>
+            <Asset>100731</Asset>
+          </Item>
+          <Item>
+            <Asset>100733</Asset>
+          </Item>
+          <Item>
+            <Asset>100734</Asset>
+          </Item>
+          <Item>
+            <Asset>100735</Asset>
+          </Item>
+          <Item>
+            <Asset>100736</Asset>
+          </Item>
+          <Item>
+            <Asset>1000101</Asset>
+          </Item>
+          <Item>
+            <Asset>1000103</Asset>
+          </Item>
+          <Item>
+            <Asset>1000110</Asset>
+          </Item>
+          <Item>
+            <Asset>1000156</Asset>
+          </Item>
+          <Item>
+            <Asset>1000222</Asset>
+          </Item>
+          <Item>
+            <Asset>1000226</Asset>
+          </Item>
+          <Item>
+            <Asset>1000228</Asset>
+          </Item>
+        </DecoBuildings>
       </ThirdParty>
       <ParticipantMessageObject>
         <ParticipantMessages>146</ParticipantMessages>
@@ -8263,11 +9917,19 @@
         <PaMSyTrade>
           <ActiveTrade>
             <TradeAmount>500</TradeAmount>
+            <TradeAmountFactor>500</TradeAmountFactor>
+            <TradeMessage>ActiveTradeConfirmation</TradeMessage>
           </ActiveTrade>
           <PassiveTrade>
             <TradeAmount>5000</TradeAmount>
+            <TradeAmountFactor>5000</TradeAmountFactor>
+            <TradeMessage>PassiveTradeConfirmation</TradeMessage>
           </PassiveTrade>
         </PaMSyTrade>
+        <NewspaperPropaganda />
+        <PaMSyMilitaryStrength />
+        <PaMSyAttractiveness />
+        <PaMSyIslandPollution />
       </Interaction>
     </Values>
   </Asset>
@@ -8278,6 +9940,8 @@
         <GUID>78</GUID>
         <Name>Third_party_08 (Madame Kahina)</Name>
         <IconFilename>data/ui/2kimages/main/profiles/3rd_party_08.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -8288,6 +9952,7 @@
           </English>
         </LocaText>
         <LineID>7070</LineID>
+        <Localize>1</Localize>
       </Text>
       <Profile>
         <ProfilePicture>data/ui/2kimages/main/profiles/3rd_party_08.png</ProfilePicture>
@@ -8311,68 +9976,342 @@
         <MoodImage>data/ui/2kimages/main/assets/thirdparty_islandbar/bg_islandbar_kahina.png</MoodImage>
         <HostileTakeoverEnabled>0</HostileTakeoverEnabled>
         <AttackableThroughPirateFlagItem>0</AttackableThroughPirateFlagItem>
+        <ProfileType>ThirdParty</ProfileType>
+        <TakeoverBehaviour>Destroy</TakeoverBehaviour>
+        <ShipDropRewardPool>0</ShipDropRewardPool>
+        <CreateModeMeta>Dynamically_GameSetupOrMapload</CreateModeMeta>
+        <CreateModeSession>Dynamically_MaploadOrSessionEnter</CreateModeSession>
+        <ChooseNPC />
       </Profile>
       <Diplomacy>
         <DiplomacyActionBalancing>
           <CancelTraderights>
             <AgreementThreshold>-999</AgreementThreshold>
             <PartialAgreementThreshold>-999</PartialAgreementThreshold>
+            <ActionWeight>80</ActionWeight>
           </CancelTraderights>
           <RequestCeaseFire>
             <ActionWeight>120</ActionWeight>
             <AgreementThreshold>80</AgreementThreshold>
+            <PartialAgreementThreshold>10</PartialAgreementThreshold>
           </RequestCeaseFire>
+          <CancelAlliance>
+            <ActionWeight>100</ActionWeight>
+            <AgreementThreshold>80</AgreementThreshold>
+            <PartialAgreementThreshold>50</PartialAgreementThreshold>
+          </CancelAlliance>
+          <DeclareWar>
+            <ActionWeight>200</ActionWeight>
+            <AgreementThreshold>-999</AgreementThreshold>
+            <PartialAgreementThreshold>-999</PartialAgreementThreshold>
+          </DeclareWar>
+          <DemandQuest>
+            <ActionWeight>50</ActionWeight>
+            <AgreementThreshold>-999</AgreementThreshold>
+            <PartialAgreementThreshold>-999</PartialAgreementThreshold>
+          </DemandQuest>
+          <Flatter>
+            <ActionWeight>20</ActionWeight>
+            <AgreementThreshold>-999</AgreementThreshold>
+            <PartialAgreementThreshold>-999</PartialAgreementThreshold>
+          </Flatter>
+          <GiftMoneyOneTimeGenerous>
+            <ActionWeight>5</ActionWeight>
+            <AgreementThreshold>-999</AgreementThreshold>
+            <PartialAgreementThreshold>-999</PartialAgreementThreshold>
+          </GiftMoneyOneTimeGenerous>
+          <GiftMoneyOneTimeOrdinary>
+            <ActionWeight>5</ActionWeight>
+            <AgreementThreshold>-999</AgreementThreshold>
+            <PartialAgreementThreshold>-999</PartialAgreementThreshold>
+          </GiftMoneyOneTimeOrdinary>
+          <GiftMoneyOneTimeSmall>
+            <ActionWeight>5</ActionWeight>
+            <AgreementThreshold>-999</AgreementThreshold>
+            <PartialAgreementThreshold>-999</PartialAgreementThreshold>
+          </GiftMoneyOneTimeSmall>
+          <Insult>
+            <ActionWeight>5</ActionWeight>
+            <AgreementThreshold>-999</AgreementThreshold>
+            <PartialAgreementThreshold>-999</PartialAgreementThreshold>
+          </Insult>
+          <PaymentDecreaseReputation>
+            <ActionWeight>1</ActionWeight>
+            <AgreementThreshold>50</AgreementThreshold>
+            <PartialAgreementThreshold>50</PartialAgreementThreshold>
+          </PaymentDecreaseReputation>
+          <PaymentIncreaseReputation>
+            <ActionWeight>1</ActionWeight>
+            <AgreementThreshold>50</AgreementThreshold>
+            <PartialAgreementThreshold>50</PartialAgreementThreshold>
+          </PaymentIncreaseReputation>
+          <RequestAlliance>
+            <ActionWeight>100</ActionWeight>
+            <AgreementThreshold>90</AgreementThreshold>
+            <PartialAgreementThreshold>45</PartialAgreementThreshold>
+          </RequestAlliance>
+          <RequestPeace>
+            <ActionWeight>190</ActionWeight>
+            <AgreementThreshold>65</AgreementThreshold>
+            <PartialAgreementThreshold>10</PartialAgreementThreshold>
+          </RequestPeace>
+          <RequestTraderights>
+            <ActionWeight>90</ActionWeight>
+            <AgreementThreshold>75</AgreementThreshold>
+            <PartialAgreementThreshold>20</PartialAgreementThreshold>
+          </RequestTraderights>
+          <ThreatWar>
+            <ActionWeight>200</ActionWeight>
+          </ThreatWar>
+          <ThreatCancelAlliance>
+            <ActionWeight>200</ActionWeight>
+          </ThreatCancelAlliance>
+          <ThreatCancelTrade>
+            <ActionWeight>200</ActionWeight>
+          </ThreatCancelTrade>
         </DiplomacyActionBalancing>
         <RepeatableActionBalancing>
           <Actions>
             <Insult>
               <Subdivisions>
                 <Item>
-                  <VectorElement>
-                    <InheritedIndex>0</InheritedIndex>
-                  </VectorElement>
                   <SuccessChance>75</SuccessChance>
+                  <ReputationGain>-5</ReputationGain>
                 </Item>
               </Subdivisions>
+              <ForgettingTime>900000</ForgettingTime>
             </Insult>
+            <Flatter>
+              <Subdivisions>
+                <Item>
+                  <SuccessChance>50</SuccessChance>
+                  <ReputationGain>5</ReputationGain>
+                  <ReputationLoss>-3</ReputationLoss>
+                </Item>
+              </Subdivisions>
+              <ForgettingTime>900000</ForgettingTime>
+            </Flatter>
+            <Gift>
+              <Subdivisions>
+                <Item>
+                  <SuccessChance>50</SuccessChance>
+                  <ReputationGain>2</ReputationGain>
+                </Item>
+              </Subdivisions>
+              <ForgettingTime>900000</ForgettingTime>
+            </Gift>
           </Actions>
         </RepeatableActionBalancing>
         <Memory>
           <UpdateTable>
             <Item>
-              <VectorElement>
-                <InheritedIndex>0</InheritedIndex>
-              </VectorElement>
               <Change>10</Change>
+              <Difference>20</Difference>
             </Item>
             <Item>
-              <VectorElement>
-                <InheritedIndex>1</InheritedIndex>
-              </VectorElement>
               <Change>20</Change>
+              <Difference>30</Difference>
             </Item>
             <Item>
-              <VectorElement>
-                <InheritedIndex>2</InheritedIndex>
-              </VectorElement>
               <Change>40</Change>
+              <Difference>50</Difference>
             </Item>
           </UpdateTable>
           <ReputationUpdateTimer>1200000</ReputationUpdateTimer>
           <NegReputationCorrectionMax>3</NegReputationCorrectionMax>
+          <ShortTimeChange>30</ShortTimeChange>
         </Memory>
         <ActionDebuffs>
           <DebuffSettings>
             <ThreatWar>
               <ApplyWhenSuccesful>1</ApplyWhenSuccesful>
+              <DiceDebuff>25</DiceDebuff>
+              <DebuffTime>900000</DebuffTime>
             </ThreatWar>
+            <Peace>
+              <DiceDebuff>15</DiceDebuff>
+              <DebuffTime>900000</DebuffTime>
+              <DiminishingDebuff>1</DiminishingDebuff>
+            </Peace>
+            <Trade>
+              <DiceDebuff>15</DiceDebuff>
+              <DebuffTime>900000</DebuffTime>
+              <DiminishingDebuff>1</DiminishingDebuff>
+            </Trade>
           </DebuffSettings>
         </ActionDebuffs>
         <InitialRelation>
           <DefaultMemory>50</DefaultMemory>
           <DefaultTreaties>Peace;TradeRights</DefaultTreaties>
           <DefaultTreatiesUndiscovered>Peace</DefaultTreatiesUndiscovered>
+          <DefaultReputation>50</DefaultReputation>
         </InitialRelation>
+        <DiceRollProposalMin>-10</DiceRollProposalMin>
+        <DiceRollProposalMax>30</DiceRollProposalMax>
+        <DiceRollThreatMin>15</DiceRollThreatMin>
+        <DiceRollThreatMax>40</DiceRollThreatMax>
+        <ReputationChangeCalculation>
+          <PaymentGivingMoney>
+            <MaxPossibleReputation>12</MaxPossibleReputation>
+          </PaymentGivingMoney>
+          <PaymentReceivingMoney>
+            <ReputationAddedLimit>50</ReputationAddedLimit>
+            <ReputationAddedSteepness>0.025</ReputationAddedSteepness>
+          </PaymentReceivingMoney>
+          <Treaties>
+            <ReputationValues>
+              <Alliance>
+                <AddingTreaty>25</AddingTreaty>
+                <RemovingTreaty>35</RemovingTreaty>
+              </Alliance>
+              <CeaseFire>
+                <AddingTreaty>15</AddingTreaty>
+                <RemovingTreaty>20</RemovingTreaty>
+              </CeaseFire>
+              <Peace>
+                <AddingTreaty>30</AddingTreaty>
+                <RemovingTreaty>-40</RemovingTreaty>
+              </Peace>
+              <TradeRights>
+                <AddingTreaty>25</AddingTreaty>
+                <RemovingTreaty>35</RemovingTreaty>
+              </TradeRights>
+            </ReputationValues>
+          </Treaties>
+          <GlobalLimitTempReputation>
+            <NegBorderMin>-70</NegBorderMin>
+            <NegBorderMax>-100</NegBorderMax>
+            <PosBorderMin>25</PosBorderMin>
+            <PosBorderMax>40</PosBorderMax>
+          </GlobalLimitTempReputation>
+          <EconomyPowerTempReputation>
+            <NegBorderMin>-40</NegBorderMin>
+            <NegBorderMax>-80</NegBorderMax>
+            <PosBorderMin>10</PosBorderMin>
+            <PosBorderMax>30</PosBorderMax>
+            <NegativeReputationChanged>1</NegativeReputationChanged>
+            <PositiveReputationChanged>1</PositiveReputationChanged>
+          </EconomyPowerTempReputation>
+          <MilitaryPowerTempReputation>
+            <NegBorderMin>-40</NegBorderMin>
+            <NegBorderMax>-80</NegBorderMax>
+            <PosBorderMin>10</PosBorderMin>
+            <PosBorderMax>30</PosBorderMax>
+            <NegativeReputationChanged>3</NegativeReputationChanged>
+            <PositiveReputationChanged>3</PositiveReputationChanged>
+          </MilitaryPowerTempReputation>
+        </ReputationChangeCalculation>
+        <GiftBalancing>
+          <counterProposal>
+            <BaseValue>1000</BaseValue>
+            <IncreasePerLevel>3</IncreasePerLevel>
+          </counterProposal>
+          <giveGenerous>
+            <BaseValue>5250</BaseValue>
+            <IncreasePerLevel>3</IncreasePerLevel>
+          </giveGenerous>
+          <giveOrdinary>
+            <BaseValue>3650</BaseValue>
+            <IncreasePerLevel>3</IncreasePerLevel>
+          </giveOrdinary>
+          <giveSmall>
+            <BaseValue>2000</BaseValue>
+            <IncreasePerLevel>3</IncreasePerLevel>
+          </giveSmall>
+          <receivePayment>
+            <BaseValue>400</BaseValue>
+            <IncreasePerLevel>3</IncreasePerLevel>
+          </receivePayment>
+          <receiveGenerous>
+            <BaseValue>5250</BaseValue>
+            <IncreasePerLevel>3</IncreasePerLevel>
+          </receiveGenerous>
+          <receiveOrdinary>
+            <BaseValue>3650</BaseValue>
+            <IncreasePerLevel>3</IncreasePerLevel>
+          </receiveOrdinary>
+          <receiveSmall>
+            <BaseValue>2000</BaseValue>
+            <IncreasePerLevel>3</IncreasePerLevel>
+          </receiveSmall>
+          <givePayment>
+            <BaseValue>400</BaseValue>
+            <IncreasePerLevel>3</IncreasePerLevel>
+          </givePayment>
+        </GiftBalancing>
+        <CounterProposal>
+          <DiceRollCounterMin>-25</DiceRollCounterMin>
+          <DiceRollCounterMax>25</DiceRollCounterMax>
+          <CounterProposalAgree>66</CounterProposalAgree>
+          <CounterProposalPartial>13</CounterProposalPartial>
+          <CounterProposalDeclineStart>10</CounterProposalDeclineStart>
+          <CounterProposalDeclineIncrease>10</CounterProposalDeclineIncrease>
+          <CounterProposalIncreaseModifierPercentage>100</CounterProposalIncreaseModifierPercentage>
+        </CounterProposal>
+        <ChancePreview>
+          <IdleTime>480000</IdleTime>
+          <RatingStates>
+            <SuccessLvl3>
+              <BelowChance>30</BelowChance>
+              <Text>10598</Text>
+            </SuccessLvl3>
+            <SuccessLvl1>
+              <BelowChance>10</BelowChance>
+              <Text>10597</Text>
+            </SuccessLvl1>
+            <SuccessLvl2>
+              <BelowChance>20</BelowChance>
+              <Text>10596</Text>
+            </SuccessLvl2>
+            <SuccessLvl4>
+              <BelowChance>40</BelowChance>
+              <Text>10594</Text>
+            </SuccessLvl4>
+            <SuccessLvl0>
+              <Text>10595</Text>
+            </SuccessLvl0>
+            <SuccessLvl10>
+              <BelowChance>99</BelowChance>
+              <Text>13040</Text>
+            </SuccessLvl10>
+            <SuccessLvl11>
+              <BelowChance>100</BelowChance>
+              <Text>13041</Text>
+            </SuccessLvl11>
+            <SuccessLvl5>
+              <BelowChance>50</BelowChance>
+              <Text>13035</Text>
+            </SuccessLvl5>
+            <SuccessLvl6>
+              <BelowChance>60</BelowChance>
+              <Text>13036</Text>
+            </SuccessLvl6>
+            <SuccessLvl7>
+              <BelowChance>70</BelowChance>
+              <Text>13037</Text>
+            </SuccessLvl7>
+            <SuccessLvl8>
+              <BelowChance>80</BelowChance>
+              <Text>13038</Text>
+            </SuccessLvl8>
+            <SuccessLvl9>
+              <BelowChance>90</BelowChance>
+              <Text>13039</Text>
+            </SuccessLvl9>
+          </RatingStates>
+        </ChancePreview>
+        <DiplomacyAI>
+          <ReputationTriggerDelayMin>10000</ReputationTriggerDelayMin>
+          <ReputationTriggerDelayMax>20000</ReputationTriggerDelayMax>
+          <ReputationMinDice>-10</ReputationMinDice>
+          <ReputationMaxDice>10</ReputationMaxDice>
+          <MinMoney>3</MinMoney>
+          <MaxMoneyOffering>10</MaxMoneyOffering>
+          <MaxMoneyRequest>15</MaxMoneyRequest>
+          <GenericTimerStartDelay>600000</GenericTimerStartDelay>
+          <GenericTimerRepeat>1800000</GenericTimerRepeat>
+        </DiplomacyAI>
+        <AutomaticDiscovery />
       </Diplomacy>
       <ParticipantMessages>
         <MessageTriggers>
@@ -9051,6 +10990,9 @@
         <AddToEditorObjectGrid>0</AddToEditorObjectGrid>
         <PlacableInEditor>0</PlacableInEditor>
         <SelectableInEditor>0</SelectableInEditor>
+        <Type>GameObject</Type>
+        <Variations />
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Trader>
         <ShipTrader>1</ShipTrader>
@@ -9327,10 +11269,71 @@
         <TraderRerollInterval>300000</TraderRerollInterval>
         <TraderItemRerollCosts>5000</TraderItemRerollCosts>
         <TraderItemRerollCostIncrease>5000</TraderItemRerollCostIncrease>
+        <BuyShipRequestNoTradeAgreementNotification>0</BuyShipRequestNoTradeAgreementNotification>
       </Trader>
       <ThirdParty>
         <AllowedRegions>Moderate</AllowedRegions>
         <IslandPlacement>Optional</IslandPlacement>
+        <ReservationPause>600000</ReservationPause>
+        <DecoBuildings>
+          <Item>
+            <Asset>100689</Asset>
+          </Item>
+          <Item>
+            <Asset>100690</Asset>
+          </Item>
+          <Item>
+            <Asset>100720</Asset>
+          </Item>
+          <Item>
+            <Asset>100723</Asset>
+          </Item>
+          <Item>
+            <Asset>100724</Asset>
+          </Item>
+          <Item>
+            <Asset>100725</Asset>
+          </Item>
+          <Item>
+            <Asset>100726</Asset>
+          </Item>
+          <Item>
+            <Asset>100731</Asset>
+          </Item>
+          <Item>
+            <Asset>100733</Asset>
+          </Item>
+          <Item>
+            <Asset>100734</Asset>
+          </Item>
+          <Item>
+            <Asset>100735</Asset>
+          </Item>
+          <Item>
+            <Asset>100736</Asset>
+          </Item>
+          <Item>
+            <Asset>1000101</Asset>
+          </Item>
+          <Item>
+            <Asset>1000103</Asset>
+          </Item>
+          <Item>
+            <Asset>1000110</Asset>
+          </Item>
+          <Item>
+            <Asset>1000156</Asset>
+          </Item>
+          <Item>
+            <Asset>1000222</Asset>
+          </Item>
+          <Item>
+            <Asset>1000226</Asset>
+          </Item>
+          <Item>
+            <Asset>1000228</Asset>
+          </Item>
+        </DecoBuildings>
       </ThirdParty>
       <ParticipantMessageObject>
         <ParticipantMessages>147</ParticipantMessages>
@@ -9339,11 +11342,19 @@
         <PaMSyTrade>
           <ActiveTrade>
             <TradeAmount>500</TradeAmount>
+            <TradeAmountFactor>500</TradeAmountFactor>
+            <TradeMessage>ActiveTradeConfirmation</TradeMessage>
           </ActiveTrade>
           <PassiveTrade>
             <TradeAmount>5000</TradeAmount>
+            <TradeAmountFactor>5000</TradeAmountFactor>
+            <TradeMessage>PassiveTradeConfirmation</TradeMessage>
           </PassiveTrade>
         </PaMSyTrade>
+        <NewspaperPropaganda />
+        <PaMSyMilitaryStrength />
+        <PaMSyAttractiveness />
+        <PaMSyIslandPollution />
       </Interaction>
     </Values>
   </Asset>

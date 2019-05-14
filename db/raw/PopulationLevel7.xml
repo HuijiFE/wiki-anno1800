@@ -7,6 +7,8 @@
         <GUID>15000000</GUID>
         <Name>Moderate Population 1</Name>
         <IconFilename>data/ui/2kimages/main/icons/icon_resident_farmer.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -17,6 +19,7 @@
           </English>
         </LocaText>
         <LineID>3757</LineID>
+        <Localize>1</Localize>
       </Text>
       <PopulationLevel7>
         <PopulationInputs>
@@ -77,6 +80,9 @@
         <MoveInOut>
           <MoveInInterval>30</MoveInInterval>
           <MoveOutInterval>90</MoveOutInterval>
+          <MoveInThreshold>0.6</MoveInThreshold>
+          <MoveOutThreshold>0.3</MoveOutThreshold>
+          <UpgradeThreshold>0.9</UpgradeThreshold>
         </MoveInOut>
         <CategoryIcon>data/ui/2kimages/main/icons/icon_arrow.png</CategoryIcon>
         <PopulationParticipant>Resident_tier01</PopulationParticipant>
@@ -98,8 +104,24 @@
             <Text>19752</Text>
           </Euphoric>
         </MoodText>
+        <Satisfaction>
+          <TotalPointCount>3</TotalPointCount>
+          <TimeInterval>1</TimeInterval>
+        </Satisfaction>
+        <ConsumptionNeedSatisfaction>
+          <TotalPointCount>20</TotalPointCount>
+          <TimeMultiplier>3</TimeMultiplier>
+        </ConsumptionNeedSatisfaction>
+        <PublicNeedSatisfaction>
+          <TotalPointCount>20</TotalPointCount>
+          <TimeMultiplier>0.1</TimeMultiplier>
+        </PublicNeedSatisfaction>
       </PopulationLevel7>
-      <Locked />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
     </Values>
   </Asset>
   <Asset>
@@ -109,6 +131,8 @@
         <GUID>15000001</GUID>
         <Name>Moderate Population 2</Name>
         <IconFilename>data/ui/2kimages/main/icons/icon_resident_worker.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -119,6 +143,7 @@
           </English>
         </LocaText>
         <LineID>3758</LineID>
+        <Localize>1</Localize>
       </Text>
       <PopulationLevel7>
         <PopulationInputs>
@@ -214,6 +239,9 @@
         <MoveInOut>
           <MoveInInterval>30</MoveInInterval>
           <MoveOutInterval>90</MoveOutInterval>
+          <MoveInThreshold>0.6</MoveInThreshold>
+          <MoveOutThreshold>0.3</MoveOutThreshold>
+          <UpgradeThreshold>0.9</UpgradeThreshold>
         </MoveInOut>
         <CategoryIcon>data/ui/2kimages/main/icons/icon_arrow.png</CategoryIcon>
         <PopulationParticipant>Resident_tier02</PopulationParticipant>
@@ -235,8 +263,24 @@
             <Text>19767</Text>
           </Euphoric>
         </MoodText>
+        <Satisfaction>
+          <TotalPointCount>3</TotalPointCount>
+          <TimeInterval>1</TimeInterval>
+        </Satisfaction>
+        <ConsumptionNeedSatisfaction>
+          <TotalPointCount>20</TotalPointCount>
+          <TimeMultiplier>3</TimeMultiplier>
+        </ConsumptionNeedSatisfaction>
+        <PublicNeedSatisfaction>
+          <TotalPointCount>20</TotalPointCount>
+          <TimeMultiplier>0.1</TimeMultiplier>
+        </PublicNeedSatisfaction>
       </PopulationLevel7>
-      <Locked />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
     </Values>
   </Asset>
   <Asset>
@@ -246,6 +290,8 @@
         <GUID>15000002</GUID>
         <Name>Moderate Population 3</Name>
         <IconFilename>data/ui/2kimages/main/icons/icon_resident_artisan.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -256,6 +302,7 @@
           </English>
         </LocaText>
         <LineID>3759</LineID>
+        <Localize>1</Localize>
       </Text>
       <PopulationLevel7>
         <PopulationInputs>
@@ -357,6 +404,9 @@
         <MoveInOut>
           <MoveInInterval>30</MoveInInterval>
           <MoveOutInterval>90</MoveOutInterval>
+          <MoveInThreshold>0.6</MoveInThreshold>
+          <MoveOutThreshold>0.3</MoveOutThreshold>
+          <UpgradeThreshold>0.9</UpgradeThreshold>
         </MoveInOut>
         <CategoryIcon>data/ui/2kimages/main/icons/icon_arrow.png</CategoryIcon>
         <PopulationParticipant>Resident_tier03</PopulationParticipant>
@@ -378,8 +428,24 @@
             <Text>19772</Text>
           </Euphoric>
         </MoodText>
+        <Satisfaction>
+          <TotalPointCount>3</TotalPointCount>
+          <TimeInterval>1</TimeInterval>
+        </Satisfaction>
+        <ConsumptionNeedSatisfaction>
+          <TotalPointCount>20</TotalPointCount>
+          <TimeMultiplier>3</TimeMultiplier>
+        </ConsumptionNeedSatisfaction>
+        <PublicNeedSatisfaction>
+          <TotalPointCount>20</TotalPointCount>
+          <TimeMultiplier>0.1</TimeMultiplier>
+        </PublicNeedSatisfaction>
       </PopulationLevel7>
-      <Locked />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
     </Values>
   </Asset>
   <Asset>
@@ -389,6 +455,8 @@
         <GUID>15000003</GUID>
         <Name>Moderate Population 4</Name>
         <IconFilename>data/ui/2kimages/main/icons/icon_resident_engineer.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -399,6 +467,7 @@
           </English>
         </LocaText>
         <LineID>3760</LineID>
+        <Localize>1</Localize>
       </Text>
       <PopulationLevel7>
         <PopulationInputs>
@@ -509,6 +578,9 @@
         <MoveInOut>
           <MoveInInterval>30</MoveInInterval>
           <MoveOutInterval>90</MoveOutInterval>
+          <MoveInThreshold>0.6</MoveInThreshold>
+          <MoveOutThreshold>0.3</MoveOutThreshold>
+          <UpgradeThreshold>0.9</UpgradeThreshold>
         </MoveInOut>
         <CategoryIcon>data/ui/2kimages/main/icons/icon_arrow.png</CategoryIcon>
         <PopulationParticipant>Resident_tier04</PopulationParticipant>
@@ -530,8 +602,24 @@
             <Text>19777</Text>
           </Euphoric>
         </MoodText>
+        <Satisfaction>
+          <TotalPointCount>3</TotalPointCount>
+          <TimeInterval>1</TimeInterval>
+        </Satisfaction>
+        <ConsumptionNeedSatisfaction>
+          <TotalPointCount>20</TotalPointCount>
+          <TimeMultiplier>3</TimeMultiplier>
+        </ConsumptionNeedSatisfaction>
+        <PublicNeedSatisfaction>
+          <TotalPointCount>20</TotalPointCount>
+          <TimeMultiplier>0.1</TimeMultiplier>
+        </PublicNeedSatisfaction>
       </PopulationLevel7>
-      <Locked />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
     </Values>
   </Asset>
   <Asset>
@@ -541,6 +629,8 @@
         <GUID>15000004</GUID>
         <Name>Moderate Population 5</Name>
         <IconFilename>data/ui/2kimages/main/icons/icon_resident_investor.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -551,6 +641,7 @@
           </English>
         </LocaText>
         <LineID>3761</LineID>
+        <Localize>1</Localize>
       </Text>
       <PopulationLevel7>
         <PopulationInputs>
@@ -669,6 +760,9 @@
         <MoveInOut>
           <MoveInInterval>30</MoveInInterval>
           <MoveOutInterval>90</MoveOutInterval>
+          <MoveInThreshold>0.6</MoveInThreshold>
+          <MoveOutThreshold>0.3</MoveOutThreshold>
+          <UpgradeThreshold>0.9</UpgradeThreshold>
         </MoveInOut>
         <CategoryIcon>data/ui/2kimages/main/icons/icon_arrow.png</CategoryIcon>
         <PopulationParticipant>Resident_tier05</PopulationParticipant>
@@ -690,8 +784,24 @@
             <Text>19782</Text>
           </Euphoric>
         </MoodText>
+        <Satisfaction>
+          <TotalPointCount>3</TotalPointCount>
+          <TimeInterval>1</TimeInterval>
+        </Satisfaction>
+        <ConsumptionNeedSatisfaction>
+          <TotalPointCount>20</TotalPointCount>
+          <TimeMultiplier>3</TimeMultiplier>
+        </ConsumptionNeedSatisfaction>
+        <PublicNeedSatisfaction>
+          <TotalPointCount>20</TotalPointCount>
+          <TimeMultiplier>0.1</TimeMultiplier>
+        </PublicNeedSatisfaction>
       </PopulationLevel7>
-      <Locked />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
     </Values>
   </Asset>
   <Asset>
@@ -701,6 +811,8 @@
         <GUID>15000005</GUID>
         <Name>Colony01 Population 1</Name>
         <IconFilename>data/ui/2kimages/main/profiles/resident_colony_tier01.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -711,6 +823,7 @@
           </English>
         </LocaText>
         <LineID>4273</LineID>
+        <Localize>1</Localize>
       </Text>
       <PopulationLevel7>
         <PopulationInputs>
@@ -761,6 +874,9 @@
         <MoveInOut>
           <MoveInInterval>30</MoveInInterval>
           <MoveOutInterval>90</MoveOutInterval>
+          <MoveInThreshold>0.6</MoveInThreshold>
+          <MoveOutThreshold>0.3</MoveOutThreshold>
+          <UpgradeThreshold>0.9</UpgradeThreshold>
         </MoveInOut>
         <PopulationParticipant>SA_Resident_tier01</PopulationParticipant>
         <PopulationAtWorkParticipant>SA_Resident_tier01_atWork</PopulationAtWorkParticipant>
@@ -781,8 +897,24 @@
             <Text>19787</Text>
           </Euphoric>
         </MoodText>
+        <Satisfaction>
+          <TotalPointCount>3</TotalPointCount>
+          <TimeInterval>1</TimeInterval>
+        </Satisfaction>
+        <ConsumptionNeedSatisfaction>
+          <TotalPointCount>20</TotalPointCount>
+          <TimeMultiplier>3</TimeMultiplier>
+        </ConsumptionNeedSatisfaction>
+        <PublicNeedSatisfaction>
+          <TotalPointCount>20</TotalPointCount>
+          <TimeMultiplier>0.1</TimeMultiplier>
+        </PublicNeedSatisfaction>
       </PopulationLevel7>
-      <Locked />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
     </Values>
   </Asset>
   <Asset>
@@ -792,6 +924,8 @@
         <GUID>15000006</GUID>
         <Name>Colony01 Population 2</Name>
         <IconFilename>data/ui/2kimages/main/profiles/resident_colony_tier02.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -802,6 +936,7 @@
           </English>
         </LocaText>
         <LineID>4274</LineID>
+        <Localize>1</Localize>
       </Text>
       <PopulationLevel7>
         <PopulationInputs>
@@ -898,6 +1033,9 @@
         <MoveInOut>
           <MoveInInterval>30</MoveInInterval>
           <MoveOutInterval>90</MoveOutInterval>
+          <MoveInThreshold>0.6</MoveInThreshold>
+          <MoveOutThreshold>0.3</MoveOutThreshold>
+          <UpgradeThreshold>0.9</UpgradeThreshold>
         </MoveInOut>
         <PopulationParticipant>SA_Resident_tier02</PopulationParticipant>
         <PopulationAtWorkParticipant>SA_Resident_tier02_atWork</PopulationAtWorkParticipant>
@@ -918,8 +1056,24 @@
             <Text>19792</Text>
           </Euphoric>
         </MoodText>
+        <Satisfaction>
+          <TotalPointCount>3</TotalPointCount>
+          <TimeInterval>1</TimeInterval>
+        </Satisfaction>
+        <ConsumptionNeedSatisfaction>
+          <TotalPointCount>20</TotalPointCount>
+          <TimeMultiplier>3</TimeMultiplier>
+        </ConsumptionNeedSatisfaction>
+        <PublicNeedSatisfaction>
+          <TotalPointCount>20</TotalPointCount>
+          <TimeMultiplier>0.1</TimeMultiplier>
+        </PublicNeedSatisfaction>
       </PopulationLevel7>
-      <Locked />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
     </Values>
   </Asset>
 </Assets>

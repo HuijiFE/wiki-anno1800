@@ -610,27 +610,27 @@
     "Attackable": [
       "MaximumHitPoints",
       "HasRuinState",
-      "SelfHealPerHealTick",
       "HPBarOffset",
       "PausedTimeIfAttacked",
-      "CanBeAttackedByPlayer",
-      "DefenseByAIFactor",
+      "SelfHealPerHealTick",
+      "SelfHealPausedTimeIfAttacked",
+      "ArmorType",
       "TakeOverEffect",
-      "MoralePower",
       "IslandWarFlag",
       "RuinSmokeParticles",
+      "ExplosionEffects",
+      "CanBeAttackedByPlayer",
+      "DefenseByAIFactor",
+      "MoralePower",
       "RuinSmokeParticlesMin",
       "RuinSmokeParticlesMax",
       "RuinSmokeParticleRectBorderPercent",
-      "ExplosionEffects",
       "ExplosionEffectsMin",
       "ExplosionEffectsMax",
       "IsInvulnerable",
       "MilitaryDefensePoints",
       "AlertRange",
       "AccuracyWidth",
-      "SelfHealPausedTimeIfAttacked",
-      "ArmorType",
       "DisableGettingAutoAttacked"
     ],
     "Attacker": [
@@ -648,14 +648,16 @@
       "ShootingTracking",
       "TurretExplosionEffectAsset",
       "AccuracyByDistance",
+      "AttackRangeApproachPercentage",
       "ProjectileCount",
+      "AllowApproachEnemy",
       "AccuracySpeedDecay",
+      "AttackType",
+      "AccuracyBaseIncreasePercentage",
       "FullVolleyTimeMin",
       "FullVolleyTimeMax",
       "VolleyMaxPerBulletRandomOffset",
-      "AttackRangeApproachPercentage",
-      "RememberTargetOnNewCommand",
-      "AttackType"
+      "RememberTargetOnNewCommand"
     ],
     "Attacker/AccuracyByDistance/Item": [
       "AccuracyByDistancePair"
@@ -665,11 +667,13 @@
       "ProjectileType",
       "ShotHeight",
       "ProjectileSpeed",
-      "Effectivities",
       "ShotAngle",
+      "Effectivities",
+      "StatusEffects",
+      "ChainingLevels",
+      "EffectSequences",
       "TargetWhiteList",
-      "DamageType",
-      "StatusEffects"
+      "DamageType"
     ],
     "ProjectileIncident": [
       "CausedIncident",
@@ -683,17 +687,17 @@
       "DebrisCount",
       "OuterDamageRadius",
       "MinimumDamage",
-      "HasHitNotification",
       "HitSuccessNotification",
       "HitFailNotification",
-      "FriendlyFireFactor",
-      "KamikazeRadiusDecal"
+      "KamikazeRadiusDecal",
+      "HasHitNotification",
+      "FriendlyFireFactor"
     ],
     "Cost": [
       "Costs",
+      "ItemsPerCost",
       "InfluenceCostType",
-      "InfluenceCostPoints",
-      "ItemsPerCost"
+      "InfluenceCostPoints"
     ],
     "Cost/Costs/Item": [
       "Ingredient",
@@ -702,6 +706,8 @@
     "Maintenance": [
       "Maintenances",
       "ConsumerPriority",
+      "MaintenanceAmountFactor",
+      "WorkforceAmountFactor",
       "ConsumerPriorityAlarmed"
     ],
     "Maintenance/Maintenances/Item": [
@@ -717,17 +723,18 @@
       "AssociatedRegions",
       "BuildingCategoryName",
       "InfluencedVariationDirection",
-      "PickingAsset",
-      "InfluencedByNeighbors",
-      "BuildingBlockPool",
-      "TerrainType",
       "Destructable",
       "Movable",
-      "DeactivateHideWhenClippingIntoCamera",
-      "DestructionConfirmation",
+      "PickingAsset",
+      "ConstructionMenuText",
+      "HasBorderRectOutline",
       "SnapRadius",
+      "TerrainType",
+      "InfluencedByNeighbors",
+      "BuildingBlockPool",
       "TakeOverTransformation",
-      "HasBorderRectOutline"
+      "DeactivateHideWhenClippingIntoCamera",
+      "DestructionConfirmation"
     ],
     "Upgradable": [
       "NextGUID",
@@ -740,13 +747,13 @@
     ],
     "Culture": [
       "CultureType",
-      "Attractiveness",
-      "HasPollution",
-      "CultureSpawnGroup",
       "SetPages",
       "UndiscoveredSet",
       "ModuleListHeader",
-      "OpenSetPages"
+      "OpenSetPages",
+      "Attractiveness",
+      "HasPollution",
+      "CultureSpawnGroup"
     ],
     "Culture/SetPages/Item": [
       "Page"
@@ -754,15 +761,18 @@
     "Culture/SetPages/Item/Page/Item": [],
     "Electric": [
       "BoostedByElectricity",
-      "MandatoryElectricity",
-      "ProductivityBoost"
+      "ProductivityBoost",
+      "TransporterElectricFactory",
+      "TransporterElectricWarehouse",
+      "MandatoryElectricity"
     ],
     "Pausable": [
       "CanPauseManually"
     ],
     "Constructable": [
       "DestructionCategory",
-      "ConstructionMode"
+      "ConstructionMode",
+      "DestructionType"
     ],
     "Bridge": [
       "MinLength",
@@ -782,17 +792,18 @@
       "IsHarbour",
       "IsPlazza",
       "HasFeedbackPathPlanningPenalty",
-      "IsDeletable",
-      "IsGroundDecal",
+      "AutoCreateStyle",
+      "NormalColor",
       "InvalidColor",
       "CrossingAsset",
       "BridgeAsset",
+      "SpeedFactor",
+      "IsDeletable",
+      "IsGroundDecal",
       "HidePropsAfterBuilding",
       "HidePropsWhileBuilding",
       "Quality",
       "CanBuildOnShore",
-      "SpeedFactor",
-      "AutoCreateStyle",
       "IsRailway",
       "IsRenderedExternally",
       "CheckComplexID"
@@ -801,6 +812,10 @@
       "ResidenceStorage",
       "PopulationLevel7",
       "ResidentMax",
+      "ResidentStart",
+      "TimeBeforeRuin",
+      "TimeAsRuin",
+      "StressFactor",
       "InfluenceGeneration"
     ],
     "Residence7/ResidenceStorage": [
@@ -816,7 +831,10 @@
       "CategoryIcon",
       "PopulationParticipant",
       "PopulationAtWorkParticipant",
-      "MoodText"
+      "MoodText",
+      "Satisfaction",
+      "ConsumptionNeedSatisfaction",
+      "PublicNeedSatisfaction"
     ],
     "PopulationLevel7/PopulationInputs/Item": [
       "Product",
@@ -849,9 +867,9 @@
       "SlotType",
       "WorkArea",
       "SnapsToSlot",
+      "SlotCategoryName",
       "AutoChangeVariation",
-      "WorkAreaPathSnapDummy",
-      "SlotCategoryName"
+      "WorkAreaPathSnapDummy"
     ],
     "Factory7": [
       "NeededFertility"
@@ -860,9 +878,11 @@
       "FactoryOutputs",
       "CycleTime",
       "FactoryInputs",
-      "WarehouseTransporterAsset",
+      "BaseProductivity",
       "ProductivityTimeMultiplier",
-      "ProductivityPoints"
+      "ProductivityPoints",
+      "WarehouseTransporterAsset",
+      "OutputAmountFactor"
     ],
     "FreeAreaProductivity": [
       "InfluenceRadius",
@@ -872,6 +892,9 @@
       "WorkerPause",
       "WayTime",
       "FreeAreaType",
+      "GrowingTime",
+      "InitializeForestMaxDuration",
+      "InitializeForestMinTreeAreaPercent",
       "CutTree"
     ],
     "ModuleOwner": [
@@ -880,6 +903,7 @@
       "ModuleBuildRadius",
       "HardFarmsConfig",
       "ImplicitProductivityModules",
+      "AddModuleLimit",
       "ModulesRequiredForFullProductivity"
     ],
     "Monument": [
@@ -911,7 +935,8 @@
     ],
     "Warehouse": [
       "WarehouseStorage",
-      "StorageType"
+      "StorageType",
+      "OverflowFlotsam"
     ],
     "Warehouse/WarehouseStorage": [
       "StorageMax"
@@ -920,24 +945,31 @@
       "TransporterCountMax",
       "TransporterAsset",
       "NeedsTransporterQueue",
+      "TrainAsset",
+      "QueueConfiguration",
       "REMOVE_THIS_LATER_FeedbackUnitTier",
       "PathLayers",
-      "OilPumpsNeeded",
-      "QueueConfiguration"
+      "OilPumpsNeeded"
     ],
     "LogisticNode/QueueConfiguration": [
-      "ProcessingQueueParallelCount"
+      "ProcessingQueueParallelCount",
+      "LoadingTimeModifier",
+      "UnloadingTimeModifier"
     ],
     "Ornament": [
       "OrnamentUnit",
       "OrnamentDescritpion",
       "PlazzaSize",
+      "PlazzaSpacing",
       "OrnamentIconInfotip"
     ],
     "RepairCrane": [
       "HealRadius",
       "HealPerMinute",
-      "HealBuildingsPerMinute"
+      "HealBuildingsPerMinute",
+      "HealInfolayer",
+      "RepairDelay",
+      "RepairEffect"
     ],
     "Shipyard": [
       "AssemblyOptions"
@@ -947,20 +979,34 @@
       "SpecialUnit",
       "ResolvableIncident",
       "SpecialUnitThresholds",
-      "ResolverUnitCount"
+      "ResolverUnitCount",
+      "SpecialActionCooldown",
+      "StreetOverlayStartPercentage",
+      "StreetOverlayFullColor",
+      "StreetOverlayStartColor",
+      "StreetOverlayMidColor",
+      "StreetOverlayEndColor"
     ],
     "IncidentInfluencer": [
-      "Influence"
+      "Influence",
+      "DistanceMultiplier"
     ],
     "IncidentInfectable": [
       "Infectable",
       "Explosion",
       "IncidentInfectionChanceFactors",
-      "PerIncidentProximityEffect"
+      "PerIncidentProximityEffect",
+      "IncidentFireIncreaseBase",
+      "IncidentIllnessIncreaseBase",
+      "IncidentRiotIncreaseBase",
+      "IncidentExplosionIncreaseBase"
     ],
     "IncidentInfectable/Explosion": [
       "ExplosionCoreDamage",
+      "ExplosionOuterRadius",
+      "ExplosionOuterDamagePercentage",
       "DamageExplosionChance",
+      "DamageExplosionCheckMin",
       "DamageExplosionCheckMax"
     ],
     "IncidentInfectable/Infectable/Item": [
@@ -979,10 +1025,14 @@
       "FactoryUndertimeFactor",
       "ResidenceFullOvertimeChance",
       "ResidenceFullUndertimeChance",
+      "ResidenceSatisfactionFactor",
+      "HappinessMin",
+      "HappinessMax",
+      "SatisfactionThreshold",
       "ResidenceHappinessFactor",
       "HappinessThreshold",
-      "FactoryProductivityFactor",
-      "FactoryHappinessFactor"
+      "FactoryHappinessFactor",
+      "FactoryProductivityFactor"
     ],
     "IncidentInfectable/PerIncidentProximityEffect/Item": [
       "ProximityEffect"
@@ -991,38 +1041,44 @@
       "ForcePrimitiveMovement",
       "CreatePathPlannerUnit",
       "SpecialMovementType",
+      "WalkSequence",
+      "IdleSequence2",
+      "ShortenSailsAfter",
+      "DiscoverRadius",
+      "PathPlannerLayer",
+      "TurnAroundRadius",
       "Acceleration",
+      "Deceleration",
       "TurnRadius",
       "TurnSpeed",
-      "TurnDeceleration",
-      "CurveSegmentDensity",
-      "TurnMovement",
-      "ForwardSpeed",
-      "PathPlannerLayer",
-      "ExpensiveDirSmoothing",
-      "LeaningMaxAngle",
-      "CargoFullFactor",
-      "DamageFullFactor",
-      "MinSlowdownFactor",
-      "ReservationLength",
-      "ReservationWidth",
-      "TurnAroundRadius",
-      "Deceleration",
-      "DiscoverRadius",
-      "WindMinSlowdownFactor",
-      "WindMaxSpeedupFactor",
-      "WindSlowdownEffectOnTurningSpeed",
-      "WindSpeedupEffectOnTurningSpeed",
       "TurnSpeedInPlace",
-      "ShortenSailsAfter",
+      "TurnDeceleration",
+      "TurnMovement",
       "LeaningSpeed",
       "LeaningDamping",
-      "DisableSmoothing",
+      "ForwardSpeed",
+      "WindMinSlowdownFactor",
+      "WindSlowdownEffectOnTurningSpeed",
+      "WindMaxSpeedupFactor",
+      "WindSpeedupEffectOnTurningSpeed",
       "CargoThreshold",
-      "WalkSequence",
-      "IdleSequence2"
+      "CargoStartFactor",
+      "CargoFullFactor",
+      "DamageThreshold",
+      "DamageStartFactor",
+      "DamageFullFactor",
+      "MinSlowdownFactor",
+      "IgnoreWeightFactor",
+      "IgnoreDamageFactor",
+      "CurveSegmentDensity",
+      "ExpensiveDirSmoothing",
+      "LeaningMaxAngle",
+      "ReservationLength",
+      "ReservationWidth",
+      "DisableSmoothing"
     ],
     "CommandQueue": [
+      "IsDestructable",
       "FollowRadius",
       "FormationPriority",
       "IsPlayerControllableVehicle",
@@ -1031,8 +1087,7 @@
       "IsFlagship",
       "MilitaryShipPoints",
       "TradeShipPoints",
-      "PriorityShipList",
-      "IsDestructable"
+      "PriorityShipList"
     ],
     "Drifting": [
       "OverrideAssetWidthAndLength",
@@ -1042,14 +1097,21 @@
       "AffectedByDriftingWhileMoving",
       "CausesDrifting",
       "UseSlowDownTactic",
-      "FactorRotation",
-      "FactorMovement"
+      "FactorMovement",
+      "FactorRotation"
     ],
     "Draggable": [
       "DraggableDistanceFromDragger",
       "DraggableFeedbackOnDrag",
       "DraggableFeedbackOnDrop",
-      "DraggableDropInfoLayer"
+      "DraggableDropInfoLayer",
+      "DraggableDistanceFromPreviousDraggable",
+      "DraggableOnDrag",
+      "DraggableOnDrop",
+      "DraggableDisabledInfoLayer",
+      "DraggableDragInfoLayer",
+      "DragRopeStiffness",
+      "DragRopeHeight"
     ],
     "Craftable": [
       "CraftingTime"
@@ -1060,38 +1122,42 @@
       "DisableEscort"
     ],
     "Sellable": [
-      "CanBeSoldToTrader",
-      "Baseprice"
+      "Baseprice",
+      "SellInfolayerIcon",
+      "CanBeSoldToTrader"
     ],
     "Item": [
       "Flotsam",
       "Allocation",
-      "MaxStackSize",
       "Rarity",
+      "ItemType",
+      "ExclusiveGroup",
+      "ItemSet",
+      "ExpeditionType",
+      "OnlyEquippableOnce",
+      "MaxStackSize",
       "HasAction",
       "TradePrice",
       "TransferBlocked",
-      "ItemType",
-      "ItemSet",
-      "ExclusiveGroup",
       "IsDestroyedOnUnequip"
     ],
     "ItemAction": [
+      "ItemAction",
       "ActionTarget",
+      "ActionScope",
+      "RadiusBuffTargets",
+      "ActionIncidentType",
+      "IncidentResolveRate",
+      "ActiveBuff",
+      "ActionDescription",
+      "ActionCompletedEffect",
+      "CanEndItemAction",
+      "StopMovementOnInteraction",
       "ActionDistance",
       "ActionCooldown",
-      "ActionDescription",
-      "StopMovementOnInteraction",
-      "ActionScope",
       "RepairSpeed",
-      "ItemAction",
       "ActionDuration",
-      "ActiveBuff",
-      "CanEndItemAction",
-      "ActionIncidentType",
-      "ActionCompletedEffect",
-      "IsDestroyedAfterCooldown",
-      "RadiusBuffTargets"
+      "IsDestroyedAfterCooldown"
     ],
     "ItemWithUI": [
       "ItemActions"
@@ -1112,67 +1178,68 @@
     "ExpeditionAttribute": [
       "ExpeditionAttributes",
       "BaseMorale",
+      "ItemRegions",
       "ItemDifficulties",
-      "FluffText",
-      "ItemRegions"
+      "FluffText"
     ],
     "IncidentInfluencerUpgrade": [
       "RiotInfluenceUpgrade",
-      "SpecialUnitHappinessThresholdUpgrade",
       "FireInfluenceUpgrade",
       "IllnessInfluenceUpgrade",
-      "DistanceUpgrade"
+      "DistanceUpgrade",
+      "SpecialUnitHappinessThresholdUpgrade"
     ],
     "CultureUpgrade": [
-      "AttractivenessUpgrade",
       "ChangeModule",
       "ForcedFeedbackVariation",
-      "AdditionalModuleSoundLoop"
+      "AttractivenessUpgrade",
+      "AdditionalModuleSoundLoop",
+      "HideBuff"
     ],
     "BuildingUpgrade": [
-      "WorkforceAmountUpgrade",
       "MaintenanceUpgrade",
-      "ReplacingWorkforce",
+      "PublicServiceFullSatisfactionDistance",
+      "PublicServiceNoSatisfactionDistance",
+      "ResolverUnitCountUpgrade",
       "ResolverUnitDecreaseUpgrade",
       "ResolverUnitMovementSpeedUpgrade",
-      "ResolverUnitCountUpgrade",
-      "PublicServiceFullSatisfactionDistance",
-      "PublicServiceNoSatisfactionDistance"
+      "WorkforceAmountUpgrade",
+      "ReplacingWorkforce"
     ],
     "PopulationUpgrade": [
-      "InputBenefitModifier",
       "ResidentsUpgrade",
-      "StressUpgrade"
+      "StressUpgrade",
+      "InputBenefitModifier"
     ],
     "ResidenceUpgrade": [
       "AdditionalHappiness",
       "GoodConsumptionUpgrade",
-      "TaxModifierInPercent",
-      "WorkforceModifierInPercent",
       "NeedProvideNeedUpgrade",
-      "ChangedSupplyValueUpgrade"
+      "ChangedSupplyValueUpgrade",
+      "TaxModifierInPercent",
+      "WorkforceModifierInPercent"
     ],
     "VisitorHarborUpgrade": [
       "SpawnProbabilityFactor"
     ],
     "IncidentInfectableUpgrade": [
-      "IncidentExplosionIncreaseUpgrade",
-      "IncidentIllnessIncreaseUpgrade",
       "IncidentFireIncreaseUpgrade",
+      "IncidentIllnessIncreaseUpgrade",
       "IncidentRiotIncreaseUpgrade",
-      "OverrideIncidentAttractiveness"
+      "OverrideIncidentAttractiveness",
+      "IncidentExplosionIncreaseUpgrade"
     ],
     "Buff": [
-      "AddedInfolayer",
-      "PossibleFluffTexts"
+      "PossibleFluffTexts",
+      "AddedInfolayer"
     ],
     "FactoryUpgrade": [
       "ProductivityUpgrade",
-      "AdditionalOutput",
       "AddedFertility",
-      "ReplaceInputs",
-      "InputAmountUpgrade",
       "OutputAmountFactorUpgrade",
+      "AdditionalOutput",
+      "InputAmountUpgrade",
+      "ReplaceInputs",
       "NeededAreaPercentUpgrade",
       "NeedsElectricity"
     ],
@@ -1183,32 +1250,32 @@
       "ProvideElectricity"
     ],
     "ItemGeneratorUpgrade": [
+      "Pool",
       "GenerationInterval",
-      "GenerationProbability",
-      "Pool"
+      "GenerationProbability"
     ],
     "AttackerUpgrade": [
-      "ReloadTimeUpgrade",
-      "AttackSpeedUpgrade",
-      "AddStatusEffects",
       "AttackRangeUpgrade",
       "BaseDamageUpgrade",
-      "UseProjectile",
-      "LineOfSightRangeUpgrade",
-      "DamageFactor",
+      "ReloadTimeUpgrade",
       "AccuracyUpgrade",
+      "UseProjectile",
+      "AddStatusEffects",
+      "LineOfSightRangeUpgrade",
       "MoraleDamage",
-      "HitpointDamage"
+      "HitpointDamage",
+      "DamageFactor",
+      "AttackSpeedUpgrade"
     ],
     "PassiveTradeGoodGenUpgrade": [
-      "GenProbability",
-      "GenPool"
+      "GenPool",
+      "GenProbability"
     ],
     "ShipyardUpgrade": [
-      "ConstructionCostInPercent",
-      "ConstructionTimeInPercent",
+      "ReplaceAssemblyOptions",
       "AddAssemblyOptions",
-      "ReplaceAssemblyOptions"
+      "ConstructionCostInPercent",
+      "ConstructionTimeInPercent"
     ],
     "AttackableUpgrade": [
       "MaxHitpointsUpgrade",
@@ -1217,14 +1284,20 @@
       "MoralePowerUpgrade",
       "DamageReceiveFactor"
     ],
-    "ProjectileUpgrade": [],
+    "ProjectileUpgrade": [
+      "InnerDamageUpgrade",
+      "OuterDamageRadiusUpgrade",
+      "PushForceUpgrade",
+      "PushDurationUpgrade"
+    ],
     "VehicleUpgrade": [
       "ForwardSpeedUpgrade",
+      "UpgradeDescription",
       "MaintainanceUpgrade",
       "IgnoreWeightFactorUpgrade",
+      "IgnoreDamageFactorUpgrade",
       "ActivateWhiteFlag",
-      "ActivatePirateFlag",
-      "IgnoreDamageFactorUpgrade"
+      "ActivatePirateFlag"
     ],
     "RepairCraneUpgrade": [
       "HealRadiusUpgrade",

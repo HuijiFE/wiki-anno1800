@@ -7,6 +7,8 @@
         <GUID>191910</GUID>
         <Name>Medecine lvl1</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/machine_items/icon_vitamin_supplement_1.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <ItemEffect>
         <EffectTargets>
@@ -24,17 +26,47 @@
           </English>
         </LocaText>
         <LineID>26364</LineID>
+        <Localize>1</Localize>
       </Text>
-      <BuildingUpgrade />
-      <Buff />
-      <PopulationUpgrade />
-      <ResidenceUpgrade />
+      <BuildingUpgrade>
+        <MaintenanceUpgrade />
+        <PublicServiceFullSatisfactionDistance />
+        <PublicServiceNoSatisfactionDistance />
+        <ResolverUnitCountUpgrade />
+        <ResolverUnitDecreaseUpgrade />
+        <ResolverUnitMovementSpeedUpgrade />
+        <WorkforceAmountUpgrade />
+        <ReplacingWorkforce>0</ReplacingWorkforce>
+      </BuildingUpgrade>
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
+      <PopulationUpgrade>
+        <ResidentsUpgrade />
+        <StressUpgrade />
+        <InputBenefitModifier />
+      </PopulationUpgrade>
+      <ResidenceUpgrade>
+        <NeedProvideNeedUpgrade />
+        <GoodConsumptionUpgrade />
+        <ChangedSupplyValueUpgrade />
+      </ResidenceUpgrade>
       <IncidentInfectableUpgrade>
         <IncidentIllnessIncreaseUpgrade>
           <Value>-4</Value>
         </IncidentIllnessIncreaseUpgrade>
+        <IncidentFireIncreaseUpgrade />
+        <IncidentRiotIncreaseUpgrade />
+        <OverrideIncidentAttractiveness />
+        <IncidentExplosionIncreaseUpgrade />
       </IncidentInfectableUpgrade>
-      <CultureUpgrade />
+      <CultureUpgrade>
+        <ChangeModule>0</ChangeModule>
+        <ForcedFeedbackVariation>0</ForcedFeedbackVariation>
+        <AttractivenessUpgrade />
+        <AdditionalModuleSoundLoop>0</AdditionalModuleSoundLoop>
+      </CultureUpgrade>
     </Values>
   </Asset>
   <Asset>
@@ -44,6 +76,8 @@
         <GUID>191911</GUID>
         <Name>Medecine lvl2</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/machine_items/icon_vitamin_supplement_2.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <ItemEffect>
         <EffectTargets>
@@ -61,17 +95,47 @@
           </English>
         </LocaText>
         <LineID>26365</LineID>
+        <Localize>1</Localize>
       </Text>
-      <BuildingUpgrade />
-      <Buff />
-      <PopulationUpgrade />
-      <ResidenceUpgrade />
+      <BuildingUpgrade>
+        <MaintenanceUpgrade />
+        <PublicServiceFullSatisfactionDistance />
+        <PublicServiceNoSatisfactionDistance />
+        <ResolverUnitCountUpgrade />
+        <ResolverUnitDecreaseUpgrade />
+        <ResolverUnitMovementSpeedUpgrade />
+        <WorkforceAmountUpgrade />
+        <ReplacingWorkforce>0</ReplacingWorkforce>
+      </BuildingUpgrade>
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
+      <PopulationUpgrade>
+        <ResidentsUpgrade />
+        <StressUpgrade />
+        <InputBenefitModifier />
+      </PopulationUpgrade>
+      <ResidenceUpgrade>
+        <NeedProvideNeedUpgrade />
+        <GoodConsumptionUpgrade />
+        <ChangedSupplyValueUpgrade />
+      </ResidenceUpgrade>
       <IncidentInfectableUpgrade>
         <IncidentIllnessIncreaseUpgrade>
           <Value>-6</Value>
         </IncidentIllnessIncreaseUpgrade>
+        <IncidentFireIncreaseUpgrade />
+        <IncidentRiotIncreaseUpgrade />
+        <OverrideIncidentAttractiveness />
+        <IncidentExplosionIncreaseUpgrade />
       </IncidentInfectableUpgrade>
-      <CultureUpgrade />
+      <CultureUpgrade>
+        <ChangeModule>0</ChangeModule>
+        <ForcedFeedbackVariation>0</ForcedFeedbackVariation>
+        <AttractivenessUpgrade />
+        <AdditionalModuleSoundLoop>0</AdditionalModuleSoundLoop>
+      </CultureUpgrade>
     </Values>
   </Asset>
   <Asset>
@@ -81,6 +145,8 @@
         <GUID>191912</GUID>
         <Name>Medecine lvl3</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/machine_items/icon_vitamin_supplement_3.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <ItemEffect>
         <EffectTargets>
@@ -98,22 +164,50 @@
           </English>
         </LocaText>
         <LineID>26366</LineID>
+        <Localize>1</Localize>
       </Text>
-      <BuildingUpgrade />
-      <Buff />
+      <BuildingUpgrade>
+        <MaintenanceUpgrade />
+        <PublicServiceFullSatisfactionDistance />
+        <PublicServiceNoSatisfactionDistance />
+        <ResolverUnitCountUpgrade />
+        <ResolverUnitDecreaseUpgrade />
+        <ResolverUnitMovementSpeedUpgrade />
+        <WorkforceAmountUpgrade />
+        <ReplacingWorkforce>0</ReplacingWorkforce>
+      </BuildingUpgrade>
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
       <PopulationUpgrade>
         <ResidentsUpgrade>
           <Value>20</Value>
           <Percental>1</Percental>
         </ResidentsUpgrade>
+        <StressUpgrade />
+        <InputBenefitModifier />
       </PopulationUpgrade>
-      <ResidenceUpgrade />
+      <ResidenceUpgrade>
+        <NeedProvideNeedUpgrade />
+        <GoodConsumptionUpgrade />
+        <ChangedSupplyValueUpgrade />
+      </ResidenceUpgrade>
       <IncidentInfectableUpgrade>
         <IncidentIllnessIncreaseUpgrade>
           <Value>-9</Value>
         </IncidentIllnessIncreaseUpgrade>
+        <IncidentFireIncreaseUpgrade />
+        <IncidentRiotIncreaseUpgrade />
+        <OverrideIncidentAttractiveness />
+        <IncidentExplosionIncreaseUpgrade />
       </IncidentInfectableUpgrade>
-      <CultureUpgrade />
+      <CultureUpgrade>
+        <ChangeModule>0</ChangeModule>
+        <ForcedFeedbackVariation>0</ForcedFeedbackVariation>
+        <AttractivenessUpgrade />
+        <AdditionalModuleSoundLoop>0</AdditionalModuleSoundLoop>
+      </CultureUpgrade>
     </Values>
   </Asset>
   <Asset>
@@ -123,6 +217,8 @@
         <GUID>191916</GUID>
         <Name>Extinguisher lvl1</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/machine_items/icon_brewing_machine_1.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <ItemEffect>
         <EffectTargets>
@@ -140,17 +236,47 @@
           </English>
         </LocaText>
         <LineID>26367</LineID>
+        <Localize>1</Localize>
       </Text>
-      <BuildingUpgrade />
-      <Buff />
-      <PopulationUpgrade />
-      <ResidenceUpgrade />
+      <BuildingUpgrade>
+        <MaintenanceUpgrade />
+        <PublicServiceFullSatisfactionDistance />
+        <PublicServiceNoSatisfactionDistance />
+        <ResolverUnitCountUpgrade />
+        <ResolverUnitDecreaseUpgrade />
+        <ResolverUnitMovementSpeedUpgrade />
+        <WorkforceAmountUpgrade />
+        <ReplacingWorkforce>0</ReplacingWorkforce>
+      </BuildingUpgrade>
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
+      <PopulationUpgrade>
+        <ResidentsUpgrade />
+        <StressUpgrade />
+        <InputBenefitModifier />
+      </PopulationUpgrade>
+      <ResidenceUpgrade>
+        <NeedProvideNeedUpgrade />
+        <GoodConsumptionUpgrade />
+        <ChangedSupplyValueUpgrade />
+      </ResidenceUpgrade>
       <IncidentInfectableUpgrade>
         <IncidentFireIncreaseUpgrade>
           <Value>-4</Value>
         </IncidentFireIncreaseUpgrade>
+        <IncidentIllnessIncreaseUpgrade />
+        <IncidentRiotIncreaseUpgrade />
+        <OverrideIncidentAttractiveness />
+        <IncidentExplosionIncreaseUpgrade />
       </IncidentInfectableUpgrade>
-      <CultureUpgrade />
+      <CultureUpgrade>
+        <ChangeModule>0</ChangeModule>
+        <ForcedFeedbackVariation>0</ForcedFeedbackVariation>
+        <AttractivenessUpgrade />
+        <AdditionalModuleSoundLoop>0</AdditionalModuleSoundLoop>
+      </CultureUpgrade>
     </Values>
   </Asset>
   <Asset>
@@ -160,6 +286,8 @@
         <GUID>191917</GUID>
         <Name>Extinguisher lvl2</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/machine_items/icon_brewing_machine_1.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <ItemEffect>
         <EffectTargets>
@@ -177,17 +305,47 @@
           </English>
         </LocaText>
         <LineID>26368</LineID>
+        <Localize>1</Localize>
       </Text>
-      <BuildingUpgrade />
-      <Buff />
-      <PopulationUpgrade />
-      <ResidenceUpgrade />
+      <BuildingUpgrade>
+        <MaintenanceUpgrade />
+        <PublicServiceFullSatisfactionDistance />
+        <PublicServiceNoSatisfactionDistance />
+        <ResolverUnitCountUpgrade />
+        <ResolverUnitDecreaseUpgrade />
+        <ResolverUnitMovementSpeedUpgrade />
+        <WorkforceAmountUpgrade />
+        <ReplacingWorkforce>0</ReplacingWorkforce>
+      </BuildingUpgrade>
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
+      <PopulationUpgrade>
+        <ResidentsUpgrade />
+        <StressUpgrade />
+        <InputBenefitModifier />
+      </PopulationUpgrade>
+      <ResidenceUpgrade>
+        <NeedProvideNeedUpgrade />
+        <GoodConsumptionUpgrade />
+        <ChangedSupplyValueUpgrade />
+      </ResidenceUpgrade>
       <IncidentInfectableUpgrade>
         <IncidentFireIncreaseUpgrade>
           <Value>-6</Value>
         </IncidentFireIncreaseUpgrade>
+        <IncidentIllnessIncreaseUpgrade />
+        <IncidentRiotIncreaseUpgrade />
+        <OverrideIncidentAttractiveness />
+        <IncidentExplosionIncreaseUpgrade />
       </IncidentInfectableUpgrade>
-      <CultureUpgrade />
+      <CultureUpgrade>
+        <ChangeModule>0</ChangeModule>
+        <ForcedFeedbackVariation>0</ForcedFeedbackVariation>
+        <AttractivenessUpgrade />
+        <AdditionalModuleSoundLoop>0</AdditionalModuleSoundLoop>
+      </CultureUpgrade>
     </Values>
   </Asset>
   <Asset>
@@ -197,6 +355,8 @@
         <GUID>191918</GUID>
         <Name>Extinguisher lvl3</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/machine_items/icon_brewing_machine_1.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <ItemEffect>
         <EffectTargets>
@@ -214,17 +374,47 @@
           </English>
         </LocaText>
         <LineID>26369</LineID>
+        <Localize>1</Localize>
       </Text>
-      <BuildingUpgrade />
-      <Buff />
-      <PopulationUpgrade />
-      <ResidenceUpgrade />
+      <BuildingUpgrade>
+        <MaintenanceUpgrade />
+        <PublicServiceFullSatisfactionDistance />
+        <PublicServiceNoSatisfactionDistance />
+        <ResolverUnitCountUpgrade />
+        <ResolverUnitDecreaseUpgrade />
+        <ResolverUnitMovementSpeedUpgrade />
+        <WorkforceAmountUpgrade />
+        <ReplacingWorkforce>0</ReplacingWorkforce>
+      </BuildingUpgrade>
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
+      <PopulationUpgrade>
+        <ResidentsUpgrade />
+        <StressUpgrade />
+        <InputBenefitModifier />
+      </PopulationUpgrade>
+      <ResidenceUpgrade>
+        <NeedProvideNeedUpgrade />
+        <GoodConsumptionUpgrade />
+        <ChangedSupplyValueUpgrade />
+      </ResidenceUpgrade>
       <IncidentInfectableUpgrade>
         <IncidentFireIncreaseUpgrade>
           <Value>-9</Value>
         </IncidentFireIncreaseUpgrade>
+        <IncidentIllnessIncreaseUpgrade />
+        <IncidentRiotIncreaseUpgrade />
+        <OverrideIncidentAttractiveness />
+        <IncidentExplosionIncreaseUpgrade />
       </IncidentInfectableUpgrade>
-      <CultureUpgrade />
+      <CultureUpgrade>
+        <ChangeModule>0</ChangeModule>
+        <ForcedFeedbackVariation>0</ForcedFeedbackVariation>
+        <AttractivenessUpgrade />
+        <AdditionalModuleSoundLoop>0</AdditionalModuleSoundLoop>
+      </CultureUpgrade>
     </Values>
   </Asset>
   <Asset>
@@ -234,6 +424,8 @@
         <GUID>191928</GUID>
         <Name>ExtinguisherGrenade lvl1</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/narative_item/icon_bottle.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <ItemEffect>
         <EffectTargets>
@@ -251,17 +443,47 @@
           </English>
         </LocaText>
         <LineID>26370</LineID>
+        <Localize>1</Localize>
       </Text>
-      <BuildingUpgrade />
-      <Buff />
-      <PopulationUpgrade />
-      <ResidenceUpgrade />
+      <BuildingUpgrade>
+        <MaintenanceUpgrade />
+        <PublicServiceFullSatisfactionDistance />
+        <PublicServiceNoSatisfactionDistance />
+        <ResolverUnitCountUpgrade />
+        <ResolverUnitDecreaseUpgrade />
+        <ResolverUnitMovementSpeedUpgrade />
+        <WorkforceAmountUpgrade />
+        <ReplacingWorkforce>0</ReplacingWorkforce>
+      </BuildingUpgrade>
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
+      <PopulationUpgrade>
+        <ResidentsUpgrade />
+        <StressUpgrade />
+        <InputBenefitModifier />
+      </PopulationUpgrade>
+      <ResidenceUpgrade>
+        <NeedProvideNeedUpgrade />
+        <GoodConsumptionUpgrade />
+        <ChangedSupplyValueUpgrade />
+      </ResidenceUpgrade>
       <IncidentInfectableUpgrade>
         <IncidentFireIncreaseUpgrade>
           <Value>-4</Value>
         </IncidentFireIncreaseUpgrade>
+        <IncidentIllnessIncreaseUpgrade />
+        <IncidentRiotIncreaseUpgrade />
+        <OverrideIncidentAttractiveness />
+        <IncidentExplosionIncreaseUpgrade />
       </IncidentInfectableUpgrade>
-      <CultureUpgrade />
+      <CultureUpgrade>
+        <ChangeModule>0</ChangeModule>
+        <ForcedFeedbackVariation>0</ForcedFeedbackVariation>
+        <AttractivenessUpgrade />
+        <AdditionalModuleSoundLoop>0</AdditionalModuleSoundLoop>
+      </CultureUpgrade>
     </Values>
   </Asset>
   <Asset>
@@ -271,6 +493,8 @@
         <GUID>191929</GUID>
         <Name>ExtinguisherGrenade lvl2</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/narative_item/icon_bottle.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <ItemEffect>
         <EffectTargets>
@@ -288,17 +512,47 @@
           </English>
         </LocaText>
         <LineID>26371</LineID>
+        <Localize>1</Localize>
       </Text>
-      <BuildingUpgrade />
-      <Buff />
-      <PopulationUpgrade />
-      <ResidenceUpgrade />
+      <BuildingUpgrade>
+        <MaintenanceUpgrade />
+        <PublicServiceFullSatisfactionDistance />
+        <PublicServiceNoSatisfactionDistance />
+        <ResolverUnitCountUpgrade />
+        <ResolverUnitDecreaseUpgrade />
+        <ResolverUnitMovementSpeedUpgrade />
+        <WorkforceAmountUpgrade />
+        <ReplacingWorkforce>0</ReplacingWorkforce>
+      </BuildingUpgrade>
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
+      <PopulationUpgrade>
+        <ResidentsUpgrade />
+        <StressUpgrade />
+        <InputBenefitModifier />
+      </PopulationUpgrade>
+      <ResidenceUpgrade>
+        <NeedProvideNeedUpgrade />
+        <GoodConsumptionUpgrade />
+        <ChangedSupplyValueUpgrade />
+      </ResidenceUpgrade>
       <IncidentInfectableUpgrade>
         <IncidentFireIncreaseUpgrade>
           <Value>-6</Value>
         </IncidentFireIncreaseUpgrade>
+        <IncidentIllnessIncreaseUpgrade />
+        <IncidentRiotIncreaseUpgrade />
+        <OverrideIncidentAttractiveness />
+        <IncidentExplosionIncreaseUpgrade />
       </IncidentInfectableUpgrade>
-      <CultureUpgrade />
+      <CultureUpgrade>
+        <ChangeModule>0</ChangeModule>
+        <ForcedFeedbackVariation>0</ForcedFeedbackVariation>
+        <AttractivenessUpgrade />
+        <AdditionalModuleSoundLoop>0</AdditionalModuleSoundLoop>
+      </CultureUpgrade>
     </Values>
   </Asset>
   <Asset>
@@ -308,6 +562,8 @@
         <GUID>191930</GUID>
         <Name>ExtinguisherGrenade lvl3</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/narative_item/icon_bottle.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <ItemEffect>
         <EffectTargets>
@@ -325,17 +581,47 @@
           </English>
         </LocaText>
         <LineID>26372</LineID>
+        <Localize>1</Localize>
       </Text>
-      <BuildingUpgrade />
-      <Buff />
-      <PopulationUpgrade />
-      <ResidenceUpgrade />
+      <BuildingUpgrade>
+        <MaintenanceUpgrade />
+        <PublicServiceFullSatisfactionDistance />
+        <PublicServiceNoSatisfactionDistance />
+        <ResolverUnitCountUpgrade />
+        <ResolverUnitDecreaseUpgrade />
+        <ResolverUnitMovementSpeedUpgrade />
+        <WorkforceAmountUpgrade />
+        <ReplacingWorkforce>0</ReplacingWorkforce>
+      </BuildingUpgrade>
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
+      <PopulationUpgrade>
+        <ResidentsUpgrade />
+        <StressUpgrade />
+        <InputBenefitModifier />
+      </PopulationUpgrade>
+      <ResidenceUpgrade>
+        <NeedProvideNeedUpgrade />
+        <GoodConsumptionUpgrade />
+        <ChangedSupplyValueUpgrade />
+      </ResidenceUpgrade>
       <IncidentInfectableUpgrade>
         <IncidentFireIncreaseUpgrade>
           <Value>-9</Value>
         </IncidentFireIncreaseUpgrade>
+        <IncidentIllnessIncreaseUpgrade />
+        <IncidentRiotIncreaseUpgrade />
+        <OverrideIncidentAttractiveness />
+        <IncidentExplosionIncreaseUpgrade />
       </IncidentInfectableUpgrade>
-      <CultureUpgrade />
+      <CultureUpgrade>
+        <ChangeModule>0</ChangeModule>
+        <ForcedFeedbackVariation>0</ForcedFeedbackVariation>
+        <AttractivenessUpgrade />
+        <AdditionalModuleSoundLoop>0</AdditionalModuleSoundLoop>
+      </CultureUpgrade>
     </Values>
   </Asset>
   <Asset>
@@ -345,6 +631,8 @@
         <GUID>191934</GUID>
         <Name>AlcoholCrate lvl1</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_beer_2.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <ItemEffect>
         <EffectTargets>
@@ -362,17 +650,47 @@
           </English>
         </LocaText>
         <LineID>26373</LineID>
+        <Localize>1</Localize>
       </Text>
-      <BuildingUpgrade />
-      <Buff />
-      <PopulationUpgrade />
-      <ResidenceUpgrade />
+      <BuildingUpgrade>
+        <MaintenanceUpgrade />
+        <PublicServiceFullSatisfactionDistance />
+        <PublicServiceNoSatisfactionDistance />
+        <ResolverUnitCountUpgrade />
+        <ResolverUnitDecreaseUpgrade />
+        <ResolverUnitMovementSpeedUpgrade />
+        <WorkforceAmountUpgrade />
+        <ReplacingWorkforce>0</ReplacingWorkforce>
+      </BuildingUpgrade>
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
+      <PopulationUpgrade>
+        <ResidentsUpgrade />
+        <StressUpgrade />
+        <InputBenefitModifier />
+      </PopulationUpgrade>
+      <ResidenceUpgrade>
+        <NeedProvideNeedUpgrade />
+        <GoodConsumptionUpgrade />
+        <ChangedSupplyValueUpgrade />
+      </ResidenceUpgrade>
       <IncidentInfectableUpgrade>
         <IncidentRiotIncreaseUpgrade>
           <Value>-4</Value>
         </IncidentRiotIncreaseUpgrade>
+        <IncidentFireIncreaseUpgrade />
+        <IncidentIllnessIncreaseUpgrade />
+        <OverrideIncidentAttractiveness />
+        <IncidentExplosionIncreaseUpgrade />
       </IncidentInfectableUpgrade>
-      <CultureUpgrade />
+      <CultureUpgrade>
+        <ChangeModule>0</ChangeModule>
+        <ForcedFeedbackVariation>0</ForcedFeedbackVariation>
+        <AttractivenessUpgrade />
+        <AdditionalModuleSoundLoop>0</AdditionalModuleSoundLoop>
+      </CultureUpgrade>
     </Values>
   </Asset>
   <Asset>
@@ -382,6 +700,8 @@
         <GUID>191935</GUID>
         <Name>AlcoholCrate lvl2</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_beer_2.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <ItemEffect>
         <EffectTargets>
@@ -399,17 +719,47 @@
           </English>
         </LocaText>
         <LineID>26374</LineID>
+        <Localize>1</Localize>
       </Text>
-      <BuildingUpgrade />
-      <Buff />
-      <PopulationUpgrade />
-      <ResidenceUpgrade />
+      <BuildingUpgrade>
+        <MaintenanceUpgrade />
+        <PublicServiceFullSatisfactionDistance />
+        <PublicServiceNoSatisfactionDistance />
+        <ResolverUnitCountUpgrade />
+        <ResolverUnitDecreaseUpgrade />
+        <ResolverUnitMovementSpeedUpgrade />
+        <WorkforceAmountUpgrade />
+        <ReplacingWorkforce>0</ReplacingWorkforce>
+      </BuildingUpgrade>
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
+      <PopulationUpgrade>
+        <ResidentsUpgrade />
+        <StressUpgrade />
+        <InputBenefitModifier />
+      </PopulationUpgrade>
+      <ResidenceUpgrade>
+        <NeedProvideNeedUpgrade />
+        <GoodConsumptionUpgrade />
+        <ChangedSupplyValueUpgrade />
+      </ResidenceUpgrade>
       <IncidentInfectableUpgrade>
         <IncidentRiotIncreaseUpgrade>
           <Value>-6</Value>
         </IncidentRiotIncreaseUpgrade>
+        <IncidentFireIncreaseUpgrade />
+        <IncidentIllnessIncreaseUpgrade />
+        <OverrideIncidentAttractiveness />
+        <IncidentExplosionIncreaseUpgrade />
       </IncidentInfectableUpgrade>
-      <CultureUpgrade />
+      <CultureUpgrade>
+        <ChangeModule>0</ChangeModule>
+        <ForcedFeedbackVariation>0</ForcedFeedbackVariation>
+        <AttractivenessUpgrade />
+        <AdditionalModuleSoundLoop>0</AdditionalModuleSoundLoop>
+      </CultureUpgrade>
     </Values>
   </Asset>
   <Asset>
@@ -419,6 +769,8 @@
         <GUID>191936</GUID>
         <Name>AlcoholCrate lvl3</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_beer_2.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <ItemEffect>
         <EffectTargets>
@@ -436,19 +788,48 @@
           </English>
         </LocaText>
         <LineID>26375</LineID>
+        <Localize>1</Localize>
       </Text>
-      <BuildingUpgrade />
-      <Buff />
-      <PopulationUpgrade />
+      <BuildingUpgrade>
+        <MaintenanceUpgrade />
+        <PublicServiceFullSatisfactionDistance />
+        <PublicServiceNoSatisfactionDistance />
+        <ResolverUnitCountUpgrade />
+        <ResolverUnitDecreaseUpgrade />
+        <ResolverUnitMovementSpeedUpgrade />
+        <WorkforceAmountUpgrade />
+        <ReplacingWorkforce>0</ReplacingWorkforce>
+      </BuildingUpgrade>
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
+      <PopulationUpgrade>
+        <ResidentsUpgrade />
+        <StressUpgrade />
+        <InputBenefitModifier />
+      </PopulationUpgrade>
       <ResidenceUpgrade>
         <AdditionalHappiness>5</AdditionalHappiness>
+        <NeedProvideNeedUpgrade />
+        <GoodConsumptionUpgrade />
+        <ChangedSupplyValueUpgrade />
       </ResidenceUpgrade>
       <IncidentInfectableUpgrade>
         <IncidentRiotIncreaseUpgrade>
           <Value>-9</Value>
         </IncidentRiotIncreaseUpgrade>
+        <IncidentFireIncreaseUpgrade />
+        <IncidentIllnessIncreaseUpgrade />
+        <OverrideIncidentAttractiveness />
+        <IncidentExplosionIncreaseUpgrade />
       </IncidentInfectableUpgrade>
-      <CultureUpgrade />
+      <CultureUpgrade>
+        <ChangeModule>0</ChangeModule>
+        <ForcedFeedbackVariation>0</ForcedFeedbackVariation>
+        <AttractivenessUpgrade />
+        <AdditionalModuleSoundLoop>0</AdditionalModuleSoundLoop>
+      </CultureUpgrade>
     </Values>
   </Asset>
   <Asset>
@@ -458,6 +839,8 @@
         <GUID>191937</GUID>
         <Name>MoneyBag lvl1</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_gold.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <ItemEffect>
         <EffectTargets>
@@ -475,17 +858,47 @@
           </English>
         </LocaText>
         <LineID>26376</LineID>
+        <Localize>1</Localize>
       </Text>
-      <BuildingUpgrade />
-      <Buff />
-      <PopulationUpgrade />
-      <ResidenceUpgrade />
+      <BuildingUpgrade>
+        <MaintenanceUpgrade />
+        <PublicServiceFullSatisfactionDistance />
+        <PublicServiceNoSatisfactionDistance />
+        <ResolverUnitCountUpgrade />
+        <ResolverUnitDecreaseUpgrade />
+        <ResolverUnitMovementSpeedUpgrade />
+        <WorkforceAmountUpgrade />
+        <ReplacingWorkforce>0</ReplacingWorkforce>
+      </BuildingUpgrade>
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
+      <PopulationUpgrade>
+        <ResidentsUpgrade />
+        <StressUpgrade />
+        <InputBenefitModifier />
+      </PopulationUpgrade>
+      <ResidenceUpgrade>
+        <NeedProvideNeedUpgrade />
+        <GoodConsumptionUpgrade />
+        <ChangedSupplyValueUpgrade />
+      </ResidenceUpgrade>
       <IncidentInfectableUpgrade>
         <IncidentRiotIncreaseUpgrade>
           <Value>-4</Value>
         </IncidentRiotIncreaseUpgrade>
+        <IncidentFireIncreaseUpgrade />
+        <IncidentIllnessIncreaseUpgrade />
+        <OverrideIncidentAttractiveness />
+        <IncidentExplosionIncreaseUpgrade />
       </IncidentInfectableUpgrade>
-      <CultureUpgrade />
+      <CultureUpgrade>
+        <ChangeModule>0</ChangeModule>
+        <ForcedFeedbackVariation>0</ForcedFeedbackVariation>
+        <AttractivenessUpgrade />
+        <AdditionalModuleSoundLoop>0</AdditionalModuleSoundLoop>
+      </CultureUpgrade>
     </Values>
   </Asset>
   <Asset>
@@ -495,6 +908,8 @@
         <GUID>191938</GUID>
         <Name>MoneyBag lvl2</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_gold.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <ItemEffect>
         <EffectTargets>
@@ -512,17 +927,47 @@
           </English>
         </LocaText>
         <LineID>26377</LineID>
+        <Localize>1</Localize>
       </Text>
-      <BuildingUpgrade />
-      <Buff />
-      <PopulationUpgrade />
-      <ResidenceUpgrade />
+      <BuildingUpgrade>
+        <MaintenanceUpgrade />
+        <PublicServiceFullSatisfactionDistance />
+        <PublicServiceNoSatisfactionDistance />
+        <ResolverUnitCountUpgrade />
+        <ResolverUnitDecreaseUpgrade />
+        <ResolverUnitMovementSpeedUpgrade />
+        <WorkforceAmountUpgrade />
+        <ReplacingWorkforce>0</ReplacingWorkforce>
+      </BuildingUpgrade>
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
+      <PopulationUpgrade>
+        <ResidentsUpgrade />
+        <StressUpgrade />
+        <InputBenefitModifier />
+      </PopulationUpgrade>
+      <ResidenceUpgrade>
+        <NeedProvideNeedUpgrade />
+        <GoodConsumptionUpgrade />
+        <ChangedSupplyValueUpgrade />
+      </ResidenceUpgrade>
       <IncidentInfectableUpgrade>
         <IncidentRiotIncreaseUpgrade>
           <Value>-6</Value>
         </IncidentRiotIncreaseUpgrade>
+        <IncidentFireIncreaseUpgrade />
+        <IncidentIllnessIncreaseUpgrade />
+        <OverrideIncidentAttractiveness />
+        <IncidentExplosionIncreaseUpgrade />
       </IncidentInfectableUpgrade>
-      <CultureUpgrade />
+      <CultureUpgrade>
+        <ChangeModule>0</ChangeModule>
+        <ForcedFeedbackVariation>0</ForcedFeedbackVariation>
+        <AttractivenessUpgrade />
+        <AdditionalModuleSoundLoop>0</AdditionalModuleSoundLoop>
+      </CultureUpgrade>
     </Values>
   </Asset>
   <Asset>
@@ -532,6 +977,8 @@
         <GUID>191939</GUID>
         <Name>MoneyBag lvl3</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_gold.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <ItemEffect>
         <EffectTargets>
@@ -549,22 +996,50 @@
           </English>
         </LocaText>
         <LineID>26378</LineID>
+        <Localize>1</Localize>
       </Text>
       <BuildingUpgrade>
         <WorkforceAmountUpgrade>
           <Value>-15</Value>
           <Percental>1</Percental>
         </WorkforceAmountUpgrade>
+        <MaintenanceUpgrade />
+        <PublicServiceFullSatisfactionDistance />
+        <PublicServiceNoSatisfactionDistance />
+        <ResolverUnitCountUpgrade />
+        <ResolverUnitDecreaseUpgrade />
+        <ResolverUnitMovementSpeedUpgrade />
+        <ReplacingWorkforce>0</ReplacingWorkforce>
       </BuildingUpgrade>
-      <Buff />
-      <PopulationUpgrade />
-      <ResidenceUpgrade />
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
+      <PopulationUpgrade>
+        <ResidentsUpgrade />
+        <StressUpgrade />
+        <InputBenefitModifier />
+      </PopulationUpgrade>
+      <ResidenceUpgrade>
+        <NeedProvideNeedUpgrade />
+        <GoodConsumptionUpgrade />
+        <ChangedSupplyValueUpgrade />
+      </ResidenceUpgrade>
       <IncidentInfectableUpgrade>
         <IncidentRiotIncreaseUpgrade>
           <Value>-9</Value>
         </IncidentRiotIncreaseUpgrade>
+        <IncidentFireIncreaseUpgrade />
+        <IncidentIllnessIncreaseUpgrade />
+        <OverrideIncidentAttractiveness />
+        <IncidentExplosionIncreaseUpgrade />
       </IncidentInfectableUpgrade>
-      <CultureUpgrade />
+      <CultureUpgrade>
+        <ChangeModule>0</ChangeModule>
+        <ForcedFeedbackVariation>0</ForcedFeedbackVariation>
+        <AttractivenessUpgrade />
+        <AdditionalModuleSoundLoop>0</AdditionalModuleSoundLoop>
+      </CultureUpgrade>
     </Values>
   </Asset>
   <Asset>
@@ -574,6 +1049,8 @@
         <GUID>191972</GUID>
         <Name>Fireworks lvl1</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/narative_item/icon_fireworks.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <ItemEffect>
         <EffectTargets>
@@ -591,15 +1068,46 @@
           </English>
         </LocaText>
         <LineID>26379</LineID>
+        <Localize>1</Localize>
       </Text>
-      <BuildingUpgrade />
-      <Buff />
-      <PopulationUpgrade />
+      <BuildingUpgrade>
+        <MaintenanceUpgrade />
+        <PublicServiceFullSatisfactionDistance />
+        <PublicServiceNoSatisfactionDistance />
+        <ResolverUnitCountUpgrade />
+        <ResolverUnitDecreaseUpgrade />
+        <ResolverUnitMovementSpeedUpgrade />
+        <WorkforceAmountUpgrade />
+        <ReplacingWorkforce>0</ReplacingWorkforce>
+      </BuildingUpgrade>
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
+      <PopulationUpgrade>
+        <ResidentsUpgrade />
+        <StressUpgrade />
+        <InputBenefitModifier />
+      </PopulationUpgrade>
       <ResidenceUpgrade>
         <AdditionalHappiness>7</AdditionalHappiness>
+        <NeedProvideNeedUpgrade />
+        <GoodConsumptionUpgrade />
+        <ChangedSupplyValueUpgrade />
       </ResidenceUpgrade>
-      <IncidentInfectableUpgrade />
-      <CultureUpgrade />
+      <IncidentInfectableUpgrade>
+        <IncidentFireIncreaseUpgrade />
+        <IncidentIllnessIncreaseUpgrade />
+        <IncidentRiotIncreaseUpgrade />
+        <OverrideIncidentAttractiveness />
+        <IncidentExplosionIncreaseUpgrade />
+      </IncidentInfectableUpgrade>
+      <CultureUpgrade>
+        <ChangeModule>0</ChangeModule>
+        <ForcedFeedbackVariation>0</ForcedFeedbackVariation>
+        <AttractivenessUpgrade />
+        <AdditionalModuleSoundLoop>0</AdditionalModuleSoundLoop>
+      </CultureUpgrade>
     </Values>
   </Asset>
   <Asset>
@@ -609,6 +1117,8 @@
         <GUID>191975</GUID>
         <Name>Fireworks lvl2</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/narative_item/icon_fireworks.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <ItemEffect>
         <EffectTargets>
@@ -626,18 +1136,47 @@
           </English>
         </LocaText>
         <LineID>26380</LineID>
+        <Localize>1</Localize>
       </Text>
-      <BuildingUpgrade />
-      <Buff />
-      <PopulationUpgrade />
+      <BuildingUpgrade>
+        <MaintenanceUpgrade />
+        <PublicServiceFullSatisfactionDistance />
+        <PublicServiceNoSatisfactionDistance />
+        <ResolverUnitCountUpgrade />
+        <ResolverUnitDecreaseUpgrade />
+        <ResolverUnitMovementSpeedUpgrade />
+        <WorkforceAmountUpgrade />
+        <ReplacingWorkforce>0</ReplacingWorkforce>
+      </BuildingUpgrade>
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
+      <PopulationUpgrade>
+        <ResidentsUpgrade />
+        <StressUpgrade />
+        <InputBenefitModifier />
+      </PopulationUpgrade>
       <ResidenceUpgrade>
         <AdditionalHappiness>10</AdditionalHappiness>
+        <NeedProvideNeedUpgrade />
+        <GoodConsumptionUpgrade />
+        <ChangedSupplyValueUpgrade />
       </ResidenceUpgrade>
-      <IncidentInfectableUpgrade />
+      <IncidentInfectableUpgrade>
+        <IncidentFireIncreaseUpgrade />
+        <IncidentIllnessIncreaseUpgrade />
+        <IncidentRiotIncreaseUpgrade />
+        <OverrideIncidentAttractiveness />
+        <IncidentExplosionIncreaseUpgrade />
+      </IncidentInfectableUpgrade>
       <CultureUpgrade>
         <AttractivenessUpgrade>
           <Value>1</Value>
         </AttractivenessUpgrade>
+        <ChangeModule>0</ChangeModule>
+        <ForcedFeedbackVariation>0</ForcedFeedbackVariation>
+        <AdditionalModuleSoundLoop>0</AdditionalModuleSoundLoop>
       </CultureUpgrade>
     </Values>
   </Asset>
@@ -648,6 +1187,8 @@
         <GUID>191976</GUID>
         <Name>Fireworks lvl3</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/narative_item/icon_fireworks.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <ItemEffect>
         <EffectTargets>
@@ -665,9 +1206,22 @@
           </English>
         </LocaText>
         <LineID>26381</LineID>
+        <Localize>1</Localize>
       </Text>
-      <BuildingUpgrade />
-      <Buff />
+      <BuildingUpgrade>
+        <MaintenanceUpgrade />
+        <PublicServiceFullSatisfactionDistance />
+        <PublicServiceNoSatisfactionDistance />
+        <ResolverUnitCountUpgrade />
+        <ResolverUnitDecreaseUpgrade />
+        <ResolverUnitMovementSpeedUpgrade />
+        <WorkforceAmountUpgrade />
+        <ReplacingWorkforce>0</ReplacingWorkforce>
+      </BuildingUpgrade>
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
       <PopulationUpgrade>
         <InputBenefitModifier>
           <Item>
@@ -687,15 +1241,29 @@
             <AdditionalMoney>3</AdditionalMoney>
           </Item>
         </InputBenefitModifier>
+        <ResidentsUpgrade />
+        <StressUpgrade />
       </PopulationUpgrade>
       <ResidenceUpgrade>
         <AdditionalHappiness>15</AdditionalHappiness>
+        <NeedProvideNeedUpgrade />
+        <GoodConsumptionUpgrade />
+        <ChangedSupplyValueUpgrade />
       </ResidenceUpgrade>
-      <IncidentInfectableUpgrade />
+      <IncidentInfectableUpgrade>
+        <IncidentFireIncreaseUpgrade />
+        <IncidentIllnessIncreaseUpgrade />
+        <IncidentRiotIncreaseUpgrade />
+        <OverrideIncidentAttractiveness />
+        <IncidentExplosionIncreaseUpgrade />
+      </IncidentInfectableUpgrade>
       <CultureUpgrade>
         <AttractivenessUpgrade>
           <Value>2</Value>
         </AttractivenessUpgrade>
+        <ChangeModule>0</ChangeModule>
+        <ForcedFeedbackVariation>0</ForcedFeedbackVariation>
+        <AdditionalModuleSoundLoop>0</AdditionalModuleSoundLoop>
       </CultureUpgrade>
     </Values>
   </Asset>
@@ -706,6 +1274,8 @@
         <GUID>192020</GUID>
         <Name>Armagnac Bottles</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_rum.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <ItemEffect>
         <EffectTargets>
@@ -723,10 +1293,27 @@
           </English>
         </LocaText>
         <LineID>26382</LineID>
+        <Localize>1</Localize>
       </Text>
-      <BuildingUpgrade />
-      <Buff />
-      <PopulationUpgrade />
+      <BuildingUpgrade>
+        <MaintenanceUpgrade />
+        <PublicServiceFullSatisfactionDistance />
+        <PublicServiceNoSatisfactionDistance />
+        <ResolverUnitCountUpgrade />
+        <ResolverUnitDecreaseUpgrade />
+        <ResolverUnitMovementSpeedUpgrade />
+        <WorkforceAmountUpgrade />
+        <ReplacingWorkforce>0</ReplacingWorkforce>
+      </BuildingUpgrade>
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
+      <PopulationUpgrade>
+        <ResidentsUpgrade />
+        <StressUpgrade />
+        <InputBenefitModifier />
+      </PopulationUpgrade>
       <ResidenceUpgrade>
         <AdditionalHappiness>5</AdditionalHappiness>
         <GoodConsumptionUpgrade>
@@ -747,9 +1334,22 @@
             <AmountInPercent>-100</AmountInPercent>
           </Item>
         </GoodConsumptionUpgrade>
+        <NeedProvideNeedUpgrade />
+        <ChangedSupplyValueUpgrade />
       </ResidenceUpgrade>
-      <IncidentInfectableUpgrade />
-      <CultureUpgrade />
+      <IncidentInfectableUpgrade>
+        <IncidentFireIncreaseUpgrade />
+        <IncidentIllnessIncreaseUpgrade />
+        <IncidentRiotIncreaseUpgrade />
+        <OverrideIncidentAttractiveness />
+        <IncidentExplosionIncreaseUpgrade />
+      </IncidentInfectableUpgrade>
+      <CultureUpgrade>
+        <ChangeModule>0</ChangeModule>
+        <ForcedFeedbackVariation>0</ForcedFeedbackVariation>
+        <AttractivenessUpgrade />
+        <AdditionalModuleSoundLoop>0</AdditionalModuleSoundLoop>
+      </CultureUpgrade>
     </Values>
   </Asset>
   <Asset>
@@ -759,6 +1359,8 @@
         <GUID>192021</GUID>
         <Name>Milk Demijohn</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_sheep_milk.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <ItemEffect>
         <EffectTargets>
@@ -776,10 +1378,27 @@
           </English>
         </LocaText>
         <LineID>26383</LineID>
+        <Localize>1</Localize>
       </Text>
-      <BuildingUpgrade />
-      <Buff />
-      <PopulationUpgrade />
+      <BuildingUpgrade>
+        <MaintenanceUpgrade />
+        <PublicServiceFullSatisfactionDistance />
+        <PublicServiceNoSatisfactionDistance />
+        <ResolverUnitCountUpgrade />
+        <ResolverUnitDecreaseUpgrade />
+        <ResolverUnitMovementSpeedUpgrade />
+        <WorkforceAmountUpgrade />
+        <ReplacingWorkforce>0</ReplacingWorkforce>
+      </BuildingUpgrade>
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
+      <PopulationUpgrade>
+        <ResidentsUpgrade />
+        <StressUpgrade />
+        <InputBenefitModifier />
+      </PopulationUpgrade>
       <ResidenceUpgrade>
         <AdditionalHappiness>5</AdditionalHappiness>
         <GoodConsumptionUpgrade>
@@ -788,9 +1407,22 @@
             <AmountInPercent>-100</AmountInPercent>
           </Item>
         </GoodConsumptionUpgrade>
+        <NeedProvideNeedUpgrade />
+        <ChangedSupplyValueUpgrade />
       </ResidenceUpgrade>
-      <IncidentInfectableUpgrade />
-      <CultureUpgrade />
+      <IncidentInfectableUpgrade>
+        <IncidentFireIncreaseUpgrade />
+        <IncidentIllnessIncreaseUpgrade />
+        <IncidentRiotIncreaseUpgrade />
+        <OverrideIncidentAttractiveness />
+        <IncidentExplosionIncreaseUpgrade />
+      </IncidentInfectableUpgrade>
+      <CultureUpgrade>
+        <ChangeModule>0</ChangeModule>
+        <ForcedFeedbackVariation>0</ForcedFeedbackVariation>
+        <AttractivenessUpgrade />
+        <AdditionalModuleSoundLoop>0</AdditionalModuleSoundLoop>
+      </CultureUpgrade>
     </Values>
   </Asset>
   <Asset>
@@ -800,6 +1432,8 @@
         <GUID>192022</GUID>
         <Name>Cheese Crate</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_sheep_cheese.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <ItemEffect>
         <EffectTargets>
@@ -817,10 +1451,27 @@
           </English>
         </LocaText>
         <LineID>26384</LineID>
+        <Localize>1</Localize>
       </Text>
-      <BuildingUpgrade />
-      <Buff />
-      <PopulationUpgrade />
+      <BuildingUpgrade>
+        <MaintenanceUpgrade />
+        <PublicServiceFullSatisfactionDistance />
+        <PublicServiceNoSatisfactionDistance />
+        <ResolverUnitCountUpgrade />
+        <ResolverUnitDecreaseUpgrade />
+        <ResolverUnitMovementSpeedUpgrade />
+        <WorkforceAmountUpgrade />
+        <ReplacingWorkforce>0</ReplacingWorkforce>
+      </BuildingUpgrade>
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
+      <PopulationUpgrade>
+        <ResidentsUpgrade />
+        <StressUpgrade />
+        <InputBenefitModifier />
+      </PopulationUpgrade>
       <ResidenceUpgrade>
         <AdditionalHappiness>5</AdditionalHappiness>
         <GoodConsumptionUpgrade>
@@ -829,9 +1480,22 @@
             <AmountInPercent>-100</AmountInPercent>
           </Item>
         </GoodConsumptionUpgrade>
+        <NeedProvideNeedUpgrade />
+        <ChangedSupplyValueUpgrade />
       </ResidenceUpgrade>
-      <IncidentInfectableUpgrade />
-      <CultureUpgrade />
+      <IncidentInfectableUpgrade>
+        <IncidentFireIncreaseUpgrade />
+        <IncidentIllnessIncreaseUpgrade />
+        <IncidentRiotIncreaseUpgrade />
+        <OverrideIncidentAttractiveness />
+        <IncidentExplosionIncreaseUpgrade />
+      </IncidentInfectableUpgrade>
+      <CultureUpgrade>
+        <ChangeModule>0</ChangeModule>
+        <ForcedFeedbackVariation>0</ForcedFeedbackVariation>
+        <AttractivenessUpgrade />
+        <AdditionalModuleSoundLoop>0</AdditionalModuleSoundLoop>
+      </CultureUpgrade>
     </Values>
   </Asset>
   <Asset>
@@ -841,6 +1505,8 @@
         <GUID>192023</GUID>
         <Name>Fish Stew Plates</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_fish_stew.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <ItemEffect>
         <EffectTargets>
@@ -858,10 +1524,27 @@
           </English>
         </LocaText>
         <LineID>26385</LineID>
+        <Localize>1</Localize>
       </Text>
-      <BuildingUpgrade />
-      <Buff />
-      <PopulationUpgrade />
+      <BuildingUpgrade>
+        <MaintenanceUpgrade />
+        <PublicServiceFullSatisfactionDistance />
+        <PublicServiceNoSatisfactionDistance />
+        <ResolverUnitCountUpgrade />
+        <ResolverUnitDecreaseUpgrade />
+        <ResolverUnitMovementSpeedUpgrade />
+        <WorkforceAmountUpgrade />
+        <ReplacingWorkforce>0</ReplacingWorkforce>
+      </BuildingUpgrade>
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
+      <PopulationUpgrade>
+        <ResidentsUpgrade />
+        <StressUpgrade />
+        <InputBenefitModifier />
+      </PopulationUpgrade>
       <ResidenceUpgrade>
         <AdditionalHappiness>5</AdditionalHappiness>
         <GoodConsumptionUpgrade>
@@ -874,9 +1557,22 @@
             <AmountInPercent>-100</AmountInPercent>
           </Item>
         </GoodConsumptionUpgrade>
+        <NeedProvideNeedUpgrade />
+        <ChangedSupplyValueUpgrade />
       </ResidenceUpgrade>
-      <IncidentInfectableUpgrade />
-      <CultureUpgrade />
+      <IncidentInfectableUpgrade>
+        <IncidentFireIncreaseUpgrade />
+        <IncidentIllnessIncreaseUpgrade />
+        <IncidentRiotIncreaseUpgrade />
+        <OverrideIncidentAttractiveness />
+        <IncidentExplosionIncreaseUpgrade />
+      </IncidentInfectableUpgrade>
+      <CultureUpgrade>
+        <ChangeModule>0</ChangeModule>
+        <ForcedFeedbackVariation>0</ForcedFeedbackVariation>
+        <AttractivenessUpgrade />
+        <AdditionalModuleSoundLoop>0</AdditionalModuleSoundLoop>
+      </CultureUpgrade>
     </Values>
   </Asset>
   <Asset>
@@ -886,6 +1582,8 @@
         <GUID>192024</GUID>
         <Name>Beef Potato Plates</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_beef_potatoes.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <ItemEffect>
         <EffectTargets>
@@ -903,10 +1601,27 @@
           </English>
         </LocaText>
         <LineID>26386</LineID>
+        <Localize>1</Localize>
       </Text>
-      <BuildingUpgrade />
-      <Buff />
-      <PopulationUpgrade />
+      <BuildingUpgrade>
+        <MaintenanceUpgrade />
+        <PublicServiceFullSatisfactionDistance />
+        <PublicServiceNoSatisfactionDistance />
+        <ResolverUnitCountUpgrade />
+        <ResolverUnitDecreaseUpgrade />
+        <ResolverUnitMovementSpeedUpgrade />
+        <WorkforceAmountUpgrade />
+        <ReplacingWorkforce>0</ReplacingWorkforce>
+      </BuildingUpgrade>
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
+      <PopulationUpgrade>
+        <ResidentsUpgrade />
+        <StressUpgrade />
+        <InputBenefitModifier />
+      </PopulationUpgrade>
       <ResidenceUpgrade>
         <AdditionalHappiness>5</AdditionalHappiness>
         <GoodConsumptionUpgrade>
@@ -927,9 +1642,22 @@
             <AmountInPercent>-100</AmountInPercent>
           </Item>
         </GoodConsumptionUpgrade>
+        <NeedProvideNeedUpgrade />
+        <ChangedSupplyValueUpgrade />
       </ResidenceUpgrade>
-      <IncidentInfectableUpgrade />
-      <CultureUpgrade />
+      <IncidentInfectableUpgrade>
+        <IncidentFireIncreaseUpgrade />
+        <IncidentIllnessIncreaseUpgrade />
+        <IncidentRiotIncreaseUpgrade />
+        <OverrideIncidentAttractiveness />
+        <IncidentExplosionIncreaseUpgrade />
+      </IncidentInfectableUpgrade>
+      <CultureUpgrade>
+        <ChangeModule>0</ChangeModule>
+        <ForcedFeedbackVariation>0</ForcedFeedbackVariation>
+        <AttractivenessUpgrade />
+        <AdditionalModuleSoundLoop>0</AdditionalModuleSoundLoop>
+      </CultureUpgrade>
     </Values>
   </Asset>
   <Asset>
@@ -939,6 +1667,8 @@
         <GUID>192025</GUID>
         <Name>Tools Crate</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_tools.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <ItemEffect>
         <EffectTargets>
@@ -956,10 +1686,27 @@
           </English>
         </LocaText>
         <LineID>26387</LineID>
+        <Localize>1</Localize>
       </Text>
-      <BuildingUpgrade />
-      <Buff />
-      <PopulationUpgrade />
+      <BuildingUpgrade>
+        <MaintenanceUpgrade />
+        <PublicServiceFullSatisfactionDistance />
+        <PublicServiceNoSatisfactionDistance />
+        <ResolverUnitCountUpgrade />
+        <ResolverUnitDecreaseUpgrade />
+        <ResolverUnitMovementSpeedUpgrade />
+        <WorkforceAmountUpgrade />
+        <ReplacingWorkforce>0</ReplacingWorkforce>
+      </BuildingUpgrade>
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
+      <PopulationUpgrade>
+        <ResidentsUpgrade />
+        <StressUpgrade />
+        <InputBenefitModifier />
+      </PopulationUpgrade>
       <ResidenceUpgrade>
         <AdditionalHappiness>5</AdditionalHappiness>
         <GoodConsumptionUpgrade>
@@ -968,9 +1715,22 @@
             <AmountInPercent>-100</AmountInPercent>
           </Item>
         </GoodConsumptionUpgrade>
+        <NeedProvideNeedUpgrade />
+        <ChangedSupplyValueUpgrade />
       </ResidenceUpgrade>
-      <IncidentInfectableUpgrade />
-      <CultureUpgrade />
+      <IncidentInfectableUpgrade>
+        <IncidentFireIncreaseUpgrade />
+        <IncidentIllnessIncreaseUpgrade />
+        <IncidentRiotIncreaseUpgrade />
+        <OverrideIncidentAttractiveness />
+        <IncidentExplosionIncreaseUpgrade />
+      </IncidentInfectableUpgrade>
+      <CultureUpgrade>
+        <ChangeModule>0</ChangeModule>
+        <ForcedFeedbackVariation>0</ForcedFeedbackVariation>
+        <AttractivenessUpgrade />
+        <AdditionalModuleSoundLoop>0</AdditionalModuleSoundLoop>
+      </CultureUpgrade>
     </Values>
   </Asset>
   <Asset>
@@ -980,6 +1740,8 @@
         <GUID>192026</GUID>
         <Name>Sewing Thread</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_sheep_wool.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <ItemEffect>
         <EffectTargets>
@@ -997,10 +1759,27 @@
           </English>
         </LocaText>
         <LineID>26388</LineID>
+        <Localize>1</Localize>
       </Text>
-      <BuildingUpgrade />
-      <Buff />
-      <PopulationUpgrade />
+      <BuildingUpgrade>
+        <MaintenanceUpgrade />
+        <PublicServiceFullSatisfactionDistance />
+        <PublicServiceNoSatisfactionDistance />
+        <ResolverUnitCountUpgrade />
+        <ResolverUnitDecreaseUpgrade />
+        <ResolverUnitMovementSpeedUpgrade />
+        <WorkforceAmountUpgrade />
+        <ReplacingWorkforce>0</ReplacingWorkforce>
+      </BuildingUpgrade>
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
+      <PopulationUpgrade>
+        <ResidentsUpgrade />
+        <StressUpgrade />
+        <InputBenefitModifier />
+      </PopulationUpgrade>
       <ResidenceUpgrade>
         <AdditionalHappiness>5</AdditionalHappiness>
         <GoodConsumptionUpgrade>
@@ -1013,9 +1792,22 @@
             <AmountInPercent>-100</AmountInPercent>
           </Item>
         </GoodConsumptionUpgrade>
+        <NeedProvideNeedUpgrade />
+        <ChangedSupplyValueUpgrade />
       </ResidenceUpgrade>
-      <IncidentInfectableUpgrade />
-      <CultureUpgrade />
+      <IncidentInfectableUpgrade>
+        <IncidentFireIncreaseUpgrade />
+        <IncidentIllnessIncreaseUpgrade />
+        <IncidentRiotIncreaseUpgrade />
+        <OverrideIncidentAttractiveness />
+        <IncidentExplosionIncreaseUpgrade />
+      </IncidentInfectableUpgrade>
+      <CultureUpgrade>
+        <ChangeModule>0</ChangeModule>
+        <ForcedFeedbackVariation>0</ForcedFeedbackVariation>
+        <AttractivenessUpgrade />
+        <AdditionalModuleSoundLoop>0</AdditionalModuleSoundLoop>
+      </CultureUpgrade>
     </Values>
   </Asset>
   <Asset>
@@ -1025,6 +1817,8 @@
         <GUID>192027</GUID>
         <Name>Fish Cans</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_canned_food.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <ItemEffect>
         <EffectTargets>
@@ -1042,10 +1836,27 @@
           </English>
         </LocaText>
         <LineID>26389</LineID>
+        <Localize>1</Localize>
       </Text>
-      <BuildingUpgrade />
-      <Buff />
-      <PopulationUpgrade />
+      <BuildingUpgrade>
+        <MaintenanceUpgrade />
+        <PublicServiceFullSatisfactionDistance />
+        <PublicServiceNoSatisfactionDistance />
+        <ResolverUnitCountUpgrade />
+        <ResolverUnitDecreaseUpgrade />
+        <ResolverUnitMovementSpeedUpgrade />
+        <WorkforceAmountUpgrade />
+        <ReplacingWorkforce>0</ReplacingWorkforce>
+      </BuildingUpgrade>
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
+      <PopulationUpgrade>
+        <ResidentsUpgrade />
+        <StressUpgrade />
+        <InputBenefitModifier />
+      </PopulationUpgrade>
       <ResidenceUpgrade>
         <AdditionalHappiness>5</AdditionalHappiness>
         <GoodConsumptionUpgrade>
@@ -1058,9 +1869,22 @@
             <AmountInPercent>-100</AmountInPercent>
           </Item>
         </GoodConsumptionUpgrade>
+        <NeedProvideNeedUpgrade />
+        <ChangedSupplyValueUpgrade />
       </ResidenceUpgrade>
-      <IncidentInfectableUpgrade />
-      <CultureUpgrade />
+      <IncidentInfectableUpgrade>
+        <IncidentFireIncreaseUpgrade />
+        <IncidentIllnessIncreaseUpgrade />
+        <IncidentRiotIncreaseUpgrade />
+        <OverrideIncidentAttractiveness />
+        <IncidentExplosionIncreaseUpgrade />
+      </IncidentInfectableUpgrade>
+      <CultureUpgrade>
+        <ChangeModule>0</ChangeModule>
+        <ForcedFeedbackVariation>0</ForcedFeedbackVariation>
+        <AttractivenessUpgrade />
+        <AdditionalModuleSoundLoop>0</AdditionalModuleSoundLoop>
+      </CultureUpgrade>
     </Values>
   </Asset>
   <Asset>
@@ -1071,6 +1895,7 @@
         <Name>andes</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/animals/icon_vulture_ver2.png</IconFilename>
         <InfoDescription>15757</InfoDescription>
+        <Comments />
       </Standard>
       <ItemEffect>
         <EffectTargets>
@@ -1091,16 +1916,47 @@
           </English>
         </LocaText>
         <LineID>21917</LineID>
+        <Localize>1</Localize>
       </Text>
-      <BuildingUpgrade />
-      <Buff />
-      <PopulationUpgrade />
+      <BuildingUpgrade>
+        <MaintenanceUpgrade />
+        <PublicServiceFullSatisfactionDistance />
+        <PublicServiceNoSatisfactionDistance />
+        <ResolverUnitCountUpgrade />
+        <ResolverUnitDecreaseUpgrade />
+        <ResolverUnitMovementSpeedUpgrade />
+        <WorkforceAmountUpgrade />
+        <ReplacingWorkforce>0</ReplacingWorkforce>
+      </BuildingUpgrade>
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
+      <PopulationUpgrade>
+        <ResidentsUpgrade />
+        <StressUpgrade />
+        <InputBenefitModifier />
+      </PopulationUpgrade>
       <ResidenceUpgrade>
         <WorkforceModifierInPercent>10</WorkforceModifierInPercent>
         <TaxModifierInPercent>10</TaxModifierInPercent>
+        <NeedProvideNeedUpgrade />
+        <GoodConsumptionUpgrade />
+        <ChangedSupplyValueUpgrade />
       </ResidenceUpgrade>
-      <IncidentInfectableUpgrade />
-      <CultureUpgrade />
+      <IncidentInfectableUpgrade>
+        <IncidentFireIncreaseUpgrade />
+        <IncidentIllnessIncreaseUpgrade />
+        <IncidentRiotIncreaseUpgrade />
+        <OverrideIncidentAttractiveness />
+        <IncidentExplosionIncreaseUpgrade />
+      </IncidentInfectableUpgrade>
+      <CultureUpgrade>
+        <ChangeModule>0</ChangeModule>
+        <ForcedFeedbackVariation>0</ForcedFeedbackVariation>
+        <AttractivenessUpgrade />
+        <AdditionalModuleSoundLoop>0</AdditionalModuleSoundLoop>
+      </CultureUpgrade>
     </Values>
   </Asset>
   <Asset>
@@ -1111,6 +1967,7 @@
         <Name>boreal forests</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/animals/icon_moose.png</IconFilename>
         <InfoDescription>15758</InfoDescription>
+        <Comments />
       </Standard>
       <ItemEffect>
         <EffectTargets>
@@ -1128,10 +1985,27 @@
           </English>
         </LocaText>
         <LineID>21918</LineID>
+        <Localize>1</Localize>
       </Text>
-      <BuildingUpgrade />
-      <Buff />
-      <PopulationUpgrade />
+      <BuildingUpgrade>
+        <MaintenanceUpgrade />
+        <PublicServiceFullSatisfactionDistance />
+        <PublicServiceNoSatisfactionDistance />
+        <ResolverUnitCountUpgrade />
+        <ResolverUnitDecreaseUpgrade />
+        <ResolverUnitMovementSpeedUpgrade />
+        <WorkforceAmountUpgrade />
+        <ReplacingWorkforce>0</ReplacingWorkforce>
+      </BuildingUpgrade>
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
+      <PopulationUpgrade>
+        <ResidentsUpgrade />
+        <StressUpgrade />
+        <InputBenefitModifier />
+      </PopulationUpgrade>
       <ResidenceUpgrade>
         <GoodConsumptionUpgrade>
           <Item>
@@ -1167,9 +2041,22 @@
             <AmountInPercent>-5</AmountInPercent>
           </Item>
         </GoodConsumptionUpgrade>
+        <NeedProvideNeedUpgrade />
+        <ChangedSupplyValueUpgrade />
       </ResidenceUpgrade>
-      <IncidentInfectableUpgrade />
-      <CultureUpgrade />
+      <IncidentInfectableUpgrade>
+        <IncidentFireIncreaseUpgrade />
+        <IncidentIllnessIncreaseUpgrade />
+        <IncidentRiotIncreaseUpgrade />
+        <OverrideIncidentAttractiveness />
+        <IncidentExplosionIncreaseUpgrade />
+      </IncidentInfectableUpgrade>
+      <CultureUpgrade>
+        <ChangeModule>0</ChangeModule>
+        <ForcedFeedbackVariation>0</ForcedFeedbackVariation>
+        <AttractivenessUpgrade />
+        <AdditionalModuleSoundLoop>0</AdditionalModuleSoundLoop>
+      </CultureUpgrade>
     </Values>
   </Asset>
   <Asset>
@@ -1180,6 +2067,7 @@
         <Name>extinct animals</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/animals/icon_okapi.png</IconFilename>
         <InfoDescription>15759</InfoDescription>
+        <Comments />
       </Standard>
       <ItemEffect>
         <EffectTargets>
@@ -1197,17 +2085,47 @@
           </English>
         </LocaText>
         <LineID>21919</LineID>
+        <Localize>1</Localize>
       </Text>
-      <BuildingUpgrade />
-      <Buff />
-      <PopulationUpgrade />
-      <ResidenceUpgrade />
-      <IncidentInfectableUpgrade />
+      <BuildingUpgrade>
+        <MaintenanceUpgrade />
+        <PublicServiceFullSatisfactionDistance />
+        <PublicServiceNoSatisfactionDistance />
+        <ResolverUnitCountUpgrade />
+        <ResolverUnitDecreaseUpgrade />
+        <ResolverUnitMovementSpeedUpgrade />
+        <WorkforceAmountUpgrade />
+        <ReplacingWorkforce>0</ReplacingWorkforce>
+      </BuildingUpgrade>
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
+      <PopulationUpgrade>
+        <ResidentsUpgrade />
+        <StressUpgrade />
+        <InputBenefitModifier />
+      </PopulationUpgrade>
+      <ResidenceUpgrade>
+        <NeedProvideNeedUpgrade />
+        <GoodConsumptionUpgrade />
+        <ChangedSupplyValueUpgrade />
+      </ResidenceUpgrade>
+      <IncidentInfectableUpgrade>
+        <IncidentFireIncreaseUpgrade />
+        <IncidentIllnessIncreaseUpgrade />
+        <IncidentRiotIncreaseUpgrade />
+        <OverrideIncidentAttractiveness />
+        <IncidentExplosionIncreaseUpgrade />
+      </IncidentInfectableUpgrade>
       <CultureUpgrade>
         <AttractivenessUpgrade>
           <Value>5</Value>
           <Percental>1</Percental>
         </AttractivenessUpgrade>
+        <ChangeModule>0</ChangeModule>
+        <ForcedFeedbackVariation>0</ForcedFeedbackVariation>
+        <AdditionalModuleSoundLoop>0</AdditionalModuleSoundLoop>
       </CultureUpgrade>
     </Values>
   </Asset>
@@ -1219,6 +2137,7 @@
         <Name>amazonia</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/animals/icon_parrot.png</IconFilename>
         <InfoDescription>15761</InfoDescription>
+        <Comments />
       </Standard>
       <ItemEffect>
         <EffectTargets>
@@ -1236,16 +2155,46 @@
           </English>
         </LocaText>
         <LineID>21921</LineID>
+        <Localize>1</Localize>
       </Text>
-      <BuildingUpgrade />
-      <Buff />
-      <PopulationUpgrade />
-      <ResidenceUpgrade />
-      <IncidentInfectableUpgrade />
+      <BuildingUpgrade>
+        <MaintenanceUpgrade />
+        <PublicServiceFullSatisfactionDistance />
+        <PublicServiceNoSatisfactionDistance />
+        <ResolverUnitCountUpgrade />
+        <ResolverUnitDecreaseUpgrade />
+        <ResolverUnitMovementSpeedUpgrade />
+        <WorkforceAmountUpgrade />
+        <ReplacingWorkforce>0</ReplacingWorkforce>
+      </BuildingUpgrade>
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
+      <PopulationUpgrade>
+        <ResidentsUpgrade />
+        <StressUpgrade />
+        <InputBenefitModifier />
+      </PopulationUpgrade>
+      <ResidenceUpgrade>
+        <NeedProvideNeedUpgrade />
+        <GoodConsumptionUpgrade />
+        <ChangedSupplyValueUpgrade />
+      </ResidenceUpgrade>
+      <IncidentInfectableUpgrade>
+        <IncidentFireIncreaseUpgrade />
+        <IncidentIllnessIncreaseUpgrade />
+        <IncidentRiotIncreaseUpgrade />
+        <OverrideIncidentAttractiveness />
+        <IncidentExplosionIncreaseUpgrade />
+      </IncidentInfectableUpgrade>
       <CultureUpgrade>
         <AttractivenessUpgrade>
           <Value>1</Value>
         </AttractivenessUpgrade>
+        <ChangeModule>0</ChangeModule>
+        <ForcedFeedbackVariation>0</ForcedFeedbackVariation>
+        <AdditionalModuleSoundLoop>0</AdditionalModuleSoundLoop>
       </CultureUpgrade>
     </Values>
   </Asset>
@@ -1257,6 +2206,7 @@
         <Name>ocean</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/animals/icon_lionfish.png</IconFilename>
         <InfoDescription>15765</InfoDescription>
+        <Comments />
       </Standard>
       <ItemEffect>
         <EffectTargets>
@@ -1280,15 +2230,46 @@
           </English>
         </LocaText>
         <LineID>21925</LineID>
+        <Localize>1</Localize>
       </Text>
-      <BuildingUpgrade />
-      <Buff />
-      <PopulationUpgrade />
+      <BuildingUpgrade>
+        <MaintenanceUpgrade />
+        <PublicServiceFullSatisfactionDistance />
+        <PublicServiceNoSatisfactionDistance />
+        <ResolverUnitCountUpgrade />
+        <ResolverUnitDecreaseUpgrade />
+        <ResolverUnitMovementSpeedUpgrade />
+        <WorkforceAmountUpgrade />
+        <ReplacingWorkforce>0</ReplacingWorkforce>
+      </BuildingUpgrade>
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
+      <PopulationUpgrade>
+        <ResidentsUpgrade />
+        <StressUpgrade />
+        <InputBenefitModifier />
+      </PopulationUpgrade>
       <ResidenceUpgrade>
         <AdditionalHappiness>2</AdditionalHappiness>
+        <NeedProvideNeedUpgrade />
+        <GoodConsumptionUpgrade />
+        <ChangedSupplyValueUpgrade />
       </ResidenceUpgrade>
-      <IncidentInfectableUpgrade />
-      <CultureUpgrade />
+      <IncidentInfectableUpgrade>
+        <IncidentFireIncreaseUpgrade />
+        <IncidentIllnessIncreaseUpgrade />
+        <IncidentRiotIncreaseUpgrade />
+        <OverrideIncidentAttractiveness />
+        <IncidentExplosionIncreaseUpgrade />
+      </IncidentInfectableUpgrade>
+      <CultureUpgrade>
+        <ChangeModule>0</ChangeModule>
+        <ForcedFeedbackVariation>0</ForcedFeedbackVariation>
+        <AttractivenessUpgrade />
+        <AdditionalModuleSoundLoop>0</AdditionalModuleSoundLoop>
+      </CultureUpgrade>
     </Values>
   </Asset>
   <Asset>
@@ -1299,6 +2280,7 @@
         <Name>white animals</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/animals/icon_albinos_fennec.png</IconFilename>
         <InfoDescription>22052</InfoDescription>
+        <Comments />
       </Standard>
       <ItemEffect>
         <EffectTargets>
@@ -1316,22 +2298,50 @@
           </English>
         </LocaText>
         <LineID>30260</LineID>
+        <Localize>1</Localize>
       </Text>
       <BuildingUpgrade>
         <MaintenanceUpgrade>
           <Value>-50</Value>
           <Percental>1</Percental>
         </MaintenanceUpgrade>
+        <PublicServiceFullSatisfactionDistance />
+        <PublicServiceNoSatisfactionDistance />
+        <ResolverUnitCountUpgrade />
+        <ResolverUnitDecreaseUpgrade />
+        <ResolverUnitMovementSpeedUpgrade />
+        <WorkforceAmountUpgrade />
+        <ReplacingWorkforce>0</ReplacingWorkforce>
       </BuildingUpgrade>
-      <Buff />
-      <PopulationUpgrade />
-      <ResidenceUpgrade />
-      <IncidentInfectableUpgrade />
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
+      <PopulationUpgrade>
+        <ResidentsUpgrade />
+        <StressUpgrade />
+        <InputBenefitModifier />
+      </PopulationUpgrade>
+      <ResidenceUpgrade>
+        <NeedProvideNeedUpgrade />
+        <GoodConsumptionUpgrade />
+        <ChangedSupplyValueUpgrade />
+      </ResidenceUpgrade>
+      <IncidentInfectableUpgrade>
+        <IncidentFireIncreaseUpgrade />
+        <IncidentIllnessIncreaseUpgrade />
+        <IncidentRiotIncreaseUpgrade />
+        <OverrideIncidentAttractiveness />
+        <IncidentExplosionIncreaseUpgrade />
+      </IncidentInfectableUpgrade>
       <CultureUpgrade>
         <AttractivenessUpgrade>
           <Value>10</Value>
           <Percental>1</Percental>
         </AttractivenessUpgrade>
+        <ChangeModule>0</ChangeModule>
+        <ForcedFeedbackVariation>0</ForcedFeedbackVariation>
+        <AdditionalModuleSoundLoop>0</AdditionalModuleSoundLoop>
       </CultureUpgrade>
     </Values>
   </Asset>
@@ -1343,6 +2353,7 @@
         <Name>roman</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/museum/icon_coin_common.png</IconFilename>
         <InfoDescription>15766</InfoDescription>
+        <Comments />
       </Standard>
       <ItemEffect>
         <EffectTargets>
@@ -1360,12 +2371,32 @@
           </English>
         </LocaText>
         <LineID>21926</LineID>
+        <Localize>1</Localize>
       </Text>
-      <BuildingUpgrade />
-      <Buff />
-      <PopulationUpgrade />
+      <BuildingUpgrade>
+        <MaintenanceUpgrade />
+        <PublicServiceFullSatisfactionDistance />
+        <PublicServiceNoSatisfactionDistance />
+        <ResolverUnitCountUpgrade />
+        <ResolverUnitDecreaseUpgrade />
+        <ResolverUnitMovementSpeedUpgrade />
+        <WorkforceAmountUpgrade />
+        <ReplacingWorkforce>0</ReplacingWorkforce>
+      </BuildingUpgrade>
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
+      <PopulationUpgrade>
+        <ResidentsUpgrade />
+        <StressUpgrade />
+        <InputBenefitModifier />
+      </PopulationUpgrade>
       <ResidenceUpgrade>
         <TaxModifierInPercent>1</TaxModifierInPercent>
+        <NeedProvideNeedUpgrade />
+        <GoodConsumptionUpgrade />
+        <ChangedSupplyValueUpgrade />
       </ResidenceUpgrade>
       <IncidentInfectableUpgrade>
         <IncidentFireIncreaseUpgrade>
@@ -1380,8 +2411,14 @@
         <IncidentExplosionIncreaseUpgrade>
           <Value>-1</Value>
         </IncidentExplosionIncreaseUpgrade>
+        <OverrideIncidentAttractiveness />
       </IncidentInfectableUpgrade>
-      <CultureUpgrade />
+      <CultureUpgrade>
+        <ChangeModule>0</ChangeModule>
+        <ForcedFeedbackVariation>0</ForcedFeedbackVariation>
+        <AttractivenessUpgrade />
+        <AdditionalModuleSoundLoop>0</AdditionalModuleSoundLoop>
+      </CultureUpgrade>
     </Values>
   </Asset>
   <Asset>
@@ -1392,6 +2429,7 @@
         <Name>greek</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/museum/icon_scroll_anthology_myths.png</IconFilename>
         <InfoDescription>15770</InfoDescription>
+        <Comments />
       </Standard>
       <ItemEffect>
         <EffectTargets>
@@ -1412,12 +2450,20 @@
           </English>
         </LocaText>
         <LineID>21930</LineID>
+        <Localize>1</Localize>
       </Text>
       <BuildingUpgrade>
         <MaintenanceUpgrade>
           <Value>-20</Value>
           <Percental>1</Percental>
         </MaintenanceUpgrade>
+        <PublicServiceFullSatisfactionDistance />
+        <PublicServiceNoSatisfactionDistance />
+        <ResolverUnitCountUpgrade />
+        <ResolverUnitDecreaseUpgrade />
+        <ResolverUnitMovementSpeedUpgrade />
+        <WorkforceAmountUpgrade />
+        <ReplacingWorkforce>0</ReplacingWorkforce>
       </BuildingUpgrade>
       <Buff>
         <PossibleFluffTexts>
@@ -1527,14 +2573,32 @@
             <FluffText>15747</FluffText>
           </Item>
         </PossibleFluffTexts>
+        <AddedInfolayer>0</AddedInfolayer>
       </Buff>
-      <PopulationUpgrade />
-      <ResidenceUpgrade />
-      <IncidentInfectableUpgrade />
+      <PopulationUpgrade>
+        <ResidentsUpgrade />
+        <StressUpgrade />
+        <InputBenefitModifier />
+      </PopulationUpgrade>
+      <ResidenceUpgrade>
+        <NeedProvideNeedUpgrade />
+        <GoodConsumptionUpgrade />
+        <ChangedSupplyValueUpgrade />
+      </ResidenceUpgrade>
+      <IncidentInfectableUpgrade>
+        <IncidentFireIncreaseUpgrade />
+        <IncidentIllnessIncreaseUpgrade />
+        <IncidentRiotIncreaseUpgrade />
+        <OverrideIncidentAttractiveness />
+        <IncidentExplosionIncreaseUpgrade />
+      </IncidentInfectableUpgrade>
       <CultureUpgrade>
         <AttractivenessUpgrade>
           <Value>5</Value>
         </AttractivenessUpgrade>
+        <ChangeModule>0</ChangeModule>
+        <ForcedFeedbackVariation>0</ForcedFeedbackVariation>
+        <AdditionalModuleSoundLoop>0</AdditionalModuleSoundLoop>
       </CultureUpgrade>
     </Values>
   </Asset>
@@ -1546,6 +2610,7 @@
         <Name>jurassic</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/museum/icon_museum_t_rex.png</IconFilename>
         <InfoDescription>15773</InfoDescription>
+        <Comments />
       </Standard>
       <ItemEffect>
         <EffectTargets>
@@ -1563,16 +2628,47 @@
           </English>
         </LocaText>
         <LineID>21933</LineID>
+        <Localize>1</Localize>
       </Text>
-      <BuildingUpgrade />
-      <Buff />
-      <PopulationUpgrade />
+      <BuildingUpgrade>
+        <MaintenanceUpgrade />
+        <PublicServiceFullSatisfactionDistance />
+        <PublicServiceNoSatisfactionDistance />
+        <ResolverUnitCountUpgrade />
+        <ResolverUnitDecreaseUpgrade />
+        <ResolverUnitMovementSpeedUpgrade />
+        <WorkforceAmountUpgrade />
+        <ReplacingWorkforce>0</ReplacingWorkforce>
+      </BuildingUpgrade>
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
+      <PopulationUpgrade>
+        <ResidentsUpgrade />
+        <StressUpgrade />
+        <InputBenefitModifier />
+      </PopulationUpgrade>
       <ResidenceUpgrade>
         <AdditionalHappiness>2</AdditionalHappiness>
         <TaxModifierInPercent>2</TaxModifierInPercent>
+        <NeedProvideNeedUpgrade />
+        <GoodConsumptionUpgrade />
+        <ChangedSupplyValueUpgrade />
       </ResidenceUpgrade>
-      <IncidentInfectableUpgrade />
-      <CultureUpgrade />
+      <IncidentInfectableUpgrade>
+        <IncidentFireIncreaseUpgrade />
+        <IncidentIllnessIncreaseUpgrade />
+        <IncidentRiotIncreaseUpgrade />
+        <OverrideIncidentAttractiveness />
+        <IncidentExplosionIncreaseUpgrade />
+      </IncidentInfectableUpgrade>
+      <CultureUpgrade>
+        <ChangeModule>0</ChangeModule>
+        <ForcedFeedbackVariation>0</ForcedFeedbackVariation>
+        <AttractivenessUpgrade />
+        <AdditionalModuleSoundLoop>0</AdditionalModuleSoundLoop>
+      </CultureUpgrade>
     </Values>
   </Asset>
   <Asset>
@@ -1582,6 +2678,8 @@
         <GUID>190110</GUID>
         <Name>RealExistingSocialism</Name>
         <IconFilename>data/ui/2kimages/main/icons/icon_attractiveness_house_big.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <ItemEffect>
         <EffectTargets>
@@ -1596,17 +2694,47 @@
             <Text>Real Existing Socialism</Text>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
-      <BuildingUpgrade />
-      <Buff />
+      <BuildingUpgrade>
+        <MaintenanceUpgrade />
+        <PublicServiceFullSatisfactionDistance />
+        <PublicServiceNoSatisfactionDistance />
+        <ResolverUnitCountUpgrade />
+        <ResolverUnitDecreaseUpgrade />
+        <ResolverUnitMovementSpeedUpgrade />
+        <WorkforceAmountUpgrade />
+        <ReplacingWorkforce>0</ReplacingWorkforce>
+      </BuildingUpgrade>
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
       <PopulationUpgrade>
         <ResidentsUpgrade>
           <Value>10</Value>
         </ResidentsUpgrade>
+        <StressUpgrade />
+        <InputBenefitModifier />
       </PopulationUpgrade>
-      <ResidenceUpgrade />
-      <IncidentInfectableUpgrade />
-      <CultureUpgrade />
+      <ResidenceUpgrade>
+        <NeedProvideNeedUpgrade />
+        <GoodConsumptionUpgrade />
+        <ChangedSupplyValueUpgrade />
+      </ResidenceUpgrade>
+      <IncidentInfectableUpgrade>
+        <IncidentFireIncreaseUpgrade />
+        <IncidentIllnessIncreaseUpgrade />
+        <IncidentRiotIncreaseUpgrade />
+        <OverrideIncidentAttractiveness />
+        <IncidentExplosionIncreaseUpgrade />
+      </IncidentInfectableUpgrade>
+      <CultureUpgrade>
+        <ChangeModule>0</ChangeModule>
+        <ForcedFeedbackVariation>0</ForcedFeedbackVariation>
+        <AttractivenessUpgrade />
+        <AdditionalModuleSoundLoop>0</AdditionalModuleSoundLoop>
+      </CultureUpgrade>
     </Values>
   </Asset>
 </Assets>

@@ -8,29 +8,91 @@
         <Name>harbor_07 (Repair Crane)</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_repair_crane.png</IconFilename>
         <InfoDescription>3065</InfoDescription>
+        <Comments />
       </Standard>
       <Building>
         <BuildingCategoryName>11150</BuildingCategoryName>
         <AssociatedRegions>Moderate</AssociatedRegions>
         <TerrainType>Water</TerrainType>
+        <BuildingType>Other</BuildingType>
+        <Destructable>1</Destructable>
+        <Movable>1</Movable>
+        <PickingAsset>0</PickingAsset>
+        <ConstructionMenuText>0</ConstructionMenuText>
+        <HasBorderRectOutline>1</HasBorderRectOutline>
+        <SnapRadius>2</SnapRadius>
+        <InfluencedByNeighbors />
+        <InfluencedVariationDirection />
+        <BuildingBlockPool />
+        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
       <Blocking>
         <GroundDecalAsset>100446</GroundDecalAsset>
         <GroundDecalInvisible>101008</GroundDecalInvisible>
         <HasBuildingBaseTiles>1</HasBuildingBaseTiles>
+        <HidePropsRadius>1</HidePropsRadius>
+        <DeletePropsRadius>1</DeletePropsRadius>
+        <StreetOutside>0</StreetOutside>
+        <RemoveGrass>1</RemoveGrass>
+        <BlocksBuilding>1</BlocksBuilding>
       </Blocking>
-      <Mesh />
+      <Mesh>
+        <ObjectPosition>Static</ObjectPosition>
+        <MeshPlacement>Default</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
+      </Mesh>
       <Object>
         <Variations>
           <Item>
             <Filename>data/graphics/buildings/special/harbor_07/harbor_07.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <AmbientMoodProvider />
-      <Constructable />
+      <AmbientMoodProvider>
+        <AmbientMood>None</AmbientMood>
+        <Murmur>None</Murmur>
+        <AttractivityDependentMurmur />
+        <ProductivityDependentMurmur />
+        <SatisfactionDependentMurmur />
+        <DynamicEnvironmentType>None</DynamicEnvironmentType>
+        <HappinessDependentMurmur />
+        <IslandAttractivityDependentMurmur />
+      </AmbientMoodProvider>
+      <Constructable>
+        <ConstructionMode>Default</ConstructionMode>
+        <DestructionCategory>Other</DestructionCategory>
+        <DestructionType>0</DestructionType>
+      </Constructable>
       <Selection>
         <GUIType>Military</GUIType>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <InteractionDistance>15</InteractionDistance>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <AllowedDragType />
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
       </Selection>
       <Text>
         <LocaText>
@@ -41,6 +103,7 @@
           </English>
         </LocaText>
         <LineID>7021</LineID>
+        <Localize>1</Localize>
       </Text>
       <Cost>
         <Costs>
@@ -68,6 +131,8 @@
           </Item>
         </Costs>
         <InfluenceCostType>DefenseBuilding</InfluenceCostType>
+        <ItemsPerCost>1</ItemsPerCost>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
       </Cost>
       <Attackable>
         <MaximumHitPoints>4000</MaximumHitPoints>
@@ -94,8 +159,12 @@
         <RuinSmokeParticlesMin>1</RuinSmokeParticlesMin>
         <RuinSmokeParticlesMax>1</RuinSmokeParticlesMax>
         <RuinSmokeParticleRectBorderPercent>0.2</RuinSmokeParticleRectBorderPercent>
+        <SelfHealPausedTimeIfAttacked>15000</SelfHealPausedTimeIfAttacked>
+        <ArmorType>Default</ArmorType>
       </Attackable>
-      <Infolayer />
+      <Infolayer>
+        <DefaultInfoLayer>0</DefaultInfoLayer>
+      </Infolayer>
       <Maintenance>
         <Maintenances>
           <Item>
@@ -104,15 +173,26 @@
             <InactiveAmount>25</InactiveAmount>
           </Item>
         </Maintenances>
+        <MaintenanceAmountFactor>1</MaintenanceAmountFactor>
+        <WorkforceAmountFactor>1</WorkforceAmountFactor>
       </Maintenance>
-      <Locked />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
       <RepairCrane>
         <HealRadius>20</HealRadius>
         <HealPerMinute>600</HealPerMinute>
         <HealBuildingsPerMinute>600</HealBuildingsPerMinute>
+        <HealInfolayer>25000199</HealInfolayer>
+        <RepairDelay>5000</RepairDelay>
+        <RepairEffect>data/graphics/effects/feedback/repair_crane_feedback01.cfg</RepairEffect>
       </RepairCrane>
       <Pausable />
-      <DelayedConstruction />
+      <DelayedConstruction>
+        <ConstructionDelay>60000</ConstructionDelay>
+      </DelayedConstruction>
       <SoundEmitter>
         <ActiveSounds>
           <Item>
@@ -161,10 +241,26 @@
             <Sound>9818756</Sound>
           </Item>
         </DestroySounds>
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <UpgradeList />
       <FeedbackController>
         <UpdateMeshSequence>0</UpdateMeshSequence>
+        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
       </FeedbackController>
     </Values>
   </Asset>
@@ -176,29 +272,91 @@
         <Name>harbor_colony01_07 (Repair Crane)</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_repair_crane.png</IconFilename>
         <InfoDescription>3065</InfoDescription>
+        <Comments />
       </Standard>
       <Building>
         <AssociatedRegions>Colony01</AssociatedRegions>
         <BuildingCategoryName>11150</BuildingCategoryName>
         <TerrainType>Water</TerrainType>
+        <BuildingType>Other</BuildingType>
+        <Destructable>1</Destructable>
+        <Movable>1</Movable>
+        <PickingAsset>0</PickingAsset>
+        <ConstructionMenuText>0</ConstructionMenuText>
+        <HasBorderRectOutline>1</HasBorderRectOutline>
+        <SnapRadius>2</SnapRadius>
+        <InfluencedByNeighbors />
+        <InfluencedVariationDirection />
+        <BuildingBlockPool />
+        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
       <Blocking>
         <GroundDecalAsset>102460</GroundDecalAsset>
         <GroundDecalInvisible>102459</GroundDecalInvisible>
         <HasBuildingBaseTiles>1</HasBuildingBaseTiles>
+        <HidePropsRadius>1</HidePropsRadius>
+        <DeletePropsRadius>1</DeletePropsRadius>
+        <StreetOutside>0</StreetOutside>
+        <RemoveGrass>1</RemoveGrass>
+        <BlocksBuilding>1</BlocksBuilding>
       </Blocking>
-      <Mesh />
+      <Mesh>
+        <ObjectPosition>Static</ObjectPosition>
+        <MeshPlacement>Default</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
+      </Mesh>
       <Object>
         <Variations>
           <Item>
             <Filename>data/graphics/buildings/special/harbor_07_colony_01/harbor_07_colony_01.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <AmbientMoodProvider />
-      <Constructable />
+      <AmbientMoodProvider>
+        <AmbientMood>None</AmbientMood>
+        <Murmur>None</Murmur>
+        <AttractivityDependentMurmur />
+        <ProductivityDependentMurmur />
+        <SatisfactionDependentMurmur />
+        <DynamicEnvironmentType>None</DynamicEnvironmentType>
+        <HappinessDependentMurmur />
+        <IslandAttractivityDependentMurmur />
+      </AmbientMoodProvider>
+      <Constructable>
+        <ConstructionMode>Default</ConstructionMode>
+        <DestructionCategory>Other</DestructionCategory>
+        <DestructionType>0</DestructionType>
+      </Constructable>
       <Selection>
         <GUIType>Military</GUIType>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <InteractionDistance>15</InteractionDistance>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <AllowedDragType />
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
       </Selection>
       <Text>
         <LineID>14138</LineID>
@@ -209,6 +367,7 @@
             <ExportCount>1</ExportCount>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
       <Cost>
         <Costs>
@@ -236,6 +395,8 @@
           </Item>
         </Costs>
         <InfluenceCostType>DefenseBuilding</InfluenceCostType>
+        <ItemsPerCost>1</ItemsPerCost>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
       </Cost>
       <Attackable>
         <MaximumHitPoints>4000</MaximumHitPoints>
@@ -262,8 +423,12 @@
         <RuinSmokeParticlesMin>1</RuinSmokeParticlesMin>
         <RuinSmokeParticlesMax>1</RuinSmokeParticlesMax>
         <RuinSmokeParticleRectBorderPercent>0.2</RuinSmokeParticleRectBorderPercent>
+        <SelfHealPausedTimeIfAttacked>15000</SelfHealPausedTimeIfAttacked>
+        <ArmorType>Default</ArmorType>
       </Attackable>
-      <Infolayer />
+      <Infolayer>
+        <DefaultInfoLayer>0</DefaultInfoLayer>
+      </Infolayer>
       <Maintenance>
         <Maintenances>
           <Item>
@@ -272,15 +437,26 @@
             <InactiveAmount>25</InactiveAmount>
           </Item>
         </Maintenances>
+        <MaintenanceAmountFactor>1</MaintenanceAmountFactor>
+        <WorkforceAmountFactor>1</WorkforceAmountFactor>
       </Maintenance>
-      <Locked />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
       <RepairCrane>
         <HealRadius>20</HealRadius>
         <HealPerMinute>600</HealPerMinute>
         <HealBuildingsPerMinute>600</HealBuildingsPerMinute>
+        <HealInfolayer>25000199</HealInfolayer>
+        <RepairDelay>5000</RepairDelay>
+        <RepairEffect>data/graphics/effects/feedback/repair_crane_feedback01.cfg</RepairEffect>
       </RepairCrane>
       <Pausable />
-      <DelayedConstruction />
+      <DelayedConstruction>
+        <ConstructionDelay>60000</ConstructionDelay>
+      </DelayedConstruction>
       <SoundEmitter>
         <ActiveSounds>
           <Item>
@@ -329,10 +505,26 @@
             <Sound>9818756</Sound>
           </Item>
         </DestroySounds>
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <UpgradeList />
       <FeedbackController>
         <UpdateMeshSequence>0</UpdateMeshSequence>
+        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
       </FeedbackController>
     </Values>
   </Asset>

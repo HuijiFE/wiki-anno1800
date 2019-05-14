@@ -7,7 +7,7 @@
     "icon": "data/ui/2kimages/main/3dicons/machine_items/icon_generator_3.png",
     "description": 19692,
     "item": {
-      "flotsam": 0,
+      "flotsam": 1000212,
       "allocation": "SteamShip",
       "maxStackSize": 1,
       "rarity": "Uncommon",
@@ -16,7 +16,7 @@
       "transferBlocked": false,
       "itemType": false,
       "itemSet": 0,
-      "exclusiveGroup": "",
+      "exclusiveGroup": "None",
       "isDestroyedOnUnequip": false
     },
     "itemEffect": null,
@@ -28,9 +28,7 @@
         }
       ],
       "baseMorale": 0.0,
-      "fluff": [
-        "19692"
-      ],
+      "fluff": 19692,
       "itemDifficulties": [
         "Easy",
         "Average"
@@ -43,7 +41,7 @@
       "cooldown": 45000,
       "description": 20071,
       "stopMovementOnInteraction": false,
-      "scope": "",
+      "scope": "Self",
       "repairSpeed": 0,
       "duration": 30000,
       "buff": 191835,
@@ -52,7 +50,13 @@
       "isDestroyedAfterCooldown": false,
       "radiusBuffTargets": []
     },
-    "specialAction": null,
+    "specialAction": {
+      "projectile": 0,
+      "barrageCount": 0,
+      "barrageDuration": 0,
+      "actionRadius": 0,
+      "delay": 0
+    },
     "upgrade": {
       "changeModule": 0,
       "forcedFeedbackVariation": 0,
@@ -105,7 +109,7 @@
     "icon": "data/ui/2kimages/main/3dicons/machine_items/icon_generator_1.png",
     "description": 19694,
     "item": {
-      "flotsam": 0,
+      "flotsam": 1000212,
       "allocation": "SteamShip",
       "maxStackSize": 1,
       "rarity": "Epic",
@@ -114,7 +118,7 @@
       "transferBlocked": false,
       "itemType": false,
       "itemSet": 0,
-      "exclusiveGroup": "",
+      "exclusiveGroup": "None",
       "isDestroyedOnUnequip": false
     },
     "itemEffect": null,
@@ -126,9 +130,7 @@
         }
       ],
       "baseMorale": 0.0,
-      "fluff": [
-        "19694"
-      ],
+      "fluff": 19694,
       "itemDifficulties": [
         "Average",
         "Hard"
@@ -141,7 +143,7 @@
       "cooldown": 45000,
       "description": 20071,
       "stopMovementOnInteraction": false,
-      "scope": "",
+      "scope": "Self",
       "repairSpeed": 0,
       "duration": 30000,
       "buff": 191837,
@@ -150,7 +152,13 @@
       "isDestroyedAfterCooldown": false,
       "radiusBuffTargets": []
     },
-    "specialAction": null,
+    "specialAction": {
+      "projectile": 0,
+      "barrageCount": 0,
+      "barrageDuration": 0,
+      "actionRadius": 0,
+      "delay": 0
+    },
     "upgrade": {
       "changeModule": 0,
       "forcedFeedbackVariation": 0,
@@ -203,7 +211,7 @@
     "icon": "data/ui/2kimages/main/3dicons/machine_items/icon_generator_2.png",
     "description": 19693,
     "item": {
-      "flotsam": 0,
+      "flotsam": 1000212,
       "allocation": "SteamShip",
       "maxStackSize": 1,
       "rarity": "Rare",
@@ -212,7 +220,7 @@
       "transferBlocked": false,
       "itemType": false,
       "itemSet": 0,
-      "exclusiveGroup": "",
+      "exclusiveGroup": "None",
       "isDestroyedOnUnequip": false
     },
     "itemEffect": null,
@@ -224,9 +232,7 @@
         }
       ],
       "baseMorale": 0.0,
-      "fluff": [
-        "19693"
-      ],
+      "fluff": 19693,
       "itemDifficulties": [
         "Easy",
         "Average",
@@ -240,7 +246,7 @@
       "cooldown": 45000,
       "description": 20071,
       "stopMovementOnInteraction": false,
-      "scope": "",
+      "scope": "Self",
       "repairSpeed": 0,
       "duration": 30000,
       "buff": 191836,
@@ -249,7 +255,13 @@
       "isDestroyedAfterCooldown": false,
       "radiusBuffTargets": []
     },
-    "specialAction": null,
+    "specialAction": {
+      "projectile": 0,
+      "barrageCount": 0,
+      "barrageDuration": 0,
+      "actionRadius": 0,
+      "delay": 0
+    },
     "upgrade": {
       "changeModule": 0,
       "forcedFeedbackVariation": 0,
@@ -302,7 +314,7 @@
     "icon": "data/ui/2kimages/main/3dicons/consumables/icon_ship_repair_1.png",
     "description": 19795,
     "item": {
-      "flotsam": 0,
+      "flotsam": 1000212,
       "allocation": "Ship",
       "maxStackSize": 0,
       "rarity": "Uncommon",
@@ -311,7 +323,7 @@
       "transferBlocked": false,
       "itemType": false,
       "itemSet": 0,
-      "exclusiveGroup": "",
+      "exclusiveGroup": "None",
       "isDestroyedOnUnequip": false
     },
     "itemEffect": null,
@@ -323,9 +335,7 @@
         }
       ],
       "baseMorale": 0.0,
-      "fluff": [
-        "19795"
-      ],
+      "fluff": 19795,
       "itemDifficulties": [
         "Easy",
         "Average"
@@ -337,17 +347,23 @@
       "distance": 15,
       "cooldown": 300000,
       "description": 20071,
-      "stopMovementOnInteraction": false,
-      "scope": "",
+      "stopMovementOnInteraction": true,
+      "scope": "Self",
       "repairSpeed": 10,
       "duration": 30000,
       "buff": 191981,
-      "canEnd": false,
+      "canEnd": true,
       "incidentTypes": [],
       "isDestroyedAfterCooldown": false,
       "radiusBuffTargets": []
     },
-    "specialAction": null,
+    "specialAction": {
+      "projectile": 0,
+      "barrageCount": 0,
+      "barrageDuration": 0,
+      "actionRadius": 0,
+      "delay": 0
+    },
     "upgrade": {
       "changeModule": 0,
       "forcedFeedbackVariation": 0,
@@ -400,7 +416,7 @@
     "icon": "data/ui/2kimages/main/3dicons/consumables/icon_ship_repair_1.png",
     "description": 19796,
     "item": {
-      "flotsam": 0,
+      "flotsam": 1000212,
       "allocation": "Ship",
       "maxStackSize": 0,
       "rarity": "Rare",
@@ -409,7 +425,7 @@
       "transferBlocked": false,
       "itemType": false,
       "itemSet": 0,
-      "exclusiveGroup": "",
+      "exclusiveGroup": "None",
       "isDestroyedOnUnequip": false
     },
     "itemEffect": null,
@@ -421,9 +437,7 @@
         }
       ],
       "baseMorale": 0.0,
-      "fluff": [
-        "19796"
-      ],
+      "fluff": 19796,
       "itemDifficulties": [
         "Easy",
         "Average",
@@ -436,17 +450,23 @@
       "distance": 15,
       "cooldown": 300000,
       "description": 20071,
-      "stopMovementOnInteraction": false,
-      "scope": "",
+      "stopMovementOnInteraction": true,
+      "scope": "Self",
       "repairSpeed": 10,
       "duration": 30000,
       "buff": 192156,
-      "canEnd": false,
+      "canEnd": true,
       "incidentTypes": [],
       "isDestroyedAfterCooldown": false,
       "radiusBuffTargets": []
     },
-    "specialAction": null,
+    "specialAction": {
+      "projectile": 0,
+      "barrageCount": 0,
+      "barrageDuration": 0,
+      "actionRadius": 0,
+      "delay": 0
+    },
     "upgrade": {
       "changeModule": 0,
       "forcedFeedbackVariation": 0,
@@ -499,7 +519,7 @@
     "icon": "data/ui/2kimages/main/3dicons/consumables/icon_ship_repair_2.png",
     "description": 19797,
     "item": {
-      "flotsam": 0,
+      "flotsam": 1000212,
       "allocation": "Ship",
       "maxStackSize": 0,
       "rarity": "Epic",
@@ -508,7 +528,7 @@
       "transferBlocked": false,
       "itemType": false,
       "itemSet": 0,
-      "exclusiveGroup": "",
+      "exclusiveGroup": "None",
       "isDestroyedOnUnequip": false
     },
     "itemEffect": null,
@@ -520,9 +540,7 @@
         }
       ],
       "baseMorale": 0.0,
-      "fluff": [
-        "19797"
-      ],
+      "fluff": 19797,
       "itemDifficulties": [
         "Average",
         "Hard"
@@ -534,17 +552,23 @@
       "distance": 15,
       "cooldown": 300000,
       "description": 20071,
-      "stopMovementOnInteraction": false,
-      "scope": "",
+      "stopMovementOnInteraction": true,
+      "scope": "Self",
       "repairSpeed": 10,
       "duration": 30000,
       "buff": 191983,
-      "canEnd": false,
+      "canEnd": true,
       "incidentTypes": [],
       "isDestroyedAfterCooldown": false,
       "radiusBuffTargets": []
     },
-    "specialAction": null,
+    "specialAction": {
+      "projectile": 0,
+      "barrageCount": 0,
+      "barrageDuration": 0,
+      "actionRadius": 0,
+      "delay": 0
+    },
     "upgrade": {
       "changeModule": 0,
       "forcedFeedbackVariation": 0,
@@ -597,7 +621,7 @@
     "icon": "data/ui/2kimages/main/3dicons/consumables/icon_ship_repair_2.png",
     "description": 19798,
     "item": {
-      "flotsam": 0,
+      "flotsam": 1000212,
       "allocation": "Ship",
       "maxStackSize": 0,
       "rarity": "Legendary",
@@ -606,7 +630,7 @@
       "transferBlocked": false,
       "itemType": false,
       "itemSet": 0,
-      "exclusiveGroup": "",
+      "exclusiveGroup": "None",
       "isDestroyedOnUnequip": false
     },
     "itemEffect": null,
@@ -618,9 +642,7 @@
         }
       ],
       "baseMorale": 0.0,
-      "fluff": [
-        "19798"
-      ],
+      "fluff": 19798,
       "itemDifficulties": [
         "Hard"
       ],
@@ -631,17 +653,23 @@
       "distance": 15,
       "cooldown": 300000,
       "description": 20071,
-      "stopMovementOnInteraction": false,
-      "scope": "",
+      "stopMovementOnInteraction": true,
+      "scope": "Self",
       "repairSpeed": 10,
       "duration": 30000,
       "buff": 192157,
-      "canEnd": false,
+      "canEnd": true,
       "incidentTypes": [],
       "isDestroyedAfterCooldown": false,
       "radiusBuffTargets": []
     },
-    "specialAction": null,
+    "specialAction": {
+      "projectile": 0,
+      "barrageCount": 0,
+      "barrageDuration": 0,
+      "actionRadius": 0,
+      "delay": 0
+    },
     "upgrade": {
       "changeModule": 0,
       "forcedFeedbackVariation": 0,
@@ -694,7 +722,7 @@
     "icon": "data/ui/2kimages/main/3dicons/icon_pirate_flag.png",
     "description": 19793,
     "item": {
-      "flotsam": 0,
+      "flotsam": 1000212,
       "allocation": "Warship",
       "maxStackSize": 0,
       "rarity": "Epic",
@@ -715,9 +743,7 @@
         }
       ],
       "baseMorale": 0.0,
-      "fluff": [
-        "19793"
-      ],
+      "fluff": 19793,
       "itemDifficulties": [
         "Average",
         "Hard"
@@ -729,8 +755,8 @@
       "distance": 15,
       "cooldown": 1200000,
       "description": 20071,
-      "stopMovementOnInteraction": false,
-      "scope": "",
+      "stopMovementOnInteraction": true,
+      "scope": "Self",
       "repairSpeed": 10,
       "duration": 300000,
       "buff": 192174,
@@ -739,7 +765,13 @@
       "isDestroyedAfterCooldown": false,
       "radiusBuffTargets": []
     },
-    "specialAction": null,
+    "specialAction": {
+      "projectile": 0,
+      "barrageCount": 0,
+      "barrageDuration": 0,
+      "actionRadius": 0,
+      "delay": 0
+    },
     "upgrade": {
       "changeModule": 0,
       "forcedFeedbackVariation": 0,
@@ -792,7 +824,7 @@
     "icon": "data/ui/2kimages/main/3dicons/consumables/icon_pirate_flag_2.png",
     "description": 19794,
     "item": {
-      "flotsam": 0,
+      "flotsam": 1000212,
       "allocation": "Warship",
       "maxStackSize": 0,
       "rarity": "Legendary",
@@ -817,9 +849,7 @@
         }
       ],
       "baseMorale": 0.0,
-      "fluff": [
-        "19794"
-      ],
+      "fluff": 19794,
       "itemDifficulties": [
         "Hard"
       ],
@@ -830,8 +860,8 @@
       "distance": 15,
       "cooldown": 1200000,
       "description": 20071,
-      "stopMovementOnInteraction": false,
-      "scope": "",
+      "stopMovementOnInteraction": true,
+      "scope": "Self",
       "repairSpeed": 10,
       "duration": 300000,
       "buff": 192175,
@@ -840,7 +870,13 @@
       "isDestroyedAfterCooldown": false,
       "radiusBuffTargets": []
     },
-    "specialAction": null,
+    "specialAction": {
+      "projectile": 0,
+      "barrageCount": 0,
+      "barrageDuration": 0,
+      "actionRadius": 0,
+      "delay": 0
+    },
     "upgrade": {
       "changeModule": 0,
       "forcedFeedbackVariation": 0,
@@ -893,16 +929,16 @@
     "icon": "data/ui/2kimages/main/3dicons/consumables/icon_ship_repair_1.png",
     "description": 19569,
     "item": {
-      "flotsam": 0,
+      "flotsam": 1000212,
       "allocation": "Ship",
       "maxStackSize": 5,
-      "rarity": "",
+      "rarity": "Common",
       "hasAction": true,
       "tradePrice": false,
       "transferBlocked": false,
       "itemType": false,
       "itemSet": 0,
-      "exclusiveGroup": "",
+      "exclusiveGroup": "None",
       "isDestroyedOnUnequip": false
     },
     "itemEffect": null,
@@ -914,9 +950,7 @@
         }
       ],
       "baseMorale": 0.0,
-      "fluff": [
-        "19569"
-      ],
+      "fluff": 19569,
       "itemDifficulties": [
         "Easy"
       ],
@@ -928,7 +962,7 @@
       "cooldown": 0,
       "description": 0,
       "stopMovementOnInteraction": false,
-      "scope": "",
+      "scope": "Self",
       "repairSpeed": 0,
       "duration": 210000,
       "buff": 192156,
@@ -937,7 +971,13 @@
       "isDestroyedAfterCooldown": true,
       "radiusBuffTargets": []
     },
-    "specialAction": null,
+    "specialAction": {
+      "projectile": 0,
+      "barrageCount": 0,
+      "barrageDuration": 0,
+      "actionRadius": 0,
+      "delay": 0
+    },
     "upgrade": {
       "changeModule": 0,
       "forcedFeedbackVariation": 0,
@@ -990,7 +1030,7 @@
     "icon": "data/ui/2kimages/main/3dicons/consumables/icon_ship_repair_2.png",
     "description": 19571,
     "item": {
-      "flotsam": 0,
+      "flotsam": 1000212,
       "allocation": "Ship",
       "maxStackSize": 5,
       "rarity": "Uncommon",
@@ -999,7 +1039,7 @@
       "transferBlocked": false,
       "itemType": false,
       "itemSet": 0,
-      "exclusiveGroup": "",
+      "exclusiveGroup": "None",
       "isDestroyedOnUnequip": false
     },
     "itemEffect": null,
@@ -1011,9 +1051,7 @@
         }
       ],
       "baseMorale": 0.0,
-      "fluff": [
-        "19571"
-      ],
+      "fluff": 19571,
       "itemDifficulties": [
         "Easy",
         "Average"
@@ -1026,7 +1064,7 @@
       "cooldown": 0,
       "description": 0,
       "stopMovementOnInteraction": false,
-      "scope": "",
+      "scope": "Self",
       "repairSpeed": 0,
       "duration": 300000,
       "buff": 192157,
@@ -1035,7 +1073,13 @@
       "isDestroyedAfterCooldown": true,
       "radiusBuffTargets": []
     },
-    "specialAction": null,
+    "specialAction": {
+      "projectile": 0,
+      "barrageCount": 0,
+      "barrageDuration": 0,
+      "actionRadius": 0,
+      "delay": 0
+    },
     "upgrade": {
       "changeModule": 0,
       "forcedFeedbackVariation": 0,
@@ -1088,16 +1132,16 @@
     "icon": "data/ui/2kimages/main/3dicons/icon_tools.png",
     "description": 0,
     "item": {
-      "flotsam": 0,
+      "flotsam": 1000212,
       "allocation": "Ship",
       "maxStackSize": 0,
-      "rarity": "",
+      "rarity": "Common",
       "hasAction": true,
       "tradePrice": false,
       "transferBlocked": false,
       "itemType": false,
       "itemSet": 0,
-      "exclusiveGroup": "",
+      "exclusiveGroup": "None",
       "isDestroyedOnUnequip": false
     },
     "itemEffect": null,
@@ -1109,7 +1153,7 @@
         }
       ],
       "baseMorale": 10.0,
-      "fluff": [],
+      "fluff": 0,
       "itemDifficulties": [
         "Easy",
         "Average"
@@ -1121,17 +1165,23 @@
       "distance": 0,
       "cooldown": 0,
       "description": 0,
-      "stopMovementOnInteraction": false,
+      "stopMovementOnInteraction": true,
       "scope": "Target",
       "repairSpeed": 10,
       "duration": 30000,
       "buff": 0,
-      "canEnd": false,
+      "canEnd": true,
       "incidentTypes": [],
       "isDestroyedAfterCooldown": true,
       "radiusBuffTargets": []
     },
-    "specialAction": null,
+    "specialAction": {
+      "projectile": 0,
+      "barrageCount": 0,
+      "barrageDuration": 0,
+      "actionRadius": 0,
+      "delay": 0
+    },
     "upgrade": {
       "changeModule": 0,
       "forcedFeedbackVariation": 0,
@@ -1184,16 +1234,16 @@
     "icon": "data/ui/2kimages/main/3dicons/military_items/ico_repair_toolset.png",
     "description": 15953,
     "item": {
-      "flotsam": 0,
+      "flotsam": 1000212,
       "allocation": "Ship",
       "maxStackSize": 0,
-      "rarity": "",
+      "rarity": "Common",
       "hasAction": true,
       "tradePrice": false,
       "transferBlocked": false,
       "itemType": false,
       "itemSet": 0,
-      "exclusiveGroup": "",
+      "exclusiveGroup": "None",
       "isDestroyedOnUnequip": false
     },
     "itemEffect": null,
@@ -1205,7 +1255,7 @@
         }
       ],
       "baseMorale": 10.0,
-      "fluff": [],
+      "fluff": 0,
       "itemDifficulties": [],
       "itemRegions": []
     },
@@ -1214,17 +1264,23 @@
       "distance": 15,
       "cooldown": 600000,
       "description": 15699,
-      "stopMovementOnInteraction": false,
-      "scope": "",
+      "stopMovementOnInteraction": true,
+      "scope": "Self",
       "repairSpeed": 10,
       "duration": 60000,
       "buff": 191497,
-      "canEnd": false,
+      "canEnd": true,
       "incidentTypes": [],
       "isDestroyedAfterCooldown": false,
       "radiusBuffTargets": []
     },
-    "specialAction": null,
+    "specialAction": {
+      "projectile": 0,
+      "barrageCount": 0,
+      "barrageDuration": 0,
+      "actionRadius": 0,
+      "delay": 0
+    },
     "upgrade": {
       "changeModule": 0,
       "forcedFeedbackVariation": 0,
@@ -1277,7 +1333,7 @@
     "icon": "data/ui/2kimages/main/3dicons/icon_sail.png",
     "description": 0,
     "item": {
-      "flotsam": 0,
+      "flotsam": 1000212,
       "allocation": "Ship",
       "maxStackSize": 20,
       "rarity": "Uncommon",
@@ -1286,14 +1342,14 @@
       "transferBlocked": false,
       "itemType": false,
       "itemSet": 0,
-      "exclusiveGroup": "",
+      "exclusiveGroup": "None",
       "isDestroyedOnUnequip": false
     },
     "itemEffect": null,
     "expeditionAttribute": {
       "attributes": [],
-      "baseMorale": 0.0,
-      "fluff": [],
+      "baseMorale": 5.0,
+      "fluff": 0,
       "itemDifficulties": [],
       "itemRegions": []
     },
@@ -1302,17 +1358,23 @@
       "distance": 0,
       "cooldown": 30000,
       "description": 0,
-      "stopMovementOnInteraction": false,
-      "scope": "",
+      "stopMovementOnInteraction": true,
+      "scope": "Self",
       "repairSpeed": 0,
       "duration": 30000,
       "buff": 6000002,
-      "canEnd": false,
+      "canEnd": true,
       "incidentTypes": [],
       "isDestroyedAfterCooldown": false,
       "radiusBuffTargets": []
     },
-    "specialAction": null,
+    "specialAction": {
+      "projectile": 0,
+      "barrageCount": 0,
+      "barrageDuration": 0,
+      "actionRadius": 0,
+      "delay": 0
+    },
     "upgrade": {
       "changeModule": 0,
       "forcedFeedbackVariation": 0,
@@ -1365,16 +1427,16 @@
     "icon": "data/ui/2kimages/main/icons/icon_resource_worker_2.png",
     "description": 0,
     "item": {
-      "flotsam": 0,
+      "flotsam": 1000212,
       "allocation": "Ship",
       "maxStackSize": 0,
-      "rarity": "",
+      "rarity": "Common",
       "hasAction": true,
       "tradePrice": false,
       "transferBlocked": false,
       "itemType": false,
       "itemSet": 0,
-      "exclusiveGroup": "",
+      "exclusiveGroup": "None",
       "isDestroyedOnUnequip": false
     },
     "itemEffect": null,
@@ -1386,7 +1448,7 @@
         }
       ],
       "baseMorale": 10.0,
-      "fluff": [],
+      "fluff": 0,
       "itemDifficulties": [],
       "itemRegions": []
     },
@@ -1395,17 +1457,23 @@
       "distance": 15,
       "cooldown": 0,
       "description": 0,
-      "stopMovementOnInteraction": false,
+      "stopMovementOnInteraction": true,
       "scope": "TargetRadius",
       "repairSpeed": 10,
       "duration": 0,
       "buff": 0,
-      "canEnd": false,
+      "canEnd": true,
       "incidentTypes": [],
       "isDestroyedAfterCooldown": false,
       "radiusBuffTargets": []
     },
-    "specialAction": null,
+    "specialAction": {
+      "projectile": 0,
+      "barrageCount": 0,
+      "barrageDuration": 0,
+      "actionRadius": 0,
+      "delay": 0
+    },
     "upgrade": {
       "changeModule": 0,
       "forcedFeedbackVariation": 0,
@@ -1458,23 +1526,23 @@
     "icon": "data/ui/2kimages/main/icons/icon_arrowpoint_right.png",
     "description": 0,
     "item": {
-      "flotsam": 0,
+      "flotsam": 1000212,
       "allocation": "Ship",
       "maxStackSize": 0,
-      "rarity": "",
+      "rarity": "Common",
       "hasAction": true,
       "tradePrice": false,
       "transferBlocked": false,
       "itemType": false,
       "itemSet": 0,
-      "exclusiveGroup": "",
+      "exclusiveGroup": "None",
       "isDestroyedOnUnequip": false
     },
     "itemEffect": null,
     "expeditionAttribute": {
       "attributes": [],
-      "baseMorale": 0.0,
-      "fluff": [],
+      "baseMorale": 5.0,
+      "fluff": 0,
       "itemDifficulties": [],
       "itemRegions": []
     },
@@ -1483,17 +1551,23 @@
       "distance": 0,
       "cooldown": 0,
       "description": 0,
-      "stopMovementOnInteraction": false,
+      "stopMovementOnInteraction": true,
       "scope": "Target",
       "repairSpeed": 0,
       "duration": 0,
       "buff": 0,
-      "canEnd": false,
+      "canEnd": true,
       "incidentTypes": [],
       "isDestroyedAfterCooldown": false,
       "radiusBuffTargets": []
     },
-    "specialAction": null,
+    "specialAction": {
+      "projectile": 0,
+      "barrageCount": 0,
+      "barrageDuration": 0,
+      "actionRadius": 0,
+      "delay": 0
+    },
     "upgrade": {
       "changeModule": 0,
       "forcedFeedbackVariation": 0,
@@ -1546,7 +1620,7 @@
     "icon": "data/ui/2kimages/main/3dicons/icon_dynamite.png",
     "description": 0,
     "item": {
-      "flotsam": 0,
+      "flotsam": 1000212,
       "allocation": "Ship",
       "maxStackSize": 0,
       "rarity": "Quest",
@@ -1555,16 +1629,14 @@
       "transferBlocked": false,
       "itemType": false,
       "itemSet": 0,
-      "exclusiveGroup": "",
+      "exclusiveGroup": "None",
       "isDestroyedOnUnequip": false
     },
     "itemEffect": null,
     "expeditionAttribute": {
       "attributes": [],
       "baseMorale": 10.0,
-      "fluff": [
-        "11456"
-      ],
+      "fluff": 11456,
       "itemDifficulties": [],
       "itemRegions": []
     },
@@ -1573,17 +1645,23 @@
       "distance": 3,
       "cooldown": 0,
       "description": 0,
-      "stopMovementOnInteraction": false,
+      "stopMovementOnInteraction": true,
       "scope": "TargetRadius",
       "repairSpeed": 1,
       "duration": 2000,
       "buff": 0,
-      "canEnd": false,
+      "canEnd": true,
       "incidentTypes": [],
       "isDestroyedAfterCooldown": false,
       "radiusBuffTargets": []
     },
-    "specialAction": null,
+    "specialAction": {
+      "projectile": 0,
+      "barrageCount": 0,
+      "barrageDuration": 0,
+      "actionRadius": 0,
+      "delay": 0
+    },
     "upgrade": {
       "changeModule": 0,
       "forcedFeedbackVariation": 0,
@@ -1636,7 +1714,7 @@
     "icon": "data/ui/2kimages/main/3dicons/icon_white_flag.png",
     "description": 0,
     "item": {
-      "flotsam": 0,
+      "flotsam": 1000212,
       "allocation": "Ship",
       "maxStackSize": 0,
       "rarity": "Uncommon",
@@ -1645,14 +1723,14 @@
       "transferBlocked": false,
       "itemType": false,
       "itemSet": 0,
-      "exclusiveGroup": "",
+      "exclusiveGroup": "None",
       "isDestroyedOnUnequip": false
     },
     "itemEffect": null,
     "expeditionAttribute": {
       "attributes": [],
-      "baseMorale": 0.0,
-      "fluff": [],
+      "baseMorale": 5.0,
+      "fluff": 0,
       "itemDifficulties": [],
       "itemRegions": []
     },
@@ -1661,17 +1739,23 @@
       "distance": 0,
       "cooldown": 30000,
       "description": 0,
-      "stopMovementOnInteraction": false,
-      "scope": "",
+      "stopMovementOnInteraction": true,
+      "scope": "Self",
       "repairSpeed": 0,
       "duration": 0,
       "buff": 190813,
-      "canEnd": false,
+      "canEnd": true,
       "incidentTypes": [],
       "isDestroyedAfterCooldown": false,
       "radiusBuffTargets": []
     },
-    "specialAction": null,
+    "specialAction": {
+      "projectile": 0,
+      "barrageCount": 0,
+      "barrageDuration": 0,
+      "actionRadius": 0,
+      "delay": 0
+    },
     "upgrade": {
       "changeModule": 0,
       "forcedFeedbackVariation": 0,
@@ -1724,7 +1808,7 @@
     "icon": "data/ui/2kimages/main/3dicons/icon_pirate_flag.png",
     "description": 0,
     "item": {
-      "flotsam": 0,
+      "flotsam": 1000212,
       "allocation": "Ship",
       "maxStackSize": 0,
       "rarity": "Uncommon",
@@ -1733,14 +1817,14 @@
       "transferBlocked": false,
       "itemType": false,
       "itemSet": 0,
-      "exclusiveGroup": "",
+      "exclusiveGroup": "None",
       "isDestroyedOnUnequip": false
     },
     "itemEffect": null,
     "expeditionAttribute": {
       "attributes": [],
-      "baseMorale": 0.0,
-      "fluff": [],
+      "baseMorale": 5.0,
+      "fluff": 0,
       "itemDifficulties": [],
       "itemRegions": []
     },
@@ -1749,17 +1833,23 @@
       "distance": 0,
       "cooldown": 5000,
       "description": 0,
-      "stopMovementOnInteraction": false,
-      "scope": "",
+      "stopMovementOnInteraction": true,
+      "scope": "Self",
       "repairSpeed": 0,
       "duration": 0,
       "buff": 190987,
-      "canEnd": false,
+      "canEnd": true,
       "incidentTypes": [],
       "isDestroyedAfterCooldown": false,
       "radiusBuffTargets": []
     },
-    "specialAction": null,
+    "specialAction": {
+      "projectile": 0,
+      "barrageCount": 0,
+      "barrageDuration": 0,
+      "actionRadius": 0,
+      "delay": 0
+    },
     "upgrade": {
       "changeModule": 0,
       "forcedFeedbackVariation": 0,
@@ -1812,7 +1902,7 @@
     "icon": "data/ui/2kimages/main/3dicons/icon_zebra.png",
     "description": 0,
     "item": {
-      "flotsam": 0,
+      "flotsam": 1000212,
       "allocation": "Ship",
       "maxStackSize": 0,
       "rarity": "Uncommon",
@@ -1821,14 +1911,14 @@
       "transferBlocked": false,
       "itemType": false,
       "itemSet": 0,
-      "exclusiveGroup": "",
+      "exclusiveGroup": "None",
       "isDestroyedOnUnequip": false
     },
     "itemEffect": null,
     "expeditionAttribute": {
       "attributes": [],
-      "baseMorale": 0.0,
-      "fluff": [],
+      "baseMorale": 5.0,
+      "fluff": 0,
       "itemDifficulties": [],
       "itemRegions": []
     },
@@ -1837,12 +1927,12 @@
       "distance": 15,
       "cooldown": 30000,
       "description": 0,
-      "stopMovementOnInteraction": false,
+      "stopMovementOnInteraction": true,
       "scope": "TargetRadius",
       "repairSpeed": 0,
       "duration": 30000,
       "buff": 6000002,
-      "canEnd": false,
+      "canEnd": true,
       "incidentTypes": [],
       "isDestroyedAfterCooldown": false,
       "radiusBuffTargets": [
@@ -1909,7 +1999,7 @@
     "icon": "data/ui/2kimages/main/3dicons/icon_elephant.png",
     "description": 0,
     "item": {
-      "flotsam": 0,
+      "flotsam": 1000212,
       "allocation": "Ship",
       "maxStackSize": 0,
       "rarity": "Uncommon",
@@ -1918,14 +2008,14 @@
       "transferBlocked": false,
       "itemType": false,
       "itemSet": 0,
-      "exclusiveGroup": "",
+      "exclusiveGroup": "None",
       "isDestroyedOnUnequip": false
     },
     "itemEffect": null,
     "expeditionAttribute": {
       "attributes": [],
-      "baseMorale": 0.0,
-      "fluff": [],
+      "baseMorale": 5.0,
+      "fluff": 0,
       "itemDifficulties": [],
       "itemRegions": []
     },
@@ -1934,17 +2024,23 @@
       "distance": 0,
       "cooldown": 30000,
       "description": 0,
-      "stopMovementOnInteraction": false,
+      "stopMovementOnInteraction": true,
       "scope": "Target",
       "repairSpeed": 0,
       "duration": 30000,
       "buff": 6000002,
-      "canEnd": false,
+      "canEnd": true,
       "incidentTypes": [],
       "isDestroyedAfterCooldown": false,
       "radiusBuffTargets": []
     },
-    "specialAction": null,
+    "specialAction": {
+      "projectile": 0,
+      "barrageCount": 0,
+      "barrageDuration": 0,
+      "actionRadius": 0,
+      "delay": 0
+    },
     "upgrade": {
       "changeModule": 0,
       "forcedFeedbackVariation": 0,
@@ -1997,7 +2093,7 @@
     "icon": "data/ui/2kimages/main/icons/icon_expedition_hypnotist.png",
     "description": 0,
     "item": {
-      "flotsam": 0,
+      "flotsam": 1000212,
       "allocation": "Ship",
       "maxStackSize": 0,
       "rarity": "Uncommon",
@@ -2006,14 +2102,14 @@
       "transferBlocked": false,
       "itemType": false,
       "itemSet": 0,
-      "exclusiveGroup": "",
+      "exclusiveGroup": "None",
       "isDestroyedOnUnequip": false
     },
     "itemEffect": null,
     "expeditionAttribute": {
       "attributes": [],
-      "baseMorale": 0.0,
-      "fluff": [],
+      "baseMorale": 5.0,
+      "fluff": 0,
       "itemDifficulties": [],
       "itemRegions": []
     },
@@ -2022,12 +2118,12 @@
       "distance": 15,
       "cooldown": 30000,
       "description": 0,
-      "stopMovementOnInteraction": false,
+      "stopMovementOnInteraction": true,
       "scope": "TargetRadius",
       "repairSpeed": 0,
       "duration": 30000,
       "buff": 190998,
-      "canEnd": false,
+      "canEnd": true,
       "incidentTypes": [],
       "isDestroyedAfterCooldown": false,
       "radiusBuffTargets": [
@@ -2093,7 +2189,7 @@
     "icon": "data/ui/2kimages/main/3dicons/icon_advanced_weaponry.png",
     "description": 0,
     "item": {
-      "flotsam": 0,
+      "flotsam": 1000212,
       "allocation": "Ship",
       "maxStackSize": 0,
       "rarity": "Uncommon",
@@ -2108,8 +2204,8 @@
     "itemEffect": null,
     "expeditionAttribute": {
       "attributes": [],
-      "baseMorale": 0.0,
-      "fluff": [],
+      "baseMorale": 5.0,
+      "fluff": 0,
       "itemDifficulties": [],
       "itemRegions": []
     },
@@ -2118,17 +2214,23 @@
       "distance": 0,
       "cooldown": 30000,
       "description": 0,
-      "stopMovementOnInteraction": false,
-      "scope": "",
+      "stopMovementOnInteraction": true,
+      "scope": "Self",
       "repairSpeed": 0,
       "duration": 0,
       "buff": 191411,
-      "canEnd": false,
+      "canEnd": true,
       "incidentTypes": [],
       "isDestroyedAfterCooldown": false,
       "radiusBuffTargets": []
     },
-    "specialAction": null,
+    "specialAction": {
+      "projectile": 0,
+      "barrageCount": 0,
+      "barrageDuration": 0,
+      "actionRadius": 0,
+      "delay": 0
+    },
     "upgrade": {
       "changeModule": 0,
       "forcedFeedbackVariation": 0,
@@ -2181,23 +2283,23 @@
     "icon": "data/ui/2kimages/main/3dicons/icon_fire_house.png",
     "description": 0,
     "item": {
-      "flotsam": 0,
-      "allocation": "",
+      "flotsam": 1000212,
+      "allocation": "RadiusBuilding",
       "maxStackSize": 0,
-      "rarity": "",
+      "rarity": "Common",
       "hasAction": true,
       "tradePrice": false,
       "transferBlocked": false,
       "itemType": false,
       "itemSet": 0,
-      "exclusiveGroup": "",
+      "exclusiveGroup": "None",
       "isDestroyedOnUnequip": false
     },
     "itemEffect": null,
     "expeditionAttribute": {
       "attributes": [],
-      "baseMorale": 0.0,
-      "fluff": [],
+      "baseMorale": 5.0,
+      "fluff": 0,
       "itemDifficulties": [],
       "itemRegions": []
     },
@@ -2206,7 +2308,7 @@
       "distance": 15,
       "cooldown": 15000,
       "description": 0,
-      "stopMovementOnInteraction": false,
+      "stopMovementOnInteraction": true,
       "scope": "TargetRadius",
       "repairSpeed": 0,
       "duration": 5000,
@@ -2220,7 +2322,13 @@
       "isDestroyedAfterCooldown": false,
       "radiusBuffTargets": []
     },
-    "specialAction": null,
+    "specialAction": {
+      "projectile": 0,
+      "barrageCount": 0,
+      "barrageDuration": 0,
+      "actionRadius": 0,
+      "delay": 0
+    },
     "upgrade": {
       "changeModule": 0,
       "forcedFeedbackVariation": 0,
@@ -2273,7 +2381,7 @@
     "icon": "data/ui/2kimages/main/icons/icon_wifi.png",
     "description": 0,
     "item": {
-      "flotsam": 0,
+      "flotsam": 1000212,
       "allocation": "Ship",
       "maxStackSize": 0,
       "rarity": "Uncommon",
@@ -2282,14 +2390,14 @@
       "transferBlocked": false,
       "itemType": false,
       "itemSet": 0,
-      "exclusiveGroup": "",
+      "exclusiveGroup": "None",
       "isDestroyedOnUnequip": false
     },
     "itemEffect": null,
     "expeditionAttribute": {
       "attributes": [],
-      "baseMorale": 0.0,
-      "fluff": [],
+      "baseMorale": 5.0,
+      "fluff": 0,
       "itemDifficulties": [],
       "itemRegions": []
     },
@@ -2299,11 +2407,11 @@
       "cooldown": 0,
       "description": 0,
       "stopMovementOnInteraction": false,
-      "scope": "",
+      "scope": "Self",
       "repairSpeed": 0,
       "duration": 5000,
       "buff": 0,
-      "canEnd": false,
+      "canEnd": true,
       "incidentTypes": [],
       "isDestroyedAfterCooldown": true,
       "radiusBuffTargets": []
@@ -2367,7 +2475,7 @@
     "icon": "data/ui/2kimages/main/icons/icon_bankrupt.png",
     "description": 0,
     "item": {
-      "flotsam": 0,
+      "flotsam": 1000212,
       "allocation": "HarborOffice",
       "maxStackSize": 0,
       "rarity": "Uncommon",
@@ -2376,14 +2484,14 @@
       "transferBlocked": false,
       "itemType": false,
       "itemSet": 0,
-      "exclusiveGroup": "",
+      "exclusiveGroup": "None",
       "isDestroyedOnUnequip": false
     },
     "itemEffect": null,
     "expeditionAttribute": {
       "attributes": [],
-      "baseMorale": 0.0,
-      "fluff": [],
+      "baseMorale": 5.0,
+      "fluff": 0,
       "itemDifficulties": [],
       "itemRegions": []
     },
@@ -2397,12 +2505,18 @@
       "repairSpeed": 0,
       "duration": 300000,
       "buff": 191514,
-      "canEnd": false,
+      "canEnd": true,
       "incidentTypes": [],
       "isDestroyedAfterCooldown": false,
       "radiusBuffTargets": []
     },
-    "specialAction": null,
+    "specialAction": {
+      "projectile": 0,
+      "barrageCount": 0,
+      "barrageDuration": 0,
+      "actionRadius": 0,
+      "delay": 0
+    },
     "upgrade": {
       "changeModule": 0,
       "forcedFeedbackVariation": 0,
@@ -2455,7 +2569,7 @@
     "icon": "data/ui/2kimages/main/3dicons/icon_pirate_flag.png",
     "description": 0,
     "item": {
-      "flotsam": 0,
+      "flotsam": 1000212,
       "allocation": "Ship",
       "maxStackSize": 0,
       "rarity": "Rare",
@@ -2464,14 +2578,14 @@
       "transferBlocked": false,
       "itemType": false,
       "itemSet": 0,
-      "exclusiveGroup": "",
+      "exclusiveGroup": "None",
       "isDestroyedOnUnequip": false
     },
     "itemEffect": null,
     "expeditionAttribute": {
       "attributes": [],
-      "baseMorale": 0.0,
-      "fluff": [],
+      "baseMorale": 5.0,
+      "fluff": 0,
       "itemDifficulties": [],
       "itemRegions": []
     },
@@ -2480,17 +2594,23 @@
       "distance": 15,
       "cooldown": 120000,
       "description": 17393,
-      "stopMovementOnInteraction": false,
-      "scope": "",
+      "stopMovementOnInteraction": true,
+      "scope": "Self",
       "repairSpeed": 10,
       "duration": 300000,
       "buff": 192127,
-      "canEnd": false,
+      "canEnd": true,
       "incidentTypes": [],
       "isDestroyedAfterCooldown": false,
       "radiusBuffTargets": []
     },
-    "specialAction": null,
+    "specialAction": {
+      "projectile": 0,
+      "barrageCount": 0,
+      "barrageDuration": 0,
+      "actionRadius": 0,
+      "delay": 0
+    },
     "upgrade": {
       "changeModule": 0,
       "forcedFeedbackVariation": 0,
@@ -2543,7 +2663,7 @@
     "icon": "data/ui/2kimages/main/3dicons/icon_pirate_flag.png",
     "description": 0,
     "item": {
-      "flotsam": 0,
+      "flotsam": 1000212,
       "allocation": "Ship",
       "maxStackSize": 0,
       "rarity": "Legendary",
@@ -2552,14 +2672,14 @@
       "transferBlocked": false,
       "itemType": false,
       "itemSet": 0,
-      "exclusiveGroup": "",
+      "exclusiveGroup": "None",
       "isDestroyedOnUnequip": false
     },
     "itemEffect": null,
     "expeditionAttribute": {
       "attributes": [],
-      "baseMorale": 0.0,
-      "fluff": [],
+      "baseMorale": 5.0,
+      "fluff": 0,
       "itemDifficulties": [],
       "itemRegions": []
     },
@@ -2568,17 +2688,23 @@
       "distance": 15,
       "cooldown": 120000,
       "description": 17393,
-      "stopMovementOnInteraction": false,
-      "scope": "",
+      "stopMovementOnInteraction": true,
+      "scope": "Self",
       "repairSpeed": 10,
       "duration": 300000,
       "buff": 192131,
-      "canEnd": false,
+      "canEnd": true,
       "incidentTypes": [],
       "isDestroyedAfterCooldown": false,
       "radiusBuffTargets": []
     },
-    "specialAction": null,
+    "specialAction": {
+      "projectile": 0,
+      "barrageCount": 0,
+      "barrageDuration": 0,
+      "actionRadius": 0,
+      "delay": 0
+    },
     "upgrade": {
       "changeModule": 0,
       "forcedFeedbackVariation": 0,
@@ -2631,7 +2757,7 @@
     "icon": "data/ui/2kimages/main/3dicons/military_items/ico_repair_toolset.png",
     "description": 15953,
     "item": {
-      "flotsam": 0,
+      "flotsam": 1000212,
       "allocation": "Ship",
       "maxStackSize": 0,
       "rarity": "Legendary",
@@ -2640,7 +2766,7 @@
       "transferBlocked": false,
       "itemType": false,
       "itemSet": 0,
-      "exclusiveGroup": "",
+      "exclusiveGroup": "None",
       "isDestroyedOnUnequip": false
     },
     "itemEffect": null,
@@ -2652,7 +2778,7 @@
         }
       ],
       "baseMorale": 10.0,
-      "fluff": [],
+      "fluff": 0,
       "itemDifficulties": [],
       "itemRegions": []
     },
@@ -2661,17 +2787,23 @@
       "distance": 15,
       "cooldown": 600000,
       "description": 15699,
-      "stopMovementOnInteraction": false,
-      "scope": "",
+      "stopMovementOnInteraction": true,
+      "scope": "Self",
       "repairSpeed": 10,
       "duration": 60000,
       "buff": 192111,
-      "canEnd": false,
+      "canEnd": true,
       "incidentTypes": [],
       "isDestroyedAfterCooldown": false,
       "radiusBuffTargets": []
     },
-    "specialAction": null,
+    "specialAction": {
+      "projectile": 0,
+      "barrageCount": 0,
+      "barrageDuration": 0,
+      "actionRadius": 0,
+      "delay": 0
+    },
     "upgrade": {
       "changeModule": 0,
       "forcedFeedbackVariation": 0,

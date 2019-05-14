@@ -3,11 +3,25 @@
   <Asset>
     <Template>ItemConstructionPlan</Template>
     <Values>
-      <ItemAction />
+      <ItemAction>
+        <ItemAction>NOACTION</ItemAction>
+        <ActionTarget>0</ActionTarget>
+        <ActionScope>Self</ActionScope>
+        <RadiusBuffTargets />
+        <ActionIncidentType />
+        <IncidentResolveRate>0.3</IncidentResolveRate>
+        <ActiveBuff>0</ActiveBuff>
+        <ActionDescription>0</ActionDescription>
+        <ActionCompletedEffect />
+        <CanEndItemAction>1</CanEndItemAction>
+        <StopMovementOnInteraction>1</StopMovementOnInteraction>
+      </ItemAction>
       <Standard>
         <GUID>6000029</GUID>
         <Name>TestConstructionPlan</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_guild_house.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -15,15 +29,34 @@
             <Text>Construction plan</Text>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
       <ItemConstructionPlan>
         <AllowBuildingOf>1010516</AllowBuildingOf>
       </ItemConstructionPlan>
       <Item>
         <HasAction>1</HasAction>
+        <Allocation>RadiusBuilding</Allocation>
+        <Rarity>Common</Rarity>
+        <ItemType>Normal</ItemType>
+        <ExclusiveGroup>None</ExclusiveGroup>
+        <ItemSet>0</ItemSet>
+        <ExpeditionType>None</ExpeditionType>
+        <Flotsam>1000212</Flotsam>
+        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
-      <ExpeditionAttribute />
-      <Locked />
+      <ExpeditionAttribute>
+        <BaseMorale>5</BaseMorale>
+        <ExpeditionAttributes />
+        <ItemRegions />
+        <ItemDifficulties />
+        <FluffText>0</FluffText>
+      </ExpeditionAttribute>
+      <Locked>
+        <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
     </Values>
   </Asset>
 </Assets>

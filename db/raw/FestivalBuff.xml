@@ -8,6 +8,7 @@
         <Name>BeerFestivalResidencesBuff</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_beer_2.png</IconFilename>
         <InfoDescription>20111</InfoDescription>
+        <Comments />
       </Standard>
       <Text>
         <LocaText>
@@ -18,8 +19,13 @@
           </English>
         </LocaText>
         <LineID>25925</LineID>
+        <Localize>1</Localize>
       </Text>
-      <PopulationUpgrade />
+      <PopulationUpgrade>
+        <ResidentsUpgrade />
+        <StressUpgrade />
+        <InputBenefitModifier />
+      </PopulationUpgrade>
       <ResidenceUpgrade>
         <AdditionalHappiness>25</AdditionalHappiness>
         <GoodConsumptionUpgrade>
@@ -40,6 +46,8 @@
             <AmountInPercent>-100</AmountInPercent>
           </Item>
         </GoodConsumptionUpgrade>
+        <NeedProvideNeedUpgrade />
+        <ChangedSupplyValueUpgrade />
       </ResidenceUpgrade>
       <ItemEffect>
         <EffectTargets>
@@ -48,16 +56,65 @@
           </Item>
         </EffectTargets>
       </ItemEffect>
-      <Buff />
-      <CultureUpgrade />
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
+      <CultureUpgrade>
+        <ChangeModule>0</ChangeModule>
+        <ForcedFeedbackVariation>0</ForcedFeedbackVariation>
+        <AttractivenessUpgrade />
+        <AdditionalModuleSoundLoop>0</AdditionalModuleSoundLoop>
+      </CultureUpgrade>
       <KontorUpgrade />
-      <AttackableUpgrade />
-      <AttackerUpgrade />
-      <BuildingUpgrade />
-      <FactoryUpgrade />
-      <PassiveTradeGoodGenUpgrade />
-      <ShipyardUpgrade />
-      <VisitorHarborUpgrade />
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
+      <AttackerUpgrade>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
+      </AttackerUpgrade>
+      <BuildingUpgrade>
+        <MaintenanceUpgrade />
+        <PublicServiceFullSatisfactionDistance />
+        <PublicServiceNoSatisfactionDistance />
+        <ResolverUnitCountUpgrade />
+        <ResolverUnitDecreaseUpgrade />
+        <ResolverUnitMovementSpeedUpgrade />
+        <WorkforceAmountUpgrade />
+        <ReplacingWorkforce>0</ReplacingWorkforce>
+      </BuildingUpgrade>
+      <FactoryUpgrade>
+        <ProductivityUpgrade />
+        <AddedFertility>0</AddedFertility>
+        <OutputAmountFactorUpgrade />
+        <AdditionalOutput />
+        <InputAmountUpgrade />
+        <ReplaceInputs />
+        <NeededAreaPercentUpgrade />
+      </FactoryUpgrade>
+      <PassiveTradeGoodGenUpgrade>
+        <GenPool>0</GenPool>
+      </PassiveTradeGoodGenUpgrade>
+      <ShipyardUpgrade>
+        <ReplaceAssemblyOptions />
+        <AddAssemblyOptions />
+      </ShipyardUpgrade>
+      <VisitorHarborUpgrade>
+        <SpawnProbabilityFactor />
+      </VisitorHarborUpgrade>
       <VisitorUpgrade />
     </Values>
   </Asset>
@@ -69,6 +126,7 @@
         <Name>BeerFestivalProductionBuff</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_beer_2.png</IconFilename>
         <InfoDescription>20111</InfoDescription>
+        <Comments />
       </Standard>
       <Text>
         <LocaText>
@@ -79,9 +137,18 @@
           </English>
         </LocaText>
         <LineID>28706</LineID>
+        <Localize>1</Localize>
       </Text>
-      <PopulationUpgrade />
-      <ResidenceUpgrade />
+      <PopulationUpgrade>
+        <ResidentsUpgrade />
+        <StressUpgrade />
+        <InputBenefitModifier />
+      </PopulationUpgrade>
+      <ResidenceUpgrade>
+        <NeedProvideNeedUpgrade />
+        <GoodConsumptionUpgrade />
+        <ChangedSupplyValueUpgrade />
+      </ResidenceUpgrade>
       <ItemEffect>
         <EffectTargets>
           <Item>
@@ -89,26 +156,71 @@
           </Item>
         </EffectTargets>
       </ItemEffect>
-      <Buff />
-      <CultureUpgrade />
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
+      <CultureUpgrade>
+        <ChangeModule>0</ChangeModule>
+        <ForcedFeedbackVariation>0</ForcedFeedbackVariation>
+        <AttractivenessUpgrade />
+        <AdditionalModuleSoundLoop>0</AdditionalModuleSoundLoop>
+      </CultureUpgrade>
       <KontorUpgrade />
-      <AttackableUpgrade />
-      <AttackerUpgrade />
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
+      <AttackerUpgrade>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
+      </AttackerUpgrade>
       <BuildingUpgrade>
         <WorkforceAmountUpgrade>
           <Value>-25</Value>
           <Percental>1</Percental>
         </WorkforceAmountUpgrade>
+        <MaintenanceUpgrade />
+        <PublicServiceFullSatisfactionDistance />
+        <PublicServiceNoSatisfactionDistance />
+        <ResolverUnitCountUpgrade />
+        <ResolverUnitDecreaseUpgrade />
+        <ResolverUnitMovementSpeedUpgrade />
+        <ReplacingWorkforce>0</ReplacingWorkforce>
       </BuildingUpgrade>
       <FactoryUpgrade>
         <ProductivityUpgrade>
           <Value>50</Value>
           <Percental>1</Percental>
         </ProductivityUpgrade>
+        <AddedFertility>0</AddedFertility>
+        <OutputAmountFactorUpgrade />
+        <AdditionalOutput />
+        <InputAmountUpgrade />
+        <ReplaceInputs />
+        <NeededAreaPercentUpgrade />
       </FactoryUpgrade>
-      <PassiveTradeGoodGenUpgrade />
-      <ShipyardUpgrade />
-      <VisitorHarborUpgrade />
+      <PassiveTradeGoodGenUpgrade>
+        <GenPool>0</GenPool>
+      </PassiveTradeGoodGenUpgrade>
+      <ShipyardUpgrade>
+        <ReplaceAssemblyOptions />
+        <AddAssemblyOptions />
+      </ShipyardUpgrade>
+      <VisitorHarborUpgrade>
+        <SpawnProbabilityFactor />
+      </VisitorHarborUpgrade>
       <VisitorUpgrade />
     </Values>
   </Asset>
@@ -120,6 +232,7 @@
         <Name>HarvestFestivalResidencesBuff</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_cereals_2.png</IconFilename>
         <InfoDescription>20112</InfoDescription>
+        <Comments />
       </Standard>
       <Text>
         <LocaText>
@@ -130,11 +243,19 @@
           </English>
         </LocaText>
         <LineID>28480</LineID>
+        <Localize>1</Localize>
       </Text>
-      <PopulationUpgrade />
+      <PopulationUpgrade>
+        <ResidentsUpgrade />
+        <StressUpgrade />
+        <InputBenefitModifier />
+      </PopulationUpgrade>
       <ResidenceUpgrade>
         <AdditionalHappiness>10</AdditionalHappiness>
         <TaxModifierInPercent>10</TaxModifierInPercent>
+        <NeedProvideNeedUpgrade />
+        <GoodConsumptionUpgrade />
+        <ChangedSupplyValueUpgrade />
       </ResidenceUpgrade>
       <ItemEffect>
         <EffectTargets>
@@ -143,16 +264,65 @@
           </Item>
         </EffectTargets>
       </ItemEffect>
-      <Buff />
-      <CultureUpgrade />
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
+      <CultureUpgrade>
+        <ChangeModule>0</ChangeModule>
+        <ForcedFeedbackVariation>0</ForcedFeedbackVariation>
+        <AttractivenessUpgrade />
+        <AdditionalModuleSoundLoop>0</AdditionalModuleSoundLoop>
+      </CultureUpgrade>
       <KontorUpgrade />
-      <AttackableUpgrade />
-      <AttackerUpgrade />
-      <BuildingUpgrade />
-      <FactoryUpgrade />
-      <PassiveTradeGoodGenUpgrade />
-      <ShipyardUpgrade />
-      <VisitorHarborUpgrade />
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
+      <AttackerUpgrade>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
+      </AttackerUpgrade>
+      <BuildingUpgrade>
+        <MaintenanceUpgrade />
+        <PublicServiceFullSatisfactionDistance />
+        <PublicServiceNoSatisfactionDistance />
+        <ResolverUnitCountUpgrade />
+        <ResolverUnitDecreaseUpgrade />
+        <ResolverUnitMovementSpeedUpgrade />
+        <WorkforceAmountUpgrade />
+        <ReplacingWorkforce>0</ReplacingWorkforce>
+      </BuildingUpgrade>
+      <FactoryUpgrade>
+        <ProductivityUpgrade />
+        <AddedFertility>0</AddedFertility>
+        <OutputAmountFactorUpgrade />
+        <AdditionalOutput />
+        <InputAmountUpgrade />
+        <ReplaceInputs />
+        <NeededAreaPercentUpgrade />
+      </FactoryUpgrade>
+      <PassiveTradeGoodGenUpgrade>
+        <GenPool>0</GenPool>
+      </PassiveTradeGoodGenUpgrade>
+      <ShipyardUpgrade>
+        <ReplaceAssemblyOptions />
+        <AddAssemblyOptions />
+      </ShipyardUpgrade>
+      <VisitorHarborUpgrade>
+        <SpawnProbabilityFactor />
+      </VisitorHarborUpgrade>
       <VisitorUpgrade />
     </Values>
   </Asset>
@@ -164,6 +334,7 @@
         <Name>HarvestFestivalProductionBuff</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_cereals_2.png</IconFilename>
         <InfoDescription>20112</InfoDescription>
+        <Comments />
       </Standard>
       <Text>
         <LocaText>
@@ -174,9 +345,18 @@
           </English>
         </LocaText>
         <LineID>28708</LineID>
+        <Localize>1</Localize>
       </Text>
-      <PopulationUpgrade />
-      <ResidenceUpgrade />
+      <PopulationUpgrade>
+        <ResidentsUpgrade />
+        <StressUpgrade />
+        <InputBenefitModifier />
+      </PopulationUpgrade>
+      <ResidenceUpgrade>
+        <NeedProvideNeedUpgrade />
+        <GoodConsumptionUpgrade />
+        <ChangedSupplyValueUpgrade />
+      </ResidenceUpgrade>
       <ItemEffect>
         <EffectTargets>
           <Item>
@@ -184,16 +364,48 @@
           </Item>
         </EffectTargets>
       </ItemEffect>
-      <Buff />
-      <CultureUpgrade />
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
+      <CultureUpgrade>
+        <ChangeModule>0</ChangeModule>
+        <ForcedFeedbackVariation>0</ForcedFeedbackVariation>
+        <AttractivenessUpgrade />
+        <AdditionalModuleSoundLoop>0</AdditionalModuleSoundLoop>
+      </CultureUpgrade>
       <KontorUpgrade />
-      <AttackableUpgrade />
-      <AttackerUpgrade />
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
+      <AttackerUpgrade>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
+      </AttackerUpgrade>
       <BuildingUpgrade>
         <MaintenanceUpgrade>
           <Value>-100</Value>
           <Percental>1</Percental>
         </MaintenanceUpgrade>
+        <PublicServiceFullSatisfactionDistance />
+        <PublicServiceNoSatisfactionDistance />
+        <ResolverUnitCountUpgrade />
+        <ResolverUnitDecreaseUpgrade />
+        <ResolverUnitMovementSpeedUpgrade />
+        <WorkforceAmountUpgrade />
+        <ReplacingWorkforce>0</ReplacingWorkforce>
       </BuildingUpgrade>
       <FactoryUpgrade>
         <ProductivityUpgrade>
@@ -222,10 +434,22 @@
             <Amount>1</Amount>
           </Item>
         </AdditionalOutput>
+        <AddedFertility>0</AddedFertility>
+        <OutputAmountFactorUpgrade />
+        <InputAmountUpgrade />
+        <ReplaceInputs />
+        <NeededAreaPercentUpgrade />
       </FactoryUpgrade>
-      <PassiveTradeGoodGenUpgrade />
-      <ShipyardUpgrade />
-      <VisitorHarborUpgrade />
+      <PassiveTradeGoodGenUpgrade>
+        <GenPool>0</GenPool>
+      </PassiveTradeGoodGenUpgrade>
+      <ShipyardUpgrade>
+        <ReplaceAssemblyOptions />
+        <AddAssemblyOptions />
+      </ShipyardUpgrade>
+      <VisitorHarborUpgrade>
+        <SpawnProbabilityFactor />
+      </VisitorHarborUpgrade>
       <VisitorUpgrade />
     </Values>
   </Asset>
@@ -237,6 +461,7 @@
         <Name>ArtsFestivalPublicBuff</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/museum/icon_scroll_anthology_myths.png</IconFilename>
         <InfoDescription>20113</InfoDescription>
+        <Comments />
       </Standard>
       <Text>
         <LocaText>
@@ -247,9 +472,18 @@
           </English>
         </LocaText>
         <LineID>28710</LineID>
+        <Localize>1</Localize>
       </Text>
-      <PopulationUpgrade />
-      <ResidenceUpgrade />
+      <PopulationUpgrade>
+        <ResidentsUpgrade />
+        <StressUpgrade />
+        <InputBenefitModifier />
+      </PopulationUpgrade>
+      <ResidenceUpgrade>
+        <NeedProvideNeedUpgrade />
+        <GoodConsumptionUpgrade />
+        <ChangedSupplyValueUpgrade />
+      </ResidenceUpgrade>
       <ItemEffect>
         <EffectTargets>
           <Item>
@@ -257,25 +491,70 @@
           </Item>
         </EffectTargets>
       </ItemEffect>
-      <Buff />
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
       <CultureUpgrade>
         <AttractivenessUpgrade>
           <Value>5</Value>
         </AttractivenessUpgrade>
+        <ChangeModule>0</ChangeModule>
+        <ForcedFeedbackVariation>0</ForcedFeedbackVariation>
+        <AdditionalModuleSoundLoop>0</AdditionalModuleSoundLoop>
       </CultureUpgrade>
       <KontorUpgrade />
-      <AttackableUpgrade />
-      <AttackerUpgrade />
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
+      <AttackerUpgrade>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
+      </AttackerUpgrade>
       <BuildingUpgrade>
         <MaintenanceUpgrade>
           <Value>-50</Value>
           <Percental>1</Percental>
         </MaintenanceUpgrade>
+        <PublicServiceFullSatisfactionDistance />
+        <PublicServiceNoSatisfactionDistance />
+        <ResolverUnitCountUpgrade />
+        <ResolverUnitDecreaseUpgrade />
+        <ResolverUnitMovementSpeedUpgrade />
+        <WorkforceAmountUpgrade />
+        <ReplacingWorkforce>0</ReplacingWorkforce>
       </BuildingUpgrade>
-      <FactoryUpgrade />
-      <PassiveTradeGoodGenUpgrade />
-      <ShipyardUpgrade />
-      <VisitorHarborUpgrade />
+      <FactoryUpgrade>
+        <ProductivityUpgrade />
+        <AddedFertility>0</AddedFertility>
+        <OutputAmountFactorUpgrade />
+        <AdditionalOutput />
+        <InputAmountUpgrade />
+        <ReplaceInputs />
+        <NeededAreaPercentUpgrade />
+      </FactoryUpgrade>
+      <PassiveTradeGoodGenUpgrade>
+        <GenPool>0</GenPool>
+      </PassiveTradeGoodGenUpgrade>
+      <ShipyardUpgrade>
+        <ReplaceAssemblyOptions />
+        <AddAssemblyOptions />
+      </ShipyardUpgrade>
+      <VisitorHarborUpgrade>
+        <SpawnProbabilityFactor />
+      </VisitorHarborUpgrade>
       <VisitorUpgrade />
     </Values>
   </Asset>
@@ -287,6 +566,7 @@
         <Name>ArtsFestivalCultureBuff</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/museum/icon_scroll_anthology_myths.png</IconFilename>
         <InfoDescription>20113</InfoDescription>
+        <Comments />
       </Standard>
       <Text>
         <LocaText>
@@ -297,9 +577,18 @@
           </English>
         </LocaText>
         <LineID>28711</LineID>
+        <Localize>1</Localize>
       </Text>
-      <PopulationUpgrade />
-      <ResidenceUpgrade />
+      <PopulationUpgrade>
+        <ResidentsUpgrade />
+        <StressUpgrade />
+        <InputBenefitModifier />
+      </PopulationUpgrade>
+      <ResidenceUpgrade>
+        <NeedProvideNeedUpgrade />
+        <GoodConsumptionUpgrade />
+        <ChangedSupplyValueUpgrade />
+      </ResidenceUpgrade>
       <ItemEffect>
         <EffectTargets>
           <Item>
@@ -307,26 +596,71 @@
           </Item>
         </EffectTargets>
       </ItemEffect>
-      <Buff />
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
       <CultureUpgrade>
         <AttractivenessUpgrade>
           <Value>5</Value>
           <Percental>1</Percental>
         </AttractivenessUpgrade>
+        <ChangeModule>0</ChangeModule>
+        <ForcedFeedbackVariation>0</ForcedFeedbackVariation>
+        <AdditionalModuleSoundLoop>0</AdditionalModuleSoundLoop>
       </CultureUpgrade>
       <KontorUpgrade />
-      <AttackableUpgrade />
-      <AttackerUpgrade />
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
+      <AttackerUpgrade>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
+      </AttackerUpgrade>
       <BuildingUpgrade>
         <MaintenanceUpgrade>
           <Value>-100</Value>
           <Percental>1</Percental>
         </MaintenanceUpgrade>
+        <PublicServiceFullSatisfactionDistance />
+        <PublicServiceNoSatisfactionDistance />
+        <ResolverUnitCountUpgrade />
+        <ResolverUnitDecreaseUpgrade />
+        <ResolverUnitMovementSpeedUpgrade />
+        <WorkforceAmountUpgrade />
+        <ReplacingWorkforce>0</ReplacingWorkforce>
       </BuildingUpgrade>
-      <FactoryUpgrade />
-      <PassiveTradeGoodGenUpgrade />
-      <ShipyardUpgrade />
-      <VisitorHarborUpgrade />
+      <FactoryUpgrade>
+        <ProductivityUpgrade />
+        <AddedFertility>0</AddedFertility>
+        <OutputAmountFactorUpgrade />
+        <AdditionalOutput />
+        <InputAmountUpgrade />
+        <ReplaceInputs />
+        <NeededAreaPercentUpgrade />
+      </FactoryUpgrade>
+      <PassiveTradeGoodGenUpgrade>
+        <GenPool>0</GenPool>
+      </PassiveTradeGoodGenUpgrade>
+      <ShipyardUpgrade>
+        <ReplaceAssemblyOptions />
+        <AddAssemblyOptions />
+      </ShipyardUpgrade>
+      <VisitorHarborUpgrade>
+        <SpawnProbabilityFactor />
+      </VisitorHarborUpgrade>
       <VisitorUpgrade />
     </Values>
   </Asset>
@@ -338,6 +672,7 @@
         <Name>CommemorationFestivalResidencesBuff</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/museum/icon_museum_sword_rare.png</IconFilename>
         <InfoDescription>20114</InfoDescription>
+        <Comments />
       </Standard>
       <Text>
         <LocaText>
@@ -348,11 +683,19 @@
           </English>
         </LocaText>
         <LineID>28482</LineID>
+        <Localize>1</Localize>
       </Text>
-      <PopulationUpgrade />
+      <PopulationUpgrade>
+        <ResidentsUpgrade />
+        <StressUpgrade />
+        <InputBenefitModifier />
+      </PopulationUpgrade>
       <ResidenceUpgrade>
         <AdditionalHappiness>10</AdditionalHappiness>
         <WorkforceModifierInPercent>15</WorkforceModifierInPercent>
+        <NeedProvideNeedUpgrade />
+        <GoodConsumptionUpgrade />
+        <ChangedSupplyValueUpgrade />
       </ResidenceUpgrade>
       <ItemEffect>
         <EffectTargets>
@@ -361,16 +704,65 @@
           </Item>
         </EffectTargets>
       </ItemEffect>
-      <Buff />
-      <CultureUpgrade />
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
+      <CultureUpgrade>
+        <ChangeModule>0</ChangeModule>
+        <ForcedFeedbackVariation>0</ForcedFeedbackVariation>
+        <AttractivenessUpgrade />
+        <AdditionalModuleSoundLoop>0</AdditionalModuleSoundLoop>
+      </CultureUpgrade>
       <KontorUpgrade />
-      <AttackableUpgrade />
-      <AttackerUpgrade />
-      <BuildingUpgrade />
-      <FactoryUpgrade />
-      <PassiveTradeGoodGenUpgrade />
-      <ShipyardUpgrade />
-      <VisitorHarborUpgrade />
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
+      <AttackerUpgrade>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
+      </AttackerUpgrade>
+      <BuildingUpgrade>
+        <MaintenanceUpgrade />
+        <PublicServiceFullSatisfactionDistance />
+        <PublicServiceNoSatisfactionDistance />
+        <ResolverUnitCountUpgrade />
+        <ResolverUnitDecreaseUpgrade />
+        <ResolverUnitMovementSpeedUpgrade />
+        <WorkforceAmountUpgrade />
+        <ReplacingWorkforce>0</ReplacingWorkforce>
+      </BuildingUpgrade>
+      <FactoryUpgrade>
+        <ProductivityUpgrade />
+        <AddedFertility>0</AddedFertility>
+        <OutputAmountFactorUpgrade />
+        <AdditionalOutput />
+        <InputAmountUpgrade />
+        <ReplaceInputs />
+        <NeededAreaPercentUpgrade />
+      </FactoryUpgrade>
+      <PassiveTradeGoodGenUpgrade>
+        <GenPool>0</GenPool>
+      </PassiveTradeGoodGenUpgrade>
+      <ShipyardUpgrade>
+        <ReplaceAssemblyOptions />
+        <AddAssemblyOptions />
+      </ShipyardUpgrade>
+      <VisitorHarborUpgrade>
+        <SpawnProbabilityFactor />
+      </VisitorHarborUpgrade>
       <VisitorUpgrade />
     </Values>
   </Asset>
@@ -382,6 +774,7 @@
         <Name>CommemorationFestivalProductionBuff</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/museum/icon_museum_sword_rare.png</IconFilename>
         <InfoDescription>20114</InfoDescription>
+        <Comments />
       </Standard>
       <Text>
         <LocaText>
@@ -392,9 +785,18 @@
           </English>
         </LocaText>
         <LineID>28713</LineID>
+        <Localize>1</Localize>
       </Text>
-      <PopulationUpgrade />
-      <ResidenceUpgrade />
+      <PopulationUpgrade>
+        <ResidentsUpgrade />
+        <StressUpgrade />
+        <InputBenefitModifier />
+      </PopulationUpgrade>
+      <ResidenceUpgrade>
+        <NeedProvideNeedUpgrade />
+        <GoodConsumptionUpgrade />
+        <ChangedSupplyValueUpgrade />
+      </ResidenceUpgrade>
       <ItemEffect>
         <EffectTargets>
           <Item>
@@ -402,21 +804,68 @@
           </Item>
         </EffectTargets>
       </ItemEffect>
-      <Buff />
-      <CultureUpgrade />
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
+      <CultureUpgrade>
+        <ChangeModule>0</ChangeModule>
+        <ForcedFeedbackVariation>0</ForcedFeedbackVariation>
+        <AttractivenessUpgrade />
+        <AdditionalModuleSoundLoop>0</AdditionalModuleSoundLoop>
+      </CultureUpgrade>
       <KontorUpgrade />
-      <AttackableUpgrade />
-      <AttackerUpgrade />
-      <BuildingUpgrade />
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
+      <AttackerUpgrade>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
+      </AttackerUpgrade>
+      <BuildingUpgrade>
+        <MaintenanceUpgrade />
+        <PublicServiceFullSatisfactionDistance />
+        <PublicServiceNoSatisfactionDistance />
+        <ResolverUnitCountUpgrade />
+        <ResolverUnitDecreaseUpgrade />
+        <ResolverUnitMovementSpeedUpgrade />
+        <WorkforceAmountUpgrade />
+        <ReplacingWorkforce>0</ReplacingWorkforce>
+      </BuildingUpgrade>
       <FactoryUpgrade>
         <ProductivityUpgrade>
           <Value>300</Value>
           <Percental>1</Percental>
         </ProductivityUpgrade>
+        <AddedFertility>0</AddedFertility>
+        <OutputAmountFactorUpgrade />
+        <AdditionalOutput />
+        <InputAmountUpgrade />
+        <ReplaceInputs />
+        <NeededAreaPercentUpgrade />
       </FactoryUpgrade>
-      <PassiveTradeGoodGenUpgrade />
-      <ShipyardUpgrade />
-      <VisitorHarborUpgrade />
+      <PassiveTradeGoodGenUpgrade>
+        <GenPool>0</GenPool>
+      </PassiveTradeGoodGenUpgrade>
+      <ShipyardUpgrade>
+        <ReplaceAssemblyOptions />
+        <AddAssemblyOptions />
+      </ShipyardUpgrade>
+      <VisitorHarborUpgrade>
+        <SpawnProbabilityFactor />
+      </VisitorHarborUpgrade>
       <VisitorUpgrade />
     </Values>
   </Asset>
@@ -428,6 +877,7 @@
         <Name>CommemorationFestivalShipyardBuff</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/museum/icon_museum_sword_rare.png</IconFilename>
         <InfoDescription>20114</InfoDescription>
+        <Comments />
       </Standard>
       <Text>
         <LocaText>
@@ -438,9 +888,18 @@
           </English>
         </LocaText>
         <LineID>29301</LineID>
+        <Localize>1</Localize>
       </Text>
-      <PopulationUpgrade />
-      <ResidenceUpgrade />
+      <PopulationUpgrade>
+        <ResidentsUpgrade />
+        <StressUpgrade />
+        <InputBenefitModifier />
+      </PopulationUpgrade>
+      <ResidenceUpgrade>
+        <NeedProvideNeedUpgrade />
+        <GoodConsumptionUpgrade />
+        <ChangedSupplyValueUpgrade />
+      </ResidenceUpgrade>
       <ItemEffect>
         <EffectTargets>
           <Item>
@@ -448,19 +907,67 @@
           </Item>
         </EffectTargets>
       </ItemEffect>
-      <Buff />
-      <CultureUpgrade />
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
+      <CultureUpgrade>
+        <ChangeModule>0</ChangeModule>
+        <ForcedFeedbackVariation>0</ForcedFeedbackVariation>
+        <AttractivenessUpgrade />
+        <AdditionalModuleSoundLoop>0</AdditionalModuleSoundLoop>
+      </CultureUpgrade>
       <KontorUpgrade />
-      <AttackableUpgrade />
-      <AttackerUpgrade />
-      <BuildingUpgrade />
-      <FactoryUpgrade />
-      <PassiveTradeGoodGenUpgrade />
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
+      <AttackerUpgrade>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
+      </AttackerUpgrade>
+      <BuildingUpgrade>
+        <MaintenanceUpgrade />
+        <PublicServiceFullSatisfactionDistance />
+        <PublicServiceNoSatisfactionDistance />
+        <ResolverUnitCountUpgrade />
+        <ResolverUnitDecreaseUpgrade />
+        <ResolverUnitMovementSpeedUpgrade />
+        <WorkforceAmountUpgrade />
+        <ReplacingWorkforce>0</ReplacingWorkforce>
+      </BuildingUpgrade>
+      <FactoryUpgrade>
+        <ProductivityUpgrade />
+        <AddedFertility>0</AddedFertility>
+        <OutputAmountFactorUpgrade />
+        <AdditionalOutput />
+        <InputAmountUpgrade />
+        <ReplaceInputs />
+        <NeededAreaPercentUpgrade />
+      </FactoryUpgrade>
+      <PassiveTradeGoodGenUpgrade>
+        <GenPool>0</GenPool>
+      </PassiveTradeGoodGenUpgrade>
       <ShipyardUpgrade>
         <ConstructionCostInPercent>-30</ConstructionCostInPercent>
         <ConstructionTimeInPercent>-30</ConstructionTimeInPercent>
+        <ReplaceAssemblyOptions />
+        <AddAssemblyOptions />
       </ShipyardUpgrade>
-      <VisitorHarborUpgrade />
+      <VisitorHarborUpgrade>
+        <SpawnProbabilityFactor />
+      </VisitorHarborUpgrade>
       <VisitorUpgrade />
     </Values>
   </Asset>
@@ -472,6 +979,7 @@
         <Name>CarnivalFestivalResidencesBuff</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/narative_item/icon_fireworks.png</IconFilename>
         <InfoDescription>20115</InfoDescription>
+        <Comments />
       </Standard>
       <Text>
         <LocaText>
@@ -482,6 +990,7 @@
           </English>
         </LocaText>
         <LineID>28483</LineID>
+        <Localize>1</Localize>
       </Text>
       <PopulationUpgrade>
         <InputBenefitModifier>
@@ -502,9 +1011,14 @@
             <AdditionalMoney>5</AdditionalMoney>
           </Item>
         </InputBenefitModifier>
+        <ResidentsUpgrade />
+        <StressUpgrade />
       </PopulationUpgrade>
       <ResidenceUpgrade>
         <AdditionalHappiness>40</AdditionalHappiness>
+        <NeedProvideNeedUpgrade />
+        <GoodConsumptionUpgrade />
+        <ChangedSupplyValueUpgrade />
       </ResidenceUpgrade>
       <ItemEffect>
         <EffectTargets>
@@ -513,16 +1027,65 @@
           </Item>
         </EffectTargets>
       </ItemEffect>
-      <Buff />
-      <CultureUpgrade />
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
+      <CultureUpgrade>
+        <ChangeModule>0</ChangeModule>
+        <ForcedFeedbackVariation>0</ForcedFeedbackVariation>
+        <AttractivenessUpgrade />
+        <AdditionalModuleSoundLoop>0</AdditionalModuleSoundLoop>
+      </CultureUpgrade>
       <KontorUpgrade />
-      <AttackableUpgrade />
-      <AttackerUpgrade />
-      <BuildingUpgrade />
-      <FactoryUpgrade />
-      <PassiveTradeGoodGenUpgrade />
-      <ShipyardUpgrade />
-      <VisitorHarborUpgrade />
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
+      <AttackerUpgrade>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
+      </AttackerUpgrade>
+      <BuildingUpgrade>
+        <MaintenanceUpgrade />
+        <PublicServiceFullSatisfactionDistance />
+        <PublicServiceNoSatisfactionDistance />
+        <ResolverUnitCountUpgrade />
+        <ResolverUnitDecreaseUpgrade />
+        <ResolverUnitMovementSpeedUpgrade />
+        <WorkforceAmountUpgrade />
+        <ReplacingWorkforce>0</ReplacingWorkforce>
+      </BuildingUpgrade>
+      <FactoryUpgrade>
+        <ProductivityUpgrade />
+        <AddedFertility>0</AddedFertility>
+        <OutputAmountFactorUpgrade />
+        <AdditionalOutput />
+        <InputAmountUpgrade />
+        <ReplaceInputs />
+        <NeededAreaPercentUpgrade />
+      </FactoryUpgrade>
+      <PassiveTradeGoodGenUpgrade>
+        <GenPool>0</GenPool>
+      </PassiveTradeGoodGenUpgrade>
+      <ShipyardUpgrade>
+        <ReplaceAssemblyOptions />
+        <AddAssemblyOptions />
+      </ShipyardUpgrade>
+      <VisitorHarborUpgrade>
+        <SpawnProbabilityFactor />
+      </VisitorHarborUpgrade>
       <VisitorUpgrade />
     </Values>
   </Asset>
@@ -534,6 +1097,7 @@
         <Name>CarnivalFestivalVisitorsBuff</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/narative_item/icon_fireworks.png</IconFilename>
         <InfoDescription>20115</InfoDescription>
+        <Comments />
       </Standard>
       <Text>
         <LocaText>
@@ -544,9 +1108,18 @@
           </English>
         </LocaText>
         <LineID>28715</LineID>
+        <Localize>1</Localize>
       </Text>
-      <PopulationUpgrade />
-      <ResidenceUpgrade />
+      <PopulationUpgrade>
+        <ResidentsUpgrade />
+        <StressUpgrade />
+        <InputBenefitModifier />
+      </PopulationUpgrade>
+      <ResidenceUpgrade>
+        <NeedProvideNeedUpgrade />
+        <GoodConsumptionUpgrade />
+        <ChangedSupplyValueUpgrade />
+      </ResidenceUpgrade>
       <ItemEffect>
         <EffectTargets>
           <Item>
@@ -554,15 +1127,62 @@
           </Item>
         </EffectTargets>
       </ItemEffect>
-      <Buff />
-      <CultureUpgrade />
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
+      <CultureUpgrade>
+        <ChangeModule>0</ChangeModule>
+        <ForcedFeedbackVariation>0</ForcedFeedbackVariation>
+        <AttractivenessUpgrade />
+        <AdditionalModuleSoundLoop>0</AdditionalModuleSoundLoop>
+      </CultureUpgrade>
       <KontorUpgrade />
-      <AttackableUpgrade />
-      <AttackerUpgrade />
-      <BuildingUpgrade />
-      <FactoryUpgrade />
-      <PassiveTradeGoodGenUpgrade />
-      <ShipyardUpgrade />
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
+      <AttackerUpgrade>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
+      </AttackerUpgrade>
+      <BuildingUpgrade>
+        <MaintenanceUpgrade />
+        <PublicServiceFullSatisfactionDistance />
+        <PublicServiceNoSatisfactionDistance />
+        <ResolverUnitCountUpgrade />
+        <ResolverUnitDecreaseUpgrade />
+        <ResolverUnitMovementSpeedUpgrade />
+        <WorkforceAmountUpgrade />
+        <ReplacingWorkforce>0</ReplacingWorkforce>
+      </BuildingUpgrade>
+      <FactoryUpgrade>
+        <ProductivityUpgrade />
+        <AddedFertility>0</AddedFertility>
+        <OutputAmountFactorUpgrade />
+        <AdditionalOutput />
+        <InputAmountUpgrade />
+        <ReplaceInputs />
+        <NeededAreaPercentUpgrade />
+      </FactoryUpgrade>
+      <PassiveTradeGoodGenUpgrade>
+        <GenPool>0</GenPool>
+      </PassiveTradeGoodGenUpgrade>
+      <ShipyardUpgrade>
+        <ReplaceAssemblyOptions />
+        <AddAssemblyOptions />
+      </ShipyardUpgrade>
       <VisitorHarborUpgrade>
         <SpawnProbabilityFactor>
           <Value>100</Value>

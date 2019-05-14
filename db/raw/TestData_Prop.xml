@@ -7,6 +7,8 @@
         <GUID>1000014</GUID>
         <Name>TestData_Prop</Name>
         <ID>PlaceHolderProp</ID>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Object>
         <Variations>
@@ -15,9 +17,20 @@
           </Item>
         </Variations>
         <Type>Prop</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <DynamicVariation />
-      <Prop />
+      <DynamicVariation>
+        <DynamicVariationType>TestData</DynamicVariationType>
+      </DynamicVariation>
+      <Prop>
+        <HerdBlocking>NeverPassable</HerdBlocking>
+        <VegetationType>None</VegetationType>
+      </Prop>
     </Values>
   </Asset>
 </Assets>

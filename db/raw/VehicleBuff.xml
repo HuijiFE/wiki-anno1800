@@ -7,6 +7,8 @@
         <GUID>6000032</GUID>
         <Name>TowDebuff</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_tools.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -17,20 +19,55 @@
           </English>
         </LocaText>
         <LineID>26390</LineID>
+        <Localize>1</Localize>
       </Text>
       <VehicleUpgrade>
         <ForwardSpeedUpgrade>
           <Value>-50</Value>
           <Percental>1</Percental>
         </ForwardSpeedUpgrade>
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
       </VehicleUpgrade>
-      <Buff />
-      <AttackerUpgrade />
-      <AttackableUpgrade />
-      <ProjectileUpgrade />
-      <TradeShipUpgrade />
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
+      <AttackerUpgrade>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
+      </AttackerUpgrade>
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
+      <ProjectileUpgrade>
+        <InnerDamageUpgrade />
+        <OuterDamageRadiusUpgrade />
+        <PushForceUpgrade />
+        <PushDurationUpgrade />
+      </ProjectileUpgrade>
+      <TradeShipUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
+      </TradeShipUpgrade>
       <UpgradeList />
-      <ItemEffect />
+      <ItemEffect>
+        <EffectTargets />
+      </ItemEffect>
     </Values>
   </Asset>
   <Asset>
@@ -40,6 +77,8 @@
         <GUID>191305</GUID>
         <Name>PucklegunDebuff</Name>
         <IconFilename>data/ui/2kimages/main/icons/icon_warning_debuff_ship.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -50,15 +89,21 @@
           </English>
         </LocaText>
         <LineID>26391</LineID>
+        <Localize>1</Localize>
       </Text>
       <VehicleUpgrade>
         <ForwardSpeedUpgrade>
           <Value>-50</Value>
           <Percental>1</Percental>
         </ForwardSpeedUpgrade>
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
       </VehicleUpgrade>
       <Buff>
         <AddedInfolayer>501510</AddedInfolayer>
+        <PossibleFluffTexts />
       </Buff>
       <AttackerUpgrade>
         <ReloadTimeUpgrade>
@@ -66,12 +111,37 @@
           <Percental>1</Percental>
         </ReloadTimeUpgrade>
         <AttackSpeedUpgrade>-30</AttackSpeedUpgrade>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
       </AttackerUpgrade>
-      <AttackableUpgrade />
-      <ProjectileUpgrade />
-      <TradeShipUpgrade />
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
+      <ProjectileUpgrade>
+        <InnerDamageUpgrade />
+        <OuterDamageRadiusUpgrade />
+        <PushForceUpgrade />
+        <PushDurationUpgrade />
+      </ProjectileUpgrade>
+      <TradeShipUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
+      </TradeShipUpgrade>
       <UpgradeList />
-      <ItemEffect />
+      <ItemEffect>
+        <EffectTargets />
+      </ItemEffect>
     </Values>
   </Asset>
   <Asset>
@@ -81,6 +151,8 @@
         <GUID>191595</GUID>
         <Name>ShieldBuff</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_guild_house_3.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -91,20 +163,55 @@
           </English>
         </LocaText>
         <LineID>26392</LineID>
+        <Localize>1</Localize>
       </Text>
-      <VehicleUpgrade />
-      <Buff />
-      <AttackerUpgrade />
+      <VehicleUpgrade>
+        <ForwardSpeedUpgrade />
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
+      </VehicleUpgrade>
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
+      <AttackerUpgrade>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
+      </AttackerUpgrade>
       <AttackableUpgrade>
         <MaxHitpointsUpgrade>
           <Value>20</Value>
           <Percental>1</Percental>
         </MaxHitpointsUpgrade>
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
       </AttackableUpgrade>
-      <ProjectileUpgrade />
-      <TradeShipUpgrade />
+      <ProjectileUpgrade>
+        <InnerDamageUpgrade />
+        <OuterDamageRadiusUpgrade />
+        <PushForceUpgrade />
+        <PushDurationUpgrade />
+      </ProjectileUpgrade>
+      <TradeShipUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
+      </TradeShipUpgrade>
       <UpgradeList />
-      <ItemEffect />
+      <ItemEffect>
+        <EffectTargets />
+      </ItemEffect>
     </Values>
   </Asset>
   <Asset>
@@ -114,6 +221,8 @@
         <GUID>191614</GUID>
         <Name>SlowDebuff</Name>
         <IconFilename>data/ui/2kimages/main/icons/icon_wait_till_empty.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -124,20 +233,55 @@
           </English>
         </LocaText>
         <LineID>26393</LineID>
+        <Localize>1</Localize>
       </Text>
       <VehicleUpgrade>
         <ForwardSpeedUpgrade>
           <Value>-50</Value>
           <Percental>1</Percental>
         </ForwardSpeedUpgrade>
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
       </VehicleUpgrade>
-      <Buff />
-      <AttackerUpgrade />
-      <AttackableUpgrade />
-      <ProjectileUpgrade />
-      <TradeShipUpgrade />
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
+      <AttackerUpgrade>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
+      </AttackerUpgrade>
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
+      <ProjectileUpgrade>
+        <InnerDamageUpgrade />
+        <OuterDamageRadiusUpgrade />
+        <PushForceUpgrade />
+        <PushDurationUpgrade />
+      </ProjectileUpgrade>
+      <TradeShipUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
+      </TradeShipUpgrade>
       <UpgradeList />
-      <ItemEffect />
+      <ItemEffect>
+        <EffectTargets />
+      </ItemEffect>
     </Values>
   </Asset>
   <Asset>
@@ -147,6 +291,8 @@
         <GUID>191835</GUID>
         <Name>SpeedBoost lvl1</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_ship.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -157,6 +303,7 @@
           </English>
         </LocaText>
         <LineID>26394</LineID>
+        <Localize>1</Localize>
       </Text>
       <VehicleUpgrade>
         <ForwardSpeedUpgrade>
@@ -167,14 +314,47 @@
           <Value>30</Value>
           <Percental>1</Percental>
         </MaintainanceUpgrade>
+        <UpgradeDescription>0</UpgradeDescription>
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
       </VehicleUpgrade>
-      <Buff />
-      <AttackerUpgrade />
-      <AttackableUpgrade />
-      <ProjectileUpgrade />
-      <TradeShipUpgrade />
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
+      <AttackerUpgrade>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
+      </AttackerUpgrade>
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
+      <ProjectileUpgrade>
+        <InnerDamageUpgrade />
+        <OuterDamageRadiusUpgrade />
+        <PushForceUpgrade />
+        <PushDurationUpgrade />
+      </ProjectileUpgrade>
+      <TradeShipUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
+      </TradeShipUpgrade>
       <UpgradeList />
-      <ItemEffect />
+      <ItemEffect>
+        <EffectTargets />
+      </ItemEffect>
     </Values>
   </Asset>
   <Asset>
@@ -184,6 +364,8 @@
         <GUID>191836</GUID>
         <Name>SpeedBoost lvl2</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_ship.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -194,20 +376,55 @@
           </English>
         </LocaText>
         <LineID>26395</LineID>
+        <Localize>1</Localize>
       </Text>
       <VehicleUpgrade>
         <ForwardSpeedUpgrade>
           <Value>25</Value>
           <Percental>1</Percental>
         </ForwardSpeedUpgrade>
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
       </VehicleUpgrade>
-      <Buff />
-      <AttackerUpgrade />
-      <AttackableUpgrade />
-      <ProjectileUpgrade />
-      <TradeShipUpgrade />
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
+      <AttackerUpgrade>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
+      </AttackerUpgrade>
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
+      <ProjectileUpgrade>
+        <InnerDamageUpgrade />
+        <OuterDamageRadiusUpgrade />
+        <PushForceUpgrade />
+        <PushDurationUpgrade />
+      </ProjectileUpgrade>
+      <TradeShipUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
+      </TradeShipUpgrade>
       <UpgradeList />
-      <ItemEffect />
+      <ItemEffect>
+        <EffectTargets />
+      </ItemEffect>
     </Values>
   </Asset>
   <Asset>
@@ -217,6 +434,8 @@
         <GUID>191837</GUID>
         <Name>SpeedBoost lvl3</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_ship.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -227,6 +446,7 @@
           </English>
         </LocaText>
         <LineID>26396</LineID>
+        <Localize>1</Localize>
       </Text>
       <VehicleUpgrade>
         <ForwardSpeedUpgrade>
@@ -237,14 +457,47 @@
           <Value>100</Value>
           <Percental>1</Percental>
         </IgnoreWeightFactorUpgrade>
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreDamageFactorUpgrade />
       </VehicleUpgrade>
-      <Buff />
-      <AttackerUpgrade />
-      <AttackableUpgrade />
-      <ProjectileUpgrade />
-      <TradeShipUpgrade />
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
+      <AttackerUpgrade>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
+      </AttackerUpgrade>
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
+      <ProjectileUpgrade>
+        <InnerDamageUpgrade />
+        <OuterDamageRadiusUpgrade />
+        <PushForceUpgrade />
+        <PushDurationUpgrade />
+      </ProjectileUpgrade>
+      <TradeShipUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
+      </TradeShipUpgrade>
       <UpgradeList />
-      <ItemEffect />
+      <ItemEffect>
+        <EffectTargets />
+      </ItemEffect>
     </Values>
   </Asset>
   <Asset>
@@ -254,6 +507,8 @@
         <GUID>191859</GUID>
         <Name>PuckleGunAutoattacks</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_advanced_weaponry.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -264,9 +519,19 @@
           </English>
         </LocaText>
         <LineID>26397</LineID>
+        <Localize>1</Localize>
       </Text>
-      <VehicleUpgrade />
-      <Buff />
+      <VehicleUpgrade>
+        <ForwardSpeedUpgrade />
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
+      </VehicleUpgrade>
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
       <AttackerUpgrade>
         <AddStatusEffects>
           <Item>
@@ -274,12 +539,37 @@
             <StatusDuration>5000</StatusDuration>
           </Item>
         </AddStatusEffects>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
       </AttackerUpgrade>
-      <AttackableUpgrade />
-      <ProjectileUpgrade />
-      <TradeShipUpgrade />
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
+      <ProjectileUpgrade>
+        <InnerDamageUpgrade />
+        <OuterDamageRadiusUpgrade />
+        <PushForceUpgrade />
+        <PushDurationUpgrade />
+      </ProjectileUpgrade>
+      <TradeShipUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
+      </TradeShipUpgrade>
       <UpgradeList />
-      <ItemEffect />
+      <ItemEffect>
+        <EffectTargets />
+      </ItemEffect>
     </Values>
   </Asset>
   <Asset>
@@ -289,6 +579,8 @@
         <GUID>191861</GUID>
         <Name>FlameThrower lvl1</Name>
         <IconFilename>data/ui/2kimages/main/icons/icon_incident_fire.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -299,9 +591,19 @@
           </English>
         </LocaText>
         <LineID>26398</LineID>
+        <Localize>1</Localize>
       </Text>
-      <VehicleUpgrade />
-      <Buff />
+      <VehicleUpgrade>
+        <ForwardSpeedUpgrade />
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
+      </VehicleUpgrade>
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
       <AttackerUpgrade>
         <AttackRangeUpgrade>
           <Value>-50</Value>
@@ -324,12 +626,32 @@
           <Percental>1</Percental>
         </LineOfSightRangeUpgrade>
         <AttackSpeedUpgrade>100</AttackSpeedUpgrade>
+        <AccuracyUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
       </AttackerUpgrade>
-      <AttackableUpgrade />
-      <ProjectileUpgrade />
-      <TradeShipUpgrade />
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
+      <ProjectileUpgrade>
+        <InnerDamageUpgrade />
+        <OuterDamageRadiusUpgrade />
+        <PushForceUpgrade />
+        <PushDurationUpgrade />
+      </ProjectileUpgrade>
+      <TradeShipUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
+      </TradeShipUpgrade>
       <UpgradeList />
-      <ItemEffect />
+      <ItemEffect>
+        <EffectTargets />
+      </ItemEffect>
     </Values>
   </Asset>
   <Asset>
@@ -339,6 +661,8 @@
         <GUID>191870</GUID>
         <Name>FlameThrower lvl2</Name>
         <IconFilename>data/ui/2kimages/main/icons/icon_incident_fire.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -349,9 +673,19 @@
           </English>
         </LocaText>
         <LineID>26399</LineID>
+        <Localize>1</Localize>
       </Text>
-      <VehicleUpgrade />
-      <Buff />
+      <VehicleUpgrade>
+        <ForwardSpeedUpgrade />
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
+      </VehicleUpgrade>
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
       <AttackerUpgrade>
         <AttackRangeUpgrade>
           <Value>-50</Value>
@@ -371,12 +705,33 @@
           <Percental>1</Percental>
         </LineOfSightRangeUpgrade>
         <AttackSpeedUpgrade>100</AttackSpeedUpgrade>
+        <AccuracyUpgrade />
+        <AddStatusEffects />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
       </AttackerUpgrade>
-      <AttackableUpgrade />
-      <ProjectileUpgrade />
-      <TradeShipUpgrade />
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
+      <ProjectileUpgrade>
+        <InnerDamageUpgrade />
+        <OuterDamageRadiusUpgrade />
+        <PushForceUpgrade />
+        <PushDurationUpgrade />
+      </ProjectileUpgrade>
+      <TradeShipUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
+      </TradeShipUpgrade>
       <UpgradeList />
-      <ItemEffect />
+      <ItemEffect>
+        <EffectTargets />
+      </ItemEffect>
     </Values>
   </Asset>
   <Asset>
@@ -386,6 +741,8 @@
         <GUID>191871</GUID>
         <Name>FlameThrower lvl3</Name>
         <IconFilename>data/ui/2kimages/main/icons/icon_incident_fire.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -396,9 +753,19 @@
           </English>
         </LocaText>
         <LineID>26400</LineID>
+        <Localize>1</Localize>
       </Text>
-      <VehicleUpgrade />
-      <Buff />
+      <VehicleUpgrade>
+        <ForwardSpeedUpgrade />
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
+      </VehicleUpgrade>
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
       <AttackerUpgrade>
         <AttackRangeUpgrade>
           <Value>-50</Value>
@@ -418,12 +785,33 @@
           <Percental>1</Percental>
         </LineOfSightRangeUpgrade>
         <AttackSpeedUpgrade>100</AttackSpeedUpgrade>
+        <AccuracyUpgrade />
+        <AddStatusEffects />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
       </AttackerUpgrade>
-      <AttackableUpgrade />
-      <ProjectileUpgrade />
-      <TradeShipUpgrade />
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
+      <ProjectileUpgrade>
+        <InnerDamageUpgrade />
+        <OuterDamageRadiusUpgrade />
+        <PushForceUpgrade />
+        <PushDurationUpgrade />
+      </ProjectileUpgrade>
+      <TradeShipUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
+      </TradeShipUpgrade>
       <UpgradeList />
-      <ItemEffect />
+      <ItemEffect>
+        <EffectTargets />
+      </ItemEffect>
     </Values>
   </Asset>
   <Asset>
@@ -433,6 +821,8 @@
         <GUID>191943</GUID>
         <Name>PiercingShells lvl1</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/military_items/icon_torpedo_rework.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -443,21 +833,56 @@
           </English>
         </LocaText>
         <LineID>26401</LineID>
+        <Localize>1</Localize>
       </Text>
-      <VehicleUpgrade />
-      <Buff />
+      <VehicleUpgrade>
+        <ForwardSpeedUpgrade />
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
+      </VehicleUpgrade>
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
       <AttackerUpgrade>
         <DamageFactor>
           <SteamShip>
             <Factor>1.5</Factor>
           </SteamShip>
         </DamageFactor>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
       </AttackerUpgrade>
-      <AttackableUpgrade />
-      <ProjectileUpgrade />
-      <TradeShipUpgrade />
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
+      <ProjectileUpgrade>
+        <InnerDamageUpgrade />
+        <OuterDamageRadiusUpgrade />
+        <PushForceUpgrade />
+        <PushDurationUpgrade />
+      </ProjectileUpgrade>
+      <TradeShipUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
+      </TradeShipUpgrade>
       <UpgradeList />
-      <ItemEffect />
+      <ItemEffect>
+        <EffectTargets />
+      </ItemEffect>
     </Values>
   </Asset>
   <Asset>
@@ -467,6 +892,8 @@
         <GUID>191944</GUID>
         <Name>PiercingShells lvl2</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/military_items/icon_torpedo_rework.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -477,21 +904,56 @@
           </English>
         </LocaText>
         <LineID>26402</LineID>
+        <Localize>1</Localize>
       </Text>
-      <VehicleUpgrade />
-      <Buff />
+      <VehicleUpgrade>
+        <ForwardSpeedUpgrade />
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
+      </VehicleUpgrade>
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
       <AttackerUpgrade>
         <DamageFactor>
           <SteamShip>
             <Factor>2</Factor>
           </SteamShip>
         </DamageFactor>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
       </AttackerUpgrade>
-      <AttackableUpgrade />
-      <ProjectileUpgrade />
-      <TradeShipUpgrade />
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
+      <ProjectileUpgrade>
+        <InnerDamageUpgrade />
+        <OuterDamageRadiusUpgrade />
+        <PushForceUpgrade />
+        <PushDurationUpgrade />
+      </ProjectileUpgrade>
+      <TradeShipUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
+      </TradeShipUpgrade>
       <UpgradeList />
-      <ItemEffect />
+      <ItemEffect>
+        <EffectTargets />
+      </ItemEffect>
     </Values>
   </Asset>
   <Asset>
@@ -501,6 +963,8 @@
         <GUID>191947</GUID>
         <Name>ExplosiveShells lvl1</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/ship_military/icon_mortar.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -511,21 +975,56 @@
           </English>
         </LocaText>
         <LineID>26403</LineID>
+        <Localize>1</Localize>
       </Text>
-      <VehicleUpgrade />
-      <Buff />
+      <VehicleUpgrade>
+        <ForwardSpeedUpgrade />
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
+      </VehicleUpgrade>
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
       <AttackerUpgrade>
         <DamageFactor>
           <SailShip>
             <Factor>1.5</Factor>
           </SailShip>
         </DamageFactor>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
       </AttackerUpgrade>
-      <AttackableUpgrade />
-      <ProjectileUpgrade />
-      <TradeShipUpgrade />
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
+      <ProjectileUpgrade>
+        <InnerDamageUpgrade />
+        <OuterDamageRadiusUpgrade />
+        <PushForceUpgrade />
+        <PushDurationUpgrade />
+      </ProjectileUpgrade>
+      <TradeShipUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
+      </TradeShipUpgrade>
       <UpgradeList />
-      <ItemEffect />
+      <ItemEffect>
+        <EffectTargets />
+      </ItemEffect>
     </Values>
   </Asset>
   <Asset>
@@ -535,6 +1034,8 @@
         <GUID>191948</GUID>
         <Name>ExplosiveShells lvl2</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/ship_military/icon_mortar.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -545,21 +1046,56 @@
           </English>
         </LocaText>
         <LineID>26404</LineID>
+        <Localize>1</Localize>
       </Text>
-      <VehicleUpgrade />
-      <Buff />
+      <VehicleUpgrade>
+        <ForwardSpeedUpgrade />
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
+      </VehicleUpgrade>
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
       <AttackerUpgrade>
         <DamageFactor>
           <SailShip>
             <Factor>2</Factor>
           </SailShip>
         </DamageFactor>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
       </AttackerUpgrade>
-      <AttackableUpgrade />
-      <ProjectileUpgrade />
-      <TradeShipUpgrade />
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
+      <ProjectileUpgrade>
+        <InnerDamageUpgrade />
+        <OuterDamageRadiusUpgrade />
+        <PushForceUpgrade />
+        <PushDurationUpgrade />
+      </ProjectileUpgrade>
+      <TradeShipUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
+      </TradeShipUpgrade>
       <UpgradeList />
-      <ItemEffect />
+      <ItemEffect>
+        <EffectTargets />
+      </ItemEffect>
     </Values>
   </Asset>
   <Asset>
@@ -569,6 +1105,8 @@
         <GUID>191949</GUID>
         <Name>CanisterShots lvl1</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/ship_military/icon_pucklegun.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -579,9 +1117,19 @@
           </English>
         </LocaText>
         <LineID>26405</LineID>
+        <Localize>1</Localize>
       </Text>
-      <VehicleUpgrade />
-      <Buff />
+      <VehicleUpgrade>
+        <ForwardSpeedUpgrade />
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
+      </VehicleUpgrade>
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
       <AttackerUpgrade>
         <BaseDamageUpgrade>
           <Value>-50</Value>
@@ -593,12 +1141,35 @@
         </ReloadTimeUpgrade>
         <UseProjectile>102217</UseProjectile>
         <AttackSpeedUpgrade>100</AttackSpeedUpgrade>
+        <AttackRangeUpgrade />
+        <AccuracyUpgrade />
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
       </AttackerUpgrade>
-      <AttackableUpgrade />
-      <ProjectileUpgrade />
-      <TradeShipUpgrade />
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
+      <ProjectileUpgrade>
+        <InnerDamageUpgrade />
+        <OuterDamageRadiusUpgrade />
+        <PushForceUpgrade />
+        <PushDurationUpgrade />
+      </ProjectileUpgrade>
+      <TradeShipUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
+      </TradeShipUpgrade>
       <UpgradeList />
-      <ItemEffect />
+      <ItemEffect>
+        <EffectTargets />
+      </ItemEffect>
     </Values>
   </Asset>
   <Asset>
@@ -608,6 +1179,8 @@
         <GUID>191950</GUID>
         <Name>CanisterShots lvl2</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/ship_military/icon_pucklegun.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -618,9 +1191,19 @@
           </English>
         </LocaText>
         <LineID>26406</LineID>
+        <Localize>1</Localize>
       </Text>
-      <VehicleUpgrade />
-      <Buff />
+      <VehicleUpgrade>
+        <ForwardSpeedUpgrade />
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
+      </VehicleUpgrade>
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
       <AttackerUpgrade>
         <BaseDamageUpgrade>
           <Value>-60</Value>
@@ -632,12 +1215,35 @@
         </ReloadTimeUpgrade>
         <UseProjectile>102217</UseProjectile>
         <AttackSpeedUpgrade>200</AttackSpeedUpgrade>
+        <AttackRangeUpgrade />
+        <AccuracyUpgrade />
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
       </AttackerUpgrade>
-      <AttackableUpgrade />
-      <ProjectileUpgrade />
-      <TradeShipUpgrade />
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
+      <ProjectileUpgrade>
+        <InnerDamageUpgrade />
+        <OuterDamageRadiusUpgrade />
+        <PushForceUpgrade />
+        <PushDurationUpgrade />
+      </ProjectileUpgrade>
+      <TradeShipUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
+      </TradeShipUpgrade>
       <UpgradeList />
-      <ItemEffect />
+      <ItemEffect>
+        <EffectTargets />
+      </ItemEffect>
     </Values>
   </Asset>
   <Asset>
@@ -647,6 +1253,8 @@
         <GUID>191953</GUID>
         <Name>PucklegunDebufflvl1</Name>
         <IconFilename>data/ui/2kimages/main/icons/icon_expedition_hypnotist.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -657,9 +1265,19 @@
           </English>
         </LocaText>
         <LineID>26407</LineID>
+        <Localize>1</Localize>
       </Text>
-      <VehicleUpgrade />
-      <Buff />
+      <VehicleUpgrade>
+        <ForwardSpeedUpgrade />
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
+      </VehicleUpgrade>
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
       <AttackerUpgrade>
         <ReloadTimeUpgrade>
           <Value>50</Value>
@@ -669,12 +1287,36 @@
           <Value>-20</Value>
         </AccuracyUpgrade>
         <AttackSpeedUpgrade>-30</AttackSpeedUpgrade>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
       </AttackerUpgrade>
-      <AttackableUpgrade />
-      <ProjectileUpgrade />
-      <TradeShipUpgrade />
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
+      <ProjectileUpgrade>
+        <InnerDamageUpgrade />
+        <OuterDamageRadiusUpgrade />
+        <PushForceUpgrade />
+        <PushDurationUpgrade />
+      </ProjectileUpgrade>
+      <TradeShipUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
+      </TradeShipUpgrade>
       <UpgradeList />
-      <ItemEffect />
+      <ItemEffect>
+        <EffectTargets />
+      </ItemEffect>
     </Values>
   </Asset>
   <Asset>
@@ -684,6 +1326,8 @@
         <GUID>191954</GUID>
         <Name>PucklegunDebufflvl2</Name>
         <IconFilename>data/ui/2kimages/main/icons/icon_expedition_hypnotist.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -694,9 +1338,19 @@
           </English>
         </LocaText>
         <LineID>26408</LineID>
+        <Localize>1</Localize>
       </Text>
-      <VehicleUpgrade />
-      <Buff />
+      <VehicleUpgrade>
+        <ForwardSpeedUpgrade />
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
+      </VehicleUpgrade>
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
       <AttackerUpgrade>
         <ReloadTimeUpgrade>
           <Value>50</Value>
@@ -706,12 +1360,36 @@
           <Value>-50</Value>
         </AccuracyUpgrade>
         <AttackSpeedUpgrade>-30</AttackSpeedUpgrade>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
       </AttackerUpgrade>
-      <AttackableUpgrade />
-      <ProjectileUpgrade />
-      <TradeShipUpgrade />
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
+      <ProjectileUpgrade>
+        <InnerDamageUpgrade />
+        <OuterDamageRadiusUpgrade />
+        <PushForceUpgrade />
+        <PushDurationUpgrade />
+      </ProjectileUpgrade>
+      <TradeShipUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
+      </TradeShipUpgrade>
       <UpgradeList />
-      <ItemEffect />
+      <ItemEffect>
+        <EffectTargets />
+      </ItemEffect>
     </Values>
   </Asset>
   <Asset>
@@ -721,6 +1399,8 @@
         <GUID>191981</GUID>
         <Name>Repair Kit lvl2</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/military_items/ico_repair_toolset.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -731,10 +1411,31 @@
           </English>
         </LocaText>
         <LineID>26409</LineID>
+        <Localize>1</Localize>
       </Text>
-      <VehicleUpgrade />
-      <Buff />
-      <AttackerUpgrade />
+      <VehicleUpgrade>
+        <ForwardSpeedUpgrade />
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
+      </VehicleUpgrade>
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
+      <AttackerUpgrade>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
+      </AttackerUpgrade>
       <AttackableUpgrade>
         <SelfHealUpgrade>
           <Value>400</Value>
@@ -744,11 +1445,24 @@
           <Value>-100</Value>
           <Percental>1</Percental>
         </SelfHealPausedTimeIfAttackedUpgrade>
+        <MaxHitpointsUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
       </AttackableUpgrade>
-      <ProjectileUpgrade />
-      <TradeShipUpgrade />
+      <ProjectileUpgrade>
+        <InnerDamageUpgrade />
+        <OuterDamageRadiusUpgrade />
+        <PushForceUpgrade />
+        <PushDurationUpgrade />
+      </ProjectileUpgrade>
+      <TradeShipUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
+      </TradeShipUpgrade>
       <UpgradeList />
-      <ItemEffect />
+      <ItemEffect>
+        <EffectTargets />
+      </ItemEffect>
     </Values>
   </Asset>
   <Asset>
@@ -758,6 +1472,8 @@
         <GUID>192156</GUID>
         <Name>Repair Kit lvl3</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/military_items/ico_repair_toolset.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -768,10 +1484,31 @@
           </English>
         </LocaText>
         <LineID>26410</LineID>
+        <Localize>1</Localize>
       </Text>
-      <VehicleUpgrade />
-      <Buff />
-      <AttackerUpgrade />
+      <VehicleUpgrade>
+        <ForwardSpeedUpgrade />
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
+      </VehicleUpgrade>
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
+      <AttackerUpgrade>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
+      </AttackerUpgrade>
       <AttackableUpgrade>
         <SelfHealUpgrade>
           <Value>600</Value>
@@ -781,11 +1518,24 @@
           <Value>-100</Value>
           <Percental>1</Percental>
         </SelfHealPausedTimeIfAttackedUpgrade>
+        <MaxHitpointsUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
       </AttackableUpgrade>
-      <ProjectileUpgrade />
-      <TradeShipUpgrade />
+      <ProjectileUpgrade>
+        <InnerDamageUpgrade />
+        <OuterDamageRadiusUpgrade />
+        <PushForceUpgrade />
+        <PushDurationUpgrade />
+      </ProjectileUpgrade>
+      <TradeShipUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
+      </TradeShipUpgrade>
       <UpgradeList />
-      <ItemEffect />
+      <ItemEffect>
+        <EffectTargets />
+      </ItemEffect>
     </Values>
   </Asset>
   <Asset>
@@ -795,6 +1545,8 @@
         <GUID>191983</GUID>
         <Name>Repair Kit lvl4</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/military_items/ico_repair_toolset.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -805,10 +1557,31 @@
           </English>
         </LocaText>
         <LineID>26411</LineID>
+        <Localize>1</Localize>
       </Text>
-      <VehicleUpgrade />
-      <Buff />
-      <AttackerUpgrade />
+      <VehicleUpgrade>
+        <ForwardSpeedUpgrade />
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
+      </VehicleUpgrade>
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
+      <AttackerUpgrade>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
+      </AttackerUpgrade>
       <AttackableUpgrade>
         <SelfHealUpgrade>
           <Value>800</Value>
@@ -818,11 +1591,24 @@
           <Value>-100</Value>
           <Percental>1</Percental>
         </SelfHealPausedTimeIfAttackedUpgrade>
+        <MaxHitpointsUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
       </AttackableUpgrade>
-      <ProjectileUpgrade />
-      <TradeShipUpgrade />
+      <ProjectileUpgrade>
+        <InnerDamageUpgrade />
+        <OuterDamageRadiusUpgrade />
+        <PushForceUpgrade />
+        <PushDurationUpgrade />
+      </ProjectileUpgrade>
+      <TradeShipUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
+      </TradeShipUpgrade>
       <UpgradeList />
-      <ItemEffect />
+      <ItemEffect>
+        <EffectTargets />
+      </ItemEffect>
     </Values>
   </Asset>
   <Asset>
@@ -832,6 +1618,8 @@
         <GUID>192157</GUID>
         <Name>Repair Kit lvl5</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/military_items/ico_repair_toolset.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -842,10 +1630,31 @@
           </English>
         </LocaText>
         <LineID>26412</LineID>
+        <Localize>1</Localize>
       </Text>
-      <VehicleUpgrade />
-      <Buff />
-      <AttackerUpgrade />
+      <VehicleUpgrade>
+        <ForwardSpeedUpgrade />
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
+      </VehicleUpgrade>
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
+      <AttackerUpgrade>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
+      </AttackerUpgrade>
       <AttackableUpgrade>
         <SelfHealUpgrade>
           <Value>1000</Value>
@@ -855,11 +1664,24 @@
           <Value>-100</Value>
           <Percental>1</Percental>
         </SelfHealPausedTimeIfAttackedUpgrade>
+        <MaxHitpointsUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
       </AttackableUpgrade>
-      <ProjectileUpgrade />
-      <TradeShipUpgrade />
+      <ProjectileUpgrade>
+        <InnerDamageUpgrade />
+        <OuterDamageRadiusUpgrade />
+        <PushForceUpgrade />
+        <PushDurationUpgrade />
+      </ProjectileUpgrade>
+      <TradeShipUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
+      </TradeShipUpgrade>
       <UpgradeList />
-      <ItemEffect />
+      <ItemEffect>
+        <EffectTargets />
+      </ItemEffect>
     </Values>
   </Asset>
   <Asset>
@@ -869,6 +1691,8 @@
         <GUID>191988</GUID>
         <Name>White Flag</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_white_flag.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -879,17 +1703,53 @@
           </English>
         </LocaText>
         <LineID>26413</LineID>
+        <Localize>1</Localize>
       </Text>
       <VehicleUpgrade>
         <ActivateWhiteFlag>1</ActivateWhiteFlag>
+        <ForwardSpeedUpgrade />
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
       </VehicleUpgrade>
-      <Buff />
-      <AttackerUpgrade />
-      <AttackableUpgrade />
-      <ProjectileUpgrade />
-      <TradeShipUpgrade />
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
+      <AttackerUpgrade>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
+      </AttackerUpgrade>
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
+      <ProjectileUpgrade>
+        <InnerDamageUpgrade />
+        <OuterDamageRadiusUpgrade />
+        <PushForceUpgrade />
+        <PushDurationUpgrade />
+      </ProjectileUpgrade>
+      <TradeShipUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
+      </TradeShipUpgrade>
       <UpgradeList />
-      <ItemEffect />
+      <ItemEffect>
+        <EffectTargets />
+      </ItemEffect>
     </Values>
   </Asset>
   <Asset>
@@ -899,6 +1759,8 @@
         <GUID>191994</GUID>
         <Name>Royal White Flag</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_white_flag.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -909,19 +1771,53 @@
           </English>
         </LocaText>
         <LineID>26414</LineID>
+        <Localize>1</Localize>
       </Text>
       <VehicleUpgrade>
         <ActivateWhiteFlag>1</ActivateWhiteFlag>
+        <ForwardSpeedUpgrade />
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
       </VehicleUpgrade>
-      <Buff />
-      <AttackerUpgrade />
-      <AttackableUpgrade />
-      <ProjectileUpgrade />
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
+      <AttackerUpgrade>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
+      </AttackerUpgrade>
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
+      <ProjectileUpgrade>
+        <InnerDamageUpgrade />
+        <OuterDamageRadiusUpgrade />
+        <PushForceUpgrade />
+        <PushDurationUpgrade />
+      </ProjectileUpgrade>
       <TradeShipUpgrade>
         <ActiveTradePriceInPercent>85</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
       </TradeShipUpgrade>
       <UpgradeList />
-      <ItemEffect />
+      <ItemEffect>
+        <EffectTargets />
+      </ItemEffect>
     </Values>
   </Asset>
   <Asset>
@@ -931,6 +1827,8 @@
         <GUID>192003</GUID>
         <Name>SnareDebuff</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/narative_item/icon_chain_shot.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -941,20 +1839,55 @@
           </English>
         </LocaText>
         <LineID>26415</LineID>
+        <Localize>1</Localize>
       </Text>
       <VehicleUpgrade>
         <ForwardSpeedUpgrade>
           <Value>-80</Value>
           <Percental>1</Percental>
         </ForwardSpeedUpgrade>
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
       </VehicleUpgrade>
-      <Buff />
-      <AttackerUpgrade />
-      <AttackableUpgrade />
-      <ProjectileUpgrade />
-      <TradeShipUpgrade />
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
+      <AttackerUpgrade>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
+      </AttackerUpgrade>
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
+      <ProjectileUpgrade>
+        <InnerDamageUpgrade />
+        <OuterDamageRadiusUpgrade />
+        <PushForceUpgrade />
+        <PushDurationUpgrade />
+      </ProjectileUpgrade>
+      <TradeShipUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
+      </TradeShipUpgrade>
       <UpgradeList />
-      <ItemEffect />
+      <ItemEffect>
+        <EffectTargets />
+      </ItemEffect>
     </Values>
   </Asset>
   <Asset>
@@ -964,6 +1897,8 @@
         <GUID>192004</GUID>
         <Name>FireDebuff</Name>
         <IconFilename>data/ui/2kimages/main/icons/icon_incident_fire.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -974,15 +1909,52 @@
           </English>
         </LocaText>
         <LineID>26416</LineID>
+        <Localize>1</Localize>
       </Text>
-      <VehicleUpgrade />
-      <Buff />
-      <AttackerUpgrade />
-      <AttackableUpgrade />
-      <ProjectileUpgrade />
-      <TradeShipUpgrade />
+      <VehicleUpgrade>
+        <ForwardSpeedUpgrade />
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
+      </VehicleUpgrade>
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
+      <AttackerUpgrade>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
+      </AttackerUpgrade>
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
+      <ProjectileUpgrade>
+        <InnerDamageUpgrade />
+        <OuterDamageRadiusUpgrade />
+        <PushForceUpgrade />
+        <PushDurationUpgrade />
+      </ProjectileUpgrade>
+      <TradeShipUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
+      </TradeShipUpgrade>
       <UpgradeList />
-      <ItemEffect />
+      <ItemEffect>
+        <EffectTargets />
+      </ItemEffect>
     </Values>
   </Asset>
   <Asset>
@@ -992,6 +1964,8 @@
         <GUID>192009</GUID>
         <Name>Trading Bill lvl1</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -1002,17 +1976,52 @@
           </English>
         </LocaText>
         <LineID>26417</LineID>
+        <Localize>1</Localize>
       </Text>
-      <VehicleUpgrade />
-      <Buff />
-      <AttackerUpgrade />
-      <AttackableUpgrade />
-      <ProjectileUpgrade />
+      <VehicleUpgrade>
+        <ForwardSpeedUpgrade />
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
+      </VehicleUpgrade>
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
+      <AttackerUpgrade>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
+      </AttackerUpgrade>
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
+      <ProjectileUpgrade>
+        <InnerDamageUpgrade />
+        <OuterDamageRadiusUpgrade />
+        <PushForceUpgrade />
+        <PushDurationUpgrade />
+      </ProjectileUpgrade>
       <TradeShipUpgrade>
         <ActiveTradePriceInPercent>95</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
       </TradeShipUpgrade>
       <UpgradeList />
-      <ItemEffect />
+      <ItemEffect>
+        <EffectTargets />
+      </ItemEffect>
     </Values>
   </Asset>
   <Asset>
@@ -1022,6 +2031,8 @@
         <GUID>192010</GUID>
         <Name>Trading Bill lvl2</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -1032,17 +2043,52 @@
           </English>
         </LocaText>
         <LineID>26418</LineID>
+        <Localize>1</Localize>
       </Text>
-      <VehicleUpgrade />
-      <Buff />
-      <AttackerUpgrade />
-      <AttackableUpgrade />
-      <ProjectileUpgrade />
+      <VehicleUpgrade>
+        <ForwardSpeedUpgrade />
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
+      </VehicleUpgrade>
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
+      <AttackerUpgrade>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
+      </AttackerUpgrade>
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
+      <ProjectileUpgrade>
+        <InnerDamageUpgrade />
+        <OuterDamageRadiusUpgrade />
+        <PushForceUpgrade />
+        <PushDurationUpgrade />
+      </ProjectileUpgrade>
       <TradeShipUpgrade>
         <ActiveTradePriceInPercent>90</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
       </TradeShipUpgrade>
       <UpgradeList />
-      <ItemEffect />
+      <ItemEffect>
+        <EffectTargets />
+      </ItemEffect>
     </Values>
   </Asset>
   <Asset>
@@ -1052,6 +2098,8 @@
         <GUID>192011</GUID>
         <Name>Trading Bill lvl3</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -1062,17 +2110,52 @@
           </English>
         </LocaText>
         <LineID>26419</LineID>
+        <Localize>1</Localize>
       </Text>
-      <VehicleUpgrade />
-      <Buff />
-      <AttackerUpgrade />
-      <AttackableUpgrade />
-      <ProjectileUpgrade />
+      <VehicleUpgrade>
+        <ForwardSpeedUpgrade />
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
+      </VehicleUpgrade>
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
+      <AttackerUpgrade>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
+      </AttackerUpgrade>
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
+      <ProjectileUpgrade>
+        <InnerDamageUpgrade />
+        <OuterDamageRadiusUpgrade />
+        <PushForceUpgrade />
+        <PushDurationUpgrade />
+      </ProjectileUpgrade>
       <TradeShipUpgrade>
         <ActiveTradePriceInPercent>85</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
       </TradeShipUpgrade>
       <UpgradeList />
-      <ItemEffect />
+      <ItemEffect>
+        <EffectTargets />
+      </ItemEffect>
     </Values>
   </Asset>
   <Asset>
@@ -1082,6 +2165,8 @@
         <GUID>192018</GUID>
         <Name>BigBerthaShells lvl1</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/ship_military/icon_mortar.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -1092,9 +2177,19 @@
           </English>
         </LocaText>
         <LineID>26420</LineID>
+        <Localize>1</Localize>
       </Text>
-      <VehicleUpgrade />
-      <Buff />
+      <VehicleUpgrade>
+        <ForwardSpeedUpgrade />
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
+      </VehicleUpgrade>
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
       <AttackerUpgrade>
         <UseProjectile>101955</UseProjectile>
         <DamageFactor>
@@ -1102,12 +2197,36 @@
             <Factor>1.5</Factor>
           </SailShip>
         </DamageFactor>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
       </AttackerUpgrade>
-      <AttackableUpgrade />
-      <ProjectileUpgrade />
-      <TradeShipUpgrade />
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
+      <ProjectileUpgrade>
+        <InnerDamageUpgrade />
+        <OuterDamageRadiusUpgrade />
+        <PushForceUpgrade />
+        <PushDurationUpgrade />
+      </ProjectileUpgrade>
+      <TradeShipUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
+      </TradeShipUpgrade>
       <UpgradeList />
-      <ItemEffect />
+      <ItemEffect>
+        <EffectTargets />
+      </ItemEffect>
     </Values>
   </Asset>
   <Asset>
@@ -1117,6 +2236,8 @@
         <GUID>192174</GUID>
         <Name>Pirate Flag</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_pirate_flag.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -1127,17 +2248,53 @@
           </English>
         </LocaText>
         <LineID>29530</LineID>
+        <Localize>1</Localize>
       </Text>
       <VehicleUpgrade>
         <ActivatePirateFlag>1</ActivatePirateFlag>
+        <ForwardSpeedUpgrade />
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
       </VehicleUpgrade>
-      <Buff />
-      <AttackerUpgrade />
-      <AttackableUpgrade />
-      <ProjectileUpgrade />
-      <TradeShipUpgrade />
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
+      <AttackerUpgrade>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
+      </AttackerUpgrade>
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
+      <ProjectileUpgrade>
+        <InnerDamageUpgrade />
+        <OuterDamageRadiusUpgrade />
+        <PushForceUpgrade />
+        <PushDurationUpgrade />
+      </ProjectileUpgrade>
+      <TradeShipUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
+      </TradeShipUpgrade>
       <UpgradeList />
-      <ItemEffect />
+      <ItemEffect>
+        <EffectTargets />
+      </ItemEffect>
     </Values>
   </Asset>
   <Asset>
@@ -1147,6 +2304,8 @@
         <GUID>192175</GUID>
         <Name>Pirate Captain Flag</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_pirate_flag.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -1157,23 +2316,57 @@
           </English>
         </LocaText>
         <LineID>29531</LineID>
+        <Localize>1</Localize>
       </Text>
       <VehicleUpgrade>
         <ActivatePirateFlag>1</ActivatePirateFlag>
+        <ForwardSpeedUpgrade />
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
       </VehicleUpgrade>
-      <Buff />
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
       <AttackerUpgrade>
         <ReloadTimeUpgrade>
           <Value>-17</Value>
           <Percental>1</Percental>
         </ReloadTimeUpgrade>
         <AttackSpeedUpgrade>20</AttackSpeedUpgrade>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
       </AttackerUpgrade>
-      <AttackableUpgrade />
-      <ProjectileUpgrade />
-      <TradeShipUpgrade />
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
+      <ProjectileUpgrade>
+        <InnerDamageUpgrade />
+        <OuterDamageRadiusUpgrade />
+        <PushForceUpgrade />
+        <PushDurationUpgrade />
+      </ProjectileUpgrade>
+      <TradeShipUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
+      </TradeShipUpgrade>
       <UpgradeList />
-      <ItemEffect />
+      <ItemEffect>
+        <EffectTargets />
+      </ItemEffect>
     </Values>
   </Asset>
   <Asset>
@@ -1183,6 +2376,8 @@
         <GUID>192453</GUID>
         <Name>ChainShots lvl1</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/narative_item/icon_chain_shot.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -1193,17 +2388,52 @@
           </English>
         </LocaText>
         <LineID>29532</LineID>
+        <Localize>1</Localize>
       </Text>
-      <VehicleUpgrade />
-      <Buff />
+      <VehicleUpgrade>
+        <ForwardSpeedUpgrade />
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
+      </VehicleUpgrade>
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
       <AttackerUpgrade>
         <UseProjectile>102626</UseProjectile>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
       </AttackerUpgrade>
-      <AttackableUpgrade />
-      <ProjectileUpgrade />
-      <TradeShipUpgrade />
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
+      <ProjectileUpgrade>
+        <InnerDamageUpgrade />
+        <OuterDamageRadiusUpgrade />
+        <PushForceUpgrade />
+        <PushDurationUpgrade />
+      </ProjectileUpgrade>
+      <TradeShipUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
+      </TradeShipUpgrade>
       <UpgradeList />
-      <ItemEffect />
+      <ItemEffect>
+        <EffectTargets />
+      </ItemEffect>
     </Values>
   </Asset>
   <Asset>
@@ -1213,6 +2443,8 @@
         <GUID>192454</GUID>
         <Name>ChainShots lvl2</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/narative_item/icon_chain_shot.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -1223,17 +2455,52 @@
           </English>
         </LocaText>
         <LineID>29533</LineID>
+        <Localize>1</Localize>
       </Text>
-      <VehicleUpgrade />
-      <Buff />
+      <VehicleUpgrade>
+        <ForwardSpeedUpgrade />
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
+      </VehicleUpgrade>
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
       <AttackerUpgrade>
         <UseProjectile>102626</UseProjectile>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
       </AttackerUpgrade>
-      <AttackableUpgrade />
-      <ProjectileUpgrade />
-      <TradeShipUpgrade />
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
+      <ProjectileUpgrade>
+        <InnerDamageUpgrade />
+        <OuterDamageRadiusUpgrade />
+        <PushForceUpgrade />
+        <PushDurationUpgrade />
+      </ProjectileUpgrade>
+      <TradeShipUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
+      </TradeShipUpgrade>
       <UpgradeList />
-      <ItemEffect />
+      <ItemEffect>
+        <EffectTargets />
+      </ItemEffect>
     </Values>
   </Asset>
   <Asset>
@@ -1243,6 +2510,8 @@
         <GUID>192940</GUID>
         <Name>Letter of Marque</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -1253,17 +2522,53 @@
           </English>
         </LocaText>
         <LineID>29534</LineID>
+        <Localize>1</Localize>
       </Text>
       <VehicleUpgrade>
         <ActivatePirateFlag>1</ActivatePirateFlag>
+        <ForwardSpeedUpgrade />
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
       </VehicleUpgrade>
-      <Buff />
-      <AttackerUpgrade />
-      <AttackableUpgrade />
-      <ProjectileUpgrade />
-      <TradeShipUpgrade />
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
+      <AttackerUpgrade>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
+      </AttackerUpgrade>
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
+      <ProjectileUpgrade>
+        <InnerDamageUpgrade />
+        <OuterDamageRadiusUpgrade />
+        <PushForceUpgrade />
+        <PushDurationUpgrade />
+      </ProjectileUpgrade>
+      <TradeShipUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
+      </TradeShipUpgrade>
       <UpgradeList />
-      <ItemEffect />
+      <ItemEffect>
+        <EffectTargets />
+      </ItemEffect>
     </Values>
   </Asset>
   <Asset>
@@ -1273,6 +2578,8 @@
         <GUID>192941</GUID>
         <Name>Royal Letter of Marque</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -1283,23 +2590,57 @@
           </English>
         </LocaText>
         <LineID>29535</LineID>
+        <Localize>1</Localize>
       </Text>
       <VehicleUpgrade>
         <ActivatePirateFlag>1</ActivatePirateFlag>
+        <ForwardSpeedUpgrade />
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
       </VehicleUpgrade>
-      <Buff />
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
       <AttackerUpgrade>
         <ReloadTimeUpgrade>
           <Value>-17</Value>
           <Percental>1</Percental>
         </ReloadTimeUpgrade>
         <AttackSpeedUpgrade>20</AttackSpeedUpgrade>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
       </AttackerUpgrade>
-      <AttackableUpgrade />
-      <ProjectileUpgrade />
-      <TradeShipUpgrade />
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
+      <ProjectileUpgrade>
+        <InnerDamageUpgrade />
+        <OuterDamageRadiusUpgrade />
+        <PushForceUpgrade />
+        <PushDurationUpgrade />
+      </ProjectileUpgrade>
+      <TradeShipUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
+      </TradeShipUpgrade>
       <UpgradeList />
-      <ItemEffect />
+      <ItemEffect>
+        <EffectTargets />
+      </ItemEffect>
     </Values>
   </Asset>
   <Asset>
@@ -1309,6 +2650,8 @@
         <GUID>192942</GUID>
         <Name>Protection Letter</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -1319,17 +2662,53 @@
           </English>
         </LocaText>
         <LineID>29536</LineID>
+        <Localize>1</Localize>
       </Text>
       <VehicleUpgrade>
         <ActivateWhiteFlag>1</ActivateWhiteFlag>
+        <ForwardSpeedUpgrade />
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
       </VehicleUpgrade>
-      <Buff />
-      <AttackerUpgrade />
-      <AttackableUpgrade />
-      <ProjectileUpgrade />
-      <TradeShipUpgrade />
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
+      <AttackerUpgrade>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
+      </AttackerUpgrade>
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
+      <ProjectileUpgrade>
+        <InnerDamageUpgrade />
+        <OuterDamageRadiusUpgrade />
+        <PushForceUpgrade />
+        <PushDurationUpgrade />
+      </ProjectileUpgrade>
+      <TradeShipUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
+      </TradeShipUpgrade>
       <UpgradeList />
-      <ItemEffect />
+      <ItemEffect>
+        <EffectTargets />
+      </ItemEffect>
     </Values>
   </Asset>
   <Asset>
@@ -1339,6 +2718,8 @@
         <GUID>192943</GUID>
         <Name>Royal Protection Letter</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -1349,19 +2730,53 @@
           </English>
         </LocaText>
         <LineID>29537</LineID>
+        <Localize>1</Localize>
       </Text>
       <VehicleUpgrade>
         <ActivateWhiteFlag>1</ActivateWhiteFlag>
+        <ForwardSpeedUpgrade />
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
       </VehicleUpgrade>
-      <Buff />
-      <AttackerUpgrade />
-      <AttackableUpgrade />
-      <ProjectileUpgrade />
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
+      <AttackerUpgrade>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
+      </AttackerUpgrade>
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
+      <ProjectileUpgrade>
+        <InnerDamageUpgrade />
+        <OuterDamageRadiusUpgrade />
+        <PushForceUpgrade />
+        <PushDurationUpgrade />
+      </ProjectileUpgrade>
       <TradeShipUpgrade>
         <ActiveTradePriceInPercent>85</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
       </TradeShipUpgrade>
       <UpgradeList />
-      <ItemEffect />
+      <ItemEffect>
+        <EffectTargets />
+      </ItemEffect>
     </Values>
   </Asset>
   <Asset>
@@ -1371,6 +2786,8 @@
         <GUID>192986</GUID>
         <Name>IllnessDebuff</Name>
         <IconFilename>data/ui/2kimages/main/icons/icon_incident_diseases.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -1381,15 +2798,52 @@
           </English>
         </LocaText>
         <LineID>29854</LineID>
+        <Localize>1</Localize>
       </Text>
-      <VehicleUpgrade />
-      <Buff />
-      <AttackerUpgrade />
-      <AttackableUpgrade />
-      <ProjectileUpgrade />
-      <TradeShipUpgrade />
+      <VehicleUpgrade>
+        <ForwardSpeedUpgrade />
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
+      </VehicleUpgrade>
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
+      <AttackerUpgrade>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
+      </AttackerUpgrade>
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
+      <ProjectileUpgrade>
+        <InnerDamageUpgrade />
+        <OuterDamageRadiusUpgrade />
+        <PushForceUpgrade />
+        <PushDurationUpgrade />
+      </ProjectileUpgrade>
+      <TradeShipUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
+      </TradeShipUpgrade>
       <UpgradeList />
-      <ItemEffect />
+      <ItemEffect>
+        <EffectTargets />
+      </ItemEffect>
     </Values>
   </Asset>
   <Asset>
@@ -1400,6 +2854,7 @@
         <Name>pirates</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/museum/icon_museum_sword_pirate_epic.png</IconFilename>
         <InfoDescription>15769</InfoDescription>
+        <Comments />
       </Standard>
       <Text>
         <LocaText>
@@ -1410,6 +2865,7 @@
           </English>
         </LocaText>
         <LineID>21928</LineID>
+        <Localize>1</Localize>
       </Text>
       <VehicleUpgrade>
         <ForwardSpeedUpgrade>
@@ -1424,12 +2880,42 @@
           <Value>10</Value>
           <Percental>1</Percental>
         </IgnoreDamageFactorUpgrade>
+        <UpgradeDescription>0</UpgradeDescription>
+        <IgnoreWeightFactorUpgrade />
       </VehicleUpgrade>
-      <Buff />
-      <AttackerUpgrade />
-      <AttackableUpgrade />
-      <ProjectileUpgrade />
-      <TradeShipUpgrade />
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
+      <AttackerUpgrade>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
+      </AttackerUpgrade>
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
+      <ProjectileUpgrade>
+        <InnerDamageUpgrade />
+        <OuterDamageRadiusUpgrade />
+        <PushForceUpgrade />
+        <PushDurationUpgrade />
+      </ProjectileUpgrade>
+      <TradeShipUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
+      </TradeShipUpgrade>
       <UpgradeList />
       <ItemEffect>
         <EffectTargets>
@@ -1448,6 +2934,7 @@
         <Name>vikings</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/museum/icon_museum_viking_valkyrie_helmet.png</IconFilename>
         <InfoDescription>15772</InfoDescription>
+        <Comments />
       </Standard>
       <Text>
         <LocaText>
@@ -1458,23 +2945,54 @@
           </English>
         </LocaText>
         <LineID>21932</LineID>
+        <Localize>1</Localize>
       </Text>
-      <VehicleUpgrade />
-      <Buff />
+      <VehicleUpgrade>
+        <ForwardSpeedUpgrade />
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
+      </VehicleUpgrade>
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
       <AttackerUpgrade>
         <BaseDamageUpgrade>
           <Value>3</Value>
           <Percental>1</Percental>
         </BaseDamageUpgrade>
+        <AttackRangeUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
       </AttackerUpgrade>
       <AttackableUpgrade>
         <MaxHitpointsUpgrade>
           <Value>5</Value>
           <Percental>1</Percental>
         </MaxHitpointsUpgrade>
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
       </AttackableUpgrade>
-      <ProjectileUpgrade />
-      <TradeShipUpgrade />
+      <ProjectileUpgrade>
+        <InnerDamageUpgrade />
+        <OuterDamageRadiusUpgrade />
+        <PushForceUpgrade />
+        <PushDurationUpgrade />
+      </ProjectileUpgrade>
+      <TradeShipUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
+      </TradeShipUpgrade>
       <UpgradeList />
       <ItemEffect>
         <EffectTargets>
@@ -1492,6 +3010,8 @@
         <GUID>6000002</GUID>
         <Name>SpeedBoost</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_ship.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -1499,12 +3019,17 @@
             <Text>Speed Boost</Text>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
       <VehicleUpgrade>
         <ForwardSpeedUpgrade>
           <Value>75</Value>
           <Percental>1</Percental>
         </ForwardSpeedUpgrade>
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
       </VehicleUpgrade>
       <Buff>
         <PossibleFluffTexts>
@@ -1515,13 +3040,41 @@
             <FluffText>15701</FluffText>
           </Item>
         </PossibleFluffTexts>
+        <AddedInfolayer>0</AddedInfolayer>
       </Buff>
-      <AttackerUpgrade />
-      <AttackableUpgrade />
-      <ProjectileUpgrade />
-      <TradeShipUpgrade />
+      <AttackerUpgrade>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
+      </AttackerUpgrade>
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
+      <ProjectileUpgrade>
+        <InnerDamageUpgrade />
+        <OuterDamageRadiusUpgrade />
+        <PushForceUpgrade />
+        <PushDurationUpgrade />
+      </ProjectileUpgrade>
+      <TradeShipUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
+      </TradeShipUpgrade>
       <UpgradeList />
-      <ItemEffect />
+      <ItemEffect>
+        <EffectTargets />
+      </ItemEffect>
     </Values>
   </Asset>
   <Asset>
@@ -1531,6 +3084,8 @@
         <GUID>190813</GUID>
         <Name>WhiteFlag</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_white_flag.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -1538,17 +3093,53 @@
             <Text>White Flag</Text>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
       <VehicleUpgrade>
         <ActivateWhiteFlag>1</ActivateWhiteFlag>
+        <ForwardSpeedUpgrade />
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
       </VehicleUpgrade>
-      <Buff />
-      <AttackerUpgrade />
-      <AttackableUpgrade />
-      <ProjectileUpgrade />
-      <TradeShipUpgrade />
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
+      <AttackerUpgrade>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
+      </AttackerUpgrade>
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
+      <ProjectileUpgrade>
+        <InnerDamageUpgrade />
+        <OuterDamageRadiusUpgrade />
+        <PushForceUpgrade />
+        <PushDurationUpgrade />
+      </ProjectileUpgrade>
+      <TradeShipUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
+      </TradeShipUpgrade>
       <UpgradeList />
-      <ItemEffect />
+      <ItemEffect>
+        <EffectTargets />
+      </ItemEffect>
     </Values>
   </Asset>
   <Asset>
@@ -1558,6 +3149,8 @@
         <GUID>190987</GUID>
         <Name>PirateFlag</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_pirate_flag.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -1565,17 +3158,53 @@
             <Text>Pirate Flag</Text>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
       <VehicleUpgrade>
         <ActivatePirateFlag>1</ActivatePirateFlag>
+        <ForwardSpeedUpgrade />
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
       </VehicleUpgrade>
-      <Buff />
-      <AttackerUpgrade />
-      <AttackableUpgrade />
-      <ProjectileUpgrade />
-      <TradeShipUpgrade />
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
+      <AttackerUpgrade>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
+      </AttackerUpgrade>
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
+      <ProjectileUpgrade>
+        <InnerDamageUpgrade />
+        <OuterDamageRadiusUpgrade />
+        <PushForceUpgrade />
+        <PushDurationUpgrade />
+      </ProjectileUpgrade>
+      <TradeShipUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
+      </TradeShipUpgrade>
       <UpgradeList />
-      <ItemEffect />
+      <ItemEffect>
+        <EffectTargets />
+      </ItemEffect>
     </Values>
   </Asset>
   <Asset>
@@ -1585,6 +3214,8 @@
         <GUID>190998</GUID>
         <Name>Snare</Name>
         <IconFilename>data/ui/2kimages/main/icons/icon_expedition_hypnotist.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -1592,20 +3223,55 @@
             <Text>Snare</Text>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
       <VehicleUpgrade>
         <ForwardSpeedUpgrade>
           <Value>-50</Value>
           <Percental>1</Percental>
         </ForwardSpeedUpgrade>
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
       </VehicleUpgrade>
-      <Buff />
-      <AttackerUpgrade />
-      <AttackableUpgrade />
-      <ProjectileUpgrade />
-      <TradeShipUpgrade />
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
+      <AttackerUpgrade>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
+      </AttackerUpgrade>
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
+      <ProjectileUpgrade>
+        <InnerDamageUpgrade />
+        <OuterDamageRadiusUpgrade />
+        <PushForceUpgrade />
+        <PushDurationUpgrade />
+      </ProjectileUpgrade>
+      <TradeShipUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
+      </TradeShipUpgrade>
       <UpgradeList />
-      <ItemEffect />
+      <ItemEffect>
+        <EffectTargets />
+      </ItemEffect>
     </Values>
   </Asset>
   <Asset>
@@ -1615,6 +3281,8 @@
         <GUID>191019</GUID>
         <Name>FireDebuff</Name>
         <IconFilename>data/ui/2kimages/main/icons/icon_incident_fire.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -1622,26 +3290,59 @@
             <Text>Burning</Text>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
       <VehicleUpgrade>
         <ForwardSpeedUpgrade>
           <Value>-25</Value>
           <Percental>1</Percental>
         </ForwardSpeedUpgrade>
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
       </VehicleUpgrade>
-      <Buff />
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
       <AttackerUpgrade>
         <ReloadTimeUpgrade>
           <Value>25</Value>
           <Percental>1</Percental>
         </ReloadTimeUpgrade>
         <AttackSpeedUpgrade>-20</AttackSpeedUpgrade>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
       </AttackerUpgrade>
-      <AttackableUpgrade />
-      <ProjectileUpgrade />
-      <TradeShipUpgrade />
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
+      <ProjectileUpgrade>
+        <InnerDamageUpgrade />
+        <OuterDamageRadiusUpgrade />
+        <PushForceUpgrade />
+        <PushDurationUpgrade />
+      </ProjectileUpgrade>
+      <TradeShipUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
+      </TradeShipUpgrade>
       <UpgradeList />
-      <ItemEffect />
+      <ItemEffect>
+        <EffectTargets />
+      </ItemEffect>
     </Values>
   </Asset>
   <Asset>
@@ -1651,6 +3352,8 @@
         <GUID>191411</GUID>
         <Name>PuckleGunAutoattacks</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_advanced_weaponry.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -1658,9 +3361,19 @@
             <Text>Mounted gun</Text>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
-      <VehicleUpgrade />
-      <Buff />
+      <VehicleUpgrade>
+        <ForwardSpeedUpgrade />
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
+      </VehicleUpgrade>
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
       <AttackerUpgrade>
         <AddStatusEffects>
           <Item>
@@ -1668,12 +3381,37 @@
             <StatusDuration>5000</StatusDuration>
           </Item>
         </AddStatusEffects>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
       </AttackerUpgrade>
-      <AttackableUpgrade />
-      <ProjectileUpgrade />
-      <TradeShipUpgrade />
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
+      <ProjectileUpgrade>
+        <InnerDamageUpgrade />
+        <OuterDamageRadiusUpgrade />
+        <PushForceUpgrade />
+        <PushDurationUpgrade />
+      </ProjectileUpgrade>
+      <TradeShipUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
+      </TradeShipUpgrade>
       <UpgradeList />
-      <ItemEffect />
+      <ItemEffect>
+        <EffectTargets />
+      </ItemEffect>
     </Values>
   </Asset>
   <Asset>
@@ -1683,6 +3421,8 @@
         <GUID>191497</GUID>
         <Name>Repair Toolkit_Active</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/military_items/ico_repair_toolset.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -1690,10 +3430,31 @@
             <Text>Burning</Text>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
-      <VehicleUpgrade />
-      <Buff />
-      <AttackerUpgrade />
+      <VehicleUpgrade>
+        <ForwardSpeedUpgrade />
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
+      </VehicleUpgrade>
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
+      <AttackerUpgrade>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
+      </AttackerUpgrade>
       <AttackableUpgrade>
         <SelfHealUpgrade>
           <Value>50</Value>
@@ -1703,11 +3464,24 @@
           <Value>-100</Value>
           <Percental>1</Percental>
         </SelfHealPausedTimeIfAttackedUpgrade>
+        <MaxHitpointsUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
       </AttackableUpgrade>
-      <ProjectileUpgrade />
-      <TradeShipUpgrade />
+      <ProjectileUpgrade>
+        <InnerDamageUpgrade />
+        <OuterDamageRadiusUpgrade />
+        <PushForceUpgrade />
+        <PushDurationUpgrade />
+      </ProjectileUpgrade>
+      <TradeShipUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
+      </TradeShipUpgrade>
       <UpgradeList />
-      <ItemEffect />
+      <ItemEffect>
+        <EffectTargets />
+      </ItemEffect>
     </Values>
   </Asset>
   <Asset>
@@ -1717,6 +3491,8 @@
         <GUID>192127</GUID>
         <Name>Pirate Flag</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_pirate_flag.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -1727,17 +3503,53 @@
           </English>
         </LocaText>
         <LineID>27100</LineID>
+        <Localize>1</Localize>
       </Text>
       <VehicleUpgrade>
         <ActivatePirateFlag>1</ActivatePirateFlag>
+        <ForwardSpeedUpgrade />
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
       </VehicleUpgrade>
-      <Buff />
-      <AttackerUpgrade />
-      <AttackableUpgrade />
-      <ProjectileUpgrade />
-      <TradeShipUpgrade />
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
+      <AttackerUpgrade>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
+      </AttackerUpgrade>
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
+      <ProjectileUpgrade>
+        <InnerDamageUpgrade />
+        <OuterDamageRadiusUpgrade />
+        <PushForceUpgrade />
+        <PushDurationUpgrade />
+      </ProjectileUpgrade>
+      <TradeShipUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
+      </TradeShipUpgrade>
       <UpgradeList />
-      <ItemEffect />
+      <ItemEffect>
+        <EffectTargets />
+      </ItemEffect>
     </Values>
   </Asset>
   <Asset>
@@ -1747,6 +3559,8 @@
         <GUID>192131</GUID>
         <Name>Pirate Captain Flag</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_pirate_flag.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -1757,24 +3571,56 @@
           </English>
         </LocaText>
         <LineID>27101</LineID>
+        <Localize>1</Localize>
       </Text>
       <VehicleUpgrade>
         <ActivatePirateFlag>1</ActivatePirateFlag>
+        <ForwardSpeedUpgrade />
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
       </VehicleUpgrade>
-      <Buff />
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
       <AttackerUpgrade>
         <BaseDamageUpgrade>
           <Value>20</Value>
           <Percental>1</Percental>
         </BaseDamageUpgrade>
+        <AttackRangeUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
       </AttackerUpgrade>
-      <AttackableUpgrade />
-      <ProjectileUpgrade />
+      <AttackableUpgrade>
+        <MaxHitpointsUpgrade />
+        <SelfHealUpgrade />
+        <SelfHealPausedTimeIfAttackedUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
+      </AttackableUpgrade>
+      <ProjectileUpgrade>
+        <InnerDamageUpgrade />
+        <OuterDamageRadiusUpgrade />
+        <PushForceUpgrade />
+        <PushDurationUpgrade />
+      </ProjectileUpgrade>
       <TradeShipUpgrade>
         <ActiveTradePriceInPercent>50</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
       </TradeShipUpgrade>
       <UpgradeList />
-      <ItemEffect />
+      <ItemEffect>
+        <EffectTargets />
+      </ItemEffect>
     </Values>
   </Asset>
   <Asset>
@@ -1784,6 +3630,8 @@
         <GUID>192111</GUID>
         <Name>Repair Toolkit Action</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/military_items/ico_repair_toolset.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -1791,10 +3639,31 @@
             <Text>Burning</Text>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
-      <VehicleUpgrade />
-      <Buff />
-      <AttackerUpgrade />
+      <VehicleUpgrade>
+        <ForwardSpeedUpgrade />
+        <UpgradeDescription>0</UpgradeDescription>
+        <MaintainanceUpgrade />
+        <IgnoreWeightFactorUpgrade />
+        <IgnoreDamageFactorUpgrade />
+      </VehicleUpgrade>
+      <Buff>
+        <PossibleFluffTexts />
+        <AddedInfolayer>0</AddedInfolayer>
+      </Buff>
+      <AttackerUpgrade>
+        <AttackRangeUpgrade />
+        <BaseDamageUpgrade />
+        <ReloadTimeUpgrade />
+        <AccuracyUpgrade />
+        <UseProjectile>0</UseProjectile>
+        <AddStatusEffects />
+        <LineOfSightRangeUpgrade />
+        <MoraleDamage />
+        <HitpointDamage />
+        <DamageFactor />
+      </AttackerUpgrade>
       <AttackableUpgrade>
         <SelfHealUpgrade>
           <Value>100</Value>
@@ -1804,11 +3673,24 @@
           <Value>-100</Value>
           <Percental>1</Percental>
         </SelfHealPausedTimeIfAttackedUpgrade>
+        <MaxHitpointsUpgrade />
+        <MoralePowerUpgrade />
+        <DamageReceiveFactor />
       </AttackableUpgrade>
-      <ProjectileUpgrade />
-      <TradeShipUpgrade />
+      <ProjectileUpgrade>
+        <InnerDamageUpgrade />
+        <OuterDamageRadiusUpgrade />
+        <PushForceUpgrade />
+        <PushDurationUpgrade />
+      </ProjectileUpgrade>
+      <TradeShipUpgrade>
+        <ActiveTradePriceInPercent>100</ActiveTradePriceInPercent>
+        <LoadingSpeedUpgrade />
+      </TradeShipUpgrade>
       <UpgradeList />
-      <ItemEffect />
+      <ItemEffect>
+        <EffectTargets />
+      </ItemEffect>
     </Values>
   </Asset>
 </Assets>

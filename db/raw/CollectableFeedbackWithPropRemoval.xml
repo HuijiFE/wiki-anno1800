@@ -8,10 +8,27 @@
         <DestroyOnCollect>1</DestroyOnCollect>
         <DragDistanceFromCollector>3</DragDistanceFromCollector>
         <DragDistanceFromCollectable>2</DragDistanceFromCollectable>
+        <OnCollect>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnCollect>
+        <PickupCursor>0</PickupCursor>
+        <DropCursor>0</DropCursor>
+        <OnScreenText>0</OnScreenText>
       </Collectable>
       <Mesh>
         <MeshPlacement>OnTerrain</MeshPlacement>
         <DefaultSequence>idle02</DefaultSequence>
+        <ObjectPosition>Static</ObjectPosition>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Object>
         <Variations>
@@ -20,17 +37,37 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Standard>
         <GUID>102503</GUID>
         <Name>QO Group_Models</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/specialists/systemic/icon_well_dressed_409.png</IconFilename>
         <InfoDescription>1029</InfoDescription>
+        <Comments />
       </Standard>
       <Selection>
         <GUIType>Quest</GUIType>
         <InteractionDistance>50</InteractionDistance>
         <InfoCorner>0</InfoCorner>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <AllowedDragType />
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
       </Selection>
       <Walking>
         <SpecialMovementType />
@@ -38,6 +75,33 @@
         <IdleSequence2>default</IdleSequence2>
         <DiscoverRadius>150</DiscoverRadius>
         <CargoThreshold>0</CargoThreshold>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <PathPlannerLayer>Land</PathPlannerLayer>
+        <TurnAroundRadius>2</TurnAroundRadius>
+        <Acceleration>3</Acceleration>
+        <Deceleration>6</Deceleration>
+        <TurnRadius>3</TurnRadius>
+        <TurnSpeed>90</TurnSpeed>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <TurnDeceleration>0.6</TurnDeceleration>
+        <TurnMovement>100</TurnMovement>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <ForwardSpeed>1</ForwardSpeed>
+        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
+        <CreatePathPlannerUnit>1</CreatePathPlannerUnit>
+        <CurveSegmentDensity>Medium</CurveSegmentDensity>
       </Walking>
       <Text>
         <LocaText>
@@ -48,31 +112,76 @@
           </English>
         </LocaText>
         <LineID>25846</LineID>
+        <Localize>1</Localize>
       </Text>
-      <Infolayer />
-      <MinimapToken />
+      <Infolayer>
+        <DefaultInfoLayer>0</DefaultInfoLayer>
+      </Infolayer>
+      <MinimapToken>
+        <TokenAsset>0</TokenAsset>
+        <StrategicMapAsset>0</StrategicMapAsset>
+      </MinimapToken>
       <SoundEmitter>
         <CollectedSounds>
           <Item>
             <Sound>214111</Sound>
           </Item>
         </CollectedSounds>
+        <ActiveSounds />
+        <DestroySounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionSounds />
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <QuestObject />
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
       <ItemContainer>
         <UnlimitedSlotCount>1</UnlimitedSlotCount>
         <SlotCount>1</SlotCount>
         <UnlimitedStack>1</UnlimitedStack>
         <CanStoreProducts>1</CanStoreProducts>
+        <SocketAllocation />
+        <SocketScope>Local</SocketScope>
+        <StackLimit>50</StackLimit>
+        <InitSocketItems />
+        <InitSlotItems />
+        <EmptySocketIcon>data/ui/2kimages/main/icons/icon_plus.png</EmptySocketIcon>
+        <EmptySocketItemNonModifiable>data/ui/2kimages/main/icons/icon_goods_storage.png</EmptySocketItemNonModifiable>
+        <SpawnsFlotsam>1</SpawnsFlotsam>
+        <FixedSlotContent>0</FixedSlotContent>
       </ItemContainer>
       <Lifetime />
-      <FeedbackController />
+      <FeedbackController>
+        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
+        <UpdateMeshSequence>1</UpdateMeshSequence>
+      </FeedbackController>
       <Blocking>
         <DeletePropsRadius>0</DeletePropsRadius>
         <RemovePropsRadius>2</RemovePropsRadius>
+        <HidePropsRadius>1</HidePropsRadius>
+        <GroundDecalAsset>0</GroundDecalAsset>
+        <GroundDecalInvisible>0</GroundDecalInvisible>
+        <StreetOutside>0</StreetOutside>
+        <RemoveGrass>1</RemoveGrass>
+        <BlocksBuilding>1</BlocksBuilding>
       </Blocking>
     </Values>
   </Asset>
@@ -84,9 +193,27 @@
         <DestroyOnCollect>1</DestroyOnCollect>
         <DragDistanceFromCollector>3</DragDistanceFromCollector>
         <DragDistanceFromCollectable>2</DragDistanceFromCollectable>
+        <OnCollect>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnCollect>
+        <PickupCursor>0</PickupCursor>
+        <DropCursor>0</DropCursor>
+        <OnScreenText>0</OnScreenText>
       </Collectable>
       <Mesh>
         <MeshPlacement>OnTerrain</MeshPlacement>
+        <ObjectPosition>Static</ObjectPosition>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Object>
         <Variations>
@@ -95,17 +222,37 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Standard>
         <GUID>102516</GUID>
         <Name>QO The_Artist</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/specialists/systemic/icon_normal_dressed_108.png</IconFilename>
         <InfoDescription>1029</InfoDescription>
+        <Comments />
       </Standard>
       <Selection>
         <GUIType>Quest</GUIType>
         <InteractionDistance>50</InteractionDistance>
         <InfoCorner>0</InfoCorner>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <AllowedDragType />
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
       </Selection>
       <Walking>
         <SpecialMovementType />
@@ -113,6 +260,33 @@
         <IdleSequence2>default</IdleSequence2>
         <DiscoverRadius>150</DiscoverRadius>
         <CargoThreshold>0</CargoThreshold>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <PathPlannerLayer>Land</PathPlannerLayer>
+        <TurnAroundRadius>2</TurnAroundRadius>
+        <Acceleration>3</Acceleration>
+        <Deceleration>6</Deceleration>
+        <TurnRadius>3</TurnRadius>
+        <TurnSpeed>90</TurnSpeed>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <TurnDeceleration>0.6</TurnDeceleration>
+        <TurnMovement>100</TurnMovement>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <ForwardSpeed>1</ForwardSpeed>
+        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
+        <CreatePathPlannerUnit>1</CreatePathPlannerUnit>
+        <CurveSegmentDensity>Medium</CurveSegmentDensity>
       </Walking>
       <Text>
         <LocaText>
@@ -123,31 +297,76 @@
           </English>
         </LocaText>
         <LineID>28371</LineID>
+        <Localize>1</Localize>
       </Text>
-      <Infolayer />
-      <MinimapToken />
+      <Infolayer>
+        <DefaultInfoLayer>0</DefaultInfoLayer>
+      </Infolayer>
+      <MinimapToken>
+        <TokenAsset>0</TokenAsset>
+        <StrategicMapAsset>0</StrategicMapAsset>
+      </MinimapToken>
       <SoundEmitter>
         <CollectedSounds>
           <Item>
             <Sound>214111</Sound>
           </Item>
         </CollectedSounds>
+        <ActiveSounds />
+        <DestroySounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionSounds />
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <QuestObject />
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
       <ItemContainer>
         <UnlimitedSlotCount>1</UnlimitedSlotCount>
         <SlotCount>1</SlotCount>
         <UnlimitedStack>1</UnlimitedStack>
         <CanStoreProducts>1</CanStoreProducts>
+        <SocketAllocation />
+        <SocketScope>Local</SocketScope>
+        <StackLimit>50</StackLimit>
+        <InitSocketItems />
+        <InitSlotItems />
+        <EmptySocketIcon>data/ui/2kimages/main/icons/icon_plus.png</EmptySocketIcon>
+        <EmptySocketItemNonModifiable>data/ui/2kimages/main/icons/icon_goods_storage.png</EmptySocketItemNonModifiable>
+        <SpawnsFlotsam>1</SpawnsFlotsam>
+        <FixedSlotContent>0</FixedSlotContent>
       </ItemContainer>
       <Lifetime />
-      <FeedbackController />
+      <FeedbackController>
+        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
+        <UpdateMeshSequence>1</UpdateMeshSequence>
+      </FeedbackController>
       <Blocking>
         <DeletePropsRadius>0</DeletePropsRadius>
         <RemovePropsRadius>2</RemovePropsRadius>
+        <HidePropsRadius>1</HidePropsRadius>
+        <GroundDecalAsset>0</GroundDecalAsset>
+        <GroundDecalInvisible>0</GroundDecalInvisible>
+        <StreetOutside>0</StreetOutside>
+        <RemoveGrass>1</RemoveGrass>
+        <BlocksBuilding>1</BlocksBuilding>
       </Blocking>
     </Values>
   </Asset>
@@ -159,9 +378,27 @@
         <DestroyOnCollect>1</DestroyOnCollect>
         <DragDistanceFromCollector>3</DragDistanceFromCollector>
         <DragDistanceFromCollectable>2</DragDistanceFromCollectable>
+        <OnCollect>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnCollect>
+        <PickupCursor>0</PickupCursor>
+        <DropCursor>0</DropCursor>
+        <OnScreenText>0</OnScreenText>
       </Collectable>
       <Mesh>
         <MeshPlacement>OnTerrain</MeshPlacement>
+        <ObjectPosition>Static</ObjectPosition>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Object>
         <Variations>
@@ -170,17 +407,37 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Standard>
         <GUID>102517</GUID>
         <Name>QO The_Artist2</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/specialists/systemic/icon_normal_dressed_108.png</IconFilename>
         <InfoDescription>1029</InfoDescription>
+        <Comments />
       </Standard>
       <Selection>
         <GUIType>Quest</GUIType>
         <InteractionDistance>50</InteractionDistance>
         <InfoCorner>0</InfoCorner>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <AllowedDragType />
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
       </Selection>
       <Walking>
         <SpecialMovementType />
@@ -188,6 +445,33 @@
         <IdleSequence2>default</IdleSequence2>
         <DiscoverRadius>150</DiscoverRadius>
         <CargoThreshold>0</CargoThreshold>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <PathPlannerLayer>Land</PathPlannerLayer>
+        <TurnAroundRadius>2</TurnAroundRadius>
+        <Acceleration>3</Acceleration>
+        <Deceleration>6</Deceleration>
+        <TurnRadius>3</TurnRadius>
+        <TurnSpeed>90</TurnSpeed>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <TurnDeceleration>0.6</TurnDeceleration>
+        <TurnMovement>100</TurnMovement>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <ForwardSpeed>1</ForwardSpeed>
+        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
+        <CreatePathPlannerUnit>1</CreatePathPlannerUnit>
+        <CurveSegmentDensity>Medium</CurveSegmentDensity>
       </Walking>
       <Text>
         <LocaText>
@@ -198,31 +482,76 @@
           </English>
         </LocaText>
         <LineID>28372</LineID>
+        <Localize>1</Localize>
       </Text>
-      <Infolayer />
-      <MinimapToken />
+      <Infolayer>
+        <DefaultInfoLayer>0</DefaultInfoLayer>
+      </Infolayer>
+      <MinimapToken>
+        <TokenAsset>0</TokenAsset>
+        <StrategicMapAsset>0</StrategicMapAsset>
+      </MinimapToken>
       <SoundEmitter>
         <CollectedSounds>
           <Item>
             <Sound>214111</Sound>
           </Item>
         </CollectedSounds>
+        <ActiveSounds />
+        <DestroySounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionSounds />
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <QuestObject />
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
       <ItemContainer>
         <UnlimitedSlotCount>1</UnlimitedSlotCount>
         <SlotCount>1</SlotCount>
         <UnlimitedStack>1</UnlimitedStack>
         <CanStoreProducts>1</CanStoreProducts>
+        <SocketAllocation />
+        <SocketScope>Local</SocketScope>
+        <StackLimit>50</StackLimit>
+        <InitSocketItems />
+        <InitSlotItems />
+        <EmptySocketIcon>data/ui/2kimages/main/icons/icon_plus.png</EmptySocketIcon>
+        <EmptySocketItemNonModifiable>data/ui/2kimages/main/icons/icon_goods_storage.png</EmptySocketItemNonModifiable>
+        <SpawnsFlotsam>1</SpawnsFlotsam>
+        <FixedSlotContent>0</FixedSlotContent>
       </ItemContainer>
       <Lifetime />
-      <FeedbackController />
+      <FeedbackController>
+        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
+        <UpdateMeshSequence>1</UpdateMeshSequence>
+      </FeedbackController>
       <Blocking>
         <DeletePropsRadius>0</DeletePropsRadius>
         <RemovePropsRadius>2</RemovePropsRadius>
+        <HidePropsRadius>1</HidePropsRadius>
+        <GroundDecalAsset>0</GroundDecalAsset>
+        <GroundDecalInvisible>0</GroundDecalInvisible>
+        <StreetOutside>0</StreetOutside>
+        <RemoveGrass>1</RemoveGrass>
+        <BlocksBuilding>1</BlocksBuilding>
       </Blocking>
     </Values>
   </Asset>
@@ -234,10 +563,27 @@
         <DestroyOnCollect>1</DestroyOnCollect>
         <DragDistanceFromCollector>3</DragDistanceFromCollector>
         <DragDistanceFromCollectable>2</DragDistanceFromCollectable>
+        <OnCollect>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnCollect>
+        <PickupCursor>0</PickupCursor>
+        <DropCursor>0</DropCursor>
+        <OnScreenText>0</OnScreenText>
       </Collectable>
       <Mesh>
         <MeshPlacement>OnTerrain</MeshPlacement>
         <DefaultSequence>idle02</DefaultSequence>
+        <ObjectPosition>Static</ObjectPosition>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Object>
         <Variations>
@@ -246,17 +592,37 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Standard>
         <GUID>102655</GUID>
         <Name>QO Researcher</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/specialists/systemic/icon_doctor_717.png</IconFilename>
         <InfoDescription>1029</InfoDescription>
+        <Comments />
       </Standard>
       <Selection>
         <GUIType>Quest</GUIType>
         <InteractionDistance>150</InteractionDistance>
         <InfoCorner>0</InfoCorner>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <AllowedDragType />
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
       </Selection>
       <Walking>
         <SpecialMovementType />
@@ -264,6 +630,33 @@
         <IdleSequence2>default</IdleSequence2>
         <DiscoverRadius>150</DiscoverRadius>
         <CargoThreshold>0</CargoThreshold>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <PathPlannerLayer>Land</PathPlannerLayer>
+        <TurnAroundRadius>2</TurnAroundRadius>
+        <Acceleration>3</Acceleration>
+        <Deceleration>6</Deceleration>
+        <TurnRadius>3</TurnRadius>
+        <TurnSpeed>90</TurnSpeed>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <TurnDeceleration>0.6</TurnDeceleration>
+        <TurnMovement>100</TurnMovement>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <ForwardSpeed>1</ForwardSpeed>
+        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
+        <CreatePathPlannerUnit>1</CreatePathPlannerUnit>
+        <CurveSegmentDensity>Medium</CurveSegmentDensity>
       </Walking>
       <Text>
         <LocaText>
@@ -274,31 +667,76 @@
           </English>
         </LocaText>
         <LineID>29123</LineID>
+        <Localize>1</Localize>
       </Text>
-      <Infolayer />
-      <MinimapToken />
+      <Infolayer>
+        <DefaultInfoLayer>0</DefaultInfoLayer>
+      </Infolayer>
+      <MinimapToken>
+        <TokenAsset>0</TokenAsset>
+        <StrategicMapAsset>0</StrategicMapAsset>
+      </MinimapToken>
       <SoundEmitter>
         <CollectedSounds>
           <Item>
             <Sound>214111</Sound>
           </Item>
         </CollectedSounds>
+        <ActiveSounds />
+        <DestroySounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionSounds />
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <QuestObject />
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
       <ItemContainer>
         <UnlimitedSlotCount>1</UnlimitedSlotCount>
         <SlotCount>1</SlotCount>
         <UnlimitedStack>1</UnlimitedStack>
         <CanStoreProducts>1</CanStoreProducts>
+        <SocketAllocation />
+        <SocketScope>Local</SocketScope>
+        <StackLimit>50</StackLimit>
+        <InitSocketItems />
+        <InitSlotItems />
+        <EmptySocketIcon>data/ui/2kimages/main/icons/icon_plus.png</EmptySocketIcon>
+        <EmptySocketItemNonModifiable>data/ui/2kimages/main/icons/icon_goods_storage.png</EmptySocketItemNonModifiable>
+        <SpawnsFlotsam>1</SpawnsFlotsam>
+        <FixedSlotContent>0</FixedSlotContent>
       </ItemContainer>
       <Lifetime />
-      <FeedbackController />
+      <FeedbackController>
+        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
+        <UpdateMeshSequence>1</UpdateMeshSequence>
+      </FeedbackController>
       <Blocking>
         <DeletePropsRadius>0</DeletePropsRadius>
         <RemovePropsRadius>2</RemovePropsRadius>
+        <HidePropsRadius>1</HidePropsRadius>
+        <GroundDecalAsset>0</GroundDecalAsset>
+        <GroundDecalInvisible>0</GroundDecalInvisible>
+        <StreetOutside>0</StreetOutside>
+        <RemoveGrass>1</RemoveGrass>
+        <BlocksBuilding>1</BlocksBuilding>
       </Blocking>
     </Values>
   </Asset>

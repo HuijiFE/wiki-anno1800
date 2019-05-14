@@ -7,6 +7,8 @@
         <GUID>102079</GUID>
         <Name>CQO_Pyro_ScannerShip (Monitor high HP)</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_pyrophorian_ship.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Scanner>
         <ScanRadius>25</ScanRadius>
@@ -14,6 +16,9 @@
         <ScanEffect>500886</ScanEffect>
         <AlarmTime>15000</AlarmTime>
         <AlarmEffect>500888</AlarmEffect>
+        <FlyCircle>1</FlyCircle>
+        <FlyDirection>Random</FlyDirection>
+        <EffectHeight>1</EffectHeight>
       </Scanner>
       <Object>
         <Variations>
@@ -23,11 +28,25 @@
         </Variations>
         <AssignDefaultParticipant>1</AssignDefaultParticipant>
         <DefaultParticipant>Campaign_character_02_pyrophorian_red</DefaultParticipant>
+        <Type>GameObject</Type>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <MeshPlacement>OnWaterSlope</MeshPlacement>
         <SetCompanyLogo>1</SetCompanyLogo>
         <ObjectPosition>Dynamic</ObjectPosition>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Selection>
         <GUIType>Vehicle</GUIType>
@@ -35,6 +54,19 @@
         <MultiSelectable>1</MultiSelectable>
         <SelectionPriority>5</SelectionPriority>
         <InteractionDistance>2</InteractionDistance>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <AllowedDragType />
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
       </Selection>
       <Walking>
         <ReservationLength>16</ReservationLength>
@@ -54,6 +86,25 @@
         <DamageFullFactor>0.5</DamageFullFactor>
         <MinSlowdownFactor>0.5</MinSlowdownFactor>
         <CurveSegmentDensity>High</CurveSegmentDensity>
+        <SpecialMovementType>Land;HumanMovement</SpecialMovementType>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
+        <CreatePathPlannerUnit>1</CreatePathPlannerUnit>
       </Walking>
       <SoundEmitter>
         <VehicleSounds>
@@ -63,6 +114,25 @@
             </Item>
           </MovementStart>
         </VehicleSounds>
+        <ActiveSounds />
+        <DestroySounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionSounds />
+        <ConstructionStreetSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <QuestObject />
       <CommandQueue>
@@ -71,6 +141,7 @@
         <MilitaryShipPoints>3</MilitaryShipPoints>
         <PriorityShipList>1</PriorityShipList>
         <InsecurityAttractiveness>-10</InsecurityAttractiveness>
+        <IsDestructable>1</IsDestructable>
       </CommandQueue>
       <Text>
         <LocaText>
@@ -81,6 +152,7 @@
           </English>
         </LocaText>
         <LineID>20125</LineID>
+        <Localize>1</Localize>
       </Text>
       <Attacker>
         <AttackRange>30</AttackRange>
@@ -116,6 +188,9 @@
             </AccuracyByDistancePair>
           </Item>
         </AccuracyByDistance>
+        <AllowApproachEnemy>1</AllowApproachEnemy>
+        <AttackType>Default</AttackType>
+        <AccuracyBaseIncreasePercentage>100</AccuracyBaseIncreasePercentage>
       </Attacker>
       <Attackable>
         <MaximumHitPoints>1500</MaximumHitPoints>
@@ -123,13 +198,31 @@
         <SelfHealPerHealTick>10</SelfHealPerHealTick>
         <SelfHealPausedTimeIfAttacked>60000</SelfHealPausedTimeIfAttacked>
         <CanBeAttackedByPlayer>1</CanBeAttackedByPlayer>
+        <HPBarOffset>6</HPBarOffset>
+        <PausedTimeIfAttacked>15000</PausedTimeIfAttacked>
+        <ArmorType>Default</ArmorType>
+        <TakeOverEffect>Never</TakeOverEffect>
+        <IslandWarFlag>0</IslandWarFlag>
+        <RuinSmokeParticles />
+        <ExplosionEffects />
       </Attackable>
       <ItemContainer>
         <SocketCount>1</SocketCount>
         <SocketAllocation>Ship</SocketAllocation>
+        <SocketScope>Local</SocketScope>
+        <StackLimit>50</StackLimit>
+        <InitSocketItems />
+        <InitSlotItems />
+        <EmptySocketIcon>data/ui/2kimages/main/icons/icon_plus.png</EmptySocketIcon>
+        <EmptySocketItemNonModifiable>data/ui/2kimages/main/icons/icon_goods_storage.png</EmptySocketItemNonModifiable>
+        <SpawnsFlotsam>1</SpawnsFlotsam>
+        <FixedSlotContent>0</FixedSlotContent>
       </ItemContainer>
       <UpgradeList />
-      <Stance />
+      <Stance>
+        <DefensiveReturnDistance>60</DefensiveReturnDistance>
+        <FleeDistance>50</FleeDistance>
+      </Stance>
     </Values>
   </Asset>
   <Asset>
@@ -140,6 +233,7 @@
         <Name>CQO_Pyro_ScannerShip (Monitor)</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_pyrophorian_ship.png</IconFilename>
         <InfoDescription>1088</InfoDescription>
+        <Comments />
       </Standard>
       <Scanner>
         <ScanRadius>30</ScanRadius>
@@ -147,6 +241,9 @@
         <ScanEffect>500886</ScanEffect>
         <AlarmTime>15000</AlarmTime>
         <AlarmEffect>500888</AlarmEffect>
+        <FlyCircle>1</FlyCircle>
+        <FlyDirection>Random</FlyDirection>
+        <EffectHeight>1</EffectHeight>
       </Scanner>
       <Object>
         <Variations>
@@ -156,11 +253,25 @@
         </Variations>
         <AssignDefaultParticipant>1</AssignDefaultParticipant>
         <DefaultParticipant>Campaign_character_02_pyrophorian_red</DefaultParticipant>
+        <Type>GameObject</Type>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <MeshPlacement>OnWaterSlope</MeshPlacement>
         <SetCompanyLogo>1</SetCompanyLogo>
         <ObjectPosition>Dynamic</ObjectPosition>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Selection>
         <GUIType>Vehicle</GUIType>
@@ -168,6 +279,19 @@
         <MultiSelectable>1</MultiSelectable>
         <SelectionPriority>5</SelectionPriority>
         <InteractionDistance>2</InteractionDistance>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <AllowedDragType />
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
       </Selection>
       <Walking>
         <ReservationLength>16</ReservationLength>
@@ -187,6 +311,25 @@
         <DamageFullFactor>0.5</DamageFullFactor>
         <MinSlowdownFactor>0.5</MinSlowdownFactor>
         <CurveSegmentDensity>High</CurveSegmentDensity>
+        <SpecialMovementType>Land;HumanMovement</SpecialMovementType>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
+        <CreatePathPlannerUnit>1</CreatePathPlannerUnit>
       </Walking>
       <SoundEmitter>
         <VehicleSounds>
@@ -196,6 +339,25 @@
             </Item>
           </MovementStart>
         </VehicleSounds>
+        <ActiveSounds />
+        <DestroySounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionSounds />
+        <ConstructionStreetSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <QuestObject />
       <CommandQueue>
@@ -204,6 +366,7 @@
         <MilitaryShipPoints>3</MilitaryShipPoints>
         <PriorityShipList>1</PriorityShipList>
         <InsecurityAttractiveness>-10</InsecurityAttractiveness>
+        <IsDestructable>1</IsDestructable>
       </CommandQueue>
       <Text>
         <LocaText>
@@ -214,6 +377,7 @@
           </English>
         </LocaText>
         <LineID>20126</LineID>
+        <Localize>1</Localize>
       </Text>
       <Attacker>
         <AttackRange>30</AttackRange>
@@ -249,19 +413,41 @@
             </AccuracyByDistancePair>
           </Item>
         </AccuracyByDistance>
+        <AllowApproachEnemy>1</AllowApproachEnemy>
+        <AttackType>Default</AttackType>
+        <AccuracyBaseIncreasePercentage>100</AccuracyBaseIncreasePercentage>
       </Attacker>
       <Attackable>
         <MaximumHitPoints>1500</MaximumHitPoints>
         <AccuracyWidth>2.5</AccuracyWidth>
         <SelfHealPerHealTick>10</SelfHealPerHealTick>
         <CanBeAttackedByPlayer>1</CanBeAttackedByPlayer>
+        <HPBarOffset>6</HPBarOffset>
+        <PausedTimeIfAttacked>15000</PausedTimeIfAttacked>
+        <SelfHealPausedTimeIfAttacked>15000</SelfHealPausedTimeIfAttacked>
+        <ArmorType>Default</ArmorType>
+        <TakeOverEffect>Never</TakeOverEffect>
+        <IslandWarFlag>0</IslandWarFlag>
+        <RuinSmokeParticles />
+        <ExplosionEffects />
       </Attackable>
       <ItemContainer>
         <SocketCount>1</SocketCount>
         <SocketAllocation>Ship</SocketAllocation>
+        <SocketScope>Local</SocketScope>
+        <StackLimit>50</StackLimit>
+        <InitSocketItems />
+        <InitSlotItems />
+        <EmptySocketIcon>data/ui/2kimages/main/icons/icon_plus.png</EmptySocketIcon>
+        <EmptySocketItemNonModifiable>data/ui/2kimages/main/icons/icon_goods_storage.png</EmptySocketItemNonModifiable>
+        <SpawnsFlotsam>1</SpawnsFlotsam>
+        <FixedSlotContent>0</FixedSlotContent>
       </ItemContainer>
       <UpgradeList />
-      <Stance />
+      <Stance>
+        <DefensiveReturnDistance>60</DefensiveReturnDistance>
+        <FleeDistance>50</FleeDistance>
+      </Stance>
     </Values>
   </Asset>
   <Asset>
@@ -271,6 +457,8 @@
         <GUID>102569</GUID>
         <Name>QO Gunboat (Military) ScannerShip DONT USE</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/ships/icon_ship_gunboat.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Scanner>
         <ScanRadius>30</ScanRadius>
@@ -278,6 +466,9 @@
         <ScanEffect>500886</ScanEffect>
         <AlarmTime>15000</AlarmTime>
         <AlarmEffect>500888</AlarmEffect>
+        <FlyCircle>1</FlyCircle>
+        <FlyDirection>Random</FlyDirection>
+        <EffectHeight>1</EffectHeight>
       </Scanner>
       <Object>
         <Variations>
@@ -288,11 +479,25 @@
         <AssignDefaultParticipant>1</AssignDefaultParticipant>
         <DefaultParticipant>General_Enemy</DefaultParticipant>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <MeshPlacement>OnWaterSlope</MeshPlacement>
         <SetCompanyLogo>1</SetCompanyLogo>
         <ObjectPosition>Dynamic</ObjectPosition>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Selection>
         <GUIType>Vehicle</GUIType>
@@ -301,6 +506,18 @@
         <SelectionPriority>5</SelectionPriority>
         <InteractionDistance>2</InteractionDistance>
         <AllowedDragType>ItemSocket;CargoProductStack;CargoItemStack;StorageProductStack;StorageItemStack</AllowedDragType>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
       </Selection>
       <Walking>
         <ReservationLength>9</ReservationLength>
@@ -320,6 +537,25 @@
         <WindMinSlowdownFactor>0.4</WindMinSlowdownFactor>
         <WindMaxSpeedupFactor>1.8</WindMaxSpeedupFactor>
         <CurveSegmentDensity>High</CurveSegmentDensity>
+        <SpecialMovementType>Land;HumanMovement</SpecialMovementType>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
+        <CreatePathPlannerUnit>1</CreatePathPlannerUnit>
       </Walking>
       <SoundEmitter>
         <DestroySounds>
@@ -327,6 +563,25 @@
             <Sound>238316</Sound>
           </Item>
         </DestroySounds>
+        <ActiveSounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionSounds />
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <QuestObject />
       <CommandQueue>
@@ -336,6 +591,7 @@
         <MilitaryShipPoints>0.8</MilitaryShipPoints>
         <PriorityShipList>1</PriorityShipList>
         <InsecurityAttractiveness>-10</InsecurityAttractiveness>
+        <IsDestructable>1</IsDestructable>
       </CommandQueue>
       <Text>
         <LocaText>
@@ -346,6 +602,7 @@
           </English>
         </LocaText>
         <LineID>28579</LineID>
+        <Localize>1</Localize>
       </Text>
       <Attacker>
         <AttackRange>40</AttackRange>
@@ -375,6 +632,10 @@
             </AccuracyByDistancePair>
           </Item>
         </AccuracyByDistance>
+        <AllowApproachEnemy>1</AllowApproachEnemy>
+        <Turrets />
+        <AttackType>Default</AttackType>
+        <AccuracyBaseIncreasePercentage>100</AccuracyBaseIncreasePercentage>
       </Attacker>
       <Attackable>
         <MaximumHitPoints>750</MaximumHitPoints>
@@ -383,13 +644,30 @@
         <SelfHealPerHealTick>0.708</SelfHealPerHealTick>
         <SelfHealPausedTimeIfAttacked>60000</SelfHealPausedTimeIfAttacked>
         <CanBeAttackedByPlayer>1</CanBeAttackedByPlayer>
+        <PausedTimeIfAttacked>15000</PausedTimeIfAttacked>
+        <ArmorType>Default</ArmorType>
+        <TakeOverEffect>Never</TakeOverEffect>
+        <IslandWarFlag>0</IslandWarFlag>
+        <RuinSmokeParticles />
+        <ExplosionEffects />
       </Attackable>
       <ItemContainer>
         <SocketCount>1</SocketCount>
         <SocketAllocation>Ship</SocketAllocation>
+        <SocketScope>Local</SocketScope>
+        <StackLimit>50</StackLimit>
+        <InitSocketItems />
+        <InitSlotItems />
+        <EmptySocketIcon>data/ui/2kimages/main/icons/icon_plus.png</EmptySocketIcon>
+        <EmptySocketItemNonModifiable>data/ui/2kimages/main/icons/icon_goods_storage.png</EmptySocketItemNonModifiable>
+        <SpawnsFlotsam>1</SpawnsFlotsam>
+        <FixedSlotContent>0</FixedSlotContent>
       </ItemContainer>
       <UpgradeList />
-      <Stance />
+      <Stance>
+        <DefensiveReturnDistance>60</DefensiveReturnDistance>
+        <FleeDistance>50</FleeDistance>
+      </Stance>
     </Values>
   </Asset>
   <Asset>
@@ -400,6 +678,7 @@
         <Name>QO Gunboat Small Scanner Radius (Military)</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/ships/icon_ship_gunboat.png</IconFilename>
         <InfoDescription>1082</InfoDescription>
+        <Comments />
       </Standard>
       <Scanner>
         <ScanRadius>20</ScanRadius>
@@ -407,6 +686,9 @@
         <ScanEffect>500886</ScanEffect>
         <AlarmTime>15000</AlarmTime>
         <AlarmEffect>500888</AlarmEffect>
+        <FlyCircle>1</FlyCircle>
+        <FlyDirection>Random</FlyDirection>
+        <EffectHeight>1</EffectHeight>
       </Scanner>
       <Object>
         <Variations>
@@ -414,14 +696,44 @@
             <Filename>data/graphics/vehicle/gunboat/gunboat.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <MeshPlacement>OnWaterSlope</MeshPlacement>
         <ObjectPosition>Dynamic</ObjectPosition>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Selection>
         <ObjectmenuHeaderImage>data/ui/2kimages/main/3dicons/icon_ship.png</ObjectmenuHeaderImage>
         <MultiSelectable>1</MultiSelectable>
+        <GUIType>Residence</GUIType>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <InteractionDistance>15</InteractionDistance>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <AllowedDragType />
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
       </Selection>
       <Walking>
         <ReservationLength>9</ReservationLength>
@@ -440,6 +752,26 @@
         <WindMinSlowdownFactor>0.4</WindMinSlowdownFactor>
         <WindMaxSpeedupFactor>1.8</WindMaxSpeedupFactor>
         <CurveSegmentDensity>High</CurveSegmentDensity>
+        <SpecialMovementType>Land;HumanMovement</SpecialMovementType>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
+        <CreatePathPlannerUnit>1</CreatePathPlannerUnit>
       </Walking>
       <SoundEmitter>
         <DestroySounds>
@@ -454,12 +786,31 @@
             </Item>
           </MovementStart>
         </VehicleSounds>
+        <ActiveSounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionSounds />
+        <ConstructionStreetSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <QuestObject />
       <CommandQueue>
         <FormationPriority>4</FormationPriority>
         <MilitaryShipPoints>0.8</MilitaryShipPoints>
         <PriorityShipList>1</PriorityShipList>
+        <IsDestructable>1</IsDestructable>
       </CommandQueue>
       <Text>
         <LocaText>
@@ -470,6 +821,7 @@
           </English>
         </LocaText>
         <LineID>29446</LineID>
+        <Localize>1</Localize>
       </Text>
       <Attacker>
         <AttackRange>40</AttackRange>
@@ -484,14 +836,6 @@
         <ShootingTracking>Front</ShootingTracking>
         <MuzzleEffectAssets>
           <Item>
-            <VectorElement>
-              <InheritanceMapV2>
-                <Entry>
-                  <TemplateName>WarShip</TemplateName>
-                  <Index>0</Index>
-                </Entry>
-              </InheritanceMapV2>
-            </VectorElement>
             <MuzzleEffectAsset>102278</MuzzleEffectAsset>
           </Item>
         </MuzzleEffectAssets>
@@ -504,6 +848,12 @@
             </AccuracyByDistancePair>
           </Item>
         </AccuracyByDistance>
+        <AttackRangeApproachPercentage>0.95</AttackRangeApproachPercentage>
+        <AllowApproachEnemy>1</AllowApproachEnemy>
+        <Turrets />
+        <AttackType>Default</AttackType>
+        <AccuracyBaseIncreasePercentage>100</AccuracyBaseIncreasePercentage>
+        <TurretExplosionEffectAsset>0</TurretExplosionEffectAsset>
       </Attacker>
       <Attackable>
         <MaximumHitPoints>850</MaximumHitPoints>
@@ -512,14 +862,31 @@
         <SelfHealPerHealTick>0.708</SelfHealPerHealTick>
         <SelfHealPausedTimeIfAttacked>60000</SelfHealPausedTimeIfAttacked>
         <CanBeAttackedByPlayer>1</CanBeAttackedByPlayer>
+        <PausedTimeIfAttacked>15000</PausedTimeIfAttacked>
+        <ArmorType>Default</ArmorType>
+        <TakeOverEffect>Never</TakeOverEffect>
+        <IslandWarFlag>0</IslandWarFlag>
+        <RuinSmokeParticles />
+        <ExplosionEffects />
       </Attackable>
       <ItemContainer>
         <SocketCount>2</SocketCount>
         <SlotCount>1</SlotCount>
         <SocketAllocation>Ship</SocketAllocation>
+        <SocketScope>Local</SocketScope>
+        <StackLimit>50</StackLimit>
+        <InitSocketItems />
+        <InitSlotItems />
+        <EmptySocketIcon>data/ui/2kimages/main/icons/icon_plus.png</EmptySocketIcon>
+        <EmptySocketItemNonModifiable>data/ui/2kimages/main/icons/icon_goods_storage.png</EmptySocketItemNonModifiable>
+        <SpawnsFlotsam>1</SpawnsFlotsam>
+        <FixedSlotContent>0</FixedSlotContent>
       </ItemContainer>
       <UpgradeList />
-      <Stance />
+      <Stance>
+        <DefensiveReturnDistance>60</DefensiveReturnDistance>
+        <FleeDistance>50</FleeDistance>
+      </Stance>
     </Values>
   </Asset>
   <Asset>
@@ -530,6 +897,7 @@
         <Name>QO Gunboat Medium Scanner Radius (Military)</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/ships/icon_ship_gunboat.png</IconFilename>
         <InfoDescription>1082</InfoDescription>
+        <Comments />
       </Standard>
       <Scanner>
         <FlyRadius>50</FlyRadius>
@@ -537,6 +905,9 @@
         <ScanEffect>500886</ScanEffect>
         <AlarmTime>15000</AlarmTime>
         <AlarmEffect>500888</AlarmEffect>
+        <FlyCircle>1</FlyCircle>
+        <FlyDirection>Random</FlyDirection>
+        <EffectHeight>1</EffectHeight>
       </Scanner>
       <Object>
         <Variations>
@@ -544,14 +915,44 @@
             <Filename>data/graphics/vehicle/gunboat/gunboat.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <MeshPlacement>OnWaterSlope</MeshPlacement>
         <ObjectPosition>Dynamic</ObjectPosition>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Selection>
         <ObjectmenuHeaderImage>data/ui/2kimages/main/3dicons/icon_ship.png</ObjectmenuHeaderImage>
         <MultiSelectable>1</MultiSelectable>
+        <GUIType>Residence</GUIType>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <InteractionDistance>15</InteractionDistance>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <AllowedDragType />
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
       </Selection>
       <Walking>
         <ReservationLength>9</ReservationLength>
@@ -570,6 +971,26 @@
         <WindMinSlowdownFactor>0.4</WindMinSlowdownFactor>
         <WindMaxSpeedupFactor>1.8</WindMaxSpeedupFactor>
         <CurveSegmentDensity>High</CurveSegmentDensity>
+        <SpecialMovementType>Land;HumanMovement</SpecialMovementType>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
+        <CreatePathPlannerUnit>1</CreatePathPlannerUnit>
       </Walking>
       <SoundEmitter>
         <DestroySounds>
@@ -584,12 +1005,31 @@
             </Item>
           </MovementStart>
         </VehicleSounds>
+        <ActiveSounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionSounds />
+        <ConstructionStreetSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <QuestObject />
       <CommandQueue>
         <FormationPriority>4</FormationPriority>
         <MilitaryShipPoints>0.8</MilitaryShipPoints>
         <PriorityShipList>1</PriorityShipList>
+        <IsDestructable>1</IsDestructable>
       </CommandQueue>
       <Text>
         <LineID>29447</LineID>
@@ -600,6 +1040,7 @@
             <ExportCount>1</ExportCount>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
       <Attacker>
         <AttackRange>40</AttackRange>
@@ -614,14 +1055,6 @@
         <ShootingTracking>Front</ShootingTracking>
         <MuzzleEffectAssets>
           <Item>
-            <VectorElement>
-              <InheritanceMapV2>
-                <Entry>
-                  <TemplateName>WarShip</TemplateName>
-                  <Index>0</Index>
-                </Entry>
-              </InheritanceMapV2>
-            </VectorElement>
             <MuzzleEffectAsset>102278</MuzzleEffectAsset>
           </Item>
         </MuzzleEffectAssets>
@@ -634,6 +1067,12 @@
             </AccuracyByDistancePair>
           </Item>
         </AccuracyByDistance>
+        <AttackRangeApproachPercentage>0.95</AttackRangeApproachPercentage>
+        <AllowApproachEnemy>1</AllowApproachEnemy>
+        <Turrets />
+        <AttackType>Default</AttackType>
+        <AccuracyBaseIncreasePercentage>100</AccuracyBaseIncreasePercentage>
+        <TurretExplosionEffectAsset>0</TurretExplosionEffectAsset>
       </Attacker>
       <Attackable>
         <MaximumHitPoints>850</MaximumHitPoints>
@@ -642,14 +1081,31 @@
         <SelfHealPerHealTick>0.708</SelfHealPerHealTick>
         <SelfHealPausedTimeIfAttacked>60000</SelfHealPausedTimeIfAttacked>
         <CanBeAttackedByPlayer>1</CanBeAttackedByPlayer>
+        <PausedTimeIfAttacked>15000</PausedTimeIfAttacked>
+        <ArmorType>Default</ArmorType>
+        <TakeOverEffect>Never</TakeOverEffect>
+        <IslandWarFlag>0</IslandWarFlag>
+        <RuinSmokeParticles />
+        <ExplosionEffects />
       </Attackable>
       <ItemContainer>
         <SocketCount>2</SocketCount>
         <SlotCount>1</SlotCount>
         <SocketAllocation>Ship</SocketAllocation>
+        <SocketScope>Local</SocketScope>
+        <StackLimit>50</StackLimit>
+        <InitSocketItems />
+        <InitSlotItems />
+        <EmptySocketIcon>data/ui/2kimages/main/icons/icon_plus.png</EmptySocketIcon>
+        <EmptySocketItemNonModifiable>data/ui/2kimages/main/icons/icon_goods_storage.png</EmptySocketItemNonModifiable>
+        <SpawnsFlotsam>1</SpawnsFlotsam>
+        <FixedSlotContent>0</FixedSlotContent>
       </ItemContainer>
       <UpgradeList />
-      <Stance />
+      <Stance>
+        <DefensiveReturnDistance>60</DefensiveReturnDistance>
+        <FleeDistance>50</FleeDistance>
+      </Stance>
     </Values>
   </Asset>
   <Asset>
@@ -660,6 +1116,7 @@
         <Name>QO Gunboat Large Scanner Radius (Military)</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/ships/icon_ship_gunboat.png</IconFilename>
         <InfoDescription>1082</InfoDescription>
+        <Comments />
       </Standard>
       <Scanner>
         <FlyRadius>60</FlyRadius>
@@ -667,6 +1124,9 @@
         <ScanEffect>500886</ScanEffect>
         <AlarmTime>15000</AlarmTime>
         <AlarmEffect>500888</AlarmEffect>
+        <FlyCircle>1</FlyCircle>
+        <FlyDirection>Random</FlyDirection>
+        <EffectHeight>1</EffectHeight>
       </Scanner>
       <Object>
         <Variations>
@@ -674,14 +1134,44 @@
             <Filename>data/graphics/vehicle/gunboat/gunboat.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <MeshPlacement>OnWaterSlope</MeshPlacement>
         <ObjectPosition>Dynamic</ObjectPosition>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Selection>
         <ObjectmenuHeaderImage>data/ui/2kimages/main/3dicons/icon_ship.png</ObjectmenuHeaderImage>
         <MultiSelectable>1</MultiSelectable>
+        <GUIType>Residence</GUIType>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <InteractionDistance>15</InteractionDistance>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <AllowedDragType />
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
       </Selection>
       <Walking>
         <ReservationLength>9</ReservationLength>
@@ -700,6 +1190,26 @@
         <WindMinSlowdownFactor>0.4</WindMinSlowdownFactor>
         <WindMaxSpeedupFactor>1.8</WindMaxSpeedupFactor>
         <CurveSegmentDensity>High</CurveSegmentDensity>
+        <SpecialMovementType>Land;HumanMovement</SpecialMovementType>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
+        <CreatePathPlannerUnit>1</CreatePathPlannerUnit>
       </Walking>
       <SoundEmitter>
         <DestroySounds>
@@ -714,12 +1224,31 @@
             </Item>
           </MovementStart>
         </VehicleSounds>
+        <ActiveSounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionSounds />
+        <ConstructionStreetSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <QuestObject />
       <CommandQueue>
         <FormationPriority>4</FormationPriority>
         <MilitaryShipPoints>0.8</MilitaryShipPoints>
         <PriorityShipList>1</PriorityShipList>
+        <IsDestructable>1</IsDestructable>
       </CommandQueue>
       <Text>
         <LineID>29448</LineID>
@@ -730,6 +1259,7 @@
             <ExportCount>1</ExportCount>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
       <Attacker>
         <AttackRange>40</AttackRange>
@@ -744,14 +1274,6 @@
         <ShootingTracking>Front</ShootingTracking>
         <MuzzleEffectAssets>
           <Item>
-            <VectorElement>
-              <InheritanceMapV2>
-                <Entry>
-                  <TemplateName>WarShip</TemplateName>
-                  <Index>0</Index>
-                </Entry>
-              </InheritanceMapV2>
-            </VectorElement>
             <MuzzleEffectAsset>102278</MuzzleEffectAsset>
           </Item>
         </MuzzleEffectAssets>
@@ -764,6 +1286,12 @@
             </AccuracyByDistancePair>
           </Item>
         </AccuracyByDistance>
+        <AttackRangeApproachPercentage>0.95</AttackRangeApproachPercentage>
+        <AllowApproachEnemy>1</AllowApproachEnemy>
+        <Turrets />
+        <AttackType>Default</AttackType>
+        <AccuracyBaseIncreasePercentage>100</AccuracyBaseIncreasePercentage>
+        <TurretExplosionEffectAsset>0</TurretExplosionEffectAsset>
       </Attacker>
       <Attackable>
         <MaximumHitPoints>850</MaximumHitPoints>
@@ -772,14 +1300,31 @@
         <SelfHealPerHealTick>0.708</SelfHealPerHealTick>
         <SelfHealPausedTimeIfAttacked>60000</SelfHealPausedTimeIfAttacked>
         <CanBeAttackedByPlayer>1</CanBeAttackedByPlayer>
+        <PausedTimeIfAttacked>15000</PausedTimeIfAttacked>
+        <ArmorType>Default</ArmorType>
+        <TakeOverEffect>Never</TakeOverEffect>
+        <IslandWarFlag>0</IslandWarFlag>
+        <RuinSmokeParticles />
+        <ExplosionEffects />
       </Attackable>
       <ItemContainer>
         <SocketCount>2</SocketCount>
         <SlotCount>1</SlotCount>
         <SocketAllocation>Ship</SocketAllocation>
+        <SocketScope>Local</SocketScope>
+        <StackLimit>50</StackLimit>
+        <InitSocketItems />
+        <InitSlotItems />
+        <EmptySocketIcon>data/ui/2kimages/main/icons/icon_plus.png</EmptySocketIcon>
+        <EmptySocketItemNonModifiable>data/ui/2kimages/main/icons/icon_goods_storage.png</EmptySocketItemNonModifiable>
+        <SpawnsFlotsam>1</SpawnsFlotsam>
+        <FixedSlotContent>0</FixedSlotContent>
       </ItemContainer>
       <UpgradeList />
-      <Stance />
+      <Stance>
+        <DefensiveReturnDistance>60</DefensiveReturnDistance>
+        <FleeDistance>50</FleeDistance>
+      </Stance>
     </Values>
   </Asset>
   <Asset>
@@ -790,6 +1335,7 @@
         <Name>QO Frigate Small Scanner Radius (Military)</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/ships/icon_ship_frigatte.png</IconFilename>
         <InfoDescription>1085</InfoDescription>
+        <Comments />
       </Standard>
       <Scanner>
         <ScanRadius>20</ScanRadius>
@@ -797,6 +1343,9 @@
         <ScanEffect>500886</ScanEffect>
         <AlarmTime>15000</AlarmTime>
         <AlarmEffect>500888</AlarmEffect>
+        <FlyCircle>1</FlyCircle>
+        <FlyDirection>Random</FlyDirection>
+        <EffectHeight>1</EffectHeight>
       </Scanner>
       <Object>
         <Variations>
@@ -804,14 +1353,44 @@
             <Filename>data/graphics/vehicle/frigate/frigate.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <MeshPlacement>OnWaterSlope</MeshPlacement>
         <ObjectPosition>Dynamic</ObjectPosition>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Selection>
         <ObjectmenuHeaderImage>data/ui/2kimages/main/3dicons/icon_ship.png</ObjectmenuHeaderImage>
         <MultiSelectable>1</MultiSelectable>
+        <GUIType>Residence</GUIType>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <InteractionDistance>15</InteractionDistance>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <AllowedDragType />
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
       </Selection>
       <Walking>
         <ReservationLength>9</ReservationLength>
@@ -830,6 +1409,26 @@
         <WindMinSlowdownFactor>0.4</WindMinSlowdownFactor>
         <WindMaxSpeedupFactor>1.8</WindMaxSpeedupFactor>
         <CurveSegmentDensity>High</CurveSegmentDensity>
+        <SpecialMovementType>Land;HumanMovement</SpecialMovementType>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
+        <CreatePathPlannerUnit>1</CreatePathPlannerUnit>
       </Walking>
       <SoundEmitter>
         <DestroySounds>
@@ -844,12 +1443,31 @@
             </Item>
           </MovementStart>
         </VehicleSounds>
+        <ActiveSounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionSounds />
+        <ConstructionStreetSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <QuestObject />
       <CommandQueue>
         <FormationPriority>4</FormationPriority>
         <MilitaryShipPoints>1.5</MilitaryShipPoints>
         <PriorityShipList>1</PriorityShipList>
+        <IsDestructable>1</IsDestructable>
       </CommandQueue>
       <Text>
         <LocaText>
@@ -860,6 +1478,7 @@
           </English>
         </LocaText>
         <LineID>29449</LineID>
+        <Localize>1</Localize>
       </Text>
       <Attacker>
         <AttackRange>55</AttackRange>
@@ -874,16 +1493,7 @@
         <TargetAngleVariation>50</TargetAngleVariation>
         <FullVolleyTimeMin>0.4</FullVolleyTimeMin>
         <MuzzleEffectAssets>
-          <Item>
-            <VectorElement>
-              <InheritanceMapV2>
-                <Entry>
-                  <TemplateName>WarShip</TemplateName>
-                  <Index>0</Index>
-                </Entry>
-              </InheritanceMapV2>
-            </VectorElement>
-          </Item>
+          <Item />
           <Item>
             <MuzzleEffectAsset>102183</MuzzleEffectAsset>
           </Item>
@@ -920,6 +1530,13 @@
             </AccuracyByDistancePair>
           </Item>
         </AccuracyByDistance>
+        <AttackRangeApproachPercentage>0.95</AttackRangeApproachPercentage>
+        <AllowApproachEnemy>1</AllowApproachEnemy>
+        <Turrets />
+        <ShootingTracking>Side</ShootingTracking>
+        <AttackType>Default</AttackType>
+        <AccuracyBaseIncreasePercentage>100</AccuracyBaseIncreasePercentage>
+        <TurretExplosionEffectAsset>0</TurretExplosionEffectAsset>
       </Attacker>
       <Attackable>
         <MaximumHitPoints>2000</MaximumHitPoints>
@@ -928,14 +1545,31 @@
         <SelfHealPerHealTick>1.389</SelfHealPerHealTick>
         <SelfHealPausedTimeIfAttacked>60000</SelfHealPausedTimeIfAttacked>
         <CanBeAttackedByPlayer>1</CanBeAttackedByPlayer>
+        <PausedTimeIfAttacked>15000</PausedTimeIfAttacked>
+        <ArmorType>Default</ArmorType>
+        <TakeOverEffect>Never</TakeOverEffect>
+        <IslandWarFlag>0</IslandWarFlag>
+        <RuinSmokeParticles />
+        <ExplosionEffects />
       </Attackable>
       <ItemContainer>
         <SocketCount>2</SocketCount>
         <SlotCount>3</SlotCount>
         <SocketAllocation>Ship</SocketAllocation>
+        <SocketScope>Local</SocketScope>
+        <StackLimit>50</StackLimit>
+        <InitSocketItems />
+        <InitSlotItems />
+        <EmptySocketIcon>data/ui/2kimages/main/icons/icon_plus.png</EmptySocketIcon>
+        <EmptySocketItemNonModifiable>data/ui/2kimages/main/icons/icon_goods_storage.png</EmptySocketItemNonModifiable>
+        <SpawnsFlotsam>1</SpawnsFlotsam>
+        <FixedSlotContent>0</FixedSlotContent>
       </ItemContainer>
       <UpgradeList />
-      <Stance />
+      <Stance>
+        <DefensiveReturnDistance>60</DefensiveReturnDistance>
+        <FleeDistance>50</FleeDistance>
+      </Stance>
     </Values>
   </Asset>
   <Asset>
@@ -946,6 +1580,7 @@
         <Name>QO Frigate Medium Scanner Radius (Military)</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/ships/icon_ship_frigatte.png</IconFilename>
         <InfoDescription>1085</InfoDescription>
+        <Comments />
       </Standard>
       <Scanner>
         <FlyRadius>50</FlyRadius>
@@ -953,6 +1588,9 @@
         <ScanEffect>500886</ScanEffect>
         <AlarmTime>15000</AlarmTime>
         <AlarmEffect>500888</AlarmEffect>
+        <FlyCircle>1</FlyCircle>
+        <FlyDirection>Random</FlyDirection>
+        <EffectHeight>1</EffectHeight>
       </Scanner>
       <Object>
         <Variations>
@@ -960,14 +1598,44 @@
             <Filename>data/graphics/vehicle/frigate/frigate.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <MeshPlacement>OnWaterSlope</MeshPlacement>
         <ObjectPosition>Dynamic</ObjectPosition>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Selection>
         <ObjectmenuHeaderImage>data/ui/2kimages/main/3dicons/icon_ship.png</ObjectmenuHeaderImage>
         <MultiSelectable>1</MultiSelectable>
+        <GUIType>Residence</GUIType>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <InteractionDistance>15</InteractionDistance>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <AllowedDragType />
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
       </Selection>
       <Walking>
         <ReservationLength>9</ReservationLength>
@@ -986,6 +1654,26 @@
         <WindMinSlowdownFactor>0.4</WindMinSlowdownFactor>
         <WindMaxSpeedupFactor>1.8</WindMaxSpeedupFactor>
         <CurveSegmentDensity>High</CurveSegmentDensity>
+        <SpecialMovementType>Land;HumanMovement</SpecialMovementType>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
+        <CreatePathPlannerUnit>1</CreatePathPlannerUnit>
       </Walking>
       <SoundEmitter>
         <DestroySounds>
@@ -1000,12 +1688,31 @@
             </Item>
           </MovementStart>
         </VehicleSounds>
+        <ActiveSounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionSounds />
+        <ConstructionStreetSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <QuestObject />
       <CommandQueue>
         <FormationPriority>4</FormationPriority>
         <MilitaryShipPoints>1.5</MilitaryShipPoints>
         <PriorityShipList>1</PriorityShipList>
+        <IsDestructable>1</IsDestructable>
       </CommandQueue>
       <Text>
         <LineID>29450</LineID>
@@ -1016,6 +1723,7 @@
             <ExportCount>1</ExportCount>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
       <Attacker>
         <AttackRange>55</AttackRange>
@@ -1030,16 +1738,7 @@
         <TargetAngleVariation>50</TargetAngleVariation>
         <FullVolleyTimeMin>0.4</FullVolleyTimeMin>
         <MuzzleEffectAssets>
-          <Item>
-            <VectorElement>
-              <InheritanceMapV2>
-                <Entry>
-                  <TemplateName>WarShip</TemplateName>
-                  <Index>0</Index>
-                </Entry>
-              </InheritanceMapV2>
-            </VectorElement>
-          </Item>
+          <Item />
           <Item>
             <MuzzleEffectAsset>102183</MuzzleEffectAsset>
           </Item>
@@ -1076,6 +1775,13 @@
             </AccuracyByDistancePair>
           </Item>
         </AccuracyByDistance>
+        <AttackRangeApproachPercentage>0.95</AttackRangeApproachPercentage>
+        <AllowApproachEnemy>1</AllowApproachEnemy>
+        <Turrets />
+        <ShootingTracking>Side</ShootingTracking>
+        <AttackType>Default</AttackType>
+        <AccuracyBaseIncreasePercentage>100</AccuracyBaseIncreasePercentage>
+        <TurretExplosionEffectAsset>0</TurretExplosionEffectAsset>
       </Attacker>
       <Attackable>
         <MaximumHitPoints>2000</MaximumHitPoints>
@@ -1084,14 +1790,31 @@
         <SelfHealPerHealTick>1.389</SelfHealPerHealTick>
         <SelfHealPausedTimeIfAttacked>60000</SelfHealPausedTimeIfAttacked>
         <CanBeAttackedByPlayer>1</CanBeAttackedByPlayer>
+        <PausedTimeIfAttacked>15000</PausedTimeIfAttacked>
+        <ArmorType>Default</ArmorType>
+        <TakeOverEffect>Never</TakeOverEffect>
+        <IslandWarFlag>0</IslandWarFlag>
+        <RuinSmokeParticles />
+        <ExplosionEffects />
       </Attackable>
       <ItemContainer>
         <SocketCount>2</SocketCount>
         <SlotCount>3</SlotCount>
         <SocketAllocation>Ship</SocketAllocation>
+        <SocketScope>Local</SocketScope>
+        <StackLimit>50</StackLimit>
+        <InitSocketItems />
+        <InitSlotItems />
+        <EmptySocketIcon>data/ui/2kimages/main/icons/icon_plus.png</EmptySocketIcon>
+        <EmptySocketItemNonModifiable>data/ui/2kimages/main/icons/icon_goods_storage.png</EmptySocketItemNonModifiable>
+        <SpawnsFlotsam>1</SpawnsFlotsam>
+        <FixedSlotContent>0</FixedSlotContent>
       </ItemContainer>
       <UpgradeList />
-      <Stance />
+      <Stance>
+        <DefensiveReturnDistance>60</DefensiveReturnDistance>
+        <FleeDistance>50</FleeDistance>
+      </Stance>
     </Values>
   </Asset>
   <Asset>
@@ -1102,6 +1825,7 @@
         <Name>QO Frigate Large Scanner Radius (Military)</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/ships/icon_ship_frigatte.png</IconFilename>
         <InfoDescription>1085</InfoDescription>
+        <Comments />
       </Standard>
       <Scanner>
         <FlyRadius>60</FlyRadius>
@@ -1109,6 +1833,9 @@
         <ScanEffect>500886</ScanEffect>
         <AlarmTime>15000</AlarmTime>
         <AlarmEffect>500888</AlarmEffect>
+        <FlyCircle>1</FlyCircle>
+        <FlyDirection>Random</FlyDirection>
+        <EffectHeight>1</EffectHeight>
       </Scanner>
       <Object>
         <Variations>
@@ -1116,14 +1843,44 @@
             <Filename>data/graphics/vehicle/frigate/frigate.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <MeshPlacement>OnWaterSlope</MeshPlacement>
         <ObjectPosition>Dynamic</ObjectPosition>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Selection>
         <ObjectmenuHeaderImage>data/ui/2kimages/main/3dicons/icon_ship.png</ObjectmenuHeaderImage>
         <MultiSelectable>1</MultiSelectable>
+        <GUIType>Residence</GUIType>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <InteractionDistance>15</InteractionDistance>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <AllowedDragType />
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
       </Selection>
       <Walking>
         <ReservationLength>9</ReservationLength>
@@ -1142,6 +1899,26 @@
         <WindMinSlowdownFactor>0.4</WindMinSlowdownFactor>
         <WindMaxSpeedupFactor>1.8</WindMaxSpeedupFactor>
         <CurveSegmentDensity>High</CurveSegmentDensity>
+        <SpecialMovementType>Land;HumanMovement</SpecialMovementType>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
+        <CreatePathPlannerUnit>1</CreatePathPlannerUnit>
       </Walking>
       <SoundEmitter>
         <DestroySounds>
@@ -1156,12 +1933,31 @@
             </Item>
           </MovementStart>
         </VehicleSounds>
+        <ActiveSounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionSounds />
+        <ConstructionStreetSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <QuestObject />
       <CommandQueue>
         <FormationPriority>4</FormationPriority>
         <MilitaryShipPoints>1.5</MilitaryShipPoints>
         <PriorityShipList>1</PriorityShipList>
+        <IsDestructable>1</IsDestructable>
       </CommandQueue>
       <Text>
         <LineID>29451</LineID>
@@ -1172,6 +1968,7 @@
             <ExportCount>1</ExportCount>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
       <Attacker>
         <AttackRange>55</AttackRange>
@@ -1186,16 +1983,7 @@
         <TargetAngleVariation>50</TargetAngleVariation>
         <FullVolleyTimeMin>0.4</FullVolleyTimeMin>
         <MuzzleEffectAssets>
-          <Item>
-            <VectorElement>
-              <InheritanceMapV2>
-                <Entry>
-                  <TemplateName>WarShip</TemplateName>
-                  <Index>0</Index>
-                </Entry>
-              </InheritanceMapV2>
-            </VectorElement>
-          </Item>
+          <Item />
           <Item>
             <MuzzleEffectAsset>102183</MuzzleEffectAsset>
           </Item>
@@ -1232,6 +2020,13 @@
             </AccuracyByDistancePair>
           </Item>
         </AccuracyByDistance>
+        <AttackRangeApproachPercentage>0.95</AttackRangeApproachPercentage>
+        <AllowApproachEnemy>1</AllowApproachEnemy>
+        <Turrets />
+        <ShootingTracking>Side</ShootingTracking>
+        <AttackType>Default</AttackType>
+        <AccuracyBaseIncreasePercentage>100</AccuracyBaseIncreasePercentage>
+        <TurretExplosionEffectAsset>0</TurretExplosionEffectAsset>
       </Attacker>
       <Attackable>
         <MaximumHitPoints>2000</MaximumHitPoints>
@@ -1240,14 +2035,31 @@
         <SelfHealPerHealTick>1.389</SelfHealPerHealTick>
         <SelfHealPausedTimeIfAttacked>60000</SelfHealPausedTimeIfAttacked>
         <CanBeAttackedByPlayer>1</CanBeAttackedByPlayer>
+        <PausedTimeIfAttacked>15000</PausedTimeIfAttacked>
+        <ArmorType>Default</ArmorType>
+        <TakeOverEffect>Never</TakeOverEffect>
+        <IslandWarFlag>0</IslandWarFlag>
+        <RuinSmokeParticles />
+        <ExplosionEffects />
       </Attackable>
       <ItemContainer>
         <SocketCount>2</SocketCount>
         <SlotCount>3</SlotCount>
         <SocketAllocation>Ship</SocketAllocation>
+        <SocketScope>Local</SocketScope>
+        <StackLimit>50</StackLimit>
+        <InitSocketItems />
+        <InitSlotItems />
+        <EmptySocketIcon>data/ui/2kimages/main/icons/icon_plus.png</EmptySocketIcon>
+        <EmptySocketItemNonModifiable>data/ui/2kimages/main/icons/icon_goods_storage.png</EmptySocketItemNonModifiable>
+        <SpawnsFlotsam>1</SpawnsFlotsam>
+        <FixedSlotContent>0</FixedSlotContent>
       </ItemContainer>
       <UpgradeList />
-      <Stance />
+      <Stance>
+        <DefensiveReturnDistance>60</DefensiveReturnDistance>
+        <FleeDistance>50</FleeDistance>
+      </Stance>
     </Values>
   </Asset>
   <Asset>
@@ -1258,6 +2070,7 @@
         <Name>QO Liner Small Scanner Radius (Military)</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/ships/icon_ship_liner.png</IconFilename>
         <InfoDescription>1086</InfoDescription>
+        <Comments />
       </Standard>
       <Scanner>
         <ScanRadius>20</ScanRadius>
@@ -1265,6 +2078,9 @@
         <ScanEffect>500886</ScanEffect>
         <AlarmTime>15000</AlarmTime>
         <AlarmEffect>500888</AlarmEffect>
+        <FlyCircle>1</FlyCircle>
+        <FlyDirection>Random</FlyDirection>
+        <EffectHeight>1</EffectHeight>
       </Scanner>
       <Object>
         <Variations>
@@ -1272,14 +2088,44 @@
             <Filename>data/graphics/vehicle/man_of_war/man_of_war.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <MeshPlacement>OnWaterSlope</MeshPlacement>
         <ObjectPosition>Dynamic</ObjectPosition>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Selection>
         <ObjectmenuHeaderImage>data/ui/2kimages/main/3dicons/icon_ship.png</ObjectmenuHeaderImage>
         <MultiSelectable>1</MultiSelectable>
+        <GUIType>Residence</GUIType>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <InteractionDistance>15</InteractionDistance>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <AllowedDragType />
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
       </Selection>
       <Walking>
         <ReservationLength>9</ReservationLength>
@@ -1298,6 +2144,26 @@
         <WindMinSlowdownFactor>0.4</WindMinSlowdownFactor>
         <WindMaxSpeedupFactor>1.8</WindMaxSpeedupFactor>
         <CurveSegmentDensity>High</CurveSegmentDensity>
+        <SpecialMovementType>Land;HumanMovement</SpecialMovementType>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
+        <CreatePathPlannerUnit>1</CreatePathPlannerUnit>
       </Walking>
       <SoundEmitter>
         <DestroySounds>
@@ -1312,12 +2178,31 @@
             </Item>
           </MovementStart>
         </VehicleSounds>
+        <ActiveSounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionSounds />
+        <ConstructionStreetSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <QuestObject />
       <CommandQueue>
         <FormationPriority>3</FormationPriority>
         <MilitaryShipPoints>3.2</MilitaryShipPoints>
         <PriorityShipList>1</PriorityShipList>
+        <IsDestructable>1</IsDestructable>
       </CommandQueue>
       <Text>
         <LocaText>
@@ -1328,6 +2213,7 @@
           </English>
         </LocaText>
         <LineID>29452</LineID>
+        <Localize>1</Localize>
       </Text>
       <Attacker>
         <AttackRange>68</AttackRange>
@@ -1342,14 +2228,6 @@
         <FullVolleyTimeMin>0.8</FullVolleyTimeMin>
         <MuzzleEffectAssets>
           <Item>
-            <VectorElement>
-              <InheritanceMapV2>
-                <Entry>
-                  <TemplateName>WarShip</TemplateName>
-                  <Index>0</Index>
-                </Entry>
-              </InheritanceMapV2>
-            </VectorElement>
             <MuzzleEffectAsset>102286</MuzzleEffectAsset>
           </Item>
           <Item>
@@ -1388,6 +2266,14 @@
             </AccuracyByDistancePair>
           </Item>
         </AccuracyByDistance>
+        <AttackRangeApproachPercentage>0.95</AttackRangeApproachPercentage>
+        <AllowApproachEnemy>1</AllowApproachEnemy>
+        <Turrets />
+        <AccuracyBase>5</AccuracyBase>
+        <ShootingTracking>Side</ShootingTracking>
+        <AttackType>Default</AttackType>
+        <AccuracyBaseIncreasePercentage>100</AccuracyBaseIncreasePercentage>
+        <TurretExplosionEffectAsset>0</TurretExplosionEffectAsset>
       </Attacker>
       <Attackable>
         <MaximumHitPoints>4000</MaximumHitPoints>
@@ -1396,14 +2282,31 @@
         <SelfHealPerHealTick>1.667</SelfHealPerHealTick>
         <SelfHealPausedTimeIfAttacked>60000</SelfHealPausedTimeIfAttacked>
         <CanBeAttackedByPlayer>1</CanBeAttackedByPlayer>
+        <PausedTimeIfAttacked>15000</PausedTimeIfAttacked>
+        <ArmorType>Default</ArmorType>
+        <TakeOverEffect>Never</TakeOverEffect>
+        <IslandWarFlag>0</IslandWarFlag>
+        <RuinSmokeParticles />
+        <ExplosionEffects />
       </Attackable>
       <ItemContainer>
         <SocketCount>3</SocketCount>
         <SlotCount>3</SlotCount>
         <SocketAllocation>Ship</SocketAllocation>
+        <SocketScope>Local</SocketScope>
+        <StackLimit>50</StackLimit>
+        <InitSocketItems />
+        <InitSlotItems />
+        <EmptySocketIcon>data/ui/2kimages/main/icons/icon_plus.png</EmptySocketIcon>
+        <EmptySocketItemNonModifiable>data/ui/2kimages/main/icons/icon_goods_storage.png</EmptySocketItemNonModifiable>
+        <SpawnsFlotsam>1</SpawnsFlotsam>
+        <FixedSlotContent>0</FixedSlotContent>
       </ItemContainer>
       <UpgradeList />
-      <Stance />
+      <Stance>
+        <DefensiveReturnDistance>60</DefensiveReturnDistance>
+        <FleeDistance>50</FleeDistance>
+      </Stance>
     </Values>
   </Asset>
   <Asset>
@@ -1414,6 +2317,7 @@
         <Name>QO Liner Medium Scanner Radius (Military)</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/ships/icon_ship_liner.png</IconFilename>
         <InfoDescription>1086</InfoDescription>
+        <Comments />
       </Standard>
       <Scanner>
         <FlyRadius>50</FlyRadius>
@@ -1421,6 +2325,9 @@
         <ScanEffect>500886</ScanEffect>
         <AlarmTime>15000</AlarmTime>
         <AlarmEffect>500888</AlarmEffect>
+        <FlyCircle>1</FlyCircle>
+        <FlyDirection>Random</FlyDirection>
+        <EffectHeight>1</EffectHeight>
       </Scanner>
       <Object>
         <Variations>
@@ -1428,14 +2335,44 @@
             <Filename>data/graphics/vehicle/man_of_war/man_of_war.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <MeshPlacement>OnWaterSlope</MeshPlacement>
         <ObjectPosition>Dynamic</ObjectPosition>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Selection>
         <ObjectmenuHeaderImage>data/ui/2kimages/main/3dicons/icon_ship.png</ObjectmenuHeaderImage>
         <MultiSelectable>1</MultiSelectable>
+        <GUIType>Residence</GUIType>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <InteractionDistance>15</InteractionDistance>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <AllowedDragType />
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
       </Selection>
       <Walking>
         <ReservationLength>9</ReservationLength>
@@ -1454,6 +2391,26 @@
         <WindMinSlowdownFactor>0.4</WindMinSlowdownFactor>
         <WindMaxSpeedupFactor>1.8</WindMaxSpeedupFactor>
         <CurveSegmentDensity>High</CurveSegmentDensity>
+        <SpecialMovementType>Land;HumanMovement</SpecialMovementType>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
+        <CreatePathPlannerUnit>1</CreatePathPlannerUnit>
       </Walking>
       <SoundEmitter>
         <DestroySounds>
@@ -1468,12 +2425,31 @@
             </Item>
           </MovementStart>
         </VehicleSounds>
+        <ActiveSounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionSounds />
+        <ConstructionStreetSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <QuestObject />
       <CommandQueue>
         <FormationPriority>3</FormationPriority>
         <MilitaryShipPoints>3.2</MilitaryShipPoints>
         <PriorityShipList>1</PriorityShipList>
+        <IsDestructable>1</IsDestructable>
       </CommandQueue>
       <Text>
         <LineID>29453</LineID>
@@ -1484,6 +2460,7 @@
             <ExportCount>2</ExportCount>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
       <Attacker>
         <AttackRange>68</AttackRange>
@@ -1498,14 +2475,6 @@
         <FullVolleyTimeMin>0.8</FullVolleyTimeMin>
         <MuzzleEffectAssets>
           <Item>
-            <VectorElement>
-              <InheritanceMapV2>
-                <Entry>
-                  <TemplateName>WarShip</TemplateName>
-                  <Index>0</Index>
-                </Entry>
-              </InheritanceMapV2>
-            </VectorElement>
             <MuzzleEffectAsset>102286</MuzzleEffectAsset>
           </Item>
           <Item>
@@ -1544,6 +2513,14 @@
             </AccuracyByDistancePair>
           </Item>
         </AccuracyByDistance>
+        <AttackRangeApproachPercentage>0.95</AttackRangeApproachPercentage>
+        <AllowApproachEnemy>1</AllowApproachEnemy>
+        <Turrets />
+        <AccuracyBase>5</AccuracyBase>
+        <ShootingTracking>Side</ShootingTracking>
+        <AttackType>Default</AttackType>
+        <AccuracyBaseIncreasePercentage>100</AccuracyBaseIncreasePercentage>
+        <TurretExplosionEffectAsset>0</TurretExplosionEffectAsset>
       </Attacker>
       <Attackable>
         <MaximumHitPoints>4000</MaximumHitPoints>
@@ -1552,14 +2529,31 @@
         <SelfHealPerHealTick>1.667</SelfHealPerHealTick>
         <SelfHealPausedTimeIfAttacked>60000</SelfHealPausedTimeIfAttacked>
         <CanBeAttackedByPlayer>1</CanBeAttackedByPlayer>
+        <PausedTimeIfAttacked>15000</PausedTimeIfAttacked>
+        <ArmorType>Default</ArmorType>
+        <TakeOverEffect>Never</TakeOverEffect>
+        <IslandWarFlag>0</IslandWarFlag>
+        <RuinSmokeParticles />
+        <ExplosionEffects />
       </Attackable>
       <ItemContainer>
         <SocketCount>3</SocketCount>
         <SlotCount>3</SlotCount>
         <SocketAllocation>Ship</SocketAllocation>
+        <SocketScope>Local</SocketScope>
+        <StackLimit>50</StackLimit>
+        <InitSocketItems />
+        <InitSlotItems />
+        <EmptySocketIcon>data/ui/2kimages/main/icons/icon_plus.png</EmptySocketIcon>
+        <EmptySocketItemNonModifiable>data/ui/2kimages/main/icons/icon_goods_storage.png</EmptySocketItemNonModifiable>
+        <SpawnsFlotsam>1</SpawnsFlotsam>
+        <FixedSlotContent>0</FixedSlotContent>
       </ItemContainer>
       <UpgradeList />
-      <Stance />
+      <Stance>
+        <DefensiveReturnDistance>60</DefensiveReturnDistance>
+        <FleeDistance>50</FleeDistance>
+      </Stance>
     </Values>
   </Asset>
   <Asset>
@@ -1570,6 +2564,7 @@
         <Name>QA Liner Large Scanner Radius (Military)</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/ships/icon_ship_liner.png</IconFilename>
         <InfoDescription>1086</InfoDescription>
+        <Comments />
       </Standard>
       <Scanner>
         <FlyRadius>60</FlyRadius>
@@ -1577,6 +2572,9 @@
         <ScanEffect>500886</ScanEffect>
         <AlarmTime>15000</AlarmTime>
         <AlarmEffect>500888</AlarmEffect>
+        <FlyCircle>1</FlyCircle>
+        <FlyDirection>Random</FlyDirection>
+        <EffectHeight>1</EffectHeight>
       </Scanner>
       <Object>
         <Variations>
@@ -1584,14 +2582,44 @@
             <Filename>data/graphics/vehicle/man_of_war/man_of_war.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <MeshPlacement>OnWaterSlope</MeshPlacement>
         <ObjectPosition>Dynamic</ObjectPosition>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Selection>
         <ObjectmenuHeaderImage>data/ui/2kimages/main/3dicons/icon_ship.png</ObjectmenuHeaderImage>
         <MultiSelectable>1</MultiSelectable>
+        <GUIType>Residence</GUIType>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <InteractionDistance>15</InteractionDistance>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <AllowedDragType />
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
       </Selection>
       <Walking>
         <ReservationLength>9</ReservationLength>
@@ -1610,6 +2638,26 @@
         <WindMinSlowdownFactor>0.4</WindMinSlowdownFactor>
         <WindMaxSpeedupFactor>1.8</WindMaxSpeedupFactor>
         <CurveSegmentDensity>High</CurveSegmentDensity>
+        <SpecialMovementType>Land;HumanMovement</SpecialMovementType>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
+        <CreatePathPlannerUnit>1</CreatePathPlannerUnit>
       </Walking>
       <SoundEmitter>
         <DestroySounds>
@@ -1624,12 +2672,31 @@
             </Item>
           </MovementStart>
         </VehicleSounds>
+        <ActiveSounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionSounds />
+        <ConstructionStreetSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <QuestObject />
       <CommandQueue>
         <FormationPriority>3</FormationPriority>
         <MilitaryShipPoints>3.2</MilitaryShipPoints>
         <PriorityShipList>1</PriorityShipList>
+        <IsDestructable>1</IsDestructable>
       </CommandQueue>
       <Text>
         <LineID>29454</LineID>
@@ -1640,6 +2707,7 @@
             <ExportCount>2</ExportCount>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
       <Attacker>
         <AttackRange>68</AttackRange>
@@ -1654,14 +2722,6 @@
         <FullVolleyTimeMin>0.8</FullVolleyTimeMin>
         <MuzzleEffectAssets>
           <Item>
-            <VectorElement>
-              <InheritanceMapV2>
-                <Entry>
-                  <TemplateName>WarShip</TemplateName>
-                  <Index>0</Index>
-                </Entry>
-              </InheritanceMapV2>
-            </VectorElement>
             <MuzzleEffectAsset>102286</MuzzleEffectAsset>
           </Item>
           <Item>
@@ -1700,6 +2760,14 @@
             </AccuracyByDistancePair>
           </Item>
         </AccuracyByDistance>
+        <AttackRangeApproachPercentage>0.95</AttackRangeApproachPercentage>
+        <AllowApproachEnemy>1</AllowApproachEnemy>
+        <Turrets />
+        <AccuracyBase>5</AccuracyBase>
+        <ShootingTracking>Side</ShootingTracking>
+        <AttackType>Default</AttackType>
+        <AccuracyBaseIncreasePercentage>100</AccuracyBaseIncreasePercentage>
+        <TurretExplosionEffectAsset>0</TurretExplosionEffectAsset>
       </Attacker>
       <Attackable>
         <MaximumHitPoints>4000</MaximumHitPoints>
@@ -1708,14 +2776,31 @@
         <SelfHealPerHealTick>1.667</SelfHealPerHealTick>
         <SelfHealPausedTimeIfAttacked>60000</SelfHealPausedTimeIfAttacked>
         <CanBeAttackedByPlayer>1</CanBeAttackedByPlayer>
+        <PausedTimeIfAttacked>15000</PausedTimeIfAttacked>
+        <ArmorType>Default</ArmorType>
+        <TakeOverEffect>Never</TakeOverEffect>
+        <IslandWarFlag>0</IslandWarFlag>
+        <RuinSmokeParticles />
+        <ExplosionEffects />
       </Attackable>
       <ItemContainer>
         <SocketCount>3</SocketCount>
         <SlotCount>3</SlotCount>
         <SocketAllocation>Ship</SocketAllocation>
+        <SocketScope>Local</SocketScope>
+        <StackLimit>50</StackLimit>
+        <InitSocketItems />
+        <InitSlotItems />
+        <EmptySocketIcon>data/ui/2kimages/main/icons/icon_plus.png</EmptySocketIcon>
+        <EmptySocketItemNonModifiable>data/ui/2kimages/main/icons/icon_goods_storage.png</EmptySocketItemNonModifiable>
+        <SpawnsFlotsam>1</SpawnsFlotsam>
+        <FixedSlotContent>0</FixedSlotContent>
       </ItemContainer>
       <UpgradeList />
-      <Stance />
+      <Stance>
+        <DefensiveReturnDistance>60</DefensiveReturnDistance>
+        <FleeDistance>50</FleeDistance>
+      </Stance>
     </Values>
   </Asset>
   <Asset>
@@ -1726,6 +2811,7 @@
         <Name>QO Monitor Small Scanner Radius (Military)</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/ships/icon_ship_monitor.png</IconFilename>
         <InfoDescription>1088</InfoDescription>
+        <Comments />
       </Standard>
       <Scanner>
         <ScanRadius>20</ScanRadius>
@@ -1733,6 +2819,9 @@
         <ScanEffect>500886</ScanEffect>
         <AlarmTime>15000</AlarmTime>
         <AlarmEffect>500888</AlarmEffect>
+        <FlyCircle>1</FlyCircle>
+        <FlyDirection>Random</FlyDirection>
+        <EffectHeight>1</EffectHeight>
       </Scanner>
       <Object>
         <Variations>
@@ -1740,14 +2829,44 @@
             <Filename>data/graphics/vehicle/monitor/monitor.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <MeshPlacement>OnWaterSlope</MeshPlacement>
         <ObjectPosition>Dynamic</ObjectPosition>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Selection>
         <ObjectmenuHeaderImage>data/ui/2kimages/main/3dicons/icon_ship.png</ObjectmenuHeaderImage>
         <MultiSelectable>1</MultiSelectable>
+        <GUIType>Residence</GUIType>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <InteractionDistance>15</InteractionDistance>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <AllowedDragType />
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
       </Selection>
       <Walking>
         <ShortenSailsAfter>0</ShortenSailsAfter>
@@ -1768,6 +2887,24 @@
         <DamageFullFactor>0.5</DamageFullFactor>
         <MinSlowdownFactor>0.5</MinSlowdownFactor>
         <CurveSegmentDensity>High</CurveSegmentDensity>
+        <SpecialMovementType>Land;HumanMovement</SpecialMovementType>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <DiscoverRadius>50</DiscoverRadius>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
+        <CreatePathPlannerUnit>1</CreatePathPlannerUnit>
       </Walking>
       <SoundEmitter>
         <DestroySounds>
@@ -1782,12 +2919,31 @@
             </Item>
           </MovementStart>
         </VehicleSounds>
+        <ActiveSounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionSounds />
+        <ConstructionStreetSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <QuestObject />
       <CommandQueue>
         <FormationPriority>3</FormationPriority>
         <MilitaryShipPoints>3</MilitaryShipPoints>
         <PriorityShipList>1</PriorityShipList>
+        <IsDestructable>1</IsDestructable>
       </CommandQueue>
       <Text>
         <LocaText>
@@ -1798,6 +2954,7 @@
           </English>
         </LocaText>
         <LineID>29455</LineID>
+        <Localize>1</Localize>
       </Text>
       <Attacker>
         <AttackRange>48</AttackRange>
@@ -1818,14 +2975,6 @@
         <ShootingTracking>TurretFixed</ShootingTracking>
         <MuzzleEffectAssets>
           <Item>
-            <VectorElement>
-              <InheritanceMapV2>
-                <Entry>
-                  <TemplateName>WarShip</TemplateName>
-                  <Index>0</Index>
-                </Entry>
-              </InheritanceMapV2>
-            </VectorElement>
             <MuzzleEffectAsset>101971</MuzzleEffectAsset>
           </Item>
         </MuzzleEffectAssets>
@@ -1838,6 +2987,11 @@
             </AccuracyByDistancePair>
           </Item>
         </AccuracyByDistance>
+        <AttackRangeApproachPercentage>0.95</AttackRangeApproachPercentage>
+        <AllowApproachEnemy>1</AllowApproachEnemy>
+        <AttackType>Default</AttackType>
+        <AccuracyBaseIncreasePercentage>100</AccuracyBaseIncreasePercentage>
+        <TurretExplosionEffectAsset>0</TurretExplosionEffectAsset>
       </Attacker>
       <Attackable>
         <MaximumHitPoints>2500</MaximumHitPoints>
@@ -1846,14 +3000,31 @@
         <SelfHealPerHealTick>1.389</SelfHealPerHealTick>
         <SelfHealPausedTimeIfAttacked>60000</SelfHealPausedTimeIfAttacked>
         <CanBeAttackedByPlayer>1</CanBeAttackedByPlayer>
+        <PausedTimeIfAttacked>15000</PausedTimeIfAttacked>
+        <ArmorType>Default</ArmorType>
+        <TakeOverEffect>Never</TakeOverEffect>
+        <IslandWarFlag>0</IslandWarFlag>
+        <RuinSmokeParticles />
+        <ExplosionEffects />
       </Attackable>
       <ItemContainer>
         <SocketCount>2</SocketCount>
         <SocketAllocation>Ship;SteamShip;Warship</SocketAllocation>
         <SlotCount>2</SlotCount>
+        <SocketScope>Local</SocketScope>
+        <StackLimit>50</StackLimit>
+        <InitSocketItems />
+        <InitSlotItems />
+        <EmptySocketIcon>data/ui/2kimages/main/icons/icon_plus.png</EmptySocketIcon>
+        <EmptySocketItemNonModifiable>data/ui/2kimages/main/icons/icon_goods_storage.png</EmptySocketItemNonModifiable>
+        <SpawnsFlotsam>1</SpawnsFlotsam>
+        <FixedSlotContent>0</FixedSlotContent>
       </ItemContainer>
       <UpgradeList />
-      <Stance />
+      <Stance>
+        <DefensiveReturnDistance>60</DefensiveReturnDistance>
+        <FleeDistance>50</FleeDistance>
+      </Stance>
     </Values>
   </Asset>
   <Asset>
@@ -1864,6 +3035,7 @@
         <Name>QO Monitor Medium Scanner Radius (Military)</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/ships/icon_ship_monitor.png</IconFilename>
         <InfoDescription>1088</InfoDescription>
+        <Comments />
       </Standard>
       <Scanner>
         <FlyRadius>50</FlyRadius>
@@ -1871,6 +3043,9 @@
         <ScanEffect>500886</ScanEffect>
         <AlarmTime>15000</AlarmTime>
         <AlarmEffect>500888</AlarmEffect>
+        <FlyCircle>1</FlyCircle>
+        <FlyDirection>Random</FlyDirection>
+        <EffectHeight>1</EffectHeight>
       </Scanner>
       <Object>
         <Variations>
@@ -1878,14 +3053,44 @@
             <Filename>data/graphics/vehicle/monitor/monitor.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <MeshPlacement>OnWaterSlope</MeshPlacement>
         <ObjectPosition>Dynamic</ObjectPosition>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Selection>
         <ObjectmenuHeaderImage>data/ui/2kimages/main/3dicons/icon_ship.png</ObjectmenuHeaderImage>
         <MultiSelectable>1</MultiSelectable>
+        <GUIType>Residence</GUIType>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <InteractionDistance>15</InteractionDistance>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <AllowedDragType />
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
       </Selection>
       <Walking>
         <ShortenSailsAfter>0</ShortenSailsAfter>
@@ -1906,6 +3111,24 @@
         <DamageFullFactor>0.5</DamageFullFactor>
         <MinSlowdownFactor>0.5</MinSlowdownFactor>
         <CurveSegmentDensity>High</CurveSegmentDensity>
+        <SpecialMovementType>Land;HumanMovement</SpecialMovementType>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <DiscoverRadius>50</DiscoverRadius>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
+        <CreatePathPlannerUnit>1</CreatePathPlannerUnit>
       </Walking>
       <SoundEmitter>
         <DestroySounds>
@@ -1920,12 +3143,31 @@
             </Item>
           </MovementStart>
         </VehicleSounds>
+        <ActiveSounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionSounds />
+        <ConstructionStreetSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <QuestObject />
       <CommandQueue>
         <FormationPriority>3</FormationPriority>
         <MilitaryShipPoints>3</MilitaryShipPoints>
         <PriorityShipList>1</PriorityShipList>
+        <IsDestructable>1</IsDestructable>
       </CommandQueue>
       <Text>
         <LineID>29456</LineID>
@@ -1936,6 +3178,7 @@
             <ExportCount>1</ExportCount>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
       <Attacker>
         <AttackRange>48</AttackRange>
@@ -1956,14 +3199,6 @@
         <ShootingTracking>TurretFixed</ShootingTracking>
         <MuzzleEffectAssets>
           <Item>
-            <VectorElement>
-              <InheritanceMapV2>
-                <Entry>
-                  <TemplateName>WarShip</TemplateName>
-                  <Index>0</Index>
-                </Entry>
-              </InheritanceMapV2>
-            </VectorElement>
             <MuzzleEffectAsset>101971</MuzzleEffectAsset>
           </Item>
         </MuzzleEffectAssets>
@@ -1976,6 +3211,11 @@
             </AccuracyByDistancePair>
           </Item>
         </AccuracyByDistance>
+        <AttackRangeApproachPercentage>0.95</AttackRangeApproachPercentage>
+        <AllowApproachEnemy>1</AllowApproachEnemy>
+        <AttackType>Default</AttackType>
+        <AccuracyBaseIncreasePercentage>100</AccuracyBaseIncreasePercentage>
+        <TurretExplosionEffectAsset>0</TurretExplosionEffectAsset>
       </Attacker>
       <Attackable>
         <MaximumHitPoints>2500</MaximumHitPoints>
@@ -1984,14 +3224,31 @@
         <SelfHealPerHealTick>1.389</SelfHealPerHealTick>
         <SelfHealPausedTimeIfAttacked>60000</SelfHealPausedTimeIfAttacked>
         <CanBeAttackedByPlayer>1</CanBeAttackedByPlayer>
+        <PausedTimeIfAttacked>15000</PausedTimeIfAttacked>
+        <ArmorType>Default</ArmorType>
+        <TakeOverEffect>Never</TakeOverEffect>
+        <IslandWarFlag>0</IslandWarFlag>
+        <RuinSmokeParticles />
+        <ExplosionEffects />
       </Attackable>
       <ItemContainer>
         <SocketCount>2</SocketCount>
         <SocketAllocation>Ship;SteamShip;Warship</SocketAllocation>
         <SlotCount>2</SlotCount>
+        <SocketScope>Local</SocketScope>
+        <StackLimit>50</StackLimit>
+        <InitSocketItems />
+        <InitSlotItems />
+        <EmptySocketIcon>data/ui/2kimages/main/icons/icon_plus.png</EmptySocketIcon>
+        <EmptySocketItemNonModifiable>data/ui/2kimages/main/icons/icon_goods_storage.png</EmptySocketItemNonModifiable>
+        <SpawnsFlotsam>1</SpawnsFlotsam>
+        <FixedSlotContent>0</FixedSlotContent>
       </ItemContainer>
       <UpgradeList />
-      <Stance />
+      <Stance>
+        <DefensiveReturnDistance>60</DefensiveReturnDistance>
+        <FleeDistance>50</FleeDistance>
+      </Stance>
     </Values>
   </Asset>
   <Asset>
@@ -2002,6 +3259,7 @@
         <Name>QO Monitor Large Scanner Radius (Military)</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/ships/icon_ship_monitor.png</IconFilename>
         <InfoDescription>1088</InfoDescription>
+        <Comments />
       </Standard>
       <Scanner>
         <FlyRadius>60</FlyRadius>
@@ -2009,6 +3267,9 @@
         <ScanEffect>500886</ScanEffect>
         <AlarmTime>15000</AlarmTime>
         <AlarmEffect>500888</AlarmEffect>
+        <FlyCircle>1</FlyCircle>
+        <FlyDirection>Random</FlyDirection>
+        <EffectHeight>1</EffectHeight>
       </Scanner>
       <Object>
         <Variations>
@@ -2016,14 +3277,44 @@
             <Filename>data/graphics/vehicle/monitor/monitor.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <MeshPlacement>OnWaterSlope</MeshPlacement>
         <ObjectPosition>Dynamic</ObjectPosition>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Selection>
         <ObjectmenuHeaderImage>data/ui/2kimages/main/3dicons/icon_ship.png</ObjectmenuHeaderImage>
         <MultiSelectable>1</MultiSelectable>
+        <GUIType>Residence</GUIType>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <InteractionDistance>15</InteractionDistance>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <AllowedDragType />
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
       </Selection>
       <Walking>
         <ShortenSailsAfter>0</ShortenSailsAfter>
@@ -2044,6 +3335,24 @@
         <DamageFullFactor>0.5</DamageFullFactor>
         <MinSlowdownFactor>0.5</MinSlowdownFactor>
         <CurveSegmentDensity>High</CurveSegmentDensity>
+        <SpecialMovementType>Land;HumanMovement</SpecialMovementType>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <DiscoverRadius>50</DiscoverRadius>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
+        <CreatePathPlannerUnit>1</CreatePathPlannerUnit>
       </Walking>
       <SoundEmitter>
         <DestroySounds>
@@ -2058,12 +3367,31 @@
             </Item>
           </MovementStart>
         </VehicleSounds>
+        <ActiveSounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionSounds />
+        <ConstructionStreetSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <QuestObject />
       <CommandQueue>
         <FormationPriority>3</FormationPriority>
         <MilitaryShipPoints>3</MilitaryShipPoints>
         <PriorityShipList>1</PriorityShipList>
+        <IsDestructable>1</IsDestructable>
       </CommandQueue>
       <Text>
         <LineID>29457</LineID>
@@ -2074,6 +3402,7 @@
             <ExportCount>1</ExportCount>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
       <Attacker>
         <AttackRange>48</AttackRange>
@@ -2094,14 +3423,6 @@
         <ShootingTracking>TurretFixed</ShootingTracking>
         <MuzzleEffectAssets>
           <Item>
-            <VectorElement>
-              <InheritanceMapV2>
-                <Entry>
-                  <TemplateName>WarShip</TemplateName>
-                  <Index>0</Index>
-                </Entry>
-              </InheritanceMapV2>
-            </VectorElement>
             <MuzzleEffectAsset>101971</MuzzleEffectAsset>
           </Item>
         </MuzzleEffectAssets>
@@ -2114,6 +3435,11 @@
             </AccuracyByDistancePair>
           </Item>
         </AccuracyByDistance>
+        <AttackRangeApproachPercentage>0.95</AttackRangeApproachPercentage>
+        <AllowApproachEnemy>1</AllowApproachEnemy>
+        <AttackType>Default</AttackType>
+        <AccuracyBaseIncreasePercentage>100</AccuracyBaseIncreasePercentage>
+        <TurretExplosionEffectAsset>0</TurretExplosionEffectAsset>
       </Attacker>
       <Attackable>
         <MaximumHitPoints>2500</MaximumHitPoints>
@@ -2122,14 +3448,31 @@
         <SelfHealPerHealTick>1.389</SelfHealPerHealTick>
         <SelfHealPausedTimeIfAttacked>60000</SelfHealPausedTimeIfAttacked>
         <CanBeAttackedByPlayer>1</CanBeAttackedByPlayer>
+        <PausedTimeIfAttacked>15000</PausedTimeIfAttacked>
+        <ArmorType>Default</ArmorType>
+        <TakeOverEffect>Never</TakeOverEffect>
+        <IslandWarFlag>0</IslandWarFlag>
+        <RuinSmokeParticles />
+        <ExplosionEffects />
       </Attackable>
       <ItemContainer>
         <SocketCount>2</SocketCount>
         <SocketAllocation>Ship;SteamShip;Warship</SocketAllocation>
         <SlotCount>2</SlotCount>
+        <SocketScope>Local</SocketScope>
+        <StackLimit>50</StackLimit>
+        <InitSocketItems />
+        <InitSlotItems />
+        <EmptySocketIcon>data/ui/2kimages/main/icons/icon_plus.png</EmptySocketIcon>
+        <EmptySocketItemNonModifiable>data/ui/2kimages/main/icons/icon_goods_storage.png</EmptySocketItemNonModifiable>
+        <SpawnsFlotsam>1</SpawnsFlotsam>
+        <FixedSlotContent>0</FixedSlotContent>
       </ItemContainer>
       <UpgradeList />
-      <Stance />
+      <Stance>
+        <DefensiveReturnDistance>60</DefensiveReturnDistance>
+        <FleeDistance>50</FleeDistance>
+      </Stance>
     </Values>
   </Asset>
   <Asset>
@@ -2140,6 +3483,7 @@
         <Name>QO Battle Cruiser Small Scanner Radius (Military)</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/ships/icon_ship_battlecruiser.png</IconFilename>
         <InfoDescription>1087</InfoDescription>
+        <Comments />
       </Standard>
       <Scanner>
         <ScanRadius>20</ScanRadius>
@@ -2147,6 +3491,9 @@
         <ScanEffect>500886</ScanEffect>
         <AlarmTime>15000</AlarmTime>
         <AlarmEffect>500888</AlarmEffect>
+        <FlyCircle>1</FlyCircle>
+        <FlyDirection>Random</FlyDirection>
+        <EffectHeight>1</EffectHeight>
       </Scanner>
       <Object>
         <Variations>
@@ -2154,14 +3501,44 @@
             <Filename>data/graphics/vehicle/battle_cruiser/battle_cruiser.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <MeshPlacement>OnWaterSlope</MeshPlacement>
         <ObjectPosition>Dynamic</ObjectPosition>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Selection>
         <ObjectmenuHeaderImage>data/ui/2kimages/main/3dicons/icon_ship.png</ObjectmenuHeaderImage>
         <MultiSelectable>1</MultiSelectable>
+        <GUIType>Residence</GUIType>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <InteractionDistance>15</InteractionDistance>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <AllowedDragType />
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
       </Selection>
       <Walking>
         <ShortenSailsAfter>0</ShortenSailsAfter>
@@ -2182,6 +3559,24 @@
         <DamageFullFactor>0.5</DamageFullFactor>
         <MinSlowdownFactor>0.5</MinSlowdownFactor>
         <CurveSegmentDensity>High</CurveSegmentDensity>
+        <SpecialMovementType>Land;HumanMovement</SpecialMovementType>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <DiscoverRadius>50</DiscoverRadius>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
+        <CreatePathPlannerUnit>1</CreatePathPlannerUnit>
       </Walking>
       <SoundEmitter>
         <DestroySounds>
@@ -2196,12 +3591,31 @@
             </Item>
           </MovementStart>
         </VehicleSounds>
+        <ActiveSounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionSounds />
+        <ConstructionStreetSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <QuestObject />
       <CommandQueue>
         <FormationPriority>2</FormationPriority>
         <MilitaryShipPoints>6</MilitaryShipPoints>
         <PriorityShipList>1</PriorityShipList>
+        <IsDestructable>1</IsDestructable>
       </CommandQueue>
       <Text>
         <LocaText>
@@ -2212,6 +3626,7 @@
           </English>
         </LocaText>
         <LineID>29458</LineID>
+        <Localize>1</Localize>
       </Text>
       <Attacker>
         <AttackRange>84</AttackRange>
@@ -2244,14 +3659,6 @@
             <MuzzleEffectAsset>102228</MuzzleEffectAsset>
           </Item>
           <Item>
-            <VectorElement>
-              <InheritanceMapV2>
-                <Entry>
-                  <TemplateName>WarShip</TemplateName>
-                  <Index>0</Index>
-                </Entry>
-              </InheritanceMapV2>
-            </VectorElement>
             <MuzzleEffectAsset>102228</MuzzleEffectAsset>
           </Item>
         </MuzzleEffectAssets>
@@ -2265,6 +3672,11 @@
             </AccuracyByDistancePair>
           </Item>
         </AccuracyByDistance>
+        <AttackRangeApproachPercentage>0.95</AttackRangeApproachPercentage>
+        <AllowApproachEnemy>1</AllowApproachEnemy>
+        <AttackType>Default</AttackType>
+        <AccuracyBaseIncreasePercentage>100</AccuracyBaseIncreasePercentage>
+        <TurretExplosionEffectAsset>0</TurretExplosionEffectAsset>
       </Attacker>
       <Attackable>
         <MaximumHitPoints>5000</MaximumHitPoints>
@@ -2273,14 +3685,31 @@
         <SelfHealPerHealTick>1.667</SelfHealPerHealTick>
         <SelfHealPausedTimeIfAttacked>60000</SelfHealPausedTimeIfAttacked>
         <CanBeAttackedByPlayer>1</CanBeAttackedByPlayer>
+        <PausedTimeIfAttacked>15000</PausedTimeIfAttacked>
+        <ArmorType>Default</ArmorType>
+        <TakeOverEffect>Never</TakeOverEffect>
+        <IslandWarFlag>0</IslandWarFlag>
+        <RuinSmokeParticles />
+        <ExplosionEffects />
       </Attackable>
       <ItemContainer>
         <SocketCount>4</SocketCount>
         <SocketAllocation>Ship;SteamShip;Warship</SocketAllocation>
         <SlotCount>3</SlotCount>
+        <SocketScope>Local</SocketScope>
+        <StackLimit>50</StackLimit>
+        <InitSocketItems />
+        <InitSlotItems />
+        <EmptySocketIcon>data/ui/2kimages/main/icons/icon_plus.png</EmptySocketIcon>
+        <EmptySocketItemNonModifiable>data/ui/2kimages/main/icons/icon_goods_storage.png</EmptySocketItemNonModifiable>
+        <SpawnsFlotsam>1</SpawnsFlotsam>
+        <FixedSlotContent>0</FixedSlotContent>
       </ItemContainer>
       <UpgradeList />
-      <Stance />
+      <Stance>
+        <DefensiveReturnDistance>60</DefensiveReturnDistance>
+        <FleeDistance>50</FleeDistance>
+      </Stance>
     </Values>
   </Asset>
   <Asset>
@@ -2291,6 +3720,7 @@
         <Name>QO Battle Cruiser Medium Scanner Radius (Military)</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/ships/icon_ship_battlecruiser.png</IconFilename>
         <InfoDescription>1087</InfoDescription>
+        <Comments />
       </Standard>
       <Scanner>
         <FlyRadius>50</FlyRadius>
@@ -2298,6 +3728,9 @@
         <ScanEffect>500886</ScanEffect>
         <AlarmTime>15000</AlarmTime>
         <AlarmEffect>500888</AlarmEffect>
+        <FlyCircle>1</FlyCircle>
+        <FlyDirection>Random</FlyDirection>
+        <EffectHeight>1</EffectHeight>
       </Scanner>
       <Object>
         <Variations>
@@ -2305,14 +3738,44 @@
             <Filename>data/graphics/vehicle/battle_cruiser/battle_cruiser.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <MeshPlacement>OnWaterSlope</MeshPlacement>
         <ObjectPosition>Dynamic</ObjectPosition>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Selection>
         <ObjectmenuHeaderImage>data/ui/2kimages/main/3dicons/icon_ship.png</ObjectmenuHeaderImage>
         <MultiSelectable>1</MultiSelectable>
+        <GUIType>Residence</GUIType>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <InteractionDistance>15</InteractionDistance>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <AllowedDragType />
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
       </Selection>
       <Walking>
         <ShortenSailsAfter>0</ShortenSailsAfter>
@@ -2333,6 +3796,24 @@
         <DamageFullFactor>0.5</DamageFullFactor>
         <MinSlowdownFactor>0.5</MinSlowdownFactor>
         <CurveSegmentDensity>High</CurveSegmentDensity>
+        <SpecialMovementType>Land;HumanMovement</SpecialMovementType>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <DiscoverRadius>50</DiscoverRadius>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
+        <CreatePathPlannerUnit>1</CreatePathPlannerUnit>
       </Walking>
       <SoundEmitter>
         <DestroySounds>
@@ -2347,12 +3828,31 @@
             </Item>
           </MovementStart>
         </VehicleSounds>
+        <ActiveSounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionSounds />
+        <ConstructionStreetSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <QuestObject />
       <CommandQueue>
         <FormationPriority>2</FormationPriority>
         <MilitaryShipPoints>6</MilitaryShipPoints>
         <PriorityShipList>1</PriorityShipList>
+        <IsDestructable>1</IsDestructable>
       </CommandQueue>
       <Text>
         <LineID>29459</LineID>
@@ -2363,6 +3863,7 @@
             <ExportCount>1</ExportCount>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
       <Attacker>
         <AttackRange>84</AttackRange>
@@ -2395,14 +3896,6 @@
             <MuzzleEffectAsset>102228</MuzzleEffectAsset>
           </Item>
           <Item>
-            <VectorElement>
-              <InheritanceMapV2>
-                <Entry>
-                  <TemplateName>WarShip</TemplateName>
-                  <Index>0</Index>
-                </Entry>
-              </InheritanceMapV2>
-            </VectorElement>
             <MuzzleEffectAsset>102228</MuzzleEffectAsset>
           </Item>
         </MuzzleEffectAssets>
@@ -2416,6 +3909,11 @@
             </AccuracyByDistancePair>
           </Item>
         </AccuracyByDistance>
+        <AttackRangeApproachPercentage>0.95</AttackRangeApproachPercentage>
+        <AllowApproachEnemy>1</AllowApproachEnemy>
+        <AttackType>Default</AttackType>
+        <AccuracyBaseIncreasePercentage>100</AccuracyBaseIncreasePercentage>
+        <TurretExplosionEffectAsset>0</TurretExplosionEffectAsset>
       </Attacker>
       <Attackable>
         <MaximumHitPoints>5000</MaximumHitPoints>
@@ -2424,14 +3922,31 @@
         <SelfHealPerHealTick>1.667</SelfHealPerHealTick>
         <SelfHealPausedTimeIfAttacked>60000</SelfHealPausedTimeIfAttacked>
         <CanBeAttackedByPlayer>1</CanBeAttackedByPlayer>
+        <PausedTimeIfAttacked>15000</PausedTimeIfAttacked>
+        <ArmorType>Default</ArmorType>
+        <TakeOverEffect>Never</TakeOverEffect>
+        <IslandWarFlag>0</IslandWarFlag>
+        <RuinSmokeParticles />
+        <ExplosionEffects />
       </Attackable>
       <ItemContainer>
         <SocketCount>4</SocketCount>
         <SocketAllocation>Ship;SteamShip;Warship</SocketAllocation>
         <SlotCount>3</SlotCount>
+        <SocketScope>Local</SocketScope>
+        <StackLimit>50</StackLimit>
+        <InitSocketItems />
+        <InitSlotItems />
+        <EmptySocketIcon>data/ui/2kimages/main/icons/icon_plus.png</EmptySocketIcon>
+        <EmptySocketItemNonModifiable>data/ui/2kimages/main/icons/icon_goods_storage.png</EmptySocketItemNonModifiable>
+        <SpawnsFlotsam>1</SpawnsFlotsam>
+        <FixedSlotContent>0</FixedSlotContent>
       </ItemContainer>
       <UpgradeList />
-      <Stance />
+      <Stance>
+        <DefensiveReturnDistance>60</DefensiveReturnDistance>
+        <FleeDistance>50</FleeDistance>
+      </Stance>
     </Values>
   </Asset>
   <Asset>
@@ -2442,6 +3957,7 @@
         <Name>QO Battle Cruiser Large Scanner Radius (Military)</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/ships/icon_ship_battlecruiser.png</IconFilename>
         <InfoDescription>1087</InfoDescription>
+        <Comments />
       </Standard>
       <Scanner>
         <FlyRadius>60</FlyRadius>
@@ -2449,6 +3965,9 @@
         <ScanEffect>500886</ScanEffect>
         <AlarmTime>15000</AlarmTime>
         <AlarmEffect>500888</AlarmEffect>
+        <FlyCircle>1</FlyCircle>
+        <FlyDirection>Random</FlyDirection>
+        <EffectHeight>1</EffectHeight>
       </Scanner>
       <Object>
         <Variations>
@@ -2456,14 +3975,44 @@
             <Filename>data/graphics/vehicle/battle_cruiser/battle_cruiser.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <MeshPlacement>OnWaterSlope</MeshPlacement>
         <ObjectPosition>Dynamic</ObjectPosition>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Selection>
         <ObjectmenuHeaderImage>data/ui/2kimages/main/3dicons/icon_ship.png</ObjectmenuHeaderImage>
         <MultiSelectable>1</MultiSelectable>
+        <GUIType>Residence</GUIType>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <InteractionDistance>15</InteractionDistance>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <AllowedDragType />
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
       </Selection>
       <Walking>
         <ShortenSailsAfter>0</ShortenSailsAfter>
@@ -2484,6 +4033,24 @@
         <DamageFullFactor>0.5</DamageFullFactor>
         <MinSlowdownFactor>0.5</MinSlowdownFactor>
         <CurveSegmentDensity>High</CurveSegmentDensity>
+        <SpecialMovementType>Land;HumanMovement</SpecialMovementType>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <DiscoverRadius>50</DiscoverRadius>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
+        <CreatePathPlannerUnit>1</CreatePathPlannerUnit>
       </Walking>
       <SoundEmitter>
         <DestroySounds>
@@ -2498,12 +4065,31 @@
             </Item>
           </MovementStart>
         </VehicleSounds>
+        <ActiveSounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionSounds />
+        <ConstructionStreetSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <QuestObject />
       <CommandQueue>
         <FormationPriority>2</FormationPriority>
         <MilitaryShipPoints>6</MilitaryShipPoints>
         <PriorityShipList>1</PriorityShipList>
+        <IsDestructable>1</IsDestructable>
       </CommandQueue>
       <Text>
         <LineID>29460</LineID>
@@ -2514,6 +4100,7 @@
             <ExportCount>1</ExportCount>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
       <Attacker>
         <AttackRange>84</AttackRange>
@@ -2546,14 +4133,6 @@
             <MuzzleEffectAsset>102228</MuzzleEffectAsset>
           </Item>
           <Item>
-            <VectorElement>
-              <InheritanceMapV2>
-                <Entry>
-                  <TemplateName>WarShip</TemplateName>
-                  <Index>0</Index>
-                </Entry>
-              </InheritanceMapV2>
-            </VectorElement>
             <MuzzleEffectAsset>102228</MuzzleEffectAsset>
           </Item>
         </MuzzleEffectAssets>
@@ -2567,6 +4146,11 @@
             </AccuracyByDistancePair>
           </Item>
         </AccuracyByDistance>
+        <AttackRangeApproachPercentage>0.95</AttackRangeApproachPercentage>
+        <AllowApproachEnemy>1</AllowApproachEnemy>
+        <AttackType>Default</AttackType>
+        <AccuracyBaseIncreasePercentage>100</AccuracyBaseIncreasePercentage>
+        <TurretExplosionEffectAsset>0</TurretExplosionEffectAsset>
       </Attacker>
       <Attackable>
         <MaximumHitPoints>5000</MaximumHitPoints>
@@ -2575,14 +4159,31 @@
         <SelfHealPerHealTick>1.667</SelfHealPerHealTick>
         <SelfHealPausedTimeIfAttacked>60000</SelfHealPausedTimeIfAttacked>
         <CanBeAttackedByPlayer>1</CanBeAttackedByPlayer>
+        <PausedTimeIfAttacked>15000</PausedTimeIfAttacked>
+        <ArmorType>Default</ArmorType>
+        <TakeOverEffect>Never</TakeOverEffect>
+        <IslandWarFlag>0</IslandWarFlag>
+        <RuinSmokeParticles />
+        <ExplosionEffects />
       </Attackable>
       <ItemContainer>
         <SocketCount>4</SocketCount>
         <SocketAllocation>Ship;SteamShip;Warship</SocketAllocation>
         <SlotCount>3</SlotCount>
+        <SocketScope>Local</SocketScope>
+        <StackLimit>50</StackLimit>
+        <InitSocketItems />
+        <InitSlotItems />
+        <EmptySocketIcon>data/ui/2kimages/main/icons/icon_plus.png</EmptySocketIcon>
+        <EmptySocketItemNonModifiable>data/ui/2kimages/main/icons/icon_goods_storage.png</EmptySocketItemNonModifiable>
+        <SpawnsFlotsam>1</SpawnsFlotsam>
+        <FixedSlotContent>0</FixedSlotContent>
       </ItemContainer>
       <UpgradeList />
-      <Stance />
+      <Stance>
+        <DefensiveReturnDistance>60</DefensiveReturnDistance>
+        <FleeDistance>50</FleeDistance>
+      </Stance>
     </Values>
   </Asset>
   <Asset>
@@ -2593,6 +4194,7 @@
         <Name>QO Gunboat Small Scanner Radius (Military) - no timer</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/ships/icon_ship_gunboat.png</IconFilename>
         <InfoDescription>1082</InfoDescription>
+        <Comments />
       </Standard>
       <Scanner>
         <ScanRadius>20</ScanRadius>
@@ -2600,6 +4202,9 @@
         <ScanEffect>500886</ScanEffect>
         <AlarmTime>1000</AlarmTime>
         <AlarmEffect>500888</AlarmEffect>
+        <FlyCircle>1</FlyCircle>
+        <FlyDirection>Random</FlyDirection>
+        <EffectHeight>1</EffectHeight>
       </Scanner>
       <Object>
         <Variations>
@@ -2607,14 +4212,44 @@
             <Filename>data/graphics/vehicle/gunboat/gunboat.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <MeshPlacement>OnWaterSlope</MeshPlacement>
         <ObjectPosition>Dynamic</ObjectPosition>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Selection>
         <ObjectmenuHeaderImage>data/ui/2kimages/main/3dicons/icon_ship.png</ObjectmenuHeaderImage>
         <MultiSelectable>1</MultiSelectable>
+        <GUIType>Residence</GUIType>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <InteractionDistance>15</InteractionDistance>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <AllowedDragType />
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
       </Selection>
       <Walking>
         <ReservationLength>9</ReservationLength>
@@ -2633,6 +4268,26 @@
         <WindMinSlowdownFactor>0.4</WindMinSlowdownFactor>
         <WindMaxSpeedupFactor>1.8</WindMaxSpeedupFactor>
         <CurveSegmentDensity>High</CurveSegmentDensity>
+        <SpecialMovementType>Land;HumanMovement</SpecialMovementType>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
+        <CreatePathPlannerUnit>1</CreatePathPlannerUnit>
       </Walking>
       <SoundEmitter>
         <DestroySounds>
@@ -2647,12 +4302,31 @@
             </Item>
           </MovementStart>
         </VehicleSounds>
+        <ActiveSounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionSounds />
+        <ConstructionStreetSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <QuestObject />
       <CommandQueue>
         <FormationPriority>4</FormationPriority>
         <MilitaryShipPoints>0.8</MilitaryShipPoints>
         <PriorityShipList>1</PriorityShipList>
+        <IsDestructable>1</IsDestructable>
       </CommandQueue>
       <Text>
         <LocaText>
@@ -2663,6 +4337,7 @@
           </English>
         </LocaText>
         <LineID>29461</LineID>
+        <Localize>1</Localize>
       </Text>
       <Attacker>
         <AttackRange>40</AttackRange>
@@ -2677,14 +4352,6 @@
         <ShootingTracking>Front</ShootingTracking>
         <MuzzleEffectAssets>
           <Item>
-            <VectorElement>
-              <InheritanceMapV2>
-                <Entry>
-                  <TemplateName>WarShip</TemplateName>
-                  <Index>0</Index>
-                </Entry>
-              </InheritanceMapV2>
-            </VectorElement>
             <MuzzleEffectAsset>102278</MuzzleEffectAsset>
           </Item>
         </MuzzleEffectAssets>
@@ -2697,6 +4364,12 @@
             </AccuracyByDistancePair>
           </Item>
         </AccuracyByDistance>
+        <AttackRangeApproachPercentage>0.95</AttackRangeApproachPercentage>
+        <AllowApproachEnemy>1</AllowApproachEnemy>
+        <Turrets />
+        <AttackType>Default</AttackType>
+        <AccuracyBaseIncreasePercentage>100</AccuracyBaseIncreasePercentage>
+        <TurretExplosionEffectAsset>0</TurretExplosionEffectAsset>
       </Attacker>
       <Attackable>
         <MaximumHitPoints>850</MaximumHitPoints>
@@ -2705,14 +4378,31 @@
         <SelfHealPerHealTick>0.708</SelfHealPerHealTick>
         <SelfHealPausedTimeIfAttacked>60000</SelfHealPausedTimeIfAttacked>
         <CanBeAttackedByPlayer>1</CanBeAttackedByPlayer>
+        <PausedTimeIfAttacked>15000</PausedTimeIfAttacked>
+        <ArmorType>Default</ArmorType>
+        <TakeOverEffect>Never</TakeOverEffect>
+        <IslandWarFlag>0</IslandWarFlag>
+        <RuinSmokeParticles />
+        <ExplosionEffects />
       </Attackable>
       <ItemContainer>
         <SocketCount>2</SocketCount>
         <SlotCount>1</SlotCount>
         <SocketAllocation>Ship</SocketAllocation>
+        <SocketScope>Local</SocketScope>
+        <StackLimit>50</StackLimit>
+        <InitSocketItems />
+        <InitSlotItems />
+        <EmptySocketIcon>data/ui/2kimages/main/icons/icon_plus.png</EmptySocketIcon>
+        <EmptySocketItemNonModifiable>data/ui/2kimages/main/icons/icon_goods_storage.png</EmptySocketItemNonModifiable>
+        <SpawnsFlotsam>1</SpawnsFlotsam>
+        <FixedSlotContent>0</FixedSlotContent>
       </ItemContainer>
       <UpgradeList />
-      <Stance />
+      <Stance>
+        <DefensiveReturnDistance>60</DefensiveReturnDistance>
+        <FleeDistance>50</FleeDistance>
+      </Stance>
     </Values>
   </Asset>
   <Asset>
@@ -2723,6 +4413,7 @@
         <Name>QO Scanner Ship (Queen01Flagship) - 100 Flyradius</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_military_ship_liner.png</IconFilename>
         <InfoDescription>1088</InfoDescription>
+        <Comments />
       </Standard>
       <Scanner>
         <ScanRadius>30</ScanRadius>
@@ -2730,6 +4421,9 @@
         <ScanEffect>500886</ScanEffect>
         <AlarmTime>15000</AlarmTime>
         <AlarmEffect>500888</AlarmEffect>
+        <FlyCircle>1</FlyCircle>
+        <FlyDirection>Random</FlyDirection>
+        <EffectHeight>1</EffectHeight>
       </Scanner>
       <Object>
         <Variations>
@@ -2740,11 +4434,25 @@
         <AssignDefaultParticipant>1</AssignDefaultParticipant>
         <DefaultParticipant>Third_party_01_Queen</DefaultParticipant>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <MeshPlacement>OnWaterSlope</MeshPlacement>
         <SetCompanyLogo>1</SetCompanyLogo>
         <ObjectPosition>Dynamic</ObjectPosition>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Selection>
         <GUIType>Vehicle</GUIType>
@@ -2753,6 +4461,18 @@
         <SelectionPriority>5</SelectionPriority>
         <InteractionDistance>2</InteractionDistance>
         <AllowedDragType>ItemSocket;CargoProductStack;CargoItemStack;StorageProductStack;StorageItemStack</AllowedDragType>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
       </Selection>
       <Walking>
         <ReservationLength>9</ReservationLength>
@@ -2772,6 +4492,25 @@
         <WindMinSlowdownFactor>0.4</WindMinSlowdownFactor>
         <WindMaxSpeedupFactor>1.8</WindMaxSpeedupFactor>
         <CurveSegmentDensity>High</CurveSegmentDensity>
+        <SpecialMovementType>Land;HumanMovement</SpecialMovementType>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
+        <CreatePathPlannerUnit>1</CreatePathPlannerUnit>
       </Walking>
       <SoundEmitter>
         <DestroySounds>
@@ -2786,6 +4525,24 @@
             </Item>
           </MovementStart>
         </VehicleSounds>
+        <ActiveSounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionSounds />
+        <ConstructionStreetSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <QuestObject />
       <CommandQueue>
@@ -2793,6 +4550,7 @@
         <MilitaryShipPoints>3.2</MilitaryShipPoints>
         <PriorityShipList>1</PriorityShipList>
         <InsecurityAttractiveness>-10</InsecurityAttractiveness>
+        <IsDestructable>1</IsDestructable>
       </CommandQueue>
       <Text>
         <LocaText>
@@ -2803,6 +4561,7 @@
           </English>
         </LocaText>
         <LineID>29866</LineID>
+        <Localize>1</Localize>
       </Text>
       <Attacker>
         <AccuracyByDistance>
@@ -2814,16 +4573,52 @@
             </AccuracyByDistancePair>
           </Item>
         </AccuracyByDistance>
+        <AttackRangeApproachPercentage>0.95</AttackRangeApproachPercentage>
+        <LineOfSightRange>35</LineOfSightRange>
+        <ReloadTime>10</ReloadTime>
+        <ProjectileAsset>0</ProjectileAsset>
+        <ProjectileCount>1</ProjectileCount>
+        <AllowApproachEnemy>1</AllowApproachEnemy>
+        <Turrets />
+        <AccuracyBase>5</AccuracyBase>
+        <AccuracyIncreaseOverDistance>40</AccuracyIncreaseOverDistance>
+        <AccuracySpeedDecay>6</AccuracySpeedDecay>
+        <ShootingTracking>Side</ShootingTracking>
+        <AttackType>Default</AttackType>
+        <AccuracyBaseIncreasePercentage>100</AccuracyBaseIncreasePercentage>
+        <TurretExplosionEffectAsset>0</TurretExplosionEffectAsset>
+        <MuzzleEffectAssets />
       </Attacker>
       <Attackable>
         <CanBeAttackedByPlayer>1</CanBeAttackedByPlayer>
+        <MaximumHitPoints>100</MaximumHitPoints>
+        <HPBarOffset>6</HPBarOffset>
+        <PausedTimeIfAttacked>15000</PausedTimeIfAttacked>
+        <SelfHealPerHealTick>2</SelfHealPerHealTick>
+        <SelfHealPausedTimeIfAttacked>15000</SelfHealPausedTimeIfAttacked>
+        <ArmorType>Default</ArmorType>
+        <TakeOverEffect>Never</TakeOverEffect>
+        <IslandWarFlag>0</IslandWarFlag>
+        <RuinSmokeParticles />
+        <ExplosionEffects />
       </Attackable>
       <ItemContainer>
         <SocketCount>1</SocketCount>
         <SocketAllocation>Ship</SocketAllocation>
+        <SocketScope>Local</SocketScope>
+        <StackLimit>50</StackLimit>
+        <InitSocketItems />
+        <InitSlotItems />
+        <EmptySocketIcon>data/ui/2kimages/main/icons/icon_plus.png</EmptySocketIcon>
+        <EmptySocketItemNonModifiable>data/ui/2kimages/main/icons/icon_goods_storage.png</EmptySocketItemNonModifiable>
+        <SpawnsFlotsam>1</SpawnsFlotsam>
+        <FixedSlotContent>0</FixedSlotContent>
       </ItemContainer>
       <UpgradeList />
-      <Stance />
+      <Stance>
+        <DefensiveReturnDistance>60</DefensiveReturnDistance>
+        <FleeDistance>50</FleeDistance>
+      </Stance>
     </Values>
   </Asset>
   <Asset>
@@ -2834,6 +4629,7 @@
         <Name>QO Scanner Ship 2 (Queen01Flagship) - 150 Flyradius</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_military_ship_liner.png</IconFilename>
         <InfoDescription>1088</InfoDescription>
+        <Comments />
       </Standard>
       <Scanner>
         <ScanRadius>30</ScanRadius>
@@ -2841,6 +4637,9 @@
         <ScanEffect>500886</ScanEffect>
         <AlarmTime>15000</AlarmTime>
         <AlarmEffect>500888</AlarmEffect>
+        <FlyCircle>1</FlyCircle>
+        <FlyDirection>Random</FlyDirection>
+        <EffectHeight>1</EffectHeight>
       </Scanner>
       <Object>
         <Variations>
@@ -2851,11 +4650,25 @@
         <AssignDefaultParticipant>1</AssignDefaultParticipant>
         <DefaultParticipant>Third_party_01_Queen</DefaultParticipant>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <MeshPlacement>OnWaterSlope</MeshPlacement>
         <SetCompanyLogo>1</SetCompanyLogo>
         <ObjectPosition>Dynamic</ObjectPosition>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Selection>
         <GUIType>Vehicle</GUIType>
@@ -2864,6 +4677,18 @@
         <SelectionPriority>5</SelectionPriority>
         <InteractionDistance>2</InteractionDistance>
         <AllowedDragType>ItemSocket;CargoProductStack;CargoItemStack;StorageProductStack;StorageItemStack</AllowedDragType>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
       </Selection>
       <Walking>
         <ReservationLength>9</ReservationLength>
@@ -2883,6 +4708,25 @@
         <WindMinSlowdownFactor>0.4</WindMinSlowdownFactor>
         <WindMaxSpeedupFactor>1.8</WindMaxSpeedupFactor>
         <CurveSegmentDensity>High</CurveSegmentDensity>
+        <SpecialMovementType>Land;HumanMovement</SpecialMovementType>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
+        <CreatePathPlannerUnit>1</CreatePathPlannerUnit>
       </Walking>
       <SoundEmitter>
         <DestroySounds>
@@ -2897,6 +4741,24 @@
             </Item>
           </MovementStart>
         </VehicleSounds>
+        <ActiveSounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionSounds />
+        <ConstructionStreetSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <QuestObject />
       <CommandQueue>
@@ -2904,6 +4766,7 @@
         <MilitaryShipPoints>3.2</MilitaryShipPoints>
         <PriorityShipList>1</PriorityShipList>
         <InsecurityAttractiveness>-10</InsecurityAttractiveness>
+        <IsDestructable>1</IsDestructable>
       </CommandQueue>
       <Text>
         <LocaText>
@@ -2914,6 +4777,7 @@
           </English>
         </LocaText>
         <LineID>21914</LineID>
+        <Localize>1</Localize>
       </Text>
       <Attacker>
         <AccuracyByDistance>
@@ -2925,16 +4789,52 @@
             </AccuracyByDistancePair>
           </Item>
         </AccuracyByDistance>
+        <AttackRangeApproachPercentage>0.95</AttackRangeApproachPercentage>
+        <LineOfSightRange>35</LineOfSightRange>
+        <ReloadTime>10</ReloadTime>
+        <ProjectileAsset>0</ProjectileAsset>
+        <ProjectileCount>1</ProjectileCount>
+        <AllowApproachEnemy>1</AllowApproachEnemy>
+        <Turrets />
+        <AccuracyBase>5</AccuracyBase>
+        <AccuracyIncreaseOverDistance>40</AccuracyIncreaseOverDistance>
+        <AccuracySpeedDecay>6</AccuracySpeedDecay>
+        <ShootingTracking>Side</ShootingTracking>
+        <AttackType>Default</AttackType>
+        <AccuracyBaseIncreasePercentage>100</AccuracyBaseIncreasePercentage>
+        <TurretExplosionEffectAsset>0</TurretExplosionEffectAsset>
+        <MuzzleEffectAssets />
       </Attacker>
       <Attackable>
         <CanBeAttackedByPlayer>1</CanBeAttackedByPlayer>
+        <MaximumHitPoints>100</MaximumHitPoints>
+        <HPBarOffset>6</HPBarOffset>
+        <PausedTimeIfAttacked>15000</PausedTimeIfAttacked>
+        <SelfHealPerHealTick>2</SelfHealPerHealTick>
+        <SelfHealPausedTimeIfAttacked>15000</SelfHealPausedTimeIfAttacked>
+        <ArmorType>Default</ArmorType>
+        <TakeOverEffect>Never</TakeOverEffect>
+        <IslandWarFlag>0</IslandWarFlag>
+        <RuinSmokeParticles />
+        <ExplosionEffects />
       </Attackable>
       <ItemContainer>
         <SocketCount>1</SocketCount>
         <SocketAllocation>Ship</SocketAllocation>
+        <SocketScope>Local</SocketScope>
+        <StackLimit>50</StackLimit>
+        <InitSocketItems />
+        <InitSlotItems />
+        <EmptySocketIcon>data/ui/2kimages/main/icons/icon_plus.png</EmptySocketIcon>
+        <EmptySocketItemNonModifiable>data/ui/2kimages/main/icons/icon_goods_storage.png</EmptySocketItemNonModifiable>
+        <SpawnsFlotsam>1</SpawnsFlotsam>
+        <FixedSlotContent>0</FixedSlotContent>
       </ItemContainer>
       <UpgradeList />
-      <Stance />
+      <Stance>
+        <DefensiveReturnDistance>60</DefensiveReturnDistance>
+        <FleeDistance>50</FleeDistance>
+      </Stance>
     </Values>
   </Asset>
   <Asset>
@@ -2945,6 +4845,7 @@
         <Name>QO Scanner Ship 3 (Queen01Flagship) - 250 Flyradius</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_military_ship_liner.png</IconFilename>
         <InfoDescription>1088</InfoDescription>
+        <Comments />
       </Standard>
       <Scanner>
         <ScanRadius>30</ScanRadius>
@@ -2952,6 +4853,9 @@
         <ScanEffect>500886</ScanEffect>
         <AlarmTime>15000</AlarmTime>
         <AlarmEffect>500888</AlarmEffect>
+        <FlyCircle>1</FlyCircle>
+        <FlyDirection>Random</FlyDirection>
+        <EffectHeight>1</EffectHeight>
       </Scanner>
       <Object>
         <Variations>
@@ -2962,11 +4866,25 @@
         <AssignDefaultParticipant>1</AssignDefaultParticipant>
         <DefaultParticipant>Third_party_01_Queen</DefaultParticipant>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <MeshPlacement>OnWaterSlope</MeshPlacement>
         <SetCompanyLogo>1</SetCompanyLogo>
         <ObjectPosition>Dynamic</ObjectPosition>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Selection>
         <GUIType>Vehicle</GUIType>
@@ -2975,6 +4893,18 @@
         <SelectionPriority>5</SelectionPriority>
         <InteractionDistance>2</InteractionDistance>
         <AllowedDragType>ItemSocket;CargoProductStack;CargoItemStack;StorageProductStack;StorageItemStack</AllowedDragType>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
       </Selection>
       <Walking>
         <ReservationLength>9</ReservationLength>
@@ -2994,6 +4924,25 @@
         <WindMinSlowdownFactor>0.4</WindMinSlowdownFactor>
         <WindMaxSpeedupFactor>1.8</WindMaxSpeedupFactor>
         <CurveSegmentDensity>High</CurveSegmentDensity>
+        <SpecialMovementType>Land;HumanMovement</SpecialMovementType>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
+        <CreatePathPlannerUnit>1</CreatePathPlannerUnit>
       </Walking>
       <SoundEmitter>
         <DestroySounds>
@@ -3008,6 +4957,24 @@
             </Item>
           </MovementStart>
         </VehicleSounds>
+        <ActiveSounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionSounds />
+        <ConstructionStreetSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <QuestObject />
       <CommandQueue>
@@ -3015,6 +4982,7 @@
         <MilitaryShipPoints>3.2</MilitaryShipPoints>
         <PriorityShipList>1</PriorityShipList>
         <InsecurityAttractiveness>-10</InsecurityAttractiveness>
+        <IsDestructable>1</IsDestructable>
       </CommandQueue>
       <Text>
         <LocaText>
@@ -3025,6 +4993,7 @@
           </English>
         </LocaText>
         <LineID>29867</LineID>
+        <Localize>1</Localize>
       </Text>
       <Attacker>
         <AccuracyByDistance>
@@ -3036,16 +5005,52 @@
             </AccuracyByDistancePair>
           </Item>
         </AccuracyByDistance>
+        <AttackRangeApproachPercentage>0.95</AttackRangeApproachPercentage>
+        <LineOfSightRange>35</LineOfSightRange>
+        <ReloadTime>10</ReloadTime>
+        <ProjectileAsset>0</ProjectileAsset>
+        <ProjectileCount>1</ProjectileCount>
+        <AllowApproachEnemy>1</AllowApproachEnemy>
+        <Turrets />
+        <AccuracyBase>5</AccuracyBase>
+        <AccuracyIncreaseOverDistance>40</AccuracyIncreaseOverDistance>
+        <AccuracySpeedDecay>6</AccuracySpeedDecay>
+        <ShootingTracking>Side</ShootingTracking>
+        <AttackType>Default</AttackType>
+        <AccuracyBaseIncreasePercentage>100</AccuracyBaseIncreasePercentage>
+        <TurretExplosionEffectAsset>0</TurretExplosionEffectAsset>
+        <MuzzleEffectAssets />
       </Attacker>
       <Attackable>
         <CanBeAttackedByPlayer>1</CanBeAttackedByPlayer>
+        <MaximumHitPoints>100</MaximumHitPoints>
+        <HPBarOffset>6</HPBarOffset>
+        <PausedTimeIfAttacked>15000</PausedTimeIfAttacked>
+        <SelfHealPerHealTick>2</SelfHealPerHealTick>
+        <SelfHealPausedTimeIfAttacked>15000</SelfHealPausedTimeIfAttacked>
+        <ArmorType>Default</ArmorType>
+        <TakeOverEffect>Never</TakeOverEffect>
+        <IslandWarFlag>0</IslandWarFlag>
+        <RuinSmokeParticles />
+        <ExplosionEffects />
       </Attackable>
       <ItemContainer>
         <SocketCount>1</SocketCount>
         <SocketAllocation>Ship</SocketAllocation>
+        <SocketScope>Local</SocketScope>
+        <StackLimit>50</StackLimit>
+        <InitSocketItems />
+        <InitSlotItems />
+        <EmptySocketIcon>data/ui/2kimages/main/icons/icon_plus.png</EmptySocketIcon>
+        <EmptySocketItemNonModifiable>data/ui/2kimages/main/icons/icon_goods_storage.png</EmptySocketItemNonModifiable>
+        <SpawnsFlotsam>1</SpawnsFlotsam>
+        <FixedSlotContent>0</FixedSlotContent>
       </ItemContainer>
       <UpgradeList />
-      <Stance />
+      <Stance>
+        <DefensiveReturnDistance>60</DefensiveReturnDistance>
+        <FleeDistance>50</FleeDistance>
+      </Stance>
     </Values>
   </Asset>
   <Asset>
@@ -3056,6 +5061,7 @@
         <Name>QO Scanner Ship 4 (Queen01Flagship) - 300 Flyradius</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_military_ship_liner.png</IconFilename>
         <InfoDescription>1088</InfoDescription>
+        <Comments />
       </Standard>
       <Scanner>
         <ScanRadius>30</ScanRadius>
@@ -3063,6 +5069,9 @@
         <ScanEffect>500886</ScanEffect>
         <AlarmTime>15000</AlarmTime>
         <AlarmEffect>500888</AlarmEffect>
+        <FlyCircle>1</FlyCircle>
+        <FlyDirection>Random</FlyDirection>
+        <EffectHeight>1</EffectHeight>
       </Scanner>
       <Object>
         <Variations>
@@ -3073,11 +5082,25 @@
         <AssignDefaultParticipant>1</AssignDefaultParticipant>
         <DefaultParticipant>Third_party_01_Queen</DefaultParticipant>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <MeshPlacement>OnWaterSlope</MeshPlacement>
         <SetCompanyLogo>1</SetCompanyLogo>
         <ObjectPosition>Dynamic</ObjectPosition>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Selection>
         <GUIType>Vehicle</GUIType>
@@ -3086,6 +5109,18 @@
         <SelectionPriority>5</SelectionPriority>
         <InteractionDistance>2</InteractionDistance>
         <AllowedDragType>ItemSocket;CargoProductStack;CargoItemStack;StorageProductStack;StorageItemStack</AllowedDragType>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
       </Selection>
       <Walking>
         <ReservationLength>9</ReservationLength>
@@ -3105,6 +5140,25 @@
         <WindMinSlowdownFactor>0.4</WindMinSlowdownFactor>
         <WindMaxSpeedupFactor>1.8</WindMaxSpeedupFactor>
         <CurveSegmentDensity>High</CurveSegmentDensity>
+        <SpecialMovementType>Land;HumanMovement</SpecialMovementType>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
+        <CreatePathPlannerUnit>1</CreatePathPlannerUnit>
       </Walking>
       <SoundEmitter>
         <DestroySounds>
@@ -3119,6 +5173,24 @@
             </Item>
           </MovementStart>
         </VehicleSounds>
+        <ActiveSounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionSounds />
+        <ConstructionStreetSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <QuestObject />
       <CommandQueue>
@@ -3126,6 +5198,7 @@
         <MilitaryShipPoints>3.2</MilitaryShipPoints>
         <PriorityShipList>1</PriorityShipList>
         <InsecurityAttractiveness>-10</InsecurityAttractiveness>
+        <IsDestructable>1</IsDestructable>
       </CommandQueue>
       <Text>
         <LocaText>
@@ -3136,6 +5209,7 @@
           </English>
         </LocaText>
         <LineID>29868</LineID>
+        <Localize>1</Localize>
       </Text>
       <Attacker>
         <AccuracyByDistance>
@@ -3147,16 +5221,52 @@
             </AccuracyByDistancePair>
           </Item>
         </AccuracyByDistance>
+        <AttackRangeApproachPercentage>0.95</AttackRangeApproachPercentage>
+        <LineOfSightRange>35</LineOfSightRange>
+        <ReloadTime>10</ReloadTime>
+        <ProjectileAsset>0</ProjectileAsset>
+        <ProjectileCount>1</ProjectileCount>
+        <AllowApproachEnemy>1</AllowApproachEnemy>
+        <Turrets />
+        <AccuracyBase>5</AccuracyBase>
+        <AccuracyIncreaseOverDistance>40</AccuracyIncreaseOverDistance>
+        <AccuracySpeedDecay>6</AccuracySpeedDecay>
+        <ShootingTracking>Side</ShootingTracking>
+        <AttackType>Default</AttackType>
+        <AccuracyBaseIncreasePercentage>100</AccuracyBaseIncreasePercentage>
+        <TurretExplosionEffectAsset>0</TurretExplosionEffectAsset>
+        <MuzzleEffectAssets />
       </Attacker>
       <Attackable>
         <CanBeAttackedByPlayer>1</CanBeAttackedByPlayer>
+        <MaximumHitPoints>100</MaximumHitPoints>
+        <HPBarOffset>6</HPBarOffset>
+        <PausedTimeIfAttacked>15000</PausedTimeIfAttacked>
+        <SelfHealPerHealTick>2</SelfHealPerHealTick>
+        <SelfHealPausedTimeIfAttacked>15000</SelfHealPausedTimeIfAttacked>
+        <ArmorType>Default</ArmorType>
+        <TakeOverEffect>Never</TakeOverEffect>
+        <IslandWarFlag>0</IslandWarFlag>
+        <RuinSmokeParticles />
+        <ExplosionEffects />
       </Attackable>
       <ItemContainer>
         <SocketCount>1</SocketCount>
         <SocketAllocation>Ship</SocketAllocation>
+        <SocketScope>Local</SocketScope>
+        <StackLimit>50</StackLimit>
+        <InitSocketItems />
+        <InitSlotItems />
+        <EmptySocketIcon>data/ui/2kimages/main/icons/icon_plus.png</EmptySocketIcon>
+        <EmptySocketItemNonModifiable>data/ui/2kimages/main/icons/icon_goods_storage.png</EmptySocketItemNonModifiable>
+        <SpawnsFlotsam>1</SpawnsFlotsam>
+        <FixedSlotContent>0</FixedSlotContent>
       </ItemContainer>
       <UpgradeList />
-      <Stance />
+      <Stance>
+        <DefensiveReturnDistance>60</DefensiveReturnDistance>
+        <FleeDistance>50</FleeDistance>
+      </Stance>
     </Values>
   </Asset>
   <Asset>
@@ -3167,12 +5277,17 @@
         <Name>Dummy Scanner Gunboat</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_ship.png</IconFilename>
         <InfoDescription>1082</InfoDescription>
+        <Comments />
       </Standard>
       <Scanner>
         <ScanRadius>10</ScanRadius>
         <ScanEffect>500886</ScanEffect>
         <AlarmTime>15000</AlarmTime>
         <AlarmEffect>500888</AlarmEffect>
+        <FlyRadius>15</FlyRadius>
+        <FlyCircle>1</FlyCircle>
+        <FlyDirection>Random</FlyDirection>
+        <EffectHeight>1</EffectHeight>
       </Scanner>
       <Object>
         <Variations>
@@ -3180,14 +5295,44 @@
             <Filename>data/graphics/vehicle/gunboat/gunboat.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <MeshPlacement>OnWaterSlope</MeshPlacement>
         <ObjectPosition>Dynamic</ObjectPosition>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Selection>
         <ObjectmenuHeaderImage>data/ui/2kimages/main/3dicons/icon_ship.png</ObjectmenuHeaderImage>
         <MultiSelectable>1</MultiSelectable>
+        <GUIType>Residence</GUIType>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <InteractionDistance>15</InteractionDistance>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <AllowedDragType />
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
       </Selection>
       <Walking>
         <ReservationLength>9</ReservationLength>
@@ -3198,6 +5343,34 @@
         <LeaningMaxAngle>27</LeaningMaxAngle>
         <ForwardSpeed>4</ForwardSpeed>
         <CurveSegmentDensity>High</CurveSegmentDensity>
+        <SpecialMovementType>Land;HumanMovement</SpecialMovementType>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <TurnAroundRadius>2</TurnAroundRadius>
+        <Acceleration>3</Acceleration>
+        <Deceleration>6</Deceleration>
+        <TurnRadius>3</TurnRadius>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <TurnDeceleration>0.6</TurnDeceleration>
+        <TurnMovement>100</TurnMovement>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
+        <CreatePathPlannerUnit>1</CreatePathPlannerUnit>
       </Walking>
       <SoundEmitter>
         <VehicleSounds>
@@ -3207,10 +5380,34 @@
             </Item>
           </MovementStart>
         </VehicleSounds>
+        <ActiveSounds />
+        <DestroySounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionSounds />
+        <ConstructionStreetSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <QuestObject />
-      <CommandQueue />
-      <Text />
+      <CommandQueue>
+        <IsDestructable>1</IsDestructable>
+      </CommandQueue>
+      <Text>
+        <LocaText />
+        <Localize>1</Localize>
+      </Text>
       <Attacker>
         <AttackRange>30</AttackRange>
         <AttackRangeApproachPercentage>0.85</AttackRangeApproachPercentage>
@@ -3238,6 +5435,11 @@
             </AccuracyByDistancePair>
           </Item>
         </AccuracyByDistance>
+        <AllowApproachEnemy>1</AllowApproachEnemy>
+        <Turrets />
+        <AttackType>Default</AttackType>
+        <AccuracyBaseIncreasePercentage>100</AccuracyBaseIncreasePercentage>
+        <TurretExplosionEffectAsset>0</TurretExplosionEffectAsset>
       </Attacker>
       <Attackable>
         <MaximumHitPoints>850</MaximumHitPoints>
@@ -3245,13 +5447,31 @@
         <AccuracyWidth>2</AccuracyWidth>
         <SelfHealPerHealTick>10</SelfHealPerHealTick>
         <CanBeAttackedByPlayer>1</CanBeAttackedByPlayer>
+        <PausedTimeIfAttacked>15000</PausedTimeIfAttacked>
+        <SelfHealPausedTimeIfAttacked>15000</SelfHealPausedTimeIfAttacked>
+        <ArmorType>Default</ArmorType>
+        <TakeOverEffect>Never</TakeOverEffect>
+        <IslandWarFlag>0</IslandWarFlag>
+        <RuinSmokeParticles />
+        <ExplosionEffects />
       </Attackable>
       <ItemContainer>
         <SocketCount>1</SocketCount>
         <SocketAllocation>Ship</SocketAllocation>
+        <SocketScope>Local</SocketScope>
+        <StackLimit>50</StackLimit>
+        <InitSocketItems />
+        <InitSlotItems />
+        <EmptySocketIcon>data/ui/2kimages/main/icons/icon_plus.png</EmptySocketIcon>
+        <EmptySocketItemNonModifiable>data/ui/2kimages/main/icons/icon_goods_storage.png</EmptySocketItemNonModifiable>
+        <SpawnsFlotsam>1</SpawnsFlotsam>
+        <FixedSlotContent>0</FixedSlotContent>
       </ItemContainer>
       <UpgradeList />
-      <Stance />
+      <Stance>
+        <DefensiveReturnDistance>60</DefensiveReturnDistance>
+        <FleeDistance>50</FleeDistance>
+      </Stance>
     </Values>
   </Asset>
   <Asset>
@@ -3262,11 +5482,17 @@
         <Name>Wreckage 03</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_ship.png</IconFilename>
         <InfoDescription>1082</InfoDescription>
+        <Comments />
       </Standard>
       <Scanner>
         <ScanRadius>10</ScanRadius>
         <ScanEffect>140088</ScanEffect>
         <AlarmEffect>1000219</AlarmEffect>
+        <FlyRadius>15</FlyRadius>
+        <FlyCircle>1</FlyCircle>
+        <FlyDirection>Random</FlyDirection>
+        <AlarmTime>3000</AlarmTime>
+        <EffectHeight>1</EffectHeight>
       </Scanner>
       <Object>
         <Variations>
@@ -3274,14 +5500,44 @@
             <Filename>data/graphics/quest/objects/wreckage/wreckage_03.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <MeshPlacement>OnWaterSlope</MeshPlacement>
         <ObjectPosition>Dynamic</ObjectPosition>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Selection>
         <ObjectmenuHeaderImage>data/ui/2kimages/main/3dicons/icon_ship.png</ObjectmenuHeaderImage>
         <MultiSelectable>1</MultiSelectable>
+        <GUIType>Residence</GUIType>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <InteractionDistance>15</InteractionDistance>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <AllowedDragType />
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
       </Selection>
       <Walking>
         <ReservationLength>9</ReservationLength>
@@ -3291,6 +5547,35 @@
         <TurnSpeed>60</TurnSpeed>
         <LeaningMaxAngle>27</LeaningMaxAngle>
         <ForwardSpeed>4</ForwardSpeed>
+        <SpecialMovementType>Land;HumanMovement</SpecialMovementType>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <TurnAroundRadius>2</TurnAroundRadius>
+        <Acceleration>3</Acceleration>
+        <Deceleration>6</Deceleration>
+        <TurnRadius>3</TurnRadius>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <TurnDeceleration>0.6</TurnDeceleration>
+        <TurnMovement>100</TurnMovement>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
+        <CreatePathPlannerUnit>1</CreatePathPlannerUnit>
+        <CurveSegmentDensity>Medium</CurveSegmentDensity>
       </Walking>
       <SoundEmitter>
         <VehicleSounds>
@@ -3300,10 +5585,34 @@
             </Item>
           </MovementStart>
         </VehicleSounds>
+        <ActiveSounds />
+        <DestroySounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionSounds />
+        <ConstructionStreetSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <QuestObject />
-      <CommandQueue />
-      <Text />
+      <CommandQueue>
+        <IsDestructable>1</IsDestructable>
+      </CommandQueue>
+      <Text>
+        <LocaText />
+        <Localize>1</Localize>
+      </Text>
       <Attacker>
         <AccuracyByDistance>
           <Item />
@@ -3314,16 +5623,52 @@
             </AccuracyByDistancePair>
           </Item>
         </AccuracyByDistance>
+        <AttackRangeApproachPercentage>0.95</AttackRangeApproachPercentage>
+        <LineOfSightRange>35</LineOfSightRange>
+        <ReloadTime>10</ReloadTime>
+        <ProjectileAsset>0</ProjectileAsset>
+        <ProjectileCount>1</ProjectileCount>
+        <AllowApproachEnemy>1</AllowApproachEnemy>
+        <Turrets />
+        <AccuracyBase>5</AccuracyBase>
+        <AccuracyIncreaseOverDistance>40</AccuracyIncreaseOverDistance>
+        <AccuracySpeedDecay>6</AccuracySpeedDecay>
+        <ShootingTracking>Side</ShootingTracking>
+        <AttackType>Default</AttackType>
+        <AccuracyBaseIncreasePercentage>100</AccuracyBaseIncreasePercentage>
+        <TurretExplosionEffectAsset>0</TurretExplosionEffectAsset>
+        <MuzzleEffectAssets />
       </Attacker>
       <Attackable>
         <CanBeAttackedByPlayer>1</CanBeAttackedByPlayer>
+        <MaximumHitPoints>100</MaximumHitPoints>
+        <HPBarOffset>6</HPBarOffset>
+        <PausedTimeIfAttacked>15000</PausedTimeIfAttacked>
+        <SelfHealPerHealTick>2</SelfHealPerHealTick>
+        <SelfHealPausedTimeIfAttacked>15000</SelfHealPausedTimeIfAttacked>
+        <ArmorType>Default</ArmorType>
+        <TakeOverEffect>Never</TakeOverEffect>
+        <IslandWarFlag>0</IslandWarFlag>
+        <RuinSmokeParticles />
+        <ExplosionEffects />
       </Attackable>
       <ItemContainer>
         <SocketCount>1</SocketCount>
         <SocketAllocation>Ship</SocketAllocation>
+        <SocketScope>Local</SocketScope>
+        <StackLimit>50</StackLimit>
+        <InitSocketItems />
+        <InitSlotItems />
+        <EmptySocketIcon>data/ui/2kimages/main/icons/icon_plus.png</EmptySocketIcon>
+        <EmptySocketItemNonModifiable>data/ui/2kimages/main/icons/icon_goods_storage.png</EmptySocketItemNonModifiable>
+        <SpawnsFlotsam>1</SpawnsFlotsam>
+        <FixedSlotContent>0</FixedSlotContent>
       </ItemContainer>
       <UpgradeList />
-      <Stance />
+      <Stance>
+        <DefensiveReturnDistance>60</DefensiveReturnDistance>
+        <FleeDistance>50</FleeDistance>
+      </Stance>
     </Values>
   </Asset>
 </Assets>

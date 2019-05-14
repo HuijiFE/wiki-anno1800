@@ -8,9 +8,13 @@
         <Name>BuildmodeUnlock</Name>
         <IconFilename>data/ui/2kimages/main/icons/icon_attractiveness_castle_big.png</IconFilename>
         <ID>FeatureBuildmode</ID>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
       <Trigger>
         <TriggerCondition>
@@ -18,9 +22,18 @@
           <Values>
             <Condition />
             <ConditionAlwaysTrue />
+            <ConditionActiveRegion />
           </Values>
           <Template>ConditionAlwaysTrue</Template>
         </TriggerCondition>
+        <TriggerActions />
+        <SubTriggers />
+        <ResetTrigger>
+          <Template>EmptyAutoCreateValue</Template>
+          <Values>
+            <EmptyAutoCreateValue />
+          </Values>
+        </ResetTrigger>
       </Trigger>
       <TriggerSetup>
         <AutoSelfUnlock>0</AutoSelfUnlock>
@@ -36,8 +49,14 @@
         <GUID>140540</GUID>
         <Name>NewspaperUnlock</Name>
         <ID>NewspaperUnlock</ID>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
-      <Locked />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
       <Trigger>
         <TriggerCondition>
           <Template>ConditionPlayerCounter</Template>
@@ -49,8 +68,17 @@
               <CounterAmount>1</CounterAmount>
             </ConditionPlayerCounter>
             <ConditionAlwaysTrue />
+            <ConditionActiveRegion />
           </Values>
         </TriggerCondition>
+        <TriggerActions />
+        <SubTriggers />
+        <ResetTrigger>
+          <Template>EmptyAutoCreateValue</Template>
+          <Values>
+            <EmptyAutoCreateValue />
+          </Values>
+        </ResetTrigger>
       </Trigger>
       <TriggerSetup>
         <AutoRegisterTrigger>1</AutoRegisterTrigger>
@@ -66,8 +94,14 @@
         <GUID>140595</GUID>
         <Name>FireIncidents</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_fire_house.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
-      <Locked />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
       <Trigger>
         <TriggerCondition>
           <Template>ConditionUnlocked</Template>
@@ -77,8 +111,17 @@
               <UnlockNeeded>1010358</UnlockNeeded>
             </ConditionUnlocked>
             <ConditionAlwaysTrue />
+            <ConditionActiveRegion />
           </Values>
         </TriggerCondition>
+        <TriggerActions />
+        <SubTriggers />
+        <ResetTrigger>
+          <Template>EmptyAutoCreateValue</Template>
+          <Values>
+            <EmptyAutoCreateValue />
+          </Values>
+        </ResetTrigger>
       </Trigger>
       <TriggerSetup>
         <AutoRegisterTrigger>1</AutoRegisterTrigger>
@@ -94,8 +137,14 @@
         <GUID>140596</GUID>
         <Name>RiotIncidents</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_police.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
-      <Locked />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
       <Trigger>
         <TriggerCondition>
           <Template>ConditionUnlocked</Template>
@@ -105,8 +154,17 @@
               <UnlockNeeded>1010360</UnlockNeeded>
             </ConditionUnlocked>
             <ConditionAlwaysTrue />
+            <ConditionActiveRegion />
           </Values>
         </TriggerCondition>
+        <TriggerActions />
+        <SubTriggers />
+        <ResetTrigger>
+          <Template>EmptyAutoCreateValue</Template>
+          <Values>
+            <EmptyAutoCreateValue />
+          </Values>
+        </ResetTrigger>
       </Trigger>
       <TriggerSetup>
         <AutoRegisterTrigger>1</AutoRegisterTrigger>
@@ -122,8 +180,14 @@
         <GUID>140597</GUID>
         <Name>IllnessIncidents</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_hospital.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
-      <Locked />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
       <Trigger>
         <TriggerCondition>
           <Template>ConditionUnlocked</Template>
@@ -133,8 +197,17 @@
               <UnlockNeeded>1010362</UnlockNeeded>
             </ConditionUnlocked>
             <ConditionAlwaysTrue />
+            <ConditionActiveRegion />
           </Values>
         </TriggerCondition>
+        <TriggerActions />
+        <SubTriggers />
+        <ResetTrigger>
+          <Template>EmptyAutoCreateValue</Template>
+          <Values>
+            <EmptyAutoCreateValue />
+          </Values>
+        </ResetTrigger>
       </Trigger>
       <TriggerSetup>
         <AutoRegisterTrigger>1</AutoRegisterTrigger>
@@ -150,8 +223,14 @@
         <GUID>141671</GUID>
         <Name>ExplosionIncidents</Name>
         <IconFilename>data/ui/2kimages/main/icons/icon_bomb.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
-      <Locked />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
       <Trigger>
         <TriggerCondition>
           <Template>ConditionUnlocked</Template>
@@ -161,8 +240,17 @@
               <UnlockNeeded>1010358</UnlockNeeded>
             </ConditionUnlocked>
             <ConditionAlwaysTrue />
+            <ConditionActiveRegion />
           </Values>
         </TriggerCondition>
+        <TriggerActions />
+        <SubTriggers />
+        <ResetTrigger>
+          <Template>EmptyAutoCreateValue</Template>
+          <Values>
+            <EmptyAutoCreateValue />
+          </Values>
+        </ResetTrigger>
       </Trigger>
       <TriggerSetup>
         <AutoRegisterTrigger>1</AutoRegisterTrigger>
@@ -179,9 +267,13 @@
         <Name>ShipTrade</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_sail_shipyard.png</IconFilename>
         <ID>ShipTrade</ID>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
       <Trigger>
         <TriggerCondition>
@@ -189,9 +281,18 @@
           <Values>
             <Condition />
             <ConditionAlwaysTrue />
+            <ConditionActiveRegion />
           </Values>
           <Template>ConditionAlwaysTrue</Template>
         </TriggerCondition>
+        <TriggerActions />
+        <SubTriggers />
+        <ResetTrigger>
+          <Template>EmptyAutoCreateValue</Template>
+          <Values>
+            <EmptyAutoCreateValue />
+          </Values>
+        </ResetTrigger>
       </Trigger>
       <TriggerSetup>
         <AutoSelfUnlock>0</AutoSelfUnlock>
@@ -207,17 +308,32 @@
         <GUID>141468</GUID>
         <Name>ExpeditionUnlock</Name>
         <ID>ExpeditionUnlock</ID>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
-      <Locked />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
       <Trigger>
         <TriggerCondition>
           <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
           <Values>
             <Condition />
             <ConditionAlwaysTrue />
+            <ConditionActiveRegion />
           </Values>
           <Template>ConditionAlwaysTrue</Template>
         </TriggerCondition>
+        <TriggerActions />
+        <SubTriggers />
+        <ResetTrigger>
+          <Template>EmptyAutoCreateValue</Template>
+          <Values>
+            <EmptyAutoCreateValue />
+          </Values>
+        </ResetTrigger>
       </Trigger>
       <TriggerSetup>
         <AutoSelfUnlock>0</AutoSelfUnlock>
@@ -234,8 +350,14 @@
         <Name>ElectricityUnlock</Name>
         <IconFilename>data/ui/2kimages/main/icons/icon_electricity.png</IconFilename>
         <ID>ElectricityFeature</ID>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
-      <Locked />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
       <Trigger>
         <TriggerCondition>
           <Template>ConditionUnlocked</Template>
@@ -245,8 +367,17 @@
               <UnlockNeeded>140504</UnlockNeeded>
             </ConditionUnlocked>
             <ConditionAlwaysTrue />
+            <ConditionActiveRegion />
           </Values>
         </TriggerCondition>
+        <TriggerActions />
+        <SubTriggers />
+        <ResetTrigger>
+          <Template>EmptyAutoCreateValue</Template>
+          <Values>
+            <EmptyAutoCreateValue />
+          </Values>
+        </ResetTrigger>
       </Trigger>
       <TriggerSetup>
         <AutoRegisterTrigger>1</AutoRegisterTrigger>
@@ -263,10 +394,13 @@
         <Name>ConstructionAI</Name>
         <IconFilename>data/ui/2kimages/main/icons/icon_resource_worker_2.png</IconFilename>
         <ID>ConstructionAIUnlock</ID>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
         <Scope>MetaGame</Scope>
+        <DLCDependency>0</DLCDependency>
       </Locked>
       <Trigger>
         <TriggerCondition>
@@ -274,9 +408,18 @@
           <Values>
             <Condition />
             <ConditionAlwaysTrue />
+            <ConditionActiveRegion />
           </Values>
           <Template>ConditionAlwaysTrue</Template>
         </TriggerCondition>
+        <TriggerActions />
+        <SubTriggers />
+        <ResetTrigger>
+          <Template>EmptyAutoCreateValue</Template>
+          <Values>
+            <EmptyAutoCreateValue />
+          </Values>
+        </ResetTrigger>
       </Trigger>
       <TriggerSetup>
         <UsedBySecondParties>0</UsedBySecondParties>
@@ -293,9 +436,13 @@
         <Name>Diplomacy</Name>
         <IconFilename>data/ui/2kimages/main/icons/icon_diplomacy.png</IconFilename>
         <ID>FeatureDiplomacy</ID>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
       <Trigger>
         <TriggerCondition>
@@ -303,9 +450,18 @@
           <Values>
             <Condition />
             <ConditionAlwaysTrue />
+            <ConditionActiveRegion />
           </Values>
           <Template>ConditionAlwaysTrue</Template>
         </TriggerCondition>
+        <TriggerActions />
+        <SubTriggers />
+        <ResetTrigger>
+          <Template>EmptyAutoCreateValue</Template>
+          <Values>
+            <EmptyAutoCreateValue />
+          </Values>
+        </ResetTrigger>
       </Trigger>
       <TriggerSetup>
         <AutoSelfUnlock>0</AutoSelfUnlock>
@@ -322,9 +478,13 @@
         <Name>TradeRoutes</Name>
         <IconFilename>data/ui/2kimages/main/icons/icon_traderoutes.png</IconFilename>
         <ID>FeatureTradeRoutes</ID>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
       <Trigger>
         <TriggerCondition>
@@ -332,9 +492,18 @@
           <Values>
             <Condition />
             <ConditionAlwaysTrue />
+            <ConditionActiveRegion />
           </Values>
           <Template>ConditionAlwaysTrue</Template>
         </TriggerCondition>
+        <TriggerActions />
+        <SubTriggers />
+        <ResetTrigger>
+          <Template>EmptyAutoCreateValue</Template>
+          <Values>
+            <EmptyAutoCreateValue />
+          </Values>
+        </ResetTrigger>
       </Trigger>
       <TriggerSetup>
         <AutoSelfUnlock>0</AutoSelfUnlock>
@@ -351,9 +520,13 @@
         <Name>PrologueCompleted</Name>
         <IconFilename>data/ui/2kimages/main/icons/icon_attractiveness_castle_big.png</IconFilename>
         <ID>PrologueCompleted</ID>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
       <Trigger>
         <TriggerCondition>
@@ -361,9 +534,18 @@
           <Values>
             <Condition />
             <ConditionAlwaysTrue />
+            <ConditionActiveRegion />
           </Values>
           <Template>ConditionAlwaysTrue</Template>
         </TriggerCondition>
+        <TriggerActions />
+        <SubTriggers />
+        <ResetTrigger>
+          <Template>EmptyAutoCreateValue</Template>
+          <Values>
+            <EmptyAutoCreateValue />
+          </Values>
+        </ResetTrigger>
       </Trigger>
       <TriggerSetup>
         <AutoSelfUnlock>0</AutoSelfUnlock>
@@ -379,9 +561,13 @@
         <GUID>142428</GUID>
         <Name>SharesUnlock</Name>
         <ID>SharesUnlock</ID>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
       <Trigger>
         <TriggerCondition>
@@ -389,9 +575,18 @@
           <Values>
             <Condition />
             <ConditionAlwaysTrue />
+            <ConditionActiveRegion />
           </Values>
           <Template>ConditionAlwaysTrue</Template>
         </TriggerCondition>
+        <TriggerActions />
+        <SubTriggers />
+        <ResetTrigger>
+          <Template>EmptyAutoCreateValue</Template>
+          <Values>
+            <EmptyAutoCreateValue />
+          </Values>
+        </ResetTrigger>
       </Trigger>
       <TriggerSetup>
         <AutoRegisterTrigger>0</AutoRegisterTrigger>
@@ -408,9 +603,13 @@
         <Name>Minimap</Name>
         <IconFilename>data/ui/2kimages/main/icons/icon_attractiveness_castle_big.png</IconFilename>
         <ID>MinimapUnlocked</ID>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
       <Trigger>
         <TriggerCondition>
@@ -418,9 +617,18 @@
           <Values>
             <Condition />
             <ConditionAlwaysTrue />
+            <ConditionActiveRegion />
           </Values>
           <Template>ConditionAlwaysTrue</Template>
         </TriggerCondition>
+        <TriggerActions />
+        <SubTriggers />
+        <ResetTrigger>
+          <Template>EmptyAutoCreateValue</Template>
+          <Values>
+            <EmptyAutoCreateValue />
+          </Values>
+        </ResetTrigger>
       </Trigger>
       <TriggerSetup>
         <AutoSelfUnlock>0</AutoSelfUnlock>
@@ -435,8 +643,14 @@
       <Standard>
         <GUID>140885</GUID>
         <Name>South America Discovery Expedition Unlock</Name>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
-      <Locked />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
       <Trigger>
         <TriggerCondition>
           <Template>ConditionPlayerCounter</Template>
@@ -448,6 +662,7 @@
               <CounterAmount>1</CounterAmount>
             </ConditionPlayerCounter>
             <ConditionAlwaysTrue />
+            <ConditionActiveRegion />
           </Values>
         </TriggerCondition>
         <TriggerActions>
@@ -467,6 +682,13 @@
             </TriggerAction>
           </Item>
         </TriggerActions>
+        <SubTriggers />
+        <ResetTrigger>
+          <Template>EmptyAutoCreateValue</Template>
+          <Values>
+            <EmptyAutoCreateValue />
+          </Values>
+        </ResetTrigger>
       </Trigger>
       <TriggerSetup>
         <AutoRegisterTrigger>1</AutoRegisterTrigger>
@@ -481,8 +703,14 @@
       <Standard>
         <GUID>142568</GUID>
         <Name>Zoological Expedition Unlock Delay</Name>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
-      <Locked />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
       <Trigger>
         <TriggerCondition>
           <Template>ConditionPlayerCounter</Template>
@@ -494,6 +722,7 @@
               <CounterAmount>500</CounterAmount>
             </ConditionPlayerCounter>
             <ConditionAlwaysTrue />
+            <ConditionActiveRegion />
           </Values>
         </TriggerCondition>
         <TriggerActions>
@@ -549,6 +778,12 @@
             </SubTrigger>
           </Item>
         </SubTriggers>
+        <ResetTrigger>
+          <Template>EmptyAutoCreateValue</Template>
+          <Values>
+            <EmptyAutoCreateValue />
+          </Values>
+        </ResetTrigger>
       </Trigger>
       <TriggerSetup>
         <AutoRegisterTrigger>1</AutoRegisterTrigger>
@@ -563,14 +798,21 @@
       <Standard>
         <GUID>142570</GUID>
         <Name>Zoological Expedition Unlock</Name>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
-      <Locked />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
       <Trigger>
         <TriggerCondition>
           <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
           <Values>
             <Condition />
             <ConditionAlwaysTrue />
+            <ConditionActiveRegion />
           </Values>
           <Template>ConditionAlwaysTrue</Template>
         </TriggerCondition>
@@ -591,6 +833,13 @@
             </TriggerAction>
           </Item>
         </TriggerActions>
+        <SubTriggers />
+        <ResetTrigger>
+          <Template>EmptyAutoCreateValue</Template>
+          <Values>
+            <EmptyAutoCreateValue />
+          </Values>
+        </ResetTrigger>
       </Trigger>
       <TriggerSetup>
         <AutoRegisterTrigger>0</AutoRegisterTrigger>
@@ -605,8 +854,14 @@
       <Standard>
         <GUID>142569</GUID>
         <Name>Archeological Expedition Unlock Delay</Name>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
-      <Locked />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
       <Trigger>
         <TriggerCondition>
           <Template>ConditionPlayerCounter</Template>
@@ -618,6 +873,7 @@
               <CounterAmount>1500</CounterAmount>
             </ConditionPlayerCounter>
             <ConditionAlwaysTrue />
+            <ConditionActiveRegion />
           </Values>
         </TriggerCondition>
         <TriggerActions>
@@ -673,6 +929,12 @@
             </SubTrigger>
           </Item>
         </SubTriggers>
+        <ResetTrigger>
+          <Template>EmptyAutoCreateValue</Template>
+          <Values>
+            <EmptyAutoCreateValue />
+          </Values>
+        </ResetTrigger>
       </Trigger>
       <TriggerSetup>
         <AutoRegisterTrigger>1</AutoRegisterTrigger>
@@ -687,8 +949,14 @@
       <Standard>
         <GUID>142571</GUID>
         <Name>Archeological Expedition Unlock</Name>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
-      <Locked />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
       <Trigger>
         <TriggerCondition>
           <Template>ConditionPlayerCounter</Template>
@@ -700,6 +968,7 @@
               <CounterAmount>1500</CounterAmount>
             </ConditionPlayerCounter>
             <ConditionAlwaysTrue />
+            <ConditionActiveRegion />
           </Values>
         </TriggerCondition>
         <TriggerActions>
@@ -739,6 +1008,12 @@
             </SubTrigger>
           </Item>
         </SubTriggers>
+        <ResetTrigger>
+          <Template>EmptyAutoCreateValue</Template>
+          <Values>
+            <EmptyAutoCreateValue />
+          </Values>
+        </ResetTrigger>
       </Trigger>
       <TriggerSetup>
         <AutoRegisterTrigger>0</AutoRegisterTrigger>
@@ -753,8 +1028,14 @@
       <Standard>
         <GUID>141414</GUID>
         <Name>CharterRouteUnlock</Name>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
-      <Locked />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
       <Trigger>
         <TriggerCondition>
           <Template>ConditionPlayerCounter</Template>
@@ -765,8 +1046,17 @@
               <CounterAmount>2</CounterAmount>
             </ConditionPlayerCounter>
             <ConditionAlwaysTrue />
+            <ConditionActiveRegion />
           </Values>
         </TriggerCondition>
+        <TriggerActions />
+        <SubTriggers />
+        <ResetTrigger>
+          <Template>EmptyAutoCreateValue</Template>
+          <Values>
+            <EmptyAutoCreateValue />
+          </Values>
+        </ResetTrigger>
       </Trigger>
       <TriggerSetup>
         <UsedBySecondParties>0</UsedBySecondParties>
@@ -781,8 +1071,14 @@
       <Standard>
         <GUID>141415</GUID>
         <Name>CoalRouteUnlock</Name>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
-      <Locked />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
       <Trigger>
         <TriggerCondition>
           <Template>ConditionUnlocked</Template>
@@ -792,8 +1088,17 @@
               <UnlockNeeded>100781</UnlockNeeded>
             </ConditionUnlocked>
             <ConditionAlwaysTrue />
+            <ConditionActiveRegion />
           </Values>
         </TriggerCondition>
+        <TriggerActions />
+        <SubTriggers />
+        <ResetTrigger>
+          <Template>EmptyAutoCreateValue</Template>
+          <Values>
+            <EmptyAutoCreateValue />
+          </Values>
+        </ResetTrigger>
       </Trigger>
       <TriggerSetup>
         <UsedBySecondParties>0</UsedBySecondParties>
@@ -808,8 +1113,14 @@
       <Standard>
         <GUID>141416</GUID>
         <Name>OilRouteUnlock</Name>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
-      <Locked />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
       <Trigger>
         <TriggerCondition>
           <Template>ConditionUnlocked</Template>
@@ -819,8 +1130,17 @@
               <UnlockNeeded>100783</UnlockNeeded>
             </ConditionUnlocked>
             <ConditionAlwaysTrue />
+            <ConditionActiveRegion />
           </Values>
         </TriggerCondition>
+        <TriggerActions />
+        <SubTriggers />
+        <ResetTrigger>
+          <Template>EmptyAutoCreateValue</Template>
+          <Values>
+            <EmptyAutoCreateValue />
+          </Values>
+        </ResetTrigger>
       </Trigger>
       <TriggerSetup>
         <UsedBySecondParties>0</UsedBySecondParties>
@@ -835,8 +1155,14 @@
       <Standard>
         <GUID>150637</GUID>
         <Name>CampaignIsUnlocked</Name>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
-      <Locked />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
       <Trigger>
         <TriggerCondition>
           <Template>ConditionAlwaysFalse</Template>
@@ -844,8 +1170,17 @@
             <Condition />
             <ConditionAlwaysFalse />
             <ConditionAlwaysTrue />
+            <ConditionActiveRegion />
           </Values>
         </TriggerCondition>
+        <TriggerActions />
+        <SubTriggers />
+        <ResetTrigger>
+          <Template>EmptyAutoCreateValue</Template>
+          <Values>
+            <EmptyAutoCreateValue />
+          </Values>
+        </ResetTrigger>
       </Trigger>
       <TriggerSetup>
         <AutoRegisterTrigger>0</AutoRegisterTrigger>
@@ -860,8 +1195,14 @@
       <Standard>
         <GUID>150638</GUID>
         <Name>ShipyardLicenceAcquired</Name>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
-      <Locked />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
       <Trigger>
         <TriggerCondition>
           <Template>ConditionAlwaysFalse</Template>
@@ -869,8 +1210,17 @@
             <Condition />
             <ConditionAlwaysFalse />
             <ConditionAlwaysTrue />
+            <ConditionActiveRegion />
           </Values>
         </TriggerCondition>
+        <TriggerActions />
+        <SubTriggers />
+        <ResetTrigger>
+          <Template>EmptyAutoCreateValue</Template>
+          <Values>
+            <EmptyAutoCreateValue />
+          </Values>
+        </ResetTrigger>
       </Trigger>
       <TriggerSetup>
         <AutoRegisterTrigger>0</AutoRegisterTrigger>
@@ -885,8 +1235,14 @@
       <Standard>
         <GUID>150691</GUID>
         <Name>PassageToIronMineCleared</Name>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
-      <Locked />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
       <Trigger>
         <TriggerCondition>
           <Template>ConditionAlwaysFalse</Template>
@@ -894,8 +1250,17 @@
             <Condition />
             <ConditionAlwaysFalse />
             <ConditionAlwaysTrue />
+            <ConditionActiveRegion />
           </Values>
         </TriggerCondition>
+        <TriggerActions />
+        <SubTriggers />
+        <ResetTrigger>
+          <Template>EmptyAutoCreateValue</Template>
+          <Values>
+            <EmptyAutoCreateValue />
+          </Values>
+        </ResetTrigger>
       </Trigger>
       <TriggerSetup>
         <AutoRegisterTrigger>0</AutoRegisterTrigger>

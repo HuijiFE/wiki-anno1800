@@ -15,6 +15,7 @@
               </High>
               <Medium>
                 <ClipDistanceMax>40</ClipDistanceMax>
+                <ClipDistanceMin>30</ClipDistanceMin>
               </Medium>
               <UltraHigh>
                 <ClipDistanceMin>100</ClipDistanceMin>
@@ -24,6 +25,10 @@
                 <ClipDistanceMin>80</ClipDistanceMin>
                 <ClipDistanceMax>90</ClipDistanceMax>
               </VeryHigh>
+              <Low>
+                <ClipDistanceMin>30</ClipDistanceMin>
+                <ClipDistanceMax>40</ClipDistanceMax>
+              </Low>
             </ClipDistances>
           </Person>
           <Vehicle>
@@ -35,6 +40,7 @@
               </High>
               <Medium>
                 <ClipDistanceMax>80</ClipDistanceMax>
+                <ClipDistanceMin>70</ClipDistanceMin>
               </Medium>
               <UltraHigh>
                 <ClipDistanceMin>120</ClipDistanceMin>
@@ -50,6 +56,31 @@
               </Low>
             </ClipDistances>
           </Vehicle>
+          <HugeVehicle>
+            <FadeRange>40</FadeRange>
+            <ClipDistances>
+              <High>
+                <ClipDistanceMin>400</ClipDistanceMin>
+                <ClipDistanceMax>400</ClipDistanceMax>
+              </High>
+              <Low>
+                <ClipDistanceMin>130</ClipDistanceMin>
+                <ClipDistanceMax>130</ClipDistanceMax>
+              </Low>
+              <Medium>
+                <ClipDistanceMin>200</ClipDistanceMin>
+                <ClipDistanceMax>200</ClipDistanceMax>
+              </Medium>
+              <UltraHigh>
+                <ClipDistanceMin>500</ClipDistanceMin>
+                <ClipDistanceMax>500</ClipDistanceMax>
+              </UltraHigh>
+              <VeryHigh>
+                <ClipDistanceMin>450</ClipDistanceMin>
+                <ClipDistanceMax>450</ClipDistanceMax>
+              </VeryHigh>
+            </ClipDistances>
+          </HugeVehicle>
         </ClippingInfos>
         <InteractionInfos>
           <DummyTalk>
@@ -145,12 +176,17 @@
             <UnitCountFactor>1.5</UnitCountFactor>
           </Item>
         </UnitCountFactorByQualitySetting>
+        <SoundFadeOutDuration>1000</SoundFadeOutDuration>
+        <TrafficSoundEmitterCount>10</TrafficSoundEmitterCount>
+        <FeedbackLeaning>1</FeedbackLeaning>
       </FeedbackParametersGlobal>
       <Standard>
         <GUID>2002022</GUID>
         <Name>FeedbackParametersGlobal</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_residence_big_dummy.png</IconFilename>
         <ID>FeedbackParametersGlobal</ID>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
     </Values>
   </Asset>

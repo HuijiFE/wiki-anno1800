@@ -5,11 +5,23 @@
     <Values>
       <Mesh>
         <OnlyVisibleInEditor>1</OnlyVisibleInEditor>
+        <ObjectPosition>Static</ObjectPosition>
+        <MeshPlacement>Default</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Standard>
         <GUID>1001607</GUID>
         <Name>Lake</Name>
         <ID>Lake</ID>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Object>
         <AssignDefaultParticipant>1</AssignDefaultParticipant>
@@ -20,8 +32,16 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <BezierPath />
+      <BezierPath>
+        <CreatedInPathEditor>1</CreatedInPathEditor>
+      </BezierPath>
       <Lake />
     </Values>
   </Asset>

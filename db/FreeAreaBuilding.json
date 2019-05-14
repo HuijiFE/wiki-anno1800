@@ -13,8 +13,8 @@
       "maxWorkers": 3,
       "workerPause": 10000,
       "wayTime": 10000,
-      "freeAreaType": "",
-      "cutTree": false
+      "freeAreaType": "Lumberjack",
+      "cutTree": true
     },
     "maintenance": {
       "maintenances": [
@@ -43,9 +43,9 @@
           "storage": 8
         }
       ],
-      "warehouseTransporterAsset": 0,
-      "productivityTimeMultiplier": 0,
-      "productivityPoints": 0,
+      "warehouseTransporterAsset": 1010105,
+      "productivityTimeMultiplier": 5,
+      "productivityPoints": 30,
       "neededFertility": 0
     },
     "culture": {
@@ -66,13 +66,13 @@
       "isInvulnerable": false,
       "militaryDefensePoints": 0.0,
       "accuracyWidth": 0.0,
-      "selfHealPausedTimeIfAttacked": 0,
-      "armorType": "",
+      "selfHealPausedTimeIfAttacked": 15000,
+      "armorType": "Default",
       "disableGettingAutoAttacked": false
     },
     "building": {
       "type": "Factory",
-      "terrian": "",
+      "terrian": "Terrain",
       "region": "Moderate",
       "category": 100000,
       "pickingAsset": 0
@@ -104,8 +104,8 @@
           "amount": 0
         }
       ],
-      "influenceCostType": "",
-      "influenceCostPoints": 0
+      "influenceCostType": "None",
+      "influenceCostPoints": 1
     }
   },
   {
@@ -117,7 +117,7 @@
     "description": 11143,
     "freeAreaProductivity": {
       "radius": 11,
-      "neededAreaPercent": 0,
+      "neededAreaPercent": 60,
       "worker": 102433,
       "maxWorkers": 2,
       "workerPause": 10000,
@@ -152,9 +152,9 @@
           "storage": 4
         }
       ],
-      "warehouseTransporterAsset": 0,
-      "productivityTimeMultiplier": 0,
-      "productivityPoints": 0,
+      "warehouseTransporterAsset": 1010105,
+      "productivityTimeMultiplier": 5,
+      "productivityPoints": 30,
       "neededFertility": 1010581
     },
     "culture": {
@@ -175,13 +175,13 @@
       "isInvulnerable": false,
       "militaryDefensePoints": 0.0,
       "accuracyWidth": 0.0,
-      "selfHealPausedTimeIfAttacked": 0,
-      "armorType": "",
+      "selfHealPausedTimeIfAttacked": 15000,
+      "armorType": "Default",
       "disableGettingAutoAttacked": false
     },
     "building": {
       "type": "Factory",
-      "terrian": "",
+      "terrian": "Terrain",
       "region": "Moderate",
       "category": 100000,
       "pickingAsset": 0
@@ -213,8 +213,8 @@
           "amount": 0
         }
       ],
-      "influenceCostType": "",
-      "influenceCostPoints": 0
+      "influenceCostType": "None",
+      "influenceCostPoints": 1
     }
   },
   {
@@ -231,8 +231,8 @@
       "maxWorkers": 3,
       "workerPause": 10000,
       "wayTime": 10000,
-      "freeAreaType": "",
-      "cutTree": false
+      "freeAreaType": "Lumberjack",
+      "cutTree": true
     },
     "maintenance": {
       "maintenances": [
@@ -261,9 +261,9 @@
           "storage": 8
         }
       ],
-      "warehouseTransporterAsset": 0,
-      "productivityTimeMultiplier": 0,
-      "productivityPoints": 0,
+      "warehouseTransporterAsset": 1010105,
+      "productivityTimeMultiplier": 5,
+      "productivityPoints": 30,
       "neededFertility": 0
     },
     "culture": {
@@ -284,13 +284,13 @@
       "isInvulnerable": false,
       "militaryDefensePoints": 0.0,
       "accuracyWidth": 0.0,
-      "selfHealPausedTimeIfAttacked": 0,
-      "armorType": "",
+      "selfHealPausedTimeIfAttacked": 15000,
+      "armorType": "Default",
       "disableGettingAutoAttacked": false
     },
     "building": {
       "type": "Factory",
-      "terrian": "",
+      "terrian": "Terrain",
       "region": "Colony01",
       "category": 100000,
       "pickingAsset": 0
@@ -322,8 +322,8 @@
           "amount": 0
         }
       ],
-      "influenceCostType": "",
-      "influenceCostPoints": 0
+      "influenceCostType": "None",
+      "influenceCostPoints": 1
     }
   },
   {
@@ -335,13 +335,13 @@
     "description": 11143,
     "freeAreaProductivity": {
       "radius": 0,
-      "neededAreaPercent": 0,
+      "neededAreaPercent": 60,
       "worker": 1000127,
       "maxWorkers": 3,
       "workerPause": 10000,
       "wayTime": 10000,
-      "freeAreaType": "",
-      "cutTree": false
+      "freeAreaType": "Lumberjack",
+      "cutTree": true
     },
     "maintenance": {
       "maintenances": [
@@ -370,13 +370,13 @@
           "storage": 3
         }
       ],
-      "warehouseTransporterAsset": 0,
-      "productivityTimeMultiplier": 0,
-      "productivityPoints": 0,
+      "warehouseTransporterAsset": 1010105,
+      "productivityTimeMultiplier": 5,
+      "productivityPoints": 30,
       "neededFertility": 0
     },
     "culture": {
-      "type": "",
+      "type": "Culture",
       "attractiveness": 0,
       "hasPollution": false,
       "setPages": [],
@@ -386,21 +386,21 @@
     "attackable": {
       "maximumHitPoints": 500,
       "hasRuinState": true,
-      "selfHealPerHealTick": 0.0,
+      "selfHealPerHealTick": 2.0,
       "pausedTimeIfAttacked": false,
       "canBeAttackedByPlayer": false,
       "moralePower": 0,
       "isInvulnerable": false,
       "militaryDefensePoints": 0.0,
       "accuracyWidth": 0.0,
-      "selfHealPausedTimeIfAttacked": 0,
-      "armorType": "",
+      "selfHealPausedTimeIfAttacked": 15000,
+      "armorType": "Default",
       "disableGettingAutoAttacked": false
     },
     "building": {
       "type": "Factory",
-      "terrian": "",
-      "region": "",
+      "terrian": "Terrain",
+      "region": "Meta;Moderate;Colony01;Arctic",
       "category": 100000,
       "pickingAsset": 0
     },
@@ -431,8 +431,8 @@
           "amount": 0
         }
       ],
-      "influenceCostType": "",
-      "influenceCostPoints": 0
+      "influenceCostType": "None",
+      "influenceCostPoints": 1
     }
   }
 ]

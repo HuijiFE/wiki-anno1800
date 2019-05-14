@@ -409,7 +409,7 @@ namespace Anno1800.Jsonify {
             agg.AddRange(cur);
             return agg;
           })
-          .Where(el => upgradeElementNames.Contains(el.Name.ToString()))
+          .Where(el => upgradeElementNames.Contains(el.Name.ToString()) && el.Int("Value") > 0)
           .ToDictionary(el => el.Name.ToString(), el => new UpgradePair(el));
         if (dict.Count > 0) {
           this.upgrades = dict;

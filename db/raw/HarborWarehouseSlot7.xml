@@ -8,8 +8,20 @@
         <Name>Harbour Slot (Ghost) Moderate</Name>
         <ID>KontorSlot</ID>
         <InfoDescription>163049</InfoDescription>
+        <Comments />
       </Standard>
-      <Mesh />
+      <Mesh>
+        <ObjectPosition>Static</ObjectPosition>
+        <MeshPlacement>Default</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
+      </Mesh>
       <Object>
         <Type>NotSerialized</Type>
         <Variations>
@@ -18,10 +30,32 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <DistributionCenterMarker />
+      <DistributionCenterMarker>
+        <DyeColor>-1761607681</DyeColor>
+      </DistributionCenterMarker>
       <Selection>
         <GUIType>SlotGhost</GUIType>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <InteractionDistance>15</InteractionDistance>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <AllowedDragType />
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
       </Selection>
       <Text>
         <LocaText>
@@ -32,19 +66,64 @@
           </English>
         </LocaText>
         <LineID>3743</LineID>
+        <Localize>1</Localize>
       </Text>
       <QuestObject />
       <MinimapToken>
         <TokenAsset>0</TokenAsset>
+        <StrategicMapAsset>0</StrategicMapAsset>
       </MinimapToken>
-      <Blocking />
-      <SoundEmitter />
-      <Constructable />
+      <Blocking>
+        <HidePropsRadius>1</HidePropsRadius>
+        <DeletePropsRadius>1</DeletePropsRadius>
+        <GroundDecalAsset>0</GroundDecalAsset>
+        <GroundDecalInvisible>0</GroundDecalInvisible>
+        <StreetOutside>0</StreetOutside>
+        <RemoveGrass>1</RemoveGrass>
+        <BlocksBuilding>1</BlocksBuilding>
+      </Blocking>
+      <SoundEmitter>
+        <ActiveSounds />
+        <DestroySounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionSounds />
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
+      </SoundEmitter>
+      <Constructable>
+        <ConstructionMode>Default</ConstructionMode>
+        <DestructionCategory>Other</DestructionCategory>
+        <DestructionType>0</DestructionType>
+      </Constructable>
       <Building>
         <BuildingType>Warehouse</BuildingType>
         <HasBorderRectOutline>0</HasBorderRectOutline>
         <Destructable>0</Destructable>
         <TerrainType>Coast</TerrainType>
+        <BuildingCategoryName>0</BuildingCategoryName>
+        <Movable>1</Movable>
+        <PickingAsset>0</PickingAsset>
+        <ConstructionMenuText>0</ConstructionMenuText>
+        <SnapRadius>2</SnapRadius>
+        <InfluencedByNeighbors />
+        <InfluencedVariationDirection />
+        <AssociatedRegions>Meta;Moderate;Colony01;Arctic</AssociatedRegions>
+        <BuildingBlockPool />
+        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
     </Values>
   </Asset>
@@ -55,8 +134,20 @@
         <GUID>101629</GUID>
         <Name>Harbour Slot (Ghost) Colony01</Name>
         <InfoDescription>163049</InfoDescription>
+        <Comments />
       </Standard>
-      <Mesh />
+      <Mesh>
+        <ObjectPosition>Static</ObjectPosition>
+        <MeshPlacement>Default</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
+      </Mesh>
       <Object>
         <Type>NotSerialized</Type>
         <Variations>
@@ -65,10 +156,32 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <DistributionCenterMarker />
+      <DistributionCenterMarker>
+        <DyeColor>-1761607681</DyeColor>
+      </DistributionCenterMarker>
       <Selection>
         <GUIType>SlotGhost</GUIType>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <InteractionDistance>15</InteractionDistance>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <AllowedDragType />
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
       </Selection>
       <Text>
         <LocaText>
@@ -79,19 +192,64 @@
           </English>
         </LocaText>
         <LineID>15361</LineID>
+        <Localize>1</Localize>
       </Text>
       <QuestObject />
       <MinimapToken>
         <TokenAsset>0</TokenAsset>
+        <StrategicMapAsset>0</StrategicMapAsset>
       </MinimapToken>
-      <Blocking />
-      <SoundEmitter />
-      <Constructable />
+      <Blocking>
+        <HidePropsRadius>1</HidePropsRadius>
+        <DeletePropsRadius>1</DeletePropsRadius>
+        <GroundDecalAsset>0</GroundDecalAsset>
+        <GroundDecalInvisible>0</GroundDecalInvisible>
+        <StreetOutside>0</StreetOutside>
+        <RemoveGrass>1</RemoveGrass>
+        <BlocksBuilding>1</BlocksBuilding>
+      </Blocking>
+      <SoundEmitter>
+        <ActiveSounds />
+        <DestroySounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionSounds />
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
+      </SoundEmitter>
+      <Constructable>
+        <ConstructionMode>Default</ConstructionMode>
+        <DestructionCategory>Other</DestructionCategory>
+        <DestructionType>0</DestructionType>
+      </Constructable>
       <Building>
         <BuildingType>Warehouse</BuildingType>
         <HasBorderRectOutline>0</HasBorderRectOutline>
         <Destructable>0</Destructable>
         <TerrainType>Coast</TerrainType>
+        <BuildingCategoryName>0</BuildingCategoryName>
+        <Movable>1</Movable>
+        <PickingAsset>0</PickingAsset>
+        <ConstructionMenuText>0</ConstructionMenuText>
+        <SnapRadius>2</SnapRadius>
+        <InfluencedByNeighbors />
+        <InfluencedVariationDirection />
+        <AssociatedRegions>Meta;Moderate;Colony01;Arctic</AssociatedRegions>
+        <BuildingBlockPool />
+        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
     </Values>
   </Asset>

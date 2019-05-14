@@ -14840,7 +14840,7 @@ export interface CultureData extends BaseAssetObject {
   type: string;
   attractiveness: number;
   hasPollution: boolean;
-  setPages: number[];
+  setPages: number[][];
   openSetPages: number;
 }
 
@@ -15227,7 +15227,7 @@ export interface ExpeditionAttributePair extends BaseAssetObject {
 export interface ExpeditionAttribute extends BaseAssetObject {
   attributes: ExpeditionAttributePair[];
   baseMorale: number;
-  fluff: string[];
+  fluff: number;
   itemDifficulties: string[];
   itemRegions: string[];
 }

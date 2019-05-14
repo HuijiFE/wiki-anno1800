@@ -7,6 +7,8 @@
         <GUID>180025</GUID>
         <Name>South America 01</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/animals/icon_parrot.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Session>
         <CameraLoopSequence1>11</CameraLoopSequence1>
@@ -57,6 +59,40 @@
         <WorldMapAsset>data/graphics/ui/3d_objects/world_map/clickable_south_america_01.cfg</WorldMapAsset>
         <Region>5000001</Region>
         <FixDayTime>12</FixDayTime>
+        <MapTemplate>0</MapTemplate>
+        <CameraSettings>data/config/game/camera.xml</CameraSettings>
+        <InMenuVisible>1</InMenuVisible>
+        <SpawnAreaBorderDistanceRange>
+          <Far>
+            <Min>30</Min>
+            <Max>100</Max>
+          </Far>
+          <Mid>
+            <Min>10</Min>
+            <Max>20</Max>
+          </Mid>
+          <Near>
+            <Min>3</Min>
+            <Max>7</Max>
+          </Near>
+        </SpawnAreaBorderDistanceRange>
+        <SpawnAreaIslandDistanceRange>
+          <Far>
+            <Min>50</Min>
+            <Max>70</Max>
+          </Far>
+          <Mid>
+            <Min>20</Min>
+            <Max>40</Max>
+          </Mid>
+          <Near>
+            <Min>5</Min>
+            <Max>10</Max>
+          </Near>
+        </SpawnAreaIslandDistanceRange>
+        <SpawnStartShipAndKontor>1</SpawnStartShipAndKontor>
+        <ShipTransferEnabled>1</ShipTransferEnabled>
+        <RouteSessionAsset>0</RouteSessionAsset>
       </Session>
       <Text>
         <LocaText>
@@ -67,10 +103,16 @@
           </English>
         </LocaText>
         <LineID>14154</LineID>
+        <Localize>1</Localize>
       </Text>
-      <Locked />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
       <WorldMapSound>
         <UIClickEvent>9818389</UIClickEvent>
+        <ActiveAudioEvent>0</ActiveAudioEvent>
       </WorldMapSound>
     </Values>
   </Asset>
@@ -80,11 +122,50 @@
       <Standard>
         <GUID>180060</GUID>
         <Name>LevelArt_TestTemplate</Name>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Session>
         <Region>5000000</Region>
         <MapTemplate>141748</MapTemplate>
         <FixDayTime>12</FixDayTime>
+        <CameraSettings>data/config/game/camera.xml</CameraSettings>
+        <CameraLoopSequence1>-1</CameraLoopSequence1>
+        <CameraLoopSequence2>-1</CameraLoopSequence2>
+        <InMenuVisible>1</InMenuVisible>
+        <SpawnAreaBorderDistanceRange>
+          <Far>
+            <Min>30</Min>
+            <Max>100</Max>
+          </Far>
+          <Mid>
+            <Min>10</Min>
+            <Max>20</Max>
+          </Mid>
+          <Near>
+            <Min>3</Min>
+            <Max>7</Max>
+          </Near>
+        </SpawnAreaBorderDistanceRange>
+        <SpawnAreaIslandDistanceRange>
+          <Far>
+            <Min>50</Min>
+            <Max>70</Max>
+          </Far>
+          <Mid>
+            <Min>20</Min>
+            <Max>40</Max>
+          </Mid>
+          <Near>
+            <Min>5</Min>
+            <Max>10</Max>
+          </Near>
+        </SpawnAreaIslandDistanceRange>
+        <TransferData />
+        <SpawnStartShipAndKontor>1</SpawnStartShipAndKontor>
+        <ShipTransferEnabled>1</ShipTransferEnabled>
+        <WorldMapCardBackground>0</WorldMapCardBackground>
+        <RouteSessionAsset>0</RouteSessionAsset>
       </Session>
       <Text>
         <LocaText>
@@ -92,11 +173,17 @@
             <Text>LevelArt_TestTemplate</Text>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
-      <WorldMapSound />
+      <WorldMapSound>
+        <ActiveAudioEvent>0</ActiveAudioEvent>
+        <UIClickEvent>0</UIClickEvent>
+      </WorldMapSound>
     </Values>
   </Asset>
   <Asset>
@@ -105,11 +192,50 @@
       <Standard>
         <GUID>180086</GUID>
         <Name>Art_AmbientTest</Name>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Session>
         <Region>5000000</Region>
         <MapTemplate>142586</MapTemplate>
         <FixDayTime>12</FixDayTime>
+        <CameraSettings>data/config/game/camera.xml</CameraSettings>
+        <CameraLoopSequence1>-1</CameraLoopSequence1>
+        <CameraLoopSequence2>-1</CameraLoopSequence2>
+        <InMenuVisible>1</InMenuVisible>
+        <SpawnAreaBorderDistanceRange>
+          <Far>
+            <Min>30</Min>
+            <Max>100</Max>
+          </Far>
+          <Mid>
+            <Min>10</Min>
+            <Max>20</Max>
+          </Mid>
+          <Near>
+            <Min>3</Min>
+            <Max>7</Max>
+          </Near>
+        </SpawnAreaBorderDistanceRange>
+        <SpawnAreaIslandDistanceRange>
+          <Far>
+            <Min>50</Min>
+            <Max>70</Max>
+          </Far>
+          <Mid>
+            <Min>20</Min>
+            <Max>40</Max>
+          </Mid>
+          <Near>
+            <Min>5</Min>
+            <Max>10</Max>
+          </Near>
+        </SpawnAreaIslandDistanceRange>
+        <TransferData />
+        <SpawnStartShipAndKontor>1</SpawnStartShipAndKontor>
+        <ShipTransferEnabled>1</ShipTransferEnabled>
+        <WorldMapCardBackground>0</WorldMapCardBackground>
+        <RouteSessionAsset>0</RouteSessionAsset>
       </Session>
       <Text>
         <LocaText>
@@ -117,11 +243,17 @@
             <Text>LevelArt_TestTemplate</Text>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
-      <WorldMapSound />
+      <WorldMapSound>
+        <ActiveAudioEvent>0</ActiveAudioEvent>
+        <UIClickEvent>0</UIClickEvent>
+      </WorldMapSound>
     </Values>
   </Asset>
   <Asset>
@@ -132,6 +264,8 @@
         <Name>GamesCom_South_America_01</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/animals/icon_parrot.png</IconFilename>
         <ID>GamesComSouthAmerica</ID>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Session>
         <CameraLoopSequence1>11</CameraLoopSequence1>
@@ -185,6 +319,39 @@
         <RouteSessionAsset>180025</RouteSessionAsset>
         <Region>5000001</Region>
         <FixDayTime>12</FixDayTime>
+        <MapTemplate>0</MapTemplate>
+        <CameraSettings>data/config/game/camera.xml</CameraSettings>
+        <InMenuVisible>1</InMenuVisible>
+        <SpawnAreaBorderDistanceRange>
+          <Far>
+            <Min>30</Min>
+            <Max>100</Max>
+          </Far>
+          <Mid>
+            <Min>10</Min>
+            <Max>20</Max>
+          </Mid>
+          <Near>
+            <Min>3</Min>
+            <Max>7</Max>
+          </Near>
+        </SpawnAreaBorderDistanceRange>
+        <SpawnAreaIslandDistanceRange>
+          <Far>
+            <Min>50</Min>
+            <Max>70</Max>
+          </Far>
+          <Mid>
+            <Min>20</Min>
+            <Max>40</Max>
+          </Mid>
+          <Near>
+            <Min>5</Min>
+            <Max>10</Max>
+          </Near>
+        </SpawnAreaIslandDistanceRange>
+        <SpawnStartShipAndKontor>1</SpawnStartShipAndKontor>
+        <ShipTransferEnabled>1</ShipTransferEnabled>
       </Session>
       <Text>
         <LocaText>
@@ -195,9 +362,17 @@
           </English>
         </LocaText>
         <LineID>15331</LineID>
+        <Localize>1</Localize>
       </Text>
-      <Locked />
-      <WorldMapSound />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
+      <WorldMapSound>
+        <ActiveAudioEvent>0</ActiveAudioEvent>
+        <UIClickEvent>0</UIClickEvent>
+      </WorldMapSound>
     </Values>
   </Asset>
   <Asset>
@@ -207,6 +382,8 @@
         <GUID>180058</GUID>
         <Name>South America 01</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/animals/icon_parrot.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Session>
         <MapTemplate>141420</MapTemplate>
@@ -258,6 +435,39 @@
         <WorldMapAsset>data/graphics/ui/3d_objects/world_map/clickable_south_america_01.cfg</WorldMapAsset>
         <Region>5000001</Region>
         <FixDayTime>12</FixDayTime>
+        <CameraSettings>data/config/game/camera.xml</CameraSettings>
+        <InMenuVisible>1</InMenuVisible>
+        <SpawnAreaBorderDistanceRange>
+          <Far>
+            <Min>30</Min>
+            <Max>100</Max>
+          </Far>
+          <Mid>
+            <Min>10</Min>
+            <Max>20</Max>
+          </Mid>
+          <Near>
+            <Min>3</Min>
+            <Max>7</Max>
+          </Near>
+        </SpawnAreaBorderDistanceRange>
+        <SpawnAreaIslandDistanceRange>
+          <Far>
+            <Min>50</Min>
+            <Max>70</Max>
+          </Far>
+          <Mid>
+            <Min>20</Min>
+            <Max>40</Max>
+          </Mid>
+          <Near>
+            <Min>5</Min>
+            <Max>10</Max>
+          </Near>
+        </SpawnAreaIslandDistanceRange>
+        <SpawnStartShipAndKontor>1</SpawnStartShipAndKontor>
+        <ShipTransferEnabled>1</ShipTransferEnabled>
+        <RouteSessionAsset>0</RouteSessionAsset>
       </Session>
       <Text>
         <LineID>14156</LineID>
@@ -268,10 +478,16 @@
             <ExportCount>2</ExportCount>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
-      <Locked />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
       <WorldMapSound>
         <UIClickEvent>9818389</UIClickEvent>
+        <ActiveAudioEvent>0</ActiveAudioEvent>
       </WorldMapSound>
     </Values>
   </Asset>
@@ -281,11 +497,50 @@
       <Standard>
         <GUID>180061</GUID>
         <Name>Map Template Test</Name>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Session>
         <Region>5000000</Region>
         <MapTemplate>142034</MapTemplate>
         <FixDayTime>12</FixDayTime>
+        <CameraSettings>data/config/game/camera.xml</CameraSettings>
+        <CameraLoopSequence1>-1</CameraLoopSequence1>
+        <CameraLoopSequence2>-1</CameraLoopSequence2>
+        <InMenuVisible>1</InMenuVisible>
+        <SpawnAreaBorderDistanceRange>
+          <Far>
+            <Min>30</Min>
+            <Max>100</Max>
+          </Far>
+          <Mid>
+            <Min>10</Min>
+            <Max>20</Max>
+          </Mid>
+          <Near>
+            <Min>3</Min>
+            <Max>7</Max>
+          </Near>
+        </SpawnAreaBorderDistanceRange>
+        <SpawnAreaIslandDistanceRange>
+          <Far>
+            <Min>50</Min>
+            <Max>70</Max>
+          </Far>
+          <Mid>
+            <Min>20</Min>
+            <Max>40</Max>
+          </Mid>
+          <Near>
+            <Min>5</Min>
+            <Max>10</Max>
+          </Near>
+        </SpawnAreaIslandDistanceRange>
+        <TransferData />
+        <SpawnStartShipAndKontor>1</SpawnStartShipAndKontor>
+        <ShipTransferEnabled>1</ShipTransferEnabled>
+        <WorldMapCardBackground>0</WorldMapCardBackground>
+        <RouteSessionAsset>0</RouteSessionAsset>
       </Session>
       <Text>
         <LocaText>
@@ -293,11 +548,17 @@
             <Text>Map Template Test</Text>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
-      <WorldMapSound />
+      <WorldMapSound>
+        <ActiveAudioEvent>0</ActiveAudioEvent>
+        <UIClickEvent>0</UIClickEvent>
+      </WorldMapSound>
     </Values>
   </Asset>
 </Assets>

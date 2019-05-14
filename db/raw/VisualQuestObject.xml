@@ -6,8 +6,21 @@
       <Standard>
         <GUID>101120</GUID>
         <Name>fish_swarm</Name>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
-      <Mesh />
+      <Mesh>
+        <ObjectPosition>Static</ObjectPosition>
+        <MeshPlacement>Default</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
+      </Mesh>
       <Object>
         <Variations>
           <Item>
@@ -15,10 +28,41 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <QuestObject />
-      <FeedbackController />
-      <SoundEmitter />
+      <FeedbackController>
+        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
+        <UpdateMeshSequence>1</UpdateMeshSequence>
+      </FeedbackController>
+      <SoundEmitter>
+        <ActiveSounds />
+        <DestroySounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionSounds />
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
+      </SoundEmitter>
       <Walking>
         <Acceleration>1</Acceleration>
         <TurnRadius>0.15</TurnRadius>
@@ -26,8 +70,36 @@
         <TurnDeceleration>0</TurnDeceleration>
         <CreatePathPlannerUnit>0</CreatePathPlannerUnit>
         <CurveSegmentDensity>Low</CurveSegmentDensity>
+        <SpecialMovementType>Land;HumanMovement</SpecialMovementType>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <PathPlannerLayer>Land</PathPlannerLayer>
+        <TurnAroundRadius>2</TurnAroundRadius>
+        <Deceleration>6</Deceleration>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <TurnMovement>100</TurnMovement>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <ForwardSpeed>1</ForwardSpeed>
+        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
       </Walking>
-      <Infolayer />
+      <Infolayer>
+        <DefaultInfoLayer>0</DefaultInfoLayer>
+      </Infolayer>
     </Values>
   </Asset>
   <Asset>
@@ -38,9 +110,19 @@
         <Name>QO Castaway (Lifewest) - Visual Quest Object</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_castaway.png</IconFilename>
         <InfoDescription>1029</InfoDescription>
+        <Comments />
       </Standard>
       <Mesh>
         <MeshPlacement>OnWaterSlope</MeshPlacement>
+        <ObjectPosition>Static</ObjectPosition>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Object>
         <Variations>
@@ -49,20 +131,82 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <QuestObject />
-      <FeedbackController />
+      <FeedbackController>
+        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
+        <UpdateMeshSequence>1</UpdateMeshSequence>
+      </FeedbackController>
       <SoundEmitter>
         <CollectedSounds>
           <Item>
             <Sound>214110</Sound>
           </Item>
         </CollectedSounds>
+        <ActiveSounds />
+        <DestroySounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionSounds />
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <Walking>
         <PathPlannerLayer>Water</PathPlannerLayer>
+        <SpecialMovementType>Land;HumanMovement</SpecialMovementType>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <TurnAroundRadius>2</TurnAroundRadius>
+        <Acceleration>3</Acceleration>
+        <Deceleration>6</Deceleration>
+        <TurnRadius>3</TurnRadius>
+        <TurnSpeed>90</TurnSpeed>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <TurnDeceleration>0.6</TurnDeceleration>
+        <TurnMovement>100</TurnMovement>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <ForwardSpeed>1</ForwardSpeed>
+        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
+        <CreatePathPlannerUnit>1</CreatePathPlannerUnit>
+        <CurveSegmentDensity>Medium</CurveSegmentDensity>
       </Walking>
-      <Infolayer />
+      <Infolayer>
+        <DefaultInfoLayer>0</DefaultInfoLayer>
+      </Infolayer>
     </Values>
   </Asset>
   <Asset>
@@ -73,9 +217,19 @@
         <Name>QO Castaway (Lifeboat) - Visual Quest Object</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_rowing_boat.png</IconFilename>
         <InfoDescription>1029</InfoDescription>
+        <Comments />
       </Standard>
       <Mesh>
         <MeshPlacement>OnWaterSlope</MeshPlacement>
+        <ObjectPosition>Static</ObjectPosition>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Object>
         <Variations>
@@ -84,20 +238,82 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <QuestObject />
-      <FeedbackController />
+      <FeedbackController>
+        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
+        <UpdateMeshSequence>1</UpdateMeshSequence>
+      </FeedbackController>
       <SoundEmitter>
         <CollectedSounds>
           <Item>
             <Sound>214110</Sound>
           </Item>
         </CollectedSounds>
+        <ActiveSounds />
+        <DestroySounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionSounds />
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <Walking>
         <PathPlannerLayer>Water</PathPlannerLayer>
+        <SpecialMovementType>Land;HumanMovement</SpecialMovementType>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <TurnAroundRadius>2</TurnAroundRadius>
+        <Acceleration>3</Acceleration>
+        <Deceleration>6</Deceleration>
+        <TurnRadius>3</TurnRadius>
+        <TurnSpeed>90</TurnSpeed>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <TurnDeceleration>0.6</TurnDeceleration>
+        <TurnMovement>100</TurnMovement>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <ForwardSpeed>1</ForwardSpeed>
+        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
+        <CreatePathPlannerUnit>1</CreatePathPlannerUnit>
+        <CurveSegmentDensity>Medium</CurveSegmentDensity>
       </Walking>
-      <Infolayer />
+      <Infolayer>
+        <DefaultInfoLayer>0</DefaultInfoLayer>
+      </Infolayer>
     </Values>
   </Asset>
   <Asset>
@@ -108,9 +324,19 @@
         <Name>Wreckage 03 - Visual Quest Object - Unique GUID (Vicente Da Silva)</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_ship.png</IconFilename>
         <InfoDescription>1082</InfoDescription>
+        <Comments />
       </Standard>
       <Mesh>
         <MeshPlacement>OnWaterSlope</MeshPlacement>
+        <ObjectPosition>Static</ObjectPosition>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Object>
         <Variations>
@@ -119,9 +345,19 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <QuestObject />
-      <FeedbackController />
+      <FeedbackController>
+        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
+        <UpdateMeshSequence>1</UpdateMeshSequence>
+      </FeedbackController>
       <SoundEmitter>
         <VehicleSounds>
           <MovementStart>
@@ -130,9 +366,63 @@
             </Item>
           </MovementStart>
         </VehicleSounds>
+        <ActiveSounds />
+        <DestroySounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionSounds />
+        <ConstructionStreetSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
-      <Walking />
-      <Infolayer />
+      <Walking>
+        <SpecialMovementType>Land;HumanMovement</SpecialMovementType>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <PathPlannerLayer>Land</PathPlannerLayer>
+        <TurnAroundRadius>2</TurnAroundRadius>
+        <Acceleration>3</Acceleration>
+        <Deceleration>6</Deceleration>
+        <TurnRadius>3</TurnRadius>
+        <TurnSpeed>90</TurnSpeed>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <TurnDeceleration>0.6</TurnDeceleration>
+        <TurnMovement>100</TurnMovement>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <ForwardSpeed>1</ForwardSpeed>
+        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
+        <CreatePathPlannerUnit>1</CreatePathPlannerUnit>
+        <CurveSegmentDensity>Medium</CurveSegmentDensity>
+      </Walking>
+      <Infolayer>
+        <DefaultInfoLayer>0</DefaultInfoLayer>
+      </Infolayer>
     </Values>
   </Asset>
   <Asset>
@@ -143,9 +433,19 @@
         <Name>Wreckage 03 - Visual Quest Object - Unique GUID (Alonso - Saved from themselves)</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_ship.png</IconFilename>
         <InfoDescription>1082</InfoDescription>
+        <Comments />
       </Standard>
       <Mesh>
         <MeshPlacement>OnWaterSlope</MeshPlacement>
+        <ObjectPosition>Static</ObjectPosition>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Object>
         <Variations>
@@ -154,9 +454,19 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <QuestObject />
-      <FeedbackController />
+      <FeedbackController>
+        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
+        <UpdateMeshSequence>1</UpdateMeshSequence>
+      </FeedbackController>
       <SoundEmitter>
         <VehicleSounds>
           <MovementStart>
@@ -165,9 +475,63 @@
             </Item>
           </MovementStart>
         </VehicleSounds>
+        <ActiveSounds />
+        <DestroySounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionSounds />
+        <ConstructionStreetSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
-      <Walking />
-      <Infolayer />
+      <Walking>
+        <SpecialMovementType>Land;HumanMovement</SpecialMovementType>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <PathPlannerLayer>Land</PathPlannerLayer>
+        <TurnAroundRadius>2</TurnAroundRadius>
+        <Acceleration>3</Acceleration>
+        <Deceleration>6</Deceleration>
+        <TurnRadius>3</TurnRadius>
+        <TurnSpeed>90</TurnSpeed>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <TurnDeceleration>0.6</TurnDeceleration>
+        <TurnMovement>100</TurnMovement>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <ForwardSpeed>1</ForwardSpeed>
+        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
+        <CreatePathPlannerUnit>1</CreatePathPlannerUnit>
+        <CurveSegmentDensity>Medium</CurveSegmentDensity>
+      </Walking>
+      <Infolayer>
+        <DefaultInfoLayer>0</DefaultInfoLayer>
+      </Infolayer>
     </Values>
   </Asset>
   <Asset>
@@ -178,9 +542,19 @@
         <Name>Wreckage 03 - Visual Quest Object - Unique GUID (Kahina)</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_ship.png</IconFilename>
         <InfoDescription>1082</InfoDescription>
+        <Comments />
       </Standard>
       <Mesh>
         <MeshPlacement>OnWaterSlope</MeshPlacement>
+        <ObjectPosition>Static</ObjectPosition>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Object>
         <Variations>
@@ -189,9 +563,19 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <QuestObject />
-      <FeedbackController />
+      <FeedbackController>
+        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
+        <UpdateMeshSequence>1</UpdateMeshSequence>
+      </FeedbackController>
       <SoundEmitter>
         <VehicleSounds>
           <MovementStart>
@@ -200,9 +584,63 @@
             </Item>
           </MovementStart>
         </VehicleSounds>
+        <ActiveSounds />
+        <DestroySounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionSounds />
+        <ConstructionStreetSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
-      <Walking />
-      <Infolayer />
+      <Walking>
+        <SpecialMovementType>Land;HumanMovement</SpecialMovementType>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <PathPlannerLayer>Land</PathPlannerLayer>
+        <TurnAroundRadius>2</TurnAroundRadius>
+        <Acceleration>3</Acceleration>
+        <Deceleration>6</Deceleration>
+        <TurnRadius>3</TurnRadius>
+        <TurnSpeed>90</TurnSpeed>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <TurnDeceleration>0.6</TurnDeceleration>
+        <TurnMovement>100</TurnMovement>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <ForwardSpeed>1</ForwardSpeed>
+        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
+        <CreatePathPlannerUnit>1</CreatePathPlannerUnit>
+        <CurveSegmentDensity>Medium</CurveSegmentDensity>
+      </Walking>
+      <Infolayer>
+        <DefaultInfoLayer>0</DefaultInfoLayer>
+      </Infolayer>
     </Values>
   </Asset>
   <Asset>
@@ -213,9 +651,19 @@
         <Name>Wreckage 03 - Visual Quest Object</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_ship.png</IconFilename>
         <InfoDescription>1082</InfoDescription>
+        <Comments />
       </Standard>
       <Mesh>
         <MeshPlacement>OnWaterSlope</MeshPlacement>
+        <ObjectPosition>Static</ObjectPosition>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Object>
         <Variations>
@@ -224,9 +672,19 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <QuestObject />
-      <FeedbackController />
+      <FeedbackController>
+        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
+        <UpdateMeshSequence>1</UpdateMeshSequence>
+      </FeedbackController>
       <SoundEmitter>
         <VehicleSounds>
           <MovementStart>
@@ -235,11 +693,63 @@
             </Item>
           </MovementStart>
         </VehicleSounds>
+        <ActiveSounds />
+        <DestroySounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionSounds />
+        <ConstructionStreetSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <Walking>
         <PathPlannerLayer>Water</PathPlannerLayer>
+        <SpecialMovementType>Land;HumanMovement</SpecialMovementType>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <TurnAroundRadius>2</TurnAroundRadius>
+        <Acceleration>3</Acceleration>
+        <Deceleration>6</Deceleration>
+        <TurnRadius>3</TurnRadius>
+        <TurnSpeed>90</TurnSpeed>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <TurnDeceleration>0.6</TurnDeceleration>
+        <TurnMovement>100</TurnMovement>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <ForwardSpeed>1</ForwardSpeed>
+        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
+        <CreatePathPlannerUnit>1</CreatePathPlannerUnit>
+        <CurveSegmentDensity>Medium</CurveSegmentDensity>
       </Walking>
-      <Infolayer />
+      <Infolayer>
+        <DefaultInfoLayer>0</DefaultInfoLayer>
+      </Infolayer>
     </Values>
   </Asset>
   <Asset>
@@ -248,9 +758,20 @@
       <Standard>
         <GUID>103086</GUID>
         <Name>dolphin - Alonsos Damn Dolphins</Name>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Mesh>
         <MeshPlacement>OnWater</MeshPlacement>
+        <ObjectPosition>Static</ObjectPosition>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Object>
         <Variations>
@@ -259,10 +780,41 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <QuestObject />
-      <FeedbackController />
-      <SoundEmitter />
+      <FeedbackController>
+        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
+        <UpdateMeshSequence>1</UpdateMeshSequence>
+      </FeedbackController>
+      <SoundEmitter>
+        <ActiveSounds />
+        <DestroySounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionSounds />
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
+      </SoundEmitter>
       <Walking>
         <SpecialMovementType />
         <PathPlannerLayer>Animal</PathPlannerLayer>
@@ -270,8 +822,36 @@
         <TurnRadius>0.15</TurnRadius>
         <TurnSpeed>130</TurnSpeed>
         <TurnDeceleration>0</TurnDeceleration>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <TurnAroundRadius>2</TurnAroundRadius>
+        <Deceleration>6</Deceleration>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <TurnMovement>100</TurnMovement>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <ForwardSpeed>1</ForwardSpeed>
+        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
+        <CreatePathPlannerUnit>1</CreatePathPlannerUnit>
+        <CurveSegmentDensity>Medium</CurveSegmentDensity>
       </Walking>
-      <Infolayer />
+      <Infolayer>
+        <DefaultInfoLayer>0</DefaultInfoLayer>
+      </Infolayer>
     </Values>
   </Asset>
 </Assets>

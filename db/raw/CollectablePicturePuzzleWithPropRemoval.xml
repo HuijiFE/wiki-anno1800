@@ -7,19 +7,50 @@
         <GUID>102622</GUID>
         <Name>QO WildLife BlackBear</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/animals/icon_black_bear.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Collectable>
         <DestroyOnCollect>1</DestroyOnCollect>
         <CollectOnSelection>1</CollectOnSelection>
+        <OnCollect>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnCollect>
+        <PickupCursor>0</PickupCursor>
+        <DropCursor>0</DropCursor>
+        <OnScreenText>0</OnScreenText>
       </Collectable>
       <Mesh>
         <MeshPlacement>OnTerrain</MeshPlacement>
         <InitialVisibility>0</InitialVisibility>
         <ConstructionEffectDuration>0</ConstructionEffectDuration>
         <ObjectPosition>Dynamic</ObjectPosition>
+        <DefaultSequence>idle01</DefaultSequence>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Selection>
         <GUIType>Quest</GUIType>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <InteractionDistance>15</InteractionDistance>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <AllowedDragType />
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
       </Selection>
       <Object>
         <Variations>
@@ -27,8 +58,17 @@
             <Filename>data/graphics/units/wildlife/bear_black/bear_black.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <CommandQueue />
+      <CommandQueue>
+        <IsDestructable>1</IsDestructable>
+      </CommandQueue>
       <Text>
         <LocaText>
           <English>
@@ -38,9 +78,15 @@
           </English>
         </LocaText>
         <LineID>29116</LineID>
+        <Localize>1</Localize>
       </Text>
-      <Infolayer />
-      <MinimapToken />
+      <Infolayer>
+        <DefaultInfoLayer>0</DefaultInfoLayer>
+      </Infolayer>
+      <MinimapToken>
+        <TokenAsset>0</TokenAsset>
+        <StrategicMapAsset>0</StrategicMapAsset>
+      </MinimapToken>
       <QuestObject />
       <SoundEmitter>
         <CollectedSounds>
@@ -48,13 +94,45 @@
             <Sound>214111</Sound>
           </Item>
         </CollectedSounds>
+        <ActiveSounds />
+        <DestroySounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionSounds />
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <Blocking>
         <DeletePropsRadius>0</DeletePropsRadius>
         <RemovePropsRadius>2</RemovePropsRadius>
+        <HidePropsRadius>1</HidePropsRadius>
+        <GroundDecalAsset>0</GroundDecalAsset>
+        <GroundDecalInvisible>0</GroundDecalInvisible>
+        <StreetOutside>0</StreetOutside>
+        <RemoveGrass>1</RemoveGrass>
+        <BlocksBuilding>1</BlocksBuilding>
       </Blocking>
-      <FeedbackController />
-      <Trailer />
+      <FeedbackController>
+        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
+        <UpdateMeshSequence>1</UpdateMeshSequence>
+      </FeedbackController>
+      <Trailer>
+        <TrailerType>Coach</TrailerType>
+        <LinkedCfgVariations />
+        <Stiffness>0.5</Stiffness>
+      </Trailer>
     </Values>
   </Asset>
   <Asset>
@@ -64,19 +142,50 @@
         <GUID>102623</GUID>
         <Name>QO WildLife BrownBear</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/animals/icon_brown_bear.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Collectable>
         <DestroyOnCollect>1</DestroyOnCollect>
         <CollectOnSelection>1</CollectOnSelection>
+        <OnCollect>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnCollect>
+        <PickupCursor>0</PickupCursor>
+        <DropCursor>0</DropCursor>
+        <OnScreenText>0</OnScreenText>
       </Collectable>
       <Mesh>
         <MeshPlacement>OnTerrain</MeshPlacement>
         <InitialVisibility>0</InitialVisibility>
         <ConstructionEffectDuration>0</ConstructionEffectDuration>
         <ObjectPosition>Dynamic</ObjectPosition>
+        <DefaultSequence>idle01</DefaultSequence>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Selection>
         <GUIType>Quest</GUIType>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <InteractionDistance>15</InteractionDistance>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <AllowedDragType />
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
       </Selection>
       <Object>
         <Variations>
@@ -84,8 +193,17 @@
             <Filename>data/graphics/units/wildlife/bear_brown/bear_brown.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <CommandQueue />
+      <CommandQueue>
+        <IsDestructable>1</IsDestructable>
+      </CommandQueue>
       <Text>
         <LocaText>
           <English>
@@ -95,9 +213,15 @@
           </English>
         </LocaText>
         <LineID>29117</LineID>
+        <Localize>1</Localize>
       </Text>
-      <Infolayer />
-      <MinimapToken />
+      <Infolayer>
+        <DefaultInfoLayer>0</DefaultInfoLayer>
+      </Infolayer>
+      <MinimapToken>
+        <TokenAsset>0</TokenAsset>
+        <StrategicMapAsset>0</StrategicMapAsset>
+      </MinimapToken>
       <QuestObject />
       <SoundEmitter>
         <CollectedSounds>
@@ -105,13 +229,45 @@
             <Sound>214111</Sound>
           </Item>
         </CollectedSounds>
+        <ActiveSounds />
+        <DestroySounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionSounds />
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <Blocking>
         <DeletePropsRadius>0</DeletePropsRadius>
         <RemovePropsRadius>2</RemovePropsRadius>
+        <HidePropsRadius>1</HidePropsRadius>
+        <GroundDecalAsset>0</GroundDecalAsset>
+        <GroundDecalInvisible>0</GroundDecalInvisible>
+        <StreetOutside>0</StreetOutside>
+        <RemoveGrass>1</RemoveGrass>
+        <BlocksBuilding>1</BlocksBuilding>
       </Blocking>
-      <FeedbackController />
-      <Trailer />
+      <FeedbackController>
+        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
+        <UpdateMeshSequence>1</UpdateMeshSequence>
+      </FeedbackController>
+      <Trailer>
+        <TrailerType>Coach</TrailerType>
+        <LinkedCfgVariations />
+        <Stiffness>0.5</Stiffness>
+      </Trailer>
     </Values>
   </Asset>
   <Asset>
@@ -121,19 +277,50 @@
         <GUID>102624</GUID>
         <Name>QO WildLife Deer</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/animals/icon_deer.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Collectable>
         <DestroyOnCollect>1</DestroyOnCollect>
         <CollectOnSelection>1</CollectOnSelection>
+        <OnCollect>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnCollect>
+        <PickupCursor>0</PickupCursor>
+        <DropCursor>0</DropCursor>
+        <OnScreenText>0</OnScreenText>
       </Collectable>
       <Mesh>
         <MeshPlacement>OnTerrain</MeshPlacement>
         <InitialVisibility>0</InitialVisibility>
         <ConstructionEffectDuration>0</ConstructionEffectDuration>
         <ObjectPosition>Dynamic</ObjectPosition>
+        <DefaultSequence>idle01</DefaultSequence>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Selection>
         <GUIType>Quest</GUIType>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <InteractionDistance>15</InteractionDistance>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <AllowedDragType />
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
       </Selection>
       <Object>
         <Variations>
@@ -141,8 +328,17 @@
             <Filename>data/graphics/units/wildlife/deer/Deer.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <CommandQueue />
+      <CommandQueue>
+        <IsDestructable>1</IsDestructable>
+      </CommandQueue>
       <Text>
         <LocaText>
           <English>
@@ -152,9 +348,15 @@
           </English>
         </LocaText>
         <LineID>29118</LineID>
+        <Localize>1</Localize>
       </Text>
-      <Infolayer />
-      <MinimapToken />
+      <Infolayer>
+        <DefaultInfoLayer>0</DefaultInfoLayer>
+      </Infolayer>
+      <MinimapToken>
+        <TokenAsset>0</TokenAsset>
+        <StrategicMapAsset>0</StrategicMapAsset>
+      </MinimapToken>
       <QuestObject />
       <SoundEmitter>
         <CollectedSounds>
@@ -162,13 +364,45 @@
             <Sound>214111</Sound>
           </Item>
         </CollectedSounds>
+        <ActiveSounds />
+        <DestroySounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionSounds />
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <Blocking>
         <DeletePropsRadius>0</DeletePropsRadius>
         <RemovePropsRadius>2</RemovePropsRadius>
+        <HidePropsRadius>1</HidePropsRadius>
+        <GroundDecalAsset>0</GroundDecalAsset>
+        <GroundDecalInvisible>0</GroundDecalInvisible>
+        <StreetOutside>0</StreetOutside>
+        <RemoveGrass>1</RemoveGrass>
+        <BlocksBuilding>1</BlocksBuilding>
       </Blocking>
-      <FeedbackController />
-      <Trailer />
+      <FeedbackController>
+        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
+        <UpdateMeshSequence>1</UpdateMeshSequence>
+      </FeedbackController>
+      <Trailer>
+        <TrailerType>Coach</TrailerType>
+        <LinkedCfgVariations />
+        <Stiffness>0.5</Stiffness>
+      </Trailer>
     </Values>
   </Asset>
   <Asset>
@@ -178,19 +412,50 @@
         <GUID>102625</GUID>
         <Name>QO WildLife Wolf</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/animals/icon_wolf.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Collectable>
         <DestroyOnCollect>1</DestroyOnCollect>
         <CollectOnSelection>1</CollectOnSelection>
+        <OnCollect>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnCollect>
+        <PickupCursor>0</PickupCursor>
+        <DropCursor>0</DropCursor>
+        <OnScreenText>0</OnScreenText>
       </Collectable>
       <Mesh>
         <MeshPlacement>OnTerrain</MeshPlacement>
         <InitialVisibility>0</InitialVisibility>
         <ConstructionEffectDuration>0</ConstructionEffectDuration>
         <ObjectPosition>Dynamic</ObjectPosition>
+        <DefaultSequence>idle01</DefaultSequence>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Selection>
         <GUIType>Quest</GUIType>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <InteractionDistance>15</InteractionDistance>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <AllowedDragType />
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
       </Selection>
       <Object>
         <Variations>
@@ -198,8 +463,17 @@
             <Filename>data/graphics/units/wildlife/wolf/wolf.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <CommandQueue />
+      <CommandQueue>
+        <IsDestructable>1</IsDestructable>
+      </CommandQueue>
       <Text>
         <LocaText>
           <English>
@@ -209,9 +483,15 @@
           </English>
         </LocaText>
         <LineID>29119</LineID>
+        <Localize>1</Localize>
       </Text>
-      <Infolayer />
-      <MinimapToken />
+      <Infolayer>
+        <DefaultInfoLayer>0</DefaultInfoLayer>
+      </Infolayer>
+      <MinimapToken>
+        <TokenAsset>0</TokenAsset>
+        <StrategicMapAsset>0</StrategicMapAsset>
+      </MinimapToken>
       <QuestObject />
       <SoundEmitter>
         <CollectedSounds>
@@ -219,13 +499,45 @@
             <Sound>214111</Sound>
           </Item>
         </CollectedSounds>
+        <ActiveSounds />
+        <DestroySounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionSounds />
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <Blocking>
         <DeletePropsRadius>0</DeletePropsRadius>
         <RemovePropsRadius>2</RemovePropsRadius>
+        <HidePropsRadius>1</HidePropsRadius>
+        <GroundDecalAsset>0</GroundDecalAsset>
+        <GroundDecalInvisible>0</GroundDecalInvisible>
+        <StreetOutside>0</StreetOutside>
+        <RemoveGrass>1</RemoveGrass>
+        <BlocksBuilding>1</BlocksBuilding>
       </Blocking>
-      <FeedbackController />
-      <Trailer />
+      <FeedbackController>
+        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
+        <UpdateMeshSequence>1</UpdateMeshSequence>
+      </FeedbackController>
+      <Trailer>
+        <TrailerType>Coach</TrailerType>
+        <LinkedCfgVariations />
+        <Stiffness>0.5</Stiffness>
+      </Trailer>
     </Values>
   </Asset>
   <Asset>
@@ -235,33 +547,83 @@
         <GUID>100771</GUID>
         <Name>QO_Crate_Land</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/narative_item/icon_crates.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Collectable>
         <DestroyOnCollect>1</DestroyOnCollect>
         <CollectOnSelection>1</CollectOnSelection>
+        <OnCollect>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnCollect>
+        <PickupCursor>0</PickupCursor>
+        <DropCursor>0</DropCursor>
+        <OnScreenText>0</OnScreenText>
       </Collectable>
       <Mesh>
         <MeshPlacement>OnTerrain</MeshPlacement>
         <ObjectPosition>Dynamic</ObjectPosition>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
-      <Selection />
+      <Selection>
+        <GUIType>Residence</GUIType>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <InteractionDistance>15</InteractionDistance>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <AllowedDragType />
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
+      </Selection>
       <Object>
         <Variations>
           <Item>
             <Filename>data/graphics/quest/objects/box_stack/box_stack.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <CommandQueue />
+      <CommandQueue>
+        <IsDestructable>1</IsDestructable>
+      </CommandQueue>
       <Text>
         <LocaText>
           <English>
             <Text>Crate</Text>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
-      <Infolayer />
-      <MinimapToken />
+      <Infolayer>
+        <DefaultInfoLayer>0</DefaultInfoLayer>
+      </Infolayer>
+      <MinimapToken>
+        <TokenAsset>0</TokenAsset>
+        <StrategicMapAsset>0</StrategicMapAsset>
+      </MinimapToken>
       <QuestObject />
       <SoundEmitter>
         <CollectedSounds>
@@ -269,13 +631,45 @@
             <Sound>214111</Sound>
           </Item>
         </CollectedSounds>
+        <ActiveSounds />
+        <DestroySounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionSounds />
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <Blocking>
         <DeletePropsRadius>0</DeletePropsRadius>
         <RemovePropsRadius>2</RemovePropsRadius>
+        <HidePropsRadius>1</HidePropsRadius>
+        <GroundDecalAsset>0</GroundDecalAsset>
+        <GroundDecalInvisible>0</GroundDecalInvisible>
+        <StreetOutside>0</StreetOutside>
+        <RemoveGrass>1</RemoveGrass>
+        <BlocksBuilding>1</BlocksBuilding>
       </Blocking>
-      <FeedbackController />
-      <Trailer />
+      <FeedbackController>
+        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
+        <UpdateMeshSequence>1</UpdateMeshSequence>
+      </FeedbackController>
+      <Trailer>
+        <TrailerType>Coach</TrailerType>
+        <LinkedCfgVariations />
+        <Stiffness>0.5</Stiffness>
+      </Trailer>
     </Values>
   </Asset>
   <Asset>
@@ -285,18 +679,50 @@
         <GUID>102515</GUID>
         <Name>QO_Alonsos_Men</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/narative_item/icon_alonsos_diciples.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Collectable>
         <DestroyOnCollect>1</DestroyOnCollect>
         <CollectOnSelection>1</CollectOnSelection>
+        <OnCollect>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnCollect>
+        <PickupCursor>0</PickupCursor>
+        <DropCursor>0</DropCursor>
+        <OnScreenText>0</OnScreenText>
       </Collectable>
       <Mesh>
         <MeshPlacement>OnTerrain</MeshPlacement>
         <DefaultSequence>default</DefaultSequence>
         <ObjectPosition>Dynamic</ObjectPosition>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Selection>
         <GUIType>Quest</GUIType>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <InteractionDistance>15</InteractionDistance>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <AllowedDragType />
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
       </Selection>
       <Object>
         <Variations>
@@ -305,8 +731,16 @@
           </Item>
         </Variations>
         <DefaultParticipant>Second_ai_08_Gravez</DefaultParticipant>
+        <Type>GameObject</Type>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <CommandQueue />
+      <CommandQueue>
+        <IsDestructable>1</IsDestructable>
+      </CommandQueue>
       <Text>
         <LocaText>
           <English>
@@ -316,17 +750,57 @@
           </English>
         </LocaText>
         <LineID>29861</LineID>
+        <Localize>1</Localize>
       </Text>
-      <Infolayer />
-      <MinimapToken />
+      <Infolayer>
+        <DefaultInfoLayer>0</DefaultInfoLayer>
+      </Infolayer>
+      <MinimapToken>
+        <TokenAsset>0</TokenAsset>
+        <StrategicMapAsset>0</StrategicMapAsset>
+      </MinimapToken>
       <QuestObject />
-      <SoundEmitter />
+      <SoundEmitter>
+        <ActiveSounds />
+        <DestroySounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionSounds />
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
+      </SoundEmitter>
       <Blocking>
         <DeletePropsRadius>0</DeletePropsRadius>
         <RemovePropsRadius>2</RemovePropsRadius>
+        <HidePropsRadius>1</HidePropsRadius>
+        <GroundDecalAsset>0</GroundDecalAsset>
+        <GroundDecalInvisible>0</GroundDecalInvisible>
+        <StreetOutside>0</StreetOutside>
+        <RemoveGrass>1</RemoveGrass>
+        <BlocksBuilding>1</BlocksBuilding>
       </Blocking>
-      <FeedbackController />
-      <Trailer />
+      <FeedbackController>
+        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
+        <UpdateMeshSequence>1</UpdateMeshSequence>
+      </FeedbackController>
+      <Trailer>
+        <TrailerType>Coach</TrailerType>
+        <LinkedCfgVariations />
+        <Stiffness>0.5</Stiffness>
+      </Trailer>
     </Values>
   </Asset>
   <Asset>
@@ -336,24 +810,68 @@
         <GUID>103106</GUID>
         <Name>Qing Flower collection</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/ornaments/icon_general_park_ornament.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Collectable>
         <DestroyOnCollect>1</DestroyOnCollect>
         <CollectOnSelection>1</CollectOnSelection>
+        <OnCollect>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnCollect>
+        <PickupCursor>0</PickupCursor>
+        <DropCursor>0</DropCursor>
+        <OnScreenText>0</OnScreenText>
       </Collectable>
       <Mesh>
         <MeshPlacement>OnTerrain</MeshPlacement>
         <ObjectPosition>Dynamic</ObjectPosition>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
-      <Selection />
+      <Selection>
+        <GUIType>Residence</GUIType>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <InteractionDistance>15</InteractionDistance>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <AllowedDragType />
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
+      </Selection>
       <Object>
         <Variations>
           <Item>
             <Filename>data/graphics/quest/objects/volontaryquests/quing/mountain_flowers.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <CommandQueue />
+      <CommandQueue>
+        <IsDestructable>1</IsDestructable>
+      </CommandQueue>
       <Text>
         <LocaText>
           <English>
@@ -363,9 +881,15 @@
           </English>
         </LocaText>
         <LineID>30120</LineID>
+        <Localize>1</Localize>
       </Text>
-      <Infolayer />
-      <MinimapToken />
+      <Infolayer>
+        <DefaultInfoLayer>0</DefaultInfoLayer>
+      </Infolayer>
+      <MinimapToken>
+        <TokenAsset>0</TokenAsset>
+        <StrategicMapAsset>0</StrategicMapAsset>
+      </MinimapToken>
       <QuestObject />
       <SoundEmitter>
         <CollectedSounds>
@@ -373,13 +897,45 @@
             <Sound>214111</Sound>
           </Item>
         </CollectedSounds>
+        <ActiveSounds />
+        <DestroySounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionSounds />
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <Blocking>
         <DeletePropsRadius>0</DeletePropsRadius>
         <RemovePropsRadius>2</RemovePropsRadius>
+        <HidePropsRadius>1</HidePropsRadius>
+        <GroundDecalAsset>0</GroundDecalAsset>
+        <GroundDecalInvisible>0</GroundDecalInvisible>
+        <StreetOutside>0</StreetOutside>
+        <RemoveGrass>1</RemoveGrass>
+        <BlocksBuilding>1</BlocksBuilding>
       </Blocking>
-      <FeedbackController />
-      <Trailer />
+      <FeedbackController>
+        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
+        <UpdateMeshSequence>1</UpdateMeshSequence>
+      </FeedbackController>
+      <Trailer>
+        <TrailerType>Coach</TrailerType>
+        <LinkedCfgVariations />
+        <Stiffness>0.5</Stiffness>
+      </Trailer>
     </Values>
   </Asset>
 </Assets>

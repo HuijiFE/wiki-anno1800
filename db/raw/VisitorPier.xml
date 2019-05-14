@@ -9,6 +9,7 @@
         <IconFilename>data/ui/2kimages/main/3dicons/icon_visitor_harbour.png</IconFilename>
         <ID>TourismPier</ID>
         <InfoDescription>2463</InfoDescription>
+        <Comments />
       </Standard>
       <Building>
         <BuildingCategoryName>11150</BuildingCategoryName>
@@ -16,15 +17,38 @@
         <SnapRadius>4</SnapRadius>
         <TerrainType>Coast</TerrainType>
         <AssociatedRegions>Moderate</AssociatedRegions>
+        <BuildingType>Other</BuildingType>
+        <Destructable>1</Destructable>
+        <Movable>1</Movable>
+        <ConstructionMenuText>0</ConstructionMenuText>
+        <HasBorderRectOutline>1</HasBorderRectOutline>
+        <InfluencedByNeighbors />
+        <InfluencedVariationDirection />
+        <BuildingBlockPool />
+        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
       <Blocking>
         <GroundDecalAsset>100446</GroundDecalAsset>
         <GroundDecalInvisible>101008</GroundDecalInvisible>
         <HasBuildingBaseTiles>1</HasBuildingBaseTiles>
         <HarbourAreaExpand>1</HarbourAreaExpand>
+        <HidePropsRadius>1</HidePropsRadius>
+        <DeletePropsRadius>1</DeletePropsRadius>
+        <StreetOutside>0</StreetOutside>
+        <RemoveGrass>1</RemoveGrass>
+        <BlocksBuilding>1</BlocksBuilding>
       </Blocking>
       <Mesh>
         <DefaultSequence>default</DefaultSequence>
+        <ObjectPosition>Static</ObjectPosition>
+        <MeshPlacement>Default</MeshPlacement>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Object>
         <Variations>
@@ -32,6 +56,13 @@
             <Filename>data/graphics/buildings/special/harbor_09/harbor_09_03.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <AmbientMoodProvider>
         <IslandAttractivityDependentMurmur>
@@ -48,10 +79,35 @@
             <Murmur>TouristsHighAttractiveness</Murmur>
           </Item>
         </IslandAttractivityDependentMurmur>
+        <AmbientMood>None</AmbientMood>
+        <Murmur>None</Murmur>
+        <AttractivityDependentMurmur />
+        <ProductivityDependentMurmur />
+        <SatisfactionDependentMurmur />
+        <DynamicEnvironmentType>None</DynamicEnvironmentType>
+        <HappinessDependentMurmur />
       </AmbientMoodProvider>
-      <Constructable />
+      <Constructable>
+        <ConstructionMode>Default</ConstructionMode>
+        <DestructionCategory>Other</DestructionCategory>
+        <DestructionType>0</DestructionType>
+      </Constructable>
       <Selection>
         <GUIType>VisitorHarbor</GUIType>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <InteractionDistance>15</InteractionDistance>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <AllowedDragType />
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
       </Selection>
       <Text>
         <LocaText>
@@ -62,6 +118,7 @@
           </English>
         </LocaText>
         <LineID>7023</LineID>
+        <Localize>1</Localize>
       </Text>
       <Cost>
         <Costs>
@@ -89,15 +146,25 @@
             <Ingredient>1010202</Ingredient>
           </Item>
         </Costs>
+        <ItemsPerCost>1</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
       </Cost>
       <VisitorHarbor>
         <UpgradeRequirementCityStatus>5</UpgradeRequirementCityStatus>
+        <SpawnProbabilityBase>1</SpawnProbabilityBase>
       </VisitorHarbor>
-      <Infolayer />
+      <Infolayer>
+        <DefaultInfoLayer>0</DefaultInfoLayer>
+      </Infolayer>
       <IslandUnique>
         <UniqueType>VisitorHarbor</UniqueType>
       </IslandUnique>
-      <Locked />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
       <Attackable>
         <MaximumHitPoints>5000</MaximumHitPoints>
         <HPBarOffset>5</HPBarOffset>
@@ -121,6 +188,8 @@
         <ExplosionEffects>
           <Item />
         </ExplosionEffects>
+        <SelfHealPausedTimeIfAttacked>15000</SelfHealPausedTimeIfAttacked>
+        <ArmorType>Default</ArmorType>
       </Attackable>
       <Maintenance>
         <Maintenances>
@@ -130,6 +199,8 @@
             <InactiveAmount>400</InactiveAmount>
           </Item>
         </Maintenances>
+        <MaintenanceAmountFactor>1</MaintenanceAmountFactor>
+        <WorkforceAmountFactor>1</WorkforceAmountFactor>
       </Maintenance>
       <SoundEmitter>
         <ActiveSounds>
@@ -179,14 +250,36 @@
             <Sound>9818756</Sound>
           </Item>
         </DestroySounds>
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <Pausable />
       <UpgradeList />
       <Culture>
         <CultureType>NatureBonus</CultureType>
+        <SetPages />
+        <UndiscoveredSet>0</UndiscoveredSet>
+        <ModuleListHeader>0</ModuleListHeader>
+        <OpenSetPages>0</OpenSetPages>
       </Culture>
       <StreetActivation />
-      <FeedbackController />
+      <FeedbackController>
+        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
+        <UpdateMeshSequence>1</UpdateMeshSequence>
+      </FeedbackController>
     </Values>
   </Asset>
   <Asset>
@@ -197,6 +290,7 @@
         <Name>harbor_colony01_09 (tourism_pier_01)</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_visitor_harbour.png</IconFilename>
         <InfoDescription>2463</InfoDescription>
+        <Comments />
       </Standard>
       <Building>
         <BuildingCategoryName>11150</BuildingCategoryName>
@@ -204,25 +298,84 @@
         <SnapRadius>4</SnapRadius>
         <TerrainType>Coast</TerrainType>
         <AssociatedRegions>Colony01</AssociatedRegions>
+        <BuildingType>Other</BuildingType>
+        <Destructable>1</Destructable>
+        <Movable>1</Movable>
+        <ConstructionMenuText>0</ConstructionMenuText>
+        <HasBorderRectOutline>1</HasBorderRectOutline>
+        <InfluencedByNeighbors />
+        <InfluencedVariationDirection />
+        <BuildingBlockPool />
+        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
       <Blocking>
         <GroundDecalAsset>102460</GroundDecalAsset>
         <GroundDecalInvisible>102459</GroundDecalInvisible>
         <HasBuildingBaseTiles>1</HasBuildingBaseTiles>
         <HarbourAreaExpand>1</HarbourAreaExpand>
+        <HidePropsRadius>1</HidePropsRadius>
+        <DeletePropsRadius>1</DeletePropsRadius>
+        <StreetOutside>0</StreetOutside>
+        <RemoveGrass>1</RemoveGrass>
+        <BlocksBuilding>1</BlocksBuilding>
       </Blocking>
-      <Mesh />
+      <Mesh>
+        <ObjectPosition>Static</ObjectPosition>
+        <MeshPlacement>Default</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
+      </Mesh>
       <Object>
         <Variations>
           <Item>
             <Filename>data/graphics/buildings/special/harbor_09_colony01/harbor_09_colony01_01.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <AmbientMoodProvider />
-      <Constructable />
+      <AmbientMoodProvider>
+        <AmbientMood>None</AmbientMood>
+        <Murmur>None</Murmur>
+        <AttractivityDependentMurmur />
+        <ProductivityDependentMurmur />
+        <SatisfactionDependentMurmur />
+        <DynamicEnvironmentType>None</DynamicEnvironmentType>
+        <HappinessDependentMurmur />
+        <IslandAttractivityDependentMurmur />
+      </AmbientMoodProvider>
+      <Constructable>
+        <ConstructionMode>Default</ConstructionMode>
+        <DestructionCategory>Other</DestructionCategory>
+        <DestructionType>0</DestructionType>
+      </Constructable>
       <Selection>
         <GUIType>VisitorHarbor</GUIType>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <InteractionDistance>15</InteractionDistance>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <AllowedDragType />
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
       </Selection>
       <Text>
         <LocaText>
@@ -233,6 +386,7 @@
           </English>
         </LocaText>
         <LineID>20114</LineID>
+        <Localize>1</Localize>
       </Text>
       <Cost>
         <Costs>
@@ -258,15 +412,25 @@
             <Ingredient>1010202</Ingredient>
           </Item>
         </Costs>
+        <ItemsPerCost>1</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
       </Cost>
       <VisitorHarbor>
         <UpgradeRequirementCityStatus>5</UpgradeRequirementCityStatus>
+        <SpawnProbabilityBase>1</SpawnProbabilityBase>
       </VisitorHarbor>
-      <Infolayer />
+      <Infolayer>
+        <DefaultInfoLayer>0</DefaultInfoLayer>
+      </Infolayer>
       <IslandUnique>
         <UniqueType>VisitorHarbor</UniqueType>
       </IslandUnique>
-      <Locked />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
       <Attackable>
         <MaximumHitPoints>2000</MaximumHitPoints>
         <HPBarOffset>6.5</HPBarOffset>
@@ -290,6 +454,8 @@
         <ExplosionEffects>
           <Item />
         </ExplosionEffects>
+        <SelfHealPausedTimeIfAttacked>15000</SelfHealPausedTimeIfAttacked>
+        <ArmorType>Default</ArmorType>
       </Attackable>
       <Maintenance>
         <Maintenances>
@@ -299,6 +465,8 @@
             <InactiveAmount>250</InactiveAmount>
           </Item>
         </Maintenances>
+        <MaintenanceAmountFactor>1</MaintenanceAmountFactor>
+        <WorkforceAmountFactor>1</WorkforceAmountFactor>
       </Maintenance>
       <SoundEmitter>
         <ConstructionSounds>
@@ -338,14 +506,38 @@
             <Sound>9818756</Sound>
           </Item>
         </DestroySounds>
+        <ActiveSounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <Pausable />
       <UpgradeList />
       <Culture>
         <CultureType>NatureBonus</CultureType>
+        <SetPages />
+        <UndiscoveredSet>0</UndiscoveredSet>
+        <ModuleListHeader>0</ModuleListHeader>
+        <OpenSetPages>0</OpenSetPages>
       </Culture>
       <StreetActivation />
-      <FeedbackController />
+      <FeedbackController>
+        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
+        <UpdateMeshSequence>1</UpdateMeshSequence>
+      </FeedbackController>
     </Values>
   </Asset>
 </Assets>

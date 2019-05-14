@@ -8,15 +8,33 @@
         <Name>heavy_10_field (Oil Pump)</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_oil_rig.png</IconFilename>
         <InfoDescription>12658</InfoDescription>
+        <Comments />
       </Standard>
       <Building>
         <BuildModeRandomRotation>90</BuildModeRandomRotation>
         <AssociatedRegions>Moderate</AssociatedRegions>
         <BuildingType>BuildingModule</BuildingType>
         <BuildingCategoryName>12717</BuildingCategoryName>
+        <Destructable>1</Destructable>
+        <Movable>1</Movable>
+        <PickingAsset>0</PickingAsset>
+        <ConstructionMenuText>0</ConstructionMenuText>
+        <HasBorderRectOutline>1</HasBorderRectOutline>
+        <SnapRadius>2</SnapRadius>
+        <TerrainType>Terrain</TerrainType>
+        <InfluencedByNeighbors />
+        <InfluencedVariationDirection />
+        <BuildingBlockPool />
+        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
       <Blocking>
         <RemoveGrass>0</RemoveGrass>
+        <HidePropsRadius>1</HidePropsRadius>
+        <DeletePropsRadius>1</DeletePropsRadius>
+        <GroundDecalAsset>0</GroundDecalAsset>
+        <GroundDecalInvisible>0</GroundDecalInvisible>
+        <StreetOutside>0</StreetOutside>
+        <BlocksBuilding>1</BlocksBuilding>
       </Blocking>
       <Cost>
         <Costs>
@@ -43,6 +61,9 @@
             <Ingredient>1010202</Ingredient>
           </Item>
         </Costs>
+        <ItemsPerCost>1</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
       </Cost>
       <Object>
         <Variations>
@@ -51,10 +72,42 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <Mesh />
+      <Mesh>
+        <ObjectPosition>Static</ObjectPosition>
+        <MeshPlacement>Default</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
+      </Mesh>
       <Selection>
         <GUIType>Generic</GUIType>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <InteractionDistance>15</InteractionDistance>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <AllowedDragType />
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
       </Selection>
       <Text>
         <LocaText>
@@ -65,12 +118,17 @@
           </English>
         </LocaText>
         <LineID>11032</LineID>
+        <Localize>1</Localize>
       </Text>
       <Constructable>
         <DestructionCategory>Production</DestructionCategory>
+        <ConstructionMode>Default</ConstructionMode>
+        <DestructionType>0</DestructionType>
       </Constructable>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
       <SoundEmitter>
         <DestroySounds>
@@ -100,18 +158,63 @@
             </Item>
           </BuildMoveEnd>
         </ConstructionSounds>
+        <ActiveSounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
-      <FeedbackController />
-      <Infolayer />
+      <FeedbackController>
+        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
+        <UpdateMeshSequence>1</UpdateMeshSequence>
+      </FeedbackController>
+      <Infolayer>
+        <DefaultInfoLayer>0</DefaultInfoLayer>
+      </Infolayer>
       <Slot>
         <SnapsToSlot>1</SnapsToSlot>
         <SlotType>Oil</SlotType>
+        <WorkArea>0</WorkArea>
+        <SlotCategoryName>12718</SlotCategoryName>
       </Slot>
-      <AmbientMoodProvider />
+      <AmbientMoodProvider>
+        <AmbientMood>None</AmbientMood>
+        <Murmur>None</Murmur>
+        <AttractivityDependentMurmur />
+        <ProductivityDependentMurmur />
+        <SatisfactionDependentMurmur />
+        <DynamicEnvironmentType>None</DynamicEnvironmentType>
+        <HappinessDependentMurmur />
+        <IslandAttractivityDependentMurmur />
+      </AmbientMoodProvider>
       <Attackable>
         <MaximumHitPoints>500</MaximumHitPoints>
+        <HPBarOffset>6</HPBarOffset>
+        <PausedTimeIfAttacked>15000</PausedTimeIfAttacked>
+        <SelfHealPerHealTick>2</SelfHealPerHealTick>
+        <SelfHealPausedTimeIfAttacked>15000</SelfHealPausedTimeIfAttacked>
+        <ArmorType>Default</ArmorType>
+        <TakeOverEffect>Never</TakeOverEffect>
+        <IslandWarFlag>0</IslandWarFlag>
+        <RuinSmokeParticles />
+        <ExplosionEffects />
       </Attackable>
-      <BuildingModule />
+      <BuildingModule>
+        <BaseModule>0</BaseModule>
+      </BuildingModule>
     </Values>
   </Asset>
   <Asset>
@@ -122,15 +225,33 @@
         <Name>heavy_colony01_01_field (Oil Pump)</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_oil_rig.png</IconFilename>
         <InfoDescription>12658</InfoDescription>
+        <Comments />
       </Standard>
       <Building>
         <BuildModeRandomRotation>90</BuildModeRandomRotation>
         <AssociatedRegions>Colony01</AssociatedRegions>
         <BuildingType>BuildingModule</BuildingType>
         <BuildingCategoryName>12717</BuildingCategoryName>
+        <Destructable>1</Destructable>
+        <Movable>1</Movable>
+        <PickingAsset>0</PickingAsset>
+        <ConstructionMenuText>0</ConstructionMenuText>
+        <HasBorderRectOutline>1</HasBorderRectOutline>
+        <SnapRadius>2</SnapRadius>
+        <TerrainType>Terrain</TerrainType>
+        <InfluencedByNeighbors />
+        <InfluencedVariationDirection />
+        <BuildingBlockPool />
+        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
       <Blocking>
         <RemoveGrass>0</RemoveGrass>
+        <HidePropsRadius>1</HidePropsRadius>
+        <DeletePropsRadius>1</DeletePropsRadius>
+        <GroundDecalAsset>0</GroundDecalAsset>
+        <GroundDecalInvisible>0</GroundDecalInvisible>
+        <StreetOutside>0</StreetOutside>
+        <BlocksBuilding>1</BlocksBuilding>
       </Blocking>
       <Cost>
         <Costs>
@@ -157,6 +278,9 @@
             <Ingredient>1010202</Ingredient>
           </Item>
         </Costs>
+        <ItemsPerCost>1</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
       </Cost>
       <Object>
         <Variations>
@@ -165,10 +289,42 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <Mesh />
+      <Mesh>
+        <ObjectPosition>Static</ObjectPosition>
+        <MeshPlacement>Default</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
+      </Mesh>
       <Selection>
         <GUIType>Generic</GUIType>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <InteractionDistance>15</InteractionDistance>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <AllowedDragType />
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
       </Selection>
       <Text>
         <LocaText>
@@ -179,12 +335,17 @@
           </English>
         </LocaText>
         <LineID>5313</LineID>
+        <Localize>1</Localize>
       </Text>
       <Constructable>
         <DestructionCategory>Production</DestructionCategory>
+        <ConstructionMode>Default</ConstructionMode>
+        <DestructionType>0</DestructionType>
       </Constructable>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
       <SoundEmitter>
         <ConstructionSounds>
@@ -228,20 +389,63 @@
             <Sound>9818756</Sound>
           </Item>
         </DestroySounds>
+        <ActiveSounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
-      <FeedbackController />
-      <Infolayer />
+      <FeedbackController>
+        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
+        <UpdateMeshSequence>1</UpdateMeshSequence>
+      </FeedbackController>
+      <Infolayer>
+        <DefaultInfoLayer>0</DefaultInfoLayer>
+      </Infolayer>
       <Slot>
         <SnapsToSlot>1</SnapsToSlot>
         <SlotType>Oil</SlotType>
+        <WorkArea>0</WorkArea>
+        <SlotCategoryName>12718</SlotCategoryName>
       </Slot>
       <AmbientMoodProvider>
         <AmbientMood>IndustryHeavy</AmbientMood>
+        <Murmur>None</Murmur>
+        <AttractivityDependentMurmur />
+        <ProductivityDependentMurmur />
+        <SatisfactionDependentMurmur />
+        <DynamicEnvironmentType>None</DynamicEnvironmentType>
+        <HappinessDependentMurmur />
+        <IslandAttractivityDependentMurmur />
       </AmbientMoodProvider>
       <Attackable>
         <MaximumHitPoints>500</MaximumHitPoints>
+        <HPBarOffset>6</HPBarOffset>
+        <PausedTimeIfAttacked>15000</PausedTimeIfAttacked>
+        <SelfHealPerHealTick>2</SelfHealPerHealTick>
+        <SelfHealPausedTimeIfAttacked>15000</SelfHealPausedTimeIfAttacked>
+        <ArmorType>Default</ArmorType>
+        <TakeOverEffect>Never</TakeOverEffect>
+        <IslandWarFlag>0</IslandWarFlag>
+        <RuinSmokeParticles />
+        <ExplosionEffects />
       </Attackable>
-      <BuildingModule />
+      <BuildingModule>
+        <BaseModule>0</BaseModule>
+      </BuildingModule>
     </Values>
   </Asset>
 </Assets>

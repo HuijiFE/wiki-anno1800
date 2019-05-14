@@ -10,23 +10,17 @@ namespace Anno1800.Jsonify {
     class ItemCategory : BaseAssetObject {
       [Element("CategoryAsset")]
       public int category;
+      [Element("ItemTypes")]
       public List<string> types;
 
-      public ItemCategory(XElement element) : base(element) {
-        this.types = (element.String("ItemTypes") ?? "").Split(';').ToList();
-      }
+      public ItemCategory(XElement element) : base(element) { }
     }
 
     class ItemFilterData : BaseAssetObject {
       public List<ItemCategory> categories;
 
       public ItemFilterData(XElement element) : base(element) {
-        this.categories = element
-          .Element("ItemCategories")
-          ?.Elements()
-          .Select(item => new ItemCategory(item))
-          .ToList()
-          ?? new List<ItemCategory>();
+        this.categories = element.ListOf("ItemCategories", item => new ItemCategory(item));
       }
     }
 
@@ -45,11 +39,7 @@ namespace Anno1800.Jsonify {
       public List<int> products;
 
       public ProductCategory(XElement element) : base(element) {
-        this.products = element
-          .Element("Products")
-          .Elements()
-          .Select(item => item.Int("Product"))
-          .ToList();
+        this.products = element.ListOf("Products", item => item.Int("Product"));
       }
     }
 
@@ -57,12 +47,7 @@ namespace Anno1800.Jsonify {
       public List<ProductCategory> categories;
 
       public ProductFilterData(XElement element) : base(element) {
-        this.categories = element
-          .Element("Categories")
-          ?.Elements()
-          .Select(item => new ProductCategory(item))
-          .ToList()
-          ?? new List<ProductCategory>();
+        this.categories = element.ListOf("Categories", item => new ProductCategory(item));
       }
     }
 

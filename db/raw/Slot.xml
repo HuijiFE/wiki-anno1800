@@ -8,8 +8,17 @@
         <Name>mining_01_slot (Coal Mine Slot)</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_coal_2.png</IconFilename>
         <InfoDescription>11880</InfoDescription>
+        <Comments />
       </Standard>
-      <Blocking />
+      <Blocking>
+        <HidePropsRadius>1</HidePropsRadius>
+        <DeletePropsRadius>1</DeletePropsRadius>
+        <GroundDecalAsset>0</GroundDecalAsset>
+        <GroundDecalInvisible>0</GroundDecalInvisible>
+        <StreetOutside>0</StreetOutside>
+        <RemoveGrass>1</RemoveGrass>
+        <BlocksBuilding>1</BlocksBuilding>
+      </Blocking>
       <Object>
         <Variations>
           <Item>
@@ -23,15 +32,49 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <Mesh />
+      <Mesh>
+        <ObjectPosition>Static</ObjectPosition>
+        <MeshPlacement>Default</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
+      </Mesh>
       <Slot>
         <SlotType>Coal</SlotType>
         <AutoChangeVariation>1</AutoChangeVariation>
         <WorkAreaPathSnapDummy>workareapath</WorkAreaPathSnapDummy>
+        <WorkArea>0</WorkArea>
+        <SlotCategoryName>12718</SlotCategoryName>
       </Slot>
       <Selection>
         <GUIType>Generic</GUIType>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <InteractionDistance>15</InteractionDistance>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <AllowedDragType />
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
       </Selection>
       <Text>
         <LocaText>
@@ -42,15 +85,31 @@
           </English>
         </LocaText>
         <LineID>5273</LineID>
+        <Localize>1</Localize>
       </Text>
       <MinimapToken>
         <TokenAsset>2002226</TokenAsset>
+        <StrategicMapAsset>0</StrategicMapAsset>
       </MinimapToken>
-      <RandomMapObject />
+      <RandomMapObject>
+        <Replacements />
+        <MapGeneratorSlotCountOverride />
+      </RandomMapObject>
       <Building>
         <AssociatedRegions>Moderate</AssociatedRegions>
         <BuildingCategoryName>12718</BuildingCategoryName>
         <Destructable>0</Destructable>
+        <BuildingType>Other</BuildingType>
+        <Movable>1</Movable>
+        <PickingAsset>0</PickingAsset>
+        <ConstructionMenuText>0</ConstructionMenuText>
+        <HasBorderRectOutline>1</HasBorderRectOutline>
+        <SnapRadius>2</SnapRadius>
+        <TerrainType>Terrain</TerrainType>
+        <InfluencedByNeighbors />
+        <InfluencedVariationDirection />
+        <BuildingBlockPool />
+        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
       <SoundEmitter>
         <ConstructionSounds>
@@ -94,6 +153,24 @@
             <Sound>9818756</Sound>
           </Item>
         </DestroySounds>
+        <ActiveSounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <Infolayer>
         <DefaultInfoLayer>500453</DefaultInfoLayer>
@@ -109,8 +186,17 @@
         <Name>mining_02_slot (Iron Mine Slot)</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_iron.png</IconFilename>
         <InfoDescription>11880</InfoDescription>
+        <Comments />
       </Standard>
-      <Blocking />
+      <Blocking>
+        <HidePropsRadius>1</HidePropsRadius>
+        <DeletePropsRadius>1</DeletePropsRadius>
+        <GroundDecalAsset>0</GroundDecalAsset>
+        <GroundDecalInvisible>0</GroundDecalInvisible>
+        <StreetOutside>0</StreetOutside>
+        <RemoveGrass>1</RemoveGrass>
+        <BlocksBuilding>1</BlocksBuilding>
+      </Blocking>
       <Object>
         <Variations>
           <Item>
@@ -118,15 +204,49 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <Mesh />
+      <Mesh>
+        <ObjectPosition>Static</ObjectPosition>
+        <MeshPlacement>Default</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
+      </Mesh>
       <Slot>
         <SlotType>Iron</SlotType>
         <AutoChangeVariation>1</AutoChangeVariation>
         <WorkAreaPathSnapDummy>workareapath</WorkAreaPathSnapDummy>
+        <WorkArea>0</WorkArea>
+        <SlotCategoryName>12718</SlotCategoryName>
       </Slot>
       <Selection>
         <GUIType>Generic</GUIType>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <InteractionDistance>15</InteractionDistance>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <AllowedDragType />
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
       </Selection>
       <Text>
         <LocaText>
@@ -137,15 +257,31 @@
           </English>
         </LocaText>
         <LineID>5274</LineID>
+        <Localize>1</Localize>
       </Text>
       <MinimapToken>
         <TokenAsset>2002226</TokenAsset>
+        <StrategicMapAsset>0</StrategicMapAsset>
       </MinimapToken>
-      <RandomMapObject />
+      <RandomMapObject>
+        <Replacements />
+        <MapGeneratorSlotCountOverride />
+      </RandomMapObject>
       <Building>
         <AssociatedRegions>Moderate</AssociatedRegions>
         <BuildingCategoryName>12718</BuildingCategoryName>
         <Destructable>0</Destructable>
+        <BuildingType>Other</BuildingType>
+        <Movable>1</Movable>
+        <PickingAsset>0</PickingAsset>
+        <ConstructionMenuText>0</ConstructionMenuText>
+        <HasBorderRectOutline>1</HasBorderRectOutline>
+        <SnapRadius>2</SnapRadius>
+        <TerrainType>Terrain</TerrainType>
+        <InfluencedByNeighbors />
+        <InfluencedVariationDirection />
+        <BuildingBlockPool />
+        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
       <SoundEmitter>
         <ConstructionSounds>
@@ -189,6 +325,24 @@
             <Sound>9818756</Sound>
           </Item>
         </DestroySounds>
+        <ActiveSounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <Infolayer>
         <DefaultInfoLayer>500476</DefaultInfoLayer>
@@ -205,8 +359,17 @@
         <IconFilename>data/ui/2kimages/main/3dicons/icon_clay.png</IconFilename>
         <ID>ClayPitSlot</ID>
         <InfoDescription>12655</InfoDescription>
+        <Comments />
       </Standard>
-      <Blocking />
+      <Blocking>
+        <HidePropsRadius>1</HidePropsRadius>
+        <DeletePropsRadius>1</DeletePropsRadius>
+        <GroundDecalAsset>0</GroundDecalAsset>
+        <GroundDecalInvisible>0</GroundDecalInvisible>
+        <StreetOutside>0</StreetOutside>
+        <RemoveGrass>1</RemoveGrass>
+        <BlocksBuilding>1</BlocksBuilding>
+      </Blocking>
       <Object>
         <Variations>
           <Item>
@@ -214,15 +377,49 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <Mesh />
+      <Mesh>
+        <ObjectPosition>Static</ObjectPosition>
+        <MeshPlacement>Default</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
+      </Mesh>
       <Slot>
         <SlotType>Clay</SlotType>
         <AutoChangeVariation>1</AutoChangeVariation>
         <WorkAreaPathSnapDummy>workareapath</WorkAreaPathSnapDummy>
+        <WorkArea>0</WorkArea>
+        <SlotCategoryName>12718</SlotCategoryName>
       </Slot>
       <Selection>
         <GUIType>Generic</GUIType>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <InteractionDistance>15</InteractionDistance>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <AllowedDragType />
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
       </Selection>
       <Text>
         <LocaText>
@@ -233,15 +430,31 @@
           </English>
         </LocaText>
         <LineID>5279</LineID>
+        <Localize>1</Localize>
       </Text>
       <MinimapToken>
         <TokenAsset>2002226</TokenAsset>
+        <StrategicMapAsset>0</StrategicMapAsset>
       </MinimapToken>
-      <RandomMapObject />
+      <RandomMapObject>
+        <Replacements />
+        <MapGeneratorSlotCountOverride />
+      </RandomMapObject>
       <Building>
         <AssociatedRegions>Moderate</AssociatedRegions>
         <BuildingCategoryName>12718</BuildingCategoryName>
         <Destructable>0</Destructable>
+        <BuildingType>Other</BuildingType>
+        <Movable>1</Movable>
+        <PickingAsset>0</PickingAsset>
+        <ConstructionMenuText>0</ConstructionMenuText>
+        <HasBorderRectOutline>1</HasBorderRectOutline>
+        <SnapRadius>2</SnapRadius>
+        <TerrainType>Terrain</TerrainType>
+        <InfluencedByNeighbors />
+        <InfluencedVariationDirection />
+        <BuildingBlockPool />
+        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
       <SoundEmitter>
         <ConstructionSounds>
@@ -285,6 +498,24 @@
             <Sound>9818756</Sound>
           </Item>
         </DestroySounds>
+        <ActiveSounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <Infolayer>
         <DefaultInfoLayer>500477</DefaultInfoLayer>
@@ -300,8 +531,17 @@
         <Name>mining_04_slot (Zinc Mine Slot)</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_tin_ore.png</IconFilename>
         <InfoDescription>11880</InfoDescription>
+        <Comments />
       </Standard>
-      <Blocking />
+      <Blocking>
+        <HidePropsRadius>1</HidePropsRadius>
+        <DeletePropsRadius>1</DeletePropsRadius>
+        <GroundDecalAsset>0</GroundDecalAsset>
+        <GroundDecalInvisible>0</GroundDecalInvisible>
+        <StreetOutside>0</StreetOutside>
+        <RemoveGrass>1</RemoveGrass>
+        <BlocksBuilding>1</BlocksBuilding>
+      </Blocking>
       <Object>
         <Variations>
           <Item>
@@ -309,15 +549,49 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <Mesh />
+      <Mesh>
+        <ObjectPosition>Static</ObjectPosition>
+        <MeshPlacement>Default</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
+      </Mesh>
       <Slot>
         <SlotType>Tin</SlotType>
         <AutoChangeVariation>1</AutoChangeVariation>
         <WorkAreaPathSnapDummy>workareapath</WorkAreaPathSnapDummy>
+        <WorkArea>0</WorkArea>
+        <SlotCategoryName>12718</SlotCategoryName>
       </Slot>
       <Selection>
         <GUIType>Generic</GUIType>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <InteractionDistance>15</InteractionDistance>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <AllowedDragType />
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
       </Selection>
       <Text>
         <LocaText>
@@ -328,15 +602,31 @@
           </English>
         </LocaText>
         <LineID>5275</LineID>
+        <Localize>1</Localize>
       </Text>
       <MinimapToken>
         <TokenAsset>2002226</TokenAsset>
+        <StrategicMapAsset>0</StrategicMapAsset>
       </MinimapToken>
-      <RandomMapObject />
+      <RandomMapObject>
+        <Replacements />
+        <MapGeneratorSlotCountOverride />
+      </RandomMapObject>
       <Building>
         <AssociatedRegions>Moderate</AssociatedRegions>
         <BuildingCategoryName>12718</BuildingCategoryName>
         <Destructable>0</Destructable>
+        <BuildingType>Other</BuildingType>
+        <Movable>1</Movable>
+        <PickingAsset>0</PickingAsset>
+        <ConstructionMenuText>0</ConstructionMenuText>
+        <HasBorderRectOutline>1</HasBorderRectOutline>
+        <SnapRadius>2</SnapRadius>
+        <TerrainType>Terrain</TerrainType>
+        <InfluencedByNeighbors />
+        <InfluencedVariationDirection />
+        <BuildingBlockPool />
+        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
       <SoundEmitter>
         <ConstructionSounds>
@@ -380,6 +670,24 @@
             <Sound>9818756</Sound>
           </Item>
         </DestroySounds>
+        <ActiveSounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <Infolayer>
         <DefaultInfoLayer>500478</DefaultInfoLayer>
@@ -395,8 +703,17 @@
         <Name>mining_05_slot (Copper Mine Slot)</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_copper.png</IconFilename>
         <InfoDescription>11880</InfoDescription>
+        <Comments />
       </Standard>
-      <Blocking />
+      <Blocking>
+        <HidePropsRadius>1</HidePropsRadius>
+        <DeletePropsRadius>1</DeletePropsRadius>
+        <GroundDecalAsset>0</GroundDecalAsset>
+        <GroundDecalInvisible>0</GroundDecalInvisible>
+        <StreetOutside>0</StreetOutside>
+        <RemoveGrass>1</RemoveGrass>
+        <BlocksBuilding>1</BlocksBuilding>
+      </Blocking>
       <Object>
         <Variations>
           <Item>
@@ -404,15 +721,49 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <Mesh />
+      <Mesh>
+        <ObjectPosition>Static</ObjectPosition>
+        <MeshPlacement>Default</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
+      </Mesh>
       <Slot>
         <SlotType>Copper</SlotType>
         <AutoChangeVariation>1</AutoChangeVariation>
         <WorkAreaPathSnapDummy>workareapath</WorkAreaPathSnapDummy>
+        <WorkArea>0</WorkArea>
+        <SlotCategoryName>12718</SlotCategoryName>
       </Slot>
       <Selection>
         <GUIType>Generic</GUIType>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <InteractionDistance>15</InteractionDistance>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <AllowedDragType />
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
       </Selection>
       <Text>
         <LocaText>
@@ -423,15 +774,31 @@
           </English>
         </LocaText>
         <LineID>5276</LineID>
+        <Localize>1</Localize>
       </Text>
       <MinimapToken>
         <TokenAsset>2002226</TokenAsset>
+        <StrategicMapAsset>0</StrategicMapAsset>
       </MinimapToken>
-      <RandomMapObject />
+      <RandomMapObject>
+        <Replacements />
+        <MapGeneratorSlotCountOverride />
+      </RandomMapObject>
       <Building>
         <AssociatedRegions>Moderate</AssociatedRegions>
         <BuildingCategoryName>12718</BuildingCategoryName>
         <Destructable>0</Destructable>
+        <BuildingType>Other</BuildingType>
+        <Movable>1</Movable>
+        <PickingAsset>0</PickingAsset>
+        <ConstructionMenuText>0</ConstructionMenuText>
+        <HasBorderRectOutline>1</HasBorderRectOutline>
+        <SnapRadius>2</SnapRadius>
+        <TerrainType>Terrain</TerrainType>
+        <InfluencedByNeighbors />
+        <InfluencedVariationDirection />
+        <BuildingBlockPool />
+        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
       <SoundEmitter>
         <ConstructionSounds>
@@ -475,6 +842,24 @@
             <Sound>9818756</Sound>
           </Item>
         </DestroySounds>
+        <ActiveSounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <Infolayer>
         <DefaultInfoLayer>500479</DefaultInfoLayer>
@@ -490,8 +875,17 @@
         <Name>mining_06_slot (Cement Mine Slot)</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_cement.png</IconFilename>
         <InfoDescription>11880</InfoDescription>
+        <Comments />
       </Standard>
-      <Blocking />
+      <Blocking>
+        <HidePropsRadius>1</HidePropsRadius>
+        <DeletePropsRadius>1</DeletePropsRadius>
+        <GroundDecalAsset>0</GroundDecalAsset>
+        <GroundDecalInvisible>0</GroundDecalInvisible>
+        <StreetOutside>0</StreetOutside>
+        <RemoveGrass>1</RemoveGrass>
+        <BlocksBuilding>1</BlocksBuilding>
+      </Blocking>
       <Object>
         <Variations>
           <Item>
@@ -505,15 +899,49 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <Mesh />
+      <Mesh>
+        <ObjectPosition>Static</ObjectPosition>
+        <MeshPlacement>Default</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
+      </Mesh>
       <Slot>
         <SlotType>Cement</SlotType>
         <AutoChangeVariation>1</AutoChangeVariation>
         <WorkAreaPathSnapDummy>workareapath</WorkAreaPathSnapDummy>
+        <WorkArea>0</WorkArea>
+        <SlotCategoryName>12718</SlotCategoryName>
       </Slot>
       <Selection>
         <GUIType>Generic</GUIType>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <InteractionDistance>15</InteractionDistance>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <AllowedDragType />
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
       </Selection>
       <Text>
         <LocaText>
@@ -524,15 +952,31 @@
           </English>
         </LocaText>
         <LineID>5277</LineID>
+        <Localize>1</Localize>
       </Text>
       <MinimapToken>
         <TokenAsset>2002226</TokenAsset>
+        <StrategicMapAsset>0</StrategicMapAsset>
       </MinimapToken>
-      <RandomMapObject />
+      <RandomMapObject>
+        <Replacements />
+        <MapGeneratorSlotCountOverride />
+      </RandomMapObject>
       <Building>
         <AssociatedRegions>Moderate</AssociatedRegions>
         <BuildingCategoryName>12718</BuildingCategoryName>
         <Destructable>0</Destructable>
+        <BuildingType>Other</BuildingType>
+        <Movable>1</Movable>
+        <PickingAsset>0</PickingAsset>
+        <ConstructionMenuText>0</ConstructionMenuText>
+        <HasBorderRectOutline>1</HasBorderRectOutline>
+        <SnapRadius>2</SnapRadius>
+        <TerrainType>Terrain</TerrainType>
+        <InfluencedByNeighbors />
+        <InfluencedVariationDirection />
+        <BuildingBlockPool />
+        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
       <SoundEmitter>
         <ConstructionSounds>
@@ -576,6 +1020,24 @@
             <Sound>9818756</Sound>
           </Item>
         </DestroySounds>
+        <ActiveSounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <Infolayer>
         <DefaultInfoLayer>500480</DefaultInfoLayer>
@@ -591,8 +1053,17 @@
         <Name>mining_08_slot (Gold Ore Mine)</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_gold_ore.png</IconFilename>
         <InfoDescription>11880</InfoDescription>
+        <Comments />
       </Standard>
-      <Blocking />
+      <Blocking>
+        <HidePropsRadius>1</HidePropsRadius>
+        <DeletePropsRadius>1</DeletePropsRadius>
+        <GroundDecalAsset>0</GroundDecalAsset>
+        <GroundDecalInvisible>0</GroundDecalInvisible>
+        <StreetOutside>0</StreetOutside>
+        <RemoveGrass>1</RemoveGrass>
+        <BlocksBuilding>1</BlocksBuilding>
+      </Blocking>
       <Object>
         <Variations>
           <Item>
@@ -600,15 +1071,49 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <Mesh />
+      <Mesh>
+        <ObjectPosition>Static</ObjectPosition>
+        <MeshPlacement>Default</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
+      </Mesh>
       <Slot>
         <SlotType>GoldOre</SlotType>
         <AutoChangeVariation>1</AutoChangeVariation>
         <WorkAreaPathSnapDummy>workareapath</WorkAreaPathSnapDummy>
+        <WorkArea>0</WorkArea>
+        <SlotCategoryName>12718</SlotCategoryName>
       </Slot>
       <Selection>
         <GUIType>Generic</GUIType>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <InteractionDistance>15</InteractionDistance>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <AllowedDragType />
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
       </Selection>
       <Text>
         <LocaText>
@@ -619,15 +1124,31 @@
           </English>
         </LocaText>
         <LineID>5278</LineID>
+        <Localize>1</Localize>
       </Text>
       <MinimapToken>
         <TokenAsset>2002226</TokenAsset>
+        <StrategicMapAsset>0</StrategicMapAsset>
       </MinimapToken>
-      <RandomMapObject />
+      <RandomMapObject>
+        <Replacements />
+        <MapGeneratorSlotCountOverride />
+      </RandomMapObject>
       <Building>
         <AssociatedRegions>Moderate</AssociatedRegions>
         <BuildingCategoryName>12718</BuildingCategoryName>
         <Destructable>0</Destructable>
+        <BuildingType>Other</BuildingType>
+        <Movable>1</Movable>
+        <PickingAsset>0</PickingAsset>
+        <ConstructionMenuText>0</ConstructionMenuText>
+        <HasBorderRectOutline>1</HasBorderRectOutline>
+        <SnapRadius>2</SnapRadius>
+        <TerrainType>Terrain</TerrainType>
+        <InfluencedByNeighbors />
+        <InfluencedVariationDirection />
+        <BuildingBlockPool />
+        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
       <SoundEmitter>
         <ConstructionSounds>
@@ -671,6 +1192,24 @@
             <Sound>9818756</Sound>
           </Item>
         </DestroySounds>
+        <ActiveSounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <Infolayer>
         <DefaultInfoLayer>500481</DefaultInfoLayer>
@@ -686,8 +1225,17 @@
         <Name>heavy_01_01_slot (Oil Pump Slot)</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_oil.png</IconFilename>
         <InfoDescription>12656</InfoDescription>
+        <Comments />
       </Standard>
-      <Blocking />
+      <Blocking>
+        <HidePropsRadius>1</HidePropsRadius>
+        <DeletePropsRadius>1</DeletePropsRadius>
+        <GroundDecalAsset>0</GroundDecalAsset>
+        <GroundDecalInvisible>0</GroundDecalInvisible>
+        <StreetOutside>0</StreetOutside>
+        <RemoveGrass>1</RemoveGrass>
+        <BlocksBuilding>1</BlocksBuilding>
+      </Blocking>
       <Object>
         <Variations>
           <Item>
@@ -698,18 +1246,50 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <Mesh />
+      <Mesh>
+        <ObjectPosition>Static</ObjectPosition>
+        <MeshPlacement>Default</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
+      </Mesh>
       <Slot>
         <SlotType>Oil</SlotType>
         <AutoChangeVariation>1</AutoChangeVariation>
         <SlotCategoryName>0</SlotCategoryName>
+        <WorkArea>0</WorkArea>
       </Slot>
       <Selection>
         <Colors>
           <WeakSelectionColorType>NoColor</WeakSelectionColorType>
         </Colors>
         <GUIType>Generic</GUIType>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <InteractionDistance>15</InteractionDistance>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <AllowedDragType />
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
       </Selection>
       <Text>
         <LocaText>
@@ -720,16 +1300,31 @@
           </English>
         </LocaText>
         <LineID>28505</LineID>
+        <Localize>1</Localize>
       </Text>
       <MinimapToken>
         <TokenAsset>2002226</TokenAsset>
+        <StrategicMapAsset>0</StrategicMapAsset>
       </MinimapToken>
-      <RandomMapObject />
+      <RandomMapObject>
+        <Replacements />
+        <MapGeneratorSlotCountOverride />
+      </RandomMapObject>
       <Building>
         <Movable>0</Movable>
         <AssociatedRegions>Moderate</AssociatedRegions>
         <BuildingCategoryName>12718</BuildingCategoryName>
         <Destructable>0</Destructable>
+        <BuildingType>Other</BuildingType>
+        <PickingAsset>0</PickingAsset>
+        <ConstructionMenuText>0</ConstructionMenuText>
+        <HasBorderRectOutline>1</HasBorderRectOutline>
+        <SnapRadius>2</SnapRadius>
+        <TerrainType>Terrain</TerrainType>
+        <InfluencedByNeighbors />
+        <InfluencedVariationDirection />
+        <BuildingBlockPool />
+        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
       <SoundEmitter>
         <DestroySounds>
@@ -759,6 +1354,24 @@
             </Item>
           </BuildMoveEnd>
         </ConstructionSounds>
+        <ActiveSounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <Infolayer>
         <DefaultInfoLayer>500568</DefaultInfoLayer>
@@ -774,8 +1387,17 @@
         <Name>heavy_colony01_01_slot (Oil Pump Slot)</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_oil.png</IconFilename>
         <InfoDescription>12656</InfoDescription>
+        <Comments />
       </Standard>
-      <Blocking />
+      <Blocking>
+        <HidePropsRadius>1</HidePropsRadius>
+        <DeletePropsRadius>1</DeletePropsRadius>
+        <GroundDecalAsset>0</GroundDecalAsset>
+        <GroundDecalInvisible>0</GroundDecalInvisible>
+        <StreetOutside>0</StreetOutside>
+        <RemoveGrass>1</RemoveGrass>
+        <BlocksBuilding>1</BlocksBuilding>
+      </Blocking>
       <Object>
         <Variations>
           <Item>
@@ -786,18 +1408,50 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <Mesh />
+      <Mesh>
+        <ObjectPosition>Static</ObjectPosition>
+        <MeshPlacement>Default</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
+      </Mesh>
       <Slot>
         <SlotType>Oil</SlotType>
         <AutoChangeVariation>1</AutoChangeVariation>
         <SlotCategoryName>0</SlotCategoryName>
+        <WorkArea>0</WorkArea>
       </Slot>
       <Selection>
         <Colors>
           <WeakSelectionColorType>NoColor</WeakSelectionColorType>
         </Colors>
         <GUIType>Generic</GUIType>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <InteractionDistance>15</InteractionDistance>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <AllowedDragType />
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
       </Selection>
       <Text>
         <LocaText>
@@ -808,16 +1462,31 @@
           </English>
         </LocaText>
         <LineID>25830</LineID>
+        <Localize>1</Localize>
       </Text>
       <MinimapToken>
         <TokenAsset>2002226</TokenAsset>
+        <StrategicMapAsset>0</StrategicMapAsset>
       </MinimapToken>
-      <RandomMapObject />
+      <RandomMapObject>
+        <Replacements />
+        <MapGeneratorSlotCountOverride />
+      </RandomMapObject>
       <Building>
         <Movable>0</Movable>
         <AssociatedRegions>Colony01</AssociatedRegions>
         <BuildingCategoryName>12718</BuildingCategoryName>
         <Destructable>0</Destructable>
+        <BuildingType>Other</BuildingType>
+        <PickingAsset>0</PickingAsset>
+        <ConstructionMenuText>0</ConstructionMenuText>
+        <HasBorderRectOutline>1</HasBorderRectOutline>
+        <SnapRadius>2</SnapRadius>
+        <TerrainType>Terrain</TerrainType>
+        <InfluencedByNeighbors />
+        <InfluencedVariationDirection />
+        <BuildingBlockPool />
+        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
       <SoundEmitter>
         <ConstructionSounds>
@@ -861,6 +1530,24 @@
             <Sound>9818756</Sound>
           </Item>
         </DestroySounds>
+        <ActiveSounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <Infolayer>
         <DefaultInfoLayer>500568</DefaultInfoLayer>
@@ -876,11 +1563,17 @@
         <Name>random slot mining</Name>
         <IconFilename>data/level_editor/random_slots_icons/random_slot_mining.png</IconFilename>
         <InfoDescription>11880</InfoDescription>
+        <Comments />
       </Standard>
       <Blocking>
         <HidePropsRadius>0</HidePropsRadius>
         <DeletePropsRadius>0</DeletePropsRadius>
         <RemovePropsRadius>1</RemovePropsRadius>
+        <GroundDecalAsset>0</GroundDecalAsset>
+        <GroundDecalInvisible>0</GroundDecalInvisible>
+        <StreetOutside>0</StreetOutside>
+        <RemoveGrass>1</RemoveGrass>
+        <BlocksBuilding>1</BlocksBuilding>
       </Blocking>
       <Object>
         <Variations>
@@ -896,16 +1589,49 @@
         </Variations>
         <AssignDefaultParticipant>1</AssignDefaultParticipant>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <Mesh />
+      <Mesh>
+        <ObjectPosition>Static</ObjectPosition>
+        <MeshPlacement>Default</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
+      </Mesh>
       <Slot>
         <SlotType>Random</SlotType>
         <AutoChangeVariation>1</AutoChangeVariation>
         <SlotCategoryName>0</SlotCategoryName>
         <WorkAreaPathSnapDummy>mining_ground</WorkAreaPathSnapDummy>
+        <WorkArea>0</WorkArea>
       </Slot>
       <Selection>
         <GUIType>Generic</GUIType>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <InteractionDistance>15</InteractionDistance>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <AllowedDragType />
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
       </Selection>
       <Text>
         <LocaText>
@@ -913,8 +1639,12 @@
             <Text>slot mining</Text>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
-      <MinimapToken />
+      <MinimapToken>
+        <TokenAsset>0</TokenAsset>
+        <StrategicMapAsset>0</StrategicMapAsset>
+      </MinimapToken>
       <RandomMapObject>
         <Randomizable>1</Randomizable>
         <Replacements>
@@ -937,10 +1667,23 @@
             <NewAsset>1010507</NewAsset>
           </Item>
         </Replacements>
+        <MapGeneratorSlotCountOverride />
       </RandomMapObject>
       <Building>
         <BuildingCategoryName>12718</BuildingCategoryName>
         <Destructable>0</Destructable>
+        <BuildingType>Other</BuildingType>
+        <Movable>1</Movable>
+        <PickingAsset>0</PickingAsset>
+        <ConstructionMenuText>0</ConstructionMenuText>
+        <HasBorderRectOutline>1</HasBorderRectOutline>
+        <SnapRadius>2</SnapRadius>
+        <TerrainType>Terrain</TerrainType>
+        <InfluencedByNeighbors />
+        <InfluencedVariationDirection />
+        <AssociatedRegions>Meta;Moderate;Colony01;Arctic</AssociatedRegions>
+        <BuildingBlockPool />
+        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
       <SoundEmitter>
         <DestroySounds>
@@ -970,8 +1713,28 @@
             </Item>
           </BuildMoveEnd>
         </ConstructionSounds>
+        <ActiveSounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
-      <Infolayer />
+      <Infolayer>
+        <DefaultInfoLayer>0</DefaultInfoLayer>
+      </Infolayer>
       <QuestObject />
     </Values>
   </Asset>
@@ -983,11 +1746,17 @@
         <Name>random slot clay</Name>
         <IconFilename>data/level_editor/random_slots_icons/random_slot_clay.png</IconFilename>
         <InfoDescription>11880</InfoDescription>
+        <Comments />
       </Standard>
       <Blocking>
         <HidePropsRadius>0</HidePropsRadius>
         <DeletePropsRadius>0</DeletePropsRadius>
         <RemovePropsRadius>1</RemovePropsRadius>
+        <GroundDecalAsset>0</GroundDecalAsset>
+        <GroundDecalInvisible>0</GroundDecalInvisible>
+        <StreetOutside>0</StreetOutside>
+        <RemoveGrass>1</RemoveGrass>
+        <BlocksBuilding>1</BlocksBuilding>
       </Blocking>
       <Object>
         <Variations>
@@ -997,16 +1766,49 @@
         </Variations>
         <AssignDefaultParticipant>1</AssignDefaultParticipant>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <Mesh />
+      <Mesh>
+        <ObjectPosition>Static</ObjectPosition>
+        <MeshPlacement>Default</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
+      </Mesh>
       <Slot>
         <SlotType>Random</SlotType>
         <AutoChangeVariation>1</AutoChangeVariation>
         <SlotCategoryName>0</SlotCategoryName>
         <WorkAreaPathSnapDummy>workareapath</WorkAreaPathSnapDummy>
+        <WorkArea>0</WorkArea>
       </Slot>
       <Selection>
         <GUIType>Generic</GUIType>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <InteractionDistance>15</InteractionDistance>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <AllowedDragType />
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
       </Selection>
       <Text>
         <LocaText>
@@ -1014,8 +1816,12 @@
             <Text>Clay Mine Slot</Text>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
-      <MinimapToken />
+      <MinimapToken>
+        <TokenAsset>0</TokenAsset>
+        <StrategicMapAsset>0</StrategicMapAsset>
+      </MinimapToken>
       <RandomMapObject>
         <Randomizable>1</Randomizable>
         <Replacements>
@@ -1132,6 +1938,18 @@
       <Building>
         <BuildingCategoryName>12718</BuildingCategoryName>
         <Destructable>0</Destructable>
+        <BuildingType>Other</BuildingType>
+        <Movable>1</Movable>
+        <PickingAsset>0</PickingAsset>
+        <ConstructionMenuText>0</ConstructionMenuText>
+        <HasBorderRectOutline>1</HasBorderRectOutline>
+        <SnapRadius>2</SnapRadius>
+        <TerrainType>Terrain</TerrainType>
+        <InfluencedByNeighbors />
+        <InfluencedVariationDirection />
+        <AssociatedRegions>Meta;Moderate;Colony01;Arctic</AssociatedRegions>
+        <BuildingBlockPool />
+        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
       <SoundEmitter>
         <DestroySounds>
@@ -1161,6 +1979,24 @@
             </Item>
           </BuildMoveEnd>
         </ConstructionSounds>
+        <ActiveSounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <Infolayer>
         <DefaultInfoLayer>500477</DefaultInfoLayer>
@@ -1176,10 +2012,17 @@
         <Name>random slot oil pump</Name>
         <IconFilename>data/level_editor/random_slots_icons/random_slot_oil.png</IconFilename>
         <InfoDescription>11880</InfoDescription>
+        <Comments />
       </Standard>
       <Blocking>
         <DeletePropsRadius>0</DeletePropsRadius>
         <RemovePropsRadius>3</RemovePropsRadius>
+        <HidePropsRadius>1</HidePropsRadius>
+        <GroundDecalAsset>0</GroundDecalAsset>
+        <GroundDecalInvisible>0</GroundDecalInvisible>
+        <StreetOutside>0</StreetOutside>
+        <RemoveGrass>1</RemoveGrass>
+        <BlocksBuilding>1</BlocksBuilding>
       </Blocking>
       <Object>
         <Variations>
@@ -1189,15 +2032,48 @@
         </Variations>
         <AssignDefaultParticipant>1</AssignDefaultParticipant>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <Mesh />
+      <Mesh>
+        <ObjectPosition>Static</ObjectPosition>
+        <MeshPlacement>Default</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
+      </Mesh>
       <Slot>
         <SlotType>Random</SlotType>
         <AutoChangeVariation>1</AutoChangeVariation>
         <SlotCategoryName>0</SlotCategoryName>
+        <WorkArea>0</WorkArea>
       </Slot>
       <Selection>
         <GUIType>Generic</GUIType>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <InteractionDistance>15</InteractionDistance>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <AllowedDragType />
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
       </Selection>
       <Text>
         <LocaText>
@@ -1205,8 +2081,12 @@
             <Text>oil pump slot</Text>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
-      <MinimapToken />
+      <MinimapToken>
+        <TokenAsset>0</TokenAsset>
+        <StrategicMapAsset>0</StrategicMapAsset>
+      </MinimapToken>
       <RandomMapObject>
         <Randomizable>1</Randomizable>
         <Replacements>
@@ -1322,6 +2202,18 @@
       <Building>
         <BuildingCategoryName>12718</BuildingCategoryName>
         <Destructable>0</Destructable>
+        <BuildingType>Other</BuildingType>
+        <Movable>1</Movable>
+        <PickingAsset>0</PickingAsset>
+        <ConstructionMenuText>0</ConstructionMenuText>
+        <HasBorderRectOutline>1</HasBorderRectOutline>
+        <SnapRadius>2</SnapRadius>
+        <TerrainType>Terrain</TerrainType>
+        <InfluencedByNeighbors />
+        <InfluencedVariationDirection />
+        <AssociatedRegions>Meta;Moderate;Colony01;Arctic</AssociatedRegions>
+        <BuildingBlockPool />
+        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
       <SoundEmitter>
         <DestroySounds>
@@ -1351,6 +2243,24 @@
             </Item>
           </BuildMoveEnd>
         </ConstructionSounds>
+        <ActiveSounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <Infolayer>
         <DefaultInfoLayer>500568</DefaultInfoLayer>
@@ -1366,10 +2276,17 @@
         <Name>prosperity random slot oil pump (for campaign only)</Name>
         <IconFilename>data/level_editor/random_slots_icons/random_slot_oil.png</IconFilename>
         <InfoDescription>11880</InfoDescription>
+        <Comments />
       </Standard>
       <Blocking>
         <DeletePropsRadius>0</DeletePropsRadius>
         <RemovePropsRadius>3</RemovePropsRadius>
+        <HidePropsRadius>1</HidePropsRadius>
+        <GroundDecalAsset>0</GroundDecalAsset>
+        <GroundDecalInvisible>0</GroundDecalInvisible>
+        <StreetOutside>0</StreetOutside>
+        <RemoveGrass>1</RemoveGrass>
+        <BlocksBuilding>1</BlocksBuilding>
       </Blocking>
       <Object>
         <Variations>
@@ -1379,15 +2296,48 @@
         </Variations>
         <AssignDefaultParticipant>1</AssignDefaultParticipant>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <Mesh />
+      <Mesh>
+        <ObjectPosition>Static</ObjectPosition>
+        <MeshPlacement>Default</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
+      </Mesh>
       <Slot>
         <SlotType>Random</SlotType>
         <AutoChangeVariation>1</AutoChangeVariation>
         <SlotCategoryName>0</SlotCategoryName>
+        <WorkArea>0</WorkArea>
       </Slot>
       <Selection>
         <GUIType>Generic</GUIType>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <InteractionDistance>15</InteractionDistance>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <AllowedDragType />
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
       </Selection>
       <Text>
         <LocaText>
@@ -1395,8 +2345,12 @@
             <Text>oil pump slot</Text>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
-      <MinimapToken />
+      <MinimapToken>
+        <TokenAsset>0</TokenAsset>
+        <StrategicMapAsset>0</StrategicMapAsset>
+      </MinimapToken>
       <RandomMapObject>
         <Randomizable>1</Randomizable>
         <Replacements>
@@ -1512,6 +2466,18 @@
       <Building>
         <BuildingCategoryName>12718</BuildingCategoryName>
         <Destructable>0</Destructable>
+        <BuildingType>Other</BuildingType>
+        <Movable>1</Movable>
+        <PickingAsset>0</PickingAsset>
+        <ConstructionMenuText>0</ConstructionMenuText>
+        <HasBorderRectOutline>1</HasBorderRectOutline>
+        <SnapRadius>2</SnapRadius>
+        <TerrainType>Terrain</TerrainType>
+        <InfluencedByNeighbors />
+        <InfluencedVariationDirection />
+        <AssociatedRegions>Meta;Moderate;Colony01;Arctic</AssociatedRegions>
+        <BuildingBlockPool />
+        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
       <SoundEmitter>
         <DestroySounds>
@@ -1541,6 +2507,24 @@
             </Item>
           </BuildMoveEnd>
         </ConstructionSounds>
+        <ActiveSounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <Infolayer>
         <DefaultInfoLayer>500568</DefaultInfoLayer>

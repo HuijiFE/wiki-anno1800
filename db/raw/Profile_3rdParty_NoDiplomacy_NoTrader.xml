@@ -7,6 +7,8 @@
         <GUID>31</GUID>
         <Name>advisor_02 (Aarhant)</Name>
         <IconFilename>data/ui/2kimages/main/profiles/advisor_02.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -17,6 +19,7 @@
           </English>
         </LocaText>
         <LineID>4278</LineID>
+        <Localize>1</Localize>
       </Text>
       <Profile>
         <ProfilePicture>data/ui/2kimages/main/profiles/advisor_02.png</ProfilePicture>
@@ -31,6 +34,13 @@
         <CreateModeMeta>AutoCreate_Always</CreateModeMeta>
         <CreateModeSession>AutoCreate_Always</CreateModeSession>
         <AttackableThroughPirateFlagItem>0</AttackableThroughPirateFlagItem>
+        <ProfileType>ThirdParty</ProfileType>
+        <QuestPoolList />
+        <HostileTakeoverEnabled>1</HostileTakeoverEnabled>
+        <BackgroundText>0</BackgroundText>
+        <TakeoverBehaviour>Destroy</TakeoverBehaviour>
+        <ShipDropRewardPool>0</ShipDropRewardPool>
+        <ChooseNPC />
       </Profile>
       <ParticipantMessages>
         <MessageTriggers>
@@ -209,12 +219,99 @@
       </ParticipantMessages>
       <Object>
         <DefaultParticipant>Advisor_02_Aahrant</DefaultParticipant>
+        <Type>GameObject</Type>
+        <Variations />
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <ParticipantMessageObject>
         <ParticipantMessages>140</ParticipantMessages>
       </ParticipantMessageObject>
-      <Interaction />
-      <ThirdParty />
+      <Interaction>
+        <NewspaperPropaganda />
+        <PaMSyTrade>
+          <ActiveTrade>
+            <TradeAmount>1000</TradeAmount>
+            <TradeAmountFactor>500</TradeAmountFactor>
+            <TradeMessage>ActiveTradeConfirmation</TradeMessage>
+          </ActiveTrade>
+          <PassiveTrade>
+            <TradeAmount>10000</TradeAmount>
+            <TradeAmountFactor>5000</TradeAmountFactor>
+            <TradeMessage>PassiveTradeConfirmation</TradeMessage>
+          </PassiveTrade>
+        </PaMSyTrade>
+        <PaMSyMilitaryStrength />
+        <PaMSyAttractiveness />
+        <PaMSyIslandPollution />
+      </Interaction>
+      <ThirdParty>
+        <AllowedRegions />
+        <IslandPlacement>NoIsland</IslandPlacement>
+        <ReservationPause>600000</ReservationPause>
+        <DecoBuildings>
+          <Item>
+            <Asset>100689</Asset>
+          </Item>
+          <Item>
+            <Asset>100690</Asset>
+          </Item>
+          <Item>
+            <Asset>100720</Asset>
+          </Item>
+          <Item>
+            <Asset>100723</Asset>
+          </Item>
+          <Item>
+            <Asset>100724</Asset>
+          </Item>
+          <Item>
+            <Asset>100725</Asset>
+          </Item>
+          <Item>
+            <Asset>100726</Asset>
+          </Item>
+          <Item>
+            <Asset>100731</Asset>
+          </Item>
+          <Item>
+            <Asset>100733</Asset>
+          </Item>
+          <Item>
+            <Asset>100734</Asset>
+          </Item>
+          <Item>
+            <Asset>100735</Asset>
+          </Item>
+          <Item>
+            <Asset>100736</Asset>
+          </Item>
+          <Item>
+            <Asset>1000101</Asset>
+          </Item>
+          <Item>
+            <Asset>1000103</Asset>
+          </Item>
+          <Item>
+            <Asset>1000110</Asset>
+          </Item>
+          <Item>
+            <Asset>1000156</Asset>
+          </Item>
+          <Item>
+            <Asset>1000222</Asset>
+          </Item>
+          <Item>
+            <Asset>1000226</Asset>
+          </Item>
+          <Item>
+            <Asset>1000228</Asset>
+          </Item>
+        </DecoBuildings>
+      </ThirdParty>
     </Values>
   </Asset>
   <Asset>
@@ -224,6 +321,8 @@
         <GUID>94</GUID>
         <Name>event_character_01 (Arctic Event)</Name>
         <IconFilename>data/ui/2kimages/main/profiles/ai_05.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -234,6 +333,7 @@
           </English>
         </LocaText>
         <LineID>13091</LineID>
+        <Localize>1</Localize>
       </Text>
       <Profile>
         <ProfilePicture>data/ui/2kimages/main/profiles/ai_05.png</ProfilePicture>
@@ -245,6 +345,16 @@
         <QuestStarterObject>101065</QuestStarterObject>
         <DefaultColor>Color11</DefaultColor>
         <AttackableThroughPirateFlagItem>0</AttackableThroughPirateFlagItem>
+        <CompanyIcon>0</CompanyIcon>
+        <ProfileType>ThirdParty</ProfileType>
+        <QuestPoolList />
+        <HostileTakeoverEnabled>1</HostileTakeoverEnabled>
+        <BackgroundText>0</BackgroundText>
+        <TakeoverBehaviour>Destroy</TakeoverBehaviour>
+        <ShipDropRewardPool>0</ShipDropRewardPool>
+        <CreateModeMeta>Dynamically_GameSetupOrMapload</CreateModeMeta>
+        <CreateModeSession>Dynamically_MaploadOrSessionEnter</CreateModeSession>
+        <ChooseNPC />
       </Profile>
       <ParticipantMessages>
         <MessageTriggers>
@@ -401,12 +511,99 @@
       </ParticipantMessages>
       <Object>
         <DefaultParticipant>Event_character_01_Arctic</DefaultParticipant>
+        <Type>GameObject</Type>
+        <Variations />
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <ParticipantMessageObject>
         <ParticipantMessages>141</ParticipantMessages>
       </ParticipantMessageObject>
-      <Interaction />
-      <ThirdParty />
+      <Interaction>
+        <NewspaperPropaganda />
+        <PaMSyTrade>
+          <ActiveTrade>
+            <TradeAmount>1000</TradeAmount>
+            <TradeAmountFactor>500</TradeAmountFactor>
+            <TradeMessage>ActiveTradeConfirmation</TradeMessage>
+          </ActiveTrade>
+          <PassiveTrade>
+            <TradeAmount>10000</TradeAmount>
+            <TradeAmountFactor>5000</TradeAmountFactor>
+            <TradeMessage>PassiveTradeConfirmation</TradeMessage>
+          </PassiveTrade>
+        </PaMSyTrade>
+        <PaMSyMilitaryStrength />
+        <PaMSyAttractiveness />
+        <PaMSyIslandPollution />
+      </Interaction>
+      <ThirdParty>
+        <AllowedRegions />
+        <IslandPlacement>NoIsland</IslandPlacement>
+        <ReservationPause>600000</ReservationPause>
+        <DecoBuildings>
+          <Item>
+            <Asset>100689</Asset>
+          </Item>
+          <Item>
+            <Asset>100690</Asset>
+          </Item>
+          <Item>
+            <Asset>100720</Asset>
+          </Item>
+          <Item>
+            <Asset>100723</Asset>
+          </Item>
+          <Item>
+            <Asset>100724</Asset>
+          </Item>
+          <Item>
+            <Asset>100725</Asset>
+          </Item>
+          <Item>
+            <Asset>100726</Asset>
+          </Item>
+          <Item>
+            <Asset>100731</Asset>
+          </Item>
+          <Item>
+            <Asset>100733</Asset>
+          </Item>
+          <Item>
+            <Asset>100734</Asset>
+          </Item>
+          <Item>
+            <Asset>100735</Asset>
+          </Item>
+          <Item>
+            <Asset>100736</Asset>
+          </Item>
+          <Item>
+            <Asset>1000101</Asset>
+          </Item>
+          <Item>
+            <Asset>1000103</Asset>
+          </Item>
+          <Item>
+            <Asset>1000110</Asset>
+          </Item>
+          <Item>
+            <Asset>1000156</Asset>
+          </Item>
+          <Item>
+            <Asset>1000222</Asset>
+          </Item>
+          <Item>
+            <Asset>1000226</Asset>
+          </Item>
+          <Item>
+            <Asset>1000228</Asset>
+          </Item>
+        </DecoBuildings>
+      </ThirdParty>
     </Values>
   </Asset>
   <Asset>
@@ -416,6 +613,8 @@
         <GUID>109</GUID>
         <Name>campaign_character01_demolition_expert</Name>
         <IconFilename>data/ui/2kimages/main/profiles/campaign_portrait_01.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -426,6 +625,7 @@
           </English>
         </LocaText>
         <LineID>7060</LineID>
+        <Localize>1</Localize>
       </Text>
       <Profile>
         <ProfilePicture>data/ui/2kimages/main/profiles/campaign_portrait_01.png</ProfilePicture>
@@ -438,6 +638,15 @@
         <CreateModeMeta>AutoCreate_OnlyCampaign</CreateModeMeta>
         <CreateModeSession>AutoCreate_OnlyCampaign</CreateModeSession>
         <AttackableThroughPirateFlagItem>0</AttackableThroughPirateFlagItem>
+        <CompanyIcon>0</CompanyIcon>
+        <ProfileType>ThirdParty</ProfileType>
+        <QuestStarterObject>0</QuestStarterObject>
+        <QuestPoolList />
+        <HostileTakeoverEnabled>1</HostileTakeoverEnabled>
+        <BackgroundText>0</BackgroundText>
+        <TakeoverBehaviour>Destroy</TakeoverBehaviour>
+        <ShipDropRewardPool>0</ShipDropRewardPool>
+        <ChooseNPC />
       </Profile>
       <ParticipantMessages>
         <MessageTriggers>
@@ -577,12 +786,99 @@
       </ParticipantMessages>
       <Object>
         <DefaultParticipant>Campaign_character_01_demolition_expert</DefaultParticipant>
+        <Type>GameObject</Type>
+        <Variations />
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <ParticipantMessageObject>
         <ParticipantMessages>153</ParticipantMessages>
       </ParticipantMessageObject>
-      <Interaction />
-      <ThirdParty />
+      <Interaction>
+        <NewspaperPropaganda />
+        <PaMSyTrade>
+          <ActiveTrade>
+            <TradeAmount>1000</TradeAmount>
+            <TradeAmountFactor>500</TradeAmountFactor>
+            <TradeMessage>ActiveTradeConfirmation</TradeMessage>
+          </ActiveTrade>
+          <PassiveTrade>
+            <TradeAmount>10000</TradeAmount>
+            <TradeAmountFactor>5000</TradeAmountFactor>
+            <TradeMessage>PassiveTradeConfirmation</TradeMessage>
+          </PassiveTrade>
+        </PaMSyTrade>
+        <PaMSyMilitaryStrength />
+        <PaMSyAttractiveness />
+        <PaMSyIslandPollution />
+      </Interaction>
+      <ThirdParty>
+        <AllowedRegions />
+        <IslandPlacement>NoIsland</IslandPlacement>
+        <ReservationPause>600000</ReservationPause>
+        <DecoBuildings>
+          <Item>
+            <Asset>100689</Asset>
+          </Item>
+          <Item>
+            <Asset>100690</Asset>
+          </Item>
+          <Item>
+            <Asset>100720</Asset>
+          </Item>
+          <Item>
+            <Asset>100723</Asset>
+          </Item>
+          <Item>
+            <Asset>100724</Asset>
+          </Item>
+          <Item>
+            <Asset>100725</Asset>
+          </Item>
+          <Item>
+            <Asset>100726</Asset>
+          </Item>
+          <Item>
+            <Asset>100731</Asset>
+          </Item>
+          <Item>
+            <Asset>100733</Asset>
+          </Item>
+          <Item>
+            <Asset>100734</Asset>
+          </Item>
+          <Item>
+            <Asset>100735</Asset>
+          </Item>
+          <Item>
+            <Asset>100736</Asset>
+          </Item>
+          <Item>
+            <Asset>1000101</Asset>
+          </Item>
+          <Item>
+            <Asset>1000103</Asset>
+          </Item>
+          <Item>
+            <Asset>1000110</Asset>
+          </Item>
+          <Item>
+            <Asset>1000156</Asset>
+          </Item>
+          <Item>
+            <Asset>1000222</Asset>
+          </Item>
+          <Item>
+            <Asset>1000226</Asset>
+          </Item>
+          <Item>
+            <Asset>1000228</Asset>
+          </Item>
+        </DecoBuildings>
+      </ThirdParty>
     </Values>
   </Asset>
   <Asset>
@@ -592,6 +888,8 @@
         <GUID>172</GUID>
         <Name>campaign_character07_magistrate</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/specialists/systemic/icon_normal_dressed_206_b.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -602,6 +900,7 @@
           </English>
         </LocaText>
         <LineID>7062</LineID>
+        <Localize>1</Localize>
       </Text>
       <Profile>
         <ProfilePicture>data/ui/2kimages/main/profiles/campaign_portrait_07.png</ProfilePicture>
@@ -615,6 +914,14 @@
         <CreateModeMeta>AutoCreate_OnlyCampaign</CreateModeMeta>
         <CreateModeSession>AutoCreate_OnlyCampaign</CreateModeSession>
         <AttackableThroughPirateFlagItem>0</AttackableThroughPirateFlagItem>
+        <CompanyIcon>0</CompanyIcon>
+        <ProfileType>ThirdParty</ProfileType>
+        <QuestPoolList />
+        <HostileTakeoverEnabled>1</HostileTakeoverEnabled>
+        <BackgroundText>0</BackgroundText>
+        <TakeoverBehaviour>Destroy</TakeoverBehaviour>
+        <ShipDropRewardPool>0</ShipDropRewardPool>
+        <ChooseNPC />
       </Profile>
       <ParticipantMessages>
         <MessageTriggers>
@@ -793,12 +1100,99 @@
       </ParticipantMessages>
       <Object>
         <DefaultParticipant>Campaign_character_07_magistrate</DefaultParticipant>
+        <Type>GameObject</Type>
+        <Variations />
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <ParticipantMessageObject>
         <ParticipantMessages>173</ParticipantMessages>
       </ParticipantMessageObject>
-      <Interaction />
-      <ThirdParty />
+      <Interaction>
+        <NewspaperPropaganda />
+        <PaMSyTrade>
+          <ActiveTrade>
+            <TradeAmount>1000</TradeAmount>
+            <TradeAmountFactor>500</TradeAmountFactor>
+            <TradeMessage>ActiveTradeConfirmation</TradeMessage>
+          </ActiveTrade>
+          <PassiveTrade>
+            <TradeAmount>10000</TradeAmount>
+            <TradeAmountFactor>5000</TradeAmountFactor>
+            <TradeMessage>PassiveTradeConfirmation</TradeMessage>
+          </PassiveTrade>
+        </PaMSyTrade>
+        <PaMSyMilitaryStrength />
+        <PaMSyAttractiveness />
+        <PaMSyIslandPollution />
+      </Interaction>
+      <ThirdParty>
+        <AllowedRegions />
+        <IslandPlacement>NoIsland</IslandPlacement>
+        <ReservationPause>600000</ReservationPause>
+        <DecoBuildings>
+          <Item>
+            <Asset>100689</Asset>
+          </Item>
+          <Item>
+            <Asset>100690</Asset>
+          </Item>
+          <Item>
+            <Asset>100720</Asset>
+          </Item>
+          <Item>
+            <Asset>100723</Asset>
+          </Item>
+          <Item>
+            <Asset>100724</Asset>
+          </Item>
+          <Item>
+            <Asset>100725</Asset>
+          </Item>
+          <Item>
+            <Asset>100726</Asset>
+          </Item>
+          <Item>
+            <Asset>100731</Asset>
+          </Item>
+          <Item>
+            <Asset>100733</Asset>
+          </Item>
+          <Item>
+            <Asset>100734</Asset>
+          </Item>
+          <Item>
+            <Asset>100735</Asset>
+          </Item>
+          <Item>
+            <Asset>100736</Asset>
+          </Item>
+          <Item>
+            <Asset>1000101</Asset>
+          </Item>
+          <Item>
+            <Asset>1000103</Asset>
+          </Item>
+          <Item>
+            <Asset>1000110</Asset>
+          </Item>
+          <Item>
+            <Asset>1000156</Asset>
+          </Item>
+          <Item>
+            <Asset>1000222</Asset>
+          </Item>
+          <Item>
+            <Asset>1000226</Asset>
+          </Item>
+          <Item>
+            <Asset>1000228</Asset>
+          </Item>
+        </DecoBuildings>
+      </ThirdParty>
     </Values>
   </Asset>
   <Asset>
@@ -808,6 +1202,8 @@
         <GUID>177</GUID>
         <Name>campaign_character08_cousin_female</Name>
         <IconFilename>data/ui/2kimages/main/profiles/resident_tier01.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -818,6 +1214,7 @@
           </English>
         </LocaText>
         <LineID>13092</LineID>
+        <Localize>1</Localize>
       </Text>
       <Profile>
         <ProfilePicture>data/ui/2kimages/main/profiles/resident_tier05.png</ProfilePicture>
@@ -829,6 +1226,16 @@
         <CreateModeMeta>AutoCreate_OnlyCampaign</CreateModeMeta>
         <CreateModeSession>AutoCreate_OnlyCampaign</CreateModeSession>
         <AttackableThroughPirateFlagItem>0</AttackableThroughPirateFlagItem>
+        <CompanyIcon>0</CompanyIcon>
+        <ProfileType>ThirdParty</ProfileType>
+        <InfoCornerDescription>0</InfoCornerDescription>
+        <QuestStarterObject>0</QuestStarterObject>
+        <QuestPoolList />
+        <HostileTakeoverEnabled>1</HostileTakeoverEnabled>
+        <BackgroundText>0</BackgroundText>
+        <TakeoverBehaviour>Destroy</TakeoverBehaviour>
+        <ShipDropRewardPool>0</ShipDropRewardPool>
+        <ChooseNPC />
       </Profile>
       <ParticipantMessages>
         <MessageTriggers>
@@ -968,12 +1375,99 @@
       </ParticipantMessages>
       <Object>
         <DefaultParticipant>Campaign_character_08_cousin_female</DefaultParticipant>
+        <Type>GameObject</Type>
+        <Variations />
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <ParticipantMessageObject>
         <ParticipantMessages>184</ParticipantMessages>
       </ParticipantMessageObject>
-      <Interaction />
-      <ThirdParty />
+      <Interaction>
+        <NewspaperPropaganda />
+        <PaMSyTrade>
+          <ActiveTrade>
+            <TradeAmount>1000</TradeAmount>
+            <TradeAmountFactor>500</TradeAmountFactor>
+            <TradeMessage>ActiveTradeConfirmation</TradeMessage>
+          </ActiveTrade>
+          <PassiveTrade>
+            <TradeAmount>10000</TradeAmount>
+            <TradeAmountFactor>5000</TradeAmountFactor>
+            <TradeMessage>PassiveTradeConfirmation</TradeMessage>
+          </PassiveTrade>
+        </PaMSyTrade>
+        <PaMSyMilitaryStrength />
+        <PaMSyAttractiveness />
+        <PaMSyIslandPollution />
+      </Interaction>
+      <ThirdParty>
+        <AllowedRegions />
+        <IslandPlacement>NoIsland</IslandPlacement>
+        <ReservationPause>600000</ReservationPause>
+        <DecoBuildings>
+          <Item>
+            <Asset>100689</Asset>
+          </Item>
+          <Item>
+            <Asset>100690</Asset>
+          </Item>
+          <Item>
+            <Asset>100720</Asset>
+          </Item>
+          <Item>
+            <Asset>100723</Asset>
+          </Item>
+          <Item>
+            <Asset>100724</Asset>
+          </Item>
+          <Item>
+            <Asset>100725</Asset>
+          </Item>
+          <Item>
+            <Asset>100726</Asset>
+          </Item>
+          <Item>
+            <Asset>100731</Asset>
+          </Item>
+          <Item>
+            <Asset>100733</Asset>
+          </Item>
+          <Item>
+            <Asset>100734</Asset>
+          </Item>
+          <Item>
+            <Asset>100735</Asset>
+          </Item>
+          <Item>
+            <Asset>100736</Asset>
+          </Item>
+          <Item>
+            <Asset>1000101</Asset>
+          </Item>
+          <Item>
+            <Asset>1000103</Asset>
+          </Item>
+          <Item>
+            <Asset>1000110</Asset>
+          </Item>
+          <Item>
+            <Asset>1000156</Asset>
+          </Item>
+          <Item>
+            <Asset>1000222</Asset>
+          </Item>
+          <Item>
+            <Asset>1000226</Asset>
+          </Item>
+          <Item>
+            <Asset>1000228</Asset>
+          </Item>
+        </DecoBuildings>
+      </ThirdParty>
     </Values>
   </Asset>
   <Asset>
@@ -983,6 +1477,8 @@
         <GUID>178</GUID>
         <Name>campaign_character09_cousin_male</Name>
         <IconFilename>data/ui/2kimages/main/profiles/campaign_portrait_09.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -993,6 +1489,7 @@
           </English>
         </LocaText>
         <LineID>13093</LineID>
+        <Localize>1</Localize>
       </Text>
       <Profile>
         <ProfilePicture>data/ui/2kimages/main/profiles/campaign_portrait_09.png</ProfilePicture>
@@ -1004,6 +1501,16 @@
         <CreateModeMeta>AutoCreate_OnlyCampaign</CreateModeMeta>
         <CreateModeSession>AutoCreate_OnlyCampaign</CreateModeSession>
         <AttackableThroughPirateFlagItem>0</AttackableThroughPirateFlagItem>
+        <CompanyIcon>0</CompanyIcon>
+        <ProfileType>ThirdParty</ProfileType>
+        <InfoCornerDescription>0</InfoCornerDescription>
+        <QuestStarterObject>0</QuestStarterObject>
+        <QuestPoolList />
+        <HostileTakeoverEnabled>1</HostileTakeoverEnabled>
+        <BackgroundText>0</BackgroundText>
+        <TakeoverBehaviour>Destroy</TakeoverBehaviour>
+        <ShipDropRewardPool>0</ShipDropRewardPool>
+        <ChooseNPC />
       </Profile>
       <ParticipantMessages>
         <MessageTriggers>
@@ -1143,12 +1650,99 @@
       </ParticipantMessages>
       <Object>
         <DefaultParticipant>Campaign_character_09_cousin_male</DefaultParticipant>
+        <Type>GameObject</Type>
+        <Variations />
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <ParticipantMessageObject>
         <ParticipantMessages>185</ParticipantMessages>
       </ParticipantMessageObject>
-      <Interaction />
-      <ThirdParty />
+      <Interaction>
+        <NewspaperPropaganda />
+        <PaMSyTrade>
+          <ActiveTrade>
+            <TradeAmount>1000</TradeAmount>
+            <TradeAmountFactor>500</TradeAmountFactor>
+            <TradeMessage>ActiveTradeConfirmation</TradeMessage>
+          </ActiveTrade>
+          <PassiveTrade>
+            <TradeAmount>10000</TradeAmount>
+            <TradeAmountFactor>5000</TradeAmountFactor>
+            <TradeMessage>PassiveTradeConfirmation</TradeMessage>
+          </PassiveTrade>
+        </PaMSyTrade>
+        <PaMSyMilitaryStrength />
+        <PaMSyAttractiveness />
+        <PaMSyIslandPollution />
+      </Interaction>
+      <ThirdParty>
+        <AllowedRegions />
+        <IslandPlacement>NoIsland</IslandPlacement>
+        <ReservationPause>600000</ReservationPause>
+        <DecoBuildings>
+          <Item>
+            <Asset>100689</Asset>
+          </Item>
+          <Item>
+            <Asset>100690</Asset>
+          </Item>
+          <Item>
+            <Asset>100720</Asset>
+          </Item>
+          <Item>
+            <Asset>100723</Asset>
+          </Item>
+          <Item>
+            <Asset>100724</Asset>
+          </Item>
+          <Item>
+            <Asset>100725</Asset>
+          </Item>
+          <Item>
+            <Asset>100726</Asset>
+          </Item>
+          <Item>
+            <Asset>100731</Asset>
+          </Item>
+          <Item>
+            <Asset>100733</Asset>
+          </Item>
+          <Item>
+            <Asset>100734</Asset>
+          </Item>
+          <Item>
+            <Asset>100735</Asset>
+          </Item>
+          <Item>
+            <Asset>100736</Asset>
+          </Item>
+          <Item>
+            <Asset>1000101</Asset>
+          </Item>
+          <Item>
+            <Asset>1000103</Asset>
+          </Item>
+          <Item>
+            <Asset>1000110</Asset>
+          </Item>
+          <Item>
+            <Asset>1000156</Asset>
+          </Item>
+          <Item>
+            <Asset>1000222</Asset>
+          </Item>
+          <Item>
+            <Asset>1000226</Asset>
+          </Item>
+          <Item>
+            <Asset>1000228</Asset>
+          </Item>
+        </DecoBuildings>
+      </ThirdParty>
     </Values>
   </Asset>
 </Assets>

@@ -8,14 +8,34 @@
         <Name>institution_01 (Police)</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_police.png</IconFilename>
         <InfoDescription>3788</InfoDescription>
+        <Comments />
       </Standard>
       <Building>
         <BuildModeRandomRotation>180</BuildModeRandomRotation>
         <AssociatedRegions>Moderate</AssociatedRegions>
         <BuildingType>Factory</BuildingType>
         <BuildingCategoryName>100001</BuildingCategoryName>
+        <Destructable>1</Destructable>
+        <Movable>1</Movable>
+        <PickingAsset>0</PickingAsset>
+        <ConstructionMenuText>0</ConstructionMenuText>
+        <HasBorderRectOutline>1</HasBorderRectOutline>
+        <SnapRadius>2</SnapRadius>
+        <TerrainType>Terrain</TerrainType>
+        <InfluencedByNeighbors />
+        <InfluencedVariationDirection />
+        <BuildingBlockPool />
+        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
-      <Blocking />
+      <Blocking>
+        <HidePropsRadius>1</HidePropsRadius>
+        <DeletePropsRadius>1</DeletePropsRadius>
+        <GroundDecalAsset>0</GroundDecalAsset>
+        <GroundDecalInvisible>0</GroundDecalInvisible>
+        <StreetOutside>0</StreetOutside>
+        <RemoveGrass>1</RemoveGrass>
+        <BlocksBuilding>1</BlocksBuilding>
+      </Blocking>
       <Cost>
         <Costs>
           <Item>
@@ -40,6 +60,9 @@
             <Ingredient>1010202</Ingredient>
           </Item>
         </Costs>
+        <ItemsPerCost>1</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
       </Cost>
       <Object>
         <Variations>
@@ -48,10 +71,42 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <Mesh />
+      <Mesh>
+        <ObjectPosition>Static</ObjectPosition>
+        <MeshPlacement>Default</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
+      </Mesh>
       <Selection>
         <GUIType>CityInstitution</GUIType>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <InteractionDistance>15</InteractionDistance>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <AllowedDragType />
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
       </Selection>
       <Text>
         <LocaText>
@@ -62,11 +117,18 @@
           </English>
         </LocaText>
         <LineID>3735</LineID>
+        <Localize>1</Localize>
       </Text>
       <Constructable>
         <DestructionCategory>Production</DestructionCategory>
+        <ConstructionMode>Default</ConstructionMode>
+        <DestructionType>0</DestructionType>
       </Constructable>
-      <Locked />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
       <SoundEmitter>
         <ActiveSounds>
           <Item>
@@ -105,11 +167,34 @@
             </Item>
           </BuildMoveEnd>
         </ConstructionSounds>
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
-      <FeedbackController />
-      <Infolayer />
+      <FeedbackController>
+        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
+        <UpdateMeshSequence>1</UpdateMeshSequence>
+      </FeedbackController>
+      <Infolayer>
+        <DefaultInfoLayer>0</DefaultInfoLayer>
+      </Infolayer>
       <UpgradeList />
-      <RandomDummySpawner />
+      <RandomDummySpawner>
+        <RandomAssets />
+      </RandomDummySpawner>
       <IncidentResolver>
         <ResolverUnit>100581</ResolverUnit>
         <SpecialUnit>100582</SpecialUnit>
@@ -131,6 +216,13 @@
             <PopulationCount>300</PopulationCount>
           </Item>
         </SpecialUnitThresholds>
+        <ResolverUnitCount>1</ResolverUnitCount>
+        <SpecialActionCooldown>120000</SpecialActionCooldown>
+        <StreetOverlayStartPercentage>0.5</StreetOverlayStartPercentage>
+        <StreetOverlayFullColor>1677786880</StreetOverlayFullColor>
+        <StreetOverlayStartColor>1688796928</StreetOverlayStartColor>
+        <StreetOverlayMidColor>1694498560</StreetOverlayMidColor>
+        <StreetOverlayEndColor>1275064320</StreetOverlayEndColor>
       </IncidentResolver>
       <Maintenance>
         <Maintenances>
@@ -140,11 +232,21 @@
             <InactiveAmount>50</InactiveAmount>
           </Item>
         </Maintenances>
+        <MaintenanceAmountFactor>1</MaintenanceAmountFactor>
+        <WorkforceAmountFactor>1</WorkforceAmountFactor>
       </Maintenance>
       <Attackable>
         <MaximumHitPoints>4500</MaximumHitPoints>
         <SelfHealPerHealTick>4</SelfHealPerHealTick>
         <HasRuinState>1</HasRuinState>
+        <HPBarOffset>6</HPBarOffset>
+        <PausedTimeIfAttacked>15000</PausedTimeIfAttacked>
+        <SelfHealPausedTimeIfAttacked>15000</SelfHealPausedTimeIfAttacked>
+        <ArmorType>Default</ArmorType>
+        <TakeOverEffect>Never</TakeOverEffect>
+        <IslandWarFlag>0</IslandWarFlag>
+        <RuinSmokeParticles />
+        <ExplosionEffects />
       </Attackable>
       <Pausable />
       <IncidentInfluencer>
@@ -152,14 +254,43 @@
           <Riot>
             <Influence>-7</Influence>
             <Distance>15</Distance>
+            <DecreaseType>LinearDecrease</DecreaseType>
           </Riot>
+          <Illness>
+            <Influence>0</Influence>
+            <DecreaseType>LinearDecrease</DecreaseType>
+          </Illness>
+          <Fire>
+            <Influence>0</Influence>
+            <DecreaseType>LinearDecrease</DecreaseType>
+          </Fire>
+          <Explosion>
+            <Influence>0</Influence>
+            <DecreaseType>LinearDecrease</DecreaseType>
+          </Explosion>
         </Influence>
+        <DistanceMultiplier>1</DistanceMultiplier>
       </IncidentInfluencer>
-      <DelayedConstruction />
+      <DelayedConstruction>
+        <ConstructionDelay>60000</ConstructionDelay>
+      </DelayedConstruction>
       <AmbientMoodProvider>
         <AmbientMood>ResidenceTier1</AmbientMood>
+        <Murmur>None</Murmur>
+        <AttractivityDependentMurmur />
+        <ProductivityDependentMurmur />
+        <SatisfactionDependentMurmur />
+        <DynamicEnvironmentType>None</DynamicEnvironmentType>
+        <HappinessDependentMurmur />
+        <IslandAttractivityDependentMurmur />
       </AmbientMoodProvider>
-      <Culture />
+      <Culture>
+        <CultureType>Culture</CultureType>
+        <SetPages />
+        <UndiscoveredSet>0</UndiscoveredSet>
+        <ModuleListHeader>0</ModuleListHeader>
+        <OpenSetPages>0</OpenSetPages>
+      </Culture>
       <ItemGenerator />
       <QuestObject />
     </Values>
@@ -172,14 +303,34 @@
         <Name>institution_02 (Fire Department)</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_fire_house.png</IconFilename>
         <InfoDescription>118032</InfoDescription>
+        <Comments />
       </Standard>
       <Building>
         <BuildModeRandomRotation>180</BuildModeRandomRotation>
         <AssociatedRegions>Moderate</AssociatedRegions>
         <BuildingType>Factory</BuildingType>
         <BuildingCategoryName>100001</BuildingCategoryName>
+        <Destructable>1</Destructable>
+        <Movable>1</Movable>
+        <PickingAsset>0</PickingAsset>
+        <ConstructionMenuText>0</ConstructionMenuText>
+        <HasBorderRectOutline>1</HasBorderRectOutline>
+        <SnapRadius>2</SnapRadius>
+        <TerrainType>Terrain</TerrainType>
+        <InfluencedByNeighbors />
+        <InfluencedVariationDirection />
+        <BuildingBlockPool />
+        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
-      <Blocking />
+      <Blocking>
+        <HidePropsRadius>1</HidePropsRadius>
+        <DeletePropsRadius>1</DeletePropsRadius>
+        <GroundDecalAsset>0</GroundDecalAsset>
+        <GroundDecalInvisible>0</GroundDecalInvisible>
+        <StreetOutside>0</StreetOutside>
+        <RemoveGrass>1</RemoveGrass>
+        <BlocksBuilding>1</BlocksBuilding>
+      </Blocking>
       <Cost>
         <Costs>
           <Item>
@@ -203,6 +354,9 @@
             <Ingredient>1010202</Ingredient>
           </Item>
         </Costs>
+        <ItemsPerCost>1</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
       </Cost>
       <Object>
         <Variations>
@@ -211,10 +365,42 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <Mesh />
+      <Mesh>
+        <ObjectPosition>Static</ObjectPosition>
+        <MeshPlacement>Default</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
+      </Mesh>
       <Selection>
         <GUIType>CityInstitution</GUIType>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <InteractionDistance>15</InteractionDistance>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <AllowedDragType />
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
       </Selection>
       <Text>
         <LocaText>
@@ -225,11 +411,18 @@
           </English>
         </LocaText>
         <LineID>3736</LineID>
+        <Localize>1</Localize>
       </Text>
       <Constructable>
         <DestructionCategory>Production</DestructionCategory>
+        <ConstructionMode>Default</ConstructionMode>
+        <DestructionType>0</DestructionType>
       </Constructable>
-      <Locked />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
       <SoundEmitter>
         <ActiveSounds>
           <Item>
@@ -268,11 +461,34 @@
             </Item>
           </BuildMoveEnd>
         </ConstructionSounds>
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
-      <FeedbackController />
-      <Infolayer />
+      <FeedbackController>
+        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
+        <UpdateMeshSequence>1</UpdateMeshSequence>
+      </FeedbackController>
+      <Infolayer>
+        <DefaultInfoLayer>0</DefaultInfoLayer>
+      </Infolayer>
       <UpgradeList />
-      <RandomDummySpawner />
+      <RandomDummySpawner>
+        <RandomAssets />
+      </RandomDummySpawner>
       <IncidentResolver>
         <ResolverUnit>100579</ResolverUnit>
         <SpecialUnit>100580</SpecialUnit>
@@ -293,6 +509,14 @@
             <PopulationCount>300</PopulationCount>
           </Item>
         </SpecialUnitThresholds>
+        <ResolverUnitCount>1</ResolverUnitCount>
+        <SpecialActionCooldown>120000</SpecialActionCooldown>
+        <ResolvableIncident>Fire</ResolvableIncident>
+        <StreetOverlayStartPercentage>0.5</StreetOverlayStartPercentage>
+        <StreetOverlayFullColor>1677786880</StreetOverlayFullColor>
+        <StreetOverlayStartColor>1688796928</StreetOverlayStartColor>
+        <StreetOverlayMidColor>1694498560</StreetOverlayMidColor>
+        <StreetOverlayEndColor>1275064320</StreetOverlayEndColor>
       </IncidentResolver>
       <Maintenance>
         <Maintenances>
@@ -302,11 +526,21 @@
             <InactiveAmount>25</InactiveAmount>
           </Item>
         </Maintenances>
+        <MaintenanceAmountFactor>1</MaintenanceAmountFactor>
+        <WorkforceAmountFactor>1</WorkforceAmountFactor>
       </Maintenance>
       <Attackable>
         <MaximumHitPoints>3500</MaximumHitPoints>
         <SelfHealPerHealTick>4</SelfHealPerHealTick>
         <HasRuinState>1</HasRuinState>
+        <HPBarOffset>6</HPBarOffset>
+        <PausedTimeIfAttacked>15000</PausedTimeIfAttacked>
+        <SelfHealPausedTimeIfAttacked>15000</SelfHealPausedTimeIfAttacked>
+        <ArmorType>Default</ArmorType>
+        <TakeOverEffect>Never</TakeOverEffect>
+        <IslandWarFlag>0</IslandWarFlag>
+        <RuinSmokeParticles />
+        <ExplosionEffects />
       </Attackable>
       <Pausable />
       <IncidentInfluencer>
@@ -314,18 +548,44 @@
           <Fire>
             <Influence>-7</Influence>
             <Distance>15</Distance>
+            <DecreaseType>LinearDecrease</DecreaseType>
           </Fire>
           <Explosion>
             <Influence>-7</Influence>
             <Distance>9</Distance>
+            <DecreaseType>LinearDecrease</DecreaseType>
           </Explosion>
+          <Illness>
+            <Influence>0</Influence>
+            <DecreaseType>LinearDecrease</DecreaseType>
+          </Illness>
+          <Riot>
+            <Influence>0</Influence>
+            <DecreaseType>LinearDecrease</DecreaseType>
+          </Riot>
         </Influence>
+        <DistanceMultiplier>1</DistanceMultiplier>
       </IncidentInfluencer>
-      <DelayedConstruction />
+      <DelayedConstruction>
+        <ConstructionDelay>60000</ConstructionDelay>
+      </DelayedConstruction>
       <AmbientMoodProvider>
         <AmbientMood>ResidenceTier1</AmbientMood>
+        <Murmur>None</Murmur>
+        <AttractivityDependentMurmur />
+        <ProductivityDependentMurmur />
+        <SatisfactionDependentMurmur />
+        <DynamicEnvironmentType>None</DynamicEnvironmentType>
+        <HappinessDependentMurmur />
+        <IslandAttractivityDependentMurmur />
       </AmbientMoodProvider>
-      <Culture />
+      <Culture>
+        <CultureType>Culture</CultureType>
+        <SetPages />
+        <UndiscoveredSet>0</UndiscoveredSet>
+        <ModuleListHeader>0</ModuleListHeader>
+        <OpenSetPages>0</OpenSetPages>
+      </Culture>
       <ItemGenerator />
       <QuestObject />
     </Values>
@@ -338,14 +598,34 @@
         <Name>institution_03 (Hospital)</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_hospital.png</IconFilename>
         <InfoDescription>3789</InfoDescription>
+        <Comments />
       </Standard>
       <Building>
         <BuildModeRandomRotation>90</BuildModeRandomRotation>
         <AssociatedRegions>Moderate</AssociatedRegions>
         <BuildingType>Factory</BuildingType>
         <BuildingCategoryName>100001</BuildingCategoryName>
+        <Destructable>1</Destructable>
+        <Movable>1</Movable>
+        <PickingAsset>0</PickingAsset>
+        <ConstructionMenuText>0</ConstructionMenuText>
+        <HasBorderRectOutline>1</HasBorderRectOutline>
+        <SnapRadius>2</SnapRadius>
+        <TerrainType>Terrain</TerrainType>
+        <InfluencedByNeighbors />
+        <InfluencedVariationDirection />
+        <BuildingBlockPool />
+        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
-      <Blocking />
+      <Blocking>
+        <HidePropsRadius>1</HidePropsRadius>
+        <DeletePropsRadius>1</DeletePropsRadius>
+        <GroundDecalAsset>0</GroundDecalAsset>
+        <GroundDecalInvisible>0</GroundDecalInvisible>
+        <StreetOutside>0</StreetOutside>
+        <RemoveGrass>1</RemoveGrass>
+        <BlocksBuilding>1</BlocksBuilding>
+      </Blocking>
       <Cost>
         <Costs>
           <Item>
@@ -372,6 +652,9 @@
             <Ingredient>1010202</Ingredient>
           </Item>
         </Costs>
+        <ItemsPerCost>1</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
       </Cost>
       <Object>
         <Variations>
@@ -380,10 +663,42 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <Mesh />
+      <Mesh>
+        <ObjectPosition>Static</ObjectPosition>
+        <MeshPlacement>Default</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
+      </Mesh>
       <Selection>
         <GUIType>CityInstitution</GUIType>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <InteractionDistance>15</InteractionDistance>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <AllowedDragType />
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
       </Selection>
       <Text>
         <LocaText>
@@ -394,11 +709,18 @@
           </English>
         </LocaText>
         <LineID>3737</LineID>
+        <Localize>1</Localize>
       </Text>
       <Constructable>
         <DestructionCategory>Production</DestructionCategory>
+        <ConstructionMode>Default</ConstructionMode>
+        <DestructionType>0</DestructionType>
       </Constructable>
-      <Locked />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
       <SoundEmitter>
         <ActiveSounds>
           <Item>
@@ -437,11 +759,34 @@
             </Item>
           </BuildMoveEnd>
         </ConstructionSounds>
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
-      <FeedbackController />
-      <Infolayer />
+      <FeedbackController>
+        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
+        <UpdateMeshSequence>1</UpdateMeshSequence>
+      </FeedbackController>
+      <Infolayer>
+        <DefaultInfoLayer>0</DefaultInfoLayer>
+      </Infolayer>
       <UpgradeList />
-      <RandomDummySpawner />
+      <RandomDummySpawner>
+        <RandomAssets />
+      </RandomDummySpawner>
       <IncidentResolver>
         <ResolverUnit>100583</ResolverUnit>
         <ResolverUnitCount>2</ResolverUnitCount>
@@ -464,6 +809,12 @@
             <PopulationCount>300</PopulationCount>
           </Item>
         </SpecialUnitThresholds>
+        <SpecialActionCooldown>120000</SpecialActionCooldown>
+        <StreetOverlayStartPercentage>0.5</StreetOverlayStartPercentage>
+        <StreetOverlayFullColor>1677786880</StreetOverlayFullColor>
+        <StreetOverlayStartColor>1688796928</StreetOverlayStartColor>
+        <StreetOverlayMidColor>1694498560</StreetOverlayMidColor>
+        <StreetOverlayEndColor>1275064320</StreetOverlayEndColor>
       </IncidentResolver>
       <Maintenance>
         <Maintenances>
@@ -473,11 +824,21 @@
             <InactiveAmount>100</InactiveAmount>
           </Item>
         </Maintenances>
+        <MaintenanceAmountFactor>1</MaintenanceAmountFactor>
+        <WorkforceAmountFactor>1</WorkforceAmountFactor>
       </Maintenance>
       <Attackable>
         <MaximumHitPoints>5500</MaximumHitPoints>
         <SelfHealPerHealTick>4</SelfHealPerHealTick>
         <HasRuinState>1</HasRuinState>
+        <HPBarOffset>6</HPBarOffset>
+        <PausedTimeIfAttacked>15000</PausedTimeIfAttacked>
+        <SelfHealPausedTimeIfAttacked>15000</SelfHealPausedTimeIfAttacked>
+        <ArmorType>Default</ArmorType>
+        <TakeOverEffect>Never</TakeOverEffect>
+        <IslandWarFlag>0</IslandWarFlag>
+        <RuinSmokeParticles />
+        <ExplosionEffects />
       </Attackable>
       <Pausable />
       <IncidentInfluencer>
@@ -485,14 +846,43 @@
           <Illness>
             <Influence>-7</Influence>
             <Distance>20</Distance>
+            <DecreaseType>LinearDecrease</DecreaseType>
           </Illness>
+          <Fire>
+            <Influence>0</Influence>
+            <DecreaseType>LinearDecrease</DecreaseType>
+          </Fire>
+          <Riot>
+            <Influence>0</Influence>
+            <DecreaseType>LinearDecrease</DecreaseType>
+          </Riot>
+          <Explosion>
+            <Influence>0</Influence>
+            <DecreaseType>LinearDecrease</DecreaseType>
+          </Explosion>
         </Influence>
+        <DistanceMultiplier>1</DistanceMultiplier>
       </IncidentInfluencer>
-      <DelayedConstruction />
+      <DelayedConstruction>
+        <ConstructionDelay>60000</ConstructionDelay>
+      </DelayedConstruction>
       <AmbientMoodProvider>
         <AmbientMood>ResidenceTier1</AmbientMood>
+        <Murmur>None</Murmur>
+        <AttractivityDependentMurmur />
+        <ProductivityDependentMurmur />
+        <SatisfactionDependentMurmur />
+        <DynamicEnvironmentType>None</DynamicEnvironmentType>
+        <HappinessDependentMurmur />
+        <IslandAttractivityDependentMurmur />
       </AmbientMoodProvider>
-      <Culture />
+      <Culture>
+        <CultureType>Culture</CultureType>
+        <SetPages />
+        <UndiscoveredSet>0</UndiscoveredSet>
+        <ModuleListHeader>0</ModuleListHeader>
+        <OpenSetPages>0</OpenSetPages>
+      </Culture>
       <ItemGenerator />
       <QuestObject />
     </Values>
@@ -505,14 +895,34 @@
         <Name>institution_colony01_01 (Police)</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_police.png</IconFilename>
         <InfoDescription>3788</InfoDescription>
+        <Comments />
       </Standard>
       <Building>
         <AssociatedRegions>Colony01</AssociatedRegions>
         <BuildModeRandomRotation>180</BuildModeRandomRotation>
         <BuildingType>Factory</BuildingType>
         <BuildingCategoryName>100001</BuildingCategoryName>
+        <Destructable>1</Destructable>
+        <Movable>1</Movable>
+        <PickingAsset>0</PickingAsset>
+        <ConstructionMenuText>0</ConstructionMenuText>
+        <HasBorderRectOutline>1</HasBorderRectOutline>
+        <SnapRadius>2</SnapRadius>
+        <TerrainType>Terrain</TerrainType>
+        <InfluencedByNeighbors />
+        <InfluencedVariationDirection />
+        <BuildingBlockPool />
+        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
-      <Blocking />
+      <Blocking>
+        <HidePropsRadius>1</HidePropsRadius>
+        <DeletePropsRadius>1</DeletePropsRadius>
+        <GroundDecalAsset>0</GroundDecalAsset>
+        <GroundDecalInvisible>0</GroundDecalInvisible>
+        <StreetOutside>0</StreetOutside>
+        <RemoveGrass>1</RemoveGrass>
+        <BlocksBuilding>1</BlocksBuilding>
+      </Blocking>
       <Cost>
         <Costs>
           <Item>
@@ -537,6 +947,9 @@
             <Ingredient>1010202</Ingredient>
           </Item>
         </Costs>
+        <ItemsPerCost>1</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
       </Cost>
       <Object>
         <Variations>
@@ -545,10 +958,42 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <Mesh />
+      <Mesh>
+        <ObjectPosition>Static</ObjectPosition>
+        <MeshPlacement>Default</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
+      </Mesh>
       <Selection>
         <GUIType>CityInstitution</GUIType>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <InteractionDistance>15</InteractionDistance>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <AllowedDragType />
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
       </Selection>
       <Text>
         <LineID>8500</LineID>
@@ -559,11 +1004,18 @@
             <ExportCount>1</ExportCount>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
       <Constructable>
         <DestructionCategory>Production</DestructionCategory>
+        <ConstructionMode>Default</ConstructionMode>
+        <DestructionType>0</DestructionType>
       </Constructable>
-      <Locked />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
       <SoundEmitter>
         <ActiveSounds>
           <Item>
@@ -602,11 +1054,34 @@
             </Item>
           </BuildMoveEnd>
         </ConstructionSounds>
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
-      <FeedbackController />
-      <Infolayer />
+      <FeedbackController>
+        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
+        <UpdateMeshSequence>1</UpdateMeshSequence>
+      </FeedbackController>
+      <Infolayer>
+        <DefaultInfoLayer>0</DefaultInfoLayer>
+      </Infolayer>
       <UpgradeList />
-      <RandomDummySpawner />
+      <RandomDummySpawner>
+        <RandomAssets />
+      </RandomDummySpawner>
       <IncidentResolver>
         <ResolverUnit>100581</ResolverUnit>
         <SpecialUnit>100582</SpecialUnit>
@@ -628,6 +1103,13 @@
             <PopulationCount>300</PopulationCount>
           </Item>
         </SpecialUnitThresholds>
+        <ResolverUnitCount>1</ResolverUnitCount>
+        <SpecialActionCooldown>120000</SpecialActionCooldown>
+        <StreetOverlayStartPercentage>0.5</StreetOverlayStartPercentage>
+        <StreetOverlayFullColor>1677786880</StreetOverlayFullColor>
+        <StreetOverlayStartColor>1688796928</StreetOverlayStartColor>
+        <StreetOverlayMidColor>1694498560</StreetOverlayMidColor>
+        <StreetOverlayEndColor>1275064320</StreetOverlayEndColor>
       </IncidentResolver>
       <Maintenance>
         <Maintenances>
@@ -637,11 +1119,21 @@
             <InactiveAmount>50</InactiveAmount>
           </Item>
         </Maintenances>
+        <MaintenanceAmountFactor>1</MaintenanceAmountFactor>
+        <WorkforceAmountFactor>1</WorkforceAmountFactor>
       </Maintenance>
       <Attackable>
         <MaximumHitPoints>4500</MaximumHitPoints>
         <SelfHealPerHealTick>4</SelfHealPerHealTick>
         <HasRuinState>1</HasRuinState>
+        <HPBarOffset>6</HPBarOffset>
+        <PausedTimeIfAttacked>15000</PausedTimeIfAttacked>
+        <SelfHealPausedTimeIfAttacked>15000</SelfHealPausedTimeIfAttacked>
+        <ArmorType>Default</ArmorType>
+        <TakeOverEffect>Never</TakeOverEffect>
+        <IslandWarFlag>0</IslandWarFlag>
+        <RuinSmokeParticles />
+        <ExplosionEffects />
       </Attackable>
       <Pausable />
       <IncidentInfluencer>
@@ -649,14 +1141,43 @@
           <Riot>
             <Influence>-7</Influence>
             <Distance>15</Distance>
+            <DecreaseType>LinearDecrease</DecreaseType>
           </Riot>
+          <Illness>
+            <Influence>0</Influence>
+            <DecreaseType>LinearDecrease</DecreaseType>
+          </Illness>
+          <Fire>
+            <Influence>0</Influence>
+            <DecreaseType>LinearDecrease</DecreaseType>
+          </Fire>
+          <Explosion>
+            <Influence>0</Influence>
+            <DecreaseType>LinearDecrease</DecreaseType>
+          </Explosion>
         </Influence>
+        <DistanceMultiplier>1</DistanceMultiplier>
       </IncidentInfluencer>
-      <DelayedConstruction />
+      <DelayedConstruction>
+        <ConstructionDelay>60000</ConstructionDelay>
+      </DelayedConstruction>
       <AmbientMoodProvider>
         <AmbientMood>ResidenceTier1</AmbientMood>
+        <Murmur>None</Murmur>
+        <AttractivityDependentMurmur />
+        <ProductivityDependentMurmur />
+        <SatisfactionDependentMurmur />
+        <DynamicEnvironmentType>None</DynamicEnvironmentType>
+        <HappinessDependentMurmur />
+        <IslandAttractivityDependentMurmur />
       </AmbientMoodProvider>
-      <Culture />
+      <Culture>
+        <CultureType>Culture</CultureType>
+        <SetPages />
+        <UndiscoveredSet>0</UndiscoveredSet>
+        <ModuleListHeader>0</ModuleListHeader>
+        <OpenSetPages>0</OpenSetPages>
+      </Culture>
       <ItemGenerator />
       <QuestObject />
     </Values>
@@ -669,14 +1190,34 @@
         <Name>institution_colony01_02 (Fire Department)</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_fire_house.png</IconFilename>
         <InfoDescription>118032</InfoDescription>
+        <Comments />
       </Standard>
       <Building>
         <AssociatedRegions>Colony01</AssociatedRegions>
         <BuildModeRandomRotation>180</BuildModeRandomRotation>
         <BuildingType>Factory</BuildingType>
         <BuildingCategoryName>100001</BuildingCategoryName>
+        <Destructable>1</Destructable>
+        <Movable>1</Movable>
+        <PickingAsset>0</PickingAsset>
+        <ConstructionMenuText>0</ConstructionMenuText>
+        <HasBorderRectOutline>1</HasBorderRectOutline>
+        <SnapRadius>2</SnapRadius>
+        <TerrainType>Terrain</TerrainType>
+        <InfluencedByNeighbors />
+        <InfluencedVariationDirection />
+        <BuildingBlockPool />
+        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
-      <Blocking />
+      <Blocking>
+        <HidePropsRadius>1</HidePropsRadius>
+        <DeletePropsRadius>1</DeletePropsRadius>
+        <GroundDecalAsset>0</GroundDecalAsset>
+        <GroundDecalInvisible>0</GroundDecalInvisible>
+        <StreetOutside>0</StreetOutside>
+        <RemoveGrass>1</RemoveGrass>
+        <BlocksBuilding>1</BlocksBuilding>
+      </Blocking>
       <Cost>
         <Costs>
           <Item>
@@ -700,6 +1241,9 @@
             <Ingredient>1010202</Ingredient>
           </Item>
         </Costs>
+        <ItemsPerCost>1</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
       </Cost>
       <Object>
         <Variations>
@@ -708,10 +1252,42 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <Mesh />
+      <Mesh>
+        <ObjectPosition>Static</ObjectPosition>
+        <MeshPlacement>Default</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
+      </Mesh>
       <Selection>
         <GUIType>CityInstitution</GUIType>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <InteractionDistance>15</InteractionDistance>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <AllowedDragType />
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
       </Selection>
       <Text>
         <LineID>8501</LineID>
@@ -722,11 +1298,18 @@
             <ExportCount>1</ExportCount>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
       <Constructable>
         <DestructionCategory>Production</DestructionCategory>
+        <ConstructionMode>Default</ConstructionMode>
+        <DestructionType>0</DestructionType>
       </Constructable>
-      <Locked />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
       <SoundEmitter>
         <ActiveSounds>
           <Item>
@@ -765,11 +1348,34 @@
             </Item>
           </BuildMoveEnd>
         </ConstructionSounds>
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
-      <FeedbackController />
-      <Infolayer />
+      <FeedbackController>
+        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
+        <UpdateMeshSequence>1</UpdateMeshSequence>
+      </FeedbackController>
+      <Infolayer>
+        <DefaultInfoLayer>0</DefaultInfoLayer>
+      </Infolayer>
       <UpgradeList />
-      <RandomDummySpawner />
+      <RandomDummySpawner>
+        <RandomAssets />
+      </RandomDummySpawner>
       <IncidentResolver>
         <ResolverUnit>100579</ResolverUnit>
         <SpecialUnit>100580</SpecialUnit>
@@ -790,6 +1396,14 @@
             <PopulationCount>300</PopulationCount>
           </Item>
         </SpecialUnitThresholds>
+        <ResolverUnitCount>1</ResolverUnitCount>
+        <SpecialActionCooldown>120000</SpecialActionCooldown>
+        <ResolvableIncident>Fire</ResolvableIncident>
+        <StreetOverlayStartPercentage>0.5</StreetOverlayStartPercentage>
+        <StreetOverlayFullColor>1677786880</StreetOverlayFullColor>
+        <StreetOverlayStartColor>1688796928</StreetOverlayStartColor>
+        <StreetOverlayMidColor>1694498560</StreetOverlayMidColor>
+        <StreetOverlayEndColor>1275064320</StreetOverlayEndColor>
       </IncidentResolver>
       <Maintenance>
         <Maintenances>
@@ -799,11 +1413,21 @@
             <InactiveAmount>25</InactiveAmount>
           </Item>
         </Maintenances>
+        <MaintenanceAmountFactor>1</MaintenanceAmountFactor>
+        <WorkforceAmountFactor>1</WorkforceAmountFactor>
       </Maintenance>
       <Attackable>
         <MaximumHitPoints>3500</MaximumHitPoints>
         <SelfHealPerHealTick>4</SelfHealPerHealTick>
         <HasRuinState>1</HasRuinState>
+        <HPBarOffset>6</HPBarOffset>
+        <PausedTimeIfAttacked>15000</PausedTimeIfAttacked>
+        <SelfHealPausedTimeIfAttacked>15000</SelfHealPausedTimeIfAttacked>
+        <ArmorType>Default</ArmorType>
+        <TakeOverEffect>Never</TakeOverEffect>
+        <IslandWarFlag>0</IslandWarFlag>
+        <RuinSmokeParticles />
+        <ExplosionEffects />
       </Attackable>
       <Pausable />
       <IncidentInfluencer>
@@ -811,18 +1435,44 @@
           <Fire>
             <Influence>-7</Influence>
             <Distance>15</Distance>
+            <DecreaseType>LinearDecrease</DecreaseType>
           </Fire>
           <Explosion>
             <Influence>-7</Influence>
             <Distance>9</Distance>
+            <DecreaseType>LinearDecrease</DecreaseType>
           </Explosion>
+          <Illness>
+            <Influence>0</Influence>
+            <DecreaseType>LinearDecrease</DecreaseType>
+          </Illness>
+          <Riot>
+            <Influence>0</Influence>
+            <DecreaseType>LinearDecrease</DecreaseType>
+          </Riot>
         </Influence>
+        <DistanceMultiplier>1</DistanceMultiplier>
       </IncidentInfluencer>
-      <DelayedConstruction />
+      <DelayedConstruction>
+        <ConstructionDelay>60000</ConstructionDelay>
+      </DelayedConstruction>
       <AmbientMoodProvider>
         <AmbientMood>ResidenceTier1</AmbientMood>
+        <Murmur>None</Murmur>
+        <AttractivityDependentMurmur />
+        <ProductivityDependentMurmur />
+        <SatisfactionDependentMurmur />
+        <DynamicEnvironmentType>None</DynamicEnvironmentType>
+        <HappinessDependentMurmur />
+        <IslandAttractivityDependentMurmur />
       </AmbientMoodProvider>
-      <Culture />
+      <Culture>
+        <CultureType>Culture</CultureType>
+        <SetPages />
+        <UndiscoveredSet>0</UndiscoveredSet>
+        <ModuleListHeader>0</ModuleListHeader>
+        <OpenSetPages>0</OpenSetPages>
+      </Culture>
       <ItemGenerator />
       <QuestObject />
     </Values>
@@ -835,14 +1485,34 @@
         <Name>institution_colony01_03 (Hospital)</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_hospital.png</IconFilename>
         <InfoDescription>3789</InfoDescription>
+        <Comments />
       </Standard>
       <Building>
         <AssociatedRegions>Colony01</AssociatedRegions>
         <BuildModeRandomRotation>90</BuildModeRandomRotation>
         <BuildingType>Factory</BuildingType>
         <BuildingCategoryName>100001</BuildingCategoryName>
+        <Destructable>1</Destructable>
+        <Movable>1</Movable>
+        <PickingAsset>0</PickingAsset>
+        <ConstructionMenuText>0</ConstructionMenuText>
+        <HasBorderRectOutline>1</HasBorderRectOutline>
+        <SnapRadius>2</SnapRadius>
+        <TerrainType>Terrain</TerrainType>
+        <InfluencedByNeighbors />
+        <InfluencedVariationDirection />
+        <BuildingBlockPool />
+        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
-      <Blocking />
+      <Blocking>
+        <HidePropsRadius>1</HidePropsRadius>
+        <DeletePropsRadius>1</DeletePropsRadius>
+        <GroundDecalAsset>0</GroundDecalAsset>
+        <GroundDecalInvisible>0</GroundDecalInvisible>
+        <StreetOutside>0</StreetOutside>
+        <RemoveGrass>1</RemoveGrass>
+        <BlocksBuilding>1</BlocksBuilding>
+      </Blocking>
       <Cost>
         <Costs>
           <Item>
@@ -869,6 +1539,9 @@
             <Ingredient>1010202</Ingredient>
           </Item>
         </Costs>
+        <ItemsPerCost>1</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
       </Cost>
       <Object>
         <Variations>
@@ -877,10 +1550,42 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <Mesh />
+      <Mesh>
+        <ObjectPosition>Static</ObjectPosition>
+        <MeshPlacement>Default</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
+      </Mesh>
       <Selection>
         <GUIType>CityInstitution</GUIType>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <InteractionDistance>15</InteractionDistance>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <AllowedDragType />
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
       </Selection>
       <Text>
         <LineID>8502</LineID>
@@ -891,11 +1596,18 @@
             <ExportCount>1</ExportCount>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
       <Constructable>
         <DestructionCategory>Production</DestructionCategory>
+        <ConstructionMode>Default</ConstructionMode>
+        <DestructionType>0</DestructionType>
       </Constructable>
-      <Locked />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
       <SoundEmitter>
         <ActiveSounds>
           <Item>
@@ -934,11 +1646,34 @@
             </Item>
           </BuildMoveEnd>
         </ConstructionSounds>
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
-      <FeedbackController />
-      <Infolayer />
+      <FeedbackController>
+        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
+        <UpdateMeshSequence>1</UpdateMeshSequence>
+      </FeedbackController>
+      <Infolayer>
+        <DefaultInfoLayer>0</DefaultInfoLayer>
+      </Infolayer>
       <UpgradeList />
-      <RandomDummySpawner />
+      <RandomDummySpawner>
+        <RandomAssets />
+      </RandomDummySpawner>
       <IncidentResolver>
         <ResolverUnit>100583</ResolverUnit>
         <ResolverUnitCount>2</ResolverUnitCount>
@@ -961,6 +1696,12 @@
             <PopulationCount>300</PopulationCount>
           </Item>
         </SpecialUnitThresholds>
+        <SpecialActionCooldown>120000</SpecialActionCooldown>
+        <StreetOverlayStartPercentage>0.5</StreetOverlayStartPercentage>
+        <StreetOverlayFullColor>1677786880</StreetOverlayFullColor>
+        <StreetOverlayStartColor>1688796928</StreetOverlayStartColor>
+        <StreetOverlayMidColor>1694498560</StreetOverlayMidColor>
+        <StreetOverlayEndColor>1275064320</StreetOverlayEndColor>
       </IncidentResolver>
       <Maintenance>
         <Maintenances>
@@ -970,11 +1711,21 @@
             <InactiveAmount>100</InactiveAmount>
           </Item>
         </Maintenances>
+        <MaintenanceAmountFactor>1</MaintenanceAmountFactor>
+        <WorkforceAmountFactor>1</WorkforceAmountFactor>
       </Maintenance>
       <Attackable>
         <MaximumHitPoints>5500</MaximumHitPoints>
         <SelfHealPerHealTick>4</SelfHealPerHealTick>
         <HasRuinState>1</HasRuinState>
+        <HPBarOffset>6</HPBarOffset>
+        <PausedTimeIfAttacked>15000</PausedTimeIfAttacked>
+        <SelfHealPausedTimeIfAttacked>15000</SelfHealPausedTimeIfAttacked>
+        <ArmorType>Default</ArmorType>
+        <TakeOverEffect>Never</TakeOverEffect>
+        <IslandWarFlag>0</IslandWarFlag>
+        <RuinSmokeParticles />
+        <ExplosionEffects />
       </Attackable>
       <Pausable />
       <IncidentInfluencer>
@@ -982,14 +1733,43 @@
           <Illness>
             <Influence>-7</Influence>
             <Distance>20</Distance>
+            <DecreaseType>LinearDecrease</DecreaseType>
           </Illness>
+          <Fire>
+            <Influence>0</Influence>
+            <DecreaseType>LinearDecrease</DecreaseType>
+          </Fire>
+          <Riot>
+            <Influence>0</Influence>
+            <DecreaseType>LinearDecrease</DecreaseType>
+          </Riot>
+          <Explosion>
+            <Influence>0</Influence>
+            <DecreaseType>LinearDecrease</DecreaseType>
+          </Explosion>
         </Influence>
+        <DistanceMultiplier>1</DistanceMultiplier>
       </IncidentInfluencer>
-      <DelayedConstruction />
+      <DelayedConstruction>
+        <ConstructionDelay>60000</ConstructionDelay>
+      </DelayedConstruction>
       <AmbientMoodProvider>
         <AmbientMood>ResidenceTier1</AmbientMood>
+        <Murmur>None</Murmur>
+        <AttractivityDependentMurmur />
+        <ProductivityDependentMurmur />
+        <SatisfactionDependentMurmur />
+        <DynamicEnvironmentType>None</DynamicEnvironmentType>
+        <HappinessDependentMurmur />
+        <IslandAttractivityDependentMurmur />
       </AmbientMoodProvider>
-      <Culture />
+      <Culture>
+        <CultureType>Culture</CultureType>
+        <SetPages />
+        <UndiscoveredSet>0</UndiscoveredSet>
+        <ModuleListHeader>0</ModuleListHeader>
+        <OpenSetPages>0</OpenSetPages>
+      </Culture>
       <ItemGenerator />
       <QuestObject />
     </Values>

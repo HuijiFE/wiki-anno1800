@@ -27,15 +27,58 @@
         <IsFemale>1</IsFemale>
         <AmbientName>Portrait Light </AmbientName>
         <CamFile>data/config/portraitcam/default.portraitcam</CamFile>
+        <IdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_idle</Sequence>
+          </Positve>
+        </IdleSequences>
+        <TalkIdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk_idle</Sequence>
+          </Positve>
+        </TalkIdleSequences>
+        <TalkSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk</Sequence>
+          </Positve>
+        </TalkSequences>
       </Portrait>
       <Standard>
         <GUID>1000129</GUID>
         <Name>advisor_01 (Hannah Goode)</Name>
         <IconFilename>data/ui/2kimages/main/profiles/advisor_01.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Mesh>
         <ObjectPosition>Unmanaged</ObjectPosition>
         <DefaultSequence>portrait_neutral_idle</DefaultSequence>
+        <MeshPlacement>Default</MeshPlacement>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Object>
         <Variations>
@@ -43,11 +86,19 @@
             <Filename>data/graphics/portraits/narrative/advisor_01/advisor_01.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Locked>
         <DefaultLockedState>1</DefaultLockedState>
         <VisibleWhenLocked>1</VisibleWhenLocked>
         <Scope>Account</Scope>
+        <DLCDependency>0</DLCDependency>
       </Locked>
     </Values>
   </Asset>
@@ -78,15 +129,58 @@
         <IsFemale>1</IsFemale>
         <AmbientName>Portrait Light </AmbientName>
         <CamFile>data/config/portraitcam/default.portraitcam</CamFile>
+        <IdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_idle</Sequence>
+          </Positve>
+        </IdleSequences>
+        <TalkIdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk_idle</Sequence>
+          </Positve>
+        </TalkIdleSequences>
+        <TalkSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk</Sequence>
+          </Positve>
+        </TalkSequences>
       </Portrait>
       <Standard>
         <GUID>102480</GUID>
         <Name>advisor_01 (Hannah Goode Black Dress)</Name>
         <IconFilename>data/ui/2kimages/main/profiles/advisor_01.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Mesh>
         <ObjectPosition>Unmanaged</ObjectPosition>
         <DefaultSequence>portrait_neutral_idle</DefaultSequence>
+        <MeshPlacement>Default</MeshPlacement>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Object>
         <Variations>
@@ -94,11 +188,19 @@
             <Filename>data/graphics/portraits/narrative/campaign_portrait_12/campaign_portrait_12.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Locked>
         <DefaultLockedState>1</DefaultLockedState>
         <VisibleWhenLocked>1</VisibleWhenLocked>
         <Scope>Account</Scope>
+        <DLCDependency>0</DLCDependency>
       </Locked>
     </Values>
   </Asset>
@@ -128,15 +230,58 @@
         </PortraitCameraAmbientConfig>
         <AmbientName>Portrait Light </AmbientName>
         <CamFile>data/config/portraitcam/default.portraitcam</CamFile>
+        <IdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_idle</Sequence>
+          </Positve>
+        </IdleSequences>
+        <TalkIdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk_idle</Sequence>
+          </Positve>
+        </TalkIdleSequences>
+        <TalkSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk</Sequence>
+          </Positve>
+        </TalkSequences>
       </Portrait>
       <Standard>
         <GUID>1000130</GUID>
         <Name>advisor_02 (Aarhant)</Name>
         <IconFilename>data/ui/2kimages/main/profiles/advisor_02.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Mesh>
         <ObjectPosition>Unmanaged</ObjectPosition>
         <DefaultSequence>portrait_neutral_idle</DefaultSequence>
+        <MeshPlacement>Default</MeshPlacement>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Object>
         <Variations>
@@ -144,11 +289,19 @@
             <Filename>data/graphics/portraits/narrative/advisor_02/advisor_02.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Locked>
         <DefaultLockedState>1</DefaultLockedState>
         <VisibleWhenLocked>1</VisibleWhenLocked>
         <Scope>Account</Scope>
+        <DLCDependency>0</DLCDependency>
       </Locked>
     </Values>
   </Asset>
@@ -177,14 +330,58 @@
             <CamFile>data/config/portraitcam/default.portraitcamright</CamFile>
           </VideoRight>
         </PortraitCameraAmbientConfig>
+        <IdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_idle</Sequence>
+          </Positve>
+        </IdleSequences>
+        <TalkIdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk_idle</Sequence>
+          </Positve>
+        </TalkIdleSequences>
+        <TalkSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk</Sequence>
+          </Positve>
+        </TalkSequences>
+        <PortraitName>0</PortraitName>
       </Portrait>
       <Standard>
         <GUID>1000131</GUID>
         <Name>Colony guy</Name>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Mesh>
         <ObjectPosition>Unmanaged</ObjectPosition>
         <DefaultSequence>portrait_neutral_idle</DefaultSequence>
+        <MeshPlacement>Default</MeshPlacement>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Object>
         <Variations>
@@ -192,11 +389,19 @@
             <Filename>data/graphics/portraits/narrative/colony_guy/colony_guy.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Locked>
         <DefaultLockedState>1</DefaultLockedState>
         <VisibleWhenLocked>1</VisibleWhenLocked>
         <Scope>Account</Scope>
+        <DLCDependency>0</DLCDependency>
       </Locked>
     </Values>
   </Asset>
@@ -235,16 +440,60 @@
         <AmbientName>Portrait Light </AmbientName>
         <CamFile>data/config/portraitcam/default.portraitcam</CamFile>
         <PortraitColor>-3923679</PortraitColor>
+        <IdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_idle</Sequence>
+          </Positve>
+        </IdleSequences>
+        <TalkIdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk_idle</Sequence>
+          </Positve>
+        </TalkIdleSequences>
+        <TalkSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk</Sequence>
+          </Positve>
+        </TalkSequences>
+        <PortraitName>0</PortraitName>
       </Portrait>
       <Standard>
         <GUID>100505</GUID>
         <Name>Farmer</Name>
         <IconFilename>data/ui/2kimages/main/profiles/resident_tier01.png</IconFilename>
         <ID>FarmerPortrait</ID>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Mesh>
         <ObjectPosition>Unmanaged</ObjectPosition>
         <DefaultSequence>portrait_neutral_idle</DefaultSequence>
+        <MeshPlacement>Default</MeshPlacement>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Object>
         <Variations>
@@ -252,11 +501,19 @@
             <Filename>data/graphics/portraits/residents/resident_tier01/resident_tier01.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Locked>
         <VisibleWhenLocked>1</VisibleWhenLocked>
         <DefaultLockedState>0</DefaultLockedState>
         <Scope>Account</Scope>
+        <DLCDependency>0</DLCDependency>
       </Locked>
     </Values>
   </Asset>
@@ -285,15 +542,59 @@
         <AmbientName>Portrait Light </AmbientName>
         <CamFile>data/config/portraitcam/default.portraitcam</CamFile>
         <PortraitColor>-3923679</PortraitColor>
+        <IdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_idle</Sequence>
+          </Positve>
+        </IdleSequences>
+        <TalkIdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk_idle</Sequence>
+          </Positve>
+        </TalkIdleSequences>
+        <TalkSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk</Sequence>
+          </Positve>
+        </TalkSequences>
+        <PortraitName>0</PortraitName>
       </Portrait>
       <Standard>
         <GUID>1000166</GUID>
         <Name>Worker</Name>
         <IconFilename>data/ui/2kimages/main/profiles/portrait_icons_0014_resident_tier02.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Mesh>
         <ObjectPosition>Unmanaged</ObjectPosition>
         <DefaultSequence>portrait_neutral_idle</DefaultSequence>
+        <MeshPlacement>Default</MeshPlacement>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Object>
         <Variations>
@@ -301,11 +602,19 @@
             <Filename>data/graphics/portraits/residents/resident_tier02/resident_tier02.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Locked>
         <VisibleWhenLocked>1</VisibleWhenLocked>
         <DefaultLockedState>0</DefaultLockedState>
         <Scope>Account</Scope>
+        <DLCDependency>0</DLCDependency>
       </Locked>
     </Values>
   </Asset>
@@ -334,15 +643,59 @@
         <AmbientName>Portrait Light </AmbientName>
         <CamFile>data/config/portraitcam/default.portraitcam</CamFile>
         <PortraitColor>-3923679</PortraitColor>
+        <IdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_idle</Sequence>
+          </Positve>
+        </IdleSequences>
+        <TalkIdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk_idle</Sequence>
+          </Positve>
+        </TalkIdleSequences>
+        <TalkSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk</Sequence>
+          </Positve>
+        </TalkSequences>
+        <PortraitName>0</PortraitName>
       </Portrait>
       <Standard>
         <GUID>100507</GUID>
         <Name>Artisan</Name>
         <IconFilename>data/ui/2kimages/main/profiles/resident_tier03.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Mesh>
         <ObjectPosition>Unmanaged</ObjectPosition>
         <DefaultSequence>portrait_neutral_idle</DefaultSequence>
+        <MeshPlacement>Default</MeshPlacement>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Object>
         <Variations>
@@ -350,11 +703,19 @@
             <Filename>data/graphics/portraits/residents/resident_tier03/resident_tier03.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Locked>
         <VisibleWhenLocked>1</VisibleWhenLocked>
         <DefaultLockedState>0</DefaultLockedState>
         <Scope>Account</Scope>
+        <DLCDependency>0</DLCDependency>
       </Locked>
     </Values>
   </Asset>
@@ -393,15 +754,59 @@
         <AmbientName>Portrait Light </AmbientName>
         <CamFile>data/config/portraitcam/default.portraitcam</CamFile>
         <PortraitColor>-3923679</PortraitColor>
+        <IdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_idle</Sequence>
+          </Positve>
+        </IdleSequences>
+        <TalkIdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk_idle</Sequence>
+          </Positve>
+        </TalkIdleSequences>
+        <TalkSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk</Sequence>
+          </Positve>
+        </TalkSequences>
+        <PortraitName>0</PortraitName>
       </Portrait>
       <Standard>
         <GUID>100508</GUID>
         <Name>Engineer</Name>
         <IconFilename>data/ui/2kimages/main/profiles/resident_tier04.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Mesh>
         <ObjectPosition>Unmanaged</ObjectPosition>
         <DefaultSequence>portrait_neutral_idle</DefaultSequence>
+        <MeshPlacement>Default</MeshPlacement>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Object>
         <Variations>
@@ -409,11 +814,19 @@
             <Filename>data/graphics/portraits/residents/resident_tier04/resident_tier04.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Locked>
         <DefaultLockedState>1</DefaultLockedState>
         <VisibleWhenLocked>1</VisibleWhenLocked>
         <Scope>Account</Scope>
+        <DLCDependency>0</DLCDependency>
       </Locked>
     </Values>
   </Asset>
@@ -442,16 +855,60 @@
         <AmbientName>Portrait Light </AmbientName>
         <CamFile>data/config/portraitcam/default.portraitcam</CamFile>
         <PortraitColor>-3923679</PortraitColor>
+        <IdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_idle</Sequence>
+          </Positve>
+        </IdleSequences>
+        <TalkIdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk_idle</Sequence>
+          </Positve>
+        </TalkIdleSequences>
+        <TalkSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk</Sequence>
+          </Positve>
+        </TalkSequences>
+        <PortraitName>0</PortraitName>
       </Portrait>
       <Standard>
         <GUID>100509</GUID>
         <Name>Investor</Name>
         <IconFilename>data/ui/2kimages/main/profiles/resident_tier05.png</IconFilename>
         <ID>Investor</ID>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Mesh>
         <ObjectPosition>Unmanaged</ObjectPosition>
         <DefaultSequence>portrait_neutral_idle</DefaultSequence>
+        <MeshPlacement>Default</MeshPlacement>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Object>
         <Variations>
@@ -459,11 +916,19 @@
             <Filename>data/graphics/portraits/residents/resident_tier05/resident_tier05.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Locked>
         <DefaultLockedState>1</DefaultLockedState>
         <VisibleWhenLocked>1</VisibleWhenLocked>
         <Scope>Account</Scope>
+        <DLCDependency>0</DLCDependency>
       </Locked>
     </Values>
   </Asset>
@@ -502,16 +967,59 @@
         </PortraitCameraAmbientConfig>
         <AmbientName>Portrait Light </AmbientName>
         <CamFile>data/config/portraitcam/default.portraitcam</CamFile>
+        <IdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_idle</Sequence>
+          </Positve>
+        </IdleSequences>
+        <TalkIdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk_idle</Sequence>
+          </Positve>
+        </TalkIdleSequences>
+        <TalkSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk</Sequence>
+          </Positve>
+        </TalkSequences>
       </Portrait>
       <Standard>
         <GUID>100460</GUID>
         <Name>Captain</Name>
         <IconFilename>data/ui/2kimages/main/profiles/captain.png</IconFilename>
         <ID>CaptainPortrait</ID>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Mesh>
         <ObjectPosition>Unmanaged</ObjectPosition>
         <DefaultSequence>portrait_neutral_idle</DefaultSequence>
+        <MeshPlacement>Default</MeshPlacement>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Object>
         <Variations>
@@ -519,11 +1027,19 @@
             <Filename>data/graphics/portraits/narrative/captain/captain.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Locked>
         <DefaultLockedState>1</DefaultLockedState>
         <VisibleWhenLocked>1</VisibleWhenLocked>
         <Scope>Account</Scope>
+        <DLCDependency>0</DLCDependency>
       </Locked>
     </Values>
   </Asset>
@@ -562,15 +1078,59 @@
         <AmbientName>Portrait Light </AmbientName>
         <CamFile>data/config/portraitcam/default.portraitcam</CamFile>
         <PortraitColor>-3923679</PortraitColor>
+        <IdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_idle</Sequence>
+          </Positve>
+        </IdleSequences>
+        <TalkIdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk_idle</Sequence>
+          </Positve>
+        </TalkIdleSequences>
+        <TalkSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk</Sequence>
+          </Positve>
+        </TalkSequences>
+        <PortraitName>0</PortraitName>
       </Portrait>
       <Standard>
         <GUID>100675</GUID>
         <Name>Visitor</Name>
         <IconFilename>data/ui/2kimages/main/profiles/vistor.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Mesh>
         <ObjectPosition>Unmanaged</ObjectPosition>
         <DefaultSequence>portrait_neutral_idle</DefaultSequence>
+        <MeshPlacement>Default</MeshPlacement>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Object>
         <Variations>
@@ -578,11 +1138,19 @@
             <Filename>data/graphics/portraits/narrative/visitor/visitor.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Locked>
         <DefaultLockedState>1</DefaultLockedState>
         <VisibleWhenLocked>1</VisibleWhenLocked>
         <Scope>Account</Scope>
+        <DLCDependency>0</DLCDependency>
       </Locked>
     </Values>
   </Asset>
@@ -612,15 +1180,58 @@
         </PortraitCameraAmbientConfig>
         <AmbientName>Portrait Light </AmbientName>
         <CamFile>data/config/portraitcam/default.portraitcam</CamFile>
+        <IdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_idle</Sequence>
+          </Positve>
+        </IdleSequences>
+        <TalkIdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk_idle</Sequence>
+          </Positve>
+        </TalkIdleSequences>
+        <TalkSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk</Sequence>
+          </Positve>
+        </TalkSequences>
       </Portrait>
       <Standard>
         <GUID>100676</GUID>
         <Name>Editor</Name>
         <IconFilename>data/ui/2kimages/main/profiles/editor.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Mesh>
         <ObjectPosition>Unmanaged</ObjectPosition>
         <DefaultSequence>portrait_neutral_idle</DefaultSequence>
+        <MeshPlacement>Default</MeshPlacement>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Object>
         <Variations>
@@ -628,11 +1239,19 @@
             <Filename>data/graphics/portraits/narrative/editor/editor.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Locked>
         <DefaultLockedState>1</DefaultLockedState>
         <VisibleWhenLocked>1</VisibleWhenLocked>
         <Scope>Account</Scope>
+        <DLCDependency>0</DLCDependency>
       </Locked>
     </Values>
   </Asset>
@@ -668,15 +1287,59 @@
         <AmbientName>Portrait Light </AmbientName>
         <CamFile>data/config/portraitcam/default.portraitcam</CamFile>
         <PortraitColor>-3923679</PortraitColor>
+        <IdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_idle</Sequence>
+          </Positve>
+        </IdleSequences>
+        <TalkIdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk_idle</Sequence>
+          </Positve>
+        </TalkIdleSequences>
+        <TalkSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk</Sequence>
+          </Positve>
+        </TalkSequences>
+        <PortraitName>0</PortraitName>
       </Portrait>
       <Standard>
         <GUID>100530</GUID>
         <Name>ai_01 (Bente Jorgensen)</Name>
         <IconFilename>data/ui/2kimages/main/profiles/ai_01.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Mesh>
         <ObjectPosition>Unmanaged</ObjectPosition>
         <DefaultSequence>portrait_neutral_idle</DefaultSequence>
+        <MeshPlacement>Default</MeshPlacement>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Object>
         <Variations>
@@ -684,11 +1347,19 @@
             <Filename>data/graphics/portraits/narrative/ai_01/ai_01.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Locked>
         <VisibleWhenLocked>1</VisibleWhenLocked>
         <DefaultLockedState>0</DefaultLockedState>
         <Scope>Account</Scope>
+        <DLCDependency>0</DLCDependency>
       </Locked>
     </Values>
   </Asset>
@@ -733,15 +1404,59 @@
         <AmbientName>Portrait Light </AmbientName>
         <CamFile>data/config/portraitcam/default.portraitcam</CamFile>
         <PortraitColor>-3923679</PortraitColor>
+        <IdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_idle</Sequence>
+          </Positve>
+        </IdleSequences>
+        <TalkIdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk_idle</Sequence>
+          </Positve>
+        </TalkIdleSequences>
+        <TalkSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk</Sequence>
+          </Positve>
+        </TalkSequences>
+        <PortraitName>0</PortraitName>
       </Portrait>
       <Standard>
         <GUID>100663</GUID>
         <Name>ai_02 (Princess Qing)</Name>
         <IconFilename>data/ui/2kimages/main/profiles/ai_02.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Mesh>
         <ObjectPosition>Unmanaged</ObjectPosition>
         <DefaultSequence>portrait_neutral_idle</DefaultSequence>
+        <MeshPlacement>Default</MeshPlacement>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Object>
         <Variations>
@@ -749,11 +1464,19 @@
             <Filename>data/graphics/portraits/narrative/ai_02/ai_02.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Locked>
         <VisibleWhenLocked>1</VisibleWhenLocked>
         <DefaultLockedState>0</DefaultLockedState>
         <Scope>Account</Scope>
+        <DLCDependency>0</DLCDependency>
       </Locked>
     </Values>
   </Asset>
@@ -785,15 +1508,59 @@
         <AmbientName>Portrait Light </AmbientName>
         <CamFile>data/config/portraitcam/default.portraitcam</CamFile>
         <PortraitColor>-3923679</PortraitColor>
+        <IdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_idle</Sequence>
+          </Positve>
+        </IdleSequences>
+        <TalkIdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk_idle</Sequence>
+          </Positve>
+        </TalkIdleSequences>
+        <TalkSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk</Sequence>
+          </Positve>
+        </TalkSequences>
+        <PortraitName>0</PortraitName>
       </Portrait>
       <Standard>
         <GUID>100664</GUID>
         <Name>ai_03 (Willie Wibblesock)</Name>
         <IconFilename>data/ui/2kimages/main/profiles/ai_03.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Mesh>
         <ObjectPosition>Unmanaged</ObjectPosition>
         <DefaultSequence>portrait_neutral_idle</DefaultSequence>
+        <MeshPlacement>Default</MeshPlacement>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Object>
         <Variations>
@@ -801,11 +1568,19 @@
             <Filename>data/graphics/portraits/narrative/ai_03/ai_03.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Locked>
         <VisibleWhenLocked>1</VisibleWhenLocked>
         <DefaultLockedState>0</DefaultLockedState>
         <Scope>Account</Scope>
+        <DLCDependency>0</DLCDependency>
       </Locked>
     </Values>
   </Asset>
@@ -837,15 +1612,59 @@
         <AmbientName>Portrait Light </AmbientName>
         <CamFile>data/config/portraitcam/default.portraitcam</CamFile>
         <PortraitColor>-3923679</PortraitColor>
+        <IdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_idle</Sequence>
+          </Positve>
+        </IdleSequences>
+        <TalkIdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk_idle</Sequence>
+          </Positve>
+        </TalkIdleSequences>
+        <TalkSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk</Sequence>
+          </Positve>
+        </TalkSequences>
+        <PortraitName>0</PortraitName>
       </Portrait>
       <Standard>
         <GUID>100665</GUID>
         <Name>ai_04 (George Smith)</Name>
         <IconFilename>data/ui/2kimages/main/profiles/ai_04.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Mesh>
         <ObjectPosition>Unmanaged</ObjectPosition>
         <DefaultSequence>portrait_neutral_idle</DefaultSequence>
+        <MeshPlacement>Default</MeshPlacement>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Object>
         <Variations>
@@ -853,11 +1672,19 @@
             <Filename>data/graphics/portraits/narrative/ai_04/ai_04.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Locked>
         <VisibleWhenLocked>1</VisibleWhenLocked>
         <DefaultLockedState>0</DefaultLockedState>
         <Scope>Account</Scope>
+        <DLCDependency>0</DLCDependency>
       </Locked>
     </Values>
   </Asset>
@@ -899,15 +1726,59 @@
         <AmbientName>Portrait Light </AmbientName>
         <CamFile>data/config/portraitcam/default.portraitcam</CamFile>
         <PortraitColor>-3923679</PortraitColor>
+        <IdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_idle</Sequence>
+          </Positve>
+        </IdleSequences>
+        <TalkIdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk_idle</Sequence>
+          </Positve>
+        </TalkIdleSequences>
+        <TalkSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk</Sequence>
+          </Positve>
+        </TalkSequences>
+        <PortraitName>0</PortraitName>
       </Portrait>
       <Standard>
         <GUID>100666</GUID>
         <Name>ai_05 (Beryl O'Mara)</Name>
         <IconFilename>data/ui/2kimages/main/profiles/ai_05.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Mesh>
         <ObjectPosition>Unmanaged</ObjectPosition>
         <DefaultSequence>portrait_neutral_idle</DefaultSequence>
+        <MeshPlacement>Default</MeshPlacement>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Object>
         <Variations>
@@ -915,11 +1786,19 @@
             <Filename>data/graphics/portraits/narrative/ai_05/ai_05.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Locked>
         <VisibleWhenLocked>1</VisibleWhenLocked>
         <DefaultLockedState>0</DefaultLockedState>
         <Scope>Account</Scope>
+        <DLCDependency>0</DLCDependency>
       </Locked>
     </Values>
   </Asset>
@@ -951,15 +1830,59 @@
         <AmbientName>Portrait Light </AmbientName>
         <CamFile>data/config/portraitcam/default.portraitcam</CamFile>
         <PortraitColor>-3923679</PortraitColor>
+        <IdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_idle</Sequence>
+          </Positve>
+        </IdleSequences>
+        <TalkIdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk_idle</Sequence>
+          </Positve>
+        </TalkIdleSequences>
+        <TalkSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk</Sequence>
+          </Positve>
+        </TalkSequences>
+        <PortraitName>0</PortraitName>
       </Portrait>
       <Standard>
         <GUID>100667</GUID>
         <Name>ai_06 (Artur Gasparov)</Name>
         <IconFilename>data/ui/2kimages/main/profiles/ai_06.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Mesh>
         <ObjectPosition>Unmanaged</ObjectPosition>
         <DefaultSequence>portrait_neutral_idle</DefaultSequence>
+        <MeshPlacement>Default</MeshPlacement>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Object>
         <Variations>
@@ -967,11 +1890,19 @@
             <Filename>data/graphics/portraits/narrative/ai_06/ai_06.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Locked>
         <VisibleWhenLocked>1</VisibleWhenLocked>
         <DefaultLockedState>0</DefaultLockedState>
         <Scope>Account</Scope>
+        <DLCDependency>0</DLCDependency>
       </Locked>
     </Values>
   </Asset>
@@ -1009,15 +1940,59 @@
         <AmbientName>Portrait Light </AmbientName>
         <CamFile>data/config/portraitcam/default.portraitcam</CamFile>
         <PortraitColor>-3923679</PortraitColor>
+        <IdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_idle</Sequence>
+          </Positve>
+        </IdleSequences>
+        <TalkIdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk_idle</Sequence>
+          </Positve>
+        </TalkIdleSequences>
+        <TalkSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk</Sequence>
+          </Positve>
+        </TalkSequences>
+        <PortraitName>0</PortraitName>
       </Portrait>
       <Standard>
         <GUID>100532</GUID>
         <Name>ai_07 (Carl Leonard von Malching)</Name>
         <IconFilename>data/ui/2kimages/main/profiles/ai_07.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Mesh>
         <ObjectPosition>Unmanaged</ObjectPosition>
         <DefaultSequence>portrait_neutral_idle</DefaultSequence>
+        <MeshPlacement>Default</MeshPlacement>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Object>
         <Variations>
@@ -1025,11 +2000,19 @@
             <Filename>data/graphics/portraits/narrative/ai_07/ai_07.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Locked>
         <VisibleWhenLocked>1</VisibleWhenLocked>
         <DefaultLockedState>0</DefaultLockedState>
         <Scope>Account</Scope>
+        <DLCDependency>0</DLCDependency>
       </Locked>
     </Values>
   </Asset>
@@ -1070,15 +2053,59 @@
             <CamFile>data/config/portraitcam/default.portraitcamright</CamFile>
           </Right>
         </VideoPresentation>
+        <IdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_idle</Sequence>
+          </Positve>
+        </IdleSequences>
+        <TalkIdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk_idle</Sequence>
+          </Positve>
+        </TalkIdleSequences>
+        <TalkSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk</Sequence>
+          </Positve>
+        </TalkSequences>
+        <PortraitName>0</PortraitName>
       </Portrait>
       <Standard>
         <GUID>100531</GUID>
         <Name>ai_08 (Alonso Graves)</Name>
         <IconFilename>data/ui/2kimages/main/profiles/ai_08.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Mesh>
         <ObjectPosition>Unmanaged</ObjectPosition>
         <DefaultSequence>portrait_neutral_idle</DefaultSequence>
+        <MeshPlacement>Default</MeshPlacement>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Object>
         <Variations>
@@ -1086,11 +2113,19 @@
             <Filename>data/graphics/portraits/narrative/ai_08/ai_08.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Locked>
         <VisibleWhenLocked>1</VisibleWhenLocked>
         <DefaultLockedState>0</DefaultLockedState>
         <Scope>Account</Scope>
+        <DLCDependency>0</DLCDependency>
       </Locked>
     </Values>
   </Asset>
@@ -1119,15 +2154,59 @@
             <CamFile>data/config/portraitcam/default.portraitcamright</CamFile>
           </VideoRight>
         </PortraitCameraAmbientConfig>
+        <IdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_idle</Sequence>
+          </Positve>
+        </IdleSequences>
+        <TalkIdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk_idle</Sequence>
+          </Positve>
+        </TalkIdleSequences>
+        <TalkSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk</Sequence>
+          </Positve>
+        </TalkSequences>
+        <PortraitName>0</PortraitName>
       </Portrait>
       <Standard>
         <GUID>100674</GUID>
         <Name>ai_09 (General Vicente Silva)</Name>
         <IconFilename>data/ui/2kimages/main/profiles/ai_09.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Mesh>
         <ObjectPosition>Unmanaged</ObjectPosition>
         <DefaultSequence>portrait_neutral_idle</DefaultSequence>
+        <MeshPlacement>Default</MeshPlacement>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Object>
         <Variations>
@@ -1135,11 +2214,19 @@
             <Filename>data/graphics/portraits/narrative/ai_09/ai_09.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Locked>
         <VisibleWhenLocked>1</VisibleWhenLocked>
         <DefaultLockedState>0</DefaultLockedState>
         <Scope>Account</Scope>
+        <DLCDependency>0</DLCDependency>
       </Locked>
     </Values>
   </Asset>
@@ -1181,15 +2268,58 @@
         </PortraitCameraAmbientConfig>
         <AmbientName>Portrait Light </AmbientName>
         <CamFile>data/config/portraitcam/default.portraitcam</CamFile>
+        <IdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_idle</Sequence>
+          </Positve>
+        </IdleSequences>
+        <TalkIdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk_idle</Sequence>
+          </Positve>
+        </TalkIdleSequences>
+        <TalkSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk</Sequence>
+          </Positve>
+        </TalkSequences>
       </Portrait>
       <Standard>
         <GUID>100588</GUID>
         <Name>enemy_01 (Uncle Edvard Goode)</Name>
         <IconFilename>data/ui/2kimages/main/profiles/enemy_01.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Mesh>
         <ObjectPosition>Unmanaged</ObjectPosition>
         <DefaultSequence>portrait_neutral_idle</DefaultSequence>
+        <MeshPlacement>Default</MeshPlacement>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Object>
         <Variations>
@@ -1197,11 +2327,19 @@
             <Filename>data/graphics/portraits/narrative/enemy_01/enemy_01.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Locked>
         <DefaultLockedState>1</DefaultLockedState>
         <VisibleWhenLocked>1</VisibleWhenLocked>
         <Scope>Account</Scope>
+        <DLCDependency>0</DLCDependency>
       </Locked>
     </Values>
   </Asset>
@@ -1243,15 +2381,59 @@
             <CamFile>data/config/portraitcam/default.portraitcamright</CamFile>
           </Right>
         </VideoPresentation>
+        <IdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_idle</Sequence>
+          </Positve>
+        </IdleSequences>
+        <TalkIdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk_idle</Sequence>
+          </Positve>
+        </TalkIdleSequences>
+        <TalkSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk</Sequence>
+          </Positve>
+        </TalkSequences>
+        <PortraitName>0</PortraitName>
       </Portrait>
       <Standard>
         <GUID>100587</GUID>
         <Name>enemy_02 (Lady Margaret Hunt)</Name>
         <IconFilename>data/ui/2kimages/main/profiles/enemy_02.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Mesh>
         <ObjectPosition>Unmanaged</ObjectPosition>
         <DefaultSequence>portrait_neutral_idle</DefaultSequence>
+        <MeshPlacement>Default</MeshPlacement>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Object>
         <Variations>
@@ -1259,11 +2441,19 @@
             <Filename>data/graphics/portraits/narrative/enemy_02/enemy_02.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Locked>
         <VisibleWhenLocked>1</VisibleWhenLocked>
         <DefaultLockedState>0</DefaultLockedState>
         <Scope>Account</Scope>
+        <DLCDependency>0</DLCDependency>
       </Locked>
     </Values>
   </Asset>
@@ -1294,15 +2484,58 @@
         <IsFemale>1</IsFemale>
         <AmbientName>Portrait Light </AmbientName>
         <CamFile>data/config/portraitcam/default.portraitcam</CamFile>
+        <IdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_idle</Sequence>
+          </Positve>
+        </IdleSequences>
+        <TalkIdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk_idle</Sequence>
+          </Positve>
+        </TalkIdleSequences>
+        <TalkSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk</Sequence>
+          </Positve>
+        </TalkSequences>
       </Portrait>
       <Standard>
         <GUID>100668</GUID>
         <Name>3rd_party_01 (Queen)</Name>
         <IconFilename>data/ui/2kimages/main/profiles/3rd_party_01.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Mesh>
         <ObjectPosition>Unmanaged</ObjectPosition>
         <DefaultSequence>portrait_neutral_idle</DefaultSequence>
+        <MeshPlacement>Default</MeshPlacement>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Object>
         <Variations>
@@ -1310,11 +2543,19 @@
             <Filename>data/graphics/portraits/narrative/3rd_party_01/3rd_party_01.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Locked>
         <DefaultLockedState>1</DefaultLockedState>
         <VisibleWhenLocked>1</VisibleWhenLocked>
         <Scope>Account</Scope>
+        <DLCDependency>0</DLCDependency>
       </Locked>
     </Values>
   </Asset>
@@ -1356,15 +2597,58 @@
         </PortraitCameraAmbientConfig>
         <AmbientName>Portrait Light </AmbientName>
         <CamFile>data/config/portraitcam/default.portraitcam</CamFile>
+        <IdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_idle</Sequence>
+          </Positve>
+        </IdleSequences>
+        <TalkIdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk_idle</Sequence>
+          </Positve>
+        </TalkIdleSequences>
+        <TalkSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk</Sequence>
+          </Positve>
+        </TalkSequences>
       </Portrait>
       <Standard>
         <GUID>100589</GUID>
         <Name>3rd_party_02 (Blake)</Name>
         <IconFilename>data/ui/2kimages/main/profiles/3rd_party_02.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Mesh>
         <ObjectPosition>Unmanaged</ObjectPosition>
         <DefaultSequence>portrait_neutral_idle</DefaultSequence>
+        <MeshPlacement>Default</MeshPlacement>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Object>
         <Variations>
@@ -1372,11 +2656,19 @@
             <Filename>data/graphics/portraits/narrative/3rd_party_02/3rd_party_02.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Locked>
         <DefaultLockedState>1</DefaultLockedState>
         <VisibleWhenLocked>1</VisibleWhenLocked>
         <Scope>Account</Scope>
+        <DLCDependency>0</DLCDependency>
       </Locked>
     </Values>
   </Asset>
@@ -1407,15 +2699,58 @@
             <CamFile>data/config/portraitcam/default.portraitcamright</CamFile>
           </VideoRight>
         </PortraitCameraAmbientConfig>
+        <IdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_idle</Sequence>
+          </Positve>
+        </IdleSequences>
+        <TalkIdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk_idle</Sequence>
+          </Positve>
+        </TalkIdleSequences>
+        <TalkSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk</Sequence>
+          </Positve>
+        </TalkSequences>
       </Portrait>
       <Standard>
         <GUID>100669</GUID>
         <Name>3rd_party_03 (Anne Harlow)</Name>
         <IconFilename>data/ui/2kimages/main/profiles/3rd_party_03.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Mesh>
         <ObjectPosition>Unmanaged</ObjectPosition>
         <DefaultSequence>portrait_neutral_idle</DefaultSequence>
+        <MeshPlacement>Default</MeshPlacement>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Object>
         <Variations>
@@ -1423,11 +2758,19 @@
             <Filename>data/graphics/portraits/narrative/3rd_party_03/3rd_party_03.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Locked>
         <DefaultLockedState>1</DefaultLockedState>
         <VisibleWhenLocked>1</VisibleWhenLocked>
         <Scope>Account</Scope>
+        <DLCDependency>0</DLCDependency>
       </Locked>
     </Values>
   </Asset>
@@ -1457,15 +2800,58 @@
             <CamFile>data/config/portraitcam/default.portraitcamright</CamFile>
           </VideoRight>
         </PortraitCameraAmbientConfig>
+        <IdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_idle</Sequence>
+          </Positve>
+        </IdleSequences>
+        <TalkIdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk_idle</Sequence>
+          </Positve>
+        </TalkIdleSequences>
+        <TalkSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk</Sequence>
+          </Positve>
+        </TalkSequences>
       </Portrait>
       <Standard>
         <GUID>100670</GUID>
         <Name>3rd_party_04 (Toussaint La Fortune)</Name>
         <IconFilename>data/ui/2kimages/main/profiles/3rd_party_04.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Mesh>
         <ObjectPosition>Unmanaged</ObjectPosition>
         <DefaultSequence>portrait_neutral_idle</DefaultSequence>
+        <MeshPlacement>Default</MeshPlacement>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Object>
         <Variations>
@@ -1473,11 +2859,19 @@
             <Filename>data/graphics/portraits/narrative/3rd_party_04/3rd_party_04.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Locked>
         <DefaultLockedState>1</DefaultLockedState>
         <VisibleWhenLocked>1</VisibleWhenLocked>
         <Scope>Account</Scope>
+        <DLCDependency>0</DLCDependency>
       </Locked>
     </Values>
   </Asset>
@@ -1523,15 +2917,58 @@
         <IsFemale>1</IsFemale>
         <AmbientName>Portrait Light </AmbientName>
         <CamFile>data/config/portraitcam/default.portraitcam</CamFile>
+        <IdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_idle</Sequence>
+          </Positve>
+        </IdleSequences>
+        <TalkIdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk_idle</Sequence>
+          </Positve>
+        </TalkIdleSequences>
+        <TalkSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk</Sequence>
+          </Positve>
+        </TalkSequences>
       </Portrait>
       <Standard>
         <GUID>100671</GUID>
         <Name>3rd_party_05 (Sarmento)</Name>
         <IconFilename>data/ui/2kimages/main/profiles/3rd_party_05.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Mesh>
         <ObjectPosition>Unmanaged</ObjectPosition>
         <DefaultSequence>portrait_neutral_idle</DefaultSequence>
+        <MeshPlacement>Default</MeshPlacement>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Object>
         <Variations>
@@ -1539,11 +2976,19 @@
             <Filename>data/graphics/portraits/narrative/3rd_party_05/3rd_party_05.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Locked>
         <DefaultLockedState>1</DefaultLockedState>
         <VisibleWhenLocked>1</VisibleWhenLocked>
         <Scope>Account</Scope>
+        <DLCDependency>0</DLCDependency>
       </Locked>
     </Values>
   </Asset>
@@ -1573,15 +3018,58 @@
             <CamFile>data/config/portraitcam/default.portraitcamright</CamFile>
           </VideoRight>
         </PortraitCameraAmbientConfig>
+        <IdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_idle</Sequence>
+          </Positve>
+        </IdleSequences>
+        <TalkIdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk_idle</Sequence>
+          </Positve>
+        </TalkIdleSequences>
+        <TalkSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk</Sequence>
+          </Positve>
+        </TalkSequences>
       </Portrait>
       <Standard>
         <GUID>100672</GUID>
         <Name>3rd_party_06 (Old Nate)</Name>
         <IconFilename>data/ui/2kimages/main/profiles/3rd_party_06.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Mesh>
         <ObjectPosition>Unmanaged</ObjectPosition>
         <DefaultSequence>portrait_neutral_idle</DefaultSequence>
+        <MeshPlacement>Default</MeshPlacement>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Object>
         <Variations>
@@ -1589,11 +3077,19 @@
             <Filename>data/graphics/portraits/narrative/3rd_party_06/3rd_party_06.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Locked>
         <DefaultLockedState>1</DefaultLockedState>
         <VisibleWhenLocked>1</VisibleWhenLocked>
         <Scope>Account</Scope>
+        <DLCDependency>0</DLCDependency>
       </Locked>
     </Values>
   </Asset>
@@ -1635,15 +3131,58 @@
         </PortraitCameraAmbientConfig>
         <AmbientName>Portrait Light </AmbientName>
         <CamFile>data/config/portraitcam/default.portraitcam</CamFile>
+        <IdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_idle</Sequence>
+          </Positve>
+        </IdleSequences>
+        <TalkIdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk_idle</Sequence>
+          </Positve>
+        </TalkIdleSequences>
+        <TalkSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk</Sequence>
+          </Positve>
+        </TalkSequences>
       </Portrait>
       <Standard>
         <GUID>100631</GUID>
         <Name>3rd_party_07 (Eli Bleakworth)</Name>
         <IconFilename>data/ui/2kimages/main/profiles/3rd_party_07.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Mesh>
         <ObjectPosition>Unmanaged</ObjectPosition>
         <DefaultSequence>portrait_neutral_idle</DefaultSequence>
+        <MeshPlacement>Default</MeshPlacement>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Object>
         <Variations>
@@ -1651,11 +3190,19 @@
             <Filename>data/graphics/portraits/narrative/3rd_party_07/3rd_party_07.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Locked>
         <DefaultLockedState>1</DefaultLockedState>
         <VisibleWhenLocked>1</VisibleWhenLocked>
         <Scope>Account</Scope>
+        <DLCDependency>0</DLCDependency>
       </Locked>
     </Values>
   </Asset>
@@ -1686,15 +3233,58 @@
             <CamFile>data/config/portraitcam/default.portraitcamright</CamFile>
           </VideoRight>
         </PortraitCameraAmbientConfig>
+        <IdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_idle</Sequence>
+          </Positve>
+        </IdleSequences>
+        <TalkIdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk_idle</Sequence>
+          </Positve>
+        </TalkIdleSequences>
+        <TalkSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk</Sequence>
+          </Positve>
+        </TalkSequences>
       </Portrait>
       <Standard>
         <GUID>100673</GUID>
         <Name>3rd_party_08 (Madame Kahina)</Name>
         <IconFilename>data/ui/2kimages/main/profiles/3rd_party_08.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Mesh>
         <ObjectPosition>Unmanaged</ObjectPosition>
         <DefaultSequence>portrait_neutral_idle</DefaultSequence>
+        <MeshPlacement>Default</MeshPlacement>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Object>
         <Variations>
@@ -1702,11 +3292,19 @@
             <Filename>data/graphics/portraits/narrative/3rd_party_08/3rd_party_08.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Locked>
         <DefaultLockedState>1</DefaultLockedState>
         <VisibleWhenLocked>1</VisibleWhenLocked>
         <Scope>Account</Scope>
+        <DLCDependency>0</DLCDependency>
       </Locked>
     </Values>
   </Asset>
@@ -1735,15 +3333,59 @@
             <CamFile>data/config/portraitcam/default.portraitcamright</CamFile>
           </VideoRight>
         </PortraitCameraAmbientConfig>
+        <IdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_idle</Sequence>
+          </Positve>
+        </IdleSequences>
+        <TalkIdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk_idle</Sequence>
+          </Positve>
+        </TalkIdleSequences>
+        <TalkSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk</Sequence>
+          </Positve>
+        </TalkSequences>
+        <PortraitName>0</PortraitName>
       </Portrait>
       <Standard>
         <GUID>101138</GUID>
         <Name>campaign_character_01_demolition_expert</Name>
         <IconFilename>data/ui/2kimages/main/profiles/campaign_portrait_01.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Mesh>
         <ObjectPosition>Unmanaged</ObjectPosition>
         <DefaultSequence>portrait_neutral_idle</DefaultSequence>
+        <MeshPlacement>Default</MeshPlacement>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Object>
         <Variations>
@@ -1751,10 +3393,18 @@
             <Filename>data/graphics/portraits/narrative/campaign_portrait_01/campaign_portrait_01.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Locked>
         <DefaultLockedState>1</DefaultLockedState>
         <Scope>Account</Scope>
+        <DLCDependency>0</DLCDependency>
       </Locked>
     </Values>
   </Asset>
@@ -1783,15 +3433,59 @@
             <CamFile>data/config/portraitcam/default.portraitcamright</CamFile>
           </Right>
         </VideoPresentation>
+        <IdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_idle</Sequence>
+          </Positve>
+        </IdleSequences>
+        <TalkIdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk_idle</Sequence>
+          </Positve>
+        </TalkIdleSequences>
+        <TalkSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk</Sequence>
+          </Positve>
+        </TalkSequences>
+        <PortraitName>0</PortraitName>
       </Portrait>
       <Standard>
         <GUID>101300</GUID>
         <Name>campaign_character_02_pyrophorian_red</Name>
         <IconFilename>data/ui/2kimages/main/profiles/campaign_portrait_pyrophorian.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Mesh>
         <ObjectPosition>Unmanaged</ObjectPosition>
         <DefaultSequence>portrait_neutral_idle</DefaultSequence>
+        <MeshPlacement>Default</MeshPlacement>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Object>
         <Variations>
@@ -1799,11 +3493,19 @@
             <Filename>data/graphics/portraits/narrative/campaign_portrait_02/campaign_portrait_02.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Locked>
         <DefaultLockedState>1</DefaultLockedState>
         <VisibleWhenLocked>1</VisibleWhenLocked>
         <Scope>Account</Scope>
+        <DLCDependency>0</DLCDependency>
       </Locked>
     </Values>
   </Asset>
@@ -1832,15 +3534,59 @@
             <CamFile>data/config/portraitcam/default.portraitcamright</CamFile>
           </VideoRight>
         </PortraitCameraAmbientConfig>
+        <IdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_idle</Sequence>
+          </Positve>
+        </IdleSequences>
+        <TalkIdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk_idle</Sequence>
+          </Positve>
+        </TalkIdleSequences>
+        <TalkSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk</Sequence>
+          </Positve>
+        </TalkSequences>
+        <PortraitName>0</PortraitName>
       </Portrait>
       <Standard>
         <GUID>101301</GUID>
         <Name>campaign_character_03_pyrophorian_silver</Name>
         <IconFilename>data/ui/2kimages/main/profiles/campaign_portrait_pyrophorianleader.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Mesh>
         <ObjectPosition>Unmanaged</ObjectPosition>
         <DefaultSequence>portrait_neutral_idle</DefaultSequence>
+        <MeshPlacement>Default</MeshPlacement>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Object>
         <Variations>
@@ -1848,11 +3594,19 @@
             <Filename>data/graphics/portraits/narrative/campaign_portrait_03/campaign_portrait_03.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Locked>
         <DefaultLockedState>1</DefaultLockedState>
         <VisibleWhenLocked>1</VisibleWhenLocked>
         <Scope>Account</Scope>
+        <DLCDependency>0</DLCDependency>
       </Locked>
     </Values>
   </Asset>
@@ -1882,15 +3636,59 @@
             <CamFile>data/config/portraitcam/default.portraitcamright</CamFile>
           </Right>
         </VideoPresentation>
+        <IdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_idle</Sequence>
+          </Positve>
+        </IdleSequences>
+        <TalkIdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk_idle</Sequence>
+          </Positve>
+        </TalkIdleSequences>
+        <TalkSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk</Sequence>
+          </Positve>
+        </TalkSequences>
+        <PortraitName>0</PortraitName>
       </Portrait>
       <Standard>
         <GUID>101302</GUID>
         <Name>campaign_character_04_pyrophorian_gold</Name>
         <IconFilename>data/ui/2kimages/main/profiles/campaign_portrait_pyrophoriangrandmaster.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Mesh>
         <ObjectPosition>Unmanaged</ObjectPosition>
         <DefaultSequence>portrait_neutral_idle</DefaultSequence>
+        <MeshPlacement>Default</MeshPlacement>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Object>
         <Variations>
@@ -1898,11 +3696,19 @@
             <Filename>data/graphics/portraits/narrative/campaign_portrait_04/campaign_portrait_04.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Locked>
         <DefaultLockedState>1</DefaultLockedState>
         <VisibleWhenLocked>1</VisibleWhenLocked>
         <Scope>Account</Scope>
+        <DLCDependency>0</DLCDependency>
       </Locked>
     </Values>
   </Asset>
@@ -1932,15 +3738,59 @@
             <CamFile>data/config/portraitcam/default.portraitcamright</CamFile>
           </VideoRight>
         </PortraitCameraAmbientConfig>
+        <IdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_idle</Sequence>
+          </Positve>
+        </IdleSequences>
+        <TalkIdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk_idle</Sequence>
+          </Positve>
+        </TalkIdleSequences>
+        <TalkSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk</Sequence>
+          </Positve>
+        </TalkSequences>
+        <PortraitName>0</PortraitName>
       </Portrait>
       <Standard>
         <GUID>101305</GUID>
         <Name>campaign_character_05_hannah_sick</Name>
         <IconFilename>data/ui/2kimages/main/profiles/advisor_01.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Mesh>
         <ObjectPosition>Unmanaged</ObjectPosition>
         <DefaultSequence>portrait_neutral_idle</DefaultSequence>
+        <MeshPlacement>Default</MeshPlacement>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Object>
         <Variations>
@@ -1948,11 +3798,19 @@
             <Filename>data/graphics/portraits/narrative/campaign_portrait_05/campaign_portrait_05.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Locked>
         <DefaultLockedState>1</DefaultLockedState>
         <VisibleWhenLocked>1</VisibleWhenLocked>
         <Scope>Account</Scope>
+        <DLCDependency>0</DLCDependency>
       </Locked>
     </Values>
   </Asset>
@@ -1981,15 +3839,59 @@
             <CamFile>data/config/portraitcam/default.portraitcamright</CamFile>
           </VideoRight>
         </PortraitCameraAmbientConfig>
+        <IdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_idle</Sequence>
+          </Positve>
+        </IdleSequences>
+        <TalkIdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk_idle</Sequence>
+          </Positve>
+        </TalkIdleSequences>
+        <TalkSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk</Sequence>
+          </Positve>
+        </TalkSequences>
+        <PortraitName>0</PortraitName>
       </Portrait>
       <Standard>
         <GUID>101212</GUID>
         <Name>campaign_character_07_magistrate</Name>
         <IconFilename>data/ui/2kimages/main/profiles/campaign_portrait_07.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Mesh>
         <ObjectPosition>Unmanaged</ObjectPosition>
         <DefaultSequence>portrait_neutral_idle</DefaultSequence>
+        <MeshPlacement>Default</MeshPlacement>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Object>
         <Variations>
@@ -1997,11 +3899,19 @@
             <Filename>data/graphics/portraits/narrative/campaign_portrait_07/campaign_portrait_07.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Locked>
         <DefaultLockedState>1</DefaultLockedState>
         <VisibleWhenLocked>1</VisibleWhenLocked>
         <Scope>Account</Scope>
+        <DLCDependency>0</DLCDependency>
       </Locked>
     </Values>
   </Asset>
@@ -2031,15 +3941,59 @@
             <CamFile>data/config/portraitcam/default.portraitcamright</CamFile>
           </Right>
         </VideoPresentation>
+        <IdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_idle</Sequence>
+          </Positve>
+        </IdleSequences>
+        <TalkIdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk_idle</Sequence>
+          </Positve>
+        </TalkIdleSequences>
+        <TalkSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk</Sequence>
+          </Positve>
+        </TalkSequences>
+        <PortraitName>0</PortraitName>
       </Portrait>
       <Standard>
         <GUID>101306</GUID>
         <Name>campaign_character_08_cousin_female</Name>
         <IconFilename>data/ui/2kimages/main/profiles/resident_tier01.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Mesh>
         <ObjectPosition>Unmanaged</ObjectPosition>
         <DefaultSequence>portrait_neutral_idle</DefaultSequence>
+        <MeshPlacement>Default</MeshPlacement>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Object>
         <Variations>
@@ -2047,11 +4001,19 @@
             <Filename>data/graphics/portraits/narrative/campaign_portrait_08/campaign_portrait_08.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Locked>
         <DefaultLockedState>1</DefaultLockedState>
         <VisibleWhenLocked>1</VisibleWhenLocked>
         <Scope>Account</Scope>
+        <DLCDependency>0</DLCDependency>
       </Locked>
     </Values>
   </Asset>
@@ -2081,15 +4043,58 @@
             <CamFile>data/config/portraitcam/default.portraitcamright</CamFile>
           </Right>
         </VideoPresentation>
+        <IdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_idle</Sequence>
+          </Positve>
+        </IdleSequences>
+        <TalkIdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk_idle</Sequence>
+          </Positve>
+        </TalkIdleSequences>
+        <TalkSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk</Sequence>
+          </Positve>
+        </TalkSequences>
       </Portrait>
       <Standard>
         <GUID>101307</GUID>
         <Name>campaign_character_09_cousin_male</Name>
         <IconFilename>data/ui/2kimages/main/profiles/campaign_portrait_09.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Mesh>
         <ObjectPosition>Unmanaged</ObjectPosition>
         <DefaultSequence>portrait_neutral_idle</DefaultSequence>
+        <MeshPlacement>Default</MeshPlacement>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Object>
         <Variations>
@@ -2097,11 +4102,19 @@
             <Filename>data/graphics/portraits/narrative/campaign_portrait_09/campaign_portrait_09.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Locked>
         <DefaultLockedState>1</DefaultLockedState>
         <VisibleWhenLocked>1</VisibleWhenLocked>
         <Scope>Account</Scope>
+        <DLCDependency>0</DLCDependency>
       </Locked>
     </Values>
   </Asset>
@@ -2130,15 +4143,59 @@
             <CamFile>data/config/portraitcam/default.portraitcamright</CamFile>
           </VideoRight>
         </PortraitCameraAmbientConfig>
+        <IdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_idle</Sequence>
+          </Positve>
+        </IdleSequences>
+        <TalkIdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk_idle</Sequence>
+          </Positve>
+        </TalkIdleSequences>
+        <TalkSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk</Sequence>
+          </Positve>
+        </TalkSequences>
+        <PortraitName>0</PortraitName>
       </Portrait>
       <Standard>
         <GUID>101819</GUID>
         <Name>Jornalero</Name>
         <IconFilename>data/ui/2kimages/main/profiles/resident_colony_tier01.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Mesh>
         <ObjectPosition>Unmanaged</ObjectPosition>
         <DefaultSequence>portrait_neutral_idle</DefaultSequence>
+        <MeshPlacement>Default</MeshPlacement>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Object>
         <Variations>
@@ -2146,11 +4203,19 @@
             <Filename>data/graphics/portraits/residents/resident_colony_tier01/resident_colony_tier01.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Locked>
         <DefaultLockedState>1</DefaultLockedState>
         <VisibleWhenLocked>1</VisibleWhenLocked>
         <Scope>Account</Scope>
+        <DLCDependency>0</DLCDependency>
       </Locked>
     </Values>
   </Asset>
@@ -2180,15 +4245,59 @@
             <CamFile>data/config/portraitcam/default.portraitcamright</CamFile>
           </VideoRight>
         </PortraitCameraAmbientConfig>
+        <IdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_idle</Sequence>
+          </Positve>
+        </IdleSequences>
+        <TalkIdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk_idle</Sequence>
+          </Positve>
+        </TalkIdleSequences>
+        <TalkSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk</Sequence>
+          </Positve>
+        </TalkSequences>
+        <PortraitName>0</PortraitName>
       </Portrait>
       <Standard>
         <GUID>101820</GUID>
         <Name>Obrera</Name>
         <IconFilename>data/ui/2kimages/main/profiles/resident_colony_tier02.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Mesh>
         <ObjectPosition>Unmanaged</ObjectPosition>
         <DefaultSequence>portrait_neutral_idle</DefaultSequence>
+        <MeshPlacement>Default</MeshPlacement>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Object>
         <Variations>
@@ -2196,11 +4305,19 @@
             <Filename>data/graphics/portraits/residents/resident_colony_tier02/resident_colony_tier02.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Locked>
         <DefaultLockedState>1</DefaultLockedState>
         <VisibleWhenLocked>1</VisibleWhenLocked>
         <Scope>Account</Scope>
+        <DLCDependency>0</DLCDependency>
       </Locked>
     </Values>
   </Asset>
@@ -2229,15 +4346,59 @@
             <CamFile>data/config/portraitcam/default.portraitcamright</CamFile>
           </VideoRight>
         </PortraitCameraAmbientConfig>
+        <IdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_idle</Sequence>
+          </Positve>
+        </IdleSequences>
+        <TalkIdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk_idle</Sequence>
+          </Positve>
+        </TalkIdleSequences>
+        <TalkSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk</Sequence>
+          </Positve>
+        </TalkSequences>
+        <PortraitName>0</PortraitName>
       </Portrait>
       <Standard>
         <GUID>101822</GUID>
         <Name>Jornalero_atWork</Name>
         <IconFilename>data/ui/2kimages/main/profiles/resident_colony_tier01_work.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Mesh>
         <ObjectPosition>Unmanaged</ObjectPosition>
         <DefaultSequence>portrait_neutral_idle</DefaultSequence>
+        <MeshPlacement>Default</MeshPlacement>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Object>
         <Variations>
@@ -2245,11 +4406,19 @@
             <Filename>data/graphics/portraits/residents/resident_colony_tier01_work/resident_colony_tier01_work.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Locked>
         <DefaultLockedState>1</DefaultLockedState>
         <VisibleWhenLocked>1</VisibleWhenLocked>
         <Scope>Account</Scope>
+        <DLCDependency>0</DLCDependency>
       </Locked>
     </Values>
   </Asset>
@@ -2279,15 +4448,59 @@
             <CamFile>data/config/portraitcam/default.portraitcamright</CamFile>
           </VideoRight>
         </PortraitCameraAmbientConfig>
+        <IdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_idle</Sequence>
+          </Positve>
+        </IdleSequences>
+        <TalkIdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk_idle</Sequence>
+          </Positve>
+        </TalkIdleSequences>
+        <TalkSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk</Sequence>
+          </Positve>
+        </TalkSequences>
+        <PortraitName>0</PortraitName>
       </Portrait>
       <Standard>
         <GUID>101823</GUID>
         <Name>Obrera_atWork</Name>
         <IconFilename>data/ui/2kimages/main/profiles/resident_colony_tier02_work.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Mesh>
         <ObjectPosition>Unmanaged</ObjectPosition>
         <DefaultSequence>portrait_neutral_idle</DefaultSequence>
+        <MeshPlacement>Default</MeshPlacement>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Object>
         <Variations>
@@ -2295,11 +4508,19 @@
             <Filename>data/graphics/portraits/residents/resident_colony_tier02_work/resident_colony_tier02_work.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Locked>
         <DefaultLockedState>1</DefaultLockedState>
         <VisibleWhenLocked>1</VisibleWhenLocked>
         <Scope>Account</Scope>
+        <DLCDependency>0</DLCDependency>
       </Locked>
     </Values>
   </Asset>
@@ -2329,15 +4550,59 @@
             <CamFile>data/config/portraitcam/default.portraitcamright</CamFile>
           </VideoRight>
         </PortraitCameraAmbientConfig>
+        <IdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_idle</Sequence>
+          </Positve>
+        </IdleSequences>
+        <TalkIdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk_idle</Sequence>
+          </Positve>
+        </TalkIdleSequences>
+        <TalkSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk</Sequence>
+          </Positve>
+        </TalkSequences>
+        <PortraitName>0</PortraitName>
       </Portrait>
       <Standard>
         <GUID>101825</GUID>
         <Name>Farmer_atWork</Name>
         <IconFilename>data/ui/2kimages/main/profiles/resident_tier01.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Mesh>
         <ObjectPosition>Unmanaged</ObjectPosition>
         <DefaultSequence>portrait_neutral_idle</DefaultSequence>
+        <MeshPlacement>Default</MeshPlacement>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Object>
         <Variations>
@@ -2345,11 +4610,19 @@
             <Filename>data/graphics/portraits/residents/resident_tier01_work/resident_tier01_work.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Locked>
         <DefaultLockedState>1</DefaultLockedState>
         <VisibleWhenLocked>1</VisibleWhenLocked>
         <Scope>Account</Scope>
+        <DLCDependency>0</DLCDependency>
       </Locked>
     </Values>
   </Asset>
@@ -2378,15 +4651,59 @@
             <CamFile>data/config/portraitcam/default.portraitcamright</CamFile>
           </VideoRight>
         </PortraitCameraAmbientConfig>
+        <IdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_idle</Sequence>
+          </Positve>
+        </IdleSequences>
+        <TalkIdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk_idle</Sequence>
+          </Positve>
+        </TalkIdleSequences>
+        <TalkSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk</Sequence>
+          </Positve>
+        </TalkSequences>
+        <PortraitName>0</PortraitName>
       </Portrait>
       <Standard>
         <GUID>101826</GUID>
         <Name>Worker_atWork</Name>
         <IconFilename>data/ui/2kimages/main/profiles/portrait_icons_0014_resident_tier02.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Mesh>
         <ObjectPosition>Unmanaged</ObjectPosition>
         <DefaultSequence>portrait_neutral_idle</DefaultSequence>
+        <MeshPlacement>Default</MeshPlacement>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Object>
         <Variations>
@@ -2394,11 +4711,19 @@
             <Filename>data/graphics/portraits/residents/resident_tier02_work/resident_tier02_work.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Locked>
         <DefaultLockedState>1</DefaultLockedState>
         <VisibleWhenLocked>1</VisibleWhenLocked>
         <Scope>Account</Scope>
+        <DLCDependency>0</DLCDependency>
       </Locked>
     </Values>
   </Asset>
@@ -2427,15 +4752,59 @@
             <CamFile>data/config/portraitcam/default.portraitcamright</CamFile>
           </VideoRight>
         </PortraitCameraAmbientConfig>
+        <IdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_idle</Sequence>
+          </Positve>
+        </IdleSequences>
+        <TalkIdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk_idle</Sequence>
+          </Positve>
+        </TalkIdleSequences>
+        <TalkSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk</Sequence>
+          </Positve>
+        </TalkSequences>
+        <PortraitName>0</PortraitName>
       </Portrait>
       <Standard>
         <GUID>101827</GUID>
         <Name>Artisan_atWork</Name>
         <IconFilename>data/ui/2kimages/main/profiles/resident_tier03.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Mesh>
         <ObjectPosition>Unmanaged</ObjectPosition>
         <DefaultSequence>portrait_neutral_idle</DefaultSequence>
+        <MeshPlacement>Default</MeshPlacement>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Object>
         <Variations>
@@ -2443,11 +4812,19 @@
             <Filename>data/graphics/portraits/residents/resident_tier03_work/resident_tier03_work.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Locked>
         <DefaultLockedState>1</DefaultLockedState>
         <VisibleWhenLocked>1</VisibleWhenLocked>
         <Scope>Account</Scope>
+        <DLCDependency>0</DLCDependency>
       </Locked>
     </Values>
   </Asset>
@@ -2477,15 +4854,59 @@
             <CamFile>data/config/portraitcam/default.portraitcamright</CamFile>
           </VideoRight>
         </PortraitCameraAmbientConfig>
+        <IdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_idle</Sequence>
+          </Positve>
+        </IdleSequences>
+        <TalkIdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk_idle</Sequence>
+          </Positve>
+        </TalkIdleSequences>
+        <TalkSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk</Sequence>
+          </Positve>
+        </TalkSequences>
+        <PortraitName>0</PortraitName>
       </Portrait>
       <Standard>
         <GUID>101828</GUID>
         <Name>Engineer_atWork</Name>
         <IconFilename>data/ui/2kimages/main/profiles/resident_tier04.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Mesh>
         <ObjectPosition>Unmanaged</ObjectPosition>
         <DefaultSequence>portrait_neutral_idle</DefaultSequence>
+        <MeshPlacement>Default</MeshPlacement>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Object>
         <Variations>
@@ -2493,11 +4914,19 @@
             <Filename>data/graphics/portraits/residents/resident_tier04_work/resident_tier04_work.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Locked>
         <DefaultLockedState>1</DefaultLockedState>
         <VisibleWhenLocked>1</VisibleWhenLocked>
         <Scope>Account</Scope>
+        <DLCDependency>0</DLCDependency>
       </Locked>
     </Values>
   </Asset>
@@ -2526,15 +4955,59 @@
             <CamFile>data/config/portraitcam/default.portraitcamright</CamFile>
           </VideoRight>
         </PortraitCameraAmbientConfig>
+        <IdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_idle</Sequence>
+          </Positve>
+        </IdleSequences>
+        <TalkIdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk_idle</Sequence>
+          </Positve>
+        </TalkIdleSequences>
+        <TalkSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk</Sequence>
+          </Positve>
+        </TalkSequences>
+        <PortraitName>0</PortraitName>
       </Portrait>
       <Standard>
         <GUID>101829</GUID>
         <Name>Investor_atWork</Name>
         <IconFilename>data/ui/2kimages/main/profiles/resident_tier05.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Mesh>
         <ObjectPosition>Unmanaged</ObjectPosition>
         <DefaultSequence>portrait_neutral_idle</DefaultSequence>
+        <MeshPlacement>Default</MeshPlacement>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Object>
         <Variations>
@@ -2542,11 +5015,19 @@
             <Filename>data/graphics/portraits/residents/resident_tier05/resident_tier05.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Locked>
         <DefaultLockedState>1</DefaultLockedState>
         <VisibleWhenLocked>1</VisibleWhenLocked>
         <Scope>Account</Scope>
+        <DLCDependency>0</DLCDependency>
       </Locked>
     </Values>
   </Asset>
@@ -2575,15 +5056,59 @@
             <CamFile>data/config/portraitcam/default.portraitcamright</CamFile>
           </VideoRight>
         </PortraitCameraAmbientConfig>
+        <IdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_idle</Sequence>
+          </Positve>
+        </IdleSequences>
+        <TalkIdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk_idle</Sequence>
+          </Positve>
+        </TalkIdleSequences>
+        <TalkSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk</Sequence>
+          </Positve>
+        </TalkSequences>
+        <PortraitName>0</PortraitName>
       </Portrait>
       <Standard>
         <GUID>101894</GUID>
         <Name>General_Enemy</Name>
         <IconFilename>data/ui/2kimages/main/profiles/campaign_portrait_11.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Mesh>
         <ObjectPosition>Unmanaged</ObjectPosition>
         <DefaultSequence>portrait_neutral_idle</DefaultSequence>
+        <MeshPlacement>Default</MeshPlacement>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Object>
         <Variations>
@@ -2591,11 +5116,19 @@
             <Filename>data/graphics/portraits/narrative/campaign_portrait_11/campaign_portrait_11.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Locked>
         <DefaultLockedState>1</DefaultLockedState>
         <VisibleWhenLocked>1</VisibleWhenLocked>
         <Scope>Account</Scope>
+        <DLCDependency>0</DLCDependency>
       </Locked>
     </Values>
   </Asset>
@@ -2624,15 +5157,59 @@
             <CamFile>data/config/portraitcam/default.portraitcamright</CamFile>
           </VideoRight>
         </PortraitCameraAmbientConfig>
+        <IdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_idle</Sequence>
+          </Positve>
+        </IdleSequences>
+        <TalkIdleSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk_idle</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk_idle</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk_idle</Sequence>
+          </Positve>
+        </TalkIdleSequences>
+        <TalkSequences>
+          <Negative>
+            <Sequence>portrait_angry_talk</Sequence>
+          </Negative>
+          <Neutral>
+            <Sequence>portrait_neutral_talk</Sequence>
+          </Neutral>
+          <Positve>
+            <Sequence>portrait_friendly_talk</Sequence>
+          </Positve>
+        </TalkSequences>
+        <PortraitName>0</PortraitName>
       </Portrait>
       <Standard>
         <GUID>102253</GUID>
         <Name>Workforce_Commuter_Captain</Name>
         <IconFilename>data/ui/2kimages/main/profiles/workforce_captain.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Mesh>
         <ObjectPosition>Unmanaged</ObjectPosition>
         <DefaultSequence>portrait_neutral_idle</DefaultSequence>
+        <MeshPlacement>Default</MeshPlacement>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Object>
         <Variations>
@@ -2640,11 +5217,19 @@
             <Filename>data/graphics/portraits/narrative/workforce_captain/workforce_captain.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Locked>
         <DefaultLockedState>1</DefaultLockedState>
         <VisibleWhenLocked>1</VisibleWhenLocked>
         <Scope>Account</Scope>
+        <DLCDependency>0</DLCDependency>
       </Locked>
     </Values>
   </Asset>

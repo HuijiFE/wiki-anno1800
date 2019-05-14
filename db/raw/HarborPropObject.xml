@@ -6,10 +6,20 @@
       <Standard>
         <GUID>102344</GUID>
         <Name>harbor_prop_1</Name>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Mesh>
         <ConstructionEffectDuration>0</ConstructionEffectDuration>
         <DeconstructionEffectDuration>0</DeconstructionEffectDuration>
+        <ObjectPosition>Static</ObjectPosition>
+        <MeshPlacement>Default</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Object>
         <Variations>
@@ -87,16 +97,40 @@
           </Item>
         </Variations>
         <AssignDefaultParticipant>1</AssignDefaultParticipant>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Blocking>
         <BlockHarborFeedback>1</BlockHarborFeedback>
         <BlocksBuilding>0</BlocksBuilding>
+        <HidePropsRadius>1</HidePropsRadius>
+        <DeletePropsRadius>1</DeletePropsRadius>
+        <GroundDecalAsset>0</GroundDecalAsset>
+        <GroundDecalInvisible>0</GroundDecalInvisible>
+        <StreetOutside>0</StreetOutside>
+        <RemoveGrass>1</RemoveGrass>
       </Blocking>
       <Building>
         <SkipUnlockMessage>1</SkipUnlockMessage>
         <Destructable>0</Destructable>
         <Movable>0</Movable>
         <HasBorderRectOutline>0</HasBorderRectOutline>
+        <BuildingType>Other</BuildingType>
+        <BuildingCategoryName>0</BuildingCategoryName>
+        <PickingAsset>0</PickingAsset>
+        <ConstructionMenuText>0</ConstructionMenuText>
+        <SnapRadius>2</SnapRadius>
+        <TerrainType>Terrain</TerrainType>
+        <InfluencedByNeighbors />
+        <InfluencedVariationDirection />
+        <AssociatedRegions>Meta;Moderate;Colony01;Arctic</AssociatedRegions>
+        <BuildingBlockPool />
+        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
     </Values>
   </Asset>

@@ -8,6 +8,7 @@
         <Name>CQO_FlagShip (Intro Movie)</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_ship.png</IconFilename>
         <InfoDescription>1085</InfoDescription>
+        <Comments />
       </Standard>
       <Object>
         <Variations>
@@ -17,10 +18,25 @@
         </Variations>
         <AssignDefaultParticipant>1</AssignDefaultParticipant>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <MeshPlacement>OnWaterSlope</MeshPlacement>
         <ObjectPosition>Dynamic</ObjectPosition>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Selection>
         <ObjectmenuHeaderImage>data/ui/2kimages/main/3dicons/icon_ship.png</ObjectmenuHeaderImage>
@@ -29,6 +45,18 @@
         <SelectionPriority>5</SelectionPriority>
         <InteractionDistance>2</InteractionDistance>
         <AllowedDragType>ItemSocket;CargoProductStack;CargoItemStack;StorageProductStack;StorageItemStack</AllowedDragType>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
       </Selection>
       <Walking>
         <ReservationLength>9</ReservationLength>
@@ -43,6 +71,30 @@
         <ForwardSpeed>5</ForwardSpeed>
         <WindMinSlowdownFactor>0.8</WindMinSlowdownFactor>
         <WindMaxSpeedupFactor>1.33</WindMaxSpeedupFactor>
+        <SpecialMovementType>Land;HumanMovement</SpecialMovementType>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <Acceleration>3</Acceleration>
+        <Deceleration>6</Deceleration>
+        <TurnRadius>3</TurnRadius>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <TurnDeceleration>0.6</TurnDeceleration>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
+        <CreatePathPlannerUnit>1</CreatePathPlannerUnit>
       </Walking>
       <Text>
         <LocaText>
@@ -53,26 +105,42 @@
           </English>
         </LocaText>
         <LineID>13085</LineID>
+        <Localize>1</Localize>
       </Text>
       <CommandQueue>
         <FollowRadius>4</FollowRadius>
         <FormationPriority>1</FormationPriority>
         <IsPlayerControllableVehicle>1</IsPlayerControllableVehicle>
         <CommandChainLength>3</CommandChainLength>
+        <IsDestructable>1</IsDestructable>
       </CommandQueue>
       <Drifting>
         <OverrideAssetWidthAndLength>0</OverrideAssetWidthAndLength>
         <Length>3.5</Length>
         <Width>0.8</Width>
+        <FactorMovement>1</FactorMovement>
+        <FactorRotation>1</FactorRotation>
+        <AffectedByDriftingWhileIdle>1</AffectedByDriftingWhileIdle>
+        <AffectedByDriftingWhileMoving>1</AffectedByDriftingWhileMoving>
+        <CausesDrifting>1</CausesDrifting>
+        <UseSlowDownTactic>1</UseSlowDownTactic>
       </Drifting>
       <Collector>
         <MaxDragShips>1</MaxDragShips>
+        <UpgradeWhenDraggingShip>6000032</UpgradeWhenDraggingShip>
       </Collector>
       <Attackable>
         <MaximumHitPoints>600</MaximumHitPoints>
         <SelfHealPausedTimeIfAttacked>60000</SelfHealPausedTimeIfAttacked>
         <SelfHealPerHealTick>300</SelfHealPerHealTick>
         <CanBeAttackedByPlayer>1</CanBeAttackedByPlayer>
+        <HPBarOffset>6</HPBarOffset>
+        <PausedTimeIfAttacked>15000</PausedTimeIfAttacked>
+        <ArmorType>Default</ArmorType>
+        <TakeOverEffect>Never</TakeOverEffect>
+        <IslandWarFlag>0</IslandWarFlag>
+        <RuinSmokeParticles />
+        <ExplosionEffects />
       </Attackable>
       <Attacker>
         <AttackRange>36</AttackRange>
@@ -93,6 +161,15 @@
             </AccuracyByDistancePair>
           </Item>
         </AccuracyByDistance>
+        <AllowApproachEnemy>1</AllowApproachEnemy>
+        <Turrets />
+        <AccuracyIncreaseOverDistance>40</AccuracyIncreaseOverDistance>
+        <AccuracySpeedDecay>6</AccuracySpeedDecay>
+        <ShootingTracking>Side</ShootingTracking>
+        <AttackType>Default</AttackType>
+        <AccuracyBaseIncreasePercentage>100</AccuracyBaseIncreasePercentage>
+        <TurretExplosionEffectAsset>0</TurretExplosionEffectAsset>
+        <MuzzleEffectAssets />
       </Attacker>
       <MinimapToken>
         <TokenAsset>2001947</TokenAsset>
@@ -106,22 +183,71 @@
             </Item>
           </MovementStart>
         </VehicleSounds>
+        <ActiveSounds />
+        <DestroySounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionSounds />
+        <ConstructionStreetSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <UpgradeList />
       <QuestObject />
-      <Infolayer />
+      <Infolayer>
+        <DefaultInfoLayer>0</DefaultInfoLayer>
+      </Infolayer>
       <ItemContainer>
         <SocketCount>2</SocketCount>
         <SlotCount>3</SlotCount>
         <SocketAllocation>Ship;SailShip</SocketAllocation>
         <CanStoreProducts>1</CanStoreProducts>
+        <SocketScope>Local</SocketScope>
+        <StackLimit>50</StackLimit>
+        <InitSocketItems />
+        <InitSlotItems />
+        <EmptySocketIcon>data/ui/2kimages/main/icons/icon_plus.png</EmptySocketIcon>
+        <EmptySocketItemNonModifiable>data/ui/2kimages/main/icons/icon_goods_storage.png</EmptySocketItemNonModifiable>
+        <SpawnsFlotsam>1</SpawnsFlotsam>
+        <FixedSlotContent>0</FixedSlotContent>
       </ItemContainer>
-      <FeedbackController />
+      <FeedbackController>
+        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
+        <UpdateMeshSequence>1</UpdateMeshSequence>
+      </FeedbackController>
       <Draggable>
         <DraggableDistanceFromDragger>6</DraggableDistanceFromDragger>
         <DraggableFeedbackOnDrag>2001897</DraggableFeedbackOnDrag>
         <DraggableFeedbackOnDrop>2001898</DraggableFeedbackOnDrop>
         <DraggableDropInfoLayer>2001942</DraggableDropInfoLayer>
+        <DraggableDistanceFromPreviousDraggable>5</DraggableDistanceFromPreviousDraggable>
+        <DraggableOnDrag>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </DraggableOnDrag>
+        <DraggableOnDrop>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </DraggableOnDrop>
+        <DraggableDisabledInfoLayer>0</DraggableDisabledInfoLayer>
+        <DraggableDragInfoLayer>0</DraggableDragInfoLayer>
+        <DragRopeStiffness>0.2</DragRopeStiffness>
+        <DragRopeHeight>0.3</DragRopeHeight>
       </Draggable>
       <Cost>
         <Costs>
@@ -138,12 +264,21 @@
             <Amount>25</Amount>
           </Item>
         </Costs>
+        <ItemsPerCost>1</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
       </Cost>
       <Craftable>
         <CraftingTime>150000</CraftingTime>
       </Craftable>
-      <TradeRouteVehicle />
-      <Locked />
+      <TradeRouteVehicle>
+        <LoadingSpeedFactor>1</LoadingSpeedFactor>
+      </TradeRouteVehicle>
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
       <Nameable />
       <MetaPersistent />
       <ExpeditionAttribute>
@@ -157,6 +292,10 @@
             <Amount>2</Amount>
           </Item>
         </ExpeditionAttributes>
+        <BaseMorale>20</BaseMorale>
+        <ItemRegions />
+        <ItemDifficulties />
+        <FluffText>0</FluffText>
       </ExpeditionAttribute>
       <ShipMaintenance>
         <Maintenance>0</Maintenance>
@@ -168,8 +307,13 @@
             <Resource>1010017</Resource>
           </Item>
         </Baseprice>
+        <SellInfolayerIcon>500160</SellInfolayerIcon>
+        <CanBeSoldToTrader>1</CanBeSoldToTrader>
       </Sellable>
-      <Stance />
+      <Stance>
+        <DefensiveReturnDistance>60</DefensiveReturnDistance>
+        <FleeDistance>50</FleeDistance>
+      </Stance>
       <Rentable />
     </Values>
   </Asset>
@@ -181,6 +325,7 @@
         <Name>CQO_FlagShip (Campaign - Initially Invisible)</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_ship.png</IconFilename>
         <InfoDescription>11466</InfoDescription>
+        <Comments />
       </Standard>
       <Object>
         <Variations>
@@ -190,11 +335,25 @@
         </Variations>
         <AssignDefaultParticipant>1</AssignDefaultParticipant>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <MeshPlacement>OnWaterSlope</MeshPlacement>
         <InitialVisibility>0</InitialVisibility>
         <ObjectPosition>Dynamic</ObjectPosition>
+        <DefaultSequence>idle01</DefaultSequence>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Selection>
         <ObjectmenuHeaderImage>data/ui/2kimages/main/3dicons/icon_ship.png</ObjectmenuHeaderImage>
@@ -203,6 +362,18 @@
         <SelectionPriority>5</SelectionPriority>
         <InteractionDistance>2</InteractionDistance>
         <AllowedDragType>ItemSocket;CargoProductStack;CargoItemStack;StorageProductStack;StorageItemStack</AllowedDragType>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
       </Selection>
       <Walking>
         <ReservationLength>9</ReservationLength>
@@ -222,6 +393,25 @@
         <CurveSegmentDensity>High</CurveSegmentDensity>
         <ForwardSpeed>5</ForwardSpeed>
         <WindMinSlowdownFactor>0.8</WindMinSlowdownFactor>
+        <SpecialMovementType>Land;HumanMovement</SpecialMovementType>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
+        <CreatePathPlannerUnit>1</CreatePathPlannerUnit>
       </Walking>
       <Text>
         <LocaText>
@@ -232,6 +422,7 @@
           </English>
         </LocaText>
         <LineID>20115</LineID>
+        <Localize>1</Localize>
       </Text>
       <CommandQueue>
         <IsFlagship>1</IsFlagship>
@@ -239,14 +430,22 @@
         <FormationPriority>1</FormationPriority>
         <IsPlayerControllableVehicle>1</IsPlayerControllableVehicle>
         <CommandChainLength>3</CommandChainLength>
+        <IsDestructable>1</IsDestructable>
       </CommandQueue>
       <Drifting>
         <OverrideAssetWidthAndLength>0</OverrideAssetWidthAndLength>
         <Length>3.5</Length>
         <Width>0.8</Width>
+        <FactorMovement>1</FactorMovement>
+        <FactorRotation>1</FactorRotation>
+        <AffectedByDriftingWhileIdle>1</AffectedByDriftingWhileIdle>
+        <AffectedByDriftingWhileMoving>1</AffectedByDriftingWhileMoving>
+        <CausesDrifting>1</CausesDrifting>
+        <UseSlowDownTactic>1</UseSlowDownTactic>
       </Drifting>
       <Collector>
         <MaxDragShips>1</MaxDragShips>
+        <UpgradeWhenDraggingShip>6000032</UpgradeWhenDraggingShip>
       </Collector>
       <Attackable>
         <MaximumHitPoints>2000</MaximumHitPoints>
@@ -255,6 +454,12 @@
         <SelfHealPerHealTick>5</SelfHealPerHealTick>
         <SelfHealPausedTimeIfAttacked>60000</SelfHealPausedTimeIfAttacked>
         <CanBeAttackedByPlayer>1</CanBeAttackedByPlayer>
+        <PausedTimeIfAttacked>15000</PausedTimeIfAttacked>
+        <ArmorType>Default</ArmorType>
+        <TakeOverEffect>Never</TakeOverEffect>
+        <IslandWarFlag>0</IslandWarFlag>
+        <RuinSmokeParticles />
+        <ExplosionEffects />
       </Attackable>
       <Attacker>
         <AttackRange>55</AttackRange>
@@ -282,6 +487,12 @@
             </AccuracyByDistancePair>
           </Item>
         </AccuracyByDistance>
+        <AllowApproachEnemy>1</AllowApproachEnemy>
+        <Turrets />
+        <ShootingTracking>Side</ShootingTracking>
+        <AttackType>Default</AttackType>
+        <AccuracyBaseIncreasePercentage>100</AccuracyBaseIncreasePercentage>
+        <MuzzleEffectAssets />
       </Attacker>
       <MinimapToken>
         <TokenAsset>2001947</TokenAsset>
@@ -295,22 +506,71 @@
             </Item>
           </MovementStart>
         </VehicleSounds>
+        <ActiveSounds />
+        <DestroySounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionSounds />
+        <ConstructionStreetSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <UpgradeList />
       <QuestObject />
-      <Infolayer />
+      <Infolayer>
+        <DefaultInfoLayer>0</DefaultInfoLayer>
+      </Infolayer>
       <ItemContainer>
         <SocketCount>2</SocketCount>
         <SlotCount>3</SlotCount>
         <SocketAllocation>Ship;SailShip</SocketAllocation>
         <CanStoreProducts>1</CanStoreProducts>
+        <SocketScope>Local</SocketScope>
+        <StackLimit>50</StackLimit>
+        <InitSocketItems />
+        <InitSlotItems />
+        <EmptySocketIcon>data/ui/2kimages/main/icons/icon_plus.png</EmptySocketIcon>
+        <EmptySocketItemNonModifiable>data/ui/2kimages/main/icons/icon_goods_storage.png</EmptySocketItemNonModifiable>
+        <SpawnsFlotsam>1</SpawnsFlotsam>
+        <FixedSlotContent>0</FixedSlotContent>
       </ItemContainer>
-      <FeedbackController />
+      <FeedbackController>
+        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
+        <UpdateMeshSequence>1</UpdateMeshSequence>
+      </FeedbackController>
       <Draggable>
         <DraggableDistanceFromDragger>6</DraggableDistanceFromDragger>
         <DraggableFeedbackOnDrag>2001897</DraggableFeedbackOnDrag>
         <DraggableFeedbackOnDrop>2001898</DraggableFeedbackOnDrop>
         <DraggableDropInfoLayer>2001942</DraggableDropInfoLayer>
+        <DraggableDistanceFromPreviousDraggable>5</DraggableDistanceFromPreviousDraggable>
+        <DraggableOnDrag>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </DraggableOnDrag>
+        <DraggableOnDrop>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </DraggableOnDrop>
+        <DraggableDisabledInfoLayer>0</DraggableDisabledInfoLayer>
+        <DraggableDragInfoLayer>0</DraggableDragInfoLayer>
+        <DragRopeStiffness>0.2</DragRopeStiffness>
+        <DragRopeHeight>0.3</DragRopeHeight>
       </Draggable>
       <Cost>
         <Costs>
@@ -327,12 +587,21 @@
             <Amount>25</Amount>
           </Item>
         </Costs>
+        <ItemsPerCost>1</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
       </Cost>
       <Craftable>
         <CraftingTime>150000</CraftingTime>
       </Craftable>
-      <TradeRouteVehicle />
-      <Locked />
+      <TradeRouteVehicle>
+        <LoadingSpeedFactor>1</LoadingSpeedFactor>
+      </TradeRouteVehicle>
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
       <Nameable />
       <MetaPersistent />
       <ExpeditionAttribute>
@@ -346,6 +615,10 @@
             <Amount>2</Amount>
           </Item>
         </ExpeditionAttributes>
+        <BaseMorale>20</BaseMorale>
+        <ItemRegions />
+        <ItemDifficulties />
+        <FluffText>0</FluffText>
       </ExpeditionAttribute>
       <ShipMaintenance>
         <Maintenance>0</Maintenance>
@@ -357,8 +630,13 @@
             <Resource>1010017</Resource>
           </Item>
         </Baseprice>
+        <SellInfolayerIcon>500160</SellInfolayerIcon>
+        <CanBeSoldToTrader>1</CanBeSoldToTrader>
       </Sellable>
-      <Stance />
+      <Stance>
+        <DefensiveReturnDistance>60</DefensiveReturnDistance>
+        <FleeDistance>50</FleeDistance>
+      </Stance>
       <Rentable />
     </Values>
   </Asset>
@@ -370,6 +648,7 @@
         <Name>CQO_FlagShip (Campaign)</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_ship.png</IconFilename>
         <InfoDescription>11466</InfoDescription>
+        <Comments />
       </Standard>
       <Object>
         <Variations>
@@ -379,11 +658,26 @@
         </Variations>
         <AssignDefaultParticipant>1</AssignDefaultParticipant>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <MeshPlacement>OnWaterSlope</MeshPlacement>
         <SetCompanyLogo>1</SetCompanyLogo>
         <ObjectPosition>Dynamic</ObjectPosition>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Selection>
         <ObjectmenuHeaderImage>data/ui/2kimages/main/3dicons/icon_ship.png</ObjectmenuHeaderImage>
@@ -392,6 +686,18 @@
         <SelectionPriority>5</SelectionPriority>
         <InteractionDistance>2</InteractionDistance>
         <AllowedDragType>ItemSocket;CargoProductStack;CargoItemStack;StorageProductStack;StorageItemStack</AllowedDragType>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
       </Selection>
       <Walking>
         <ReservationLength>9</ReservationLength>
@@ -411,6 +717,25 @@
         <CurveSegmentDensity>High</CurveSegmentDensity>
         <ForwardSpeed>5</ForwardSpeed>
         <WindMinSlowdownFactor>0.8</WindMinSlowdownFactor>
+        <SpecialMovementType>Land;HumanMovement</SpecialMovementType>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <DiscoverRadius>50</DiscoverRadius>
+        <LeaningSpeed>0.3</LeaningSpeed>
+        <LeaningDamping>0.13</LeaningDamping>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <MinSlowdownFactor>0.4</MinSlowdownFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
+        <CreatePathPlannerUnit>1</CreatePathPlannerUnit>
       </Walking>
       <Text>
         <LocaText>
@@ -421,6 +746,7 @@
           </English>
         </LocaText>
         <LineID>20116</LineID>
+        <Localize>1</Localize>
       </Text>
       <CommandQueue>
         <IsFlagship>1</IsFlagship>
@@ -428,14 +754,22 @@
         <FormationPriority>1</FormationPriority>
         <IsPlayerControllableVehicle>1</IsPlayerControllableVehicle>
         <CommandChainLength>3</CommandChainLength>
+        <IsDestructable>1</IsDestructable>
       </CommandQueue>
       <Drifting>
         <OverrideAssetWidthAndLength>0</OverrideAssetWidthAndLength>
         <Length>3.5</Length>
         <Width>0.8</Width>
+        <FactorMovement>1</FactorMovement>
+        <FactorRotation>1</FactorRotation>
+        <AffectedByDriftingWhileIdle>1</AffectedByDriftingWhileIdle>
+        <AffectedByDriftingWhileMoving>1</AffectedByDriftingWhileMoving>
+        <CausesDrifting>1</CausesDrifting>
+        <UseSlowDownTactic>1</UseSlowDownTactic>
       </Drifting>
       <Collector>
         <MaxDragShips>1</MaxDragShips>
+        <UpgradeWhenDraggingShip>6000032</UpgradeWhenDraggingShip>
       </Collector>
       <Attackable>
         <MaximumHitPoints>2000</MaximumHitPoints>
@@ -445,6 +779,12 @@
         <SelfHealPerHealTick>5</SelfHealPerHealTick>
         <SelfHealPausedTimeIfAttacked>60000</SelfHealPausedTimeIfAttacked>
         <CanBeAttackedByPlayer>1</CanBeAttackedByPlayer>
+        <PausedTimeIfAttacked>15000</PausedTimeIfAttacked>
+        <ArmorType>Default</ArmorType>
+        <TakeOverEffect>Never</TakeOverEffect>
+        <IslandWarFlag>0</IslandWarFlag>
+        <RuinSmokeParticles />
+        <ExplosionEffects />
       </Attackable>
       <Attacker>
         <AttackRange>55</AttackRange>
@@ -472,6 +812,12 @@
             </AccuracyByDistancePair>
           </Item>
         </AccuracyByDistance>
+        <AllowApproachEnemy>1</AllowApproachEnemy>
+        <Turrets />
+        <ShootingTracking>Side</ShootingTracking>
+        <AttackType>Default</AttackType>
+        <AccuracyBaseIncreasePercentage>100</AccuracyBaseIncreasePercentage>
+        <MuzzleEffectAssets />
       </Attacker>
       <MinimapToken>
         <TokenAsset>2001947</TokenAsset>
@@ -485,22 +831,71 @@
             </Item>
           </MovementStart>
         </VehicleSounds>
+        <ActiveSounds />
+        <DestroySounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionSounds />
+        <ConstructionStreetSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <UpgradeList />
       <QuestObject />
-      <Infolayer />
+      <Infolayer>
+        <DefaultInfoLayer>0</DefaultInfoLayer>
+      </Infolayer>
       <ItemContainer>
         <SocketCount>2</SocketCount>
         <SlotCount>3</SlotCount>
         <SocketAllocation>Ship;SailShip</SocketAllocation>
         <CanStoreProducts>1</CanStoreProducts>
+        <SocketScope>Local</SocketScope>
+        <StackLimit>50</StackLimit>
+        <InitSocketItems />
+        <InitSlotItems />
+        <EmptySocketIcon>data/ui/2kimages/main/icons/icon_plus.png</EmptySocketIcon>
+        <EmptySocketItemNonModifiable>data/ui/2kimages/main/icons/icon_goods_storage.png</EmptySocketItemNonModifiable>
+        <SpawnsFlotsam>1</SpawnsFlotsam>
+        <FixedSlotContent>0</FixedSlotContent>
       </ItemContainer>
-      <FeedbackController />
+      <FeedbackController>
+        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
+        <UpdateMeshSequence>1</UpdateMeshSequence>
+      </FeedbackController>
       <Draggable>
         <DraggableDistanceFromDragger>6</DraggableDistanceFromDragger>
         <DraggableFeedbackOnDrag>2001897</DraggableFeedbackOnDrag>
         <DraggableFeedbackOnDrop>2001898</DraggableFeedbackOnDrop>
         <DraggableDropInfoLayer>2001942</DraggableDropInfoLayer>
+        <DraggableDistanceFromPreviousDraggable>5</DraggableDistanceFromPreviousDraggable>
+        <DraggableOnDrag>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </DraggableOnDrag>
+        <DraggableOnDrop>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </DraggableOnDrop>
+        <DraggableDisabledInfoLayer>0</DraggableDisabledInfoLayer>
+        <DraggableDragInfoLayer>0</DraggableDragInfoLayer>
+        <DragRopeStiffness>0.2</DragRopeStiffness>
+        <DragRopeHeight>0.3</DragRopeHeight>
       </Draggable>
       <Cost>
         <Costs>
@@ -517,12 +912,21 @@
             <Amount>25</Amount>
           </Item>
         </Costs>
+        <ItemsPerCost>1</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
       </Cost>
       <Craftable>
         <CraftingTime>150000</CraftingTime>
       </Craftable>
-      <TradeRouteVehicle />
-      <Locked />
+      <TradeRouteVehicle>
+        <LoadingSpeedFactor>1</LoadingSpeedFactor>
+      </TradeRouteVehicle>
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
       <Nameable />
       <MetaPersistent />
       <ExpeditionAttribute>
@@ -536,6 +940,10 @@
             <Amount>2</Amount>
           </Item>
         </ExpeditionAttributes>
+        <BaseMorale>20</BaseMorale>
+        <ItemRegions />
+        <ItemDifficulties />
+        <FluffText>0</FluffText>
       </ExpeditionAttribute>
       <ShipMaintenance>
         <Maintenance>0</Maintenance>
@@ -547,8 +955,13 @@
             <Resource>1010017</Resource>
           </Item>
         </Baseprice>
+        <SellInfolayerIcon>500160</SellInfolayerIcon>
+        <CanBeSoldToTrader>1</CanBeSoldToTrader>
       </Sellable>
-      <Stance />
+      <Stance>
+        <DefensiveReturnDistance>60</DefensiveReturnDistance>
+        <FleeDistance>50</FleeDistance>
+      </Stance>
       <Rentable />
     </Values>
   </Asset>

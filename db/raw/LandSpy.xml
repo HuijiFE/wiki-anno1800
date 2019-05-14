@@ -8,6 +8,7 @@
         <Name>Spy</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_ship.png</IconFilename>
         <InfoDescription>11466</InfoDescription>
+        <Comments />
       </Standard>
       <Object>
         <Variations>
@@ -20,16 +21,43 @@
         </Variations>
         <AssignDefaultParticipant>1</AssignDefaultParticipant>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <MeshPlacement>OnTerrainSlope</MeshPlacement>
         <ObjectPosition>Dynamic</ObjectPosition>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Selection>
         <ObjectmenuHeaderImage>data/ui/2kimages/main/3dicons/icon_ship.png</ObjectmenuHeaderImage>
         <GUIType>Vehicle</GUIType>
         <InteractionDistance>2</InteractionDistance>
         <AllowedDragType>ItemSocket;CargoProductStack;CargoItemStack;StorageProductStack;StorageItemStack</AllowedDragType>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
       </Selection>
       <Walking>
         <DiscoverRadius>0</DiscoverRadius>
@@ -50,6 +78,24 @@
         <MinSlowdownFactor>1</MinSlowdownFactor>
         <DisableSmoothing>1</DisableSmoothing>
         <CurveSegmentDensity>High</CurveSegmentDensity>
+        <SpecialMovementType>Land;HumanMovement</SpecialMovementType>
+        <WalkSequence>walk01</WalkSequence>
+        <IdleSequence2>idle01</IdleSequence2>
+        <ShortenSailsAfter>5000</ShortenSailsAfter>
+        <PathPlannerLayer>Land</PathPlannerLayer>
+        <Deceleration>6</Deceleration>
+        <TurnSpeedInPlace>45</TurnSpeedInPlace>
+        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
+        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
+        <CargoThreshold>0.5</CargoThreshold>
+        <CargoStartFactor>1</CargoStartFactor>
+        <CargoFullFactor>0.5</CargoFullFactor>
+        <DamageThreshold>0.25</DamageThreshold>
+        <DamageStartFactor>1</DamageStartFactor>
+        <DamageFullFactor>0.25</DamageFullFactor>
+        <IgnoreWeightFactor>1</IgnoreWeightFactor>
+        <IgnoreDamageFactor>1</IgnoreDamageFactor>
+        <CreatePathPlannerUnit>1</CreatePathPlannerUnit>
       </Walking>
       <Text>
         <LocaText>
@@ -60,6 +106,7 @@
           </English>
         </LocaText>
         <LineID>14862</LineID>
+        <Localize>1</Localize>
       </Text>
       <CommandQueue>
         <FollowRadius>5</FollowRadius>
@@ -67,6 +114,7 @@
         <FormationPriority>4</FormationPriority>
         <InsecurityAttractiveness>0</InsecurityAttractiveness>
         <IsPlayerControllableVehicle>1</IsPlayerControllableVehicle>
+        <IsDestructable>1</IsDestructable>
       </CommandQueue>
       <MinimapToken>
         <TokenAsset>2001947</TokenAsset>
@@ -87,11 +135,33 @@
             </Item>
           </InfectedFire>
         </IncidentSounds>
+        <ActiveSounds />
+        <DestroySounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionSounds />
+        <ConstructionStreetSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <UpgradeList />
-      <Infolayer />
+      <Infolayer>
+        <DefaultInfoLayer>0</DefaultInfoLayer>
+      </Infolayer>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
       <MetaPersistent />
     </Values>

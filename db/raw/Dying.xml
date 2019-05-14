@@ -7,14 +7,34 @@
         <GUID>1001521</GUID>
         <Name>Dying Object</Name>
         <ID>DyingObject</ID>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
-      <Mesh />
+      <Mesh>
+        <ObjectPosition>Static</ObjectPosition>
+        <MeshPlacement>Default</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
+      </Mesh>
       <Dying>
         <DeathEffectDuration>20000</DeathEffectDuration>
       </Dying>
       <Object>
         <Type>NotSerialized</Type>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Variations />
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
     </Values>
   </Asset>

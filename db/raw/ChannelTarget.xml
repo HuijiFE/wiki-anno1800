@@ -8,15 +8,36 @@
         <Name>QO Dynamite Fishing - Whale</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_fish.png</IconFilename>
         <InfoDescription>1029</InfoDescription>
+        <Comments />
       </Standard>
       <Mesh>
         <ObjectPosition>Dynamic</ObjectPosition>
         <MeshPlacement>OnWater</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Selection>
         <GUIType>Quest</GUIType>
         <InteractionDistance>1</InteractionDistance>
         <InfoCorner>0</InfoCorner>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <AllowedDragType />
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
       </Selection>
       <Object>
         <Variations>
@@ -24,6 +45,13 @@
             <Filename>data/graphics/units/wildlife/whale_blue/whale_blue.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Text>
         <LocaText>
@@ -31,15 +59,40 @@
             <Text>Whale that wants to be fished.. by dynamites!</Text>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
-      <MinimapToken />
-      <Infolayer />
+      <MinimapToken>
+        <TokenAsset>0</TokenAsset>
+        <StrategicMapAsset>0</StrategicMapAsset>
+      </MinimapToken>
+      <Infolayer>
+        <DefaultInfoLayer>0</DefaultInfoLayer>
+      </Infolayer>
       <SoundEmitter>
         <CollectedSounds>
           <Item>
             <Sound>214111</Sound>
           </Item>
         </CollectedSounds>
+        <ActiveSounds />
+        <DestroySounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionSounds />
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <ChannelTarget>
         <SpawnInfo>
@@ -61,6 +114,7 @@
             </SpawnArea>
             <SessionFilter />
           </Values>
+          <Template>ActionSpawnObjects</Template>
         </SpawnInfo>
         <CargoAsset>190580</CargoAsset>
         <SpawnSignsAndFeedback>
@@ -70,10 +124,14 @@
               <Infolayer>500482</Infolayer>
             </ConditionObjectiveSignsAndFeedback>
           </Values>
+          <Template>ConditionObjectiveSignsAndFeedback</Template>
         </SpawnSignsAndFeedback>
       </ChannelTarget>
       <QuestObject />
-      <FeedbackController />
+      <FeedbackController>
+        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
+        <UpdateMeshSequence>1</UpdateMeshSequence>
+      </FeedbackController>
     </Values>
   </Asset>
   <Asset>
@@ -84,16 +142,36 @@
         <Name>QO Dynamite Fishing - Fish</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_fish.png</IconFilename>
         <InfoDescription>1029</InfoDescription>
+        <Comments />
       </Standard>
       <Mesh>
         <ObjectPosition>Dynamic</ObjectPosition>
         <DefaultSequence>default</DefaultSequence>
         <MeshPlacement>OnWater</MeshPlacement>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Selection>
         <GUIType>Quest</GUIType>
         <InteractionDistance>1</InteractionDistance>
         <InfoCorner>0</InfoCorner>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <AllowedDragType />
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
       </Selection>
       <Object>
         <Variations>
@@ -101,6 +179,13 @@
             <Filename>data/graphics/units/wildlife/fish/fish_swarm.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Text>
         <LocaText>
@@ -108,15 +193,40 @@
             <Text>Fishground</Text>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
-      <MinimapToken />
-      <Infolayer />
+      <MinimapToken>
+        <TokenAsset>0</TokenAsset>
+        <StrategicMapAsset>0</StrategicMapAsset>
+      </MinimapToken>
+      <Infolayer>
+        <DefaultInfoLayer>0</DefaultInfoLayer>
+      </Infolayer>
       <SoundEmitter>
         <CollectedSounds>
           <Item>
             <Sound>214111</Sound>
           </Item>
         </CollectedSounds>
+        <ActiveSounds />
+        <DestroySounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionSounds />
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <ChannelTarget>
         <SpawnInfo>
@@ -137,6 +247,7 @@
             </SpawnArea>
             <SessionFilter />
           </Values>
+          <Template>ActionSpawnObjects</Template>
         </SpawnInfo>
         <CargoAsset>190580</CargoAsset>
         <SpawnSignsAndFeedback>
@@ -146,10 +257,14 @@
               <Infolayer>500482</Infolayer>
             </ConditionObjectiveSignsAndFeedback>
           </Values>
+          <Template>ConditionObjectiveSignsAndFeedback</Template>
         </SpawnSignsAndFeedback>
       </ChannelTarget>
       <QuestObject />
-      <FeedbackController />
+      <FeedbackController>
+        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
+        <UpdateMeshSequence>1</UpdateMeshSequence>
+      </FeedbackController>
     </Values>
   </Asset>
 </Assets>

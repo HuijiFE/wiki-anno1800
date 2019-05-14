@@ -10,13 +10,13 @@
       "flotsam": 101223,
       "allocation": "TownHall",
       "maxStackSize": 0,
-      "rarity": "",
+      "rarity": "Quest",
       "hasAction": false,
       "tradePrice": false,
       "transferBlocked": false,
       "itemType": false,
       "itemSet": 0,
-      "exclusiveGroup": "",
+      "exclusiveGroup": "None",
       "isDestroyedOnUnequip": false
     },
     "itemEffect": {
@@ -30,12 +30,12 @@
       "distance": 0,
       "cooldown": 0,
       "description": 0,
-      "stopMovementOnInteraction": false,
-      "scope": "",
+      "stopMovementOnInteraction": true,
+      "scope": "Self",
       "repairSpeed": 0,
       "duration": 0,
       "buff": 0,
-      "canEnd": false,
+      "canEnd": true,
       "incidentTypes": [],
       "isDestroyedAfterCooldown": false,
       "radiusBuffTargets": []
@@ -81,12 +81,7 @@
       "replaceAssemblyOptions": [],
       "damageReceiveFactor": {},
       "distributionUpgrade": [],
-      "upgrades": {
-        "RiotInfluenceUpgrade": {
-          "value": -50,
-          "percental": true
-        }
-      }
+      "upgrades": null
     },
     "buff": null
   }

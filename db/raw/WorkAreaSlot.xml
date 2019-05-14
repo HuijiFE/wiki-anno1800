@@ -7,6 +7,8 @@
         <GUID>1000253</GUID>
         <Name>slot mining workarea mountain</Name>
         <ID>Workarea</ID>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Object>
         <Variations>
@@ -15,18 +17,49 @@
           </Item>
         </Variations>
         <AssignDefaultParticipant>1</AssignDefaultParticipant>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <InitialVisibility>0</InitialVisibility>
+        <ObjectPosition>Static</ObjectPosition>
+        <MeshPlacement>Default</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Slot>
         <SlotType>WorkAreaMountain</SlotType>
         <AutoChangeVariation>1</AutoChangeVariation>
         <SlotCategoryName>0</SlotCategoryName>
         <WorkAreaPathSnapDummy>mining_mountain</WorkAreaPathSnapDummy>
+        <WorkArea>0</WorkArea>
       </Slot>
       <Selection>
         <GUIType>Generic</GUIType>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <InteractionDistance>15</InteractionDistance>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <AllowedDragType />
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
       </Selection>
       <Text>
         <LocaText>
@@ -34,11 +67,31 @@
             <Text>slot mining workarea</Text>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
-      <MinimapToken />
-      <RandomMapObject />
+      <MinimapToken>
+        <TokenAsset>0</TokenAsset>
+        <StrategicMapAsset>0</StrategicMapAsset>
+      </MinimapToken>
+      <RandomMapObject>
+        <Replacements />
+        <MapGeneratorSlotCountOverride />
+      </RandomMapObject>
       <Building>
         <Destructable>0</Destructable>
+        <BuildingType>Other</BuildingType>
+        <BuildingCategoryName>0</BuildingCategoryName>
+        <Movable>1</Movable>
+        <PickingAsset>0</PickingAsset>
+        <ConstructionMenuText>0</ConstructionMenuText>
+        <HasBorderRectOutline>1</HasBorderRectOutline>
+        <SnapRadius>2</SnapRadius>
+        <TerrainType>Terrain</TerrainType>
+        <InfluencedByNeighbors />
+        <InfluencedVariationDirection />
+        <AssociatedRegions>Meta;Moderate;Colony01;Arctic</AssociatedRegions>
+        <BuildingBlockPool />
+        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
       <BezierPath>
         <CreatedInPathEditor>0</CreatedInPathEditor>
@@ -54,6 +107,8 @@
         <GUID>100419</GUID>
         <Name>slot mining workarea cave</Name>
         <ID>WorkAreaCave</ID>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Object>
         <Variations>
@@ -62,18 +117,49 @@
           </Item>
         </Variations>
         <AssignDefaultParticipant>1</AssignDefaultParticipant>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <InitialVisibility>0</InitialVisibility>
+        <ObjectPosition>Static</ObjectPosition>
+        <MeshPlacement>Default</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Slot>
         <SlotType>WorkAreaCave</SlotType>
         <AutoChangeVariation>1</AutoChangeVariation>
         <SlotCategoryName>0</SlotCategoryName>
         <WorkAreaPathSnapDummy>mining_mountain</WorkAreaPathSnapDummy>
+        <WorkArea>0</WorkArea>
       </Slot>
       <Selection>
         <GUIType>Generic</GUIType>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <InteractionDistance>15</InteractionDistance>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <AllowedDragType />
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
       </Selection>
       <Text>
         <LocaText>
@@ -81,11 +167,31 @@
             <Text>slot mining workarea</Text>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
-      <MinimapToken />
-      <RandomMapObject />
+      <MinimapToken>
+        <TokenAsset>0</TokenAsset>
+        <StrategicMapAsset>0</StrategicMapAsset>
+      </MinimapToken>
+      <RandomMapObject>
+        <Replacements />
+        <MapGeneratorSlotCountOverride />
+      </RandomMapObject>
       <Building>
         <Destructable>0</Destructable>
+        <BuildingType>Other</BuildingType>
+        <BuildingCategoryName>0</BuildingCategoryName>
+        <Movable>1</Movable>
+        <PickingAsset>0</PickingAsset>
+        <ConstructionMenuText>0</ConstructionMenuText>
+        <HasBorderRectOutline>1</HasBorderRectOutline>
+        <SnapRadius>2</SnapRadius>
+        <TerrainType>Terrain</TerrainType>
+        <InfluencedByNeighbors />
+        <InfluencedVariationDirection />
+        <AssociatedRegions>Meta;Moderate;Colony01;Arctic</AssociatedRegions>
+        <BuildingBlockPool />
+        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
       <BezierPath>
         <CreatedInPathEditor>0</CreatedInPathEditor>

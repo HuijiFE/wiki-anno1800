@@ -23,6 +23,20 @@
           <EarlyGame>
             <TotalIncidentLimit>2</TotalIncidentLimit>
             <TotalIslandIncidentLimit>1</TotalIslandIncidentLimit>
+            <PerIncidentConfig>
+              <Fire>
+                <TargetInfectionFactor>100</TargetInfectionFactor>
+              </Fire>
+              <Riot>
+                <TargetInfectionFactor>100</TargetInfectionFactor>
+              </Riot>
+              <Illness>
+                <TargetInfectionFactor>100</TargetInfectionFactor>
+              </Illness>
+              <Explosion>
+                <TargetInfectionFactor>100</TargetInfectionFactor>
+              </Explosion>
+            </PerIncidentConfig>
           </EarlyGame>
           <LateMidGame>
             <TotalIslandIncidentLimit>3</TotalIslandIncidentLimit>
@@ -30,6 +44,15 @@
               <Illness>
                 <TargetInfectionFactor>90</TargetInfectionFactor>
               </Illness>
+              <Explosion>
+                <TargetInfectionFactor>70</TargetInfectionFactor>
+              </Explosion>
+              <Fire>
+                <TargetInfectionFactor>70</TargetInfectionFactor>
+              </Fire>
+              <Riot>
+                <TargetInfectionFactor>70</TargetInfectionFactor>
+              </Riot>
             </PerIncidentConfig>
           </LateMidGame>
           <EarlyMidGame>
@@ -37,6 +60,15 @@
               <Illness>
                 <TargetInfectionFactor>100</TargetInfectionFactor>
               </Illness>
+              <Fire>
+                <TargetInfectionFactor>90</TargetInfectionFactor>
+              </Fire>
+              <Riot>
+                <TargetInfectionFactor>90</TargetInfectionFactor>
+              </Riot>
+              <Explosion>
+                <TargetInfectionFactor>90</TargetInfectionFactor>
+              </Explosion>
             </PerIncidentConfig>
             <TotalIncidentLimit>2</TotalIncidentLimit>
             <TotalIslandIncidentLimit>2</TotalIslandIncidentLimit>
@@ -46,6 +78,15 @@
               <Illness>
                 <TargetInfectionFactor>100</TargetInfectionFactor>
               </Illness>
+              <Explosion>
+                <TargetInfectionFactor>80</TargetInfectionFactor>
+              </Explosion>
+              <Fire>
+                <TargetInfectionFactor>80</TargetInfectionFactor>
+              </Fire>
+              <Riot>
+                <TargetInfectionFactor>80</TargetInfectionFactor>
+              </Riot>
             </PerIncidentConfig>
             <TotalIncidentLimit>3</TotalIncidentLimit>
             <TotalIslandIncidentLimit>3</TotalIslandIncidentLimit>
@@ -55,6 +96,15 @@
               <Explosion>
                 <TargetInfectionFactor>80</TargetInfectionFactor>
               </Explosion>
+              <Fire>
+                <TargetInfectionFactor>60</TargetInfectionFactor>
+              </Fire>
+              <Illness>
+                <TargetInfectionFactor>60</TargetInfectionFactor>
+              </Illness>
+              <Riot>
+                <TargetInfectionFactor>60</TargetInfectionFactor>
+              </Riot>
             </PerIncidentConfig>
           </LateGame>
           <EndGame>
@@ -62,6 +112,15 @@
               <Illness>
                 <TargetInfectionFactor>70</TargetInfectionFactor>
               </Illness>
+              <Fire>
+                <TargetInfectionFactor>50</TargetInfectionFactor>
+              </Fire>
+              <Riot>
+                <TargetInfectionFactor>50</TargetInfectionFactor>
+              </Riot>
+              <Explosion>
+                <TargetInfectionFactor>50</TargetInfectionFactor>
+              </Explosion>
             </PerIncidentConfig>
           </EndGame>
         </ProgressConfig>
@@ -245,11 +304,15 @@
           </ExplosionFromDamage>
         </IncidentCommunication>
         <SubRiskFactor>0.25</SubRiskFactor>
+        <ShipIncidentTickRate>10000</ShipIncidentTickRate>
+        <HighIncidentRiskThreshold>20</HighIncidentRiskThreshold>
       </GeneralIncidentConfiguration>
       <Standard>
         <GUID>2001023</GUID>
         <Name>GeneralIncidentConfiguration</Name>
         <ID>IncidentConfiguration</ID>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
     </Values>
   </Asset>

@@ -7,24 +7,57 @@
         <GUID>100755</GUID>
         <Name>WorldMapShip</Name>
         <ID>WorldMapShip</ID>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Object>
         <Type>NotSerialized</Type>
+        <Variations />
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <ObjectPosition>Dynamic</ObjectPosition>
         <SetCompanyLogo>1</SetCompanyLogo>
+        <MeshPlacement>Default</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <DynamicVariation>
         <DynamicVariationType>SequenceAsset</DynamicVariationType>
       </DynamicVariation>
       <Selection>
         <GUIType>Vehicle</GUIType>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <InteractionDistance>15</InteractionDistance>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <AllowedDragType />
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
       </Selection>
       <InfotipObject />
       <WorldMapDynamicSoundEmitter />
       <WorldMapSound>
         <UIClickEvent>9818389</UIClickEvent>
+        <ActiveAudioEvent>0</ActiveAudioEvent>
       </WorldMapSound>
     </Values>
   </Asset>
@@ -35,24 +68,57 @@
         <GUID>101211</GUID>
         <Name>WorldMapSessionAsset</Name>
         <ID>WorldMapSessionAsset</ID>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Object>
         <Type>NotSerialized</Type>
+        <Variations />
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <ObjectPosition>Dynamic</ObjectPosition>
         <SetCompanyLogo>1</SetCompanyLogo>
+        <MeshPlacement>Default</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <DynamicVariation>
         <DynamicVariationType>SequenceAsset</DynamicVariationType>
       </DynamicVariation>
       <Selection>
         <GUIType>Vehicle</GUIType>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <InteractionDistance>15</InteractionDistance>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <AllowedDragType />
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
       </Selection>
       <InfotipObject />
       <WorldMapDynamicSoundEmitter />
       <WorldMapSound>
         <UIClickEvent>9818389</UIClickEvent>
+        <ActiveAudioEvent>0</ActiveAudioEvent>
       </WorldMapSound>
     </Values>
   </Asset>

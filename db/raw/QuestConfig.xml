@@ -7,6 +7,8 @@
         <GUID>140496</GUID>
         <Name>QuestBalancing</Name>
         <ID>QuestBalancing</ID>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <QuestConfig>
         <DefaultDeliveryExecutionPlace>
@@ -14,11 +16,45 @@
           <Values>
             <ConditionQuestDelivery>
               <DeliveryObject_cqd />
+              <DeliveryExecutionPlace>
+                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+                <Template>ConditionObjectClientQuestObject</Template>
+                <Values>
+                  <ConditionObjectClientQuestObject />
+                  <ConditionScanner />
+                  <ConditionObjectiveSignsAndFeedback />
+                </Values>
+              </DeliveryExecutionPlace>
             </ConditionQuestDelivery>
-            <ConditionQuestObjective />
+            <ConditionQuestObjective>
+              <ObjectiveSignsAndFeedback>
+                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+                <Template>ConditionObjectiveSignsAndFeedback</Template>
+                <Values>
+                  <ConditionObjectiveSignsAndFeedback />
+                </Values>
+              </ObjectiveSignsAndFeedback>
+              <ObjectiveSuccessMessage>
+                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+                <Template>CharacterNotification</Template>
+                <Values>
+                  <CharacterNotification />
+                  <BaseNotification />
+                  <NotificationSubtitle />
+                </Values>
+              </ObjectiveSuccessMessage>
+              <OnSuccessActions>
+                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+                <Template>Actions</Template>
+                <Values>
+                  <ActionList />
+                </Values>
+              </OnSuccessActions>
+            </ConditionQuestObjective>
             <ObjectiveScaling />
             <ConditionPropsSessionSettings />
           </Values>
+          <Template>DeliveryObjective</Template>
         </DefaultDeliveryExecutionPlace>
         <AcceptQuestText>145001</AcceptQuestText>
         <DeclineQuestText>145002</DeclineQuestText>
@@ -29,13 +65,24 @@
               <Infolayer>500334</Infolayer>
             </ConditionObjectiveSignsAndFeedback>
           </Values>
+          <Template>ConditionObjectiveSignsAndFeedback</Template>
         </DefaultFlotsamSignsAndFeedback>
         <TutorialQuestPool>150902</TutorialQuestPool>
         <CampaignQuestPool>150032</CampaignQuestPool>
         <DefaultConfirmationCondition>
           <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
           <Values>
-            <ConditionQuestResolveConfirmation />
+            <ConditionQuestResolveConfirmation>
+              <ResolveConfirmationMessage>
+                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+                <Template>CharacterNotification</Template>
+                <Values>
+                  <CharacterNotification />
+                  <BaseNotification />
+                  <NotificationSubtitle />
+                </Values>
+              </ResolveConfirmationMessage>
+            </ConditionQuestResolveConfirmation>
             <Condition />
             <ConditionQuestObjective>
               <ObjectiveSignsAndFeedback>
@@ -45,9 +92,27 @@
                     <Infolayer>500562</Infolayer>
                   </ConditionObjectiveSignsAndFeedback>
                 </Values>
+                <Template>ConditionObjectiveSignsAndFeedback</Template>
               </ObjectiveSignsAndFeedback>
+              <ObjectiveSuccessMessage>
+                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+                <Template>CharacterNotification</Template>
+                <Values>
+                  <CharacterNotification />
+                  <BaseNotification />
+                  <NotificationSubtitle />
+                </Values>
+              </ObjectiveSuccessMessage>
+              <OnSuccessActions>
+                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+                <Template>Actions</Template>
+                <Values>
+                  <ActionList />
+                </Values>
+              </OnSuccessActions>
             </ConditionQuestObjective>
           </Values>
+          <Template>ConditionQuestResolveConfirmation</Template>
         </DefaultConfirmationCondition>
         <QuestChapterTexts>
           <Chapter1>
@@ -70,6 +135,21 @@
         <QuestFailedReputationText>13099</QuestFailedReputationText>
         <QuestSuccessReputationText>13098</QuestSuccessReputationText>
         <TutorialTriggerGroup>-23824666</TutorialTriggerGroup>
+        <DefaultStarterObjectExecutionPlace>
+          <Template>ConditionStarterObject</Template>
+          <Values>
+            <Condition />
+            <ConditionStarterObject />
+            <ConditionQuestObjective />
+            <ConditionPropsSessionSettings />
+          </Values>
+        </DefaultStarterObjectExecutionPlace>
+        <DefaultStarterObjectQuestActiveFeedback>
+          <Template>ConditionObjectiveSignsAndFeedback</Template>
+          <Values>
+            <ConditionObjectiveSignsAndFeedback />
+          </Values>
+        </DefaultStarterObjectQuestActiveFeedback>
       </QuestConfig>
     </Values>
   </Asset>

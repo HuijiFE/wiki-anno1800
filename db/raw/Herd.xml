@@ -8,9 +8,21 @@
         <Name>Herd Bear</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_cattle.png</IconFilename>
         <ID>Earth_Herd_Land_0</ID>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Mesh>
         <OnlyVisibleInEditor>1</OnlyVisibleInEditor>
+        <ObjectPosition>Static</ObjectPosition>
+        <MeshPlacement>Default</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Object>
         <Type>EditorObject</Type>
@@ -20,11 +32,42 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <SoundEmitter />
+      <SoundEmitter>
+        <ActiveSounds />
+        <DestroySounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionSounds />
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
+      </SoundEmitter>
       <Herd>
         <UnitSpeed>0.18</UnitSpeed>
         <Attacks>1</Attacks>
+        <StandTogetherRadius>2.2</StandTogetherRadius>
+        <GroupPositionChangeInterval>40000</GroupPositionChangeInterval>
+        <IndividualPositionChangeInterval>20000</IndividualPositionChangeInterval>
+        <GreetingInterval>60000</GreetingInterval>
       </Herd>
       <AnimalBase>
         <AnimalCFGs>
@@ -44,6 +87,9 @@
         <AutoSpawn_RelativeProbability>35</AutoSpawn_RelativeProbability>
         <Animal_AudioLoop>202360</Animal_AudioLoop>
         <ScaleFactor>0.6</ScaleFactor>
+        <AutoSpawnDuringMapLoad>1</AutoSpawnDuringMapLoad>
+        <ScaleDeviationFactorMin>0.8</ScaleDeviationFactorMin>
+        <ScaleDeviationFactorMax>1</ScaleDeviationFactorMax>
       </AnimalBase>
     </Values>
   </Asset>
@@ -55,9 +101,21 @@
         <Name>Herd Deer</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_cattle.png</IconFilename>
         <ID>Earth_Herd_Land_1</ID>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Mesh>
         <OnlyVisibleInEditor>1</OnlyVisibleInEditor>
+        <ObjectPosition>Static</ObjectPosition>
+        <MeshPlacement>Default</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Object>
         <Type>EditorObject</Type>
@@ -67,12 +125,42 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <SoundEmitter />
+      <SoundEmitter>
+        <ActiveSounds />
+        <DestroySounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionSounds />
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
+      </SoundEmitter>
       <Herd>
         <UnitSpeed>0.175</UnitSpeed>
         <StandTogetherRadius>4</StandTogetherRadius>
         <Attackable>1</Attackable>
+        <GroupPositionChangeInterval>40000</GroupPositionChangeInterval>
+        <IndividualPositionChangeInterval>20000</IndividualPositionChangeInterval>
+        <GreetingInterval>60000</GreetingInterval>
       </Herd>
       <AnimalBase>
         <AnimalCFGs>
@@ -97,6 +185,8 @@
         <Animal_AudioLoop>235502</Animal_AudioLoop>
         <ScaleFactor>0.7</ScaleFactor>
         <ScaleDeviationFactorMin>0.5</ScaleDeviationFactorMin>
+        <AutoSpawnDuringMapLoad>1</AutoSpawnDuringMapLoad>
+        <ScaleDeviationFactorMax>1</ScaleDeviationFactorMax>
       </AnimalBase>
     </Values>
   </Asset>
@@ -108,9 +198,21 @@
         <Name>Herd Elk</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_cattle.png</IconFilename>
         <ID>Earth_Herd_Land_2</ID>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Mesh>
         <OnlyVisibleInEditor>1</OnlyVisibleInEditor>
+        <ObjectPosition>Static</ObjectPosition>
+        <MeshPlacement>Default</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Object>
         <Type>EditorObject</Type>
@@ -120,10 +222,41 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <SoundEmitter />
+      <SoundEmitter>
+        <ActiveSounds />
+        <DestroySounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionSounds />
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
+      </SoundEmitter>
       <Herd>
         <UnitSpeed>0.18</UnitSpeed>
+        <StandTogetherRadius>2.2</StandTogetherRadius>
+        <GroupPositionChangeInterval>40000</GroupPositionChangeInterval>
+        <IndividualPositionChangeInterval>20000</IndividualPositionChangeInterval>
+        <GreetingInterval>60000</GreetingInterval>
       </Herd>
       <AnimalBase>
         <AnimalCFGs>
@@ -139,6 +272,8 @@
         <Animal_AudioLoop>235757</Animal_AudioLoop>
         <ScaleFactor>0.8</ScaleFactor>
         <ScaleDeviationFactorMin>0.9</ScaleDeviationFactorMin>
+        <AutoSpawnDuringMapLoad>1</AutoSpawnDuringMapLoad>
+        <ScaleDeviationFactorMax>1</ScaleDeviationFactorMax>
       </AnimalBase>
     </Values>
   </Asset>
@@ -150,9 +285,21 @@
         <Name>Herd Goat</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_cattle.png</IconFilename>
         <ID>Earth_Herd_Land_3</ID>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Mesh>
         <OnlyVisibleInEditor>1</OnlyVisibleInEditor>
+        <ObjectPosition>Static</ObjectPosition>
+        <MeshPlacement>Default</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Object>
         <Type>EditorObject</Type>
@@ -162,10 +309,41 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <SoundEmitter />
+      <SoundEmitter>
+        <ActiveSounds />
+        <DestroySounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionSounds />
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
+      </SoundEmitter>
       <Herd>
         <UnitSpeed>0.15</UnitSpeed>
+        <StandTogetherRadius>2.2</StandTogetherRadius>
+        <GroupPositionChangeInterval>40000</GroupPositionChangeInterval>
+        <IndividualPositionChangeInterval>20000</IndividualPositionChangeInterval>
+        <GreetingInterval>60000</GreetingInterval>
       </Herd>
       <AnimalBase>
         <AnimalCFGs>
@@ -181,6 +359,11 @@
         <AutoSpawn_Regions>Moderate</AutoSpawn_Regions>
         <Animal_AudioLoop>235863</Animal_AudioLoop>
         <ScaleFactor>0.5</ScaleFactor>
+        <UnitCountMin>2</UnitCountMin>
+        <UnitCountMax>10</UnitCountMax>
+        <AutoSpawn_RelativeProbability>100</AutoSpawn_RelativeProbability>
+        <ScaleDeviationFactorMin>0.8</ScaleDeviationFactorMin>
+        <ScaleDeviationFactorMax>1</ScaleDeviationFactorMax>
       </AnimalBase>
     </Values>
   </Asset>
@@ -192,9 +375,21 @@
         <Name>Herd Sheep</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_cattle.png</IconFilename>
         <ID>Earth_Herd_Land_4</ID>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Mesh>
         <OnlyVisibleInEditor>1</OnlyVisibleInEditor>
+        <ObjectPosition>Static</ObjectPosition>
+        <MeshPlacement>Default</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Object>
         <Type>EditorObject</Type>
@@ -204,10 +399,41 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <SoundEmitter />
+      <SoundEmitter>
+        <ActiveSounds />
+        <DestroySounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionSounds />
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
+      </SoundEmitter>
       <Herd>
         <UnitSpeed>0.18</UnitSpeed>
+        <StandTogetherRadius>2.2</StandTogetherRadius>
+        <GroupPositionChangeInterval>40000</GroupPositionChangeInterval>
+        <IndividualPositionChangeInterval>20000</IndividualPositionChangeInterval>
+        <GreetingInterval>60000</GreetingInterval>
       </Herd>
       <AnimalBase>
         <AnimalCFGs>
@@ -220,6 +446,11 @@
         <AutoSpawn_Regions>Moderate</AutoSpawn_Regions>
         <Animal_AudioLoop>235614</Animal_AudioLoop>
         <ScaleFactor>0.5</ScaleFactor>
+        <UnitCountMin>2</UnitCountMin>
+        <UnitCountMax>10</UnitCountMax>
+        <AutoSpawn_RelativeProbability>100</AutoSpawn_RelativeProbability>
+        <ScaleDeviationFactorMin>0.8</ScaleDeviationFactorMin>
+        <ScaleDeviationFactorMax>1</ScaleDeviationFactorMax>
       </AnimalBase>
     </Values>
   </Asset>
@@ -231,9 +462,21 @@
         <Name>Herd WildHorse</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_cattle.png</IconFilename>
         <ID>Earth_Herd_Land_5</ID>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Mesh>
         <OnlyVisibleInEditor>1</OnlyVisibleInEditor>
+        <ObjectPosition>Static</ObjectPosition>
+        <MeshPlacement>Default</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Object>
         <Type>EditorObject</Type>
@@ -243,11 +486,42 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <SoundEmitter />
+      <SoundEmitter>
+        <ActiveSounds />
+        <DestroySounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionSounds />
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
+      </SoundEmitter>
       <Herd>
         <UnitSpeed>0.52</UnitSpeed>
         <LikesToRunAround>1</LikesToRunAround>
+        <StandTogetherRadius>2.2</StandTogetherRadius>
+        <GroupPositionChangeInterval>40000</GroupPositionChangeInterval>
+        <IndividualPositionChangeInterval>20000</IndividualPositionChangeInterval>
+        <GreetingInterval>60000</GreetingInterval>
       </Herd>
       <AnimalBase>
         <AnimalCFGs>
@@ -275,6 +549,12 @@
         <AutoSpawn_Regions>Moderate</AutoSpawn_Regions>
         <Animal_AudioLoop>235642</Animal_AudioLoop>
         <ScaleFactor>0.5</ScaleFactor>
+        <AutoSpawn_AmbientZones>North;Moderate;South</AutoSpawn_AmbientZones>
+        <UnitCountMin>2</UnitCountMin>
+        <UnitCountMax>10</UnitCountMax>
+        <AutoSpawn_RelativeProbability>100</AutoSpawn_RelativeProbability>
+        <ScaleDeviationFactorMin>0.8</ScaleDeviationFactorMin>
+        <ScaleDeviationFactorMax>1</ScaleDeviationFactorMax>
       </AnimalBase>
     </Values>
   </Asset>
@@ -286,9 +566,21 @@
         <Name>Herd Wisent</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_cattle.png</IconFilename>
         <ID>Earth_Herd_Land_6</ID>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Mesh>
         <OnlyVisibleInEditor>1</OnlyVisibleInEditor>
+        <ObjectPosition>Static</ObjectPosition>
+        <MeshPlacement>Default</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Object>
         <Type>EditorObject</Type>
@@ -298,11 +590,41 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <SoundEmitter />
+      <SoundEmitter>
+        <ActiveSounds />
+        <DestroySounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionSounds />
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
+      </SoundEmitter>
       <Herd>
         <UnitSpeed>0.28</UnitSpeed>
         <StandTogetherRadius>4</StandTogetherRadius>
+        <GroupPositionChangeInterval>40000</GroupPositionChangeInterval>
+        <IndividualPositionChangeInterval>20000</IndividualPositionChangeInterval>
+        <GreetingInterval>60000</GreetingInterval>
       </Herd>
       <AnimalBase>
         <AnimalCFGs>
@@ -322,6 +644,9 @@
         <AutoSpawn_RelativeProbability>20</AutoSpawn_RelativeProbability>
         <Animal_AudioLoop>235801</Animal_AudioLoop>
         <ScaleFactor>0.8</ScaleFactor>
+        <AutoSpawnDuringMapLoad>1</AutoSpawnDuringMapLoad>
+        <ScaleDeviationFactorMin>0.8</ScaleDeviationFactorMin>
+        <ScaleDeviationFactorMax>1</ScaleDeviationFactorMax>
       </AnimalBase>
     </Values>
   </Asset>
@@ -333,9 +658,21 @@
         <Name>Herd Wolf</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_cattle.png</IconFilename>
         <ID>Earth_Herd_Land_7</ID>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Mesh>
         <OnlyVisibleInEditor>1</OnlyVisibleInEditor>
+        <ObjectPosition>Static</ObjectPosition>
+        <MeshPlacement>Default</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Object>
         <Type>EditorObject</Type>
@@ -345,12 +682,43 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <SoundEmitter />
+      <SoundEmitter>
+        <ActiveSounds />
+        <DestroySounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionSounds />
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
+      </SoundEmitter>
       <Herd>
         <UnitSpeed>0.14</UnitSpeed>
         <LikesToRunAround>1</LikesToRunAround>
         <Attacks>1</Attacks>
+        <StandTogetherRadius>2.2</StandTogetherRadius>
+        <GroupPositionChangeInterval>40000</GroupPositionChangeInterval>
+        <IndividualPositionChangeInterval>20000</IndividualPositionChangeInterval>
+        <GreetingInterval>60000</GreetingInterval>
       </Herd>
       <AnimalBase>
         <AnimalCFGs>
@@ -364,6 +732,10 @@
         <AutoSpawn_RelativeProbability>30</AutoSpawn_RelativeProbability>
         <Animal_AudioLoop>235650</Animal_AudioLoop>
         <ScaleFactor>0.8</ScaleFactor>
+        <AutoSpawnDuringMapLoad>1</AutoSpawnDuringMapLoad>
+        <AutoSpawn_AmbientZones>North;Moderate;South</AutoSpawn_AmbientZones>
+        <ScaleDeviationFactorMin>0.8</ScaleDeviationFactorMin>
+        <ScaleDeviationFactorMax>1</ScaleDeviationFactorMax>
       </AnimalBase>
     </Values>
   </Asset>
@@ -375,9 +747,21 @@
         <Name>Herd Fox</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_cattle.png</IconFilename>
         <ID>Earth_Herd_Land_8</ID>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Mesh>
         <OnlyVisibleInEditor>1</OnlyVisibleInEditor>
+        <ObjectPosition>Static</ObjectPosition>
+        <MeshPlacement>Default</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Object>
         <Type>EditorObject</Type>
@@ -387,10 +771,41 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <SoundEmitter />
+      <SoundEmitter>
+        <ActiveSounds />
+        <DestroySounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionSounds />
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
+      </SoundEmitter>
       <Herd>
         <UnitSpeed>0.28</UnitSpeed>
+        <StandTogetherRadius>2.2</StandTogetherRadius>
+        <GroupPositionChangeInterval>40000</GroupPositionChangeInterval>
+        <IndividualPositionChangeInterval>20000</IndividualPositionChangeInterval>
+        <GreetingInterval>60000</GreetingInterval>
       </Herd>
       <AnimalBase>
         <AnimalCFGs>
@@ -404,6 +819,10 @@
         <AutoSpawn_RelativeProbability>35</AutoSpawn_RelativeProbability>
         <Animal_AudioLoop>236620</Animal_AudioLoop>
         <ScaleFactor>0.6</ScaleFactor>
+        <AutoSpawnDuringMapLoad>1</AutoSpawnDuringMapLoad>
+        <AutoSpawn_AmbientZones>North;Moderate;South</AutoSpawn_AmbientZones>
+        <ScaleDeviationFactorMin>0.8</ScaleDeviationFactorMin>
+        <ScaleDeviationFactorMax>1</ScaleDeviationFactorMax>
       </AnimalBase>
     </Values>
   </Asset>
@@ -414,9 +833,21 @@
         <GUID>1000072</GUID>
         <Name>Herd Flamingo</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_cattle.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Mesh>
         <OnlyVisibleInEditor>1</OnlyVisibleInEditor>
+        <ObjectPosition>Static</ObjectPosition>
+        <MeshPlacement>Default</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Object>
         <Type>EditorObject</Type>
@@ -426,11 +857,41 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <SoundEmitter />
+      <SoundEmitter>
+        <ActiveSounds />
+        <DestroySounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionSounds />
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
+      </SoundEmitter>
       <Herd>
         <UnitSpeed>0.03</UnitSpeed>
         <StandTogetherRadius>0.8</StandTogetherRadius>
+        <GroupPositionChangeInterval>40000</GroupPositionChangeInterval>
+        <IndividualPositionChangeInterval>20000</IndividualPositionChangeInterval>
+        <GreetingInterval>60000</GreetingInterval>
       </Herd>
       <AnimalBase>
         <AnimalCFGs>
@@ -443,6 +904,11 @@
         <UnitCountMin>1</UnitCountMin>
         <AutoSpawn_RelativeProbability>20</AutoSpawn_RelativeProbability>
         <ScaleFactor>0.5</ScaleFactor>
+        <AutoSpawnDuringMapLoad>1</AutoSpawnDuringMapLoad>
+        <UnitCountMax>10</UnitCountMax>
+        <Animal_AudioLoop>0</Animal_AudioLoop>
+        <ScaleDeviationFactorMin>0.8</ScaleDeviationFactorMin>
+        <ScaleDeviationFactorMax>1</ScaleDeviationFactorMax>
       </AnimalBase>
     </Values>
   </Asset>
@@ -454,9 +920,21 @@
         <Name>Herd Crocodile</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_cattle.png</IconFilename>
         <ID>Colony_Herd_Land_0</ID>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Mesh>
         <OnlyVisibleInEditor>1</OnlyVisibleInEditor>
+        <ObjectPosition>Static</ObjectPosition>
+        <MeshPlacement>Default</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Object>
         <Type>EditorObject</Type>
@@ -466,12 +944,42 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <SoundEmitter />
+      <SoundEmitter>
+        <ActiveSounds />
+        <DestroySounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionSounds />
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
+      </SoundEmitter>
       <Herd>
         <UnitSpeed>0.025</UnitSpeed>
         <StandTogetherRadius>3</StandTogetherRadius>
         <Attacks>1</Attacks>
+        <GroupPositionChangeInterval>40000</GroupPositionChangeInterval>
+        <IndividualPositionChangeInterval>20000</IndividualPositionChangeInterval>
+        <GreetingInterval>60000</GreetingInterval>
       </Herd>
       <AnimalBase>
         <AnimalCFGs>
@@ -495,6 +1003,11 @@
         <Animal_AudioLoop>236632</Animal_AudioLoop>
         <ScaleFactor>0.7</ScaleFactor>
         <ScaleDeviationFactorMax>1.4</ScaleDeviationFactorMax>
+        <AutoSpawnDuringMapLoad>1</AutoSpawnDuringMapLoad>
+        <AutoSpawn_AmbientZones>North;Moderate;South</AutoSpawn_AmbientZones>
+        <UnitCountMin>2</UnitCountMin>
+        <AutoSpawn_RelativeProbability>100</AutoSpawn_RelativeProbability>
+        <ScaleDeviationFactorMin>0.8</ScaleDeviationFactorMin>
       </AnimalBase>
     </Values>
   </Asset>
@@ -506,9 +1019,21 @@
         <Name>Herd Panther</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_cattle.png</IconFilename>
         <ID>Colony_Herd_Land_1</ID>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Mesh>
         <OnlyVisibleInEditor>1</OnlyVisibleInEditor>
+        <ObjectPosition>Static</ObjectPosition>
+        <MeshPlacement>Default</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Object>
         <Type>EditorObject</Type>
@@ -518,12 +1043,42 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <SoundEmitter />
+      <SoundEmitter>
+        <ActiveSounds />
+        <DestroySounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionSounds />
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
+      </SoundEmitter>
       <Herd>
         <UnitSpeed>0.025</UnitSpeed>
         <StandTogetherRadius>2</StandTogetherRadius>
         <Attacks>1</Attacks>
+        <GroupPositionChangeInterval>40000</GroupPositionChangeInterval>
+        <IndividualPositionChangeInterval>20000</IndividualPositionChangeInterval>
+        <GreetingInterval>60000</GreetingInterval>
       </Herd>
       <AnimalBase>
         <AnimalCFGs>
@@ -546,6 +1101,10 @@
         <AutoSpawn_RelativeProbability>50</AutoSpawn_RelativeProbability>
         <Animal_AudioLoop>236632</Animal_AudioLoop>
         <ScaleFactor>0.7</ScaleFactor>
+        <AutoSpawnDuringMapLoad>1</AutoSpawnDuringMapLoad>
+        <AutoSpawn_AmbientZones>North;Moderate;South</AutoSpawn_AmbientZones>
+        <ScaleDeviationFactorMin>0.8</ScaleDeviationFactorMin>
+        <ScaleDeviationFactorMax>1</ScaleDeviationFactorMax>
       </AnimalBase>
     </Values>
   </Asset>
@@ -557,9 +1116,21 @@
         <Name>Herd Donkey</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_cattle.png</IconFilename>
         <ID>Colony_Herd_Land_2</ID>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Mesh>
         <OnlyVisibleInEditor>1</OnlyVisibleInEditor>
+        <ObjectPosition>Static</ObjectPosition>
+        <MeshPlacement>Default</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Object>
         <Type>EditorObject</Type>
@@ -569,12 +1140,42 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <SoundEmitter />
+      <SoundEmitter>
+        <ActiveSounds />
+        <DestroySounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionSounds />
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
+      </SoundEmitter>
       <Herd>
         <UnitSpeed>0.025</UnitSpeed>
         <StandTogetherRadius>2</StandTogetherRadius>
         <Attackable>1</Attackable>
+        <GroupPositionChangeInterval>40000</GroupPositionChangeInterval>
+        <IndividualPositionChangeInterval>20000</IndividualPositionChangeInterval>
+        <GreetingInterval>60000</GreetingInterval>
       </Herd>
       <AnimalBase>
         <AnimalCFGs>
@@ -594,6 +1195,10 @@
         <AutoSpawn_RelativeProbability>50</AutoSpawn_RelativeProbability>
         <Animal_AudioLoop>236632</Animal_AudioLoop>
         <ScaleFactor>0.7</ScaleFactor>
+        <AutoSpawnDuringMapLoad>1</AutoSpawnDuringMapLoad>
+        <AutoSpawn_AmbientZones>North;Moderate;South</AutoSpawn_AmbientZones>
+        <ScaleDeviationFactorMin>0.8</ScaleDeviationFactorMin>
+        <ScaleDeviationFactorMax>1</ScaleDeviationFactorMax>
       </AnimalBase>
     </Values>
   </Asset>
@@ -604,9 +1209,21 @@
         <GUID>1000074</GUID>
         <Name>Herd Gorilla</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_cattle.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Mesh>
         <OnlyVisibleInEditor>1</OnlyVisibleInEditor>
+        <ObjectPosition>Static</ObjectPosition>
+        <MeshPlacement>Default</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Object>
         <Type>EditorObject</Type>
@@ -616,12 +1233,42 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <SoundEmitter />
+      <SoundEmitter>
+        <ActiveSounds />
+        <DestroySounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionSounds />
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
+      </SoundEmitter>
       <Herd>
         <UnitSpeed>0.15</UnitSpeed>
         <LikesToRunAround>1</LikesToRunAround>
         <StandTogetherRadius>4</StandTogetherRadius>
+        <GroupPositionChangeInterval>40000</GroupPositionChangeInterval>
+        <IndividualPositionChangeInterval>20000</IndividualPositionChangeInterval>
+        <GreetingInterval>60000</GreetingInterval>
       </Herd>
       <AnimalBase>
         <AnimalCFGs>
@@ -636,6 +1283,9 @@
         <AutoSpawn_RelativeProbability>0</AutoSpawn_RelativeProbability>
         <Animal_AudioLoop>235542</Animal_AudioLoop>
         <ScaleFactor>0.5</ScaleFactor>
+        <AutoSpawn_AmbientZones>North;Moderate;South</AutoSpawn_AmbientZones>
+        <ScaleDeviationFactorMin>0.8</ScaleDeviationFactorMin>
+        <ScaleDeviationFactorMax>1</ScaleDeviationFactorMax>
       </AnimalBase>
     </Values>
   </Asset>

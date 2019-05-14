@@ -45,17 +45,9 @@ namespace Anno1800.Jsonify {
 
       public FactoryData(XElement element) : base(element) {
         this.inputs = element
-          .Element("FactoryInputs")
-          ?.Elements()
-          .Select(item => new FactoryInputOutputPair(item))
-          .ToList()
-          ?? new List<FactoryInputOutputPair>();
+          .ListOf("FactoryInputs", item => new FactoryInputOutputPair(item));
         this.outputs = element
-          .Element("FactoryOutputs")
-          ?.Elements()
-          .Select(item => new FactoryInputOutputPair(item))
-          .ToList()
-          ?? new List<FactoryInputOutputPair>();
+          .ListOf("FactoryOutputs", item => new FactoryInputOutputPair(item));
       }
     }
 
@@ -141,11 +133,7 @@ namespace Anno1800.Jsonify {
 
       public ModuleOwnerData(XElement element) : base(element) {
         this.options = element
-          .Element("ConstructionOptions")
-          ?.Elements()
-          .Select(item => item.Int("ModuleGUID"))
-          .ToList()
-          ?? new List<int>();
+          .ListOf("ConstructionOptions", item => item.Int("ModuleGUID"));
       }
     }
 

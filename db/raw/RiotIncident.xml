@@ -7,6 +7,8 @@
         <GUID>2001040</GUID>
         <Name>RiotIncident</Name>
         <IconFilename>data/ui/2kimages/main/icons/icon_incident_riot.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <IncidentRiot>
         <MobSizeBase>70</MobSizeBase>
@@ -33,6 +35,10 @@
         <RiotMoveOutInterval>90</RiotMoveOutInterval>
         <IslandWarFirstCheckPercentPoint>70</IslandWarFirstCheckPercentPoint>
         <IslandWarAdditionalCheckCount>10</IslandWarAdditionalCheckCount>
+        <MobFeedbackHideRadius>11</MobFeedbackHideRadius>
+        <MobInfectionTime>30000</MobInfectionTime>
+        <MobMaxDistance>20</MobMaxDistance>
+        <MobSizeInitial>5</MobSizeInitial>
       </IncidentRiot>
       <Incident>
         <IncidentType>Riot</IncidentType>
@@ -58,6 +64,7 @@
               <Limit>80</Limit>
             </LateMidGame>
           </InfectionLimit>
+          <InfectionBaseIntervalMin>10000</InfectionBaseIntervalMin>
         </InfectionData>
         <IncidentAttractiveness>
           <BasePerBuilding>0</BasePerBuilding>
@@ -149,6 +156,28 @@
         <FeedbackDangerReaction>IGNORE</FeedbackDangerReaction>
         <ResolverNextToCarSpawnRight>data/graphics/effects/city_incidents/riot/stories/ci_riot_story_03.cfg</ResolverNextToCarSpawnRight>
         <ResolverNextToCarSpawnLeft>data/graphics/effects/city_incidents/riot/stories/ci_riot_story_02.cfg</ResolverNextToCarSpawnLeft>
+        <BuildingData>
+          <IntensityBaseIntervalMin>5000</IntensityBaseIntervalMin>
+          <IntensityBaseIntervalMax>15000</IntensityBaseIntervalMax>
+          <IntensityLimit>100</IntensityLimit>
+          <IntensityIncreaseRate>5</IntensityIncreaseRate>
+          <IntensitySelfHealRate>0.025</IntensitySelfHealRate>
+          <ProtectedTime>60000</ProtectedTime>
+          <DefaultIntensity>25</DefaultIntensity>
+          <IntensitySelfHealBaseChance>5</IntensitySelfHealBaseChance>
+          <IntensityIncreaseBaseChance>50</IntensityIncreaseBaseChance>
+          <IntensitySelfHealBlockingTicks>5</IntensitySelfHealBlockingTicks>
+          <IntensityAdditionalSelfHealChance>10</IntensityAdditionalSelfHealChance>
+        </BuildingData>
+        <IncidentEscalation>
+          <RequiredActiveInfections>10</RequiredActiveInfections>
+        </IncidentEscalation>
+        <StartBuildingSelection />
+        <ShipIncidentSpreadRadius>8</ShipIncidentSpreadRadius>
+        <ShipIncidentDefaultDebuff>0</ShipIncidentDefaultDebuff>
+        <ShipIncidentDefaultDuration>60000</ShipIncidentDefaultDuration>
+        <ShipIncidentSpreadCooldown>10000</ShipIncidentSpreadCooldown>
+        <InitialInfectionFactor>0.3</InitialInfectionFactor>
       </Incident>
       <Text>
         <LocaText>
@@ -159,6 +188,7 @@
           </English>
         </LocaText>
         <LineID>25921</LineID>
+        <Localize>1</Localize>
       </Text>
       <IncidentEffectConfiguration>
         <DummyEffectInformation>

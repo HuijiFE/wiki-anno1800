@@ -7,6 +7,8 @@
         <GUID>140585</GUID>
         <Name>IllnessIncident</Name>
         <IconFilename>data/ui/2kimages/main/icons/icon_incident_diseases.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Incident>
         <IncidentType>Illness</IncidentType>
@@ -32,6 +34,7 @@
               <Limit>80</Limit>
             </LateMidGame>
           </InfectionLimit>
+          <InfectionBaseIntervalMin>10000</InfectionBaseIntervalMin>
         </InfectionData>
         <IncidentEscalation>
           <RequiredActiveInfections>13</RequiredActiveInfections>
@@ -137,6 +140,21 @@
         <DangerSafeExtents>4</DangerSafeExtents>
         <ResolverNextToCarSpawnRight>data/graphics/effects/city_incidents/illness/stories/ci_illness_story_04.cfg</ResolverNextToCarSpawnRight>
         <ResolverNextToCarSpawnLeft>data/graphics/effects/city_incidents/illness/stories/ci_illness_story_03.cfg</ResolverNextToCarSpawnLeft>
+        <BuildingData>
+          <IntensityBaseIntervalMin>5000</IntensityBaseIntervalMin>
+          <IntensityBaseIntervalMax>15000</IntensityBaseIntervalMax>
+          <IntensityLimit>100</IntensityLimit>
+          <IntensityIncreaseRate>5</IntensityIncreaseRate>
+          <IntensitySelfHealRate>0.025</IntensitySelfHealRate>
+          <ProtectedTime>60000</ProtectedTime>
+          <DefaultIntensity>25</DefaultIntensity>
+          <IntensitySelfHealBaseChance>5</IntensitySelfHealBaseChance>
+          <IntensityIncreaseBaseChance>50</IntensityIncreaseBaseChance>
+          <IntensitySelfHealBlockingTicks>5</IntensitySelfHealBlockingTicks>
+          <IntensityAdditionalSelfHealChance>10</IntensityAdditionalSelfHealChance>
+        </BuildingData>
+        <StartBuildingSelection />
+        <ShipIncidentSpreadCooldown>10000</ShipIncidentSpreadCooldown>
       </Incident>
       <IncidentIllness>
         <MoveOutInterval>60</MoveOutInterval>
@@ -150,6 +168,7 @@
           </English>
         </LocaText>
         <LineID>25922</LineID>
+        <Localize>1</Localize>
       </Text>
       <IncidentEffectConfiguration>
         <DummyEffectInformation>

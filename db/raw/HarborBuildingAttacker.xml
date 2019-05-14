@@ -8,30 +8,91 @@
         <Name>harbor_04 (Tower 01, Puckle Gun)</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_defense_tower_pucklegun.png</IconFilename>
         <InfoDescription>3063</InfoDescription>
+        <Comments />
       </Standard>
       <Building>
         <BuildingCategoryName>11150</BuildingCategoryName>
         <AssociatedRegions>Moderate</AssociatedRegions>
         <TerrainType>Water</TerrainType>
+        <BuildingType>Other</BuildingType>
+        <Destructable>1</Destructable>
+        <Movable>1</Movable>
+        <PickingAsset>0</PickingAsset>
+        <ConstructionMenuText>0</ConstructionMenuText>
+        <HasBorderRectOutline>1</HasBorderRectOutline>
+        <SnapRadius>2</SnapRadius>
+        <InfluencedByNeighbors />
+        <InfluencedVariationDirection />
+        <BuildingBlockPool />
+        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
       <Blocking>
         <GroundDecalAsset>100446</GroundDecalAsset>
         <GroundDecalInvisible>101008</GroundDecalInvisible>
         <HasBuildingBaseTiles>1</HasBuildingBaseTiles>
         <RemoveGrass>0</RemoveGrass>
+        <HidePropsRadius>1</HidePropsRadius>
+        <DeletePropsRadius>1</DeletePropsRadius>
+        <StreetOutside>0</StreetOutside>
+        <BlocksBuilding>1</BlocksBuilding>
       </Blocking>
-      <Mesh />
+      <Mesh>
+        <ObjectPosition>Static</ObjectPosition>
+        <MeshPlacement>Default</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
+      </Mesh>
       <Object>
         <Variations>
           <Item>
             <Filename>data/graphics/buildings/special/harbor_04/harbor_04.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <AmbientMoodProvider />
-      <Constructable />
+      <AmbientMoodProvider>
+        <AmbientMood>None</AmbientMood>
+        <Murmur>None</Murmur>
+        <AttractivityDependentMurmur />
+        <ProductivityDependentMurmur />
+        <SatisfactionDependentMurmur />
+        <DynamicEnvironmentType>None</DynamicEnvironmentType>
+        <HappinessDependentMurmur />
+        <IslandAttractivityDependentMurmur />
+      </AmbientMoodProvider>
+      <Constructable>
+        <ConstructionMode>Default</ConstructionMode>
+        <DestructionCategory>Other</DestructionCategory>
+        <DestructionType>0</DestructionType>
+      </Constructable>
       <Selection>
         <GUIType>Military</GUIType>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <InteractionDistance>15</InteractionDistance>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <AllowedDragType />
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
       </Selection>
       <Text>
         <LocaText>
@@ -42,6 +103,7 @@
           </English>
         </LocaText>
         <LineID>7018</LineID>
+        <Localize>1</Localize>
       </Text>
       <Cost>
         <Costs>
@@ -72,6 +134,8 @@
           </Item>
         </Costs>
         <InfluenceCostType>DefenseBuilding</InfluenceCostType>
+        <ItemsPerCost>1</ItemsPerCost>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
       </Cost>
       <Attackable>
         <MaximumHitPoints>3200</MaximumHitPoints>
@@ -99,6 +163,9 @@
         <RuinSmokeParticlesMin>1</RuinSmokeParticlesMin>
         <RuinSmokeParticlesMax>3</RuinSmokeParticlesMax>
         <RuinSmokeParticleRectBorderPercent>0.2</RuinSmokeParticleRectBorderPercent>
+        <HPBarOffset>6</HPBarOffset>
+        <SelfHealPausedTimeIfAttacked>15000</SelfHealPausedTimeIfAttacked>
+        <ArmorType>Default</ArmorType>
       </Attackable>
       <Attacker>
         <AttackRange>72</AttackRange>
@@ -149,6 +216,12 @@
         <TargetAngleVariation>360</TargetAngleVariation>
         <ShootingTracking>TurretFixed</ShootingTracking>
         <TurretExplosionEffectAsset>101994</TurretExplosionEffectAsset>
+        <AttackRangeApproachPercentage>0.95</AttackRangeApproachPercentage>
+        <ReloadTime>10</ReloadTime>
+        <AllowApproachEnemy>1</AllowApproachEnemy>
+        <AccuracySpeedDecay>6</AccuracySpeedDecay>
+        <AttackType>Default</AttackType>
+        <AccuracyBaseIncreasePercentage>100</AccuracyBaseIncreasePercentage>
       </Attacker>
       <Maintenance>
         <Maintenances>
@@ -159,11 +232,21 @@
           </Item>
         </Maintenances>
         <ConsumerPriority>1</ConsumerPriority>
+        <MaintenanceAmountFactor>1</MaintenanceAmountFactor>
+        <WorkforceAmountFactor>1</WorkforceAmountFactor>
       </Maintenance>
-      <Locked />
-      <DelayedConstruction />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
+      <DelayedConstruction>
+        <ConstructionDelay>60000</ConstructionDelay>
+      </DelayedConstruction>
       <Pausable />
-      <Infolayer />
+      <Infolayer>
+        <DefaultInfoLayer>0</DefaultInfoLayer>
+      </Infolayer>
       <SoundEmitter>
         <DestroySounds>
           <Item>
@@ -207,11 +290,33 @@
             <Sound>203866</Sound>
           </Item>
         </BuildingRepaired>
+        <ActiveSounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
-      <CommandQueue />
+      <CommandQueue>
+        <IsDestructable>1</IsDestructable>
+      </CommandQueue>
       <Culture>
         <Attractiveness>0</Attractiveness>
         <CultureType>Military</CultureType>
+        <SetPages />
+        <UndiscoveredSet>0</UndiscoveredSet>
+        <ModuleListHeader>0</ModuleListHeader>
+        <OpenSetPages>0</OpenSetPages>
       </Culture>
       <UpgradeList />
     </Values>
@@ -224,30 +329,91 @@
         <Name>harbor_05 (Tower 02, Cannon Tower)</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_defense_tower_cannon.png</IconFilename>
         <InfoDescription>3062</InfoDescription>
+        <Comments />
       </Standard>
       <Building>
         <BuildingCategoryName>11150</BuildingCategoryName>
         <AssociatedRegions>Moderate</AssociatedRegions>
         <TerrainType>Water</TerrainType>
+        <BuildingType>Other</BuildingType>
+        <Destructable>1</Destructable>
+        <Movable>1</Movable>
+        <PickingAsset>0</PickingAsset>
+        <ConstructionMenuText>0</ConstructionMenuText>
+        <HasBorderRectOutline>1</HasBorderRectOutline>
+        <SnapRadius>2</SnapRadius>
+        <InfluencedByNeighbors />
+        <InfluencedVariationDirection />
+        <BuildingBlockPool />
+        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
       <Blocking>
         <GroundDecalAsset>100446</GroundDecalAsset>
         <GroundDecalInvisible>101008</GroundDecalInvisible>
         <HasBuildingBaseTiles>1</HasBuildingBaseTiles>
         <RemoveGrass>0</RemoveGrass>
+        <HidePropsRadius>1</HidePropsRadius>
+        <DeletePropsRadius>1</DeletePropsRadius>
+        <StreetOutside>0</StreetOutside>
+        <BlocksBuilding>1</BlocksBuilding>
       </Blocking>
-      <Mesh />
+      <Mesh>
+        <ObjectPosition>Static</ObjectPosition>
+        <MeshPlacement>Default</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
+      </Mesh>
       <Object>
         <Variations>
           <Item>
             <Filename>data/graphics/buildings/special/harbor_05/harbor_05.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <AmbientMoodProvider />
-      <Constructable />
+      <AmbientMoodProvider>
+        <AmbientMood>None</AmbientMood>
+        <Murmur>None</Murmur>
+        <AttractivityDependentMurmur />
+        <ProductivityDependentMurmur />
+        <SatisfactionDependentMurmur />
+        <DynamicEnvironmentType>None</DynamicEnvironmentType>
+        <HappinessDependentMurmur />
+        <IslandAttractivityDependentMurmur />
+      </AmbientMoodProvider>
+      <Constructable>
+        <ConstructionMode>Default</ConstructionMode>
+        <DestructionCategory>Other</DestructionCategory>
+        <DestructionType>0</DestructionType>
+      </Constructable>
       <Selection>
         <GUIType>Military</GUIType>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <InteractionDistance>15</InteractionDistance>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <AllowedDragType />
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
       </Selection>
       <Text>
         <LocaText>
@@ -258,6 +424,7 @@
           </English>
         </LocaText>
         <LineID>7019</LineID>
+        <Localize>1</Localize>
       </Text>
       <Cost>
         <Costs>
@@ -290,6 +457,7 @@
         </Costs>
         <InfluenceCostType>DefenseBuilding</InfluenceCostType>
         <InfluenceCostPoints>2</InfluenceCostPoints>
+        <ItemsPerCost>1</ItemsPerCost>
       </Cost>
       <Attackable>
         <MaximumHitPoints>4800</MaximumHitPoints>
@@ -317,6 +485,9 @@
         <RuinSmokeParticlesMin>1</RuinSmokeParticlesMin>
         <RuinSmokeParticlesMax>3</RuinSmokeParticlesMax>
         <RuinSmokeParticleRectBorderPercent>0.2</RuinSmokeParticleRectBorderPercent>
+        <HPBarOffset>6</HPBarOffset>
+        <SelfHealPausedTimeIfAttacked>15000</SelfHealPausedTimeIfAttacked>
+        <ArmorType>Default</ArmorType>
       </Attackable>
       <Attacker>
         <AttackRange>92</AttackRange>
@@ -351,6 +522,11 @@
         <TargetAngleVariation>360</TargetAngleVariation>
         <ShootingTracking>TurretFixed</ShootingTracking>
         <TurretExplosionEffectAsset>101994</TurretExplosionEffectAsset>
+        <AttackRangeApproachPercentage>0.95</AttackRangeApproachPercentage>
+        <AllowApproachEnemy>1</AllowApproachEnemy>
+        <AccuracySpeedDecay>6</AccuracySpeedDecay>
+        <AttackType>Default</AttackType>
+        <AccuracyBaseIncreasePercentage>100</AccuracyBaseIncreasePercentage>
       </Attacker>
       <Maintenance>
         <Maintenances>
@@ -361,11 +537,21 @@
           </Item>
         </Maintenances>
         <ConsumerPriority>1</ConsumerPriority>
+        <MaintenanceAmountFactor>1</MaintenanceAmountFactor>
+        <WorkforceAmountFactor>1</WorkforceAmountFactor>
       </Maintenance>
-      <Locked />
-      <DelayedConstruction />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
+      <DelayedConstruction>
+        <ConstructionDelay>60000</ConstructionDelay>
+      </DelayedConstruction>
       <Pausable />
-      <Infolayer />
+      <Infolayer>
+        <DefaultInfoLayer>0</DefaultInfoLayer>
+      </Infolayer>
       <SoundEmitter>
         <DestroySounds>
           <Item>
@@ -409,11 +595,33 @@
             <Sound>203866</Sound>
           </Item>
         </BuildingRepaired>
+        <ActiveSounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
-      <CommandQueue />
+      <CommandQueue>
+        <IsDestructable>1</IsDestructable>
+      </CommandQueue>
       <Culture>
         <Attractiveness>0</Attractiveness>
         <CultureType>Military</CultureType>
+        <SetPages />
+        <UndiscoveredSet>0</UndiscoveredSet>
+        <ModuleListHeader>0</ModuleListHeader>
+        <OpenSetPages>0</OpenSetPages>
       </Culture>
       <UpgradeList />
     </Values>
@@ -426,31 +634,91 @@
         <Name>harbor_06 (Tower 03, Monster Gun)</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_defense_tower_monstergun.png</IconFilename>
         <InfoDescription>3064</InfoDescription>
+        <Comments />
       </Standard>
       <Building>
         <BuildingCategoryName>11150</BuildingCategoryName>
         <SnapRadius>10</SnapRadius>
         <TerrainType>Coast</TerrainType>
         <AssociatedRegions>Moderate</AssociatedRegions>
+        <BuildingType>Other</BuildingType>
+        <Destructable>1</Destructable>
+        <Movable>1</Movable>
+        <PickingAsset>0</PickingAsset>
+        <ConstructionMenuText>0</ConstructionMenuText>
+        <HasBorderRectOutline>1</HasBorderRectOutline>
+        <InfluencedByNeighbors />
+        <InfluencedVariationDirection />
+        <BuildingBlockPool />
+        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
       <Blocking>
         <GroundDecalAsset>100446</GroundDecalAsset>
         <GroundDecalInvisible>101008</GroundDecalInvisible>
         <HasBuildingBaseTiles>1</HasBuildingBaseTiles>
         <RemoveGrass>0</RemoveGrass>
+        <HidePropsRadius>1</HidePropsRadius>
+        <DeletePropsRadius>1</DeletePropsRadius>
+        <StreetOutside>0</StreetOutside>
+        <BlocksBuilding>1</BlocksBuilding>
       </Blocking>
-      <Mesh />
+      <Mesh>
+        <ObjectPosition>Static</ObjectPosition>
+        <MeshPlacement>Default</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
+      </Mesh>
       <Object>
         <Variations>
           <Item>
             <Filename>data/graphics/buildings/special/harbor_06/harbor_06.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <AmbientMoodProvider />
-      <Constructable />
+      <AmbientMoodProvider>
+        <AmbientMood>None</AmbientMood>
+        <Murmur>None</Murmur>
+        <AttractivityDependentMurmur />
+        <ProductivityDependentMurmur />
+        <SatisfactionDependentMurmur />
+        <DynamicEnvironmentType>None</DynamicEnvironmentType>
+        <HappinessDependentMurmur />
+        <IslandAttractivityDependentMurmur />
+      </AmbientMoodProvider>
+      <Constructable>
+        <ConstructionMode>Default</ConstructionMode>
+        <DestructionCategory>Other</DestructionCategory>
+        <DestructionType>0</DestructionType>
+      </Constructable>
       <Selection>
         <GUIType>Military</GUIType>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <InteractionDistance>15</InteractionDistance>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <AllowedDragType />
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
       </Selection>
       <Text>
         <LocaText>
@@ -461,6 +729,7 @@
           </English>
         </LocaText>
         <LineID>7020</LineID>
+        <Localize>1</Localize>
       </Text>
       <Cost>
         <Costs>
@@ -495,6 +764,7 @@
         </Costs>
         <InfluenceCostType>DefenseBuilding</InfluenceCostType>
         <InfluenceCostPoints>4</InfluenceCostPoints>
+        <ItemsPerCost>1</ItemsPerCost>
       </Cost>
       <Attackable>
         <MaximumHitPoints>7000</MaximumHitPoints>
@@ -522,6 +792,9 @@
         <RuinSmokeParticlesMin>1</RuinSmokeParticlesMin>
         <RuinSmokeParticlesMax>3</RuinSmokeParticlesMax>
         <RuinSmokeParticleRectBorderPercent>0.2</RuinSmokeParticleRectBorderPercent>
+        <HPBarOffset>6</HPBarOffset>
+        <SelfHealPausedTimeIfAttacked>15000</SelfHealPausedTimeIfAttacked>
+        <ArmorType>Default</ArmorType>
       </Attackable>
       <Attacker>
         <AttackRange>108</AttackRange>
@@ -556,6 +829,11 @@
         <TargetAngleVariation>360</TargetAngleVariation>
         <ShootingTracking>TurretFixed</ShootingTracking>
         <TurretExplosionEffectAsset>101994</TurretExplosionEffectAsset>
+        <AttackRangeApproachPercentage>0.95</AttackRangeApproachPercentage>
+        <AllowApproachEnemy>1</AllowApproachEnemy>
+        <AccuracySpeedDecay>6</AccuracySpeedDecay>
+        <AttackType>Default</AttackType>
+        <AccuracyBaseIncreasePercentage>100</AccuracyBaseIncreasePercentage>
       </Attacker>
       <Maintenance>
         <Maintenances>
@@ -566,11 +844,21 @@
           </Item>
         </Maintenances>
         <ConsumerPriority>1</ConsumerPriority>
+        <MaintenanceAmountFactor>1</MaintenanceAmountFactor>
+        <WorkforceAmountFactor>1</WorkforceAmountFactor>
       </Maintenance>
-      <Locked />
-      <DelayedConstruction />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
+      <DelayedConstruction>
+        <ConstructionDelay>60000</ConstructionDelay>
+      </DelayedConstruction>
       <Pausable />
-      <Infolayer />
+      <Infolayer>
+        <DefaultInfoLayer>0</DefaultInfoLayer>
+      </Infolayer>
       <SoundEmitter>
         <DestroySounds>
           <Item>
@@ -614,11 +902,33 @@
             <Sound>203866</Sound>
           </Item>
         </BuildingRepaired>
+        <ActiveSounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
-      <CommandQueue />
+      <CommandQueue>
+        <IsDestructable>1</IsDestructable>
+      </CommandQueue>
       <Culture>
         <Attractiveness>0</Attractiveness>
         <CultureType>Military</CultureType>
+        <SetPages />
+        <UndiscoveredSet>0</UndiscoveredSet>
+        <ModuleListHeader>0</ModuleListHeader>
+        <OpenSetPages>0</OpenSetPages>
       </Culture>
       <UpgradeList />
     </Values>
@@ -631,30 +941,91 @@
         <Name>harbor_colony01_04 (Tower 01, Puckle Gun)</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_defense_tower_pucklegun.png</IconFilename>
         <InfoDescription>3063</InfoDescription>
+        <Comments />
       </Standard>
       <Building>
         <AssociatedRegions>Colony01</AssociatedRegions>
         <BuildingCategoryName>11150</BuildingCategoryName>
         <TerrainType>Water</TerrainType>
+        <BuildingType>Other</BuildingType>
+        <Destructable>1</Destructable>
+        <Movable>1</Movable>
+        <PickingAsset>0</PickingAsset>
+        <ConstructionMenuText>0</ConstructionMenuText>
+        <HasBorderRectOutline>1</HasBorderRectOutline>
+        <SnapRadius>2</SnapRadius>
+        <InfluencedByNeighbors />
+        <InfluencedVariationDirection />
+        <BuildingBlockPool />
+        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
       <Blocking>
         <GroundDecalAsset>102460</GroundDecalAsset>
         <GroundDecalInvisible>102459</GroundDecalInvisible>
         <HasBuildingBaseTiles>1</HasBuildingBaseTiles>
         <RemoveGrass>0</RemoveGrass>
+        <HidePropsRadius>1</HidePropsRadius>
+        <DeletePropsRadius>1</DeletePropsRadius>
+        <StreetOutside>0</StreetOutside>
+        <BlocksBuilding>1</BlocksBuilding>
       </Blocking>
-      <Mesh />
+      <Mesh>
+        <ObjectPosition>Static</ObjectPosition>
+        <MeshPlacement>Default</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
+      </Mesh>
       <Object>
         <Variations>
           <Item>
             <Filename>data/graphics/buildings/special/harbor_04_colony01/harbor_04_colony01.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <AmbientMoodProvider />
-      <Constructable />
+      <AmbientMoodProvider>
+        <AmbientMood>None</AmbientMood>
+        <Murmur>None</Murmur>
+        <AttractivityDependentMurmur />
+        <ProductivityDependentMurmur />
+        <SatisfactionDependentMurmur />
+        <DynamicEnvironmentType>None</DynamicEnvironmentType>
+        <HappinessDependentMurmur />
+        <IslandAttractivityDependentMurmur />
+      </AmbientMoodProvider>
+      <Constructable>
+        <ConstructionMode>Default</ConstructionMode>
+        <DestructionCategory>Other</DestructionCategory>
+        <DestructionType>0</DestructionType>
+      </Constructable>
       <Selection>
         <GUIType>Military</GUIType>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <InteractionDistance>15</InteractionDistance>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <AllowedDragType />
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
       </Selection>
       <Text>
         <LineID>14135</LineID>
@@ -665,6 +1036,7 @@
             <ExportCount>1</ExportCount>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
       <Cost>
         <Costs>
@@ -695,6 +1067,8 @@
           </Item>
         </Costs>
         <InfluenceCostType>DefenseBuilding</InfluenceCostType>
+        <ItemsPerCost>1</ItemsPerCost>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
       </Cost>
       <Attackable>
         <MaximumHitPoints>3200</MaximumHitPoints>
@@ -722,6 +1096,9 @@
         <RuinSmokeParticlesMin>1</RuinSmokeParticlesMin>
         <RuinSmokeParticlesMax>3</RuinSmokeParticlesMax>
         <RuinSmokeParticleRectBorderPercent>0.2</RuinSmokeParticleRectBorderPercent>
+        <HPBarOffset>6</HPBarOffset>
+        <SelfHealPausedTimeIfAttacked>15000</SelfHealPausedTimeIfAttacked>
+        <ArmorType>Default</ArmorType>
       </Attackable>
       <Attacker>
         <AttackRange>72</AttackRange>
@@ -772,6 +1149,12 @@
         <TargetAngleVariation>360</TargetAngleVariation>
         <ShootingTracking>TurretFixed</ShootingTracking>
         <TurretExplosionEffectAsset>101994</TurretExplosionEffectAsset>
+        <AttackRangeApproachPercentage>0.95</AttackRangeApproachPercentage>
+        <ReloadTime>10</ReloadTime>
+        <AllowApproachEnemy>1</AllowApproachEnemy>
+        <AccuracySpeedDecay>6</AccuracySpeedDecay>
+        <AttackType>Default</AttackType>
+        <AccuracyBaseIncreasePercentage>100</AccuracyBaseIncreasePercentage>
       </Attacker>
       <Maintenance>
         <Maintenances>
@@ -782,11 +1165,21 @@
           </Item>
         </Maintenances>
         <ConsumerPriority>1</ConsumerPriority>
+        <MaintenanceAmountFactor>1</MaintenanceAmountFactor>
+        <WorkforceAmountFactor>1</WorkforceAmountFactor>
       </Maintenance>
-      <Locked />
-      <DelayedConstruction />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
+      <DelayedConstruction>
+        <ConstructionDelay>60000</ConstructionDelay>
+      </DelayedConstruction>
       <Pausable />
-      <Infolayer />
+      <Infolayer>
+        <DefaultInfoLayer>0</DefaultInfoLayer>
+      </Infolayer>
       <SoundEmitter>
         <DestroySounds>
           <Item>
@@ -830,11 +1223,33 @@
             <Sound>203866</Sound>
           </Item>
         </BuildingRepaired>
+        <ActiveSounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
-      <CommandQueue />
+      <CommandQueue>
+        <IsDestructable>1</IsDestructable>
+      </CommandQueue>
       <Culture>
         <Attractiveness>0</Attractiveness>
         <CultureType>Military</CultureType>
+        <SetPages />
+        <UndiscoveredSet>0</UndiscoveredSet>
+        <ModuleListHeader>0</ModuleListHeader>
+        <OpenSetPages>0</OpenSetPages>
       </Culture>
       <UpgradeList />
     </Values>
@@ -847,30 +1262,91 @@
         <Name>harbor_colony01_05 (Tower 02, Cannon Tower)</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_defense_tower_cannon.png</IconFilename>
         <InfoDescription>3062</InfoDescription>
+        <Comments />
       </Standard>
       <Building>
         <AssociatedRegions>Colony01</AssociatedRegions>
         <BuildingCategoryName>11150</BuildingCategoryName>
         <TerrainType>Water</TerrainType>
+        <BuildingType>Other</BuildingType>
+        <Destructable>1</Destructable>
+        <Movable>1</Movable>
+        <PickingAsset>0</PickingAsset>
+        <ConstructionMenuText>0</ConstructionMenuText>
+        <HasBorderRectOutline>1</HasBorderRectOutline>
+        <SnapRadius>2</SnapRadius>
+        <InfluencedByNeighbors />
+        <InfluencedVariationDirection />
+        <BuildingBlockPool />
+        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
       <Blocking>
         <GroundDecalAsset>102460</GroundDecalAsset>
         <GroundDecalInvisible>102459</GroundDecalInvisible>
         <HasBuildingBaseTiles>1</HasBuildingBaseTiles>
         <RemoveGrass>0</RemoveGrass>
+        <HidePropsRadius>1</HidePropsRadius>
+        <DeletePropsRadius>1</DeletePropsRadius>
+        <StreetOutside>0</StreetOutside>
+        <BlocksBuilding>1</BlocksBuilding>
       </Blocking>
-      <Mesh />
+      <Mesh>
+        <ObjectPosition>Static</ObjectPosition>
+        <MeshPlacement>Default</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
+      </Mesh>
       <Object>
         <Variations>
           <Item>
             <Filename>data/graphics/buildings/special/harbor_05_colony01/harbor_05_colony01.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <AmbientMoodProvider />
-      <Constructable />
+      <AmbientMoodProvider>
+        <AmbientMood>None</AmbientMood>
+        <Murmur>None</Murmur>
+        <AttractivityDependentMurmur />
+        <ProductivityDependentMurmur />
+        <SatisfactionDependentMurmur />
+        <DynamicEnvironmentType>None</DynamicEnvironmentType>
+        <HappinessDependentMurmur />
+        <IslandAttractivityDependentMurmur />
+      </AmbientMoodProvider>
+      <Constructable>
+        <ConstructionMode>Default</ConstructionMode>
+        <DestructionCategory>Other</DestructionCategory>
+        <DestructionType>0</DestructionType>
+      </Constructable>
       <Selection>
         <GUIType>Military</GUIType>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <InteractionDistance>15</InteractionDistance>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <AllowedDragType />
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
       </Selection>
       <Text>
         <LineID>14136</LineID>
@@ -881,6 +1357,7 @@
             <ExportCount>1</ExportCount>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
       <Cost>
         <Costs>
@@ -913,6 +1390,7 @@
         </Costs>
         <InfluenceCostType>DefenseBuilding</InfluenceCostType>
         <InfluenceCostPoints>2</InfluenceCostPoints>
+        <ItemsPerCost>1</ItemsPerCost>
       </Cost>
       <Attackable>
         <MaximumHitPoints>4800</MaximumHitPoints>
@@ -940,6 +1418,9 @@
         <RuinSmokeParticlesMin>1</RuinSmokeParticlesMin>
         <RuinSmokeParticlesMax>3</RuinSmokeParticlesMax>
         <RuinSmokeParticleRectBorderPercent>0.2</RuinSmokeParticleRectBorderPercent>
+        <HPBarOffset>6</HPBarOffset>
+        <SelfHealPausedTimeIfAttacked>15000</SelfHealPausedTimeIfAttacked>
+        <ArmorType>Default</ArmorType>
       </Attackable>
       <Attacker>
         <AttackRange>92</AttackRange>
@@ -974,6 +1455,11 @@
         <TargetAngleVariation>360</TargetAngleVariation>
         <ShootingTracking>TurretFixed</ShootingTracking>
         <TurretExplosionEffectAsset>101994</TurretExplosionEffectAsset>
+        <AttackRangeApproachPercentage>0.95</AttackRangeApproachPercentage>
+        <AllowApproachEnemy>1</AllowApproachEnemy>
+        <AccuracySpeedDecay>6</AccuracySpeedDecay>
+        <AttackType>Default</AttackType>
+        <AccuracyBaseIncreasePercentage>100</AccuracyBaseIncreasePercentage>
       </Attacker>
       <Maintenance>
         <Maintenances>
@@ -984,11 +1470,21 @@
           </Item>
         </Maintenances>
         <ConsumerPriority>1</ConsumerPriority>
+        <MaintenanceAmountFactor>1</MaintenanceAmountFactor>
+        <WorkforceAmountFactor>1</WorkforceAmountFactor>
       </Maintenance>
-      <Locked />
-      <DelayedConstruction />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
+      <DelayedConstruction>
+        <ConstructionDelay>60000</ConstructionDelay>
+      </DelayedConstruction>
       <Pausable />
-      <Infolayer />
+      <Infolayer>
+        <DefaultInfoLayer>0</DefaultInfoLayer>
+      </Infolayer>
       <SoundEmitter>
         <DestroySounds>
           <Item>
@@ -1032,11 +1528,33 @@
             <Sound>203866</Sound>
           </Item>
         </BuildingRepaired>
+        <ActiveSounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
-      <CommandQueue />
+      <CommandQueue>
+        <IsDestructable>1</IsDestructable>
+      </CommandQueue>
       <Culture>
         <Attractiveness>0</Attractiveness>
         <CultureType>Military</CultureType>
+        <SetPages />
+        <UndiscoveredSet>0</UndiscoveredSet>
+        <ModuleListHeader>0</ModuleListHeader>
+        <OpenSetPages>0</OpenSetPages>
       </Culture>
       <UpgradeList />
     </Values>
@@ -1049,31 +1567,91 @@
         <Name>harbor_colony01_06 (Tower 03, Monster Gun)</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_defense_tower_monstergun.png</IconFilename>
         <InfoDescription>3064</InfoDescription>
+        <Comments />
       </Standard>
       <Building>
         <AssociatedRegions>Colony01</AssociatedRegions>
         <BuildingCategoryName>11150</BuildingCategoryName>
         <SnapRadius>10</SnapRadius>
         <TerrainType>Coast</TerrainType>
+        <BuildingType>Other</BuildingType>
+        <Destructable>1</Destructable>
+        <Movable>1</Movable>
+        <PickingAsset>0</PickingAsset>
+        <ConstructionMenuText>0</ConstructionMenuText>
+        <HasBorderRectOutline>1</HasBorderRectOutline>
+        <InfluencedByNeighbors />
+        <InfluencedVariationDirection />
+        <BuildingBlockPool />
+        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
       <Blocking>
         <GroundDecalAsset>102460</GroundDecalAsset>
         <GroundDecalInvisible>102459</GroundDecalInvisible>
         <HasBuildingBaseTiles>1</HasBuildingBaseTiles>
         <RemoveGrass>0</RemoveGrass>
+        <HidePropsRadius>1</HidePropsRadius>
+        <DeletePropsRadius>1</DeletePropsRadius>
+        <StreetOutside>0</StreetOutside>
+        <BlocksBuilding>1</BlocksBuilding>
       </Blocking>
-      <Mesh />
+      <Mesh>
+        <ObjectPosition>Static</ObjectPosition>
+        <MeshPlacement>Default</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
+      </Mesh>
       <Object>
         <Variations>
           <Item>
             <Filename>data/graphics/buildings/special/harbor_06_colony01/harbor_06_colony01.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <AmbientMoodProvider />
-      <Constructable />
+      <AmbientMoodProvider>
+        <AmbientMood>None</AmbientMood>
+        <Murmur>None</Murmur>
+        <AttractivityDependentMurmur />
+        <ProductivityDependentMurmur />
+        <SatisfactionDependentMurmur />
+        <DynamicEnvironmentType>None</DynamicEnvironmentType>
+        <HappinessDependentMurmur />
+        <IslandAttractivityDependentMurmur />
+      </AmbientMoodProvider>
+      <Constructable>
+        <ConstructionMode>Default</ConstructionMode>
+        <DestructionCategory>Other</DestructionCategory>
+        <DestructionType>0</DestructionType>
+      </Constructable>
       <Selection>
         <GUIType>Military</GUIType>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <InteractionDistance>15</InteractionDistance>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <AllowedDragType />
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
       </Selection>
       <Text>
         <LineID>14137</LineID>
@@ -1084,6 +1662,7 @@
             <ExportCount>1</ExportCount>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
       <Cost>
         <Costs>
@@ -1118,6 +1697,7 @@
         </Costs>
         <InfluenceCostType>DefenseBuilding</InfluenceCostType>
         <InfluenceCostPoints>4</InfluenceCostPoints>
+        <ItemsPerCost>1</ItemsPerCost>
       </Cost>
       <Attackable>
         <MaximumHitPoints>7000</MaximumHitPoints>
@@ -1145,6 +1725,9 @@
         <RuinSmokeParticlesMin>1</RuinSmokeParticlesMin>
         <RuinSmokeParticlesMax>3</RuinSmokeParticlesMax>
         <RuinSmokeParticleRectBorderPercent>0.2</RuinSmokeParticleRectBorderPercent>
+        <HPBarOffset>6</HPBarOffset>
+        <SelfHealPausedTimeIfAttacked>15000</SelfHealPausedTimeIfAttacked>
+        <ArmorType>Default</ArmorType>
       </Attackable>
       <Attacker>
         <AttackRange>108</AttackRange>
@@ -1179,6 +1762,11 @@
         <TargetAngleVariation>360</TargetAngleVariation>
         <ShootingTracking>TurretFixed</ShootingTracking>
         <TurretExplosionEffectAsset>101994</TurretExplosionEffectAsset>
+        <AttackRangeApproachPercentage>0.95</AttackRangeApproachPercentage>
+        <AllowApproachEnemy>1</AllowApproachEnemy>
+        <AccuracySpeedDecay>6</AccuracySpeedDecay>
+        <AttackType>Default</AttackType>
+        <AccuracyBaseIncreasePercentage>100</AccuracyBaseIncreasePercentage>
       </Attacker>
       <Maintenance>
         <Maintenances>
@@ -1189,11 +1777,21 @@
           </Item>
         </Maintenances>
         <ConsumerPriority>1</ConsumerPriority>
+        <MaintenanceAmountFactor>1</MaintenanceAmountFactor>
+        <WorkforceAmountFactor>1</WorkforceAmountFactor>
       </Maintenance>
-      <Locked />
-      <DelayedConstruction />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
+      <DelayedConstruction>
+        <ConstructionDelay>60000</ConstructionDelay>
+      </DelayedConstruction>
       <Pausable />
-      <Infolayer />
+      <Infolayer>
+        <DefaultInfoLayer>0</DefaultInfoLayer>
+      </Infolayer>
       <SoundEmitter>
         <DestroySounds>
           <Item>
@@ -1237,11 +1835,33 @@
             <Sound>203866</Sound>
           </Item>
         </BuildingRepaired>
+        <ActiveSounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
-      <CommandQueue />
+      <CommandQueue>
+        <IsDestructable>1</IsDestructable>
+      </CommandQueue>
       <Culture>
         <Attractiveness>0</Attractiveness>
         <CultureType>Military</CultureType>
+        <SetPages />
+        <UndiscoveredSet>0</UndiscoveredSet>
+        <ModuleListHeader>0</ModuleListHeader>
+        <OpenSetPages>0</OpenSetPages>
       </Culture>
       <UpgradeList />
     </Values>
@@ -1254,12 +1874,24 @@
         <Name>harbor_04 (Puckle Gun) - Pirates</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_defense_tower_pucklegun.png</IconFilename>
         <InfoDescription>3063</InfoDescription>
+        <Comments />
       </Standard>
       <Building>
         <BuildingCategoryName>11150</BuildingCategoryName>
         <BuildModeRandomRotation>90</BuildModeRandomRotation>
         <AssociatedRegions>Moderate</AssociatedRegions>
         <TerrainType>Water</TerrainType>
+        <BuildingType>Other</BuildingType>
+        <Destructable>1</Destructable>
+        <Movable>1</Movable>
+        <PickingAsset>0</PickingAsset>
+        <ConstructionMenuText>0</ConstructionMenuText>
+        <HasBorderRectOutline>1</HasBorderRectOutline>
+        <SnapRadius>2</SnapRadius>
+        <InfluencedByNeighbors />
+        <InfluencedVariationDirection />
+        <BuildingBlockPool />
+        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
       <Blocking>
         <HidePropsRadius>-20</HidePropsRadius>
@@ -1268,17 +1900,50 @@
         <GroundDecalInvisible>101008</GroundDecalInvisible>
         <HasBuildingBaseTiles>1</HasBuildingBaseTiles>
         <RemoveGrass>0</RemoveGrass>
+        <StreetOutside>0</StreetOutside>
+        <BlocksBuilding>1</BlocksBuilding>
       </Blocking>
-      <Mesh />
+      <Mesh>
+        <ObjectPosition>Static</ObjectPosition>
+        <MeshPlacement>Default</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
+      </Mesh>
       <Object>
         <Variations>
           <Item>
             <Filename>data/graphics/buildings/special/harbor_04/harbor_04_nodecal.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <AmbientMoodProvider />
-      <Constructable />
+      <AmbientMoodProvider>
+        <AmbientMood>None</AmbientMood>
+        <Murmur>None</Murmur>
+        <AttractivityDependentMurmur />
+        <ProductivityDependentMurmur />
+        <SatisfactionDependentMurmur />
+        <DynamicEnvironmentType>None</DynamicEnvironmentType>
+        <HappinessDependentMurmur />
+        <IslandAttractivityDependentMurmur />
+      </AmbientMoodProvider>
+      <Constructable>
+        <ConstructionMode>Default</ConstructionMode>
+        <DestructionCategory>Other</DestructionCategory>
+        <DestructionType>0</DestructionType>
+      </Constructable>
       <Selection>
         <Colors>
           <SelectionColorType>PropertySelectionColor</SelectionColorType>
@@ -1286,6 +1951,19 @@
           <WeakSelectionColorType>NoColor</WeakSelectionColorType>
         </Colors>
         <GUIType>Military</GUIType>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <InteractionDistance>15</InteractionDistance>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <AllowedDragType />
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
       </Selection>
       <Text>
         <LocaText>
@@ -1296,6 +1974,7 @@
           </English>
         </LocaText>
         <LineID>23403</LineID>
+        <Localize>1</Localize>
       </Text>
       <Cost>
         <Costs>
@@ -1326,6 +2005,8 @@
           </Item>
         </Costs>
         <InfluenceCostType>DefenseBuilding</InfluenceCostType>
+        <ItemsPerCost>1</ItemsPerCost>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
       </Cost>
       <Attackable>
         <MaximumHitPoints>2500</MaximumHitPoints>
@@ -1353,6 +2034,9 @@
         <RuinSmokeParticlesMin>1</RuinSmokeParticlesMin>
         <RuinSmokeParticlesMax>3</RuinSmokeParticlesMax>
         <RuinSmokeParticleRectBorderPercent>0.2</RuinSmokeParticleRectBorderPercent>
+        <HPBarOffset>6</HPBarOffset>
+        <SelfHealPausedTimeIfAttacked>15000</SelfHealPausedTimeIfAttacked>
+        <ArmorType>Default</ArmorType>
       </Attackable>
       <Attacker>
         <AttackRange>72</AttackRange>
@@ -1385,6 +2069,12 @@
             </AccuracyByDistancePair>
           </Item>
         </AccuracyByDistance>
+        <AttackRangeApproachPercentage>0.95</AttackRangeApproachPercentage>
+        <ReloadTime>10</ReloadTime>
+        <AllowApproachEnemy>1</AllowApproachEnemy>
+        <AccuracySpeedDecay>6</AccuracySpeedDecay>
+        <AttackType>Default</AttackType>
+        <AccuracyBaseIncreasePercentage>100</AccuracyBaseIncreasePercentage>
       </Attacker>
       <Maintenance>
         <Maintenances>
@@ -1395,13 +2085,21 @@
           </Item>
         </Maintenances>
         <ConsumerPriority>1</ConsumerPriority>
+        <MaintenanceAmountFactor>1</MaintenanceAmountFactor>
+        <WorkforceAmountFactor>1</WorkforceAmountFactor>
       </Maintenance>
-      <Locked />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
       <DelayedConstruction>
         <ConstructionDelay>0</ConstructionDelay>
       </DelayedConstruction>
       <Pausable />
-      <Infolayer />
+      <Infolayer>
+        <DefaultInfoLayer>0</DefaultInfoLayer>
+      </Infolayer>
       <SoundEmitter>
         <DestroySounds>
           <Item>
@@ -1440,11 +2138,34 @@
             <Sound>203848</Sound>
           </Item>
         </BuildingRuined>
+        <ActiveSounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
-      <CommandQueue />
+      <CommandQueue>
+        <IsDestructable>1</IsDestructable>
+      </CommandQueue>
       <Culture>
         <Attractiveness>-5</Attractiveness>
         <CultureType>Military</CultureType>
+        <SetPages />
+        <UndiscoveredSet>0</UndiscoveredSet>
+        <ModuleListHeader>0</ModuleListHeader>
+        <OpenSetPages>0</OpenSetPages>
       </Culture>
       <UpgradeList />
     </Values>
@@ -1457,12 +2178,24 @@
         <Name>harbor_05 (Cannon Tower) - Pirates</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_defense_tower_cannon.png</IconFilename>
         <InfoDescription>3062</InfoDescription>
+        <Comments />
       </Standard>
       <Building>
         <BuildingCategoryName>11150</BuildingCategoryName>
         <BuildModeRandomRotation>90</BuildModeRandomRotation>
         <AssociatedRegions>Moderate</AssociatedRegions>
         <TerrainType>Water</TerrainType>
+        <BuildingType>Other</BuildingType>
+        <Destructable>1</Destructable>
+        <Movable>1</Movable>
+        <PickingAsset>0</PickingAsset>
+        <ConstructionMenuText>0</ConstructionMenuText>
+        <HasBorderRectOutline>1</HasBorderRectOutline>
+        <SnapRadius>2</SnapRadius>
+        <InfluencedByNeighbors />
+        <InfluencedVariationDirection />
+        <BuildingBlockPool />
+        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
       <Blocking>
         <HidePropsRadius>-20</HidePropsRadius>
@@ -1471,17 +2204,50 @@
         <GroundDecalInvisible>101008</GroundDecalInvisible>
         <HasBuildingBaseTiles>1</HasBuildingBaseTiles>
         <RemoveGrass>0</RemoveGrass>
+        <StreetOutside>0</StreetOutside>
+        <BlocksBuilding>1</BlocksBuilding>
       </Blocking>
-      <Mesh />
+      <Mesh>
+        <ObjectPosition>Static</ObjectPosition>
+        <MeshPlacement>Default</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
+      </Mesh>
       <Object>
         <Variations>
           <Item>
             <Filename>data/graphics/buildings/special/harbor_05/harbor_05_nodecal.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <AmbientMoodProvider />
-      <Constructable />
+      <AmbientMoodProvider>
+        <AmbientMood>None</AmbientMood>
+        <Murmur>None</Murmur>
+        <AttractivityDependentMurmur />
+        <ProductivityDependentMurmur />
+        <SatisfactionDependentMurmur />
+        <DynamicEnvironmentType>None</DynamicEnvironmentType>
+        <HappinessDependentMurmur />
+        <IslandAttractivityDependentMurmur />
+      </AmbientMoodProvider>
+      <Constructable>
+        <ConstructionMode>Default</ConstructionMode>
+        <DestructionCategory>Other</DestructionCategory>
+        <DestructionType>0</DestructionType>
+      </Constructable>
       <Selection>
         <Colors>
           <SelectionColorType>PropertySelectionColor</SelectionColorType>
@@ -1489,6 +2255,19 @@
           <WeakSelectionColorType>NoColor</WeakSelectionColorType>
         </Colors>
         <GUIType>Military</GUIType>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <InteractionDistance>15</InteractionDistance>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <AllowedDragType />
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
       </Selection>
       <Text>
         <LocaText>
@@ -1499,6 +2278,7 @@
           </English>
         </LocaText>
         <LineID>23404</LineID>
+        <Localize>1</Localize>
       </Text>
       <Cost>
         <Costs>
@@ -1531,6 +2311,7 @@
         </Costs>
         <InfluenceCostType>DefenseBuilding</InfluenceCostType>
         <InfluenceCostPoints>2</InfluenceCostPoints>
+        <ItemsPerCost>1</ItemsPerCost>
       </Cost>
       <Attackable>
         <MaximumHitPoints>4000</MaximumHitPoints>
@@ -1558,6 +2339,9 @@
         <RuinSmokeParticlesMin>1</RuinSmokeParticlesMin>
         <RuinSmokeParticlesMax>3</RuinSmokeParticlesMax>
         <RuinSmokeParticleRectBorderPercent>0.2</RuinSmokeParticleRectBorderPercent>
+        <HPBarOffset>6</HPBarOffset>
+        <SelfHealPausedTimeIfAttacked>15000</SelfHealPausedTimeIfAttacked>
+        <ArmorType>Default</ArmorType>
       </Attackable>
       <Attacker>
         <AttackRange>92</AttackRange>
@@ -1591,6 +2375,12 @@
             </AccuracyByDistancePair>
           </Item>
         </AccuracyByDistance>
+        <AttackRangeApproachPercentage>0.95</AttackRangeApproachPercentage>
+        <AllowApproachEnemy>1</AllowApproachEnemy>
+        <AccuracyIncreaseOverDistance>40</AccuracyIncreaseOverDistance>
+        <AccuracySpeedDecay>6</AccuracySpeedDecay>
+        <AttackType>Default</AttackType>
+        <AccuracyBaseIncreasePercentage>100</AccuracyBaseIncreasePercentage>
       </Attacker>
       <Maintenance>
         <Maintenances>
@@ -1601,13 +2391,21 @@
           </Item>
         </Maintenances>
         <ConsumerPriority>1</ConsumerPriority>
+        <MaintenanceAmountFactor>1</MaintenanceAmountFactor>
+        <WorkforceAmountFactor>1</WorkforceAmountFactor>
       </Maintenance>
-      <Locked />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
       <DelayedConstruction>
         <ConstructionDelay>0</ConstructionDelay>
       </DelayedConstruction>
       <Pausable />
-      <Infolayer />
+      <Infolayer>
+        <DefaultInfoLayer>0</DefaultInfoLayer>
+      </Infolayer>
       <SoundEmitter>
         <DestroySounds>
           <Item>
@@ -1646,11 +2444,34 @@
             <Sound>203848</Sound>
           </Item>
         </BuildingRuined>
+        <ActiveSounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
-      <CommandQueue />
+      <CommandQueue>
+        <IsDestructable>1</IsDestructable>
+      </CommandQueue>
       <Culture>
         <Attractiveness>-10</Attractiveness>
         <CultureType>Military</CultureType>
+        <SetPages />
+        <UndiscoveredSet>0</UndiscoveredSet>
+        <ModuleListHeader>0</ModuleListHeader>
+        <OpenSetPages>0</OpenSetPages>
       </Culture>
       <UpgradeList />
     </Values>
@@ -1663,6 +2484,7 @@
         <Name>harbor_06 (Monster Gun) - Pirates</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_defense_tower_monstergun.png</IconFilename>
         <InfoDescription>3064</InfoDescription>
+        <Comments />
       </Standard>
       <Building>
         <BuildingCategoryName>11150</BuildingCategoryName>
@@ -1670,6 +2492,16 @@
         <TerrainType>Coast</TerrainType>
         <BuildModeRandomRotation>90</BuildModeRandomRotation>
         <AssociatedRegions>Moderate</AssociatedRegions>
+        <BuildingType>Other</BuildingType>
+        <Destructable>1</Destructable>
+        <Movable>1</Movable>
+        <PickingAsset>0</PickingAsset>
+        <ConstructionMenuText>0</ConstructionMenuText>
+        <HasBorderRectOutline>1</HasBorderRectOutline>
+        <InfluencedByNeighbors />
+        <InfluencedVariationDirection />
+        <BuildingBlockPool />
+        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
       <Blocking>
         <HidePropsRadius>-20</HidePropsRadius>
@@ -1678,17 +2510,50 @@
         <GroundDecalInvisible>101008</GroundDecalInvisible>
         <HasBuildingBaseTiles>1</HasBuildingBaseTiles>
         <RemoveGrass>0</RemoveGrass>
+        <StreetOutside>0</StreetOutside>
+        <BlocksBuilding>1</BlocksBuilding>
       </Blocking>
-      <Mesh />
+      <Mesh>
+        <ObjectPosition>Static</ObjectPosition>
+        <MeshPlacement>Default</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
+      </Mesh>
       <Object>
         <Variations>
           <Item>
             <Filename>data/graphics/buildings/special/harbor_06/harbor_06_nodecal.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <AmbientMoodProvider />
-      <Constructable />
+      <AmbientMoodProvider>
+        <AmbientMood>None</AmbientMood>
+        <Murmur>None</Murmur>
+        <AttractivityDependentMurmur />
+        <ProductivityDependentMurmur />
+        <SatisfactionDependentMurmur />
+        <DynamicEnvironmentType>None</DynamicEnvironmentType>
+        <HappinessDependentMurmur />
+        <IslandAttractivityDependentMurmur />
+      </AmbientMoodProvider>
+      <Constructable>
+        <ConstructionMode>Default</ConstructionMode>
+        <DestructionCategory>Other</DestructionCategory>
+        <DestructionType>0</DestructionType>
+      </Constructable>
       <Selection>
         <Colors>
           <SelectionColorType>PropertySelectionColor</SelectionColorType>
@@ -1696,6 +2561,19 @@
           <WeakSelectionColorType>NoColor</WeakSelectionColorType>
         </Colors>
         <GUIType>Military</GUIType>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <InteractionDistance>15</InteractionDistance>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <AllowedDragType />
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
       </Selection>
       <Text>
         <LocaText>
@@ -1706,6 +2584,7 @@
           </English>
         </LocaText>
         <LineID>23405</LineID>
+        <Localize>1</Localize>
       </Text>
       <Cost>
         <Costs>
@@ -1740,6 +2619,7 @@
         </Costs>
         <InfluenceCostType>DefenseBuilding</InfluenceCostType>
         <InfluenceCostPoints>4</InfluenceCostPoints>
+        <ItemsPerCost>1</ItemsPerCost>
       </Cost>
       <Attackable>
         <MaximumHitPoints>6500</MaximumHitPoints>
@@ -1767,6 +2647,9 @@
         <RuinSmokeParticlesMin>1</RuinSmokeParticlesMin>
         <RuinSmokeParticlesMax>3</RuinSmokeParticlesMax>
         <RuinSmokeParticleRectBorderPercent>0.2</RuinSmokeParticleRectBorderPercent>
+        <HPBarOffset>6</HPBarOffset>
+        <SelfHealPausedTimeIfAttacked>15000</SelfHealPausedTimeIfAttacked>
+        <ArmorType>Default</ArmorType>
       </Attackable>
       <Attacker>
         <AttackRange>108</AttackRange>
@@ -1801,6 +2684,11 @@
             </AccuracyByDistancePair>
           </Item>
         </AccuracyByDistance>
+        <AttackRangeApproachPercentage>0.95</AttackRangeApproachPercentage>
+        <AllowApproachEnemy>1</AllowApproachEnemy>
+        <AccuracySpeedDecay>6</AccuracySpeedDecay>
+        <AttackType>Default</AttackType>
+        <AccuracyBaseIncreasePercentage>100</AccuracyBaseIncreasePercentage>
       </Attacker>
       <Maintenance>
         <Maintenances>
@@ -1811,13 +2699,21 @@
           </Item>
         </Maintenances>
         <ConsumerPriority>1</ConsumerPriority>
+        <MaintenanceAmountFactor>1</MaintenanceAmountFactor>
+        <WorkforceAmountFactor>1</WorkforceAmountFactor>
       </Maintenance>
-      <Locked />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
       <DelayedConstruction>
         <ConstructionDelay>0</ConstructionDelay>
       </DelayedConstruction>
       <Pausable />
-      <Infolayer />
+      <Infolayer>
+        <DefaultInfoLayer>0</DefaultInfoLayer>
+      </Infolayer>
       <SoundEmitter>
         <DestroySounds>
           <Item>
@@ -1856,11 +2752,34 @@
             <Sound>203848</Sound>
           </Item>
         </BuildingRuined>
+        <ActiveSounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
-      <CommandQueue />
+      <CommandQueue>
+        <IsDestructable>1</IsDestructable>
+      </CommandQueue>
       <Culture>
         <Attractiveness>-40</Attractiveness>
         <CultureType>Military</CultureType>
+        <SetPages />
+        <UndiscoveredSet>0</UndiscoveredSet>
+        <ModuleListHeader>0</ModuleListHeader>
+        <OpenSetPages>0</OpenSetPages>
       </Culture>
       <UpgradeList />
     </Values>
@@ -1873,12 +2792,24 @@
         <Name>harbor_05 (Cannon Tower) - Navy</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_defense_tower_cannon.png</IconFilename>
         <InfoDescription>3062</InfoDescription>
+        <Comments />
       </Standard>
       <Building>
         <BuildingCategoryName>11150</BuildingCategoryName>
         <BuildModeRandomRotation>90</BuildModeRandomRotation>
         <AssociatedRegions>Moderate</AssociatedRegions>
         <TerrainType>Water</TerrainType>
+        <BuildingType>Other</BuildingType>
+        <Destructable>1</Destructable>
+        <Movable>1</Movable>
+        <PickingAsset>0</PickingAsset>
+        <ConstructionMenuText>0</ConstructionMenuText>
+        <HasBorderRectOutline>1</HasBorderRectOutline>
+        <SnapRadius>2</SnapRadius>
+        <InfluencedByNeighbors />
+        <InfluencedVariationDirection />
+        <BuildingBlockPool />
+        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
       <Blocking>
         <HidePropsRadius>-20</HidePropsRadius>
@@ -1887,17 +2818,50 @@
         <GroundDecalInvisible>101008</GroundDecalInvisible>
         <HasBuildingBaseTiles>1</HasBuildingBaseTiles>
         <RemoveGrass>0</RemoveGrass>
+        <StreetOutside>0</StreetOutside>
+        <BlocksBuilding>1</BlocksBuilding>
       </Blocking>
-      <Mesh />
+      <Mesh>
+        <ObjectPosition>Static</ObjectPosition>
+        <MeshPlacement>Default</MeshPlacement>
+        <DefaultSequence>idle01</DefaultSequence>
+        <InitialVisibility>1</InitialVisibility>
+        <ConstructionEffectDuration>600</ConstructionEffectDuration>
+        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
+        <MoveEffectDuration>600</MoveEffectDuration>
+        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
+        <ConstructionEffectScale>1</ConstructionEffectScale>
+        <LogoMode>Disabled</LogoMode>
+      </Mesh>
       <Object>
         <Variations>
           <Item>
             <Filename>data/graphics/buildings/special/harbor_05/harbor_05_nodecal_02.cfg</Filename>
           </Item>
         </Variations>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <AmbientMoodProvider />
-      <Constructable />
+      <AmbientMoodProvider>
+        <AmbientMood>None</AmbientMood>
+        <Murmur>None</Murmur>
+        <AttractivityDependentMurmur />
+        <ProductivityDependentMurmur />
+        <SatisfactionDependentMurmur />
+        <DynamicEnvironmentType>None</DynamicEnvironmentType>
+        <HappinessDependentMurmur />
+        <IslandAttractivityDependentMurmur />
+      </AmbientMoodProvider>
+      <Constructable>
+        <ConstructionMode>Default</ConstructionMode>
+        <DestructionCategory>Other</DestructionCategory>
+        <DestructionType>0</DestructionType>
+      </Constructable>
       <Selection>
         <Colors>
           <SelectionColorType>PropertySelectionColor</SelectionColorType>
@@ -1905,6 +2869,19 @@
           <WeakSelectionColorType>NoColor</WeakSelectionColorType>
         </Colors>
         <GUIType>Military</GUIType>
+        <Selectable>1</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <InteractionDistance>15</InteractionDistance>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <AllowedDragType />
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
       </Selection>
       <Text>
         <LocaText>
@@ -1915,6 +2892,7 @@
           </English>
         </LocaText>
         <LineID>23404</LineID>
+        <Localize>1</Localize>
       </Text>
       <Cost>
         <Costs>
@@ -1947,6 +2925,7 @@
         </Costs>
         <InfluenceCostType>DefenseBuilding</InfluenceCostType>
         <InfluenceCostPoints>2</InfluenceCostPoints>
+        <ItemsPerCost>1</ItemsPerCost>
       </Cost>
       <Attackable>
         <MaximumHitPoints>4000</MaximumHitPoints>
@@ -1974,6 +2953,9 @@
         <RuinSmokeParticlesMin>1</RuinSmokeParticlesMin>
         <RuinSmokeParticlesMax>3</RuinSmokeParticlesMax>
         <RuinSmokeParticleRectBorderPercent>0.2</RuinSmokeParticleRectBorderPercent>
+        <HPBarOffset>6</HPBarOffset>
+        <SelfHealPausedTimeIfAttacked>15000</SelfHealPausedTimeIfAttacked>
+        <ArmorType>Default</ArmorType>
       </Attackable>
       <Attacker>
         <Turrets>
@@ -2007,6 +2989,12 @@
             </AccuracyByDistancePair>
           </Item>
         </AccuracyByDistance>
+        <AttackRangeApproachPercentage>0.95</AttackRangeApproachPercentage>
+        <AllowApproachEnemy>1</AllowApproachEnemy>
+        <AccuracyIncreaseOverDistance>40</AccuracyIncreaseOverDistance>
+        <AccuracySpeedDecay>6</AccuracySpeedDecay>
+        <AttackType>Default</AttackType>
+        <AccuracyBaseIncreasePercentage>100</AccuracyBaseIncreasePercentage>
       </Attacker>
       <Maintenance>
         <Maintenances>
@@ -2017,13 +3005,21 @@
           </Item>
         </Maintenances>
         <ConsumerPriority>1</ConsumerPriority>
+        <MaintenanceAmountFactor>1</MaintenanceAmountFactor>
+        <WorkforceAmountFactor>1</WorkforceAmountFactor>
       </Maintenance>
-      <Locked />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
       <DelayedConstruction>
         <ConstructionDelay>0</ConstructionDelay>
       </DelayedConstruction>
       <Pausable />
-      <Infolayer />
+      <Infolayer>
+        <DefaultInfoLayer>0</DefaultInfoLayer>
+      </Infolayer>
       <SoundEmitter>
         <DestroySounds>
           <Item>
@@ -2062,11 +3058,34 @@
             <Sound>203848</Sound>
           </Item>
         </BuildingRuined>
+        <ActiveSounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRepaired />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
-      <CommandQueue />
+      <CommandQueue>
+        <IsDestructable>1</IsDestructable>
+      </CommandQueue>
       <Culture>
         <Attractiveness>-10</Attractiveness>
         <CultureType>Military</CultureType>
+        <SetPages />
+        <UndiscoveredSet>0</UndiscoveredSet>
+        <ModuleListHeader>0</ModuleListHeader>
+        <OpenSetPages>0</OpenSetPages>
       </Culture>
       <UpgradeList />
     </Values>

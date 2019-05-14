@@ -8,6 +8,8 @@
         <Name>Region Moderate</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png</IconFilename>
         <ID>RegionModerate</ID>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Region>
         <Ambiente>Region_map_global</Ambiente>
@@ -1454,14 +1456,33 @@
         <PathLayerDefinitions>
           <Feedback>
             <Topology>SparseGrid</Topology>
+            <Active>1</Active>
           </Feedback>
           <Railway>
             <Topology>QuadTree</Topology>
+            <Active>1</Active>
           </Railway>
           <Street>
             <Topology>QuadTree</Topology>
+            <Active>1</Active>
           </Street>
+          <Air>
+            <Active>1</Active>
+          </Air>
+          <Land>
+            <Active>1</Active>
+          </Land>
+          <Water>
+            <Active>1</Active>
+            <UseOneAreaRule>1</UseOneAreaRule>
+          </Water>
+          <Animal>
+            <Active>1</Active>
+          </Animal>
         </PathLayerDefinitions>
+        <RegionID>Moderate</RegionID>
+        <RegionViewModel>0</RegionViewModel>
+        <PreloadAssets />
       </Region>
       <Text>
         <LocaText>
@@ -1472,8 +1493,13 @@
           </English>
         </LocaText>
         <LineID>4285</LineID>
+        <Localize>1</Localize>
       </Text>
-      <Locked />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
       <RequiredSoundBanks>
         <SoundBanks>
           <Item>
@@ -1494,6 +1520,8 @@
         <Name>Region South America</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_settlement_rights_1.png</IconFilename>
         <ID>RegionSouthAmerica</ID>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Region>
         <Ambiente>Region_map_global</Ambiente>
@@ -2623,14 +2651,32 @@
         <PathLayerDefinitions>
           <Feedback>
             <Topology>SparseGrid</Topology>
+            <Active>1</Active>
           </Feedback>
           <Railway>
             <Topology>QuadTree</Topology>
+            <Active>1</Active>
           </Railway>
           <Street>
             <Topology>QuadTree</Topology>
+            <Active>1</Active>
           </Street>
+          <Air>
+            <Active>1</Active>
+          </Air>
+          <Land>
+            <Active>1</Active>
+          </Land>
+          <Water>
+            <Active>1</Active>
+            <UseOneAreaRule>1</UseOneAreaRule>
+          </Water>
+          <Animal>
+            <Active>1</Active>
+          </Animal>
         </PathLayerDefinitions>
+        <RegionViewModel>0</RegionViewModel>
+        <PreloadAssets />
       </Region>
       <Text>
         <LocaText>
@@ -2641,8 +2687,13 @@
           </English>
         </LocaText>
         <LineID>26268</LineID>
+        <Localize>1</Localize>
       </Text>
-      <Locked />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
       <RequiredSoundBanks>
         <SoundBanks>
           <Item>
@@ -2662,6 +2713,8 @@
         <GUID>5000005</GUID>
         <Name>Meta</Name>
         <ID>RegionMeta</ID>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Region>
         <RegionID>Meta</RegionID>
@@ -3342,18 +3395,54 @@
         <PathLayerDefinitions>
           <Feedback>
             <Topology>SparseGrid</Topology>
+            <Active>1</Active>
           </Feedback>
           <Railway>
             <Topology>QuadTree</Topology>
+            <Active>1</Active>
           </Railway>
           <Street>
             <Topology>QuadTree</Topology>
+            <Active>1</Active>
           </Street>
+          <Air>
+            <Active>1</Active>
+          </Air>
+          <Land>
+            <Active>1</Active>
+          </Land>
+          <Water>
+            <Active>1</Active>
+            <UseOneAreaRule>1</UseOneAreaRule>
+          </Water>
+          <Animal>
+            <Active>1</Active>
+          </Animal>
         </PathLayerDefinitions>
+        <AnimalDescription>0</AnimalDescription>
+        <Street>0</Street>
+        <DistributionCenter>0</DistributionCenter>
+        <PreloadAssets />
+        <AllowedWeather />
+        <CityNames />
+        <Tree>0</Tree>
+        <PopulationGroup>0</PopulationGroup>
+        <DistributionCenterGhost>0</DistributionCenterGhost>
+        <QuayGroundDecal>0</QuayGroundDecal>
+        <QuayInvisibleGroundDecal>0</QuayInvisibleGroundDecal>
       </Region>
-      <Text />
-      <Locked />
-      <RequiredSoundBanks />
+      <Text>
+        <LocaText />
+        <Localize>1</Localize>
+      </Text>
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
+      <RequiredSoundBanks>
+        <SoundBanks />
+      </RequiredSoundBanks>
     </Values>
   </Asset>
 </Assets>

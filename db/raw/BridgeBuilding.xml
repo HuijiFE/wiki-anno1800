@@ -6,6 +6,8 @@
       <Standard>
         <GUID>101328</GUID>
         <Name>Dirt Bridge</Name>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -16,90 +18,77 @@
           </English>
         </LocaText>
         <LineID>29410</LineID>
+        <Localize>1</Localize>
       </Text>
       <Blocking>
         <GroundDecalAsset>101383</GroundDecalAsset>
         <HasBuildingBaseTiles>1</HasBuildingBaseTiles>
+        <HidePropsRadius>1</HidePropsRadius>
+        <DeletePropsRadius>1</DeletePropsRadius>
+        <GroundDecalInvisible>0</GroundDecalInvisible>
+        <StreetOutside>0</StreetOutside>
+        <RemoveGrass>1</RemoveGrass>
+        <BlocksBuilding>1</BlocksBuilding>
       </Blocking>
       <Building>
         <TakeOverTransformation>Destroy</TakeOverTransformation>
         <Movable>0</Movable>
+        <BuildingType>Other</BuildingType>
+        <BuildingCategoryName>0</BuildingCategoryName>
+        <Destructable>1</Destructable>
+        <PickingAsset>0</PickingAsset>
+        <ConstructionMenuText>0</ConstructionMenuText>
+        <HasBorderRectOutline>1</HasBorderRectOutline>
+        <SnapRadius>2</SnapRadius>
+        <TerrainType>Terrain</TerrainType>
+        <InfluencedByNeighbors />
+        <InfluencedVariationDirection />
+        <AssociatedRegions>Meta;Moderate;Colony01;Arctic</AssociatedRegions>
+        <BuildingBlockPool />
       </Building>
       <Cost>
         <Costs>
           <Item>
-            <VectorElement>
-              <InheritedIndex>0</InheritedIndex>
-              <InheritanceMapV2>
-                <Entry>
-                  <TemplateName>BridgeBuilding</TemplateName>
-                  <Index>0</Index>
-                </Entry>
-              </InheritanceMapV2>
-            </VectorElement>
             <Amount>1000</Amount>
+            <Ingredient>1010017</Ingredient>
           </Item>
           <Item>
-            <VectorElement>
-              <InheritedIndex>1</InheritedIndex>
-              <InheritanceMapV2>
-                <Entry>
-                  <TemplateName>BridgeBuilding</TemplateName>
-                  <Index>1</Index>
-                </Entry>
-              </InheritanceMapV2>
-            </VectorElement>
             <Amount>20</Amount>
+            <Ingredient>1010196</Ingredient>
           </Item>
           <Item>
-            <VectorElement>
-              <InheritedIndex>2</InheritedIndex>
-              <InheritanceMapV2>
-                <Entry>
-                  <TemplateName>BridgeBuilding</TemplateName>
-                  <Index>2</Index>
-                </Entry>
-              </InheritanceMapV2>
-            </VectorElement>
+            <Ingredient>1010205</Ingredient>
           </Item>
           <Item>
-            <VectorElement>
-              <InheritedIndex>3</InheritedIndex>
-              <InheritanceMapV2>
-                <Entry>
-                  <TemplateName>BridgeBuilding</TemplateName>
-                  <Index>3</Index>
-                </Entry>
-              </InheritanceMapV2>
-            </VectorElement>
+            <Ingredient>1010218</Ingredient>
           </Item>
           <Item>
-            <VectorElement>
-              <InheritedIndex>4</InheritedIndex>
-              <InheritanceMapV2>
-                <Entry>
-                  <TemplateName>BridgeBuilding</TemplateName>
-                  <Index>4</Index>
-                </Entry>
-              </InheritanceMapV2>
-            </VectorElement>
+            <Ingredient>1010207</Ingredient>
           </Item>
           <Item>
-            <VectorElement>
-              <InheritedIndex>5</InheritedIndex>
-              <InheritanceMapV2>
-                <Entry>
-                  <TemplateName>BridgeBuilding</TemplateName>
-                  <Index>5</Index>
-                </Entry>
-              </InheritanceMapV2>
-            </VectorElement>
+            <Ingredient>1010202</Ingredient>
           </Item>
         </Costs>
+        <ItemsPerCost>1</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
       </Cost>
       <Selection>
         <GUIType>Generic</GUIType>
         <Selectable>0</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <InteractionDistance>15</InteractionDistance>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <AllowedDragType />
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
       </Selection>
       <Object>
         <Variations>
@@ -108,8 +97,19 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <Constructable />
+      <Constructable>
+        <ConstructionMode>Default</ConstructionMode>
+        <DestructionCategory>Other</DestructionCategory>
+        <DestructionType>0</DestructionType>
+      </Constructable>
       <SoundEmitter>
         <DestroySounds>
           <Item>
@@ -165,15 +165,59 @@
           </Item>
         </BuildingRepaired>
         <MaterialType>Bridge_Dirt</MaterialType>
+        <ActiveSounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
       </SoundEmitter>
-      <Locked />
-      <FeedbackController />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
+      <FeedbackController>
+        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
+        <UpdateMeshSequence>1</UpdateMeshSequence>
+      </FeedbackController>
       <Ornament>
         <PlazzaSize>20</PlazzaSize>
+        <PlazzaSpacing>3</PlazzaSpacing>
+        <OrnamentIconInfotip>0</OrnamentIconInfotip>
+        <OrnamentDescritpion>0</OrnamentDescritpion>
       </Ornament>
-      <AmbientMoodProvider />
+      <AmbientMoodProvider>
+        <AmbientMood>None</AmbientMood>
+        <Murmur>None</Murmur>
+        <AttractivityDependentMurmur />
+        <ProductivityDependentMurmur />
+        <SatisfactionDependentMurmur />
+        <DynamicEnvironmentType>None</DynamicEnvironmentType>
+        <HappinessDependentMurmur />
+        <IslandAttractivityDependentMurmur />
+      </AmbientMoodProvider>
       <Attackable>
         <HasRuinState>1</HasRuinState>
+        <MaximumHitPoints>100</MaximumHitPoints>
+        <HPBarOffset>6</HPBarOffset>
+        <PausedTimeIfAttacked>15000</PausedTimeIfAttacked>
+        <SelfHealPerHealTick>2</SelfHealPerHealTick>
+        <SelfHealPausedTimeIfAttacked>15000</SelfHealPausedTimeIfAttacked>
+        <ArmorType>Default</ArmorType>
+        <TakeOverEffect>Never</TakeOverEffect>
+        <IslandWarFlag>0</IslandWarFlag>
+        <RuinSmokeParticles />
+        <ExplosionEffects />
       </Attackable>
       <Pausable />
       <Bridge>
@@ -188,6 +232,8 @@
       <Standard>
         <GUID>101384</GUID>
         <Name>Rails Bridge</Name>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -198,90 +244,77 @@
           </English>
         </LocaText>
         <LineID>25829</LineID>
+        <Localize>1</Localize>
       </Text>
       <Blocking>
         <GroundDecalAsset>101385</GroundDecalAsset>
         <HasBuildingBaseTiles>1</HasBuildingBaseTiles>
+        <HidePropsRadius>1</HidePropsRadius>
+        <DeletePropsRadius>1</DeletePropsRadius>
+        <GroundDecalInvisible>0</GroundDecalInvisible>
+        <StreetOutside>0</StreetOutside>
+        <RemoveGrass>1</RemoveGrass>
+        <BlocksBuilding>1</BlocksBuilding>
       </Blocking>
       <Building>
         <TakeOverTransformation>Destroy</TakeOverTransformation>
         <Movable>0</Movable>
+        <BuildingType>Other</BuildingType>
+        <BuildingCategoryName>0</BuildingCategoryName>
+        <Destructable>1</Destructable>
+        <PickingAsset>0</PickingAsset>
+        <ConstructionMenuText>0</ConstructionMenuText>
+        <HasBorderRectOutline>1</HasBorderRectOutline>
+        <SnapRadius>2</SnapRadius>
+        <TerrainType>Terrain</TerrainType>
+        <InfluencedByNeighbors />
+        <InfluencedVariationDirection />
+        <AssociatedRegions>Meta;Moderate;Colony01;Arctic</AssociatedRegions>
+        <BuildingBlockPool />
       </Building>
       <Cost>
         <Costs>
           <Item>
-            <VectorElement>
-              <InheritedIndex>0</InheritedIndex>
-              <InheritanceMapV2>
-                <Entry>
-                  <TemplateName>BridgeBuilding</TemplateName>
-                  <Index>0</Index>
-                </Entry>
-              </InheritanceMapV2>
-            </VectorElement>
             <Amount>5000</Amount>
+            <Ingredient>1010017</Ingredient>
           </Item>
           <Item>
-            <VectorElement>
-              <InheritedIndex>1</InheritedIndex>
-              <InheritanceMapV2>
-                <Entry>
-                  <TemplateName>BridgeBuilding</TemplateName>
-                  <Index>1</Index>
-                </Entry>
-              </InheritanceMapV2>
-            </VectorElement>
+            <Ingredient>1010196</Ingredient>
           </Item>
           <Item>
-            <VectorElement>
-              <InheritedIndex>2</InheritedIndex>
-              <InheritanceMapV2>
-                <Entry>
-                  <TemplateName>BridgeBuilding</TemplateName>
-                  <Index>2</Index>
-                </Entry>
-              </InheritanceMapV2>
-            </VectorElement>
+            <Ingredient>1010205</Ingredient>
           </Item>
           <Item>
-            <VectorElement>
-              <InheritedIndex>3</InheritedIndex>
-              <InheritanceMapV2>
-                <Entry>
-                  <TemplateName>BridgeBuilding</TemplateName>
-                  <Index>3</Index>
-                </Entry>
-              </InheritanceMapV2>
-            </VectorElement>
             <Amount>40</Amount>
+            <Ingredient>1010218</Ingredient>
           </Item>
           <Item>
-            <VectorElement>
-              <InheritedIndex>4</InheritedIndex>
-              <InheritanceMapV2>
-                <Entry>
-                  <TemplateName>BridgeBuilding</TemplateName>
-                  <Index>4</Index>
-                </Entry>
-              </InheritanceMapV2>
-            </VectorElement>
+            <Ingredient>1010207</Ingredient>
           </Item>
           <Item>
-            <VectorElement>
-              <InheritedIndex>5</InheritedIndex>
-              <InheritanceMapV2>
-                <Entry>
-                  <TemplateName>BridgeBuilding</TemplateName>
-                  <Index>5</Index>
-                </Entry>
-              </InheritanceMapV2>
-            </VectorElement>
+            <Ingredient>1010202</Ingredient>
           </Item>
         </Costs>
+        <ItemsPerCost>1</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
       </Cost>
       <Selection>
         <GUIType>Generic</GUIType>
         <Selectable>0</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <InteractionDistance>15</InteractionDistance>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <AllowedDragType />
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
       </Selection>
       <Object>
         <Variations>
@@ -290,8 +323,19 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <Constructable />
+      <Constructable>
+        <ConstructionMode>Default</ConstructionMode>
+        <DestructionCategory>Other</DestructionCategory>
+        <DestructionType>0</DestructionType>
+      </Constructable>
       <SoundEmitter>
         <DestroySounds>
           <Item>
@@ -341,15 +385,61 @@
             <Sound>203866</Sound>
           </Item>
         </BuildingRepaired>
+        <ActiveSounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
+        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
-      <Locked />
-      <FeedbackController />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
+      <FeedbackController>
+        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
+        <UpdateMeshSequence>1</UpdateMeshSequence>
+      </FeedbackController>
       <Ornament>
         <PlazzaSize>20</PlazzaSize>
+        <PlazzaSpacing>3</PlazzaSpacing>
+        <OrnamentIconInfotip>0</OrnamentIconInfotip>
+        <OrnamentDescritpion>0</OrnamentDescritpion>
       </Ornament>
-      <AmbientMoodProvider />
+      <AmbientMoodProvider>
+        <AmbientMood>None</AmbientMood>
+        <Murmur>None</Murmur>
+        <AttractivityDependentMurmur />
+        <ProductivityDependentMurmur />
+        <SatisfactionDependentMurmur />
+        <DynamicEnvironmentType>None</DynamicEnvironmentType>
+        <HappinessDependentMurmur />
+        <IslandAttractivityDependentMurmur />
+      </AmbientMoodProvider>
       <Attackable>
         <HasRuinState>1</HasRuinState>
+        <MaximumHitPoints>100</MaximumHitPoints>
+        <HPBarOffset>6</HPBarOffset>
+        <PausedTimeIfAttacked>15000</PausedTimeIfAttacked>
+        <SelfHealPerHealTick>2</SelfHealPerHealTick>
+        <SelfHealPausedTimeIfAttacked>15000</SelfHealPausedTimeIfAttacked>
+        <ArmorType>Default</ArmorType>
+        <TakeOverEffect>Never</TakeOverEffect>
+        <IslandWarFlag>0</IslandWarFlag>
+        <RuinSmokeParticles />
+        <ExplosionEffects />
       </Attackable>
       <Pausable />
       <Bridge>
@@ -365,6 +455,8 @@
         <GUID>101587</GUID>
         <Name>Stone Bridge</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_street01.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -375,90 +467,77 @@
           </English>
         </LocaText>
         <LineID>29411</LineID>
+        <Localize>1</Localize>
       </Text>
       <Blocking>
         <GroundDecalAsset>101588</GroundDecalAsset>
         <HasBuildingBaseTiles>1</HasBuildingBaseTiles>
+        <HidePropsRadius>1</HidePropsRadius>
+        <DeletePropsRadius>1</DeletePropsRadius>
+        <GroundDecalInvisible>0</GroundDecalInvisible>
+        <StreetOutside>0</StreetOutside>
+        <RemoveGrass>1</RemoveGrass>
+        <BlocksBuilding>1</BlocksBuilding>
       </Blocking>
       <Building>
         <TakeOverTransformation>Destroy</TakeOverTransformation>
         <Movable>0</Movable>
+        <BuildingType>Other</BuildingType>
+        <BuildingCategoryName>0</BuildingCategoryName>
+        <Destructable>1</Destructable>
+        <PickingAsset>0</PickingAsset>
+        <ConstructionMenuText>0</ConstructionMenuText>
+        <HasBorderRectOutline>1</HasBorderRectOutline>
+        <SnapRadius>2</SnapRadius>
+        <TerrainType>Terrain</TerrainType>
+        <InfluencedByNeighbors />
+        <InfluencedVariationDirection />
+        <AssociatedRegions>Meta;Moderate;Colony01;Arctic</AssociatedRegions>
+        <BuildingBlockPool />
       </Building>
       <Cost>
         <Costs>
           <Item>
-            <VectorElement>
-              <InheritedIndex>0</InheritedIndex>
-              <InheritanceMapV2>
-                <Entry>
-                  <TemplateName>BridgeBuilding</TemplateName>
-                  <Index>0</Index>
-                </Entry>
-              </InheritanceMapV2>
-            </VectorElement>
             <Amount>2000</Amount>
+            <Ingredient>1010017</Ingredient>
           </Item>
           <Item>
-            <VectorElement>
-              <InheritedIndex>1</InheritedIndex>
-              <InheritanceMapV2>
-                <Entry>
-                  <TemplateName>BridgeBuilding</TemplateName>
-                  <Index>1</Index>
-                </Entry>
-              </InheritanceMapV2>
-            </VectorElement>
+            <Ingredient>1010196</Ingredient>
           </Item>
           <Item>
-            <VectorElement>
-              <InheritedIndex>2</InheritedIndex>
-              <InheritanceMapV2>
-                <Entry>
-                  <TemplateName>BridgeBuilding</TemplateName>
-                  <Index>2</Index>
-                </Entry>
-              </InheritanceMapV2>
-            </VectorElement>
             <Amount>20</Amount>
+            <Ingredient>1010205</Ingredient>
           </Item>
           <Item>
-            <VectorElement>
-              <InheritedIndex>3</InheritedIndex>
-              <InheritanceMapV2>
-                <Entry>
-                  <TemplateName>BridgeBuilding</TemplateName>
-                  <Index>3</Index>
-                </Entry>
-              </InheritanceMapV2>
-            </VectorElement>
+            <Ingredient>1010218</Ingredient>
           </Item>
           <Item>
-            <VectorElement>
-              <InheritedIndex>4</InheritedIndex>
-              <InheritanceMapV2>
-                <Entry>
-                  <TemplateName>BridgeBuilding</TemplateName>
-                  <Index>4</Index>
-                </Entry>
-              </InheritanceMapV2>
-            </VectorElement>
+            <Ingredient>1010207</Ingredient>
           </Item>
           <Item>
-            <VectorElement>
-              <InheritedIndex>5</InheritedIndex>
-              <InheritanceMapV2>
-                <Entry>
-                  <TemplateName>BridgeBuilding</TemplateName>
-                  <Index>5</Index>
-                </Entry>
-              </InheritanceMapV2>
-            </VectorElement>
+            <Ingredient>1010202</Ingredient>
           </Item>
         </Costs>
+        <ItemsPerCost>1</ItemsPerCost>
+        <InfluenceCostType>None</InfluenceCostType>
+        <InfluenceCostPoints>1</InfluenceCostPoints>
       </Cost>
       <Selection>
         <GUIType>Generic</GUIType>
         <Selectable>0</Selectable>
+        <DestructSelectable>1</DestructSelectable>
+        <OnSelection>
+          <Template>Actions</Template>
+          <Values>
+            <ActionList />
+          </Values>
+        </OnSelection>
+        <InteractionDistance>15</InteractionDistance>
+        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+        <InfoCorner>25000131</InfoCorner>
+        <AllowedDragType />
+        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
+        <Colors />
       </Selection>
       <Object>
         <Variations>
@@ -467,8 +546,19 @@
           </Item>
         </Variations>
         <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        <Type>GameObject</Type>
+        <DefaultParticipant>Neutral</DefaultParticipant>
+        <AddToObjectGroups>1</AddToObjectGroups>
+        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
+        <PlacableInEditor>1</PlacableInEditor>
+        <SelectableInEditor>1</SelectableInEditor>
+        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <Constructable />
+      <Constructable>
+        <ConstructionMode>Default</ConstructionMode>
+        <DestructionCategory>Other</DestructionCategory>
+        <DestructionType>0</DestructionType>
+      </Constructable>
       <SoundEmitter>
         <DestroySounds>
           <Item>
@@ -519,15 +609,60 @@
           </Item>
         </BuildingRepaired>
         <MaterialType>Bridge_Brick</MaterialType>
+        <ActiveSounds />
+        <SelectionSounds>
+          <Item>
+            <Sound>9818389</Sound>
+          </Item>
+        </SelectionSounds>
+        <ConstructionStreetSounds />
+        <VehicleSounds />
+        <ProjectileSounds />
+        <WeaponSounds />
+        <SpawnSounds />
+        <CollectedSounds />
+        <ProductionSounds />
+        <RFX />
+        <IncidentSounds />
+        <BuildingRuined />
       </SoundEmitter>
-      <Locked />
-      <FeedbackController />
+      <Locked>
+        <DefaultLockedState>1</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
+      </Locked>
+      <FeedbackController>
+        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
+        <UpdateMeshSequence>1</UpdateMeshSequence>
+      </FeedbackController>
       <Ornament>
         <PlazzaSize>20</PlazzaSize>
+        <PlazzaSpacing>3</PlazzaSpacing>
+        <OrnamentIconInfotip>0</OrnamentIconInfotip>
+        <OrnamentDescritpion>0</OrnamentDescritpion>
       </Ornament>
-      <AmbientMoodProvider />
+      <AmbientMoodProvider>
+        <AmbientMood>None</AmbientMood>
+        <Murmur>None</Murmur>
+        <AttractivityDependentMurmur />
+        <ProductivityDependentMurmur />
+        <SatisfactionDependentMurmur />
+        <DynamicEnvironmentType>None</DynamicEnvironmentType>
+        <HappinessDependentMurmur />
+        <IslandAttractivityDependentMurmur />
+      </AmbientMoodProvider>
       <Attackable>
         <HasRuinState>1</HasRuinState>
+        <MaximumHitPoints>100</MaximumHitPoints>
+        <HPBarOffset>6</HPBarOffset>
+        <PausedTimeIfAttacked>15000</PausedTimeIfAttacked>
+        <SelfHealPerHealTick>2</SelfHealPerHealTick>
+        <SelfHealPausedTimeIfAttacked>15000</SelfHealPausedTimeIfAttacked>
+        <ArmorType>Default</ArmorType>
+        <TakeOverEffect>Never</TakeOverEffect>
+        <IslandWarFlag>0</IslandWarFlag>
+        <RuinSmokeParticles />
+        <ExplosionEffects />
       </Attackable>
       <Pausable />
       <Bridge>

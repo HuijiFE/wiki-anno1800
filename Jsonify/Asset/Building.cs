@@ -45,11 +45,7 @@ namespace Anno1800.Jsonify {
       public List<CostPair> costs;
 
       public UpgradableData(XElement element) : base(element) {
-        this.costs = element.Element("UpgradeCost")
-          ?.Elements()
-          .Select(item => new CostPair(item))
-          .ToList()
-          ?? new List<CostPair>();
+        this.costs = element.ListOf("UpgradeCost", item => new CostPair(item));
       }
     }
 
@@ -65,19 +61,12 @@ namespace Anno1800.Jsonify {
       public bool hasPollution;
       //[Element("CultureSpawnGroup")]
       //public bool cultureSpawnGroup;
-      public List<int> setPages;
+      public List<List<int>> setPages;
       [Element("OpenSetPages")]
       public int openSetPages;
 
       public CultureData(XElement element) : base(element) {
-        this.setPages = element
-          .Element("SetPages")
-          ?.Elements()
-          .Select(item => item.Element("Page")?.Elements())
-          .Aggregate((agg, cur) => agg.Concat(cur))
-          .Select(item => item.Int("Set"))
-          .ToList()
-          ?? new List<int>();
+        this.setPages = element.ListOf("SetPages", item => item.ListOf("Page", item => item.Int("Set"), item => item.Int("Set") > 0));
       }
     }
   }

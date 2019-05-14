@@ -17,8 +17,8 @@
           "amount": 15
         }
       ],
-      "influenceCostType": "",
-      "influenceCostPoints": 0
+      "influenceCostType": "None",
+      "influenceCostPoints": 1
     },
     "attackable": {
       "maximumHitPoints": 200,
@@ -31,24 +31,24 @@
       "militaryDefensePoints": 0.0,
       "accuracyWidth": 0.0,
       "selfHealPausedTimeIfAttacked": 60000,
-      "armorType": "",
+      "armorType": "Default",
       "disableGettingAutoAttacked": false
     },
     "attacker": {
-      "type": "",
+      "type": "Default",
       "range": 0,
-      "attackRangeApproachPercentage": 0.0,
-      "lineOfSightRange": 0,
-      "reloadTime": 0,
+      "attackRangeApproachPercentage": 0.95,
+      "lineOfSightRange": 35,
+      "reloadTime": 10,
       "projectile": 100501,
       "baseDamage": 0,
       "accuracyBase": 0.0,
-      "accuracyIncreaseOverDistance": 0,
-      "accuracySpeedDecay": 0,
+      "accuracyIncreaseOverDistance": 40,
+      "accuracySpeedDecay": 6,
       "emitProjectileTimeAfterStartAnimation": 0.0,
       "targetAngleVariation": 0,
-      "shootingTracking": "",
-      "projectileCount": 0,
+      "shootingTracking": "Side",
+      "projectileCount": 1,
       "turrets": []
     },
     "expeditionAttribute": {
@@ -62,8 +62,8 @@
           "amount": 1
         }
       ],
-      "baseMorale": 0.0,
-      "fluff": [],
+      "baseMorale": 20.0,
+      "fluff": 0,
       "itemDifficulties": [],
       "itemRegions": []
     }

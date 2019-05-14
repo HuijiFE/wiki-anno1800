@@ -7,6 +7,8 @@
         <GUID>140999</GUID>
         <Name>MilitaryBalancing</Name>
         <ID>MilitaryBalancing</ID>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <MilitaryFeature>
         <AttackEfficiency>
@@ -80,6 +82,27 @@
         <LowHealthAnimationSpeed>1</LowHealthAnimationSpeed>
         <TakeOverResultCooldown>60000</TakeOverResultCooldown>
         <FakeSurrenderModifier>1</FakeSurrenderModifier>
+        <TakeOverDestroyBuildingText>13015</TakeOverDestroyBuildingText>
+        <TakeOverTierTable>
+          <Tier01>
+            <MaxMorale>50</MaxMorale>
+          </Tier01>
+          <Tier02>
+            <MaxMorale>100</MaxMorale>
+          </Tier02>
+          <Tier03>
+            <MaxMorale>150</MaxMorale>
+          </Tier03>
+          <Tier04>
+            <MaxMorale>1000</MaxMorale>
+          </Tier04>
+        </TakeOverTierTable>
+        <TakeOverBannerFlashSlow>1</TakeOverBannerFlashSlow>
+        <HealthbarMinDistance>10</HealthbarMinDistance>
+        <HealthbarMaxDistance>100</HealthbarMaxDistance>
+        <HealthbarMinHeight>1</HealthbarMinHeight>
+        <HealthbarOwnColor>-13243129</HealthbarOwnColor>
+        <TakeoverStartWarThreshold>0.05</TakeoverStartWarThreshold>
       </MilitaryFeature>
     </Values>
   </Asset>

@@ -7,6 +7,8 @@
         <GUID>180007</GUID>
         <Name>Bridges Test</Name>
         <IconFilename>data/ui/2kimages/main/icons/icon_attractiveness.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Session>
         <MapTemplate>141387</MapTemplate>
@@ -15,6 +17,41 @@
         <AllowAdvancedCameraSettings>1</AllowAdvancedCameraSettings>
         <Region>5000000</Region>
         <FixDayTime>13.5</FixDayTime>
+        <CameraSettings>data/config/game/camera.xml</CameraSettings>
+        <InMenuVisible>1</InMenuVisible>
+        <SpawnAreaBorderDistanceRange>
+          <Far>
+            <Min>30</Min>
+            <Max>100</Max>
+          </Far>
+          <Mid>
+            <Min>10</Min>
+            <Max>20</Max>
+          </Mid>
+          <Near>
+            <Min>3</Min>
+            <Max>7</Max>
+          </Near>
+        </SpawnAreaBorderDistanceRange>
+        <SpawnAreaIslandDistanceRange>
+          <Far>
+            <Min>50</Min>
+            <Max>70</Max>
+          </Far>
+          <Mid>
+            <Min>20</Min>
+            <Max>40</Max>
+          </Mid>
+          <Near>
+            <Min>5</Min>
+            <Max>10</Max>
+          </Near>
+        </SpawnAreaIslandDistanceRange>
+        <TransferData />
+        <SpawnStartShipAndKontor>1</SpawnStartShipAndKontor>
+        <ShipTransferEnabled>1</ShipTransferEnabled>
+        <WorldMapCardBackground>0</WorldMapCardBackground>
+        <RouteSessionAsset>0</RouteSessionAsset>
       </Session>
       <Text>
         <LocaText>
@@ -24,17 +61,26 @@
             <ExportCount>1</ExportCount>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
       <MapGeneratorInput>
         <SessionSize>Large</SessionSize>
         <SetIslandSizes>Large</SetIslandSizes>
         <SetResourceAmount>High</SetResourceAmount>
         <SetFertilityAmount>High</SetFertilityAmount>
+        <SetIslandDifficulty>Normal</SetIslandDifficulty>
+        <SetRegion>Meta</SetRegion>
+        <SetMapType>Random</SetMapType>
       </MapGeneratorInput>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
-      <WorldMapSound />
+      <WorldMapSound>
+        <ActiveAudioEvent>0</ActiveAudioEvent>
+        <UIClickEvent>0</UIClickEvent>
+      </WorldMapSound>
     </Values>
   </Asset>
   <Asset>
@@ -44,6 +90,8 @@
         <GUID>180013</GUID>
         <Name>Campaign Player Island Test</Name>
         <IconFilename>data/ui/2kimages/main/icons/icon_attractiveness.png</IconFilename>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Session>
         <MapTemplate>141397</MapTemplate>
@@ -52,6 +100,41 @@
         <AllowAdvancedCameraSettings>1</AllowAdvancedCameraSettings>
         <Region>5000000</Region>
         <FixDayTime>13.5</FixDayTime>
+        <CameraSettings>data/config/game/camera.xml</CameraSettings>
+        <InMenuVisible>1</InMenuVisible>
+        <SpawnAreaBorderDistanceRange>
+          <Far>
+            <Min>30</Min>
+            <Max>100</Max>
+          </Far>
+          <Mid>
+            <Min>10</Min>
+            <Max>20</Max>
+          </Mid>
+          <Near>
+            <Min>3</Min>
+            <Max>7</Max>
+          </Near>
+        </SpawnAreaBorderDistanceRange>
+        <SpawnAreaIslandDistanceRange>
+          <Far>
+            <Min>50</Min>
+            <Max>70</Max>
+          </Far>
+          <Mid>
+            <Min>20</Min>
+            <Max>40</Max>
+          </Mid>
+          <Near>
+            <Min>5</Min>
+            <Max>10</Max>
+          </Near>
+        </SpawnAreaIslandDistanceRange>
+        <TransferData />
+        <SpawnStartShipAndKontor>1</SpawnStartShipAndKontor>
+        <ShipTransferEnabled>1</ShipTransferEnabled>
+        <WorldMapCardBackground>0</WorldMapCardBackground>
+        <RouteSessionAsset>0</RouteSessionAsset>
       </Session>
       <Text>
         <LocaText>
@@ -61,6 +144,7 @@
             <ExportCount>1</ExportCount>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
       <MapGeneratorInput>
         <SessionSize>Medium</SessionSize>
@@ -68,11 +152,18 @@
         <SetResourceAmount>Medium</SetResourceAmount>
         <SetFertilityAmount>Medium</SetFertilityAmount>
         <SetRegion>Moderate</SetRegion>
+        <SetIslandDifficulty>Normal</SetIslandDifficulty>
+        <SetMapType>Random</SetMapType>
       </MapGeneratorInput>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
-      <WorldMapSound />
+      <WorldMapSound>
+        <ActiveAudioEvent>0</ActiveAudioEvent>
+        <UIClickEvent>0</UIClickEvent>
+      </WorldMapSound>
     </Values>
   </Asset>
   <Asset>
@@ -82,6 +173,8 @@
         <GUID>180022</GUID>
         <Name>DirectLoadSession</Name>
         <ID>DirectLoadSession</ID>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Session>
         <MapTemplate>141401</MapTemplate>
@@ -90,6 +183,41 @@
         <AllowAdvancedCameraSettings>1</AllowAdvancedCameraSettings>
         <Region>5000000</Region>
         <FixDayTime>13.5</FixDayTime>
+        <CameraSettings>data/config/game/camera.xml</CameraSettings>
+        <InMenuVisible>1</InMenuVisible>
+        <SpawnAreaBorderDistanceRange>
+          <Far>
+            <Min>30</Min>
+            <Max>100</Max>
+          </Far>
+          <Mid>
+            <Min>10</Min>
+            <Max>20</Max>
+          </Mid>
+          <Near>
+            <Min>3</Min>
+            <Max>7</Max>
+          </Near>
+        </SpawnAreaBorderDistanceRange>
+        <SpawnAreaIslandDistanceRange>
+          <Far>
+            <Min>50</Min>
+            <Max>70</Max>
+          </Far>
+          <Mid>
+            <Min>20</Min>
+            <Max>40</Max>
+          </Mid>
+          <Near>
+            <Min>5</Min>
+            <Max>10</Max>
+          </Near>
+        </SpawnAreaIslandDistanceRange>
+        <TransferData />
+        <SpawnStartShipAndKontor>1</SpawnStartShipAndKontor>
+        <ShipTransferEnabled>1</ShipTransferEnabled>
+        <WorldMapCardBackground>0</WorldMapCardBackground>
+        <RouteSessionAsset>0</RouteSessionAsset>
       </Session>
       <Text>
         <LocaText>
@@ -99,6 +227,7 @@
             <ExportCount>1</ExportCount>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
       <MapGeneratorInput>
         <SessionSize>Large</SessionSize>
@@ -106,11 +235,18 @@
         <SetResourceAmount>High</SetResourceAmount>
         <SetFertilityAmount>High</SetFertilityAmount>
         <SetRegion>Moderate</SetRegion>
+        <SetIslandDifficulty>Normal</SetIslandDifficulty>
+        <SetMapType>Random</SetMapType>
       </MapGeneratorInput>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
-      <WorldMapSound />
+      <WorldMapSound>
+        <ActiveAudioEvent>0</ActiveAudioEvent>
+        <UIClickEvent>0</UIClickEvent>
+      </WorldMapSound>
     </Values>
   </Asset>
   <Asset>
@@ -120,6 +256,8 @@
         <GUID>180046</GUID>
         <Name>BenchmarkSession</Name>
         <ID>BenchmarkSession</ID>
+        <Comments />
+        <InfoDescription>0</InfoDescription>
       </Standard>
       <Session>
         <MapTemplate>141402</MapTemplate>
@@ -128,6 +266,41 @@
         <AllowAdvancedCameraSettings>1</AllowAdvancedCameraSettings>
         <Region>5000000</Region>
         <FixDayTime>13.5</FixDayTime>
+        <CameraSettings>data/config/game/camera.xml</CameraSettings>
+        <InMenuVisible>1</InMenuVisible>
+        <SpawnAreaBorderDistanceRange>
+          <Far>
+            <Min>30</Min>
+            <Max>100</Max>
+          </Far>
+          <Mid>
+            <Min>10</Min>
+            <Max>20</Max>
+          </Mid>
+          <Near>
+            <Min>3</Min>
+            <Max>7</Max>
+          </Near>
+        </SpawnAreaBorderDistanceRange>
+        <SpawnAreaIslandDistanceRange>
+          <Far>
+            <Min>50</Min>
+            <Max>70</Max>
+          </Far>
+          <Mid>
+            <Min>20</Min>
+            <Max>40</Max>
+          </Mid>
+          <Near>
+            <Min>5</Min>
+            <Max>10</Max>
+          </Near>
+        </SpawnAreaIslandDistanceRange>
+        <TransferData />
+        <SpawnStartShipAndKontor>1</SpawnStartShipAndKontor>
+        <ShipTransferEnabled>1</ShipTransferEnabled>
+        <WorldMapCardBackground>0</WorldMapCardBackground>
+        <RouteSessionAsset>0</RouteSessionAsset>
       </Session>
       <Text>
         <LocaText>
@@ -137,6 +310,7 @@
             <ExportCount>1</ExportCount>
           </English>
         </LocaText>
+        <Localize>1</Localize>
       </Text>
       <MapGeneratorInput>
         <SessionSize>Large</SessionSize>
@@ -144,11 +318,18 @@
         <SetResourceAmount>High</SetResourceAmount>
         <SetFertilityAmount>High</SetFertilityAmount>
         <SetRegion>Moderate</SetRegion>
+        <SetIslandDifficulty>Normal</SetIslandDifficulty>
+        <SetMapType>Random</SetMapType>
       </MapGeneratorInput>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
+        <DLCDependency>0</DLCDependency>
+        <Scope>Participant</Scope>
       </Locked>
-      <WorldMapSound />
+      <WorldMapSound>
+        <ActiveAudioEvent>0</ActiveAudioEvent>
+        <UIClickEvent>0</UIClickEvent>
+      </WorldMapSound>
     </Values>
   </Asset>
 </Assets>
