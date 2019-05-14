@@ -14,6 +14,7 @@ declare module 'vue/types/vue' {
   }
   interface Vue {
     $db: AssetDict;
+    $dbList: ReadonlyArray<Asset>;
     $dbLoad: () => Promise<void>;
   }
 }
@@ -27,16 +28,23 @@ export const database: PluginObject<never> = {
       return;
     }
     const dbLoad = async (): Promise<void> => {
-      const dict: Record<string, Asset> = {};
       const dataDicts = await Promise.all(
         allTemplates.map(t => getResource<Asset[]>(`/db/${t}.json`)),
       );
-      dataDicts.forEach(subDict => {
-        subDict.forEach(asset => {
-          dict[asset.guid] = asset;
-        });
-      });
+      const dict: Record<number, Asset> = {};
+      const list: Asset[] = dataDicts.reduce(
+        (agg, cur) => {
+          cur.forEach(a => {
+            dict[a.guid] = a;
+            agg.push(a);
+          });
+          return agg;
+        },
+        [] as Asset[],
+      );
+      list.sort((a, b) => a.guid - b.guid);
       $Vue.prototype.$db = dict;
+      $Vue.prototype.$dbList = list;
       ($Vue.$db as any) = dict;
     };
     $Vue.prototype.$dbLoad = dbLoad;

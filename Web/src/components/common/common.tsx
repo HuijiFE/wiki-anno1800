@@ -27,6 +27,7 @@ export class CIcon extends Vue {
         src: resource(
           (this.icon && this.icon) || 'data/ui/2kimages/main/icons/icon_questionmark.png',
         ),
+        loading: 'lazy',
       },
     });
   }

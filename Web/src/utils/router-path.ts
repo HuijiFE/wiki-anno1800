@@ -11,7 +11,10 @@ let $$Vue: typeof Vue;
 export const baseRouterPath = '/wiki/Anno1800/';
 
 function resolveRouterPath(this: Vue, ...paths: (string | number)[]): string {
-  return `/${this.$route.params.language}/${paths.join('/')}`.replace(/\/+/, '/');
+  return `${baseRouterPath}${this.$route.params.language}/${paths.join('/')}`.replace(
+    /\/+/,
+    '/',
+  );
 }
 
 export const routerPath: PluginObject<never> = {

@@ -29,7 +29,7 @@
     @include when('selected') {
       display: flex;
     }
-    padding: px($gap) 0;
+    padding: px($gap * 2) 0;
     margin: 0 px(-$gap / 2);
   }
   @include elem('cell') {
@@ -38,12 +38,13 @@
 
   @include elem('tabs') {
     display: inline-flex;
-    background-color: darken(white, 50%);
+    background-color: darken(white, 40%);
     border-radius: px($border-radius-base);
     padding: px(1);
+    // margin: px(-1);
   }
   @include elem('tab-item') {
-    // padding: px(0.5);
+    // padding: px(1);
   }
 
   @include elem('tab-button') {
@@ -72,9 +73,10 @@
   }
   @include elem('tab-button-icon', 'tab-button-label') {
     opacity: 0.8;
-    filter: saturate(0) brightness(0.5);
+    filter: saturate(0) brightness(0.4);
   }
   @include elem('tab-button') {
+    outline: 0;
     &:hover {
       background-color: lighten($color: $color-beige, $amount: 5%);
     }
@@ -108,8 +110,25 @@
       background-color: lighten($color: $color-beige, $amount: 5%);
     }
   }
+  @include elem('item-container', 'item-icon', 'item-label') {
+    position: relative;
+  }
+  @include elem('item-container') {
+    display: flex;
+    width: px($grid-size * $golden-ratio);
+    height: px($grid-size * $golden-ratio);
+    padding: px(4);
+    &::before {
+      z-index: 1;
+    }
+    &::after {
+      z-index: 2;
+    }
+  }
   @include elem('item-icon') {
-    font-size: px($grid-size * $golden-ratio);
+    z-index: 3;
+    width: 100%;
+    height: 100%;
   }
   @include elem('item-label') {
     flex: 1;
@@ -117,5 +136,47 @@
     font-size: px(12);
     color: $color-brown;
     padding-top: px(4);
+  }
+  @include when('items') {
+    @include elem('item') {
+      @include elem('item-container') {
+        background-size: 100%;
+        background-position: center;
+        background-image: url($bgr-item-holder);
+
+        &::before,
+        &::after {
+          content: ' ';
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          background-size: 100%;
+          background-position: center;
+          mix-blend-mode: multiply;
+        }
+        &::before {
+          background-color: $color-beige;
+          opacity: 0.5;
+        }
+        &::after {
+          background-color: $color-beige;
+          opacity: 0.2;
+        }
+      }
+      @each $rarity in $rarity-set {
+        @include when($rarity) {
+          @include elem('item-container') {
+            &::before {
+              background-color: map-get($map: $rarity-color-map, $key: $rarity);
+            }
+            &::after {
+              background-image: url(map-get($map: $rarity-bgr-map, $key: $rarity));
+            }
+          }
+        }
+      }
+    }
   }
 }

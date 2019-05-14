@@ -19,9 +19,13 @@ export default class VTest extends Vue {
       <div staticClass="v-test">
         <h1>Test</h1>
         <hr />
-        <router-link to={`/${this.$route.params.language}/products`}>
-          products
-        </router-link>
+        <ul>
+          {['products', 'items'].map(path => (
+            <li>
+              <router-link to={this.$routerPath(path)}>{path}</router-link>
+            </li>
+          ))}
+        </ul>
       </div>
     );
   }

@@ -34,3 +34,24 @@ $color-active-lighten:  0.1;
 $color-active-darken:   0.1;
 
 $color-common-border: rgba(#7f7f7f, 0.5);
+
+// Item
+$bgr-item-socket: resource('data/ui/2kimages/main/assets/btn_itemsocket_base.png.png');
+$bgr-item-holder: resource('data/ui/2kimages/main/assets/bgr_item_holder.png');
+$rarity-set: ('Common', 'Uncommon', 'Rare', 'Epic', 'Legendary', 'Quest');
+$rarity-color-map: (
+  Common:       #ffffff,
+  Uncommon:     #659e2d,
+  Rare:         #3e5496,
+  Epic:         #a563a7,
+  Legendary:    #c76937,
+  Quest:        #4a3860,
+);
+$rarity-bgr-map: (
+  Common:       resource('data/ui/2kimages/main/assets/button_bg/btn_itemsocket_common.png'),
+  Uncommon:     resource('data/ui/2kimages/main/assets/button_bg/btn_itemsocket_uncommon.png'),
+  Rare:         resource('data/ui/2kimages/main/assets/button_bg/btn_itemsocket_rare.png'),
+  Epic:         resource('data/ui/2kimages/main/assets/button_bg/btn_itemsocket_epic.png'),
+  Legendary:    resource('data/ui/2kimages/main/assets/button_bg/btn_itemsocket_legendary.png'),
+  Quest:        resource('data/ui/2kimages/main/assets/button_bg/btn_itemsocket_legendary.png'),
+);
