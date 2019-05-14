@@ -7,16 +7,18 @@
   flex: none;
   max-width: 100%;
   min-width: 0;
+  width: auto;
+  height: auto;
   object-fit: contain;
 
-  @each $size in (16, 24, 32, 56, 64, 96, 128, 256, 512) {
+  @each $size in $size-set {
     @include prop(
       (
         'size': $size,
       )
     ) {
-      width: rem($size);
-      height: rem($size);
+      width: px($size);
+      height: px($size);
     }
   }
 }

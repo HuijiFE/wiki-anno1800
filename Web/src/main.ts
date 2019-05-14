@@ -4,16 +4,15 @@ import axios from 'axios';
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 
-import { localization, Language } from './utils/localization';
-import { database } from './utils/database';
-
-import * as allComponents from './components/all';
+import * as utils from './utils';
 import { createRouter } from './router';
 import VApp from './views/app';
 
-Vue.use(localization);
-Vue.use(database);
-Object.entries(allComponents).forEach(([name, comp]) => Vue.component(name, comp));
+Object.values(utils).forEach(u => {
+  if (typeof u === 'object' && 'install' in u) {
+    Vue.use(u);
+  }
+});
 
 Vue.config.productionTip = false;
 
@@ -33,10 +32,7 @@ async function setup(): Promise<void> {
   return new Promise<void>((resolve, reject) => {
     router.onReady(
       async () => {
-        await Promise.all([
-          app.$l10nLoad(app.$route.params.language as Language),
-          app.$dbLoad(),
-        ]);
+        await Promise.all([app.$l10nLoad(app.$route.params.language), app.$dbLoad()]);
         app.$mount('#app');
         resolve();
       },

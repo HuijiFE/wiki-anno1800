@@ -36,6 +36,7 @@ const options = {
   devServer: {
     port: process.env.VUE_APP_PORT,
     open: true,
+    openPage: 'wiki/Anno1800/zh-CN/test',
 
     // /**
     //  *

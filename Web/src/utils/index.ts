@@ -4,7 +4,11 @@
 // tslint:disable
 
 /**
- * All views style
+ * All utils
  */
 
-@import './app';
+export * from './components';
+export * from './database';
+export * from './localization';
+export * from './resource';
+export * from './router-path';

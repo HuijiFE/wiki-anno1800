@@ -10,11 +10,11 @@ import {
 } from 'vue-property-decorator';
 
 /**
- * Component: Localization
+ * Component: Info
  */
 @Component
-export default class VLocalization extends Vue {
+export class CInfo extends Vue {
   private render(h: CreateElement): VNode {
-    return <router-view />;
+    return <div staticClass="c-info">{this.$slots.default}</div>;
   }
 }

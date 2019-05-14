@@ -9,4 +9,13 @@
   min-height: 100vh;
 
   background-color: $color-beige;
+  font-family: $font-family-base;
+
+  @include when('development') {
+    padding: px(64) 0;
+    @include elem('wrapper') {
+      max-width: px(1330);
+      margin: 0 auto;
+    }
+  }
 }

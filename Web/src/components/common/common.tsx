@@ -8,16 +8,13 @@ import {
   Provide,
   Watch,
 } from 'vue-property-decorator';
-import { resource } from '@src/utils/resource';
+import { resource } from '@src/utils';
 import { RecordPropsDefinition } from 'vue/types/options';
 
 @Component
 export class CIcon extends Vue {
   @Prop(String)
   public readonly icon?: string;
-
-  @Prop([String, Number])
-  public readonly guid?: string | number;
 
   @Prop([String, Number])
   public readonly size?: string | number;
@@ -27,10 +24,9 @@ export class CIcon extends Vue {
       staticClass: 'c-icon',
       class: [`cp-size_${this.size}`],
       attrs: {
-        src:
-          (this.icon && resource(this.icon)) ||
-          (this.guid && (this.$db[this.guid] || {}).icon) ||
-          'missing',
+        src: resource(
+          (this.icon && this.icon) || 'data/ui/2kimages/main/icons/icon_questionmark.png',
+        ),
       },
     });
   }
