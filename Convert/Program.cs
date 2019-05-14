@@ -27,11 +27,8 @@ namespace Convert {
       var ddsToPng = true;
 
       if (ddsToPng) {
-        if (Directory.Exists(output)) {
-          Directory.Delete(output, true);
-          Directory.CreateDirectory(output);
-        } else {
-          Directory.CreateDirectory(output);
+        foreach (var subdir in Directory.GetDirectories(output)) {
+          Directory.Delete(subdir, true);
         }
 
         foreach (var subdir in allSubdirs) {
