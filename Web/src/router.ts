@@ -32,10 +32,10 @@ export function createRouter(): VueRouter {
               import(/* webpackChunkName: "v-home" */ './views/home'),
           },
           {
-            path: 'products',
-            name: 'products',
+            path: ':type(items|products)',
+            name: 'items',
             component: async () =>
-              import(/* webpackChunkName: "v-product" */ './views/product/products'),
+              import(/* webpackChunkName: "v-product" */ './views/item/items'),
           },
         ],
       },

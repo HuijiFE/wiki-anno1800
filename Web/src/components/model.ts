@@ -6,5 +6,6 @@ export interface Item {
 
 export interface Group {
   label: string;
+  icon?: string;
   items: Item[];
 }

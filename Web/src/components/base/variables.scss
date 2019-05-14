@@ -1,3 +1,22 @@
+// Common
+
+@function sqrt($r) {
+  $x0: 1;
+  $x1: $x0;
+
+  @for $i from 1 through 10 {
+    $x1: $x0 - ($x0 * $x0 - abs($r)) / (2 * $x0);
+    $x0: $x1;
+  }
+
+  @return $x1;
+}
+
+$golden-ratio: (sqrt(5) - 1) / 2;
+
+$size-set: (16, 24, 32, 56, 64, 80, 96, 128, 256, 512);
+$border-radius-base: 2;
+
 // Typography
 
 $font-family-base: 'Segoe UI', SegoeUI, 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -14,7 +33,4 @@ $color-sub-alpha: 0.5;
 $color-active-lighten:  0.1;
 $color-active-darken:   0.1;
 
-$color-common-border: rgba(#7f7f7f, 0.1);
-
-// Icon
-$size-set: (16, 24, 32, 56, 64, 96, 128, 256, 512);
+$color-common-border: rgba(#7f7f7f, 0.5);

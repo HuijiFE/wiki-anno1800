@@ -1,7 +1,7 @@
 import Vue, { PluginObject } from 'vue';
 import { getResource } from './resource';
 
-export type Language = 'zh-CN';
+export type Language = 'en' | 'zh-CN';
 
 export interface LocalizationDict {
   readonly [guid: string]: string;
@@ -9,6 +9,7 @@ export interface LocalizationDict {
 }
 
 const languageMap: Record<Language, string> = {
+  en: 'english',
   'zh-CN': 'chinese',
 };
 

@@ -12,7 +12,7 @@
   font-family: $font-family-base;
 
   @include when('development') {
-    padding: px(64) 0;
+    padding: px(64) px((375 - 345) / 2);
     @include elem('wrapper') {
       max-width: px(1330);
       margin: 0 auto;

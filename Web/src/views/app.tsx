@@ -18,7 +18,7 @@ export default class VApp extends Vue {
     const isDev = process.env.NODE_ENV === 'development';
     return (
       <div
-        staticClass="v-app"
+        staticClass="v-app c-reset"
         class={{ 'is-development': isDev }}
         data-language={this.$route.params.language}
       >

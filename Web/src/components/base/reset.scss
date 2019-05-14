@@ -1,0 +1,32 @@
+/**
+ * Component: Reset
+ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@include comp('reset') {
+  @import url('~normalize.css');
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  a,
+  a:visited,
+  a:hover,
+  a:active {
+    cursor: pointer;
+    text-decoration: none;
+    color: $color-purple;
+  }
+
+  button {
+    cursor: pointer;
+    user-select: none;
+  }
+}

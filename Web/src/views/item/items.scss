@@ -1,0 +1,121 @@
+/**
+ * Component: Items
+ */
+@include comp('items') {
+  $gap: 4;
+  $grid-size: 80;
+  $tab-icon-size: 20;
+  $tab-font-size: 14;
+
+  position: relative;
+  flex: 1 1 100%;
+  max-width: 100%;
+  min-width: 0;
+
+  @include elem('tabs', 'tab-item', 'grid', 'cell') {
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  @include elem('grid') {
+    display: none;
+    @include when('selected') {
+      display: flex;
+    }
+    padding: px($gap) 0;
+    margin: 0 px(-$gap / 2);
+  }
+  @include elem('cell') {
+    padding: px($gap / 2);
+  }
+
+  @include elem('tabs') {
+    display: inline-flex;
+    background-color: darken(white, 50%);
+    border-radius: px($border-radius-base);
+    padding: px(1);
+  }
+  @include elem('tab-item') {
+    // padding: px(0.5);
+  }
+
+  @include elem('tab-button') {
+    position: relative;
+    flex: none;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+
+    font-size: px($tab-font-size);
+    line-height: 1;
+
+    height: px($tab-icon-size / $golden-ratio);
+    padding: 0 px($tab-icon-size * $golden-ratio);
+    margin: 0;
+    border: px(1) solid;
+    border-color: rgba(white, 0.3) rgba(black, 0.1) rgba(black, 0.2);
+    border-radius: px($border-radius-base);
+    color: white;
+    background-color: $color-beige;
+  }
+  @include elem('tab-button-icon') {
+    font-size: px($tab-icon-size);
+    margin-right: px($tab-font-size * $golden-ratio);
+  }
+  @include elem('tab-button-icon', 'tab-button-label') {
+    opacity: 0.8;
+    filter: saturate(0) brightness(0.5);
+  }
+  @include elem('tab-button') {
+    &:hover {
+      background-color: lighten($color: $color-beige, $amount: 5%);
+    }
+    @include when('selected') {
+      background-color: darken($color: $color-beige, $amount: 50%);
+      @include elem('tab-button-icon', 'tab-button-label') {
+        filter: saturate(0) brightness(1);
+      }
+    }
+  }
+
+  @include elem('item') {
+    cursor: pointer;
+    user-select: none;
+
+    position: relative;
+    width: px($grid-size);
+    min-height: px($grid-size);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+
+    border: px(1.5) solid rgba(#7f7f7f, 0.1);
+    border-radius: px($border-radius-base);
+    padding: px(4) 0;
+
+    background-color: $color-beige;
+    &:hover {
+      background-color: lighten($color: $color-beige, $amount: 5%);
+    }
+  }
+  @include elem('item-icon') {
+    font-size: px($grid-size * $golden-ratio);
+  }
+  @include elem('item-label') {
+    flex: 1;
+    text-align: center;
+    font-size: px(12);
+    color: $color-brown;
+    padding-top: px(4);
+  }
+}
