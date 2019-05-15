@@ -139,33 +139,27 @@ export default class VItems extends Vue {
               </ul>
             ),
         )}
-        <div id="tabpanels">
-          {this.categories.map((group, index) => (
-            <ul
-              key={group.key}
-              staticClass="v-items_grid"
-              class={{ 'is-selected': this.selectedIndex === index }}
-              id={`tabpanel-${group.key}`}
-              role="tabpanel"
-              aria-labelledby={`tab-${group.key}`}
-            >
-              {group.items.map(item => (
-                <li key={item.key} staticClass="v-items_cell">
-                  <a
-                    staticClass="v-items_item"
-                    class={{ [`is-${item.data}`]: !!item.data }}
-                    href={item.link}
-                  >
-                    <span staticClass="v-items_item-container">
-                      <c-icon staticClass="v-items_item-icon" icon={item.icon} />
-                    </span>
-                    <span staticClass="v-items_item-label">{item.label}</span>
-                  </a>
-                </li>
-              ))}
-            </ul>
+        <ul
+          staticClass="v-items_grid"
+          id={`tabpanel-${this.categories[this.selectedIndex].key}`}
+          role="tabpanel"
+          aria-labelledby={`tab-${this.categories[this.selectedIndex].key}`}
+        >
+          {this.categories[this.selectedIndex].items.map(item => (
+            <li key={item.key} staticClass="v-items_cell">
+              <a
+                staticClass="v-items_item"
+                class={{ [`is-${item.data}`]: !!item.data }}
+                href={item.link}
+              >
+                <span staticClass="v-items_item-container">
+                  <c-icon staticClass="v-items_item-icon" icon={item.icon} />
+                </span>
+                <span staticClass="v-items_item-label">{item.label}</span>
+              </a>
+            </li>
           ))}
-        </div>
+        </ul>
       </div>
     );
   }

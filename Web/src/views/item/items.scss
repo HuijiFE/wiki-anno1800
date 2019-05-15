@@ -25,10 +25,6 @@
   }
 
   @include elem('grid') {
-    display: none;
-    @include when('selected') {
-      display: flex;
-    }
     padding: px($gap * 2) 0;
     margin: 0 px(-$gap / 2);
   }
