@@ -22,6 +22,7 @@ export const routerPath: PluginObject<never> = {
     if ($$Vue && $$Vue === $Vue) {
       return;
     }
+    $$Vue = $Vue;
 
     Object.defineProperty(Vue.prototype, '$routerPath', {
       get() {

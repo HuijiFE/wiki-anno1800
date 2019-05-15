@@ -27,6 +27,8 @@ export const database: PluginObject<never> = {
     if ($$Vue && $$Vue === $Vue) {
       return;
     }
+    $$Vue = $Vue;
+
     const dbLoad = async (): Promise<void> => {
       const dataDicts = await Promise.all(
         allTemplates.map(t => getResource<Asset[]>(`/db/${t}.json`)),

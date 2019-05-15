@@ -32,6 +32,8 @@ export const localization: PluginObject<never> = {
     if ($$Vue && $$Vue === $Vue) {
       return;
     }
+    $$Vue = $Vue;
+
     const l10nLoad = async (language: string): Promise<void> => {
       const dict = await getResource(
         `/localization/${languageMap[language as Language] || language}.json`,

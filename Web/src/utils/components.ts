@@ -8,6 +8,8 @@ export const components: PluginObject<never> = {
     if ($$Vue && $$Vue === $Vue) {
       return;
     }
+    $$Vue = $Vue;
+
     Object.entries(allComponents).forEach(([name, comp]) => $Vue.component(name, comp));
   },
 };
