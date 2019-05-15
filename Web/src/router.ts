@@ -20,12 +20,6 @@ export function createRouter(): VueRouter {
         component: VLocalization,
         children: [
           {
-            path: 'test',
-            name: 'test',
-            component: async () =>
-              import(/* webpackChunkName: "v-test" */ './views/test'),
-          },
-          {
             path: '',
             name: 'home',
             component: async () =>
@@ -35,7 +29,13 @@ export function createRouter(): VueRouter {
             path: ':genre(items|products)',
             name: 'items',
             component: async () =>
-              import(/* webpackChunkName: "v-product" */ './views/item/items'),
+              import(/* webpackChunkName: "v-item" */ './views/item/items'),
+          },
+          {
+            path: '*',
+            name: 'test',
+            component: async () =>
+              import(/* webpackChunkName: "v-test" */ './views/test'),
           },
         ],
       },
