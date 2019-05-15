@@ -1,0 +1,5 @@
+export const GUID_PRODUCT_FILTER = 500514;
+export const GUID_ITEM_FILTER = 501516;
+
+export const GUID_OIL = 1010566;
+export const GUID_ITEM_BALANCING = 6000017;

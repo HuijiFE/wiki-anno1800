@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
-export interface Item<T = any> {
+export interface Basic<T = any> {
   key?: string | number;
   label: string;
   icon: string;
@@ -8,7 +8,7 @@ export interface Item<T = any> {
   data?: T;
 }
 
-export interface Group<T = Item> {
+export interface Group<T = Basic> {
   key?: string | number;
   label: string;
   icon?: string;

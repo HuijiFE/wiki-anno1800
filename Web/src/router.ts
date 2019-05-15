@@ -32,6 +32,12 @@ export function createRouter(): VueRouter {
               import(/* webpackChunkName: "v-item" */ './views/item/items'),
           },
           {
+            path: ':genre(item|product)/guid',
+            name: 'item',
+            component: async () =>
+              import(/* webpackChunkName: "v-item" */ './views/item/item'),
+          },
+          {
             path: '*',
             name: 'test',
             component: async () =>

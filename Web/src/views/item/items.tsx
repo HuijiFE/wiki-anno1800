@@ -19,13 +19,13 @@ import {
   ItemBalancing,
   ItemConfigData,
 } from '@public/db/definition';
-import { Item, Group } from '@src/components';
-
-const guidProductFilter = 500514;
-const guidItemFilter = 501516;
-
-const guidOil = 1010566;
-const guidItemBalancing = 6000017;
+import {
+  GUID_PRODUCT_FILTER,
+  GUID_ITEM_FILTER,
+  GUID_ITEM_BALANCING,
+  GUID_OIL,
+} from '@src/utils';
+import { Basic, Group } from '@src/components';
 
 /**
  * Component: Items
@@ -34,7 +34,7 @@ const guidItemBalancing = 6000017;
 export default class VItems extends Vue {
   private selectedIndex: number = 0;
 
-  private categories: Group<Item<string>>[] = [];
+  private categories: Group<Basic<string>>[] = [];
 
   private get genre(): string {
     return this.$route.params.genre;
@@ -42,14 +42,14 @@ export default class VItems extends Vue {
 
   private created(): void {
     if (this.genre === 'products') {
-      const inter = ((this.$db[guidProductFilter] as ProductFilter)
+      const inter = ((this.$db[GUID_PRODUCT_FILTER] as ProductFilter)
         .productFilter as ProductFilterData).categories.map<Group<Product>>(c => ({
         key: c.category,
         label: this.$l10n[c.category],
         icon: this.$db[c.category].icon,
         items: c.products.map(p => this.$db[p]),
       }));
-      inter[0].items.push(this.$db[guidOil]);
+      inter[0].items.push(this.$db[GUID_OIL]);
 
       this.categories = inter.map(g => ({
         key: g.key,
@@ -64,7 +64,7 @@ export default class VItems extends Vue {
       }));
     } else {
       const allItems = this.$dbList.filter((a: ItemBuff) => !!a.item);
-      const inter = ((this.$db[guidItemFilter] as ItemFilter)
+      const inter = ((this.$db[GUID_ITEM_FILTER] as ItemFilter)
         .itemFilter as ItemFilterData).categories.map<Group<ItemBuff>>(c => ({
         key: c.category,
         label: this.$l10n[c.category],
@@ -82,7 +82,7 @@ export default class VItems extends Vue {
       }));
 
       // const { allocationText, allocationIcons } = (this.$db[
-      //   guidItemBalancing
+      //   GUID_ITEM_BALANCING
       // ] as ItemBalancing).itemConfig as ItemConfigData;
       // Object.entries(allocationText).forEach(([name, guid]) => {
       //   inter.push({
@@ -94,7 +94,7 @@ export default class VItems extends Vue {
       //   });
       // });
 
-      this.categories = inter.map<Group<Item<string>>>(g => ({
+      this.categories = inter.map<Group<Basic<string>>>(g => ({
         key: g.key,
         label: `${g.label} (${g.items.length})`,
         icon: g.icon,
