@@ -76,10 +76,10 @@
   }
   @include elem('tab-button') {
     outline: 0;
-    background-color: $color-beige;
+    background-color: $color-bisque;
     &:hover,
     &:focus {
-      background-color: lighten($color: $color-beige, $amount: 5%);
+      background-color: lighten($color: $color-bisque, $amount: 5%);
     }
     @include when('selected') {
       background-color: $color-brown;
@@ -105,16 +105,9 @@
     align-content: center;
     align-items: center;
 
-    border: px(1.5) solid rgba(#7f7f7f, 0.1);
+    border: px(1.5) solid $color-border-common;
     border-radius: px($border-radius-base);
-    padding: px(4) 0;
-
-    outline: 0;
-    background-color: $color-beige;
-    &:hover,
-    &:focus {
-      background-color: lighten($color: $color-beige, $amount: 5%);
-    }
+    padding: px(4);
   }
   @include elem('item-container', 'item-icon', 'item-label') {
     position: relative;
@@ -140,8 +133,17 @@
     flex: 1;
     text-align: center;
     font-size: px(12);
-    color: $color-brown;
     padding-top: px(4);
+  }
+  @include elem('item') {
+    outline: 0;
+    color: $color-peru;
+    background-color: $color-bisque;
+    &:hover,
+    &:focus {
+      color: $color-brown;
+      background-color: lighten($color: $color-bisque, $amount: 5%);
+    }
   }
 
   // when the genre is 'items'
@@ -169,11 +171,11 @@
           mix-blend-mode: multiply;
         }
         &::before {
-          background-color: $color-beige;
+          background-color: $color-bisque;
           opacity: 0.5;
         }
         &::after {
-          background-color: $color-beige;
+          background-color: $color-bisque;
           opacity: 0.2;
         }
       }
