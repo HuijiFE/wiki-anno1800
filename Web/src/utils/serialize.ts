@@ -13,8 +13,8 @@ function serialize(state: any): void {
   if (!elem) {
     elem = document.createElement('script');
     elem.id = SERIALIZE_ELEMENT_ID;
-    elem.setAttribute('type', 'text/json');
-    document.body.append(elem);
+    elem.type = 'text/json';
+    document.body.appendChild(elem);
   }
   elem.innerText = JSON.stringify(state);
 }
