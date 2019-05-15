@@ -8,6 +8,7 @@ import * as utils from './utils';
 import { createRouter } from './router';
 import VApp from './views/app';
 
+// Install Vue plugins in utils
 Object.values(utils).forEach(u => {
   if (typeof u === 'object' && 'install' in u) {
     Vue.use(u);
@@ -39,6 +40,10 @@ async function setup(): Promise<void> {
       err => reject(err),
     );
   });
+}
+
+if (process.env.NODE_ENV === 'development') {
+  utils.debug();
 }
 
 setup();

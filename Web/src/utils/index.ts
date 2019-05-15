@@ -10,6 +10,7 @@
 export * from './components';
 export * from './constants';
 export * from './database';
+export * from './debug';
 export * from './localization';
 export * from './resource';
 export * from './router-path';
