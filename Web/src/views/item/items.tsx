@@ -11,6 +11,7 @@ import {
 import {
   ProductFilter,
   ProductFilterData,
+  Product,
   ItemFilter,
   ItemFilterData,
   ItemBuff,
@@ -35,29 +36,37 @@ export default class VItems extends Vue {
 
   private categories: Group<Item<string>>[] = [];
 
-  private created(): void {
-    let categories: Group<Item<string>>[];
+  private get genre(): string {
+    return this.$route.params.genre;
+  }
 
-    if (this.$route.params.genre === 'products') {
-      categories = ((this.$db[guidProductFilter] as ProductFilter)
-        .productFilter as ProductFilterData).categories.map<Group<Item<string>>>(c => ({
-        label: `${this.$l10n[c.category]} (${c.products.length})`,
+  private created(): void {
+    if (this.genre === 'products') {
+      const inter = ((this.$db[guidProductFilter] as ProductFilter)
+        .productFilter as ProductFilterData).categories.map<Group<Product>>(c => ({
+        key: c.category,
+        label: this.$l10n[c.category],
         icon: this.$db[c.category].icon,
-        items: c.products.map(p => ({
-          label: this.$l10n[p],
-          icon: this.$db[p].icon,
-          link: this.$routerPath('product', p),
+        items: c.products.map(p => this.$db[p]),
+      }));
+      inter[0].items.push(this.$db[guidOil]);
+
+      this.categories = inter.map(g => ({
+        key: g.key,
+        label: `${g.label} (${g.items.length})`,
+        icon: g.icon,
+        items: g.items.map(prod => ({
+          key: prod.guid,
+          label: this.$l10n[prod.guid],
+          icon: prod.icon,
+          link: this.$routerPath('product', prod.guid),
         })),
       }));
-      categories[0].items.push({
-        label: this.$l10n[guidOil],
-        icon: this.$db[guidOil].icon,
-        link: this.$routerPath('product', guidOil),
-      });
     } else {
       const allItems = this.$dbList.filter((a: ItemBuff) => !!a.item);
       const inter = ((this.$db[guidItemFilter] as ItemFilter)
         .itemFilter as ItemFilterData).categories.map<Group<ItemBuff>>(c => ({
+        key: c.category,
         label: this.$l10n[c.category],
         icon: this.$db[c.category].icon,
         items: allItems
@@ -85,10 +94,12 @@ export default class VItems extends Vue {
       //   });
       // });
 
-      categories = inter.map<Group<Item<string>>>(g => ({
+      this.categories = inter.map<Group<Item<string>>>(g => ({
+        key: g.key,
         label: `${g.label} (${g.items.length})`,
         icon: g.icon,
         items: g.items.map(item => ({
+          key: item.guid,
           label: this.$l10n[item.guid],
           icon: item.icon,
           link: this.$routerPath('item', item.guid),
@@ -96,24 +107,29 @@ export default class VItems extends Vue {
         })),
       }));
     }
-
-    this.categories = categories;
   }
 
   private render(h: CreateElement): VNode {
     return (
-      <div staticClass="v-items" class={[`is-${this.$route.params.genre}`]}>
+      <div staticClass="v-items" class={[`vp-genre_${this.genre}`]}>
         {[this.categories.slice(0, 6), this.categories.slice(6)].map(
           (cs, ci) =>
             cs.length > 0 && (
-              <ul staticClass="v-items_tabs" role="tablist">
+              <ul
+                staticClass="v-items_tabs"
+                id={`tabs-${this.genre}-${ci}`}
+                role="tablist"
+              >
                 {cs.map((group, index) => (
-                  <li staticClass="v-items_tab-item">
+                  <li key={group.key} staticClass="v-items_tab-item">
                     <button
                       staticClass="v-items_tab-button"
                       class={{ 'is-selected': this.selectedIndex === index + ci * 6 }}
-                      role="tab"
                       onClick={() => (this.selectedIndex = index + ci * 6)}
+                      id={`tab-${group.key}`}
+                      role="tab"
+                      aria-controls={`tabpanel-${group.key}`}
+                      aria-selected={this.selectedIndex === index + ci * 6}
                     >
                       <c-icon staticClass="v-items_tab-button-icon" icon={group.icon} />
                       <span staticClass="v-items_tab-button-label">{group.label}</span>
@@ -123,27 +139,33 @@ export default class VItems extends Vue {
               </ul>
             ),
         )}
-        {this.categories.map((group, index) => (
-          <ul
-            staticClass="v-items_grid"
-            class={{ 'is-selected': this.selectedIndex === index }}
-          >
-            {group.items.map(item => (
-              <li staticClass="v-items_cell">
-                <a
-                  staticClass="v-items_item"
-                  class={{ [`is-${item.data}`]: !!item.data }}
-                  href={item.link}
-                >
-                  <span staticClass="v-items_item-container">
-                    <c-icon staticClass="v-items_item-icon" icon={item.icon} />
-                  </span>
-                  <span staticClass="v-items_item-label">{item.label}</span>
-                </a>
-              </li>
-            ))}
-          </ul>
-        ))}
+        <div id="tabpanels">
+          {this.categories.map((group, index) => (
+            <ul
+              key={group.key}
+              staticClass="v-items_grid"
+              class={{ 'is-selected': this.selectedIndex === index }}
+              id={`tabpanel-${group.key}`}
+              role="tabpanel"
+              aria-labelledby={`tab-${group.key}`}
+            >
+              {group.items.map(item => (
+                <li key={item.key} staticClass="v-items_cell">
+                  <a
+                    staticClass="v-items_item"
+                    class={{ [`is-${item.data}`]: !!item.data }}
+                    href={item.link}
+                  >
+                    <span staticClass="v-items_item-container">
+                      <c-icon staticClass="v-items_item-icon" icon={item.icon} />
+                    </span>
+                    <span staticClass="v-items_item-label">{item.label}</span>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          ))}
+        </div>
       </div>
     );
   }
