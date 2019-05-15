@@ -20,6 +20,8 @@ import {
   ItemConfigData,
 } from '@public/db/definition';
 import {
+  SyncDataView,
+  MIXIN_SYNC_DATA_VIEW,
   GUID_PRODUCT_FILTER,
   GUID_ITEM_FILTER,
   GUID_ITEM_BALANCING,
@@ -27,92 +29,105 @@ import {
 } from '@src/utils';
 import { Basic, Group } from '@src/components';
 
+interface ItemsState {
+  basics: Record<number, Basic<string>>;
+  groups: Group<number>[];
+}
+
 /**
- * Component: Items
+ * View: Items
  */
-@Component
-export default class VItems extends Vue {
-  private selectedIndex: number = 0;
+@Component({
+  mixins: [MIXIN_SYNC_DATA_VIEW],
+})
+export default class VItems extends Vue implements SyncDataView<ItemsState> {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  public state: ItemsState = null as any;
 
-  private categories: Group<Basic<string>>[] = [];
+  /* eslint-disable no-param-reassign */
+  public syncData(): ItemsState {
+    const basics: Record<number, Basic<string>> = {};
+    const groups: Group<number>[] = [];
 
-  private get genre(): string {
-    return this.$route.params.genre;
-  }
-
-  private created(): void {
     if (this.genre === 'products') {
-      const inter = ((this.$db[GUID_PRODUCT_FILTER] as ProductFilter)
-        .productFilter as ProductFilterData).categories.map<Group<Product>>(c => ({
-        key: c.category,
-        label: this.$l10n[c.category],
-        icon: this.$db[c.category].icon,
-        items: c.products.map(p => this.$db[p]),
-      }));
-      inter[0].items.push(this.$db[GUID_OIL]);
-
-      this.categories = inter.map(g => ({
-        key: g.key,
-        label: `${g.label} (${g.items.length})`,
-        icon: g.icon,
-        items: g.items.map(prod => ({
-          key: prod.guid,
+      const allProds = this.$dbList.filter((a: Product): a is Product => !!a.product);
+      allProds.forEach(prod => {
+        basics[prod.guid] = {
           label: this.$l10n[prod.guid],
           icon: prod.icon,
-          link: this.$routerPath('product', prod.guid),
-        })),
-      }));
+          link: this.$routerPath('item', prod.icon),
+        };
+      });
+
+      ((this.$db[GUID_PRODUCT_FILTER] as ProductFilter)
+        .productFilter as ProductFilterData).categories.forEach(c => {
+        groups.push({
+          key: c.category,
+          label: this.$l10n[c.category],
+          icon: this.$db[c.category].icon,
+          items: [...c.products],
+        });
+      });
+      groups[0].items.push(GUID_OIL);
+
+      groups.forEach(g => {
+        g.label += ` ${g.items.length}`;
+        g.items.forEach(prod => {
+          if (!basics[prod]) {
+            basics[prod] = {
+              key: prod,
+              label: this.$l10n[prod],
+              icon: this.$db[prod].icon,
+              link: this.$routerPath('product', prod),
+            };
+          }
+        });
+      });
     } else {
-      const allItems = this.$dbList.filter((a: ItemBuff) => !!a.item);
-      const inter = ((this.$db[GUID_ITEM_FILTER] as ItemFilter)
-        .itemFilter as ItemFilterData).categories.map<Group<ItemBuff>>(c => ({
-        key: c.category,
-        label: this.$l10n[c.category],
-        icon: this.$db[c.category].icon,
-        items: allItems
-          .filter((item: ItemBuff) =>
-            c.types.includes((item.item as ItemData).allocation),
-          )
-          .sort((a: ItemBuff, b: ItemBuff) => {
-            return (
-              c.types.indexOf((a.item as ItemData).allocation) -
-                c.types.indexOf((b.item as ItemData).allocation) || a.guid - b.guid
-            );
-          }),
-      }));
-
-      // const { allocationText, allocationIcons } = (this.$db[
-      //   GUID_ITEM_BALANCING
-      // ] as ItemBalancing).itemConfig as ItemConfigData;
-      // Object.entries(allocationText).forEach(([name, guid]) => {
-      //   inter.push({
-      //     label: this.$l10n[guid],
-      //     icon: allocationIcons[name],
-      //     items: allItems.filter(
-      //       (item: ItemBuff) => (item.item as ItemData).allocation === name,
-      //     ),
-      //   });
-      // });
-
-      this.categories = inter.map<Group<Basic<string>>>(g => ({
-        key: g.key,
-        label: `${g.label} (${g.items.length})`,
-        icon: g.icon,
-        items: g.items.map(item => ({
+      const allItems = this.$dbList.filter((a: ItemBuff): a is ItemBuff => !!a.item);
+      allItems.forEach(item => {
+        basics[item.guid] = {
           key: item.guid,
           label: this.$l10n[item.guid],
           icon: item.icon,
           link: this.$routerPath('item', item.guid),
           data: (item.item as ItemData).rarity,
-        })),
-      }));
+        };
+      });
+
+      ((this.$db[GUID_ITEM_FILTER] as ItemFilter)
+        .itemFilter as ItemFilterData).categories.forEach(c => {
+        groups.push({
+          key: c.category,
+          label: this.$l10n[c.category],
+          icon: this.$db[c.category].icon,
+          items: allItems
+            .filter(item => c.types.includes((item.item as ItemData).allocation))
+            .sort((a, b) => {
+              return (
+                c.types.indexOf((a.item as ItemData).allocation) -
+                  c.types.indexOf((b.item as ItemData).allocation) || a.guid - b.guid
+              );
+            })
+            .map(item => item.guid),
+        });
+      });
+      groups.forEach(g => (g.label += ` ${g.items.length}`));
     }
+
+    return { basics, groups };
+  }
+
+  private selectedIndex: number = 0;
+
+  private get genre(): string {
+    return this.$route.params.genre;
   }
 
   private render(h: CreateElement): VNode {
     return (
       <div staticClass="v-items" class={[`vp-genre_${this.genre}`]}>
-        {[this.categories.slice(0, 6), this.categories.slice(6)].map(
+        {[this.state.groups.slice(0, 6), this.state.groups.slice(6)].map(
           (cs, ci) =>
             cs.length > 0 && (
               <ul
@@ -141,21 +156,28 @@ export default class VItems extends Vue {
         )}
         <ul
           staticClass="v-items_grid"
-          id={`tabpanel-${this.categories[this.selectedIndex].key}`}
+          id={`tabpanel-${this.state.groups[this.selectedIndex].key}`}
           role="tabpanel"
-          aria-labelledby={`tab-${this.categories[this.selectedIndex].key}`}
+          aria-labelledby={`tab-${this.state.groups[this.selectedIndex].key}`}
         >
-          {this.categories[this.selectedIndex].items.map(item => (
-            <li key={item.key} staticClass="v-items_cell">
+          {this.state.groups[this.selectedIndex].items.map(guid => (
+            <li key={guid} staticClass="v-items_cell">
               <a
                 staticClass="v-items_item"
-                class={{ [`is-${item.data}`]: !!item.data }}
-                href={item.link}
+                class={{
+                  [`is-${this.state.basics[guid].data}`]: !!this.state.basics[guid].data,
+                }}
+                href={this.state.basics[guid].link}
               >
                 <span staticClass="v-items_item-container">
-                  <c-icon staticClass="v-items_item-icon" icon={item.icon} />
+                  <c-icon
+                    staticClass="v-items_item-icon"
+                    icon={this.state.basics[guid].icon}
+                  />
                 </span>
-                <span staticClass="v-items_item-label">{item.label}</span>
+                <span staticClass="v-items_item-label">
+                  {this.state.basics[guid].label}
+                </span>
               </a>
             </li>
           ))}

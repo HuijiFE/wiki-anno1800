@@ -11,6 +11,9 @@ import {
 import { resource } from '@src/utils';
 import { RecordPropsDefinition } from 'vue/types/options';
 
+/**
+ * View: Icon
+ */
 @Component
 export class CIcon extends Vue {
   @Prop(String)

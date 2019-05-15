@@ -21,6 +21,7 @@ export default class VApp extends Vue {
         id="app"
         staticClass="v-app c-reset"
         class={{ 'is-development': isDev }}
+        data-server-rendered="true"
         data-language={this.$route.params.language}
       >
         <router-view staticClass="v-app_wrapper" class={{ 'is-development': isDev }} />

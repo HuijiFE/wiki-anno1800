@@ -13,3 +13,4 @@ export * from './database';
 export * from './localization';
 export * from './resource';
 export * from './router-path';
+export * from './serialize';
