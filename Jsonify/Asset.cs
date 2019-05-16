@@ -233,7 +233,7 @@ namespace Anno1800.Jsonify {
           foreach (var propBase in properties.Elements()) {
             var propDerived = values.Element(propBase.Name);
             if (propDerived != null) {
-              Asset.Inherit(propDerived, propBase, templateName == "CultureItem");
+              Asset.Inherit(propDerived, propBase);
             }
           }
         }

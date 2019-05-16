@@ -3,6 +3,9 @@
 export const allTemplates: string[] = [
   'CityInstitutionBuilding',
   'IncidentResolverUnit',
+  'ConstructionMenu',
+  'ConstructionCategory',
+  'ProductionChain',
   'ExpeditionFeature',
   'FactoryBuilding7',
   'HeavyFactoryBuilding',
@@ -51,7 +54,6 @@ export const allTemplates: string[] = [
   'OrnamentalBuilding',
   'BuildPermitBuilding',
   'ParticipantRepresentationFeature',
-  'ProductionChain',
   'Product',
   'Projectile',
   'ExplodingProjectile',
@@ -98,6 +100,9 @@ export const allTemplates: string[] = [
 export interface TemplateMap {
   CityInstitutionBuilding: CityInstitutionBuilding;
   IncidentResolverUnit: IncidentResolverUnit;
+  ConstructionMenu: ConstructionMenu;
+  ConstructionCategory: ConstructionCategory;
+  ProductionChain: ProductionChain;
   ExpeditionFeature: ExpeditionFeature;
   FactoryBuilding7: FactoryBuilding7;
   HeavyFactoryBuilding: HeavyFactoryBuilding;
@@ -146,7 +151,6 @@ export interface TemplateMap {
   OrnamentalBuilding: OrnamentalBuilding;
   BuildPermitBuilding: BuildPermitBuilding;
   ParticipantRepresentationFeature: ParticipantRepresentationFeature;
-  ProductionChain: ProductionChain;
   Product: Product;
   Projectile: Projectile;
   ExplodingProjectile: ExplodingProjectile;
@@ -205,6 +209,116 @@ export interface AssetTemplateMap {
   100582: IncidentResolverUnit;
   100583: IncidentResolverUnit;
   100584: IncidentResolverUnit;
+  25000035: ConstructionMenu;
+  25000189: ConstructionCategory;
+  25000190: ConstructionCategory;
+  25000191: ConstructionCategory;
+  25000192: ConstructionCategory;
+  500447: ConstructionCategory;
+  500952: ConstructionCategory;
+  500953: ConstructionCategory;
+  500954: ConstructionCategory;
+  501002: ConstructionCategory;
+  501411: ConstructionCategory;
+  501412: ConstructionCategory;
+  501482: ConstructionCategory;
+  501483: ConstructionCategory;
+  501484: ConstructionCategory;
+  501485: ConstructionCategory;
+  501486: ConstructionCategory;
+  501487: ConstructionCategory;
+  501488: ConstructionCategory;
+  500903: ConstructionCategory;
+  500943: ConstructionCategory;
+  500944: ConstructionCategory;
+  500945: ConstructionCategory;
+  25000197: ConstructionCategory;
+  501490: ConstructionCategory;
+  501491: ConstructionCategory;
+  501489: ConstructionCategory;
+  501492: ConstructionCategory;
+  501493: ConstructionCategory;
+  501494: ConstructionCategory;
+  501495: ConstructionCategory;
+  501497: ConstructionCategory;
+  501576: ConstructionCategory;
+  501496: ConstructionCategory;
+  501498: ConstructionCategory;
+  501499: ConstructionCategory;
+  25000193: ConstructionCategory;
+  25000194: ConstructionCategory;
+  501007: ConstructionCategory;
+  501008: ConstructionCategory;
+  501004: ConstructionCategory;
+  501640: ConstructionCategory;
+  501577: ConstructionCategory;
+  501578: ConstructionCategory;
+  501579: ConstructionCategory;
+  501695: ConstructionCategory;
+  500949: ConstructionCategory;
+  500946: ConstructionCategory;
+  500950: ConstructionCategory;
+  25000195: ConstructionCategory;
+  500951: ConstructionCategory;
+  501580: ConstructionCategory;
+  501581: ConstructionCategory;
+  501582: ConstructionCategory;
+  501583: ConstructionCategory;
+  501584: ConstructionCategory;
+  501585: ConstructionCategory;
+  501691: ConstructionCategory;
+  501587: ConstructionCategory;
+  501692: ConstructionCategory;
+  501589: ConstructionCategory;
+  501693: ConstructionCategory;
+  501694: ConstructionCategory;
+  500091: ProductionChain;
+  500002: ProductionChain;
+  500505: ProductionChain;
+  500024: ProductionChain;
+  25000244: ProductionChain;
+  500004: ProductionChain;
+  500009: ProductionChain;
+  500005: ProductionChain;
+  25000220: ProductionChain;
+  500145: ProductionChain;
+  500006: ProductionChain;
+  500010: ProductionChain;
+  500008: ProductionChain;
+  500003: ProductionChain;
+  500013: ProductionChain;
+  500019: ProductionChain;
+  500014: ProductionChain;
+  500016: ProductionChain;
+  500901: ProductionChain;
+  500506: ProductionChain;
+  500017: ProductionChain;
+  500023: ProductionChain;
+  500012: ProductionChain;
+  500902: ProductionChain;
+  500015: ProductionChain;
+  500029: ProductionChain;
+  500434: ProductionChain;
+  500018: ProductionChain;
+  500022: ProductionChain;
+  500020: ProductionChain;
+  500021: ProductionChain;
+  500566: ProductionChain;
+  500904: ProductionChain;
+  500905: ProductionChain;
+  500906: ProductionChain;
+  500907: ProductionChain;
+  500908: ProductionChain;
+  500909: ProductionChain;
+  500910: ProductionChain;
+  500911: ProductionChain;
+  500913: ProductionChain;
+  500912: ProductionChain;
+  500914: ProductionChain;
+  500916: ProductionChain;
+  501254: ProductionChain;
+  501429: ProductionChain;
+  501637: ProductionChain;
   800111: ExpeditionFeature;
   1010278: FactoryBuilding7;
   1010310: FactoryBuilding7;
@@ -2123,53 +2237,6 @@ export interface AssetTemplateMap {
   102475: BuildPermitBuilding;
   102461: BuildPermitBuilding;
   2002447: ParticipantRepresentationFeature;
-  500091: ProductionChain;
-  500002: ProductionChain;
-  500505: ProductionChain;
-  500024: ProductionChain;
-  25000244: ProductionChain;
-  500004: ProductionChain;
-  500009: ProductionChain;
-  500005: ProductionChain;
-  25000220: ProductionChain;
-  500145: ProductionChain;
-  500006: ProductionChain;
-  500010: ProductionChain;
-  500008: ProductionChain;
-  500003: ProductionChain;
-  500013: ProductionChain;
-  500019: ProductionChain;
-  500014: ProductionChain;
-  500016: ProductionChain;
-  500901: ProductionChain;
-  500506: ProductionChain;
-  500017: ProductionChain;
-  500023: ProductionChain;
-  500012: ProductionChain;
-  500902: ProductionChain;
-  500015: ProductionChain;
-  500029: ProductionChain;
-  500434: ProductionChain;
-  500018: ProductionChain;
-  500022: ProductionChain;
-  500020: ProductionChain;
-  500021: ProductionChain;
-  500566: ProductionChain;
-  500904: ProductionChain;
-  500905: ProductionChain;
-  500906: ProductionChain;
-  500907: ProductionChain;
-  500908: ProductionChain;
-  500909: ProductionChain;
-  500910: ProductionChain;
-  500911: ProductionChain;
-  500913: ProductionChain;
-  500912: ProductionChain;
-  500914: ProductionChain;
-  500916: ProductionChain;
-  501254: ProductionChain;
-  501429: ProductionChain;
-  501637: ProductionChain;
   1010017: Product;
   1010190: Product;
   1010052: Product;
@@ -14464,6 +14531,18 @@ export interface CityInstitutionBuilding extends Building {
 export interface IncidentResolverUnit extends Asset {
 }
 
+export interface ConstructionMenu extends Asset {
+  constructionMenu: ConstructionMenuData;
+}
+
+export interface ConstructionCategory extends Asset {
+  constructionCategory: ConstructionCategoryData;
+}
+
+export interface ProductionChain extends Asset {
+  chain: ProductionChainNode;
+}
+
 export interface ExpeditionFeature extends Asset {
   expeditionFeature: ExpeditionFeatureData;
 }
@@ -14649,10 +14728,6 @@ export interface QuestLighthouse extends Building {
 
 export interface ParticipantRepresentationFeature extends Asset {
   participant?: ParticipantRepresentationFeatureData;
-}
-
-export interface ProductionChain extends Asset {
-  chain?: ProductionChainNode;
 }
 
 export interface Product extends Asset {
@@ -14864,6 +14939,25 @@ export interface Influence extends BaseAssetObject {
 
 export interface IncidentInfluencer extends BaseAssetObject {
   influence: Record<string, Influence>;
+}
+
+export interface CategoryMode extends BaseAssetObject {
+  tierCategories: number[];
+  buildingCategories: number[];
+}
+
+export interface ConstructionMenuData extends BaseAssetObject {
+  regionMenu: Record<string, CategoryMode>;
+}
+
+export interface ConstructionCategoryData extends BaseAssetObject {
+  description: number;
+  buildingList: number[];
+}
+
+export interface ProductionChainNode extends BaseAssetObject {
+  building: number;
+  nodes?: ProductionChainNode[];
 }
 
 export interface EventLimit extends BaseAssetObject {
@@ -15202,11 +15296,6 @@ export interface CompanyLevelData extends BaseAssetObject {
 export interface ParticipantRepresentationFeatureData extends BaseAssetObject {
   companyLevel?: CompanyLevelData;
   colors: string[];
-}
-
-export interface ProductionChainNode extends BaseAssetObject {
-  building: number;
-  nodes?: ProductionChainNode[];
 }
 
 export interface ProductData extends BaseAssetObject {
