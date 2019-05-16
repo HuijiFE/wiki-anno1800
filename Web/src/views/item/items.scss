@@ -4,15 +4,13 @@
 @include comp('items') {
   $gap: 4;
   $grid-size: 80;
-  $tab-icon-size: 20;
-  $tab-font-size: 14;
 
   position: relative;
   flex: 1 1 100%;
   max-width: 100%;
   min-width: 0;
 
-  @include elem('tabs', 'tab-item', 'grid', 'cell') {
+  @include elem('grid', 'cell') {
     position: relative;
     display: flex;
     flex-flow: row wrap;
@@ -23,71 +21,13 @@
     padding: 0;
     margin: 0;
   }
-
   @include elem('grid') {
     padding: px($gap * 2) 0;
     margin: 0 px(-$gap / 2);
   }
   @include elem('cell') {
     padding: px($gap / 2);
-
     @extend .a-roll-out;
-  }
-
-  @include elem('tabs') {
-    display: inline-flex;
-    background-color: darken(white, 40%);
-    border-radius: px($border-radius-base);
-    padding: px(1);
-    // margin: px(-1);
-  }
-  @include elem('tab-item') {
-    // padding: px(1);
-  }
-
-  @include elem('tab-button') {
-    position: relative;
-    flex: none;
-    display: inline-flex;
-    justify-content: flex-start;
-    align-content: center;
-    align-items: center;
-
-    font-size: px($tab-font-size);
-    line-height: 1;
-
-    height: px($tab-icon-size / $golden-ratio);
-    padding: 0 px($tab-icon-size * $golden-ratio);
-    margin: 0;
-    border: px(1) solid;
-    border-color: rgba(white, 0.3) rgba($color-brown, 0.1) rgba($color-brown, 0.2);
-    border-radius: px($border-radius-base);
-    color: white;
-  }
-  @include elem('tab-button-icon') {
-    font-size: px($tab-icon-size);
-    margin-right: px($tab-font-size * $golden-ratio);
-  }
-  @include elem('tab-button-icon', 'tab-button-label') {
-    opacity: 0.8;
-    filter: saturate(0) brightness(0.4);
-  }
-  @include elem('tab-button') {
-    outline: 0;
-    background-color: $color-bisque;
-    &:hover,
-    &:focus {
-      background-color: lighten($color: $color-bisque, $amount: 5%);
-    }
-    @include when('selected') {
-      background-color: $color-brown;
-      &:hover {
-        background-color: lighten($color: $color-brown, $amount: 5%);
-      }
-      @include elem('tab-button-icon', 'tab-button-label') {
-        filter: saturate(0) brightness(1);
-      }
-    }
   }
 
   @include elem('item') {
@@ -107,10 +47,12 @@
     border-radius: px($border-radius-base);
     padding: px(4);
   }
-  @include elem('item-container', 'item-icon', 'item-label') {
+
+  @include elem('socket', 'icon', 'label') {
     position: relative;
   }
-  @include elem('item-container') {
+
+  @include elem('socket') {
     display: flex;
     width: px($grid-size * $golden-ratio);
     height: px($grid-size * $golden-ratio);
@@ -122,20 +64,26 @@
       z-index: 2;
     }
   }
-  @include elem('item-icon') {
+
+  @include elem('icon') {
     z-index: 3;
     width: 100%;
     height: 100%;
   }
-  @include elem('item-label') {
+
+  @include elem('label') {
     flex: 1;
     text-align: center;
     font-size: px(12);
     padding-top: px(4);
   }
+
   @include elem('item') {
     outline: 0;
-    color: $color-peru;
+    &,
+    &:visited {
+      color: $color-peru;
+    }
     background-color: $color-bisque;
     &:hover,
     &:focus {
@@ -151,7 +99,7 @@
     )
   ) {
     @include elem('item') {
-      @include elem('item-container') {
+      @include elem('socket') {
         background-size: 100%;
         background-position: center;
         background-image: url($bgr-item-holder);
@@ -179,7 +127,7 @@
       }
       @each $rarity in $rarity-set {
         @include when($rarity) {
-          @include elem('item-container') {
+          @include elem('socket') {
             &::before {
               background-color: map-get($map: $rarity-color-map, $key: $rarity);
             }

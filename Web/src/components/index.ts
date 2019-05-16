@@ -10,3 +10,4 @@
 export * from './common/common';
 export * from './info/info';
 export * from './model';
+export * from './toggle/toggle';

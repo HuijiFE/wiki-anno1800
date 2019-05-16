@@ -1,16 +1,16 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
-export interface Basic<T = any> {
-  key?: string | number;
-  label: string;
-  icon: string;
-  link: string;
-  data?: T;
-}
-
-export interface Group<T = Basic> {
+export interface BaseModel<TData = any> {
   key?: string | number;
   label: string;
   icon?: string;
-  items: T[];
+  data?: TData;
+}
+
+export interface Basic<TData = any> extends BaseModel<TData> {
+  link: string;
+}
+
+export interface Group<TItem = Basic, TData = any> extends BaseModel<TData> {
+  items: TItem[];
 }

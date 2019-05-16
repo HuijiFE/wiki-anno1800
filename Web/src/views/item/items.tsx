@@ -127,33 +127,7 @@ export default class VItems extends Vue implements SyncDataView<ItemsState> {
   private render(h: CreateElement): VNode {
     return (
       <div staticClass="v-items" class={[`vp-genre_${this.genre}`]}>
-        {[this.state.groups.slice(0, 6), this.state.groups.slice(6)].map(
-          (cs, ci) =>
-            cs.length > 0 && (
-              <ul
-                staticClass="v-items_tabs"
-                id={`tabs-${this.genre}-${ci}`}
-                role="tablist"
-              >
-                {cs.map((group, index) => (
-                  <li key={group.key} staticClass="v-items_tab-item">
-                    <button
-                      staticClass="v-items_tab-button"
-                      class={{ 'is-selected': this.selectedIndex === index + ci * 6 }}
-                      onClick={() => (this.selectedIndex = index + ci * 6)}
-                      id={`tab-${group.key}`}
-                      role="tab"
-                      aria-controls={`tabpanel-${group.key}`}
-                      aria-selected={this.selectedIndex === index + ci * 6}
-                    >
-                      <c-icon staticClass="v-items_tab-button-icon" icon={group.icon} />
-                      <span staticClass="v-items_tab-button-label">{group.label}</span>
-                    </button>
-                  </li>
-                ))}
-              </ul>
-            ),
-        )}
+        <c-toggle vModel={this.selectedIndex} items-source={this.state.groups} />
         <ul
           key={this.state.groups[this.selectedIndex].key}
           staticClass="v-items_grid"
@@ -170,15 +144,13 @@ export default class VItems extends Vue implements SyncDataView<ItemsState> {
                 }}
                 href={this.state.basics[guid].link}
               >
-                <span staticClass="v-items_item-container">
+                <span staticClass="v-items_socket">
                   <c-icon
-                    staticClass="v-items_item-icon"
+                    staticClass="v-items_icon"
                     icon={this.state.basics[guid].icon}
                   />
                 </span>
-                <span staticClass="v-items_item-label">
-                  {this.state.basics[guid].label}
-                </span>
+                <span staticClass="v-items_label">{this.state.basics[guid].label}</span>
               </a>
             </li>
           ))}
