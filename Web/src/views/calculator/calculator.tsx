@@ -27,12 +27,14 @@ import {
   GUID_LIST_WORKFORCE,
 } from '@src/utils';
 import { BaseModel, Basic, Group } from '@src/components';
+import { VCalcIo } from './calc-io';
+import { VCalcProduct } from './calc-product';
 
-interface ModelAmount extends BaseModel {
+export interface ModelAmount extends BaseModel {
   amount: number;
 }
 
-interface ModelBuilding extends ModelAmount {
+export interface ModelIO extends ModelAmount {
   inputs: [number, number][];
   outputs: [number, number][];
 }
@@ -46,7 +48,7 @@ interface CalculatorState {
   residenceList: number[];
   factoryList: number[];
   shipList: number[];
-  ioMap: Record<number, ModelBuilding>;
+  ioMap: Record<number, ModelIO>;
 }
 
 /**
@@ -54,6 +56,10 @@ interface CalculatorState {
  */
 @Component({
   mixins: [MIXIN_SYNC_DATA_VIEW],
+  components: {
+    VCalcIo,
+    VCalcProduct,
+  },
 })
 export default class VCalculator extends Vue implements SyncDataView<CalculatorState> {
   public title(): string {
@@ -90,7 +96,7 @@ export default class VCalculator extends Vue implements SyncDataView<CalculatorS
     const residenceList: number[] = [...workforceList];
     const factoryList: number[] = [];
     const shipList: number[] = [];
-    const ioMap: Record<number, ModelBuilding> = {};
+    const ioMap: Record<number, ModelIO> = {};
 
     this.$dbList
       .filter((a): a is ResidenceBuilding7 => 'residnece7' in a)
@@ -144,10 +150,10 @@ export default class VCalculator extends Vue implements SyncDataView<CalculatorS
         if (factory) {
           factory.inputs
             .filter(i => productMap[i.product] && i.amount > 0)
-            .forEach(i => inputs.push([i.product, i.amount]));
+            .forEach(i => inputs.push([i.product, (i.amount * 60) / factory.cycleTime]));
           factory.outputs
             .filter(o => productMap[o.product] && o.amount > 0)
-            .forEach(o => outputs.push([o.product, o.amount]));
+            .forEach(o => outputs.push([o.product, (o.amount * 60) / factory.cycleTime]));
         }
 
         if (inputs.length + outputs.length > 0) {
@@ -162,7 +168,7 @@ export default class VCalculator extends Vue implements SyncDataView<CalculatorS
         }
       });
 
-    const factoryMap: Record<number, ModelBuilding> = {};
+    const factoryMap: Record<number, ModelIO> = {};
     const isBuilding = (a: Asset): a is Building => 'building' in a;
 
     return {
@@ -194,68 +200,37 @@ export default class VCalculator extends Vue implements SyncDataView<CalculatorS
       <div staticClass="v-calculator">
         <div staticClass="v-calculator_ios">
           {[residenceList, factoryList, shipList].map((ios, i) => (
-            <ul key={i}>
-              {ios.map(guid => {
-                const io = ioMap[guid];
-                return (
-                  <li key={guid}>
-                    <c-icon icon={io.icon} />
-                    <button onClick={() => io.amount--}>-</button>
-                    <span>{io.amount}</span>
-                    <button onClick={() => io.amount++}>+</button>
-                    <ul>
-                      <li>{io.label}</li>
-                      {io.inputs.map(([ip, amount]) => (
-                        <li key={ip}>
-                          <c-icon key={ip} icon={productMap[ip].icon} />-
-                          {amount * io.amount}
-                        </li>
-                      ))}
-                      {io.outputs.map(([op, amount]) => (
-                        <li key={op}>
-                          <c-icon key={op} icon={productMap[op].icon} />+
-                          {amount * io.amount}
-                        </li>
-                      ))}
-                    </ul>
-                  </li>
-                );
-              })}
-            </ul>
+            <div key={i} staticClass="v-calculator_wrapper">
+              {ios.map(guid => (
+                <v-calc-io
+                  key={guid}
+                  vModel={ioMap[guid].amount}
+                  io={ioMap[guid]}
+                  product-map={productMap}
+                />
+              ))}
+            </div>
           ))}
         </div>
 
         <div staticClass="v-calculator_products">
           {[supplyList, workforceList, productList].map((products, i) => (
-            <ul key={i}>
-              {products.map(guid => {
-                const prod = this.state.productMap[guid];
-                return (
-                  <li key={guid}>
-                    <c-icon icon={prod.icon} />
-                    <span>{prod.label}</span>
-                    <span>
-                      {Object.values(ioMap).reduce(
-                        (total, io) =>
-                          total -
-                          io.inputs.reduce(
-                            (subtrahend, [ip, amount]) =>
-                              (ip === guid && amount) || subtrahend,
-                            0,
-                          ) +
-                          io.outputs.reduce(
-                            (addend, [ip, amount]) => (ip === guid && amount) || addend,
-                            0,
-                          ),
-                        0,
-                      )}
-                    </span>
-                  </li>
-                );
-              })}
-            </ul>
+            <div key={i} staticClass="v-calculator_wrapper">
+              {products.map(guid => (
+                <v-calc-product
+                  key={guid}
+                  guid={guid}
+                  product={productMap[guid]}
+                  io-map={ioMap}
+                />
+              ))}
+            </div>
           ))}
         </div>
+
+        <pre>
+          {JSON.stringify([this.state.productMap, this.state.ioMap], undefined, '  ')}
+        </pre>
       </div>
     );
   }

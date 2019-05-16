@@ -6,4 +6,9 @@
   flex: 1 1 100%;
   max-width: 100%;
   min-width: 0;
+
+  @include elem('wrapper') {
+    display: flex;
+    flex-flow: row wrap;
+  }
 }
