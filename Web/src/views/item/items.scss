@@ -30,6 +30,8 @@
   }
   @include elem('cell') {
     padding: px($gap / 2);
+
+    @extend .a-roll-out;
   }
 
   @include elem('tabs') {

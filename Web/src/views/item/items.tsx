@@ -155,6 +155,7 @@ export default class VItems extends Vue implements SyncDataView<ItemsState> {
             ),
         )}
         <ul
+          key={this.state.groups[this.selectedIndex].key}
           staticClass="v-items_grid"
           id={`tabpanel-${this.state.groups[this.selectedIndex].key}`}
           role="tabpanel"

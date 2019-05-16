@@ -20,7 +20,7 @@ export default class VTest extends Vue implements SyncDataView<string> {
   public state: string = '';
 
   public syncData(): string {
-    return '';
+    return console.log(this.$routerPath('products'));
   }
 
   private render(h: CreateElement): VNode {
@@ -31,7 +31,7 @@ export default class VTest extends Vue implements SyncDataView<string> {
         <ul>
           {['products', 'items'].map(path => (
             <li>
-              <router-link to={this.$routerPath(path)}>{path}</router-link>
+              <a href={this.$routerPath(path)}>{path}</a>
             </li>
           ))}
         </ul>

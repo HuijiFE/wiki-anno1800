@@ -3,6 +3,9 @@ import VueRouter from 'vue-router';
 
 declare module 'vue/types/vue' {
   interface Vue {
+    /**
+     * Get full router path for <a/> href
+     */
     $routerPath: (...paths: (string | number)[]) => string;
   }
 }
