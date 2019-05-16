@@ -10,17 +10,22 @@ import {
 } from 'vue-property-decorator';
 import { SyncDataView, MIXIN_SYNC_DATA_VIEW } from '@src/utils';
 
+interface TestState {
+  test: string;
+}
+
 /**
  * Component: Test
  */
 @Component({
   mixins: [MIXIN_SYNC_DATA_VIEW],
 })
-export default class VTest extends Vue implements SyncDataView<string> {
-  public state: string = '';
+export default class VTest extends Vue implements SyncDataView<TestState> {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  public state: TestState = null as any;
 
-  public syncData(): string {
-    return console.log(this.$routerPath('products'));
+  public syncData(): TestState {
+    return { test: 'test' };
   }
 
   private render(h: CreateElement): VNode {
