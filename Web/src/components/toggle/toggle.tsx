@@ -47,7 +47,11 @@ export class CToggle extends Vue {
             <button
               staticClass="c-toggle_button"
               class={{ 'is-selected': this.index === index }}
-              onClick={() => this.$emit('toggle', index)}
+              onClick={() => {
+                if (this.index !== index) {
+                  this.$emit('toggle', index);
+                }
+              }}
               id={this.itemId && this.itemId(item)}
               role={this.itemRole && this.itemRole(item)}
               aria-controls={this.itemAriaControls && this.itemAriaControls(item)}
