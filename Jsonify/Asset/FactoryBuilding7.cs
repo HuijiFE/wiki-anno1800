@@ -30,7 +30,7 @@ namespace Anno1800.Jsonify {
     }
 
     class FactoryData : BaseAssetObject {
-      [Element("CycleTime", 30)]
+      [Element("CycleTime")]
       public int cycleTime;
       public List<FactoryInputOutputPair> inputs;
       public List<FactoryInputOutputPair> outputs;

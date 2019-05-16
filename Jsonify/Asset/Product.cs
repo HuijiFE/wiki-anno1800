@@ -60,9 +60,8 @@ namespace Anno1800.Jsonify {
 
     [Adapter]
     class Product : Asset {
-      [Nullable]
       [Element("Product")]
-      public ProductData? product;
+      public ProductData product;
       [Nullable]
       [Element("ExpeditionAttribute")]
       public ExpeditionAttribute? expeditionAttribute;

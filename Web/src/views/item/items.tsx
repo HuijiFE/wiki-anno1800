@@ -10,14 +10,10 @@ import {
 } from 'vue-property-decorator';
 import {
   ProductFilter,
-  ProductFilterData,
   Product,
   ItemFilter,
-  ItemFilterData,
   ItemBuff,
   ItemData,
-  ItemBalancing,
-  ItemConfigData,
 } from '@public/db/definition';
 import {
   SyncDataView,
@@ -26,7 +22,7 @@ import {
   GUID_TEXT_GOODS,
   GUID_ITEM_FILTER,
   GUID_PRODUCT_FILTER,
-  GUID_OIL,
+  GUID_PRODUCT_OIL,
 } from '@src/utils';
 import { Basic, Group } from '@src/components';
 
@@ -57,7 +53,7 @@ export default class VItems extends Vue implements SyncDataView<ItemsState> {
     const groups: Group<number>[] = [];
 
     if (this.genre === 'products') {
-      const allProds = this.$dbList.filter((a: Product): a is Product => !!a.product);
+      const allProds = this.$dbList.filter((a): a is Product => !!(a as Product).product);
       allProds.forEach(prod => {
         basics[prod.guid] = {
           label: this.$l10n[prod.guid],
@@ -66,16 +62,17 @@ export default class VItems extends Vue implements SyncDataView<ItemsState> {
         };
       });
 
-      ((this.$db[GUID_PRODUCT_FILTER] as ProductFilter)
-        .productFilter as ProductFilterData).categories.forEach(c => {
-        groups.push({
-          key: c.category,
-          label: this.$l10n[c.category],
-          icon: this.$db[c.category].icon,
-          items: [...c.products],
-        });
-      });
-      groups[0].items.push(GUID_OIL);
+      (this.$db[GUID_PRODUCT_FILTER] as ProductFilter).productFilter.categories.forEach(
+        c => {
+          groups.push({
+            key: c.category,
+            label: this.$l10n[c.category],
+            icon: this.$db[c.category].icon,
+            items: [...c.products],
+          });
+        },
+      );
+      groups[0].items.push(GUID_PRODUCT_OIL);
 
       groups.forEach(g => {
         g.label += ` ${g.items.length}`;
@@ -102,8 +99,7 @@ export default class VItems extends Vue implements SyncDataView<ItemsState> {
         };
       });
 
-      ((this.$db[GUID_ITEM_FILTER] as ItemFilter)
-        .itemFilter as ItemFilterData).categories.forEach(c => {
+      (this.$db[GUID_ITEM_FILTER] as ItemFilter).itemFilter.categories.forEach(c => {
         groups.push({
           key: c.category,
           label: this.$l10n[c.category],

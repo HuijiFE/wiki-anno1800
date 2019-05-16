@@ -8,7 +8,9 @@ import {
   Provide,
   Watch,
 } from 'vue-property-decorator';
+import {} from '@public/db/definition';
 import { SyncDataView, MIXIN_SYNC_DATA_VIEW } from '@src/utils';
+import { Basic, Group } from '@src/components';
 
 interface TestState {
   test: string;
@@ -38,7 +40,7 @@ export default class VTest extends Vue implements SyncDataView<TestState> {
         <h1>Test</h1>
         <hr />
         <ul>
-          {['products', 'items', 'construction'].map(path => (
+          {['calculator', 'products', 'items', 'construction'].map(path => (
             <li>
               <a href={this.$routerPath(path)}>{path}</a>
             </li>

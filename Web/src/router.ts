@@ -26,6 +26,14 @@ export function createRouter(): VueRouter {
               import(/* webpackChunkName: "v-home" */ './views/home'),
           },
           {
+            path: 'calculator',
+            name: 'calculator',
+            component: async () =>
+              import(
+                /* webpackChunkName: "v-calculator" */ './views/calculator/calculator'
+              ),
+          },
+          {
             path: ':genre(items|products)',
             name: 'items',
             component: async () =>

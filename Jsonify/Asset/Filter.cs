@@ -26,9 +26,8 @@ namespace Anno1800.Jsonify {
 
     [Adapter]
     class ItemFilter : Asset {
-      [Nullable]
       [Element("ItemFilter")]
-      public ItemFilterData? itemFilter;
+      public ItemFilterData itemFilter;
 
       public ItemFilter(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { }
     }
@@ -53,9 +52,8 @@ namespace Anno1800.Jsonify {
 
     [Adapter]
     class ProductFilter : Asset {
-      [Nullable]
       [Element("ProductFilter")]
-      public ProductFilterData? productFilter;
+      public ProductFilterData productFilter;
 
       public ProductFilter(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { }
     }

@@ -38,9 +38,8 @@ namespace Anno1800.Jsonify {
       [Nullable]
       [Element("Upgradable")]
       public UpgradableData? upgradable;
-      [Nullable]
       [Element("Residence7")]
-      public Residence7? residnece7;
+      public Residence7 residnece7;
 
       public ResidenceBuilding7(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { }
     }
@@ -105,9 +104,8 @@ namespace Anno1800.Jsonify {
 
     [Adapter]
     class PopulationLevel7 : Asset {
-      [Nullable]
       [Element("PopulationLevel7")]
-      public Population7? population7;
+      public Population7 population7;
 
       public PopulationLevel7(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { }
     }

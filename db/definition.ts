@@ -14519,7 +14519,7 @@ export interface Anno extends Asset {
 
 export interface Building extends Asset {
   attackable?: AttackableData;
-  building?: BuildingData;
+  building: BuildingData;
   cost?: CostData;
 }
 
@@ -14602,11 +14602,11 @@ export interface Monument extends FactoryBuilding7 {
 }
 
 export interface ItemFilter extends Asset {
-  itemFilter?: ItemFilterData;
+  itemFilter: ItemFilterData;
 }
 
 export interface ProductFilter extends Asset {
-  productFilter?: ProductFilterData;
+  productFilter: ProductFilterData;
 }
 
 export interface Guildhouse extends Building {
@@ -14731,7 +14731,7 @@ export interface ParticipantRepresentationFeature extends Asset {
 }
 
 export interface Product extends Asset {
-  product?: ProductData;
+  product: ProductData;
   expeditionAttribute?: ExpeditionAttribute;
 }
 
@@ -14764,11 +14764,11 @@ export interface RepairCrane extends Building {
 
 export interface ResidenceBuilding7 extends Building {
   upgradable?: UpgradableData;
-  residnece7?: Residence7;
+  residnece7: Residence7;
 }
 
 export interface PopulationLevel7 extends Asset {
-  population7?: Population7;
+  population7: Population7;
 }
 
 export interface PopulationGroup7 extends Asset {
@@ -14901,7 +14901,7 @@ export interface BaseAssetObject {
 export interface BuildingData extends BaseAssetObject {
   type: string;
   terrian: string;
-  region: string;
+  regions: string[];
   category: number;
   pickingAsset: number;
 }

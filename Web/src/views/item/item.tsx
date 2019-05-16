@@ -25,7 +25,7 @@ import {
   GUID_PRODUCT_FILTER,
   GUID_ITEM_FILTER,
   GUID_ITEM_BALANCING,
-  GUID_OIL,
+  GUID_PRODUCT_OIL,
 } from '@src/utils';
 import { Basic, Group } from '@src/components';
 

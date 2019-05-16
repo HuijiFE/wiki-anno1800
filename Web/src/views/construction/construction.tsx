@@ -31,7 +31,7 @@ import {
 import { Basic, Group } from '@src/components';
 
 interface ConstructionState {
-  buildings: Record<number, Basic>;
+  buildings: Record<number, Basic<string[]>>;
   chains: Record<number, Basic<ProductionChainNode>>;
   subCategories: Record<number, Group<number>>;
   regions: Group<Group<Group<number>>>[];
@@ -58,7 +58,7 @@ export default class VConstruction extends Vue
       this.$db[GUID_REGION_MODERATE],
       this.$db[GUID_REGION_COLONY01],
     ] as Region[]).map<Group<Group<Group<number>>>>(rg => ({
-      key: rg.guid,
+      key: rg.region.id,
       label: this.$l10n[rg.guid],
       icon: rg.icon,
       items: [
@@ -135,6 +135,7 @@ export default class VConstruction extends Vue
           label: this.$l10n[guid],
           icon: this.$db[guid].icon,
           link: this.$routerPath('building', guid),
+          data: [...(this.$db[guid] as Building).building.regions],
         };
         return record;
       }, {}),
@@ -161,7 +162,7 @@ export default class VConstruction extends Vue
 
   private selectedCategory: number = 0;
 
-  private renderBuilding(building: Basic): VNode {
+  private renderBuilding(building: Basic<string[]>): VNode {
     return (
       <a staticClass="v-construction_building" href={building.link}>
         <c-icon staticClass="v-construction_building-icon" icon={building.icon} />

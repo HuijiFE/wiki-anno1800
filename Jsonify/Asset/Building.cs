@@ -13,7 +13,7 @@ namespace Anno1800.Jsonify {
       [Element("TerrainType")]
       public string terrian;
       [Element("AssociatedRegions")]
-      public string region;
+      public List<string> regions;
       [Element("BuildingCategoryName")]
       public int category;
       [Element("PickingAsset")]
@@ -26,9 +26,8 @@ namespace Anno1800.Jsonify {
       [Nullable]
       [Element("Attackable")]
       public AttackableData? attackable;
-      [Nullable]
       [Element("Building")]
-      public BuildingData? building;
+      public BuildingData building;
       [Nullable]
       [Element("Cost")]
       public CostData? cost;
