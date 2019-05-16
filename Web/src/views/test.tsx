@@ -8,12 +8,21 @@ import {
   Provide,
   Watch,
 } from 'vue-property-decorator';
+import { SyncDataView, MIXIN_SYNC_DATA_VIEW } from '@src/utils';
 
 /**
  * Component: Test
  */
-@Component
-export default class VTest extends Vue {
+@Component({
+  mixins: [MIXIN_SYNC_DATA_VIEW],
+})
+export default class VTest extends Vue implements SyncDataView<string> {
+  public state: string = '';
+
+  public syncData(): string {
+    return '';
+  }
+
   private render(h: CreateElement): VNode {
     return (
       <div staticClass="v-test">

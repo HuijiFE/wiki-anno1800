@@ -5,6 +5,7 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 
 import * as utils from './utils';
+import { components } from './utils/components';
 import { createRouter } from './router';
 import VApp from './views/app';
 
@@ -14,6 +15,8 @@ Object.values(utils).forEach(u => {
     Vue.use(u);
   }
 });
+// Install all Vue components
+Vue.use(components);
 
 Vue.config.productionTip = false;
 

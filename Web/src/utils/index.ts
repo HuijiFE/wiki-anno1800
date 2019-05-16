@@ -7,7 +7,6 @@
  * All utils
  */
 
-export * from './components';
 export * from './constants';
 export * from './database';
 export * from './debug';

@@ -1,4 +1,5 @@
 import Vue, { PluginObject } from 'vue';
+import VueRouter from 'vue-router';
 
 declare module 'vue/types/vue' {
   interface Vue {
@@ -8,10 +9,10 @@ declare module 'vue/types/vue' {
 
 let $$Vue: typeof Vue;
 
-export const baseRouterPath = '/wiki/Anno1800/';
+export const BASE_ROUTER_PATH = '/wiki/Anno1800/';
 
 function resolveRouterPath(this: Vue, ...paths: (string | number)[]): string {
-  return `${baseRouterPath}${this.$route.params.language}/${paths.join('/')}`.replace(
+  return `${BASE_ROUTER_PATH}${this.$route.params.language}/${paths.join('/')}`.replace(
     /\/+/,
     '/',
   );

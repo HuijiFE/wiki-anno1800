@@ -25,7 +25,7 @@ const optionsList: GenFilesOptions[] = [
   // utils
   {
     comments: ['All utils'],
-    patterns: ['src/utils/**/*.ts'],
+    patterns: ['src/utils/**/*.ts', '!src/utils/components.ts'],
     output: 'src/utils/index.ts',
   },
 ];

@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import { baseRouterPath } from '@src/utils';
+import { BASE_ROUTER_PATH } from '@src/utils';
 import VLocalization from './views/localization';
 
 Vue.use(VueRouter);
@@ -8,7 +8,7 @@ Vue.use(VueRouter);
 export function createRouter(): VueRouter {
   return new VueRouter({
     mode: 'history',
-    base: baseRouterPath,
+    base: BASE_ROUTER_PATH,
     routes: [
       {
         path: '/',

@@ -7,6 +7,23 @@ export interface AssetDict {
   readonly [guid: number]: Asset;
 }
 
+export function resolveDatabase(dataset: Asset[][]): [AssetDict, ReadonlyArray<Asset>] {
+  const dict: Record<number, Asset> = {};
+  const list: Asset[] = dataset.reduce(
+    (agg, cur) => {
+      cur.forEach(a => {
+        dict[a.guid] = a;
+        agg.push(a);
+      });
+      return agg;
+    },
+    [] as Asset[],
+  );
+  list.sort((a, b) => a.guid - b.guid);
+
+  return [dict, list];
+}
+
 declare module 'vue/types/vue' {
   interface VueConstructor<V extends Vue = Vue> {
     readonly $db: AssetDict;
@@ -30,21 +47,10 @@ export const database: PluginObject<never> = {
     $$Vue = $Vue;
 
     const dbLoad = async (): Promise<void> => {
-      const dataDicts = await Promise.all(
+      const dataset = await Promise.all(
         allTemplates.map(t => getResource<Asset[]>(`/db/${t}.json`)),
       );
-      const dict: Record<number, Asset> = {};
-      const list: Asset[] = dataDicts.reduce(
-        (agg, cur) => {
-          cur.forEach(a => {
-            dict[a.guid] = a;
-            agg.push(a);
-          });
-          return agg;
-        },
-        [] as Asset[],
-      );
-      list.sort((a, b) => a.guid - b.guid);
+      const [dict, list] = resolveDatabase(dataset);
       $Vue.prototype.$db = dict;
       $Vue.prototype.$dbList = list;
       ($Vue.$db as any) = dict;
