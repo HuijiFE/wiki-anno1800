@@ -38,6 +38,14 @@ export function createRouter(): VueRouter {
               import(/* webpackChunkName: "v-item" */ './views/item/item'),
           },
           {
+            path: 'construction',
+            name: 'construction',
+            component: async () =>
+              import(
+                /* webpackChunkName: "v-construction" */ './views/construction/construction'
+              ),
+          },
+          {
             path: '*',
             name: 'test',
             component: async () =>

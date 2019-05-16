@@ -8,6 +8,8 @@ using System.Xml.Linq;
 namespace Anno1800.Jsonify {
   partial class Asset {
     class RegionData : BaseAssetObject {
+      [Element("RegionID")]
+      public string id;
       [Element("PopulationGroup")]
       public int populationGroup;
       public List<int> cityNames;

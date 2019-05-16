@@ -1,7 +1,8 @@
 /**
  * Animation: Roll Out
  */
-.a-roll-out {
+.a-roll-out,
+%a-roll-out {
   @keyframes animation-roll-out {
     from {
       opacity: 0;
@@ -15,10 +16,80 @@
 
   opacity: 0;
   transform: scale3d(0.75, 0.75, 0.75);
+
   animation: animation-roll-out 0.4s ease forwards;
-  @for $i from 1 through 2000 {
+}
+
+/**
+ * Animation: Fade In
+ */
+.a-fade-in,
+%a-fade-in {
+  @keyframes animation-fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  opacity: 0;
+
+  animation: animation-fade-in 0.5s ease forwards;
+}
+
+/**
+ * Animation: Fade Left In
+ */
+.a-fade-left-in,
+%a-fade-left-in {
+  @keyframes animation-fade-left-in {
+    from {
+      opacity: 0;
+      transform: translateX(-20%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  opacity: 0;
+  transform: translateX(-20%);
+
+  animation: animation-fade-left-in 0.4s ease forwards;
+}
+
+/**
+ * Animation: Fade Right In
+ */
+.a-fade-right-in,
+%a-fade-right-in {
+  @keyframes animation-fade-right-in {
+    from {
+      opacity: 0;
+      transform: translateX(20%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  opacity: 0;
+  transform: translateX(20%);
+
+  animation: animation-fade-right-in 0.4s ease forwards;
+}
+
+/**
+ * Animation: List item delay one by one
+ */
+@mixin animation-list-item($count: 2000, $interval: 8, $base: 0) {
+  @for $i from 1 through $count {
     &:nth-child(n + #{$i}) {
-      animation-delay: 4ms * $i;
+      animation-delay: ($base + $interval * $i) * 1ms;
     }
   }
 }

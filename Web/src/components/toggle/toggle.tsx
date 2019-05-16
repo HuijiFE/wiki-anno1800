@@ -15,6 +15,12 @@ import { BaseModel } from '../model';
  */
 @Component
 export class CToggle extends Vue {
+  @Prop({ type: Boolean, default: false })
+  public readonly originalColor!: boolean;
+
+  @Prop({ type: Boolean, default: false })
+  public readonly hideIcon!: boolean;
+
   @Model('toggle')
   public index!: number;
 
@@ -32,7 +38,10 @@ export class CToggle extends Vue {
 
   private render(h: CreateElement): VNode {
     return (
-      <ul staticClass="c-toggle">
+      <ul
+        staticClass="c-toggle"
+        class={{ 'is-original-color': this.originalColor, 'is-hide-icon': this.hideIcon }}
+      >
         {this.itemsSource.map((item, index) => (
           <li key={item.key} staticClass="c-toggle_item">
             <button

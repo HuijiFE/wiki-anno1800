@@ -34,7 +34,7 @@ export default class VTest extends Vue implements SyncDataView<TestState> {
         <h1>Test</h1>
         <hr />
         <ul>
-          {['products', 'items'].map(path => (
+          {['products', 'items', 'construction'].map(path => (
             <li>
               <a href={this.$routerPath(path)}>{path}</a>
             </li>

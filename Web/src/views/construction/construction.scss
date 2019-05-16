@@ -1,0 +1,287 @@
+/**
+ * Component: Construction
+ */
+@include comp('construction') {
+  $gap: 8;
+  $building-size: 56;
+  $line-width: 2;
+  $line-length: 10;
+  $line-color: mix($color-bisque, $color-dark);
+
+  position: relative;
+  flex: 1 1 100%;
+  max-width: 100%;
+  min-width: 0;
+
+  @include elem('menu') {
+    position: relative;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+  }
+  @include elem('sub-menu') {
+    &:not(:last-child) {
+      margin-bottom: px($gap);
+    }
+  }
+
+  @include elem('wrapper', 'item') {
+    position: relative;
+    flex: 1 0 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+
+    padding: 0;
+    margin: 0;
+  }
+  @include elem('wrapper') {
+    padding: px($gap / 2) 0;
+  }
+  @include elem('item') {
+    flex: none;
+    padding: px($gap / 2) 0;
+    @include when('set') {
+      flex: 1 0 100%;
+    }
+
+    // animation
+    @extend %a-fade-in;
+    @include animation-list-item(50, 30);
+  }
+
+  @include elem('building') {
+    position: relative;
+    display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+    width: px($building-size);
+    height: px($building-size / (60 / 76));
+
+    background: center/100% no-repeat url($bgr-constr-normal);
+  }
+  @include elem('building-icon') {
+    font-size: px(sqrt($building-size * $building-size * $golden-ratio));
+  }
+  @include elem('building-label') {
+    position: absolute;
+    top: px(0);
+    bottom: px(0);
+    left: px(0);
+    right: px(0);
+
+    padding: px(4);
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+    text-align: center;
+    font-size: px(12);
+    color: white;
+    background-color: rgba(black, 0.5);
+  }
+  @include elem('building') {
+    @include elem('building-label') {
+      opacity: 0;
+      transition: opacity 0.2s ease-in-out;
+    }
+    &:hover {
+      @include elem('building-label') {
+        opacity: 1;
+      }
+    }
+  }
+
+  @include elem('set') {
+    position: relative;
+    flex: none;
+
+    min-width: px($mobile-content-width);
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: stretch;
+    background: center/cover no-repeat url($bgr-constr-main-pattern);
+  }
+  @include elem('set-header') {
+    position: relative;
+    flex: none;
+
+    padding: px(6) px(8);
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+
+    white-space: nowrap;
+
+    color: $color-bisque;
+
+    border-bottom: px(1) solid transparent;
+    &::after {
+      content: ' ';
+      position: absolute;
+      bottom: px(-1);
+      left: 0;
+      right: 0;
+      height: px(1);
+      background: linear-gradient(
+        to right,
+        rgba($color-bisque, 0.5),
+        transparent,
+        rgba($color-bisque, 0.5)
+      );
+    }
+  }
+  @include elem('set-icon') {
+    font-size: px(16);
+    margin-right: px(4);
+  }
+  @include elem('set-label') {
+    font-size: px(12);
+  }
+
+  @include elem('set-body', 'set-item') {
+    position: relative;
+    flex: none;
+
+    margin: 0;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+  }
+  @include elem('set-body') {
+    flex: 1 0 100%;
+    padding: px($gap * 2);
+    @include when('chain') {
+      padding: px($gap);
+      justify-content: center;
+    }
+  }
+  @include elem('set-item') {
+    // animation
+    @extend %a-fade-left-in;
+    @include animation-list-item(50, 30, 30);
+  }
+
+  @include elem('chain') {
+    @include elem('building') {
+      width: px($building-size);
+      height: px($building-size);
+      background-image: url($bgr-constr-chain);
+    }
+    @include elem('building-label') {
+      border-radius: 50%;
+    }
+  }
+
+  @include elem('chain', 'chain-nodes') {
+    position: relative;
+    flex: none;
+    padding: 0;
+    margin: 0;
+  }
+  @include elem('chain') {
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    justify-content: flex-end;
+    align-content: center;
+    align-items: center;
+
+    padding: px($gap / 2);
+  }
+  @include elem('chain-nodes') {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-content: flex-end;
+    align-items: flex-end;
+
+    margin: px(-$gap / 2);
+
+    padding-right: px($line-length - $gap / 2);
+    margin-right: px($line-length);
+    border-right: px($line-width) solid transparent;
+  }
+
+  @include elem('chain', 'chain-nodes') {
+    @include elem('building') {
+      &::before,
+      &::after {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+        display: block;
+        width: px($line-length + $line-width);
+        height: px($line-width);
+        background-color: $line-color;
+      }
+    }
+  }
+  @include elem('chain') {
+    @include elem('building') {
+      &::after {
+        content: ' ';
+        right: px($building-size);
+      }
+      &:last-child::after {
+        display: none;
+      }
+    }
+  }
+  @include elem('chain-nodes') {
+    @include elem('building') {
+      &::before {
+        content: ' ';
+        left: px($building-size);
+      }
+    }
+  }
+
+  @include elem('chain') {
+    @include elem('chain') {
+      &::before,
+      &::after {
+        content: ' ';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: px(-($line-length + $line-width - $gap / 2));
+        display: block;
+        width: px($line-width);
+        background-color: $line-color;
+      }
+      &::before {
+        bottom: 50%;
+      }
+      &::after {
+        top: 50%;
+      }
+      &:first-child::before {
+        display: none;
+      }
+      &:last-child::after {
+        display: none;
+      }
+    }
+  }
+}

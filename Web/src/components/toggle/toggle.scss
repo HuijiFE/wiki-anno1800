@@ -3,7 +3,7 @@
  */
 @include comp('toggle') {
   $icon-size: 20;
-  $font-size: 14;
+  $font-size: 13;
 
   position: relative;
   flex: none;
@@ -19,7 +19,7 @@
   padding: px(1);
   margin: 0;
 
-  background-color: darken(white, 40%);
+  // background-color: darken(white, 40%);
   border-radius: px($border-radius-base);
 
   @include elem('item') {
@@ -31,6 +31,10 @@
 
     padding: 0;
     margin: 0;
+
+    // animation
+    @extend .a-fade-in;
+    @include animation-list-item(50, 24);
   }
 
   @include elem('button') {
@@ -53,7 +57,7 @@
     padding: 0 px($icon-size * $golden-ratio);
     margin: 0;
     border: px(1) solid;
-    border-color: rgba(white, 0.3) rgba($color-brown, 0.1) rgba($color-brown, 0.2);
+    border-color: rgba(white, 0.3) rgba($color-brown, 0.15) rgba($color-brown, 0.3);
     border-radius: px($border-radius-base);
     color: white;
   }
@@ -86,6 +90,25 @@
       @include elem('icon', 'label') {
         filter: saturate(0) brightness(1);
       }
+    }
+  }
+
+  @include when('original-color') {
+    @include elem('icon') {
+      filter: none;
+    }
+    @include elem('button') {
+      @include when('selected') {
+        @include elem('icon') {
+          filter: none;
+        }
+      }
+    }
+  }
+
+  @include when('hide-icon') {
+    @include elem('icon') {
+      display: none;
     }
   }
 }

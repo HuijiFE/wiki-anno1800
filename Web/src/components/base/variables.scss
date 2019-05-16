@@ -1,5 +1,7 @@
 // Common
 
+$mobile-content-width: 330;
+
 @function sqrt($r) {
   $x0: 1;
   $x1: $x0;
@@ -56,3 +58,8 @@ $rarity-bgr-map: (
   Legendary:    resource('data/ui/2kimages/main/assets/button_bg/btn_itemsocket_legendary.png'),
   Quest:        resource('data/ui/2kimages/main/assets/button_bg/btn_itemsocket_legendary.png'),
 );
+
+// Construction
+$bgr-constr-normal: resource('data/ui/2kimages/main/assets/construction_bar/btn_construction_normal.png');
+$bgr-constr-chain: resource('data/ui/2kimages/main/assets/construction_bar/btn_constr_chain_large_normal.png');
+$bgr-constr-main-pattern: resource('data/ui/2kimages/main/assets/construction_bar/bgr_constr_chain_mainpattern.png');

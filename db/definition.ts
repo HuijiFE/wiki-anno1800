@@ -15370,6 +15370,7 @@ export interface MarketData extends BaseAssetObject {
 }
 
 export interface RegionData extends BaseAssetObject {
+  id: string;
   populationGroup: number;
   cityNames: number[];
   shipNames: number[];
