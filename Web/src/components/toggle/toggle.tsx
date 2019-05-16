@@ -21,7 +21,7 @@ export class CToggle extends Vue {
   @Prop({ type: Boolean, default: false })
   public readonly hideIcon!: boolean;
 
-  @Model('toggle')
+  @Model('toggle', { type: Number, required: true })
   public index!: number;
 
   @Prop({ type: Array, required: true })
