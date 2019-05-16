@@ -40,6 +40,10 @@ interface ItemState {
   mixins: [MIXIN_SYNC_DATA_VIEW],
 })
 export default class VItem extends Vue implements SyncDataView<ItemState> {
+  public title(): string {
+    return 'item';
+  }
+
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   public state: ItemState = null as any;
 

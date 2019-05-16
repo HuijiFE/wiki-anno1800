@@ -1,7 +1,9 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import Vue, { ComponentOptions } from 'vue';
+import { gameNameLocalization, Language } from './localization';
 
 export interface SyncDataView<T = any> {
+  title(): string;
   state: T;
   syncData(): T;
 }
@@ -36,5 +38,14 @@ export const MIXIN_SYNC_DATA_VIEW: ComponentOptions<Vue> = {
     } else {
       this.state = deserialize();
     }
+  },
+  beforeMount(this: Vue & SyncDataView) {
+    const title = [] as string[];
+
+    title.push(this.title());
+    title.push(gameNameLocalization[this.$route.params.language as Language]);
+    title.push(gameNameLocalization.en);
+
+    document.title = [...new Set(title)].filter(t => !!t).join(' | ');
   },
 };

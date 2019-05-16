@@ -13,6 +13,11 @@ const languageMap: Record<Language, string> = {
   'zh-CN': 'chinese',
 };
 
+export const gameNameLocalization: Record<Language, string> = {
+  en: 'Anno 1800',
+  'zh-CN': '纪元 1800',
+};
+
 declare module 'vue/types/vue' {
   interface VueConstructor<V extends Vue = Vue> {
     readonly $l10n: LocalizationDict;

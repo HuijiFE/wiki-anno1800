@@ -21,6 +21,10 @@ interface TestState {
   mixins: [MIXIN_SYNC_DATA_VIEW],
 })
 export default class VTest extends Vue implements SyncDataView<TestState> {
+  public title(): string {
+    return 'Test';
+  }
+
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   public state: TestState = null as any;
 

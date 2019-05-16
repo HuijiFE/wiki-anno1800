@@ -21,6 +21,7 @@ import {
   MIXIN_SYNC_DATA_VIEW,
   GUID_REGION_MODERATE,
   GUID_REGION_COLONY01,
+  GUID_TEXT_PRODUCTION_CHAIN,
   GUID_CONSTRUCTION_MENU,
   GUID_TEXT_SORTING_CATEGORY_TIER,
   ICON_SORTING_CATEGORY_TIER,
@@ -44,6 +45,10 @@ interface ConstructionState {
 })
 export default class VConstruction extends Vue
   implements SyncDataView<ConstructionState> {
+  public title(): string {
+    return this.$l10n[GUID_TEXT_PRODUCTION_CHAIN];
+  }
+
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   public state: ConstructionState = null as any;
 

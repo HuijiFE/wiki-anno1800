@@ -22,9 +22,10 @@ import {
 import {
   SyncDataView,
   MIXIN_SYNC_DATA_VIEW,
-  GUID_PRODUCT_FILTER,
+  GUID_TEXT_ITEMS,
+  GUID_TEXT_GOODS,
   GUID_ITEM_FILTER,
-  GUID_ITEM_BALANCING,
+  GUID_PRODUCT_FILTER,
   GUID_OIL,
 } from '@src/utils';
 import { Basic, Group } from '@src/components';
@@ -41,6 +42,12 @@ interface ItemsState {
   mixins: [MIXIN_SYNC_DATA_VIEW],
 })
 export default class VItems extends Vue implements SyncDataView<ItemsState> {
+  public title(): string {
+    return this.$route.params.genre === 'items'
+      ? this.$l10n[GUID_TEXT_ITEMS]
+      : this.$l10n[GUID_TEXT_GOODS];
+  }
+
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   public state: ItemsState = null as any;
 
