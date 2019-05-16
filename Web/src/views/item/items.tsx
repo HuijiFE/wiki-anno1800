@@ -55,7 +55,7 @@ export default class VItems extends Vue implements SyncDataView<ItemsState> {
         basics[prod.guid] = {
           label: this.$l10n[prod.guid],
           icon: prod.icon,
-          link: this.$routerPath('item', prod.icon),
+          link: this.$routerPath('item', prod.guid),
         };
       });
 
