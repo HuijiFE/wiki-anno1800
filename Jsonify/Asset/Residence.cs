@@ -54,7 +54,7 @@ namespace Anno1800.Jsonify {
       [Element("HappinessValue")]
       public int happiness;
       [Element("MoneyValue")]
-      public int mouney;
+      public int money;
       [Element("FullWeightPopulationCount")]
       public int full;
       [Element("NoWeightPopulationCount")]

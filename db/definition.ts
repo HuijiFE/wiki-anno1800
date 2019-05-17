@@ -15398,7 +15398,7 @@ export interface PopulationInput extends BaseAssetObject {
   amount: number;
   supply: number;
   happiness: number;
-  mouney: number;
+  money: number;
   full: number;
   no: number;
 }
