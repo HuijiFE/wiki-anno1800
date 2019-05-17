@@ -2,12 +2,36 @@
  * Component: Calculator Product
  */
 @include comp('calc-product') {
+  $width: 56;
+  $height: $width / $constr-ratio;
+
   position: relative;
   flex: none;
   max-width: 100%;
   min-width: 0;
+  width: px($width);
+  height: px($height);
 
-  padding: px(8);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 
   white-space: nowrap;
+  color: $color-bisque;
+  background: center / 100% no-repeat url($bgr-constr-normal);
+
+  // animation
+  @extend %a-fade-left-in;
+  @include animation-list-item(200, 4);
+
+  @include elem('icon') {
+    width: px($width * $golden-ratio);
+    height: px($width * $golden-ratio);
+  }
+
+  @include elem('label') {
+    font-size: px(12);
+  }
 }

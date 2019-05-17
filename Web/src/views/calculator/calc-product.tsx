@@ -24,8 +24,8 @@ export class VCalcProduct extends Vue {
   private render(h: CreateElement): VNode {
     return (
       <div staticClass="v-calc-product">
-        <c-icon icon={this.modelSource.icon} />
-        <span>{this.value}</span>
+        <c-icon staticClass="v-calc-product_icon" icon={this.modelSource.icon} />
+        <span staticClass="v-calc-product_label">{this.value}</span>
       </div>
     );
   }

@@ -21,7 +21,10 @@ import {
   ProductionChain,
   ProductionChainNode,
   FactoryBuilding7,
+  ModuleOwnerBuilding,
+  ModuleOwnerData,
   MaintenanceData,
+  UpgradableData,
   PublicServiceData,
   Shipyard,
   Vehicle,
@@ -162,7 +165,15 @@ export default class VCalculator extends Vue implements SyncDataView<CalculatorS
       a: Asset | { maintenance: MaintenanceData },
     ): a is Building & { maintenance: MaintenanceData } =>
       'maintenance' in a && !!a.maintenance;
+    const isUpgradable = (
+      a: Asset | { upgradable: UpgradableData },
+    ): a is Building & { upgradable: UpgradableData } =>
+      'upgradable' in a && !!a.upgradable;
     const isFactory = (a: Asset): a is FactoryBuilding7 => 'factory' in a;
+    const isModuleOwner = (
+      a: Asset | { moduleOwner: ModuleOwnerData },
+    ): a is ModuleOwnerBuilding & { moduleOwner: ModuleOwnerData } =>
+      'moduleOwner' in a && !!a.moduleOwner;
     const isShipyard = (a: Asset): a is Shipyard => 'shipyard' in a;
     const isPublicServiceBuilding = (
       a: Building,
@@ -178,6 +189,8 @@ export default class VCalculator extends Vue implements SyncDataView<CalculatorS
     };
     const resolveBuilding = (guid: number): void => {
       const asset = this.$db[guid];
+      if (!asset) return;
+
       if (!buildingList.includes(guid) && isBuilding(asset) && !isResidence(asset)) {
         if (
           isFactory(asset) ||
@@ -188,6 +201,9 @@ export default class VCalculator extends Vue implements SyncDataView<CalculatorS
           buildingList.push(guid);
           if (guid === GUID_FACTORY_CHARCOAL_BURNER) {
             resolveBuilding(GUID_FACTORY_COAL_MINE);
+          }
+          if (isUpgradable(asset)) {
+            resolveBuilding(asset.upgradable.next);
           }
           if (isShipyard(asset)) {
             asset.shipyard.assemblyOptions.forEach(ship => {
@@ -208,7 +224,7 @@ export default class VCalculator extends Vue implements SyncDataView<CalculatorS
     };
 
     // Construction Category Index for: Consumables Materials City Harbour Culture
-    [2, 0, 1, 3, 4].forEach(index => {
+    [0, 2, 1, 3, 4].forEach(index => {
       ([
         this.$db[GUID_REGION_MODERATE],
         this.$db[GUID_REGION_COLONY01],
@@ -246,6 +262,9 @@ export default class VCalculator extends Vue implements SyncDataView<CalculatorS
           outputs.push([op.product, (op.amount * 60) / factory.cycleTime]),
         );
       }
+      if (isModuleOwner(asset)) {
+        asset.moduleOwner.options.forEach(resolveBuilding);
+      }
       if (isBuilding(asset) && isPublicServiceBuilding(asset)) {
         asset.publicService.publicServiceOutputs.forEach(op => outputs.push([op, 1]));
       }
@@ -274,7 +293,9 @@ export default class VCalculator extends Vue implements SyncDataView<CalculatorS
     };
   }
 
-  public get valueMap(): Record<number, number> {
+  private selected: number = 0;
+
+  private get valueMap(): Record<number, number> {
     const {
       state: {
         supplyList,
@@ -342,7 +363,7 @@ export default class VCalculator extends Vue implements SyncDataView<CalculatorS
       });
       result[GUID_PRODUCT_MONEY] += money * residenceAmount;
       result[workforce] += Math.min(supply, workforceMax) * residenceAmount;
-      if (influenceGenerator && supply > influenceGenerator) {
+      if (influenceGenerator && supply >= influenceGenerator) {
         result[GUID_PRODUCT_INFLUENCE] += 1 * residenceAmount;
       }
     });
@@ -367,19 +388,18 @@ export default class VCalculator extends Vue implements SyncDataView<CalculatorS
     } = this;
 
     return (
-      <div staticClass="v-calculator">
-        <div staticClass="v-calculator_ios">
-          {[residenceList, buildingList, shipList].map((ios, i) => (
-            <div key={i} staticClass="v-calculator_wrapper">
-              {ios.map(guid => (
-                <v-calc-io
-                  key={guid}
-                  vModel={(ioMap[guid] || residenceMap[guid]).amount}
-                  model-source={ioMap[guid] || residenceMap[guid]}
-                  product-map={productMap}
-                />
-              ))}
-            </div>
+      <div staticClass="v-calculator" onClick={() => (this.selected = 0)}>
+        <div staticClass="v-calculator_wrapper">
+          {[...residenceList, ...buildingList, ...shipList].map(guid => (
+            <v-calc-io
+              key={guid}
+              vModel={(ioMap[guid] || residenceMap[guid]).amount}
+              model-source={ioMap[guid] || residenceMap[guid]}
+              product-map={productMap}
+              selected={this.selected === guid}
+              onSelect={() => (this.selected = guid)}
+              onUnselect={() => (this.selected = 0)}
+            />
           ))}
         </div>
 

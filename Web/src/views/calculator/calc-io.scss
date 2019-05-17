@@ -2,12 +2,176 @@
  * Component: Calculator IO
  */
 @include comp('calc-io') {
+  z-index: 10;
+  $width: 56;
+  $height: $width / $constr-ratio;
+  $panel-width: 320;
+  $panel-height: $panel-width * $golden-ratio;
+  $button-width: 44;
+  $button-height: 32;
+
   position: relative;
   flex: none;
   max-width: 100%;
   min-width: 0;
+  width: px($width);
+  height: px($height);
 
-  padding: px(8);
+  display: flex;
 
   white-space: nowrap;
+  color: $color-bisque;
+  background: center / 100% no-repeat url($bgr-constr-normal);
+
+  // animation
+  @extend %a-fade-left-in;
+  @include animation-list-item(200, 4);
+
+  @include elem('trigger') {
+    z-index: 120;
+    position: relative;
+    flex: none;
+    max-width: 100%;
+    min-width: 0;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: center / 100% no-repeat;
+    transform: scaleX(1) scaleY(1);
+  }
+  @include when('selected') {
+    z-index: 20;
+    @include elem('trigger') {
+      background-image: url($bgr-constr-selected);
+      transform: scaleX($constr-selected-width-expand)
+        scaleY($constr-selected-height-expand);
+
+      // animation
+      @extend %a-fade-in;
+      animation-delay: $animate-delay-base / 2;
+    }
+  }
+
+  @include elem('icon') {
+    width: px($width * $golden-ratio);
+    height: px($width * $golden-ratio);
+  }
+
+  @include elem('label') {
+    font-size: px(12);
+  }
+  @include when('selected') {
+    @include elem('label') {
+      position: absolute;
+      top: 100%;
+      left: px(-($panel-width - $width) / 2 / $constr-selected-width-expand);
+      right: px(-($panel-width - $width) / 2 / $constr-selected-width-expand);
+      padding: 0 px($gap-base);
+    }
+  }
+
+  @include elem('panel') {
+    z-index: 110;
+    position: absolute;
+    top: px(-16);
+    left: px(-($panel-width - $width) / 2);
+    right: px(-($panel-width - $width) / 2);
+    min-height: px($panel-height);
+
+    padding: px(32);
+    padding-top: px(130);
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+    border: px(1) solid $color-peru;
+    background: center / cover no-repeat url($bgr-constr-chain-main-pattern);
+
+    // animation
+    @extend %a-fade-top-in;
+  }
+
+  @include elem('button', 'input') {
+    position: relative;
+    max-width: 100%;
+    min-width: 0;
+    width: initial;
+    height: px($button-height);
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+
+    padding: 0;
+    margin: 0;
+    border: none;
+
+    font-size: px(16);
+    color: inherit;
+    background: transparent;
+  }
+
+  @include elem('button') {
+    flex: none;
+    width: px($button-width);
+    font-size: px(14);
+
+    opacity: 0.75;
+    &:hover {
+      opacity: 1;
+    }
+
+    &::after {
+      z-index: -1;
+      content: ' ';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: block;
+      background: center / 100% no-repeat url($bgr-constr-switch-button);
+    }
+
+    // animation
+    &:nth-child(5n + 1),
+    &:nth-child(5n + 2) {
+      @extend %a-fade-right-in;
+    }
+    &:nth-child(5n + 4),
+    &:nth-child(5n + 5) {
+      @extend %a-fade-left-in;
+    }
+    &:nth-child(5n + 2),
+    &:nth-child(5n + 4) {
+      animation-delay: $animate-delay-base;
+    }
+    &:nth-child(5n + 1),
+    &:nth-child(5n + 5) {
+      animation-delay: $animate-delay-base + 0.1s;
+    }
+  }
+
+  @include elem('input') {
+    flex: 1 1 100%;
+
+    // animation
+    @extend %a-fade-in;
+    animation-delay: $animate-delay-base - 0.1s;
+  }
 }

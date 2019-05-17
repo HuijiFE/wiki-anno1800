@@ -1,3 +1,5 @@
+$animate-delay-base: 0.4s;
+
 /**
  * Animation: Roll Out
  */
@@ -17,7 +19,7 @@
   opacity: 0;
   transform: scale3d(0.75, 0.75, 0.75);
 
-  animation: animation-roll-out 0.4s ease forwards;
+  animation: animation-roll-out $animate-delay-base ease forwards;
 }
 
 /**
@@ -36,7 +38,51 @@
 
   opacity: 0;
 
-  animation: animation-fade-in 0.5s ease forwards;
+  animation: animation-fade-in $animate-delay-base ease forwards;
+}
+
+/**
+ * Animation: Fade Top In
+ */
+.a-fade-top-in,
+%a-fade-top-in {
+  @keyframes animation-fade-top-in {
+    from {
+      opacity: 0;
+      transform: translateY(-20%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  opacity: 0;
+  transform: translateY(-20%);
+
+  animation: animation-fade-top-in $animate-delay-base ease forwards;
+}
+
+/**
+ * Animation: Fade Bottom In
+ */
+.a-fade-bottom-in,
+%a-fade-bottom-in {
+  @keyframes animation-fade-bottom-in {
+    from {
+      opacity: 0;
+      transform: translateY(20%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  opacity: 0;
+  transform: translateY(20%);
+
+  animation: animation-fade-bottom-in $animate-delay-base ease forwards;
 }
 
 /**
@@ -58,7 +104,7 @@
   opacity: 0;
   transform: translateX(-20%);
 
-  animation: animation-fade-left-in 0.4s ease forwards;
+  animation: animation-fade-left-in $animate-delay-base ease forwards;
 }
 
 /**
@@ -80,7 +126,7 @@
   opacity: 0;
   transform: translateX(20%);
 
-  animation: animation-fade-right-in 0.4s ease forwards;
+  animation: animation-fade-right-in $animate-delay-base ease forwards;
 }
 
 /**
