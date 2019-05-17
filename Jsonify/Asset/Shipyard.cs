@@ -23,14 +23,10 @@ namespace Anno1800.Jsonify {
     [Adapter]
     class Shipyard : Building {
       [Nullable]
-      [Element("Maintenance")]
-      public MaintenanceData? maintenance;
-      [Nullable]
       [Element("Electric")]
       public ElectricData? electric;
-      [Nullable]
       [Element("Shipyard")]
-      public ShipyardData? shipyard;
+      public ShipyardData shipyard;
 
       public Shipyard(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { }
     }

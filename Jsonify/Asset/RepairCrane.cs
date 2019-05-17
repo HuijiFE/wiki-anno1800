@@ -21,9 +21,6 @@ namespace Anno1800.Jsonify {
     [Adapter]
     class RepairCrane : Building {
       [Nullable]
-      [Element("Maintenance")]
-      public MaintenanceData? maintenance;
-      [Nullable]
       [Element("RepairCrane")]
       public RepairCraneData? repairCrane;
 

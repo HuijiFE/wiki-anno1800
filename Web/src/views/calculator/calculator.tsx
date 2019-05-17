@@ -14,8 +14,17 @@ import {
   Building,
   ResidenceBuilding7,
   PopulationLevel7,
-  PopulationOutput,
+  PopulationInput,
+  Region,
+  ConstructionMenu,
+  ConstructionCategory,
+  ProductionChain,
+  ProductionChainNode,
   FactoryBuilding7,
+  MaintenanceData,
+  PublicServiceData,
+  Shipyard,
+  Vehicle,
 } from '@public/db/definition';
 import {
   SyncDataView,
@@ -25,6 +34,11 @@ import {
   GUID_PRODUCT_MONEY,
   GUID_PRODUCT_INFLUENCE,
   GUID_LIST_WORKFORCE,
+  GUID_REGION_MODERATE,
+  GUID_REGION_COLONY01,
+  GUID_CONSTRUCTION_MENU,
+  GUID_FACTORY_CHARCOAL_BURNER,
+  GUID_FACTORY_COAL_MINE,
 } from '@src/utils';
 import { BaseModel, Basic, Group } from '@src/components';
 import { VCalcIo } from './calc-io';
@@ -39,6 +53,13 @@ export interface ModelIO extends ModelAmount {
   outputs: [number, number][];
 }
 
+export interface ModelResidence extends ModelAmount {
+  needs: PopulationInput[];
+  workforce: number;
+  workforceMax: number;
+  influenceGenerator?: number;
+}
+
 interface CalculatorState {
   supplyList: number[];
   workforceList: number[];
@@ -46,7 +67,9 @@ interface CalculatorState {
   productMap: Record<number, BaseModel>;
 
   residenceList: number[];
-  factoryList: number[];
+  residenceMap: Record<number, ModelResidence>;
+
+  buildingList: number[];
   shipList: number[];
   ioMap: Record<number, ModelIO>;
 }
@@ -94,82 +117,147 @@ export default class VCalculator extends Vue implements SyncDataView<CalculatorS
     }, {});
 
     const residenceList: number[] = [...workforceList];
-    const factoryList: number[] = [];
+    const residenceMap: Record<number, ModelResidence> = {};
+
+    const isResidence = (a: Asset): a is ResidenceBuilding7 => 'residnece7' in a;
+    this.$dbList.filter(isResidence).forEach(residence => {
+      const population = this.$db[residence.residnece7.population] as PopulationLevel7;
+
+      const needs = population.population7.inputs.map<ModelResidence['needs'][0]>(ip => ({
+        ...ip,
+      }));
+      const workforce = population.population7.outputs.filter(o => o.amount > 0)[0]
+        .product;
+      const workforceMax = residence.residnece7.max;
+      const influenceGenerator =
+        residence.residnece7.influenceGenerations.length > 0
+          ? residence.residnece7.influenceGenerations[0].keep
+          : 0;
+
+      const index = residenceList.indexOf(workforce);
+      residenceList[index] = residence.guid;
+      const model: ModelResidence = {
+        label: this.$l10n[residence.guid],
+        icon: population.icon,
+        needs,
+        workforce,
+        workforceMax,
+        amount: 0,
+      };
+      if (influenceGenerator) {
+        model.influenceGenerator = influenceGenerator;
+      }
+      residenceMap[residence.guid] = model;
+    });
+
+    const buildingList: number[] = [];
     const shipList: number[] = [];
     const ioMap: Record<number, ModelIO> = {};
 
-    this.$dbList
-      .filter((a): a is ResidenceBuilding7 => 'residnece7' in a)
-      .forEach(residence => {
-        const inputs: [number, number][] = [];
-        const outputs: [number, number][] = [];
-
-        const population = this.$db[residence.residnece7.population] as PopulationLevel7;
-        const index = residenceList.indexOf(
-          (population.population7.outputs.find(o => o.amount > 0) as PopulationOutput)
-            .product,
-        );
-
-        let money = 0;
-        population.population7.inputs
-          .filter(ip => productMap[ip.product])
-          .forEach(ip => {
-            inputs.push([ip.product, ip.amount * 60]);
-            money += ip.mouney;
-          });
-        outputs.push(
-          [residenceList[index], residence.residnece7.max],
-          [GUID_PRODUCT_MONEY, money],
-        );
-        if (residence.residnece7.influenceGenerations.length > 0) {
-          outputs.push([GUID_PRODUCT_INFLUENCE, 1]);
-        }
-
-        residenceList[index] = residence.guid;
-        ioMap[residence.guid] = {
-          label: this.$l10n[residence.guid],
-          icon: population.icon,
-          inputs,
-          outputs,
-          amount: 0,
-        };
-      });
-
-    this.$dbList
-      .filter((a): a is Building => 'building' in a && !('residnece7' in a))
-      .forEach(building => {
-        const inputs: [number, number][] = [];
-        const outputs: [number, number][] = [];
-
-        const { maintenance, factory } = building as FactoryBuilding7;
-        if (maintenance) {
-          maintenance.maintenances
-            .filter(m => m.amount)
-            .forEach(m => inputs.push([m.product, m.amount]));
-        }
-        if (factory) {
-          factory.inputs
-            .filter(i => productMap[i.product] && i.amount > 0)
-            .forEach(i => inputs.push([i.product, (i.amount * 60) / factory.cycleTime]));
-          factory.outputs
-            .filter(o => productMap[o.product] && o.amount > 0)
-            .forEach(o => outputs.push([o.product, (o.amount * 60) / factory.cycleTime]));
-        }
-
-        if (inputs.length + outputs.length > 0) {
-          factoryList.push(building.guid);
-          ioMap[building.guid] = {
-            label: this.$l10n[building.guid],
-            icon: building.icon,
-            inputs,
-            outputs,
-            amount: 0,
-          };
-        }
-      });
-
-    const factoryMap: Record<number, ModelIO> = {};
+    const isConstructionCategory = (a: Asset): a is ConstructionCategory =>
+      'constructionCategory' in a;
+    const isProductionChain = (a: Asset): a is ProductionChain => 'chain' in a;
     const isBuilding = (a: Asset): a is Building => 'building' in a;
+    const isNeedMaintenance = (
+      a: Asset | { maintenance: MaintenanceData },
+    ): a is Building & { maintenance: MaintenanceData } =>
+      'maintenance' in a && !!a.maintenance;
+    const isFactory = (a: Asset): a is FactoryBuilding7 => 'factory' in a;
+    const isShipyard = (a: Asset): a is Shipyard => 'shipyard' in a;
+    const isPublicServiceBuilding = (
+      a: Building,
+    ): a is Building & { publicService: PublicServiceData } => 'publicService' in a;
+    const isShip = (a: Asset): a is Vehicle => 'shipMaintenance' in a;
+
+    const resolveChainNode = (node: ProductionChainNode): void => {
+      // eslint-disable-next-line
+      resolveBuilding(node.building);
+      if (node.nodes) {
+        node.nodes.forEach(resolveChainNode);
+      }
+    };
+    const resolveBuilding = (guid: number): void => {
+      const asset = this.$db[guid];
+      if (!buildingList.includes(guid) && isBuilding(asset) && !isResidence(asset)) {
+        if (
+          isFactory(asset) ||
+          isShipyard(asset) ||
+          isNeedMaintenance(asset) ||
+          isPublicServiceBuilding(asset)
+        ) {
+          buildingList.push(guid);
+          if (guid === GUID_FACTORY_CHARCOAL_BURNER) {
+            resolveBuilding(GUID_FACTORY_COAL_MINE);
+          }
+          if (isShipyard(asset)) {
+            asset.shipyard.assemblyOptions.forEach(ship => {
+              if (!shipList.includes(ship)) {
+                shipList.push(ship);
+              }
+            });
+          }
+        }
+        return;
+      }
+      if (isConstructionCategory(asset)) {
+        asset.constructionCategory.buildingList.forEach(resolveBuilding);
+      }
+      if (isProductionChain(asset)) {
+        resolveChainNode(asset.chain);
+      }
+    };
+
+    // Construction Category Index for: Consumables Materials City Harbour Culture
+    [2, 0, 1, 3, 4].forEach(index => {
+      ([
+        this.$db[GUID_REGION_MODERATE],
+        this.$db[GUID_REGION_COLONY01],
+      ] as Region[]).forEach(({ region: { id: regionID } }) => {
+        const category = this.$db[
+          (this.$db[GUID_CONSTRUCTION_MENU] as ConstructionMenu).constructionMenu
+            .regionMenu[regionID].buildingCategories[index]
+        ] as ConstructionCategory;
+        category.constructionCategory.buildingList.forEach(resolveBuilding);
+      });
+    });
+
+    [...buildingList, ...shipList].forEach(guid => {
+      const asset = this.$db[guid];
+      const inputs: [number, number][] = [];
+      const outputs: [number, number][] = [];
+
+      if (isShip(asset)) {
+        inputs.push([GUID_PRODUCT_MONEY, asset.shipMaintenance]);
+        if (asset.cost && asset.cost.influenceCostPoints) {
+          inputs.push([GUID_PRODUCT_INFLUENCE, asset.cost.influenceCostPoints]);
+        }
+      }
+      if (isNeedMaintenance(asset)) {
+        asset.maintenance.maintenances.forEach(mt =>
+          inputs.push([mt.product, mt.amount]),
+        );
+      }
+      if (isFactory(asset)) {
+        const { factory } = asset;
+        factory.inputs.forEach(ip =>
+          inputs.push([ip.product, (ip.amount * 60) / factory.cycleTime]),
+        );
+        factory.outputs.forEach(op =>
+          outputs.push([op.product, (op.amount * 60) / factory.cycleTime]),
+        );
+      }
+      if (isBuilding(asset) && isPublicServiceBuilding(asset)) {
+        asset.publicService.publicServiceOutputs.forEach(op => outputs.push([op, 1]));
+      }
+
+      ioMap[guid] = {
+        label: this.$l10n[guid],
+        icon: asset.icon,
+        inputs,
+        outputs,
+        amount: 0,
+      };
+    });
 
     return {
       supplyList,
@@ -178,34 +266,116 @@ export default class VCalculator extends Vue implements SyncDataView<CalculatorS
       productMap,
 
       residenceList,
-      factoryList,
+      residenceMap,
+
+      buildingList,
       shipList,
       ioMap,
     };
   }
 
+  public get valueMap(): Record<number, number> {
+    const {
+      state: {
+        supplyList,
+        workforceList,
+        productList,
+        productMap,
+        residenceList,
+        residenceMap,
+        buildingList: factoryList,
+        shipList,
+        ioMap,
+      },
+    } = this;
+
+    const result = [...supplyList, ...workforceList, ...productList].reduce<
+      Record<number, number>
+    >((map, guid) => {
+      map[guid] = 0;
+      return map;
+    }, {});
+
+    [...factoryList].forEach(guid => {
+      const { inputs, outputs, amount: ioAmount } = ioMap[guid];
+      if (ioAmount === 0) return;
+      inputs.forEach(
+        ([product, amount]) =>
+          (result[product] = (result[product] || 0) - amount * ioAmount),
+      );
+      outputs.forEach(
+        ([product, amount]) =>
+          (result[product] = (result[product] || 0) + amount * ioAmount),
+      );
+    });
+
+    residenceList.forEach(guid => {
+      const { needs, amount: residenceAmount } = residenceMap[guid];
+      if (residenceAmount === 0) return;
+      needs.forEach(nd => {
+        // if the amount of the need is 0, means the need is for abstract product
+        if (nd.amount > 0) {
+          result[nd.product] -= nd.amount * residenceAmount;
+        }
+      });
+    });
+
+    residenceList.forEach(guid => {
+      const {
+        needs,
+        workforce,
+        workforceMax,
+        influenceGenerator,
+        amount: residenceAmount,
+      } = residenceMap[guid];
+      if (residenceAmount === 0) return;
+      let money = 0;
+      let supply = 0;
+      needs.forEach(nd => {
+        if (
+          (nd.amount === 0 && result[nd.product]) ||
+          (nd.amount > 0 && result[nd.product] > 0)
+        ) {
+          money += nd.money;
+          supply += nd.supply;
+        }
+      });
+      result[GUID_PRODUCT_MONEY] += money * residenceAmount;
+      result[workforce] += Math.min(supply, workforceMax) * residenceAmount;
+      if (influenceGenerator && supply > influenceGenerator) {
+        result[GUID_PRODUCT_INFLUENCE] += 1 * residenceAmount;
+      }
+    });
+
+    return result;
+  }
+
   private render(h: CreateElement): VNode {
     const {
-      supplyList,
-      workforceList,
-      productList,
-      productMap,
-      residenceList,
-      factoryList,
-      shipList,
-      ioMap,
-    } = this.state;
+      valueMap,
+      state: {
+        supplyList,
+        workforceList,
+        productList,
+        productMap,
+        residenceList,
+        residenceMap,
+        buildingList,
+        shipList,
+        ioMap,
+      },
+    } = this;
 
     return (
       <div staticClass="v-calculator">
         <div staticClass="v-calculator_ios">
-          {[residenceList, factoryList, shipList].map((ios, i) => (
+          {[residenceList, buildingList, shipList].map((ios, i) => (
             <div key={i} staticClass="v-calculator_wrapper">
               {ios.map(guid => (
                 <v-calc-io
                   key={guid}
-                  vModel={ioMap[guid].amount}
-                  io={ioMap[guid]}
+                  vModel={(ioMap[guid] || residenceMap[guid]).amount}
+                  model-source={ioMap[guid] || residenceMap[guid]}
                   product-map={productMap}
                 />
               ))}
@@ -219,9 +389,8 @@ export default class VCalculator extends Vue implements SyncDataView<CalculatorS
               {products.map(guid => (
                 <v-calc-product
                   key={guid}
-                  guid={guid}
-                  product={productMap[guid]}
-                  io-map={ioMap}
+                  model-source={productMap[guid]}
+                  value={valueMap[guid]}
                 />
               ))}
             </div>
@@ -229,7 +398,14 @@ export default class VCalculator extends Vue implements SyncDataView<CalculatorS
         </div>
 
         <pre>
-          {JSON.stringify([this.state.productMap, this.state.ioMap], undefined, '  ')}
+          {JSON.stringify(
+            {
+              ...this.state,
+              valueMap,
+            },
+            undefined,
+            '  ',
+          )}
         </pre>
       </div>
     );

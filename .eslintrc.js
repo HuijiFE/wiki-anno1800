@@ -6,7 +6,9 @@ module.exports = {
   extends: ['@huiji/typescript'],
   rules: {
     'class-methods-use-this': 'off',
+    'no-param-reassign': ['error', { props: false }],
     'no-return-assign': ['error', 'except-parens'],
+
     '@typescript-eslint/explicit-function-return-type': [
       'error',
       {

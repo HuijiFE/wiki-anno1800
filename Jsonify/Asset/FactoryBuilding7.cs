@@ -53,12 +53,8 @@ namespace Anno1800.Jsonify {
 
     [Adapter]
     class FactoryBuilding7 : Building {
-      [Nullable]
-      [Element("Maintenance")]
-      public MaintenanceData? maintenance;
-      [Nullable]
       [Element("FactoryBase")]
-      public FactoryData? factory;
+      public FactoryData factory;
       [Nullable]
       [Element("Culture")]
       public CultureData? culture;

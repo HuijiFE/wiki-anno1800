@@ -9,7 +9,7 @@ import {
   Watch,
 } from 'vue-property-decorator';
 import { BaseModel, Basic, Group } from '@src/components';
-import { ModelIO } from './calculator';
+import { ModelIO, ModelResidence } from './calculator';
 
 /**
  * Component: Calculator IO
@@ -20,7 +20,7 @@ export class VCalcIo extends Vue {
   public readonly amount!: number;
 
   @Prop({ type: Object, required: true })
-  public readonly io!: ModelIO;
+  public readonly modelSource!: ModelResidence | ModelIO;
 
   @Prop({ type: Object, required: true })
   public readonly productMap!: Record<number, BaseModel>;
@@ -28,7 +28,7 @@ export class VCalcIo extends Vue {
   private render(h: CreateElement): VNode {
     return (
       <div staticClass="v-calc-io">
-        <c-icon icon={this.io.icon} />
+        <c-icon icon={this.modelSource.icon} />
         <span>{this.amount}</span>
         <button onClick={() => this.$emit('change', this.amount + 1)}>+</button>
       </div>

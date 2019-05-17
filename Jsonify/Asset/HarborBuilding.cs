@@ -9,9 +9,6 @@ namespace Anno1800.Jsonify {
   partial class Asset {
     class HarborBuilding : Building {
       [Nullable]
-      [Element("Maintenance")]
-      public MaintenanceData? maintenance;
-      [Nullable]
       [Element("Culture")]
       public CultureData? culture;
 
@@ -29,17 +26,11 @@ namespace Anno1800.Jsonify {
 
     [Adapter]
     class VisitorPier : Building {
-      [Nullable]
-      [Element("Maintenance")]
-      public MaintenanceData? maintenance;
       public VisitorPier(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { }
     }
 
     [Adapter]
     class WorkforceConnector : Building {
-      [Nullable]
-      [Element("Maintenance")]
-      public MaintenanceData? maintenance;
 
       public WorkforceConnector(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { }
     }

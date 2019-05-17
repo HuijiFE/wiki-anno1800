@@ -14521,6 +14521,7 @@ export interface Building extends Asset {
   attackable?: AttackableData;
   building: BuildingData;
   cost?: CostData;
+  maintenance?: MaintenanceData;
 }
 
 export interface CityInstitutionBuilding extends Building {
@@ -14548,8 +14549,7 @@ export interface ExpeditionFeature extends Asset {
 }
 
 export interface FactoryBuilding7 extends Building {
-  maintenance?: MaintenanceData;
-  factory?: FactoryData;
+  factory: FactoryData;
   culture?: CultureData;
   electric?: ElectricData;
 }
@@ -14617,7 +14617,6 @@ export interface HarborOffice extends Building {
 }
 
 export interface HarborBuilding extends Building {
-  maintenance?: MaintenanceData;
   culture?: CultureData;
 }
 
@@ -14626,11 +14625,9 @@ export interface HarborBuildingAttacker extends HarborBuilding {
 }
 
 export interface VisitorPier extends Building {
-  maintenance?: MaintenanceData;
 }
 
 export interface WorkforceConnector extends Building {
-  maintenance?: MaintenanceData;
 }
 
 export interface InfluenceFeature extends Asset {
@@ -14758,7 +14755,6 @@ export interface Region extends Asset {
 }
 
 export interface RepairCrane extends Building {
-  maintenance?: MaintenanceData;
   repairCrane?: RepairCraneData;
 }
 
@@ -14791,9 +14787,8 @@ export interface MineSlotSet extends ResourceSet {
 }
 
 export interface Shipyard extends Building {
-  maintenance?: MaintenanceData;
   electric?: ElectricData;
-  shipyard?: ShipyardData;
+  shipyard: ShipyardData;
 }
 
 export interface Text extends Asset {
@@ -14834,6 +14829,7 @@ export interface Vehicle extends Asset {
   attackable?: AttackableData;
   attacker?: AttackerData;
   expeditionAttribute?: ExpeditionAttribute;
+  shipMaintenance: number;
 }
 
 export interface EventTradeShip extends Vehicle {

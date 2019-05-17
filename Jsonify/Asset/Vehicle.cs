@@ -6,6 +6,7 @@ using System.Text;
 using System.Xml.Linq;
 
 namespace Anno1800.Jsonify {
+
   partial class Asset {
     //[Adapter]
     class Vehicle : Asset {
@@ -25,6 +26,8 @@ namespace Anno1800.Jsonify {
       [NonEmptyElement]
       [Element("ExpeditionAttribute")]
       public ExpeditionAttribute? expeditionAttribute;
+      [Element("ShipMaintenance/Maintenance")]
+      public int shipMaintenance;
 
       public Vehicle(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { }
     }
