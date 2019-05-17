@@ -2,8 +2,8 @@
  * Component: Items
  */
 @include comp('items') {
-  $gap: 4;
-  $grid-size: 80;
+  $gap: 2;
+  $item-size: 80;
 
   position: relative;
   flex: 1 1 100%;
@@ -22,7 +22,7 @@
     margin: 0;
   }
   @include elem('grid') {
-    padding: px($gap * 2) 0;
+    padding: px($gap-base - $gap / 2) 0;
     margin: 0 px(-$gap / 2);
   }
   @include elem('cell') {
@@ -38,8 +38,8 @@
     user-select: none;
 
     position: relative;
-    width: px($grid-size);
-    min-height: px($grid-size);
+    width: px($item-size);
+    min-height: px($item-size);
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
@@ -47,7 +47,7 @@
     align-items: center;
 
     border: px(1.5) solid $color-border-common;
-    border-radius: px($border-radius-base);
+    border-radius: px($radius-base);
     padding: px(4);
   }
 
@@ -57,8 +57,8 @@
 
   @include elem('socket') {
     display: flex;
-    width: px($grid-size * $golden-ratio);
-    height: px($grid-size * $golden-ratio);
+    width: px($item-size * $golden-ratio);
+    height: px($item-size * $golden-ratio);
     padding: px(4);
     &::before {
       z-index: 1;

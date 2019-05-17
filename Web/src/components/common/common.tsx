@@ -25,7 +25,9 @@ export class CIcon extends Vue {
   private render(h: CreateElement): VNode {
     return h('img', {
       staticClass: 'c-icon',
-      class: [`cp-size_${this.size}`],
+      class: {
+        [`cp-size_${this.size}`]: !!this.size,
+      },
       attrs: {
         src: resource(
           (this.icon && this.icon) || 'data/ui/2kimages/main/icons/icon_questionmark.png',

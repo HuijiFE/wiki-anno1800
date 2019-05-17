@@ -1,6 +1,6 @@
 // Common
 
-$mobile-content-width: 330;
+$mobile-content-width: 360 - 15 * 2;
 
 @function sqrt($r) {
   $x0: 1;
@@ -17,7 +17,9 @@ $mobile-content-width: 330;
 $golden-ratio: (sqrt(5) - 1) / 2;
 
 $size-set: (16, 24, 32, 56, 64, 80, 96, 128, 256, 512);
-$border-radius-base: 3;
+
+$radius-base: 3;
+$gap-base: 8;
 
 // Typography
 
@@ -39,8 +41,10 @@ $color-active-darken:   0.1;
 $color-border-common: rgba($color-peru, 0.25);
 
 // Region
-$icon-session-moderate: resource('data/ui/2kimages/main/icons/icon_session_moderate.png');
-$icon-session-southamerica: resource('data/ui/2kimages/main/icons/icon_session_southamerica.png');
+$icon-region-moderate:          resource('data/ui/2kimages/main/icons/icon_session_moderate.png');
+$icon-region-moderate-white:    resource('data/ui/2kimages/main/icons/icon_session_moderate_white.png');
+$icon-region-colony01:          resource('data/ui/2kimages/main/icons/icon_session_southamerica.png');
+$icon-region-colony01-white:    resource('data/ui/2kimages/main/icons/icon_session_southamerica_white.png');
 
 // Item
 $rarity-set: ('Common', 'Uncommon', 'Rare', 'Epic', 'Legendary', 'Quest');
@@ -64,6 +68,7 @@ $rarity-bgr-map: (
 );
 
 // Construction
+$constr-ratio: 60 / 76;
 $bgr-constr-normal: resource('data/ui/2kimages/main/assets/construction_bar/btn_construction_normal.png');
 $bgr-constr-chain: resource('data/ui/2kimages/main/assets/construction_bar/btn_constr_chain_large_normal.png');
 $bgr-constr-main-pattern: resource('data/ui/2kimages/main/assets/construction_bar/bgr_constr_chain_mainpattern.png');

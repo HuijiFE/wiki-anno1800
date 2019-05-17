@@ -20,7 +20,7 @@
   margin: 0;
 
   // background-color: darken(white, 40%);
-  border-radius: px($border-radius-base);
+  border-radius: px($radius-base);
 
   @include elem('item') {
     display: inline-flex;
@@ -58,7 +58,7 @@
     margin: 0;
     border: px(1) solid;
     border-color: rgba(white, 0.3) rgba($color-brown, 0.15) rgba($color-brown, 0.3);
-    border-radius: px($border-radius-base);
+    border-radius: px($radius-base);
     color: white;
   }
 

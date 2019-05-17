@@ -20,7 +20,9 @@ import {
   SyncDataView,
   MIXIN_SYNC_DATA_VIEW,
   GUID_REGION_MODERATE,
+  ICON_REGION_MODERATE_WHITE,
   GUID_REGION_COLONY01,
+  ICON_REGION_COLONY01_WHITE,
   GUID_TEXT_PRODUCTION_CHAIN,
   GUID_CONSTRUCTION_MENU,
   GUID_TEXT_SORTING_CATEGORY_TIER,
@@ -54,37 +56,42 @@ export default class VConstruction extends Vue
 
   public syncData(): ConstructionState {
     const constructionMenu = this.$db[GUID_CONSTRUCTION_MENU] as ConstructionMenu;
-    const regions = ([
-      this.$db[GUID_REGION_MODERATE],
-      this.$db[GUID_REGION_COLONY01],
-    ] as Region[]).map<Group<Group<Group<number>>>>(rg => ({
-      key: rg.region.id,
-      label: this.$l10n[rg.guid],
-      icon: rg.icon,
-      items: [
-        constructionMenu.constructionMenu.regionMenu[rg.region.id].tierCategories,
-        constructionMenu.constructionMenu.regionMenu[rg.region.id].buildingCategories,
-      ].map<Group<Group<number>>>((cs, csi) => ({
-        key:
-          csi === 0
-            ? GUID_TEXT_SORTING_CATEGORY_TIER
-            : GUID_TEXT_SORTING_CATEGORY_BUILDING,
-        label: this.$l10n[
-          csi === 0
-            ? GUID_TEXT_SORTING_CATEGORY_TIER
-            : GUID_TEXT_SORTING_CATEGORY_BUILDING
-        ],
-        icon: csi === 0 ? ICON_SORTING_CATEGORY_TIER : ICON_SORTING_CATEGORY_BUILDING,
-        items: cs
-          .map(c => this.$db[c] as ConstructionCategory)
-          .map<Group<number>>(c => ({
-            key: c.guid,
-            label: this.$l10n[c.guid],
-            icon: c.icon,
-            items: [...c.constructionCategory.buildingList],
-          })),
-      })),
-    }));
+    const regions = [
+      [GUID_REGION_MODERATE, ICON_REGION_MODERATE_WHITE],
+      [GUID_REGION_COLONY01, ICON_REGION_COLONY01_WHITE],
+    ].map<Group<Group<Group<number>>>>(([guid, icon]) => {
+      const region = this.$db[guid] as Region;
+
+      return {
+        key: region.region.id,
+        label: this.$l10n[region.guid],
+        icon: icon as string,
+        items: [
+          constructionMenu.constructionMenu.regionMenu[region.region.id].tierCategories,
+          constructionMenu.constructionMenu.regionMenu[region.region.id]
+            .buildingCategories,
+        ].map<Group<Group<number>>>((cs, csi) => ({
+          key:
+            csi === 0
+              ? GUID_TEXT_SORTING_CATEGORY_TIER
+              : GUID_TEXT_SORTING_CATEGORY_BUILDING,
+          label: this.$l10n[
+            csi === 0
+              ? GUID_TEXT_SORTING_CATEGORY_TIER
+              : GUID_TEXT_SORTING_CATEGORY_BUILDING
+          ],
+          icon: csi === 0 ? ICON_SORTING_CATEGORY_TIER : ICON_SORTING_CATEGORY_BUILDING,
+          items: cs
+            .map(c => this.$db[c] as ConstructionCategory)
+            .map<Group<number>>(c => ({
+              key: c.guid,
+              label: this.$l10n[c.guid],
+              icon: c.icon,
+              items: [...c.constructionCategory.buildingList],
+            })),
+        })),
+      };
+    });
 
     const buildings: number[] = [];
     const subCategories: ConstructionCategory[] = [];
@@ -227,8 +234,6 @@ export default class VConstruction extends Vue
         <div staticClass="v-construction_menu">
           <c-toggle
             staticClass="v-construction_sub-menu"
-            original-color
-            hide-icon
             index={this.selectedRegion}
             onToggle={(index: number) => {
               this.selectedRegion = index;
@@ -247,7 +252,6 @@ export default class VConstruction extends Vue
           />
           <c-toggle
             staticClass="v-construction_sub-menu"
-            original-color
             hide-icon
             vModel={this.selectedCategory}
             items-source={categories}

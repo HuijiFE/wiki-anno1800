@@ -2,7 +2,7 @@
  * Component: Construction
  */
 @include comp('construction') {
-  $gap: 8;
+  $gap: $gap-base;
   $building-size: 56;
   $line-width: 2;
   $line-length: 10;
@@ -64,7 +64,7 @@
     align-items: center;
 
     width: px($building-size);
-    height: px($building-size / (60 / 76));
+    height: px($building-size / $constr-ratio);
 
     background: center/100% no-repeat url($bgr-constr-normal);
   }

@@ -1,5 +1,13 @@
 export const GUID_REGION_MODERATE = 5000000;
 export const GUID_REGION_COLONY01 = 5000001;
+export const ICON_REGION_MODERATE =
+  'data/ui/2kimages/main/icons/icon_session_moderate.png';
+export const ICON_REGION_MODERATE_WHITE =
+  'data/ui/2kimages/main/icons/icon_session_moderate_white.png';
+export const ICON_REGION_COLONY01 =
+  'data/ui/2kimages/main/icons/icon_session_southamerica.png';
+export const ICON_REGION_COLONY01_WHITE =
+  'data/ui/2kimages/main/icons/icon_session_southamerica_white.png';
 
 export const GUID_POPULATION_MODERATE = 15000082;
 export const GUID_POPULATION_COLONY01 = 15000083;
