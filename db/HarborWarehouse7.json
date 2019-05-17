@@ -6,6 +6,169 @@
     "id": "",
     "icon": "data/ui/2kimages/main/3dicons/icon_kontor.png",
     "description": 2977,
+    "attacker": {
+      "type": "Default",
+      "range": 92,
+      "attackRangeApproachPercentage": 0.95,
+      "lineOfSightRange": 92,
+      "reloadTime": 50,
+      "projectile": 101974,
+      "baseDamage": 150,
+      "accuracyBase": 1.0,
+      "accuracyIncreaseOverDistance": 100,
+      "accuracySpeedDecay": 6,
+      "emitProjectileTimeAfterStartAnimation": 0.3,
+      "targetAngleVariation": 360,
+      "shootingTracking": "TurretFixed",
+      "projectileCount": 1,
+      "turrets": [
+        360
+      ]
+    },
+    "warehouse": {
+      "type": "Kontor",
+      "storage": 75
+    },
+    "queues": 2,
+    "storedProducts": [
+      120008,
+      1010196,
+      1010200,
+      1010195,
+      1010216,
+      1010197,
+      1010237,
+      1010201,
+      1010205,
+      1010199,
+      1010238,
+      1010192,
+      1010235,
+      1010213,
+      1010210,
+      1010227,
+      1010226,
+      1010219,
+      1010218,
+      1010206,
+      1010221,
+      1010234,
+      1010203,
+      1010194,
+      1010236,
+      1010214,
+      1010228,
+      1010241,
+      1010207,
+      1010193,
+      1010198,
+      1010215,
+      1010217,
+      1010229,
+      1010230,
+      1010204,
+      1010246,
+      1010251,
+      1010257,
+      1010254,
+      1010239,
+      1010258,
+      1010255,
+      1010245,
+      1010231,
+      1010202,
+      1010243,
+      1010208,
+      1010224,
+      120014,
+      120016,
+      1010209,
+      1010253,
+      1010240,
+      1010247,
+      1010252,
+      1010242,
+      1010259,
+      1010248,
+      1010232,
+      1010222,
+      1010223,
+      1010256,
+      1010233,
+      1010249,
+      1010250,
+      1010211,
+      1010225,
+      120030,
+      120031,
+      120032,
+      120033,
+      120034,
+      120035,
+      120036,
+      120037,
+      120041,
+      120042,
+      120043,
+      120044
+    ],
+    "attackable": {
+      "maximumHitPoints": 9000,
+      "hasRuinState": true,
+      "selfHealPerHealTick": 5.0,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 200,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 5.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 15000,
+      "armorType": "Default",
+      "disableGettingAutoAttacked": false
+    },
+    "building": {
+      "type": "Warehouse",
+      "terrian": "Coast",
+      "regions": [
+        "Moderate"
+      ],
+      "category": 11151,
+      "pickingAsset": 0
+    },
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010017,
+          "amount": 2500
+        },
+        {
+          "ingredient": 1010196,
+          "amount": 10
+        },
+        {
+          "ingredient": 1010205,
+          "amount": 0
+        },
+        {
+          "ingredient": 1010218,
+          "amount": 8
+        },
+        {
+          "ingredient": 1010207,
+          "amount": 0
+        },
+        {
+          "ingredient": 1010202,
+          "amount": 0
+        }
+      ],
+      "influenceCostType": "None",
+      "influenceCostPoints": 1
+    },
+    "maintenance": {
+      "maintenances": [],
+      "consumerPriority": 0
+    },
     "upgradable": {
       "next": 100510,
       "costs": [
@@ -34,7 +197,15 @@
           "amount": 0
         }
       ]
-    },
+    }
+  },
+  {
+    "template": "HarborWarehouse7",
+    "guid": 100510,
+    "name": "kontor_main_02",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_kontor.png",
+    "description": 2977,
     "attacker": {
       "type": "Default",
       "range": 92,
@@ -56,9 +227,9 @@
     },
     "warehouse": {
       "type": "Kontor",
-      "storage": 75
+      "storage": 150
     },
-    "queues": 2,
+    "queues": 3,
     "storedProducts": [
       120008,
       1010196,
@@ -168,19 +339,19 @@
       "costs": [
         {
           "ingredient": 1010017,
-          "amount": 2500
+          "amount": 10000
         },
         {
           "ingredient": 1010196,
-          "amount": 10
+          "amount": 20
         },
         {
           "ingredient": 1010205,
-          "amount": 0
+          "amount": 10
         },
         {
           "ingredient": 1010218,
-          "amount": 8
+          "amount": 0
         },
         {
           "ingredient": 1010207,
@@ -197,15 +368,7 @@
     "maintenance": {
       "maintenances": [],
       "consumerPriority": 0
-    }
-  },
-  {
-    "template": "HarborWarehouse7",
-    "guid": 100510,
-    "name": "kontor_main_02",
-    "id": "",
-    "icon": "data/ui/2kimages/main/3dicons/icon_kontor.png",
-    "description": 2977,
+    },
     "upgradable": {
       "next": 100511,
       "costs": [
@@ -234,169 +397,6 @@
           "amount": 0
         }
       ]
-    },
-    "attacker": {
-      "type": "Default",
-      "range": 92,
-      "attackRangeApproachPercentage": 0.95,
-      "lineOfSightRange": 92,
-      "reloadTime": 50,
-      "projectile": 101974,
-      "baseDamage": 150,
-      "accuracyBase": 1.0,
-      "accuracyIncreaseOverDistance": 100,
-      "accuracySpeedDecay": 6,
-      "emitProjectileTimeAfterStartAnimation": 0.3,
-      "targetAngleVariation": 360,
-      "shootingTracking": "TurretFixed",
-      "projectileCount": 1,
-      "turrets": [
-        360
-      ]
-    },
-    "warehouse": {
-      "type": "Kontor",
-      "storage": 150
-    },
-    "queues": 3,
-    "storedProducts": [
-      120008,
-      1010196,
-      1010200,
-      1010195,
-      1010216,
-      1010197,
-      1010237,
-      1010201,
-      1010205,
-      1010199,
-      1010238,
-      1010192,
-      1010235,
-      1010213,
-      1010210,
-      1010227,
-      1010226,
-      1010219,
-      1010218,
-      1010206,
-      1010221,
-      1010234,
-      1010203,
-      1010194,
-      1010236,
-      1010214,
-      1010228,
-      1010241,
-      1010207,
-      1010193,
-      1010198,
-      1010215,
-      1010217,
-      1010229,
-      1010230,
-      1010204,
-      1010246,
-      1010251,
-      1010257,
-      1010254,
-      1010239,
-      1010258,
-      1010255,
-      1010245,
-      1010231,
-      1010202,
-      1010243,
-      1010208,
-      1010224,
-      120014,
-      120016,
-      1010209,
-      1010253,
-      1010240,
-      1010247,
-      1010252,
-      1010242,
-      1010259,
-      1010248,
-      1010232,
-      1010222,
-      1010223,
-      1010256,
-      1010233,
-      1010249,
-      1010250,
-      1010211,
-      1010225,
-      120030,
-      120031,
-      120032,
-      120033,
-      120034,
-      120035,
-      120036,
-      120037,
-      120041,
-      120042,
-      120043,
-      120044
-    ],
-    "attackable": {
-      "maximumHitPoints": 9000,
-      "hasRuinState": true,
-      "selfHealPerHealTick": 5.0,
-      "pausedTimeIfAttacked": false,
-      "canBeAttackedByPlayer": true,
-      "moralePower": 200,
-      "isInvulnerable": false,
-      "militaryDefensePoints": 5.0,
-      "accuracyWidth": 0.0,
-      "selfHealPausedTimeIfAttacked": 15000,
-      "armorType": "Default",
-      "disableGettingAutoAttacked": false
-    },
-    "building": {
-      "type": "Warehouse",
-      "terrian": "Coast",
-      "regions": [
-        "Moderate"
-      ],
-      "category": 11151,
-      "pickingAsset": 0
-    },
-    "cost": {
-      "costs": [
-        {
-          "ingredient": 1010017,
-          "amount": 10000
-        },
-        {
-          "ingredient": 1010196,
-          "amount": 20
-        },
-        {
-          "ingredient": 1010205,
-          "amount": 10
-        },
-        {
-          "ingredient": 1010218,
-          "amount": 0
-        },
-        {
-          "ingredient": 1010207,
-          "amount": 0
-        },
-        {
-          "ingredient": 1010202,
-          "amount": 0
-        }
-      ],
-      "influenceCostType": "None",
-      "influenceCostPoints": 1
-    },
-    "maintenance": {
-      "maintenances": [],
-      "consumerPriority": 0
     }
   },
   {
@@ -406,10 +406,6 @@
     "id": "",
     "icon": "data/ui/2kimages/main/3dicons/icon_kontor.png",
     "description": 2977,
-    "upgradable": {
-      "next": 0,
-      "costs": []
-    },
     "attacker": {
       "type": "Default",
       "range": 92,
@@ -572,6 +568,10 @@
     "maintenance": {
       "maintenances": [],
       "consumerPriority": 0
+    },
+    "upgradable": {
+      "next": 0,
+      "costs": []
     }
   },
   {
@@ -581,6 +581,169 @@
     "id": "",
     "icon": "data/ui/2kimages/main/3dicons/icon_kontor.png",
     "description": 2979,
+    "attacker": {
+      "type": "Default",
+      "range": 92,
+      "attackRangeApproachPercentage": 0.95,
+      "lineOfSightRange": 92,
+      "reloadTime": 50,
+      "projectile": 101974,
+      "baseDamage": 150,
+      "accuracyBase": 1.0,
+      "accuracyIncreaseOverDistance": 100,
+      "accuracySpeedDecay": 6,
+      "emitProjectileTimeAfterStartAnimation": 0.3,
+      "targetAngleVariation": 360,
+      "shootingTracking": "TurretFixed",
+      "projectileCount": 1,
+      "turrets": [
+        360
+      ]
+    },
+    "warehouse": {
+      "type": "Kontor",
+      "storage": 75
+    },
+    "queues": 2,
+    "storedProducts": [
+      120008,
+      1010196,
+      1010200,
+      1010195,
+      1010216,
+      1010197,
+      1010237,
+      1010201,
+      1010205,
+      1010199,
+      1010238,
+      1010192,
+      1010235,
+      1010213,
+      1010210,
+      1010227,
+      1010226,
+      1010219,
+      1010218,
+      1010206,
+      1010221,
+      1010234,
+      1010203,
+      1010194,
+      1010236,
+      1010214,
+      1010228,
+      1010241,
+      1010207,
+      1010193,
+      1010198,
+      1010215,
+      1010217,
+      1010229,
+      1010230,
+      1010204,
+      1010246,
+      1010251,
+      1010257,
+      1010254,
+      1010239,
+      1010258,
+      1010255,
+      1010245,
+      1010231,
+      1010202,
+      1010243,
+      1010208,
+      1010224,
+      120014,
+      120016,
+      1010209,
+      1010253,
+      1010240,
+      1010247,
+      1010252,
+      1010242,
+      1010259,
+      1010248,
+      1010232,
+      1010222,
+      1010223,
+      1010256,
+      1010233,
+      1010249,
+      1010250,
+      1010211,
+      1010225,
+      120030,
+      120031,
+      120032,
+      120033,
+      120034,
+      120035,
+      120036,
+      120037,
+      120041,
+      120042,
+      120043,
+      120044
+    ],
+    "attackable": {
+      "maximumHitPoints": 9000,
+      "hasRuinState": true,
+      "selfHealPerHealTick": 5.0,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 200,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 5.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 15000,
+      "armorType": "Default",
+      "disableGettingAutoAttacked": false
+    },
+    "building": {
+      "type": "Warehouse",
+      "terrian": "Coast",
+      "regions": [
+        "Moderate"
+      ],
+      "category": 11151,
+      "pickingAsset": 0
+    },
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010017,
+          "amount": 2500
+        },
+        {
+          "ingredient": 1010196,
+          "amount": 10
+        },
+        {
+          "ingredient": 1010205,
+          "amount": 0
+        },
+        {
+          "ingredient": 1010218,
+          "amount": 8
+        },
+        {
+          "ingredient": 1010207,
+          "amount": 0
+        },
+        {
+          "ingredient": 1010202,
+          "amount": 0
+        }
+      ],
+      "influenceCostType": "None",
+      "influenceCostPoints": 1
+    },
+    "maintenance": {
+      "maintenances": [],
+      "consumerPriority": 0
+    },
     "upgradable": {
       "next": 100514,
       "costs": [
@@ -609,7 +772,15 @@
           "amount": 0
         }
       ]
-    },
+    }
+  },
+  {
+    "template": "HarborWarehouse7",
+    "guid": 100514,
+    "name": "kontor_imperial_02",
+    "id": "",
+    "icon": "data/ui/2kimages/main/3dicons/icon_kontor.png",
+    "description": 2979,
     "attacker": {
       "type": "Default",
       "range": 92,
@@ -631,9 +802,9 @@
     },
     "warehouse": {
       "type": "Kontor",
-      "storage": 75
+      "storage": 150
     },
-    "queues": 2,
+    "queues": 3,
     "storedProducts": [
       120008,
       1010196,
@@ -743,19 +914,19 @@
       "costs": [
         {
           "ingredient": 1010017,
-          "amount": 2500
+          "amount": 10000
         },
         {
           "ingredient": 1010196,
-          "amount": 10
+          "amount": 20
         },
         {
           "ingredient": 1010205,
-          "amount": 0
+          "amount": 10
         },
         {
           "ingredient": 1010218,
-          "amount": 8
+          "amount": 0
         },
         {
           "ingredient": 1010207,
@@ -772,15 +943,7 @@
     "maintenance": {
       "maintenances": [],
       "consumerPriority": 0
-    }
-  },
-  {
-    "template": "HarborWarehouse7",
-    "guid": 100514,
-    "name": "kontor_imperial_02",
-    "id": "",
-    "icon": "data/ui/2kimages/main/3dicons/icon_kontor.png",
-    "description": 2979,
+    },
     "upgradable": {
       "next": 100515,
       "costs": [
@@ -809,169 +972,6 @@
           "amount": 0
         }
       ]
-    },
-    "attacker": {
-      "type": "Default",
-      "range": 92,
-      "attackRangeApproachPercentage": 0.95,
-      "lineOfSightRange": 92,
-      "reloadTime": 50,
-      "projectile": 101974,
-      "baseDamage": 150,
-      "accuracyBase": 1.0,
-      "accuracyIncreaseOverDistance": 100,
-      "accuracySpeedDecay": 6,
-      "emitProjectileTimeAfterStartAnimation": 0.3,
-      "targetAngleVariation": 360,
-      "shootingTracking": "TurretFixed",
-      "projectileCount": 1,
-      "turrets": [
-        360
-      ]
-    },
-    "warehouse": {
-      "type": "Kontor",
-      "storage": 150
-    },
-    "queues": 3,
-    "storedProducts": [
-      120008,
-      1010196,
-      1010200,
-      1010195,
-      1010216,
-      1010197,
-      1010237,
-      1010201,
-      1010205,
-      1010199,
-      1010238,
-      1010192,
-      1010235,
-      1010213,
-      1010210,
-      1010227,
-      1010226,
-      1010219,
-      1010218,
-      1010206,
-      1010221,
-      1010234,
-      1010203,
-      1010194,
-      1010236,
-      1010214,
-      1010228,
-      1010241,
-      1010207,
-      1010193,
-      1010198,
-      1010215,
-      1010217,
-      1010229,
-      1010230,
-      1010204,
-      1010246,
-      1010251,
-      1010257,
-      1010254,
-      1010239,
-      1010258,
-      1010255,
-      1010245,
-      1010231,
-      1010202,
-      1010243,
-      1010208,
-      1010224,
-      120014,
-      120016,
-      1010209,
-      1010253,
-      1010240,
-      1010247,
-      1010252,
-      1010242,
-      1010259,
-      1010248,
-      1010232,
-      1010222,
-      1010223,
-      1010256,
-      1010233,
-      1010249,
-      1010250,
-      1010211,
-      1010225,
-      120030,
-      120031,
-      120032,
-      120033,
-      120034,
-      120035,
-      120036,
-      120037,
-      120041,
-      120042,
-      120043,
-      120044
-    ],
-    "attackable": {
-      "maximumHitPoints": 9000,
-      "hasRuinState": true,
-      "selfHealPerHealTick": 5.0,
-      "pausedTimeIfAttacked": false,
-      "canBeAttackedByPlayer": true,
-      "moralePower": 200,
-      "isInvulnerable": false,
-      "militaryDefensePoints": 5.0,
-      "accuracyWidth": 0.0,
-      "selfHealPausedTimeIfAttacked": 15000,
-      "armorType": "Default",
-      "disableGettingAutoAttacked": false
-    },
-    "building": {
-      "type": "Warehouse",
-      "terrian": "Coast",
-      "regions": [
-        "Moderate"
-      ],
-      "category": 11151,
-      "pickingAsset": 0
-    },
-    "cost": {
-      "costs": [
-        {
-          "ingredient": 1010017,
-          "amount": 10000
-        },
-        {
-          "ingredient": 1010196,
-          "amount": 20
-        },
-        {
-          "ingredient": 1010205,
-          "amount": 10
-        },
-        {
-          "ingredient": 1010218,
-          "amount": 0
-        },
-        {
-          "ingredient": 1010207,
-          "amount": 0
-        },
-        {
-          "ingredient": 1010202,
-          "amount": 0
-        }
-      ],
-      "influenceCostType": "None",
-      "influenceCostPoints": 1
-    },
-    "maintenance": {
-      "maintenances": [],
-      "consumerPriority": 0
     }
   },
   {
@@ -981,10 +981,6 @@
     "id": "",
     "icon": "data/ui/2kimages/main/3dicons/icon_kontor.png",
     "description": 2979,
-    "upgradable": {
-      "next": 0,
-      "costs": []
-    },
     "attacker": {
       "type": "Default",
       "range": 92,
@@ -1147,6 +1143,10 @@
     "maintenance": {
       "maintenances": [],
       "consumerPriority": 0
+    },
+    "upgradable": {
+      "next": 0,
+      "costs": []
     }
   },
   {
@@ -1156,6 +1156,169 @@
     "id": "",
     "icon": "data/ui/2kimages/main/3dicons/icon_kontor.png",
     "description": 2977,
+    "attacker": {
+      "type": "Default",
+      "range": 92,
+      "attackRangeApproachPercentage": 0.95,
+      "lineOfSightRange": 92,
+      "reloadTime": 50,
+      "projectile": 101974,
+      "baseDamage": 150,
+      "accuracyBase": 1.0,
+      "accuracyIncreaseOverDistance": 100,
+      "accuracySpeedDecay": 6,
+      "emitProjectileTimeAfterStartAnimation": 0.3,
+      "targetAngleVariation": 360,
+      "shootingTracking": "TurretFixed",
+      "projectileCount": 1,
+      "turrets": [
+        360
+      ]
+    },
+    "warehouse": {
+      "type": "Kontor",
+      "storage": 75
+    },
+    "queues": 2,
+    "storedProducts": [
+      120008,
+      1010196,
+      1010200,
+      1010195,
+      1010216,
+      1010197,
+      1010237,
+      1010201,
+      1010205,
+      1010199,
+      1010238,
+      1010192,
+      1010235,
+      1010213,
+      1010210,
+      1010227,
+      1010226,
+      1010219,
+      1010218,
+      1010206,
+      1010221,
+      1010234,
+      1010203,
+      1010194,
+      1010236,
+      1010214,
+      1010228,
+      1010241,
+      1010207,
+      1010193,
+      1010198,
+      1010215,
+      1010217,
+      1010229,
+      1010230,
+      1010204,
+      1010246,
+      1010251,
+      1010257,
+      1010254,
+      1010239,
+      1010258,
+      1010255,
+      1010245,
+      1010231,
+      1010202,
+      1010243,
+      1010208,
+      1010224,
+      120014,
+      120016,
+      1010209,
+      1010253,
+      1010240,
+      1010247,
+      1010252,
+      1010242,
+      1010259,
+      1010248,
+      1010232,
+      1010222,
+      1010223,
+      1010256,
+      1010233,
+      1010249,
+      1010250,
+      1010211,
+      1010225,
+      120030,
+      120031,
+      120032,
+      120033,
+      120034,
+      120035,
+      120036,
+      120037,
+      120041,
+      120042,
+      120043,
+      120044
+    ],
+    "attackable": {
+      "maximumHitPoints": 9000,
+      "hasRuinState": true,
+      "selfHealPerHealTick": 5.0,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 200,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 5.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 15000,
+      "armorType": "Default",
+      "disableGettingAutoAttacked": false
+    },
+    "building": {
+      "type": "Warehouse",
+      "terrian": "Coast",
+      "regions": [
+        "Colony01"
+      ],
+      "category": 11151,
+      "pickingAsset": 0
+    },
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010017,
+          "amount": 2500
+        },
+        {
+          "ingredient": 1010196,
+          "amount": 10
+        },
+        {
+          "ingredient": 1010205,
+          "amount": 0
+        },
+        {
+          "ingredient": 1010218,
+          "amount": 8
+        },
+        {
+          "ingredient": 1010207,
+          "amount": 0
+        },
+        {
+          "ingredient": 1010202,
+          "amount": 0
+        }
+      ],
+      "influenceCostType": "None",
+      "influenceCostPoints": 1
+    },
+    "maintenance": {
+      "maintenances": [],
+      "consumerPriority": 0
+    },
     "upgradable": {
       "next": 101291,
       "costs": [
@@ -1184,169 +1347,6 @@
           "amount": 0
         }
       ]
-    },
-    "attacker": {
-      "type": "Default",
-      "range": 92,
-      "attackRangeApproachPercentage": 0.95,
-      "lineOfSightRange": 92,
-      "reloadTime": 50,
-      "projectile": 101974,
-      "baseDamage": 150,
-      "accuracyBase": 1.0,
-      "accuracyIncreaseOverDistance": 100,
-      "accuracySpeedDecay": 6,
-      "emitProjectileTimeAfterStartAnimation": 0.3,
-      "targetAngleVariation": 360,
-      "shootingTracking": "TurretFixed",
-      "projectileCount": 1,
-      "turrets": [
-        360
-      ]
-    },
-    "warehouse": {
-      "type": "Kontor",
-      "storage": 75
-    },
-    "queues": 2,
-    "storedProducts": [
-      120008,
-      1010196,
-      1010200,
-      1010195,
-      1010216,
-      1010197,
-      1010237,
-      1010201,
-      1010205,
-      1010199,
-      1010238,
-      1010192,
-      1010235,
-      1010213,
-      1010210,
-      1010227,
-      1010226,
-      1010219,
-      1010218,
-      1010206,
-      1010221,
-      1010234,
-      1010203,
-      1010194,
-      1010236,
-      1010214,
-      1010228,
-      1010241,
-      1010207,
-      1010193,
-      1010198,
-      1010215,
-      1010217,
-      1010229,
-      1010230,
-      1010204,
-      1010246,
-      1010251,
-      1010257,
-      1010254,
-      1010239,
-      1010258,
-      1010255,
-      1010245,
-      1010231,
-      1010202,
-      1010243,
-      1010208,
-      1010224,
-      120014,
-      120016,
-      1010209,
-      1010253,
-      1010240,
-      1010247,
-      1010252,
-      1010242,
-      1010259,
-      1010248,
-      1010232,
-      1010222,
-      1010223,
-      1010256,
-      1010233,
-      1010249,
-      1010250,
-      1010211,
-      1010225,
-      120030,
-      120031,
-      120032,
-      120033,
-      120034,
-      120035,
-      120036,
-      120037,
-      120041,
-      120042,
-      120043,
-      120044
-    ],
-    "attackable": {
-      "maximumHitPoints": 9000,
-      "hasRuinState": true,
-      "selfHealPerHealTick": 5.0,
-      "pausedTimeIfAttacked": false,
-      "canBeAttackedByPlayer": true,
-      "moralePower": 200,
-      "isInvulnerable": false,
-      "militaryDefensePoints": 5.0,
-      "accuracyWidth": 0.0,
-      "selfHealPausedTimeIfAttacked": 15000,
-      "armorType": "Default",
-      "disableGettingAutoAttacked": false
-    },
-    "building": {
-      "type": "Warehouse",
-      "terrian": "Coast",
-      "regions": [
-        "Colony01"
-      ],
-      "category": 11151,
-      "pickingAsset": 0
-    },
-    "cost": {
-      "costs": [
-        {
-          "ingredient": 1010017,
-          "amount": 2500
-        },
-        {
-          "ingredient": 1010196,
-          "amount": 10
-        },
-        {
-          "ingredient": 1010205,
-          "amount": 0
-        },
-        {
-          "ingredient": 1010218,
-          "amount": 8
-        },
-        {
-          "ingredient": 1010207,
-          "amount": 0
-        },
-        {
-          "ingredient": 1010202,
-          "amount": 0
-        }
-      ],
-      "influenceCostType": "None",
-      "influenceCostPoints": 1
-    },
-    "maintenance": {
-      "maintenances": [],
-      "consumerPriority": 0
     }
   },
   {
@@ -1356,35 +1356,6 @@
     "id": "",
     "icon": "data/ui/2kimages/main/3dicons/icon_kontor.png",
     "description": 2977,
-    "upgradable": {
-      "next": 0,
-      "costs": [
-        {
-          "ingredient": 1010017,
-          "amount": 10000
-        },
-        {
-          "ingredient": 1010196,
-          "amount": 15
-        },
-        {
-          "ingredient": 1010205,
-          "amount": 25
-        },
-        {
-          "ingredient": 1010218,
-          "amount": 20
-        },
-        {
-          "ingredient": 1010207,
-          "amount": 20
-        },
-        {
-          "ingredient": 1010202,
-          "amount": 0
-        }
-      ]
-    },
     "attacker": {
       "type": "Default",
       "range": 92,
@@ -1547,6 +1518,35 @@
     "maintenance": {
       "maintenances": [],
       "consumerPriority": 0
+    },
+    "upgradable": {
+      "next": 0,
+      "costs": [
+        {
+          "ingredient": 1010017,
+          "amount": 10000
+        },
+        {
+          "ingredient": 1010196,
+          "amount": 15
+        },
+        {
+          "ingredient": 1010205,
+          "amount": 25
+        },
+        {
+          "ingredient": 1010218,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010207,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010202,
+          "amount": 0
+        }
+      ]
     }
   },
   {
@@ -1556,10 +1556,6 @@
     "id": "",
     "icon": "data/ui/2kimages/main/3dicons/icon_kontor.png",
     "description": 2977,
-    "upgradable": {
-      "next": 0,
-      "costs": []
-    },
     "attacker": {
       "type": "Default",
       "range": 92,
@@ -1722,6 +1718,10 @@
     "maintenance": {
       "maintenances": [],
       "consumerPriority": 0
+    },
+    "upgradable": {
+      "next": 0,
+      "costs": []
     }
   },
   {
@@ -1731,6 +1731,169 @@
     "id": "",
     "icon": "data/ui/2kimages/main/3dicons/icon_kontor.png",
     "description": 2979,
+    "attacker": {
+      "type": "Default",
+      "range": 92,
+      "attackRangeApproachPercentage": 0.95,
+      "lineOfSightRange": 92,
+      "reloadTime": 50,
+      "projectile": 101974,
+      "baseDamage": 150,
+      "accuracyBase": 1.0,
+      "accuracyIncreaseOverDistance": 100,
+      "accuracySpeedDecay": 6,
+      "emitProjectileTimeAfterStartAnimation": 0.3,
+      "targetAngleVariation": 360,
+      "shootingTracking": "TurretFixed",
+      "projectileCount": 1,
+      "turrets": [
+        360
+      ]
+    },
+    "warehouse": {
+      "type": "Kontor",
+      "storage": 75
+    },
+    "queues": 2,
+    "storedProducts": [
+      120008,
+      1010196,
+      1010200,
+      1010195,
+      1010216,
+      1010197,
+      1010237,
+      1010201,
+      1010205,
+      1010199,
+      1010238,
+      1010192,
+      1010235,
+      1010213,
+      1010210,
+      1010227,
+      1010226,
+      1010219,
+      1010218,
+      1010206,
+      1010221,
+      1010234,
+      1010203,
+      1010194,
+      1010236,
+      1010214,
+      1010228,
+      1010241,
+      1010207,
+      1010193,
+      1010198,
+      1010215,
+      1010217,
+      1010229,
+      1010230,
+      1010204,
+      1010246,
+      1010251,
+      1010257,
+      1010254,
+      1010239,
+      1010258,
+      1010255,
+      1010245,
+      1010231,
+      1010202,
+      1010243,
+      1010208,
+      1010224,
+      120014,
+      120016,
+      1010209,
+      1010253,
+      1010240,
+      1010247,
+      1010252,
+      1010242,
+      1010259,
+      1010248,
+      1010232,
+      1010222,
+      1010223,
+      1010256,
+      1010233,
+      1010249,
+      1010250,
+      1010211,
+      1010225,
+      120030,
+      120031,
+      120032,
+      120033,
+      120034,
+      120035,
+      120036,
+      120037,
+      120041,
+      120042,
+      120043,
+      120044
+    ],
+    "attackable": {
+      "maximumHitPoints": 9000,
+      "hasRuinState": true,
+      "selfHealPerHealTick": 5.0,
+      "pausedTimeIfAttacked": false,
+      "canBeAttackedByPlayer": true,
+      "moralePower": 200,
+      "isInvulnerable": false,
+      "militaryDefensePoints": 5.0,
+      "accuracyWidth": 0.0,
+      "selfHealPausedTimeIfAttacked": 15000,
+      "armorType": "Default",
+      "disableGettingAutoAttacked": false
+    },
+    "building": {
+      "type": "Warehouse",
+      "terrian": "Coast",
+      "regions": [
+        "Colony01"
+      ],
+      "category": 11151,
+      "pickingAsset": 0
+    },
+    "cost": {
+      "costs": [
+        {
+          "ingredient": 1010017,
+          "amount": 2500
+        },
+        {
+          "ingredient": 1010196,
+          "amount": 10
+        },
+        {
+          "ingredient": 1010205,
+          "amount": 0
+        },
+        {
+          "ingredient": 1010218,
+          "amount": 8
+        },
+        {
+          "ingredient": 1010207,
+          "amount": 0
+        },
+        {
+          "ingredient": 1010202,
+          "amount": 0
+        }
+      ],
+      "influenceCostType": "None",
+      "influenceCostPoints": 1
+    },
+    "maintenance": {
+      "maintenances": [],
+      "consumerPriority": 0
+    },
     "upgradable": {
       "next": 101294,
       "costs": [
@@ -1759,169 +1922,6 @@
           "amount": 0
         }
       ]
-    },
-    "attacker": {
-      "type": "Default",
-      "range": 92,
-      "attackRangeApproachPercentage": 0.95,
-      "lineOfSightRange": 92,
-      "reloadTime": 50,
-      "projectile": 101974,
-      "baseDamage": 150,
-      "accuracyBase": 1.0,
-      "accuracyIncreaseOverDistance": 100,
-      "accuracySpeedDecay": 6,
-      "emitProjectileTimeAfterStartAnimation": 0.3,
-      "targetAngleVariation": 360,
-      "shootingTracking": "TurretFixed",
-      "projectileCount": 1,
-      "turrets": [
-        360
-      ]
-    },
-    "warehouse": {
-      "type": "Kontor",
-      "storage": 75
-    },
-    "queues": 2,
-    "storedProducts": [
-      120008,
-      1010196,
-      1010200,
-      1010195,
-      1010216,
-      1010197,
-      1010237,
-      1010201,
-      1010205,
-      1010199,
-      1010238,
-      1010192,
-      1010235,
-      1010213,
-      1010210,
-      1010227,
-      1010226,
-      1010219,
-      1010218,
-      1010206,
-      1010221,
-      1010234,
-      1010203,
-      1010194,
-      1010236,
-      1010214,
-      1010228,
-      1010241,
-      1010207,
-      1010193,
-      1010198,
-      1010215,
-      1010217,
-      1010229,
-      1010230,
-      1010204,
-      1010246,
-      1010251,
-      1010257,
-      1010254,
-      1010239,
-      1010258,
-      1010255,
-      1010245,
-      1010231,
-      1010202,
-      1010243,
-      1010208,
-      1010224,
-      120014,
-      120016,
-      1010209,
-      1010253,
-      1010240,
-      1010247,
-      1010252,
-      1010242,
-      1010259,
-      1010248,
-      1010232,
-      1010222,
-      1010223,
-      1010256,
-      1010233,
-      1010249,
-      1010250,
-      1010211,
-      1010225,
-      120030,
-      120031,
-      120032,
-      120033,
-      120034,
-      120035,
-      120036,
-      120037,
-      120041,
-      120042,
-      120043,
-      120044
-    ],
-    "attackable": {
-      "maximumHitPoints": 9000,
-      "hasRuinState": true,
-      "selfHealPerHealTick": 5.0,
-      "pausedTimeIfAttacked": false,
-      "canBeAttackedByPlayer": true,
-      "moralePower": 200,
-      "isInvulnerable": false,
-      "militaryDefensePoints": 5.0,
-      "accuracyWidth": 0.0,
-      "selfHealPausedTimeIfAttacked": 15000,
-      "armorType": "Default",
-      "disableGettingAutoAttacked": false
-    },
-    "building": {
-      "type": "Warehouse",
-      "terrian": "Coast",
-      "regions": [
-        "Colony01"
-      ],
-      "category": 11151,
-      "pickingAsset": 0
-    },
-    "cost": {
-      "costs": [
-        {
-          "ingredient": 1010017,
-          "amount": 2500
-        },
-        {
-          "ingredient": 1010196,
-          "amount": 10
-        },
-        {
-          "ingredient": 1010205,
-          "amount": 0
-        },
-        {
-          "ingredient": 1010218,
-          "amount": 8
-        },
-        {
-          "ingredient": 1010207,
-          "amount": 0
-        },
-        {
-          "ingredient": 1010202,
-          "amount": 0
-        }
-      ],
-      "influenceCostType": "None",
-      "influenceCostPoints": 1
-    },
-    "maintenance": {
-      "maintenances": [],
-      "consumerPriority": 0
     }
   },
   {
@@ -1931,35 +1931,6 @@
     "id": "",
     "icon": "data/ui/2kimages/main/3dicons/icon_kontor.png",
     "description": 2979,
-    "upgradable": {
-      "next": 0,
-      "costs": [
-        {
-          "ingredient": 1010017,
-          "amount": 10000
-        },
-        {
-          "ingredient": 1010196,
-          "amount": 15
-        },
-        {
-          "ingredient": 1010205,
-          "amount": 25
-        },
-        {
-          "ingredient": 1010218,
-          "amount": 20
-        },
-        {
-          "ingredient": 1010207,
-          "amount": 20
-        },
-        {
-          "ingredient": 1010202,
-          "amount": 0
-        }
-      ]
-    },
     "attacker": {
       "type": "Default",
       "range": 92,
@@ -2122,6 +2093,35 @@
     "maintenance": {
       "maintenances": [],
       "consumerPriority": 0
+    },
+    "upgradable": {
+      "next": 0,
+      "costs": [
+        {
+          "ingredient": 1010017,
+          "amount": 10000
+        },
+        {
+          "ingredient": 1010196,
+          "amount": 15
+        },
+        {
+          "ingredient": 1010205,
+          "amount": 25
+        },
+        {
+          "ingredient": 1010218,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010207,
+          "amount": 20
+        },
+        {
+          "ingredient": 1010202,
+          "amount": 0
+        }
+      ]
     }
   },
   {
@@ -2131,10 +2131,6 @@
     "id": "",
     "icon": "data/ui/2kimages/main/3dicons/icon_kontor.png",
     "description": 2979,
-    "upgradable": {
-      "next": 0,
-      "costs": []
-    },
     "attacker": {
       "type": "Default",
       "range": 92,
@@ -2297,6 +2293,10 @@
     "maintenance": {
       "maintenances": [],
       "consumerPriority": 0
+    },
+    "upgradable": {
+      "next": 0,
+      "costs": []
     }
   },
   {
@@ -2306,10 +2306,6 @@
     "id": "",
     "icon": "data/ui/2kimages/main/3dicons/icon_kontor.png",
     "description": 2979,
-    "upgradable": {
-      "next": 0,
-      "costs": []
-    },
     "attacker": {
       "type": "Default",
       "range": 72,
@@ -2473,6 +2469,10 @@
     "maintenance": {
       "maintenances": [],
       "consumerPriority": 0
+    },
+    "upgradable": {
+      "next": 0,
+      "costs": []
     }
   },
   {
@@ -2482,10 +2482,6 @@
     "id": "",
     "icon": "data/ui/2kimages/main/3dicons/icon_kontor.png",
     "description": 2979,
-    "upgradable": {
-      "next": 0,
-      "costs": []
-    },
     "attacker": {
       "type": "Default",
       "range": 72,
@@ -2649,6 +2645,10 @@
     "maintenance": {
       "maintenances": [],
       "consumerPriority": 0
+    },
+    "upgradable": {
+      "next": 0,
+      "costs": []
     }
   },
   {
@@ -2658,10 +2658,6 @@
     "id": "",
     "icon": "data/ui/2kimages/main/3dicons/icon_kontor.png",
     "description": 2979,
-    "upgradable": {
-      "next": 0,
-      "costs": []
-    },
     "attacker": {
       "type": "Default",
       "range": 72,
@@ -2825,6 +2821,10 @@
     "maintenance": {
       "maintenances": [],
       "consumerPriority": 0
+    },
+    "upgradable": {
+      "next": 0,
+      "costs": []
     }
   },
   {
@@ -2834,10 +2834,6 @@
     "id": "",
     "icon": "data/ui/2kimages/main/3dicons/icon_kontor.png",
     "description": 2979,
-    "upgradable": {
-      "next": 0,
-      "costs": []
-    },
     "attacker": {
       "type": "Default",
       "range": 72,
@@ -3001,6 +2997,10 @@
     "maintenance": {
       "maintenances": [],
       "consumerPriority": 0
+    },
+    "upgradable": {
+      "next": 0,
+      "costs": []
     }
   },
   {
@@ -3010,10 +3010,6 @@
     "id": "",
     "icon": "data/ui/2kimages/main/3dicons/icon_kontor.png",
     "description": 2979,
-    "upgradable": {
-      "next": 0,
-      "costs": []
-    },
     "attacker": {
       "type": "Default",
       "range": 72,
@@ -3177,6 +3173,10 @@
     "maintenance": {
       "maintenances": [],
       "consumerPriority": 0
+    },
+    "upgradable": {
+      "next": 0,
+      "costs": []
     }
   },
   {
@@ -3186,10 +3186,6 @@
     "id": "",
     "icon": "data/ui/2kimages/main/3dicons/icon_kontor.png",
     "description": 2979,
-    "upgradable": {
-      "next": 0,
-      "costs": []
-    },
     "attacker": {
       "type": "Default",
       "range": 72,
@@ -3353,6 +3349,10 @@
     "maintenance": {
       "maintenances": [],
       "consumerPriority": 0
+    },
+    "upgradable": {
+      "next": 0,
+      "costs": []
     }
   },
   {
@@ -3362,10 +3362,6 @@
     "id": "",
     "icon": "data/ui/2kimages/main/3dicons/icon_warehouse.png",
     "description": 0,
-    "upgradable": {
-      "next": 0,
-      "costs": []
-    },
     "attacker": {
       "type": "Default",
       "range": 0,
@@ -3529,6 +3525,10 @@
     "maintenance": {
       "maintenances": [],
       "consumerPriority": 0
+    },
+    "upgradable": {
+      "next": 0,
+      "costs": []
     }
   }
 ]

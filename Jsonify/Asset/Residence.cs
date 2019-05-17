@@ -35,9 +35,6 @@ namespace Anno1800.Jsonify {
 
     [Adapter]
     class ResidenceBuilding7 : Building {
-      [Nullable]
-      [Element("Upgradable")]
-      public UpgradableData? upgradable;
       [Element("Residence7")]
       public Residence7 residnece7;
 

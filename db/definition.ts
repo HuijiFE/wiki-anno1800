@@ -14522,6 +14522,7 @@ export interface Building extends Asset {
   building: BuildingData;
   cost?: CostData;
   maintenance?: MaintenanceData;
+  upgradable?: UpgradableData;
 }
 
 export interface CityInstitutionBuilding extends Building {
@@ -14759,7 +14760,6 @@ export interface RepairCrane extends Building {
 }
 
 export interface ResidenceBuilding7 extends Building {
-  upgradable?: UpgradableData;
   residnece7: Residence7;
 }
 
@@ -14878,7 +14878,6 @@ export interface Warehouse extends Building {
 }
 
 export interface HarborWarehouse7 extends Warehouse {
-  upgradable?: UpgradableData;
   attacker?: AttackerData;
 }
 

@@ -34,6 +34,9 @@ namespace Anno1800.Jsonify {
       [Nullable]
       [Element("Maintenance")]
       public MaintenanceData? maintenance;
+      [Nullable]
+      [Element("Upgradable")]
+      public UpgradableData? upgradable;
 
       public Building(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { }
     }
