@@ -11,10 +11,12 @@ import {
 import {
   Asset,
   ProductFilter,
+  Product,
   Building,
   ResidenceBuilding7,
   PopulationLevel7,
   PopulationInput,
+  InfluenceFeature,
   Region,
   ConstructionMenu,
   ConstructionCategory,
@@ -37,11 +39,18 @@ import {
   GUID_PRODUCT_MONEY,
   GUID_PRODUCT_INFLUENCE,
   GUID_LIST_WORKFORCE,
+  GUID_INFLUENCE_FEATURE,
   GUID_REGION_MODERATE,
   GUID_REGION_COLONY01,
   GUID_CONSTRUCTION_MENU,
   GUID_FACTORY_CHARCOAL_BURNER,
   GUID_FACTORY_COAL_MINE,
+  GUID_TEXT_GLOBAL_POPULATION,
+  GUID_TEXT_CORPORATION_LEVEL,
+  GUID_TEXT_RESIDENCE,
+  GUID_TEXT_SHIP,
+  GUID_TEXT_CONSTRUCTION,
+  GUID_TEXT_GOODS,
 } from '@src/utils';
 import { BaseModel, Basic, Group } from '@src/components';
 import { VCalcIo } from './calc-io';
@@ -64,9 +73,16 @@ export interface ModelResidence extends ModelAmount {
 }
 
 interface CalculatorState {
+  labels: {
+    residence: string;
+    construction: string;
+    ship: string;
+    goods: string;
+  };
+
   supplyList: number[];
   workforceList: number[];
-  productList: number[];
+  goodsList: number[];
   productMap: Record<number, BaseModel>;
 
   residenceList: number[];
@@ -96,28 +112,30 @@ export default class VCalculator extends Vue implements SyncDataView<CalculatorS
   public state: CalculatorState = null as any;
 
   public syncData(): CalculatorState {
-    const supplyList = [GUID_PRODUCT_MONEY, GUID_PRODUCT_INFLUENCE];
+    const supplyList = [
+      GUID_PRODUCT_MONEY,
+      GUID_PRODUCT_INFLUENCE,
+      GUID_TEXT_GLOBAL_POPULATION,
+      GUID_TEXT_CORPORATION_LEVEL,
+    ];
     const workforceList = [...GUID_LIST_WORKFORCE];
-    const productList = [
+    const goodsList = [
       ...(this.$db[GUID_PRODUCT_FILTER] as ProductFilter).productFilter.categories[0]
         .products,
       GUID_PRODUCT_OIL,
     ];
-    const productMap: Record<number, BaseModel> = [
-      supplyList,
-      productList,
-      workforceList,
-    ].reduce<Record<number, BaseModel>>((agg, list) => {
-      list.forEach(
-        guid =>
-          // eslint-disable-next-line no-param-reassign
-          (agg[guid] = {
-            label: this.$l10n[guid],
-            icon: this.$db[guid].icon,
-          }),
-      );
-      return agg;
-    }, {});
+
+    const isProduct = (a: Asset): boolean =>
+      supplyList.includes(a.guid) || 'product' in a;
+    const productMap: Record<number, BaseModel> = this.$dbList
+      .filter(isProduct)
+      .reduce<Record<number, BaseModel>>((agg, prod) => {
+        agg[prod.guid] = {
+          label: this.$l10n[prod.guid],
+          icon: prod.icon,
+        };
+        return agg;
+      }, {});
 
     const residenceList: number[] = [...workforceList];
     const residenceMap: Record<number, ModelResidence> = {};
@@ -128,6 +146,7 @@ export default class VCalculator extends Vue implements SyncDataView<CalculatorS
 
       const needs = population.population7.inputs.map<ModelResidence['needs'][0]>(ip => ({
         ...ip,
+        amount: ip.amount * 60, // normalize to amount per minute
       }));
       const workforce = population.population7.outputs.filter(o => o.amount > 0)[0]
         .product;
@@ -157,6 +176,8 @@ export default class VCalculator extends Vue implements SyncDataView<CalculatorS
     const shipList: number[] = [];
     const ioMap: Record<number, ModelIO> = {};
 
+    const influenceFeature = this.$db[GUID_INFLUENCE_FEATURE] as InfluenceFeature;
+
     const isConstructionCategory = (a: Asset): a is ConstructionCategory =>
       'constructionCategory' in a;
     const isProductionChain = (a: Asset): a is ProductionChain => 'chain' in a;
@@ -165,6 +186,8 @@ export default class VCalculator extends Vue implements SyncDataView<CalculatorS
       a: Asset | { maintenance: MaintenanceData },
     ): a is Building & { maintenance: MaintenanceData } =>
       'maintenance' in a && !!a.maintenance;
+    const isNeedInfluence = (a: Building | Vehicle): boolean =>
+      !!(a.cost && influenceFeature.influenceFeature.configs[a.cost.influenceCostType]);
     const isUpgradable = (
       a: Asset | { upgradable: UpgradableData },
     ): a is Building & { upgradable: UpgradableData } =>
@@ -191,11 +214,21 @@ export default class VCalculator extends Vue implements SyncDataView<CalculatorS
       const asset = this.$db[guid];
       if (!asset) return;
 
+      if (isConstructionCategory(asset)) {
+        asset.constructionCategory.buildingList.forEach(resolveBuilding);
+        return;
+      }
+      if (isProductionChain(asset)) {
+        resolveChainNode(asset.chain);
+        return;
+      }
+
       if (!buildingList.includes(guid) && isBuilding(asset) && !isResidence(asset)) {
         if (
           isFactory(asset) ||
           isShipyard(asset) ||
           isNeedMaintenance(asset) ||
+          isNeedInfluence(asset) ||
           isPublicServiceBuilding(asset)
         ) {
           buildingList.push(guid);
@@ -205,6 +238,9 @@ export default class VCalculator extends Vue implements SyncDataView<CalculatorS
           if (isUpgradable(asset)) {
             resolveBuilding(asset.upgradable.next);
           }
+          if (isModuleOwner(asset)) {
+            asset.moduleOwner.options.forEach(resolveBuilding);
+          }
           if (isShipyard(asset)) {
             asset.shipyard.assemblyOptions.forEach(ship => {
               if (!shipList.includes(ship)) {
@@ -213,18 +249,11 @@ export default class VCalculator extends Vue implements SyncDataView<CalculatorS
             });
           }
         }
-        return;
-      }
-      if (isConstructionCategory(asset)) {
-        asset.constructionCategory.buildingList.forEach(resolveBuilding);
-      }
-      if (isProductionChain(asset)) {
-        resolveChainNode(asset.chain);
       }
     };
 
-    // Construction Category Index for: Consumables Materials City Harbour Culture
-    [0, 2, 1, 3, 4].forEach(index => {
+    // Construction Category Index
+    [0, 1, 2, 3, 4].forEach(index => {
       ([
         this.$db[GUID_REGION_MODERATE],
         this.$db[GUID_REGION_COLONY01],
@@ -238,23 +267,31 @@ export default class VCalculator extends Vue implements SyncDataView<CalculatorS
     });
 
     [...buildingList, ...shipList].forEach(guid => {
-      const asset = this.$db[guid];
+      const asset = this.$db[guid] as Building | Vehicle;
       const inputs: [number, number][] = [];
       const outputs: [number, number][] = [];
 
       if (isShip(asset)) {
         inputs.push([GUID_PRODUCT_MONEY, asset.shipMaintenance]);
-        if (asset.cost && asset.cost.influenceCostPoints) {
-          inputs.push([GUID_PRODUCT_INFLUENCE, asset.cost.influenceCostPoints]);
-        }
       }
       if (isNeedMaintenance(asset)) {
         asset.maintenance.maintenances.forEach(mt =>
           inputs.push([mt.product, mt.amount]),
         );
       }
+      if (asset.cost) {
+        const influenceConfig =
+          influenceFeature.influenceFeature.configs[asset.cost.influenceCostType];
+        if (influenceConfig) {
+          inputs.push([
+            GUID_PRODUCT_INFLUENCE,
+            asset.cost.influenceCostPoints * influenceConfig.costs,
+          ]);
+        }
+      }
       if (isFactory(asset)) {
         const { factory } = asset;
+        // normalize to amount per minute
         factory.inputs.forEach(ip =>
           inputs.push([ip.product, (ip.amount * 60) / factory.cycleTime]),
         );
@@ -262,11 +299,8 @@ export default class VCalculator extends Vue implements SyncDataView<CalculatorS
           outputs.push([op.product, (op.amount * 60) / factory.cycleTime]),
         );
       }
-      if (isModuleOwner(asset)) {
-        asset.moduleOwner.options.forEach(resolveBuilding);
-      }
       if (isBuilding(asset) && isPublicServiceBuilding(asset)) {
-        asset.publicService.publicServiceOutputs.forEach(op => outputs.push([op, 1]));
+        asset.publicService.publicServiceOutputs.forEach(op => outputs.push([op, -1]));
       }
 
       ioMap[guid] = {
@@ -279,9 +313,16 @@ export default class VCalculator extends Vue implements SyncDataView<CalculatorS
     });
 
     return {
+      labels: {
+        residence: this.$l10n[GUID_TEXT_RESIDENCE],
+        construction: this.$l10n[GUID_TEXT_CONSTRUCTION],
+        ship: this.$l10n[GUID_TEXT_SHIP],
+        goods: this.$l10n[GUID_TEXT_GOODS],
+      },
+
       supplyList,
       workforceList,
-      productList,
+      goodsList,
       productMap,
 
       residenceList,
@@ -295,52 +336,61 @@ export default class VCalculator extends Vue implements SyncDataView<CalculatorS
 
   private selected: number = 0;
 
-  private get valueMap(): Record<number, number> {
+  private get trendMaps(): {
+    building: Record<number, number>;
+    ship: Record<number, number>;
+    residence: Record<number, number>;
+    global: Record<number, number>;
+  } {
     const {
       state: {
         supplyList,
         workforceList,
-        productList,
+        goodsList,
         productMap,
         residenceList,
         residenceMap,
-        buildingList: factoryList,
+        buildingList,
         shipList,
         ioMap,
       },
     } = this;
-
-    const result = [...supplyList, ...workforceList, ...productList].reduce<
+    const trendEmpty = [...supplyList, ...workforceList, ...goodsList].reduce<
       Record<number, number>
-    >((map, guid) => {
-      map[guid] = 0;
-      return map;
+    >((result, guid) => {
+      result[guid] = 0;
+      return result;
     }, {});
 
-    [...factoryList].forEach(guid => {
-      const { inputs, outputs, amount: ioAmount } = ioMap[guid];
-      if (ioAmount === 0) return;
-      inputs.forEach(
-        ([product, amount]) =>
-          (result[product] = (result[product] || 0) - amount * ioAmount),
-      );
-      outputs.forEach(
-        ([product, amount]) =>
-          (result[product] = (result[product] || 0) + amount * ioAmount),
-      );
+    const [trendBuilding, trendShip] = [buildingList, shipList].map(list => {
+      const result: Record<number, number> = {};
+      list.forEach(guid => {
+        const { inputs, outputs, amount: ioAmount } = ioMap[guid];
+        if (!ioAmount) return;
+
+        inputs.forEach(([product, amount]) => {
+          result[product] = (result[product] || 0) - amount * ioAmount;
+        });
+        outputs.forEach(([product, amount]) => {
+          result[product] = (result[product] || 0) + amount * ioAmount;
+        });
+      });
+      return result;
     });
 
+    const trendResidence: Record<number, number> = {};
     residenceList.forEach(guid => {
       const { needs, amount: residenceAmount } = residenceMap[guid];
-      if (residenceAmount === 0) return;
+      if (!residenceAmount) return;
+
       needs.forEach(nd => {
-        // if the amount of the need is 0, means the need is for abstract product
+        // if the amount of the need is 0, means the need is for abstract product, like market
         if (nd.amount > 0) {
-          result[nd.product] -= nd.amount * residenceAmount;
+          trendResidence[nd.product] =
+            (trendResidence[nd.product] || 0) - nd.amount * residenceAmount;
         }
       });
     });
-
     residenceList.forEach(guid => {
       const {
         needs,
@@ -349,35 +399,55 @@ export default class VCalculator extends Vue implements SyncDataView<CalculatorS
         influenceGenerator,
         amount: residenceAmount,
       } = residenceMap[guid];
-      if (residenceAmount === 0) return;
-      let money = 0;
+      if (!residenceAmount) return;
+
       let supply = 0;
+      let money = 0;
       needs.forEach(nd => {
         if (
-          (nd.amount === 0 && result[nd.product]) ||
-          (nd.amount > 0 && result[nd.product] > 0)
+          (nd.amount === 0 && trendBuilding[nd.product] < 0) ||
+          (nd.amount > 0 && trendBuilding[nd.product] + trendResidence[nd.product] >= 0)
         ) {
-          money += nd.money;
           supply += nd.supply;
+          money += nd.money;
         }
       });
-      result[GUID_PRODUCT_MONEY] += money * residenceAmount;
-      result[workforce] += Math.min(supply, workforceMax) * residenceAmount;
-      if (influenceGenerator && supply >= influenceGenerator) {
-        result[GUID_PRODUCT_INFLUENCE] += 1 * residenceAmount;
+      trendResidence[GUID_PRODUCT_MONEY] =
+        (trendResidence[GUID_PRODUCT_MONEY] || 0) + money * residenceAmount;
+      trendResidence[workforce] = Math.min(supply, workforceMax) * residenceAmount;
+      if (influenceGenerator && supply > influenceGenerator) {
+        trendResidence[GUID_PRODUCT_INFLUENCE] = residenceAmount;
       }
     });
+    trendResidence[GUID_TEXT_GLOBAL_POPULATION] = 0;
+    workforceList.forEach(
+      guid => (trendResidence[GUID_TEXT_GLOBAL_POPULATION] += trendResidence[guid] || 0),
+    );
 
-    return result;
+    const trendGlobal = [trendEmpty, trendBuilding, trendShip, trendResidence].reduce<
+      Record<string, number>
+    >((result, cur) => {
+      Object.entries(cur).forEach(([guid, amount]) => {
+        result[guid] = (result[guid] || 0) + amount;
+      });
+      return result;
+    }, {});
+
+    return {
+      building: trendBuilding,
+      ship: trendShip,
+      residence: trendResidence,
+      global: trendGlobal,
+    };
   }
 
   private render(h: CreateElement): VNode {
     const {
-      valueMap,
+      trendMaps,
       state: {
         supplyList,
         workforceList,
-        productList,
+        goodsList,
         productMap,
         residenceList,
         residenceMap,
@@ -389,7 +459,7 @@ export default class VCalculator extends Vue implements SyncDataView<CalculatorS
 
     return (
       <div staticClass="v-calculator" onClick={() => (this.selected = 0)}>
-        <div staticClass="v-calculator_wrapper">
+        <div key="io" staticClass="v-calculator_wrapper">
           {[...residenceList, ...buildingList, ...shipList].map(guid => (
             <v-calc-io
               key={guid}
@@ -404,29 +474,29 @@ export default class VCalculator extends Vue implements SyncDataView<CalculatorS
         </div>
 
         <div staticClass="v-calculator_products">
-          {[supplyList, workforceList, productList].map((products, i) => (
+          {[supplyList, workforceList, goodsList].map((products, i) => (
             <div key={i} staticClass="v-calculator_wrapper">
               {products.map(guid => (
                 <v-calc-product
                   key={guid}
                   model-source={productMap[guid]}
-                  value={valueMap[guid]}
+                  value={trendMaps.global[guid]}
                 />
               ))}
             </div>
           ))}
         </div>
 
-        <pre>
+        {/* <pre>
           {JSON.stringify(
             {
               ...this.state,
-              valueMap,
+              trendMaps,
             },
             undefined,
             '  ',
           )}
-        </pre>
+        </pre> */}
       </div>
     );
   }

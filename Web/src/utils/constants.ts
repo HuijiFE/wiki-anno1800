@@ -27,6 +27,8 @@ export const GUID_LIST_WORKFORCE = [
 ];
 export const GUID_PRODUCT_OIL = 1010566;
 
+export const GUID_INFLUENCE_FEATURE = 140797;
+
 export const GUID_ITEM_FILTER = 501516;
 export const GUID_ITEM_BALANCING = 6000017;
 export const GUID_TEXT_ITEMS = 100412;
@@ -41,6 +43,14 @@ export const ICON_SORTING_CATEGORY_TIER =
 export const GUID_TEXT_SORTING_CATEGORY_BUILDING = 21527;
 export const ICON_SORTING_CATEGORY_BUILDING =
   'data/ui/2kimages/main/assets/construction_bar/icon_constr_switch_categories.png';
+
+export const GUID_TEXT_RESIDENCE = 100004;
+export const GUID_TEXT_SHIP = 2342;
+export const GUID_TEXT_CONSTRUCTION = 15569;
+export const GUID_TEXT_POPULATION = 15570;
+export const GUID_TEXT_WORKFORCE = 11847;
+export const GUID_TEXT_GLOBAL_POPULATION = 1010151;
+export const GUID_TEXT_CORPORATION_LEVEL = 14726;
 
 export const GUID_FACTORY_CHARCOAL_BURNER = 1010298;
 export const GUID_FACTORY_COAL_MINE = 1010304;

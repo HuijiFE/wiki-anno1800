@@ -57,7 +57,7 @@
 
       // animation
       @extend %a-fade-in;
-      animation-delay: $animate-delay-base / 2;
+      animation-delay: ($animate-delay-base - 200) * 1ms;
     }
   }
 
@@ -87,11 +87,11 @@
     right: px(-($panel-width - $width) / 2);
     min-height: px($panel-height);
 
-    padding: px(32);
+    padding: px($gap-base * 3);
     padding-top: px(130);
 
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: center;
     align-content: center;
     align-items: center;
@@ -100,7 +100,20 @@
     background: center / cover no-repeat url($bgr-constr-chain-main-pattern);
 
     // animation
-    @extend %a-fade-top-in;
+    @extend %a-fade-in;
+  }
+
+  @include elem('wrapper') {
+    position: relative;
+    max-width: 100%;
+    min-width: 0;
+    flex: 1 0 100%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
   }
 
   @include elem('button', 'input') {
@@ -159,11 +172,11 @@
     }
     &:nth-child(5n + 2),
     &:nth-child(5n + 4) {
-      animation-delay: $animate-delay-base;
+      animation-delay: $animate-delay-base * 1ms;
     }
     &:nth-child(5n + 1),
     &:nth-child(5n + 5) {
-      animation-delay: $animate-delay-base + 0.1s;
+      animation-delay: ($animate-delay-base - 100) * 1ms;
     }
   }
 
@@ -172,6 +185,69 @@
 
     // animation
     @extend %a-fade-in;
-    animation-delay: $animate-delay-base - 0.1s;
+    animation-delay: ($animate-delay-base - 100) * 1ms;
+  }
+
+  @include elem('io', 'io-divider', 'io-row') {
+    position: relative;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  @include elem('io') {
+    flex: 1 0 100%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: stretch;
+
+    padding-top: px($gap-base * 3);
+
+    font-size: px(12);
+  }
+
+  @include elem('io-divider') {
+    flex: none;
+    height: px(1);
+
+    margin: px($gap-base);
+
+    background: linear-gradient(
+      to right,
+      transparent,
+      rgba($color-bisque, 0.5),
+      transparent
+    );
+
+    &:last-child {
+      display: none;
+    }
+  }
+
+  @include elem('io-row') {
+    position: relative;
+    max-width: 100%;
+    min-width: 0;
+    flex: none;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-content: flex-end;
+    align-items: flex-end;
+    white-space: nowrap;
+
+    padding: px($gap-base / 4) 0;
+  }
+  @include elem('io-icon') {
+    margin-right: px($gap-base / 2);
+  }
+
+  @include elem('io-divider', 'io-row') {
+    // animation
+    @extend %a-fade-top-in;
+    @include animation-list-item(100, 16, $animate-delay-base + 200);
   }
 }

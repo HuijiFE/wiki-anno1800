@@ -48,4 +48,14 @@ export const MIXIN_SYNC_DATA_VIEW: ComponentOptions<Vue> = {
 
     document.title = [...new Set(title)].filter(t => !!t).join(' | ');
   },
+  renderError(this: Vue & SyncDataView, h) {
+    return h('pre', {
+      attrs: {
+        'data-route': this.$route.fullPath,
+      },
+      domProps: {
+        innerHTML: JSON.stringify(this.state, undefined, '  '),
+      },
+    });
+  },
 };
