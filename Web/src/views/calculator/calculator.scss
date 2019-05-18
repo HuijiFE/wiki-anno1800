@@ -2,19 +2,136 @@
  * Component: Calculator
  */
 @include comp('calculator') {
+  $stat-height: 48;
+  $label-font-size: 12;
+  $label-height: 32;
+
   position: relative;
   flex: 1 1 100%;
   max-width: 100%;
   min-width: 0;
 
+  @include elem('stat', 'stat-item') {
+    position: relative;
+    flex: 1 1 100%;
+    max-width: 100%;
+    min-width: 0;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-self: center;
+    align-items: center;
+  }
+  @include elem('stat-item') {
+    justify-content: space-between;
+    flex: none;
+    padding: 0 px($gap-base);
+    width: px($stat-height / $constr-open-ratio);
+    height: px($stat-height);
+    color: $color-bisque;
+    background: center / 100% no-repeat url($bgr-constr-open-normal);
+  }
+  @include elem('stat-icon') {
+    margin-right: px($gap-base / 2);
+  }
+
+  @include elem('stat-panel') {
+    z-index: 2048;
+    position: absolute;
+    top: px($stat-height - 1);
+    left: 0;
+    min-width: 0;
+    width: px(280);
+
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: stretch;
+
+    white-space: nowrap;
+
+    padding: px($gap-base * 2);
+    border: px(1) solid $color-peru;
+    background: center / cover no-repeat url($bgr-constr-chain-main-pattern);
+
+    // animation
+    @extend %a-fade-top-in;
+
+    display: none;
+  }
+  @include elem('stat-item') {
+    &:hover {
+      @include elem('stat-panel') {
+        display: flex;
+      }
+    }
+  }
+
+  @include elem('stat-row') {
+    position: relative;
+    flex: none;
+    min-width: 0;
+    max-width: 100%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+
+    padding: px($gap-base / 2);
+    font-size: px(12);
+  }
+  @include elem('stat-value') {
+    padding-left: px($gap-base / 2);
+    margin-left: auto;
+  }
+
   @include elem('wrapper') {
     position: relative;
-    padding: px($gap-base / 2) 0;
+    flex: 1 0 100%;
+    max-width: 100%;
+    min-width: 0;
 
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
     align-content: flex-start;
     align-items: flex-start;
+
+    padding-bottom: px($gap-base);
+  }
+  @include elem('label') {
+    position: relative;
+    flex: 1 0 100%;
+    max-width: 100%;
+    min-width: 0;
+
+    padding-top: px($gap-base);
+
+    font-size: px($label-font-size);
+
+    // animation
+    @extend %a-fade-in;
+    @include animation-list-item(200, 4);
+  }
+  @include elem('label-content') {
+    position: relative;
+    flex: 1 0 100%;
+    max-width: 100%;
+    min-width: 0;
+
+    display: inline-flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    white-space: nowrap;
+
+    width: px($label-height / $constr-open-ratio);
+    height: px($label-height);
+    color: $color-bisque;
+    background: center / 100% no-repeat url($bgr-constr-normal);
   }
 }

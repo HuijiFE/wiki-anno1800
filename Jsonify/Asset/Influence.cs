@@ -109,16 +109,15 @@ namespace Anno1800.Jsonify {
       }
 
       public CompanyLevelData(XElement element) : base(element) {
-        //for (int level = 1; level <= 64; level++) {
-        //  Console.WriteLine($"{level.ToString().PadRight(3, ' ')}: {this.Population(level)}");
-        //}
+        for (int level = 1; level < 100; level++) {
+          Console.WriteLine($"{level.ToString().PadRight(3, ' ')}: {this.Population(level)}");
+        }
       }
     }
 
     class ParticipantRepresentationFeatureData : BaseAssetObject {
-      [Nullable]
       [Element("CompanyLevel")]
-      public CompanyLevelData? companyLevel;
+      public CompanyLevelData companyLevel;
       public List<string> colors;
 
       public ParticipantRepresentationFeatureData(XElement element) : base(element) {
@@ -133,9 +132,8 @@ namespace Anno1800.Jsonify {
 
     [Adapter]
     class ParticipantRepresentationFeature : Asset {
-      [Nullable]
       [Element("ParticipantRepresentationFeature")]
-      public ParticipantRepresentationFeatureData? participant;
+      public ParticipantRepresentationFeatureData participant;
 
       public ParticipantRepresentationFeature(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { }
     }

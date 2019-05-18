@@ -14640,7 +14640,7 @@ export interface InfluencePopup extends Asset {
 }
 
 export interface ParticipantRepresentationFeature extends Asset {
-  participant?: ParticipantRepresentationFeatureData;
+  participant: ParticipantRepresentationFeatureData;
 }
 
 export interface ItemBalancing extends Asset {
@@ -15100,7 +15100,7 @@ export interface CompanyLevelData extends BaseAssetObject {
 }
 
 export interface ParticipantRepresentationFeatureData extends BaseAssetObject {
-  companyLevel?: CompanyLevelData;
+  companyLevel: CompanyLevelData;
   colors: string[];
 }
 

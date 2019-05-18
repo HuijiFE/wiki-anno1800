@@ -71,7 +71,7 @@ export class VCalcIo extends Vue {
               />
               {(nd.amount > 0 &&
                 `${productMap[nd.product].label} -${formatNumber(
-                  nd.amount * modelSource.amount,
+                  nd.amount * this.amount,
                 )}`) ||
                 productMap[nd.product].label}
             </div>,
@@ -112,9 +112,8 @@ export class VCalcIo extends Vue {
               size={16}
               icon={productMap[product].icon}
             />
-            {(amount > 0 &&
-              `${productMap[product].label} -${amount * modelSource.amount}`) ||
-              productMap[product].label}
+            {productMap[product].label}
+            {amount > 0 && ` -${(amount * this.amount).toLocaleString()}`}
           </div>
         ))}
         <div key="divider" staticClass="v-calc-io_io-divider" />
@@ -125,9 +124,8 @@ export class VCalcIo extends Vue {
               size={16}
               icon={productMap[product].icon}
             />
-            {(amount > 0 &&
-              `${productMap[product].label} +${amount * modelSource.amount}`) ||
-              productMap[product].label}
+            {productMap[product].label}
+            {amount > 0 && ` +${(amount * this.amount).toLocaleString()}`}
           </div>
         ))}
       </div>

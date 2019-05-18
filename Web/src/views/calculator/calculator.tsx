@@ -17,6 +17,8 @@ import {
   PopulationLevel7,
   PopulationInput,
   InfluenceFeature,
+  ParticipantRepresentationFeature,
+  CompanyLevelData,
   Region,
   ConstructionMenu,
   ConstructionCategory,
@@ -34,6 +36,11 @@ import {
 import {
   SyncDataView,
   MIXIN_SYNC_DATA_VIEW,
+  formatNumber,
+  getGlobalPopulationForCorporationLevel,
+  getCorporationLevelForGlobalPopulation,
+  getInfluenceForCorporationLevel,
+  GUID_PARTICIPANT_REPRESENTATION_FEATURE,
   GUID_PRODUCT_FILTER,
   GUID_PRODUCT_OIL,
   GUID_PRODUCT_MONEY,
@@ -47,25 +54,24 @@ import {
   GUID_FACTORY_COAL_MINE,
   GUID_TEXT_GLOBAL_POPULATION,
   GUID_TEXT_CORPORATION_LEVEL,
+  GUID_TEXT_COMPANY_LEVEL_NEXT,
   GUID_TEXT_RESIDENCE,
   GUID_TEXT_SHIP,
   GUID_TEXT_CONSTRUCTION,
   GUID_TEXT_GOODS,
+  GUID_TEXT_INFLUENCE_FROM_POPULATION,
+  GUID_TEXT_INFLUENCE_FROM_INVESTORS,
 } from '@src/utils';
 import { BaseModel, Basic, Group } from '@src/components';
 import { VCalcIo } from './calc-io';
 import { VCalcProduct } from './calc-product';
 
-export interface ModelAmount extends BaseModel {
-  amount: number;
-}
-
-export interface ModelIO extends ModelAmount {
+export interface ModelIO extends BaseModel {
   inputs: [number, number][];
   outputs: [number, number][];
 }
 
-export interface ModelResidence extends ModelAmount {
+export interface ModelResidence extends BaseModel {
   needs: PopulationInput[];
   workforce: number;
   workforceMax: number;
@@ -73,11 +79,16 @@ export interface ModelResidence extends ModelAmount {
 }
 
 interface CalculatorState {
+  companyLevelData: CompanyLevelData;
+
   labels: {
     residence: string;
     construction: string;
     ship: string;
     goods: string;
+    companyNextLevel: string;
+    influenceFromPopulation: string;
+    influenceFromInvestors: string;
   };
 
   supplyList: number[];
@@ -108,8 +119,7 @@ export default class VCalculator extends Vue implements SyncDataView<CalculatorS
     return 'Calculator';
   }
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  public state: CalculatorState = null as any;
+  public state!: CalculatorState;
 
   public syncData(): CalculatorState {
     const supplyList = [
@@ -164,7 +174,6 @@ export default class VCalculator extends Vue implements SyncDataView<CalculatorS
         needs,
         workforce,
         workforceMax,
-        amount: 0,
       };
       if (influenceGenerator) {
         model.influenceGenerator = influenceGenerator;
@@ -308,16 +317,34 @@ export default class VCalculator extends Vue implements SyncDataView<CalculatorS
         icon: asset.icon,
         inputs,
         outputs,
-        amount: 0,
       };
     });
 
+    this.amountMap = [
+      ...supplyList,
+      ...workforceList,
+      ...goodsList,
+      ...residenceList,
+      ...buildingList,
+      ...shipList,
+    ].reduce<Record<number, number>>((result, guid) => {
+      result[guid] = 1000;
+      return result;
+    }, {});
+
     return {
+      companyLevelData: (this.$db[
+        GUID_PARTICIPANT_REPRESENTATION_FEATURE
+      ] as ParticipantRepresentationFeature).participant.companyLevel,
+
       labels: {
         residence: this.$l10n[GUID_TEXT_RESIDENCE],
         construction: this.$l10n[GUID_TEXT_CONSTRUCTION],
         ship: this.$l10n[GUID_TEXT_SHIP],
         goods: this.$l10n[GUID_TEXT_GOODS],
+        companyNextLevel: this.$l10n[GUID_TEXT_COMPANY_LEVEL_NEXT],
+        influenceFromPopulation: this.$l10n[GUID_TEXT_INFLUENCE_FROM_POPULATION],
+        influenceFromInvestors: this.$l10n[GUID_TEXT_INFLUENCE_FROM_INVESTORS],
       },
 
       supplyList,
@@ -336,14 +363,24 @@ export default class VCalculator extends Vue implements SyncDataView<CalculatorS
 
   private selected: number = 0;
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  private amountMap: Record<number, number> = null as any;
+
   private get trendMaps(): {
-    building: Record<number, number>;
-    ship: Record<number, number>;
-    residence: Record<number, number>;
-    global: Record<number, number>;
+    trendBuilding: Record<number, number>;
+    trendShip: Record<number, number>;
+    trendResidence: Record<number, number>;
+    moneyResidence: Record<number, number>;
+    trendGlobal: Record<number, number>;
+    corporation: {
+      level: number;
+      nextPopulation: number;
+      influence: number;
+    };
   } {
     const {
       state: {
+        companyLevelData,
         supplyList,
         workforceList,
         goodsList,
@@ -354,6 +391,7 @@ export default class VCalculator extends Vue implements SyncDataView<CalculatorS
         shipList,
         ioMap,
       },
+      amountMap,
     } = this;
     const trendEmpty = [...supplyList, ...workforceList, ...goodsList].reduce<
       Record<number, number>
@@ -365,7 +403,8 @@ export default class VCalculator extends Vue implements SyncDataView<CalculatorS
     const [trendBuilding, trendShip] = [buildingList, shipList].map(list => {
       const result: Record<number, number> = {};
       list.forEach(guid => {
-        const { inputs, outputs, amount: ioAmount } = ioMap[guid];
+        const { inputs, outputs } = ioMap[guid];
+        const ioAmount = amountMap[guid];
         if (!ioAmount) return;
 
         inputs.forEach(([product, amount]) => {
@@ -379,8 +418,12 @@ export default class VCalculator extends Vue implements SyncDataView<CalculatorS
     });
 
     const trendResidence: Record<number, number> = {};
+    const moneyResidence: Record<number, number> = {};
+    trendResidence[GUID_TEXT_GLOBAL_POPULATION] = 0;
+    trendResidence[GUID_PRODUCT_MONEY] = 0;
     residenceList.forEach(guid => {
-      const { needs, amount: residenceAmount } = residenceMap[guid];
+      const { needs } = residenceMap[guid];
+      const residenceAmount = amountMap[guid];
       if (!residenceAmount) return;
 
       needs.forEach(nd => {
@@ -392,13 +435,8 @@ export default class VCalculator extends Vue implements SyncDataView<CalculatorS
       });
     });
     residenceList.forEach(guid => {
-      const {
-        needs,
-        workforce,
-        workforceMax,
-        influenceGenerator,
-        amount: residenceAmount,
-      } = residenceMap[guid];
+      const { needs, workforce, workforceMax, influenceGenerator } = residenceMap[guid];
+      const residenceAmount = amountMap[guid];
       if (!residenceAmount) return;
 
       let supply = 0;
@@ -412,17 +450,14 @@ export default class VCalculator extends Vue implements SyncDataView<CalculatorS
           money += nd.money;
         }
       });
-      trendResidence[GUID_PRODUCT_MONEY] =
-        (trendResidence[GUID_PRODUCT_MONEY] || 0) + money * residenceAmount;
+      moneyResidence[guid] = money * residenceAmount;
+      trendResidence[GUID_PRODUCT_MONEY] += moneyResidence[guid];
       trendResidence[workforce] = Math.min(supply, workforceMax) * residenceAmount;
+      trendResidence[GUID_TEXT_GLOBAL_POPULATION] += trendResidence[workforce];
       if (influenceGenerator && supply > influenceGenerator) {
         trendResidence[GUID_PRODUCT_INFLUENCE] = residenceAmount;
       }
     });
-    trendResidence[GUID_TEXT_GLOBAL_POPULATION] = 0;
-    workforceList.forEach(
-      guid => (trendResidence[GUID_TEXT_GLOBAL_POPULATION] += trendResidence[guid] || 0),
-    );
 
     const trendGlobal = [trendEmpty, trendBuilding, trendShip, trendResidence].reduce<
       Record<string, number>
@@ -433,18 +468,37 @@ export default class VCalculator extends Vue implements SyncDataView<CalculatorS
       return result;
     }, {});
 
+    const globalPopulation = trendResidence[GUID_TEXT_GLOBAL_POPULATION];
+    const level = getCorporationLevelForGlobalPopulation(
+      companyLevelData,
+      globalPopulation,
+    );
+    const nextPopulation = getGlobalPopulationForCorporationLevel(
+      companyLevelData,
+      level + 1,
+    );
+    const influence = getInfluenceForCorporationLevel(level);
+
+    trendGlobal[GUID_PRODUCT_INFLUENCE] += influence;
+
     return {
-      building: trendBuilding,
-      ship: trendShip,
-      residence: trendResidence,
-      global: trendGlobal,
+      trendBuilding,
+      trendShip,
+      trendResidence,
+      moneyResidence,
+      trendGlobal,
+      corporation: {
+        level,
+        nextPopulation,
+        influence,
+      },
     };
   }
 
   private render(h: CreateElement): VNode {
     const {
-      trendMaps,
       state: {
+        labels,
         supplyList,
         workforceList,
         goodsList,
@@ -455,48 +509,183 @@ export default class VCalculator extends Vue implements SyncDataView<CalculatorS
         shipList,
         ioMap,
       },
+      trendMaps,
+      amountMap,
     } = this;
+    const {
+      trendBuilding,
+      trendShip,
+      trendResidence,
+      moneyResidence,
+      trendGlobal,
+      corporation,
+    } = trendMaps;
+
+    const stats: Group<BaseModel<number>, number>[] = [
+      {
+        key: GUID_PRODUCT_MONEY,
+        label: productMap[GUID_PRODUCT_MONEY].label,
+        icon: productMap[GUID_PRODUCT_MONEY].icon,
+        data: trendGlobal[GUID_PRODUCT_MONEY],
+        items: [
+          ...residenceList.map(guid => ({
+            label: residenceMap[guid].label,
+            icon: residenceMap[guid].icon,
+            data: moneyResidence[guid],
+          })),
+          {
+            label: labels.construction,
+            data: trendBuilding[GUID_PRODUCT_MONEY],
+          },
+          {
+            label: labels.ship,
+            data: trendShip[GUID_PRODUCT_MONEY],
+          },
+        ],
+      },
+      {
+        key: GUID_PRODUCT_INFLUENCE,
+        label: productMap[GUID_PRODUCT_INFLUENCE].label,
+        icon: productMap[GUID_PRODUCT_INFLUENCE].icon,
+        data: trendGlobal[GUID_PRODUCT_INFLUENCE],
+        items: [
+          {
+            label: labels.influenceFromPopulation,
+            data: corporation.influence,
+          },
+          {
+            label: labels.influenceFromInvestors,
+            data: trendResidence[GUID_PRODUCT_INFLUENCE],
+          },
+          {
+            label: labels.construction,
+            data: trendBuilding[GUID_PRODUCT_INFLUENCE],
+          },
+          {
+            label: labels.ship,
+            data: trendShip[GUID_PRODUCT_INFLUENCE],
+          },
+        ],
+      },
+      {
+        key: GUID_TEXT_GLOBAL_POPULATION,
+        label: productMap[GUID_TEXT_GLOBAL_POPULATION].label,
+        icon: productMap[GUID_TEXT_GLOBAL_POPULATION].icon,
+        data: trendGlobal[GUID_TEXT_GLOBAL_POPULATION],
+        items: workforceList.map(guid => ({
+          label: productMap[guid].label,
+          icon: productMap[guid].icon,
+          data: trendResidence[guid],
+        })),
+      },
+      {
+        key: GUID_TEXT_CORPORATION_LEVEL,
+        label: productMap[GUID_TEXT_CORPORATION_LEVEL].label,
+        icon: productMap[GUID_TEXT_CORPORATION_LEVEL].icon,
+        data: corporation.level,
+        items: [
+          {
+            label: labels.companyNextLevel,
+            data: corporation.nextPopulation,
+          },
+        ],
+      },
+    ];
 
     return (
       <div staticClass="v-calculator" onClick={() => (this.selected = 0)}>
-        <div key="io" staticClass="v-calculator_wrapper">
-          {[...residenceList, ...buildingList, ...shipList].map(guid => (
-            <v-calc-io
-              key={guid}
-              vModel={(ioMap[guid] || residenceMap[guid]).amount}
-              model-source={ioMap[guid] || residenceMap[guid]}
-              product-map={productMap}
-              selected={this.selected === guid}
-              onSelect={() => (this.selected = guid)}
-              onUnselect={() => (this.selected = 0)}
-            />
+        <div key="stat" staticClass="v-calculator_stat">
+          {stats.map(stat => (
+            <div key={stat.key} staticClass="v-calculator_stat-item">
+              <c-icon staticClass="v-calculator_stat-icon" size={16} icon={stat.icon} />
+              {formatNumber(stat.data as number)}
+              <div key="panel" staticClass="v-calculator_stat-panel">
+                <div key="global" staticClass="v-calculator_stat-row">
+                  <c-icon
+                    staticClass="v-calculator_stat-icon"
+                    size={24}
+                    icon={stat.icon}
+                  />
+                  <span staticClass="v-calculator_stat-label">{stat.label}</span>
+                  <span staticClass="v-calculator_stat-value">
+                    {(stat.data || 0).toLocaleString()}
+                  </span>
+                </div>
+                {stat.items.map((item, index) => (
+                  <div key={index} staticClass="v-calculator_stat-row">
+                    {item.icon && (
+                      <c-icon staticClass="v-calculator_stat-icon" icon={item.icon} />
+                    )}
+                    <span staticClass="v-calculator_stat-label">{item.label}</span>
+                    <span staticClass="v-calculator_stat-value">
+                      {(item.data || 0).toLocaleString()}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </div>
           ))}
         </div>
-
-        <div staticClass="v-calculator_products">
-          {[supplyList, workforceList, goodsList].map((products, i) => (
-            <div key={i} staticClass="v-calculator_wrapper">
-              {products.map(guid => (
-                <v-calc-product
-                  key={guid}
-                  model-source={productMap[guid]}
-                  value={trendMaps.global[guid]}
-                />
-              ))}
+        <div key="workforce" staticClass="v-calculator_stat">
+          {workforceList.map(guid => (
+            <div key={guid} staticClass="v-calculator_stat-item">
+              <c-icon
+                staticClass="v-calculator_stat-icon"
+                size={16}
+                icon={productMap[guid].icon}
+              />
+              {trendGlobal[guid].toLocaleString()}
             </div>
           ))}
         </div>
 
-        {/* <pre>
+        <div key="io" staticClass="v-calculator_wrapper">
+          {[
+            labels.residence,
+            ...residenceList,
+            labels.construction,
+            ...buildingList,
+            labels.ship,
+            ...shipList,
+          ].map(guid =>
+            typeof guid === 'string' ? (
+              <div key={guid} staticClass="v-calculator_label">
+                <span staticClass="v-calculator_label-content">{guid}</span>
+              </div>
+            ) : (
+              <v-calc-io
+                key={guid}
+                vModel={amountMap[guid]}
+                model-source={ioMap[guid] || residenceMap[guid]}
+                product-map={productMap}
+                selected={this.selected === guid}
+                onSelect={() => (this.selected = guid)}
+                onUnselect={() => (this.selected = 0)}
+              />
+            ),
+          )}
+          <div key={labels.goods} staticClass="v-calculator_label">
+            <span staticClass="v-calculator_label-content">{labels.goods}</span>
+          </div>
+          {goodsList.map(guid => (
+            <v-calc-product
+              key={guid}
+              model-source={productMap[guid]}
+              value={trendGlobal[guid]}
+            />
+          ))}
+        </div>
+
+        <pre>
           {JSON.stringify(
             {
               ...this.state,
-              trendMaps,
+              ...trendMaps,
             },
             undefined,
             '  ',
           )}
-        </pre> */}
+        </pre>
       </div>
     );
   }
