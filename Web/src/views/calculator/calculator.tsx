@@ -320,18 +320,6 @@ export default class VCalculator extends Vue implements SyncDataView<CalculatorS
       };
     });
 
-    this.amountMap = [
-      ...supplyList,
-      ...workforceList,
-      ...goodsList,
-      ...residenceList,
-      ...buildingList,
-      ...shipList,
-    ].reduce<Record<number, number>>((result, guid) => {
-      result[guid] = 1000;
-      return result;
-    }, {});
-
     return {
       companyLevelData: (this.$db[
         GUID_PARTICIPANT_REPRESENTATION_FEATURE
@@ -365,6 +353,24 @@ export default class VCalculator extends Vue implements SyncDataView<CalculatorS
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   private amountMap: Record<number, number> = null as any;
+
+  private resetAmountMap(): void {
+    this.amountMap = [
+      this.state.supplyList,
+      this.state.workforceList,
+      this.state.goodsList,
+      this.state.residenceList,
+      this.state.buildingList,
+      this.state.shipList,
+    ].reduce<Record<number, number>>((result, list) => {
+      list.forEach(guid => (result[guid] = 0));
+      return result;
+    }, {});
+  }
+
+  private beforeMount(): void {
+    this.resetAmountMap();
+  }
 
   private get trendMaps(): {
     trendBuilding: Record<number, number>;
