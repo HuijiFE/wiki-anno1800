@@ -29,6 +29,7 @@ export const allTemplates: string[] = [
   'WorkforceConnector',
   'InfluenceFeature',
   'InfluencePopup',
+  'ParticipantRepresentationFeature',
   'ItemBalancing',
   'QuestItem',
   'ItemWithUI',
@@ -53,7 +54,6 @@ export const allTemplates: string[] = [
   'InfluenceTitleBuff',
   'OrnamentalBuilding',
   'BuildPermitBuilding',
-  'ParticipantRepresentationFeature',
   'Product',
   'Projectile',
   'ExplodingProjectile',
@@ -126,6 +126,7 @@ export interface TemplateMap {
   WorkforceConnector: WorkforceConnector;
   InfluenceFeature: InfluenceFeature;
   InfluencePopup: InfluencePopup;
+  ParticipantRepresentationFeature: ParticipantRepresentationFeature;
   ItemBalancing: ItemBalancing;
   QuestItem: QuestItem;
   ItemWithUI: ItemWithUI;
@@ -150,7 +151,6 @@ export interface TemplateMap {
   InfluenceTitleBuff: InfluenceTitleBuff;
   OrnamentalBuilding: OrnamentalBuilding;
   BuildPermitBuilding: BuildPermitBuilding;
-  ParticipantRepresentationFeature: ParticipantRepresentationFeature;
   Product: Product;
   Projectile: Projectile;
   ExplodingProjectile: ExplodingProjectile;
@@ -573,6 +573,7 @@ export interface AssetTemplateMap {
   101642: WorkforceConnector;
   140797: InfluenceFeature;
   500883: InfluencePopup;
+  2002447: ParticipantRepresentationFeature;
   6000017: ItemBalancing;
   101207: QuestItem;
   190580: QuestItem;
@@ -2236,7 +2237,6 @@ export interface AssetTemplateMap {
   102474: BuildPermitBuilding;
   102475: BuildPermitBuilding;
   102461: BuildPermitBuilding;
-  2002447: ParticipantRepresentationFeature;
   1010017: Product;
   1010190: Product;
   1010052: Product;
@@ -14632,9 +14632,15 @@ export interface WorkforceConnector extends Building {
 }
 
 export interface InfluenceFeature extends Asset {
+  influenceFeature: InfluenceFeatureData;
 }
 
 export interface InfluencePopup extends Asset {
+  influencePopup: InfluencePopupData;
+}
+
+export interface ParticipantRepresentationFeature extends Asset {
+  participant?: ParticipantRepresentationFeatureData;
 }
 
 export interface ItemBalancing extends Asset {
@@ -14722,10 +14728,6 @@ export interface BuildPermitBuilding extends OrnamentalBuilding {
 }
 
 export interface QuestLighthouse extends Building {
-}
-
-export interface ParticipantRepresentationFeature extends Asset {
-  participant?: ParticipantRepresentationFeatureData;
 }
 
 export interface Product extends Asset {
@@ -15057,6 +15059,51 @@ export interface ProductFilterData extends BaseAssetObject {
   categories: ProductCategory[];
 }
 
+export interface InfluenceConfig extends BaseAssetObject {
+  freeAmount: number;
+  costs: number;
+  subCategoryName: number;
+}
+
+export interface InfluencCategoryBuff extends BaseAssetObject {
+  buff: number;
+  minSpentInfluence: number;
+  maxSpentInfluence: number;
+}
+
+export interface InfluenceCategory extends BaseAssetObject {
+  name: number;
+  usageTypes: string[];
+  buffs: InfluencCategoryBuff[];
+  baseSharePrice: number;
+}
+
+export interface InfluenceFeatureData extends BaseAssetObject {
+  configs: Record<string, InfluenceConfig>;
+  categories: Record<string, InfluenceCategory>;
+}
+
+export interface InfluencePopupData extends BaseAssetObject {
+  influencePopupTitle: number;
+  influencePopupCommentTitle: number;
+  influencePopupCommentText: number;
+  propagandaDescription: number;
+}
+
+export interface CompanyLevelData extends BaseAssetObject {
+  populationCountOffset: number;
+  populationFactor: number;
+  exponent: number;
+  secondLevel: number;
+  secondPopulationFactor: number;
+  secondExponent: number;
+}
+
+export interface ParticipantRepresentationFeatureData extends BaseAssetObject {
+  companyLevel?: CompanyLevelData;
+  colors: string[];
+}
+
 export interface ItemConfigData extends BaseAssetObject {
   rarityText: Record<string, number>;
   exclusiveGroupText: Record<string, number>;
@@ -15277,20 +15324,6 @@ export interface MaintenanceData extends BaseAssetObject {
 export interface OrnamentData extends BaseAssetObject {
   unit: number;
   description: number;
-}
-
-export interface CompanyLevelData extends BaseAssetObject {
-  populationCountOffset: number;
-  populationFactor: number;
-  exponent: number;
-  secondLevel: number;
-  secondPopulationFactor: number;
-  secondExponent: number;
-}
-
-export interface ParticipantRepresentationFeatureData extends BaseAssetObject {
-  companyLevel?: CompanyLevelData;
-  colors: string[];
 }
 
 export interface ProductData extends BaseAssetObject {

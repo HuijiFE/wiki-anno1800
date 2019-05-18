@@ -5,6 +5,258 @@
     "name": "InfluenceFeature",
     "id": "InfluenceBalancing",
     "icon": "",
-    "description": 0
+    "description": 0,
+    "influenceFeature": {
+      "configs": {
+        "GuildHouse": {
+          "freeAmount": 1,
+          "costs": 20.0,
+          "subCategoryName": 12001
+        },
+        "Townhall": {
+          "freeAmount": 1,
+          "costs": 20.0,
+          "subCategoryName": 12002
+        },
+        "HarborOffice": {
+          "freeAmount": 1,
+          "costs": 20.0,
+          "subCategoryName": 12003
+        },
+        "WarShip": {
+          "freeAmount": 40,
+          "costs": 0.5,
+          "subCategoryName": 12004
+        },
+        "DefenseBuilding": {
+          "freeAmount": 10,
+          "costs": 3.5,
+          "subCategoryName": 12005
+        },
+        "TradeShip": {
+          "freeAmount": 16,
+          "costs": 0.5,
+          "subCategoryName": 12006
+        },
+        "ZooModule": {
+          "freeAmount": 10,
+          "costs": 10.0,
+          "subCategoryName": 12008
+        },
+        "MuseumModule": {
+          "freeAmount": 10,
+          "costs": 10.0,
+          "subCategoryName": 12072
+        },
+        "Propaganda": {
+          "freeAmount": 0,
+          "costs": 1.0,
+          "subCategoryName": 12007
+        },
+        "Kontor": {
+          "freeAmount": 60000,
+          "costs": 0.001,
+          "subCategoryName": 14797
+        },
+        "WorkforceTransfer": {
+          "freeAmount": 2,
+          "costs": 15.0,
+          "subCategoryName": 14798
+        },
+        "CharterRoutes": {
+          "freeAmount": 3,
+          "costs": 5.0,
+          "subCategoryName": 21724
+        },
+        "Shares": {
+          "freeAmount": 0,
+          "costs": 1.0,
+          "subCategoryName": 21984
+        }
+      },
+      "categories": {
+        "Propaganda": {
+          "name": 11999,
+          "usageTypes": [
+            "Propaganda"
+          ],
+          "buffs": [
+            {
+              "buff": 191358,
+              "minSpentInfluence": 300,
+              "maxSpentInfluence": 0
+            },
+            {
+              "buff": 191357,
+              "minSpentInfluence": 150,
+              "maxSpentInfluence": 299
+            },
+            {
+              "buff": 190605,
+              "minSpentInfluence": 50,
+              "maxSpentInfluence": 149
+            }
+          ],
+          "baseSharePrice": 0
+        },
+        "Military": {
+          "name": 11997,
+          "usageTypes": [
+            "WarShip",
+            "DefenseBuilding"
+          ],
+          "buffs": [
+            {
+              "buff": 191360,
+              "minSpentInfluence": 300,
+              "maxSpentInfluence": 0
+            },
+            {
+              "buff": 191359,
+              "minSpentInfluence": 150,
+              "maxSpentInfluence": 299
+            },
+            {
+              "buff": 190606,
+              "minSpentInfluence": 50,
+              "maxSpentInfluence": 149
+            }
+          ],
+          "baseSharePrice": 0
+        },
+        "Trade": {
+          "name": 11998,
+          "usageTypes": [
+            "TradeShip",
+            "CharterRoutes"
+          ],
+          "buffs": [
+            {
+              "buff": 191362,
+              "minSpentInfluence": 300,
+              "maxSpentInfluence": 0
+            },
+            {
+              "buff": 191361,
+              "minSpentInfluence": 150,
+              "maxSpentInfluence": 299
+            },
+            {
+              "buff": 190603,
+              "minSpentInfluence": 50,
+              "maxSpentInfluence": 149
+            }
+          ],
+          "baseSharePrice": 0
+        },
+        "Culture": {
+          "name": 12000,
+          "usageTypes": [
+            "ZooModule",
+            "MuseumModule"
+          ],
+          "buffs": [
+            {
+              "buff": 191364,
+              "minSpentInfluence": 300,
+              "maxSpentInfluence": 0
+            },
+            {
+              "buff": 191363,
+              "minSpentInfluence": 150,
+              "maxSpentInfluence": 299
+            },
+            {
+              "buff": 190607,
+              "minSpentInfluence": 50,
+              "maxSpentInfluence": 149
+            }
+          ],
+          "baseSharePrice": 0
+        },
+        "Optimisation": {
+          "name": 11996,
+          "usageTypes": [
+            "GuildHouse",
+            "Townhall",
+            "HarborOffice"
+          ],
+          "buffs": [
+            {
+              "buff": 191366,
+              "minSpentInfluence": 300,
+              "maxSpentInfluence": 0
+            },
+            {
+              "buff": 191365,
+              "minSpentInfluence": 150,
+              "maxSpentInfluence": 299
+            },
+            {
+              "buff": 190597,
+              "minSpentInfluence": 50,
+              "maxSpentInfluence": 149
+            }
+          ],
+          "baseSharePrice": 0
+        },
+        "Expansion": {
+          "name": 14794,
+          "usageTypes": [
+            "Kontor",
+            "WorkforceTransfer",
+            "Shares"
+          ],
+          "buffs": [
+            {
+              "buff": 192935,
+              "minSpentInfluence": 300,
+              "maxSpentInfluence": 0
+            },
+            {
+              "buff": 191302,
+              "minSpentInfluence": 300,
+              "maxSpentInfluence": 0
+            },
+            {
+              "buff": 191303,
+              "minSpentInfluence": 300,
+              "maxSpentInfluence": 0
+            },
+            {
+              "buff": 192934,
+              "minSpentInfluence": 150,
+              "maxSpentInfluence": 299
+            },
+            {
+              "buff": 191301,
+              "minSpentInfluence": 150,
+              "maxSpentInfluence": 299
+            },
+            {
+              "buff": 191300,
+              "minSpentInfluence": 150,
+              "maxSpentInfluence": 299
+            },
+            {
+              "buff": 192933,
+              "minSpentInfluence": 50,
+              "maxSpentInfluence": 149
+            },
+            {
+              "buff": 191296,
+              "minSpentInfluence": 50,
+              "maxSpentInfluence": 149
+            },
+            {
+              "buff": 191299,
+              "minSpentInfluence": 50,
+              "maxSpentInfluence": 149
+            }
+          ],
+          "baseSharePrice": 0
+        }
+      }
+    }
   }
 ]
