@@ -8,9 +8,10 @@ import {
   Provide,
   Watch,
 } from 'vue-property-decorator';
+import { PopulationInput } from '@public/db/definition';
 import { clamp, GUID_PRODUCT_MONEY, formatNumber } from '@src/utils';
 import { BaseModel, Basic, Group } from '@src/components';
-import { ModelIO, ModelResidence } from './calculator';
+import { ModelResidence, ModelIO } from './calculator';
 
 const MAX_AMOUNT = 1000000;
 
@@ -62,6 +63,23 @@ export class VCalcIo extends Vue {
       const { needs, workforce, workforceMax } = modelSource;
       return (
         <div key="io-needs" staticClass="v-calc-io_io">
+          {([['supply', workforce], ['money', GUID_PRODUCT_MONEY]] as [
+            (keyof PopulationInput),
+            number
+          ][]).map(([prop, prod]) => (
+            <div key="supply" staticClass="v-calc-io_io-row">
+              <c-icon
+                staticClass="v-calc-io_io-icon"
+                size={16}
+                icon={productMap[prod].icon}
+              />
+              {productMap[prod].label} +
+              {(
+                needs.reduce((total, nd) => total + nd[prop], 0) * this.amount
+              ).toLocaleString()}
+            </div>
+          ))}
+          <div key="divider" staticClass="v-calc-io_io-divider" />
           {needs.map(nd => [
             <div key={nd.product} staticClass="v-calc-io_io-row">
               <c-icon

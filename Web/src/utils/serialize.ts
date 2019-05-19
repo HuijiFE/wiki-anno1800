@@ -34,7 +34,7 @@ export const MIXIN_SYNC_DATA_VIEW: ComponentOptions<Vue> = {
     if (process.env.NODE_ENV === 'development') {
       const state = this.syncData();
       serialize(state);
-      this.state = state;
+      this.state = JSON.parse(JSON.stringify(state));
     } else {
       this.state = deserialize();
     }
