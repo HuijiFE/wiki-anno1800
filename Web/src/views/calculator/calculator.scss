@@ -198,6 +198,7 @@
 
   @include elem('chart-bar') {
     position: relative;
+    min-width: 0;
     max-width: px(1000);
     display: flex;
     flex-flow: row nowrap;
@@ -211,11 +212,13 @@
   }
   @include elem('chart-bar-inner') {
     display: inline-flex;
+    flex: none;
     height: 100%;
-    width: initial;
     border: px(1) solid;
 
     margin-right: px(1);
+
+    transition: width 200ms ease-in-out;
   }
   @include elem('chart-bar') {
     @each $state in ('generation', 'consumption') {
