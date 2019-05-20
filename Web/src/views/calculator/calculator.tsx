@@ -69,7 +69,6 @@ import {
 } from '@src/utils';
 import { BaseModel, Basic, Group } from '@src/components';
 import { VCalcIo } from './calc-io';
-import { VCalcProduct } from './calc-product';
 
 export interface ModelResidence extends BaseModel {
   needs: PopulationInput[];
@@ -103,16 +102,17 @@ interface CalculatorState {
   ioMap: Record<number, ModelIO>;
 }
 
-type TrendMap = Record<number | string, Record<number, number>>;
+type TrendMap = Record<number, Record<number, number>>;
 
 interface TrendMaps {
   // { [product: number]: { [io: number]: number } }
-  trendInputs: TrendMap;
-  trendOutputs: TrendMap;
-  trendShip: TrendMap;
-  trendResidence: TrendMap;
+  trendInputs: Record<number, number>;
+  trendOutputs: Record<number, number>;
+  trendShip: Record<number, number>;
+  trendResidence: Record<number, number>;
   trendGlobal: Record<number, number>;
   trendMoney: {
+    residence: Record<number, number>;
     building: number;
     ship: number;
   };
@@ -128,6 +128,15 @@ interface TrendMaps {
   };
 }
 
+const reduceTrendMap = (map: TrendMap): Record<number, number> => {
+  const record: Record<string, number> = {};
+  Object.entries(map).forEach(
+    ([guid, subMap]) =>
+      (record[guid] = Object.values(subMap).reduce((result, cur) => result + cur, 0)),
+  );
+  return record;
+};
+
 /**
  * Component: Calculator
  */
@@ -135,7 +144,6 @@ interface TrendMaps {
   mixins: [MIXIN_SYNC_DATA_VIEW],
   components: {
     VCalcIo,
-    VCalcProduct,
   },
 })
 export default class VCalculator extends Vue implements SyncDataView<CalculatorState> {
@@ -404,7 +412,7 @@ export default class VCalculator extends Vue implements SyncDataView<CalculatorS
     };
   }
 
-  private selected: number = 0;
+  public selected: number = 0;
 
   private productList!: number[];
 
@@ -463,6 +471,13 @@ export default class VCalculator extends Vue implements SyncDataView<CalculatorS
       result[prod] = 0;
       return result;
     }, {});
+    const trendMoneyResidence = residenceList.reduce<Record<number, number>>(
+      (result, guid) => {
+        result[guid] = 0;
+        return result;
+      },
+      {},
+    );
     const trendInfluence: Record<string, number> = Object.keys(influenceConfigs).reduce<
       Record<string, number>
     >((result, key) => {
@@ -485,7 +500,7 @@ export default class VCalculator extends Vue implements SyncDataView<CalculatorS
       });
       outputs.forEach(([product, amountProduct]) => {
         const value = amountProduct * amount;
-        trendInputs[product][building] = value;
+        trendOutputs[product][building] = value;
         trendGlobal[product] += value;
       });
     });
@@ -550,7 +565,7 @@ export default class VCalculator extends Vue implements SyncDataView<CalculatorS
       trendGlobal[workforce] += totalSupply;
       globalPopulation += totalSupply;
 
-      trendResidence[GUID_PRODUCT_MONEY][residence] = totalMoney;
+      trendMoneyResidence[residence] = totalMoney;
       trendGlobal[GUID_PRODUCT_MONEY] += totalMoney;
 
       if (influenceGenerator && totalSupply > influenceGenerator) {
@@ -581,12 +596,13 @@ export default class VCalculator extends Vue implements SyncDataView<CalculatorS
     );
 
     return {
-      trendInputs,
-      trendOutputs,
-      trendShip,
-      trendResidence,
+      trendInputs: reduceTrendMap(trendInputs),
+      trendOutputs: reduceTrendMap(trendOutputs),
+      trendShip: reduceTrendMap(trendShip),
+      trendResidence: reduceTrendMap(trendResidence),
       trendGlobal,
       trendMoney: {
+        residence: trendMoneyResidence,
         building,
         ship,
       },
@@ -644,7 +660,7 @@ export default class VCalculator extends Vue implements SyncDataView<CalculatorS
             key: guid,
             label: residenceMap[guid].label,
             icon: residenceMap[guid].icon,
-            data: trendResidence[GUID_PRODUCT_MONEY][guid],
+            data: trendMoney.residence[guid],
           })),
           {
             key: GUID_TEXT_MAINTENANCE,
@@ -733,7 +749,11 @@ export default class VCalculator extends Vue implements SyncDataView<CalculatorS
     }));
 
     return (
-      <div staticClass="v-calculator" onClick={() => (this.selected = 0)}>
+      <div
+        key="calculator"
+        staticClass="v-calculator"
+        onClick={() => (this.selected = 0)}
+      >
         <div key="stat" staticClass="v-calculator_stat">
           {statGroups.map(group => (
             <div key={group.key} staticClass="v-calculator_stat-item">
@@ -822,29 +842,57 @@ export default class VCalculator extends Vue implements SyncDataView<CalculatorS
                 <span staticClass="v-calculator_label-content">{guid}</span>
               </div>
             ) : (
-              <v-calc-io
-                key={guid}
-                vModel={amountMap[guid]}
-                model-source={ioMap[guid] || residenceMap[guid]}
-                product-map={productMap}
-                selected={this.selected === guid}
-                onSelect={() => (this.selected = guid)}
-                onUnselect={() => (this.selected = 0)}
-              />
+              <v-calc-io key={guid} vModel={amountMap[guid]} guid={guid} />
             ),
           )}
-          <div key="goods" staticClass="v-calculator_label">
-            <span staticClass="v-calculator_label-content">
-              {labels[GUID_TEXT_GOODS].label}
-            </span>
-          </div>
-          {goodsList.map(guid => (
-            <v-calc-product
-              key={guid}
-              model-source={productMap[guid]}
-              value={trendGlobal[guid]}
-            />
-          ))}
+        </div>
+
+        <div key="goods" staticClass="v-calculator_chart">
+          {goodsList.map(guid => {
+            const product = productMap[guid];
+            const trend = trendGlobal[guid];
+            const generation = trendOutputs[guid];
+            const consumption = Math.abs(trendInputs[guid] + trendResidence[guid]);
+            return [
+              <span key={`${guid}-label`} staticClass="v-calculator_chart-label">
+                {product.label}
+              </span>,
+              <span key={`${guid}-icon`} staticClass="v-calculator_chart-icon">
+                <c-icon icon={product.icon} />
+              </span>,
+              <div key={`${guid}-bar`} staticClass="v-calculator_chart-bars">
+                <span staticClass="v-calculator_chart-bar is-generation">
+                  <i
+                    staticClass="v-calculator_chart-bar-inner"
+                    style={{
+                      width: `${generation}px`,
+                    }}
+                  />
+                  +{formatNumber(generation)}
+                </span>
+
+                <span staticClass="v-calculator_chart-bar is-consumption">
+                  <i
+                    staticClass="v-calculator_chart-bar-inner"
+                    style={{
+                      width: `${consumption}px`,
+                    }}
+                  />
+                  -{formatNumber(consumption)}
+                </span>
+
+                <span
+                  staticClass="v-calculator_chart-bar-trend"
+                  class={{
+                    'is-bad': trend < 0,
+                  }}
+                >
+                  {trend > 0 && '+'}
+                  {formatNumber(trend)}
+                </span>
+              </div>,
+            ];
+          })}
         </div>
 
         <pre>

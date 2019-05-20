@@ -5,6 +5,10 @@
   $stat-height: 48;
   $label-font-size: 12;
   $label-height: 32;
+  $color-map-state: (
+    generation: #098c83,
+    consumption: #c50949,
+  );
 
   position: relative;
   flex: 1 1 100%;
@@ -133,5 +137,112 @@
     height: px($label-height);
     color: $color-bisque;
     background: center / 100% no-repeat url($bgr-constr-normal);
+  }
+
+  @include elem('chart') {
+    position: relative;
+    width: 100%;
+    height: auto;
+
+    display: grid;
+    grid-template: 'label icon bars';
+    grid-auto-rows: max-content;
+    grid-template-columns: max-content max-content 1fr;
+
+    padding: px($gap-base);
+    border: px(1) solid $color-peru;
+
+    font-size: px(12);
+  }
+
+  @include elem('chart-label', 'chart-icon') {
+    position: relative;
+    min-width: 0;
+    max-width: 100%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+    white-space: nowrap;
+  }
+  @include elem('chart-label') {
+    justify-content: flex-end;
+    text-align: right;
+  }
+  @include elem('chart-icon') {
+    font-size: px(16);
+    padding: 0 px($gap-base);
+  }
+
+  @include elem('chart-bars') {
+    position: relative;
+    min-width: 0;
+    max-width: 100%;
+
+    display: grid;
+    grid-template-areas:
+      'generation  trend'
+      'consumption trend';
+    grid-template-rows: px(12) px(12);
+    grid-template-columns: max-content max-content max-content;
+
+    padding: px($gap-base / 2) 0;
+
+    white-space: nowrap;
+    font-family: monospace;
+    line-height: 1;
+  }
+
+  @include elem('chart-bar') {
+    position: relative;
+    max-width: px(1000);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+
+    padding-right: px(1);
+  }
+  @include elem('chart-bar-inner') {
+    display: inline-flex;
+    height: 100%;
+    width: initial;
+    border: px(1) solid;
+    background-color: currentColor;
+
+    margin-right: px(1);
+  }
+  @include elem('chart-bar') {
+    @each $state in ('generation', 'consumption') {
+      @include when($state) {
+        grid-area: #{$state};
+        color: map-get($map: $color-map-state, $key: $state);
+      }
+    }
+  }
+
+  @include elem('chart-bar-trend') {
+    position: relative;
+    grid-area: trend;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+
+    padding: 0 px($gap-base / 2);
+
+    font-size: px(12);
+    color: white;
+
+    background-color: map-get($map: $color-map-state, $key: 'generation');
+    @include when('bad') {
+      background-color: map-get($map: $color-map-state, $key: 'consumption');
+    }
   }
 }

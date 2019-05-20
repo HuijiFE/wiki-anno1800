@@ -11,7 +11,7 @@ import {
 import { PopulationInput } from '@public/db/definition';
 import { clamp, GUID_PRODUCT_MONEY, formatNumber } from '@src/utils';
 import { BaseModel, Basic, Group } from '@src/components';
-import { ModelResidence, ModelIO } from './calculator';
+import VCalculator, { ModelResidence, ModelIO } from './calculator';
 
 const MAX_AMOUNT = 1000000;
 
@@ -23,21 +23,19 @@ export class VCalcIo extends Vue {
   @Model('change', { type: Number, required: true })
   public readonly amount!: number;
 
-  @Prop({ type: Object, required: true })
-  public readonly modelSource!: ModelResidence | ModelIO;
-
-  @Prop({ type: Object, required: true })
-  public readonly productMap!: Record<number, BaseModel>;
-
-  @Prop({ type: Boolean, default: false })
-  public readonly selected!: boolean;
+  @Prop({ type: Number, required: true })
+  public readonly guid!: number;
 
   private onStopPropagation(event: MouseEvent): void {
     event.stopPropagation();
   }
 
   private onClick(event: MouseEvent): void {
-    this.$emit(this.selected ? 'unselect' : 'select');
+    if (this.$parent.selected === this.guid) {
+      this.$parent.selected = 0;
+    } else {
+      this.$parent.selected = this.guid;
+    }
   }
 
   private change(value: number): void {
@@ -55,12 +53,16 @@ export class VCalcIo extends Vue {
     );
   }
 
+  public $parent!: VCalculator;
+
   public $refs!: { input: HTMLInputElement };
 
   private renderInputsAnOutputs(): VNode {
-    const { modelSource, productMap } = this;
-    if ('needs' in modelSource) {
-      const { needs, workforce, workforceMax } = modelSource;
+    const { guid } = this;
+    const { residenceMap, ioMap, productMap } = this.$parent.state;
+
+    if (residenceMap[guid]) {
+      const { needs, workforce, workforceMax } = residenceMap[guid];
       return (
         <div key="io-needs" staticClass="v-calc-io_io">
           {([['supply', workforce], ['money', GUID_PRODUCT_MONEY]] as [
@@ -119,7 +121,7 @@ export class VCalcIo extends Vue {
       );
     }
 
-    const { inputs, outputs } = modelSource;
+    const { inputs, outputs } = ioMap[guid];
 
     return (
       <div key="io" staticClass="v-calc-io_io">
@@ -151,10 +153,15 @@ export class VCalcIo extends Vue {
   }
 
   private render(h: CreateElement): VNode {
+    const { guid } = this;
+    const selected = this.$parent.selected === guid;
+    const model: ModelResidence | ModelIO =
+      this.$parent.state.residenceMap[guid] || this.$parent.state.ioMap[guid];
+
     return (
       <div
         staticClass="v-calc-io"
-        class={{ 'is-selected': this.selected }}
+        class={{ 'is-selected': selected }}
         onClick={this.onStopPropagation}
       >
         <button
@@ -163,12 +170,12 @@ export class VCalcIo extends Vue {
           staticClass="v-calc-io_trigger"
           onClick={this.onClick}
         >
-          <c-icon staticClass="v-calc-io_icon" icon={this.modelSource.icon} />
+          <c-icon staticClass="v-calc-io_icon" icon={model.icon} />
           <span staticClass="v-calc-io_label">
-            {(this.selected && this.modelSource.label) || this.amount}
+            {(selected && model.label) || this.amount}
           </span>
         </button>
-        {this.selected && (
+        {selected && (
           <div key="panel" staticClass="v-calc-io_panel">
             <div staticClass="v-calc-io_wrapper">
               <button
