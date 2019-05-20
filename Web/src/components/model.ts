@@ -3,6 +3,7 @@
 export interface BaseModel<TData = any> {
   key?: string | number;
   label: string;
+  description?: string;
   icon?: string;
   data?: TData;
 }

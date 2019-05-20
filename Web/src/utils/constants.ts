@@ -1,3 +1,5 @@
+export const GUID_COLOR_CONFIG = 140577;
+
 export const GUID_REGION_MODERATE = 5000000;
 export const GUID_REGION_COLONY01 = 5000001;
 export const ICON_REGION_MODERATE =

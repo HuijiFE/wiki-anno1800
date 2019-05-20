@@ -57,9 +57,8 @@ namespace Anno1800.Jsonify {
 
     [Adapter]
     class ColorConfig : Asset {
-      [Nullable]
       [Element("ColorConfig")]
-      public ColorConfigData? colorConfig;
+      public ColorConfigData colorConfig;
 
       public ColorConfig(XElement asset, Dictionary<string, XElement> map) : base(asset, map) { }
     }

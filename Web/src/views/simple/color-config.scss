@@ -1,0 +1,41 @@
+/**
+ * Component: ColorConfig
+ */
+@include comp('color-config') {
+  position: relative;
+  flex: 1 1 100%;
+  max-width: 100%;
+  min-width: 0;
+
+  @include elem('wrapper') {
+    color: #333333;
+    background-color: white;
+    padding: px($gap-base);
+  }
+  @include elem('content') {
+    color: inherit;
+    background: transparent;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+
+    white-space: nowrap;
+  }
+  @include elem('identifier') {
+    color: $color-peru;
+  }
+  @include elem('block') {
+    display: inline-flex;
+    width: px(12);
+    height: px(12);
+    margin-left: px($gap-base);
+    margin-right: px($gap-base / 2);
+    border: px(1) solid black;
+  }
+  @include elem('literal') {
+    //
+  }
+}

@@ -1,0 +1,27 @@
+/**
+ * Component: Asset
+ */
+@include comp('asset') {
+  position: relative;
+  flex: 1 1 100%;
+  max-width: 100%;
+  min-width: 0;
+
+  @include elem('icon', 'label', 'description') {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+  }
+
+  @include elem('icon') {
+    font-size: px(64);
+  }
+  @include elem('label') {
+    font-size: px(20);
+  }
+  @include elem('description') {
+    font-size: px(16);
+  }
+}

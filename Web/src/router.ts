@@ -34,6 +34,18 @@ export function createRouter(): VueRouter {
               ),
           },
           {
+            path: 'asset/:guid(\\d+)',
+            name: 'asset',
+            component: async () =>
+              import(/* webpackChunkName: "v-simple" */ './views/simple/asset'),
+          },
+          {
+            path: 'color-config',
+            name: 'color-config',
+            component: async () =>
+              import(/* webpackChunkName: "v-simple" */ './views/simple/color-config'),
+          },
+          {
             path: ':genre(items|products)',
             name: 'items',
             component: async () =>

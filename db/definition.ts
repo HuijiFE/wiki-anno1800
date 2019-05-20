@@ -14797,7 +14797,7 @@ export interface Text extends Asset {
 }
 
 export interface ColorConfig extends Asset {
-  colorConfig?: ColorConfigData;
+  colorConfig: ColorConfigData;
 }
 
 export interface Icon extends Asset {
