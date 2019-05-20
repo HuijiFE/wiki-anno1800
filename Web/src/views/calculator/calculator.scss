@@ -6,8 +6,8 @@
   $label-font-size: 12;
   $label-height: 32;
   $color-map-state: (
-    generation: #098c83,
-    consumption: #c50949,
+    generation: #258c1d,
+    consumption: #c70404,
   );
 
   position: relative;
@@ -202,25 +202,34 @@
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
-    align-content: center;
-    align-items: center;
+    align-content: flex-end;
+    align-items: flex-end;
 
-    padding-right: px(1);
+    padding-right: px(2);
+    font-size: px(10);
+    line-height: 1;
   }
   @include elem('chart-bar-inner') {
     display: inline-flex;
     height: 100%;
     width: initial;
     border: px(1) solid;
-    background-color: currentColor;
 
     margin-right: px(1);
   }
   @include elem('chart-bar') {
     @each $state in ('generation', 'consumption') {
+      $color: map-get(
+        $map: $color-map-state,
+        $key: $state,
+      );
       @include when($state) {
         grid-area: #{$state};
-        color: map-get($map: $color-map-state, $key: $state);
+        color: rgba($color, 0.8);
+        @include elem('chart-bar-inner') {
+          border-color: $color;
+          background-color: rgba($color, 0.5);
+        }
       }
     }
   }
@@ -238,11 +247,18 @@
     padding: 0 px($gap-base / 2);
 
     font-size: px(12);
+    line-height: 1;
     color: white;
 
-    background-color: map-get($map: $color-map-state, $key: 'generation');
+    background-color: rgba(
+      $color: map-get($map: $color-map-state, $key: 'generation'),
+      $alpha: 0.8
+    );
     @include when('bad') {
-      background-color: map-get($map: $color-map-state, $key: 'consumption');
+      background-color: rgba(
+        $color: map-get($map: $color-map-state, $key: 'consumption'),
+        $alpha: 0.8
+      );
     }
   }
 }
