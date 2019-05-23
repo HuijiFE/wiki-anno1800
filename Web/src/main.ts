@@ -5,7 +5,7 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 
 import * as utils from './utils';
-import { components } from './utils/components';
+import { components } from './components';
 import { createRouter } from './router';
 import VApp from './views/app';
 

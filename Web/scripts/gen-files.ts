@@ -7,9 +7,10 @@ const optionsList: GenFilesOptions[] = [
     patterns: [
       'src/components/**/*.ts',
       'src/components/**/*.tsx',
-      '!!src/components/base/**/*.ts',
+      '!src/components/index.ts',
+      '!src/components/base/**/*.ts',
     ],
-    output: 'src/components/index.ts',
+    output: 'src/components/all.ts',
   },
   {
     comments: ['All components style'],
@@ -25,7 +26,7 @@ const optionsList: GenFilesOptions[] = [
   // utils
   {
     comments: ['All utils'],
-    patterns: ['src/utils/**/*.ts', '!src/utils/components.ts'],
+    patterns: ['src/utils/**/*.ts'],
     output: 'src/utils/index.ts',
   },
 ];

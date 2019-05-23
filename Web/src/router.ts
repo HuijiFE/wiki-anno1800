@@ -25,6 +25,8 @@ export function createRouter(): VueRouter {
             component: async () =>
               import(/* webpackChunkName: "v-home" */ './views/home'),
           },
+
+          // Calculator
           {
             path: 'calculator',
             name: 'calculator',
@@ -33,6 +35,8 @@ export function createRouter(): VueRouter {
                 /* webpackChunkName: "v-calculator" */ './views/calculator/calculator'
               ),
           },
+
+          // Simple
           {
             path: 'asset/:guid(\\d+)',
             name: 'asset',
@@ -45,6 +49,8 @@ export function createRouter(): VueRouter {
             component: async () =>
               import(/* webpackChunkName: "v-simple" */ './views/simple/color-config'),
           },
+
+          // Item & Product
           {
             path: ':genre(items|products)',
             name: 'items',
@@ -57,6 +63,8 @@ export function createRouter(): VueRouter {
             component: async () =>
               import(/* webpackChunkName: "v-item" */ './views/item/item'),
           },
+
+          // Construction
           {
             path: 'construction',
             name: 'construction',
@@ -65,6 +73,8 @@ export function createRouter(): VueRouter {
                 /* webpackChunkName: "v-construction" */ './views/construction/construction'
               ),
           },
+
+          // Debug
           {
             path: '*',
             name: 'test',
