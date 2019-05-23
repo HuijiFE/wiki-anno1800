@@ -128,6 +128,8 @@ interface TrendMaps {
   };
 }
 
+const NEED_THRESHOLD = -0.001;
+
 const reduceTrendMap = (map: TrendMap): Record<number, number> => {
   const record: Record<string, number> = {};
   Object.entries(map).forEach(
@@ -553,6 +555,7 @@ export default class VCalculator extends Vue implements SyncDataView<CalculatorS
     }, {});
     let globalPopulation = 0;
     let influenceFromInvestors = 0;
+
     residenceList.forEach(residence => {
       const amount = amountMap[residence];
       if (!amount) return;
@@ -565,7 +568,7 @@ export default class VCalculator extends Vue implements SyncDataView<CalculatorS
       needs.forEach(({ product, amount: productAmount, supply, money, happiness }) => {
         if (
           (productAmount === 0 && trendGlobal[product] > 0) ||
-          (productAmount > 0 && trendGlobal[product] >= 0)
+          (productAmount > 0 && trendGlobal[product] >= NEED_THRESHOLD)
         ) {
           totalSupply += supply;
           totalMoney += money;
@@ -573,8 +576,7 @@ export default class VCalculator extends Vue implements SyncDataView<CalculatorS
         }
       });
 
-      totalSupply = Math.min(totalSupply, workforceMax);
-      totalSupply *= amount;
+      totalSupply = Math.min(totalSupply, workforceMax) * amount;
       totalMoney *= amount;
 
       trendPopulation[workforce] = totalSupply;
@@ -900,7 +902,7 @@ export default class VCalculator extends Vue implements SyncDataView<CalculatorS
                 <span
                   staticClass="v-calculator_chart-bar-trend"
                   class={{
-                    'is-bad': trend < 0,
+                    'is-bad': trend < NEED_THRESHOLD,
                   }}
                 >
                   {trend > 0 && '+'}
