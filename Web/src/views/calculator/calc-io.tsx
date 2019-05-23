@@ -20,9 +20,6 @@ const MAX_AMOUNT = 1000000;
  */
 @Component
 export class VCalcIo extends Vue {
-  @Model('change', { type: Number, required: true })
-  public readonly amount!: number;
-
   @Prop({ type: Number, required: true })
   public readonly guid!: number;
 
@@ -39,7 +36,11 @@ export class VCalcIo extends Vue {
   }
 
   private change(value: number): void {
-    this.$emit('change', clamp(value, 0, MAX_AMOUNT));
+    const {
+      guid,
+      $parent: { amountMap },
+    } = this;
+    amountMap[guid] = clamp(value, 0, MAX_AMOUNT);
   }
 
   private onInput(event: Event): void {
@@ -58,8 +59,15 @@ export class VCalcIo extends Vue {
   public $refs!: { input: HTMLInputElement };
 
   private renderInputsAnOutputs(): VNode {
-    const { guid } = this;
-    const { residenceMap, ioMap, productMap } = this.$parent.state;
+    const {
+      guid,
+      $parent: {
+        state: { residenceMap, ioMap, productMap },
+        amountMap,
+        residenceNeedsPauseMap: pauseMap,
+      },
+    } = this;
+    const ioAmount = amountMap[guid];
 
     if (residenceMap[guid]) {
       const { needs, workforce, workforceMax } = residenceMap[guid];
@@ -77,45 +85,62 @@ export class VCalcIo extends Vue {
               />
               {productMap[prod].label} +
               {(
-                needs.reduce((total, nd) => total + nd[prop], 0) * this.amount
+                needs.reduce((total, nd) => total + nd[prop], 0) * ioAmount
               ).toLocaleString()}
             </div>
           ))}
           <div key="divider" staticClass="v-calc-io_io-divider" />
-          {needs.map(nd => [
-            <div key={nd.product} staticClass="v-calc-io_io-row">
+          {needs.map(({ product, amount, supply, money }) => [
+            <div
+              key={product}
+              staticClass="v-calc-io_io-row"
+              class={{ 'is-paused': pauseMap[guid][product] }}
+            >
               <c-icon
                 staticClass="v-calc-io_io-icon"
                 size={24}
-                icon={productMap[nd.product].icon}
+                icon={productMap[product].icon}
               />
-              {(nd.amount > 0 &&
-                `${productMap[nd.product].label} -${formatNumber(
-                  nd.amount * this.amount,
-                )}`) ||
-                productMap[nd.product].label}
+              {(amount > 0 && [
+                `${productMap[product].label} -${formatNumber(amount * ioAmount)}`,
+                <button
+                  staticClass="v-calc-io_io-toggle"
+                  onClick={() => {
+                    pauseMap[guid][product] = !pauseMap[guid][product];
+                  }}
+                >
+                  <c-icon
+                    icon={
+                      pauseMap[guid][product]
+                        ? 'data/ui/2kimages/main/icons/icon_play.png'
+                        : 'data/ui/2kimages/main/icons/icon_pause.png'
+                    }
+                  />
+                </button>,
+              ]) ||
+                productMap[product].label}
             </div>,
-            nd.money > 0 && (
-              <div key={`${nd.product}-money`} staticClass="v-calc-io_io-row">
+            money > 0 && (
+              <div key={`${product}-money`} staticClass="v-calc-io_io-row">
                 <c-icon
                   staticClass="v-calc-io_io-icon"
                   size={16}
                   icon={productMap[GUID_PRODUCT_MONEY].icon}
                 />
-                {`${productMap[GUID_PRODUCT_MONEY].label} +${nd.money}`}
+                {`${productMap[GUID_PRODUCT_MONEY].label} +${money}`}
               </div>
             ),
-            nd.supply > 0 && (
-              <div key={`${nd.product}-supply`} staticClass="v-calc-io_io-row">
+            supply > 0 && (
+              <div key={`${product}-supply`} staticClass="v-calc-io_io-row">
                 <c-icon
                   staticClass="v-calc-io_io-icon"
                   size={16}
                   icon={productMap[workforce].icon}
                 />
-                {`${productMap[workforce].label} +${nd.supply}`}
+                {`${productMap[workforce].label} +${supply}`}
               </div>
             ),
-            <div key={`${nd.product}-divider`} staticClass="v-calc-io_io-divider" />,
+            <div key={`${product}-divider`} staticClass="v-calc-io_io-divider" />,
           ])}
         </div>
       );
@@ -133,7 +158,7 @@ export class VCalcIo extends Vue {
               icon={productMap[product].icon}
             />
             {productMap[product].label}
-            {amount > 0 && ` -${(amount * this.amount).toLocaleString()}`}
+            {amount > 0 && ` -${(amount * ioAmount).toLocaleString()}`}
           </div>
         ))}
         <div key="divider" staticClass="v-calc-io_io-divider" />
@@ -145,7 +170,7 @@ export class VCalcIo extends Vue {
               icon={productMap[product].icon}
             />
             {productMap[product].label}
-            {amount > 0 && ` +${(amount * this.amount).toLocaleString()}`}
+            {amount > 0 && ` +${(amount * ioAmount).toLocaleString()}`}
           </div>
         ))}
       </div>
@@ -153,7 +178,11 @@ export class VCalcIo extends Vue {
   }
 
   private render(h: CreateElement): VNode {
-    const { guid } = this;
+    const {
+      guid,
+      $parent: { amountMap },
+    } = this;
+    const ioAmount = amountMap[guid];
     const selected = this.$parent.selected === guid;
     const model: ModelResidence | ModelIO =
       this.$parent.state.residenceMap[guid] || this.$parent.state.ioMap[guid];
@@ -172,7 +201,7 @@ export class VCalcIo extends Vue {
         >
           <c-icon staticClass="v-calc-io_icon" icon={model.icon} />
           <span staticClass="v-calc-io_label">
-            {(selected && model.label) || this.amount}
+            {(selected && model.label) || ioAmount}
           </span>
         </button>
         {selected && (
@@ -180,13 +209,13 @@ export class VCalcIo extends Vue {
             <div staticClass="v-calc-io_wrapper">
               <button
                 staticClass="v-calc-io_button"
-                onClick={() => this.change(this.amount - 10)}
+                onClick={() => this.change(ioAmount - 10)}
               >
                 -10
               </button>
               <button
                 staticClass="v-calc-io_button"
-                onClick={() => this.change(this.amount - 1)}
+                onClick={() => this.change(ioAmount - 1)}
               >
                 -1
               </button>
@@ -194,18 +223,18 @@ export class VCalcIo extends Vue {
                 ref="input"
                 staticClass="v-calc-io_input"
                 type="text"
-                value={this.amount}
+                value={ioAmount}
                 onInput={this.onInput}
               />
               <button
                 staticClass="v-calc-io_button"
-                onClick={() => this.change(this.amount + 1)}
+                onClick={() => this.change(ioAmount + 1)}
               >
                 +1
               </button>
               <button
                 staticClass="v-calc-io_button"
-                onClick={() => this.change(this.amount + 10)}
+                onClick={() => this.change(ioAmount + 10)}
               >
                 +10
               </button>

@@ -250,4 +250,25 @@
     @extend %a-fade-top-in;
     @include animation-list-item(100, 16, $animate-delay-base + 200);
   }
+
+  @include elem('io-row') {
+    @include when('paused') {
+      text-decoration: line-through;
+    }
+  }
+
+  @include elem('io-toggle') {
+    position: relative;
+    flex: none;
+    max-width: 100%;
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+    margin-left: auto;
+    border: none;
+    font-size: px(16);
+    background-color: transparent;
+
+    display: inline-flex;
+  }
 }

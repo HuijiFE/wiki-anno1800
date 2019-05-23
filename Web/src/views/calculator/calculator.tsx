@@ -414,12 +414,15 @@ export default class VCalculator extends Vue implements SyncDataView<CalculatorS
 
   public selected: number = 0;
 
-  private productList!: number[];
+  public productList!: number[];
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  private amountMap: Record<number, number> = null as any;
+  public amountMap: Record<number, number> = null as any;
 
-  private resetAmountMap(): void {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  public residenceNeedsPauseMap: Record<number, Record<number, boolean>> = null as any;
+
+  private reset(): void {
     this.amountMap = [
       this.state.supplyList,
       this.state.workforceList,
@@ -431,11 +434,21 @@ export default class VCalculator extends Vue implements SyncDataView<CalculatorS
       list.forEach(guid => (result[guid] = 0));
       return result;
     }, {});
+    this.residenceNeedsPauseMap = this.state.residenceList.reduce<
+      Record<number, Record<number, boolean>>
+    >((result, residence) => {
+      const { needs } = this.state.residenceMap[residence];
+      result[residence] = needs.reduce<Record<number, boolean>>((map, { product }) => {
+        map[product] = false;
+        return map;
+      }, {});
+      return result;
+    }, {});
   }
 
   private beforeMount(): void {
     this.productList = Object.keys(this.state.productMap).map(p => Number(p));
-    this.resetAmountMap();
+    this.reset();
   }
 
   private get trendMaps(): TrendMaps {
@@ -458,6 +471,7 @@ export default class VCalculator extends Vue implements SyncDataView<CalculatorS
       },
       productList,
       amountMap,
+      residenceNeedsPauseMap,
     } = this;
     const [trendInputs, trendOutputs, trendShip, trendResidence] = Array(4)
       .fill(0)
@@ -520,9 +534,11 @@ export default class VCalculator extends Vue implements SyncDataView<CalculatorS
     });
     residenceList.forEach(residence => {
       const amount = amountMap[residence];
+      const needsPauseMap = residenceNeedsPauseMap[residence];
       if (!amount) return;
       const { needs } = residenceMap[residence];
       needs.forEach(({ product, amount: amountProduct }) => {
+        if (needsPauseMap[product]) return;
         const value = -amountProduct * amount;
         trendResidence[product][residence] = value;
         trendGlobal[product] += value;
@@ -842,7 +858,7 @@ export default class VCalculator extends Vue implements SyncDataView<CalculatorS
                 <span staticClass="v-calculator_label-content">{guid}</span>
               </div>
             ) : (
-              <v-calc-io key={guid} vModel={amountMap[guid]} guid={guid} />
+              <v-calc-io key={guid} guid={guid} />
             ),
           )}
         </div>
