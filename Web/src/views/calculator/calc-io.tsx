@@ -77,7 +77,7 @@ export class VCalcIo extends Vue {
             (keyof PopulationInput),
             number
           ][]).map(([prop, prod]) => (
-            <div key="supply" staticClass="v-calc-io_io-row">
+            <div key={prop} staticClass="v-calc-io_io-row">
               <c-icon
                 staticClass="v-calc-io_io-icon"
                 size={16}
