@@ -60,7 +60,7 @@
     background: center / cover no-repeat url($bgr-constr-chain-main-pattern);
 
     // animation
-    @extend %a-fade-top-in;
+    @extend %a-fade-in;
 
     display: none;
   }
@@ -86,6 +86,10 @@
 
     padding: px($gap-base / 2);
     font-size: px(12);
+
+    // animation
+    @extend %a-fade-in;
+    @include animation-list-item(25, 16);
   }
   @include elem('stat-value') {
     padding-left: px($gap-base / 2);
