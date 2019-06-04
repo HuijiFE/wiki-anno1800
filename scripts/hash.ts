@@ -9,6 +9,8 @@ const resolvePath = genPathResolve(__dirname, '..');
 
 const dataPath = resolvePath('..', 'data');
 
+const MAX_LENGTH = 200;
+
 async function getFileHash(path: string): Promise<string> {
   const hash = crypto.createHash('sha256');
   const input = fs.createReadStream(path);
@@ -50,16 +52,14 @@ async function getAllFilesHash(): Promise<void> {
     ddsFiles.push(...partialFiles);
   }
 
+  ddsFiles.sort();
   console.log(ddsFiles.length);
-
-  let maxLength = 0;
-  ddsFiles.forEach(f => (maxLength = (f.length > maxLength && f.length) || maxLength));
 
   const ws = fs.createWriteStream(resolvePath('data', 'hash.txt'));
   for (const file of ddsFiles) {
     const hash = await getFileHash(file);
     ws.write(file);
-    ws.write(' '.repeat(maxLength - file.length + 2));
+    ws.write((file.length <= MAX_LENGTH && ' '.repeat(MAX_LENGTH - file.length)) || ' ');
     ws.write(hash);
     ws.write('\n');
   }
