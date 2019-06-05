@@ -36,7 +36,7 @@ export default class VColorConfig extends Vue
     const convertName = (name: string): string =>
       name
         .replace(/([A-Z]|\d+)/g, '-$1')
-        .replace(/^-/, '$')
+        .replace(/^-/, '')
         .toLowerCase();
 
     const colorConfig = this.$db[GUID_COLOR_CONFIG] as ColorConfig;
@@ -67,7 +67,7 @@ export default class VColorConfig extends Vue
               {group.items.map(([color, value]) => (
                 <li>
                   <code staticClass="v-color-config_content">
-                    <span staticClass="v-color-config_identifier">{color}</span>
+                    <span staticClass="v-color-config_identifier">${color}</span>
                     {': '}
                     <span
                       staticClass="v-color-config_block"

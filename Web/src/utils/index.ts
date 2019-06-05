@@ -11,6 +11,7 @@ export * from './anno1800';
 export * from './constants';
 export * from './database';
 export * from './debug';
+export * from './env';
 export * from './format';
 export * from './localization';
 export * from './resource';

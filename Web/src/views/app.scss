@@ -7,15 +7,21 @@
   max-width: 100%;
   min-width: 0;
 
+  padding: px(64) 0;
+
   background-color: $color-bisque;
   font-family: $font-family-base;
 
-  @include when('development') {
-    min-height: 120vh;
-    padding: px(64) px((375 - 345) / 2);
-    @include elem('wrapper') {
-      max-width: px(1330);
-      margin: 0 auto;
-    }
+  @include elem('wrapper') {
+    max-width: px(1330);
+    margin: 0 auto;
+  }
+
+  @include prop(
+    (
+      'platform': 'csr',
+    )
+  ) {
+    min-height: 100vh;
   }
 }

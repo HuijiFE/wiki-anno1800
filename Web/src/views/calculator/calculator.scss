@@ -6,8 +6,8 @@
   $label-font-size: 12;
   $label-height: 32;
   $color-map-state: (
-    generation: #258c1d,
-    consumption: #c70404,
+    generation: $positive-value-color,
+    consumption: $negative-value-color,
   );
 
   position: relative;
@@ -34,7 +34,7 @@
     width: px($stat-height / $constr-open-ratio);
     height: px($stat-height);
     color: $color-bisque;
-    background: center / 100% no-repeat url($bgr-constr-open-normal);
+    background: center / 100% no-repeat $color-dark url($bgr-constr-open-normal);
   }
   @include elem('stat-icon') {
     margin-right: px($gap-base / 2);
@@ -57,7 +57,7 @@
 
     padding: px($gap-base * 2);
     border: px(1) solid $color-peru;
-    background: center / cover no-repeat url($bgr-constr-chain-main-pattern);
+    background: center / cover no-repeat $color-dark url($bgr-constr-chain-main-pattern);
 
     // animation
     @extend %a-fade-in;
@@ -140,7 +140,7 @@
     width: px($label-height / $constr-open-ratio);
     height: px($label-height);
     color: $color-bisque;
-    background: center / 100% no-repeat url($bgr-constr-normal);
+    background: center / 100% no-repeat $color-dark url($bgr-constr-normal);
   }
 
   @include elem('chart') {

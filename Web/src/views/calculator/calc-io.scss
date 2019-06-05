@@ -21,7 +21,7 @@
 
   white-space: nowrap;
   color: $color-bisque;
-  background: center / 100% no-repeat url($bgr-constr-normal);
+  background: center / 100% no-repeat $color-dark url($bgr-constr-normal);
 
   // animation
   @extend %a-fade-left-in;
@@ -45,6 +45,7 @@
     padding: 0;
     margin: 0;
     border: none;
+    color: inherit;
     background: center / 100% no-repeat;
     transform: scaleX(1) scaleY(1);
   }

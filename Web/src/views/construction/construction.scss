@@ -66,7 +66,7 @@
     width: px($building-size);
     height: px($building-size / $constr-ratio);
 
-    background: center/100% no-repeat url($bgr-constr-normal);
+    background: center/100% no-repeat $color-dark url($bgr-constr-normal);
   }
   @include elem('building-icon') {
     font-size: px(sqrt($building-size * $building-size * $golden-ratio));
@@ -90,6 +90,7 @@
     font-size: px(12);
     color: white;
     background-color: rgba(black, 0.5);
+    background-blend-mode: multiply;
   }
   @include elem('building') {
     @include elem('building-label') {
@@ -114,7 +115,7 @@
     justify-content: flex-start;
     align-content: stretch;
     align-items: stretch;
-    background: center/cover no-repeat url($bgr-constr-chain-main-pattern);
+    background: center/cover no-repeat $color-dark url($bgr-constr-chain-main-pattern);
   }
   @include elem('set-header') {
     position: relative;

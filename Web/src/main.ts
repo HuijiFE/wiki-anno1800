@@ -46,7 +46,7 @@ async function setup(): Promise<void> {
 }
 
 if (process.env.NODE_ENV === 'development') {
-  utils.debug();
+  // utils.debug();
 }
 
 setup();

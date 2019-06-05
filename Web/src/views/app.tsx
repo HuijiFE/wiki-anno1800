@@ -8,6 +8,7 @@ import {
   Provide,
   Watch,
 } from 'vue-property-decorator';
+import { ENV } from '@src/utils';
 
 /**
  * Component: App
@@ -20,11 +21,11 @@ export default class VApp extends Vue {
       <div
         id="app"
         staticClass="v-app c-reset"
-        class={{ 'is-development': isDev }}
+        class={[`vp-platform_${ENV.APP_PLATFORM}`]}
         data-server-rendered="true"
         data-language={this.$route.params.language}
       >
-        <router-view staticClass="v-app_wrapper" class={{ 'is-development': isDev }} />
+        <router-view staticClass="v-app_wrapper" />
       </div>
     );
   }

@@ -19,6 +19,7 @@
   padding: px(1);
   margin: 0;
 
+  background-color: $color-peru;
   // background-color: darken(white, 40%);
   border-radius: px($radius-base);
 
@@ -68,7 +69,7 @@
     max-width: 100%;
     min-width: 0;
     opacity: 0.8;
-    filter: saturate(0) brightness(0.4);
+    filter: saturate(0) brightness(0.95);
   }
   @include elem('icon') {
     font-size: px($icon-size);
@@ -77,10 +78,10 @@
 
   @include elem('button') {
     outline: 0;
-    background-color: $color-bisque;
+    background-color: $color-peru;
     &:hover,
     &:focus {
-      background-color: lighten($color: $color-bisque, $amount: 5%);
+      background-color: lighten($color: $color-peru, $amount: 5%);
     }
     @include when('selected') {
       background-color: $color-brown;

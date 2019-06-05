@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import Vue, { ComponentOptions } from 'vue';
+import { ENV } from './env';
 import { gameNameLocalization, Language } from './localization';
 
 export interface SyncDataView<T = any> {
@@ -31,7 +32,7 @@ function deserialize(): any {
 
 export const MIXIN_SYNC_DATA_VIEW: ComponentOptions<Vue> = {
   created(this: Vue & SyncDataView) {
-    if (process.env.NODE_ENV === 'development') {
+    if (!ENV.APP_PLATFORM || ENV.APP_PLATFORM === 'csr') {
       const state = this.syncData();
       serialize(state);
       this.state = JSON.parse(JSON.stringify(state));

@@ -6,6 +6,7 @@
     "clean:dist": "rimraf dist",
     "gen-files": "yarn ts scripts/gen-files",
     "env": "echo VUE_APP_WEB_VERSION=$npm_package_version > .env.local",
+    "static": "yarn ts scripts/static-server --huijiwiki",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build --report --report-json",
     "build:pages": "yarn ts scripts/build-pages",
