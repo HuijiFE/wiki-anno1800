@@ -1,7 +1,8 @@
 import { CompanyLevelData } from '@public/db/definition';
 
-const INFLUENCE_BASE = 100;
-const INFLUENCE_PER_LEVEL = 15;
+export const INFLUENCE_BASE = 100;
+export const INFLUENCE_PER_LEVEL = 15;
+export const INFLUENCE_PER_INVESTOR_RESIDENT = 2;
 
 export function getGlobalPopulationForCorporationLevel(
   data: CompanyLevelData,

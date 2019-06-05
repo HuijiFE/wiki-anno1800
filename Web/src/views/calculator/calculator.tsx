@@ -38,6 +38,7 @@ import {
   SyncDataView,
   MIXIN_SYNC_DATA_VIEW,
   formatNumber,
+  INFLUENCE_PER_INVESTOR_RESIDENT,
   getGlobalPopulationForCorporationLevel,
   getCorporationLevelForGlobalPopulation,
   getInfluenceForCorporationLevel,
@@ -588,7 +589,7 @@ export default class VCalculator extends Vue implements SyncDataView<CalculatorS
 
       if (influenceGenerator && totalSupply > influenceGenerator) {
         trendResidence[GUID_PRODUCT_INFLUENCE][residence] = amount;
-        influenceFromInvestors += amount;
+        influenceFromInvestors += amount * INFLUENCE_PER_INVESTOR_RESIDENT;
       }
     });
 
