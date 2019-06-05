@@ -9,7 +9,6 @@
         <IconFilename>data/ui/2kimages/main/3dicons/icon_dynamite.png</IconFilename>
         <ID>DynamiteForFishing</ID>
         <InfoDescription>19181</InfoDescription>
-        <Comments />
       </Standard>
       <SpecialAction>
         <MouseEffectPath>data/graphics/campaign/effects/decals/dynamite_target_decal_01.cfg</MouseEffectPath>
@@ -17,23 +16,13 @@
         <Projectile>101204</Projectile>
         <BarrageCount>1</BarrageCount>
       </SpecialAction>
-      <ItemEffect>
-        <EffectTargets />
-      </ItemEffect>
+      <ItemEffect />
       <ItemAction>
         <ActionTarget>2001744</ActionTarget>
         <ActionDistance>10</ActionDistance>
         <ActionCooldown>2000</ActionCooldown>
         <ActionDescription>19180</ActionDescription>
         <StopMovementOnInteraction>0</StopMovementOnInteraction>
-        <ItemAction>NUKE</ItemAction>
-        <ActionScope>TargetRadius</ActionScope>
-        <RadiusBuffTargets />
-        <ActionIncidentType />
-        <IncidentResolveRate>0.3</IncidentResolveRate>
-        <ActiveBuff>0</ActiveBuff>
-        <ActionCompletedEffect />
-        <CanEndItemAction>1</CanEndItemAction>
       </ItemAction>
       <Item>
         <Allocation>Ship</Allocation>
@@ -42,11 +31,6 @@
         <HasAction>1</HasAction>
         <TradePrice>5000</TradePrice>
         <Flotsam>101223</Flotsam>
-        <ItemType>Normal</ItemType>
-        <ExclusiveGroup>None</ExclusiveGroup>
-        <ItemSet>0</ItemSet>
-        <ExpeditionType>None</ExpeditionType>
-        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
       <Text>
         <LocaText>
@@ -57,20 +41,12 @@
           </English>
         </LocaText>
         <LineID>27816</LineID>
-        <Localize>1</Localize>
       </Text>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
         <ItemDifficulties>Easy;Average</ItemDifficulties>
-        <ExpeditionAttributes />
-        <ItemRegions />
-        <FluffText>0</FluffText>
       </ExpeditionAttribute>
-      <Locked>
-        <DefaultLockedState>1</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
-      </Locked>
+      <Locked />
     </Values>
   </Asset>
   <Asset>
@@ -81,7 +57,6 @@
         <Name>Trunnioned Mortar</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/consumables/icon_active_mortar_1.png</IconFilename>
         <InfoDescription>22054</InfoDescription>
-        <Comments />
       </Standard>
       <SpecialAction>
         <UseEffectAsset>1</UseEffectAsset>
@@ -89,9 +64,7 @@
         <Projectile>102494</Projectile>
         <BarrageCount>1</BarrageCount>
       </SpecialAction>
-      <ItemEffect>
-        <EffectTargets />
-      </ItemEffect>
+      <ItemEffect />
       <ItemAction>
         <ActionTarget>2001747</ActionTarget>
         <ActionDistance>50</ActionDistance>
@@ -100,25 +73,12 @@
         <ActionDescription>12828</ActionDescription>
         <CanEndItemAction>0</CanEndItemAction>
         <StopMovementOnInteraction>0</StopMovementOnInteraction>
-        <ItemAction>NUKE</ItemAction>
-        <ActionScope>TargetRadius</ActionScope>
-        <RadiusBuffTargets />
-        <ActionIncidentType />
-        <IncidentResolveRate>0.3</IncidentResolveRate>
-        <ActiveBuff>0</ActiveBuff>
-        <ActionCompletedEffect />
       </ItemAction>
       <Item>
         <Allocation>Warship</Allocation>
         <Rarity>Uncommon</Rarity>
         <HasAction>1</HasAction>
         <TradePrice>26000</TradePrice>
-        <ItemType>Normal</ItemType>
-        <ExclusiveGroup>None</ExclusiveGroup>
-        <ItemSet>0</ItemSet>
-        <ExpeditionType>None</ExpeditionType>
-        <Flotsam>1000212</Flotsam>
-        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
       <Text>
         <LocaText>
@@ -129,7 +89,6 @@
           </English>
         </LocaText>
         <LineID>29554</LineID>
-        <Localize>1</Localize>
       </Text>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
@@ -141,12 +100,9 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Easy;Average</ItemDifficulties>
         <FluffText>22054</FluffText>
-        <ItemRegions />
       </ExpeditionAttribute>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
       </Locked>
     </Values>
   </Asset>
@@ -158,7 +114,6 @@
         <Name>Cast Mortar</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/consumables/icon_active_mortar_1.png</IconFilename>
         <InfoDescription>22055</InfoDescription>
-        <Comments />
       </Standard>
       <SpecialAction>
         <UseEffectAsset>1</UseEffectAsset>
@@ -166,9 +121,7 @@
         <Projectile>102495</Projectile>
         <BarrageCount>1</BarrageCount>
       </SpecialAction>
-      <ItemEffect>
-        <EffectTargets />
-      </ItemEffect>
+      <ItemEffect />
       <ItemAction>
         <ActionTarget>2001747</ActionTarget>
         <ActionDistance>60</ActionDistance>
@@ -177,25 +130,12 @@
         <ActionDescription>12828</ActionDescription>
         <CanEndItemAction>0</CanEndItemAction>
         <StopMovementOnInteraction>0</StopMovementOnInteraction>
-        <ItemAction>NUKE</ItemAction>
-        <ActionScope>TargetRadius</ActionScope>
-        <RadiusBuffTargets />
-        <ActionIncidentType />
-        <IncidentResolveRate>0.3</IncidentResolveRate>
-        <ActiveBuff>0</ActiveBuff>
-        <ActionCompletedEffect />
       </ItemAction>
       <Item>
         <Allocation>Warship</Allocation>
         <Rarity>Rare</Rarity>
         <HasAction>1</HasAction>
         <TradePrice>87000</TradePrice>
-        <ItemType>Normal</ItemType>
-        <ExclusiveGroup>None</ExclusiveGroup>
-        <ItemSet>0</ItemSet>
-        <ExpeditionType>None</ExpeditionType>
-        <Flotsam>1000212</Flotsam>
-        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
       <Text>
         <LocaText>
@@ -206,7 +146,6 @@
           </English>
         </LocaText>
         <LineID>29555</LineID>
-        <Localize>1</Localize>
       </Text>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
@@ -218,12 +157,9 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Easy;Average;Hard</ItemDifficulties>
         <FluffText>22055</FluffText>
-        <ItemRegions />
       </ExpeditionAttribute>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
       </Locked>
     </Values>
   </Asset>
@@ -235,7 +171,6 @@
         <Name>Grapeshot Cast Mortar</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/consumables/icon_active_mortar_2.png</IconFilename>
         <InfoDescription>22056</InfoDescription>
-        <Comments />
       </Standard>
       <SpecialAction>
         <UseEffectAsset>1</UseEffectAsset>
@@ -243,9 +178,7 @@
         <Projectile>102496</Projectile>
         <BarrageCount>1</BarrageCount>
       </SpecialAction>
-      <ItemEffect>
-        <EffectTargets />
-      </ItemEffect>
+      <ItemEffect />
       <ItemAction>
         <ActionTarget>2001747</ActionTarget>
         <ActionDistance>70</ActionDistance>
@@ -254,25 +187,12 @@
         <ActionDescription>12828</ActionDescription>
         <CanEndItemAction>0</CanEndItemAction>
         <StopMovementOnInteraction>0</StopMovementOnInteraction>
-        <ItemAction>NUKE</ItemAction>
-        <ActionScope>TargetRadius</ActionScope>
-        <RadiusBuffTargets />
-        <ActionIncidentType />
-        <IncidentResolveRate>0.3</IncidentResolveRate>
-        <ActiveBuff>0</ActiveBuff>
-        <ActionCompletedEffect />
       </ItemAction>
       <Item>
         <Allocation>Warship</Allocation>
         <Rarity>Epic</Rarity>
         <HasAction>1</HasAction>
         <TradePrice>260000</TradePrice>
-        <ItemType>Normal</ItemType>
-        <ExclusiveGroup>None</ExclusiveGroup>
-        <ItemSet>0</ItemSet>
-        <ExpeditionType>None</ExpeditionType>
-        <Flotsam>1000212</Flotsam>
-        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
       <Text>
         <LocaText>
@@ -283,7 +203,6 @@
           </English>
         </LocaText>
         <LineID>29556</LineID>
-        <Localize>1</Localize>
       </Text>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
@@ -295,13 +214,8 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Average;Hard</ItemDifficulties>
         <FluffText>22056</FluffText>
-        <ItemRegions />
       </ExpeditionAttribute>
-      <Locked>
-        <DefaultLockedState>1</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
-      </Locked>
+      <Locked />
     </Values>
   </Asset>
   <Asset>
@@ -312,7 +226,6 @@
         <Name>Multishot Mortar</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/consumables/icon_active_mortar_3.png</IconFilename>
         <InfoDescription>22057</InfoDescription>
-        <Comments />
       </Standard>
       <SpecialAction>
         <UseEffectAsset>1</UseEffectAsset>
@@ -321,9 +234,7 @@
         <BarrageCount>5</BarrageCount>
         <BarrageDuration>4000</BarrageDuration>
       </SpecialAction>
-      <ItemEffect>
-        <EffectTargets />
-      </ItemEffect>
+      <ItemEffect />
       <ItemAction>
         <ActionTarget>2001747</ActionTarget>
         <ActionDistance>50</ActionDistance>
@@ -331,25 +242,12 @@
         <ActionDescription>17343</ActionDescription>
         <CanEndItemAction>0</CanEndItemAction>
         <StopMovementOnInteraction>0</StopMovementOnInteraction>
-        <ItemAction>NUKE</ItemAction>
-        <ActionScope>TargetRadius</ActionScope>
-        <RadiusBuffTargets />
-        <ActionIncidentType />
-        <IncidentResolveRate>0.3</IncidentResolveRate>
-        <ActiveBuff>0</ActiveBuff>
-        <ActionCompletedEffect />
       </ItemAction>
       <Item>
         <Allocation>Warship</Allocation>
         <Rarity>Legendary</Rarity>
         <HasAction>1</HasAction>
         <TradePrice>700000</TradePrice>
-        <ItemType>Normal</ItemType>
-        <ExclusiveGroup>None</ExclusiveGroup>
-        <ItemSet>0</ItemSet>
-        <ExpeditionType>None</ExpeditionType>
-        <Flotsam>1000212</Flotsam>
-        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
       <Text>
         <LocaText>
@@ -360,7 +258,6 @@
           </English>
         </LocaText>
         <LineID>29557</LineID>
-        <Localize>1</Localize>
       </Text>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
@@ -372,13 +269,8 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Hard</ItemDifficulties>
         <FluffText>22057</FluffText>
-        <ItemRegions />
       </ExpeditionAttribute>
-      <Locked>
-        <DefaultLockedState>1</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
-      </Locked>
+      <Locked />
     </Values>
   </Asset>
   <Asset>
@@ -389,7 +281,6 @@
         <Name>Abus Gun</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/consumables/icon_howitzer_1.png</IconFilename>
         <InfoDescription>19710</InfoDescription>
-        <Comments />
       </Standard>
       <SpecialAction>
         <UseEffectAsset>1</UseEffectAsset>
@@ -398,9 +289,7 @@
         <BarrageCount>1</BarrageCount>
         <ActionRadius>1</ActionRadius>
       </SpecialAction>
-      <ItemEffect>
-        <EffectTargets />
-      </ItemEffect>
+      <ItemEffect />
       <ItemAction>
         <ActionTarget>2001747</ActionTarget>
         <ActionDistance>80</ActionDistance>
@@ -409,13 +298,6 @@
         <ActionDescription>21616</ActionDescription>
         <CanEndItemAction>0</CanEndItemAction>
         <StopMovementOnInteraction>0</StopMovementOnInteraction>
-        <ItemAction>NUKE</ItemAction>
-        <ActionScope>TargetRadius</ActionScope>
-        <RadiusBuffTargets />
-        <ActionIncidentType />
-        <IncidentResolveRate>0.3</IncidentResolveRate>
-        <ActiveBuff>0</ActiveBuff>
-        <ActionCompletedEffect />
       </ItemAction>
       <Item>
         <Allocation>Warship</Allocation>
@@ -423,12 +305,6 @@
         <Rarity>Rare</Rarity>
         <HasAction>1</HasAction>
         <TradePrice>76500</TradePrice>
-        <ItemType>Normal</ItemType>
-        <ExclusiveGroup>None</ExclusiveGroup>
-        <ItemSet>0</ItemSet>
-        <ExpeditionType>None</ExpeditionType>
-        <Flotsam>1000212</Flotsam>
-        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
       <Text>
         <LocaText>
@@ -439,7 +315,6 @@
           </English>
         </LocaText>
         <LineID>26801</LineID>
-        <Localize>1</Localize>
       </Text>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
@@ -451,12 +326,9 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Easy;Average;Hard</ItemDifficulties>
         <FluffText>19710</FluffText>
-        <ItemRegions />
       </ExpeditionAttribute>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
       </Locked>
     </Values>
   </Asset>
@@ -468,7 +340,6 @@
         <Name>Napoleon 12-Pounder</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/consumables/icon_howitzer_2.png</IconFilename>
         <InfoDescription>19711</InfoDescription>
-        <Comments />
       </Standard>
       <SpecialAction>
         <UseEffectAsset>1</UseEffectAsset>
@@ -477,9 +348,7 @@
         <BarrageCount>1</BarrageCount>
         <ActionRadius>1</ActionRadius>
       </SpecialAction>
-      <ItemEffect>
-        <EffectTargets />
-      </ItemEffect>
+      <ItemEffect />
       <ItemAction>
         <ActionTarget>2001747</ActionTarget>
         <ActionDistance>90</ActionDistance>
@@ -488,13 +357,6 @@
         <ActionDescription>21616</ActionDescription>
         <CanEndItemAction>0</CanEndItemAction>
         <StopMovementOnInteraction>0</StopMovementOnInteraction>
-        <ItemAction>NUKE</ItemAction>
-        <ActionScope>TargetRadius</ActionScope>
-        <RadiusBuffTargets />
-        <ActionIncidentType />
-        <IncidentResolveRate>0.3</IncidentResolveRate>
-        <ActiveBuff>0</ActiveBuff>
-        <ActionCompletedEffect />
       </ItemAction>
       <Item>
         <Allocation>Warship</Allocation>
@@ -502,12 +364,6 @@
         <Rarity>Epic</Rarity>
         <HasAction>1</HasAction>
         <TradePrice>234800</TradePrice>
-        <ItemType>Normal</ItemType>
-        <ExclusiveGroup>None</ExclusiveGroup>
-        <ItemSet>0</ItemSet>
-        <ExpeditionType>None</ExpeditionType>
-        <Flotsam>1000212</Flotsam>
-        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
       <Text>
         <LocaText>
@@ -518,7 +374,6 @@
           </English>
         </LocaText>
         <LineID>26802</LineID>
-        <Localize>1</Localize>
       </Text>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
@@ -530,13 +385,8 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Average;Hard</ItemDifficulties>
         <FluffText>19711</FluffText>
-        <ItemRegions />
       </ExpeditionAttribute>
-      <Locked>
-        <DefaultLockedState>1</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
-      </Locked>
+      <Locked />
     </Values>
   </Asset>
   <Asset>
@@ -547,7 +397,6 @@
         <Name>24 cm Mörser M 98</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/consumables/icon_howitzer_3.png</IconFilename>
         <InfoDescription>19712</InfoDescription>
-        <Comments />
       </Standard>
       <SpecialAction>
         <UseEffectAsset>1</UseEffectAsset>
@@ -556,9 +405,7 @@
         <BarrageCount>1</BarrageCount>
         <ActionRadius>1</ActionRadius>
       </SpecialAction>
-      <ItemEffect>
-        <EffectTargets />
-      </ItemEffect>
+      <ItemEffect />
       <ItemAction>
         <ActionTarget>2001747</ActionTarget>
         <ActionDistance>100</ActionDistance>
@@ -567,13 +414,6 @@
         <ActionDescription>21616</ActionDescription>
         <CanEndItemAction>0</CanEndItemAction>
         <StopMovementOnInteraction>0</StopMovementOnInteraction>
-        <ItemAction>NUKE</ItemAction>
-        <ActionScope>TargetRadius</ActionScope>
-        <RadiusBuffTargets />
-        <ActionIncidentType />
-        <IncidentResolveRate>0.3</IncidentResolveRate>
-        <ActiveBuff>0</ActiveBuff>
-        <ActionCompletedEffect />
       </ItemAction>
       <Item>
         <Allocation>Warship</Allocation>
@@ -581,12 +421,6 @@
         <Rarity>Legendary</Rarity>
         <HasAction>1</HasAction>
         <TradePrice>644000</TradePrice>
-        <ItemType>Normal</ItemType>
-        <ExclusiveGroup>None</ExclusiveGroup>
-        <ItemSet>0</ItemSet>
-        <ExpeditionType>None</ExpeditionType>
-        <Flotsam>1000212</Flotsam>
-        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
       <Text>
         <LocaText>
@@ -597,7 +431,6 @@
           </English>
         </LocaText>
         <LineID>26803</LineID>
-        <Localize>1</Localize>
       </Text>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
@@ -609,13 +442,8 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Hard</ItemDifficulties>
         <FluffText>19712</FluffText>
-        <ItemRegions />
       </ExpeditionAttribute>
-      <Locked>
-        <DefaultLockedState>1</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
-      </Locked>
+      <Locked />
     </Values>
   </Asset>
   <Asset>
@@ -626,15 +454,9 @@
         <Name>Greek Fire</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/consumables/icon_flame_thrower_1.png</IconFilename>
         <InfoDescription>19713</InfoDescription>
-        <Comments />
       </Standard>
-      <SpecialAction>
-        <MouseEffect>0</MouseEffect>
-        <Projectile>0</Projectile>
-      </SpecialAction>
-      <ItemEffect>
-        <EffectTargets />
-      </ItemEffect>
+      <SpecialAction />
+      <ItemEffect />
       <ItemAction>
         <ItemAction>NOACTION</ItemAction>
         <ActionScope>Self</ActionScope>
@@ -644,11 +466,6 @@
         <ActionDescription>20071</ActionDescription>
         <CanEndItemAction>0</CanEndItemAction>
         <StopMovementOnInteraction>0</StopMovementOnInteraction>
-        <ActionTarget>0</ActionTarget>
-        <RadiusBuffTargets />
-        <ActionIncidentType />
-        <IncidentResolveRate>0.3</IncidentResolveRate>
-        <ActionCompletedEffect />
       </ItemAction>
       <Item>
         <Allocation>Warship</Allocation>
@@ -657,11 +474,6 @@
         <HasAction>1</HasAction>
         <ExclusiveGroup>AutoAttackProjectile</ExclusiveGroup>
         <TradePrice>50000</TradePrice>
-        <ItemType>Normal</ItemType>
-        <ItemSet>0</ItemSet>
-        <ExpeditionType>None</ExpeditionType>
-        <Flotsam>1000212</Flotsam>
-        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
       <Text>
         <LocaText>
@@ -672,7 +484,6 @@
           </English>
         </LocaText>
         <LineID>29558</LineID>
-        <Localize>1</Localize>
       </Text>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
@@ -684,12 +495,9 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Easy;Average;Hard</ItemDifficulties>
         <FluffText>19713</FluffText>
-        <ItemRegions />
       </ExpeditionAttribute>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
       </Locked>
     </Values>
   </Asset>
@@ -701,15 +509,9 @@
         <Name>Flamenwerfer</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/consumables/icon_flame_thrower_2.png</IconFilename>
         <InfoDescription>19714</InfoDescription>
-        <Comments />
       </Standard>
-      <SpecialAction>
-        <MouseEffect>0</MouseEffect>
-        <Projectile>0</Projectile>
-      </SpecialAction>
-      <ItemEffect>
-        <EffectTargets />
-      </ItemEffect>
+      <SpecialAction />
+      <ItemEffect />
       <ItemAction>
         <ItemAction>NOACTION</ItemAction>
         <ActionScope>Self</ActionScope>
@@ -719,11 +521,6 @@
         <ActionDescription>20071</ActionDescription>
         <CanEndItemAction>0</CanEndItemAction>
         <StopMovementOnInteraction>0</StopMovementOnInteraction>
-        <ActionTarget>0</ActionTarget>
-        <RadiusBuffTargets />
-        <ActionIncidentType />
-        <IncidentResolveRate>0.3</IncidentResolveRate>
-        <ActionCompletedEffect />
       </ItemAction>
       <Item>
         <Allocation>Warship</Allocation>
@@ -732,11 +529,6 @@
         <HasAction>1</HasAction>
         <ExclusiveGroup>AutoAttackProjectile</ExclusiveGroup>
         <TradePrice>200000</TradePrice>
-        <ItemType>Normal</ItemType>
-        <ItemSet>0</ItemSet>
-        <ExpeditionType>None</ExpeditionType>
-        <Flotsam>1000212</Flotsam>
-        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
       <Text>
         <LocaText>
@@ -747,7 +539,6 @@
           </English>
         </LocaText>
         <LineID>29559</LineID>
-        <Localize>1</Localize>
       </Text>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
@@ -759,13 +550,8 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Average;Hard</ItemDifficulties>
         <FluffText>19714</FluffText>
-        <ItemRegions />
       </ExpeditionAttribute>
-      <Locked>
-        <DefaultLockedState>1</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
-      </Locked>
+      <Locked />
     </Values>
   </Asset>
   <Asset>
@@ -776,15 +562,9 @@
         <Name>Pyrophorian Flame Thrower</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/consumables/icon_flame_thrower_3.png</IconFilename>
         <InfoDescription>19715</InfoDescription>
-        <Comments />
       </Standard>
-      <SpecialAction>
-        <MouseEffect>0</MouseEffect>
-        <Projectile>0</Projectile>
-      </SpecialAction>
-      <ItemEffect>
-        <EffectTargets />
-      </ItemEffect>
+      <SpecialAction />
+      <ItemEffect />
       <ItemAction>
         <ItemAction>NOACTION</ItemAction>
         <ActionScope>Self</ActionScope>
@@ -794,11 +574,6 @@
         <ActionDescription>20071</ActionDescription>
         <CanEndItemAction>0</CanEndItemAction>
         <StopMovementOnInteraction>0</StopMovementOnInteraction>
-        <ActionTarget>0</ActionTarget>
-        <RadiusBuffTargets />
-        <ActionIncidentType />
-        <IncidentResolveRate>0.3</IncidentResolveRate>
-        <ActionCompletedEffect />
       </ItemAction>
       <Item>
         <Allocation>Warship</Allocation>
@@ -807,11 +582,6 @@
         <HasAction>1</HasAction>
         <ExclusiveGroup>AutoAttackProjectile</ExclusiveGroup>
         <TradePrice>400000</TradePrice>
-        <ItemType>Normal</ItemType>
-        <ItemSet>0</ItemSet>
-        <ExpeditionType>None</ExpeditionType>
-        <Flotsam>1000212</Flotsam>
-        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
       <Text>
         <LocaText>
@@ -822,7 +592,6 @@
           </English>
         </LocaText>
         <LineID>29560</LineID>
-        <Localize>1</Localize>
       </Text>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
@@ -834,13 +603,8 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Hard</ItemDifficulties>
         <FluffText>19715</FluffText>
-        <ItemRegions />
       </ExpeditionAttribute>
-      <Locked>
-        <DefaultLockedState>1</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
-      </Locked>
+      <Locked />
     </Values>
   </Asset>
   <Asset>
@@ -851,12 +615,8 @@
         <Name>Antiseptics</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/consumables/icon_medicine_1.png</IconFilename>
         <InfoDescription>19539</InfoDescription>
-        <Comments />
       </Standard>
-      <SpecialAction>
-        <MouseEffect>0</MouseEffect>
-        <Projectile>0</Projectile>
-      </SpecialAction>
+      <SpecialAction />
       <ItemEffect>
         <EffectTargets>
           <Item>
@@ -872,25 +632,12 @@
         <ActionDuration>3000000</ActionDuration>
         <ActiveBuff>191910</ActiveBuff>
         <CanEndItemAction>0</CanEndItemAction>
-        <ActionTarget>0</ActionTarget>
-        <RadiusBuffTargets />
-        <IncidentResolveRate>0.3</IncidentResolveRate>
-        <ActionDescription>0</ActionDescription>
-        <ActionCompletedEffect />
-        <StopMovementOnInteraction>1</StopMovementOnInteraction>
       </ItemAction>
       <Item>
         <Allocation>TownHall</Allocation>
         <MaxStackSize>5</MaxStackSize>
         <HasAction>1</HasAction>
         <TradePrice>2400</TradePrice>
-        <Rarity>Common</Rarity>
-        <ItemType>Normal</ItemType>
-        <ExclusiveGroup>None</ExclusiveGroup>
-        <ItemSet>0</ItemSet>
-        <ExpeditionType>None</ExpeditionType>
-        <Flotsam>1000212</Flotsam>
-        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
       <Text>
         <LocaText>
@@ -901,7 +648,6 @@
           </English>
         </LocaText>
         <LineID>26831</LineID>
-        <Localize>1</Localize>
       </Text>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
@@ -913,13 +659,8 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Easy</ItemDifficulties>
         <FluffText>19539</FluffText>
-        <ItemRegions />
       </ExpeditionAttribute>
-      <Locked>
-        <DefaultLockedState>1</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
-      </Locked>
+      <Locked />
     </Values>
   </Asset>
   <Asset>
@@ -930,12 +671,8 @@
         <Name>Penicillin</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/consumables/icon_medicine_2.png</IconFilename>
         <InfoDescription>19540</InfoDescription>
-        <Comments />
       </Standard>
-      <SpecialAction>
-        <MouseEffect>0</MouseEffect>
-        <Projectile>0</Projectile>
-      </SpecialAction>
+      <SpecialAction />
       <ItemEffect>
         <EffectTargets>
           <Item>
@@ -951,12 +688,6 @@
         <ActionDuration>4800000</ActionDuration>
         <ActiveBuff>191911</ActiveBuff>
         <CanEndItemAction>0</CanEndItemAction>
-        <ActionTarget>0</ActionTarget>
-        <RadiusBuffTargets />
-        <IncidentResolveRate>0.3</IncidentResolveRate>
-        <ActionDescription>0</ActionDescription>
-        <ActionCompletedEffect />
-        <StopMovementOnInteraction>1</StopMovementOnInteraction>
       </ItemAction>
       <Item>
         <Allocation>TownHall</Allocation>
@@ -964,12 +695,6 @@
         <Rarity>Uncommon</Rarity>
         <HasAction>1</HasAction>
         <TradePrice>12000</TradePrice>
-        <ItemType>Normal</ItemType>
-        <ExclusiveGroup>None</ExclusiveGroup>
-        <ItemSet>0</ItemSet>
-        <ExpeditionType>None</ExpeditionType>
-        <Flotsam>1000212</Flotsam>
-        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
       <Text>
         <LocaText>
@@ -980,7 +705,6 @@
           </English>
         </LocaText>
         <LineID>26832</LineID>
-        <Localize>1</Localize>
       </Text>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
@@ -992,13 +716,8 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Easy;Average</ItemDifficulties>
         <FluffText>19540</FluffText>
-        <ItemRegions />
       </ExpeditionAttribute>
-      <Locked>
-        <DefaultLockedState>1</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
-      </Locked>
+      <Locked />
     </Values>
   </Asset>
   <Asset>
@@ -1009,12 +728,8 @@
         <Name>Rabies Vaccine</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/consumables/icon_medicine_3.png</IconFilename>
         <InfoDescription>19541</InfoDescription>
-        <Comments />
       </Standard>
-      <SpecialAction>
-        <MouseEffect>0</MouseEffect>
-        <Projectile>0</Projectile>
-      </SpecialAction>
+      <SpecialAction />
       <ItemEffect>
         <EffectTargets>
           <Item>
@@ -1030,12 +745,6 @@
         <ActionDuration>7200000</ActionDuration>
         <ActiveBuff>191912</ActiveBuff>
         <CanEndItemAction>0</CanEndItemAction>
-        <ActionTarget>0</ActionTarget>
-        <RadiusBuffTargets />
-        <IncidentResolveRate>0.3</IncidentResolveRate>
-        <ActionDescription>0</ActionDescription>
-        <ActionCompletedEffect />
-        <StopMovementOnInteraction>1</StopMovementOnInteraction>
       </ItemAction>
       <Item>
         <Allocation>TownHall</Allocation>
@@ -1043,12 +752,6 @@
         <Rarity>Rare</Rarity>
         <HasAction>1</HasAction>
         <TradePrice>47500</TradePrice>
-        <ItemType>Normal</ItemType>
-        <ExclusiveGroup>None</ExclusiveGroup>
-        <ItemSet>0</ItemSet>
-        <ExpeditionType>None</ExpeditionType>
-        <Flotsam>1000212</Flotsam>
-        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
       <Text>
         <LocaText>
@@ -1059,7 +762,6 @@
           </English>
         </LocaText>
         <LineID>26833</LineID>
-        <Localize>1</Localize>
       </Text>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
@@ -1071,13 +773,8 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Easy;Average;Hard</ItemDifficulties>
         <FluffText>19541</FluffText>
-        <ItemRegions />
       </ExpeditionAttribute>
-      <Locked>
-        <DefaultLockedState>1</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
-      </Locked>
+      <Locked />
     </Values>
   </Asset>
   <Asset>
@@ -1088,12 +785,8 @@
         <Name>Foam Extinguisher</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/consumables/icon_fire_extinguisher_1.png</IconFilename>
         <InfoDescription>19542</InfoDescription>
-        <Comments />
       </Standard>
-      <SpecialAction>
-        <MouseEffect>0</MouseEffect>
-        <Projectile>0</Projectile>
-      </SpecialAction>
+      <SpecialAction />
       <ItemEffect>
         <EffectTargets>
           <Item>
@@ -1109,25 +802,12 @@
         <ActionDuration>3000000</ActionDuration>
         <ActiveBuff>191916</ActiveBuff>
         <CanEndItemAction>0</CanEndItemAction>
-        <ActionTarget>0</ActionTarget>
-        <RadiusBuffTargets />
-        <IncidentResolveRate>0.3</IncidentResolveRate>
-        <ActionDescription>0</ActionDescription>
-        <ActionCompletedEffect />
-        <StopMovementOnInteraction>1</StopMovementOnInteraction>
       </ItemAction>
       <Item>
         <Allocation>TownHall</Allocation>
         <MaxStackSize>5</MaxStackSize>
         <HasAction>1</HasAction>
         <TradePrice>2000</TradePrice>
-        <Rarity>Common</Rarity>
-        <ItemType>Normal</ItemType>
-        <ExclusiveGroup>None</ExclusiveGroup>
-        <ItemSet>0</ItemSet>
-        <ExpeditionType>None</ExpeditionType>
-        <Flotsam>1000212</Flotsam>
-        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
       <Text>
         <LocaText>
@@ -1138,7 +818,6 @@
           </English>
         </LocaText>
         <LineID>26834</LineID>
-        <Localize>1</Localize>
       </Text>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
@@ -1150,13 +829,8 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Easy</ItemDifficulties>
         <FluffText>19542</FluffText>
-        <ItemRegions />
       </ExpeditionAttribute>
-      <Locked>
-        <DefaultLockedState>1</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
-      </Locked>
+      <Locked />
     </Values>
   </Asset>
   <Asset>
@@ -1167,12 +841,8 @@
         <Name>Soda-Acid Extinguisher</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/consumables/icon_fire_extinguisher_2.png</IconFilename>
         <InfoDescription>19543</InfoDescription>
-        <Comments />
       </Standard>
-      <SpecialAction>
-        <MouseEffect>0</MouseEffect>
-        <Projectile>0</Projectile>
-      </SpecialAction>
+      <SpecialAction />
       <ItemEffect>
         <EffectTargets>
           <Item>
@@ -1188,12 +858,6 @@
         <ActionDuration>4800000</ActionDuration>
         <ActiveBuff>191917</ActiveBuff>
         <CanEndItemAction>0</CanEndItemAction>
-        <ActionTarget>0</ActionTarget>
-        <RadiusBuffTargets />
-        <IncidentResolveRate>0.3</IncidentResolveRate>
-        <ActionDescription>0</ActionDescription>
-        <ActionCompletedEffect />
-        <StopMovementOnInteraction>1</StopMovementOnInteraction>
       </ItemAction>
       <Item>
         <Allocation>TownHall</Allocation>
@@ -1201,12 +865,6 @@
         <Rarity>Uncommon</Rarity>
         <HasAction>1</HasAction>
         <TradePrice>10000</TradePrice>
-        <ItemType>Normal</ItemType>
-        <ExclusiveGroup>None</ExclusiveGroup>
-        <ItemSet>0</ItemSet>
-        <ExpeditionType>None</ExpeditionType>
-        <Flotsam>1000212</Flotsam>
-        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
       <Text>
         <LocaText>
@@ -1217,7 +875,6 @@
           </English>
         </LocaText>
         <LineID>26835</LineID>
-        <Localize>1</Localize>
       </Text>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
@@ -1229,13 +886,8 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Easy;Average</ItemDifficulties>
         <FluffText>19543</FluffText>
-        <ItemRegions />
       </ExpeditionAttribute>
-      <Locked>
-        <DefaultLockedState>1</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
-      </Locked>
+      <Locked />
     </Values>
   </Asset>
   <Asset>
@@ -1246,12 +898,8 @@
         <Name>CTC Extinguisher</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/consumables/icon_fire_extinguisher_3.png</IconFilename>
         <InfoDescription>19544</InfoDescription>
-        <Comments />
       </Standard>
-      <SpecialAction>
-        <MouseEffect>0</MouseEffect>
-        <Projectile>0</Projectile>
-      </SpecialAction>
+      <SpecialAction />
       <ItemEffect>
         <EffectTargets>
           <Item>
@@ -1267,12 +915,6 @@
         <ActionDuration>7200000</ActionDuration>
         <ActiveBuff>191918</ActiveBuff>
         <CanEndItemAction>0</CanEndItemAction>
-        <ActionTarget>0</ActionTarget>
-        <RadiusBuffTargets />
-        <IncidentResolveRate>0.3</IncidentResolveRate>
-        <ActionDescription>0</ActionDescription>
-        <ActionCompletedEffect />
-        <StopMovementOnInteraction>1</StopMovementOnInteraction>
       </ItemAction>
       <Item>
         <Allocation>TownHall</Allocation>
@@ -1280,12 +922,6 @@
         <Rarity>Rare</Rarity>
         <HasAction>1</HasAction>
         <TradePrice>30000</TradePrice>
-        <ItemType>Normal</ItemType>
-        <ExclusiveGroup>None</ExclusiveGroup>
-        <ItemSet>0</ItemSet>
-        <ExpeditionType>None</ExpeditionType>
-        <Flotsam>1000212</Flotsam>
-        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
       <Text>
         <LocaText>
@@ -1296,7 +932,6 @@
           </English>
         </LocaText>
         <LineID>26836</LineID>
-        <Localize>1</Localize>
       </Text>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
@@ -1308,13 +943,8 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Easy;Average;Hard</ItemDifficulties>
         <FluffText>19544</FluffText>
-        <ItemRegions />
       </ExpeditionAttribute>
-      <Locked>
-        <DefaultLockedState>1</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
-      </Locked>
+      <Locked />
     </Values>
   </Asset>
   <Asset>
@@ -1325,12 +955,8 @@
         <Name>Hand-Blown Grenade</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/consumables/icon_extinguisher_grenade_1.png</IconFilename>
         <InfoDescription>19545</InfoDescription>
-        <Comments />
       </Standard>
-      <SpecialAction>
-        <MouseEffect>0</MouseEffect>
-        <Projectile>0</Projectile>
-      </SpecialAction>
+      <SpecialAction />
       <ItemEffect>
         <EffectTargets>
           <Item>
@@ -1346,25 +972,12 @@
         <ActionDuration>3000000</ActionDuration>
         <ActiveBuff>191928</ActiveBuff>
         <CanEndItemAction>0</CanEndItemAction>
-        <ActionTarget>0</ActionTarget>
-        <RadiusBuffTargets />
-        <IncidentResolveRate>0.3</IncidentResolveRate>
-        <ActionDescription>0</ActionDescription>
-        <ActionCompletedEffect />
-        <StopMovementOnInteraction>1</StopMovementOnInteraction>
       </ItemAction>
       <Item>
         <Allocation>GuildHouse</Allocation>
         <MaxStackSize>5</MaxStackSize>
         <HasAction>1</HasAction>
         <TradePrice>2200</TradePrice>
-        <Rarity>Common</Rarity>
-        <ItemType>Normal</ItemType>
-        <ExclusiveGroup>None</ExclusiveGroup>
-        <ItemSet>0</ItemSet>
-        <ExpeditionType>None</ExpeditionType>
-        <Flotsam>1000212</Flotsam>
-        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
       <Text>
         <LocaText>
@@ -1375,7 +988,6 @@
           </English>
         </LocaText>
         <LineID>26837</LineID>
-        <Localize>1</Localize>
       </Text>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
@@ -1387,13 +999,8 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Easy</ItemDifficulties>
         <FluffText>19545</FluffText>
-        <ItemRegions />
       </ExpeditionAttribute>
-      <Locked>
-        <DefaultLockedState>1</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
-      </Locked>
+      <Locked />
     </Values>
   </Asset>
   <Asset>
@@ -1404,12 +1011,8 @@
         <Name>Suspended Frosted Glass Grenade</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/consumables/icon_extinguisher_grenade_2.png</IconFilename>
         <InfoDescription>19546</InfoDescription>
-        <Comments />
       </Standard>
-      <SpecialAction>
-        <MouseEffect>0</MouseEffect>
-        <Projectile>0</Projectile>
-      </SpecialAction>
+      <SpecialAction />
       <ItemEffect>
         <EffectTargets>
           <Item>
@@ -1425,12 +1028,6 @@
         <ActionDuration>4800000</ActionDuration>
         <ActiveBuff>191929</ActiveBuff>
         <CanEndItemAction>0</CanEndItemAction>
-        <ActionTarget>0</ActionTarget>
-        <RadiusBuffTargets />
-        <IncidentResolveRate>0.3</IncidentResolveRate>
-        <ActionDescription>0</ActionDescription>
-        <ActionCompletedEffect />
-        <StopMovementOnInteraction>1</StopMovementOnInteraction>
       </ItemAction>
       <Item>
         <Allocation>GuildHouse</Allocation>
@@ -1438,12 +1035,6 @@
         <Rarity>Uncommon</Rarity>
         <HasAction>1</HasAction>
         <TradePrice>11000</TradePrice>
-        <ItemType>Normal</ItemType>
-        <ExclusiveGroup>None</ExclusiveGroup>
-        <ItemSet>0</ItemSet>
-        <ExpeditionType>None</ExpeditionType>
-        <Flotsam>1000212</Flotsam>
-        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
       <Text>
         <LocaText>
@@ -1454,7 +1045,6 @@
           </English>
         </LocaText>
         <LineID>26838</LineID>
-        <Localize>1</Localize>
       </Text>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
@@ -1466,13 +1056,8 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Easy;Average</ItemDifficulties>
         <FluffText>19546</FluffText>
-        <ItemRegions />
       </ExpeditionAttribute>
-      <Locked>
-        <DefaultLockedState>1</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
-      </Locked>
+      <Locked />
     </Values>
   </Asset>
   <Asset>
@@ -1483,12 +1068,8 @@
         <Name>Heat Activated CTC Grenade</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/consumables/icon_extinguisher_grenade_3.png</IconFilename>
         <InfoDescription>19547</InfoDescription>
-        <Comments />
       </Standard>
-      <SpecialAction>
-        <MouseEffect>0</MouseEffect>
-        <Projectile>0</Projectile>
-      </SpecialAction>
+      <SpecialAction />
       <ItemEffect>
         <EffectTargets>
           <Item>
@@ -1504,12 +1085,6 @@
         <ActionDuration>7200000</ActionDuration>
         <ActiveBuff>191930</ActiveBuff>
         <CanEndItemAction>0</CanEndItemAction>
-        <ActionTarget>0</ActionTarget>
-        <RadiusBuffTargets />
-        <IncidentResolveRate>0.3</IncidentResolveRate>
-        <ActionDescription>0</ActionDescription>
-        <ActionCompletedEffect />
-        <StopMovementOnInteraction>1</StopMovementOnInteraction>
       </ItemAction>
       <Item>
         <Allocation>GuildHouse</Allocation>
@@ -1517,12 +1092,6 @@
         <Rarity>Rare</Rarity>
         <HasAction>1</HasAction>
         <TradePrice>36400</TradePrice>
-        <ItemType>Normal</ItemType>
-        <ExclusiveGroup>None</ExclusiveGroup>
-        <ItemSet>0</ItemSet>
-        <ExpeditionType>None</ExpeditionType>
-        <Flotsam>1000212</Flotsam>
-        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
       <Text>
         <LocaText>
@@ -1533,7 +1102,6 @@
           </English>
         </LocaText>
         <LineID>26839</LineID>
-        <Localize>1</Localize>
       </Text>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
@@ -1545,13 +1113,8 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Easy;Average;Hard</ItemDifficulties>
         <FluffText>19547</FluffText>
-        <ItemRegions />
       </ExpeditionAttribute>
-      <Locked>
-        <DefaultLockedState>1</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
-      </Locked>
+      <Locked />
     </Values>
   </Asset>
   <Asset>
@@ -1562,12 +1125,8 @@
         <Name>Alcohol Crate</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/consumables/icon_alcohol_bag_1.png</IconFilename>
         <InfoDescription>19549</InfoDescription>
-        <Comments />
       </Standard>
-      <SpecialAction>
-        <MouseEffect>0</MouseEffect>
-        <Projectile>0</Projectile>
-      </SpecialAction>
+      <SpecialAction />
       <ItemEffect>
         <EffectTargets>
           <Item>
@@ -1583,25 +1142,12 @@
         <ActionDuration>3000000</ActionDuration>
         <ActiveBuff>191934</ActiveBuff>
         <CanEndItemAction>0</CanEndItemAction>
-        <ActionTarget>0</ActionTarget>
-        <RadiusBuffTargets />
-        <IncidentResolveRate>0.3</IncidentResolveRate>
-        <ActionDescription>0</ActionDescription>
-        <ActionCompletedEffect />
-        <StopMovementOnInteraction>1</StopMovementOnInteraction>
       </ItemAction>
       <Item>
         <Allocation>TownHall</Allocation>
         <MaxStackSize>5</MaxStackSize>
         <HasAction>1</HasAction>
         <TradePrice>39900</TradePrice>
-        <Rarity>Common</Rarity>
-        <ItemType>Normal</ItemType>
-        <ExclusiveGroup>None</ExclusiveGroup>
-        <ItemSet>0</ItemSet>
-        <ExpeditionType>None</ExpeditionType>
-        <Flotsam>1000212</Flotsam>
-        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
       <Text>
         <LocaText>
@@ -1612,7 +1158,6 @@
           </English>
         </LocaText>
         <LineID>26842</LineID>
-        <Localize>1</Localize>
       </Text>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
@@ -1628,13 +1173,8 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Easy</ItemDifficulties>
         <FluffText>19549</FluffText>
-        <ItemRegions />
       </ExpeditionAttribute>
-      <Locked>
-        <DefaultLockedState>1</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
-      </Locked>
+      <Locked />
     </Values>
   </Asset>
   <Asset>
@@ -1645,12 +1185,8 @@
         <Name>Big Alcohol Crate</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/consumables/icon_alcohol_bag_2.png</IconFilename>
         <InfoDescription>19550</InfoDescription>
-        <Comments />
       </Standard>
-      <SpecialAction>
-        <MouseEffect>0</MouseEffect>
-        <Projectile>0</Projectile>
-      </SpecialAction>
+      <SpecialAction />
       <ItemEffect>
         <EffectTargets>
           <Item>
@@ -1666,12 +1202,6 @@
         <ActionDuration>4800000</ActionDuration>
         <ActiveBuff>191935</ActiveBuff>
         <CanEndItemAction>0</CanEndItemAction>
-        <ActionTarget>0</ActionTarget>
-        <RadiusBuffTargets />
-        <IncidentResolveRate>0.3</IncidentResolveRate>
-        <ActionDescription>0</ActionDescription>
-        <ActionCompletedEffect />
-        <StopMovementOnInteraction>1</StopMovementOnInteraction>
       </ItemAction>
       <Item>
         <Allocation>TownHall</Allocation>
@@ -1679,12 +1209,6 @@
         <Rarity>Uncommon</Rarity>
         <HasAction>1</HasAction>
         <TradePrice>2800</TradePrice>
-        <ItemType>Normal</ItemType>
-        <ExclusiveGroup>None</ExclusiveGroup>
-        <ItemSet>0</ItemSet>
-        <ExpeditionType>None</ExpeditionType>
-        <Flotsam>1000212</Flotsam>
-        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
       <Text>
         <LocaText>
@@ -1695,7 +1219,6 @@
           </English>
         </LocaText>
         <LineID>26840</LineID>
-        <Localize>1</Localize>
       </Text>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
@@ -1711,13 +1234,8 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Easy;Average</ItemDifficulties>
         <FluffText>19550</FluffText>
-        <ItemRegions />
       </ExpeditionAttribute>
-      <Locked>
-        <DefaultLockedState>1</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
-      </Locked>
+      <Locked />
     </Values>
   </Asset>
   <Asset>
@@ -1728,12 +1246,8 @@
         <Name>Huge Alcohol Crate</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/consumables/icon_alcohol_bag_3.png</IconFilename>
         <InfoDescription>19551</InfoDescription>
-        <Comments />
       </Standard>
-      <SpecialAction>
-        <MouseEffect>0</MouseEffect>
-        <Projectile>0</Projectile>
-      </SpecialAction>
+      <SpecialAction />
       <ItemEffect>
         <EffectTargets>
           <Item>
@@ -1749,12 +1263,6 @@
         <ActionDuration>7200000</ActionDuration>
         <ActiveBuff>191936</ActiveBuff>
         <CanEndItemAction>0</CanEndItemAction>
-        <ActionTarget>0</ActionTarget>
-        <RadiusBuffTargets />
-        <IncidentResolveRate>0.3</IncidentResolveRate>
-        <ActionDescription>0</ActionDescription>
-        <ActionCompletedEffect />
-        <StopMovementOnInteraction>1</StopMovementOnInteraction>
       </ItemAction>
       <Item>
         <Allocation>TownHall</Allocation>
@@ -1762,12 +1270,6 @@
         <Rarity>Rare</Rarity>
         <HasAction>1</HasAction>
         <TradePrice>14000</TradePrice>
-        <ItemType>Normal</ItemType>
-        <ExclusiveGroup>None</ExclusiveGroup>
-        <ItemSet>0</ItemSet>
-        <ExpeditionType>None</ExpeditionType>
-        <Flotsam>1000212</Flotsam>
-        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
       <Text>
         <LocaText>
@@ -1778,7 +1280,6 @@
           </English>
         </LocaText>
         <LineID>26841</LineID>
-        <Localize>1</Localize>
       </Text>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
@@ -1794,13 +1295,8 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Easy;Average;Hard</ItemDifficulties>
         <FluffText>19551</FluffText>
-        <ItemRegions />
       </ExpeditionAttribute>
-      <Locked>
-        <DefaultLockedState>1</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
-      </Locked>
+      <Locked />
     </Values>
   </Asset>
   <Asset>
@@ -1811,12 +1307,8 @@
         <Name>Bag of Money</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/consumables/icon_moneybag_common.png</IconFilename>
         <InfoDescription>19552</InfoDescription>
-        <Comments />
       </Standard>
-      <SpecialAction>
-        <MouseEffect>0</MouseEffect>
-        <Projectile>0</Projectile>
-      </SpecialAction>
+      <SpecialAction />
       <ItemEffect>
         <EffectTargets>
           <Item>
@@ -1832,25 +1324,12 @@
         <ActionDuration>3000000</ActionDuration>
         <ActiveBuff>191937</ActiveBuff>
         <CanEndItemAction>0</CanEndItemAction>
-        <ActionTarget>0</ActionTarget>
-        <RadiusBuffTargets />
-        <IncidentResolveRate>0.3</IncidentResolveRate>
-        <ActionDescription>0</ActionDescription>
-        <ActionCompletedEffect />
-        <StopMovementOnInteraction>1</StopMovementOnInteraction>
       </ItemAction>
       <Item>
         <Allocation>GuildHouse</Allocation>
         <MaxStackSize>5</MaxStackSize>
         <HasAction>1</HasAction>
         <TradePrice>5000</TradePrice>
-        <Rarity>Common</Rarity>
-        <ItemType>Normal</ItemType>
-        <ExclusiveGroup>None</ExclusiveGroup>
-        <ItemSet>0</ItemSet>
-        <ExpeditionType>None</ExpeditionType>
-        <Flotsam>1000212</Flotsam>
-        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
       <Text>
         <LocaText>
@@ -1861,7 +1340,6 @@
           </English>
         </LocaText>
         <LineID>26843</LineID>
-        <Localize>1</Localize>
       </Text>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
@@ -1873,13 +1351,8 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Easy</ItemDifficulties>
         <FluffText>19552</FluffText>
-        <ItemRegions />
       </ExpeditionAttribute>
-      <Locked>
-        <DefaultLockedState>1</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
-      </Locked>
+      <Locked />
     </Values>
   </Asset>
   <Asset>
@@ -1890,12 +1363,8 @@
         <Name>Big Bag of Money</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/consumables/icon_moneybag_rare.png</IconFilename>
         <InfoDescription>19553</InfoDescription>
-        <Comments />
       </Standard>
-      <SpecialAction>
-        <MouseEffect>0</MouseEffect>
-        <Projectile>0</Projectile>
-      </SpecialAction>
+      <SpecialAction />
       <ItemEffect>
         <EffectTargets>
           <Item>
@@ -1911,12 +1380,6 @@
         <ActionDuration>4800000</ActionDuration>
         <ActiveBuff>191938</ActiveBuff>
         <CanEndItemAction>0</CanEndItemAction>
-        <ActionTarget>0</ActionTarget>
-        <RadiusBuffTargets />
-        <IncidentResolveRate>0.3</IncidentResolveRate>
-        <ActionDescription>0</ActionDescription>
-        <ActionCompletedEffect />
-        <StopMovementOnInteraction>1</StopMovementOnInteraction>
       </ItemAction>
       <Item>
         <Allocation>GuildHouse</Allocation>
@@ -1924,12 +1387,6 @@
         <Rarity>Uncommon</Rarity>
         <HasAction>1</HasAction>
         <TradePrice>15000</TradePrice>
-        <ItemType>Normal</ItemType>
-        <ExclusiveGroup>None</ExclusiveGroup>
-        <ItemSet>0</ItemSet>
-        <ExpeditionType>None</ExpeditionType>
-        <Flotsam>1000212</Flotsam>
-        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
       <Text>
         <LocaText>
@@ -1940,7 +1397,6 @@
           </English>
         </LocaText>
         <LineID>26844</LineID>
-        <Localize>1</Localize>
       </Text>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
@@ -1952,13 +1408,8 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Easy;Average</ItemDifficulties>
         <FluffText>19553</FluffText>
-        <ItemRegions />
       </ExpeditionAttribute>
-      <Locked>
-        <DefaultLockedState>1</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
-      </Locked>
+      <Locked />
     </Values>
   </Asset>
   <Asset>
@@ -1969,12 +1420,8 @@
         <Name>Huge Bag of money</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/consumables/icon_moneybag_epic.png</IconFilename>
         <InfoDescription>19554</InfoDescription>
-        <Comments />
       </Standard>
-      <SpecialAction>
-        <MouseEffect>0</MouseEffect>
-        <Projectile>0</Projectile>
-      </SpecialAction>
+      <SpecialAction />
       <ItemEffect>
         <EffectTargets>
           <Item>
@@ -1990,12 +1437,6 @@
         <ActionDuration>7200000</ActionDuration>
         <ActiveBuff>191939</ActiveBuff>
         <CanEndItemAction>0</CanEndItemAction>
-        <ActionTarget>0</ActionTarget>
-        <RadiusBuffTargets />
-        <IncidentResolveRate>0.3</IncidentResolveRate>
-        <ActionDescription>0</ActionDescription>
-        <ActionCompletedEffect />
-        <StopMovementOnInteraction>1</StopMovementOnInteraction>
       </ItemAction>
       <Item>
         <Allocation>GuildHouse</Allocation>
@@ -2003,12 +1444,6 @@
         <Rarity>Rare</Rarity>
         <HasAction>1</HasAction>
         <TradePrice>50000</TradePrice>
-        <ItemType>Normal</ItemType>
-        <ExclusiveGroup>None</ExclusiveGroup>
-        <ItemSet>0</ItemSet>
-        <ExpeditionType>None</ExpeditionType>
-        <Flotsam>1000212</Flotsam>
-        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
       <Text>
         <LocaText>
@@ -2019,7 +1454,6 @@
           </English>
         </LocaText>
         <LineID>26845</LineID>
-        <Localize>1</Localize>
       </Text>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
@@ -2031,13 +1465,8 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Easy;Average;Hard</ItemDifficulties>
         <FluffText>19554</FluffText>
-        <ItemRegions />
       </ExpeditionAttribute>
-      <Locked>
-        <DefaultLockedState>1</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
-      </Locked>
+      <Locked />
     </Values>
   </Asset>
   <Asset>
@@ -2048,15 +1477,12 @@
         <Name>Minenschiff</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/consumables/icon_torpedo_1.png</IconFilename>
         <InfoDescription>19555</InfoDescription>
-        <Comments />
       </Standard>
       <SpecialAction>
         <MouseEffect>140112</MouseEffect>
         <Projectile>192187</Projectile>
       </SpecialAction>
-      <ItemEffect>
-        <EffectTargets />
-      </ItemEffect>
+      <ItemEffect />
       <ItemAction>
         <ActionTarget>501575</ActionTarget>
         <ActionDistance>100</ActionDistance>
@@ -2065,13 +1491,6 @@
         <ActionDescription>12829</ActionDescription>
         <CanEndItemAction>0</CanEndItemAction>
         <StopMovementOnInteraction>0</StopMovementOnInteraction>
-        <ItemAction>NUKE</ItemAction>
-        <ActionScope>TargetRadius</ActionScope>
-        <RadiusBuffTargets />
-        <ActionIncidentType />
-        <IncidentResolveRate>0.3</IncidentResolveRate>
-        <ActiveBuff>0</ActiveBuff>
-        <ActionCompletedEffect />
       </ItemAction>
       <Item>
         <Allocation>Warship</Allocation>
@@ -2079,12 +1498,6 @@
         <Rarity>Uncommon</Rarity>
         <HasAction>1</HasAction>
         <TradePrice>10000</TradePrice>
-        <ItemType>Normal</ItemType>
-        <ExclusiveGroup>None</ExclusiveGroup>
-        <ItemSet>0</ItemSet>
-        <ExpeditionType>None</ExpeditionType>
-        <Flotsam>1000212</Flotsam>
-        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
       <Text>
         <LocaText>
@@ -2095,7 +1508,6 @@
           </English>
         </LocaText>
         <LineID>29563</LineID>
-        <Localize>1</Localize>
       </Text>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
@@ -2107,12 +1519,9 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Easy;Average</ItemDifficulties>
         <FluffText>19555</FluffText>
-        <ItemRegions />
       </ExpeditionAttribute>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
       </Locked>
     </Values>
   </Asset>
@@ -2124,15 +1533,12 @@
         <Name>Howell Torpedo</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/consumables/icon_torpedo_2.png</IconFilename>
         <InfoDescription>19556</InfoDescription>
-        <Comments />
       </Standard>
       <SpecialAction>
         <MouseEffect>140112</MouseEffect>
         <Projectile>192188</Projectile>
       </SpecialAction>
-      <ItemEffect>
-        <EffectTargets />
-      </ItemEffect>
+      <ItemEffect />
       <ItemAction>
         <ActionTarget>501575</ActionTarget>
         <ActionDistance>120</ActionDistance>
@@ -2141,13 +1547,6 @@
         <ActionDescription>12829</ActionDescription>
         <CanEndItemAction>0</CanEndItemAction>
         <StopMovementOnInteraction>0</StopMovementOnInteraction>
-        <ItemAction>NUKE</ItemAction>
-        <ActionScope>TargetRadius</ActionScope>
-        <RadiusBuffTargets />
-        <ActionIncidentType />
-        <IncidentResolveRate>0.3</IncidentResolveRate>
-        <ActiveBuff>0</ActiveBuff>
-        <ActionCompletedEffect />
       </ItemAction>
       <Item>
         <Allocation>Warship</Allocation>
@@ -2155,12 +1554,6 @@
         <Rarity>Rare</Rarity>
         <HasAction>1</HasAction>
         <TradePrice>20000</TradePrice>
-        <ItemType>Normal</ItemType>
-        <ExclusiveGroup>None</ExclusiveGroup>
-        <ItemSet>0</ItemSet>
-        <ExpeditionType>None</ExpeditionType>
-        <Flotsam>1000212</Flotsam>
-        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
       <Text>
         <LocaText>
@@ -2171,7 +1564,6 @@
           </English>
         </LocaText>
         <LineID>29564</LineID>
-        <Localize>1</Localize>
       </Text>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
@@ -2183,12 +1575,9 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Easy;Average;Hard</ItemDifficulties>
         <FluffText>19556</FluffText>
-        <ItemRegions />
       </ExpeditionAttribute>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
       </Locked>
     </Values>
   </Asset>
@@ -2200,15 +1589,12 @@
         <Name>Whitehead Torpedo</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/consumables/icon_torpedo_3.png</IconFilename>
         <InfoDescription>19557</InfoDescription>
-        <Comments />
       </Standard>
       <SpecialAction>
         <MouseEffect>140112</MouseEffect>
         <Projectile>192189</Projectile>
       </SpecialAction>
-      <ItemEffect>
-        <EffectTargets />
-      </ItemEffect>
+      <ItemEffect />
       <ItemAction>
         <ActionTarget>501575</ActionTarget>
         <ActionDistance>140</ActionDistance>
@@ -2217,13 +1603,6 @@
         <ActionDescription>12829</ActionDescription>
         <CanEndItemAction>0</CanEndItemAction>
         <StopMovementOnInteraction>0</StopMovementOnInteraction>
-        <ItemAction>NUKE</ItemAction>
-        <ActionScope>TargetRadius</ActionScope>
-        <RadiusBuffTargets />
-        <ActionIncidentType />
-        <IncidentResolveRate>0.3</IncidentResolveRate>
-        <ActiveBuff>0</ActiveBuff>
-        <ActionCompletedEffect />
       </ItemAction>
       <Item>
         <Allocation>Warship</Allocation>
@@ -2231,12 +1610,6 @@
         <Rarity>Epic</Rarity>
         <HasAction>1</HasAction>
         <TradePrice>30000</TradePrice>
-        <ItemType>Normal</ItemType>
-        <ExclusiveGroup>None</ExclusiveGroup>
-        <ItemSet>0</ItemSet>
-        <ExpeditionType>None</ExpeditionType>
-        <Flotsam>1000212</Flotsam>
-        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
       <Text>
         <LocaText>
@@ -2247,7 +1620,6 @@
           </English>
         </LocaText>
         <LineID>29565</LineID>
-        <Localize>1</Localize>
       </Text>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
@@ -2259,12 +1631,9 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Easy;Average;Hard</ItemDifficulties>
         <FluffText>19557</FluffText>
-        <ItemRegions />
       </ExpeditionAttribute>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
       </Locked>
     </Values>
   </Asset>
@@ -2276,15 +1645,9 @@
         <Name>Forged Steel Shells</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/consumables/icon_piercing_shell_1.png</IconFilename>
         <InfoDescription>19558</InfoDescription>
-        <Comments />
       </Standard>
-      <SpecialAction>
-        <MouseEffect>0</MouseEffect>
-        <Projectile>0</Projectile>
-      </SpecialAction>
-      <ItemEffect>
-        <EffectTargets />
-      </ItemEffect>
+      <SpecialAction />
+      <ItemEffect />
       <ItemAction>
         <ItemAction>NOACTION</ItemAction>
         <ActionScope>Self</ActionScope>
@@ -2293,25 +1656,12 @@
         <ActiveBuff>191943</ActiveBuff>
         <CanEndItemAction>0</CanEndItemAction>
         <StopMovementOnInteraction>0</StopMovementOnInteraction>
-        <ActionTarget>0</ActionTarget>
-        <RadiusBuffTargets />
-        <ActionIncidentType />
-        <IncidentResolveRate>0.3</IncidentResolveRate>
-        <ActionDescription>0</ActionDescription>
-        <ActionCompletedEffect />
       </ItemAction>
       <Item>
         <Allocation>Warship</Allocation>
         <MaxStackSize>5</MaxStackSize>
         <HasAction>1</HasAction>
         <TradePrice>7800</TradePrice>
-        <Rarity>Common</Rarity>
-        <ItemType>Normal</ItemType>
-        <ExclusiveGroup>None</ExclusiveGroup>
-        <ItemSet>0</ItemSet>
-        <ExpeditionType>None</ExpeditionType>
-        <Flotsam>1000212</Flotsam>
-        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
       <Text>
         <LocaText>
@@ -2322,7 +1672,6 @@
           </English>
         </LocaText>
         <LineID>26846</LineID>
-        <Localize>1</Localize>
       </Text>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
@@ -2334,12 +1683,9 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Easy</ItemDifficulties>
         <FluffText>19558</FluffText>
-        <ItemRegions />
       </ExpeditionAttribute>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
       </Locked>
     </Values>
   </Asset>
@@ -2351,15 +1697,11 @@
         <Name>Cemented Steel Shells</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/consumables/icon_piercing_shell_2.png</IconFilename>
         <InfoDescription>19559</InfoDescription>
-        <Comments />
       </Standard>
       <SpecialAction>
         <MouseEffect>140112</MouseEffect>
-        <Projectile>0</Projectile>
       </SpecialAction>
-      <ItemEffect>
-        <EffectTargets />
-      </ItemEffect>
+      <ItemEffect />
       <ItemAction>
         <ItemAction>NOACTION</ItemAction>
         <ActionScope>Self</ActionScope>
@@ -2368,12 +1710,6 @@
         <ActiveBuff>191944</ActiveBuff>
         <CanEndItemAction>0</CanEndItemAction>
         <StopMovementOnInteraction>0</StopMovementOnInteraction>
-        <ActionTarget>0</ActionTarget>
-        <RadiusBuffTargets />
-        <ActionIncidentType />
-        <IncidentResolveRate>0.3</IncidentResolveRate>
-        <ActionDescription>0</ActionDescription>
-        <ActionCompletedEffect />
       </ItemAction>
       <Item>
         <Allocation>Warship</Allocation>
@@ -2381,12 +1717,6 @@
         <Rarity>Uncommon</Rarity>
         <HasAction>1</HasAction>
         <TradePrice>13200</TradePrice>
-        <ItemType>Normal</ItemType>
-        <ExclusiveGroup>None</ExclusiveGroup>
-        <ItemSet>0</ItemSet>
-        <ExpeditionType>None</ExpeditionType>
-        <Flotsam>1000212</Flotsam>
-        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
       <Text>
         <LocaText>
@@ -2397,7 +1727,6 @@
           </English>
         </LocaText>
         <LineID>26847</LineID>
-        <Localize>1</Localize>
       </Text>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
@@ -2409,12 +1738,9 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Easy;Average</ItemDifficulties>
         <FluffText>19559</FluffText>
-        <ItemRegions />
       </ExpeditionAttribute>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
       </Locked>
     </Values>
   </Asset>
@@ -2426,15 +1752,9 @@
         <Name>Melinite Shells</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/consumables/icon_explosive_shells_1.png</IconFilename>
         <InfoDescription>19560</InfoDescription>
-        <Comments />
       </Standard>
-      <SpecialAction>
-        <MouseEffect>0</MouseEffect>
-        <Projectile>0</Projectile>
-      </SpecialAction>
-      <ItemEffect>
-        <EffectTargets />
-      </ItemEffect>
+      <SpecialAction />
+      <ItemEffect />
       <ItemAction>
         <ItemAction>NOACTION</ItemAction>
         <ActionScope>Self</ActionScope>
@@ -2443,25 +1763,12 @@
         <ActiveBuff>191947</ActiveBuff>
         <CanEndItemAction>0</CanEndItemAction>
         <StopMovementOnInteraction>0</StopMovementOnInteraction>
-        <ActionTarget>0</ActionTarget>
-        <RadiusBuffTargets />
-        <ActionIncidentType />
-        <IncidentResolveRate>0.3</IncidentResolveRate>
-        <ActionDescription>0</ActionDescription>
-        <ActionCompletedEffect />
       </ItemAction>
       <Item>
         <Allocation>Warship</Allocation>
         <MaxStackSize>5</MaxStackSize>
         <HasAction>1</HasAction>
         <TradePrice>6600</TradePrice>
-        <Rarity>Common</Rarity>
-        <ItemType>Normal</ItemType>
-        <ExclusiveGroup>None</ExclusiveGroup>
-        <ItemSet>0</ItemSet>
-        <ExpeditionType>None</ExpeditionType>
-        <Flotsam>1000212</Flotsam>
-        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
       <Text>
         <LocaText>
@@ -2472,7 +1779,6 @@
           </English>
         </LocaText>
         <LineID>26848</LineID>
-        <Localize>1</Localize>
       </Text>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
@@ -2484,12 +1790,9 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Easy</ItemDifficulties>
         <FluffText>19560</FluffText>
-        <ItemRegions />
       </ExpeditionAttribute>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
       </Locked>
     </Values>
   </Asset>
@@ -2501,15 +1804,11 @@
         <Name>Dunnite Shells</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/consumables/icon_explosive_shells_2.png</IconFilename>
         <InfoDescription>19561</InfoDescription>
-        <Comments />
       </Standard>
       <SpecialAction>
         <MouseEffect>140112</MouseEffect>
-        <Projectile>0</Projectile>
       </SpecialAction>
-      <ItemEffect>
-        <EffectTargets />
-      </ItemEffect>
+      <ItemEffect />
       <ItemAction>
         <ItemAction>NOACTION</ItemAction>
         <ActionScope>Self</ActionScope>
@@ -2518,12 +1817,6 @@
         <ActiveBuff>191948</ActiveBuff>
         <CanEndItemAction>0</CanEndItemAction>
         <StopMovementOnInteraction>0</StopMovementOnInteraction>
-        <ActionTarget>0</ActionTarget>
-        <RadiusBuffTargets />
-        <ActionIncidentType />
-        <IncidentResolveRate>0.3</IncidentResolveRate>
-        <ActionDescription>0</ActionDescription>
-        <ActionCompletedEffect />
       </ItemAction>
       <Item>
         <Allocation>Warship</Allocation>
@@ -2531,12 +1824,6 @@
         <Rarity>Uncommon</Rarity>
         <HasAction>1</HasAction>
         <TradePrice>12100</TradePrice>
-        <ItemType>Normal</ItemType>
-        <ExclusiveGroup>None</ExclusiveGroup>
-        <ItemSet>0</ItemSet>
-        <ExpeditionType>None</ExpeditionType>
-        <Flotsam>1000212</Flotsam>
-        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
       <Text>
         <LocaText>
@@ -2547,7 +1834,6 @@
           </English>
         </LocaText>
         <LineID>26849</LineID>
-        <Localize>1</Localize>
       </Text>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
@@ -2559,12 +1845,9 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Easy;Average</ItemDifficulties>
         <FluffText>19561</FluffText>
-        <ItemRegions />
       </ExpeditionAttribute>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
       </Locked>
     </Values>
   </Asset>
@@ -2576,15 +1859,9 @@
         <Name>Canister shots</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/consumables/icon_big_berta_1.png</IconFilename>
         <InfoDescription>19562</InfoDescription>
-        <Comments />
       </Standard>
-      <SpecialAction>
-        <MouseEffect>0</MouseEffect>
-        <Projectile>0</Projectile>
-      </SpecialAction>
-      <ItemEffect>
-        <EffectTargets />
-      </ItemEffect>
+      <SpecialAction />
+      <ItemEffect />
       <ItemAction>
         <ItemAction>NOACTION</ItemAction>
         <ActionScope>Self</ActionScope>
@@ -2593,12 +1870,6 @@
         <ActiveBuff>191949</ActiveBuff>
         <CanEndItemAction>0</CanEndItemAction>
         <StopMovementOnInteraction>0</StopMovementOnInteraction>
-        <ActionTarget>0</ActionTarget>
-        <RadiusBuffTargets />
-        <ActionIncidentType />
-        <IncidentResolveRate>0.3</IncidentResolveRate>
-        <ActionDescription>0</ActionDescription>
-        <ActionCompletedEffect />
       </ItemAction>
       <Item>
         <Allocation>Warship</Allocation>
@@ -2606,12 +1877,6 @@
         <HasAction>1</HasAction>
         <ExclusiveGroup>AutoAttackProjectile</ExclusiveGroup>
         <TradePrice>3300</TradePrice>
-        <Rarity>Common</Rarity>
-        <ItemType>Normal</ItemType>
-        <ItemSet>0</ItemSet>
-        <ExpeditionType>None</ExpeditionType>
-        <Flotsam>1000212</Flotsam>
-        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
       <Text>
         <LocaText>
@@ -2622,7 +1887,6 @@
           </English>
         </LocaText>
         <LineID>26850</LineID>
-        <Localize>1</Localize>
       </Text>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
@@ -2634,12 +1898,9 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Easy</ItemDifficulties>
         <FluffText>19562</FluffText>
-        <ItemRegions />
       </ExpeditionAttribute>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
       </Locked>
     </Values>
   </Asset>
@@ -2651,15 +1912,11 @@
         <Name>Double Canister shots</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/consumables/icon_big_berta_2.png</IconFilename>
         <InfoDescription>19563</InfoDescription>
-        <Comments />
       </Standard>
       <SpecialAction>
         <MouseEffect>140112</MouseEffect>
-        <Projectile>0</Projectile>
       </SpecialAction>
-      <ItemEffect>
-        <EffectTargets />
-      </ItemEffect>
+      <ItemEffect />
       <ItemAction>
         <ItemAction>NOACTION</ItemAction>
         <ActionScope>Self</ActionScope>
@@ -2668,12 +1925,6 @@
         <ActiveBuff>191950</ActiveBuff>
         <CanEndItemAction>0</CanEndItemAction>
         <StopMovementOnInteraction>0</StopMovementOnInteraction>
-        <ActionTarget>0</ActionTarget>
-        <RadiusBuffTargets />
-        <ActionIncidentType />
-        <IncidentResolveRate>0.3</IncidentResolveRate>
-        <ActionDescription>0</ActionDescription>
-        <ActionCompletedEffect />
       </ItemAction>
       <Item>
         <Allocation>Warship</Allocation>
@@ -2682,11 +1933,6 @@
         <HasAction>1</HasAction>
         <ExclusiveGroup>AutoAttackProjectile</ExclusiveGroup>
         <TradePrice>13000</TradePrice>
-        <ItemType>Normal</ItemType>
-        <ItemSet>0</ItemSet>
-        <ExpeditionType>None</ExpeditionType>
-        <Flotsam>1000212</Flotsam>
-        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
       <Text>
         <LocaText>
@@ -2697,7 +1943,6 @@
           </English>
         </LocaText>
         <LineID>26851</LineID>
-        <Localize>1</Localize>
       </Text>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
@@ -2709,12 +1954,9 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Easy;Average</ItemDifficulties>
         <FluffText>19563</FluffText>
-        <ItemRegions />
       </ExpeditionAttribute>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
       </Locked>
     </Values>
   </Asset>
@@ -2726,12 +1968,8 @@
         <Name>Construction Wooden Spare Parts</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/consumables/icon_building_repair_1.png</IconFilename>
         <InfoDescription>19572</InfoDescription>
-        <Comments />
       </Standard>
-      <SpecialAction>
-        <MouseEffect>0</MouseEffect>
-        <Projectile>0</Projectile>
-      </SpecialAction>
+      <SpecialAction />
       <ItemEffect>
         <EffectTargets>
           <Item>
@@ -2747,25 +1985,12 @@
         <ActiveBuff>191984</ActiveBuff>
         <CanEndItemAction>0</CanEndItemAction>
         <StopMovementOnInteraction>0</StopMovementOnInteraction>
-        <ActionTarget>0</ActionTarget>
-        <RadiusBuffTargets />
-        <ActionIncidentType />
-        <IncidentResolveRate>0.3</IncidentResolveRate>
-        <ActionDescription>0</ActionDescription>
-        <ActionCompletedEffect />
       </ItemAction>
       <Item>
         <Allocation>HarborOffice</Allocation>
         <MaxStackSize>5</MaxStackSize>
         <HasAction>1</HasAction>
         <TradePrice>5000</TradePrice>
-        <Rarity>Common</Rarity>
-        <ItemType>Normal</ItemType>
-        <ExclusiveGroup>None</ExclusiveGroup>
-        <ItemSet>0</ItemSet>
-        <ExpeditionType>None</ExpeditionType>
-        <Flotsam>1000212</Flotsam>
-        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
       <Text>
         <LocaText>
@@ -2776,7 +2001,6 @@
           </English>
         </LocaText>
         <LineID>26857</LineID>
-        <Localize>1</Localize>
       </Text>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
@@ -2788,13 +2012,8 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Easy</ItemDifficulties>
         <FluffText>19572</FluffText>
-        <ItemRegions />
       </ExpeditionAttribute>
-      <Locked>
-        <DefaultLockedState>1</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
-      </Locked>
+      <Locked />
     </Values>
   </Asset>
   <Asset>
@@ -2805,12 +2024,8 @@
         <Name>Construction Steel Spare Parts</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/consumables/icon_building_repair_2.png</IconFilename>
         <InfoDescription>19573</InfoDescription>
-        <Comments />
       </Standard>
-      <SpecialAction>
-        <MouseEffect>0</MouseEffect>
-        <Projectile>0</Projectile>
-      </SpecialAction>
+      <SpecialAction />
       <ItemEffect>
         <EffectTargets>
           <Item>
@@ -2826,12 +2041,6 @@
         <ActiveBuff>191985</ActiveBuff>
         <CanEndItemAction>0</CanEndItemAction>
         <StopMovementOnInteraction>0</StopMovementOnInteraction>
-        <ActionTarget>0</ActionTarget>
-        <RadiusBuffTargets />
-        <ActionIncidentType />
-        <IncidentResolveRate>0.3</IncidentResolveRate>
-        <ActionDescription>0</ActionDescription>
-        <ActionCompletedEffect />
       </ItemAction>
       <Item>
         <Allocation>HarborOffice</Allocation>
@@ -2839,12 +2048,6 @@
         <Rarity>Uncommon</Rarity>
         <HasAction>1</HasAction>
         <TradePrice>15000</TradePrice>
-        <ItemType>Normal</ItemType>
-        <ExclusiveGroup>None</ExclusiveGroup>
-        <ItemSet>0</ItemSet>
-        <ExpeditionType>None</ExpeditionType>
-        <Flotsam>1000212</Flotsam>
-        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
       <Text>
         <LocaText>
@@ -2855,7 +2058,6 @@
           </English>
         </LocaText>
         <LineID>26858</LineID>
-        <Localize>1</Localize>
       </Text>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
@@ -2867,13 +2069,8 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Easy;Average</ItemDifficulties>
         <FluffText>19573</FluffText>
-        <ItemRegions />
       </ExpeditionAttribute>
-      <Locked>
-        <DefaultLockedState>1</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
-      </Locked>
+      <Locked />
     </Values>
   </Asset>
   <Asset>
@@ -2884,15 +2081,9 @@
         <Name>Temporary Marque Letter</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/consumables/icon_marque_letter_1.png</IconFilename>
         <InfoDescription>19575</InfoDescription>
-        <Comments />
       </Standard>
-      <SpecialAction>
-        <MouseEffect>0</MouseEffect>
-        <Projectile>0</Projectile>
-      </SpecialAction>
-      <ItemEffect>
-        <EffectTargets />
-      </ItemEffect>
+      <SpecialAction />
+      <ItemEffect />
       <ItemAction>
         <ItemAction>NOACTION</ItemAction>
         <ActionScope>Self</ActionScope>
@@ -2901,12 +2092,6 @@
         <ActiveBuff>192940</ActiveBuff>
         <CanEndItemAction>0</CanEndItemAction>
         <StopMovementOnInteraction>0</StopMovementOnInteraction>
-        <ActionTarget>0</ActionTarget>
-        <RadiusBuffTargets />
-        <ActionIncidentType />
-        <IncidentResolveRate>0.3</IncidentResolveRate>
-        <ActionDescription>0</ActionDescription>
-        <ActionCompletedEffect />
       </ItemAction>
       <Item>
         <Allocation>Warship</Allocation>
@@ -2915,11 +2100,6 @@
         <HasAction>1</HasAction>
         <ExclusiveGroup>Flag</ExclusiveGroup>
         <TradePrice>10000</TradePrice>
-        <ItemType>Normal</ItemType>
-        <ItemSet>0</ItemSet>
-        <ExpeditionType>None</ExpeditionType>
-        <Flotsam>1000212</Flotsam>
-        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
       <Text>
         <LocaText>
@@ -2930,7 +2110,6 @@
           </English>
         </LocaText>
         <LineID>26859</LineID>
-        <Localize>1</Localize>
       </Text>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
@@ -2942,12 +2121,9 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Easy;Average</ItemDifficulties>
         <FluffText>19575</FluffText>
-        <ItemRegions />
       </ExpeditionAttribute>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
       </Locked>
     </Values>
   </Asset>
@@ -2959,15 +2135,9 @@
         <Name>Temporary Royal Marque Letter</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/consumables/icon_marque_letter_2.png</IconFilename>
         <InfoDescription>19576</InfoDescription>
-        <Comments />
       </Standard>
-      <SpecialAction>
-        <MouseEffect>0</MouseEffect>
-        <Projectile>0</Projectile>
-      </SpecialAction>
-      <ItemEffect>
-        <EffectTargets />
-      </ItemEffect>
+      <SpecialAction />
+      <ItemEffect />
       <ItemAction>
         <ItemAction>NOACTION</ItemAction>
         <ActionScope>Self</ActionScope>
@@ -2976,12 +2146,6 @@
         <ActiveBuff>192941</ActiveBuff>
         <CanEndItemAction>0</CanEndItemAction>
         <StopMovementOnInteraction>0</StopMovementOnInteraction>
-        <ActionTarget>0</ActionTarget>
-        <RadiusBuffTargets />
-        <ActionIncidentType />
-        <IncidentResolveRate>0.3</IncidentResolveRate>
-        <ActionDescription>0</ActionDescription>
-        <ActionCompletedEffect />
       </ItemAction>
       <Item>
         <Allocation>Warship</Allocation>
@@ -2990,11 +2154,6 @@
         <HasAction>1</HasAction>
         <ExclusiveGroup>Flag</ExclusiveGroup>
         <TradePrice>10000</TradePrice>
-        <ItemType>Normal</ItemType>
-        <ItemSet>0</ItemSet>
-        <ExpeditionType>None</ExpeditionType>
-        <Flotsam>1000212</Flotsam>
-        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
       <Text>
         <LocaText>
@@ -3005,7 +2164,6 @@
           </English>
         </LocaText>
         <LineID>26860</LineID>
-        <Localize>1</Localize>
       </Text>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
@@ -3017,12 +2175,9 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Easy;Average;Hard</ItemDifficulties>
         <FluffText>19576</FluffText>
-        <ItemRegions />
       </ExpeditionAttribute>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
       </Locked>
     </Values>
   </Asset>
@@ -3034,15 +2189,9 @@
         <Name>Temporary Protection Letter</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/consumables/icon_marque_letter_1.png</IconFilename>
         <InfoDescription>19582</InfoDescription>
-        <Comments />
       </Standard>
-      <SpecialAction>
-        <MouseEffect>0</MouseEffect>
-        <Projectile>0</Projectile>
-      </SpecialAction>
-      <ItemEffect>
-        <EffectTargets />
-      </ItemEffect>
+      <SpecialAction />
+      <ItemEffect />
       <ItemAction>
         <ItemAction>NOACTION</ItemAction>
         <ActionScope>Self</ActionScope>
@@ -3051,12 +2200,6 @@
         <ActiveBuff>192942</ActiveBuff>
         <CanEndItemAction>0</CanEndItemAction>
         <StopMovementOnInteraction>0</StopMovementOnInteraction>
-        <ActionTarget>0</ActionTarget>
-        <RadiusBuffTargets />
-        <ActionIncidentType />
-        <IncidentResolveRate>0.3</IncidentResolveRate>
-        <ActionDescription>0</ActionDescription>
-        <ActionCompletedEffect />
       </ItemAction>
       <Item>
         <Allocation>Ship</Allocation>
@@ -3065,11 +2208,6 @@
         <HasAction>1</HasAction>
         <ExclusiveGroup>Flag</ExclusiveGroup>
         <TradePrice>10000</TradePrice>
-        <ItemType>Normal</ItemType>
-        <ItemSet>0</ItemSet>
-        <ExpeditionType>None</ExpeditionType>
-        <Flotsam>1000212</Flotsam>
-        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
       <Text>
         <LocaText>
@@ -3080,7 +2218,6 @@
           </English>
         </LocaText>
         <LineID>26861</LineID>
-        <Localize>1</Localize>
       </Text>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
@@ -3092,13 +2229,8 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Easy;Average</ItemDifficulties>
         <FluffText>19582</FluffText>
-        <ItemRegions />
       </ExpeditionAttribute>
-      <Locked>
-        <DefaultLockedState>1</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
-      </Locked>
+      <Locked />
     </Values>
   </Asset>
   <Asset>
@@ -3109,15 +2241,9 @@
         <Name>Temporary Royal Protection Letter</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/consumables/icon_marque_letter_3.png</IconFilename>
         <InfoDescription>19583</InfoDescription>
-        <Comments />
       </Standard>
-      <SpecialAction>
-        <MouseEffect>0</MouseEffect>
-        <Projectile>0</Projectile>
-      </SpecialAction>
-      <ItemEffect>
-        <EffectTargets />
-      </ItemEffect>
+      <SpecialAction />
+      <ItemEffect />
       <ItemAction>
         <ItemAction>NOACTION</ItemAction>
         <ActionScope>Self</ActionScope>
@@ -3126,12 +2252,6 @@
         <ActiveBuff>192943</ActiveBuff>
         <CanEndItemAction>0</CanEndItemAction>
         <StopMovementOnInteraction>0</StopMovementOnInteraction>
-        <ActionTarget>0</ActionTarget>
-        <RadiusBuffTargets />
-        <ActionIncidentType />
-        <IncidentResolveRate>0.3</IncidentResolveRate>
-        <ActionDescription>0</ActionDescription>
-        <ActionCompletedEffect />
       </ItemAction>
       <Item>
         <Allocation>Ship</Allocation>
@@ -3140,11 +2260,6 @@
         <HasAction>1</HasAction>
         <ExclusiveGroup>Flag</ExclusiveGroup>
         <TradePrice>10000</TradePrice>
-        <ItemType>Normal</ItemType>
-        <ItemSet>0</ItemSet>
-        <ExpeditionType>None</ExpeditionType>
-        <Flotsam>1000212</Flotsam>
-        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
       <Text>
         <LocaText>
@@ -3155,7 +2270,6 @@
           </English>
         </LocaText>
         <LineID>26862</LineID>
-        <Localize>1</Localize>
       </Text>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
@@ -3167,13 +2281,8 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Easy;Average;Hard</ItemDifficulties>
         <FluffText>19583</FluffText>
-        <ItemRegions />
       </ExpeditionAttribute>
-      <Locked>
-        <DefaultLockedState>1</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
-      </Locked>
+      <Locked />
     </Values>
   </Asset>
   <Asset>
@@ -3184,16 +2293,13 @@
         <Name>Orsini Bomb</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/consumables/icon_suicide_bombs_1.png</IconFilename>
         <InfoDescription>19584</InfoDescription>
-        <Comments />
       </Standard>
       <SpecialAction>
         <MouseEffect>140112</MouseEffect>
         <Delay>5000</Delay>
         <Projectile>102080</Projectile>
       </SpecialAction>
-      <ItemEffect>
-        <EffectTargets />
-      </ItemEffect>
+      <ItemEffect />
       <ItemAction>
         <ItemAction>KAMIKAZE</ItemAction>
         <ActionScope>Self</ActionScope>
@@ -3201,13 +2307,6 @@
         <ActionDuration>10000</ActionDuration>
         <CanEndItemAction>0</CanEndItemAction>
         <StopMovementOnInteraction>0</StopMovementOnInteraction>
-        <ActionTarget>0</ActionTarget>
-        <RadiusBuffTargets />
-        <ActionIncidentType />
-        <IncidentResolveRate>0.3</IncidentResolveRate>
-        <ActiveBuff>0</ActiveBuff>
-        <ActionDescription>0</ActionDescription>
-        <ActionCompletedEffect />
       </ItemAction>
       <Item>
         <Allocation>Warship</Allocation>
@@ -3215,12 +2314,6 @@
         <Rarity>Uncommon</Rarity>
         <HasAction>1</HasAction>
         <TradePrice>10000</TradePrice>
-        <ItemType>Normal</ItemType>
-        <ExclusiveGroup>None</ExclusiveGroup>
-        <ItemSet>0</ItemSet>
-        <ExpeditionType>None</ExpeditionType>
-        <Flotsam>1000212</Flotsam>
-        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
       <Text>
         <LocaText>
@@ -3231,7 +2324,6 @@
           </English>
         </LocaText>
         <LineID>26863</LineID>
-        <Localize>1</Localize>
       </Text>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
@@ -3243,12 +2335,9 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Easy;Average</ItemDifficulties>
         <FluffText>19584</FluffText>
-        <ItemRegions />
       </ExpeditionAttribute>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
       </Locked>
     </Values>
   </Asset>
@@ -3260,16 +2349,13 @@
         <Name>TNT Bomb</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/consumables/icon_suicide_bombs_3.png</IconFilename>
         <InfoDescription>19585</InfoDescription>
-        <Comments />
       </Standard>
       <SpecialAction>
         <MouseEffect>140112</MouseEffect>
         <Delay>5000</Delay>
         <Projectile>102628</Projectile>
       </SpecialAction>
-      <ItemEffect>
-        <EffectTargets />
-      </ItemEffect>
+      <ItemEffect />
       <ItemAction>
         <ItemAction>KAMIKAZE</ItemAction>
         <ActionScope>Self</ActionScope>
@@ -3277,13 +2363,6 @@
         <ActionDuration>10000</ActionDuration>
         <CanEndItemAction>0</CanEndItemAction>
         <StopMovementOnInteraction>0</StopMovementOnInteraction>
-        <ActionTarget>0</ActionTarget>
-        <RadiusBuffTargets />
-        <ActionIncidentType />
-        <IncidentResolveRate>0.3</IncidentResolveRate>
-        <ActiveBuff>0</ActiveBuff>
-        <ActionDescription>0</ActionDescription>
-        <ActionCompletedEffect />
       </ItemAction>
       <Item>
         <Allocation>Warship</Allocation>
@@ -3291,12 +2370,6 @@
         <Rarity>Rare</Rarity>
         <HasAction>1</HasAction>
         <TradePrice>30000</TradePrice>
-        <ItemType>Normal</ItemType>
-        <ExclusiveGroup>None</ExclusiveGroup>
-        <ItemSet>0</ItemSet>
-        <ExpeditionType>None</ExpeditionType>
-        <Flotsam>1000212</Flotsam>
-        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
       <Text>
         <LocaText>
@@ -3307,7 +2380,6 @@
           </English>
         </LocaText>
         <LineID>26864</LineID>
-        <Localize>1</Localize>
       </Text>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
@@ -3319,12 +2391,9 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Easy;Average;Hard</ItemDifficulties>
         <FluffText>19585</FluffText>
-        <ItemRegions />
       </ExpeditionAttribute>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
       </Locked>
     </Values>
   </Asset>
@@ -3336,7 +2405,6 @@
         <Name>Greek Fire Grenades</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/consumables/icon_fire_bomb_1.png</IconFilename>
         <InfoDescription>19586</InfoDescription>
-        <Comments />
       </Standard>
       <SpecialAction>
         <UseEffectAsset>1</UseEffectAsset>
@@ -3344,9 +2412,7 @@
         <Projectile>101562</Projectile>
         <BarrageCount>1</BarrageCount>
       </SpecialAction>
-      <ItemEffect>
-        <EffectTargets />
-      </ItemEffect>
+      <ItemEffect />
       <ItemAction>
         <ActionTarget>2001744</ActionTarget>
         <ActionDistance>35</ActionDistance>
@@ -3355,13 +2421,6 @@
         <ActionDescription>12828</ActionDescription>
         <CanEndItemAction>0</CanEndItemAction>
         <StopMovementOnInteraction>0</StopMovementOnInteraction>
-        <ItemAction>NUKE</ItemAction>
-        <ActionScope>TargetRadius</ActionScope>
-        <RadiusBuffTargets />
-        <ActionIncidentType />
-        <IncidentResolveRate>0.3</IncidentResolveRate>
-        <ActiveBuff>0</ActiveBuff>
-        <ActionCompletedEffect />
       </ItemAction>
       <Item>
         <Allocation>Warship</Allocation>
@@ -3369,12 +2428,6 @@
         <Rarity>Uncommon</Rarity>
         <HasAction>1</HasAction>
         <TradePrice>10000</TradePrice>
-        <ItemType>Normal</ItemType>
-        <ExclusiveGroup>None</ExclusiveGroup>
-        <ItemSet>0</ItemSet>
-        <ExpeditionType>None</ExpeditionType>
-        <Flotsam>1000212</Flotsam>
-        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
       <Text>
         <LocaText>
@@ -3385,7 +2438,6 @@
           </English>
         </LocaText>
         <LineID>26865</LineID>
-        <Localize>1</Localize>
       </Text>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
@@ -3397,12 +2449,9 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Easy;Average</ItemDifficulties>
         <FluffText>19586</FluffText>
-        <ItemRegions />
       </ExpeditionAttribute>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
       </Locked>
     </Values>
   </Asset>
@@ -3414,7 +2463,6 @@
         <Name>Elektron Grenades</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/consumables/icon_fire_bomb_2.png</IconFilename>
         <InfoDescription>19587</InfoDescription>
-        <Comments />
       </Standard>
       <SpecialAction>
         <UseEffectAsset>1</UseEffectAsset>
@@ -3422,9 +2470,7 @@
         <Projectile>102627</Projectile>
         <BarrageCount>1</BarrageCount>
       </SpecialAction>
-      <ItemEffect>
-        <EffectTargets />
-      </ItemEffect>
+      <ItemEffect />
       <ItemAction>
         <ActionTarget>2001744</ActionTarget>
         <ActionDistance>45</ActionDistance>
@@ -3433,13 +2479,6 @@
         <ActionDescription>12828</ActionDescription>
         <CanEndItemAction>0</CanEndItemAction>
         <StopMovementOnInteraction>0</StopMovementOnInteraction>
-        <ItemAction>NUKE</ItemAction>
-        <ActionScope>TargetRadius</ActionScope>
-        <RadiusBuffTargets />
-        <ActionIncidentType />
-        <IncidentResolveRate>0.3</IncidentResolveRate>
-        <ActiveBuff>0</ActiveBuff>
-        <ActionCompletedEffect />
       </ItemAction>
       <Item>
         <Allocation>Warship</Allocation>
@@ -3447,12 +2486,6 @@
         <Rarity>Rare</Rarity>
         <HasAction>1</HasAction>
         <TradePrice>30000</TradePrice>
-        <ItemType>Normal</ItemType>
-        <ExclusiveGroup>None</ExclusiveGroup>
-        <ItemSet>0</ItemSet>
-        <ExpeditionType>None</ExpeditionType>
-        <Flotsam>1000212</Flotsam>
-        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
       <Text>
         <LocaText>
@@ -3463,7 +2496,6 @@
           </English>
         </LocaText>
         <LineID>26866</LineID>
-        <Localize>1</Localize>
       </Text>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
@@ -3475,12 +2507,9 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Easy;Average;Hard</ItemDifficulties>
         <FluffText>19587</FluffText>
-        <ItemRegions />
       </ExpeditionAttribute>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
       </Locked>
     </Values>
   </Asset>
@@ -3492,15 +2521,11 @@
         <Name>Iron Chain Shots</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/consumables/icon_chainshot_1.png</IconFilename>
         <InfoDescription>19588</InfoDescription>
-        <Comments />
       </Standard>
       <SpecialAction>
         <MouseEffect>500992</MouseEffect>
-        <Projectile>0</Projectile>
       </SpecialAction>
-      <ItemEffect>
-        <EffectTargets />
-      </ItemEffect>
+      <ItemEffect />
       <ItemAction>
         <ItemAction>NOACTION</ItemAction>
         <ActionScope>Self</ActionScope>
@@ -3510,12 +2535,6 @@
         <ActiveBuff>192453</ActiveBuff>
         <CanEndItemAction>0</CanEndItemAction>
         <StopMovementOnInteraction>0</StopMovementOnInteraction>
-        <ActionTarget>0</ActionTarget>
-        <RadiusBuffTargets />
-        <ActionIncidentType />
-        <IncidentResolveRate>0.3</IncidentResolveRate>
-        <ActionDescription>0</ActionDescription>
-        <ActionCompletedEffect />
       </ItemAction>
       <Item>
         <Allocation>Warship</Allocation>
@@ -3524,11 +2543,6 @@
         <HasAction>1</HasAction>
         <ExclusiveGroup>AutoAttackProjectile</ExclusiveGroup>
         <TradePrice>10000</TradePrice>
-        <ItemType>Normal</ItemType>
-        <ItemSet>0</ItemSet>
-        <ExpeditionType>None</ExpeditionType>
-        <Flotsam>1000212</Flotsam>
-        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
       <Text>
         <LocaText>
@@ -3539,7 +2553,6 @@
           </English>
         </LocaText>
         <LineID>26867</LineID>
-        <Localize>1</Localize>
       </Text>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
@@ -3551,12 +2564,9 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Easy;Average</ItemDifficulties>
         <FluffText>19588</FluffText>
-        <ItemRegions />
       </ExpeditionAttribute>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
       </Locked>
     </Values>
   </Asset>
@@ -3568,15 +2578,11 @@
         <Name>Steel Chain Shots</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/consumables/icon_chainshot_2.png</IconFilename>
         <InfoDescription>19589</InfoDescription>
-        <Comments />
       </Standard>
       <SpecialAction>
         <MouseEffect>500992</MouseEffect>
-        <Projectile>0</Projectile>
       </SpecialAction>
-      <ItemEffect>
-        <EffectTargets />
-      </ItemEffect>
+      <ItemEffect />
       <ItemAction>
         <ItemAction>NOACTION</ItemAction>
         <ActionScope>Self</ActionScope>
@@ -3585,12 +2591,6 @@
         <ActiveBuff>192454</ActiveBuff>
         <CanEndItemAction>0</CanEndItemAction>
         <StopMovementOnInteraction>0</StopMovementOnInteraction>
-        <ActionTarget>0</ActionTarget>
-        <RadiusBuffTargets />
-        <ActionIncidentType />
-        <IncidentResolveRate>0.3</IncidentResolveRate>
-        <ActionDescription>0</ActionDescription>
-        <ActionCompletedEffect />
       </ItemAction>
       <Item>
         <Allocation>Warship</Allocation>
@@ -3599,11 +2599,6 @@
         <HasAction>1</HasAction>
         <ExclusiveGroup>AutoAttackProjectile</ExclusiveGroup>
         <TradePrice>30000</TradePrice>
-        <ItemType>Normal</ItemType>
-        <ItemSet>0</ItemSet>
-        <ExpeditionType>None</ExpeditionType>
-        <Flotsam>1000212</Flotsam>
-        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
       <Text>
         <LocaText>
@@ -3614,7 +2609,6 @@
           </English>
         </LocaText>
         <LineID>26868</LineID>
-        <Localize>1</Localize>
       </Text>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
@@ -3626,12 +2620,9 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Easy;Average;Hard</ItemDifficulties>
         <FluffText>19589</FluffText>
-        <ItemRegions />
       </ExpeditionAttribute>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
       </Locked>
     </Values>
   </Asset>
@@ -3643,15 +2634,9 @@
         <Name>Merchant Trading Tax Bill</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/consumables/icon_tax_bill_1.png</IconFilename>
         <InfoDescription>19590</InfoDescription>
-        <Comments />
       </Standard>
-      <SpecialAction>
-        <MouseEffect>0</MouseEffect>
-        <Projectile>0</Projectile>
-      </SpecialAction>
-      <ItemEffect>
-        <EffectTargets />
-      </ItemEffect>
+      <SpecialAction />
+      <ItemEffect />
       <ItemAction>
         <ItemAction>NOACTION</ItemAction>
         <ActionScope>Self</ActionScope>
@@ -3660,12 +2645,6 @@
         <ActiveBuff>192009</ActiveBuff>
         <CanEndItemAction>0</CanEndItemAction>
         <StopMovementOnInteraction>0</StopMovementOnInteraction>
-        <ActionTarget>0</ActionTarget>
-        <RadiusBuffTargets />
-        <ActionIncidentType />
-        <IncidentResolveRate>0.3</IncidentResolveRate>
-        <ActionDescription>0</ActionDescription>
-        <ActionCompletedEffect />
       </ItemAction>
       <Item>
         <Allocation>Ship</Allocation>
@@ -3673,12 +2652,6 @@
         <HasAction>1</HasAction>
         <ExclusiveGroup>TradingTaxBill</ExclusiveGroup>
         <TradePrice>2000</TradePrice>
-        <Rarity>Common</Rarity>
-        <ItemType>Normal</ItemType>
-        <ItemSet>0</ItemSet>
-        <ExpeditionType>None</ExpeditionType>
-        <Flotsam>1000212</Flotsam>
-        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
       <Text>
         <LocaText>
@@ -3689,7 +2662,6 @@
           </English>
         </LocaText>
         <LineID>26869</LineID>
-        <Localize>1</Localize>
       </Text>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
@@ -3701,12 +2673,9 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Easy</ItemDifficulties>
         <FluffText>19590</FluffText>
-        <ItemRegions />
       </ExpeditionAttribute>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
       </Locked>
     </Values>
   </Asset>
@@ -3718,15 +2687,9 @@
         <Name>Grand Exporter Trading Tax Bill</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/consumables/icon_tax_bill_2.png</IconFilename>
         <InfoDescription>19591</InfoDescription>
-        <Comments />
       </Standard>
-      <SpecialAction>
-        <MouseEffect>0</MouseEffect>
-        <Projectile>0</Projectile>
-      </SpecialAction>
-      <ItemEffect>
-        <EffectTargets />
-      </ItemEffect>
+      <SpecialAction />
+      <ItemEffect />
       <ItemAction>
         <ItemAction>NOACTION</ItemAction>
         <ActionScope>Self</ActionScope>
@@ -3735,12 +2698,6 @@
         <ActiveBuff>192010</ActiveBuff>
         <CanEndItemAction>0</CanEndItemAction>
         <StopMovementOnInteraction>0</StopMovementOnInteraction>
-        <ActionTarget>0</ActionTarget>
-        <RadiusBuffTargets />
-        <ActionIncidentType />
-        <IncidentResolveRate>0.3</IncidentResolveRate>
-        <ActionDescription>0</ActionDescription>
-        <ActionCompletedEffect />
       </ItemAction>
       <Item>
         <Allocation>Ship</Allocation>
@@ -3749,11 +2706,6 @@
         <HasAction>1</HasAction>
         <ExclusiveGroup>TradingTaxBill</ExclusiveGroup>
         <TradePrice>10000</TradePrice>
-        <ItemType>Normal</ItemType>
-        <ItemSet>0</ItemSet>
-        <ExpeditionType>None</ExpeditionType>
-        <Flotsam>1000212</Flotsam>
-        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
       <Text>
         <LocaText>
@@ -3764,7 +2716,6 @@
           </English>
         </LocaText>
         <LineID>26870</LineID>
-        <Localize>1</Localize>
       </Text>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
@@ -3776,12 +2727,9 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Easy;Average</ItemDifficulties>
         <FluffText>19591</FluffText>
-        <ItemRegions />
       </ExpeditionAttribute>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
       </Locked>
     </Values>
   </Asset>
@@ -3793,15 +2741,9 @@
         <Name>Archibald Trading Tax Bill</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/consumables/icon_tax_bill_3.png</IconFilename>
         <InfoDescription>19592</InfoDescription>
-        <Comments />
       </Standard>
-      <SpecialAction>
-        <MouseEffect>0</MouseEffect>
-        <Projectile>0</Projectile>
-      </SpecialAction>
-      <ItemEffect>
-        <EffectTargets />
-      </ItemEffect>
+      <SpecialAction />
+      <ItemEffect />
       <ItemAction>
         <ItemAction>NOACTION</ItemAction>
         <ActionScope>Self</ActionScope>
@@ -3810,12 +2752,6 @@
         <ActiveBuff>192011</ActiveBuff>
         <CanEndItemAction>0</CanEndItemAction>
         <StopMovementOnInteraction>0</StopMovementOnInteraction>
-        <ActionTarget>0</ActionTarget>
-        <RadiusBuffTargets />
-        <ActionIncidentType />
-        <IncidentResolveRate>0.3</IncidentResolveRate>
-        <ActionDescription>0</ActionDescription>
-        <ActionCompletedEffect />
       </ItemAction>
       <Item>
         <Allocation>Ship</Allocation>
@@ -3824,11 +2760,6 @@
         <HasAction>1</HasAction>
         <ExclusiveGroup>TradingTaxBill</ExclusiveGroup>
         <TradePrice>30000</TradePrice>
-        <ItemType>Normal</ItemType>
-        <ItemSet>0</ItemSet>
-        <ExpeditionType>None</ExpeditionType>
-        <Flotsam>1000212</Flotsam>
-        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
       <Text>
         <LocaText>
@@ -3839,7 +2770,6 @@
           </English>
         </LocaText>
         <LineID>26871</LineID>
-        <Localize>1</Localize>
       </Text>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
@@ -3851,12 +2781,9 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Easy;Average;Hard</ItemDifficulties>
         <FluffText>19592</FluffText>
-        <ItemRegions />
       </ExpeditionAttribute>
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
       </Locked>
     </Values>
   </Asset>
@@ -3868,12 +2795,8 @@
         <Name>Bag of Dynamite</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/consumables/icon_dynamite_1.png</IconFilename>
         <InfoDescription>19594</InfoDescription>
-        <Comments />
       </Standard>
-      <SpecialAction>
-        <MouseEffect>0</MouseEffect>
-        <Projectile>0</Projectile>
-      </SpecialAction>
+      <SpecialAction />
       <ItemEffect>
         <EffectTargets>
           <Item>
@@ -3889,25 +2812,12 @@
         <ActionDuration>300000</ActionDuration>
         <ActiveBuff>192014</ActiveBuff>
         <CanEndItemAction>0</CanEndItemAction>
-        <ActionTarget>0</ActionTarget>
-        <RadiusBuffTargets />
-        <IncidentResolveRate>0.3</IncidentResolveRate>
-        <ActionDescription>0</ActionDescription>
-        <ActionCompletedEffect />
-        <StopMovementOnInteraction>1</StopMovementOnInteraction>
       </ItemAction>
       <Item>
         <Allocation>GuildHouse</Allocation>
         <MaxStackSize>5</MaxStackSize>
         <HasAction>1</HasAction>
         <TradePrice>2000</TradePrice>
-        <Rarity>Common</Rarity>
-        <ItemType>Normal</ItemType>
-        <ExclusiveGroup>None</ExclusiveGroup>
-        <ItemSet>0</ItemSet>
-        <ExpeditionType>None</ExpeditionType>
-        <Flotsam>1000212</Flotsam>
-        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
       <Text>
         <LocaText>
@@ -3918,7 +2828,6 @@
           </English>
         </LocaText>
         <LineID>26872</LineID>
-        <Localize>1</Localize>
       </Text>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
@@ -3934,13 +2843,8 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Easy</ItemDifficulties>
         <FluffText>19594</FluffText>
-        <ItemRegions />
       </ExpeditionAttribute>
-      <Locked>
-        <DefaultLockedState>1</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
-      </Locked>
+      <Locked />
     </Values>
   </Asset>
   <Asset>
@@ -3951,12 +2855,8 @@
         <Name>Big Bag of Dynamite</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/consumables/icon_dynamite_2.png</IconFilename>
         <InfoDescription>19595</InfoDescription>
-        <Comments />
       </Standard>
-      <SpecialAction>
-        <MouseEffect>0</MouseEffect>
-        <Projectile>0</Projectile>
-      </SpecialAction>
+      <SpecialAction />
       <ItemEffect>
         <EffectTargets>
           <Item>
@@ -3972,12 +2872,6 @@
         <ActionDuration>300000</ActionDuration>
         <ActiveBuff>192015</ActiveBuff>
         <CanEndItemAction>0</CanEndItemAction>
-        <ActionTarget>0</ActionTarget>
-        <RadiusBuffTargets />
-        <IncidentResolveRate>0.3</IncidentResolveRate>
-        <ActionDescription>0</ActionDescription>
-        <ActionCompletedEffect />
-        <StopMovementOnInteraction>1</StopMovementOnInteraction>
       </ItemAction>
       <Item>
         <Allocation>GuildHouse</Allocation>
@@ -3985,12 +2879,6 @@
         <Rarity>Uncommon</Rarity>
         <HasAction>1</HasAction>
         <TradePrice>10000</TradePrice>
-        <ItemType>Normal</ItemType>
-        <ExclusiveGroup>None</ExclusiveGroup>
-        <ItemSet>0</ItemSet>
-        <ExpeditionType>None</ExpeditionType>
-        <Flotsam>1000212</Flotsam>
-        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
       <Text>
         <LocaText>
@@ -4001,7 +2889,6 @@
           </English>
         </LocaText>
         <LineID>26873</LineID>
-        <Localize>1</Localize>
       </Text>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
@@ -4017,13 +2904,8 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Easy;Average</ItemDifficulties>
         <FluffText>19595</FluffText>
-        <ItemRegions />
       </ExpeditionAttribute>
-      <Locked>
-        <DefaultLockedState>1</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
-      </Locked>
+      <Locked />
     </Values>
   </Asset>
   <Asset>
@@ -4034,12 +2916,8 @@
         <Name>Armagnac Bottles</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_rum.png</IconFilename>
         <InfoDescription>19599</InfoDescription>
-        <Comments />
       </Standard>
-      <SpecialAction>
-        <MouseEffect>0</MouseEffect>
-        <Projectile>0</Projectile>
-      </SpecialAction>
+      <SpecialAction />
       <ItemEffect>
         <EffectTargets>
           <Item>
@@ -4054,13 +2932,6 @@
         <ActionDuration>300000</ActionDuration>
         <ActiveBuff>192020</ActiveBuff>
         <CanEndItemAction>0</CanEndItemAction>
-        <ActionTarget>0</ActionTarget>
-        <RadiusBuffTargets />
-        <ActionIncidentType />
-        <IncidentResolveRate>0.3</IncidentResolveRate>
-        <ActionDescription>0</ActionDescription>
-        <ActionCompletedEffect />
-        <StopMovementOnInteraction>1</StopMovementOnInteraction>
       </ItemAction>
       <Item>
         <Allocation>TownHall</Allocation>
@@ -4068,12 +2939,6 @@
         <Rarity>Uncommon</Rarity>
         <HasAction>1</HasAction>
         <TradePrice>10000</TradePrice>
-        <ItemType>Normal</ItemType>
-        <ExclusiveGroup>None</ExclusiveGroup>
-        <ItemSet>0</ItemSet>
-        <ExpeditionType>None</ExpeditionType>
-        <Flotsam>1000212</Flotsam>
-        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
       <Text>
         <LocaText>
@@ -4084,20 +2949,12 @@
           </English>
         </LocaText>
         <LineID>26876</LineID>
-        <Localize>1</Localize>
       </Text>
       <ExpeditionAttribute>
         <BaseMorale>20</BaseMorale>
         <ItemDifficulties>Easy;Average</ItemDifficulties>
-        <ExpeditionAttributes />
-        <ItemRegions />
-        <FluffText>0</FluffText>
       </ExpeditionAttribute>
-      <Locked>
-        <DefaultLockedState>1</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
-      </Locked>
+      <Locked />
     </Values>
   </Asset>
   <Asset>
@@ -4108,12 +2965,8 @@
         <Name>Milk Demijohn</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_sheep_milk.png</IconFilename>
         <InfoDescription>19600</InfoDescription>
-        <Comments />
       </Standard>
-      <SpecialAction>
-        <MouseEffect>0</MouseEffect>
-        <Projectile>0</Projectile>
-      </SpecialAction>
+      <SpecialAction />
       <ItemEffect>
         <EffectTargets>
           <Item>
@@ -4128,13 +2981,6 @@
         <ActionDuration>300000</ActionDuration>
         <ActiveBuff>192021</ActiveBuff>
         <CanEndItemAction>0</CanEndItemAction>
-        <ActionTarget>0</ActionTarget>
-        <RadiusBuffTargets />
-        <ActionIncidentType />
-        <IncidentResolveRate>0.3</IncidentResolveRate>
-        <ActionDescription>0</ActionDescription>
-        <ActionCompletedEffect />
-        <StopMovementOnInteraction>1</StopMovementOnInteraction>
       </ItemAction>
       <Item>
         <Allocation>TownHall</Allocation>
@@ -4142,12 +2988,6 @@
         <Rarity>Uncommon</Rarity>
         <HasAction>1</HasAction>
         <TradePrice>10000</TradePrice>
-        <ItemType>Normal</ItemType>
-        <ExclusiveGroup>None</ExclusiveGroup>
-        <ItemSet>0</ItemSet>
-        <ExpeditionType>None</ExpeditionType>
-        <Flotsam>1000212</Flotsam>
-        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
       <Text>
         <LocaText>
@@ -4158,20 +2998,12 @@
           </English>
         </LocaText>
         <LineID>26877</LineID>
-        <Localize>1</Localize>
       </Text>
       <ExpeditionAttribute>
         <BaseMorale>20</BaseMorale>
         <ItemDifficulties>Easy;Average</ItemDifficulties>
-        <ExpeditionAttributes />
-        <ItemRegions />
-        <FluffText>0</FluffText>
       </ExpeditionAttribute>
-      <Locked>
-        <DefaultLockedState>1</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
-      </Locked>
+      <Locked />
     </Values>
   </Asset>
   <Asset>
@@ -4182,12 +3014,8 @@
         <Name>Cheese Crate</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_sheep_cheese.png</IconFilename>
         <InfoDescription>19601</InfoDescription>
-        <Comments />
       </Standard>
-      <SpecialAction>
-        <MouseEffect>0</MouseEffect>
-        <Projectile>0</Projectile>
-      </SpecialAction>
+      <SpecialAction />
       <ItemEffect>
         <EffectTargets>
           <Item>
@@ -4202,13 +3030,6 @@
         <ActionDuration>300000</ActionDuration>
         <ActiveBuff>192022</ActiveBuff>
         <CanEndItemAction>0</CanEndItemAction>
-        <ActionTarget>0</ActionTarget>
-        <RadiusBuffTargets />
-        <ActionIncidentType />
-        <IncidentResolveRate>0.3</IncidentResolveRate>
-        <ActionDescription>0</ActionDescription>
-        <ActionCompletedEffect />
-        <StopMovementOnInteraction>1</StopMovementOnInteraction>
       </ItemAction>
       <Item>
         <Allocation>TownHall</Allocation>
@@ -4216,12 +3037,6 @@
         <Rarity>Uncommon</Rarity>
         <HasAction>1</HasAction>
         <TradePrice>10000</TradePrice>
-        <ItemType>Normal</ItemType>
-        <ExclusiveGroup>None</ExclusiveGroup>
-        <ItemSet>0</ItemSet>
-        <ExpeditionType>None</ExpeditionType>
-        <Flotsam>1000212</Flotsam>
-        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
       <Text>
         <LocaText>
@@ -4232,20 +3047,12 @@
           </English>
         </LocaText>
         <LineID>26878</LineID>
-        <Localize>1</Localize>
       </Text>
       <ExpeditionAttribute>
         <BaseMorale>20</BaseMorale>
         <ItemDifficulties>Easy;Average</ItemDifficulties>
-        <ExpeditionAttributes />
-        <ItemRegions />
-        <FluffText>0</FluffText>
       </ExpeditionAttribute>
-      <Locked>
-        <DefaultLockedState>1</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
-      </Locked>
+      <Locked />
     </Values>
   </Asset>
   <Asset>
@@ -4256,12 +3063,8 @@
         <Name>Fish Stew Plates</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_fish_stew.png</IconFilename>
         <InfoDescription>19602</InfoDescription>
-        <Comments />
       </Standard>
-      <SpecialAction>
-        <MouseEffect>0</MouseEffect>
-        <Projectile>0</Projectile>
-      </SpecialAction>
+      <SpecialAction />
       <ItemEffect>
         <EffectTargets>
           <Item>
@@ -4276,13 +3079,6 @@
         <ActionDuration>300000</ActionDuration>
         <ActiveBuff>192023</ActiveBuff>
         <CanEndItemAction>0</CanEndItemAction>
-        <ActionTarget>0</ActionTarget>
-        <RadiusBuffTargets />
-        <ActionIncidentType />
-        <IncidentResolveRate>0.3</IncidentResolveRate>
-        <ActionDescription>0</ActionDescription>
-        <ActionCompletedEffect />
-        <StopMovementOnInteraction>1</StopMovementOnInteraction>
       </ItemAction>
       <Item>
         <Allocation>TownHall</Allocation>
@@ -4290,12 +3086,6 @@
         <Rarity>Uncommon</Rarity>
         <HasAction>1</HasAction>
         <TradePrice>10000</TradePrice>
-        <ItemType>Normal</ItemType>
-        <ExclusiveGroup>None</ExclusiveGroup>
-        <ItemSet>0</ItemSet>
-        <ExpeditionType>None</ExpeditionType>
-        <Flotsam>1000212</Flotsam>
-        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
       <Text>
         <LocaText>
@@ -4306,20 +3096,12 @@
           </English>
         </LocaText>
         <LineID>26879</LineID>
-        <Localize>1</Localize>
       </Text>
       <ExpeditionAttribute>
         <BaseMorale>20</BaseMorale>
         <ItemDifficulties>Easy;Average</ItemDifficulties>
-        <ExpeditionAttributes />
-        <ItemRegions />
-        <FluffText>0</FluffText>
       </ExpeditionAttribute>
-      <Locked>
-        <DefaultLockedState>1</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
-      </Locked>
+      <Locked />
     </Values>
   </Asset>
   <Asset>
@@ -4330,12 +3112,8 @@
         <Name>Beef Potato Plates</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_beef_potatoes.png</IconFilename>
         <InfoDescription>19603</InfoDescription>
-        <Comments />
       </Standard>
-      <SpecialAction>
-        <MouseEffect>0</MouseEffect>
-        <Projectile>0</Projectile>
-      </SpecialAction>
+      <SpecialAction />
       <ItemEffect>
         <EffectTargets>
           <Item>
@@ -4350,13 +3128,6 @@
         <ActionDuration>300000</ActionDuration>
         <ActiveBuff>192024</ActiveBuff>
         <CanEndItemAction>0</CanEndItemAction>
-        <ActionTarget>0</ActionTarget>
-        <RadiusBuffTargets />
-        <ActionIncidentType />
-        <IncidentResolveRate>0.3</IncidentResolveRate>
-        <ActionDescription>0</ActionDescription>
-        <ActionCompletedEffect />
-        <StopMovementOnInteraction>1</StopMovementOnInteraction>
       </ItemAction>
       <Item>
         <Allocation>TownHall</Allocation>
@@ -4364,12 +3135,6 @@
         <Rarity>Uncommon</Rarity>
         <HasAction>1</HasAction>
         <TradePrice>10000</TradePrice>
-        <ItemType>Normal</ItemType>
-        <ExclusiveGroup>None</ExclusiveGroup>
-        <ItemSet>0</ItemSet>
-        <ExpeditionType>None</ExpeditionType>
-        <Flotsam>1000212</Flotsam>
-        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
       <Text>
         <LocaText>
@@ -4380,20 +3145,12 @@
           </English>
         </LocaText>
         <LineID>26880</LineID>
-        <Localize>1</Localize>
       </Text>
       <ExpeditionAttribute>
         <BaseMorale>20</BaseMorale>
         <ItemDifficulties>Easy;Average</ItemDifficulties>
-        <ExpeditionAttributes />
-        <ItemRegions />
-        <FluffText>0</FluffText>
       </ExpeditionAttribute>
-      <Locked>
-        <DefaultLockedState>1</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
-      </Locked>
+      <Locked />
     </Values>
   </Asset>
   <Asset>
@@ -4404,12 +3161,8 @@
         <Name>Tools Crate</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_tools.png</IconFilename>
         <InfoDescription>19604</InfoDescription>
-        <Comments />
       </Standard>
-      <SpecialAction>
-        <MouseEffect>0</MouseEffect>
-        <Projectile>0</Projectile>
-      </SpecialAction>
+      <SpecialAction />
       <ItemEffect>
         <EffectTargets>
           <Item>
@@ -4424,13 +3177,6 @@
         <ActionDuration>300000</ActionDuration>
         <ActiveBuff>192025</ActiveBuff>
         <CanEndItemAction>0</CanEndItemAction>
-        <ActionTarget>0</ActionTarget>
-        <RadiusBuffTargets />
-        <ActionIncidentType />
-        <IncidentResolveRate>0.3</IncidentResolveRate>
-        <ActionDescription>0</ActionDescription>
-        <ActionCompletedEffect />
-        <StopMovementOnInteraction>1</StopMovementOnInteraction>
       </ItemAction>
       <Item>
         <Allocation>TownHall</Allocation>
@@ -4438,12 +3184,6 @@
         <Rarity>Uncommon</Rarity>
         <HasAction>1</HasAction>
         <TradePrice>10000</TradePrice>
-        <ItemType>Normal</ItemType>
-        <ExclusiveGroup>None</ExclusiveGroup>
-        <ItemSet>0</ItemSet>
-        <ExpeditionType>None</ExpeditionType>
-        <Flotsam>1000212</Flotsam>
-        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
       <Text>
         <LocaText>
@@ -4454,7 +3194,6 @@
           </English>
         </LocaText>
         <LineID>26881</LineID>
-        <Localize>1</Localize>
       </Text>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
@@ -4466,13 +3205,8 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Easy;Average</ItemDifficulties>
         <FluffText>19604</FluffText>
-        <ItemRegions />
       </ExpeditionAttribute>
-      <Locked>
-        <DefaultLockedState>1</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
-      </Locked>
+      <Locked />
     </Values>
   </Asset>
   <Asset>
@@ -4483,12 +3217,8 @@
         <Name>Sewing Thread</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_sheep_wool.png</IconFilename>
         <InfoDescription>19605</InfoDescription>
-        <Comments />
       </Standard>
-      <SpecialAction>
-        <MouseEffect>0</MouseEffect>
-        <Projectile>0</Projectile>
-      </SpecialAction>
+      <SpecialAction />
       <ItemEffect>
         <EffectTargets>
           <Item>
@@ -4503,13 +3233,6 @@
         <ActionDuration>300000</ActionDuration>
         <ActiveBuff>192026</ActiveBuff>
         <CanEndItemAction>0</CanEndItemAction>
-        <ActionTarget>0</ActionTarget>
-        <RadiusBuffTargets />
-        <ActionIncidentType />
-        <IncidentResolveRate>0.3</IncidentResolveRate>
-        <ActionDescription>0</ActionDescription>
-        <ActionCompletedEffect />
-        <StopMovementOnInteraction>1</StopMovementOnInteraction>
       </ItemAction>
       <Item>
         <Allocation>TownHall</Allocation>
@@ -4517,12 +3240,6 @@
         <Rarity>Uncommon</Rarity>
         <HasAction>1</HasAction>
         <TradePrice>10000</TradePrice>
-        <ItemType>Normal</ItemType>
-        <ExclusiveGroup>None</ExclusiveGroup>
-        <ItemSet>0</ItemSet>
-        <ExpeditionType>None</ExpeditionType>
-        <Flotsam>1000212</Flotsam>
-        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
       <Text>
         <LocaText>
@@ -4533,7 +3250,6 @@
           </English>
         </LocaText>
         <LineID>26882</LineID>
-        <Localize>1</Localize>
       </Text>
       <ExpeditionAttribute>
         <BaseMorale>0</BaseMorale>
@@ -4545,13 +3261,8 @@
         </ExpeditionAttributes>
         <ItemDifficulties>Easy;Average</ItemDifficulties>
         <FluffText>19605</FluffText>
-        <ItemRegions />
       </ExpeditionAttribute>
-      <Locked>
-        <DefaultLockedState>1</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
-      </Locked>
+      <Locked />
     </Values>
   </Asset>
   <Asset>
@@ -4562,12 +3273,8 @@
         <Name>Fish Cans</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_canned_food.png</IconFilename>
         <InfoDescription>19606</InfoDescription>
-        <Comments />
       </Standard>
-      <SpecialAction>
-        <MouseEffect>0</MouseEffect>
-        <Projectile>0</Projectile>
-      </SpecialAction>
+      <SpecialAction />
       <ItemEffect>
         <EffectTargets>
           <Item>
@@ -4582,13 +3289,6 @@
         <ActionDuration>300000</ActionDuration>
         <ActiveBuff>192027</ActiveBuff>
         <CanEndItemAction>0</CanEndItemAction>
-        <ActionTarget>0</ActionTarget>
-        <RadiusBuffTargets />
-        <ActionIncidentType />
-        <IncidentResolveRate>0.3</IncidentResolveRate>
-        <ActionDescription>0</ActionDescription>
-        <ActionCompletedEffect />
-        <StopMovementOnInteraction>1</StopMovementOnInteraction>
       </ItemAction>
       <Item>
         <Allocation>TownHall</Allocation>
@@ -4596,12 +3296,6 @@
         <Rarity>Uncommon</Rarity>
         <HasAction>1</HasAction>
         <TradePrice>10000</TradePrice>
-        <ItemType>Normal</ItemType>
-        <ExclusiveGroup>None</ExclusiveGroup>
-        <ItemSet>0</ItemSet>
-        <ExpeditionType>None</ExpeditionType>
-        <Flotsam>1000212</Flotsam>
-        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
       <Text>
         <LocaText>
@@ -4612,20 +3306,12 @@
           </English>
         </LocaText>
         <LineID>26883</LineID>
-        <Localize>1</Localize>
       </Text>
       <ExpeditionAttribute>
         <BaseMorale>20</BaseMorale>
         <ItemDifficulties>Easy;Average</ItemDifficulties>
-        <ExpeditionAttributes />
-        <ItemRegions />
-        <FluffText>0</FluffText>
       </ExpeditionAttribute>
-      <Locked>
-        <DefaultLockedState>1</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
-      </Locked>
+      <Locked />
     </Values>
   </Asset>
   <Asset>
@@ -4635,17 +3321,13 @@
         <GUID>190103</GUID>
         <Name>Small Mortar</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_beer_2.png</IconFilename>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <SpecialAction>
         <MouseEffect>140088</MouseEffect>
         <Projectile>100444</Projectile>
         <BarrageCount>1</BarrageCount>
       </SpecialAction>
-      <ItemEffect>
-        <EffectTargets />
-      </ItemEffect>
+      <ItemEffect />
       <ItemAction>
         <ActionTarget>2001744</ActionTarget>
         <ActionDistance>32</ActionDistance>
@@ -4653,27 +3335,12 @@
         <ActionDuration>2000</ActionDuration>
         <ActionDescription>12828</ActionDescription>
         <StopMovementOnInteraction>0</StopMovementOnInteraction>
-        <ItemAction>NUKE</ItemAction>
-        <ActionScope>TargetRadius</ActionScope>
-        <RadiusBuffTargets />
-        <ActionIncidentType />
-        <IncidentResolveRate>0.3</IncidentResolveRate>
-        <ActiveBuff>0</ActiveBuff>
-        <ActionCompletedEffect />
-        <CanEndItemAction>1</CanEndItemAction>
       </ItemAction>
       <Item>
         <Allocation>Ship</Allocation>
         <MaxStackSize>10</MaxStackSize>
         <HasAction>1</HasAction>
         <TradePrice>1000</TradePrice>
-        <Rarity>Common</Rarity>
-        <ItemType>Normal</ItemType>
-        <ExclusiveGroup>None</ExclusiveGroup>
-        <ItemSet>0</ItemSet>
-        <ExpeditionType>None</ExpeditionType>
-        <Flotsam>1000212</Flotsam>
-        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
       <Text>
         <LocaText>
@@ -4681,7 +3348,6 @@
             <Text>Small Mortar</Text>
           </English>
         </LocaText>
-        <Localize>1</Localize>
       </Text>
       <ExpeditionAttribute>
         <BaseMorale>10</BaseMorale>
@@ -4692,14 +3358,8 @@
           </Item>
         </ExpeditionAttributes>
         <ItemDifficulties>Easy</ItemDifficulties>
-        <ItemRegions />
-        <FluffText>0</FluffText>
       </ExpeditionAttribute>
-      <Locked>
-        <DefaultLockedState>1</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
-      </Locked>
+      <Locked />
     </Values>
   </Asset>
   <Asset>
@@ -4709,17 +3369,13 @@
         <GUID>190127</GUID>
         <Name>Big Mortar</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_beer_2.png</IconFilename>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <SpecialAction>
         <MouseEffect>140112</MouseEffect>
         <Projectile>100457</Projectile>
         <BarrageCount>1</BarrageCount>
       </SpecialAction>
-      <ItemEffect>
-        <EffectTargets />
-      </ItemEffect>
+      <ItemEffect />
       <ItemAction>
         <ActionTarget>2001744</ActionTarget>
         <ActionDistance>36</ActionDistance>
@@ -4727,14 +3383,6 @@
         <ActionDuration>2000</ActionDuration>
         <ActionDescription>12828</ActionDescription>
         <StopMovementOnInteraction>0</StopMovementOnInteraction>
-        <ItemAction>NUKE</ItemAction>
-        <ActionScope>TargetRadius</ActionScope>
-        <RadiusBuffTargets />
-        <ActionIncidentType />
-        <IncidentResolveRate>0.3</IncidentResolveRate>
-        <ActiveBuff>0</ActiveBuff>
-        <ActionCompletedEffect />
-        <CanEndItemAction>1</CanEndItemAction>
       </ItemAction>
       <Item>
         <Allocation>Ship</Allocation>
@@ -4742,12 +3390,6 @@
         <Rarity>Uncommon</Rarity>
         <HasAction>1</HasAction>
         <TradePrice>5000</TradePrice>
-        <ItemType>Normal</ItemType>
-        <ExclusiveGroup>None</ExclusiveGroup>
-        <ItemSet>0</ItemSet>
-        <ExpeditionType>None</ExpeditionType>
-        <Flotsam>1000212</Flotsam>
-        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
       <Text>
         <LocaText>
@@ -4755,7 +3397,6 @@
             <Text>Big Mortar</Text>
           </English>
         </LocaText>
-        <Localize>1</Localize>
       </Text>
       <ExpeditionAttribute>
         <BaseMorale>15</BaseMorale>
@@ -4766,14 +3407,8 @@
           </Item>
         </ExpeditionAttributes>
         <ItemDifficulties>Easy;Average</ItemDifficulties>
-        <ItemRegions />
-        <FluffText>0</FluffText>
       </ExpeditionAttribute>
-      <Locked>
-        <DefaultLockedState>1</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
-      </Locked>
+      <Locked />
     </Values>
   </Asset>
   <Asset>
@@ -4783,8 +3418,6 @@
         <GUID>190128</GUID>
         <Name>Small Mortar Battery</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_beer_2.png</IconFilename>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <SpecialAction>
         <MouseEffect>140088</MouseEffect>
@@ -4792,9 +3425,7 @@
         <BarrageCount>20</BarrageCount>
         <ActionRadius>4</ActionRadius>
       </SpecialAction>
-      <ItemEffect>
-        <EffectTargets />
-      </ItemEffect>
+      <ItemEffect />
       <ItemAction>
         <ActionTarget>2001744</ActionTarget>
         <ActionDistance>32</ActionDistance>
@@ -4802,14 +3433,6 @@
         <ActionDuration>20000</ActionDuration>
         <ActionDescription>12828</ActionDescription>
         <StopMovementOnInteraction>0</StopMovementOnInteraction>
-        <ItemAction>NUKE</ItemAction>
-        <ActionScope>TargetRadius</ActionScope>
-        <RadiusBuffTargets />
-        <ActionIncidentType />
-        <IncidentResolveRate>0.3</IncidentResolveRate>
-        <ActiveBuff>0</ActiveBuff>
-        <ActionCompletedEffect />
-        <CanEndItemAction>1</CanEndItemAction>
       </ItemAction>
       <Item>
         <Allocation>Ship</Allocation>
@@ -4817,12 +3440,6 @@
         <Rarity>Rare</Rarity>
         <HasAction>1</HasAction>
         <TradePrice>10000</TradePrice>
-        <ItemType>Normal</ItemType>
-        <ExclusiveGroup>None</ExclusiveGroup>
-        <ItemSet>0</ItemSet>
-        <ExpeditionType>None</ExpeditionType>
-        <Flotsam>1000212</Flotsam>
-        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
       <Text>
         <LocaText>
@@ -4830,7 +3447,6 @@
             <Text>Small Mortar Battery</Text>
           </English>
         </LocaText>
-        <Localize>1</Localize>
       </Text>
       <ExpeditionAttribute>
         <BaseMorale>20</BaseMorale>
@@ -4841,14 +3457,8 @@
           </Item>
         </ExpeditionAttributes>
         <ItemDifficulties>Average;Hard</ItemDifficulties>
-        <ItemRegions />
-        <FluffText>0</FluffText>
       </ExpeditionAttribute>
-      <Locked>
-        <DefaultLockedState>1</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
-      </Locked>
+      <Locked />
     </Values>
   </Asset>
   <Asset>
@@ -4858,8 +3468,6 @@
         <GUID>190129</GUID>
         <Name>Big Mortar Battery</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_beer_2.png</IconFilename>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <SpecialAction>
         <MouseEffect>140088</MouseEffect>
@@ -4867,9 +3475,7 @@
         <BarrageCount>20</BarrageCount>
         <ActionRadius>4</ActionRadius>
       </SpecialAction>
-      <ItemEffect>
-        <EffectTargets />
-      </ItemEffect>
+      <ItemEffect />
       <ItemAction>
         <ActionTarget>2001744</ActionTarget>
         <ActionDistance>36</ActionDistance>
@@ -4877,14 +3483,6 @@
         <ActionDuration>20000</ActionDuration>
         <ActionDescription>12828</ActionDescription>
         <StopMovementOnInteraction>0</StopMovementOnInteraction>
-        <ItemAction>NUKE</ItemAction>
-        <ActionScope>TargetRadius</ActionScope>
-        <RadiusBuffTargets />
-        <ActionIncidentType />
-        <IncidentResolveRate>0.3</IncidentResolveRate>
-        <ActiveBuff>0</ActiveBuff>
-        <ActionCompletedEffect />
-        <CanEndItemAction>1</CanEndItemAction>
       </ItemAction>
       <Item>
         <Allocation>Ship</Allocation>
@@ -4892,12 +3490,6 @@
         <Rarity>Epic</Rarity>
         <HasAction>1</HasAction>
         <TradePrice>25000</TradePrice>
-        <ItemType>Normal</ItemType>
-        <ExclusiveGroup>None</ExclusiveGroup>
-        <ItemSet>0</ItemSet>
-        <ExpeditionType>None</ExpeditionType>
-        <Flotsam>1000212</Flotsam>
-        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
       <Text>
         <LocaText>
@@ -4905,7 +3497,6 @@
             <Text>Big Mortar Battery</Text>
           </English>
         </LocaText>
-        <Localize>1</Localize>
       </Text>
       <ExpeditionAttribute>
         <BaseMorale>25</BaseMorale>
@@ -4916,14 +3507,8 @@
           </Item>
         </ExpeditionAttributes>
         <ItemDifficulties>Average;Hard</ItemDifficulties>
-        <ItemRegions />
-        <FluffText>0</FluffText>
       </ExpeditionAttribute>
-      <Locked>
-        <DefaultLockedState>1</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
-      </Locked>
+      <Locked />
     </Values>
   </Asset>
   <Asset>
@@ -4933,17 +3518,13 @@
         <GUID>190106</GUID>
         <Name>Small Torpedo</Name>
         <IconFilename>data/ui/2kimages/main/icons/icon_bomb.png</IconFilename>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <SpecialAction>
         <UseEffectAsset>1</UseEffectAsset>
         <MouseEffect>140112</MouseEffect>
         <Projectile>100445</Projectile>
       </SpecialAction>
-      <ItemEffect>
-        <EffectTargets />
-      </ItemEffect>
+      <ItemEffect />
       <ItemAction>
         <ActionTarget>2001747</ActionTarget>
         <ActionDistance>50</ActionDistance>
@@ -4951,14 +3532,6 @@
         <ActionDuration>1000</ActionDuration>
         <ActionDescription>12829</ActionDescription>
         <StopMovementOnInteraction>0</StopMovementOnInteraction>
-        <ItemAction>NUKE</ItemAction>
-        <ActionScope>TargetRadius</ActionScope>
-        <RadiusBuffTargets />
-        <ActionIncidentType />
-        <IncidentResolveRate>0.3</IncidentResolveRate>
-        <ActiveBuff>0</ActiveBuff>
-        <ActionCompletedEffect />
-        <CanEndItemAction>1</CanEndItemAction>
       </ItemAction>
       <Item>
         <Allocation>Ship</Allocation>
@@ -4966,12 +3539,6 @@
         <Rarity>Uncommon</Rarity>
         <HasAction>1</HasAction>
         <TradePrice>500</TradePrice>
-        <ItemType>Normal</ItemType>
-        <ExclusiveGroup>None</ExclusiveGroup>
-        <ItemSet>0</ItemSet>
-        <ExpeditionType>None</ExpeditionType>
-        <Flotsam>1000212</Flotsam>
-        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
       <Text>
         <LocaText>
@@ -4979,7 +3546,6 @@
             <Text>Small Torpedo</Text>
           </English>
         </LocaText>
-        <Localize>1</Localize>
       </Text>
       <ExpeditionAttribute>
         <BaseMorale>15</BaseMorale>
@@ -4990,14 +3556,8 @@
           </Item>
         </ExpeditionAttributes>
         <ItemDifficulties>Easy;Average</ItemDifficulties>
-        <ItemRegions />
-        <FluffText>0</FluffText>
       </ExpeditionAttribute>
-      <Locked>
-        <DefaultLockedState>1</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
-      </Locked>
+      <Locked />
     </Values>
   </Asset>
   <Asset>
@@ -5007,17 +3567,13 @@
         <GUID>190134</GUID>
         <Name>Medium Torpedo</Name>
         <IconFilename>data/ui/2kimages/main/icons/icon_bomb.png</IconFilename>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <SpecialAction>
         <UseEffectAsset>1</UseEffectAsset>
         <MouseEffect>140112</MouseEffect>
         <Projectile>100458</Projectile>
       </SpecialAction>
-      <ItemEffect>
-        <EffectTargets />
-      </ItemEffect>
+      <ItemEffect />
       <ItemAction>
         <ActionTarget>2001747</ActionTarget>
         <ActionDistance>65</ActionDistance>
@@ -5025,14 +3581,6 @@
         <ActionDuration>1000</ActionDuration>
         <ActionDescription>12829</ActionDescription>
         <StopMovementOnInteraction>0</StopMovementOnInteraction>
-        <ItemAction>NUKE</ItemAction>
-        <ActionScope>TargetRadius</ActionScope>
-        <RadiusBuffTargets />
-        <ActionIncidentType />
-        <IncidentResolveRate>0.3</IncidentResolveRate>
-        <ActiveBuff>0</ActiveBuff>
-        <ActionCompletedEffect />
-        <CanEndItemAction>1</CanEndItemAction>
       </ItemAction>
       <Item>
         <Allocation>Ship</Allocation>
@@ -5040,12 +3588,6 @@
         <Rarity>Rare</Rarity>
         <HasAction>1</HasAction>
         <TradePrice>1000</TradePrice>
-        <ItemType>Normal</ItemType>
-        <ExclusiveGroup>None</ExclusiveGroup>
-        <ItemSet>0</ItemSet>
-        <ExpeditionType>None</ExpeditionType>
-        <Flotsam>1000212</Flotsam>
-        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
       <Text>
         <LocaText>
@@ -5053,7 +3595,6 @@
             <Text>Medium Torpedo</Text>
           </English>
         </LocaText>
-        <Localize>1</Localize>
       </Text>
       <ExpeditionAttribute>
         <BaseMorale>20</BaseMorale>
@@ -5064,14 +3605,8 @@
           </Item>
         </ExpeditionAttributes>
         <ItemDifficulties>Average;Hard</ItemDifficulties>
-        <ItemRegions />
-        <FluffText>0</FluffText>
       </ExpeditionAttribute>
-      <Locked>
-        <DefaultLockedState>1</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
-      </Locked>
+      <Locked />
     </Values>
   </Asset>
   <Asset>
@@ -5081,17 +3616,13 @@
         <GUID>190135</GUID>
         <Name>Big Torpedo</Name>
         <IconFilename>data/ui/2kimages/main/icons/icon_bomb.png</IconFilename>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <SpecialAction>
         <UseEffectAsset>1</UseEffectAsset>
         <MouseEffect>140112</MouseEffect>
         <Projectile>100459</Projectile>
       </SpecialAction>
-      <ItemEffect>
-        <EffectTargets />
-      </ItemEffect>
+      <ItemEffect />
       <ItemAction>
         <ActionTarget>2001747</ActionTarget>
         <ActionDistance>80</ActionDistance>
@@ -5099,14 +3630,6 @@
         <ActionDuration>1000</ActionDuration>
         <ActionDescription>12829</ActionDescription>
         <StopMovementOnInteraction>0</StopMovementOnInteraction>
-        <ItemAction>NUKE</ItemAction>
-        <ActionScope>TargetRadius</ActionScope>
-        <RadiusBuffTargets />
-        <ActionIncidentType />
-        <IncidentResolveRate>0.3</IncidentResolveRate>
-        <ActiveBuff>0</ActiveBuff>
-        <ActionCompletedEffect />
-        <CanEndItemAction>1</CanEndItemAction>
       </ItemAction>
       <Item>
         <Allocation>Ship</Allocation>
@@ -5114,12 +3637,6 @@
         <Rarity>Epic</Rarity>
         <HasAction>1</HasAction>
         <TradePrice>5000</TradePrice>
-        <ItemType>Normal</ItemType>
-        <ExclusiveGroup>None</ExclusiveGroup>
-        <ItemSet>0</ItemSet>
-        <ExpeditionType>None</ExpeditionType>
-        <Flotsam>1000212</Flotsam>
-        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
       <Text>
         <LocaText>
@@ -5127,7 +3644,6 @@
             <Text>Big Torpedo</Text>
           </English>
         </LocaText>
-        <Localize>1</Localize>
       </Text>
       <ExpeditionAttribute>
         <BaseMorale>25</BaseMorale>
@@ -5138,14 +3654,8 @@
           </Item>
         </ExpeditionAttributes>
         <ItemDifficulties>Average;Hard</ItemDifficulties>
-        <ItemRegions />
-        <FluffText>0</FluffText>
       </ExpeditionAttribute>
-      <Locked>
-        <DefaultLockedState>1</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
-      </Locked>
+      <Locked />
     </Values>
   </Asset>
   <Asset>
@@ -5156,16 +3666,13 @@
         <Name>Mortar_Dummy</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/ship_military/icon_mortar.png</IconFilename>
         <InfoDescription>15951</InfoDescription>
-        <Comments />
       </Standard>
       <SpecialAction>
         <MouseEffect>140088</MouseEffect>
         <Projectile>191482</Projectile>
         <BarrageCount>1</BarrageCount>
       </SpecialAction>
-      <ItemEffect>
-        <EffectTargets />
-      </ItemEffect>
+      <ItemEffect />
       <ItemAction>
         <ActionTarget>2001747</ActionTarget>
         <ActionDistance>100</ActionDistance>
@@ -5173,26 +3680,11 @@
         <ActionDuration>2000</ActionDuration>
         <ActionDescription>12828</ActionDescription>
         <StopMovementOnInteraction>0</StopMovementOnInteraction>
-        <ItemAction>NUKE</ItemAction>
-        <ActionScope>TargetRadius</ActionScope>
-        <RadiusBuffTargets />
-        <ActionIncidentType />
-        <IncidentResolveRate>0.3</IncidentResolveRate>
-        <ActiveBuff>0</ActiveBuff>
-        <ActionCompletedEffect />
-        <CanEndItemAction>1</CanEndItemAction>
       </ItemAction>
       <Item>
         <Allocation>Ship</Allocation>
         <HasAction>1</HasAction>
         <TradePrice>1000</TradePrice>
-        <Rarity>Common</Rarity>
-        <ItemType>Normal</ItemType>
-        <ExclusiveGroup>None</ExclusiveGroup>
-        <ItemSet>0</ItemSet>
-        <ExpeditionType>None</ExpeditionType>
-        <Flotsam>1000212</Flotsam>
-        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
       <Text>
         <LocaText>
@@ -5203,7 +3695,6 @@
           </English>
         </LocaText>
         <LineID>30280</LineID>
-        <Localize>1</Localize>
       </Text>
       <ExpeditionAttribute>
         <BaseMorale>10</BaseMorale>
@@ -5214,14 +3705,8 @@
           </Item>
         </ExpeditionAttributes>
         <ItemDifficulties>Easy</ItemDifficulties>
-        <ItemRegions />
-        <FluffText>0</FluffText>
       </ExpeditionAttribute>
-      <Locked>
-        <DefaultLockedState>1</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
-      </Locked>
+      <Locked />
     </Values>
   </Asset>
   <Asset>
@@ -5232,15 +3717,12 @@
         <Name>Torpedo_Dummy</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/military_items/icon_torpedo_rework.png</IconFilename>
         <InfoDescription>15950</InfoDescription>
-        <Comments />
       </Standard>
       <SpecialAction>
         <MouseEffect>140112</MouseEffect>
         <Projectile>191483</Projectile>
       </SpecialAction>
-      <ItemEffect>
-        <EffectTargets />
-      </ItemEffect>
+      <ItemEffect />
       <ItemAction>
         <ActionTarget>2001747</ActionTarget>
         <ActionDistance>100</ActionDistance>
@@ -5248,14 +3730,6 @@
         <ActionDuration>1000</ActionDuration>
         <ActionDescription>12829</ActionDescription>
         <StopMovementOnInteraction>0</StopMovementOnInteraction>
-        <ItemAction>NUKE</ItemAction>
-        <ActionScope>TargetRadius</ActionScope>
-        <RadiusBuffTargets />
-        <ActionIncidentType />
-        <IncidentResolveRate>0.3</IncidentResolveRate>
-        <ActiveBuff>0</ActiveBuff>
-        <ActionCompletedEffect />
-        <CanEndItemAction>1</CanEndItemAction>
       </ItemAction>
       <Item>
         <Allocation>Ship</Allocation>
@@ -5263,12 +3737,6 @@
         <Rarity>Uncommon</Rarity>
         <HasAction>1</HasAction>
         <TradePrice>500</TradePrice>
-        <ItemType>Normal</ItemType>
-        <ExclusiveGroup>None</ExclusiveGroup>
-        <ItemSet>0</ItemSet>
-        <ExpeditionType>None</ExpeditionType>
-        <Flotsam>1000212</Flotsam>
-        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
       <Text>
         <LocaText>
@@ -5276,7 +3744,6 @@
             <Text>Torpedo</Text>
           </English>
         </LocaText>
-        <Localize>1</Localize>
       </Text>
       <ExpeditionAttribute>
         <BaseMorale>15</BaseMorale>
@@ -5287,14 +3754,8 @@
           </Item>
         </ExpeditionAttributes>
         <ItemDifficulties>Easy;Average</ItemDifficulties>
-        <ItemRegions />
-        <FluffText>0</FluffText>
       </ExpeditionAttribute>
-      <Locked>
-        <DefaultLockedState>1</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
-      </Locked>
+      <Locked />
     </Values>
   </Asset>
   <Asset>
@@ -5304,8 +3765,6 @@
         <GUID>190107</GUID>
         <Name>Barrage</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_coal_burn.png</IconFilename>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <SpecialAction>
         <MouseEffect>140088</MouseEffect>
@@ -5315,35 +3774,17 @@
         <ActionRadius>15</ActionRadius>
         <BarrageDuration>14000</BarrageDuration>
       </SpecialAction>
-      <ItemEffect>
-        <EffectTargets />
-      </ItemEffect>
+      <ItemEffect />
       <ItemAction>
         <ActionTarget>2001744</ActionTarget>
         <ActionDistance>30</ActionDistance>
         <ActionCooldown>30000</ActionCooldown>
         <StopMovementOnInteraction>0</StopMovementOnInteraction>
-        <ItemAction>NUKE</ItemAction>
-        <ActionScope>TargetRadius</ActionScope>
-        <RadiusBuffTargets />
-        <ActionIncidentType />
-        <IncidentResolveRate>0.3</IncidentResolveRate>
-        <ActiveBuff>0</ActiveBuff>
-        <ActionDescription>0</ActionDescription>
-        <ActionCompletedEffect />
-        <CanEndItemAction>1</CanEndItemAction>
       </ItemAction>
       <Item>
         <Allocation>Ship</Allocation>
         <MaxStackSize>5</MaxStackSize>
         <HasAction>1</HasAction>
-        <Rarity>Common</Rarity>
-        <ItemType>Normal</ItemType>
-        <ExclusiveGroup>None</ExclusiveGroup>
-        <ItemSet>0</ItemSet>
-        <ExpeditionType>None</ExpeditionType>
-        <Flotsam>1000212</Flotsam>
-        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
       <Text>
         <LocaText>
@@ -5351,20 +3792,11 @@
             <Text>Barrage</Text>
           </English>
         </LocaText>
-        <Localize>1</Localize>
       </Text>
       <ExpeditionAttribute>
         <BaseMorale>10</BaseMorale>
-        <ExpeditionAttributes />
-        <ItemRegions />
-        <ItemDifficulties />
-        <FluffText>0</FluffText>
       </ExpeditionAttribute>
-      <Locked>
-        <DefaultLockedState>1</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
-      </Locked>
+      <Locked />
     </Values>
   </Asset>
   <Asset>
@@ -5374,17 +3806,13 @@
         <GUID>191018</GUID>
         <Name>Ignite</Name>
         <IconFilename>data/ui/2kimages/main/icons/icon_incident_fire.png</IconFilename>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <SpecialAction>
         <MouseEffect>500992</MouseEffect>
         <Projectile>101562</Projectile>
         <BarrageCount>1</BarrageCount>
       </SpecialAction>
-      <ItemEffect>
-        <EffectTargets />
-      </ItemEffect>
+      <ItemEffect />
       <ItemAction>
         <ActionTarget>2001744</ActionTarget>
         <ActionDistance>10</ActionDistance>
@@ -5392,26 +3820,12 @@
         <ActionDuration>20000</ActionDuration>
         <ActionDescription>12828</ActionDescription>
         <StopMovementOnInteraction>0</StopMovementOnInteraction>
-        <ItemAction>NUKE</ItemAction>
-        <ActionScope>TargetRadius</ActionScope>
-        <RadiusBuffTargets />
-        <ActionIncidentType />
-        <IncidentResolveRate>0.3</IncidentResolveRate>
-        <ActiveBuff>0</ActiveBuff>
-        <ActionCompletedEffect />
-        <CanEndItemAction>1</CanEndItemAction>
       </ItemAction>
       <Item>
         <Allocation>Ship</Allocation>
         <Rarity>Uncommon</Rarity>
         <HasAction>1</HasAction>
         <TradePrice>5000</TradePrice>
-        <ItemType>Normal</ItemType>
-        <ExclusiveGroup>None</ExclusiveGroup>
-        <ItemSet>0</ItemSet>
-        <ExpeditionType>None</ExpeditionType>
-        <Flotsam>1000212</Flotsam>
-        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
       <Text>
         <LocaText>
@@ -5419,7 +3833,6 @@
             <Text>Greek Fire</Text>
           </English>
         </LocaText>
-        <Localize>1</Localize>
       </Text>
       <ExpeditionAttribute>
         <BaseMorale>15</BaseMorale>
@@ -5430,14 +3843,8 @@
           </Item>
         </ExpeditionAttributes>
         <ItemDifficulties>Easy;Average</ItemDifficulties>
-        <ItemRegions />
-        <FluffText>0</FluffText>
       </ExpeditionAttribute>
-      <Locked>
-        <DefaultLockedState>1</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
-      </Locked>
+      <Locked />
     </Values>
   </Asset>
   <Asset>
@@ -5448,15 +3855,12 @@
         <Name>Whitehead Torpedo</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/military_items/icon_torpedo_rework.png</IconFilename>
         <InfoDescription>15950</InfoDescription>
-        <Comments />
       </Standard>
       <SpecialAction>
         <MouseEffect>140112</MouseEffect>
         <Projectile>192095</Projectile>
       </SpecialAction>
-      <ItemEffect>
-        <EffectTargets />
-      </ItemEffect>
+      <ItemEffect />
       <ItemAction>
         <ActionTarget>2001747</ActionTarget>
         <ActionDistance>100</ActionDistance>
@@ -5464,14 +3868,6 @@
         <ActionDuration>1000</ActionDuration>
         <ActionDescription>12829</ActionDescription>
         <StopMovementOnInteraction>0</StopMovementOnInteraction>
-        <ItemAction>NUKE</ItemAction>
-        <ActionScope>TargetRadius</ActionScope>
-        <RadiusBuffTargets />
-        <ActionIncidentType />
-        <IncidentResolveRate>0.3</IncidentResolveRate>
-        <ActiveBuff>0</ActiveBuff>
-        <ActionCompletedEffect />
-        <CanEndItemAction>1</CanEndItemAction>
       </ItemAction>
       <Item>
         <Allocation>Ship</Allocation>
@@ -5479,12 +3875,6 @@
         <Rarity>Uncommon</Rarity>
         <HasAction>1</HasAction>
         <TradePrice>10000</TradePrice>
-        <ItemType>Normal</ItemType>
-        <ExclusiveGroup>None</ExclusiveGroup>
-        <ItemSet>0</ItemSet>
-        <ExpeditionType>None</ExpeditionType>
-        <Flotsam>1000212</Flotsam>
-        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
       <Text>
         <LocaText>
@@ -5492,7 +3882,6 @@
             <Text>Whitehead Torpedo</Text>
           </English>
         </LocaText>
-        <Localize>1</Localize>
       </Text>
       <ExpeditionAttribute>
         <BaseMorale>15</BaseMorale>
@@ -5503,14 +3892,8 @@
           </Item>
         </ExpeditionAttributes>
         <ItemDifficulties>Easy;Average</ItemDifficulties>
-        <ItemRegions />
-        <FluffText>0</FluffText>
       </ExpeditionAttribute>
-      <Locked>
-        <DefaultLockedState>1</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
-      </Locked>
+      <Locked />
     </Values>
   </Asset>
   <Asset>
@@ -5521,15 +3904,12 @@
         <Name>Whitehead Torpedo MK II</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/military_items/icon_torpedo_rework.png</IconFilename>
         <InfoDescription>15950</InfoDescription>
-        <Comments />
       </Standard>
       <SpecialAction>
         <MouseEffect>140112</MouseEffect>
         <Projectile>192100</Projectile>
       </SpecialAction>
-      <ItemEffect>
-        <EffectTargets />
-      </ItemEffect>
+      <ItemEffect />
       <ItemAction>
         <ActionTarget>2001747</ActionTarget>
         <ActionDistance>120</ActionDistance>
@@ -5537,14 +3917,6 @@
         <ActionDuration>1000</ActionDuration>
         <ActionDescription>12829</ActionDescription>
         <StopMovementOnInteraction>0</StopMovementOnInteraction>
-        <ItemAction>NUKE</ItemAction>
-        <ActionScope>TargetRadius</ActionScope>
-        <RadiusBuffTargets />
-        <ActionIncidentType />
-        <IncidentResolveRate>0.3</IncidentResolveRate>
-        <ActiveBuff>0</ActiveBuff>
-        <ActionCompletedEffect />
-        <CanEndItemAction>1</CanEndItemAction>
       </ItemAction>
       <Item>
         <Allocation>Ship</Allocation>
@@ -5552,12 +3924,6 @@
         <Rarity>Rare</Rarity>
         <HasAction>1</HasAction>
         <TradePrice>20000</TradePrice>
-        <ItemType>Normal</ItemType>
-        <ExclusiveGroup>None</ExclusiveGroup>
-        <ItemSet>0</ItemSet>
-        <ExpeditionType>None</ExpeditionType>
-        <Flotsam>1000212</Flotsam>
-        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
       <Text>
         <LocaText>
@@ -5565,7 +3931,6 @@
             <Text>Whitehead Torpedo MK II</Text>
           </English>
         </LocaText>
-        <Localize>1</Localize>
       </Text>
       <ExpeditionAttribute>
         <BaseMorale>15</BaseMorale>
@@ -5576,14 +3941,8 @@
           </Item>
         </ExpeditionAttributes>
         <ItemDifficulties>Easy;Average</ItemDifficulties>
-        <ItemRegions />
-        <FluffText>0</FluffText>
       </ExpeditionAttribute>
-      <Locked>
-        <DefaultLockedState>1</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
-      </Locked>
+      <Locked />
     </Values>
   </Asset>
   <Asset>
@@ -5594,15 +3953,12 @@
         <Name>Whitehead Torpedo MK III</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/military_items/icon_torpedo_rework.png</IconFilename>
         <InfoDescription>15950</InfoDescription>
-        <Comments />
       </Standard>
       <SpecialAction>
         <MouseEffect>140112</MouseEffect>
         <Projectile>192101</Projectile>
       </SpecialAction>
-      <ItemEffect>
-        <EffectTargets />
-      </ItemEffect>
+      <ItemEffect />
       <ItemAction>
         <ActionTarget>2001747</ActionTarget>
         <ActionDistance>140</ActionDistance>
@@ -5610,14 +3966,6 @@
         <ActionDuration>1000</ActionDuration>
         <ActionDescription>12829</ActionDescription>
         <StopMovementOnInteraction>0</StopMovementOnInteraction>
-        <ItemAction>NUKE</ItemAction>
-        <ActionScope>TargetRadius</ActionScope>
-        <RadiusBuffTargets />
-        <ActionIncidentType />
-        <IncidentResolveRate>0.3</IncidentResolveRate>
-        <ActiveBuff>0</ActiveBuff>
-        <ActionCompletedEffect />
-        <CanEndItemAction>1</CanEndItemAction>
       </ItemAction>
       <Item>
         <Allocation>Ship</Allocation>
@@ -5625,12 +3973,6 @@
         <Rarity>Epic</Rarity>
         <HasAction>1</HasAction>
         <TradePrice>35000</TradePrice>
-        <ItemType>Normal</ItemType>
-        <ExclusiveGroup>None</ExclusiveGroup>
-        <ItemSet>0</ItemSet>
-        <ExpeditionType>None</ExpeditionType>
-        <Flotsam>1000212</Flotsam>
-        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
       <Text>
         <LocaText>
@@ -5638,7 +3980,6 @@
             <Text>Whitehead Torpedo MK III</Text>
           </English>
         </LocaText>
-        <Localize>1</Localize>
       </Text>
       <ExpeditionAttribute>
         <BaseMorale>15</BaseMorale>
@@ -5649,14 +3990,8 @@
           </Item>
         </ExpeditionAttributes>
         <ItemDifficulties>Easy;Average</ItemDifficulties>
-        <ItemRegions />
-        <FluffText>0</FluffText>
       </ExpeditionAttribute>
-      <Locked>
-        <DefaultLockedState>1</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
-      </Locked>
+      <Locked />
     </Values>
   </Asset>
   <Asset>
@@ -5667,16 +4002,13 @@
         <Name>Mortar</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/ship_military/icon_mortar.png</IconFilename>
         <InfoDescription>15951</InfoDescription>
-        <Comments />
       </Standard>
       <SpecialAction>
         <MouseEffect>140088</MouseEffect>
         <Projectile>192097</Projectile>
         <BarrageCount>1</BarrageCount>
       </SpecialAction>
-      <ItemEffect>
-        <EffectTargets />
-      </ItemEffect>
+      <ItemEffect />
       <ItemAction>
         <ActionTarget>2001744</ActionTarget>
         <ActionDistance>80</ActionDistance>
@@ -5684,26 +4016,12 @@
         <ActionDuration>2000</ActionDuration>
         <ActionDescription>12828</ActionDescription>
         <StopMovementOnInteraction>0</StopMovementOnInteraction>
-        <ItemAction>NUKE</ItemAction>
-        <ActionScope>TargetRadius</ActionScope>
-        <RadiusBuffTargets />
-        <ActionIncidentType />
-        <IncidentResolveRate>0.3</IncidentResolveRate>
-        <ActiveBuff>0</ActiveBuff>
-        <ActionCompletedEffect />
-        <CanEndItemAction>1</CanEndItemAction>
       </ItemAction>
       <Item>
         <Allocation>Ship</Allocation>
         <Rarity>Uncommon</Rarity>
         <HasAction>1</HasAction>
         <TradePrice>5000</TradePrice>
-        <ItemType>Normal</ItemType>
-        <ExclusiveGroup>None</ExclusiveGroup>
-        <ItemSet>0</ItemSet>
-        <ExpeditionType>None</ExpeditionType>
-        <Flotsam>1000212</Flotsam>
-        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
       <Text>
         <LocaText>
@@ -5711,7 +4029,6 @@
             <Text>Mortar</Text>
           </English>
         </LocaText>
-        <Localize>1</Localize>
       </Text>
       <ExpeditionAttribute>
         <BaseMorale>10</BaseMorale>
@@ -5722,14 +4039,8 @@
           </Item>
         </ExpeditionAttributes>
         <ItemDifficulties>Easy</ItemDifficulties>
-        <ItemRegions />
-        <FluffText>0</FluffText>
       </ExpeditionAttribute>
-      <Locked>
-        <DefaultLockedState>1</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
-      </Locked>
+      <Locked />
     </Values>
   </Asset>
   <Asset>
@@ -5740,16 +4051,13 @@
         <Name>Mortar MK II</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/ship_military/icon_mortar.png</IconFilename>
         <InfoDescription>15951</InfoDescription>
-        <Comments />
       </Standard>
       <SpecialAction>
         <MouseEffect>140088</MouseEffect>
         <Projectile>192104</Projectile>
         <BarrageCount>1</BarrageCount>
       </SpecialAction>
-      <ItemEffect>
-        <EffectTargets />
-      </ItemEffect>
+      <ItemEffect />
       <ItemAction>
         <ActionTarget>2001747</ActionTarget>
         <ActionDistance>90</ActionDistance>
@@ -5757,26 +4065,12 @@
         <ActionDuration>2000</ActionDuration>
         <ActionDescription>12828</ActionDescription>
         <StopMovementOnInteraction>0</StopMovementOnInteraction>
-        <ItemAction>NUKE</ItemAction>
-        <ActionScope>TargetRadius</ActionScope>
-        <RadiusBuffTargets />
-        <ActionIncidentType />
-        <IncidentResolveRate>0.3</IncidentResolveRate>
-        <ActiveBuff>0</ActiveBuff>
-        <ActionCompletedEffect />
-        <CanEndItemAction>1</CanEndItemAction>
       </ItemAction>
       <Item>
         <Allocation>Ship</Allocation>
         <Rarity>Rare</Rarity>
         <HasAction>1</HasAction>
         <TradePrice>15000</TradePrice>
-        <ItemType>Normal</ItemType>
-        <ExclusiveGroup>None</ExclusiveGroup>
-        <ItemSet>0</ItemSet>
-        <ExpeditionType>None</ExpeditionType>
-        <Flotsam>1000212</Flotsam>
-        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
       <Text>
         <LocaText>
@@ -5784,7 +4078,6 @@
             <Text>Mortar MK II</Text>
           </English>
         </LocaText>
-        <Localize>1</Localize>
       </Text>
       <ExpeditionAttribute>
         <BaseMorale>10</BaseMorale>
@@ -5795,14 +4088,8 @@
           </Item>
         </ExpeditionAttributes>
         <ItemDifficulties>Easy</ItemDifficulties>
-        <ItemRegions />
-        <FluffText>0</FluffText>
       </ExpeditionAttribute>
-      <Locked>
-        <DefaultLockedState>1</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
-      </Locked>
+      <Locked />
     </Values>
   </Asset>
   <Asset>
@@ -5813,16 +4100,13 @@
         <Name>Mortar MK III</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/ship_military/icon_mortar.png</IconFilename>
         <InfoDescription>15951</InfoDescription>
-        <Comments />
       </Standard>
       <SpecialAction>
         <MouseEffect>140088</MouseEffect>
         <Projectile>192105</Projectile>
         <BarrageCount>1</BarrageCount>
       </SpecialAction>
-      <ItemEffect>
-        <EffectTargets />
-      </ItemEffect>
+      <ItemEffect />
       <ItemAction>
         <ActionTarget>2001747</ActionTarget>
         <ActionDistance>100</ActionDistance>
@@ -5830,26 +4114,12 @@
         <ActionDuration>2000</ActionDuration>
         <ActionDescription>12828</ActionDescription>
         <StopMovementOnInteraction>0</StopMovementOnInteraction>
-        <ItemAction>NUKE</ItemAction>
-        <ActionScope>TargetRadius</ActionScope>
-        <RadiusBuffTargets />
-        <ActionIncidentType />
-        <IncidentResolveRate>0.3</IncidentResolveRate>
-        <ActiveBuff>0</ActiveBuff>
-        <ActionCompletedEffect />
-        <CanEndItemAction>1</CanEndItemAction>
       </ItemAction>
       <Item>
         <Allocation>Ship</Allocation>
         <Rarity>Epic</Rarity>
         <HasAction>1</HasAction>
         <TradePrice>30000</TradePrice>
-        <ItemType>Normal</ItemType>
-        <ExclusiveGroup>None</ExclusiveGroup>
-        <ItemSet>0</ItemSet>
-        <ExpeditionType>None</ExpeditionType>
-        <Flotsam>1000212</Flotsam>
-        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
       <Text>
         <LocaText>
@@ -5857,7 +4127,6 @@
             <Text>Mortar MK III</Text>
           </English>
         </LocaText>
-        <Localize>1</Localize>
       </Text>
       <ExpeditionAttribute>
         <BaseMorale>10</BaseMorale>
@@ -5868,14 +4137,8 @@
           </Item>
         </ExpeditionAttributes>
         <ItemDifficulties>Easy</ItemDifficulties>
-        <ItemRegions />
-        <FluffText>0</FluffText>
       </ExpeditionAttribute>
-      <Locked>
-        <DefaultLockedState>1</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
-      </Locked>
+      <Locked />
     </Values>
   </Asset>
   <Asset>
@@ -5886,7 +4149,6 @@
         <Name>Multishot-Mortar</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/ship_military/icon_mortar.png</IconFilename>
         <InfoDescription>15951</InfoDescription>
-        <Comments />
       </Standard>
       <SpecialAction>
         <MouseEffect>140088</MouseEffect>
@@ -5894,35 +4156,19 @@
         <BarrageCount>7</BarrageCount>
         <BarrageDuration>5000</BarrageDuration>
       </SpecialAction>
-      <ItemEffect>
-        <EffectTargets />
-      </ItemEffect>
+      <ItemEffect />
       <ItemAction>
         <ActionTarget>2001747</ActionTarget>
         <ActionDistance>80</ActionDistance>
         <ActionCooldown>90000</ActionCooldown>
         <ActionDescription>17343</ActionDescription>
         <StopMovementOnInteraction>0</StopMovementOnInteraction>
-        <ItemAction>NUKE</ItemAction>
-        <ActionScope>TargetRadius</ActionScope>
-        <RadiusBuffTargets />
-        <ActionIncidentType />
-        <IncidentResolveRate>0.3</IncidentResolveRate>
-        <ActiveBuff>0</ActiveBuff>
-        <ActionCompletedEffect />
-        <CanEndItemAction>1</CanEndItemAction>
       </ItemAction>
       <Item>
         <Allocation>Ship</Allocation>
         <Rarity>Legendary</Rarity>
         <HasAction>1</HasAction>
         <TradePrice>90000</TradePrice>
-        <ItemType>Normal</ItemType>
-        <ExclusiveGroup>None</ExclusiveGroup>
-        <ItemSet>0</ItemSet>
-        <ExpeditionType>None</ExpeditionType>
-        <Flotsam>1000212</Flotsam>
-        <OnlyEquippableOnce>1</OnlyEquippableOnce>
       </Item>
       <Text>
         <LocaText>
@@ -5930,7 +4176,6 @@
             <Text>Multishot-Mortar</Text>
           </English>
         </LocaText>
-        <Localize>1</Localize>
       </Text>
       <ExpeditionAttribute>
         <BaseMorale>10</BaseMorale>
@@ -5941,14 +4186,8 @@
           </Item>
         </ExpeditionAttributes>
         <ItemDifficulties>Easy</ItemDifficulties>
-        <ItemRegions />
-        <FluffText>0</FluffText>
       </ExpeditionAttribute>
-      <Locked>
-        <DefaultLockedState>1</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
-      </Locked>
+      <Locked />
     </Values>
   </Asset>
 </Assets>

@@ -7,14 +7,8 @@
         <GUID>152656</GUID>
         <Name>PrologueIntroPlayed</Name>
         <ID>PrologueIntroPlayed</ID>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
-      <Locked>
-        <DefaultLockedState>1</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
-      </Locked>
+      <Locked />
       <Trigger>
         <TriggerCondition>
           <Template>ConditionEvent</Template>
@@ -25,22 +19,10 @@
               <ContextAsset>300000</ContextAsset>
             </ConditionEvent>
             <ConditionPropsNegatable />
-            <ConditionAlwaysTrue />
-            <ConditionActiveRegion />
           </Values>
         </TriggerCondition>
-        <TriggerActions />
-        <SubTriggers />
-        <ResetTrigger>
-          <Template>EmptyAutoCreateValue</Template>
-          <Values>
-            <EmptyAutoCreateValue />
-          </Values>
-        </ResetTrigger>
       </Trigger>
-      <TriggerSetup>
-        <AutoSelfUnlock>1</AutoSelfUnlock>
-      </TriggerSetup>
+      <TriggerSetup />
     </Values>
   </Asset>
 </Assets>

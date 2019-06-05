@@ -8,7 +8,6 @@
         <Name>harbor_08 (Pier)</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_pier.png</IconFilename>
         <InfoDescription>2980</InfoDescription>
-        <Comments />
       </Standard>
       <Text>
         <LocaText>
@@ -19,34 +18,18 @@
           </English>
         </LocaText>
         <LineID>7022</LineID>
-        <Localize>1</Localize>
       </Text>
       <Blocking>
         <GroundDecalAsset>100446</GroundDecalAsset>
         <GroundDecalInvisible>101008</GroundDecalInvisible>
         <HasBuildingBaseTiles>1</HasBuildingBaseTiles>
         <HarbourAreaExpand>1</HarbourAreaExpand>
-        <HidePropsRadius>1</HidePropsRadius>
-        <DeletePropsRadius>1</DeletePropsRadius>
-        <StreetOutside>0</StreetOutside>
-        <RemoveGrass>1</RemoveGrass>
-        <BlocksBuilding>1</BlocksBuilding>
       </Blocking>
       <Building>
         <BuildingCategoryName>11150</BuildingCategoryName>
         <Destructable>1</Destructable>
         <TerrainType>Water</TerrainType>
         <AssociatedRegions>Moderate</AssociatedRegions>
-        <BuildingType>Factory</BuildingType>
-        <Movable>1</Movable>
-        <PickingAsset>0</PickingAsset>
-        <ConstructionMenuText>0</ConstructionMenuText>
-        <HasBorderRectOutline>1</HasBorderRectOutline>
-        <SnapRadius>2</SnapRadius>
-        <InfluencedByNeighbors />
-        <InfluencedVariationDirection />
-        <BuildingBlockPool />
-        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
       <Cost>
         <Costs>
@@ -74,28 +57,11 @@
             <Ingredient>1010202</Ingredient>
           </Item>
         </Costs>
-        <ItemsPerCost>1</ItemsPerCost>
-        <InfluenceCostType>None</InfluenceCostType>
-        <InfluenceCostPoints>1</InfluenceCostPoints>
       </Cost>
       <Selection>
         <Colors>
           <WeakSelectionColorType>NoColor</WeakSelectionColorType>
         </Colors>
-        <GUIType>Generic</GUIType>
-        <AllowedDragType>ItemSocket;CargoProductStack;CargoItemStack</AllowedDragType>
-        <Selectable>1</Selectable>
-        <DestructSelectable>1</DestructSelectable>
-        <OnSelection>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnSelection>
-        <InteractionDistance>15</InteractionDistance>
-        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
-        <InfoCorner>25000131</InfoCorner>
-        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
       </Selection>
       <Object>
         <Variations>
@@ -103,32 +69,9 @@
             <Filename>data/graphics/buildings/special/harbor_08/harbor_08.cfg</Filename>
           </Item>
         </Variations>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <DefaultParticipant>Neutral</DefaultParticipant>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <Constructable>
-        <DestructionCategory>Production</DestructionCategory>
-        <ConstructionMode>Default</ConstructionMode>
-        <DestructionType>0</DestructionType>
-      </Constructable>
-      <Mesh>
-        <ObjectPosition>Static</ObjectPosition>
-        <MeshPlacement>Default</MeshPlacement>
-        <DefaultSequence>idle01</DefaultSequence>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
-        <LogoMode>Disabled</LogoMode>
-      </Mesh>
+      <Constructable />
+      <Mesh />
       <SoundEmitter>
         <ActiveSounds>
           <Item>
@@ -141,26 +84,6 @@
               <Sound>206544</Sound>
             </Item>
           </BuildSuccessful>
-          <BuildFailed>
-            <Item>
-              <Sound>9818387</Sound>
-            </Item>
-          </BuildFailed>
-          <BuildMoveStart>
-            <Item>
-              <Sound>9818755</Sound>
-            </Item>
-          </BuildMoveStart>
-          <BuildMoveSuccess>
-            <Item>
-              <Sound>200133</Sound>
-            </Item>
-          </BuildMoveSuccess>
-          <BuildMoveEnd>
-            <Item>
-              <Sound>200141</Sound>
-            </Item>
-          </BuildMoveEnd>
         </ConstructionSounds>
         <BuildingRuined>
           <Item>
@@ -172,53 +95,12 @@
             <Sound>203866</Sound>
           </Item>
         </BuildingRepaired>
-        <DestroySounds>
-          <Item>
-            <Sound>9818756</Sound>
-          </Item>
-        </DestroySounds>
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <ProjectileSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <IncidentSounds />
-        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
-      <Locked>
-        <DefaultLockedState>1</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
-      </Locked>
-      <Infolayer>
-        <DefaultInfoLayer>0</DefaultInfoLayer>
-      </Infolayer>
-      <FeedbackController>
-        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
-        <UpdateMeshSequence>1</UpdateMeshSequence>
-      </FeedbackController>
-      <MinimapToken>
-        <TokenAsset>2001544</TokenAsset>
-        <StrategicMapAsset>0</StrategicMapAsset>
-      </MinimapToken>
-      <AmbientMoodProvider>
-        <AmbientMood>None</AmbientMood>
-        <Murmur>None</Murmur>
-        <AttractivityDependentMurmur />
-        <ProductivityDependentMurmur />
-        <SatisfactionDependentMurmur />
-        <DynamicEnvironmentType>None</DynamicEnvironmentType>
-        <HappinessDependentMurmur />
-        <IslandAttractivityDependentMurmur />
-      </AmbientMoodProvider>
+      <Locked />
+      <Infolayer />
+      <FeedbackController />
+      <MinimapToken />
+      <AmbientMoodProvider />
       <LoadingPier>
         <NumOfPiers>1</NumOfPiers>
         <LoadingSpeed>2</LoadingSpeed>
@@ -234,29 +116,24 @@
         <MoralePower>50</MoralePower>
         <IslandWarFlag>102303</IslandWarFlag>
         <ExplosionEffects>
-          <Item></Item>
+          <Item>
+            <VectorElement>
+              <InheritedIndex>0</InheritedIndex>
+              <InheritanceMapV2>
+                <Entry>
+                  <TemplateName>HarborLandingStage7</TemplateName>
+                  <Index>0</Index>
+                </Entry>
+              </InheritanceMapV2>
+            </VectorElement>
+            <ExplosionEffectFilePath>data/graphics/effects/military/explosions/harbor_generic_xpl_02.cfg</ExplosionEffectFilePath>
+          </Item>
         </ExplosionEffects>
         <ExplosionEffectsMin>2</ExplosionEffectsMin>
         <ExplosionEffectsMax>2</ExplosionEffectsMax>
-        <CanBeAttackedByPlayer>1</CanBeAttackedByPlayer>
-        <RuinSmokeParticles>
-          <Item>
-            <SmokeParticleFilePath>data/graphics/effects/military/explosions/damage_smoke_01.cfg</SmokeParticleFilePath>
-          </Item>
-        </RuinSmokeParticles>
-        <RuinSmokeParticlesMin>1</RuinSmokeParticlesMin>
-        <RuinSmokeParticlesMax>2</RuinSmokeParticlesMax>
-        <RuinSmokeParticleRectBorderPercent>0.2</RuinSmokeParticleRectBorderPercent>
-        <SelfHealPausedTimeIfAttacked>15000</SelfHealPausedTimeIfAttacked>
-        <ArmorType>Default</ArmorType>
       </Attackable>
       <Warehouse>
         <StorageType>Kontor</StorageType>
-        <WarehouseStorage />
-        <OverflowFlotsam>
-          <OverflowSpawnPercentage>0.15</OverflowSpawnPercentage>
-          <MaxFlotsamCount>5</MaxFlotsamCount>
-        </OverflowFlotsam>
       </Warehouse>
       <StorageBase>
         <StoredProducts />
@@ -269,311 +146,134 @@
             <InactiveAmount>25</InactiveAmount>
           </Item>
         </Maintenances>
-        <MaintenanceAmountFactor>1</MaintenanceAmountFactor>
-        <WorkforceAmountFactor>1</WorkforceAmountFactor>
       </Maintenance>
       <UpgradeList />
       <LogisticNode>
         <TransporterCountMax>0</TransporterCountMax>
-        <TransporterAsset>1010104</TransporterAsset>
-        <TrainAsset>120025</TrainAsset>
-        <QueueConfiguration>
-          <ProcessingQueueParallelCount>10</ProcessingQueueParallelCount>
-          <LoadingTimeModifier>1</LoadingTimeModifier>
-          <UnloadingTimeModifier>1</UnloadingTimeModifier>
-        </QueueConfiguration>
-        <REMOVE_THIS_LATER_FeedbackUnitTier>Level1</REMOVE_THIS_LATER_FeedbackUnitTier>
-        <NeedsTransporterQueue>1</NeedsTransporterQueue>
-        <PathLayers>Street</PathLayers>
       </LogisticNode>
     </Values>
   </Asset>
   <Asset>
-    <Template>HarborLandingStage7</Template>
+    <BaseAssetGUID>100519</BaseAssetGUID>
     <Values>
       <Standard>
         <GUID>101344</GUID>
         <Name>harbor_colony01_08 (Pier)</Name>
-        <IconFilename>data/ui/2kimages/main/3dicons/icon_pier.png</IconFilename>
-        <InfoDescription>2980</InfoDescription>
-        <Comments />
       </Standard>
       <Text>
         <LineID>11038</LineID>
-        <LocaText>
-          <English>
-            <Text>Pier</Text>
-            <Status>Exported</Status>
-            <ExportCount>1</ExportCount>
-          </English>
-        </LocaText>
-        <Localize>1</Localize>
       </Text>
       <Blocking>
         <GroundDecalAsset>102460</GroundDecalAsset>
         <GroundDecalInvisible>102459</GroundDecalInvisible>
-        <HasBuildingBaseTiles>1</HasBuildingBaseTiles>
-        <HarbourAreaExpand>1</HarbourAreaExpand>
-        <HidePropsRadius>1</HidePropsRadius>
-        <DeletePropsRadius>1</DeletePropsRadius>
-        <StreetOutside>0</StreetOutside>
-        <RemoveGrass>1</RemoveGrass>
-        <BlocksBuilding>1</BlocksBuilding>
       </Blocking>
       <Building>
         <AssociatedRegions>Colony01</AssociatedRegions>
-        <BuildingCategoryName>11150</BuildingCategoryName>
-        <Destructable>1</Destructable>
-        <TerrainType>Water</TerrainType>
-        <BuildingType>Factory</BuildingType>
-        <Movable>1</Movable>
-        <PickingAsset>0</PickingAsset>
-        <ConstructionMenuText>0</ConstructionMenuText>
-        <HasBorderRectOutline>1</HasBorderRectOutline>
-        <SnapRadius>2</SnapRadius>
-        <InfluencedByNeighbors />
-        <InfluencedVariationDirection />
-        <BuildingBlockPool />
-        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
       <Cost>
         <Costs>
           <Item>
-            <Ingredient>1010017</Ingredient>
-            <Amount>2500</Amount>
+            <VectorElement>
+              <InheritedIndex>0</InheritedIndex>
+              <InheritanceMapV2>
+                <Entry>
+                  <TemplateName>HarborLandingStage7</TemplateName>
+                  <Index>0</Index>
+                </Entry>
+              </InheritanceMapV2>
+            </VectorElement>
           </Item>
           <Item>
-            <Ingredient>1010196</Ingredient>
-            <Amount>30</Amount>
+            <VectorElement>
+              <InheritedIndex>1</InheritedIndex>
+              <InheritanceMapV2>
+                <Entry>
+                  <TemplateName>HarborLandingStage7</TemplateName>
+                  <Index>1</Index>
+                </Entry>
+              </InheritanceMapV2>
+            </VectorElement>
           </Item>
           <Item>
-            <Ingredient>1010205</Ingredient>
-            <Amount>50</Amount>
+            <VectorElement>
+              <InheritedIndex>2</InheritedIndex>
+              <InheritanceMapV2>
+                <Entry>
+                  <TemplateName>HarborLandingStage7</TemplateName>
+                  <Index>2</Index>
+                </Entry>
+              </InheritanceMapV2>
+            </VectorElement>
           </Item>
           <Item>
+            <VectorElement>
+              <InheritedIndex>3</InheritedIndex>
+              <InheritanceMapV2>
+                <Entry>
+                  <TemplateName>HarborLandingStage7</TemplateName>
+                  <Index>3</Index>
+                </Entry>
+              </InheritanceMapV2>
+            </VectorElement>
             <Amount>0</Amount>
-            <Ingredient>1010218</Ingredient>
           </Item>
           <Item>
+            <VectorElement>
+              <InheritedIndex>4</InheritedIndex>
+              <InheritanceMapV2>
+                <Entry>
+                  <TemplateName>HarborLandingStage7</TemplateName>
+                  <Index>4</Index>
+                </Entry>
+              </InheritanceMapV2>
+            </VectorElement>
             <Amount>0</Amount>
-            <Ingredient>1010207</Ingredient>
           </Item>
           <Item>
-            <Ingredient>1010202</Ingredient>
+            <VectorElement>
+              <InheritedIndex>5</InheritedIndex>
+              <InheritanceMapV2>
+                <Entry>
+                  <TemplateName>HarborLandingStage7</TemplateName>
+                  <Index>5</Index>
+                </Entry>
+              </InheritanceMapV2>
+            </VectorElement>
           </Item>
         </Costs>
-        <ItemsPerCost>1</ItemsPerCost>
-        <InfluenceCostType>None</InfluenceCostType>
-        <InfluenceCostPoints>1</InfluenceCostPoints>
       </Cost>
-      <Selection>
-        <Colors>
-          <WeakSelectionColorType>NoColor</WeakSelectionColorType>
-        </Colors>
-        <GUIType>Generic</GUIType>
-        <AllowedDragType>ItemSocket;CargoProductStack;CargoItemStack</AllowedDragType>
-        <Selectable>1</Selectable>
-        <DestructSelectable>1</DestructSelectable>
-        <OnSelection>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnSelection>
-        <InteractionDistance>15</InteractionDistance>
-        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
-        <InfoCorner>25000131</InfoCorner>
-        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
-      </Selection>
+      <Selection />
       <Object>
         <Variations>
           <Item>
+            <VectorElement>
+              <InheritedIndex>0</InheritedIndex>
+              <InheritanceMapV2>
+                <Entry>
+                  <TemplateName>HarborLandingStage7</TemplateName>
+                  <Index>0</Index>
+                </Entry>
+              </InheritanceMapV2>
+            </VectorElement>
             <Filename>data/graphics/buildings/special/harbor_08_colony/harbor_08_colony.cfg</Filename>
           </Item>
         </Variations>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <DefaultParticipant>Neutral</DefaultParticipant>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <Constructable>
-        <DestructionCategory>Production</DestructionCategory>
-        <ConstructionMode>Default</ConstructionMode>
-        <DestructionType>0</DestructionType>
-      </Constructable>
-      <Mesh>
-        <ObjectPosition>Static</ObjectPosition>
-        <MeshPlacement>Default</MeshPlacement>
-        <DefaultSequence>idle01</DefaultSequence>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
-        <LogoMode>Disabled</LogoMode>
-      </Mesh>
-      <SoundEmitter>
-        <ActiveSounds>
-          <Item>
-            <Sound>200896</Sound>
-          </Item>
-        </ActiveSounds>
-        <ConstructionSounds>
-          <BuildSuccessful>
-            <Item>
-              <Sound>206544</Sound>
-            </Item>
-          </BuildSuccessful>
-          <BuildFailed>
-            <Item>
-              <Sound>9818387</Sound>
-            </Item>
-          </BuildFailed>
-          <BuildMoveStart>
-            <Item>
-              <Sound>9818755</Sound>
-            </Item>
-          </BuildMoveStart>
-          <BuildMoveSuccess>
-            <Item>
-              <Sound>200133</Sound>
-            </Item>
-          </BuildMoveSuccess>
-          <BuildMoveEnd>
-            <Item>
-              <Sound>200141</Sound>
-            </Item>
-          </BuildMoveEnd>
-        </ConstructionSounds>
-        <BuildingRuined>
-          <Item>
-            <Sound>203848</Sound>
-          </Item>
-        </BuildingRuined>
-        <BuildingRepaired>
-          <Item>
-            <Sound>203866</Sound>
-          </Item>
-        </BuildingRepaired>
-        <DestroySounds>
-          <Item>
-            <Sound>9818756</Sound>
-          </Item>
-        </DestroySounds>
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <ProjectileSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <IncidentSounds />
-        <MaterialType>NONE</MaterialType>
-      </SoundEmitter>
-      <Locked>
-        <DefaultLockedState>1</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
-      </Locked>
-      <Infolayer>
-        <DefaultInfoLayer>0</DefaultInfoLayer>
-      </Infolayer>
-      <FeedbackController>
-        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
-        <UpdateMeshSequence>1</UpdateMeshSequence>
-      </FeedbackController>
-      <MinimapToken>
-        <TokenAsset>2001544</TokenAsset>
-        <StrategicMapAsset>0</StrategicMapAsset>
-      </MinimapToken>
-      <AmbientMoodProvider>
-        <AmbientMood>None</AmbientMood>
-        <Murmur>None</Murmur>
-        <AttractivityDependentMurmur />
-        <ProductivityDependentMurmur />
-        <SatisfactionDependentMurmur />
-        <DynamicEnvironmentType>None</DynamicEnvironmentType>
-        <HappinessDependentMurmur />
-        <IslandAttractivityDependentMurmur />
-      </AmbientMoodProvider>
-      <LoadingPier>
-        <NumOfPiers>1</NumOfPiers>
-        <LoadingSpeed>2</LoadingSpeed>
-        <MinLoadingTime>5</MinLoadingTime>
-      </LoadingPier>
-      <Attackable>
-        <MaximumHitPoints>4000</MaximumHitPoints>
-        <HPBarOffset>5.5</HPBarOffset>
-        <HasRuinState>1</HasRuinState>
-        <PausedTimeIfAttacked>0</PausedTimeIfAttacked>
-        <SelfHealPerHealTick>5</SelfHealPerHealTick>
-        <TakeOverEffect>OnDeath</TakeOverEffect>
-        <MoralePower>50</MoralePower>
-        <IslandWarFlag>102303</IslandWarFlag>
-        <ExplosionEffects>
-          <Item></Item>
-        </ExplosionEffects>
-        <ExplosionEffectsMin>2</ExplosionEffectsMin>
-        <ExplosionEffectsMax>2</ExplosionEffectsMax>
-        <CanBeAttackedByPlayer>1</CanBeAttackedByPlayer>
-        <RuinSmokeParticles>
-          <Item>
-            <SmokeParticleFilePath>data/graphics/effects/military/explosions/damage_smoke_01.cfg</SmokeParticleFilePath>
-          </Item>
-        </RuinSmokeParticles>
-        <RuinSmokeParticlesMin>1</RuinSmokeParticlesMin>
-        <RuinSmokeParticlesMax>2</RuinSmokeParticlesMax>
-        <RuinSmokeParticleRectBorderPercent>0.2</RuinSmokeParticleRectBorderPercent>
-        <SelfHealPausedTimeIfAttacked>15000</SelfHealPausedTimeIfAttacked>
-        <ArmorType>Default</ArmorType>
-      </Attackable>
-      <Warehouse>
-        <StorageType>Kontor</StorageType>
-        <WarehouseStorage />
-        <OverflowFlotsam>
-          <OverflowSpawnPercentage>0.15</OverflowSpawnPercentage>
-          <MaxFlotsamCount>5</MaxFlotsamCount>
-        </OverflowFlotsam>
-      </Warehouse>
-      <StorageBase>
-        <StoredProducts />
-      </StorageBase>
-      <Maintenance>
-        <Maintenances>
-          <Item>
-            <Product>1010017</Product>
-            <Amount>50</Amount>
-            <InactiveAmount>25</InactiveAmount>
-          </Item>
-        </Maintenances>
-        <MaintenanceAmountFactor>1</MaintenanceAmountFactor>
-        <WorkforceAmountFactor>1</WorkforceAmountFactor>
-      </Maintenance>
+      <Constructable />
+      <Mesh />
+      <SoundEmitter />
+      <Locked />
+      <Infolayer />
+      <FeedbackController />
+      <MinimapToken />
+      <AmbientMoodProvider />
+      <LoadingPier />
+      <Attackable />
+      <Warehouse />
+      <StorageBase />
+      <Maintenance />
       <UpgradeList />
-      <LogisticNode>
-        <TransporterCountMax>0</TransporterCountMax>
-        <TransporterAsset>1010104</TransporterAsset>
-        <TrainAsset>120025</TrainAsset>
-        <QueueConfiguration>
-          <ProcessingQueueParallelCount>10</ProcessingQueueParallelCount>
-          <LoadingTimeModifier>1</LoadingTimeModifier>
-          <UnloadingTimeModifier>1</UnloadingTimeModifier>
-        </QueueConfiguration>
-        <REMOVE_THIS_LATER_FeedbackUnitTier>Level1</REMOVE_THIS_LATER_FeedbackUnitTier>
-        <NeedsTransporterQueue>1</NeedsTransporterQueue>
-        <PathLayers>Street</PathLayers>
-      </LogisticNode>
+      <LogisticNode />
     </Values>
   </Asset>
 </Assets>

@@ -7,34 +7,11 @@
         <GUID>1000038</GUID>
         <Name>CoastlinePreviewBuilding</Name>
         <ID>CoastlinePreviewBuilding</ID>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <Building>
         <TerrainType>Coast</TerrainType>
-        <BuildingType>Factory</BuildingType>
-        <BuildingCategoryName>0</BuildingCategoryName>
-        <Destructable>1</Destructable>
-        <Movable>1</Movable>
-        <PickingAsset>0</PickingAsset>
-        <ConstructionMenuText>0</ConstructionMenuText>
-        <HasBorderRectOutline>1</HasBorderRectOutline>
-        <SnapRadius>2</SnapRadius>
-        <InfluencedByNeighbors />
-        <InfluencedVariationDirection />
-        <AssociatedRegions>Meta;Moderate;Colony01;Arctic</AssociatedRegions>
-        <BuildingBlockPool />
-        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
-      <Blocking>
-        <HidePropsRadius>1</HidePropsRadius>
-        <DeletePropsRadius>1</DeletePropsRadius>
-        <GroundDecalAsset>0</GroundDecalAsset>
-        <GroundDecalInvisible>0</GroundDecalInvisible>
-        <StreetOutside>0</StreetOutside>
-        <RemoveGrass>1</RemoveGrass>
-        <BlocksBuilding>1</BlocksBuilding>
-      </Blocking>
+      <Blocking />
       <Object>
         <Type>NotSerialized</Type>
         <Variations>
@@ -47,97 +24,23 @@
         <AddToEditorObjectGrid>0</AddToEditorObjectGrid>
         <PlacableInEditor>0</PlacableInEditor>
         <SelectableInEditor>0</SelectableInEditor>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <DefaultParticipant>Neutral</DefaultParticipant>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <Mesh>
-        <ObjectPosition>Static</ObjectPosition>
-        <MeshPlacement>Default</MeshPlacement>
-        <DefaultSequence>idle01</DefaultSequence>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
-        <LogoMode>Disabled</LogoMode>
-      </Mesh>
-      <Selection>
-        <GUIType>Production</GUIType>
-        <Selectable>1</Selectable>
-        <DestructSelectable>1</DestructSelectable>
-        <OnSelection>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnSelection>
-        <InteractionDistance>15</InteractionDistance>
-        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
-        <InfoCorner>25000131</InfoCorner>
-        <AllowedDragType />
-        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
-        <Colors />
-      </Selection>
+      <Mesh />
+      <Selection />
       <Text>
         <LocaText>
           <English>
             <Text>CoastlinePreviewBuilding</Text>
           </English>
         </LocaText>
-        <Localize>1</Localize>
       </Text>
-      <Constructable>
-        <DestructionCategory>Production</DestructionCategory>
-        <ConstructionMode>Default</ConstructionMode>
-        <DestructionType>0</DestructionType>
-      </Constructable>
-      <SoundEmitter>
-        <ActiveSounds />
-        <DestroySounds />
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionSounds />
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <ProjectileSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <IncidentSounds />
-        <BuildingRuined />
-        <BuildingRepaired />
-        <MaterialType>NONE</MaterialType>
-      </SoundEmitter>
-      <FeedbackController>
-        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
-        <UpdateMeshSequence>1</UpdateMeshSequence>
-      </FeedbackController>
-      <Infolayer>
-        <DefaultInfoLayer>0</DefaultInfoLayer>
-      </Infolayer>
+      <Constructable />
+      <SoundEmitter />
+      <FeedbackController />
+      <Infolayer />
       <UpgradeList />
-      <RandomDummySpawner>
-        <RandomAssets />
-      </RandomDummySpawner>
-      <Attackable>
-        <MaximumHitPoints>100</MaximumHitPoints>
-        <HPBarOffset>6</HPBarOffset>
-        <PausedTimeIfAttacked>15000</PausedTimeIfAttacked>
-        <SelfHealPerHealTick>2</SelfHealPerHealTick>
-        <SelfHealPausedTimeIfAttacked>15000</SelfHealPausedTimeIfAttacked>
-        <ArmorType>Default</ArmorType>
-        <TakeOverEffect>Never</TakeOverEffect>
-        <IslandWarFlag>0</IslandWarFlag>
-        <RuinSmokeParticles />
-        <ExplosionEffects />
-      </Attackable>
+      <RandomDummySpawner />
+      <Attackable />
       <QuestObject />
     </Values>
   </Asset>

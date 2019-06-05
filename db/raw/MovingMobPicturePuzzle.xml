@@ -7,68 +7,19 @@
         <GUID>101213</GUID>
         <Name>MovingMobPicturePuzzleDummy</Name>
         <IconFilename>data/ui/2kimages/main/icons/icon_riot_quest.png</IconFilename>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <Mesh>
         <ObjectPosition>Dynamic</ObjectPosition>
         <MeshPlacement>OnTerrain</MeshPlacement>
-        <DefaultSequence>idle01</DefaultSequence>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
-        <LogoMode>Disabled</LogoMode>
       </Mesh>
-      <Object>
-        <Variations>
-          <Item>
-            <Filename>data/graphics/emptyDummy/empty_dummy_picturepuzzle.cfg</Filename>
-          </Item>
-        </Variations>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <DefaultParticipant>Neutral</DefaultParticipant>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
-      </Object>
-      <Infolayer>
-        <DefaultInfoLayer>0</DefaultInfoLayer>
-      </Infolayer>
+      <Object />
+      <Infolayer />
       <Selection>
         <GUIType>Generic</GUIType>
-        <Selectable>1</Selectable>
-        <DestructSelectable>1</DestructSelectable>
-        <OnSelection>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnSelection>
-        <InteractionDistance>15</InteractionDistance>
-        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
-        <InfoCorner>25000131</InfoCorner>
-        <AllowedDragType />
-        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
-        <Colors />
       </Selection>
       <Collectable>
         <DestroyOnCollect>1</DestroyOnCollect>
         <CollectOnSelection>1</CollectOnSelection>
-        <OnCollect>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnCollect>
-        <PickupCursor>0</PickupCursor>
-        <DropCursor>0</DropCursor>
-        <OnScreenText>0</OnScreenText>
       </Collectable>
       <QuestObject />
       <Text>
@@ -77,7 +28,6 @@
             <Text>Mob</Text>
           </English>
         </LocaText>
-        <Localize>1</Localize>
       </Text>
       <SoundEmitter>
         <ActiveSounds>
@@ -90,24 +40,6 @@
             <Sound>214110</Sound>
           </Item>
         </CollectedSounds>
-        <DestroySounds />
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionSounds />
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <ProjectileSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <ProductionSounds />
-        <RFX />
-        <IncidentSounds />
-        <BuildingRuined />
-        <BuildingRepaired />
-        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
     </Values>
   </Asset>

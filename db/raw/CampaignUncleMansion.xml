@@ -7,8 +7,6 @@
         <GUID>102190</GUID>
         <Name>CQO_Uncle_residence</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_club_house.png</IconFilename>
-        <InfoDescription>163093</InfoDescription>
-        <Comments />
       </Standard>
       <Text>
         <LocaText>
@@ -19,76 +17,14 @@
           </English>
         </LocaText>
         <LineID>25850</LineID>
-        <Localize>1</Localize>
       </Text>
-      <Blocking>
-        <HidePropsRadius>1</HidePropsRadius>
-        <DeletePropsRadius>1</DeletePropsRadius>
-        <GroundDecalAsset>0</GroundDecalAsset>
-        <GroundDecalInvisible>0</GroundDecalInvisible>
-        <StreetOutside>0</StreetOutside>
-        <RemoveGrass>1</RemoveGrass>
-        <BlocksBuilding>1</BlocksBuilding>
-      </Blocking>
-      <Building>
-        <BuildingType>Other</BuildingType>
-        <BuildingCategoryName>0</BuildingCategoryName>
-        <Destructable>1</Destructable>
-        <Movable>1</Movable>
-        <PickingAsset>0</PickingAsset>
-        <ConstructionMenuText>0</ConstructionMenuText>
-        <HasBorderRectOutline>1</HasBorderRectOutline>
-        <SnapRadius>2</SnapRadius>
-        <TerrainType>Terrain</TerrainType>
-        <InfluencedByNeighbors />
-        <InfluencedVariationDirection />
-        <AssociatedRegions>Meta;Moderate;Colony01;Arctic</AssociatedRegions>
-        <BuildingBlockPool />
-        <TakeOverTransformation>Destroy</TakeOverTransformation>
-      </Building>
-      <Cost>
-        <Costs>
-          <Item>
-            <Ingredient>1010017</Ingredient>
-          </Item>
-          <Item>
-            <Ingredient>1010196</Ingredient>
-          </Item>
-          <Item>
-            <Ingredient>1010205</Ingredient>
-          </Item>
-          <Item>
-            <Ingredient>1010218</Ingredient>
-          </Item>
-          <Item>
-            <Ingredient>1010207</Ingredient>
-          </Item>
-          <Item>
-            <Ingredient>1010202</Ingredient>
-          </Item>
-        </Costs>
-        <ItemsPerCost>1</ItemsPerCost>
-        <InfluenceCostType>None</InfluenceCostType>
-        <InfluenceCostPoints>1</InfluenceCostPoints>
-      </Cost>
+      <Blocking />
+      <Building />
+      <Cost />
       <Selection>
         <Colors>
           <WeakSelectionColorType>NoColor</WeakSelectionColorType>
         </Colors>
-        <GUIType>Ornamental</GUIType>
-        <Selectable>1</Selectable>
-        <DestructSelectable>1</DestructSelectable>
-        <OnSelection>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnSelection>
-        <InteractionDistance>15</InteractionDistance>
-        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
-        <InfoCorner>25000131</InfoCorner>
-        <AllowedDragType />
-        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
       </Selection>
       <Object>
         <Variations>
@@ -98,120 +34,17 @@
         </Variations>
         <AssignDefaultParticipant>1</AssignDefaultParticipant>
         <DefaultParticipant>Third_enemy_01_Grant</DefaultParticipant>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <Constructable>
-        <ConstructionMode>Default</ConstructionMode>
-        <DestructionCategory>Other</DestructionCategory>
-        <DestructionType>0</DestructionType>
-      </Constructable>
-      <Mesh>
-        <ObjectPosition>Static</ObjectPosition>
-        <MeshPlacement>Default</MeshPlacement>
-        <DefaultSequence>idle01</DefaultSequence>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
-        <LogoMode>Disabled</LogoMode>
-      </Mesh>
-      <SoundEmitter>
-        <DestroySounds>
-          <Item>
-            <Sound>9818756</Sound>
-          </Item>
-        </DestroySounds>
-        <ConstructionSounds>
-          <BuildFailed>
-            <Item>
-              <Sound>9818387</Sound>
-            </Item>
-          </BuildFailed>
-          <BuildMoveStart>
-            <Item>
-              <Sound>9818755</Sound>
-            </Item>
-          </BuildMoveStart>
-          <BuildMoveSuccess>
-            <Item>
-              <Sound>200133</Sound>
-            </Item>
-          </BuildMoveSuccess>
-          <BuildMoveEnd>
-            <Item>
-              <Sound>200141</Sound>
-            </Item>
-          </BuildMoveEnd>
-        </ConstructionSounds>
-        <ActiveSounds />
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <ProjectileSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <IncidentSounds />
-        <BuildingRuined />
-        <BuildingRepaired />
-        <MaterialType>NONE</MaterialType>
-      </SoundEmitter>
-      <Locked>
-        <DefaultLockedState>1</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
-      </Locked>
-      <FeedbackController>
-        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
-        <UpdateMeshSequence>1</UpdateMeshSequence>
-      </FeedbackController>
-      <Ornament>
-        <PlazzaSize>20</PlazzaSize>
-        <PlazzaSpacing>3</PlazzaSpacing>
-        <OrnamentIconInfotip>0</OrnamentIconInfotip>
-        <OrnamentDescritpion>0</OrnamentDescritpion>
-      </Ornament>
-      <AmbientMoodProvider>
-        <AmbientMood>None</AmbientMood>
-        <Murmur>None</Murmur>
-        <AttractivityDependentMurmur />
-        <ProductivityDependentMurmur />
-        <SatisfactionDependentMurmur />
-        <DynamicEnvironmentType>None</DynamicEnvironmentType>
-        <HappinessDependentMurmur />
-        <IslandAttractivityDependentMurmur />
-      </AmbientMoodProvider>
+      <Constructable />
+      <Mesh />
+      <SoundEmitter />
+      <Locked />
+      <FeedbackController />
+      <Ornament />
+      <AmbientMoodProvider />
       <Pausable />
-      <Infolayer>
-        <DefaultInfoLayer>0</DefaultInfoLayer>
-      </Infolayer>
-      <Attackable>
-        <HasRuinState>1</HasRuinState>
-        <MaximumHitPoints>100</MaximumHitPoints>
-        <HPBarOffset>6</HPBarOffset>
-        <PausedTimeIfAttacked>15000</PausedTimeIfAttacked>
-        <SelfHealPerHealTick>2</SelfHealPerHealTick>
-        <SelfHealPausedTimeIfAttacked>15000</SelfHealPausedTimeIfAttacked>
-        <ArmorType>Default</ArmorType>
-        <TakeOverEffect>Never</TakeOverEffect>
-        <IslandWarFlag>0</IslandWarFlag>
-        <RuinSmokeParticles />
-        <ExplosionEffects />
-      </Attackable>
+      <Infolayer />
+      <Attackable />
     </Values>
   </Asset>
   <Asset>
@@ -221,8 +54,6 @@
         <GUID>103066</GUID>
         <Name>uncle_island_monument</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_world_fair_2.png</IconFilename>
-        <InfoDescription>163093</InfoDescription>
-        <Comments />
       </Standard>
       <Text>
         <LocaText>
@@ -233,56 +64,18 @@
           </English>
         </LocaText>
         <LineID>20109</LineID>
-        <Localize>1</Localize>
       </Text>
-      <Blocking>
-        <HidePropsRadius>1</HidePropsRadius>
-        <DeletePropsRadius>1</DeletePropsRadius>
-        <GroundDecalAsset>0</GroundDecalAsset>
-        <GroundDecalInvisible>0</GroundDecalInvisible>
-        <StreetOutside>0</StreetOutside>
-        <RemoveGrass>1</RemoveGrass>
-        <BlocksBuilding>1</BlocksBuilding>
-      </Blocking>
+      <Blocking />
       <Building>
         <PickingAsset>1010489</PickingAsset>
         <AssociatedRegions>Moderate</AssociatedRegions>
         <DeactivateHideWhenClippingIntoCamera>1</DeactivateHideWhenClippingIntoCamera>
-        <BuildingType>Other</BuildingType>
-        <BuildingCategoryName>0</BuildingCategoryName>
-        <Destructable>1</Destructable>
-        <Movable>1</Movable>
-        <ConstructionMenuText>0</ConstructionMenuText>
-        <HasBorderRectOutline>1</HasBorderRectOutline>
-        <SnapRadius>2</SnapRadius>
-        <TerrainType>Terrain</TerrainType>
-        <InfluencedByNeighbors />
-        <InfluencedVariationDirection />
-        <BuildingBlockPool />
-        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
       <Cost>
         <Costs />
-        <ItemsPerCost>1</ItemsPerCost>
-        <InfluenceCostType>None</InfluenceCostType>
-        <InfluenceCostPoints>1</InfluenceCostPoints>
       </Cost>
       <Selection>
         <GUIType>Monument</GUIType>
-        <Selectable>1</Selectable>
-        <DestructSelectable>1</DestructSelectable>
-        <OnSelection>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnSelection>
-        <InteractionDistance>15</InteractionDistance>
-        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
-        <InfoCorner>25000131</InfoCorner>
-        <AllowedDragType />
-        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
-        <Colors />
       </Selection>
       <Object>
         <Variations>
@@ -293,124 +86,27 @@
             <Filename>data/graphics/campaign/buildings/uncle_island/monument_ruin_variation.cfg</Filename>
           </Item>
         </Variations>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <DefaultParticipant>Neutral</DefaultParticipant>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <Constructable>
-        <ConstructionMode>Default</ConstructionMode>
-        <DestructionCategory>Other</DestructionCategory>
-        <DestructionType>0</DestructionType>
-      </Constructable>
-      <Mesh>
-        <ObjectPosition>Static</ObjectPosition>
-        <MeshPlacement>Default</MeshPlacement>
-        <DefaultSequence>idle01</DefaultSequence>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
-        <LogoMode>Disabled</LogoMode>
-      </Mesh>
+      <Constructable />
+      <Mesh />
       <SoundEmitter>
         <ActiveSounds>
           <Item>
             <Sound>200865</Sound>
           </Item>
         </ActiveSounds>
-        <DestroySounds>
-          <Item>
-            <Sound>9818756</Sound>
-          </Item>
-        </DestroySounds>
-        <ConstructionSounds>
-          <BuildFailed>
-            <Item>
-              <Sound>9818387</Sound>
-            </Item>
-          </BuildFailed>
-          <BuildMoveStart>
-            <Item>
-              <Sound>9818755</Sound>
-            </Item>
-          </BuildMoveStart>
-          <BuildMoveSuccess>
-            <Item>
-              <Sound>200133</Sound>
-            </Item>
-          </BuildMoveSuccess>
-          <BuildMoveEnd>
-            <Item>
-              <Sound>200141</Sound>
-            </Item>
-          </BuildMoveEnd>
-        </ConstructionSounds>
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <ProjectileSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <IncidentSounds />
-        <BuildingRuined />
-        <BuildingRepaired />
-        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
-      <Locked>
-        <DefaultLockedState>1</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
-      </Locked>
-      <FeedbackController>
-        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
-        <UpdateMeshSequence>1</UpdateMeshSequence>
-      </FeedbackController>
-      <Ornament>
-        <PlazzaSize>20</PlazzaSize>
-        <PlazzaSpacing>3</PlazzaSpacing>
-        <OrnamentIconInfotip>0</OrnamentIconInfotip>
-        <OrnamentDescritpion>0</OrnamentDescritpion>
-      </Ornament>
+      <Locked />
+      <FeedbackController />
+      <Ornament />
       <AmbientMoodProvider>
         <Murmur>MonumentConstruction</Murmur>
-        <AmbientMood>None</AmbientMood>
-        <AttractivityDependentMurmur />
-        <ProductivityDependentMurmur />
-        <SatisfactionDependentMurmur />
-        <DynamicEnvironmentType>None</DynamicEnvironmentType>
-        <HappinessDependentMurmur />
-        <IslandAttractivityDependentMurmur />
       </AmbientMoodProvider>
       <Pausable />
-      <Infolayer>
-        <DefaultInfoLayer>0</DefaultInfoLayer>
-      </Infolayer>
+      <Infolayer />
       <Attackable>
         <MaximumHitPoints>10000</MaximumHitPoints>
         <SelfHealPerHealTick>6</SelfHealPerHealTick>
-        <HasRuinState>1</HasRuinState>
-        <HPBarOffset>6</HPBarOffset>
-        <PausedTimeIfAttacked>15000</PausedTimeIfAttacked>
-        <SelfHealPausedTimeIfAttacked>15000</SelfHealPausedTimeIfAttacked>
-        <ArmorType>Default</ArmorType>
-        <TakeOverEffect>Never</TakeOverEffect>
-        <IslandWarFlag>0</IslandWarFlag>
-        <RuinSmokeParticles />
-        <ExplosionEffects />
       </Attackable>
     </Values>
   </Asset>

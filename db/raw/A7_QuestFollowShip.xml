@@ -6,8 +6,6 @@
       <Standard>
         <GUID>150860</GUID>
         <Name>CQ251_FollowASmuggler</Name>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <Quest>
         <StarterMessage>
@@ -24,19 +22,10 @@
                 <Subtitle>266217</Subtitle>
               </NotificationSubtitle>
             </Values>
-            <Template>CharacterNotification</Template>
           </Notification>
         </StarterMessage>
         <SuccessMessage>
           <SuppressMessage>1</SuppressMessage>
-          <Notification>
-            <Template>CharacterNotification</Template>
-            <Values>
-              <CharacterNotification />
-              <BaseNotification />
-              <NotificationSubtitle />
-            </Values>
-          </Notification>
         </SuccessMessage>
         <StartFollowShipMessage>
           <Notification>
@@ -53,7 +42,6 @@
                 <Subtitle>266228</Subtitle>
               </NotificationSubtitle>
             </Values>
-            <Template>CharacterNotification</Template>
           </Notification>
         </StartFollowShipMessage>
         <OnQuestEnd>
@@ -76,7 +64,6 @@
               </Actions>
             </ActionList>
           </Values>
-          <Template>Actions</Template>
         </OnQuestEnd>
         <QuestGiver>31</QuestGiver>
         <StoryText>12964</StoryText>
@@ -115,182 +102,19 @@
             <Text>14481</Text>
           </Item>
         </QuestHints>
-        <InvitationMessage>
-          <Notification>
-            <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-            <Values>
-              <CharacterNotification>
-                <NotificationTextFemale>17219</NotificationTextFemale>
-              </CharacterNotification>
-              <BaseNotification>
-                <NotificationText>20624</NotificationText>
-              </BaseNotification>
-              <NotificationSubtitle />
-            </Values>
-            <Template>CharacterNotification</Template>
-          </Notification>
-        </InvitationMessage>
-        <DescriptionText>3965</DescriptionText>
-        <NeededProgressLevel>EarlyGame;EarlyMidGame;MidGame;LateMidGame;LateGame;EndGame</NeededProgressLevel>
-        <QuestBookBackground>data/ui/2kimages/main/assets16/questbackground/bg_quest_escort_follow.png</QuestBookBackground>
-        <HasStarterSpeechBubble>1</HasStarterSpeechBubble>
-        <StarterSpeechBubble>
-          <Template>ConditionTutorialInteraction</Template>
-          <Values>
-            <Condition />
-            <ConditionTutorialInteraction>
-              <HintType>Object</HintType>
-              <HintAnchor>BottomRight</HintAnchor>
-            </ConditionTutorialInteraction>
-          </Values>
-        </StarterSpeechBubble>
-        <SuccessSpeechBubble>
-          <Template>ConditionTutorialInteraction</Template>
-          <Values>
-            <Condition />
-            <ConditionTutorialInteraction>
-              <HintType>Object</HintType>
-              <HintEndCondition>Time</HintEndCondition>
-              <HintDisplayTime>30000</HintDisplayTime>
-              <HintAnchor>BottomRight</HintAnchor>
-            </ConditionTutorialInteraction>
-          </Values>
-        </SuccessSpeechBubble>
-        <FailureMessage />
-        <SelectionReminderMessage />
-        <AbortedManuallyMessage />
-        <AbortedAutomaticallyMessage />
-        <EscortShipSelectedMessage>
-          <Notification>
-            <Template>CharacterNotification</Template>
-            <Values>
-              <CharacterNotification />
-              <BaseNotification />
-              <NotificationSubtitle />
-            </Values>
-          </Notification>
-        </EscortShipSelectedMessage>
-        <ReminderMessage>
-          <Notification>
-            <Template>CharacterNotification</Template>
-            <Values>
-              <CharacterNotification />
-              <BaseNotification />
-              <NotificationSubtitle />
-            </Values>
-          </Notification>
-        </ReminderMessage>
-        <ResolveConfirmationMessage>
-          <Notification>
-            <Template>CharacterNotification</Template>
-            <Values>
-              <CharacterNotification />
-              <BaseNotification />
-              <NotificationSubtitle />
-            </Values>
-          </Notification>
-        </ResolveConfirmationMessage>
-        <InvitationSmugglerQuestMessage>
-          <Notification>
-            <Template>CharacterNotification</Template>
-            <Values>
-              <CharacterNotification />
-              <BaseNotification />
-              <NotificationSubtitle />
-            </Values>
-          </Notification>
-        </InvitationSmugglerQuestMessage>
-        <SmugglerQuestTradingStationReached>
-          <Notification>
-            <Template>CharacterNotification</Template>
-            <Values>
-              <CharacterNotification />
-              <BaseNotification />
-              <NotificationSubtitle />
-            </Values>
-          </Notification>
-        </SmugglerQuestTradingStationReached>
-        <StartInvitationGiveItemMessage>
-          <Notification>
-            <Template>CharacterNotification</Template>
-            <Values>
-              <CharacterNotification />
-              <BaseNotification />
-              <NotificationSubtitle />
-            </Values>
-          </Notification>
-        </StartInvitationGiveItemMessage>
-        <OnQuestStart>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnQuestStart>
-        <OnQuestDeclined>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnQuestDeclined>
-        <OnQuestActive>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnQuestActive>
-        <OnQuestAborted>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnQuestAborted>
-        <OnQuestTimedOut>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnQuestTimedOut>
-        <OnQuestFailed>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnQuestFailed>
-        <OnQuestSucceeded>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnQuestSucceeded>
-        <IsEnabled>1</IsEnabled>
-        <MaxCallOut>-1</MaxCallOut>
-        <MaxAbortCount>-1</MaxAbortCount>
-        <CountForQuestLimit>1</CountForQuestLimit>
-        <QuestBlackList />
-        <QuestBlockedSessions />
-        <AlternativeRewardTitle>2653</AlternativeRewardTitle>
-        <QuestDifficulty>Easy</QuestDifficulty>
-        <ReputationQuestDeclined />
-        <QuestGiverIdleMessageMinPause>20000</QuestGiverIdleMessageMinPause>
-        <QuestGiverIdleMessageMaxPause>60000</QuestGiverIdleMessageMaxPause>
       </Quest>
       <PreConditionList>
         <Condition>
           <Template>ConditionEvent</Template>
           <Values>
-            <Condition>
-              <SubConditionCompletionOrder>Linear</SubConditionCompletionOrder>
-            </Condition>
+            <Condition />
             <ConditionEvent>
               <ConditionEvent>NotificationRemoved</ConditionEvent>
               <ContextData>Noti_IndustrializationDialogEnd</ContextData>
             </ConditionEvent>
             <ConditionPropsNegatable />
-            <ConditionAlwaysTrue />
-            <ConditionActiveRegion />
           </Values>
         </Condition>
-        <SubConditions />
       </PreConditionList>
       <Text>
         <LocaText>
@@ -301,7 +125,6 @@
           </English>
         </LocaText>
         <LineID>25951</LineID>
-        <Localize>1</Localize>
       </Text>
       <Reward>
         <RewardAssets />
@@ -310,6 +133,19 @@
       <Objectives>
         <WinConditions>
           <Item>
+            <VectorElement>
+              <InheritedIndex>0</InheritedIndex>
+              <InheritanceMapV2>
+                <Entry>
+                  <TemplateName>A7_QuestFollowShip</TemplateName>
+                  <Index>0</Index>
+                </Entry>
+                <Entry>
+                  <TemplateName>A7_QuestStatusQuo</TemplateName>
+                  <Index>0</Index>
+                </Entry>
+              </InheritanceMapV2>
+            </VectorElement>
             <Objective>
               <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
               <Values>
@@ -388,67 +224,12 @@
                   </TargetPosition>
                 </ConditionQuestFollowShip>
               </Values>
-              <Template>FollowShipObjective</Template>
             </Objective>
           </Item>
         </WinConditions>
-        <WinConditionCompletionOrder>Parallel</WinConditionCompletionOrder>
       </Objectives>
       <QuestOptional>
         <HasStarterObject>None</HasStarterObject>
-        <StarterObject>
-          <Template>ConditionStarterObject</Template>
-          <Values>
-            <Condition />
-            <ConditionStarterObject>
-              <StarterObjectObject>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>ConditionObjectClientQuestObject</Template>
-                <Values>
-                  <ConditionObjectClientQuestObject />
-                  <ConditionScanner />
-                  <ConditionObjectiveSignsAndFeedback />
-                </Values>
-              </StarterObjectObject>
-              <StarterObjectDockingPlace>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>ConditionObjectClientQuestObject</Template>
-                <Values>
-                  <ConditionObjectClientQuestObject />
-                  <ConditionScanner />
-                  <ConditionObjectiveSignsAndFeedback />
-                </Values>
-              </StarterObjectDockingPlace>
-            </ConditionStarterObject>
-            <ConditionQuestObjective>
-              <ObjectiveSignsAndFeedback>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>ConditionObjectiveSignsAndFeedback</Template>
-                <Values>
-                  <ConditionObjectiveSignsAndFeedback />
-                </Values>
-              </ObjectiveSignsAndFeedback>
-              <ObjectiveSuccessMessage>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>CharacterNotification</Template>
-                <Values>
-                  <CharacterNotification />
-                  <BaseNotification />
-                  <NotificationSubtitle />
-                </Values>
-              </ObjectiveSuccessMessage>
-              <OnSuccessActions>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>Actions</Template>
-                <Values>
-                  <ActionList />
-                </Values>
-              </OnSuccessActions>
-            </ConditionQuestObjective>
-            <ConditionPropsSessionSettings />
-          </Values>
-        </StarterObject>
-        <StarterObjectCompletionOrder>Linear</StarterObjectCompletionOrder>
       </QuestOptional>
     </Values>
   </Asset>
@@ -458,25 +239,18 @@
       <Standard>
         <GUID>152618</GUID>
         <Name>Suspicious behavior - Hunt</Name>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <Quest>
         <InvitationMessage>
           <Notification>
             <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
             <Values>
-              <CharacterNotification>
-                <NotificationTextFemale>17219</NotificationTextFemale>
-              </CharacterNotification>
-              <BaseNotification>
-                <NotificationText>20624</NotificationText>
-              </BaseNotification>
+              <CharacterNotification />
+              <BaseNotification />
               <NotificationSubtitle>
                 <SubtitleGroup>1712609295</SubtitleGroup>
               </NotificationSubtitle>
             </Values>
-            <Template>CharacterNotification</Template>
           </Notification>
         </InvitationMessage>
         <QuestGiver>85</QuestGiver>
@@ -492,8 +266,20 @@
         <ReputationQuestFail>
           <ReputationFailList>
             <Item>
+              <VectorElement>
+                <InheritedIndex>0</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>A7_QuestEscortObject</TemplateName>
+                    <Index>0</Index>
+                  </Entry>
+                  <Entry>
+                    <TemplateName>A7_QuestFollowShip</TemplateName>
+                    <Index>0</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
               <ReputationParticipant>Second_ai_10_Hunt</ReputationParticipant>
-              <ReputationAmount>-3</ReputationAmount>
             </Item>
           </ReputationFailList>
         </ReputationQuestFail>
@@ -513,208 +299,18 @@
               </ObjectFilter>
               <UseSpecificPortrait>1</UseSpecificPortrait>
               <SpecificPortraitProfile>85</SpecificPortraitProfile>
-              <HintType>Object</HintType>
-              <HintAnchor>BottomRight</HintAnchor>
             </ConditionTutorialInteraction>
           </Values>
-          <Template>ConditionTutorialInteraction</Template>
         </StarterSpeechBubble>
-        <DescriptionText>3965</DescriptionText>
-        <QuestCategory>RandomQuest</QuestCategory>
-        <QuestActivation>ManualActivation</QuestActivation>
-        <IsAbortable>1</IsAbortable>
-        <QuestBookBackground>data/ui/2kimages/main/assets16/questbackground/bg_quest_escort_follow.png</QuestBookBackground>
-        <QuestHints>
-          <Item>
-            <Text>17698</Text>
-          </Item>
-        </QuestHints>
-        <HasStarterSpeechBubble>1</HasStarterSpeechBubble>
-        <SuccessSpeechBubble>
-          <Template>ConditionTutorialInteraction</Template>
-          <Values>
-            <Condition />
-            <ConditionTutorialInteraction>
-              <HintType>Object</HintType>
-              <HintEndCondition>Time</HintEndCondition>
-              <HintDisplayTime>30000</HintDisplayTime>
-              <HintAnchor>BottomRight</HintAnchor>
-            </ConditionTutorialInteraction>
-          </Values>
-        </SuccessSpeechBubble>
-        <StarterMessage>
-          <Notification>
-            <Template>CharacterNotification</Template>
-            <Values>
-              <CharacterNotification />
-              <BaseNotification />
-              <NotificationSubtitle />
-            </Values>
-          </Notification>
-        </StarterMessage>
-        <SuccessMessage>
-          <Notification>
-            <Template>CharacterNotification</Template>
-            <Values>
-              <CharacterNotification />
-              <BaseNotification />
-              <NotificationSubtitle />
-            </Values>
-          </Notification>
-        </SuccessMessage>
-        <FailureMessage />
-        <SelectionReminderMessage />
-        <AbortedManuallyMessage />
-        <AbortedAutomaticallyMessage />
-        <EscortShipSelectedMessage>
-          <Notification>
-            <Template>CharacterNotification</Template>
-            <Values>
-              <CharacterNotification />
-              <BaseNotification />
-              <NotificationSubtitle />
-            </Values>
-          </Notification>
-        </EscortShipSelectedMessage>
-        <ReminderMessage>
-          <Notification>
-            <Template>CharacterNotification</Template>
-            <Values>
-              <CharacterNotification />
-              <BaseNotification />
-              <NotificationSubtitle />
-            </Values>
-          </Notification>
-        </ReminderMessage>
-        <ResolveConfirmationMessage>
-          <Notification>
-            <Template>CharacterNotification</Template>
-            <Values>
-              <CharacterNotification />
-              <BaseNotification />
-              <NotificationSubtitle />
-            </Values>
-          </Notification>
-        </ResolveConfirmationMessage>
-        <InvitationSmugglerQuestMessage>
-          <Notification>
-            <Template>CharacterNotification</Template>
-            <Values>
-              <CharacterNotification />
-              <BaseNotification />
-              <NotificationSubtitle />
-            </Values>
-          </Notification>
-        </InvitationSmugglerQuestMessage>
-        <SmugglerQuestTradingStationReached>
-          <Notification>
-            <Template>CharacterNotification</Template>
-            <Values>
-              <CharacterNotification />
-              <BaseNotification />
-              <NotificationSubtitle />
-            </Values>
-          </Notification>
-        </SmugglerQuestTradingStationReached>
-        <StartInvitationGiveItemMessage>
-          <Notification>
-            <Template>CharacterNotification</Template>
-            <Values>
-              <CharacterNotification />
-              <BaseNotification />
-              <NotificationSubtitle />
-            </Values>
-          </Notification>
-        </StartInvitationGiveItemMessage>
-        <StartFollowShipMessage>
-          <Notification>
-            <Template>CharacterNotification</Template>
-            <Values>
-              <CharacterNotification />
-              <BaseNotification />
-              <NotificationSubtitle />
-            </Values>
-          </Notification>
-        </StartFollowShipMessage>
-        <OnQuestStart>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnQuestStart>
-        <OnQuestDeclined>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnQuestDeclined>
-        <OnQuestActive>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnQuestActive>
-        <OnQuestAborted>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnQuestAborted>
-        <OnQuestTimedOut>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnQuestTimedOut>
-        <OnQuestFailed>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnQuestFailed>
-        <OnQuestSucceeded>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnQuestSucceeded>
-        <OnQuestEnd>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnQuestEnd>
-        <IsEnabled>1</IsEnabled>
-        <MaxCallOut>-1</MaxCallOut>
-        <MaxSolveCount>-1</MaxSolveCount>
-        <MaxAbortCount>-1</MaxAbortCount>
-        <CountForQuestLimit>1</CountForQuestLimit>
-        <QuestTimeLimit>1800000</QuestTimeLimit>
-        <QuestTrackerVisibility>Session</QuestTrackerVisibility>
-        <HasExclusiveQuestGiver>1</HasExclusiveQuestGiver>
-        <QuestBlackList />
-        <QuestBlockedSessions />
-        <AlternativeRewardTitle>2653</AlternativeRewardTitle>
-        <QuestDifficulty>Easy</QuestDifficulty>
-        <CampaignChapter>Chapter1</CampaignChapter>
-        <ReputationQuestDeclined />
-        <QuestGiverIdleMessages />
-        <QuestGiverIdleMessageMinPause>20000</QuestGiverIdleMessageMinPause>
-        <QuestGiverIdleMessageMaxPause>60000</QuestGiverIdleMessageMaxPause>
       </Quest>
       <PreConditionList>
         <Condition>
           <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
           <Values>
-            <Condition>
-              <SubConditionCompletionOrder>Linear</SubConditionCompletionOrder>
-            </Condition>
+            <Condition />
             <ConditionAlwaysTrue />
-            <ConditionActiveRegion />
           </Values>
-          <Template>ConditionAlwaysTrue</Template>
         </Condition>
-        <SubConditions />
       </PreConditionList>
       <Text>
         <LocaText>
@@ -725,13 +321,24 @@
           </English>
         </LocaText>
         <LineID>26183</LineID>
-        <Localize>1</Localize>
       </Text>
       <Reward>
         <RewardAssets>
           <Item>
+            <VectorElement>
+              <InheritedIndex>0</InheritedIndex>
+              <InheritanceMapV2>
+                <Entry>
+                  <TemplateName>A7_QuestEscortObject</TemplateName>
+                  <Index>0</Index>
+                </Entry>
+                <Entry>
+                  <TemplateName>A7_QuestFollowShip</TemplateName>
+                  <Index>0</Index>
+                </Entry>
+              </InheritanceMapV2>
+            </VectorElement>
             <Amount>2</Amount>
-            <Reward>150038</Reward>
           </Item>
           <Item>
             <Reward>190973</Reward>
@@ -740,14 +347,34 @@
         </RewardAssets>
         <RewardReputation>
           <Item>
+            <VectorElement>
+              <InheritedIndex>0</InheritedIndex>
+              <InheritanceMapV2>
+                <Entry>
+                  <TemplateName>A7_QuestEscortObject</TemplateName>
+                  <Index>0</Index>
+                </Entry>
+                <Entry>
+                  <TemplateName>A7_QuestFollowShip</TemplateName>
+                  <Index>0</Index>
+                </Entry>
+              </InheritanceMapV2>
+            </VectorElement>
             <ReputationParticipant>Second_ai_10_Hunt</ReputationParticipant>
-            <ReputationAmount>4</ReputationAmount>
           </Item>
         </RewardReputation>
       </Reward>
       <Objectives>
         <WinConditions>
           <Item>
+            <VectorElement>
+              <InheritanceMapV2>
+                <Entry>
+                  <TemplateName>A7_QuestEscortObject</TemplateName>
+                  <Index>0</Index>
+                </Entry>
+              </InheritanceMapV2>
+            </VectorElement>
             <Objective>
               <Template>FollowShipObjective</Template>
               <Values>
@@ -798,7 +425,6 @@
             </Objective>
           </Item>
         </WinConditions>
-        <WinConditionCompletionOrder>Parallel</WinConditionCompletionOrder>
       </Objectives>
       <QuestOptional>
         <HasStarterObject>Specific</HasStarterObject>
@@ -828,50 +454,13 @@
                   <ConditionObjectiveSignsAndFeedback>
                     <Infolayer>500173</Infolayer>
                   </ConditionObjectiveSignsAndFeedback>
-                  <ConditionObjectClientQuestObject />
                 </Values>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
               </StarterObjectObject>
-              <StarterObjectDockingPlace>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>ConditionObjectClientQuestObject</Template>
-                <Values>
-                  <ConditionObjectClientQuestObject />
-                  <ConditionScanner />
-                  <ConditionObjectiveSignsAndFeedback />
-                </Values>
-              </StarterObjectDockingPlace>
             </ConditionStarterObject>
-            <ConditionQuestObjective>
-              <ObjectiveSignsAndFeedback>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>ConditionObjectiveSignsAndFeedback</Template>
-                <Values>
-                  <ConditionObjectiveSignsAndFeedback />
-                </Values>
-              </ObjectiveSignsAndFeedback>
-              <ObjectiveSuccessMessage>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>CharacterNotification</Template>
-                <Values>
-                  <CharacterNotification />
-                  <BaseNotification />
-                  <NotificationSubtitle />
-                </Values>
-              </ObjectiveSuccessMessage>
-              <OnSuccessActions>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>Actions</Template>
-                <Values>
-                  <ActionList />
-                </Values>
-              </OnSuccessActions>
-            </ConditionQuestObjective>
+            <ConditionQuestObjective />
             <ConditionPropsSessionSettings />
           </Values>
-          <Template>ConditionStarterObject</Template>
         </StarterObject>
-        <StarterObjectCompletionOrder>Linear</StarterObjectCompletionOrder>
       </QuestOptional>
     </Values>
   </Asset>
@@ -881,36 +470,13 @@
       <Standard>
         <GUID>152759</GUID>
         <Name>Follow Main arc A Glorious Discovery 3 - Bente</Name>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <Quest>
         <StarterMessage>
           <SuppressMessage>1</SuppressMessage>
-          <Notification>
-            <Template>CharacterNotification</Template>
-            <Values>
-              <CharacterNotification />
-              <BaseNotification />
-              <NotificationSubtitle />
-            </Values>
-          </Notification>
         </StarterMessage>
         <InvitationMessage>
           <SuppressMessage>1</SuppressMessage>
-          <Notification>
-            <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-            <Values>
-              <CharacterNotification>
-                <NotificationTextFemale>17219</NotificationTextFemale>
-              </CharacterNotification>
-              <BaseNotification>
-                <NotificationText>20624</NotificationText>
-              </BaseNotification>
-              <NotificationSubtitle />
-            </Values>
-            <Template>CharacterNotification</Template>
-          </Notification>
         </InvitationMessage>
         <OnQuestAborted>
           <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
@@ -1000,7 +566,6 @@
               </Actions>
             </ActionList>
           </Values>
-          <Template>Actions</Template>
         </OnQuestAborted>
         <OnQuestFailed>
           <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
@@ -1090,7 +655,6 @@
               </Actions>
             </ActionList>
           </Values>
-          <Template>Actions</Template>
         </OnQuestFailed>
         <OnQuestSucceeded>
           <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
@@ -1112,7 +676,6 @@
               </Actions>
             </ActionList>
           </Values>
-          <Template>Actions</Template>
         </OnQuestSucceeded>
         <QuestGiver>47</QuestGiver>
         <StoryText>18419</StoryText>
@@ -1120,6 +683,18 @@
         <ReputationQuestFail>
           <ReputationFailList>
             <Item>
+              <VectorElement>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>A7_QuestEscortObject</TemplateName>
+                    <Index>0</Index>
+                  </Entry>
+                  <Entry>
+                    <TemplateName>A7_QuestPickupObject</TemplateName>
+                    <Index>0</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
               <ReputationParticipant>Second_ai_01_Jorgensen</ReputationParticipant>
               <ReputationAmount>-5</ReputationAmount>
             </Item>
@@ -1135,182 +710,27 @@
         </ReputationQuestDeclined>
         <QuestHints>
           <Item>
-            <Text>17698</Text>
+            <VectorElement>
+              <InheritedIndex>0</InheritedIndex>
+              <InheritanceMapV2>
+                <Entry>
+                  <TemplateName>A7_QuestFollowShip</TemplateName>
+                  <Index>0</Index>
+                </Entry>
+              </InheritanceMapV2>
+            </VectorElement>
           </Item>
           <Item>
             <Text>17672</Text>
           </Item>
         </QuestHints>
-        <DescriptionText>3965</DescriptionText>
-        <QuestCategory>RandomQuest</QuestCategory>
-        <IsAbortable>1</IsAbortable>
-        <NeededProgressLevel>EarlyGame;EarlyMidGame;MidGame;LateMidGame;LateGame;EndGame</NeededProgressLevel>
-        <QuestBookBackground>data/ui/2kimages/main/assets16/questbackground/bg_quest_escort_follow.png</QuestBookBackground>
-        <HasStarterSpeechBubble>1</HasStarterSpeechBubble>
-        <StarterSpeechBubble>
-          <Template>ConditionTutorialInteraction</Template>
-          <Values>
-            <Condition />
-            <ConditionTutorialInteraction>
-              <HintType>Object</HintType>
-              <HintAnchor>BottomRight</HintAnchor>
-            </ConditionTutorialInteraction>
-          </Values>
-        </StarterSpeechBubble>
-        <SuccessSpeechBubble>
-          <Template>ConditionTutorialInteraction</Template>
-          <Values>
-            <Condition />
-            <ConditionTutorialInteraction>
-              <HintType>Object</HintType>
-              <HintEndCondition>Time</HintEndCondition>
-              <HintDisplayTime>30000</HintDisplayTime>
-              <HintAnchor>BottomRight</HintAnchor>
-            </ConditionTutorialInteraction>
-          </Values>
-        </SuccessSpeechBubble>
-        <SuccessMessage>
-          <Notification>
-            <Template>CharacterNotification</Template>
-            <Values>
-              <CharacterNotification />
-              <BaseNotification />
-              <NotificationSubtitle />
-            </Values>
-          </Notification>
-        </SuccessMessage>
-        <FailureMessage />
-        <SelectionReminderMessage />
-        <AbortedManuallyMessage />
-        <AbortedAutomaticallyMessage />
-        <EscortShipSelectedMessage>
-          <Notification>
-            <Template>CharacterNotification</Template>
-            <Values>
-              <CharacterNotification />
-              <BaseNotification />
-              <NotificationSubtitle />
-            </Values>
-          </Notification>
-        </EscortShipSelectedMessage>
-        <ReminderMessage>
-          <Notification>
-            <Template>CharacterNotification</Template>
-            <Values>
-              <CharacterNotification />
-              <BaseNotification />
-              <NotificationSubtitle />
-            </Values>
-          </Notification>
-        </ReminderMessage>
-        <ResolveConfirmationMessage>
-          <Notification>
-            <Template>CharacterNotification</Template>
-            <Values>
-              <CharacterNotification />
-              <BaseNotification />
-              <NotificationSubtitle />
-            </Values>
-          </Notification>
-        </ResolveConfirmationMessage>
-        <InvitationSmugglerQuestMessage>
-          <Notification>
-            <Template>CharacterNotification</Template>
-            <Values>
-              <CharacterNotification />
-              <BaseNotification />
-              <NotificationSubtitle />
-            </Values>
-          </Notification>
-        </InvitationSmugglerQuestMessage>
-        <SmugglerQuestTradingStationReached>
-          <Notification>
-            <Template>CharacterNotification</Template>
-            <Values>
-              <CharacterNotification />
-              <BaseNotification />
-              <NotificationSubtitle />
-            </Values>
-          </Notification>
-        </SmugglerQuestTradingStationReached>
-        <StartInvitationGiveItemMessage>
-          <Notification>
-            <Template>CharacterNotification</Template>
-            <Values>
-              <CharacterNotification />
-              <BaseNotification />
-              <NotificationSubtitle />
-            </Values>
-          </Notification>
-        </StartInvitationGiveItemMessage>
-        <StartFollowShipMessage>
-          <Notification>
-            <Template>CharacterNotification</Template>
-            <Values>
-              <CharacterNotification />
-              <BaseNotification />
-              <NotificationSubtitle />
-            </Values>
-          </Notification>
-        </StartFollowShipMessage>
-        <OnQuestStart>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnQuestStart>
-        <OnQuestDeclined>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnQuestDeclined>
-        <OnQuestActive>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnQuestActive>
-        <OnQuestTimedOut>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnQuestTimedOut>
-        <OnQuestEnd>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnQuestEnd>
-        <IsEnabled>1</IsEnabled>
-        <MaxCallOut>-1</MaxCallOut>
-        <MaxSolveCount>-1</MaxSolveCount>
-        <MaxAbortCount>-1</MaxAbortCount>
-        <CountForQuestLimit>1</CountForQuestLimit>
-        <QuestTimeLimit>1800000</QuestTimeLimit>
-        <QuestTrackerVisibility>Session</QuestTrackerVisibility>
-        <HasExclusiveQuestGiver>1</HasExclusiveQuestGiver>
-        <QuestBlackList />
-        <QuestSessionDependencies />
-        <QuestBlockedSessions />
-        <AlternativeRewardTitle>2653</AlternativeRewardTitle>
-        <QuestDifficulty>Easy</QuestDifficulty>
-        <CampaignChapter>Chapter1</CampaignChapter>
-        <QuestGiverIdleMessages />
-        <QuestGiverIdleMessageMinPause>20000</QuestGiverIdleMessageMinPause>
-        <QuestGiverIdleMessageMaxPause>60000</QuestGiverIdleMessageMaxPause>
       </Quest>
       <PreConditionList>
         <Condition>
           <Template>ConditionAlwaysFalse</Template>
           <Values>
-            <Condition>
-              <SubConditionCompletionOrder>Linear</SubConditionCompletionOrder>
-            </Condition>
+            <Condition />
             <ConditionAlwaysFalse />
-            <ConditionAlwaysTrue />
-            <ConditionActiveRegion />
           </Values>
         </Condition>
         <SubConditions>
@@ -1344,21 +764,45 @@
           </English>
         </LocaText>
         <LineID>26230</LineID>
-        <Localize>1</Localize>
       </Text>
       <Reward>
         <RewardAssets>
           <Item>
+            <VectorElement>
+              <InheritedIndex>0</InheritedIndex>
+              <InheritanceMapV2>
+                <Entry>
+                  <TemplateName>A7_QuestFollowShip</TemplateName>
+                  <Index>0</Index>
+                </Entry>
+              </InheritanceMapV2>
+            </VectorElement>
             <Amount>2</Amount>
-            <Reward>150038</Reward>
           </Item>
           <Item>
+            <VectorElement>
+              <InheritedIndex>1</InheritedIndex>
+              <InheritanceMapV2>
+                <Entry>
+                  <TemplateName>A7_QuestFollowShip</TemplateName>
+                  <Index>1</Index>
+                </Entry>
+              </InheritanceMapV2>
+            </VectorElement>
             <Reward>190808</Reward>
-            <Amount>1</Amount>
           </Item>
         </RewardAssets>
         <RewardReputation>
           <Item>
+            <VectorElement>
+              <InheritedIndex>0</InheritedIndex>
+              <InheritanceMapV2>
+                <Entry>
+                  <TemplateName>A7_QuestFollowShip</TemplateName>
+                  <Index>0</Index>
+                </Entry>
+              </InheritanceMapV2>
+            </VectorElement>
             <ReputationParticipant>Second_ai_01_Jorgensen</ReputationParticipant>
             <ReputationAmount>6</ReputationAmount>
           </Item>
@@ -1367,6 +811,15 @@
       <Objectives>
         <WinConditions>
           <Item>
+            <VectorElement>
+              <InheritedIndex>0</InheritedIndex>
+              <InheritanceMapV2>
+                <Entry>
+                  <TemplateName>A7_QuestFollowShip</TemplateName>
+                  <Index>0</Index>
+                </Entry>
+              </InheritanceMapV2>
+            </VectorElement>
             <Objective>
               <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
               <Values>
@@ -1426,7 +879,6 @@
                   </TargetPosition>
                 </ConditionQuestFollowShip>
               </Values>
-              <Template>FollowShipObjective</Template>
             </Objective>
           </Item>
           <Item>
@@ -1505,51 +957,13 @@
                   </ConditionObjectSpawnedObject>
                   <ConditionScanner />
                   <ConditionObjectiveSignsAndFeedback />
-                  <ConditionObjectClientQuestObject />
                 </Values>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
               </StarterObjectObject>
-              <StarterObjectDockingPlace>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>ConditionObjectClientQuestObject</Template>
-                <Values>
-                  <ConditionObjectClientQuestObject />
-                  <ConditionScanner />
-                  <ConditionObjectiveSignsAndFeedback />
-                </Values>
-              </StarterObjectDockingPlace>
             </ConditionStarterObject>
-            <ConditionQuestObjective>
-              <ObjectiveSignsAndFeedback>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>ConditionObjectiveSignsAndFeedback</Template>
-                <Values>
-                  <ConditionObjectiveSignsAndFeedback />
-                </Values>
-              </ObjectiveSignsAndFeedback>
-              <ObjectiveSuccessMessage>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>CharacterNotification</Template>
-                <Values>
-                  <CharacterNotification />
-                  <BaseNotification />
-                  <NotificationSubtitle />
-                </Values>
-              </ObjectiveSuccessMessage>
-              <OnSuccessActions>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>Actions</Template>
-                <Values>
-                  <ActionList />
-                </Values>
-              </OnSuccessActions>
-            </ConditionQuestObjective>
+            <ConditionQuestObjective />
             <ConditionPropsSessionSettings />
           </Values>
-          <Template>ConditionStarterObject</Template>
         </StarterObject>
-        <HasStarterObject>QuestGiver</HasStarterObject>
-        <StarterObjectCompletionOrder>Linear</StarterObjectCompletionOrder>
       </QuestOptional>
     </Values>
   </Asset>
@@ -1559,17 +973,13 @@
       <Standard>
         <GUID>152561</GUID>
         <Name>Follow The Prestige 3 - Willie</Name>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <Quest>
         <InvitationMessage>
           <Notification>
             <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
             <Values>
-              <CharacterNotification>
-                <NotificationTextFemale>17219</NotificationTextFemale>
-              </CharacterNotification>
+              <CharacterNotification />
               <BaseNotification>
                 <NotificationText>21745</NotificationText>
               </BaseNotification>
@@ -1577,7 +987,6 @@
                 <SubtitleGroup>-1564022259</SubtitleGroup>
               </NotificationSubtitle>
             </Values>
-            <Template>CharacterNotification</Template>
           </Notification>
         </InvitationMessage>
         <InvitationSmugglerQuestMessage>
@@ -1590,7 +999,6 @@
                 <SubtitleGroup>-1564022259</SubtitleGroup>
               </NotificationSubtitle>
             </Values>
-            <Template>CharacterNotification</Template>
           </Notification>
         </InvitationSmugglerQuestMessage>
         <OnQuestDeclined>
@@ -1633,7 +1041,6 @@
               </Actions>
             </ActionList>
           </Values>
-          <Template>Actions</Template>
         </OnQuestDeclined>
         <OnQuestActive>
           <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
@@ -1654,7 +1061,6 @@
               </Actions>
             </ActionList>
           </Values>
-          <Template>Actions</Template>
         </OnQuestActive>
         <OnQuestAborted>
           <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
@@ -1696,7 +1102,6 @@
               </Actions>
             </ActionList>
           </Values>
-          <Template>Actions</Template>
         </OnQuestAborted>
         <OnQuestEnd>
           <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
@@ -1750,7 +1155,6 @@
               </Actions>
             </ActionList>
           </Values>
-          <Template>Actions</Template>
         </OnQuestEnd>
         <QuestGiver>80</QuestGiver>
         <StoryText>18043</StoryText>
@@ -1758,6 +1162,23 @@
         <ReputationQuestFail>
           <ReputationFailList>
             <Item>
+              <VectorElement>
+                <InheritedIndex>0</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>A7_QuestEscortObject</TemplateName>
+                    <Index>0</Index>
+                  </Entry>
+                  <Entry>
+                    <TemplateName>A7_QuestDeliveryObject</TemplateName>
+                    <Index>0</Index>
+                  </Entry>
+                  <Entry>
+                    <TemplateName>A7_QuestFollowShip</TemplateName>
+                    <Index>0</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
               <ReputationParticipant>Second_ai_03_Wibblesock</ReputationParticipant>
               <ReputationAmount>-6</ReputationAmount>
             </Item>
@@ -1787,11 +1208,8 @@
               </ObjectFilter>
               <UseSpecificPortrait>1</UseSpecificPortrait>
               <SpecificPortraitProfile>80</SpecificPortraitProfile>
-              <HintType>Object</HintType>
-              <HintAnchor>BottomRight</HintAnchor>
             </ConditionTutorialInteraction>
           </Values>
-          <Template>ConditionTutorialInteraction</Template>
         </StarterSpeechBubble>
         <HasSuccessSpeechBubble>1</HasSuccessSpeechBubble>
         <SuccessSpeechBubble>
@@ -1808,164 +1226,18 @@
                   </ObjectFilter>
                 </Values>
               </ObjectFilter>
-              <HintType>Object</HintType>
-              <HintEndCondition>Time</HintEndCondition>
-              <HintDisplayTime>30000</HintDisplayTime>
-              <HintAnchor>BottomRight</HintAnchor>
             </ConditionTutorialInteraction>
           </Values>
-          <Template>ConditionTutorialInteraction</Template>
         </SuccessSpeechBubble>
-        <DescriptionText>3965</DescriptionText>
-        <QuestCategory>RandomQuest</QuestCategory>
-        <QuestActivation>ManualActivation</QuestActivation>
-        <IsAbortable>1</IsAbortable>
-        <QuestBookBackground>data/ui/2kimages/main/assets16/questbackground/bg_quest_escort_follow.png</QuestBookBackground>
-        <QuestHints>
-          <Item>
-            <Text>17698</Text>
-          </Item>
-        </QuestHints>
-        <HasStarterSpeechBubble>1</HasStarterSpeechBubble>
-        <StarterMessage>
-          <Notification>
-            <Template>CharacterNotification</Template>
-            <Values>
-              <CharacterNotification />
-              <BaseNotification />
-              <NotificationSubtitle />
-            </Values>
-          </Notification>
-        </StarterMessage>
-        <SuccessMessage>
-          <Notification>
-            <Template>CharacterNotification</Template>
-            <Values>
-              <CharacterNotification />
-              <BaseNotification />
-              <NotificationSubtitle />
-            </Values>
-          </Notification>
-        </SuccessMessage>
-        <FailureMessage />
-        <SelectionReminderMessage />
-        <AbortedManuallyMessage />
-        <AbortedAutomaticallyMessage />
-        <EscortShipSelectedMessage>
-          <Notification>
-            <Template>CharacterNotification</Template>
-            <Values>
-              <CharacterNotification />
-              <BaseNotification />
-              <NotificationSubtitle />
-            </Values>
-          </Notification>
-        </EscortShipSelectedMessage>
-        <ReminderMessage>
-          <Notification>
-            <Template>CharacterNotification</Template>
-            <Values>
-              <CharacterNotification />
-              <BaseNotification />
-              <NotificationSubtitle />
-            </Values>
-          </Notification>
-        </ReminderMessage>
-        <ResolveConfirmationMessage>
-          <Notification>
-            <Template>CharacterNotification</Template>
-            <Values>
-              <CharacterNotification />
-              <BaseNotification />
-              <NotificationSubtitle />
-            </Values>
-          </Notification>
-        </ResolveConfirmationMessage>
-        <SmugglerQuestTradingStationReached>
-          <Notification>
-            <Template>CharacterNotification</Template>
-            <Values>
-              <CharacterNotification />
-              <BaseNotification />
-              <NotificationSubtitle />
-            </Values>
-          </Notification>
-        </SmugglerQuestTradingStationReached>
-        <StartInvitationGiveItemMessage>
-          <Notification>
-            <Template>CharacterNotification</Template>
-            <Values>
-              <CharacterNotification />
-              <BaseNotification />
-              <NotificationSubtitle />
-            </Values>
-          </Notification>
-        </StartInvitationGiveItemMessage>
-        <StartFollowShipMessage>
-          <Notification>
-            <Template>CharacterNotification</Template>
-            <Values>
-              <CharacterNotification />
-              <BaseNotification />
-              <NotificationSubtitle />
-            </Values>
-          </Notification>
-        </StartFollowShipMessage>
-        <OnQuestStart>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnQuestStart>
-        <OnQuestTimedOut>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnQuestTimedOut>
-        <OnQuestFailed>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnQuestFailed>
-        <OnQuestSucceeded>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnQuestSucceeded>
-        <IsEnabled>1</IsEnabled>
-        <MaxCallOut>-1</MaxCallOut>
-        <MaxSolveCount>-1</MaxSolveCount>
-        <MaxAbortCount>-1</MaxAbortCount>
-        <CountForQuestLimit>1</CountForQuestLimit>
-        <QuestTimeLimit>1800000</QuestTimeLimit>
-        <QuestTrackerVisibility>Session</QuestTrackerVisibility>
-        <HasExclusiveQuestGiver>1</HasExclusiveQuestGiver>
-        <QuestBlackList />
-        <QuestSessionDependencies />
-        <QuestBlockedSessions />
-        <AlternativeRewardTitle>2653</AlternativeRewardTitle>
-        <QuestDifficulty>Easy</QuestDifficulty>
-        <CampaignChapter>Chapter1</CampaignChapter>
-        <QuestGiverIdleMessages />
-        <QuestGiverIdleMessageMinPause>20000</QuestGiverIdleMessageMinPause>
-        <QuestGiverIdleMessageMaxPause>60000</QuestGiverIdleMessageMaxPause>
       </Quest>
       <PreConditionList>
         <Condition>
           <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
           <Values>
-            <Condition>
-              <SubConditionCompletionOrder>Linear</SubConditionCompletionOrder>
-            </Condition>
+            <Condition />
             <ConditionAlwaysTrue />
-            <ConditionActiveRegion />
           </Values>
-          <Template>ConditionAlwaysTrue</Template>
         </Condition>
-        <SubConditions />
       </PreConditionList>
       <Text>
         <LocaText>
@@ -1976,21 +1248,53 @@
           </English>
         </LocaText>
         <LineID>28834</LineID>
-        <Localize>1</Localize>
       </Text>
       <Reward>
         <RewardAssets>
           <Item>
+            <VectorElement>
+              <InheritanceMapV2>
+                <Entry>
+                  <TemplateName>A7_QuestDeliveryObject</TemplateName>
+                  <Index>0</Index>
+                </Entry>
+              </InheritanceMapV2>
+            </VectorElement>
             <Reward>150038</Reward>
             <Amount>4</Amount>
           </Item>
           <Item>
+            <VectorElement>
+              <InheritanceMapV2>
+                <Entry>
+                  <TemplateName>A7_QuestDeliveryObject</TemplateName>
+                  <Index>1</Index>
+                </Entry>
+              </InheritanceMapV2>
+            </VectorElement>
             <Reward>190966</Reward>
             <Amount>1</Amount>
           </Item>
         </RewardAssets>
         <RewardReputation>
           <Item>
+            <VectorElement>
+              <InheritedIndex>0</InheritedIndex>
+              <InheritanceMapV2>
+                <Entry>
+                  <TemplateName>A7_QuestEscortObject</TemplateName>
+                  <Index>0</Index>
+                </Entry>
+                <Entry>
+                  <TemplateName>A7_QuestDeliveryObject</TemplateName>
+                  <Index>0</Index>
+                </Entry>
+                <Entry>
+                  <TemplateName>A7_QuestFollowShip</TemplateName>
+                  <Index>0</Index>
+                </Entry>
+              </InheritanceMapV2>
+            </VectorElement>
             <ReputationParticipant>Second_ai_03_Wibblesock</ReputationParticipant>
             <ReputationAmount>8</ReputationAmount>
           </Item>
@@ -2124,50 +1428,13 @@
                   <ConditionObjectiveSignsAndFeedback>
                     <Infolayer>500173</Infolayer>
                   </ConditionObjectiveSignsAndFeedback>
-                  <ConditionObjectClientQuestObject />
                 </Values>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
               </StarterObjectObject>
-              <StarterObjectDockingPlace>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>ConditionObjectClientQuestObject</Template>
-                <Values>
-                  <ConditionObjectClientQuestObject />
-                  <ConditionScanner />
-                  <ConditionObjectiveSignsAndFeedback />
-                </Values>
-              </StarterObjectDockingPlace>
             </ConditionStarterObject>
-            <ConditionQuestObjective>
-              <ObjectiveSignsAndFeedback>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>ConditionObjectiveSignsAndFeedback</Template>
-                <Values>
-                  <ConditionObjectiveSignsAndFeedback />
-                </Values>
-              </ObjectiveSignsAndFeedback>
-              <ObjectiveSuccessMessage>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>CharacterNotification</Template>
-                <Values>
-                  <CharacterNotification />
-                  <BaseNotification />
-                  <NotificationSubtitle />
-                </Values>
-              </ObjectiveSuccessMessage>
-              <OnSuccessActions>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>Actions</Template>
-                <Values>
-                  <ActionList />
-                </Values>
-              </OnSuccessActions>
-            </ConditionQuestObjective>
+            <ConditionQuestObjective />
             <ConditionPropsSessionSettings />
           </Values>
-          <Template>ConditionStarterObject</Template>
         </StarterObject>
-        <StarterObjectCompletionOrder>Linear</StarterObjectCompletionOrder>
       </QuestOptional>
     </Values>
   </Asset>
@@ -2177,17 +1444,13 @@
       <Standard>
         <GUID>153205</GUID>
         <Name>Fake quest to test trigger</Name>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <Quest>
         <InvitationMessage>
           <Notification>
             <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
             <Values>
-              <CharacterNotification>
-                <NotificationTextFemale>17219</NotificationTextFemale>
-              </CharacterNotification>
+              <CharacterNotification />
               <BaseNotification>
                 <NotificationText>21745</NotificationText>
               </BaseNotification>
@@ -2195,7 +1458,6 @@
                 <SubtitleGroup>-1564022259</SubtitleGroup>
               </NotificationSubtitle>
             </Values>
-            <Template>CharacterNotification</Template>
           </Notification>
         </InvitationMessage>
         <InvitationSmugglerQuestMessage>
@@ -2208,7 +1470,6 @@
                 <SubtitleGroup>-1564022259</SubtitleGroup>
               </NotificationSubtitle>
             </Values>
-            <Template>CharacterNotification</Template>
           </Notification>
         </InvitationSmugglerQuestMessage>
         <OnQuestDeclined>
@@ -2251,7 +1512,6 @@
               </Actions>
             </ActionList>
           </Values>
-          <Template>Actions</Template>
         </OnQuestDeclined>
         <OnQuestActive>
           <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
@@ -2272,7 +1532,6 @@
               </Actions>
             </ActionList>
           </Values>
-          <Template>Actions</Template>
         </OnQuestActive>
         <OnQuestEnd>
           <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
@@ -2326,7 +1585,6 @@
               </Actions>
             </ActionList>
           </Values>
-          <Template>Actions</Template>
         </OnQuestEnd>
         <QuestGiver>80</QuestGiver>
         <StoryText>18043</StoryText>
@@ -2334,8 +1592,19 @@
         <ReputationQuestFail>
           <ReputationFailList>
             <Item>
+              <VectorElement>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>A7_QuestEscortObject</TemplateName>
+                    <Index>0</Index>
+                  </Entry>
+                  <Entry>
+                    <TemplateName>A7_QuestDeliveryObject</TemplateName>
+                    <Index>0</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
               <ReputationParticipant>Second_ai_03_Wibblesock</ReputationParticipant>
-              <ReputationAmount>-3</ReputationAmount>
             </Item>
           </ReputationFailList>
         </ReputationQuestFail>
@@ -2355,11 +1624,8 @@
               </ObjectFilter>
               <UseSpecificPortrait>1</UseSpecificPortrait>
               <SpecificPortraitProfile>80</SpecificPortraitProfile>
-              <HintType>Object</HintType>
-              <HintAnchor>BottomRight</HintAnchor>
             </ConditionTutorialInteraction>
           </Values>
-          <Template>ConditionTutorialInteraction</Template>
         </StarterSpeechBubble>
         <HasSuccessSpeechBubble>1</HasSuccessSpeechBubble>
         <SuccessSpeechBubble>
@@ -2376,171 +1642,18 @@
                   </ObjectFilter>
                 </Values>
               </ObjectFilter>
-              <HintType>Object</HintType>
-              <HintEndCondition>Time</HintEndCondition>
-              <HintDisplayTime>30000</HintDisplayTime>
-              <HintAnchor>BottomRight</HintAnchor>
             </ConditionTutorialInteraction>
           </Values>
-          <Template>ConditionTutorialInteraction</Template>
         </SuccessSpeechBubble>
-        <DescriptionText>3965</DescriptionText>
-        <QuestCategory>RandomQuest</QuestCategory>
-        <QuestActivation>ManualActivation</QuestActivation>
-        <IsAbortable>1</IsAbortable>
-        <QuestBookBackground>data/ui/2kimages/main/assets16/questbackground/bg_quest_escort_follow.png</QuestBookBackground>
-        <QuestHints>
-          <Item>
-            <Text>17698</Text>
-          </Item>
-        </QuestHints>
-        <HasStarterSpeechBubble>1</HasStarterSpeechBubble>
-        <StarterMessage>
-          <Notification>
-            <Template>CharacterNotification</Template>
-            <Values>
-              <CharacterNotification />
-              <BaseNotification />
-              <NotificationSubtitle />
-            </Values>
-          </Notification>
-        </StarterMessage>
-        <SuccessMessage>
-          <Notification>
-            <Template>CharacterNotification</Template>
-            <Values>
-              <CharacterNotification />
-              <BaseNotification />
-              <NotificationSubtitle />
-            </Values>
-          </Notification>
-        </SuccessMessage>
-        <FailureMessage />
-        <SelectionReminderMessage />
-        <AbortedManuallyMessage />
-        <AbortedAutomaticallyMessage />
-        <EscortShipSelectedMessage>
-          <Notification>
-            <Template>CharacterNotification</Template>
-            <Values>
-              <CharacterNotification />
-              <BaseNotification />
-              <NotificationSubtitle />
-            </Values>
-          </Notification>
-        </EscortShipSelectedMessage>
-        <ReminderMessage>
-          <Notification>
-            <Template>CharacterNotification</Template>
-            <Values>
-              <CharacterNotification />
-              <BaseNotification />
-              <NotificationSubtitle />
-            </Values>
-          </Notification>
-        </ReminderMessage>
-        <ResolveConfirmationMessage>
-          <Notification>
-            <Template>CharacterNotification</Template>
-            <Values>
-              <CharacterNotification />
-              <BaseNotification />
-              <NotificationSubtitle />
-            </Values>
-          </Notification>
-        </ResolveConfirmationMessage>
-        <SmugglerQuestTradingStationReached>
-          <Notification>
-            <Template>CharacterNotification</Template>
-            <Values>
-              <CharacterNotification />
-              <BaseNotification />
-              <NotificationSubtitle />
-            </Values>
-          </Notification>
-        </SmugglerQuestTradingStationReached>
-        <StartInvitationGiveItemMessage>
-          <Notification>
-            <Template>CharacterNotification</Template>
-            <Values>
-              <CharacterNotification />
-              <BaseNotification />
-              <NotificationSubtitle />
-            </Values>
-          </Notification>
-        </StartInvitationGiveItemMessage>
-        <StartFollowShipMessage>
-          <Notification>
-            <Template>CharacterNotification</Template>
-            <Values>
-              <CharacterNotification />
-              <BaseNotification />
-              <NotificationSubtitle />
-            </Values>
-          </Notification>
-        </StartFollowShipMessage>
-        <OnQuestStart>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnQuestStart>
-        <OnQuestAborted>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnQuestAborted>
-        <OnQuestTimedOut>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnQuestTimedOut>
-        <OnQuestFailed>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnQuestFailed>
-        <OnQuestSucceeded>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnQuestSucceeded>
-        <IsEnabled>1</IsEnabled>
-        <MaxCallOut>-1</MaxCallOut>
-        <MaxSolveCount>-1</MaxSolveCount>
-        <MaxAbortCount>-1</MaxAbortCount>
-        <CountForQuestLimit>1</CountForQuestLimit>
-        <QuestTimeLimit>1800000</QuestTimeLimit>
-        <QuestTrackerVisibility>Session</QuestTrackerVisibility>
-        <HasExclusiveQuestGiver>1</HasExclusiveQuestGiver>
-        <QuestBlackList />
-        <QuestSessionDependencies />
-        <QuestBlockedSessions />
-        <AlternativeRewardTitle>2653</AlternativeRewardTitle>
-        <QuestDifficulty>Easy</QuestDifficulty>
-        <CampaignChapter>Chapter1</CampaignChapter>
-        <ReputationQuestDeclined />
-        <QuestGiverIdleMessages />
-        <QuestGiverIdleMessageMinPause>20000</QuestGiverIdleMessageMinPause>
-        <QuestGiverIdleMessageMaxPause>60000</QuestGiverIdleMessageMaxPause>
       </Quest>
       <PreConditionList>
         <Condition>
           <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
           <Values>
-            <Condition>
-              <SubConditionCompletionOrder>Linear</SubConditionCompletionOrder>
-            </Condition>
+            <Condition />
             <ConditionAlwaysTrue />
-            <ConditionActiveRegion />
           </Values>
-          <Template>ConditionAlwaysTrue</Template>
         </Condition>
-        <SubConditions />
       </PreConditionList>
       <Text>
         <LocaText>
@@ -2551,23 +1664,49 @@
           </English>
         </LocaText>
         <LineID>30062</LineID>
-        <Localize>1</Localize>
       </Text>
       <Reward>
         <RewardAssets>
           <Item>
+            <VectorElement>
+              <InheritanceMapV2>
+                <Entry>
+                  <TemplateName>A7_QuestDeliveryObject</TemplateName>
+                  <Index>0</Index>
+                </Entry>
+              </InheritanceMapV2>
+            </VectorElement>
             <Reward>150038</Reward>
             <Amount>4</Amount>
           </Item>
           <Item>
+            <VectorElement>
+              <InheritanceMapV2>
+                <Entry>
+                  <TemplateName>A7_QuestDeliveryObject</TemplateName>
+                  <Index>1</Index>
+                </Entry>
+              </InheritanceMapV2>
+            </VectorElement>
             <Reward>190966</Reward>
             <Amount>1</Amount>
           </Item>
         </RewardAssets>
         <RewardReputation>
           <Item>
+            <VectorElement>
+              <InheritanceMapV2>
+                <Entry>
+                  <TemplateName>A7_QuestEscortObject</TemplateName>
+                  <Index>0</Index>
+                </Entry>
+                <Entry>
+                  <TemplateName>A7_QuestDeliveryObject</TemplateName>
+                  <Index>0</Index>
+                </Entry>
+              </InheritanceMapV2>
+            </VectorElement>
             <ReputationParticipant>Second_ai_03_Wibblesock</ReputationParticipant>
-            <ReputationAmount>4</ReputationAmount>
           </Item>
         </RewardReputation>
       </Reward>
@@ -2706,50 +1845,13 @@
                   </ConditionObjectSpawnedObject>
                   <ConditionScanner />
                   <ConditionObjectiveSignsAndFeedback />
-                  <ConditionObjectClientQuestObject />
                 </Values>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
               </StarterObjectObject>
-              <StarterObjectDockingPlace>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>ConditionObjectClientQuestObject</Template>
-                <Values>
-                  <ConditionObjectClientQuestObject />
-                  <ConditionScanner />
-                  <ConditionObjectiveSignsAndFeedback />
-                </Values>
-              </StarterObjectDockingPlace>
             </ConditionStarterObject>
-            <ConditionQuestObjective>
-              <ObjectiveSignsAndFeedback>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>ConditionObjectiveSignsAndFeedback</Template>
-                <Values>
-                  <ConditionObjectiveSignsAndFeedback />
-                </Values>
-              </ObjectiveSignsAndFeedback>
-              <ObjectiveSuccessMessage>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>CharacterNotification</Template>
-                <Values>
-                  <CharacterNotification />
-                  <BaseNotification />
-                  <NotificationSubtitle />
-                </Values>
-              </ObjectiveSuccessMessage>
-              <OnSuccessActions>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>Actions</Template>
-                <Values>
-                  <ActionList />
-                </Values>
-              </OnSuccessActions>
-            </ConditionQuestObjective>
+            <ConditionQuestObjective />
             <ConditionPropsSessionSettings />
           </Values>
-          <Template>ConditionStarterObject</Template>
         </StarterObject>
-        <StarterObjectCompletionOrder>Linear</StarterObjectCompletionOrder>
       </QuestOptional>
     </Values>
   </Asset>
@@ -2759,36 +1861,21 @@
       <Standard>
         <GUID>152565</GUID>
         <Name>Follow Main arc 4 - Willie</Name>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <Quest>
         <SuccessMessage>
           <SuppressMessage>1</SuppressMessage>
-          <Notification>
-            <Template>CharacterNotification</Template>
-            <Values>
-              <CharacterNotification />
-              <BaseNotification />
-              <NotificationSubtitle />
-            </Values>
-          </Notification>
         </SuccessMessage>
         <InvitationMessage>
           <Notification>
             <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
             <Values>
-              <CharacterNotification>
-                <NotificationTextFemale>17219</NotificationTextFemale>
-              </CharacterNotification>
-              <BaseNotification>
-                <NotificationText>20624</NotificationText>
-              </BaseNotification>
+              <CharacterNotification />
+              <BaseNotification />
               <NotificationSubtitle>
                 <SubtitleGroup>-1564022259</SubtitleGroup>
               </NotificationSubtitle>
             </Values>
-            <Template>CharacterNotification</Template>
           </Notification>
         </InvitationMessage>
         <InvitationSmugglerQuestMessage>
@@ -2801,7 +1888,6 @@
                 <SubtitleGroup>-1564022259</SubtitleGroup>
               </NotificationSubtitle>
             </Values>
-            <Template>CharacterNotification</Template>
           </Notification>
         </InvitationSmugglerQuestMessage>
         <OnQuestSucceeded>
@@ -2824,7 +1910,6 @@
               </Actions>
             </ActionList>
           </Values>
-          <Template>Actions</Template>
         </OnQuestSucceeded>
         <QuestGiver>80</QuestGiver>
         <StoryText>18065</StoryText>
@@ -2832,6 +1917,23 @@
         <ReputationQuestFail>
           <ReputationFailList>
             <Item>
+              <VectorElement>
+                <InheritedIndex>0</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>A7_QuestEscortObject</TemplateName>
+                    <Index>0</Index>
+                  </Entry>
+                  <Entry>
+                    <TemplateName>A7_QuestDeliveryObject</TemplateName>
+                    <Index>0</Index>
+                  </Entry>
+                  <Entry>
+                    <TemplateName>A7_QuestFollowShip</TemplateName>
+                    <Index>0</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
               <ReputationParticipant>Second_ai_03_Wibblesock</ReputationParticipant>
               <ReputationAmount>-5</ReputationAmount>
             </Item>
@@ -2861,11 +1963,8 @@
               </ObjectFilter>
               <UseSpecificPortrait>1</UseSpecificPortrait>
               <SpecificPortraitProfile>80</SpecificPortraitProfile>
-              <HintType>Object</HintType>
-              <HintAnchor>BottomRight</HintAnchor>
             </ConditionTutorialInteraction>
           </Values>
-          <Template>ConditionTutorialInteraction</Template>
         </StarterSpeechBubble>
         <HasSuccessSpeechBubble>1</HasSuccessSpeechBubble>
         <SuccessSpeechBubble>
@@ -2884,172 +1983,18 @@
               </ObjectFilter>
               <UseSpecificPortrait>1</UseSpecificPortrait>
               <SpecificPortraitProfile>34</SpecificPortraitProfile>
-              <HintType>Object</HintType>
-              <HintEndCondition>Time</HintEndCondition>
-              <HintDisplayTime>30000</HintDisplayTime>
-              <HintAnchor>BottomRight</HintAnchor>
             </ConditionTutorialInteraction>
           </Values>
-          <Template>ConditionTutorialInteraction</Template>
         </SuccessSpeechBubble>
-        <DescriptionText>3965</DescriptionText>
-        <QuestCategory>RandomQuest</QuestCategory>
-        <QuestActivation>ManualActivation</QuestActivation>
-        <IsAbortable>1</IsAbortable>
-        <QuestBookBackground>data/ui/2kimages/main/assets16/questbackground/bg_quest_escort_follow.png</QuestBookBackground>
-        <QuestHints>
-          <Item>
-            <Text>17698</Text>
-          </Item>
-        </QuestHints>
-        <HasStarterSpeechBubble>1</HasStarterSpeechBubble>
-        <StarterMessage>
-          <Notification>
-            <Template>CharacterNotification</Template>
-            <Values>
-              <CharacterNotification />
-              <BaseNotification />
-              <NotificationSubtitle />
-            </Values>
-          </Notification>
-        </StarterMessage>
-        <FailureMessage />
-        <SelectionReminderMessage />
-        <AbortedManuallyMessage />
-        <AbortedAutomaticallyMessage />
-        <EscortShipSelectedMessage>
-          <Notification>
-            <Template>CharacterNotification</Template>
-            <Values>
-              <CharacterNotification />
-              <BaseNotification />
-              <NotificationSubtitle />
-            </Values>
-          </Notification>
-        </EscortShipSelectedMessage>
-        <ReminderMessage>
-          <Notification>
-            <Template>CharacterNotification</Template>
-            <Values>
-              <CharacterNotification />
-              <BaseNotification />
-              <NotificationSubtitle />
-            </Values>
-          </Notification>
-        </ReminderMessage>
-        <ResolveConfirmationMessage>
-          <Notification>
-            <Template>CharacterNotification</Template>
-            <Values>
-              <CharacterNotification />
-              <BaseNotification />
-              <NotificationSubtitle />
-            </Values>
-          </Notification>
-        </ResolveConfirmationMessage>
-        <SmugglerQuestTradingStationReached>
-          <Notification>
-            <Template>CharacterNotification</Template>
-            <Values>
-              <CharacterNotification />
-              <BaseNotification />
-              <NotificationSubtitle />
-            </Values>
-          </Notification>
-        </SmugglerQuestTradingStationReached>
-        <StartInvitationGiveItemMessage>
-          <Notification>
-            <Template>CharacterNotification</Template>
-            <Values>
-              <CharacterNotification />
-              <BaseNotification />
-              <NotificationSubtitle />
-            </Values>
-          </Notification>
-        </StartInvitationGiveItemMessage>
-        <StartFollowShipMessage>
-          <Notification>
-            <Template>CharacterNotification</Template>
-            <Values>
-              <CharacterNotification />
-              <BaseNotification />
-              <NotificationSubtitle />
-            </Values>
-          </Notification>
-        </StartFollowShipMessage>
-        <OnQuestStart>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnQuestStart>
-        <OnQuestDeclined>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnQuestDeclined>
-        <OnQuestActive>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnQuestActive>
-        <OnQuestAborted>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnQuestAborted>
-        <OnQuestTimedOut>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnQuestTimedOut>
-        <OnQuestFailed>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnQuestFailed>
-        <OnQuestEnd>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnQuestEnd>
-        <IsEnabled>1</IsEnabled>
-        <MaxCallOut>-1</MaxCallOut>
-        <MaxSolveCount>-1</MaxSolveCount>
-        <MaxAbortCount>-1</MaxAbortCount>
-        <CountForQuestLimit>1</CountForQuestLimit>
-        <QuestTimeLimit>1800000</QuestTimeLimit>
-        <QuestTrackerVisibility>Session</QuestTrackerVisibility>
-        <HasExclusiveQuestGiver>1</HasExclusiveQuestGiver>
-        <QuestBlackList />
-        <QuestSessionDependencies />
-        <QuestBlockedSessions />
-        <AlternativeRewardTitle>2653</AlternativeRewardTitle>
-        <QuestDifficulty>Easy</QuestDifficulty>
-        <CampaignChapter>Chapter1</CampaignChapter>
-        <QuestGiverIdleMessages />
-        <QuestGiverIdleMessageMinPause>20000</QuestGiverIdleMessageMinPause>
-        <QuestGiverIdleMessageMaxPause>60000</QuestGiverIdleMessageMaxPause>
       </Quest>
       <PreConditionList>
         <Condition>
           <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
           <Values>
-            <Condition>
-              <SubConditionCompletionOrder>Linear</SubConditionCompletionOrder>
-            </Condition>
+            <Condition />
             <ConditionAlwaysTrue />
-            <ConditionActiveRegion />
           </Values>
-          <Template>ConditionAlwaysTrue</Template>
         </Condition>
-        <SubConditions />
       </PreConditionList>
       <Text>
         <LocaText>
@@ -3060,21 +2005,53 @@
           </English>
         </LocaText>
         <LineID>28837</LineID>
-        <Localize>1</Localize>
       </Text>
       <Reward>
         <RewardAssets>
           <Item>
+            <VectorElement>
+              <InheritanceMapV2>
+                <Entry>
+                  <TemplateName>A7_QuestDeliveryObject</TemplateName>
+                  <Index>0</Index>
+                </Entry>
+              </InheritanceMapV2>
+            </VectorElement>
             <Reward>150038</Reward>
             <Amount>4</Amount>
           </Item>
           <Item>
+            <VectorElement>
+              <InheritanceMapV2>
+                <Entry>
+                  <TemplateName>A7_QuestDeliveryObject</TemplateName>
+                  <Index>1</Index>
+                </Entry>
+              </InheritanceMapV2>
+            </VectorElement>
             <Reward>190966</Reward>
             <Amount>1</Amount>
           </Item>
         </RewardAssets>
         <RewardReputation>
           <Item>
+            <VectorElement>
+              <InheritedIndex>0</InheritedIndex>
+              <InheritanceMapV2>
+                <Entry>
+                  <TemplateName>A7_QuestEscortObject</TemplateName>
+                  <Index>0</Index>
+                </Entry>
+                <Entry>
+                  <TemplateName>A7_QuestDeliveryObject</TemplateName>
+                  <Index>0</Index>
+                </Entry>
+                <Entry>
+                  <TemplateName>A7_QuestFollowShip</TemplateName>
+                  <Index>0</Index>
+                </Entry>
+              </InheritanceMapV2>
+            </VectorElement>
             <ReputationParticipant>Second_ai_03_Wibblesock</ReputationParticipant>
             <ReputationAmount>6</ReputationAmount>
           </Item>
@@ -3138,7 +2115,6 @@
             </Objective>
           </Item>
         </WinConditions>
-        <WinConditionCompletionOrder>Parallel</WinConditionCompletionOrder>
       </Objectives>
       <QuestOptional>
         <HasStarterObject>Specific</HasStarterObject>
@@ -3169,50 +2145,13 @@
                   <ConditionObjectiveSignsAndFeedback>
                     <Infolayer>500173</Infolayer>
                   </ConditionObjectiveSignsAndFeedback>
-                  <ConditionObjectClientQuestObject />
                 </Values>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
               </StarterObjectObject>
-              <StarterObjectDockingPlace>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>ConditionObjectClientQuestObject</Template>
-                <Values>
-                  <ConditionObjectClientQuestObject />
-                  <ConditionScanner />
-                  <ConditionObjectiveSignsAndFeedback />
-                </Values>
-              </StarterObjectDockingPlace>
             </ConditionStarterObject>
-            <ConditionQuestObjective>
-              <ObjectiveSignsAndFeedback>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>ConditionObjectiveSignsAndFeedback</Template>
-                <Values>
-                  <ConditionObjectiveSignsAndFeedback />
-                </Values>
-              </ObjectiveSignsAndFeedback>
-              <ObjectiveSuccessMessage>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>CharacterNotification</Template>
-                <Values>
-                  <CharacterNotification />
-                  <BaseNotification />
-                  <NotificationSubtitle />
-                </Values>
-              </ObjectiveSuccessMessage>
-              <OnSuccessActions>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>Actions</Template>
-                <Values>
-                  <ActionList />
-                </Values>
-              </OnSuccessActions>
-            </ConditionQuestObjective>
+            <ConditionQuestObjective />
             <ConditionPropsSessionSettings />
           </Values>
-          <Template>ConditionStarterObject</Template>
         </StarterObject>
-        <StarterObjectCompletionOrder>Linear</StarterObjectCompletionOrder>
       </QuestOptional>
     </Values>
   </Asset>
@@ -3222,8 +2161,6 @@
       <Standard>
         <GUID>152534</GUID>
         <Name>Follow Welcome to the creed 2 - Kahina</Name>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <Quest>
         <InvitationMessage>
@@ -3233,14 +2170,11 @@
               <CharacterNotification>
                 <NotificationTextFemale>21939</NotificationTextFemale>
               </CharacterNotification>
-              <BaseNotification>
-                <NotificationText>20624</NotificationText>
-              </BaseNotification>
+              <BaseNotification />
               <NotificationSubtitle>
                 <SubtitleGroup>2034401664</SubtitleGroup>
               </NotificationSubtitle>
             </Values>
-            <Template>CharacterNotification</Template>
           </Notification>
         </InvitationMessage>
         <OnQuestSucceeded>
@@ -3283,7 +2217,6 @@
               </Actions>
             </ActionList>
           </Values>
-          <Template>Actions</Template>
         </OnQuestSucceeded>
         <QuestGiver>78</QuestGiver>
         <StoryText>18544</StoryText>
@@ -3306,11 +2239,8 @@
               </ObjectFilter>
               <UseSpecificPortrait>1</UseSpecificPortrait>
               <SpecificPortraitProfile>78</SpecificPortraitProfile>
-              <HintType>Object</HintType>
-              <HintAnchor>BottomRight</HintAnchor>
             </ConditionTutorialInteraction>
           </Values>
-          <Template>ConditionTutorialInteraction</Template>
         </StarterSpeechBubble>
         <HasSuccessSpeechBubble>1</HasSuccessSpeechBubble>
         <SuccessSpeechBubble>
@@ -3329,194 +2259,18 @@
               </ObjectFilter>
               <UseSpecificPortrait>1</UseSpecificPortrait>
               <SpecificPortraitProfile>46</SpecificPortraitProfile>
-              <HintType>Object</HintType>
-              <HintEndCondition>Time</HintEndCondition>
-              <HintDisplayTime>30000</HintDisplayTime>
-              <HintAnchor>BottomRight</HintAnchor>
             </ConditionTutorialInteraction>
           </Values>
-          <Template>ConditionTutorialInteraction</Template>
         </SuccessSpeechBubble>
-        <DescriptionText>3965</DescriptionText>
-        <QuestCategory>RandomQuest</QuestCategory>
-        <QuestActivation>ManualActivation</QuestActivation>
-        <IsAbortable>1</IsAbortable>
-        <NeededProgressLevel>EarlyGame;EarlyMidGame;MidGame;LateMidGame;LateGame;EndGame</NeededProgressLevel>
-        <QuestBookBackground>data/ui/2kimages/main/assets16/questbackground/bg_quest_escort_follow.png</QuestBookBackground>
-        <QuestHints>
-          <Item>
-            <Text>17698</Text>
-          </Item>
-        </QuestHints>
-        <HasStarterSpeechBubble>1</HasStarterSpeechBubble>
-        <StarterMessage>
-          <Notification>
-            <Template>CharacterNotification</Template>
-            <Values>
-              <CharacterNotification />
-              <BaseNotification />
-              <NotificationSubtitle />
-            </Values>
-          </Notification>
-        </StarterMessage>
-        <SuccessMessage>
-          <Notification>
-            <Template>CharacterNotification</Template>
-            <Values>
-              <CharacterNotification />
-              <BaseNotification />
-              <NotificationSubtitle />
-            </Values>
-          </Notification>
-        </SuccessMessage>
-        <FailureMessage />
-        <SelectionReminderMessage />
-        <AbortedManuallyMessage />
-        <AbortedAutomaticallyMessage />
-        <EscortShipSelectedMessage>
-          <Notification>
-            <Template>CharacterNotification</Template>
-            <Values>
-              <CharacterNotification />
-              <BaseNotification />
-              <NotificationSubtitle />
-            </Values>
-          </Notification>
-        </EscortShipSelectedMessage>
-        <ReminderMessage>
-          <Notification>
-            <Template>CharacterNotification</Template>
-            <Values>
-              <CharacterNotification />
-              <BaseNotification />
-              <NotificationSubtitle />
-            </Values>
-          </Notification>
-        </ReminderMessage>
-        <ResolveConfirmationMessage>
-          <Notification>
-            <Template>CharacterNotification</Template>
-            <Values>
-              <CharacterNotification />
-              <BaseNotification />
-              <NotificationSubtitle />
-            </Values>
-          </Notification>
-        </ResolveConfirmationMessage>
-        <InvitationSmugglerQuestMessage>
-          <Notification>
-            <Template>CharacterNotification</Template>
-            <Values>
-              <CharacterNotification />
-              <BaseNotification />
-              <NotificationSubtitle />
-            </Values>
-          </Notification>
-        </InvitationSmugglerQuestMessage>
-        <SmugglerQuestTradingStationReached>
-          <Notification>
-            <Template>CharacterNotification</Template>
-            <Values>
-              <CharacterNotification />
-              <BaseNotification />
-              <NotificationSubtitle />
-            </Values>
-          </Notification>
-        </SmugglerQuestTradingStationReached>
-        <StartInvitationGiveItemMessage>
-          <Notification>
-            <Template>CharacterNotification</Template>
-            <Values>
-              <CharacterNotification />
-              <BaseNotification />
-              <NotificationSubtitle />
-            </Values>
-          </Notification>
-        </StartInvitationGiveItemMessage>
-        <StartFollowShipMessage>
-          <Notification>
-            <Template>CharacterNotification</Template>
-            <Values>
-              <CharacterNotification />
-              <BaseNotification />
-              <NotificationSubtitle />
-            </Values>
-          </Notification>
-        </StartFollowShipMessage>
-        <OnQuestStart>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnQuestStart>
-        <OnQuestDeclined>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnQuestDeclined>
-        <OnQuestActive>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnQuestActive>
-        <OnQuestAborted>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnQuestAborted>
-        <OnQuestTimedOut>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnQuestTimedOut>
-        <OnQuestFailed>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnQuestFailed>
-        <OnQuestEnd>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnQuestEnd>
-        <IsEnabled>1</IsEnabled>
-        <MaxCallOut>-1</MaxCallOut>
-        <MaxSolveCount>-1</MaxSolveCount>
-        <MaxAbortCount>-1</MaxAbortCount>
-        <CountForQuestLimit>1</CountForQuestLimit>
-        <QuestTimeLimit>1800000</QuestTimeLimit>
-        <QuestTrackerVisibility>Session</QuestTrackerVisibility>
-        <HasExclusiveQuestGiver>1</HasExclusiveQuestGiver>
-        <QuestBlackList />
-        <QuestSessionDependencies />
-        <QuestBlockedSessions />
-        <AlternativeRewardTitle>2653</AlternativeRewardTitle>
-        <QuestDifficulty>Easy</QuestDifficulty>
-        <CampaignChapter>Chapter1</CampaignChapter>
-        <ReputationQuestDeclined />
-        <QuestGiverIdleMessages />
-        <QuestGiverIdleMessageMinPause>20000</QuestGiverIdleMessageMinPause>
-        <QuestGiverIdleMessageMaxPause>60000</QuestGiverIdleMessageMaxPause>
       </Quest>
       <PreConditionList>
         <Condition>
           <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
           <Values>
-            <Condition>
-              <SubConditionCompletionOrder>Linear</SubConditionCompletionOrder>
-            </Condition>
+            <Condition />
             <ConditionAlwaysTrue />
-            <ConditionActiveRegion />
           </Values>
-          <Template>ConditionAlwaysTrue</Template>
         </Condition>
-        <SubConditions />
       </PreConditionList>
       <Text>
         <LocaText>
@@ -3527,11 +2281,18 @@
           </English>
         </LocaText>
         <LineID>26260</LineID>
-        <Localize>1</Localize>
       </Text>
       <Reward>
         <RewardAssets>
           <Item>
+            <VectorElement>
+              <InheritanceMapV2>
+                <Entry>
+                  <TemplateName>A7_QuestPickupObject</TemplateName>
+                  <Index>0</Index>
+                </Entry>
+              </InheritanceMapV2>
+            </VectorElement>
             <Reward>150038</Reward>
             <Amount>2</Amount>
           </Item>
@@ -3611,50 +2372,13 @@
                   <ConditionObjectiveSignsAndFeedback>
                     <Infolayer>500173</Infolayer>
                   </ConditionObjectiveSignsAndFeedback>
-                  <ConditionObjectClientQuestObject />
                 </Values>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
               </StarterObjectObject>
-              <StarterObjectDockingPlace>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>ConditionObjectClientQuestObject</Template>
-                <Values>
-                  <ConditionObjectClientQuestObject />
-                  <ConditionScanner />
-                  <ConditionObjectiveSignsAndFeedback />
-                </Values>
-              </StarterObjectDockingPlace>
             </ConditionStarterObject>
-            <ConditionQuestObjective>
-              <ObjectiveSignsAndFeedback>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>ConditionObjectiveSignsAndFeedback</Template>
-                <Values>
-                  <ConditionObjectiveSignsAndFeedback />
-                </Values>
-              </ObjectiveSignsAndFeedback>
-              <ObjectiveSuccessMessage>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>CharacterNotification</Template>
-                <Values>
-                  <CharacterNotification />
-                  <BaseNotification />
-                  <NotificationSubtitle />
-                </Values>
-              </ObjectiveSuccessMessage>
-              <OnSuccessActions>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>Actions</Template>
-                <Values>
-                  <ActionList />
-                </Values>
-              </OnSuccessActions>
-            </ConditionQuestObjective>
+            <ConditionQuestObjective />
             <ConditionPropsSessionSettings />
           </Values>
-          <Template>ConditionStarterObject</Template>
         </StarterObject>
-        <StarterObjectCompletionOrder>Linear</StarterObjectCompletionOrder>
       </QuestOptional>
     </Values>
   </Asset>

@@ -7,8 +7,6 @@
         <GUID>7</GUID>
         <Name>advisor_01 (Hannah Goode)</Name>
         <IconFilename>data/ui/2kimages/main/profiles/advisor_01.png</IconFilename>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -19,7 +17,6 @@
           </English>
         </LocaText>
         <LineID>3762</LineID>
-        <Localize>1</Localize>
       </Text>
       <Profile>
         <ProfilePicture>data/ui/2kimages/main/profiles/advisor_01.png</ProfilePicture>
@@ -31,36 +28,32 @@
         <QuestStarterObject>101237</QuestStarterObject>
         <DefaultColor>Color4</DefaultColor>
         <CreateModeMeta>AutoCreate_Always</CreateModeMeta>
-        <ProfileType>VirtualParticipant_NeverOwnsGameObjects</ProfileType>
-        <AttackableThroughPirateFlagItem>0</AttackableThroughPirateFlagItem>
-        <CompanyIcon>0</CompanyIcon>
-        <QuestPoolList />
-        <HostileTakeoverEnabled>1</HostileTakeoverEnabled>
-        <BackgroundText>0</BackgroundText>
-        <TakeoverBehaviour>Destroy</TakeoverBehaviour>
-        <ShipDropRewardPool>0</ShipDropRewardPool>
-        <CreateModeSession>Dynamically_MaploadOrSessionEnter</CreateModeSession>
-        <ChooseNPC />
       </Profile>
       <ParticipantMessages>
         <MessageTriggers>
           <QuestInvitation>
             <Reactions>
               <Item>
+                <VectorElement>
+                  <InheritanceMapV2>
+                    <Entry>
+                      <TemplateName>Profile_Virtual_Female</TemplateName>
+                      <Index>0</Index>
+                    </Entry>
+                  </InheritanceMapV2>
+                </VectorElement>
                 <Notification>
                   <Template>CharacterNotification</Template>
                   <Values>
                     <CharacterNotification />
                     <BaseNotification>
                       <NotificationText>9558</NotificationText>
-                      <NotificationTextGroup>-607220429</NotificationTextGroup>
                     </BaseNotification>
                     <NotificationSubtitle>
                       <Subtitle>9559</Subtitle>
                     </NotificationSubtitle>
                   </Values>
                 </Notification>
-                <MyRole>Initiator</MyRole>
               </Item>
             </Reactions>
           </QuestInvitation>
@@ -193,154 +186,15 @@
               </Item>
             </Reactions>
           </QuestResolveConfirmation>
-          <QuestAborted>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-999474322</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestAborted>
-          <QuestEscortShipSelected>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>674720140</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestEscortShipSelected>
-          <QuestFailed>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-1928161372</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestFailed>
-          <QuestStarted>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-2052884805</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestStarted>
-          <QuestSuccessful>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>1380477898</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestSuccessful>
-          <SettlementRightsClaimIsland>
-            <Reactions>
-              <Item>
-                <MyRole>ObserverToInitiator</MyRole>
-              </Item>
-            </Reactions>
-          </SettlementRightsClaimIsland>
-          <SettlementRightsSeizeIsland>
-            <Reactions>
-              <Item />
-            </Reactions>
-          </SettlementRightsSeizeIsland>
-          <ExpeditionAssignShip>
-            <Reactions>
-              <Item>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification>
-                      <Profile>39</Profile>
-                    </CharacterNotification>
-                    <BaseNotification>
-                      <NotificationText>250012</NotificationText>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </ExpeditionAssignShip>
         </MessageTriggers>
       </ParticipantMessages>
       <Object>
         <DefaultParticipant>Advisor_01_Hannah</DefaultParticipant>
-        <Type>GameObject</Type>
-        <Variations />
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <ParticipantMessageObject>
         <ParticipantMessages>139</ParticipantMessages>
       </ParticipantMessageObject>
-      <Interaction>
-        <NewspaperPropaganda />
-        <PaMSyTrade>
-          <ActiveTrade>
-            <TradeAmount>1000</TradeAmount>
-            <TradeAmountFactor>500</TradeAmountFactor>
-            <TradeMessage>ActiveTradeConfirmation</TradeMessage>
-          </ActiveTrade>
-          <PassiveTrade>
-            <TradeAmount>10000</TradeAmount>
-            <TradeAmountFactor>5000</TradeAmountFactor>
-            <TradeMessage>PassiveTradeConfirmation</TradeMessage>
-          </PassiveTrade>
-        </PaMSyTrade>
-        <PaMSyMilitaryStrength />
-        <PaMSyAttractiveness />
-        <PaMSyIslandPollution />
-      </Interaction>
+      <Interaction />
     </Values>
   </Asset>
   <Asset>
@@ -350,8 +204,6 @@
         <GUID>212</GUID>
         <Name>advisor_01 (Hannah Goode Black Dress)</Name>
         <IconFilename>data/ui/2kimages/main/profiles/campaign_portrait_12.png</IconFilename>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -362,7 +214,6 @@
           </English>
         </LocaText>
         <LineID>23558</LineID>
-        <Localize>1</Localize>
       </Text>
       <Profile>
         <ProfilePicture>data/ui/2kimages/main/profiles/campaign_portrait_12.png</ProfilePicture>
@@ -374,36 +225,32 @@
         <QuestStarterObject>101237</QuestStarterObject>
         <DefaultColor>Color4</DefaultColor>
         <CreateModeMeta>AutoCreate_OnlyCampaign</CreateModeMeta>
-        <ProfileType>VirtualParticipant_NeverOwnsGameObjects</ProfileType>
-        <AttackableThroughPirateFlagItem>0</AttackableThroughPirateFlagItem>
-        <CompanyIcon>0</CompanyIcon>
-        <QuestPoolList />
-        <HostileTakeoverEnabled>1</HostileTakeoverEnabled>
-        <BackgroundText>0</BackgroundText>
-        <TakeoverBehaviour>Destroy</TakeoverBehaviour>
-        <ShipDropRewardPool>0</ShipDropRewardPool>
-        <CreateModeSession>Dynamically_MaploadOrSessionEnter</CreateModeSession>
-        <ChooseNPC />
       </Profile>
       <ParticipantMessages>
         <MessageTriggers>
           <QuestInvitation>
             <Reactions>
               <Item>
+                <VectorElement>
+                  <InheritanceMapV2>
+                    <Entry>
+                      <TemplateName>Profile_Virtual_Female</TemplateName>
+                      <Index>0</Index>
+                    </Entry>
+                  </InheritanceMapV2>
+                </VectorElement>
                 <Notification>
                   <Template>CharacterNotification</Template>
                   <Values>
                     <CharacterNotification />
                     <BaseNotification>
                       <NotificationText>9558</NotificationText>
-                      <NotificationTextGroup>-607220429</NotificationTextGroup>
                     </BaseNotification>
                     <NotificationSubtitle>
                       <Subtitle>9559</Subtitle>
                     </NotificationSubtitle>
                   </Values>
                 </Notification>
-                <MyRole>Initiator</MyRole>
               </Item>
             </Reactions>
           </QuestInvitation>
@@ -536,154 +383,15 @@
               </Item>
             </Reactions>
           </QuestResolveConfirmation>
-          <QuestAborted>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-999474322</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestAborted>
-          <QuestEscortShipSelected>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>674720140</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestEscortShipSelected>
-          <QuestFailed>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-1928161372</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestFailed>
-          <QuestStarted>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-2052884805</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestStarted>
-          <QuestSuccessful>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>1380477898</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestSuccessful>
-          <SettlementRightsClaimIsland>
-            <Reactions>
-              <Item>
-                <MyRole>ObserverToInitiator</MyRole>
-              </Item>
-            </Reactions>
-          </SettlementRightsClaimIsland>
-          <SettlementRightsSeizeIsland>
-            <Reactions>
-              <Item />
-            </Reactions>
-          </SettlementRightsSeizeIsland>
-          <ExpeditionAssignShip>
-            <Reactions>
-              <Item>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification>
-                      <Profile>39</Profile>
-                    </CharacterNotification>
-                    <BaseNotification>
-                      <NotificationText>250012</NotificationText>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </ExpeditionAssignShip>
         </MessageTriggers>
       </ParticipantMessages>
       <Object>
         <DefaultParticipant>Advisor_01_Hannah_BlackDress</DefaultParticipant>
-        <Type>GameObject</Type>
-        <Variations />
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <ParticipantMessageObject>
         <ParticipantMessages>139</ParticipantMessages>
       </ParticipantMessageObject>
-      <Interaction>
-        <NewspaperPropaganda />
-        <PaMSyTrade>
-          <ActiveTrade>
-            <TradeAmount>1000</TradeAmount>
-            <TradeAmountFactor>500</TradeAmountFactor>
-            <TradeMessage>ActiveTradeConfirmation</TradeMessage>
-          </ActiveTrade>
-          <PassiveTrade>
-            <TradeAmount>10000</TradeAmount>
-            <TradeAmountFactor>5000</TradeAmountFactor>
-            <TradeMessage>PassiveTradeConfirmation</TradeMessage>
-          </PassiveTrade>
-        </PaMSyTrade>
-        <PaMSyMilitaryStrength />
-        <PaMSyAttractiveness />
-        <PaMSyIslandPollution />
-      </Interaction>
+      <Interaction />
     </Values>
   </Asset>
   <Asset>
@@ -693,8 +401,6 @@
         <GUID>181</GUID>
         <Name>campaign_character10_SA_ticketseller</Name>
         <IconFilename>data/ui/2kimages/main/profiles/resident_colony_tier01_work.png</IconFilename>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -705,7 +411,6 @@
           </English>
         </LocaText>
         <LineID>13094</LineID>
-        <Localize>1</Localize>
       </Text>
       <Profile>
         <ProfilePicture>data/ui/2kimages/main/profiles/resident_colony_tier01_work.png</ProfilePicture>
@@ -721,32 +426,32 @@
         <HostileTakeoverEnabled>0</HostileTakeoverEnabled>
         <CreateModeMeta>AutoCreate_OnlyCampaign</CreateModeMeta>
         <CreateModeSession>AutoCreate_OnlyCampaign</CreateModeSession>
-        <AttackableThroughPirateFlagItem>0</AttackableThroughPirateFlagItem>
-        <QuestPoolList />
-        <BackgroundText>0</BackgroundText>
-        <TakeoverBehaviour>Destroy</TakeoverBehaviour>
-        <ShipDropRewardPool>0</ShipDropRewardPool>
-        <ChooseNPC />
       </Profile>
       <ParticipantMessages>
         <MessageTriggers>
           <QuestInvitation>
             <Reactions>
               <Item>
+                <VectorElement>
+                  <InheritanceMapV2>
+                    <Entry>
+                      <TemplateName>Profile_Virtual_Female</TemplateName>
+                      <Index>0</Index>
+                    </Entry>
+                  </InheritanceMapV2>
+                </VectorElement>
                 <Notification>
                   <Template>CharacterNotification</Template>
                   <Values>
                     <CharacterNotification />
                     <BaseNotification>
                       <NotificationText>9558</NotificationText>
-                      <NotificationTextGroup>-607220429</NotificationTextGroup>
                     </BaseNotification>
                     <NotificationSubtitle>
                       <Subtitle>9559</Subtitle>
                     </NotificationSubtitle>
                   </Values>
                 </Notification>
-                <MyRole>Initiator</MyRole>
               </Item>
             </Reactions>
           </QuestInvitation>
@@ -786,154 +491,15 @@
               </Item>
             </Reactions>
           </QuestStartInvitationGiveItem>
-          <QuestAborted>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-999474322</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestAborted>
-          <QuestEscortShipSelected>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>674720140</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestEscortShipSelected>
-          <QuestFailed>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-1928161372</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestFailed>
-          <QuestStarted>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-2052884805</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestStarted>
-          <QuestSuccessful>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>1380477898</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestSuccessful>
-          <SettlementRightsClaimIsland>
-            <Reactions>
-              <Item>
-                <MyRole>ObserverToInitiator</MyRole>
-              </Item>
-            </Reactions>
-          </SettlementRightsClaimIsland>
-          <SettlementRightsSeizeIsland>
-            <Reactions>
-              <Item />
-            </Reactions>
-          </SettlementRightsSeizeIsland>
-          <ExpeditionAssignShip>
-            <Reactions>
-              <Item>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification>
-                      <Profile>39</Profile>
-                    </CharacterNotification>
-                    <BaseNotification>
-                      <NotificationText>250012</NotificationText>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </ExpeditionAssignShip>
         </MessageTriggers>
       </ParticipantMessages>
       <Object>
         <DefaultParticipant>Campaign_character_10_SA_ticketseller</DefaultParticipant>
-        <Type>GameObject</Type>
-        <Variations />
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <ParticipantMessageObject>
         <ParticipantMessages>182</ParticipantMessages>
       </ParticipantMessageObject>
-      <Interaction>
-        <NewspaperPropaganda />
-        <PaMSyTrade>
-          <ActiveTrade>
-            <TradeAmount>1000</TradeAmount>
-            <TradeAmountFactor>500</TradeAmountFactor>
-            <TradeMessage>ActiveTradeConfirmation</TradeMessage>
-          </ActiveTrade>
-          <PassiveTrade>
-            <TradeAmount>10000</TradeAmount>
-            <TradeAmountFactor>5000</TradeAmountFactor>
-            <TradeMessage>PassiveTradeConfirmation</TradeMessage>
-          </PassiveTrade>
-        </PaMSyTrade>
-        <PaMSyMilitaryStrength />
-        <PaMSyAttractiveness />
-        <PaMSyIslandPollution />
-      </Interaction>
+      <Interaction />
     </Values>
   </Asset>
   <Asset>
@@ -943,8 +509,6 @@
         <GUID>86</GUID>
         <Name>Farmer</Name>
         <IconFilename>data/ui/2kimages/main/profiles/resident_tier01.png</IconFilename>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -955,7 +519,6 @@
           </English>
         </LocaText>
         <LineID>3773</LineID>
-        <Localize>1</Localize>
       </Text>
       <Profile>
         <ProfilePicture>data/ui/2kimages/main/profiles/resident_tier01.png</ProfilePicture>
@@ -966,17 +529,6 @@
         <NotificationBackground>data/ui/2kimages/main/assets/character_bg/bgr_character_01.png</NotificationBackground>
         <DefaultColor>Color8</DefaultColor>
         <CreateModeMeta>AutoCreate_Always</CreateModeMeta>
-        <ProfileType>VirtualParticipant_NeverOwnsGameObjects</ProfileType>
-        <AttackableThroughPirateFlagItem>0</AttackableThroughPirateFlagItem>
-        <CompanyIcon>0</CompanyIcon>
-        <QuestStarterObject>0</QuestStarterObject>
-        <QuestPoolList />
-        <HostileTakeoverEnabled>1</HostileTakeoverEnabled>
-        <BackgroundText>0</BackgroundText>
-        <TakeoverBehaviour>Destroy</TakeoverBehaviour>
-        <ShipDropRewardPool>0</ShipDropRewardPool>
-        <CreateModeSession>Dynamically_MaploadOrSessionEnter</CreateModeSession>
-        <ChooseNPC />
       </Profile>
       <ParticipantMessages>
         <MessageTriggers>
@@ -996,171 +548,15 @@
               </Item>
             </Reactions>
           </ClickResidence>
-          <QuestAborted>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-999474322</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestAborted>
-          <QuestInvitation>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-607220429</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestInvitation>
-          <QuestEscortShipSelected>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>674720140</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestEscortShipSelected>
-          <QuestFailed>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-1928161372</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestFailed>
-          <QuestStarted>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-2052884805</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestStarted>
-          <QuestSuccessful>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>1380477898</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestSuccessful>
-          <SettlementRightsClaimIsland>
-            <Reactions>
-              <Item>
-                <MyRole>ObserverToInitiator</MyRole>
-              </Item>
-            </Reactions>
-          </SettlementRightsClaimIsland>
-          <SettlementRightsSeizeIsland>
-            <Reactions>
-              <Item />
-            </Reactions>
-          </SettlementRightsSeizeIsland>
-          <ExpeditionAssignShip>
-            <Reactions>
-              <Item>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification>
-                      <Profile>39</Profile>
-                    </CharacterNotification>
-                    <BaseNotification>
-                      <NotificationText>250012</NotificationText>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </ExpeditionAssignShip>
         </MessageTriggers>
       </ParticipantMessages>
       <Object>
         <DefaultParticipant>Resident_tier01</DefaultParticipant>
-        <Type>GameObject</Type>
-        <Variations />
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <ParticipantMessageObject>
         <ParticipantMessages>155</ParticipantMessages>
       </ParticipantMessageObject>
-      <Interaction>
-        <NewspaperPropaganda />
-        <PaMSyTrade>
-          <ActiveTrade>
-            <TradeAmount>1000</TradeAmount>
-            <TradeAmountFactor>500</TradeAmountFactor>
-            <TradeMessage>ActiveTradeConfirmation</TradeMessage>
-          </ActiveTrade>
-          <PassiveTrade>
-            <TradeAmount>10000</TradeAmount>
-            <TradeAmountFactor>5000</TradeAmountFactor>
-            <TradeMessage>PassiveTradeConfirmation</TradeMessage>
-          </PassiveTrade>
-        </PaMSyTrade>
-        <PaMSyMilitaryStrength />
-        <PaMSyAttractiveness />
-        <PaMSyIslandPollution />
-      </Interaction>
+      <Interaction />
     </Values>
   </Asset>
   <Asset>
@@ -1170,8 +566,6 @@
         <GUID>30</GUID>
         <Name>Worker</Name>
         <IconFilename>data/ui/2kimages/main/profiles/portrait_icons_0014_resident_tier02.png</IconFilename>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -1182,7 +576,6 @@
           </English>
         </LocaText>
         <LineID>4281</LineID>
-        <Localize>1</Localize>
       </Text>
       <Profile>
         <ProfilePicture>data/ui/2kimages/main/profiles/portrait_icons_0014_resident_tier02.png</ProfilePicture>
@@ -1193,188 +586,51 @@
         <NotificationBackground>data/ui/2kimages/main/assets/character_bg/bgr_character_01.png</NotificationBackground>
         <DefaultColor>Color8</DefaultColor>
         <CreateModeMeta>AutoCreate_Always</CreateModeMeta>
-        <ProfileType>VirtualParticipant_NeverOwnsGameObjects</ProfileType>
-        <AttackableThroughPirateFlagItem>0</AttackableThroughPirateFlagItem>
-        <CompanyIcon>0</CompanyIcon>
-        <QuestStarterObject>0</QuestStarterObject>
-        <QuestPoolList />
-        <HostileTakeoverEnabled>1</HostileTakeoverEnabled>
-        <BackgroundText>0</BackgroundText>
-        <TakeoverBehaviour>Destroy</TakeoverBehaviour>
-        <ShipDropRewardPool>0</ShipDropRewardPool>
-        <CreateModeSession>Dynamically_MaploadOrSessionEnter</CreateModeSession>
-        <ChooseNPC />
       </Profile>
       <ParticipantMessages>
         <MessageTriggers>
           <QuestEscortShipSelected>
             <Reactions>
               <Item>
+                <VectorElement>
+                  <InheritedIndex>0</InheritedIndex>
+                  <InheritanceMapV2>
+                    <Entry>
+                      <TemplateName>Profile_Virtual_Male</TemplateName>
+                      <Index>0</Index>
+                    </Entry>
+                    <Entry>
+                      <TemplateName>Profile_Virtual</TemplateName>
+                      <Index>0</Index>
+                    </Entry>
+                    <Entry>
+                      <TemplateName>Profile_Virtual_NeverOwnsObjects</TemplateName>
+                      <Index>0</Index>
+                    </Entry>
+                  </InheritanceMapV2>
+                </VectorElement>
                 <Notification>
                   <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
                   <Values>
                     <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>674720140</NotificationTextGroup>
-                    </BaseNotification>
+                    <BaseNotification />
                     <NotificationSubtitle>
                       <Subtitle>253920</Subtitle>
                     </NotificationSubtitle>
                   </Values>
-                  <Template>CharacterNotification</Template>
                 </Notification>
-                <MyRole>Initiator</MyRole>
               </Item>
             </Reactions>
           </QuestEscortShipSelected>
-          <QuestAborted>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-999474322</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestAborted>
-          <QuestInvitation>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-607220429</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestInvitation>
-          <QuestFailed>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-1928161372</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestFailed>
-          <QuestStarted>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-2052884805</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestStarted>
-          <QuestSuccessful>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>1380477898</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestSuccessful>
-          <SettlementRightsClaimIsland>
-            <Reactions>
-              <Item>
-                <MyRole>ObserverToInitiator</MyRole>
-              </Item>
-            </Reactions>
-          </SettlementRightsClaimIsland>
-          <SettlementRightsSeizeIsland>
-            <Reactions>
-              <Item />
-            </Reactions>
-          </SettlementRightsSeizeIsland>
-          <ExpeditionAssignShip>
-            <Reactions>
-              <Item>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification>
-                      <Profile>39</Profile>
-                    </CharacterNotification>
-                    <BaseNotification>
-                      <NotificationText>250012</NotificationText>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </ExpeditionAssignShip>
         </MessageTriggers>
       </ParticipantMessages>
       <Object>
         <DefaultParticipant>Resident_tier02</DefaultParticipant>
-        <Type>GameObject</Type>
-        <Variations />
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <ParticipantMessageObject>
         <ParticipantMessages>156</ParticipantMessages>
       </ParticipantMessageObject>
-      <Interaction>
-        <NewspaperPropaganda />
-        <PaMSyTrade>
-          <ActiveTrade>
-            <TradeAmount>1000</TradeAmount>
-            <TradeAmountFactor>500</TradeAmountFactor>
-            <TradeMessage>ActiveTradeConfirmation</TradeMessage>
-          </ActiveTrade>
-          <PassiveTrade>
-            <TradeAmount>10000</TradeAmount>
-            <TradeAmountFactor>5000</TradeAmountFactor>
-            <TradeMessage>PassiveTradeConfirmation</TradeMessage>
-          </PassiveTrade>
-        </PaMSyTrade>
-        <PaMSyMilitaryStrength />
-        <PaMSyAttractiveness />
-        <PaMSyIslandPollution />
-      </Interaction>
+      <Interaction />
     </Values>
   </Asset>
   <Asset>
@@ -1384,8 +640,6 @@
         <GUID>87</GUID>
         <Name>Artisan</Name>
         <IconFilename>data/ui/2kimages/main/profiles/resident_tier03.png</IconFilename>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -1396,7 +650,6 @@
           </English>
         </LocaText>
         <LineID>3774</LineID>
-        <Localize>1</Localize>
       </Text>
       <Profile>
         <ProfilePicture>data/ui/2kimages/main/profiles/resident_tier03.png</ProfilePicture>
@@ -1407,185 +660,17 @@
         <NotificationBackground>data/ui/2kimages/main/assets/character_bg/bgr_character_01.png</NotificationBackground>
         <DefaultColor>Color8</DefaultColor>
         <CreateModeMeta>AutoCreate_Always</CreateModeMeta>
-        <ProfileType>VirtualParticipant_NeverOwnsGameObjects</ProfileType>
-        <AttackableThroughPirateFlagItem>0</AttackableThroughPirateFlagItem>
-        <CompanyIcon>0</CompanyIcon>
-        <QuestStarterObject>0</QuestStarterObject>
-        <QuestPoolList />
-        <HostileTakeoverEnabled>1</HostileTakeoverEnabled>
-        <BackgroundText>0</BackgroundText>
-        <TakeoverBehaviour>Destroy</TakeoverBehaviour>
-        <ShipDropRewardPool>0</ShipDropRewardPool>
-        <CreateModeSession>Dynamically_MaploadOrSessionEnter</CreateModeSession>
-        <ChooseNPC />
       </Profile>
       <ParticipantMessages>
-        <MessageTriggers>
-          <QuestAborted>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-999474322</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestAborted>
-          <QuestInvitation>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-607220429</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestInvitation>
-          <QuestEscortShipSelected>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>674720140</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestEscortShipSelected>
-          <QuestFailed>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-1928161372</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestFailed>
-          <QuestStarted>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-2052884805</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestStarted>
-          <QuestSuccessful>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>1380477898</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestSuccessful>
-          <SettlementRightsClaimIsland>
-            <Reactions>
-              <Item>
-                <MyRole>ObserverToInitiator</MyRole>
-              </Item>
-            </Reactions>
-          </SettlementRightsClaimIsland>
-          <SettlementRightsSeizeIsland>
-            <Reactions>
-              <Item />
-            </Reactions>
-          </SettlementRightsSeizeIsland>
-          <ExpeditionAssignShip>
-            <Reactions>
-              <Item>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification>
-                      <Profile>39</Profile>
-                    </CharacterNotification>
-                    <BaseNotification>
-                      <NotificationText>250012</NotificationText>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </ExpeditionAssignShip>
-        </MessageTriggers>
+        <MessageTriggers />
       </ParticipantMessages>
       <Object>
         <DefaultParticipant>Resident_tier03</DefaultParticipant>
-        <Type>GameObject</Type>
-        <Variations />
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <ParticipantMessageObject>
         <ParticipantMessages>157</ParticipantMessages>
       </ParticipantMessageObject>
-      <Interaction>
-        <NewspaperPropaganda />
-        <PaMSyTrade>
-          <ActiveTrade>
-            <TradeAmount>1000</TradeAmount>
-            <TradeAmountFactor>500</TradeAmountFactor>
-            <TradeMessage>ActiveTradeConfirmation</TradeMessage>
-          </ActiveTrade>
-          <PassiveTrade>
-            <TradeAmount>10000</TradeAmount>
-            <TradeAmountFactor>5000</TradeAmountFactor>
-            <TradeMessage>PassiveTradeConfirmation</TradeMessage>
-          </PassiveTrade>
-        </PaMSyTrade>
-        <PaMSyMilitaryStrength />
-        <PaMSyAttractiveness />
-        <PaMSyIslandPollution />
-      </Interaction>
+      <Interaction />
     </Values>
   </Asset>
   <Asset>
@@ -1595,8 +680,6 @@
         <GUID>88</GUID>
         <Name>Engineer</Name>
         <IconFilename>data/ui/2kimages/main/profiles/resident_tier04.png</IconFilename>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -1607,7 +690,6 @@
           </English>
         </LocaText>
         <LineID>3775</LineID>
-        <Localize>1</Localize>
       </Text>
       <Profile>
         <ProfilePicture>data/ui/2kimages/main/profiles/resident_tier04.png</ProfilePicture>
@@ -1618,185 +700,15 @@
         <NotificationBackground>data/ui/2kimages/main/assets/character_bg/bgr_character_01.png</NotificationBackground>
         <DefaultColor>Color8</DefaultColor>
         <CreateModeMeta>AutoCreate_Always</CreateModeMeta>
-        <ProfileType>VirtualParticipant_NeverOwnsGameObjects</ProfileType>
-        <AttackableThroughPirateFlagItem>0</AttackableThroughPirateFlagItem>
-        <CompanyIcon>0</CompanyIcon>
-        <QuestStarterObject>0</QuestStarterObject>
-        <QuestPoolList />
-        <HostileTakeoverEnabled>1</HostileTakeoverEnabled>
-        <BackgroundText>0</BackgroundText>
-        <TakeoverBehaviour>Destroy</TakeoverBehaviour>
-        <ShipDropRewardPool>0</ShipDropRewardPool>
-        <CreateModeSession>Dynamically_MaploadOrSessionEnter</CreateModeSession>
-        <ChooseNPC />
       </Profile>
-      <ParticipantMessages>
-        <MessageTriggers>
-          <QuestAborted>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-999474322</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestAborted>
-          <QuestInvitation>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-607220429</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestInvitation>
-          <QuestEscortShipSelected>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>674720140</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestEscortShipSelected>
-          <QuestFailed>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-1928161372</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestFailed>
-          <QuestStarted>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-2052884805</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestStarted>
-          <QuestSuccessful>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>1380477898</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestSuccessful>
-          <SettlementRightsClaimIsland>
-            <Reactions>
-              <Item>
-                <MyRole>ObserverToInitiator</MyRole>
-              </Item>
-            </Reactions>
-          </SettlementRightsClaimIsland>
-          <SettlementRightsSeizeIsland>
-            <Reactions>
-              <Item />
-            </Reactions>
-          </SettlementRightsSeizeIsland>
-          <ExpeditionAssignShip>
-            <Reactions>
-              <Item>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification>
-                      <Profile>39</Profile>
-                    </CharacterNotification>
-                    <BaseNotification>
-                      <NotificationText>250012</NotificationText>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </ExpeditionAssignShip>
-        </MessageTriggers>
-      </ParticipantMessages>
+      <ParticipantMessages />
       <Object>
         <DefaultParticipant>Resident_tier04</DefaultParticipant>
-        <Type>GameObject</Type>
-        <Variations />
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <ParticipantMessageObject>
         <ParticipantMessages>158</ParticipantMessages>
       </ParticipantMessageObject>
-      <Interaction>
-        <NewspaperPropaganda />
-        <PaMSyTrade>
-          <ActiveTrade>
-            <TradeAmount>1000</TradeAmount>
-            <TradeAmountFactor>500</TradeAmountFactor>
-            <TradeMessage>ActiveTradeConfirmation</TradeMessage>
-          </ActiveTrade>
-          <PassiveTrade>
-            <TradeAmount>10000</TradeAmount>
-            <TradeAmountFactor>5000</TradeAmountFactor>
-            <TradeMessage>PassiveTradeConfirmation</TradeMessage>
-          </PassiveTrade>
-        </PaMSyTrade>
-        <PaMSyMilitaryStrength />
-        <PaMSyAttractiveness />
-        <PaMSyIslandPollution />
-      </Interaction>
+      <Interaction />
     </Values>
   </Asset>
   <Asset>
@@ -1807,8 +719,6 @@
         <Name>Investor</Name>
         <IconFilename>data/ui/2kimages/main/profiles/resident_tier05.png</IconFilename>
         <ID>InvestorProfile</ID>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -1819,7 +729,6 @@
           </English>
         </LocaText>
         <LineID>3776</LineID>
-        <Localize>1</Localize>
       </Text>
       <Profile>
         <ProfilePicture>data/ui/2kimages/main/profiles/resident_tier05.png</ProfilePicture>
@@ -1830,185 +739,17 @@
         <NotificationBackground>data/ui/2kimages/main/assets/character_bg/bgr_character_01.png</NotificationBackground>
         <DefaultColor>Color8</DefaultColor>
         <CreateModeMeta>AutoCreate_Always</CreateModeMeta>
-        <ProfileType>VirtualParticipant_NeverOwnsGameObjects</ProfileType>
-        <AttackableThroughPirateFlagItem>0</AttackableThroughPirateFlagItem>
-        <CompanyIcon>0</CompanyIcon>
-        <QuestStarterObject>0</QuestStarterObject>
-        <QuestPoolList />
-        <HostileTakeoverEnabled>1</HostileTakeoverEnabled>
-        <BackgroundText>0</BackgroundText>
-        <TakeoverBehaviour>Destroy</TakeoverBehaviour>
-        <ShipDropRewardPool>0</ShipDropRewardPool>
-        <CreateModeSession>Dynamically_MaploadOrSessionEnter</CreateModeSession>
-        <ChooseNPC />
       </Profile>
       <ParticipantMessages>
-        <MessageTriggers>
-          <QuestAborted>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-999474322</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestAborted>
-          <QuestInvitation>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-607220429</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestInvitation>
-          <QuestEscortShipSelected>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>674720140</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestEscortShipSelected>
-          <QuestFailed>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-1928161372</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestFailed>
-          <QuestStarted>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-2052884805</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestStarted>
-          <QuestSuccessful>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>1380477898</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestSuccessful>
-          <SettlementRightsClaimIsland>
-            <Reactions>
-              <Item>
-                <MyRole>ObserverToInitiator</MyRole>
-              </Item>
-            </Reactions>
-          </SettlementRightsClaimIsland>
-          <SettlementRightsSeizeIsland>
-            <Reactions>
-              <Item />
-            </Reactions>
-          </SettlementRightsSeizeIsland>
-          <ExpeditionAssignShip>
-            <Reactions>
-              <Item>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification>
-                      <Profile>39</Profile>
-                    </CharacterNotification>
-                    <BaseNotification>
-                      <NotificationText>250012</NotificationText>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </ExpeditionAssignShip>
-        </MessageTriggers>
+        <MessageTriggers />
       </ParticipantMessages>
       <Object>
         <DefaultParticipant>Resident_tier05</DefaultParticipant>
-        <Type>GameObject</Type>
-        <Variations />
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <ParticipantMessageObject>
         <ParticipantMessages>159</ParticipantMessages>
       </ParticipantMessageObject>
-      <Interaction>
-        <NewspaperPropaganda />
-        <PaMSyTrade>
-          <ActiveTrade>
-            <TradeAmount>1000</TradeAmount>
-            <TradeAmountFactor>500</TradeAmountFactor>
-            <TradeMessage>ActiveTradeConfirmation</TradeMessage>
-          </ActiveTrade>
-          <PassiveTrade>
-            <TradeAmount>10000</TradeAmount>
-            <TradeAmountFactor>5000</TradeAmountFactor>
-            <TradeMessage>PassiveTradeConfirmation</TradeMessage>
-          </PassiveTrade>
-        </PaMSyTrade>
-        <PaMSyMilitaryStrength />
-        <PaMSyAttractiveness />
-        <PaMSyIslandPollution />
-      </Interaction>
+      <Interaction />
     </Values>
   </Asset>
   <Asset>
@@ -2019,8 +760,6 @@
         <Name>Captain</Name>
         <IconFilename>data/ui/2kimages/main/profiles/captain.png</IconFilename>
         <ID>ExpeditionCaptain</ID>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -2031,7 +770,6 @@
           </English>
         </LocaText>
         <LineID>3777</LineID>
-        <Localize>1</Localize>
       </Text>
       <Profile>
         <ProfilePicture>data/ui/2kimages/main/profiles/captain.png</ProfilePicture>
@@ -2043,184 +781,15 @@
         <NotificationBackground>data/ui/2kimages/main/assets/character_bg/bgr_character_07.png</NotificationBackground>
         <DefaultColor>Color8</DefaultColor>
         <CreateModeMeta>AutoCreate_Always</CreateModeMeta>
-        <ProfileType>VirtualParticipant_NeverOwnsGameObjects</ProfileType>
-        <AttackableThroughPirateFlagItem>0</AttackableThroughPirateFlagItem>
-        <QuestStarterObject>0</QuestStarterObject>
-        <QuestPoolList />
-        <HostileTakeoverEnabled>1</HostileTakeoverEnabled>
-        <BackgroundText>0</BackgroundText>
-        <TakeoverBehaviour>Destroy</TakeoverBehaviour>
-        <ShipDropRewardPool>0</ShipDropRewardPool>
-        <CreateModeSession>Dynamically_MaploadOrSessionEnter</CreateModeSession>
-        <ChooseNPC />
       </Profile>
-      <ParticipantMessages>
-        <MessageTriggers>
-          <QuestAborted>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-999474322</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestAborted>
-          <QuestInvitation>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-607220429</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestInvitation>
-          <QuestEscortShipSelected>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>674720140</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestEscortShipSelected>
-          <QuestFailed>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-1928161372</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestFailed>
-          <QuestStarted>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-2052884805</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestStarted>
-          <QuestSuccessful>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>1380477898</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestSuccessful>
-          <SettlementRightsClaimIsland>
-            <Reactions>
-              <Item>
-                <MyRole>ObserverToInitiator</MyRole>
-              </Item>
-            </Reactions>
-          </SettlementRightsClaimIsland>
-          <SettlementRightsSeizeIsland>
-            <Reactions>
-              <Item />
-            </Reactions>
-          </SettlementRightsSeizeIsland>
-          <ExpeditionAssignShip>
-            <Reactions>
-              <Item>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification>
-                      <Profile>39</Profile>
-                    </CharacterNotification>
-                    <BaseNotification>
-                      <NotificationText>250012</NotificationText>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </ExpeditionAssignShip>
-        </MessageTriggers>
-      </ParticipantMessages>
+      <ParticipantMessages />
       <Object>
         <DefaultParticipant>Captain</DefaultParticipant>
-        <Type>GameObject</Type>
-        <Variations />
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <ParticipantMessageObject>
         <ParticipantMessages>160</ParticipantMessages>
       </ParticipantMessageObject>
-      <Interaction>
-        <NewspaperPropaganda />
-        <PaMSyTrade>
-          <ActiveTrade>
-            <TradeAmount>1000</TradeAmount>
-            <TradeAmountFactor>500</TradeAmountFactor>
-            <TradeMessage>ActiveTradeConfirmation</TradeMessage>
-          </ActiveTrade>
-          <PassiveTrade>
-            <TradeAmount>10000</TradeAmount>
-            <TradeAmountFactor>5000</TradeAmountFactor>
-            <TradeMessage>PassiveTradeConfirmation</TradeMessage>
-          </PassiveTrade>
-        </PaMSyTrade>
-        <PaMSyMilitaryStrength />
-        <PaMSyAttractiveness />
-        <PaMSyIslandPollution />
-      </Interaction>
+      <Interaction />
     </Values>
   </Asset>
   <Asset>
@@ -2230,8 +799,6 @@
         <GUID>90</GUID>
         <Name>Visitor</Name>
         <IconFilename>data/ui/2kimages/main/profiles/vistor.png</IconFilename>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -2242,7 +809,6 @@
           </English>
         </LocaText>
         <LineID>3778</LineID>
-        <Localize>1</Localize>
       </Text>
       <Profile>
         <ProfilePicture>data/ui/2kimages/main/profiles/vistor.png</ProfilePicture>
@@ -2253,17 +819,6 @@
         <NotificationBackground>data/ui/2kimages/main/assets/character_bg/bgr_character_03.png</NotificationBackground>
         <DefaultColor>Color8</DefaultColor>
         <CreateModeMeta>AutoCreate_Always</CreateModeMeta>
-        <ProfileType>VirtualParticipant_NeverOwnsGameObjects</ProfileType>
-        <AttackableThroughPirateFlagItem>0</AttackableThroughPirateFlagItem>
-        <CompanyIcon>0</CompanyIcon>
-        <QuestStarterObject>0</QuestStarterObject>
-        <QuestPoolList />
-        <HostileTakeoverEnabled>1</HostileTakeoverEnabled>
-        <BackgroundText>0</BackgroundText>
-        <TakeoverBehaviour>Destroy</TakeoverBehaviour>
-        <ShipDropRewardPool>0</ShipDropRewardPool>
-        <CreateModeSession>Dynamically_MaploadOrSessionEnter</CreateModeSession>
-        <ChooseNPC />
       </Profile>
       <ParticipantMessages>
         <MessageTriggers>
@@ -2284,171 +839,15 @@
               </Item>
             </Reactions>
           </MenuRoadMissing>
-          <QuestAborted>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-999474322</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestAborted>
-          <QuestInvitation>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-607220429</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestInvitation>
-          <QuestEscortShipSelected>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>674720140</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestEscortShipSelected>
-          <QuestFailed>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-1928161372</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestFailed>
-          <QuestStarted>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-2052884805</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestStarted>
-          <QuestSuccessful>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>1380477898</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestSuccessful>
-          <SettlementRightsClaimIsland>
-            <Reactions>
-              <Item>
-                <MyRole>ObserverToInitiator</MyRole>
-              </Item>
-            </Reactions>
-          </SettlementRightsClaimIsland>
-          <SettlementRightsSeizeIsland>
-            <Reactions>
-              <Item />
-            </Reactions>
-          </SettlementRightsSeizeIsland>
-          <ExpeditionAssignShip>
-            <Reactions>
-              <Item>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification>
-                      <Profile>39</Profile>
-                    </CharacterNotification>
-                    <BaseNotification>
-                      <NotificationText>250012</NotificationText>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </ExpeditionAssignShip>
         </MessageTriggers>
       </ParticipantMessages>
       <Object>
         <DefaultParticipant>Visitor</DefaultParticipant>
-        <Type>GameObject</Type>
-        <Variations />
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <ParticipantMessageObject>
         <ParticipantMessages>161</ParticipantMessages>
       </ParticipantMessageObject>
-      <Interaction>
-        <NewspaperPropaganda />
-        <PaMSyTrade>
-          <ActiveTrade>
-            <TradeAmount>1000</TradeAmount>
-            <TradeAmountFactor>500</TradeAmountFactor>
-            <TradeMessage>ActiveTradeConfirmation</TradeMessage>
-          </ActiveTrade>
-          <PassiveTrade>
-            <TradeAmount>10000</TradeAmount>
-            <TradeAmountFactor>5000</TradeAmountFactor>
-            <TradeMessage>PassiveTradeConfirmation</TradeMessage>
-          </PassiveTrade>
-        </PaMSyTrade>
-        <PaMSyMilitaryStrength />
-        <PaMSyAttractiveness />
-        <PaMSyIslandPollution />
-      </Interaction>
+      <Interaction />
     </Values>
   </Asset>
   <Asset>
@@ -2458,8 +857,6 @@
         <GUID>91</GUID>
         <Name>Editor (Reporter)</Name>
         <IconFilename>data/ui/2kimages/main/profiles/editor.png</IconFilename>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -2470,7 +867,6 @@
           </English>
         </LocaText>
         <LineID>3779</LineID>
-        <Localize>1</Localize>
       </Text>
       <Profile>
         <ProfilePicture>data/ui/2kimages/main/profiles/editor.png</ProfilePicture>
@@ -2482,16 +878,6 @@
         <NotificationBackground>data/ui/2kimages/main/assets/character_bg/bgr_character_01.png</NotificationBackground>
         <DefaultColor>Color11</DefaultColor>
         <CreateModeMeta>AutoCreate_Always</CreateModeMeta>
-        <ProfileType>VirtualParticipant_NeverOwnsGameObjects</ProfileType>
-        <AttackableThroughPirateFlagItem>0</AttackableThroughPirateFlagItem>
-        <QuestStarterObject>0</QuestStarterObject>
-        <QuestPoolList />
-        <HostileTakeoverEnabled>1</HostileTakeoverEnabled>
-        <BackgroundText>0</BackgroundText>
-        <TakeoverBehaviour>Destroy</TakeoverBehaviour>
-        <ShipDropRewardPool>0</ShipDropRewardPool>
-        <CreateModeSession>Dynamically_MaploadOrSessionEnter</CreateModeSession>
-        <ChooseNPC />
       </Profile>
       <ParticipantMessages>
         <MessageTriggers>
@@ -2647,149 +1033,10 @@
               </Item>
             </Reactions>
           </MenuIdleMessage>
-          <QuestAborted>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-999474322</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestAborted>
-          <QuestInvitation>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-607220429</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestInvitation>
-          <QuestEscortShipSelected>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>674720140</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestEscortShipSelected>
-          <QuestFailed>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-1928161372</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestFailed>
-          <QuestStarted>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-2052884805</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestStarted>
-          <QuestSuccessful>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>1380477898</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestSuccessful>
-          <SettlementRightsClaimIsland>
-            <Reactions>
-              <Item>
-                <MyRole>ObserverToInitiator</MyRole>
-              </Item>
-            </Reactions>
-          </SettlementRightsClaimIsland>
-          <SettlementRightsSeizeIsland>
-            <Reactions>
-              <Item />
-            </Reactions>
-          </SettlementRightsSeizeIsland>
-          <ExpeditionAssignShip>
-            <Reactions>
-              <Item>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification>
-                      <Profile>39</Profile>
-                    </CharacterNotification>
-                    <BaseNotification>
-                      <NotificationText>250012</NotificationText>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </ExpeditionAssignShip>
         </MessageTriggers>
       </ParticipantMessages>
       <Object>
         <DefaultParticipant>Editor</DefaultParticipant>
-        <Type>GameObject</Type>
-        <Variations />
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <ParticipantMessageObject>
         <ParticipantMessages>162</ParticipantMessages>
@@ -2872,21 +1119,6 @@
             <RasieChance3Articles>1</RasieChance3Articles>
           </WarPreparation>
         </NewspaperPropaganda>
-        <PaMSyTrade>
-          <ActiveTrade>
-            <TradeAmount>1000</TradeAmount>
-            <TradeAmountFactor>500</TradeAmountFactor>
-            <TradeMessage>ActiveTradeConfirmation</TradeMessage>
-          </ActiveTrade>
-          <PassiveTrade>
-            <TradeAmount>10000</TradeAmount>
-            <TradeAmountFactor>5000</TradeAmountFactor>
-            <TradeMessage>PassiveTradeConfirmation</TradeMessage>
-          </PassiveTrade>
-        </PaMSyTrade>
-        <PaMSyMilitaryStrength />
-        <PaMSyAttractiveness />
-        <PaMSyIslandPollution />
       </Interaction>
     </Values>
   </Asset>
@@ -2897,8 +1129,6 @@
         <GUID>186</GUID>
         <Name>Jornalero</Name>
         <IconFilename>data/ui/2kimages/main/profiles/resident_colony_tier01.png</IconFilename>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -2909,7 +1139,6 @@
           </English>
         </LocaText>
         <LineID>29253</LineID>
-        <Localize>1</Localize>
       </Text>
       <Profile>
         <ProfilePicture>data/ui/2kimages/main/profiles/resident_colony_tier01.png</ProfilePicture>
@@ -2920,185 +1149,15 @@
         <NotificationBackground>data/ui/2kimages/main/assets/character_bg/bgr_character_01.png</NotificationBackground>
         <DefaultColor>Color8</DefaultColor>
         <CreateModeMeta>AutoCreate_Always</CreateModeMeta>
-        <ProfileType>VirtualParticipant_NeverOwnsGameObjects</ProfileType>
-        <AttackableThroughPirateFlagItem>0</AttackableThroughPirateFlagItem>
-        <CompanyIcon>0</CompanyIcon>
-        <QuestStarterObject>0</QuestStarterObject>
-        <QuestPoolList />
-        <HostileTakeoverEnabled>1</HostileTakeoverEnabled>
-        <BackgroundText>0</BackgroundText>
-        <TakeoverBehaviour>Destroy</TakeoverBehaviour>
-        <ShipDropRewardPool>0</ShipDropRewardPool>
-        <CreateModeSession>Dynamically_MaploadOrSessionEnter</CreateModeSession>
-        <ChooseNPC />
       </Profile>
-      <ParticipantMessages>
-        <MessageTriggers>
-          <QuestAborted>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-999474322</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestAborted>
-          <QuestInvitation>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-607220429</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestInvitation>
-          <QuestEscortShipSelected>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>674720140</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestEscortShipSelected>
-          <QuestFailed>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-1928161372</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestFailed>
-          <QuestStarted>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-2052884805</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestStarted>
-          <QuestSuccessful>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>1380477898</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestSuccessful>
-          <SettlementRightsClaimIsland>
-            <Reactions>
-              <Item>
-                <MyRole>ObserverToInitiator</MyRole>
-              </Item>
-            </Reactions>
-          </SettlementRightsClaimIsland>
-          <SettlementRightsSeizeIsland>
-            <Reactions>
-              <Item />
-            </Reactions>
-          </SettlementRightsSeizeIsland>
-          <ExpeditionAssignShip>
-            <Reactions>
-              <Item>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification>
-                      <Profile>39</Profile>
-                    </CharacterNotification>
-                    <BaseNotification>
-                      <NotificationText>250012</NotificationText>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </ExpeditionAssignShip>
-        </MessageTriggers>
-      </ParticipantMessages>
+      <ParticipantMessages />
       <Object>
         <DefaultParticipant>SA_Resident_tier01</DefaultParticipant>
-        <Type>GameObject</Type>
-        <Variations />
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <ParticipantMessageObject>
         <ParticipantMessages>188</ParticipantMessages>
       </ParticipantMessageObject>
-      <Interaction>
-        <NewspaperPropaganda />
-        <PaMSyTrade>
-          <ActiveTrade>
-            <TradeAmount>1000</TradeAmount>
-            <TradeAmountFactor>500</TradeAmountFactor>
-            <TradeMessage>ActiveTradeConfirmation</TradeMessage>
-          </ActiveTrade>
-          <PassiveTrade>
-            <TradeAmount>10000</TradeAmount>
-            <TradeAmountFactor>5000</TradeAmountFactor>
-            <TradeMessage>PassiveTradeConfirmation</TradeMessage>
-          </PassiveTrade>
-        </PaMSyTrade>
-        <PaMSyMilitaryStrength />
-        <PaMSyAttractiveness />
-        <PaMSyIslandPollution />
-      </Interaction>
+      <Interaction />
     </Values>
   </Asset>
   <Asset>
@@ -3108,8 +1167,6 @@
         <GUID>187</GUID>
         <Name>Obrero</Name>
         <IconFilename>data/ui/2kimages/main/profiles/resident_colony_tier02.png</IconFilename>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -3120,7 +1177,6 @@
           </English>
         </LocaText>
         <LineID>29254</LineID>
-        <Localize>1</Localize>
       </Text>
       <Profile>
         <ProfilePicture>data/ui/2kimages/main/profiles/resident_colony_tier02.png</ProfilePicture>
@@ -3131,185 +1187,15 @@
         <NotificationBackground>data/ui/2kimages/main/assets/character_bg/bgr_character_01.png</NotificationBackground>
         <DefaultColor>Color8</DefaultColor>
         <CreateModeMeta>AutoCreate_Always</CreateModeMeta>
-        <ProfileType>VirtualParticipant_NeverOwnsGameObjects</ProfileType>
-        <AttackableThroughPirateFlagItem>0</AttackableThroughPirateFlagItem>
-        <CompanyIcon>0</CompanyIcon>
-        <QuestStarterObject>0</QuestStarterObject>
-        <QuestPoolList />
-        <HostileTakeoverEnabled>1</HostileTakeoverEnabled>
-        <BackgroundText>0</BackgroundText>
-        <TakeoverBehaviour>Destroy</TakeoverBehaviour>
-        <ShipDropRewardPool>0</ShipDropRewardPool>
-        <CreateModeSession>Dynamically_MaploadOrSessionEnter</CreateModeSession>
-        <ChooseNPC />
       </Profile>
-      <ParticipantMessages>
-        <MessageTriggers>
-          <QuestAborted>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-999474322</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestAborted>
-          <QuestInvitation>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-607220429</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestInvitation>
-          <QuestEscortShipSelected>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>674720140</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestEscortShipSelected>
-          <QuestFailed>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-1928161372</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestFailed>
-          <QuestStarted>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-2052884805</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestStarted>
-          <QuestSuccessful>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>1380477898</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestSuccessful>
-          <SettlementRightsClaimIsland>
-            <Reactions>
-              <Item>
-                <MyRole>ObserverToInitiator</MyRole>
-              </Item>
-            </Reactions>
-          </SettlementRightsClaimIsland>
-          <SettlementRightsSeizeIsland>
-            <Reactions>
-              <Item />
-            </Reactions>
-          </SettlementRightsSeizeIsland>
-          <ExpeditionAssignShip>
-            <Reactions>
-              <Item>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification>
-                      <Profile>39</Profile>
-                    </CharacterNotification>
-                    <BaseNotification>
-                      <NotificationText>250012</NotificationText>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </ExpeditionAssignShip>
-        </MessageTriggers>
-      </ParticipantMessages>
+      <ParticipantMessages />
       <Object>
         <DefaultParticipant>SA_Resident_tier02</DefaultParticipant>
-        <Type>GameObject</Type>
-        <Variations />
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <ParticipantMessageObject>
         <ParticipantMessages>189</ParticipantMessages>
       </ParticipantMessageObject>
-      <Interaction>
-        <NewspaperPropaganda />
-        <PaMSyTrade>
-          <ActiveTrade>
-            <TradeAmount>1000</TradeAmount>
-            <TradeAmountFactor>500</TradeAmountFactor>
-            <TradeMessage>ActiveTradeConfirmation</TradeMessage>
-          </ActiveTrade>
-          <PassiveTrade>
-            <TradeAmount>10000</TradeAmount>
-            <TradeAmountFactor>5000</TradeAmountFactor>
-            <TradeMessage>PassiveTradeConfirmation</TradeMessage>
-          </PassiveTrade>
-        </PaMSyTrade>
-        <PaMSyMilitaryStrength />
-        <PaMSyAttractiveness />
-        <PaMSyIslandPollution />
-      </Interaction>
+      <Interaction />
     </Values>
   </Asset>
   <Asset>
@@ -3319,8 +1205,6 @@
         <GUID>190</GUID>
         <Name>Jornalero_atWork</Name>
         <IconFilename>data/ui/2kimages/main/profiles/resident_colony_tier01_work.png</IconFilename>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -3331,7 +1215,6 @@
           </English>
         </LocaText>
         <LineID>29255</LineID>
-        <Localize>1</Localize>
       </Text>
       <Profile>
         <ProfilePicture>data/ui/2kimages/main/profiles/resident_colony_tier01_work.png</ProfilePicture>
@@ -3342,185 +1225,15 @@
         <NotificationBackground>data/ui/2kimages/main/assets/character_bg/bgr_character_01.png</NotificationBackground>
         <DefaultColor>Color8</DefaultColor>
         <CreateModeMeta>AutoCreate_Always</CreateModeMeta>
-        <ProfileType>VirtualParticipant_NeverOwnsGameObjects</ProfileType>
-        <AttackableThroughPirateFlagItem>0</AttackableThroughPirateFlagItem>
-        <CompanyIcon>0</CompanyIcon>
-        <QuestStarterObject>0</QuestStarterObject>
-        <QuestPoolList />
-        <HostileTakeoverEnabled>1</HostileTakeoverEnabled>
-        <BackgroundText>0</BackgroundText>
-        <TakeoverBehaviour>Destroy</TakeoverBehaviour>
-        <ShipDropRewardPool>0</ShipDropRewardPool>
-        <CreateModeSession>Dynamically_MaploadOrSessionEnter</CreateModeSession>
-        <ChooseNPC />
       </Profile>
-      <ParticipantMessages>
-        <MessageTriggers>
-          <QuestAborted>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-999474322</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestAborted>
-          <QuestInvitation>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-607220429</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestInvitation>
-          <QuestEscortShipSelected>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>674720140</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestEscortShipSelected>
-          <QuestFailed>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-1928161372</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestFailed>
-          <QuestStarted>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-2052884805</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestStarted>
-          <QuestSuccessful>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>1380477898</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestSuccessful>
-          <SettlementRightsClaimIsland>
-            <Reactions>
-              <Item>
-                <MyRole>ObserverToInitiator</MyRole>
-              </Item>
-            </Reactions>
-          </SettlementRightsClaimIsland>
-          <SettlementRightsSeizeIsland>
-            <Reactions>
-              <Item />
-            </Reactions>
-          </SettlementRightsSeizeIsland>
-          <ExpeditionAssignShip>
-            <Reactions>
-              <Item>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification>
-                      <Profile>39</Profile>
-                    </CharacterNotification>
-                    <BaseNotification>
-                      <NotificationText>250012</NotificationText>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </ExpeditionAssignShip>
-        </MessageTriggers>
-      </ParticipantMessages>
+      <ParticipantMessages />
       <Object>
         <DefaultParticipant>SA_Resident_tier01_atWork</DefaultParticipant>
-        <Type>GameObject</Type>
-        <Variations />
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <ParticipantMessageObject>
         <ParticipantMessages>188</ParticipantMessages>
       </ParticipantMessageObject>
-      <Interaction>
-        <NewspaperPropaganda />
-        <PaMSyTrade>
-          <ActiveTrade>
-            <TradeAmount>1000</TradeAmount>
-            <TradeAmountFactor>500</TradeAmountFactor>
-            <TradeMessage>ActiveTradeConfirmation</TradeMessage>
-          </ActiveTrade>
-          <PassiveTrade>
-            <TradeAmount>10000</TradeAmount>
-            <TradeAmountFactor>5000</TradeAmountFactor>
-            <TradeMessage>PassiveTradeConfirmation</TradeMessage>
-          </PassiveTrade>
-        </PaMSyTrade>
-        <PaMSyMilitaryStrength />
-        <PaMSyAttractiveness />
-        <PaMSyIslandPollution />
-      </Interaction>
+      <Interaction />
     </Values>
   </Asset>
   <Asset>
@@ -3530,8 +1243,6 @@
         <GUID>191</GUID>
         <Name>Obrero_atWork</Name>
         <IconFilename>data/ui/2kimages/main/profiles/resident_colony_tier02_work.png</IconFilename>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -3542,7 +1253,6 @@
           </English>
         </LocaText>
         <LineID>29256</LineID>
-        <Localize>1</Localize>
       </Text>
       <Profile>
         <ProfilePicture>data/ui/2kimages/main/profiles/resident_colony_tier02_work.png</ProfilePicture>
@@ -3553,185 +1263,15 @@
         <NotificationBackground>data/ui/2kimages/main/assets/character_bg/bgr_character_01.png</NotificationBackground>
         <DefaultColor>Color8</DefaultColor>
         <CreateModeMeta>AutoCreate_Always</CreateModeMeta>
-        <ProfileType>VirtualParticipant_NeverOwnsGameObjects</ProfileType>
-        <AttackableThroughPirateFlagItem>0</AttackableThroughPirateFlagItem>
-        <CompanyIcon>0</CompanyIcon>
-        <QuestStarterObject>0</QuestStarterObject>
-        <QuestPoolList />
-        <HostileTakeoverEnabled>1</HostileTakeoverEnabled>
-        <BackgroundText>0</BackgroundText>
-        <TakeoverBehaviour>Destroy</TakeoverBehaviour>
-        <ShipDropRewardPool>0</ShipDropRewardPool>
-        <CreateModeSession>Dynamically_MaploadOrSessionEnter</CreateModeSession>
-        <ChooseNPC />
       </Profile>
-      <ParticipantMessages>
-        <MessageTriggers>
-          <QuestAborted>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-999474322</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestAborted>
-          <QuestInvitation>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-607220429</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestInvitation>
-          <QuestEscortShipSelected>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>674720140</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestEscortShipSelected>
-          <QuestFailed>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-1928161372</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestFailed>
-          <QuestStarted>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-2052884805</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestStarted>
-          <QuestSuccessful>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>1380477898</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestSuccessful>
-          <SettlementRightsClaimIsland>
-            <Reactions>
-              <Item>
-                <MyRole>ObserverToInitiator</MyRole>
-              </Item>
-            </Reactions>
-          </SettlementRightsClaimIsland>
-          <SettlementRightsSeizeIsland>
-            <Reactions>
-              <Item />
-            </Reactions>
-          </SettlementRightsSeizeIsland>
-          <ExpeditionAssignShip>
-            <Reactions>
-              <Item>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification>
-                      <Profile>39</Profile>
-                    </CharacterNotification>
-                    <BaseNotification>
-                      <NotificationText>250012</NotificationText>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </ExpeditionAssignShip>
-        </MessageTriggers>
-      </ParticipantMessages>
+      <ParticipantMessages />
       <Object>
         <DefaultParticipant>SA_Resident_tier02_atWork</DefaultParticipant>
-        <Type>GameObject</Type>
-        <Variations />
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <ParticipantMessageObject>
         <ParticipantMessages>189</ParticipantMessages>
       </ParticipantMessageObject>
-      <Interaction>
-        <NewspaperPropaganda />
-        <PaMSyTrade>
-          <ActiveTrade>
-            <TradeAmount>1000</TradeAmount>
-            <TradeAmountFactor>500</TradeAmountFactor>
-            <TradeMessage>ActiveTradeConfirmation</TradeMessage>
-          </ActiveTrade>
-          <PassiveTrade>
-            <TradeAmount>10000</TradeAmount>
-            <TradeAmountFactor>5000</TradeAmountFactor>
-            <TradeMessage>PassiveTradeConfirmation</TradeMessage>
-          </PassiveTrade>
-        </PaMSyTrade>
-        <PaMSyMilitaryStrength />
-        <PaMSyAttractiveness />
-        <PaMSyIslandPollution />
-      </Interaction>
+      <Interaction />
     </Values>
   </Asset>
   <Asset>
@@ -3741,8 +1281,6 @@
         <GUID>192</GUID>
         <Name>Farmer_atWork</Name>
         <IconFilename>data/ui/2kimages/main/profiles/resident_tier01.png</IconFilename>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -3753,7 +1291,6 @@
           </English>
         </LocaText>
         <LineID>29257</LineID>
-        <Localize>1</Localize>
       </Text>
       <Profile>
         <ProfilePicture>data/ui/2kimages/main/profiles/resident_tier01.png</ProfilePicture>
@@ -3764,185 +1301,15 @@
         <NotificationBackground>data/ui/2kimages/main/assets/character_bg/bgr_character_01.png</NotificationBackground>
         <DefaultColor>Color8</DefaultColor>
         <CreateModeMeta>AutoCreate_Always</CreateModeMeta>
-        <ProfileType>VirtualParticipant_NeverOwnsGameObjects</ProfileType>
-        <AttackableThroughPirateFlagItem>0</AttackableThroughPirateFlagItem>
-        <CompanyIcon>0</CompanyIcon>
-        <QuestStarterObject>0</QuestStarterObject>
-        <QuestPoolList />
-        <HostileTakeoverEnabled>1</HostileTakeoverEnabled>
-        <BackgroundText>0</BackgroundText>
-        <TakeoverBehaviour>Destroy</TakeoverBehaviour>
-        <ShipDropRewardPool>0</ShipDropRewardPool>
-        <CreateModeSession>Dynamically_MaploadOrSessionEnter</CreateModeSession>
-        <ChooseNPC />
       </Profile>
-      <ParticipantMessages>
-        <MessageTriggers>
-          <QuestAborted>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-999474322</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestAborted>
-          <QuestInvitation>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-607220429</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestInvitation>
-          <QuestEscortShipSelected>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>674720140</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestEscortShipSelected>
-          <QuestFailed>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-1928161372</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestFailed>
-          <QuestStarted>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-2052884805</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestStarted>
-          <QuestSuccessful>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>1380477898</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestSuccessful>
-          <SettlementRightsClaimIsland>
-            <Reactions>
-              <Item>
-                <MyRole>ObserverToInitiator</MyRole>
-              </Item>
-            </Reactions>
-          </SettlementRightsClaimIsland>
-          <SettlementRightsSeizeIsland>
-            <Reactions>
-              <Item />
-            </Reactions>
-          </SettlementRightsSeizeIsland>
-          <ExpeditionAssignShip>
-            <Reactions>
-              <Item>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification>
-                      <Profile>39</Profile>
-                    </CharacterNotification>
-                    <BaseNotification>
-                      <NotificationText>250012</NotificationText>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </ExpeditionAssignShip>
-        </MessageTriggers>
-      </ParticipantMessages>
+      <ParticipantMessages />
       <Object>
         <DefaultParticipant>Resident_tier01_atWork</DefaultParticipant>
-        <Type>GameObject</Type>
-        <Variations />
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <ParticipantMessageObject>
         <ParticipantMessages>155</ParticipantMessages>
       </ParticipantMessageObject>
-      <Interaction>
-        <NewspaperPropaganda />
-        <PaMSyTrade>
-          <ActiveTrade>
-            <TradeAmount>1000</TradeAmount>
-            <TradeAmountFactor>500</TradeAmountFactor>
-            <TradeMessage>ActiveTradeConfirmation</TradeMessage>
-          </ActiveTrade>
-          <PassiveTrade>
-            <TradeAmount>10000</TradeAmount>
-            <TradeAmountFactor>5000</TradeAmountFactor>
-            <TradeMessage>PassiveTradeConfirmation</TradeMessage>
-          </PassiveTrade>
-        </PaMSyTrade>
-        <PaMSyMilitaryStrength />
-        <PaMSyAttractiveness />
-        <PaMSyIslandPollution />
-      </Interaction>
+      <Interaction />
     </Values>
   </Asset>
   <Asset>
@@ -3952,8 +1319,6 @@
         <GUID>193</GUID>
         <Name>Worker_atWork</Name>
         <IconFilename>data/ui/2kimages/main/profiles/portrait_icons_0014_resident_tier02.png</IconFilename>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -3964,7 +1329,6 @@
           </English>
         </LocaText>
         <LineID>16030</LineID>
-        <Localize>1</Localize>
       </Text>
       <Profile>
         <ProfilePicture>data/ui/2kimages/main/profiles/portrait_icons_0014_resident_tier02.png</ProfilePicture>
@@ -3975,188 +1339,51 @@
         <NotificationBackground>data/ui/2kimages/main/assets/character_bg/bgr_character_01.png</NotificationBackground>
         <DefaultColor>Color8</DefaultColor>
         <CreateModeMeta>AutoCreate_Always</CreateModeMeta>
-        <ProfileType>VirtualParticipant_NeverOwnsGameObjects</ProfileType>
-        <AttackableThroughPirateFlagItem>0</AttackableThroughPirateFlagItem>
-        <CompanyIcon>0</CompanyIcon>
-        <QuestStarterObject>0</QuestStarterObject>
-        <QuestPoolList />
-        <HostileTakeoverEnabled>1</HostileTakeoverEnabled>
-        <BackgroundText>0</BackgroundText>
-        <TakeoverBehaviour>Destroy</TakeoverBehaviour>
-        <ShipDropRewardPool>0</ShipDropRewardPool>
-        <CreateModeSession>Dynamically_MaploadOrSessionEnter</CreateModeSession>
-        <ChooseNPC />
       </Profile>
       <ParticipantMessages>
         <MessageTriggers>
           <QuestEscortShipSelected>
             <Reactions>
               <Item>
+                <VectorElement>
+                  <InheritedIndex>0</InheritedIndex>
+                  <InheritanceMapV2>
+                    <Entry>
+                      <TemplateName>Profile_Virtual_Male</TemplateName>
+                      <Index>0</Index>
+                    </Entry>
+                    <Entry>
+                      <TemplateName>Profile_Virtual</TemplateName>
+                      <Index>0</Index>
+                    </Entry>
+                    <Entry>
+                      <TemplateName>Profile_Virtual_NeverOwnsObjects</TemplateName>
+                      <Index>0</Index>
+                    </Entry>
+                  </InheritanceMapV2>
+                </VectorElement>
                 <Notification>
                   <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
                   <Values>
                     <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>674720140</NotificationTextGroup>
-                    </BaseNotification>
+                    <BaseNotification />
                     <NotificationSubtitle>
                       <Subtitle>253920</Subtitle>
                     </NotificationSubtitle>
                   </Values>
-                  <Template>CharacterNotification</Template>
                 </Notification>
-                <MyRole>Initiator</MyRole>
               </Item>
             </Reactions>
           </QuestEscortShipSelected>
-          <QuestAborted>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-999474322</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestAborted>
-          <QuestInvitation>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-607220429</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestInvitation>
-          <QuestFailed>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-1928161372</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestFailed>
-          <QuestStarted>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-2052884805</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestStarted>
-          <QuestSuccessful>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>1380477898</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestSuccessful>
-          <SettlementRightsClaimIsland>
-            <Reactions>
-              <Item>
-                <MyRole>ObserverToInitiator</MyRole>
-              </Item>
-            </Reactions>
-          </SettlementRightsClaimIsland>
-          <SettlementRightsSeizeIsland>
-            <Reactions>
-              <Item />
-            </Reactions>
-          </SettlementRightsSeizeIsland>
-          <ExpeditionAssignShip>
-            <Reactions>
-              <Item>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification>
-                      <Profile>39</Profile>
-                    </CharacterNotification>
-                    <BaseNotification>
-                      <NotificationText>250012</NotificationText>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </ExpeditionAssignShip>
         </MessageTriggers>
       </ParticipantMessages>
       <Object>
         <DefaultParticipant>Resident_tier02_atWork</DefaultParticipant>
-        <Type>GameObject</Type>
-        <Variations />
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <ParticipantMessageObject>
         <ParticipantMessages>156</ParticipantMessages>
       </ParticipantMessageObject>
-      <Interaction>
-        <NewspaperPropaganda />
-        <PaMSyTrade>
-          <ActiveTrade>
-            <TradeAmount>1000</TradeAmount>
-            <TradeAmountFactor>500</TradeAmountFactor>
-            <TradeMessage>ActiveTradeConfirmation</TradeMessage>
-          </ActiveTrade>
-          <PassiveTrade>
-            <TradeAmount>10000</TradeAmount>
-            <TradeAmountFactor>5000</TradeAmountFactor>
-            <TradeMessage>PassiveTradeConfirmation</TradeMessage>
-          </PassiveTrade>
-        </PaMSyTrade>
-        <PaMSyMilitaryStrength />
-        <PaMSyAttractiveness />
-        <PaMSyIslandPollution />
-      </Interaction>
+      <Interaction />
     </Values>
   </Asset>
   <Asset>
@@ -4166,8 +1393,6 @@
         <GUID>194</GUID>
         <Name>Artisan_atWork</Name>
         <IconFilename>data/ui/2kimages/main/profiles/resident_tier03.png</IconFilename>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -4178,7 +1403,6 @@
           </English>
         </LocaText>
         <LineID>16031</LineID>
-        <Localize>1</Localize>
       </Text>
       <Profile>
         <ProfilePicture>data/ui/2kimages/main/profiles/resident_tier03.png</ProfilePicture>
@@ -4189,185 +1413,17 @@
         <NotificationBackground>data/ui/2kimages/main/assets/character_bg/bgr_character_01.png</NotificationBackground>
         <DefaultColor>Color8</DefaultColor>
         <CreateModeMeta>AutoCreate_Always</CreateModeMeta>
-        <ProfileType>VirtualParticipant_NeverOwnsGameObjects</ProfileType>
-        <AttackableThroughPirateFlagItem>0</AttackableThroughPirateFlagItem>
-        <CompanyIcon>0</CompanyIcon>
-        <QuestStarterObject>0</QuestStarterObject>
-        <QuestPoolList />
-        <HostileTakeoverEnabled>1</HostileTakeoverEnabled>
-        <BackgroundText>0</BackgroundText>
-        <TakeoverBehaviour>Destroy</TakeoverBehaviour>
-        <ShipDropRewardPool>0</ShipDropRewardPool>
-        <CreateModeSession>Dynamically_MaploadOrSessionEnter</CreateModeSession>
-        <ChooseNPC />
       </Profile>
       <ParticipantMessages>
-        <MessageTriggers>
-          <QuestAborted>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-999474322</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestAborted>
-          <QuestInvitation>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-607220429</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestInvitation>
-          <QuestEscortShipSelected>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>674720140</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestEscortShipSelected>
-          <QuestFailed>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-1928161372</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestFailed>
-          <QuestStarted>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-2052884805</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestStarted>
-          <QuestSuccessful>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>1380477898</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestSuccessful>
-          <SettlementRightsClaimIsland>
-            <Reactions>
-              <Item>
-                <MyRole>ObserverToInitiator</MyRole>
-              </Item>
-            </Reactions>
-          </SettlementRightsClaimIsland>
-          <SettlementRightsSeizeIsland>
-            <Reactions>
-              <Item />
-            </Reactions>
-          </SettlementRightsSeizeIsland>
-          <ExpeditionAssignShip>
-            <Reactions>
-              <Item>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification>
-                      <Profile>39</Profile>
-                    </CharacterNotification>
-                    <BaseNotification>
-                      <NotificationText>250012</NotificationText>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </ExpeditionAssignShip>
-        </MessageTriggers>
+        <MessageTriggers />
       </ParticipantMessages>
       <Object>
         <DefaultParticipant>Resident_tier03_atWork</DefaultParticipant>
-        <Type>GameObject</Type>
-        <Variations />
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <ParticipantMessageObject>
         <ParticipantMessages>157</ParticipantMessages>
       </ParticipantMessageObject>
-      <Interaction>
-        <NewspaperPropaganda />
-        <PaMSyTrade>
-          <ActiveTrade>
-            <TradeAmount>1000</TradeAmount>
-            <TradeAmountFactor>500</TradeAmountFactor>
-            <TradeMessage>ActiveTradeConfirmation</TradeMessage>
-          </ActiveTrade>
-          <PassiveTrade>
-            <TradeAmount>10000</TradeAmount>
-            <TradeAmountFactor>5000</TradeAmountFactor>
-            <TradeMessage>PassiveTradeConfirmation</TradeMessage>
-          </PassiveTrade>
-        </PaMSyTrade>
-        <PaMSyMilitaryStrength />
-        <PaMSyAttractiveness />
-        <PaMSyIslandPollution />
-      </Interaction>
+      <Interaction />
     </Values>
   </Asset>
   <Asset>
@@ -4377,8 +1433,6 @@
         <GUID>195</GUID>
         <Name>Engineer_atWork</Name>
         <IconFilename>data/ui/2kimages/main/profiles/resident_tier04.png</IconFilename>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -4389,7 +1443,6 @@
           </English>
         </LocaText>
         <LineID>16032</LineID>
-        <Localize>1</Localize>
       </Text>
       <Profile>
         <ProfilePicture>data/ui/2kimages/main/profiles/resident_tier04.png</ProfilePicture>
@@ -4400,185 +1453,15 @@
         <NotificationBackground>data/ui/2kimages/main/assets/character_bg/bgr_character_01.png</NotificationBackground>
         <DefaultColor>Color8</DefaultColor>
         <CreateModeMeta>AutoCreate_Always</CreateModeMeta>
-        <ProfileType>VirtualParticipant_NeverOwnsGameObjects</ProfileType>
-        <AttackableThroughPirateFlagItem>0</AttackableThroughPirateFlagItem>
-        <CompanyIcon>0</CompanyIcon>
-        <QuestStarterObject>0</QuestStarterObject>
-        <QuestPoolList />
-        <HostileTakeoverEnabled>1</HostileTakeoverEnabled>
-        <BackgroundText>0</BackgroundText>
-        <TakeoverBehaviour>Destroy</TakeoverBehaviour>
-        <ShipDropRewardPool>0</ShipDropRewardPool>
-        <CreateModeSession>Dynamically_MaploadOrSessionEnter</CreateModeSession>
-        <ChooseNPC />
       </Profile>
-      <ParticipantMessages>
-        <MessageTriggers>
-          <QuestAborted>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-999474322</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestAborted>
-          <QuestInvitation>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-607220429</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestInvitation>
-          <QuestEscortShipSelected>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>674720140</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestEscortShipSelected>
-          <QuestFailed>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-1928161372</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestFailed>
-          <QuestStarted>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-2052884805</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestStarted>
-          <QuestSuccessful>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>1380477898</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestSuccessful>
-          <SettlementRightsClaimIsland>
-            <Reactions>
-              <Item>
-                <MyRole>ObserverToInitiator</MyRole>
-              </Item>
-            </Reactions>
-          </SettlementRightsClaimIsland>
-          <SettlementRightsSeizeIsland>
-            <Reactions>
-              <Item />
-            </Reactions>
-          </SettlementRightsSeizeIsland>
-          <ExpeditionAssignShip>
-            <Reactions>
-              <Item>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification>
-                      <Profile>39</Profile>
-                    </CharacterNotification>
-                    <BaseNotification>
-                      <NotificationText>250012</NotificationText>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </ExpeditionAssignShip>
-        </MessageTriggers>
-      </ParticipantMessages>
+      <ParticipantMessages />
       <Object>
         <DefaultParticipant>Resident_tier04_atWork</DefaultParticipant>
-        <Type>GameObject</Type>
-        <Variations />
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <ParticipantMessageObject>
         <ParticipantMessages>158</ParticipantMessages>
       </ParticipantMessageObject>
-      <Interaction>
-        <NewspaperPropaganda />
-        <PaMSyTrade>
-          <ActiveTrade>
-            <TradeAmount>1000</TradeAmount>
-            <TradeAmountFactor>500</TradeAmountFactor>
-            <TradeMessage>ActiveTradeConfirmation</TradeMessage>
-          </ActiveTrade>
-          <PassiveTrade>
-            <TradeAmount>10000</TradeAmount>
-            <TradeAmountFactor>5000</TradeAmountFactor>
-            <TradeMessage>PassiveTradeConfirmation</TradeMessage>
-          </PassiveTrade>
-        </PaMSyTrade>
-        <PaMSyMilitaryStrength />
-        <PaMSyAttractiveness />
-        <PaMSyIslandPollution />
-      </Interaction>
+      <Interaction />
     </Values>
   </Asset>
   <Asset>
@@ -4588,8 +1471,6 @@
         <GUID>196</GUID>
         <Name>Investor_atWork</Name>
         <IconFilename>data/ui/2kimages/main/profiles/resident_tier05.png</IconFilename>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -4600,7 +1481,6 @@
           </English>
         </LocaText>
         <LineID>16033</LineID>
-        <Localize>1</Localize>
       </Text>
       <Profile>
         <ProfilePicture>data/ui/2kimages/main/profiles/resident_tier05.png</ProfilePicture>
@@ -4611,185 +1491,17 @@
         <NotificationBackground>data/ui/2kimages/main/assets/character_bg/bgr_character_01.png</NotificationBackground>
         <DefaultColor>Color8</DefaultColor>
         <CreateModeMeta>AutoCreate_Always</CreateModeMeta>
-        <ProfileType>VirtualParticipant_NeverOwnsGameObjects</ProfileType>
-        <AttackableThroughPirateFlagItem>0</AttackableThroughPirateFlagItem>
-        <CompanyIcon>0</CompanyIcon>
-        <QuestStarterObject>0</QuestStarterObject>
-        <QuestPoolList />
-        <HostileTakeoverEnabled>1</HostileTakeoverEnabled>
-        <BackgroundText>0</BackgroundText>
-        <TakeoverBehaviour>Destroy</TakeoverBehaviour>
-        <ShipDropRewardPool>0</ShipDropRewardPool>
-        <CreateModeSession>Dynamically_MaploadOrSessionEnter</CreateModeSession>
-        <ChooseNPC />
       </Profile>
       <ParticipantMessages>
-        <MessageTriggers>
-          <QuestAborted>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-999474322</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestAborted>
-          <QuestInvitation>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-607220429</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestInvitation>
-          <QuestEscortShipSelected>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>674720140</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestEscortShipSelected>
-          <QuestFailed>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-1928161372</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestFailed>
-          <QuestStarted>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-2052884805</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestStarted>
-          <QuestSuccessful>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>1380477898</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestSuccessful>
-          <SettlementRightsClaimIsland>
-            <Reactions>
-              <Item>
-                <MyRole>ObserverToInitiator</MyRole>
-              </Item>
-            </Reactions>
-          </SettlementRightsClaimIsland>
-          <SettlementRightsSeizeIsland>
-            <Reactions>
-              <Item />
-            </Reactions>
-          </SettlementRightsSeizeIsland>
-          <ExpeditionAssignShip>
-            <Reactions>
-              <Item>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification>
-                      <Profile>39</Profile>
-                    </CharacterNotification>
-                    <BaseNotification>
-                      <NotificationText>250012</NotificationText>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </ExpeditionAssignShip>
-        </MessageTriggers>
+        <MessageTriggers />
       </ParticipantMessages>
       <Object>
         <DefaultParticipant>Resident_tier05_atWork</DefaultParticipant>
-        <Type>GameObject</Type>
-        <Variations />
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <ParticipantMessageObject>
         <ParticipantMessages>159</ParticipantMessages>
       </ParticipantMessageObject>
-      <Interaction>
-        <NewspaperPropaganda />
-        <PaMSyTrade>
-          <ActiveTrade>
-            <TradeAmount>1000</TradeAmount>
-            <TradeAmountFactor>500</TradeAmountFactor>
-            <TradeMessage>ActiveTradeConfirmation</TradeMessage>
-          </ActiveTrade>
-          <PassiveTrade>
-            <TradeAmount>10000</TradeAmount>
-            <TradeAmountFactor>5000</TradeAmountFactor>
-            <TradeMessage>PassiveTradeConfirmation</TradeMessage>
-          </PassiveTrade>
-        </PaMSyTrade>
-        <PaMSyMilitaryStrength />
-        <PaMSyAttractiveness />
-        <PaMSyIslandPollution />
-      </Interaction>
+      <Interaction />
     </Values>
   </Asset>
   <Asset>
@@ -4799,8 +1511,6 @@
         <GUID>203</GUID>
         <Name>Captain</Name>
         <IconFilename>data/ui/2kimages/main/profiles/3rdparty_unknown.png</IconFilename>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -4811,7 +1521,6 @@
           </English>
         </LocaText>
         <LineID>29258</LineID>
-        <Localize>1</Localize>
       </Text>
       <Profile>
         <ProfilePicture>data/ui/2kimages/main/profiles/captain.png</ProfilePicture>
@@ -4822,185 +1531,15 @@
         <NotificationBackground>data/ui/2kimages/main/assets/character_bg/bgr_character_07.png</NotificationBackground>
         <DefaultColor>Color8</DefaultColor>
         <CreateModeMeta>AutoCreate_Always</CreateModeMeta>
-        <ProfileType>VirtualParticipant_NeverOwnsGameObjects</ProfileType>
-        <AttackableThroughPirateFlagItem>0</AttackableThroughPirateFlagItem>
-        <CompanyIcon>0</CompanyIcon>
-        <QuestStarterObject>0</QuestStarterObject>
-        <QuestPoolList />
-        <HostileTakeoverEnabled>1</HostileTakeoverEnabled>
-        <BackgroundText>0</BackgroundText>
-        <TakeoverBehaviour>Destroy</TakeoverBehaviour>
-        <ShipDropRewardPool>0</ShipDropRewardPool>
-        <CreateModeSession>Dynamically_MaploadOrSessionEnter</CreateModeSession>
-        <ChooseNPC />
       </Profile>
-      <ParticipantMessages>
-        <MessageTriggers>
-          <QuestAborted>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-999474322</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestAborted>
-          <QuestInvitation>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-607220429</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestInvitation>
-          <QuestEscortShipSelected>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>674720140</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestEscortShipSelected>
-          <QuestFailed>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-1928161372</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestFailed>
-          <QuestStarted>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-2052884805</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestStarted>
-          <QuestSuccessful>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>1380477898</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestSuccessful>
-          <SettlementRightsClaimIsland>
-            <Reactions>
-              <Item>
-                <MyRole>ObserverToInitiator</MyRole>
-              </Item>
-            </Reactions>
-          </SettlementRightsClaimIsland>
-          <SettlementRightsSeizeIsland>
-            <Reactions>
-              <Item />
-            </Reactions>
-          </SettlementRightsSeizeIsland>
-          <ExpeditionAssignShip>
-            <Reactions>
-              <Item>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification>
-                      <Profile>39</Profile>
-                    </CharacterNotification>
-                    <BaseNotification>
-                      <NotificationText>250012</NotificationText>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </ExpeditionAssignShip>
-        </MessageTriggers>
-      </ParticipantMessages>
+      <ParticipantMessages />
       <Object>
         <DefaultParticipant>Workforce_Commuter_Captain</DefaultParticipant>
-        <Type>GameObject</Type>
-        <Variations />
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <ParticipantMessageObject>
         <ParticipantMessages>160</ParticipantMessages>
       </ParticipantMessageObject>
-      <Interaction>
-        <NewspaperPropaganda />
-        <PaMSyTrade>
-          <ActiveTrade>
-            <TradeAmount>1000</TradeAmount>
-            <TradeAmountFactor>500</TradeAmountFactor>
-            <TradeMessage>ActiveTradeConfirmation</TradeMessage>
-          </ActiveTrade>
-          <PassiveTrade>
-            <TradeAmount>10000</TradeAmount>
-            <TradeAmountFactor>5000</TradeAmountFactor>
-            <TradeMessage>PassiveTradeConfirmation</TradeMessage>
-          </PassiveTrade>
-        </PaMSyTrade>
-        <PaMSyMilitaryStrength />
-        <PaMSyAttractiveness />
-        <PaMSyIslandPollution />
-      </Interaction>
+      <Interaction />
     </Values>
   </Asset>
 </Assets>

@@ -7,37 +7,13 @@
         <GUID>101011</GUID>
         <Name>CO_Cemetery_Church</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_church.png</IconFilename>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <Mesh>
         <MeshPlacement>OnTerrain</MeshPlacement>
-        <ObjectPosition>Static</ObjectPosition>
-        <DefaultSequence>idle01</DefaultSequence>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
-        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Selection>
         <Selectable>0</Selectable>
         <DestructSelectable>0</DestructSelectable>
-        <GUIType>Residence</GUIType>
-        <OnSelection>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnSelection>
-        <InteractionDistance>15</InteractionDistance>
-        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
-        <InfoCorner>25000131</InfoCorner>
-        <AllowedDragType />
-        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
-        <Colors />
       </Selection>
       <Object>
         <Variations>
@@ -45,14 +21,6 @@
             <Filename>data/graphics/campaign/buildings/graveyard/cemetery_church.cfg</Filename>
           </Item>
         </Variations>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <DefaultParticipant>Neutral</DefaultParticipant>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Text>
         <LocaText>
@@ -63,45 +31,13 @@
           </English>
         </LocaText>
         <LineID>25847</LineID>
-        <Localize>1</Localize>
       </Text>
-      <MinimapToken>
-        <TokenAsset>0</TokenAsset>
-        <StrategicMapAsset>0</StrategicMapAsset>
-      </MinimapToken>
+      <MinimapToken />
       <QuestObject />
-      <Infolayer>
-        <DefaultInfoLayer>0</DefaultInfoLayer>
-      </Infolayer>
-      <SoundEmitter>
-        <ActiveSounds />
-        <DestroySounds />
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionSounds />
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <ProjectileSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <IncidentSounds />
-        <BuildingRuined />
-        <BuildingRepaired />
-        <MaterialType>NONE</MaterialType>
-      </SoundEmitter>
+      <Infolayer />
+      <SoundEmitter />
       <Culture>
         <Attractiveness>400</Attractiveness>
-        <CultureType>Culture</CultureType>
-        <SetPages />
-        <UndiscoveredSet>0</UndiscoveredSet>
-        <ModuleListHeader>0</ModuleListHeader>
-        <OpenSetPages>0</OpenSetPages>
       </Culture>
     </Values>
   </Asset>

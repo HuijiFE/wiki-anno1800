@@ -8,87 +8,13 @@
         <Name>residence_tier01</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_resident.png</IconFilename>
         <InfoDescription>163059</InfoDescription>
-        <Comments />
       </Standard>
-      <Blocking>
-        <HidePropsRadius>1</HidePropsRadius>
-        <DeletePropsRadius>1</DeletePropsRadius>
-        <GroundDecalAsset>0</GroundDecalAsset>
-        <GroundDecalInvisible>0</GroundDecalInvisible>
-        <StreetOutside>0</StreetOutside>
-        <RemoveGrass>1</RemoveGrass>
-        <BlocksBuilding>1</BlocksBuilding>
-      </Blocking>
+      <Blocking />
       <Building>
         <BuildingType>Residence</BuildingType>
         <SkipUnlockMessage>1</SkipUnlockMessage>
         <BuildModeRandomRotation>90</BuildModeRandomRotation>
         <AssociatedRegions>Moderate</AssociatedRegions>
-        <BuildingCategoryName>100004</BuildingCategoryName>
-        <InfluencedVariationDirection>
-          <Item />
-          <Item>
-            <Direction>1</Direction>
-            <Type>Mid</Type>
-          </Item>
-          <Item>
-            <Type>Mid</Type>
-          </Item>
-          <Item>
-            <Type>Corner</Type>
-          </Item>
-          <Item>
-            <Direction>1</Direction>
-            <Type>Mid</Type>
-          </Item>
-          <Item>
-            <Direction>1</Direction>
-            <Type>Mid</Type>
-          </Item>
-          <Item>
-            <Direction>1</Direction>
-            <Type>Corner</Type>
-          </Item>
-          <Item>
-            <Direction>1</Direction>
-            <Type>Mid</Type>
-          </Item>
-          <Item>
-            <Type>Mid</Type>
-          </Item>
-          <Item>
-            <Direction>3</Direction>
-            <Type>Corner</Type>
-          </Item>
-          <Item>
-            <Type>Mid</Type>
-          </Item>
-          <Item>
-            <Type>Mid</Type>
-          </Item>
-          <Item>
-            <Direction>2</Direction>
-            <Type>Corner</Type>
-          </Item>
-          <Item>
-            <Direction>1</Direction>
-            <Type>Mid</Type>
-          </Item>
-          <Item>
-            <Type>Mid</Type>
-          </Item>
-          <Item />
-        </InfluencedVariationDirection>
-        <Destructable>1</Destructable>
-        <Movable>1</Movable>
-        <PickingAsset>0</PickingAsset>
-        <ConstructionMenuText>0</ConstructionMenuText>
-        <HasBorderRectOutline>1</HasBorderRectOutline>
-        <SnapRadius>2</SnapRadius>
-        <TerrainType>Terrain</TerrainType>
-        <InfluencedByNeighbors />
-        <BuildingBlockPool />
-        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
       <Cost>
         <Costs>
@@ -112,22 +38,8 @@
             <Ingredient>1010202</Ingredient>
           </Item>
         </Costs>
-        <ItemsPerCost>1</ItemsPerCost>
-        <InfluenceCostType>None</InfluenceCostType>
-        <InfluenceCostPoints>1</InfluenceCostPoints>
       </Cost>
-      <Mesh>
-        <ObjectPosition>Static</ObjectPosition>
-        <MeshPlacement>Default</MeshPlacement>
-        <DefaultSequence>idle01</DefaultSequence>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
-        <LogoMode>Disabled</LogoMode>
-      </Mesh>
+      <Mesh />
       <Object>
         <Variations>
           <Item>
@@ -143,33 +55,9 @@
             <Filename>data/graphics/buildings/residence/residence_tier01_estate04/residence_tier01_estate04.cfg</Filename>
           </Item>
         </Variations>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <DefaultParticipant>Neutral</DefaultParticipant>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Selection>
         <ParticipantMessageArcheType>Resident_tier01</ParticipantMessageArcheType>
-        <ParticipantMessageTrigger>ClickResidence</ParticipantMessageTrigger>
-        <Colors>
-          <WeakSelectionColorType>NoColor</WeakSelectionColorType>
-        </Colors>
-        <GUIType>Residence</GUIType>
-        <Selectable>1</Selectable>
-        <DestructSelectable>1</DestructSelectable>
-        <OnSelection>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnSelection>
-        <InteractionDistance>15</InteractionDistance>
-        <InfoCorner>25000131</InfoCorner>
-        <AllowedDragType />
       </Selection>
       <Text>
         <LocaText>
@@ -180,17 +68,10 @@
           </English>
         </LocaText>
         <LineID>5227</LineID>
-        <Localize>1</Localize>
       </Text>
-      <Constructable>
-        <DestructionCategory>Production</DestructionCategory>
-        <ConstructionMode>Default</ConstructionMode>
-        <DestructionType>0</DestructionType>
-      </Constructable>
+      <Constructable />
       <Locked>
         <DefaultLockedState>1</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
       </Locked>
       <Upgradable>
         <NextGUID>1010344</NextGUID>
@@ -237,26 +118,6 @@
               <Sound>9818387</Sound>
             </Item>
           </BuildUpgradeFailed>
-          <BuildFailed>
-            <Item>
-              <Sound>9818387</Sound>
-            </Item>
-          </BuildFailed>
-          <BuildMoveStart>
-            <Item>
-              <Sound>9818755</Sound>
-            </Item>
-          </BuildMoveStart>
-          <BuildMoveSuccess>
-            <Item>
-              <Sound>203995</Sound>
-            </Item>
-          </BuildMoveSuccess>
-          <BuildMoveEnd>
-            <Item>
-              <Sound>200141</Sound>
-            </Item>
-          </BuildMoveEnd>
         </ConstructionSounds>
         <IncidentSounds>
           <InfectedFire>
@@ -286,67 +147,18 @@
           </Item>
         </BuildingRepaired>
         <MaterialType>Wood</MaterialType>
-        <DestroySounds>
-          <Item>
-            <Sound>9818756</Sound>
-          </Item>
-        </DestroySounds>
-        <ActiveSounds />
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <ProjectileSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <BuildingRuined />
       </SoundEmitter>
-      <Infolayer>
-        <DefaultInfoLayer>0</DefaultInfoLayer>
-      </Infolayer>
-      <FeedbackController>
-        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
-        <UpdateMeshSequence>1</UpdateMeshSequence>
-      </FeedbackController>
-      <RandomDummySpawner>
-        <RandomAssets>
-          <Item>
-            <DummyName>Display</DummyName>
-            <SpawnProbability>1</SpawnProbability>
-          </Item>
-        </RandomAssets>
-      </RandomDummySpawner>
+      <Infolayer />
+      <FeedbackController />
+      <RandomDummySpawner />
       <Residence7>
         <ResidenceStorage>
           <InputStorageMax>1</InputStorageMax>
         </ResidenceStorage>
         <PopulationLevel7>15000000</PopulationLevel7>
         <ResidentMax>10</ResidentMax>
-        <ResidentStart>1</ResidentStart>
-        <TimeBeforeRuin>180</TimeBeforeRuin>
-        <TimeAsRuin>60</TimeAsRuin>
-        <StressFactor>1</StressFactor>
-        <InfluenceGeneration />
       </Residence7>
-      <LogisticNode>
-        <TransporterCountMax>0</TransporterCountMax>
-        <TransporterAsset>1010106</TransporterAsset>
-        <NeedsTransporterQueue>0</NeedsTransporterQueue>
-        <TrainAsset>120025</TrainAsset>
-        <QueueConfiguration>
-          <ProcessingQueueParallelCount>10</ProcessingQueueParallelCount>
-          <LoadingTimeModifier>1</LoadingTimeModifier>
-          <UnloadingTimeModifier>1</UnloadingTimeModifier>
-        </QueueConfiguration>
-        <REMOVE_THIS_LATER_FeedbackUnitTier>Level1</REMOVE_THIS_LATER_FeedbackUnitTier>
-        <PathLayers>Street</PathLayers>
-      </LogisticNode>
+      <LogisticNode />
       <AmbientMoodProvider>
         <DynamicEnvironmentType>ResidenceT1</DynamicEnvironmentType>
         <HappinessDependentMurmur>
@@ -363,48 +175,20 @@
             <Murmur>FarmerHappy</Murmur>
           </Item>
         </HappinessDependentMurmur>
-        <AmbientMood>ResidenceTier1</AmbientMood>
-        <Murmur>None</Murmur>
-        <AttractivityDependentMurmur />
-        <ProductivityDependentMurmur />
-        <SatisfactionDependentMurmur />
-        <IslandAttractivityDependentMurmur />
       </AmbientMoodProvider>
       <UpgradeList />
       <Attackable>
         <MaximumHitPoints>1500</MaximumHitPoints>
-        <HasRuinState>1</HasRuinState>
-        <HPBarOffset>6</HPBarOffset>
-        <PausedTimeIfAttacked>15000</PausedTimeIfAttacked>
-        <SelfHealPerHealTick>2</SelfHealPerHealTick>
-        <SelfHealPausedTimeIfAttacked>15000</SelfHealPausedTimeIfAttacked>
-        <ArmorType>Default</ArmorType>
-        <TakeOverEffect>Never</TakeOverEffect>
-        <IslandWarFlag>0</IslandWarFlag>
-        <RuinSmokeParticles />
-        <ExplosionEffects />
       </Attackable>
       <IncidentInfectable>
         <Infectable>
           <Explosion>
             <Base>0</Base>
             <Escalated>0</Escalated>
-            <Communication>ExplosionDefault</Communication>
           </Explosion>
-          <Illness>
-            <Communication>IllnessDefault</Communication>
-          </Illness>
-          <Riot>
-            <Communication>RiotDefault</Communication>
-          </Riot>
         </Infectable>
         <Explosion>
           <ExplosionCoreDamage>1000</ExplosionCoreDamage>
-          <ExplosionOuterRadius>2</ExplosionOuterRadius>
-          <ExplosionOuterDamagePercentage>25</ExplosionOuterDamagePercentage>
-          <DamageExplosionChance>80</DamageExplosionChance>
-          <DamageExplosionCheckMin>5</DamageExplosionCheckMin>
-          <DamageExplosionCheckMax>25</DamageExplosionCheckMax>
         </Explosion>
         <IncidentInfectionChanceFactors>
           <Illness>
@@ -417,120 +201,23 @@
             <FactoryUndertimeFactor>0.15</FactoryUndertimeFactor>
             <ResidenceFullOvertimeChance>20</ResidenceFullOvertimeChance>
             <ResidenceFullUndertimeChance>-15</ResidenceFullUndertimeChance>
-            <ResidenceSatisfactionFactor>0.1</ResidenceSatisfactionFactor>
-            <HappinessMin>-50</HappinessMin>
-            <HappinessMax>50</HappinessMax>
-            <SatisfactionThreshold>0.5</SatisfactionThreshold>
           </Illness>
           <Fire>
             <DensityFactor>0.025</DensityFactor>
             <DensityDistance>15</DensityDistance>
-            <BaseChance>5</BaseChance>
-            <HitpointFactor>0.1</HitpointFactor>
-            <DilapidatedFactor>10</DilapidatedFactor>
-            <FactoryOvertimeFactor>0.1</FactoryOvertimeFactor>
-            <HappinessMin>-50</HappinessMin>
-            <HappinessMax>50</HappinessMax>
           </Fire>
           <Riot>
             <ResidenceHappinessFactor>0.4</ResidenceHappinessFactor>
             <HappinessThreshold>15</HappinessThreshold>
-            <FactoryOvertimeFactor>0.3</FactoryOvertimeFactor>
-            <FactoryUndertimeFactor>0.15</FactoryUndertimeFactor>
-            <FactoryHappinessFactor>0.15</FactoryHappinessFactor>
-            <HappinessMin>-50</HappinessMin>
-            <HappinessMax>50</HappinessMax>
           </Riot>
           <Explosion>
             <ResidenceFullOvertimeChance>20</ResidenceFullOvertimeChance>
             <ResidenceFullUndertimeChance>-15</ResidenceFullUndertimeChance>
-            <HitpointFactor>0.1</HitpointFactor>
-            <HappinessMin>-50</HappinessMin>
-            <HappinessMax>50</HappinessMax>
-            <SatisfactionThreshold>0.5</SatisfactionThreshold>
           </Explosion>
         </IncidentInfectionChanceFactors>
-        <PerIncidentProximityEffect>
-          <Fire>
-            <ProximityEffect>
-              <Item>
-                <Distance>2</Distance>
-                <InfectionChanceDebuff>2.5</InfectionChanceDebuff>
-              </Item>
-              <Item>
-                <IntensityThreshold>30</IntensityThreshold>
-                <Distance>2</Distance>
-                <InfectionChanceDebuff>5</InfectionChanceDebuff>
-              </Item>
-              <Item>
-                <IntensityThreshold>60</IntensityThreshold>
-                <Distance>2</Distance>
-                <InfectionChanceDebuff>7.5</InfectionChanceDebuff>
-              </Item>
-              <Item>
-                <IntensityThreshold>90</IntensityThreshold>
-                <Distance>2</Distance>
-              </Item>
-            </ProximityEffect>
-          </Fire>
-          <Illness>
-            <ProximityEffect>
-              <Item>
-                <Distance>2</Distance>
-                <InfectionChanceDebuff>2.5</InfectionChanceDebuff>
-              </Item>
-              <Item>
-                <IntensityThreshold>30</IntensityThreshold>
-                <Distance>2</Distance>
-                <InfectionChanceDebuff>5</InfectionChanceDebuff>
-              </Item>
-              <Item>
-                <IntensityThreshold>60</IntensityThreshold>
-                <Distance>2</Distance>
-                <InfectionChanceDebuff>7.5</InfectionChanceDebuff>
-              </Item>
-              <Item>
-                <IntensityThreshold>90</IntensityThreshold>
-                <Distance>2</Distance>
-              </Item>
-            </ProximityEffect>
-          </Illness>
-          <Riot>
-            <ProximityEffect>
-              <Item>
-                <Distance>2</Distance>
-                <InfectionChanceDebuff>2.5</InfectionChanceDebuff>
-              </Item>
-              <Item>
-                <IntensityThreshold>30</IntensityThreshold>
-                <Distance>2</Distance>
-                <InfectionChanceDebuff>5</InfectionChanceDebuff>
-              </Item>
-              <Item>
-                <IntensityThreshold>60</IntensityThreshold>
-                <Distance>2</Distance>
-                <InfectionChanceDebuff>7.5</InfectionChanceDebuff>
-              </Item>
-              <Item>
-                <IntensityThreshold>90</IntensityThreshold>
-                <Distance>2</Distance>
-              </Item>
-            </ProximityEffect>
-          </Riot>
-        </PerIncidentProximityEffect>
-        <IncidentFireIncreaseBase>100</IncidentFireIncreaseBase>
-        <IncidentIllnessIncreaseBase>100</IncidentIllnessIncreaseBase>
-        <IncidentRiotIncreaseBase>100</IncidentRiotIncreaseBase>
-        <IncidentExplosionIncreaseBase>100</IncidentExplosionIncreaseBase>
       </IncidentInfectable>
       <Pausable />
-      <Culture>
-        <CultureType>Culture</CultureType>
-        <SetPages />
-        <UndiscoveredSet>0</UndiscoveredSet>
-        <ModuleListHeader>0</ModuleListHeader>
-        <OpenSetPages>0</OpenSetPages>
-      </Culture>
+      <Culture />
       <StreetActivation />
     </Values>
   </Asset>
@@ -542,85 +229,12 @@
         <Name>residence_tier02</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_resident.png</IconFilename>
         <InfoDescription>163059</InfoDescription>
-        <Comments />
       </Standard>
-      <Blocking>
-        <HidePropsRadius>1</HidePropsRadius>
-        <DeletePropsRadius>1</DeletePropsRadius>
-        <GroundDecalAsset>0</GroundDecalAsset>
-        <GroundDecalInvisible>0</GroundDecalInvisible>
-        <StreetOutside>0</StreetOutside>
-        <RemoveGrass>1</RemoveGrass>
-        <BlocksBuilding>1</BlocksBuilding>
-      </Blocking>
+      <Blocking />
       <Building>
         <BuildingType>Residence</BuildingType>
         <PickingAsset>1010343</PickingAsset>
         <AssociatedRegions>Moderate</AssociatedRegions>
-        <BuildingCategoryName>100004</BuildingCategoryName>
-        <InfluencedVariationDirection>
-          <Item />
-          <Item>
-            <Direction>1</Direction>
-            <Type>Mid</Type>
-          </Item>
-          <Item>
-            <Type>Mid</Type>
-          </Item>
-          <Item>
-            <Type>Corner</Type>
-          </Item>
-          <Item>
-            <Direction>1</Direction>
-            <Type>Mid</Type>
-          </Item>
-          <Item>
-            <Direction>1</Direction>
-            <Type>Mid</Type>
-          </Item>
-          <Item>
-            <Direction>1</Direction>
-            <Type>Corner</Type>
-          </Item>
-          <Item>
-            <Direction>1</Direction>
-            <Type>Mid</Type>
-          </Item>
-          <Item>
-            <Type>Mid</Type>
-          </Item>
-          <Item>
-            <Direction>3</Direction>
-            <Type>Corner</Type>
-          </Item>
-          <Item>
-            <Type>Mid</Type>
-          </Item>
-          <Item>
-            <Type>Mid</Type>
-          </Item>
-          <Item>
-            <Direction>2</Direction>
-            <Type>Corner</Type>
-          </Item>
-          <Item>
-            <Direction>1</Direction>
-            <Type>Mid</Type>
-          </Item>
-          <Item>
-            <Type>Mid</Type>
-          </Item>
-          <Item />
-        </InfluencedVariationDirection>
-        <Destructable>1</Destructable>
-        <Movable>1</Movable>
-        <ConstructionMenuText>0</ConstructionMenuText>
-        <HasBorderRectOutline>1</HasBorderRectOutline>
-        <SnapRadius>2</SnapRadius>
-        <TerrainType>Terrain</TerrainType>
-        <InfluencedByNeighbors />
-        <BuildingBlockPool />
-        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
       <Cost>
         <Costs>
@@ -644,22 +258,8 @@
             <Ingredient>1010202</Ingredient>
           </Item>
         </Costs>
-        <ItemsPerCost>1</ItemsPerCost>
-        <InfluenceCostType>None</InfluenceCostType>
-        <InfluenceCostPoints>1</InfluenceCostPoints>
       </Cost>
-      <Mesh>
-        <ObjectPosition>Static</ObjectPosition>
-        <MeshPlacement>Default</MeshPlacement>
-        <DefaultSequence>idle01</DefaultSequence>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
-        <LogoMode>Disabled</LogoMode>
-      </Mesh>
+      <Mesh />
       <Object>
         <Variations>
           <Item>
@@ -678,33 +278,9 @@
             <Filename>data/graphics/buildings/residence/residence_tier02_estate05/residence_tier02_estate05.cfg</Filename>
           </Item>
         </Variations>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <DefaultParticipant>Neutral</DefaultParticipant>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Selection>
         <ParticipantMessageArcheType>Resident_tier02</ParticipantMessageArcheType>
-        <ParticipantMessageTrigger>ClickResidence</ParticipantMessageTrigger>
-        <Colors>
-          <WeakSelectionColorType>NoColor</WeakSelectionColorType>
-        </Colors>
-        <GUIType>Residence</GUIType>
-        <Selectable>1</Selectable>
-        <DestructSelectable>1</DestructSelectable>
-        <OnSelection>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnSelection>
-        <InteractionDistance>15</InteractionDistance>
-        <InfoCorner>25000131</InfoCorner>
-        <AllowedDragType />
       </Selection>
       <Text>
         <LocaText>
@@ -715,17 +291,10 @@
           </English>
         </LocaText>
         <LineID>5228</LineID>
-        <Localize>1</Localize>
       </Text>
-      <Constructable>
-        <DestructionCategory>Production</DestructionCategory>
-        <ConstructionMode>Default</ConstructionMode>
-        <DestructionType>0</DestructionType>
-      </Constructable>
+      <Constructable />
       <Locked>
         <DefaultLockedState>1</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
       </Locked>
       <Upgradable>
         <NextGUID>1010345</NextGUID>
@@ -774,26 +343,6 @@
               <Sound>9818387</Sound>
             </Item>
           </BuildUpgradeFailed>
-          <BuildFailed>
-            <Item>
-              <Sound>9818387</Sound>
-            </Item>
-          </BuildFailed>
-          <BuildMoveStart>
-            <Item>
-              <Sound>9818755</Sound>
-            </Item>
-          </BuildMoveStart>
-          <BuildMoveSuccess>
-            <Item>
-              <Sound>203995</Sound>
-            </Item>
-          </BuildMoveSuccess>
-          <BuildMoveEnd>
-            <Item>
-              <Sound>200141</Sound>
-            </Item>
-          </BuildMoveEnd>
         </ConstructionSounds>
         <IncidentSounds>
           <InfectedFire>
@@ -823,66 +372,19 @@
           </Item>
         </BuildingRepaired>
         <MaterialType>Wood</MaterialType>
-        <DestroySounds>
-          <Item>
-            <Sound>9818756</Sound>
-          </Item>
-        </DestroySounds>
-        <ActiveSounds />
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <ProjectileSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <BuildingRuined />
       </SoundEmitter>
-      <Infolayer>
-        <DefaultInfoLayer>0</DefaultInfoLayer>
-      </Infolayer>
-      <FeedbackController>
-        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
-        <UpdateMeshSequence>1</UpdateMeshSequence>
-      </FeedbackController>
-      <RandomDummySpawner>
-        <RandomAssets>
-          <Item>
-            <DummyName>Display</DummyName>
-            <SpawnProbability>1</SpawnProbability>
-          </Item>
-        </RandomAssets>
-      </RandomDummySpawner>
+      <Infolayer />
+      <FeedbackController />
+      <RandomDummySpawner />
       <Residence7>
         <ResidenceStorage>
           <InputStorageMax>1</InputStorageMax>
         </ResidenceStorage>
         <PopulationLevel7>15000001</PopulationLevel7>
         <ResidentMax>20</ResidentMax>
-        <ResidentStart>1</ResidentStart>
-        <TimeBeforeRuin>180</TimeBeforeRuin>
-        <TimeAsRuin>60</TimeAsRuin>
-        <StressFactor>1</StressFactor>
-        <InfluenceGeneration />
       </Residence7>
       <LogisticNode>
         <REMOVE_THIS_LATER_FeedbackUnitTier>Level2</REMOVE_THIS_LATER_FeedbackUnitTier>
-        <TransporterCountMax>0</TransporterCountMax>
-        <TransporterAsset>1010106</TransporterAsset>
-        <NeedsTransporterQueue>0</NeedsTransporterQueue>
-        <TrainAsset>120025</TrainAsset>
-        <QueueConfiguration>
-          <ProcessingQueueParallelCount>10</ProcessingQueueParallelCount>
-          <LoadingTimeModifier>1</LoadingTimeModifier>
-          <UnloadingTimeModifier>1</UnloadingTimeModifier>
-        </QueueConfiguration>
-        <PathLayers>Street</PathLayers>
       </LogisticNode>
       <AmbientMoodProvider>
         <DynamicEnvironmentType>ResidenceT1</DynamicEnvironmentType>
@@ -900,59 +402,26 @@
             <Murmur>WorkerHappy</Murmur>
           </Item>
         </HappinessDependentMurmur>
-        <AmbientMood>ResidenceTier1</AmbientMood>
-        <Murmur>None</Murmur>
-        <AttractivityDependentMurmur />
-        <ProductivityDependentMurmur />
-        <SatisfactionDependentMurmur />
-        <IslandAttractivityDependentMurmur />
       </AmbientMoodProvider>
       <UpgradeList />
       <Attackable>
         <MaximumHitPoints>2000</MaximumHitPoints>
-        <HasRuinState>1</HasRuinState>
-        <HPBarOffset>6</HPBarOffset>
-        <PausedTimeIfAttacked>15000</PausedTimeIfAttacked>
-        <SelfHealPerHealTick>2</SelfHealPerHealTick>
-        <SelfHealPausedTimeIfAttacked>15000</SelfHealPausedTimeIfAttacked>
-        <ArmorType>Default</ArmorType>
-        <TakeOverEffect>Never</TakeOverEffect>
-        <IslandWarFlag>0</IslandWarFlag>
-        <RuinSmokeParticles />
-        <ExplosionEffects />
       </Attackable>
       <IncidentInfectable>
         <Infectable>
           <Explosion>
             <Base>0</Base>
             <Escalated>0</Escalated>
-            <Communication>ExplosionDefault</Communication>
           </Explosion>
-          <Illness>
-            <Communication>IllnessDefault</Communication>
-          </Illness>
-          <Riot>
-            <Communication>RiotDefault</Communication>
-          </Riot>
         </Infectable>
         <Explosion>
           <ExplosionCoreDamage>1000</ExplosionCoreDamage>
-          <ExplosionOuterRadius>2</ExplosionOuterRadius>
-          <ExplosionOuterDamagePercentage>25</ExplosionOuterDamagePercentage>
-          <DamageExplosionChance>80</DamageExplosionChance>
-          <DamageExplosionCheckMin>5</DamageExplosionCheckMin>
-          <DamageExplosionCheckMax>25</DamageExplosionCheckMax>
         </Explosion>
         <IncidentInfectionChanceFactors>
           <Fire>
             <BaseChance>4.5</BaseChance>
             <DensityFactor>0.025</DensityFactor>
             <DensityDistance>15</DensityDistance>
-            <HitpointFactor>0.1</HitpointFactor>
-            <DilapidatedFactor>10</DilapidatedFactor>
-            <FactoryOvertimeFactor>0.1</FactoryOvertimeFactor>
-            <HappinessMin>-50</HappinessMin>
-            <HappinessMax>50</HappinessMax>
           </Fire>
           <Illness>
             <BaseChance>4.5</BaseChance>
@@ -964,110 +433,19 @@
             <FactoryUndertimeFactor>0.15</FactoryUndertimeFactor>
             <ResidenceFullOvertimeChance>20</ResidenceFullOvertimeChance>
             <ResidenceFullUndertimeChance>-15</ResidenceFullUndertimeChance>
-            <ResidenceSatisfactionFactor>0.1</ResidenceSatisfactionFactor>
-            <HappinessMin>-50</HappinessMin>
-            <HappinessMax>50</HappinessMax>
-            <SatisfactionThreshold>0.5</SatisfactionThreshold>
           </Illness>
           <Riot>
             <ResidenceHappinessFactor>0.4</ResidenceHappinessFactor>
             <HappinessThreshold>15</HappinessThreshold>
-            <FactoryOvertimeFactor>0.3</FactoryOvertimeFactor>
-            <FactoryUndertimeFactor>0.15</FactoryUndertimeFactor>
-            <FactoryHappinessFactor>0.15</FactoryHappinessFactor>
-            <HappinessMin>-50</HappinessMin>
-            <HappinessMax>50</HappinessMax>
           </Riot>
           <Explosion>
             <ResidenceFullOvertimeChance>20</ResidenceFullOvertimeChance>
             <ResidenceFullUndertimeChance>-15</ResidenceFullUndertimeChance>
-            <HitpointFactor>0.1</HitpointFactor>
-            <HappinessMin>-50</HappinessMin>
-            <HappinessMax>50</HappinessMax>
-            <SatisfactionThreshold>0.5</SatisfactionThreshold>
           </Explosion>
         </IncidentInfectionChanceFactors>
-        <PerIncidentProximityEffect>
-          <Fire>
-            <ProximityEffect>
-              <Item>
-                <Distance>2</Distance>
-                <InfectionChanceDebuff>2.5</InfectionChanceDebuff>
-              </Item>
-              <Item>
-                <IntensityThreshold>30</IntensityThreshold>
-                <Distance>2</Distance>
-                <InfectionChanceDebuff>5</InfectionChanceDebuff>
-              </Item>
-              <Item>
-                <IntensityThreshold>60</IntensityThreshold>
-                <Distance>2</Distance>
-                <InfectionChanceDebuff>7.5</InfectionChanceDebuff>
-              </Item>
-              <Item>
-                <IntensityThreshold>90</IntensityThreshold>
-                <Distance>2</Distance>
-              </Item>
-            </ProximityEffect>
-          </Fire>
-          <Illness>
-            <ProximityEffect>
-              <Item>
-                <Distance>2</Distance>
-                <InfectionChanceDebuff>2.5</InfectionChanceDebuff>
-              </Item>
-              <Item>
-                <IntensityThreshold>30</IntensityThreshold>
-                <Distance>2</Distance>
-                <InfectionChanceDebuff>5</InfectionChanceDebuff>
-              </Item>
-              <Item>
-                <IntensityThreshold>60</IntensityThreshold>
-                <Distance>2</Distance>
-                <InfectionChanceDebuff>7.5</InfectionChanceDebuff>
-              </Item>
-              <Item>
-                <IntensityThreshold>90</IntensityThreshold>
-                <Distance>2</Distance>
-              </Item>
-            </ProximityEffect>
-          </Illness>
-          <Riot>
-            <ProximityEffect>
-              <Item>
-                <Distance>2</Distance>
-                <InfectionChanceDebuff>2.5</InfectionChanceDebuff>
-              </Item>
-              <Item>
-                <IntensityThreshold>30</IntensityThreshold>
-                <Distance>2</Distance>
-                <InfectionChanceDebuff>5</InfectionChanceDebuff>
-              </Item>
-              <Item>
-                <IntensityThreshold>60</IntensityThreshold>
-                <Distance>2</Distance>
-                <InfectionChanceDebuff>7.5</InfectionChanceDebuff>
-              </Item>
-              <Item>
-                <IntensityThreshold>90</IntensityThreshold>
-                <Distance>2</Distance>
-              </Item>
-            </ProximityEffect>
-          </Riot>
-        </PerIncidentProximityEffect>
-        <IncidentFireIncreaseBase>100</IncidentFireIncreaseBase>
-        <IncidentIllnessIncreaseBase>100</IncidentIllnessIncreaseBase>
-        <IncidentRiotIncreaseBase>100</IncidentRiotIncreaseBase>
-        <IncidentExplosionIncreaseBase>100</IncidentExplosionIncreaseBase>
       </IncidentInfectable>
       <Pausable />
-      <Culture>
-        <CultureType>Culture</CultureType>
-        <SetPages />
-        <UndiscoveredSet>0</UndiscoveredSet>
-        <ModuleListHeader>0</ModuleListHeader>
-        <OpenSetPages>0</OpenSetPages>
-      </Culture>
+      <Culture />
       <StreetActivation />
     </Values>
   </Asset>
@@ -1079,85 +457,12 @@
         <Name>residence_tier03</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_resident.png</IconFilename>
         <InfoDescription>163059</InfoDescription>
-        <Comments />
       </Standard>
-      <Blocking>
-        <HidePropsRadius>1</HidePropsRadius>
-        <DeletePropsRadius>1</DeletePropsRadius>
-        <GroundDecalAsset>0</GroundDecalAsset>
-        <GroundDecalInvisible>0</GroundDecalInvisible>
-        <StreetOutside>0</StreetOutside>
-        <RemoveGrass>1</RemoveGrass>
-        <BlocksBuilding>1</BlocksBuilding>
-      </Blocking>
+      <Blocking />
       <Building>
         <BuildingType>Residence</BuildingType>
         <PickingAsset>1010343</PickingAsset>
         <AssociatedRegions>Moderate</AssociatedRegions>
-        <BuildingCategoryName>100004</BuildingCategoryName>
-        <InfluencedVariationDirection>
-          <Item />
-          <Item>
-            <Direction>1</Direction>
-            <Type>Mid</Type>
-          </Item>
-          <Item>
-            <Type>Mid</Type>
-          </Item>
-          <Item>
-            <Type>Corner</Type>
-          </Item>
-          <Item>
-            <Direction>1</Direction>
-            <Type>Mid</Type>
-          </Item>
-          <Item>
-            <Direction>1</Direction>
-            <Type>Mid</Type>
-          </Item>
-          <Item>
-            <Direction>1</Direction>
-            <Type>Corner</Type>
-          </Item>
-          <Item>
-            <Direction>1</Direction>
-            <Type>Mid</Type>
-          </Item>
-          <Item>
-            <Type>Mid</Type>
-          </Item>
-          <Item>
-            <Direction>3</Direction>
-            <Type>Corner</Type>
-          </Item>
-          <Item>
-            <Type>Mid</Type>
-          </Item>
-          <Item>
-            <Type>Mid</Type>
-          </Item>
-          <Item>
-            <Direction>2</Direction>
-            <Type>Corner</Type>
-          </Item>
-          <Item>
-            <Direction>1</Direction>
-            <Type>Mid</Type>
-          </Item>
-          <Item>
-            <Type>Mid</Type>
-          </Item>
-          <Item />
-        </InfluencedVariationDirection>
-        <Destructable>1</Destructable>
-        <Movable>1</Movable>
-        <ConstructionMenuText>0</ConstructionMenuText>
-        <HasBorderRectOutline>1</HasBorderRectOutline>
-        <SnapRadius>2</SnapRadius>
-        <TerrainType>Terrain</TerrainType>
-        <InfluencedByNeighbors />
-        <BuildingBlockPool />
-        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
       <Cost>
         <Costs>
@@ -1183,22 +488,8 @@
             <Ingredient>1010202</Ingredient>
           </Item>
         </Costs>
-        <ItemsPerCost>1</ItemsPerCost>
-        <InfluenceCostType>None</InfluenceCostType>
-        <InfluenceCostPoints>1</InfluenceCostPoints>
       </Cost>
-      <Mesh>
-        <ObjectPosition>Static</ObjectPosition>
-        <MeshPlacement>Default</MeshPlacement>
-        <DefaultSequence>idle01</DefaultSequence>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
-        <LogoMode>Disabled</LogoMode>
-      </Mesh>
+      <Mesh />
       <Object>
         <Variations>
           <Item>
@@ -1214,33 +505,9 @@
             <Filename>data/graphics/buildings/residence/residence_tier03_estate04/residence_tier03_estate04.cfg</Filename>
           </Item>
         </Variations>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <DefaultParticipant>Neutral</DefaultParticipant>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Selection>
         <ParticipantMessageArcheType>Resident_tier03</ParticipantMessageArcheType>
-        <ParticipantMessageTrigger>ClickResidence</ParticipantMessageTrigger>
-        <Colors>
-          <WeakSelectionColorType>NoColor</WeakSelectionColorType>
-        </Colors>
-        <GUIType>Residence</GUIType>
-        <Selectable>1</Selectable>
-        <DestructSelectable>1</DestructSelectable>
-        <OnSelection>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnSelection>
-        <InteractionDistance>15</InteractionDistance>
-        <InfoCorner>25000131</InfoCorner>
-        <AllowedDragType />
       </Selection>
       <Text>
         <LocaText>
@@ -1251,17 +518,10 @@
           </English>
         </LocaText>
         <LineID>5229</LineID>
-        <Localize>1</Localize>
       </Text>
-      <Constructable>
-        <DestructionCategory>Production</DestructionCategory>
-        <ConstructionMode>Default</ConstructionMode>
-        <DestructionType>0</DestructionType>
-      </Constructable>
+      <Constructable />
       <Locked>
         <DefaultLockedState>1</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
       </Locked>
       <Upgradable>
         <NextGUID>1010346</NextGUID>
@@ -1311,26 +571,6 @@
               <Sound>9818387</Sound>
             </Item>
           </BuildUpgradeFailed>
-          <BuildFailed>
-            <Item>
-              <Sound>9818387</Sound>
-            </Item>
-          </BuildFailed>
-          <BuildMoveStart>
-            <Item>
-              <Sound>9818755</Sound>
-            </Item>
-          </BuildMoveStart>
-          <BuildMoveSuccess>
-            <Item>
-              <Sound>203995</Sound>
-            </Item>
-          </BuildMoveSuccess>
-          <BuildMoveEnd>
-            <Item>
-              <Sound>200141</Sound>
-            </Item>
-          </BuildMoveEnd>
         </ConstructionSounds>
         <IncidentSounds>
           <InfectedFire>
@@ -1360,66 +600,19 @@
           </Item>
         </BuildingRepaired>
         <MaterialType>Stone</MaterialType>
-        <DestroySounds>
-          <Item>
-            <Sound>9818756</Sound>
-          </Item>
-        </DestroySounds>
-        <ActiveSounds />
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <ProjectileSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <BuildingRuined />
       </SoundEmitter>
-      <Infolayer>
-        <DefaultInfoLayer>0</DefaultInfoLayer>
-      </Infolayer>
-      <FeedbackController>
-        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
-        <UpdateMeshSequence>1</UpdateMeshSequence>
-      </FeedbackController>
-      <RandomDummySpawner>
-        <RandomAssets>
-          <Item>
-            <DummyName>Display</DummyName>
-            <SpawnProbability>1</SpawnProbability>
-          </Item>
-        </RandomAssets>
-      </RandomDummySpawner>
+      <Infolayer />
+      <FeedbackController />
+      <RandomDummySpawner />
       <Residence7>
         <ResidenceStorage>
           <InputStorageMax>1</InputStorageMax>
         </ResidenceStorage>
         <PopulationLevel7>15000002</PopulationLevel7>
         <ResidentMax>30</ResidentMax>
-        <ResidentStart>1</ResidentStart>
-        <TimeBeforeRuin>180</TimeBeforeRuin>
-        <TimeAsRuin>60</TimeAsRuin>
-        <StressFactor>1</StressFactor>
-        <InfluenceGeneration />
       </Residence7>
       <LogisticNode>
         <REMOVE_THIS_LATER_FeedbackUnitTier>Level3</REMOVE_THIS_LATER_FeedbackUnitTier>
-        <TransporterCountMax>0</TransporterCountMax>
-        <TransporterAsset>1010106</TransporterAsset>
-        <NeedsTransporterQueue>0</NeedsTransporterQueue>
-        <TrainAsset>120025</TrainAsset>
-        <QueueConfiguration>
-          <ProcessingQueueParallelCount>10</ProcessingQueueParallelCount>
-          <LoadingTimeModifier>1</LoadingTimeModifier>
-          <UnloadingTimeModifier>1</UnloadingTimeModifier>
-        </QueueConfiguration>
-        <PathLayers>Street</PathLayers>
       </LogisticNode>
       <AmbientMoodProvider>
         <AmbientMood>ResidenceTier3</AmbientMood>
@@ -1438,47 +631,20 @@
             <Murmur>ArtisanHappy</Murmur>
           </Item>
         </HappinessDependentMurmur>
-        <Murmur>None</Murmur>
-        <AttractivityDependentMurmur />
-        <ProductivityDependentMurmur />
-        <SatisfactionDependentMurmur />
-        <IslandAttractivityDependentMurmur />
       </AmbientMoodProvider>
       <UpgradeList />
       <Attackable>
         <MaximumHitPoints>2500</MaximumHitPoints>
-        <HasRuinState>1</HasRuinState>
-        <HPBarOffset>6</HPBarOffset>
-        <PausedTimeIfAttacked>15000</PausedTimeIfAttacked>
-        <SelfHealPerHealTick>2</SelfHealPerHealTick>
-        <SelfHealPausedTimeIfAttacked>15000</SelfHealPausedTimeIfAttacked>
-        <ArmorType>Default</ArmorType>
-        <TakeOverEffect>Never</TakeOverEffect>
-        <IslandWarFlag>0</IslandWarFlag>
-        <RuinSmokeParticles />
-        <ExplosionEffects />
       </Attackable>
       <IncidentInfectable>
         <Infectable>
           <Explosion>
             <Base>0</Base>
             <Escalated>0</Escalated>
-            <Communication>ExplosionDefault</Communication>
           </Explosion>
-          <Illness>
-            <Communication>IllnessDefault</Communication>
-          </Illness>
-          <Riot>
-            <Communication>RiotDefault</Communication>
-          </Riot>
         </Infectable>
         <Explosion>
           <ExplosionCoreDamage>1000</ExplosionCoreDamage>
-          <ExplosionOuterRadius>2</ExplosionOuterRadius>
-          <ExplosionOuterDamagePercentage>25</ExplosionOuterDamagePercentage>
-          <DamageExplosionChance>80</DamageExplosionChance>
-          <DamageExplosionCheckMin>5</DamageExplosionCheckMin>
-          <DamageExplosionCheckMax>25</DamageExplosionCheckMax>
         </Explosion>
         <IncidentInfectionChanceFactors>
           <Illness>
@@ -1491,120 +657,24 @@
             <FactoryUndertimeFactor>0.15</FactoryUndertimeFactor>
             <ResidenceFullOvertimeChance>20</ResidenceFullOvertimeChance>
             <ResidenceFullUndertimeChance>-15</ResidenceFullUndertimeChance>
-            <ResidenceSatisfactionFactor>0.1</ResidenceSatisfactionFactor>
-            <HappinessMin>-50</HappinessMin>
-            <HappinessMax>50</HappinessMax>
-            <SatisfactionThreshold>0.5</SatisfactionThreshold>
           </Illness>
           <Fire>
             <BaseChance>4</BaseChance>
             <DensityFactor>0.025</DensityFactor>
             <DensityDistance>15</DensityDistance>
-            <HitpointFactor>0.1</HitpointFactor>
-            <DilapidatedFactor>10</DilapidatedFactor>
-            <FactoryOvertimeFactor>0.1</FactoryOvertimeFactor>
-            <HappinessMin>-50</HappinessMin>
-            <HappinessMax>50</HappinessMax>
           </Fire>
           <Riot>
             <ResidenceHappinessFactor>0.4</ResidenceHappinessFactor>
             <HappinessThreshold>15</HappinessThreshold>
-            <FactoryOvertimeFactor>0.3</FactoryOvertimeFactor>
-            <FactoryUndertimeFactor>0.15</FactoryUndertimeFactor>
-            <FactoryHappinessFactor>0.15</FactoryHappinessFactor>
-            <HappinessMin>-50</HappinessMin>
-            <HappinessMax>50</HappinessMax>
           </Riot>
           <Explosion>
             <ResidenceFullOvertimeChance>20</ResidenceFullOvertimeChance>
             <ResidenceFullUndertimeChance>-15</ResidenceFullUndertimeChance>
-            <HitpointFactor>0.1</HitpointFactor>
-            <HappinessMin>-50</HappinessMin>
-            <HappinessMax>50</HappinessMax>
-            <SatisfactionThreshold>0.5</SatisfactionThreshold>
           </Explosion>
         </IncidentInfectionChanceFactors>
-        <PerIncidentProximityEffect>
-          <Fire>
-            <ProximityEffect>
-              <Item>
-                <Distance>2</Distance>
-                <InfectionChanceDebuff>2.5</InfectionChanceDebuff>
-              </Item>
-              <Item>
-                <IntensityThreshold>30</IntensityThreshold>
-                <Distance>2</Distance>
-                <InfectionChanceDebuff>5</InfectionChanceDebuff>
-              </Item>
-              <Item>
-                <IntensityThreshold>60</IntensityThreshold>
-                <Distance>2</Distance>
-                <InfectionChanceDebuff>7.5</InfectionChanceDebuff>
-              </Item>
-              <Item>
-                <IntensityThreshold>90</IntensityThreshold>
-                <Distance>2</Distance>
-              </Item>
-            </ProximityEffect>
-          </Fire>
-          <Illness>
-            <ProximityEffect>
-              <Item>
-                <Distance>2</Distance>
-                <InfectionChanceDebuff>2.5</InfectionChanceDebuff>
-              </Item>
-              <Item>
-                <IntensityThreshold>30</IntensityThreshold>
-                <Distance>2</Distance>
-                <InfectionChanceDebuff>5</InfectionChanceDebuff>
-              </Item>
-              <Item>
-                <IntensityThreshold>60</IntensityThreshold>
-                <Distance>2</Distance>
-                <InfectionChanceDebuff>7.5</InfectionChanceDebuff>
-              </Item>
-              <Item>
-                <IntensityThreshold>90</IntensityThreshold>
-                <Distance>2</Distance>
-              </Item>
-            </ProximityEffect>
-          </Illness>
-          <Riot>
-            <ProximityEffect>
-              <Item>
-                <Distance>2</Distance>
-                <InfectionChanceDebuff>2.5</InfectionChanceDebuff>
-              </Item>
-              <Item>
-                <IntensityThreshold>30</IntensityThreshold>
-                <Distance>2</Distance>
-                <InfectionChanceDebuff>5</InfectionChanceDebuff>
-              </Item>
-              <Item>
-                <IntensityThreshold>60</IntensityThreshold>
-                <Distance>2</Distance>
-                <InfectionChanceDebuff>7.5</InfectionChanceDebuff>
-              </Item>
-              <Item>
-                <IntensityThreshold>90</IntensityThreshold>
-                <Distance>2</Distance>
-              </Item>
-            </ProximityEffect>
-          </Riot>
-        </PerIncidentProximityEffect>
-        <IncidentFireIncreaseBase>100</IncidentFireIncreaseBase>
-        <IncidentIllnessIncreaseBase>100</IncidentIllnessIncreaseBase>
-        <IncidentRiotIncreaseBase>100</IncidentRiotIncreaseBase>
-        <IncidentExplosionIncreaseBase>100</IncidentExplosionIncreaseBase>
       </IncidentInfectable>
       <Pausable />
-      <Culture>
-        <CultureType>Culture</CultureType>
-        <SetPages />
-        <UndiscoveredSet>0</UndiscoveredSet>
-        <ModuleListHeader>0</ModuleListHeader>
-        <OpenSetPages>0</OpenSetPages>
-      </Culture>
+      <Culture />
       <StreetActivation />
     </Values>
   </Asset>
@@ -1616,17 +686,8 @@
         <Name>residence_tier04</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_resident.png</IconFilename>
         <InfoDescription>163059</InfoDescription>
-        <Comments />
       </Standard>
-      <Blocking>
-        <HidePropsRadius>1</HidePropsRadius>
-        <DeletePropsRadius>1</DeletePropsRadius>
-        <GroundDecalAsset>0</GroundDecalAsset>
-        <GroundDecalInvisible>0</GroundDecalInvisible>
-        <StreetOutside>0</StreetOutside>
-        <RemoveGrass>1</RemoveGrass>
-        <BlocksBuilding>1</BlocksBuilding>
-      </Blocking>
+      <Blocking />
       <Building>
         <BuildingType>Residence</BuildingType>
         <PickingAsset>1010343</PickingAsset>
@@ -1729,68 +790,6 @@
             </Pool>
           </Mid>
         </BuildingBlockPool>
-        <BuildingCategoryName>100004</BuildingCategoryName>
-        <InfluencedVariationDirection>
-          <Item />
-          <Item>
-            <Direction>1</Direction>
-            <Type>Mid</Type>
-          </Item>
-          <Item>
-            <Type>Mid</Type>
-          </Item>
-          <Item>
-            <Type>Corner</Type>
-          </Item>
-          <Item>
-            <Direction>1</Direction>
-            <Type>Mid</Type>
-          </Item>
-          <Item>
-            <Direction>1</Direction>
-            <Type>Mid</Type>
-          </Item>
-          <Item>
-            <Direction>1</Direction>
-            <Type>Corner</Type>
-          </Item>
-          <Item>
-            <Direction>1</Direction>
-            <Type>Mid</Type>
-          </Item>
-          <Item>
-            <Type>Mid</Type>
-          </Item>
-          <Item>
-            <Direction>3</Direction>
-            <Type>Corner</Type>
-          </Item>
-          <Item>
-            <Type>Mid</Type>
-          </Item>
-          <Item>
-            <Type>Mid</Type>
-          </Item>
-          <Item>
-            <Direction>2</Direction>
-            <Type>Corner</Type>
-          </Item>
-          <Item>
-            <Direction>1</Direction>
-            <Type>Mid</Type>
-          </Item>
-          <Item>
-            <Type>Mid</Type>
-          </Item>
-          <Item />
-        </InfluencedVariationDirection>
-        <Destructable>1</Destructable>
-        <Movable>1</Movable>
-        <ConstructionMenuText>0</ConstructionMenuText>
-        <HasBorderRectOutline>1</HasBorderRectOutline>
-        <SnapRadius>2</SnapRadius>
-        <TerrainType>Terrain</TerrainType>
-        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
       <Cost>
         <Costs>
@@ -1817,22 +816,8 @@
             <Ingredient>1010202</Ingredient>
           </Item>
         </Costs>
-        <ItemsPerCost>1</ItemsPerCost>
-        <InfluenceCostType>None</InfluenceCostType>
-        <InfluenceCostPoints>1</InfluenceCostPoints>
       </Cost>
-      <Mesh>
-        <ObjectPosition>Static</ObjectPosition>
-        <MeshPlacement>Default</MeshPlacement>
-        <DefaultSequence>idle01</DefaultSequence>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
-        <LogoMode>Disabled</LogoMode>
-      </Mesh>
+      <Mesh />
       <Object>
         <Variations>
           <Item>
@@ -1860,33 +845,9 @@
             <Filename>data/graphics/buildings/residence/residence_tier04_08/residence_tier04_08.cfg</Filename>
           </Item>
         </Variations>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <DefaultParticipant>Neutral</DefaultParticipant>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Selection>
         <ParticipantMessageArcheType>Resident_tier04</ParticipantMessageArcheType>
-        <ParticipantMessageTrigger>ClickResidence</ParticipantMessageTrigger>
-        <Colors>
-          <WeakSelectionColorType>NoColor</WeakSelectionColorType>
-        </Colors>
-        <GUIType>Residence</GUIType>
-        <Selectable>1</Selectable>
-        <DestructSelectable>1</DestructSelectable>
-        <OnSelection>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnSelection>
-        <InteractionDistance>15</InteractionDistance>
-        <InfoCorner>25000131</InfoCorner>
-        <AllowedDragType />
       </Selection>
       <Text>
         <LocaText>
@@ -1897,17 +858,10 @@
           </English>
         </LocaText>
         <LineID>5230</LineID>
-        <Localize>1</Localize>
       </Text>
-      <Constructable>
-        <DestructionCategory>Production</DestructionCategory>
-        <ConstructionMode>Default</ConstructionMode>
-        <DestructionType>0</DestructionType>
-      </Constructable>
+      <Constructable />
       <Locked>
         <DefaultLockedState>1</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
       </Locked>
       <Upgradable>
         <NextGUID>1010347</NextGUID>
@@ -1958,26 +912,6 @@
               <Sound>9818387</Sound>
             </Item>
           </BuildUpgradeFailed>
-          <BuildFailed>
-            <Item>
-              <Sound>9818387</Sound>
-            </Item>
-          </BuildFailed>
-          <BuildMoveStart>
-            <Item>
-              <Sound>9818755</Sound>
-            </Item>
-          </BuildMoveStart>
-          <BuildMoveSuccess>
-            <Item>
-              <Sound>203995</Sound>
-            </Item>
-          </BuildMoveSuccess>
-          <BuildMoveEnd>
-            <Item>
-              <Sound>200141</Sound>
-            </Item>
-          </BuildMoveEnd>
         </ConstructionSounds>
         <IncidentSounds>
           <InfectedFire>
@@ -2007,66 +941,19 @@
           </Item>
         </BuildingRepaired>
         <MaterialType>Stone</MaterialType>
-        <DestroySounds>
-          <Item>
-            <Sound>9818756</Sound>
-          </Item>
-        </DestroySounds>
-        <ActiveSounds />
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <ProjectileSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <BuildingRuined />
       </SoundEmitter>
-      <Infolayer>
-        <DefaultInfoLayer>0</DefaultInfoLayer>
-      </Infolayer>
-      <FeedbackController>
-        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
-        <UpdateMeshSequence>1</UpdateMeshSequence>
-      </FeedbackController>
-      <RandomDummySpawner>
-        <RandomAssets>
-          <Item>
-            <DummyName>Display</DummyName>
-            <SpawnProbability>1</SpawnProbability>
-          </Item>
-        </RandomAssets>
-      </RandomDummySpawner>
+      <Infolayer />
+      <FeedbackController />
+      <RandomDummySpawner />
       <Residence7>
         <ResidenceStorage>
           <InputStorageMax>1</InputStorageMax>
         </ResidenceStorage>
         <PopulationLevel7>15000003</PopulationLevel7>
         <ResidentMax>40</ResidentMax>
-        <ResidentStart>1</ResidentStart>
-        <TimeBeforeRuin>180</TimeBeforeRuin>
-        <TimeAsRuin>60</TimeAsRuin>
-        <StressFactor>1</StressFactor>
-        <InfluenceGeneration />
       </Residence7>
       <LogisticNode>
         <REMOVE_THIS_LATER_FeedbackUnitTier>Level4</REMOVE_THIS_LATER_FeedbackUnitTier>
-        <TransporterCountMax>0</TransporterCountMax>
-        <TransporterAsset>1010106</TransporterAsset>
-        <NeedsTransporterQueue>0</NeedsTransporterQueue>
-        <TrainAsset>120025</TrainAsset>
-        <QueueConfiguration>
-          <ProcessingQueueParallelCount>10</ProcessingQueueParallelCount>
-          <LoadingTimeModifier>1</LoadingTimeModifier>
-          <UnloadingTimeModifier>1</UnloadingTimeModifier>
-        </QueueConfiguration>
-        <PathLayers>Street</PathLayers>
       </LogisticNode>
       <AmbientMoodProvider>
         <AmbientMood>ResidenceTier5</AmbientMood>
@@ -2085,58 +972,26 @@
             <Murmur>EngineerHappy</Murmur>
           </Item>
         </HappinessDependentMurmur>
-        <Murmur>None</Murmur>
-        <AttractivityDependentMurmur />
-        <ProductivityDependentMurmur />
-        <SatisfactionDependentMurmur />
-        <IslandAttractivityDependentMurmur />
       </AmbientMoodProvider>
       <UpgradeList />
       <Attackable>
         <MaximumHitPoints>3000</MaximumHitPoints>
-        <HasRuinState>1</HasRuinState>
-        <HPBarOffset>6</HPBarOffset>
-        <PausedTimeIfAttacked>15000</PausedTimeIfAttacked>
-        <SelfHealPerHealTick>2</SelfHealPerHealTick>
-        <SelfHealPausedTimeIfAttacked>15000</SelfHealPausedTimeIfAttacked>
-        <ArmorType>Default</ArmorType>
-        <TakeOverEffect>Never</TakeOverEffect>
-        <IslandWarFlag>0</IslandWarFlag>
-        <RuinSmokeParticles />
-        <ExplosionEffects />
       </Attackable>
       <IncidentInfectable>
         <Infectable>
           <Explosion>
             <Base>0</Base>
             <Escalated>0</Escalated>
-            <Communication>ExplosionDefault</Communication>
           </Explosion>
-          <Illness>
-            <Communication>IllnessDefault</Communication>
-          </Illness>
-          <Riot>
-            <Communication>RiotDefault</Communication>
-          </Riot>
         </Infectable>
         <Explosion>
           <ExplosionCoreDamage>1000</ExplosionCoreDamage>
-          <ExplosionOuterRadius>2</ExplosionOuterRadius>
-          <ExplosionOuterDamagePercentage>25</ExplosionOuterDamagePercentage>
-          <DamageExplosionChance>80</DamageExplosionChance>
-          <DamageExplosionCheckMin>5</DamageExplosionCheckMin>
-          <DamageExplosionCheckMax>25</DamageExplosionCheckMax>
         </Explosion>
         <IncidentInfectionChanceFactors>
           <Fire>
             <BaseChance>3.5</BaseChance>
             <DensityFactor>0.025</DensityFactor>
             <DensityDistance>15</DensityDistance>
-            <HitpointFactor>0.1</HitpointFactor>
-            <DilapidatedFactor>10</DilapidatedFactor>
-            <FactoryOvertimeFactor>0.1</FactoryOvertimeFactor>
-            <HappinessMin>-50</HappinessMin>
-            <HappinessMax>50</HappinessMax>
           </Fire>
           <Illness>
             <BaseChance>3.5</BaseChance>
@@ -2148,110 +1003,19 @@
             <FactoryUndertimeFactor>0.15</FactoryUndertimeFactor>
             <ResidenceFullOvertimeChance>20</ResidenceFullOvertimeChance>
             <ResidenceFullUndertimeChance>-15</ResidenceFullUndertimeChance>
-            <ResidenceSatisfactionFactor>0.1</ResidenceSatisfactionFactor>
-            <HappinessMin>-50</HappinessMin>
-            <HappinessMax>50</HappinessMax>
-            <SatisfactionThreshold>0.5</SatisfactionThreshold>
           </Illness>
           <Riot>
             <ResidenceHappinessFactor>0.4</ResidenceHappinessFactor>
             <HappinessThreshold>15</HappinessThreshold>
-            <FactoryOvertimeFactor>0.3</FactoryOvertimeFactor>
-            <FactoryUndertimeFactor>0.15</FactoryUndertimeFactor>
-            <FactoryHappinessFactor>0.15</FactoryHappinessFactor>
-            <HappinessMin>-50</HappinessMin>
-            <HappinessMax>50</HappinessMax>
           </Riot>
           <Explosion>
             <ResidenceFullOvertimeChance>20</ResidenceFullOvertimeChance>
             <ResidenceFullUndertimeChance>-15</ResidenceFullUndertimeChance>
-            <HitpointFactor>0.1</HitpointFactor>
-            <HappinessMin>-50</HappinessMin>
-            <HappinessMax>50</HappinessMax>
-            <SatisfactionThreshold>0.5</SatisfactionThreshold>
           </Explosion>
         </IncidentInfectionChanceFactors>
-        <PerIncidentProximityEffect>
-          <Fire>
-            <ProximityEffect>
-              <Item>
-                <Distance>2</Distance>
-                <InfectionChanceDebuff>2.5</InfectionChanceDebuff>
-              </Item>
-              <Item>
-                <IntensityThreshold>30</IntensityThreshold>
-                <Distance>2</Distance>
-                <InfectionChanceDebuff>5</InfectionChanceDebuff>
-              </Item>
-              <Item>
-                <IntensityThreshold>60</IntensityThreshold>
-                <Distance>2</Distance>
-                <InfectionChanceDebuff>7.5</InfectionChanceDebuff>
-              </Item>
-              <Item>
-                <IntensityThreshold>90</IntensityThreshold>
-                <Distance>2</Distance>
-              </Item>
-            </ProximityEffect>
-          </Fire>
-          <Illness>
-            <ProximityEffect>
-              <Item>
-                <Distance>2</Distance>
-                <InfectionChanceDebuff>2.5</InfectionChanceDebuff>
-              </Item>
-              <Item>
-                <IntensityThreshold>30</IntensityThreshold>
-                <Distance>2</Distance>
-                <InfectionChanceDebuff>5</InfectionChanceDebuff>
-              </Item>
-              <Item>
-                <IntensityThreshold>60</IntensityThreshold>
-                <Distance>2</Distance>
-                <InfectionChanceDebuff>7.5</InfectionChanceDebuff>
-              </Item>
-              <Item>
-                <IntensityThreshold>90</IntensityThreshold>
-                <Distance>2</Distance>
-              </Item>
-            </ProximityEffect>
-          </Illness>
-          <Riot>
-            <ProximityEffect>
-              <Item>
-                <Distance>2</Distance>
-                <InfectionChanceDebuff>2.5</InfectionChanceDebuff>
-              </Item>
-              <Item>
-                <IntensityThreshold>30</IntensityThreshold>
-                <Distance>2</Distance>
-                <InfectionChanceDebuff>5</InfectionChanceDebuff>
-              </Item>
-              <Item>
-                <IntensityThreshold>60</IntensityThreshold>
-                <Distance>2</Distance>
-                <InfectionChanceDebuff>7.5</InfectionChanceDebuff>
-              </Item>
-              <Item>
-                <IntensityThreshold>90</IntensityThreshold>
-                <Distance>2</Distance>
-              </Item>
-            </ProximityEffect>
-          </Riot>
-        </PerIncidentProximityEffect>
-        <IncidentFireIncreaseBase>100</IncidentFireIncreaseBase>
-        <IncidentIllnessIncreaseBase>100</IncidentIllnessIncreaseBase>
-        <IncidentRiotIncreaseBase>100</IncidentRiotIncreaseBase>
-        <IncidentExplosionIncreaseBase>100</IncidentExplosionIncreaseBase>
       </IncidentInfectable>
       <Pausable />
-      <Culture>
-        <CultureType>Culture</CultureType>
-        <SetPages />
-        <UndiscoveredSet>0</UndiscoveredSet>
-        <ModuleListHeader>0</ModuleListHeader>
-        <OpenSetPages>0</OpenSetPages>
-      </Culture>
+      <Culture />
       <StreetActivation />
     </Values>
   </Asset>
@@ -2263,17 +1027,8 @@
         <Name>residence_tier05</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_resident.png</IconFilename>
         <InfoDescription>163059</InfoDescription>
-        <Comments />
       </Standard>
-      <Blocking>
-        <HidePropsRadius>1</HidePropsRadius>
-        <DeletePropsRadius>1</DeletePropsRadius>
-        <GroundDecalAsset>0</GroundDecalAsset>
-        <GroundDecalInvisible>0</GroundDecalInvisible>
-        <StreetOutside>0</StreetOutside>
-        <RemoveGrass>1</RemoveGrass>
-        <BlocksBuilding>1</BlocksBuilding>
-      </Blocking>
+      <Blocking />
       <Building>
         <BuildingType>Residence</BuildingType>
         <PickingAsset>1010343</PickingAsset>
@@ -2367,68 +1122,6 @@
             </Pool>
           </Mid>
         </BuildingBlockPool>
-        <BuildingCategoryName>100004</BuildingCategoryName>
-        <InfluencedVariationDirection>
-          <Item />
-          <Item>
-            <Direction>1</Direction>
-            <Type>Mid</Type>
-          </Item>
-          <Item>
-            <Type>Mid</Type>
-          </Item>
-          <Item>
-            <Type>Corner</Type>
-          </Item>
-          <Item>
-            <Direction>1</Direction>
-            <Type>Mid</Type>
-          </Item>
-          <Item>
-            <Direction>1</Direction>
-            <Type>Mid</Type>
-          </Item>
-          <Item>
-            <Direction>1</Direction>
-            <Type>Corner</Type>
-          </Item>
-          <Item>
-            <Direction>1</Direction>
-            <Type>Mid</Type>
-          </Item>
-          <Item>
-            <Type>Mid</Type>
-          </Item>
-          <Item>
-            <Direction>3</Direction>
-            <Type>Corner</Type>
-          </Item>
-          <Item>
-            <Type>Mid</Type>
-          </Item>
-          <Item>
-            <Type>Mid</Type>
-          </Item>
-          <Item>
-            <Direction>2</Direction>
-            <Type>Corner</Type>
-          </Item>
-          <Item>
-            <Direction>1</Direction>
-            <Type>Mid</Type>
-          </Item>
-          <Item>
-            <Type>Mid</Type>
-          </Item>
-          <Item />
-        </InfluencedVariationDirection>
-        <Destructable>1</Destructable>
-        <Movable>1</Movable>
-        <ConstructionMenuText>0</ConstructionMenuText>
-        <HasBorderRectOutline>1</HasBorderRectOutline>
-        <SnapRadius>2</SnapRadius>
-        <TerrainType>Terrain</TerrainType>
-        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
       <Cost>
         <Costs>
@@ -2456,22 +1149,8 @@
             <Amount>10</Amount>
           </Item>
         </Costs>
-        <ItemsPerCost>1</ItemsPerCost>
-        <InfluenceCostType>None</InfluenceCostType>
-        <InfluenceCostPoints>1</InfluenceCostPoints>
       </Cost>
-      <Mesh>
-        <ObjectPosition>Static</ObjectPosition>
-        <MeshPlacement>Default</MeshPlacement>
-        <DefaultSequence>idle01</DefaultSequence>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
-        <LogoMode>Disabled</LogoMode>
-      </Mesh>
+      <Mesh />
       <Object>
         <Variations>
           <Item>
@@ -2496,33 +1175,9 @@
             <Filename>data/graphics/buildings/residence/residence_tier05_07/residence_tier05_07.cfg</Filename>
           </Item>
         </Variations>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <DefaultParticipant>Neutral</DefaultParticipant>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Selection>
         <ParticipantMessageArcheType>Resident_tier05</ParticipantMessageArcheType>
-        <ParticipantMessageTrigger>ClickResidence</ParticipantMessageTrigger>
-        <Colors>
-          <WeakSelectionColorType>NoColor</WeakSelectionColorType>
-        </Colors>
-        <GUIType>Residence</GUIType>
-        <Selectable>1</Selectable>
-        <DestructSelectable>1</DestructSelectable>
-        <OnSelection>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnSelection>
-        <InteractionDistance>15</InteractionDistance>
-        <InfoCorner>25000131</InfoCorner>
-        <AllowedDragType />
       </Selection>
       <Text>
         <LocaText>
@@ -2533,41 +1188,12 @@
           </English>
         </LocaText>
         <LineID>5231</LineID>
-        <Localize>1</Localize>
       </Text>
-      <Constructable>
-        <DestructionCategory>Production</DestructionCategory>
-        <ConstructionMode>Default</ConstructionMode>
-        <DestructionType>0</DestructionType>
-      </Constructable>
+      <Constructable />
       <Locked>
         <DefaultLockedState>1</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
       </Locked>
-      <Upgradable>
-        <UpgradeCost>
-          <Item>
-            <Ingredient>1010017</Ingredient>
-          </Item>
-          <Item>
-            <Ingredient>1010196</Ingredient>
-          </Item>
-          <Item>
-            <Ingredient>1010205</Ingredient>
-          </Item>
-          <Item>
-            <Ingredient>1010218</Ingredient>
-          </Item>
-          <Item>
-            <Ingredient>1010207</Ingredient>
-          </Item>
-          <Item>
-            <Ingredient>1010202</Ingredient>
-          </Item>
-        </UpgradeCost>
-        <NextGUID>0</NextGUID>
-      </Upgradable>
+      <Upgradable />
       <SoundEmitter>
         <ConstructionSounds>
           <BuildSuccessful>
@@ -2589,26 +1215,6 @@
               <Sound>9818387</Sound>
             </Item>
           </BuildUpgradeFailed>
-          <BuildFailed>
-            <Item>
-              <Sound>9818387</Sound>
-            </Item>
-          </BuildFailed>
-          <BuildMoveStart>
-            <Item>
-              <Sound>9818755</Sound>
-            </Item>
-          </BuildMoveStart>
-          <BuildMoveSuccess>
-            <Item>
-              <Sound>203995</Sound>
-            </Item>
-          </BuildMoveSuccess>
-          <BuildMoveEnd>
-            <Item>
-              <Sound>200141</Sound>
-            </Item>
-          </BuildMoveEnd>
         </ConstructionSounds>
         <IncidentSounds>
           <InfectedFire>
@@ -2638,42 +1244,10 @@
           </Item>
         </BuildingRepaired>
         <MaterialType>Stone</MaterialType>
-        <DestroySounds>
-          <Item>
-            <Sound>9818756</Sound>
-          </Item>
-        </DestroySounds>
-        <ActiveSounds />
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <ProjectileSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <BuildingRuined />
       </SoundEmitter>
-      <Infolayer>
-        <DefaultInfoLayer>0</DefaultInfoLayer>
-      </Infolayer>
-      <FeedbackController>
-        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
-        <UpdateMeshSequence>1</UpdateMeshSequence>
-      </FeedbackController>
-      <RandomDummySpawner>
-        <RandomAssets>
-          <Item>
-            <DummyName>Display</DummyName>
-            <SpawnProbability>1</SpawnProbability>
-          </Item>
-        </RandomAssets>
-      </RandomDummySpawner>
+      <Infolayer />
+      <FeedbackController />
+      <RandomDummySpawner />
       <Residence7>
         <ResidenceStorage>
           <InputStorageMax>1</InputStorageMax>
@@ -2686,23 +1260,9 @@
             <ResidentsNeededToKeep>1</ResidentsNeededToKeep>
           </Item>
         </InfluenceGeneration>
-        <ResidentStart>1</ResidentStart>
-        <TimeBeforeRuin>180</TimeBeforeRuin>
-        <TimeAsRuin>60</TimeAsRuin>
-        <StressFactor>1</StressFactor>
       </Residence7>
       <LogisticNode>
         <REMOVE_THIS_LATER_FeedbackUnitTier>Level4</REMOVE_THIS_LATER_FeedbackUnitTier>
-        <TransporterCountMax>0</TransporterCountMax>
-        <TransporterAsset>1010106</TransporterAsset>
-        <NeedsTransporterQueue>0</NeedsTransporterQueue>
-        <TrainAsset>120025</TrainAsset>
-        <QueueConfiguration>
-          <ProcessingQueueParallelCount>10</ProcessingQueueParallelCount>
-          <LoadingTimeModifier>1</LoadingTimeModifier>
-          <UnloadingTimeModifier>1</UnloadingTimeModifier>
-        </QueueConfiguration>
-        <PathLayers>Street</PathLayers>
       </LogisticNode>
       <AmbientMoodProvider>
         <AmbientMood>ResidenceTier5</AmbientMood>
@@ -2721,58 +1281,26 @@
             <Murmur>InvestorHappy</Murmur>
           </Item>
         </HappinessDependentMurmur>
-        <Murmur>None</Murmur>
-        <AttractivityDependentMurmur />
-        <ProductivityDependentMurmur />
-        <SatisfactionDependentMurmur />
-        <IslandAttractivityDependentMurmur />
       </AmbientMoodProvider>
       <UpgradeList />
       <Attackable>
         <MaximumHitPoints>3500</MaximumHitPoints>
-        <HasRuinState>1</HasRuinState>
-        <HPBarOffset>6</HPBarOffset>
-        <PausedTimeIfAttacked>15000</PausedTimeIfAttacked>
-        <SelfHealPerHealTick>2</SelfHealPerHealTick>
-        <SelfHealPausedTimeIfAttacked>15000</SelfHealPausedTimeIfAttacked>
-        <ArmorType>Default</ArmorType>
-        <TakeOverEffect>Never</TakeOverEffect>
-        <IslandWarFlag>0</IslandWarFlag>
-        <RuinSmokeParticles />
-        <ExplosionEffects />
       </Attackable>
       <IncidentInfectable>
         <Infectable>
           <Explosion>
             <Base>0</Base>
             <Escalated>0</Escalated>
-            <Communication>ExplosionDefault</Communication>
           </Explosion>
-          <Illness>
-            <Communication>IllnessDefault</Communication>
-          </Illness>
-          <Riot>
-            <Communication>RiotDefault</Communication>
-          </Riot>
         </Infectable>
         <Explosion>
           <ExplosionCoreDamage>1000</ExplosionCoreDamage>
-          <ExplosionOuterRadius>2</ExplosionOuterRadius>
-          <ExplosionOuterDamagePercentage>25</ExplosionOuterDamagePercentage>
-          <DamageExplosionChance>80</DamageExplosionChance>
-          <DamageExplosionCheckMin>5</DamageExplosionCheckMin>
-          <DamageExplosionCheckMax>25</DamageExplosionCheckMax>
         </Explosion>
         <IncidentInfectionChanceFactors>
           <Fire>
             <BaseChance>3</BaseChance>
             <DensityFactor>0.025</DensityFactor>
             <DensityDistance>15</DensityDistance>
-            <HitpointFactor>0.1</HitpointFactor>
-            <DilapidatedFactor>10</DilapidatedFactor>
-            <FactoryOvertimeFactor>0.1</FactoryOvertimeFactor>
-            <HappinessMin>-50</HappinessMin>
-            <HappinessMax>50</HappinessMax>
           </Fire>
           <Illness>
             <BaseChance>3</BaseChance>
@@ -2784,1156 +1312,516 @@
             <FactoryUndertimeFactor>0.15</FactoryUndertimeFactor>
             <ResidenceFullOvertimeChance>20</ResidenceFullOvertimeChance>
             <ResidenceFullUndertimeChance>-15</ResidenceFullUndertimeChance>
-            <ResidenceSatisfactionFactor>0.1</ResidenceSatisfactionFactor>
-            <HappinessMin>-50</HappinessMin>
-            <HappinessMax>50</HappinessMax>
-            <SatisfactionThreshold>0.5</SatisfactionThreshold>
           </Illness>
           <Riot>
             <ResidenceHappinessFactor>0.4</ResidenceHappinessFactor>
             <HappinessThreshold>15</HappinessThreshold>
-            <FactoryOvertimeFactor>0.3</FactoryOvertimeFactor>
-            <FactoryUndertimeFactor>0.15</FactoryUndertimeFactor>
-            <FactoryHappinessFactor>0.15</FactoryHappinessFactor>
-            <HappinessMin>-50</HappinessMin>
-            <HappinessMax>50</HappinessMax>
           </Riot>
           <Explosion>
             <ResidenceFullOvertimeChance>20</ResidenceFullOvertimeChance>
             <ResidenceFullUndertimeChance>-15</ResidenceFullUndertimeChance>
-            <HitpointFactor>0.1</HitpointFactor>
-            <HappinessMin>-50</HappinessMin>
-            <HappinessMax>50</HappinessMax>
-            <SatisfactionThreshold>0.5</SatisfactionThreshold>
           </Explosion>
         </IncidentInfectionChanceFactors>
-        <PerIncidentProximityEffect>
-          <Fire>
-            <ProximityEffect>
-              <Item>
-                <Distance>2</Distance>
-                <InfectionChanceDebuff>2.5</InfectionChanceDebuff>
-              </Item>
-              <Item>
-                <IntensityThreshold>30</IntensityThreshold>
-                <Distance>2</Distance>
-                <InfectionChanceDebuff>5</InfectionChanceDebuff>
-              </Item>
-              <Item>
-                <IntensityThreshold>60</IntensityThreshold>
-                <Distance>2</Distance>
-                <InfectionChanceDebuff>7.5</InfectionChanceDebuff>
-              </Item>
-              <Item>
-                <IntensityThreshold>90</IntensityThreshold>
-                <Distance>2</Distance>
-              </Item>
-            </ProximityEffect>
-          </Fire>
-          <Illness>
-            <ProximityEffect>
-              <Item>
-                <Distance>2</Distance>
-                <InfectionChanceDebuff>2.5</InfectionChanceDebuff>
-              </Item>
-              <Item>
-                <IntensityThreshold>30</IntensityThreshold>
-                <Distance>2</Distance>
-                <InfectionChanceDebuff>5</InfectionChanceDebuff>
-              </Item>
-              <Item>
-                <IntensityThreshold>60</IntensityThreshold>
-                <Distance>2</Distance>
-                <InfectionChanceDebuff>7.5</InfectionChanceDebuff>
-              </Item>
-              <Item>
-                <IntensityThreshold>90</IntensityThreshold>
-                <Distance>2</Distance>
-              </Item>
-            </ProximityEffect>
-          </Illness>
-          <Riot>
-            <ProximityEffect>
-              <Item>
-                <Distance>2</Distance>
-                <InfectionChanceDebuff>2.5</InfectionChanceDebuff>
-              </Item>
-              <Item>
-                <IntensityThreshold>30</IntensityThreshold>
-                <Distance>2</Distance>
-                <InfectionChanceDebuff>5</InfectionChanceDebuff>
-              </Item>
-              <Item>
-                <IntensityThreshold>60</IntensityThreshold>
-                <Distance>2</Distance>
-                <InfectionChanceDebuff>7.5</InfectionChanceDebuff>
-              </Item>
-              <Item>
-                <IntensityThreshold>90</IntensityThreshold>
-                <Distance>2</Distance>
-              </Item>
-            </ProximityEffect>
-          </Riot>
-        </PerIncidentProximityEffect>
-        <IncidentFireIncreaseBase>100</IncidentFireIncreaseBase>
-        <IncidentIllnessIncreaseBase>100</IncidentIllnessIncreaseBase>
-        <IncidentRiotIncreaseBase>100</IncidentRiotIncreaseBase>
-        <IncidentExplosionIncreaseBase>100</IncidentExplosionIncreaseBase>
       </IncidentInfectable>
       <Pausable />
-      <Culture>
-        <CultureType>Culture</CultureType>
-        <SetPages />
-        <UndiscoveredSet>0</UndiscoveredSet>
-        <ModuleListHeader>0</ModuleListHeader>
-        <OpenSetPages>0</OpenSetPages>
-      </Culture>
+      <Culture />
       <StreetActivation />
     </Values>
   </Asset>
   <Asset>
-    <Template>ResidenceBuilding7</Template>
+    <BaseAssetGUID>1010343</BaseAssetGUID>
     <Values>
       <Standard>
         <GUID>101254</GUID>
         <Name>residence_colony01_tier01</Name>
-        <IconFilename>data/ui/2kimages/main/3dicons/icon_resident.png</IconFilename>
-        <InfoDescription>163059</InfoDescription>
-        <Comments />
       </Standard>
-      <Blocking>
-        <HidePropsRadius>1</HidePropsRadius>
-        <DeletePropsRadius>1</DeletePropsRadius>
-        <GroundDecalAsset>0</GroundDecalAsset>
-        <GroundDecalInvisible>0</GroundDecalInvisible>
-        <StreetOutside>0</StreetOutside>
-        <RemoveGrass>1</RemoveGrass>
-        <BlocksBuilding>1</BlocksBuilding>
-      </Blocking>
+      <Blocking />
       <Building>
         <AssociatedRegions>Colony01</AssociatedRegions>
-        <BuildingType>Residence</BuildingType>
-        <SkipUnlockMessage>1</SkipUnlockMessage>
-        <BuildModeRandomRotation>90</BuildModeRandomRotation>
-        <BuildingCategoryName>100004</BuildingCategoryName>
-        <InfluencedVariationDirection>
-          <Item />
-          <Item>
-            <Direction>1</Direction>
-            <Type>Mid</Type>
-          </Item>
-          <Item>
-            <Type>Mid</Type>
-          </Item>
-          <Item>
-            <Type>Corner</Type>
-          </Item>
-          <Item>
-            <Direction>1</Direction>
-            <Type>Mid</Type>
-          </Item>
-          <Item>
-            <Direction>1</Direction>
-            <Type>Mid</Type>
-          </Item>
-          <Item>
-            <Direction>1</Direction>
-            <Type>Corner</Type>
-          </Item>
-          <Item>
-            <Direction>1</Direction>
-            <Type>Mid</Type>
-          </Item>
-          <Item>
-            <Type>Mid</Type>
-          </Item>
-          <Item>
-            <Direction>3</Direction>
-            <Type>Corner</Type>
-          </Item>
-          <Item>
-            <Type>Mid</Type>
-          </Item>
-          <Item>
-            <Type>Mid</Type>
-          </Item>
-          <Item>
-            <Direction>2</Direction>
-            <Type>Corner</Type>
-          </Item>
-          <Item>
-            <Direction>1</Direction>
-            <Type>Mid</Type>
-          </Item>
-          <Item>
-            <Type>Mid</Type>
-          </Item>
-          <Item />
-        </InfluencedVariationDirection>
-        <Destructable>1</Destructable>
-        <Movable>1</Movable>
-        <PickingAsset>0</PickingAsset>
-        <ConstructionMenuText>0</ConstructionMenuText>
-        <HasBorderRectOutline>1</HasBorderRectOutline>
-        <SnapRadius>2</SnapRadius>
-        <TerrainType>Terrain</TerrainType>
-        <InfluencedByNeighbors />
-        <BuildingBlockPool />
-        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
       <Cost>
         <Costs>
           <Item>
-            <Ingredient>1010017</Ingredient>
+            <VectorElement>
+              <InheritedIndex>0</InheritedIndex>
+              <InheritanceMapV2>
+                <Entry>
+                  <TemplateName>ResidenceBuilding7</TemplateName>
+                  <Index>0</Index>
+                </Entry>
+              </InheritanceMapV2>
+            </VectorElement>
           </Item>
           <Item>
+            <VectorElement>
+              <InheritedIndex>1</InheritedIndex>
+              <InheritanceMapV2>
+                <Entry>
+                  <TemplateName>ResidenceBuilding7</TemplateName>
+                  <Index>1</Index>
+                </Entry>
+              </InheritanceMapV2>
+            </VectorElement>
             <Amount>1</Amount>
-            <Ingredient>1010196</Ingredient>
           </Item>
           <Item>
-            <Ingredient>1010205</Ingredient>
+            <VectorElement>
+              <InheritedIndex>2</InheritedIndex>
+              <InheritanceMapV2>
+                <Entry>
+                  <TemplateName>ResidenceBuilding7</TemplateName>
+                  <Index>2</Index>
+                </Entry>
+              </InheritanceMapV2>
+            </VectorElement>
           </Item>
           <Item>
-            <Ingredient>1010218</Ingredient>
+            <VectorElement>
+              <InheritedIndex>3</InheritedIndex>
+              <InheritanceMapV2>
+                <Entry>
+                  <TemplateName>ResidenceBuilding7</TemplateName>
+                  <Index>3</Index>
+                </Entry>
+              </InheritanceMapV2>
+            </VectorElement>
           </Item>
           <Item>
-            <Ingredient>1010207</Ingredient>
+            <VectorElement>
+              <InheritedIndex>4</InheritedIndex>
+              <InheritanceMapV2>
+                <Entry>
+                  <TemplateName>ResidenceBuilding7</TemplateName>
+                  <Index>4</Index>
+                </Entry>
+              </InheritanceMapV2>
+            </VectorElement>
           </Item>
           <Item>
-            <Ingredient>1010202</Ingredient>
+            <VectorElement>
+              <InheritedIndex>5</InheritedIndex>
+              <InheritanceMapV2>
+                <Entry>
+                  <TemplateName>ResidenceBuilding7</TemplateName>
+                  <Index>5</Index>
+                </Entry>
+              </InheritanceMapV2>
+            </VectorElement>
           </Item>
         </Costs>
-        <ItemsPerCost>1</ItemsPerCost>
-        <InfluenceCostType>None</InfluenceCostType>
-        <InfluenceCostPoints>1</InfluenceCostPoints>
       </Cost>
-      <Mesh>
-        <ObjectPosition>Static</ObjectPosition>
-        <MeshPlacement>Default</MeshPlacement>
-        <DefaultSequence>idle01</DefaultSequence>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
-        <LogoMode>Disabled</LogoMode>
-      </Mesh>
+      <Mesh />
       <Object>
         <Variations>
           <Item>
+            <VectorElement>
+              <InheritedIndex>0</InheritedIndex>
+              <InheritanceMapV2>
+                <Entry>
+                  <TemplateName>ResidenceBuilding7</TemplateName>
+                  <Index>0</Index>
+                </Entry>
+              </InheritanceMapV2>
+            </VectorElement>
             <Filename>data/graphics/buildings/residence/residence_colony01_tier01_estate01/residence_colony01_tier01_estate01.cfg</Filename>
           </Item>
           <Item>
+            <VectorElement>
+              <InheritedIndex>1</InheritedIndex>
+              <InheritanceMapV2>
+                <Entry>
+                  <TemplateName>ResidenceBuilding7</TemplateName>
+                  <Index>1</Index>
+                </Entry>
+              </InheritanceMapV2>
+            </VectorElement>
             <Filename>data/graphics/buildings/residence/residence_colony01_tier01_estate02/residence_colony01_tier01_estate02.cfg</Filename>
           </Item>
           <Item>
+            <VectorElement>
+              <InheritedIndex>2</InheritedIndex>
+              <InheritanceMapV2>
+                <Entry>
+                  <TemplateName>ResidenceBuilding7</TemplateName>
+                  <Index>2</Index>
+                </Entry>
+              </InheritanceMapV2>
+            </VectorElement>
             <Filename>data/graphics/buildings/residence/residence_colony01_tier01_estate03/residence_colony01_tier01_estate03.cfg</Filename>
           </Item>
         </Variations>
         <DefaultParticipant>SA_Resident_tier01</DefaultParticipant>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Selection>
         <ParticipantMessageArcheType>SA_Resident_tier01</ParticipantMessageArcheType>
-        <ParticipantMessageTrigger>ClickResidence</ParticipantMessageTrigger>
-        <Colors>
-          <WeakSelectionColorType>NoColor</WeakSelectionColorType>
-        </Colors>
-        <GUIType>Residence</GUIType>
-        <Selectable>1</Selectable>
-        <DestructSelectable>1</DestructSelectable>
-        <OnSelection>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnSelection>
-        <InteractionDistance>15</InteractionDistance>
-        <InfoCorner>25000131</InfoCorner>
-        <AllowedDragType />
       </Selection>
       <Text>
         <LocaText>
           <English>
             <Text>Jornalero Residence</Text>
             <ExportCount>3</ExportCount>
-            <Status>Exported</Status>
           </English>
         </LocaText>
         <LineID>8481</LineID>
-        <Localize>1</Localize>
       </Text>
-      <Constructable>
-        <DestructionCategory>Production</DestructionCategory>
-        <ConstructionMode>Default</ConstructionMode>
-        <DestructionType>0</DestructionType>
-      </Constructable>
-      <Locked>
-        <DefaultLockedState>1</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
-      </Locked>
+      <Constructable />
+      <Locked />
       <Upgradable>
         <NextGUID>101255</NextGUID>
         <UpgradeCost>
           <Item>
-            <Ingredient>1010017</Ingredient>
+            <VectorElement>
+              <InheritedIndex>0</InheritedIndex>
+              <InheritanceMapV2>
+                <Entry>
+                  <TemplateName>ResidenceBuilding7</TemplateName>
+                  <Index>0</Index>
+                </Entry>
+              </InheritanceMapV2>
+            </VectorElement>
           </Item>
           <Item>
+            <VectorElement>
+              <InheritedIndex>1</InheritedIndex>
+              <InheritanceMapV2>
+                <Entry>
+                  <TemplateName>ResidenceBuilding7</TemplateName>
+                  <Index>1</Index>
+                </Entry>
+              </InheritanceMapV2>
+            </VectorElement>
             <Amount>2</Amount>
-            <Ingredient>1010196</Ingredient>
           </Item>
           <Item>
-            <Ingredient>1010205</Ingredient>
+            <VectorElement>
+              <InheritedIndex>2</InheritedIndex>
+              <InheritanceMapV2>
+                <Entry>
+                  <TemplateName>ResidenceBuilding7</TemplateName>
+                  <Index>2</Index>
+                </Entry>
+              </InheritanceMapV2>
+            </VectorElement>
           </Item>
           <Item>
-            <Ingredient>1010218</Ingredient>
+            <VectorElement>
+              <InheritedIndex>3</InheritedIndex>
+              <InheritanceMapV2>
+                <Entry>
+                  <TemplateName>ResidenceBuilding7</TemplateName>
+                  <Index>3</Index>
+                </Entry>
+              </InheritanceMapV2>
+            </VectorElement>
           </Item>
           <Item>
-            <Ingredient>1010207</Ingredient>
+            <VectorElement>
+              <InheritedIndex>4</InheritedIndex>
+              <InheritanceMapV2>
+                <Entry>
+                  <TemplateName>ResidenceBuilding7</TemplateName>
+                  <Index>4</Index>
+                </Entry>
+              </InheritanceMapV2>
+            </VectorElement>
           </Item>
           <Item>
-            <Ingredient>1010202</Ingredient>
+            <VectorElement>
+              <InheritedIndex>5</InheritedIndex>
+              <InheritanceMapV2>
+                <Entry>
+                  <TemplateName>ResidenceBuilding7</TemplateName>
+                  <Index>5</Index>
+                </Entry>
+              </InheritanceMapV2>
+            </VectorElement>
           </Item>
         </UpgradeCost>
       </Upgradable>
-      <SoundEmitter>
-        <ConstructionSounds>
-          <BuildSuccessful>
-            <Item>
-              <VectorElement>
-                <InheritedIndex>0</InheritedIndex>
-                <InheritanceMapV2>
-                  <Entry>
-                    <TemplateName>ResidenceBuilding7</TemplateName>
-                    <Index>0</Index>
-                  </Entry>
-                </InheritanceMapV2>
-              </VectorElement>
-              <Sound>200776</Sound>
-            </Item>
-          </BuildSuccessful>
-          <BuildUpgradeFailed>
-            <Item>
-              <Sound>9818387</Sound>
-            </Item>
-          </BuildUpgradeFailed>
-          <BuildFailed>
-            <Item>
-              <Sound>9818387</Sound>
-            </Item>
-          </BuildFailed>
-          <BuildMoveStart>
-            <Item>
-              <Sound>9818755</Sound>
-            </Item>
-          </BuildMoveStart>
-          <BuildMoveSuccess>
-            <Item>
-              <Sound>203995</Sound>
-            </Item>
-          </BuildMoveSuccess>
-          <BuildMoveEnd>
-            <Item>
-              <Sound>200141</Sound>
-            </Item>
-          </BuildMoveEnd>
-        </ConstructionSounds>
-        <IncidentSounds>
-          <InfectedFire>
-            <Item>
-              <Sound>214659</Sound>
-            </Item>
-          </InfectedFire>
-          <InfectedIllness>
-            <Item>
-              <Sound>214756</Sound>
-            </Item>
-          </InfectedIllness>
-          <InfectedRiot>
-            <Item>
-              <Sound>222229</Sound>
-            </Item>
-          </InfectedRiot>
-          <ExplosionOneShots>
-            <Item>
-              <Sound>203849</Sound>
-            </Item>
-          </ExplosionOneShots>
-        </IncidentSounds>
-        <BuildingRepaired>
-          <Item>
-            <Sound>203866</Sound>
-          </Item>
-        </BuildingRepaired>
-        <MaterialType>Wood</MaterialType>
-        <DestroySounds>
-          <Item>
-            <Sound>9818756</Sound>
-          </Item>
-        </DestroySounds>
-        <ActiveSounds />
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <ProjectileSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <BuildingRuined />
-      </SoundEmitter>
-      <Infolayer>
-        <DefaultInfoLayer>0</DefaultInfoLayer>
-      </Infolayer>
-      <FeedbackController>
-        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
-        <UpdateMeshSequence>1</UpdateMeshSequence>
-      </FeedbackController>
-      <RandomDummySpawner>
-        <RandomAssets>
-          <Item>
-            <DummyName>Display</DummyName>
-            <SpawnProbability>1</SpawnProbability>
-          </Item>
-        </RandomAssets>
-      </RandomDummySpawner>
+      <SoundEmitter />
+      <Infolayer />
+      <FeedbackController />
+      <RandomDummySpawner />
       <Residence7>
         <PopulationLevel7>15000005</PopulationLevel7>
-        <ResidenceStorage>
-          <InputStorageMax>1</InputStorageMax>
-        </ResidenceStorage>
-        <ResidentMax>10</ResidentMax>
-        <ResidentStart>1</ResidentStart>
-        <TimeBeforeRuin>180</TimeBeforeRuin>
-        <TimeAsRuin>60</TimeAsRuin>
-        <StressFactor>1</StressFactor>
-        <InfluenceGeneration />
       </Residence7>
-      <LogisticNode>
-        <TransporterCountMax>0</TransporterCountMax>
-        <TransporterAsset>1010106</TransporterAsset>
-        <NeedsTransporterQueue>0</NeedsTransporterQueue>
-        <TrainAsset>120025</TrainAsset>
-        <QueueConfiguration>
-          <ProcessingQueueParallelCount>10</ProcessingQueueParallelCount>
-          <LoadingTimeModifier>1</LoadingTimeModifier>
-          <UnloadingTimeModifier>1</UnloadingTimeModifier>
-        </QueueConfiguration>
-        <REMOVE_THIS_LATER_FeedbackUnitTier>Level1</REMOVE_THIS_LATER_FeedbackUnitTier>
-        <PathLayers>Street</PathLayers>
-      </LogisticNode>
+      <LogisticNode />
       <AmbientMoodProvider>
         <HappinessDependentMurmur>
           <Item>
+            <VectorElement>
+              <InheritedIndex>0</InheritedIndex>
+              <InheritanceMapV2>
+                <Entry>
+                  <TemplateName>ResidenceBuilding7</TemplateName>
+                  <Index>0</Index>
+                </Entry>
+              </InheritanceMapV2>
+            </VectorElement>
             <Murmur>JornaleroUnhappy</Murmur>
-            <Happiness>-1000</Happiness>
           </Item>
           <Item>
+            <VectorElement>
+              <InheritedIndex>1</InheritedIndex>
+              <InheritanceMapV2>
+                <Entry>
+                  <TemplateName>ResidenceBuilding7</TemplateName>
+                  <Index>1</Index>
+                </Entry>
+              </InheritanceMapV2>
+            </VectorElement>
             <Murmur>JornaleroContent</Murmur>
-            <Happiness>-20</Happiness>
           </Item>
           <Item>
+            <VectorElement>
+              <InheritedIndex>2</InheritedIndex>
+              <InheritanceMapV2>
+                <Entry>
+                  <TemplateName>ResidenceBuilding7</TemplateName>
+                  <Index>2</Index>
+                </Entry>
+              </InheritanceMapV2>
+            </VectorElement>
             <Murmur>JornaleroHappy</Murmur>
-            <Happiness>20</Happiness>
           </Item>
         </HappinessDependentMurmur>
-        <DynamicEnvironmentType>ResidenceT1</DynamicEnvironmentType>
-        <AmbientMood>ResidenceTier1</AmbientMood>
-        <Murmur>None</Murmur>
-        <AttractivityDependentMurmur />
-        <ProductivityDependentMurmur />
-        <SatisfactionDependentMurmur />
-        <IslandAttractivityDependentMurmur />
       </AmbientMoodProvider>
       <UpgradeList />
-      <Attackable>
-        <MaximumHitPoints>1500</MaximumHitPoints>
-        <HasRuinState>1</HasRuinState>
-        <HPBarOffset>6</HPBarOffset>
-        <PausedTimeIfAttacked>15000</PausedTimeIfAttacked>
-        <SelfHealPerHealTick>2</SelfHealPerHealTick>
-        <SelfHealPausedTimeIfAttacked>15000</SelfHealPausedTimeIfAttacked>
-        <ArmorType>Default</ArmorType>
-        <TakeOverEffect>Never</TakeOverEffect>
-        <IslandWarFlag>0</IslandWarFlag>
-        <RuinSmokeParticles />
-        <ExplosionEffects />
-      </Attackable>
+      <Attackable />
       <IncidentInfectable>
         <Explosion>
           <DamageExplosionChance>0</DamageExplosionChance>
-          <ExplosionCoreDamage>1000</ExplosionCoreDamage>
-          <ExplosionOuterRadius>2</ExplosionOuterRadius>
-          <ExplosionOuterDamagePercentage>25</ExplosionOuterDamagePercentage>
-          <DamageExplosionCheckMin>5</DamageExplosionCheckMin>
-          <DamageExplosionCheckMax>25</DamageExplosionCheckMax>
         </Explosion>
-        <Infectable>
-          <Explosion>
-            <Base>0</Base>
-            <Escalated>0</Escalated>
-            <Communication>ExplosionDefault</Communication>
-          </Explosion>
-          <Illness>
-            <Communication>IllnessDefault</Communication>
-          </Illness>
-          <Riot>
-            <Communication>RiotDefault</Communication>
-          </Riot>
-        </Infectable>
-        <IncidentInfectionChanceFactors>
-          <Illness>
-            <BaseChance>4</BaseChance>
-            <HitpointFactor>0.1</HitpointFactor>
-            <DensityFactor>0.025</DensityFactor>
-            <DensityDistance>15</DensityDistance>
-            <DilapidatedFactor>10</DilapidatedFactor>
-            <FactoryOvertimeFactor>0.3</FactoryOvertimeFactor>
-            <FactoryUndertimeFactor>0.15</FactoryUndertimeFactor>
-            <ResidenceFullOvertimeChance>20</ResidenceFullOvertimeChance>
-            <ResidenceFullUndertimeChance>-15</ResidenceFullUndertimeChance>
-            <ResidenceSatisfactionFactor>0.1</ResidenceSatisfactionFactor>
-            <HappinessMin>-50</HappinessMin>
-            <HappinessMax>50</HappinessMax>
-            <SatisfactionThreshold>0.5</SatisfactionThreshold>
-          </Illness>
-          <Fire>
-            <DensityFactor>0.025</DensityFactor>
-            <DensityDistance>15</DensityDistance>
-            <BaseChance>5</BaseChance>
-            <HitpointFactor>0.1</HitpointFactor>
-            <DilapidatedFactor>10</DilapidatedFactor>
-            <FactoryOvertimeFactor>0.1</FactoryOvertimeFactor>
-            <HappinessMin>-50</HappinessMin>
-            <HappinessMax>50</HappinessMax>
-          </Fire>
-          <Riot>
-            <ResidenceHappinessFactor>0.4</ResidenceHappinessFactor>
-            <HappinessThreshold>15</HappinessThreshold>
-            <FactoryOvertimeFactor>0.3</FactoryOvertimeFactor>
-            <FactoryUndertimeFactor>0.15</FactoryUndertimeFactor>
-            <FactoryHappinessFactor>0.15</FactoryHappinessFactor>
-            <HappinessMin>-50</HappinessMin>
-            <HappinessMax>50</HappinessMax>
-          </Riot>
-          <Explosion>
-            <ResidenceFullOvertimeChance>20</ResidenceFullOvertimeChance>
-            <ResidenceFullUndertimeChance>-15</ResidenceFullUndertimeChance>
-            <HitpointFactor>0.1</HitpointFactor>
-            <HappinessMin>-50</HappinessMin>
-            <HappinessMax>50</HappinessMax>
-            <SatisfactionThreshold>0.5</SatisfactionThreshold>
-          </Explosion>
-        </IncidentInfectionChanceFactors>
-        <PerIncidentProximityEffect>
-          <Fire>
-            <ProximityEffect>
-              <Item>
-                <Distance>2</Distance>
-                <InfectionChanceDebuff>2.5</InfectionChanceDebuff>
-              </Item>
-              <Item>
-                <IntensityThreshold>30</IntensityThreshold>
-                <Distance>2</Distance>
-                <InfectionChanceDebuff>5</InfectionChanceDebuff>
-              </Item>
-              <Item>
-                <IntensityThreshold>60</IntensityThreshold>
-                <Distance>2</Distance>
-                <InfectionChanceDebuff>7.5</InfectionChanceDebuff>
-              </Item>
-              <Item>
-                <IntensityThreshold>90</IntensityThreshold>
-                <Distance>2</Distance>
-              </Item>
-            </ProximityEffect>
-          </Fire>
-          <Illness>
-            <ProximityEffect>
-              <Item>
-                <Distance>2</Distance>
-                <InfectionChanceDebuff>2.5</InfectionChanceDebuff>
-              </Item>
-              <Item>
-                <IntensityThreshold>30</IntensityThreshold>
-                <Distance>2</Distance>
-                <InfectionChanceDebuff>5</InfectionChanceDebuff>
-              </Item>
-              <Item>
-                <IntensityThreshold>60</IntensityThreshold>
-                <Distance>2</Distance>
-                <InfectionChanceDebuff>7.5</InfectionChanceDebuff>
-              </Item>
-              <Item>
-                <IntensityThreshold>90</IntensityThreshold>
-                <Distance>2</Distance>
-              </Item>
-            </ProximityEffect>
-          </Illness>
-          <Riot>
-            <ProximityEffect>
-              <Item>
-                <Distance>2</Distance>
-                <InfectionChanceDebuff>2.5</InfectionChanceDebuff>
-              </Item>
-              <Item>
-                <IntensityThreshold>30</IntensityThreshold>
-                <Distance>2</Distance>
-                <InfectionChanceDebuff>5</InfectionChanceDebuff>
-              </Item>
-              <Item>
-                <IntensityThreshold>60</IntensityThreshold>
-                <Distance>2</Distance>
-                <InfectionChanceDebuff>7.5</InfectionChanceDebuff>
-              </Item>
-              <Item>
-                <IntensityThreshold>90</IntensityThreshold>
-                <Distance>2</Distance>
-              </Item>
-            </ProximityEffect>
-          </Riot>
-        </PerIncidentProximityEffect>
-        <IncidentFireIncreaseBase>100</IncidentFireIncreaseBase>
-        <IncidentIllnessIncreaseBase>100</IncidentIllnessIncreaseBase>
-        <IncidentRiotIncreaseBase>100</IncidentRiotIncreaseBase>
-        <IncidentExplosionIncreaseBase>100</IncidentExplosionIncreaseBase>
       </IncidentInfectable>
       <Pausable />
-      <Culture>
-        <CultureType>Culture</CultureType>
-        <SetPages />
-        <UndiscoveredSet>0</UndiscoveredSet>
-        <ModuleListHeader>0</ModuleListHeader>
-        <OpenSetPages>0</OpenSetPages>
-      </Culture>
+      <Culture />
       <StreetActivation />
     </Values>
   </Asset>
   <Asset>
-    <Template>ResidenceBuilding7</Template>
+    <BaseAssetGUID>1010344</BaseAssetGUID>
     <Values>
       <Standard>
         <GUID>101255</GUID>
         <Name>residence_colony01_tier02</Name>
-        <IconFilename>data/ui/2kimages/main/3dicons/icon_resident.png</IconFilename>
-        <InfoDescription>163059</InfoDescription>
-        <Comments />
       </Standard>
-      <Blocking>
-        <HidePropsRadius>1</HidePropsRadius>
-        <DeletePropsRadius>1</DeletePropsRadius>
-        <GroundDecalAsset>0</GroundDecalAsset>
-        <GroundDecalInvisible>0</GroundDecalInvisible>
-        <StreetOutside>0</StreetOutside>
-        <RemoveGrass>1</RemoveGrass>
-        <BlocksBuilding>1</BlocksBuilding>
-      </Blocking>
+      <Blocking />
       <Building>
         <PickingAsset>101254</PickingAsset>
         <AssociatedRegions>Colony01</AssociatedRegions>
-        <BuildingType>Residence</BuildingType>
-        <BuildingCategoryName>100004</BuildingCategoryName>
-        <InfluencedVariationDirection>
-          <Item />
-          <Item>
-            <Direction>1</Direction>
-            <Type>Mid</Type>
-          </Item>
-          <Item>
-            <Type>Mid</Type>
-          </Item>
-          <Item>
-            <Type>Corner</Type>
-          </Item>
-          <Item>
-            <Direction>1</Direction>
-            <Type>Mid</Type>
-          </Item>
-          <Item>
-            <Direction>1</Direction>
-            <Type>Mid</Type>
-          </Item>
-          <Item>
-            <Direction>1</Direction>
-            <Type>Corner</Type>
-          </Item>
-          <Item>
-            <Direction>1</Direction>
-            <Type>Mid</Type>
-          </Item>
-          <Item>
-            <Type>Mid</Type>
-          </Item>
-          <Item>
-            <Direction>3</Direction>
-            <Type>Corner</Type>
-          </Item>
-          <Item>
-            <Type>Mid</Type>
-          </Item>
-          <Item>
-            <Type>Mid</Type>
-          </Item>
-          <Item>
-            <Direction>2</Direction>
-            <Type>Corner</Type>
-          </Item>
-          <Item>
-            <Direction>1</Direction>
-            <Type>Mid</Type>
-          </Item>
-          <Item>
-            <Type>Mid</Type>
-          </Item>
-          <Item />
-        </InfluencedVariationDirection>
-        <Destructable>1</Destructable>
-        <Movable>1</Movable>
-        <ConstructionMenuText>0</ConstructionMenuText>
-        <HasBorderRectOutline>1</HasBorderRectOutline>
-        <SnapRadius>2</SnapRadius>
-        <TerrainType>Terrain</TerrainType>
-        <InfluencedByNeighbors />
-        <BuildingBlockPool />
-        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
       <Cost>
         <Costs>
           <Item>
-            <Ingredient>1010017</Ingredient>
+            <VectorElement>
+              <InheritedIndex>0</InheritedIndex>
+              <InheritanceMapV2>
+                <Entry>
+                  <TemplateName>ResidenceBuilding7</TemplateName>
+                  <Index>0</Index>
+                </Entry>
+              </InheritanceMapV2>
+            </VectorElement>
           </Item>
           <Item>
+            <VectorElement>
+              <InheritedIndex>1</InheritedIndex>
+              <InheritanceMapV2>
+                <Entry>
+                  <TemplateName>ResidenceBuilding7</TemplateName>
+                  <Index>1</Index>
+                </Entry>
+              </InheritanceMapV2>
+            </VectorElement>
             <Amount>2</Amount>
-            <Ingredient>1010196</Ingredient>
           </Item>
           <Item>
-            <Ingredient>1010205</Ingredient>
+            <VectorElement>
+              <InheritedIndex>2</InheritedIndex>
+              <InheritanceMapV2>
+                <Entry>
+                  <TemplateName>ResidenceBuilding7</TemplateName>
+                  <Index>2</Index>
+                </Entry>
+              </InheritanceMapV2>
+            </VectorElement>
           </Item>
           <Item>
-            <Ingredient>1010218</Ingredient>
+            <VectorElement>
+              <InheritedIndex>3</InheritedIndex>
+              <InheritanceMapV2>
+                <Entry>
+                  <TemplateName>ResidenceBuilding7</TemplateName>
+                  <Index>3</Index>
+                </Entry>
+              </InheritanceMapV2>
+            </VectorElement>
           </Item>
           <Item>
-            <Ingredient>1010207</Ingredient>
+            <VectorElement>
+              <InheritedIndex>4</InheritedIndex>
+              <InheritanceMapV2>
+                <Entry>
+                  <TemplateName>ResidenceBuilding7</TemplateName>
+                  <Index>4</Index>
+                </Entry>
+              </InheritanceMapV2>
+            </VectorElement>
           </Item>
           <Item>
-            <Ingredient>1010202</Ingredient>
+            <VectorElement>
+              <InheritedIndex>5</InheritedIndex>
+              <InheritanceMapV2>
+                <Entry>
+                  <TemplateName>ResidenceBuilding7</TemplateName>
+                  <Index>5</Index>
+                </Entry>
+              </InheritanceMapV2>
+            </VectorElement>
           </Item>
         </Costs>
-        <ItemsPerCost>1</ItemsPerCost>
-        <InfluenceCostType>None</InfluenceCostType>
-        <InfluenceCostPoints>1</InfluenceCostPoints>
       </Cost>
-      <Mesh>
-        <ObjectPosition>Static</ObjectPosition>
-        <MeshPlacement>Default</MeshPlacement>
-        <DefaultSequence>idle01</DefaultSequence>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
-        <LogoMode>Disabled</LogoMode>
-      </Mesh>
+      <Mesh />
       <Object>
         <Variations>
           <Item>
+            <VectorElement>
+              <InheritedIndex>0</InheritedIndex>
+              <InheritanceMapV2>
+                <Entry>
+                  <TemplateName>ResidenceBuilding7</TemplateName>
+                  <Index>0</Index>
+                </Entry>
+              </InheritanceMapV2>
+            </VectorElement>
             <Filename>data/graphics/buildings/residence/residence_colony01_tier02_estate01/residence_colony01_tier02_estate01.cfg</Filename>
           </Item>
           <Item>
+            <VectorElement>
+              <InheritedIndex>1</InheritedIndex>
+              <InheritanceMapV2>
+                <Entry>
+                  <TemplateName>ResidenceBuilding7</TemplateName>
+                  <Index>1</Index>
+                </Entry>
+              </InheritanceMapV2>
+            </VectorElement>
             <Filename>data/graphics/buildings/residence/residence_colony01_tier02_estate02/residence_colony01_tier02_estate02.cfg</Filename>
           </Item>
           <Item>
+            <VectorElement>
+              <InheritedIndex>2</InheritedIndex>
+              <InheritanceMapV2>
+                <Entry>
+                  <TemplateName>ResidenceBuilding7</TemplateName>
+                  <Index>2</Index>
+                </Entry>
+              </InheritanceMapV2>
+            </VectorElement>
             <Filename>data/graphics/buildings/residence/residence_colony01_tier02_estate03/residence_colony01_tier02_estate03.cfg</Filename>
           </Item>
           <Item>
+            <VectorElement>
+              <InheritedIndex>3</InheritedIndex>
+              <InheritanceMapV2>
+                <Entry>
+                  <TemplateName>ResidenceBuilding7</TemplateName>
+                  <Index>3</Index>
+                </Entry>
+              </InheritanceMapV2>
+            </VectorElement>
             <Filename>data/graphics/buildings/residence/residence_colony01_tier02_estate04/residence_colony01_tier02_estate04.cfg</Filename>
           </Item>
           <Item>
+            <VectorElement>
+              <InheritedIndex>4</InheritedIndex>
+              <InheritanceMapV2>
+                <Entry>
+                  <TemplateName>ResidenceBuilding7</TemplateName>
+                  <Index>4</Index>
+                </Entry>
+              </InheritanceMapV2>
+            </VectorElement>
             <Filename>data/graphics/buildings/residence/residence_colony01_tier02_estate05/residence_colony01_tier02_estate05.cfg</Filename>
           </Item>
         </Variations>
         <DefaultParticipant>SA_Resident_tier02</DefaultParticipant>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Selection>
         <ParticipantMessageArcheType>SA_Resident_tier02</ParticipantMessageArcheType>
-        <ParticipantMessageTrigger>ClickResidence</ParticipantMessageTrigger>
-        <Colors>
-          <WeakSelectionColorType>NoColor</WeakSelectionColorType>
-        </Colors>
-        <GUIType>Residence</GUIType>
-        <Selectable>1</Selectable>
-        <DestructSelectable>1</DestructSelectable>
-        <OnSelection>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnSelection>
-        <InteractionDistance>15</InteractionDistance>
-        <InfoCorner>25000131</InfoCorner>
-        <AllowedDragType />
       </Selection>
       <Text>
         <LocaText>
           <English>
             <Text>Obrero Residence</Text>
             <ExportCount>3</ExportCount>
-            <Status>Exported</Status>
           </English>
         </LocaText>
         <LineID>8482</LineID>
-        <Localize>1</Localize>
       </Text>
-      <Constructable>
-        <DestructionCategory>Production</DestructionCategory>
-        <ConstructionMode>Default</ConstructionMode>
-        <DestructionType>0</DestructionType>
-      </Constructable>
-      <Locked>
-        <DefaultLockedState>1</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
-      </Locked>
+      <Constructable />
+      <Locked />
       <Upgradable>
         <NextGUID>0</NextGUID>
         <UpgradeCost />
       </Upgradable>
-      <SoundEmitter>
-        <ConstructionSounds>
-          <BuildSuccessful>
-            <Item>
-              <VectorElement>
-                <InheritedIndex>0</InheritedIndex>
-                <InheritanceMapV2>
-                  <Entry>
-                    <TemplateName>ResidenceBuilding7</TemplateName>
-                    <Index>0</Index>
-                  </Entry>
-                </InheritanceMapV2>
-              </VectorElement>
-              <Sound>200776</Sound>
-            </Item>
-          </BuildSuccessful>
-          <BuildUpgradeFailed>
-            <Item>
-              <Sound>9818387</Sound>
-            </Item>
-          </BuildUpgradeFailed>
-          <BuildFailed>
-            <Item>
-              <Sound>9818387</Sound>
-            </Item>
-          </BuildFailed>
-          <BuildMoveStart>
-            <Item>
-              <Sound>9818755</Sound>
-            </Item>
-          </BuildMoveStart>
-          <BuildMoveSuccess>
-            <Item>
-              <Sound>203995</Sound>
-            </Item>
-          </BuildMoveSuccess>
-          <BuildMoveEnd>
-            <Item>
-              <Sound>200141</Sound>
-            </Item>
-          </BuildMoveEnd>
-        </ConstructionSounds>
-        <IncidentSounds>
-          <InfectedFire>
-            <Item>
-              <Sound>214659</Sound>
-            </Item>
-          </InfectedFire>
-          <InfectedIllness>
-            <Item>
-              <Sound>214756</Sound>
-            </Item>
-          </InfectedIllness>
-          <InfectedRiot>
-            <Item>
-              <Sound>222229</Sound>
-            </Item>
-          </InfectedRiot>
-          <ExplosionOneShots>
-            <Item>
-              <Sound>203849</Sound>
-            </Item>
-          </ExplosionOneShots>
-        </IncidentSounds>
-        <BuildingRepaired>
-          <Item>
-            <Sound>203866</Sound>
-          </Item>
-        </BuildingRepaired>
-        <MaterialType>Wood</MaterialType>
-        <DestroySounds>
-          <Item>
-            <Sound>9818756</Sound>
-          </Item>
-        </DestroySounds>
-        <ActiveSounds />
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <ProjectileSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <BuildingRuined />
-      </SoundEmitter>
-      <Infolayer>
-        <DefaultInfoLayer>0</DefaultInfoLayer>
-      </Infolayer>
-      <FeedbackController>
-        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
-        <UpdateMeshSequence>1</UpdateMeshSequence>
-      </FeedbackController>
-      <RandomDummySpawner>
-        <RandomAssets>
-          <Item>
-            <DummyName>Display</DummyName>
-            <SpawnProbability>1</SpawnProbability>
-          </Item>
-        </RandomAssets>
-      </RandomDummySpawner>
+      <SoundEmitter />
+      <Infolayer />
+      <FeedbackController />
+      <RandomDummySpawner />
       <Residence7>
         <PopulationLevel7>15000006</PopulationLevel7>
-        <ResidenceStorage>
-          <InputStorageMax>1</InputStorageMax>
-        </ResidenceStorage>
-        <ResidentMax>20</ResidentMax>
-        <ResidentStart>1</ResidentStart>
-        <TimeBeforeRuin>180</TimeBeforeRuin>
-        <TimeAsRuin>60</TimeAsRuin>
-        <StressFactor>1</StressFactor>
-        <InfluenceGeneration />
       </Residence7>
-      <LogisticNode>
-        <REMOVE_THIS_LATER_FeedbackUnitTier>Level2</REMOVE_THIS_LATER_FeedbackUnitTier>
-        <TransporterCountMax>0</TransporterCountMax>
-        <TransporterAsset>1010106</TransporterAsset>
-        <NeedsTransporterQueue>0</NeedsTransporterQueue>
-        <TrainAsset>120025</TrainAsset>
-        <QueueConfiguration>
-          <ProcessingQueueParallelCount>10</ProcessingQueueParallelCount>
-          <LoadingTimeModifier>1</LoadingTimeModifier>
-          <UnloadingTimeModifier>1</UnloadingTimeModifier>
-        </QueueConfiguration>
-        <PathLayers>Street</PathLayers>
-      </LogisticNode>
+      <LogisticNode />
       <AmbientMoodProvider>
         <HappinessDependentMurmur>
           <Item>
+            <VectorElement>
+              <InheritedIndex>0</InheritedIndex>
+              <InheritanceMapV2>
+                <Entry>
+                  <TemplateName>ResidenceBuilding7</TemplateName>
+                  <Index>0</Index>
+                </Entry>
+              </InheritanceMapV2>
+            </VectorElement>
             <Murmur>OberaUnhappy</Murmur>
-            <Happiness>-1000</Happiness>
           </Item>
           <Item>
+            <VectorElement>
+              <InheritedIndex>1</InheritedIndex>
+              <InheritanceMapV2>
+                <Entry>
+                  <TemplateName>ResidenceBuilding7</TemplateName>
+                  <Index>1</Index>
+                </Entry>
+              </InheritanceMapV2>
+            </VectorElement>
             <Murmur>JornaleroContent</Murmur>
-            <Happiness>-20</Happiness>
           </Item>
           <Item>
+            <VectorElement>
+              <InheritedIndex>2</InheritedIndex>
+              <InheritanceMapV2>
+                <Entry>
+                  <TemplateName>ResidenceBuilding7</TemplateName>
+                  <Index>2</Index>
+                </Entry>
+              </InheritanceMapV2>
+            </VectorElement>
             <Murmur>JornaleroHappy</Murmur>
-            <Happiness>20</Happiness>
           </Item>
         </HappinessDependentMurmur>
-        <DynamicEnvironmentType>ResidenceT1</DynamicEnvironmentType>
-        <AmbientMood>ResidenceTier1</AmbientMood>
-        <Murmur>None</Murmur>
-        <AttractivityDependentMurmur />
-        <ProductivityDependentMurmur />
-        <SatisfactionDependentMurmur />
-        <IslandAttractivityDependentMurmur />
       </AmbientMoodProvider>
       <UpgradeList />
-      <Attackable>
-        <MaximumHitPoints>2000</MaximumHitPoints>
-        <HasRuinState>1</HasRuinState>
-        <HPBarOffset>6</HPBarOffset>
-        <PausedTimeIfAttacked>15000</PausedTimeIfAttacked>
-        <SelfHealPerHealTick>2</SelfHealPerHealTick>
-        <SelfHealPausedTimeIfAttacked>15000</SelfHealPausedTimeIfAttacked>
-        <ArmorType>Default</ArmorType>
-        <TakeOverEffect>Never</TakeOverEffect>
-        <IslandWarFlag>0</IslandWarFlag>
-        <RuinSmokeParticles />
-        <ExplosionEffects />
-      </Attackable>
+      <Attackable />
       <IncidentInfectable>
         <Explosion>
           <DamageExplosionChance>0</DamageExplosionChance>
-          <ExplosionCoreDamage>1000</ExplosionCoreDamage>
-          <ExplosionOuterRadius>2</ExplosionOuterRadius>
-          <ExplosionOuterDamagePercentage>25</ExplosionOuterDamagePercentage>
-          <DamageExplosionCheckMin>5</DamageExplosionCheckMin>
-          <DamageExplosionCheckMax>25</DamageExplosionCheckMax>
         </Explosion>
-        <Infectable>
-          <Explosion>
-            <Base>0</Base>
-            <Escalated>0</Escalated>
-            <Communication>ExplosionDefault</Communication>
-          </Explosion>
-          <Illness>
-            <Communication>IllnessDefault</Communication>
-          </Illness>
-          <Riot>
-            <Communication>RiotDefault</Communication>
-          </Riot>
-        </Infectable>
-        <IncidentInfectionChanceFactors>
-          <Fire>
-            <BaseChance>4.5</BaseChance>
-            <DensityFactor>0.025</DensityFactor>
-            <DensityDistance>15</DensityDistance>
-            <HitpointFactor>0.1</HitpointFactor>
-            <DilapidatedFactor>10</DilapidatedFactor>
-            <FactoryOvertimeFactor>0.1</FactoryOvertimeFactor>
-            <HappinessMin>-50</HappinessMin>
-            <HappinessMax>50</HappinessMax>
-          </Fire>
-          <Illness>
-            <BaseChance>4.5</BaseChance>
-            <HitpointFactor>0.1</HitpointFactor>
-            <DensityFactor>0.025</DensityFactor>
-            <DensityDistance>15</DensityDistance>
-            <DilapidatedFactor>10</DilapidatedFactor>
-            <FactoryOvertimeFactor>0.3</FactoryOvertimeFactor>
-            <FactoryUndertimeFactor>0.15</FactoryUndertimeFactor>
-            <ResidenceFullOvertimeChance>20</ResidenceFullOvertimeChance>
-            <ResidenceFullUndertimeChance>-15</ResidenceFullUndertimeChance>
-            <ResidenceSatisfactionFactor>0.1</ResidenceSatisfactionFactor>
-            <HappinessMin>-50</HappinessMin>
-            <HappinessMax>50</HappinessMax>
-            <SatisfactionThreshold>0.5</SatisfactionThreshold>
-          </Illness>
-          <Riot>
-            <ResidenceHappinessFactor>0.4</ResidenceHappinessFactor>
-            <HappinessThreshold>15</HappinessThreshold>
-            <FactoryOvertimeFactor>0.3</FactoryOvertimeFactor>
-            <FactoryUndertimeFactor>0.15</FactoryUndertimeFactor>
-            <FactoryHappinessFactor>0.15</FactoryHappinessFactor>
-            <HappinessMin>-50</HappinessMin>
-            <HappinessMax>50</HappinessMax>
-          </Riot>
-          <Explosion>
-            <ResidenceFullOvertimeChance>20</ResidenceFullOvertimeChance>
-            <ResidenceFullUndertimeChance>-15</ResidenceFullUndertimeChance>
-            <HitpointFactor>0.1</HitpointFactor>
-            <HappinessMin>-50</HappinessMin>
-            <HappinessMax>50</HappinessMax>
-            <SatisfactionThreshold>0.5</SatisfactionThreshold>
-          </Explosion>
-        </IncidentInfectionChanceFactors>
-        <PerIncidentProximityEffect>
-          <Fire>
-            <ProximityEffect>
-              <Item>
-                <Distance>2</Distance>
-                <InfectionChanceDebuff>2.5</InfectionChanceDebuff>
-              </Item>
-              <Item>
-                <IntensityThreshold>30</IntensityThreshold>
-                <Distance>2</Distance>
-                <InfectionChanceDebuff>5</InfectionChanceDebuff>
-              </Item>
-              <Item>
-                <IntensityThreshold>60</IntensityThreshold>
-                <Distance>2</Distance>
-                <InfectionChanceDebuff>7.5</InfectionChanceDebuff>
-              </Item>
-              <Item>
-                <IntensityThreshold>90</IntensityThreshold>
-                <Distance>2</Distance>
-              </Item>
-            </ProximityEffect>
-          </Fire>
-          <Illness>
-            <ProximityEffect>
-              <Item>
-                <Distance>2</Distance>
-                <InfectionChanceDebuff>2.5</InfectionChanceDebuff>
-              </Item>
-              <Item>
-                <IntensityThreshold>30</IntensityThreshold>
-                <Distance>2</Distance>
-                <InfectionChanceDebuff>5</InfectionChanceDebuff>
-              </Item>
-              <Item>
-                <IntensityThreshold>60</IntensityThreshold>
-                <Distance>2</Distance>
-                <InfectionChanceDebuff>7.5</InfectionChanceDebuff>
-              </Item>
-              <Item>
-                <IntensityThreshold>90</IntensityThreshold>
-                <Distance>2</Distance>
-              </Item>
-            </ProximityEffect>
-          </Illness>
-          <Riot>
-            <ProximityEffect>
-              <Item>
-                <Distance>2</Distance>
-                <InfectionChanceDebuff>2.5</InfectionChanceDebuff>
-              </Item>
-              <Item>
-                <IntensityThreshold>30</IntensityThreshold>
-                <Distance>2</Distance>
-                <InfectionChanceDebuff>5</InfectionChanceDebuff>
-              </Item>
-              <Item>
-                <IntensityThreshold>60</IntensityThreshold>
-                <Distance>2</Distance>
-                <InfectionChanceDebuff>7.5</InfectionChanceDebuff>
-              </Item>
-              <Item>
-                <IntensityThreshold>90</IntensityThreshold>
-                <Distance>2</Distance>
-              </Item>
-            </ProximityEffect>
-          </Riot>
-        </PerIncidentProximityEffect>
-        <IncidentFireIncreaseBase>100</IncidentFireIncreaseBase>
-        <IncidentIllnessIncreaseBase>100</IncidentIllnessIncreaseBase>
-        <IncidentRiotIncreaseBase>100</IncidentRiotIncreaseBase>
-        <IncidentExplosionIncreaseBase>100</IncidentExplosionIncreaseBase>
       </IncidentInfectable>
       <Pausable />
-      <Culture>
-        <CultureType>Culture</CultureType>
-        <SetPages />
-        <UndiscoveredSet>0</UndiscoveredSet>
-        <ModuleListHeader>0</ModuleListHeader>
-        <OpenSetPages>0</OpenSetPages>
-      </Culture>
+      <Culture />
       <StreetActivation />
     </Values>
   </Asset>

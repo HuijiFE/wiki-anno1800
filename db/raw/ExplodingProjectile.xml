@@ -6,8 +6,6 @@
       <Standard>
         <GUID>100444</GUID>
         <Name>SmallMortarProjectile</Name>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <Projectile>
         <ProjectileType>Arc</ProjectileType>
@@ -35,58 +33,14 @@
             <Factor>2</Factor>
           </Item>
         </Effectivities>
-        <ShotAngle>45</ShotAngle>
-        <StatusEffects />
-        <ChainingLevels />
-        <EffectSequences>
-          <HitBrick>
-            <SequenceID>hitbrick</SequenceID>
-          </HitBrick>
-          <HitConcrete>
-            <SequenceID>hitconcrete</SequenceID>
-          </HitConcrete>
-          <HitSteel>
-            <SequenceID>hitsteel</SequenceID>
-          </HitSteel>
-          <HitWood>
-            <SequenceID>hitwood</SequenceID>
-          </HitWood>
-          <MissLand>
-            <SequenceID>missland</SequenceID>
-          </MissLand>
-          <MissWater>
-            <SequenceID>misswater</SequenceID>
-          </MissWater>
-        </EffectSequences>
-        <TargetWhiteList />
-        <DamageType>Normal</DamageType>
       </Projectile>
-      <Mesh>
-        <ObjectPosition>Dynamic</ObjectPosition>
-        <MeshPlacement>Default</MeshPlacement>
-        <DefaultSequence>idle01</DefaultSequence>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
-        <LogoMode>Disabled</LogoMode>
-      </Mesh>
+      <Mesh />
       <Object>
         <Variations>
           <Item>
             <Filename>data/graphics/effects/military/projectiles/projectile_mortar_01.cfg</Filename>
           </Item>
         </Variations>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <DefaultParticipant>Neutral</DefaultParticipant>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Exploder>
         <InnerDamageRadius>2</InnerDamageRadius>
@@ -95,41 +49,6 @@
         <DebrisCount>0</DebrisCount>
         <OuterDamageRadius>3</OuterDamageRadius>
         <MinimumDamage>1</MinimumDamage>
-        <HitSuccessNotification>
-          <Template>ActionNotification</Template>
-          <Values>
-            <Action />
-            <ActionNotification>
-              <Notification>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>SideNotification</Template>
-                <Values>
-                  <SideNotification />
-                  <BaseNotification />
-                  <NotificationSubtitle />
-                </Values>
-              </Notification>
-            </ActionNotification>
-          </Values>
-        </HitSuccessNotification>
-        <HitFailNotification>
-          <Template>ActionNotification</Template>
-          <Values>
-            <Action />
-            <ActionNotification>
-              <Notification>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>SideNotification</Template>
-                <Values>
-                  <SideNotification />
-                  <BaseNotification />
-                  <NotificationSubtitle />
-                </Values>
-              </Notification>
-            </ActionNotification>
-          </Values>
-        </HitFailNotification>
-        <KamikazeRadiusDecal>0</KamikazeRadiusDecal>
       </Exploder>
       <SoundEmitter>
         <ProjectileSounds>
@@ -144,32 +63,9 @@
             </Item>
           </ProjectileImpact>
         </ProjectileSounds>
-        <ActiveSounds />
-        <DestroySounds />
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionSounds />
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <IncidentSounds />
-        <BuildingRuined />
-        <BuildingRepaired />
-        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <UpgradeList />
-      <ProjectileIncident>
-        <CausedIncident>[NONE]</CausedIncident>
-        <CausedIncidentBuff>0</CausedIncidentBuff>
-        <CausedIncidentDuration>10000</CausedIncidentDuration>
-      </ProjectileIncident>
+      <ProjectileIncident />
     </Values>
   </Asset>
   <Asset>
@@ -178,8 +74,6 @@
       <Standard>
         <GUID>102337</GUID>
         <Name>MediumMortarProjectile</Name>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <Projectile>
         <ProjectileType>Arc</ProjectileType>
@@ -207,58 +101,14 @@
             <Factor>2</Factor>
           </Item>
         </Effectivities>
-        <ShotAngle>45</ShotAngle>
-        <StatusEffects />
-        <ChainingLevels />
-        <EffectSequences>
-          <HitBrick>
-            <SequenceID>hitbrick</SequenceID>
-          </HitBrick>
-          <HitConcrete>
-            <SequenceID>hitconcrete</SequenceID>
-          </HitConcrete>
-          <HitSteel>
-            <SequenceID>hitsteel</SequenceID>
-          </HitSteel>
-          <HitWood>
-            <SequenceID>hitwood</SequenceID>
-          </HitWood>
-          <MissLand>
-            <SequenceID>missland</SequenceID>
-          </MissLand>
-          <MissWater>
-            <SequenceID>misswater</SequenceID>
-          </MissWater>
-        </EffectSequences>
-        <TargetWhiteList />
-        <DamageType>Normal</DamageType>
       </Projectile>
-      <Mesh>
-        <ObjectPosition>Dynamic</ObjectPosition>
-        <MeshPlacement>Default</MeshPlacement>
-        <DefaultSequence>idle01</DefaultSequence>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
-        <LogoMode>Disabled</LogoMode>
-      </Mesh>
+      <Mesh />
       <Object>
         <Variations>
           <Item>
             <Filename>data/graphics/effects/military/projectiles/projectile_mortar_01.cfg</Filename>
           </Item>
         </Variations>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <DefaultParticipant>Neutral</DefaultParticipant>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Exploder>
         <InnerDamageRadius>2</InnerDamageRadius>
@@ -267,41 +117,6 @@
         <DebrisCount>0</DebrisCount>
         <OuterDamageRadius>4</OuterDamageRadius>
         <MinimumDamage>1</MinimumDamage>
-        <HitSuccessNotification>
-          <Template>ActionNotification</Template>
-          <Values>
-            <Action />
-            <ActionNotification>
-              <Notification>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>SideNotification</Template>
-                <Values>
-                  <SideNotification />
-                  <BaseNotification />
-                  <NotificationSubtitle />
-                </Values>
-              </Notification>
-            </ActionNotification>
-          </Values>
-        </HitSuccessNotification>
-        <HitFailNotification>
-          <Template>ActionNotification</Template>
-          <Values>
-            <Action />
-            <ActionNotification>
-              <Notification>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>SideNotification</Template>
-                <Values>
-                  <SideNotification />
-                  <BaseNotification />
-                  <NotificationSubtitle />
-                </Values>
-              </Notification>
-            </ActionNotification>
-          </Values>
-        </HitFailNotification>
-        <KamikazeRadiusDecal>0</KamikazeRadiusDecal>
       </Exploder>
       <SoundEmitter>
         <ProjectileSounds>
@@ -316,32 +131,9 @@
             </Item>
           </ProjectileImpact>
         </ProjectileSounds>
-        <ActiveSounds />
-        <DestroySounds />
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionSounds />
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <IncidentSounds />
-        <BuildingRuined />
-        <BuildingRepaired />
-        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <UpgradeList />
-      <ProjectileIncident>
-        <CausedIncident>[NONE]</CausedIncident>
-        <CausedIncidentBuff>0</CausedIncidentBuff>
-        <CausedIncidentDuration>10000</CausedIncidentDuration>
-      </ProjectileIncident>
+      <ProjectileIncident />
     </Values>
   </Asset>
   <Asset>
@@ -350,8 +142,6 @@
       <Standard>
         <GUID>100457</GUID>
         <Name>BigMortarProjectile</Name>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <Projectile>
         <ProjectileType>Arc</ProjectileType>
@@ -379,58 +169,14 @@
             <Factor>2</Factor>
           </Item>
         </Effectivities>
-        <ShotAngle>45</ShotAngle>
-        <StatusEffects />
-        <ChainingLevels />
-        <EffectSequences>
-          <HitBrick>
-            <SequenceID>hitbrick</SequenceID>
-          </HitBrick>
-          <HitConcrete>
-            <SequenceID>hitconcrete</SequenceID>
-          </HitConcrete>
-          <HitSteel>
-            <SequenceID>hitsteel</SequenceID>
-          </HitSteel>
-          <HitWood>
-            <SequenceID>hitwood</SequenceID>
-          </HitWood>
-          <MissLand>
-            <SequenceID>missland</SequenceID>
-          </MissLand>
-          <MissWater>
-            <SequenceID>misswater</SequenceID>
-          </MissWater>
-        </EffectSequences>
-        <TargetWhiteList />
-        <DamageType>Normal</DamageType>
       </Projectile>
-      <Mesh>
-        <ObjectPosition>Dynamic</ObjectPosition>
-        <MeshPlacement>Default</MeshPlacement>
-        <DefaultSequence>idle01</DefaultSequence>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
-        <LogoMode>Disabled</LogoMode>
-      </Mesh>
+      <Mesh />
       <Object>
         <Variations>
           <Item>
             <Filename>data/graphics/effects/military/projectiles/projectile_mortar_01.cfg</Filename>
           </Item>
         </Variations>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <DefaultParticipant>Neutral</DefaultParticipant>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Exploder>
         <InnerDamageRadius>3</InnerDamageRadius>
@@ -438,42 +184,6 @@
         <DebrisCount>0</DebrisCount>
         <OuterDamageRadius>5</OuterDamageRadius>
         <MinimumDamage>1</MinimumDamage>
-        <InnerDamage>50</InnerDamage>
-        <HitSuccessNotification>
-          <Template>ActionNotification</Template>
-          <Values>
-            <Action />
-            <ActionNotification>
-              <Notification>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>SideNotification</Template>
-                <Values>
-                  <SideNotification />
-                  <BaseNotification />
-                  <NotificationSubtitle />
-                </Values>
-              </Notification>
-            </ActionNotification>
-          </Values>
-        </HitSuccessNotification>
-        <HitFailNotification>
-          <Template>ActionNotification</Template>
-          <Values>
-            <Action />
-            <ActionNotification>
-              <Notification>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>SideNotification</Template>
-                <Values>
-                  <SideNotification />
-                  <BaseNotification />
-                  <NotificationSubtitle />
-                </Values>
-              </Notification>
-            </ActionNotification>
-          </Values>
-        </HitFailNotification>
-        <KamikazeRadiusDecal>0</KamikazeRadiusDecal>
       </Exploder>
       <SoundEmitter>
         <ProjectileSounds>
@@ -488,32 +198,9 @@
             </Item>
           </ProjectileImpact>
         </ProjectileSounds>
-        <ActiveSounds />
-        <DestroySounds />
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionSounds />
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <IncidentSounds />
-        <BuildingRuined />
-        <BuildingRepaired />
-        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <UpgradeList />
-      <ProjectileIncident>
-        <CausedIncident>[NONE]</CausedIncident>
-        <CausedIncidentBuff>0</CausedIncidentBuff>
-        <CausedIncidentDuration>10000</CausedIncidentDuration>
-      </ProjectileIncident>
+      <ProjectileIncident />
     </Values>
   </Asset>
   <Asset>
@@ -522,8 +209,6 @@
       <Standard>
         <GUID>101204</GUID>
         <Name>DynamiteFishingProjectile</Name>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <Projectile>
         <ProjectileType>Arc</ProjectileType>
@@ -553,56 +238,14 @@
           </Item>
         </Effectivities>
         <TargetWhiteList>Neutral</TargetWhiteList>
-        <StatusEffects />
-        <ChainingLevels />
-        <EffectSequences>
-          <HitBrick>
-            <SequenceID>hitbrick</SequenceID>
-          </HitBrick>
-          <HitConcrete>
-            <SequenceID>hitconcrete</SequenceID>
-          </HitConcrete>
-          <HitSteel>
-            <SequenceID>hitsteel</SequenceID>
-          </HitSteel>
-          <HitWood>
-            <SequenceID>hitwood</SequenceID>
-          </HitWood>
-          <MissLand>
-            <SequenceID>missland</SequenceID>
-          </MissLand>
-          <MissWater>
-            <SequenceID>misswater</SequenceID>
-          </MissWater>
-        </EffectSequences>
-        <DamageType>Normal</DamageType>
       </Projectile>
-      <Mesh>
-        <ObjectPosition>Dynamic</ObjectPosition>
-        <MeshPlacement>Default</MeshPlacement>
-        <DefaultSequence>idle01</DefaultSequence>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
-        <LogoMode>Disabled</LogoMode>
-      </Mesh>
+      <Mesh />
       <Object>
         <Variations>
           <Item>
             <Filename>data/graphics/effects/military/projectiles/projectile_dynamite_01.cfg</Filename>
           </Item>
         </Variations>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <DefaultParticipant>Neutral</DefaultParticipant>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Exploder>
         <InnerDamageRadius>1</InnerDamageRadius>
@@ -629,13 +272,10 @@
                   <NotificationSubtitle>
                     <Subtitle>268724</Subtitle>
                   </NotificationSubtitle>
-                  <SideNotification />
                 </Values>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
               </Notification>
             </ActionNotification>
           </Values>
-          <Template>ActionNotification</Template>
         </HitSuccessNotification>
         <HitFailNotification>
           <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
@@ -655,16 +295,11 @@
                   <NotificationSubtitle>
                     <Subtitle>268725</Subtitle>
                   </NotificationSubtitle>
-                  <SideNotification />
                 </Values>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
               </Notification>
             </ActionNotification>
           </Values>
-          <Template>ActionNotification</Template>
         </HitFailNotification>
-        <DebrisForceY>10</DebrisForceY>
-        <KamikazeRadiusDecal>0</KamikazeRadiusDecal>
       </Exploder>
       <SoundEmitter>
         <ProjectileSounds>
@@ -679,32 +314,9 @@
             </Item>
           </ProjectileImpact>
         </ProjectileSounds>
-        <ActiveSounds />
-        <DestroySounds />
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionSounds />
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <IncidentSounds />
-        <BuildingRuined />
-        <BuildingRepaired />
-        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <UpgradeList />
-      <ProjectileIncident>
-        <CausedIncident>[NONE]</CausedIncident>
-        <CausedIncidentBuff>0</CausedIncidentBuff>
-        <CausedIncidentDuration>10000</CausedIncidentDuration>
-      </ProjectileIncident>
+      <ProjectileIncident />
     </Values>
   </Asset>
   <Asset>
@@ -714,7 +326,6 @@
         <GUID>101562</GUID>
         <Name>IgniteProjectile_A</Name>
         <InfoDescription>21346</InfoDescription>
-        <Comments />
       </Standard>
       <Projectile>
         <ProjectileType>Arc</ProjectileType>
@@ -743,57 +354,14 @@
           </Item>
         </Effectivities>
         <TargetWhiteList>Neutral</TargetWhiteList>
-        <ShotAngle>45</ShotAngle>
-        <StatusEffects />
-        <ChainingLevels />
-        <EffectSequences>
-          <HitBrick>
-            <SequenceID>hitbrick</SequenceID>
-          </HitBrick>
-          <HitConcrete>
-            <SequenceID>hitconcrete</SequenceID>
-          </HitConcrete>
-          <HitSteel>
-            <SequenceID>hitsteel</SequenceID>
-          </HitSteel>
-          <HitWood>
-            <SequenceID>hitwood</SequenceID>
-          </HitWood>
-          <MissLand>
-            <SequenceID>missland</SequenceID>
-          </MissLand>
-          <MissWater>
-            <SequenceID>misswater</SequenceID>
-          </MissWater>
-        </EffectSequences>
-        <DamageType>Normal</DamageType>
       </Projectile>
-      <Mesh>
-        <ObjectPosition>Dynamic</ObjectPosition>
-        <MeshPlacement>Default</MeshPlacement>
-        <DefaultSequence>idle01</DefaultSequence>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
-        <LogoMode>Disabled</LogoMode>
-      </Mesh>
+      <Mesh />
       <Object>
         <Variations>
           <Item>
             <Filename>data/graphics/effects/military/projectiles/projectile_firebomb.cfg</Filename>
           </Item>
         </Variations>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <DefaultParticipant>Neutral</DefaultParticipant>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Exploder>
         <InnerDamageRadius>1</InnerDamageRadius>
@@ -801,42 +369,6 @@
         <DebrisCount>0</DebrisCount>
         <OuterDamageRadius>8</OuterDamageRadius>
         <MinimumDamage>200</MinimumDamage>
-        <DebrisForceY>10</DebrisForceY>
-        <HitSuccessNotification>
-          <Template>ActionNotification</Template>
-          <Values>
-            <Action />
-            <ActionNotification>
-              <Notification>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>SideNotification</Template>
-                <Values>
-                  <SideNotification />
-                  <BaseNotification />
-                  <NotificationSubtitle />
-                </Values>
-              </Notification>
-            </ActionNotification>
-          </Values>
-        </HitSuccessNotification>
-        <HitFailNotification>
-          <Template>ActionNotification</Template>
-          <Values>
-            <Action />
-            <ActionNotification>
-              <Notification>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>SideNotification</Template>
-                <Values>
-                  <SideNotification />
-                  <BaseNotification />
-                  <NotificationSubtitle />
-                </Values>
-              </Notification>
-            </ActionNotification>
-          </Values>
-        </HitFailNotification>
-        <KamikazeRadiusDecal>0</KamikazeRadiusDecal>
       </Exploder>
       <SoundEmitter>
         <ProjectileSounds>
@@ -847,25 +379,6 @@
             <Item />
           </ProjectileImpact>
         </ProjectileSounds>
-        <ActiveSounds />
-        <DestroySounds />
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionSounds />
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <IncidentSounds />
-        <BuildingRuined />
-        <BuildingRepaired />
-        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <UpgradeList />
       <ProjectileIncident>
@@ -881,8 +394,6 @@
       <Standard>
         <GUID>102342</GUID>
         <Name>ChainProjectile</Name>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <Projectile>
         <ProjectileType>Arc</ProjectileType>
@@ -912,56 +423,14 @@
           </Item>
         </Effectivities>
         <TargetWhiteList>Neutral</TargetWhiteList>
-        <StatusEffects />
-        <ChainingLevels />
-        <EffectSequences>
-          <HitBrick>
-            <SequenceID>hitbrick</SequenceID>
-          </HitBrick>
-          <HitConcrete>
-            <SequenceID>hitconcrete</SequenceID>
-          </HitConcrete>
-          <HitSteel>
-            <SequenceID>hitsteel</SequenceID>
-          </HitSteel>
-          <HitWood>
-            <SequenceID>hitwood</SequenceID>
-          </HitWood>
-          <MissLand>
-            <SequenceID>missland</SequenceID>
-          </MissLand>
-          <MissWater>
-            <SequenceID>misswater</SequenceID>
-          </MissWater>
-        </EffectSequences>
-        <DamageType>Normal</DamageType>
       </Projectile>
-      <Mesh>
-        <ObjectPosition>Dynamic</ObjectPosition>
-        <MeshPlacement>Default</MeshPlacement>
-        <DefaultSequence>idle01</DefaultSequence>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
-        <LogoMode>Disabled</LogoMode>
-      </Mesh>
+      <Mesh />
       <Object>
         <Variations>
           <Item>
             <Filename>data/graphics/effects/military/projectiles/projectile_dynamite_01.cfg</Filename>
           </Item>
         </Variations>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <DefaultParticipant>Neutral</DefaultParticipant>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Exploder>
         <InnerDamageRadius>4</InnerDamageRadius>
@@ -970,42 +439,6 @@
         <OuterDamageRadius>8</OuterDamageRadius>
         <MinimumDamage>200</MinimumDamage>
         <FriendlyFireFactor>1</FriendlyFireFactor>
-        <DebrisForceY>10</DebrisForceY>
-        <HitSuccessNotification>
-          <Template>ActionNotification</Template>
-          <Values>
-            <Action />
-            <ActionNotification>
-              <Notification>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>SideNotification</Template>
-                <Values>
-                  <SideNotification />
-                  <BaseNotification />
-                  <NotificationSubtitle />
-                </Values>
-              </Notification>
-            </ActionNotification>
-          </Values>
-        </HitSuccessNotification>
-        <HitFailNotification>
-          <Template>ActionNotification</Template>
-          <Values>
-            <Action />
-            <ActionNotification>
-              <Notification>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>SideNotification</Template>
-                <Values>
-                  <SideNotification />
-                  <BaseNotification />
-                  <NotificationSubtitle />
-                </Values>
-              </Notification>
-            </ActionNotification>
-          </Values>
-        </HitFailNotification>
-        <KamikazeRadiusDecal>0</KamikazeRadiusDecal>
       </Exploder>
       <SoundEmitter>
         <ProjectileSounds>
@@ -1016,31 +449,10 @@
             <Item />
           </ProjectileImpact>
         </ProjectileSounds>
-        <ActiveSounds />
-        <DestroySounds />
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionSounds />
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <IncidentSounds />
-        <BuildingRuined />
-        <BuildingRepaired />
-        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <UpgradeList />
       <ProjectileIncident>
         <CausedIncidentBuff>192003</CausedIncidentBuff>
-        <CausedIncident>[NONE]</CausedIncident>
-        <CausedIncidentDuration>10000</CausedIncidentDuration>
       </ProjectileIncident>
     </Values>
   </Asset>
@@ -1050,8 +462,6 @@
       <Standard>
         <GUID>102494</GUID>
         <Name>MortarProjectile_A</Name>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <Projectile>
         <ProjectileType>Arc</ProjectileType>
@@ -1079,58 +489,14 @@
             <Factor>2</Factor>
           </Item>
         </Effectivities>
-        <ShotAngle>45</ShotAngle>
-        <StatusEffects />
-        <ChainingLevels />
-        <EffectSequences>
-          <HitBrick>
-            <SequenceID>hitbrick</SequenceID>
-          </HitBrick>
-          <HitConcrete>
-            <SequenceID>hitconcrete</SequenceID>
-          </HitConcrete>
-          <HitSteel>
-            <SequenceID>hitsteel</SequenceID>
-          </HitSteel>
-          <HitWood>
-            <SequenceID>hitwood</SequenceID>
-          </HitWood>
-          <MissLand>
-            <SequenceID>missland</SequenceID>
-          </MissLand>
-          <MissWater>
-            <SequenceID>misswater</SequenceID>
-          </MissWater>
-        </EffectSequences>
-        <TargetWhiteList />
-        <DamageType>Normal</DamageType>
       </Projectile>
-      <Mesh>
-        <ObjectPosition>Dynamic</ObjectPosition>
-        <MeshPlacement>Default</MeshPlacement>
-        <DefaultSequence>idle01</DefaultSequence>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
-        <LogoMode>Disabled</LogoMode>
-      </Mesh>
+      <Mesh />
       <Object>
         <Variations>
           <Item>
             <Filename>data/graphics/effects/military/projectiles/projectile_mortar_01.cfg</Filename>
           </Item>
         </Variations>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <DefaultParticipant>Neutral</DefaultParticipant>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Exploder>
         <InnerDamageRadius>1</InnerDamageRadius>
@@ -1139,41 +505,6 @@
         <DebrisCount>0</DebrisCount>
         <OuterDamageRadius>8</OuterDamageRadius>
         <MinimumDamage>200</MinimumDamage>
-        <HitSuccessNotification>
-          <Template>ActionNotification</Template>
-          <Values>
-            <Action />
-            <ActionNotification>
-              <Notification>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>SideNotification</Template>
-                <Values>
-                  <SideNotification />
-                  <BaseNotification />
-                  <NotificationSubtitle />
-                </Values>
-              </Notification>
-            </ActionNotification>
-          </Values>
-        </HitSuccessNotification>
-        <HitFailNotification>
-          <Template>ActionNotification</Template>
-          <Values>
-            <Action />
-            <ActionNotification>
-              <Notification>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>SideNotification</Template>
-                <Values>
-                  <SideNotification />
-                  <BaseNotification />
-                  <NotificationSubtitle />
-                </Values>
-              </Notification>
-            </ActionNotification>
-          </Values>
-        </HitFailNotification>
-        <KamikazeRadiusDecal>0</KamikazeRadiusDecal>
       </Exploder>
       <SoundEmitter>
         <ProjectileSounds>
@@ -1188,32 +519,9 @@
             </Item>
           </ProjectileImpact>
         </ProjectileSounds>
-        <ActiveSounds />
-        <DestroySounds />
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionSounds />
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <IncidentSounds />
-        <BuildingRuined />
-        <BuildingRepaired />
-        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <UpgradeList />
-      <ProjectileIncident>
-        <CausedIncident>[NONE]</CausedIncident>
-        <CausedIncidentBuff>0</CausedIncidentBuff>
-        <CausedIncidentDuration>10000</CausedIncidentDuration>
-      </ProjectileIncident>
+      <ProjectileIncident />
     </Values>
   </Asset>
   <Asset>
@@ -1222,8 +530,6 @@
       <Standard>
         <GUID>102495</GUID>
         <Name>MortarProjectile_B</Name>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <Projectile>
         <ProjectileType>Arc</ProjectileType>
@@ -1251,58 +557,14 @@
             <Factor>2</Factor>
           </Item>
         </Effectivities>
-        <ShotAngle>45</ShotAngle>
-        <StatusEffects />
-        <ChainingLevels />
-        <EffectSequences>
-          <HitBrick>
-            <SequenceID>hitbrick</SequenceID>
-          </HitBrick>
-          <HitConcrete>
-            <SequenceID>hitconcrete</SequenceID>
-          </HitConcrete>
-          <HitSteel>
-            <SequenceID>hitsteel</SequenceID>
-          </HitSteel>
-          <HitWood>
-            <SequenceID>hitwood</SequenceID>
-          </HitWood>
-          <MissLand>
-            <SequenceID>missland</SequenceID>
-          </MissLand>
-          <MissWater>
-            <SequenceID>misswater</SequenceID>
-          </MissWater>
-        </EffectSequences>
-        <TargetWhiteList />
-        <DamageType>Normal</DamageType>
       </Projectile>
-      <Mesh>
-        <ObjectPosition>Dynamic</ObjectPosition>
-        <MeshPlacement>Default</MeshPlacement>
-        <DefaultSequence>idle01</DefaultSequence>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
-        <LogoMode>Disabled</LogoMode>
-      </Mesh>
+      <Mesh />
       <Object>
         <Variations>
           <Item>
             <Filename>data/graphics/effects/military/projectiles/projectile_mortar_01.cfg</Filename>
           </Item>
         </Variations>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <DefaultParticipant>Neutral</DefaultParticipant>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Exploder>
         <InnerDamageRadius>1</InnerDamageRadius>
@@ -1311,41 +573,6 @@
         <DebrisCount>0</DebrisCount>
         <OuterDamageRadius>8</OuterDamageRadius>
         <MinimumDamage>300</MinimumDamage>
-        <HitSuccessNotification>
-          <Template>ActionNotification</Template>
-          <Values>
-            <Action />
-            <ActionNotification>
-              <Notification>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>SideNotification</Template>
-                <Values>
-                  <SideNotification />
-                  <BaseNotification />
-                  <NotificationSubtitle />
-                </Values>
-              </Notification>
-            </ActionNotification>
-          </Values>
-        </HitSuccessNotification>
-        <HitFailNotification>
-          <Template>ActionNotification</Template>
-          <Values>
-            <Action />
-            <ActionNotification>
-              <Notification>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>SideNotification</Template>
-                <Values>
-                  <SideNotification />
-                  <BaseNotification />
-                  <NotificationSubtitle />
-                </Values>
-              </Notification>
-            </ActionNotification>
-          </Values>
-        </HitFailNotification>
-        <KamikazeRadiusDecal>0</KamikazeRadiusDecal>
       </Exploder>
       <SoundEmitter>
         <ProjectileSounds>
@@ -1360,32 +587,9 @@
             </Item>
           </ProjectileImpact>
         </ProjectileSounds>
-        <ActiveSounds />
-        <DestroySounds />
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionSounds />
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <IncidentSounds />
-        <BuildingRuined />
-        <BuildingRepaired />
-        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <UpgradeList />
-      <ProjectileIncident>
-        <CausedIncident>[NONE]</CausedIncident>
-        <CausedIncidentBuff>0</CausedIncidentBuff>
-        <CausedIncidentDuration>10000</CausedIncidentDuration>
-      </ProjectileIncident>
+      <ProjectileIncident />
     </Values>
   </Asset>
   <Asset>
@@ -1394,8 +598,6 @@
       <Standard>
         <GUID>102496</GUID>
         <Name>MortarProjectile_C</Name>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <Projectile>
         <ProjectileType>Arc</ProjectileType>
@@ -1423,58 +625,14 @@
             <Factor>2</Factor>
           </Item>
         </Effectivities>
-        <ShotAngle>45</ShotAngle>
-        <StatusEffects />
-        <ChainingLevels />
-        <EffectSequences>
-          <HitBrick>
-            <SequenceID>hitbrick</SequenceID>
-          </HitBrick>
-          <HitConcrete>
-            <SequenceID>hitconcrete</SequenceID>
-          </HitConcrete>
-          <HitSteel>
-            <SequenceID>hitsteel</SequenceID>
-          </HitSteel>
-          <HitWood>
-            <SequenceID>hitwood</SequenceID>
-          </HitWood>
-          <MissLand>
-            <SequenceID>missland</SequenceID>
-          </MissLand>
-          <MissWater>
-            <SequenceID>misswater</SequenceID>
-          </MissWater>
-        </EffectSequences>
-        <TargetWhiteList />
-        <DamageType>Normal</DamageType>
       </Projectile>
-      <Mesh>
-        <ObjectPosition>Dynamic</ObjectPosition>
-        <MeshPlacement>Default</MeshPlacement>
-        <DefaultSequence>idle01</DefaultSequence>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
-        <LogoMode>Disabled</LogoMode>
-      </Mesh>
+      <Mesh />
       <Object>
         <Variations>
           <Item>
             <Filename>data/graphics/effects/military/projectiles/projectile_mortar_01.cfg</Filename>
           </Item>
         </Variations>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <DefaultParticipant>Neutral</DefaultParticipant>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Exploder>
         <InnerDamageRadius>1</InnerDamageRadius>
@@ -1483,41 +641,6 @@
         <DebrisCount>0</DebrisCount>
         <OuterDamageRadius>8</OuterDamageRadius>
         <MinimumDamage>400</MinimumDamage>
-        <HitSuccessNotification>
-          <Template>ActionNotification</Template>
-          <Values>
-            <Action />
-            <ActionNotification>
-              <Notification>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>SideNotification</Template>
-                <Values>
-                  <SideNotification />
-                  <BaseNotification />
-                  <NotificationSubtitle />
-                </Values>
-              </Notification>
-            </ActionNotification>
-          </Values>
-        </HitSuccessNotification>
-        <HitFailNotification>
-          <Template>ActionNotification</Template>
-          <Values>
-            <Action />
-            <ActionNotification>
-              <Notification>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>SideNotification</Template>
-                <Values>
-                  <SideNotification />
-                  <BaseNotification />
-                  <NotificationSubtitle />
-                </Values>
-              </Notification>
-            </ActionNotification>
-          </Values>
-        </HitFailNotification>
-        <KamikazeRadiusDecal>0</KamikazeRadiusDecal>
       </Exploder>
       <SoundEmitter>
         <ProjectileSounds>
@@ -1532,32 +655,9 @@
             </Item>
           </ProjectileImpact>
         </ProjectileSounds>
-        <ActiveSounds />
-        <DestroySounds />
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionSounds />
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <IncidentSounds />
-        <BuildingRuined />
-        <BuildingRepaired />
-        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <UpgradeList />
-      <ProjectileIncident>
-        <CausedIncident>[NONE]</CausedIncident>
-        <CausedIncidentBuff>0</CausedIncidentBuff>
-        <CausedIncidentDuration>10000</CausedIncidentDuration>
-      </ProjectileIncident>
+      <ProjectileIncident />
     </Values>
   </Asset>
   <Asset>
@@ -1567,7 +667,6 @@
         <GUID>102627</GUID>
         <Name>IgniteProjectile_B</Name>
         <InfoDescription>21346</InfoDescription>
-        <Comments />
       </Standard>
       <Projectile>
         <ProjectileType>Arc</ProjectileType>
@@ -1596,57 +695,14 @@
           </Item>
         </Effectivities>
         <TargetWhiteList>Neutral</TargetWhiteList>
-        <ShotAngle>45</ShotAngle>
-        <StatusEffects />
-        <ChainingLevels />
-        <EffectSequences>
-          <HitBrick>
-            <SequenceID>hitbrick</SequenceID>
-          </HitBrick>
-          <HitConcrete>
-            <SequenceID>hitconcrete</SequenceID>
-          </HitConcrete>
-          <HitSteel>
-            <SequenceID>hitsteel</SequenceID>
-          </HitSteel>
-          <HitWood>
-            <SequenceID>hitwood</SequenceID>
-          </HitWood>
-          <MissLand>
-            <SequenceID>missland</SequenceID>
-          </MissLand>
-          <MissWater>
-            <SequenceID>misswater</SequenceID>
-          </MissWater>
-        </EffectSequences>
-        <DamageType>Normal</DamageType>
       </Projectile>
-      <Mesh>
-        <ObjectPosition>Dynamic</ObjectPosition>
-        <MeshPlacement>Default</MeshPlacement>
-        <DefaultSequence>idle01</DefaultSequence>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
-        <LogoMode>Disabled</LogoMode>
-      </Mesh>
+      <Mesh />
       <Object>
         <Variations>
           <Item>
             <Filename>data/graphics/effects/military/projectiles/projectile_firebomb.cfg</Filename>
           </Item>
         </Variations>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <DefaultParticipant>Neutral</DefaultParticipant>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Exploder>
         <InnerDamageRadius>1</InnerDamageRadius>
@@ -1654,42 +710,6 @@
         <DebrisCount>0</DebrisCount>
         <OuterDamageRadius>8</OuterDamageRadius>
         <MinimumDamage>200</MinimumDamage>
-        <DebrisForceY>10</DebrisForceY>
-        <HitSuccessNotification>
-          <Template>ActionNotification</Template>
-          <Values>
-            <Action />
-            <ActionNotification>
-              <Notification>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>SideNotification</Template>
-                <Values>
-                  <SideNotification />
-                  <BaseNotification />
-                  <NotificationSubtitle />
-                </Values>
-              </Notification>
-            </ActionNotification>
-          </Values>
-        </HitSuccessNotification>
-        <HitFailNotification>
-          <Template>ActionNotification</Template>
-          <Values>
-            <Action />
-            <ActionNotification>
-              <Notification>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>SideNotification</Template>
-                <Values>
-                  <SideNotification />
-                  <BaseNotification />
-                  <NotificationSubtitle />
-                </Values>
-              </Notification>
-            </ActionNotification>
-          </Values>
-        </HitFailNotification>
-        <KamikazeRadiusDecal>0</KamikazeRadiusDecal>
       </Exploder>
       <SoundEmitter>
         <ProjectileSounds>
@@ -1700,25 +720,6 @@
             <Item />
           </ProjectileImpact>
         </ProjectileSounds>
-        <ActiveSounds />
-        <DestroySounds />
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionSounds />
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <IncidentSounds />
-        <BuildingRuined />
-        <BuildingRepaired />
-        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <UpgradeList />
       <ProjectileIncident>
@@ -1734,66 +735,19 @@
       <Standard>
         <GUID>100445</GUID>
         <Name>SmallTorpedoProjectile</Name>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <Projectile>
         <ShotHeight>0.5</ShotHeight>
         <ProjectileSpeed>1.5</ProjectileSpeed>
         <DamageType>Torpedo</DamageType>
-        <ProjectileType>HomingStraight</ProjectileType>
-        <ShotAngle>45</ShotAngle>
-        <Effectivities />
-        <StatusEffects />
-        <ChainingLevels />
-        <EffectSequences>
-          <HitBrick>
-            <SequenceID>hitbrick</SequenceID>
-          </HitBrick>
-          <HitConcrete>
-            <SequenceID>hitconcrete</SequenceID>
-          </HitConcrete>
-          <HitSteel>
-            <SequenceID>hitsteel</SequenceID>
-          </HitSteel>
-          <HitWood>
-            <SequenceID>hitwood</SequenceID>
-          </HitWood>
-          <MissLand>
-            <SequenceID>missland</SequenceID>
-          </MissLand>
-          <MissWater>
-            <SequenceID>misswater</SequenceID>
-          </MissWater>
-        </EffectSequences>
-        <TargetWhiteList />
       </Projectile>
-      <Mesh>
-        <ObjectPosition>Dynamic</ObjectPosition>
-        <MeshPlacement>Default</MeshPlacement>
-        <DefaultSequence>idle01</DefaultSequence>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
-        <LogoMode>Disabled</LogoMode>
-      </Mesh>
+      <Mesh />
       <Object>
         <Variations>
           <Item>
             <Filename>data/graphics/effects/military/projectiles/projectile_torpedo_01.cfg</Filename>
           </Item>
         </Variations>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <DefaultParticipant>Neutral</DefaultParticipant>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Exploder>
         <InnerDamageRadius>2</InnerDamageRadius>
@@ -1802,41 +756,6 @@
         <DebrisCount>0</DebrisCount>
         <OuterDamageRadius>8</OuterDamageRadius>
         <MinimumDamage>200</MinimumDamage>
-        <HitSuccessNotification>
-          <Template>ActionNotification</Template>
-          <Values>
-            <Action />
-            <ActionNotification>
-              <Notification>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>SideNotification</Template>
-                <Values>
-                  <SideNotification />
-                  <BaseNotification />
-                  <NotificationSubtitle />
-                </Values>
-              </Notification>
-            </ActionNotification>
-          </Values>
-        </HitSuccessNotification>
-        <HitFailNotification>
-          <Template>ActionNotification</Template>
-          <Values>
-            <Action />
-            <ActionNotification>
-              <Notification>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>SideNotification</Template>
-                <Values>
-                  <SideNotification />
-                  <BaseNotification />
-                  <NotificationSubtitle />
-                </Values>
-              </Notification>
-            </ActionNotification>
-          </Values>
-        </HitFailNotification>
-        <KamikazeRadiusDecal>0</KamikazeRadiusDecal>
       </Exploder>
       <SoundEmitter>
         <ProjectileSounds>
@@ -1851,32 +770,9 @@
             </Item>
           </ProjectileImpact>
         </ProjectileSounds>
-        <ActiveSounds />
-        <DestroySounds />
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionSounds />
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <IncidentSounds />
-        <BuildingRuined />
-        <BuildingRepaired />
-        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <UpgradeList />
-      <ProjectileIncident>
-        <CausedIncident>[NONE]</CausedIncident>
-        <CausedIncidentBuff>0</CausedIncidentBuff>
-        <CausedIncidentDuration>10000</CausedIncidentDuration>
-      </ProjectileIncident>
+      <ProjectileIncident />
     </Values>
   </Asset>
   <Asset>
@@ -1885,66 +781,19 @@
       <Standard>
         <GUID>100458</GUID>
         <Name>MediumTorpedoProjectile</Name>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <Projectile>
         <ShotHeight>0.5</ShotHeight>
         <ProjectileSpeed>1.2</ProjectileSpeed>
         <DamageType>Torpedo</DamageType>
-        <ProjectileType>HomingStraight</ProjectileType>
-        <ShotAngle>45</ShotAngle>
-        <Effectivities />
-        <StatusEffects />
-        <ChainingLevels />
-        <EffectSequences>
-          <HitBrick>
-            <SequenceID>hitbrick</SequenceID>
-          </HitBrick>
-          <HitConcrete>
-            <SequenceID>hitconcrete</SequenceID>
-          </HitConcrete>
-          <HitSteel>
-            <SequenceID>hitsteel</SequenceID>
-          </HitSteel>
-          <HitWood>
-            <SequenceID>hitwood</SequenceID>
-          </HitWood>
-          <MissLand>
-            <SequenceID>missland</SequenceID>
-          </MissLand>
-          <MissWater>
-            <SequenceID>misswater</SequenceID>
-          </MissWater>
-        </EffectSequences>
-        <TargetWhiteList />
       </Projectile>
-      <Mesh>
-        <ObjectPosition>Dynamic</ObjectPosition>
-        <MeshPlacement>Default</MeshPlacement>
-        <DefaultSequence>idle01</DefaultSequence>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
-        <LogoMode>Disabled</LogoMode>
-      </Mesh>
+      <Mesh />
       <Object>
         <Variations>
           <Item>
             <Filename>data/graphics/effects/military/projectiles/projectile_torpedo_02.cfg</Filename>
           </Item>
         </Variations>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <DefaultParticipant>Neutral</DefaultParticipant>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Exploder>
         <InnerDamageRadius>2</InnerDamageRadius>
@@ -1953,41 +802,6 @@
         <DebrisCount>0</DebrisCount>
         <OuterDamageRadius>8</OuterDamageRadius>
         <MinimumDamage>400</MinimumDamage>
-        <HitSuccessNotification>
-          <Template>ActionNotification</Template>
-          <Values>
-            <Action />
-            <ActionNotification>
-              <Notification>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>SideNotification</Template>
-                <Values>
-                  <SideNotification />
-                  <BaseNotification />
-                  <NotificationSubtitle />
-                </Values>
-              </Notification>
-            </ActionNotification>
-          </Values>
-        </HitSuccessNotification>
-        <HitFailNotification>
-          <Template>ActionNotification</Template>
-          <Values>
-            <Action />
-            <ActionNotification>
-              <Notification>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>SideNotification</Template>
-                <Values>
-                  <SideNotification />
-                  <BaseNotification />
-                  <NotificationSubtitle />
-                </Values>
-              </Notification>
-            </ActionNotification>
-          </Values>
-        </HitFailNotification>
-        <KamikazeRadiusDecal>0</KamikazeRadiusDecal>
       </Exploder>
       <SoundEmitter>
         <ProjectileSounds>
@@ -2004,32 +818,9 @@
             </Item>
           </ProjectileImpact>
         </ProjectileSounds>
-        <ActiveSounds />
-        <DestroySounds />
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionSounds />
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <IncidentSounds />
-        <BuildingRuined />
-        <BuildingRepaired />
-        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <UpgradeList />
-      <ProjectileIncident>
-        <CausedIncident>[NONE]</CausedIncident>
-        <CausedIncidentBuff>0</CausedIncidentBuff>
-        <CausedIncidentDuration>10000</CausedIncidentDuration>
-      </ProjectileIncident>
+      <ProjectileIncident />
     </Values>
   </Asset>
   <Asset>
@@ -2038,66 +829,19 @@
       <Standard>
         <GUID>100459</GUID>
         <Name>BigTorpedoProjectile</Name>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <Projectile>
         <ShotHeight>0.5</ShotHeight>
         <ProjectileSpeed>1</ProjectileSpeed>
         <DamageType>Torpedo</DamageType>
-        <ProjectileType>HomingStraight</ProjectileType>
-        <ShotAngle>45</ShotAngle>
-        <Effectivities />
-        <StatusEffects />
-        <ChainingLevels />
-        <EffectSequences>
-          <HitBrick>
-            <SequenceID>hitbrick</SequenceID>
-          </HitBrick>
-          <HitConcrete>
-            <SequenceID>hitconcrete</SequenceID>
-          </HitConcrete>
-          <HitSteel>
-            <SequenceID>hitsteel</SequenceID>
-          </HitSteel>
-          <HitWood>
-            <SequenceID>hitwood</SequenceID>
-          </HitWood>
-          <MissLand>
-            <SequenceID>missland</SequenceID>
-          </MissLand>
-          <MissWater>
-            <SequenceID>misswater</SequenceID>
-          </MissWater>
-        </EffectSequences>
-        <TargetWhiteList />
       </Projectile>
-      <Mesh>
-        <ObjectPosition>Dynamic</ObjectPosition>
-        <MeshPlacement>Default</MeshPlacement>
-        <DefaultSequence>idle01</DefaultSequence>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
-        <LogoMode>Disabled</LogoMode>
-      </Mesh>
+      <Mesh />
       <Object>
         <Variations>
           <Item>
             <Filename>data/graphics/effects/military/projectiles/projectile_torpedo_03.cfg</Filename>
           </Item>
         </Variations>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <DefaultParticipant>Neutral</DefaultParticipant>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Exploder>
         <InnerDamageRadius>2</InnerDamageRadius>
@@ -2106,41 +850,6 @@
         <DebrisCount>0</DebrisCount>
         <OuterDamageRadius>8</OuterDamageRadius>
         <MinimumDamage>800</MinimumDamage>
-        <HitSuccessNotification>
-          <Template>ActionNotification</Template>
-          <Values>
-            <Action />
-            <ActionNotification>
-              <Notification>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>SideNotification</Template>
-                <Values>
-                  <SideNotification />
-                  <BaseNotification />
-                  <NotificationSubtitle />
-                </Values>
-              </Notification>
-            </ActionNotification>
-          </Values>
-        </HitSuccessNotification>
-        <HitFailNotification>
-          <Template>ActionNotification</Template>
-          <Values>
-            <Action />
-            <ActionNotification>
-              <Notification>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>SideNotification</Template>
-                <Values>
-                  <SideNotification />
-                  <BaseNotification />
-                  <NotificationSubtitle />
-                </Values>
-              </Notification>
-            </ActionNotification>
-          </Values>
-        </HitFailNotification>
-        <KamikazeRadiusDecal>0</KamikazeRadiusDecal>
       </Exploder>
       <SoundEmitter>
         <ProjectileSounds>
@@ -2157,32 +866,9 @@
             </Item>
           </ProjectileImpact>
         </ProjectileSounds>
-        <ActiveSounds />
-        <DestroySounds />
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionSounds />
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <IncidentSounds />
-        <BuildingRuined />
-        <BuildingRepaired />
-        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <UpgradeList />
-      <ProjectileIncident>
-        <CausedIncident>[NONE]</CausedIncident>
-        <CausedIncidentBuff>0</CausedIncidentBuff>
-        <CausedIncidentDuration>10000</CausedIncidentDuration>
-      </ProjectileIncident>
+      <ProjectileIncident />
     </Values>
   </Asset>
   <Asset>
@@ -2191,66 +877,19 @@
       <Standard>
         <GUID>192187</GUID>
         <Name>TorpedoProjectile_A</Name>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <Projectile>
         <ShotHeight>0.5</ShotHeight>
         <ProjectileSpeed>1.5</ProjectileSpeed>
         <DamageType>Torpedo</DamageType>
-        <ProjectileType>HomingStraight</ProjectileType>
-        <ShotAngle>45</ShotAngle>
-        <Effectivities />
-        <StatusEffects />
-        <ChainingLevels />
-        <EffectSequences>
-          <HitBrick>
-            <SequenceID>hitbrick</SequenceID>
-          </HitBrick>
-          <HitConcrete>
-            <SequenceID>hitconcrete</SequenceID>
-          </HitConcrete>
-          <HitSteel>
-            <SequenceID>hitsteel</SequenceID>
-          </HitSteel>
-          <HitWood>
-            <SequenceID>hitwood</SequenceID>
-          </HitWood>
-          <MissLand>
-            <SequenceID>missland</SequenceID>
-          </MissLand>
-          <MissWater>
-            <SequenceID>misswater</SequenceID>
-          </MissWater>
-        </EffectSequences>
-        <TargetWhiteList />
       </Projectile>
-      <Mesh>
-        <ObjectPosition>Dynamic</ObjectPosition>
-        <MeshPlacement>Default</MeshPlacement>
-        <DefaultSequence>idle01</DefaultSequence>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
-        <LogoMode>Disabled</LogoMode>
-      </Mesh>
+      <Mesh />
       <Object>
         <Variations>
           <Item>
             <Filename>data/graphics/effects/military/projectiles/projectile_torpedo_02.cfg</Filename>
           </Item>
         </Variations>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <DefaultParticipant>Neutral</DefaultParticipant>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Exploder>
         <InnerDamageRadius>2</InnerDamageRadius>
@@ -2259,41 +898,6 @@
         <DebrisCount>0</DebrisCount>
         <OuterDamageRadius>4</OuterDamageRadius>
         <MinimumDamage>500</MinimumDamage>
-        <HitSuccessNotification>
-          <Template>ActionNotification</Template>
-          <Values>
-            <Action />
-            <ActionNotification>
-              <Notification>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>SideNotification</Template>
-                <Values>
-                  <SideNotification />
-                  <BaseNotification />
-                  <NotificationSubtitle />
-                </Values>
-              </Notification>
-            </ActionNotification>
-          </Values>
-        </HitSuccessNotification>
-        <HitFailNotification>
-          <Template>ActionNotification</Template>
-          <Values>
-            <Action />
-            <ActionNotification>
-              <Notification>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>SideNotification</Template>
-                <Values>
-                  <SideNotification />
-                  <BaseNotification />
-                  <NotificationSubtitle />
-                </Values>
-              </Notification>
-            </ActionNotification>
-          </Values>
-        </HitFailNotification>
-        <KamikazeRadiusDecal>0</KamikazeRadiusDecal>
       </Exploder>
       <SoundEmitter>
         <ProjectileSounds>
@@ -2308,32 +912,9 @@
             </Item>
           </ProjectileImpact>
         </ProjectileSounds>
-        <ActiveSounds />
-        <DestroySounds />
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionSounds />
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <IncidentSounds />
-        <BuildingRuined />
-        <BuildingRepaired />
-        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <UpgradeList />
-      <ProjectileIncident>
-        <CausedIncident>[NONE]</CausedIncident>
-        <CausedIncidentBuff>0</CausedIncidentBuff>
-        <CausedIncidentDuration>10000</CausedIncidentDuration>
-      </ProjectileIncident>
+      <ProjectileIncident />
     </Values>
   </Asset>
   <Asset>
@@ -2342,66 +923,19 @@
       <Standard>
         <GUID>192188</GUID>
         <Name>TorpedoProjectile_B</Name>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <Projectile>
         <ShotHeight>0.5</ShotHeight>
         <ProjectileSpeed>2.5</ProjectileSpeed>
         <DamageType>Torpedo</DamageType>
-        <ProjectileType>HomingStraight</ProjectileType>
-        <ShotAngle>45</ShotAngle>
-        <Effectivities />
-        <StatusEffects />
-        <ChainingLevels />
-        <EffectSequences>
-          <HitBrick>
-            <SequenceID>hitbrick</SequenceID>
-          </HitBrick>
-          <HitConcrete>
-            <SequenceID>hitconcrete</SequenceID>
-          </HitConcrete>
-          <HitSteel>
-            <SequenceID>hitsteel</SequenceID>
-          </HitSteel>
-          <HitWood>
-            <SequenceID>hitwood</SequenceID>
-          </HitWood>
-          <MissLand>
-            <SequenceID>missland</SequenceID>
-          </MissLand>
-          <MissWater>
-            <SequenceID>misswater</SequenceID>
-          </MissWater>
-        </EffectSequences>
-        <TargetWhiteList />
       </Projectile>
-      <Mesh>
-        <ObjectPosition>Dynamic</ObjectPosition>
-        <MeshPlacement>Default</MeshPlacement>
-        <DefaultSequence>idle01</DefaultSequence>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
-        <LogoMode>Disabled</LogoMode>
-      </Mesh>
+      <Mesh />
       <Object>
         <Variations>
           <Item>
             <Filename>data/graphics/effects/military/projectiles/projectile_torpedo_02.cfg</Filename>
           </Item>
         </Variations>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <DefaultParticipant>Neutral</DefaultParticipant>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Exploder>
         <InnerDamageRadius>2</InnerDamageRadius>
@@ -2410,41 +944,6 @@
         <DebrisCount>0</DebrisCount>
         <OuterDamageRadius>4</OuterDamageRadius>
         <MinimumDamage>750</MinimumDamage>
-        <HitSuccessNotification>
-          <Template>ActionNotification</Template>
-          <Values>
-            <Action />
-            <ActionNotification>
-              <Notification>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>SideNotification</Template>
-                <Values>
-                  <SideNotification />
-                  <BaseNotification />
-                  <NotificationSubtitle />
-                </Values>
-              </Notification>
-            </ActionNotification>
-          </Values>
-        </HitSuccessNotification>
-        <HitFailNotification>
-          <Template>ActionNotification</Template>
-          <Values>
-            <Action />
-            <ActionNotification>
-              <Notification>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>SideNotification</Template>
-                <Values>
-                  <SideNotification />
-                  <BaseNotification />
-                  <NotificationSubtitle />
-                </Values>
-              </Notification>
-            </ActionNotification>
-          </Values>
-        </HitFailNotification>
-        <KamikazeRadiusDecal>0</KamikazeRadiusDecal>
       </Exploder>
       <SoundEmitter>
         <ProjectileSounds>
@@ -2459,32 +958,9 @@
             </Item>
           </ProjectileImpact>
         </ProjectileSounds>
-        <ActiveSounds />
-        <DestroySounds />
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionSounds />
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <IncidentSounds />
-        <BuildingRuined />
-        <BuildingRepaired />
-        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <UpgradeList />
-      <ProjectileIncident>
-        <CausedIncident>[NONE]</CausedIncident>
-        <CausedIncidentBuff>0</CausedIncidentBuff>
-        <CausedIncidentDuration>10000</CausedIncidentDuration>
-      </ProjectileIncident>
+      <ProjectileIncident />
     </Values>
   </Asset>
   <Asset>
@@ -2493,66 +969,19 @@
       <Standard>
         <GUID>192189</GUID>
         <Name>TorpedoProjectile_C</Name>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <Projectile>
         <ShotHeight>0.5</ShotHeight>
         <ProjectileSpeed>3.5</ProjectileSpeed>
         <DamageType>Torpedo</DamageType>
-        <ProjectileType>HomingStraight</ProjectileType>
-        <ShotAngle>45</ShotAngle>
-        <Effectivities />
-        <StatusEffects />
-        <ChainingLevels />
-        <EffectSequences>
-          <HitBrick>
-            <SequenceID>hitbrick</SequenceID>
-          </HitBrick>
-          <HitConcrete>
-            <SequenceID>hitconcrete</SequenceID>
-          </HitConcrete>
-          <HitSteel>
-            <SequenceID>hitsteel</SequenceID>
-          </HitSteel>
-          <HitWood>
-            <SequenceID>hitwood</SequenceID>
-          </HitWood>
-          <MissLand>
-            <SequenceID>missland</SequenceID>
-          </MissLand>
-          <MissWater>
-            <SequenceID>misswater</SequenceID>
-          </MissWater>
-        </EffectSequences>
-        <TargetWhiteList />
       </Projectile>
-      <Mesh>
-        <ObjectPosition>Dynamic</ObjectPosition>
-        <MeshPlacement>Default</MeshPlacement>
-        <DefaultSequence>idle01</DefaultSequence>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
-        <LogoMode>Disabled</LogoMode>
-      </Mesh>
+      <Mesh />
       <Object>
         <Variations>
           <Item>
             <Filename>data/graphics/effects/military/projectiles/projectile_torpedo_02.cfg</Filename>
           </Item>
         </Variations>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <DefaultParticipant>Neutral</DefaultParticipant>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Exploder>
         <InnerDamageRadius>2</InnerDamageRadius>
@@ -2561,41 +990,6 @@
         <DebrisCount>0</DebrisCount>
         <OuterDamageRadius>4</OuterDamageRadius>
         <MinimumDamage>1000</MinimumDamage>
-        <HitSuccessNotification>
-          <Template>ActionNotification</Template>
-          <Values>
-            <Action />
-            <ActionNotification>
-              <Notification>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>SideNotification</Template>
-                <Values>
-                  <SideNotification />
-                  <BaseNotification />
-                  <NotificationSubtitle />
-                </Values>
-              </Notification>
-            </ActionNotification>
-          </Values>
-        </HitSuccessNotification>
-        <HitFailNotification>
-          <Template>ActionNotification</Template>
-          <Values>
-            <Action />
-            <ActionNotification>
-              <Notification>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>SideNotification</Template>
-                <Values>
-                  <SideNotification />
-                  <BaseNotification />
-                  <NotificationSubtitle />
-                </Values>
-              </Notification>
-            </ActionNotification>
-          </Values>
-        </HitFailNotification>
-        <KamikazeRadiusDecal>0</KamikazeRadiusDecal>
       </Exploder>
       <SoundEmitter>
         <ProjectileSounds>
@@ -2610,32 +1004,9 @@
             </Item>
           </ProjectileImpact>
         </ProjectileSounds>
-        <ActiveSounds />
-        <DestroySounds />
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionSounds />
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <IncidentSounds />
-        <BuildingRuined />
-        <BuildingRepaired />
-        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <UpgradeList />
-      <ProjectileIncident>
-        <CausedIncident>[NONE]</CausedIncident>
-        <CausedIncidentBuff>0</CausedIncidentBuff>
-        <CausedIncidentDuration>10000</CausedIncidentDuration>
-      </ProjectileIncident>
+      <ProjectileIncident />
     </Values>
   </Asset>
   <Asset>
@@ -2644,8 +1015,6 @@
       <Standard>
         <GUID>101955</GUID>
         <Name>Big_Bertha_Shell</Name>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <Projectile>
         <ProjectileType>Arc</ProjectileType>
@@ -2653,57 +1022,14 @@
         <ShotAngle>30</ShotAngle>
         <ProjectileSpeed>60</ProjectileSpeed>
         <DamageType>BigBertha</DamageType>
-        <Effectivities />
-        <StatusEffects />
-        <ChainingLevels />
-        <EffectSequences>
-          <HitBrick>
-            <SequenceID>hitbrick</SequenceID>
-          </HitBrick>
-          <HitConcrete>
-            <SequenceID>hitconcrete</SequenceID>
-          </HitConcrete>
-          <HitSteel>
-            <SequenceID>hitsteel</SequenceID>
-          </HitSteel>
-          <HitWood>
-            <SequenceID>hitwood</SequenceID>
-          </HitWood>
-          <MissLand>
-            <SequenceID>missland</SequenceID>
-          </MissLand>
-          <MissWater>
-            <SequenceID>misswater</SequenceID>
-          </MissWater>
-        </EffectSequences>
-        <TargetWhiteList />
       </Projectile>
-      <Mesh>
-        <ObjectPosition>Dynamic</ObjectPosition>
-        <MeshPlacement>Default</MeshPlacement>
-        <DefaultSequence>idle01</DefaultSequence>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
-        <LogoMode>Disabled</LogoMode>
-      </Mesh>
+      <Mesh />
       <Object>
         <Variations>
           <Item>
             <Filename>data/graphics/effects/military/projectiles/projectile_cannon_area_very_large_01.cfg</Filename>
           </Item>
         </Variations>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <DefaultParticipant>Neutral</DefaultParticipant>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Exploder>
         <InnerDamageRadius>1</InnerDamageRadius>
@@ -2711,42 +1037,6 @@
         <DebrisCount>0</DebrisCount>
         <OuterDamageRadius>8</OuterDamageRadius>
         <MinimumDamage>1</MinimumDamage>
-        <DebrisForceY>10</DebrisForceY>
-        <HitSuccessNotification>
-          <Template>ActionNotification</Template>
-          <Values>
-            <Action />
-            <ActionNotification>
-              <Notification>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>SideNotification</Template>
-                <Values>
-                  <SideNotification />
-                  <BaseNotification />
-                  <NotificationSubtitle />
-                </Values>
-              </Notification>
-            </ActionNotification>
-          </Values>
-        </HitSuccessNotification>
-        <HitFailNotification>
-          <Template>ActionNotification</Template>
-          <Values>
-            <Action />
-            <ActionNotification>
-              <Notification>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>SideNotification</Template>
-                <Values>
-                  <SideNotification />
-                  <BaseNotification />
-                  <NotificationSubtitle />
-                </Values>
-              </Notification>
-            </ActionNotification>
-          </Values>
-        </HitFailNotification>
-        <KamikazeRadiusDecal>0</KamikazeRadiusDecal>
       </Exploder>
       <SoundEmitter>
         <ProjectileSounds>
@@ -2761,32 +1051,9 @@
             </Item>
           </ProjectileImpact>
         </ProjectileSounds>
-        <ActiveSounds />
-        <DestroySounds />
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionSounds />
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <IncidentSounds />
-        <BuildingRuined />
-        <BuildingRepaired />
-        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <UpgradeList />
-      <ProjectileIncident>
-        <CausedIncident>[NONE]</CausedIncident>
-        <CausedIncidentBuff>0</CausedIncidentBuff>
-        <CausedIncidentDuration>10000</CausedIncidentDuration>
-      </ProjectileIncident>
+      <ProjectileIncident />
     </Values>
   </Asset>
   <Asset>
@@ -2795,8 +1062,6 @@
       <Standard>
         <GUID>102338</GUID>
         <Name>SmallSingleHowitzer</Name>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <Projectile>
         <ProjectileType>Arc</ProjectileType>
@@ -2804,57 +1069,14 @@
         <ShotAngle>15</ShotAngle>
         <ProjectileSpeed>40</ProjectileSpeed>
         <DamageType>Cannon</DamageType>
-        <Effectivities />
-        <StatusEffects />
-        <ChainingLevels />
-        <EffectSequences>
-          <HitBrick>
-            <SequenceID>hitbrick</SequenceID>
-          </HitBrick>
-          <HitConcrete>
-            <SequenceID>hitconcrete</SequenceID>
-          </HitConcrete>
-          <HitSteel>
-            <SequenceID>hitsteel</SequenceID>
-          </HitSteel>
-          <HitWood>
-            <SequenceID>hitwood</SequenceID>
-          </HitWood>
-          <MissLand>
-            <SequenceID>missland</SequenceID>
-          </MissLand>
-          <MissWater>
-            <SequenceID>misswater</SequenceID>
-          </MissWater>
-        </EffectSequences>
-        <TargetWhiteList />
       </Projectile>
-      <Mesh>
-        <ObjectPosition>Dynamic</ObjectPosition>
-        <MeshPlacement>Default</MeshPlacement>
-        <DefaultSequence>idle01</DefaultSequence>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
-        <LogoMode>Disabled</LogoMode>
-      </Mesh>
+      <Mesh />
       <Object>
         <Variations>
           <Item>
             <Filename>data/graphics/effects/military/projectiles/projectile_howitzer_01.cfg</Filename>
           </Item>
         </Variations>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <DefaultParticipant>Neutral</DefaultParticipant>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Exploder>
         <InnerDamageRadius>1</InnerDamageRadius>
@@ -2863,41 +1085,6 @@
         <DebrisCount>0</DebrisCount>
         <OuterDamageRadius>1</OuterDamageRadius>
         <MinimumDamage>900</MinimumDamage>
-        <HitSuccessNotification>
-          <Template>ActionNotification</Template>
-          <Values>
-            <Action />
-            <ActionNotification>
-              <Notification>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>SideNotification</Template>
-                <Values>
-                  <SideNotification />
-                  <BaseNotification />
-                  <NotificationSubtitle />
-                </Values>
-              </Notification>
-            </ActionNotification>
-          </Values>
-        </HitSuccessNotification>
-        <HitFailNotification>
-          <Template>ActionNotification</Template>
-          <Values>
-            <Action />
-            <ActionNotification>
-              <Notification>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>SideNotification</Template>
-                <Values>
-                  <SideNotification />
-                  <BaseNotification />
-                  <NotificationSubtitle />
-                </Values>
-              </Notification>
-            </ActionNotification>
-          </Values>
-        </HitFailNotification>
-        <KamikazeRadiusDecal>0</KamikazeRadiusDecal>
       </Exploder>
       <SoundEmitter>
         <ProjectileSounds>
@@ -2912,32 +1099,9 @@
             </Item>
           </ProjectileImpact>
         </ProjectileSounds>
-        <ActiveSounds />
-        <DestroySounds />
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionSounds />
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <IncidentSounds />
-        <BuildingRuined />
-        <BuildingRepaired />
-        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <UpgradeList />
-      <ProjectileIncident>
-        <CausedIncident>[NONE]</CausedIncident>
-        <CausedIncidentBuff>0</CausedIncidentBuff>
-        <CausedIncidentDuration>10000</CausedIncidentDuration>
-      </ProjectileIncident>
+      <ProjectileIncident />
     </Values>
   </Asset>
   <Asset>
@@ -2946,8 +1110,6 @@
       <Standard>
         <GUID>102339</GUID>
         <Name>MediumSingleHowitzer</Name>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <Projectile>
         <ProjectileType>Arc</ProjectileType>
@@ -2955,57 +1117,14 @@
         <ShotAngle>15</ShotAngle>
         <ProjectileSpeed>50</ProjectileSpeed>
         <DamageType>Cannon</DamageType>
-        <Effectivities />
-        <StatusEffects />
-        <ChainingLevels />
-        <EffectSequences>
-          <HitBrick>
-            <SequenceID>hitbrick</SequenceID>
-          </HitBrick>
-          <HitConcrete>
-            <SequenceID>hitconcrete</SequenceID>
-          </HitConcrete>
-          <HitSteel>
-            <SequenceID>hitsteel</SequenceID>
-          </HitSteel>
-          <HitWood>
-            <SequenceID>hitwood</SequenceID>
-          </HitWood>
-          <MissLand>
-            <SequenceID>missland</SequenceID>
-          </MissLand>
-          <MissWater>
-            <SequenceID>misswater</SequenceID>
-          </MissWater>
-        </EffectSequences>
-        <TargetWhiteList />
       </Projectile>
-      <Mesh>
-        <ObjectPosition>Dynamic</ObjectPosition>
-        <MeshPlacement>Default</MeshPlacement>
-        <DefaultSequence>idle01</DefaultSequence>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
-        <LogoMode>Disabled</LogoMode>
-      </Mesh>
+      <Mesh />
       <Object>
         <Variations>
           <Item>
             <Filename>data/graphics/effects/military/projectiles/projectile_howitzer_02.cfg</Filename>
           </Item>
         </Variations>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <DefaultParticipant>Neutral</DefaultParticipant>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Exploder>
         <InnerDamageRadius>1</InnerDamageRadius>
@@ -3014,41 +1133,6 @@
         <DebrisCount>0</DebrisCount>
         <OuterDamageRadius>1</OuterDamageRadius>
         <MinimumDamage>1300</MinimumDamage>
-        <HitSuccessNotification>
-          <Template>ActionNotification</Template>
-          <Values>
-            <Action />
-            <ActionNotification>
-              <Notification>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>SideNotification</Template>
-                <Values>
-                  <SideNotification />
-                  <BaseNotification />
-                  <NotificationSubtitle />
-                </Values>
-              </Notification>
-            </ActionNotification>
-          </Values>
-        </HitSuccessNotification>
-        <HitFailNotification>
-          <Template>ActionNotification</Template>
-          <Values>
-            <Action />
-            <ActionNotification>
-              <Notification>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>SideNotification</Template>
-                <Values>
-                  <SideNotification />
-                  <BaseNotification />
-                  <NotificationSubtitle />
-                </Values>
-              </Notification>
-            </ActionNotification>
-          </Values>
-        </HitFailNotification>
-        <KamikazeRadiusDecal>0</KamikazeRadiusDecal>
       </Exploder>
       <SoundEmitter>
         <ProjectileSounds>
@@ -3063,32 +1147,9 @@
             </Item>
           </ProjectileImpact>
         </ProjectileSounds>
-        <ActiveSounds />
-        <DestroySounds />
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionSounds />
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <IncidentSounds />
-        <BuildingRuined />
-        <BuildingRepaired />
-        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <UpgradeList />
-      <ProjectileIncident>
-        <CausedIncident>[NONE]</CausedIncident>
-        <CausedIncidentBuff>0</CausedIncidentBuff>
-        <CausedIncidentDuration>10000</CausedIncidentDuration>
-      </ProjectileIncident>
+      <ProjectileIncident />
     </Values>
   </Asset>
   <Asset>
@@ -3097,8 +1158,6 @@
       <Standard>
         <GUID>102340</GUID>
         <Name>LargeMultiHowitzer</Name>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <Projectile>
         <ProjectileType>Arc</ProjectileType>
@@ -3106,57 +1165,14 @@
         <ShotAngle>15</ShotAngle>
         <ProjectileSpeed>60</ProjectileSpeed>
         <DamageType>Cannon</DamageType>
-        <Effectivities />
-        <StatusEffects />
-        <ChainingLevels />
-        <EffectSequences>
-          <HitBrick>
-            <SequenceID>hitbrick</SequenceID>
-          </HitBrick>
-          <HitConcrete>
-            <SequenceID>hitconcrete</SequenceID>
-          </HitConcrete>
-          <HitSteel>
-            <SequenceID>hitsteel</SequenceID>
-          </HitSteel>
-          <HitWood>
-            <SequenceID>hitwood</SequenceID>
-          </HitWood>
-          <MissLand>
-            <SequenceID>missland</SequenceID>
-          </MissLand>
-          <MissWater>
-            <SequenceID>misswater</SequenceID>
-          </MissWater>
-        </EffectSequences>
-        <TargetWhiteList />
       </Projectile>
-      <Mesh>
-        <ObjectPosition>Dynamic</ObjectPosition>
-        <MeshPlacement>Default</MeshPlacement>
-        <DefaultSequence>idle01</DefaultSequence>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
-        <LogoMode>Disabled</LogoMode>
-      </Mesh>
+      <Mesh />
       <Object>
         <Variations>
           <Item>
             <Filename>data/graphics/effects/military/projectiles/projectile_howitzer_03.cfg</Filename>
           </Item>
         </Variations>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <DefaultParticipant>Neutral</DefaultParticipant>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Exploder>
         <InnerDamageRadius>1</InnerDamageRadius>
@@ -3165,41 +1181,6 @@
         <DebrisCount>0</DebrisCount>
         <OuterDamageRadius>1</OuterDamageRadius>
         <MinimumDamage>1800</MinimumDamage>
-        <HitSuccessNotification>
-          <Template>ActionNotification</Template>
-          <Values>
-            <Action />
-            <ActionNotification>
-              <Notification>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>SideNotification</Template>
-                <Values>
-                  <SideNotification />
-                  <BaseNotification />
-                  <NotificationSubtitle />
-                </Values>
-              </Notification>
-            </ActionNotification>
-          </Values>
-        </HitSuccessNotification>
-        <HitFailNotification>
-          <Template>ActionNotification</Template>
-          <Values>
-            <Action />
-            <ActionNotification>
-              <Notification>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>SideNotification</Template>
-                <Values>
-                  <SideNotification />
-                  <BaseNotification />
-                  <NotificationSubtitle />
-                </Values>
-              </Notification>
-            </ActionNotification>
-          </Values>
-        </HitFailNotification>
-        <KamikazeRadiusDecal>0</KamikazeRadiusDecal>
       </Exploder>
       <SoundEmitter>
         <ProjectileSounds>
@@ -3214,32 +1195,9 @@
             </Item>
           </ProjectileVolley>
         </ProjectileSounds>
-        <ActiveSounds />
-        <DestroySounds />
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionSounds />
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <IncidentSounds />
-        <BuildingRuined />
-        <BuildingRepaired />
-        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <UpgradeList />
-      <ProjectileIncident>
-        <CausedIncident>[NONE]</CausedIncident>
-        <CausedIncidentBuff>0</CausedIncidentBuff>
-        <CausedIncidentDuration>10000</CausedIncidentDuration>
-      </ProjectileIncident>
+      <ProjectileIncident />
     </Values>
   </Asset>
   <Asset>
@@ -3248,108 +1206,21 @@
       <Standard>
         <GUID>102080</GUID>
         <Name>KamikazeProjectile_A</Name>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
-      <Projectile>
-        <ProjectileSpeed>2</ProjectileSpeed>
-        <ProjectileType>HomingStraight</ProjectileType>
-        <ShotAngle>45</ShotAngle>
-        <Effectivities />
-        <StatusEffects />
-        <ChainingLevels />
-        <EffectSequences>
-          <HitBrick>
-            <SequenceID>hitbrick</SequenceID>
-          </HitBrick>
-          <HitConcrete>
-            <SequenceID>hitconcrete</SequenceID>
-          </HitConcrete>
-          <HitSteel>
-            <SequenceID>hitsteel</SequenceID>
-          </HitSteel>
-          <HitWood>
-            <SequenceID>hitwood</SequenceID>
-          </HitWood>
-          <MissLand>
-            <SequenceID>missland</SequenceID>
-          </MissLand>
-          <MissWater>
-            <SequenceID>misswater</SequenceID>
-          </MissWater>
-        </EffectSequences>
-        <TargetWhiteList />
-        <DamageType>Normal</DamageType>
-      </Projectile>
-      <Mesh>
-        <ObjectPosition>Dynamic</ObjectPosition>
-        <MeshPlacement>Default</MeshPlacement>
-        <DefaultSequence>idle01</DefaultSequence>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
-        <LogoMode>Disabled</LogoMode>
-      </Mesh>
+      <Projectile />
+      <Mesh />
       <Object>
         <Variations>
           <Item>
             <Filename>data/graphics/effects/military/projectiles/kamikaze_projectile_a.cfg</Filename>
           </Item>
         </Variations>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <DefaultParticipant>Neutral</DefaultParticipant>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Exploder>
         <InnerDamage>1</InnerDamage>
         <OuterDamageRadius>10</OuterDamageRadius>
         <MinimumDamage>0.5</MinimumDamage>
         <KamikazeRadiusDecal>501554</KamikazeRadiusDecal>
-        <InnerDamageRadius>10</InnerDamageRadius>
-        <DebrisForceY>10</DebrisForceY>
-        <DebrisCount>10</DebrisCount>
-        <HitSuccessNotification>
-          <Template>ActionNotification</Template>
-          <Values>
-            <Action />
-            <ActionNotification>
-              <Notification>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>SideNotification</Template>
-                <Values>
-                  <SideNotification />
-                  <BaseNotification />
-                  <NotificationSubtitle />
-                </Values>
-              </Notification>
-            </ActionNotification>
-          </Values>
-        </HitSuccessNotification>
-        <HitFailNotification>
-          <Template>ActionNotification</Template>
-          <Values>
-            <Action />
-            <ActionNotification>
-              <Notification>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>SideNotification</Template>
-                <Values>
-                  <SideNotification />
-                  <BaseNotification />
-                  <NotificationSubtitle />
-                </Values>
-              </Notification>
-            </ActionNotification>
-          </Values>
-        </HitFailNotification>
       </Exploder>
       <SoundEmitter>
         <ProjectileSounds>
@@ -3364,32 +1235,9 @@
             </Item>
           </ProjectileImpact>
         </ProjectileSounds>
-        <ActiveSounds />
-        <DestroySounds />
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionSounds />
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <IncidentSounds />
-        <BuildingRuined />
-        <BuildingRepaired />
-        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <UpgradeList />
-      <ProjectileIncident>
-        <CausedIncident>[NONE]</CausedIncident>
-        <CausedIncidentBuff>0</CausedIncidentBuff>
-        <CausedIncidentDuration>10000</CausedIncidentDuration>
-      </ProjectileIncident>
+      <ProjectileIncident />
     </Values>
   </Asset>
   <Asset>
@@ -3398,108 +1246,21 @@
       <Standard>
         <GUID>102628</GUID>
         <Name>KamikazeProjectile_B</Name>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
-      <Projectile>
-        <ProjectileSpeed>2</ProjectileSpeed>
-        <ProjectileType>HomingStraight</ProjectileType>
-        <ShotAngle>45</ShotAngle>
-        <Effectivities />
-        <StatusEffects />
-        <ChainingLevels />
-        <EffectSequences>
-          <HitBrick>
-            <SequenceID>hitbrick</SequenceID>
-          </HitBrick>
-          <HitConcrete>
-            <SequenceID>hitconcrete</SequenceID>
-          </HitConcrete>
-          <HitSteel>
-            <SequenceID>hitsteel</SequenceID>
-          </HitSteel>
-          <HitWood>
-            <SequenceID>hitwood</SequenceID>
-          </HitWood>
-          <MissLand>
-            <SequenceID>missland</SequenceID>
-          </MissLand>
-          <MissWater>
-            <SequenceID>misswater</SequenceID>
-          </MissWater>
-        </EffectSequences>
-        <TargetWhiteList />
-        <DamageType>Normal</DamageType>
-      </Projectile>
-      <Mesh>
-        <ObjectPosition>Dynamic</ObjectPosition>
-        <MeshPlacement>Default</MeshPlacement>
-        <DefaultSequence>idle01</DefaultSequence>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
-        <LogoMode>Disabled</LogoMode>
-      </Mesh>
+      <Projectile />
+      <Mesh />
       <Object>
         <Variations>
           <Item>
             <Filename>data/graphics/effects/military/projectiles/kamikaze_projectile_a.cfg</Filename>
           </Item>
         </Variations>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <DefaultParticipant>Neutral</DefaultParticipant>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Exploder>
         <InnerDamage>1.2</InnerDamage>
         <OuterDamageRadius>10</OuterDamageRadius>
         <MinimumDamage>0.5</MinimumDamage>
         <KamikazeRadiusDecal>501554</KamikazeRadiusDecal>
-        <InnerDamageRadius>10</InnerDamageRadius>
-        <DebrisForceY>10</DebrisForceY>
-        <DebrisCount>10</DebrisCount>
-        <HitSuccessNotification>
-          <Template>ActionNotification</Template>
-          <Values>
-            <Action />
-            <ActionNotification>
-              <Notification>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>SideNotification</Template>
-                <Values>
-                  <SideNotification />
-                  <BaseNotification />
-                  <NotificationSubtitle />
-                </Values>
-              </Notification>
-            </ActionNotification>
-          </Values>
-        </HitSuccessNotification>
-        <HitFailNotification>
-          <Template>ActionNotification</Template>
-          <Values>
-            <Action />
-            <ActionNotification>
-              <Notification>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>SideNotification</Template>
-                <Values>
-                  <SideNotification />
-                  <BaseNotification />
-                  <NotificationSubtitle />
-                </Values>
-              </Notification>
-            </ActionNotification>
-          </Values>
-        </HitFailNotification>
       </Exploder>
       <SoundEmitter>
         <ProjectileSounds>
@@ -3514,32 +1275,9 @@
             </Item>
           </ProjectileImpact>
         </ProjectileSounds>
-        <ActiveSounds />
-        <DestroySounds />
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionSounds />
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <IncidentSounds />
-        <BuildingRuined />
-        <BuildingRepaired />
-        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <UpgradeList />
-      <ProjectileIncident>
-        <CausedIncident>[NONE]</CausedIncident>
-        <CausedIncidentBuff>0</CausedIncidentBuff>
-        <CausedIncidentDuration>10000</CausedIncidentDuration>
-      </ProjectileIncident>
+      <ProjectileIncident />
     </Values>
   </Asset>
   <Asset>
@@ -3548,66 +1286,19 @@
       <Standard>
         <GUID>191483</GUID>
         <Name>TorpedoProjectile_Dummy</Name>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <Projectile>
         <ShotHeight>0.5</ShotHeight>
         <ProjectileSpeed>1.5</ProjectileSpeed>
         <DamageType>Torpedo</DamageType>
-        <ProjectileType>HomingStraight</ProjectileType>
-        <ShotAngle>45</ShotAngle>
-        <Effectivities />
-        <StatusEffects />
-        <ChainingLevels />
-        <EffectSequences>
-          <HitBrick>
-            <SequenceID>hitbrick</SequenceID>
-          </HitBrick>
-          <HitConcrete>
-            <SequenceID>hitconcrete</SequenceID>
-          </HitConcrete>
-          <HitSteel>
-            <SequenceID>hitsteel</SequenceID>
-          </HitSteel>
-          <HitWood>
-            <SequenceID>hitwood</SequenceID>
-          </HitWood>
-          <MissLand>
-            <SequenceID>missland</SequenceID>
-          </MissLand>
-          <MissWater>
-            <SequenceID>misswater</SequenceID>
-          </MissWater>
-        </EffectSequences>
-        <TargetWhiteList />
       </Projectile>
-      <Mesh>
-        <ObjectPosition>Dynamic</ObjectPosition>
-        <MeshPlacement>Default</MeshPlacement>
-        <DefaultSequence>idle01</DefaultSequence>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
-        <LogoMode>Disabled</LogoMode>
-      </Mesh>
+      <Mesh />
       <Object>
         <Variations>
           <Item>
             <Filename>data/graphics/effects/military/projectiles/projectile_torpedo_02.cfg</Filename>
           </Item>
         </Variations>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <DefaultParticipant>Neutral</DefaultParticipant>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Exploder>
         <InnerDamageRadius>2</InnerDamageRadius>
@@ -3616,41 +1307,6 @@
         <DebrisCount>0</DebrisCount>
         <OuterDamageRadius>8</OuterDamageRadius>
         <MinimumDamage>200</MinimumDamage>
-        <HitSuccessNotification>
-          <Template>ActionNotification</Template>
-          <Values>
-            <Action />
-            <ActionNotification>
-              <Notification>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>SideNotification</Template>
-                <Values>
-                  <SideNotification />
-                  <BaseNotification />
-                  <NotificationSubtitle />
-                </Values>
-              </Notification>
-            </ActionNotification>
-          </Values>
-        </HitSuccessNotification>
-        <HitFailNotification>
-          <Template>ActionNotification</Template>
-          <Values>
-            <Action />
-            <ActionNotification>
-              <Notification>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>SideNotification</Template>
-                <Values>
-                  <SideNotification />
-                  <BaseNotification />
-                  <NotificationSubtitle />
-                </Values>
-              </Notification>
-            </ActionNotification>
-          </Values>
-        </HitFailNotification>
-        <KamikazeRadiusDecal>0</KamikazeRadiusDecal>
       </Exploder>
       <SoundEmitter>
         <ProjectileSounds>
@@ -3665,32 +1321,9 @@
             </Item>
           </ProjectileImpact>
         </ProjectileSounds>
-        <ActiveSounds />
-        <DestroySounds />
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionSounds />
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <IncidentSounds />
-        <BuildingRuined />
-        <BuildingRepaired />
-        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <UpgradeList />
-      <ProjectileIncident>
-        <CausedIncident>[NONE]</CausedIncident>
-        <CausedIncidentBuff>0</CausedIncidentBuff>
-        <CausedIncidentDuration>10000</CausedIncidentDuration>
-      </ProjectileIncident>
+      <ProjectileIncident />
     </Values>
   </Asset>
   <Asset>
@@ -3699,8 +1332,6 @@
       <Standard>
         <GUID>191482</GUID>
         <Name>SmallMortarProjectile_Dummy</Name>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <Projectile>
         <ProjectileType>Arc</ProjectileType>
@@ -3728,58 +1359,14 @@
             <Factor>2</Factor>
           </Item>
         </Effectivities>
-        <ShotAngle>45</ShotAngle>
-        <StatusEffects />
-        <ChainingLevels />
-        <EffectSequences>
-          <HitBrick>
-            <SequenceID>hitbrick</SequenceID>
-          </HitBrick>
-          <HitConcrete>
-            <SequenceID>hitconcrete</SequenceID>
-          </HitConcrete>
-          <HitSteel>
-            <SequenceID>hitsteel</SequenceID>
-          </HitSteel>
-          <HitWood>
-            <SequenceID>hitwood</SequenceID>
-          </HitWood>
-          <MissLand>
-            <SequenceID>missland</SequenceID>
-          </MissLand>
-          <MissWater>
-            <SequenceID>misswater</SequenceID>
-          </MissWater>
-        </EffectSequences>
-        <TargetWhiteList />
-        <DamageType>Normal</DamageType>
       </Projectile>
-      <Mesh>
-        <ObjectPosition>Dynamic</ObjectPosition>
-        <MeshPlacement>Default</MeshPlacement>
-        <DefaultSequence>idle01</DefaultSequence>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
-        <LogoMode>Disabled</LogoMode>
-      </Mesh>
+      <Mesh />
       <Object>
         <Variations>
           <Item>
             <Filename>data/graphics/effects/military/projectiles/projectile_mortar_01.cfg</Filename>
           </Item>
         </Variations>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <DefaultParticipant>Neutral</DefaultParticipant>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Exploder>
         <InnerDamageRadius>1</InnerDamageRadius>
@@ -3788,41 +1375,6 @@
         <DebrisCount>0</DebrisCount>
         <OuterDamageRadius>4</OuterDamageRadius>
         <MinimumDamage>50</MinimumDamage>
-        <HitSuccessNotification>
-          <Template>ActionNotification</Template>
-          <Values>
-            <Action />
-            <ActionNotification>
-              <Notification>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>SideNotification</Template>
-                <Values>
-                  <SideNotification />
-                  <BaseNotification />
-                  <NotificationSubtitle />
-                </Values>
-              </Notification>
-            </ActionNotification>
-          </Values>
-        </HitSuccessNotification>
-        <HitFailNotification>
-          <Template>ActionNotification</Template>
-          <Values>
-            <Action />
-            <ActionNotification>
-              <Notification>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>SideNotification</Template>
-                <Values>
-                  <SideNotification />
-                  <BaseNotification />
-                  <NotificationSubtitle />
-                </Values>
-              </Notification>
-            </ActionNotification>
-          </Values>
-        </HitFailNotification>
-        <KamikazeRadiusDecal>0</KamikazeRadiusDecal>
       </Exploder>
       <SoundEmitter>
         <ProjectileSounds>
@@ -3837,32 +1389,9 @@
             </Item>
           </ProjectileImpact>
         </ProjectileSounds>
-        <ActiveSounds />
-        <DestroySounds />
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionSounds />
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <IncidentSounds />
-        <BuildingRuined />
-        <BuildingRepaired />
-        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <UpgradeList />
-      <ProjectileIncident>
-        <CausedIncident>[NONE]</CausedIncident>
-        <CausedIncidentBuff>0</CausedIncidentBuff>
-        <CausedIncidentDuration>10000</CausedIncidentDuration>
-      </ProjectileIncident>
+      <ProjectileIncident />
     </Values>
   </Asset>
   <Asset>
@@ -3871,66 +1400,19 @@
       <Standard>
         <GUID>192095</GUID>
         <Name>TorpedoProjectile_A</Name>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <Projectile>
         <ShotHeight>0.5</ShotHeight>
         <ProjectileSpeed>1.5</ProjectileSpeed>
         <DamageType>Torpedo</DamageType>
-        <ProjectileType>HomingStraight</ProjectileType>
-        <ShotAngle>45</ShotAngle>
-        <Effectivities />
-        <StatusEffects />
-        <ChainingLevels />
-        <EffectSequences>
-          <HitBrick>
-            <SequenceID>hitbrick</SequenceID>
-          </HitBrick>
-          <HitConcrete>
-            <SequenceID>hitconcrete</SequenceID>
-          </HitConcrete>
-          <HitSteel>
-            <SequenceID>hitsteel</SequenceID>
-          </HitSteel>
-          <HitWood>
-            <SequenceID>hitwood</SequenceID>
-          </HitWood>
-          <MissLand>
-            <SequenceID>missland</SequenceID>
-          </MissLand>
-          <MissWater>
-            <SequenceID>misswater</SequenceID>
-          </MissWater>
-        </EffectSequences>
-        <TargetWhiteList />
       </Projectile>
-      <Mesh>
-        <ObjectPosition>Dynamic</ObjectPosition>
-        <MeshPlacement>Default</MeshPlacement>
-        <DefaultSequence>idle01</DefaultSequence>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
-        <LogoMode>Disabled</LogoMode>
-      </Mesh>
+      <Mesh />
       <Object>
         <Variations>
           <Item>
             <Filename>data/graphics/effects/military/projectiles/projectile_torpedo_02.cfg</Filename>
           </Item>
         </Variations>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <DefaultParticipant>Neutral</DefaultParticipant>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Exploder>
         <InnerDamageRadius>2</InnerDamageRadius>
@@ -3939,41 +1421,6 @@
         <DebrisCount>0</DebrisCount>
         <OuterDamageRadius>8</OuterDamageRadius>
         <MinimumDamage>300</MinimumDamage>
-        <HitSuccessNotification>
-          <Template>ActionNotification</Template>
-          <Values>
-            <Action />
-            <ActionNotification>
-              <Notification>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>SideNotification</Template>
-                <Values>
-                  <SideNotification />
-                  <BaseNotification />
-                  <NotificationSubtitle />
-                </Values>
-              </Notification>
-            </ActionNotification>
-          </Values>
-        </HitSuccessNotification>
-        <HitFailNotification>
-          <Template>ActionNotification</Template>
-          <Values>
-            <Action />
-            <ActionNotification>
-              <Notification>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>SideNotification</Template>
-                <Values>
-                  <SideNotification />
-                  <BaseNotification />
-                  <NotificationSubtitle />
-                </Values>
-              </Notification>
-            </ActionNotification>
-          </Values>
-        </HitFailNotification>
-        <KamikazeRadiusDecal>0</KamikazeRadiusDecal>
       </Exploder>
       <SoundEmitter>
         <ProjectileSounds>
@@ -3988,32 +1435,9 @@
             </Item>
           </ProjectileImpact>
         </ProjectileSounds>
-        <ActiveSounds />
-        <DestroySounds />
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionSounds />
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <IncidentSounds />
-        <BuildingRuined />
-        <BuildingRepaired />
-        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <UpgradeList />
-      <ProjectileIncident>
-        <CausedIncident>[NONE]</CausedIncident>
-        <CausedIncidentBuff>0</CausedIncidentBuff>
-        <CausedIncidentDuration>10000</CausedIncidentDuration>
-      </ProjectileIncident>
+      <ProjectileIncident />
     </Values>
   </Asset>
   <Asset>
@@ -4022,66 +1446,19 @@
       <Standard>
         <GUID>192100</GUID>
         <Name>TorpedoProjectile_B</Name>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <Projectile>
         <ShotHeight>0.5</ShotHeight>
         <ProjectileSpeed>2.5</ProjectileSpeed>
         <DamageType>Torpedo</DamageType>
-        <ProjectileType>HomingStraight</ProjectileType>
-        <ShotAngle>45</ShotAngle>
-        <Effectivities />
-        <StatusEffects />
-        <ChainingLevels />
-        <EffectSequences>
-          <HitBrick>
-            <SequenceID>hitbrick</SequenceID>
-          </HitBrick>
-          <HitConcrete>
-            <SequenceID>hitconcrete</SequenceID>
-          </HitConcrete>
-          <HitSteel>
-            <SequenceID>hitsteel</SequenceID>
-          </HitSteel>
-          <HitWood>
-            <SequenceID>hitwood</SequenceID>
-          </HitWood>
-          <MissLand>
-            <SequenceID>missland</SequenceID>
-          </MissLand>
-          <MissWater>
-            <SequenceID>misswater</SequenceID>
-          </MissWater>
-        </EffectSequences>
-        <TargetWhiteList />
       </Projectile>
-      <Mesh>
-        <ObjectPosition>Dynamic</ObjectPosition>
-        <MeshPlacement>Default</MeshPlacement>
-        <DefaultSequence>idle01</DefaultSequence>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
-        <LogoMode>Disabled</LogoMode>
-      </Mesh>
+      <Mesh />
       <Object>
         <Variations>
           <Item>
             <Filename>data/graphics/effects/military/projectiles/projectile_torpedo_02.cfg</Filename>
           </Item>
         </Variations>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <DefaultParticipant>Neutral</DefaultParticipant>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Exploder>
         <InnerDamageRadius>2</InnerDamageRadius>
@@ -4090,41 +1467,6 @@
         <DebrisCount>0</DebrisCount>
         <OuterDamageRadius>8</OuterDamageRadius>
         <MinimumDamage>300</MinimumDamage>
-        <HitSuccessNotification>
-          <Template>ActionNotification</Template>
-          <Values>
-            <Action />
-            <ActionNotification>
-              <Notification>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>SideNotification</Template>
-                <Values>
-                  <SideNotification />
-                  <BaseNotification />
-                  <NotificationSubtitle />
-                </Values>
-              </Notification>
-            </ActionNotification>
-          </Values>
-        </HitSuccessNotification>
-        <HitFailNotification>
-          <Template>ActionNotification</Template>
-          <Values>
-            <Action />
-            <ActionNotification>
-              <Notification>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>SideNotification</Template>
-                <Values>
-                  <SideNotification />
-                  <BaseNotification />
-                  <NotificationSubtitle />
-                </Values>
-              </Notification>
-            </ActionNotification>
-          </Values>
-        </HitFailNotification>
-        <KamikazeRadiusDecal>0</KamikazeRadiusDecal>
       </Exploder>
       <SoundEmitter>
         <ProjectileSounds>
@@ -4139,32 +1481,9 @@
             </Item>
           </ProjectileImpact>
         </ProjectileSounds>
-        <ActiveSounds />
-        <DestroySounds />
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionSounds />
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <IncidentSounds />
-        <BuildingRuined />
-        <BuildingRepaired />
-        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <UpgradeList />
-      <ProjectileIncident>
-        <CausedIncident>[NONE]</CausedIncident>
-        <CausedIncidentBuff>0</CausedIncidentBuff>
-        <CausedIncidentDuration>10000</CausedIncidentDuration>
-      </ProjectileIncident>
+      <ProjectileIncident />
     </Values>
   </Asset>
   <Asset>
@@ -4173,66 +1492,19 @@
       <Standard>
         <GUID>192101</GUID>
         <Name>TorpedoProjectile_C</Name>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <Projectile>
         <ShotHeight>0.5</ShotHeight>
         <ProjectileSpeed>3.5</ProjectileSpeed>
         <DamageType>Torpedo</DamageType>
-        <ProjectileType>HomingStraight</ProjectileType>
-        <ShotAngle>45</ShotAngle>
-        <Effectivities />
-        <StatusEffects />
-        <ChainingLevels />
-        <EffectSequences>
-          <HitBrick>
-            <SequenceID>hitbrick</SequenceID>
-          </HitBrick>
-          <HitConcrete>
-            <SequenceID>hitconcrete</SequenceID>
-          </HitConcrete>
-          <HitSteel>
-            <SequenceID>hitsteel</SequenceID>
-          </HitSteel>
-          <HitWood>
-            <SequenceID>hitwood</SequenceID>
-          </HitWood>
-          <MissLand>
-            <SequenceID>missland</SequenceID>
-          </MissLand>
-          <MissWater>
-            <SequenceID>misswater</SequenceID>
-          </MissWater>
-        </EffectSequences>
-        <TargetWhiteList />
       </Projectile>
-      <Mesh>
-        <ObjectPosition>Dynamic</ObjectPosition>
-        <MeshPlacement>Default</MeshPlacement>
-        <DefaultSequence>idle01</DefaultSequence>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
-        <LogoMode>Disabled</LogoMode>
-      </Mesh>
+      <Mesh />
       <Object>
         <Variations>
           <Item>
             <Filename>data/graphics/effects/military/projectiles/projectile_torpedo_02.cfg</Filename>
           </Item>
         </Variations>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <DefaultParticipant>Neutral</DefaultParticipant>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Exploder>
         <InnerDamageRadius>2</InnerDamageRadius>
@@ -4241,41 +1513,6 @@
         <DebrisCount>0</DebrisCount>
         <OuterDamageRadius>8</OuterDamageRadius>
         <MinimumDamage>300</MinimumDamage>
-        <HitSuccessNotification>
-          <Template>ActionNotification</Template>
-          <Values>
-            <Action />
-            <ActionNotification>
-              <Notification>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>SideNotification</Template>
-                <Values>
-                  <SideNotification />
-                  <BaseNotification />
-                  <NotificationSubtitle />
-                </Values>
-              </Notification>
-            </ActionNotification>
-          </Values>
-        </HitSuccessNotification>
-        <HitFailNotification>
-          <Template>ActionNotification</Template>
-          <Values>
-            <Action />
-            <ActionNotification>
-              <Notification>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>SideNotification</Template>
-                <Values>
-                  <SideNotification />
-                  <BaseNotification />
-                  <NotificationSubtitle />
-                </Values>
-              </Notification>
-            </ActionNotification>
-          </Values>
-        </HitFailNotification>
-        <KamikazeRadiusDecal>0</KamikazeRadiusDecal>
       </Exploder>
       <SoundEmitter>
         <ProjectileSounds>
@@ -4290,32 +1527,9 @@
             </Item>
           </ProjectileImpact>
         </ProjectileSounds>
-        <ActiveSounds />
-        <DestroySounds />
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionSounds />
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <IncidentSounds />
-        <BuildingRuined />
-        <BuildingRepaired />
-        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <UpgradeList />
-      <ProjectileIncident>
-        <CausedIncident>[NONE]</CausedIncident>
-        <CausedIncidentBuff>0</CausedIncidentBuff>
-        <CausedIncidentDuration>10000</CausedIncidentDuration>
-      </ProjectileIncident>
+      <ProjectileIncident />
     </Values>
   </Asset>
   <Asset>
@@ -4324,8 +1538,6 @@
       <Standard>
         <GUID>192097</GUID>
         <Name>MortarProjectile_A</Name>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <Projectile>
         <ProjectileType>Arc</ProjectileType>
@@ -4353,58 +1565,14 @@
             <Factor>2</Factor>
           </Item>
         </Effectivities>
-        <ShotAngle>45</ShotAngle>
-        <StatusEffects />
-        <ChainingLevels />
-        <EffectSequences>
-          <HitBrick>
-            <SequenceID>hitbrick</SequenceID>
-          </HitBrick>
-          <HitConcrete>
-            <SequenceID>hitconcrete</SequenceID>
-          </HitConcrete>
-          <HitSteel>
-            <SequenceID>hitsteel</SequenceID>
-          </HitSteel>
-          <HitWood>
-            <SequenceID>hitwood</SequenceID>
-          </HitWood>
-          <MissLand>
-            <SequenceID>missland</SequenceID>
-          </MissLand>
-          <MissWater>
-            <SequenceID>misswater</SequenceID>
-          </MissWater>
-        </EffectSequences>
-        <TargetWhiteList />
-        <DamageType>Normal</DamageType>
       </Projectile>
-      <Mesh>
-        <ObjectPosition>Dynamic</ObjectPosition>
-        <MeshPlacement>Default</MeshPlacement>
-        <DefaultSequence>idle01</DefaultSequence>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
-        <LogoMode>Disabled</LogoMode>
-      </Mesh>
+      <Mesh />
       <Object>
         <Variations>
           <Item>
             <Filename>data/graphics/effects/military/projectiles/projectile_mortar_01.cfg</Filename>
           </Item>
         </Variations>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <DefaultParticipant>Neutral</DefaultParticipant>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Exploder>
         <InnerDamageRadius>1</InnerDamageRadius>
@@ -4413,41 +1581,6 @@
         <DebrisCount>0</DebrisCount>
         <OuterDamageRadius>4</OuterDamageRadius>
         <MinimumDamage>200</MinimumDamage>
-        <HitSuccessNotification>
-          <Template>ActionNotification</Template>
-          <Values>
-            <Action />
-            <ActionNotification>
-              <Notification>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>SideNotification</Template>
-                <Values>
-                  <SideNotification />
-                  <BaseNotification />
-                  <NotificationSubtitle />
-                </Values>
-              </Notification>
-            </ActionNotification>
-          </Values>
-        </HitSuccessNotification>
-        <HitFailNotification>
-          <Template>ActionNotification</Template>
-          <Values>
-            <Action />
-            <ActionNotification>
-              <Notification>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>SideNotification</Template>
-                <Values>
-                  <SideNotification />
-                  <BaseNotification />
-                  <NotificationSubtitle />
-                </Values>
-              </Notification>
-            </ActionNotification>
-          </Values>
-        </HitFailNotification>
-        <KamikazeRadiusDecal>0</KamikazeRadiusDecal>
       </Exploder>
       <SoundEmitter>
         <ProjectileSounds>
@@ -4462,32 +1595,9 @@
             </Item>
           </ProjectileImpact>
         </ProjectileSounds>
-        <ActiveSounds />
-        <DestroySounds />
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionSounds />
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <IncidentSounds />
-        <BuildingRuined />
-        <BuildingRepaired />
-        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <UpgradeList />
-      <ProjectileIncident>
-        <CausedIncident>[NONE]</CausedIncident>
-        <CausedIncidentBuff>0</CausedIncidentBuff>
-        <CausedIncidentDuration>10000</CausedIncidentDuration>
-      </ProjectileIncident>
+      <ProjectileIncident />
     </Values>
   </Asset>
   <Asset>
@@ -4496,8 +1606,6 @@
       <Standard>
         <GUID>192104</GUID>
         <Name>MortarProjectile_B</Name>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <Projectile>
         <ProjectileType>Arc</ProjectileType>
@@ -4525,58 +1633,14 @@
             <Factor>2</Factor>
           </Item>
         </Effectivities>
-        <ShotAngle>45</ShotAngle>
-        <StatusEffects />
-        <ChainingLevels />
-        <EffectSequences>
-          <HitBrick>
-            <SequenceID>hitbrick</SequenceID>
-          </HitBrick>
-          <HitConcrete>
-            <SequenceID>hitconcrete</SequenceID>
-          </HitConcrete>
-          <HitSteel>
-            <SequenceID>hitsteel</SequenceID>
-          </HitSteel>
-          <HitWood>
-            <SequenceID>hitwood</SequenceID>
-          </HitWood>
-          <MissLand>
-            <SequenceID>missland</SequenceID>
-          </MissLand>
-          <MissWater>
-            <SequenceID>misswater</SequenceID>
-          </MissWater>
-        </EffectSequences>
-        <TargetWhiteList />
-        <DamageType>Normal</DamageType>
       </Projectile>
-      <Mesh>
-        <ObjectPosition>Dynamic</ObjectPosition>
-        <MeshPlacement>Default</MeshPlacement>
-        <DefaultSequence>idle01</DefaultSequence>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
-        <LogoMode>Disabled</LogoMode>
-      </Mesh>
+      <Mesh />
       <Object>
         <Variations>
           <Item>
             <Filename>data/graphics/effects/military/projectiles/projectile_mortar_01.cfg</Filename>
           </Item>
         </Variations>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <DefaultParticipant>Neutral</DefaultParticipant>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Exploder>
         <InnerDamageRadius>1</InnerDamageRadius>
@@ -4585,41 +1649,6 @@
         <DebrisCount>0</DebrisCount>
         <OuterDamageRadius>4</OuterDamageRadius>
         <MinimumDamage>200</MinimumDamage>
-        <HitSuccessNotification>
-          <Template>ActionNotification</Template>
-          <Values>
-            <Action />
-            <ActionNotification>
-              <Notification>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>SideNotification</Template>
-                <Values>
-                  <SideNotification />
-                  <BaseNotification />
-                  <NotificationSubtitle />
-                </Values>
-              </Notification>
-            </ActionNotification>
-          </Values>
-        </HitSuccessNotification>
-        <HitFailNotification>
-          <Template>ActionNotification</Template>
-          <Values>
-            <Action />
-            <ActionNotification>
-              <Notification>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>SideNotification</Template>
-                <Values>
-                  <SideNotification />
-                  <BaseNotification />
-                  <NotificationSubtitle />
-                </Values>
-              </Notification>
-            </ActionNotification>
-          </Values>
-        </HitFailNotification>
-        <KamikazeRadiusDecal>0</KamikazeRadiusDecal>
       </Exploder>
       <SoundEmitter>
         <ProjectileSounds>
@@ -4634,32 +1663,9 @@
             </Item>
           </ProjectileImpact>
         </ProjectileSounds>
-        <ActiveSounds />
-        <DestroySounds />
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionSounds />
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <IncidentSounds />
-        <BuildingRuined />
-        <BuildingRepaired />
-        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <UpgradeList />
-      <ProjectileIncident>
-        <CausedIncident>[NONE]</CausedIncident>
-        <CausedIncidentBuff>0</CausedIncidentBuff>
-        <CausedIncidentDuration>10000</CausedIncidentDuration>
-      </ProjectileIncident>
+      <ProjectileIncident />
     </Values>
   </Asset>
   <Asset>
@@ -4668,8 +1674,6 @@
       <Standard>
         <GUID>192105</GUID>
         <Name>MortarProjectile_C</Name>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <Projectile>
         <ProjectileType>Arc</ProjectileType>
@@ -4697,58 +1701,14 @@
             <Factor>2</Factor>
           </Item>
         </Effectivities>
-        <ShotAngle>45</ShotAngle>
-        <StatusEffects />
-        <ChainingLevels />
-        <EffectSequences>
-          <HitBrick>
-            <SequenceID>hitbrick</SequenceID>
-          </HitBrick>
-          <HitConcrete>
-            <SequenceID>hitconcrete</SequenceID>
-          </HitConcrete>
-          <HitSteel>
-            <SequenceID>hitsteel</SequenceID>
-          </HitSteel>
-          <HitWood>
-            <SequenceID>hitwood</SequenceID>
-          </HitWood>
-          <MissLand>
-            <SequenceID>missland</SequenceID>
-          </MissLand>
-          <MissWater>
-            <SequenceID>misswater</SequenceID>
-          </MissWater>
-        </EffectSequences>
-        <TargetWhiteList />
-        <DamageType>Normal</DamageType>
       </Projectile>
-      <Mesh>
-        <ObjectPosition>Dynamic</ObjectPosition>
-        <MeshPlacement>Default</MeshPlacement>
-        <DefaultSequence>idle01</DefaultSequence>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
-        <LogoMode>Disabled</LogoMode>
-      </Mesh>
+      <Mesh />
       <Object>
         <Variations>
           <Item>
             <Filename>data/graphics/effects/military/projectiles/projectile_mortar_01.cfg</Filename>
           </Item>
         </Variations>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <DefaultParticipant>Neutral</DefaultParticipant>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Exploder>
         <InnerDamageRadius>1</InnerDamageRadius>
@@ -4757,41 +1717,6 @@
         <DebrisCount>0</DebrisCount>
         <OuterDamageRadius>4</OuterDamageRadius>
         <MinimumDamage>200</MinimumDamage>
-        <HitSuccessNotification>
-          <Template>ActionNotification</Template>
-          <Values>
-            <Action />
-            <ActionNotification>
-              <Notification>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>SideNotification</Template>
-                <Values>
-                  <SideNotification />
-                  <BaseNotification />
-                  <NotificationSubtitle />
-                </Values>
-              </Notification>
-            </ActionNotification>
-          </Values>
-        </HitSuccessNotification>
-        <HitFailNotification>
-          <Template>ActionNotification</Template>
-          <Values>
-            <Action />
-            <ActionNotification>
-              <Notification>
-                <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-                <Template>SideNotification</Template>
-                <Values>
-                  <SideNotification />
-                  <BaseNotification />
-                  <NotificationSubtitle />
-                </Values>
-              </Notification>
-            </ActionNotification>
-          </Values>
-        </HitFailNotification>
-        <KamikazeRadiusDecal>0</KamikazeRadiusDecal>
       </Exploder>
       <SoundEmitter>
         <ProjectileSounds>
@@ -4806,32 +1731,9 @@
             </Item>
           </ProjectileImpact>
         </ProjectileSounds>
-        <ActiveSounds />
-        <DestroySounds />
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionSounds />
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <IncidentSounds />
-        <BuildingRuined />
-        <BuildingRepaired />
-        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <UpgradeList />
-      <ProjectileIncident>
-        <CausedIncident>[NONE]</CausedIncident>
-        <CausedIncidentBuff>0</CausedIncidentBuff>
-        <CausedIncidentDuration>10000</CausedIncidentDuration>
-      </ProjectileIncident>
+      <ProjectileIncident />
     </Values>
   </Asset>
 </Assets>

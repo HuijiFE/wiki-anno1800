@@ -31,8 +31,8 @@ namespace Anno1800.Jsonify {
       Console.WriteLine($"input: {input}");
       Console.WriteLine($"output: {output}");
 
-      var (assetsMap, dataDict) = Asset.Convert(Path.Combine(input, "config/export/main/asset"), Path.Combine(output, "db"));
       var localDictMap = Localization.Convert(Path.Combine(input, "config/gui"), Path.Combine(output, "localization"));
+      var (assetsMap, dataDict) = Asset.Convert(Path.Combine(input, "config/export/main/asset"), Path.Combine(output, "db"));
       Tracker.Track(assetsMap, dataDict, localDictMap["chinese"], output);
     }
   }

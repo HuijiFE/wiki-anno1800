@@ -7,50 +7,13 @@
         <ProjectileType>Arc</ProjectileType>
         <ShotHeight>8</ShotHeight>
         <ProjectileSpeed>0.3</ProjectileSpeed>
-        <ShotAngle>45</ShotAngle>
-        <Effectivities />
-        <StatusEffects />
-        <ChainingLevels />
-        <EffectSequences>
-          <HitBrick>
-            <SequenceID>hitbrick</SequenceID>
-          </HitBrick>
-          <HitConcrete>
-            <SequenceID>hitconcrete</SequenceID>
-          </HitConcrete>
-          <HitSteel>
-            <SequenceID>hitsteel</SequenceID>
-          </HitSteel>
-          <HitWood>
-            <SequenceID>hitwood</SequenceID>
-          </HitWood>
-          <MissLand>
-            <SequenceID>missland</SequenceID>
-          </MissLand>
-          <MissWater>
-            <SequenceID>misswater</SequenceID>
-          </MissWater>
-        </EffectSequences>
-        <TargetWhiteList />
-        <DamageType>Normal</DamageType>
       </Projectile>
       <Standard>
         <GUID>1000205</GUID>
         <Name>harbor load goods</Name>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <Mesh>
         <DefaultSequence>walk01</DefaultSequence>
-        <ObjectPosition>Dynamic</ObjectPosition>
-        <MeshPlacement>Default</MeshPlacement>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
-        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Object>
         <Variations>
@@ -62,46 +25,10 @@
           </Item>
         </Variations>
         <AssignDefaultParticipant>1</AssignDefaultParticipant>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <DefaultParticipant>Neutral</DefaultParticipant>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <Text>
-        <LocaText />
-        <Localize>1</Localize>
-      </Text>
-      <SoundEmitter>
-        <ActiveSounds />
-        <DestroySounds />
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionSounds />
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <ProjectileSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <IncidentSounds />
-        <BuildingRuined />
-        <BuildingRepaired />
-        <MaterialType>NONE</MaterialType>
-      </SoundEmitter>
-      <ProjectileIncident>
-        <CausedIncident>[NONE]</CausedIncident>
-        <CausedIncidentBuff>0</CausedIncidentBuff>
-        <CausedIncidentDuration>10000</CausedIncidentDuration>
-      </ProjectileIncident>
+      <Text />
+      <SoundEmitter />
+      <ProjectileIncident />
     </Values>
   </Asset>
   <Asset>
@@ -113,68 +40,20 @@
         <ShotAngle>0</ShotAngle>
         <ProjectileSpeed>22.5</ProjectileSpeed>
         <DamageType>Cannon</DamageType>
-        <Effectivities />
-        <StatusEffects />
-        <ChainingLevels />
-        <EffectSequences>
-          <HitBrick>
-            <SequenceID>hitbrick</SequenceID>
-          </HitBrick>
-          <HitConcrete>
-            <SequenceID>hitconcrete</SequenceID>
-          </HitConcrete>
-          <HitSteel>
-            <SequenceID>hitsteel</SequenceID>
-          </HitSteel>
-          <HitWood>
-            <SequenceID>hitwood</SequenceID>
-          </HitWood>
-          <MissLand>
-            <SequenceID>missland</SequenceID>
-          </MissLand>
-          <MissWater>
-            <SequenceID>misswater</SequenceID>
-          </MissWater>
-        </EffectSequences>
-        <TargetWhiteList />
       </Projectile>
       <Standard>
         <GUID>100501</GUID>
         <Name>Small_Single_Shot</Name>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
-      <Mesh>
-        <ObjectPosition>Dynamic</ObjectPosition>
-        <MeshPlacement>Default</MeshPlacement>
-        <DefaultSequence>idle01</DefaultSequence>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
-        <LogoMode>Disabled</LogoMode>
-      </Mesh>
+      <Mesh />
       <Object>
         <Variations>
           <Item>
             <Filename>data/graphics/effects/military/projectiles/projectile_cannon_01.cfg</Filename>
           </Item>
         </Variations>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <DefaultParticipant>Neutral</DefaultParticipant>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <Text>
-        <LocaText />
-        <Localize>1</Localize>
-      </Text>
+      <Text />
       <SoundEmitter>
         <ProjectileSounds>
           <ProjectileLaunch>
@@ -188,31 +67,8 @@
             </Item>
           </ProjectileImpact>
         </ProjectileSounds>
-        <ActiveSounds />
-        <DestroySounds />
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionSounds />
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <IncidentSounds />
-        <BuildingRuined />
-        <BuildingRepaired />
-        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
-      <ProjectileIncident>
-        <CausedIncident>[NONE]</CausedIncident>
-        <CausedIncidentBuff>0</CausedIncidentBuff>
-        <CausedIncidentDuration>10000</CausedIncidentDuration>
-      </ProjectileIncident>
+      <ProjectileIncident />
     </Values>
   </Asset>
   <Asset>
@@ -224,68 +80,20 @@
         <ShotAngle>0</ShotAngle>
         <ProjectileSpeed>30</ProjectileSpeed>
         <DamageType>Cannon</DamageType>
-        <Effectivities />
-        <StatusEffects />
-        <ChainingLevels />
-        <EffectSequences>
-          <HitBrick>
-            <SequenceID>hitbrick</SequenceID>
-          </HitBrick>
-          <HitConcrete>
-            <SequenceID>hitconcrete</SequenceID>
-          </HitConcrete>
-          <HitSteel>
-            <SequenceID>hitsteel</SequenceID>
-          </HitSteel>
-          <HitWood>
-            <SequenceID>hitwood</SequenceID>
-          </HitWood>
-          <MissLand>
-            <SequenceID>missland</SequenceID>
-          </MissLand>
-          <MissWater>
-            <SequenceID>misswater</SequenceID>
-          </MissWater>
-        </EffectSequences>
-        <TargetWhiteList />
       </Projectile>
       <Standard>
         <GUID>101973</GUID>
         <Name>Small_Multi_Shot</Name>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
-      <Mesh>
-        <ObjectPosition>Dynamic</ObjectPosition>
-        <MeshPlacement>Default</MeshPlacement>
-        <DefaultSequence>idle01</DefaultSequence>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
-        <LogoMode>Disabled</LogoMode>
-      </Mesh>
+      <Mesh />
       <Object>
         <Variations>
           <Item>
             <Filename>data/graphics/effects/military/projectiles/projectile_cannon_small_01.cfg</Filename>
           </Item>
         </Variations>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <DefaultParticipant>Neutral</DefaultParticipant>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <Text>
-        <LocaText />
-        <Localize>1</Localize>
-      </Text>
+      <Text />
       <SoundEmitter>
         <ProjectileSounds>
           <ProjectileLaunch>
@@ -299,31 +107,8 @@
             </Item>
           </ProjectileImpact>
         </ProjectileSounds>
-        <ActiveSounds />
-        <DestroySounds />
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionSounds />
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <IncidentSounds />
-        <BuildingRuined />
-        <BuildingRepaired />
-        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
-      <ProjectileIncident>
-        <CausedIncident>[NONE]</CausedIncident>
-        <CausedIncidentBuff>0</CausedIncidentBuff>
-        <CausedIncidentDuration>10000</CausedIncidentDuration>
-      </ProjectileIncident>
+      <ProjectileIncident />
     </Values>
   </Asset>
   <Asset>
@@ -335,68 +120,20 @@
         <ShotAngle>15</ShotAngle>
         <ProjectileSpeed>30</ProjectileSpeed>
         <DamageType>Cannon</DamageType>
-        <Effectivities />
-        <StatusEffects />
-        <ChainingLevels />
-        <EffectSequences>
-          <HitBrick>
-            <SequenceID>hitbrick</SequenceID>
-          </HitBrick>
-          <HitConcrete>
-            <SequenceID>hitconcrete</SequenceID>
-          </HitConcrete>
-          <HitSteel>
-            <SequenceID>hitsteel</SequenceID>
-          </HitSteel>
-          <HitWood>
-            <SequenceID>hitwood</SequenceID>
-          </HitWood>
-          <MissLand>
-            <SequenceID>missland</SequenceID>
-          </MissLand>
-          <MissWater>
-            <SequenceID>misswater</SequenceID>
-          </MissWater>
-        </EffectSequences>
-        <TargetWhiteList />
       </Projectile>
       <Standard>
         <GUID>101974</GUID>
         <Name>Medium_Single_Shot</Name>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
-      <Mesh>
-        <ObjectPosition>Dynamic</ObjectPosition>
-        <MeshPlacement>Default</MeshPlacement>
-        <DefaultSequence>idle01</DefaultSequence>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
-        <LogoMode>Disabled</LogoMode>
-      </Mesh>
+      <Mesh />
       <Object>
         <Variations>
           <Item>
             <Filename>data/graphics/effects/military/projectiles/projectile_cannon_medium_01.cfg</Filename>
           </Item>
         </Variations>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <DefaultParticipant>Neutral</DefaultParticipant>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <Text>
-        <LocaText />
-        <Localize>1</Localize>
-      </Text>
+      <Text />
       <SoundEmitter>
         <ProjectileSounds>
           <ProjectileLaunch>
@@ -410,31 +147,8 @@
             </Item>
           </ProjectileImpact>
         </ProjectileSounds>
-        <ActiveSounds />
-        <DestroySounds />
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionSounds />
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <IncidentSounds />
-        <BuildingRuined />
-        <BuildingRepaired />
-        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
-      <ProjectileIncident>
-        <CausedIncident>[NONE]</CausedIncident>
-        <CausedIncidentBuff>0</CausedIncidentBuff>
-        <CausedIncidentDuration>10000</CausedIncidentDuration>
-      </ProjectileIncident>
+      <ProjectileIncident />
     </Values>
   </Asset>
   <Asset>
@@ -446,68 +160,20 @@
         <ShotAngle>10</ShotAngle>
         <ProjectileSpeed>22.5</ProjectileSpeed>
         <DamageType>Cannon</DamageType>
-        <Effectivities />
-        <StatusEffects />
-        <ChainingLevels />
-        <EffectSequences>
-          <HitBrick>
-            <SequenceID>hitbrick</SequenceID>
-          </HitBrick>
-          <HitConcrete>
-            <SequenceID>hitconcrete</SequenceID>
-          </HitConcrete>
-          <HitSteel>
-            <SequenceID>hitsteel</SequenceID>
-          </HitSteel>
-          <HitWood>
-            <SequenceID>hitwood</SequenceID>
-          </HitWood>
-          <MissLand>
-            <SequenceID>missland</SequenceID>
-          </MissLand>
-          <MissWater>
-            <SequenceID>misswater</SequenceID>
-          </MissWater>
-        </EffectSequences>
-        <TargetWhiteList />
       </Projectile>
       <Standard>
         <GUID>102032</GUID>
         <Name>Medium_Multi_Shot</Name>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
-      <Mesh>
-        <ObjectPosition>Dynamic</ObjectPosition>
-        <MeshPlacement>Default</MeshPlacement>
-        <DefaultSequence>idle01</DefaultSequence>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
-        <LogoMode>Disabled</LogoMode>
-      </Mesh>
+      <Mesh />
       <Object>
         <Variations>
           <Item>
             <Filename>data/graphics/effects/military/projectiles/projectile_cannon_01.cfg</Filename>
           </Item>
         </Variations>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <DefaultParticipant>Neutral</DefaultParticipant>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <Text>
-        <LocaText />
-        <Localize>1</Localize>
-      </Text>
+      <Text />
       <SoundEmitter>
         <ProjectileSounds>
           <ProjectileImpact>
@@ -521,31 +187,8 @@
             </Item>
           </ProjectileVolley>
         </ProjectileSounds>
-        <ActiveSounds />
-        <DestroySounds />
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionSounds />
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <IncidentSounds />
-        <BuildingRuined />
-        <BuildingRepaired />
-        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
-      <ProjectileIncident>
-        <CausedIncident>[NONE]</CausedIncident>
-        <CausedIncidentBuff>0</CausedIncidentBuff>
-        <CausedIncidentDuration>10000</CausedIncidentDuration>
-      </ProjectileIncident>
+      <ProjectileIncident />
     </Values>
   </Asset>
   <Asset>
@@ -557,68 +200,20 @@
         <ShotAngle>0</ShotAngle>
         <ProjectileSpeed>60</ProjectileSpeed>
         <DamageType>Cannon</DamageType>
-        <Effectivities />
-        <StatusEffects />
-        <ChainingLevels />
-        <EffectSequences>
-          <HitBrick>
-            <SequenceID>hitbrick</SequenceID>
-          </HitBrick>
-          <HitConcrete>
-            <SequenceID>hitconcrete</SequenceID>
-          </HitConcrete>
-          <HitSteel>
-            <SequenceID>hitsteel</SequenceID>
-          </HitSteel>
-          <HitWood>
-            <SequenceID>hitwood</SequenceID>
-          </HitWood>
-          <MissLand>
-            <SequenceID>missland</SequenceID>
-          </MissLand>
-          <MissWater>
-            <SequenceID>misswater</SequenceID>
-          </MissWater>
-        </EffectSequences>
-        <TargetWhiteList />
       </Projectile>
       <Standard>
         <GUID>102033</GUID>
         <Name>Large_Single_Shot</Name>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
-      <Mesh>
-        <ObjectPosition>Dynamic</ObjectPosition>
-        <MeshPlacement>Default</MeshPlacement>
-        <DefaultSequence>idle01</DefaultSequence>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
-        <LogoMode>Disabled</LogoMode>
-      </Mesh>
+      <Mesh />
       <Object>
         <Variations>
           <Item>
             <Filename>data/graphics/effects/military/projectiles/projectile_cannon_modern_01.cfg</Filename>
           </Item>
         </Variations>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <DefaultParticipant>Neutral</DefaultParticipant>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <Text>
-        <LocaText />
-        <Localize>1</Localize>
-      </Text>
+      <Text />
       <SoundEmitter>
         <ProjectileSounds>
           <ProjectileLaunch>
@@ -632,31 +227,8 @@
             </Item>
           </ProjectileImpact>
         </ProjectileSounds>
-        <ActiveSounds />
-        <DestroySounds />
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionSounds />
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <IncidentSounds />
-        <BuildingRuined />
-        <BuildingRepaired />
-        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
-      <ProjectileIncident>
-        <CausedIncident>[NONE]</CausedIncident>
-        <CausedIncidentBuff>0</CausedIncidentBuff>
-        <CausedIncidentDuration>10000</CausedIncidentDuration>
-      </ProjectileIncident>
+      <ProjectileIncident />
     </Values>
   </Asset>
   <Asset>
@@ -668,68 +240,20 @@
         <ShotAngle>5</ShotAngle>
         <ProjectileSpeed>22.5</ProjectileSpeed>
         <DamageType>Cannon</DamageType>
-        <Effectivities />
-        <StatusEffects />
-        <ChainingLevels />
-        <EffectSequences>
-          <HitBrick>
-            <SequenceID>hitbrick</SequenceID>
-          </HitBrick>
-          <HitConcrete>
-            <SequenceID>hitconcrete</SequenceID>
-          </HitConcrete>
-          <HitSteel>
-            <SequenceID>hitsteel</SequenceID>
-          </HitSteel>
-          <HitWood>
-            <SequenceID>hitwood</SequenceID>
-          </HitWood>
-          <MissLand>
-            <SequenceID>missland</SequenceID>
-          </MissLand>
-          <MissWater>
-            <SequenceID>misswater</SequenceID>
-          </MissWater>
-        </EffectSequences>
-        <TargetWhiteList />
       </Projectile>
       <Standard>
         <GUID>102034</GUID>
         <Name>Large_Multi_Shot</Name>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
-      <Mesh>
-        <ObjectPosition>Dynamic</ObjectPosition>
-        <MeshPlacement>Default</MeshPlacement>
-        <DefaultSequence>idle01</DefaultSequence>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
-        <LogoMode>Disabled</LogoMode>
-      </Mesh>
+      <Mesh />
       <Object>
         <Variations>
           <Item>
             <Filename>data/graphics/effects/military/projectiles/projectile_cannon_01.cfg</Filename>
           </Item>
         </Variations>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <DefaultParticipant>Neutral</DefaultParticipant>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <Text>
-        <LocaText />
-        <Localize>1</Localize>
-      </Text>
+      <Text />
       <SoundEmitter>
         <ProjectileSounds>
           <ProjectileImpact>
@@ -743,31 +267,8 @@
             </Item>
           </ProjectileVolley>
         </ProjectileSounds>
-        <ActiveSounds />
-        <DestroySounds />
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionSounds />
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <IncidentSounds />
-        <BuildingRuined />
-        <BuildingRepaired />
-        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
-      <ProjectileIncident>
-        <CausedIncident>[NONE]</CausedIncident>
-        <CausedIncidentBuff>0</CausedIncidentBuff>
-        <CausedIncidentDuration>10000</CausedIncidentDuration>
-      </ProjectileIncident>
+      <ProjectileIncident />
     </Values>
   </Asset>
   <Asset>
@@ -785,67 +286,21 @@
           </Item>
         </StatusEffects>
         <DamageType>Cannon</DamageType>
-        <Effectivities />
-        <ChainingLevels />
-        <EffectSequences>
-          <HitBrick>
-            <SequenceID>hitbrick</SequenceID>
-          </HitBrick>
-          <HitConcrete>
-            <SequenceID>hitconcrete</SequenceID>
-          </HitConcrete>
-          <HitSteel>
-            <SequenceID>hitsteel</SequenceID>
-          </HitSteel>
-          <HitWood>
-            <SequenceID>hitwood</SequenceID>
-          </HitWood>
-          <MissLand>
-            <SequenceID>missland</SequenceID>
-          </MissLand>
-          <MissWater>
-            <SequenceID>misswater</SequenceID>
-          </MissWater>
-        </EffectSequences>
-        <TargetWhiteList />
       </Projectile>
       <Standard>
         <GUID>102217</GUID>
         <Name>Puckle_Gun_Shot</Name>
         <InfoDescription>21373</InfoDescription>
-        <Comments />
       </Standard>
-      <Mesh>
-        <ObjectPosition>Dynamic</ObjectPosition>
-        <MeshPlacement>Default</MeshPlacement>
-        <DefaultSequence>idle01</DefaultSequence>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
-        <LogoMode>Disabled</LogoMode>
-      </Mesh>
+      <Mesh />
       <Object>
         <Variations>
           <Item>
             <Filename>data/graphics/effects/military/projectiles/puckle_gun_02.cfg</Filename>
           </Item>
         </Variations>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <DefaultParticipant>Neutral</DefaultParticipant>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <Text>
-        <LocaText />
-        <Localize>1</Localize>
-      </Text>
+      <Text />
       <SoundEmitter>
         <ProjectileSounds>
           <ProjectileImpact>
@@ -859,31 +314,8 @@
             </Item>
           </ProjectileVolley>
         </ProjectileSounds>
-        <ActiveSounds />
-        <DestroySounds />
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionSounds />
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <IncidentSounds />
-        <BuildingRuined />
-        <BuildingRepaired />
-        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
-      <ProjectileIncident>
-        <CausedIncident>[NONE]</CausedIncident>
-        <CausedIncidentBuff>0</CausedIncidentBuff>
-        <CausedIncidentDuration>10000</CausedIncidentDuration>
-      </ProjectileIncident>
+      <ProjectileIncident />
     </Values>
   </Asset>
   <Asset>
@@ -895,68 +327,20 @@
         <ShotAngle>0</ShotAngle>
         <ProjectileSpeed>60</ProjectileSpeed>
         <DamageType>Cannon</DamageType>
-        <Effectivities />
-        <StatusEffects />
-        <ChainingLevels />
-        <EffectSequences>
-          <HitBrick>
-            <SequenceID>hitbrick</SequenceID>
-          </HitBrick>
-          <HitConcrete>
-            <SequenceID>hitconcrete</SequenceID>
-          </HitConcrete>
-          <HitSteel>
-            <SequenceID>hitsteel</SequenceID>
-          </HitSteel>
-          <HitWood>
-            <SequenceID>hitwood</SequenceID>
-          </HitWood>
-          <MissLand>
-            <SequenceID>missland</SequenceID>
-          </MissLand>
-          <MissWater>
-            <SequenceID>misswater</SequenceID>
-          </MissWater>
-        </EffectSequences>
-        <TargetWhiteList />
       </Projectile>
       <Standard>
         <GUID>102267</GUID>
         <Name>Modern_Gun_Small_Shot</Name>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
-      <Mesh>
-        <ObjectPosition>Dynamic</ObjectPosition>
-        <MeshPlacement>Default</MeshPlacement>
-        <DefaultSequence>idle01</DefaultSequence>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
-        <LogoMode>Disabled</LogoMode>
-      </Mesh>
+      <Mesh />
       <Object>
         <Variations>
           <Item>
             <Filename>data/graphics/effects/military/projectiles/projectile_cannon_modern_small_01.cfg</Filename>
           </Item>
         </Variations>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <DefaultParticipant>Neutral</DefaultParticipant>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <Text>
-        <LocaText />
-        <Localize>1</Localize>
-      </Text>
+      <Text />
       <SoundEmitter>
         <ProjectileSounds>
           <ProjectileLaunch>
@@ -970,31 +354,8 @@
             </Item>
           </ProjectileImpact>
         </ProjectileSounds>
-        <ActiveSounds />
-        <DestroySounds />
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionSounds />
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <IncidentSounds />
-        <BuildingRuined />
-        <BuildingRepaired />
-        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
-      <ProjectileIncident>
-        <CausedIncident>[NONE]</CausedIncident>
-        <CausedIncidentBuff>0</CausedIncidentBuff>
-        <CausedIncidentDuration>10000</CausedIncidentDuration>
-      </ProjectileIncident>
+      <ProjectileIncident />
     </Values>
   </Asset>
   <Asset>
@@ -1006,68 +367,20 @@
         <ShotAngle>0</ShotAngle>
         <ProjectileSpeed>22.5</ProjectileSpeed>
         <DamageType>Cannon</DamageType>
-        <Effectivities />
-        <StatusEffects />
-        <ChainingLevels />
-        <EffectSequences>
-          <HitBrick>
-            <SequenceID>hitbrick</SequenceID>
-          </HitBrick>
-          <HitConcrete>
-            <SequenceID>hitconcrete</SequenceID>
-          </HitConcrete>
-          <HitSteel>
-            <SequenceID>hitsteel</SequenceID>
-          </HitSteel>
-          <HitWood>
-            <SequenceID>hitwood</SequenceID>
-          </HitWood>
-          <MissLand>
-            <SequenceID>missland</SequenceID>
-          </MissLand>
-          <MissWater>
-            <SequenceID>misswater</SequenceID>
-          </MissWater>
-        </EffectSequences>
-        <TargetWhiteList />
       </Projectile>
       <Standard>
         <GUID>102277</GUID>
         <Name>Small_Single_Shot_Gunboat</Name>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
-      <Mesh>
-        <ObjectPosition>Dynamic</ObjectPosition>
-        <MeshPlacement>Default</MeshPlacement>
-        <DefaultSequence>idle01</DefaultSequence>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
-        <LogoMode>Disabled</LogoMode>
-      </Mesh>
+      <Mesh />
       <Object>
         <Variations>
           <Item>
             <Filename>data/graphics/effects/military/projectiles/projectile_cannon_01.cfg</Filename>
           </Item>
         </Variations>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <DefaultParticipant>Neutral</DefaultParticipant>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <Text>
-        <LocaText />
-        <Localize>1</Localize>
-      </Text>
+      <Text />
       <SoundEmitter>
         <ProjectileSounds>
           <ProjectileLaunch>
@@ -1081,31 +394,8 @@
             </Item>
           </ProjectileImpact>
         </ProjectileSounds>
-        <ActiveSounds />
-        <DestroySounds />
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionSounds />
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <IncidentSounds />
-        <BuildingRuined />
-        <BuildingRepaired />
-        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
-      <ProjectileIncident>
-        <CausedIncident>[NONE]</CausedIncident>
-        <CausedIncidentBuff>0</CausedIncidentBuff>
-        <CausedIncidentDuration>10000</CausedIncidentDuration>
-      </ProjectileIncident>
+      <ProjectileIncident />
     </Values>
   </Asset>
   <Asset>
@@ -1117,68 +407,20 @@
         <ShotAngle>5</ShotAngle>
         <ProjectileSpeed>22.5</ProjectileSpeed>
         <DamageType>Cannon</DamageType>
-        <Effectivities />
-        <StatusEffects />
-        <ChainingLevels />
-        <EffectSequences>
-          <HitBrick>
-            <SequenceID>hitbrick</SequenceID>
-          </HitBrick>
-          <HitConcrete>
-            <SequenceID>hitconcrete</SequenceID>
-          </HitConcrete>
-          <HitSteel>
-            <SequenceID>hitsteel</SequenceID>
-          </HitSteel>
-          <HitWood>
-            <SequenceID>hitwood</SequenceID>
-          </HitWood>
-          <MissLand>
-            <SequenceID>missland</SequenceID>
-          </MissLand>
-          <MissWater>
-            <SequenceID>misswater</SequenceID>
-          </MissWater>
-        </EffectSequences>
-        <TargetWhiteList />
       </Projectile>
       <Standard>
         <GUID>102285</GUID>
         <Name>Line_Ship_Multi_Shot_01</Name>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
-      <Mesh>
-        <ObjectPosition>Dynamic</ObjectPosition>
-        <MeshPlacement>Default</MeshPlacement>
-        <DefaultSequence>idle01</DefaultSequence>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
-        <LogoMode>Disabled</LogoMode>
-      </Mesh>
+      <Mesh />
       <Object>
         <Variations>
           <Item>
             <Filename>data/graphics/effects/military/projectiles/projectile_cannon_medium_line_ship_01.cfg</Filename>
           </Item>
         </Variations>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <DefaultParticipant>Neutral</DefaultParticipant>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <Text>
-        <LocaText />
-        <Localize>1</Localize>
-      </Text>
+      <Text />
       <SoundEmitter>
         <ProjectileSounds>
           <ProjectileImpact>
@@ -1192,31 +434,8 @@
             </Item>
           </ProjectileVolley>
         </ProjectileSounds>
-        <ActiveSounds />
-        <DestroySounds />
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionSounds />
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <IncidentSounds />
-        <BuildingRuined />
-        <BuildingRepaired />
-        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
-      <ProjectileIncident>
-        <CausedIncident>[NONE]</CausedIncident>
-        <CausedIncidentBuff>0</CausedIncidentBuff>
-        <CausedIncidentDuration>10000</CausedIncidentDuration>
-      </ProjectileIncident>
+      <ProjectileIncident />
     </Values>
   </Asset>
   <Asset>
@@ -1228,68 +447,20 @@
         <ShotAngle>30</ShotAngle>
         <ProjectileSpeed>22.5</ProjectileSpeed>
         <DamageType>Torpedo</DamageType>
-        <Effectivities />
-        <StatusEffects />
-        <ChainingLevels />
-        <EffectSequences>
-          <HitBrick>
-            <SequenceID>hitbrick</SequenceID>
-          </HitBrick>
-          <HitConcrete>
-            <SequenceID>hitconcrete</SequenceID>
-          </HitConcrete>
-          <HitSteel>
-            <SequenceID>hitsteel</SequenceID>
-          </HitSteel>
-          <HitWood>
-            <SequenceID>hitwood</SequenceID>
-          </HitWood>
-          <MissLand>
-            <SequenceID>missland</SequenceID>
-          </MissLand>
-          <MissWater>
-            <SequenceID>misswater</SequenceID>
-          </MissWater>
-        </EffectSequences>
-        <TargetWhiteList />
       </Projectile>
       <Standard>
         <GUID>102618</GUID>
         <Name>Large_Multi_Shot_Ridiculous</Name>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
-      <Mesh>
-        <ObjectPosition>Dynamic</ObjectPosition>
-        <MeshPlacement>Default</MeshPlacement>
-        <DefaultSequence>idle01</DefaultSequence>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
-        <LogoMode>Disabled</LogoMode>
-      </Mesh>
+      <Mesh />
       <Object>
         <Variations>
           <Item>
             <Filename>data/graphics/effects/military/projectiles/projectile_torpedo_01.cfg</Filename>
           </Item>
         </Variations>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <DefaultParticipant>Neutral</DefaultParticipant>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <Text>
-        <LocaText />
-        <Localize>1</Localize>
-      </Text>
+      <Text />
       <SoundEmitter>
         <ProjectileSounds>
           <ProjectileImpact>
@@ -1303,31 +474,8 @@
             </Item>
           </ProjectileVolley>
         </ProjectileSounds>
-        <ActiveSounds />
-        <DestroySounds />
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionSounds />
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <IncidentSounds />
-        <BuildingRuined />
-        <BuildingRepaired />
-        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
-      <ProjectileIncident>
-        <CausedIncident>[NONE]</CausedIncident>
-        <CausedIncidentBuff>0</CausedIncidentBuff>
-        <CausedIncidentDuration>10000</CausedIncidentDuration>
-      </ProjectileIncident>
+      <ProjectileIncident />
     </Values>
   </Asset>
   <Asset>
@@ -1345,67 +493,21 @@
           </Item>
         </StatusEffects>
         <DamageType>Cannon</DamageType>
-        <Effectivities />
-        <ChainingLevels />
-        <EffectSequences>
-          <HitBrick>
-            <SequenceID>hitbrick</SequenceID>
-          </HitBrick>
-          <HitConcrete>
-            <SequenceID>hitconcrete</SequenceID>
-          </HitConcrete>
-          <HitSteel>
-            <SequenceID>hitsteel</SequenceID>
-          </HitSteel>
-          <HitWood>
-            <SequenceID>hitwood</SequenceID>
-          </HitWood>
-          <MissLand>
-            <SequenceID>missland</SequenceID>
-          </MissLand>
-          <MissWater>
-            <SequenceID>misswater</SequenceID>
-          </MissWater>
-        </EffectSequences>
-        <TargetWhiteList />
       </Projectile>
       <Standard>
         <GUID>102626</GUID>
         <Name>Chain_Shot</Name>
         <InfoDescription>21372</InfoDescription>
-        <Comments />
       </Standard>
-      <Mesh>
-        <ObjectPosition>Dynamic</ObjectPosition>
-        <MeshPlacement>Default</MeshPlacement>
-        <DefaultSequence>idle01</DefaultSequence>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
-        <LogoMode>Disabled</LogoMode>
-      </Mesh>
+      <Mesh />
       <Object>
         <Variations>
           <Item>
             <Filename>data/graphics/effects/military/projectiles/projectile_chain_shot_01.cfg</Filename>
           </Item>
         </Variations>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <DefaultParticipant>Neutral</DefaultParticipant>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <Text>
-        <LocaText />
-        <Localize>1</Localize>
-      </Text>
+      <Text />
       <SoundEmitter>
         <ProjectileSounds>
           <ProjectileLaunch>
@@ -1419,31 +521,8 @@
             </Item>
           </ProjectileImpact>
         </ProjectileSounds>
-        <ActiveSounds />
-        <DestroySounds />
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionSounds />
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <IncidentSounds />
-        <BuildingRuined />
-        <BuildingRepaired />
-        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
-      <ProjectileIncident>
-        <CausedIncident>[NONE]</CausedIncident>
-        <CausedIncidentBuff>0</CausedIncidentBuff>
-        <CausedIncidentDuration>10000</CausedIncidentDuration>
-      </ProjectileIncident>
+      <ProjectileIncident />
     </Values>
   </Asset>
   <Asset>
@@ -1455,48 +534,13 @@
         <ShotAngle>0</ShotAngle>
         <ProjectileSpeed>15</ProjectileSpeed>
         <DamageType>Cannon</DamageType>
-        <Effectivities />
-        <StatusEffects />
-        <ChainingLevels />
-        <EffectSequences>
-          <HitBrick>
-            <SequenceID>hitbrick</SequenceID>
-          </HitBrick>
-          <HitConcrete>
-            <SequenceID>hitconcrete</SequenceID>
-          </HitConcrete>
-          <HitSteel>
-            <SequenceID>hitsteel</SequenceID>
-          </HitSteel>
-          <HitWood>
-            <SequenceID>hitwood</SequenceID>
-          </HitWood>
-          <MissLand>
-            <SequenceID>missland</SequenceID>
-          </MissLand>
-          <MissWater>
-            <SequenceID>misswater</SequenceID>
-          </MissWater>
-        </EffectSequences>
-        <TargetWhiteList />
       </Projectile>
       <Standard>
         <GUID>102405</GUID>
         <Name>Flamethrower_Small_Shot</Name>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <Mesh>
         <DefaultSequence>default</DefaultSequence>
-        <ObjectPosition>Dynamic</ObjectPosition>
-        <MeshPlacement>Default</MeshPlacement>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
-        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Object>
         <Variations>
@@ -1504,19 +548,8 @@
             <Filename>data/graphics/effects/military/projectiles/projectile_flamethrower_01.cfg</Filename>
           </Item>
         </Variations>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <DefaultParticipant>Neutral</DefaultParticipant>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <Text>
-        <LocaText />
-        <Localize>1</Localize>
-      </Text>
+      <Text />
       <SoundEmitter>
         <ProjectileSounds>
           <ProjectileLaunch>
@@ -1525,25 +558,6 @@
             </Item>
           </ProjectileLaunch>
         </ProjectileSounds>
-        <ActiveSounds />
-        <DestroySounds />
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionSounds />
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <IncidentSounds />
-        <BuildingRuined />
-        <BuildingRepaired />
-        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <ProjectileIncident>
         <CausedIncident>Fire</CausedIncident>

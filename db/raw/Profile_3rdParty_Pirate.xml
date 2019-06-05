@@ -7,8 +7,6 @@
         <GUID>73</GUID>
         <Name>Third_party_03 (Anne Harlow)</Name>
         <IconFilename>data/ui/2kimages/main/profiles/3rd_party_03.png</IconFilename>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -19,7 +17,6 @@
           </English>
         </LocaText>
         <LineID>3771</LineID>
-        <Localize>1</Localize>
       </Text>
       <Profile>
         <ProfilePicture>data/ui/2kimages/main/profiles/3rd_party_03.png</ProfilePicture>
@@ -44,13 +41,6 @@
         <BackgroundText>14374</BackgroundText>
         <MoodImage>data/ui/2kimages/main/assets/thirdparty_islandbar/bg_islandbar_pirates.png</MoodImage>
         <ShipDropRewardPool>193205</ShipDropRewardPool>
-        <HostileTakeoverEnabled>0</HostileTakeoverEnabled>
-        <ProfileType>ThirdParty</ProfileType>
-        <TakeoverBehaviour>Destroy</TakeoverBehaviour>
-        <CreateModeMeta>Dynamically_GameSetupOrMapload</CreateModeMeta>
-        <CreateModeSession>Dynamically_MaploadOrSessionEnter</CreateModeSession>
-        <AttackableThroughPirateFlagItem>1</AttackableThroughPirateFlagItem>
-        <ChooseNPC />
       </Profile>
       <Diplomacy>
         <DiceRollThreatMin>0</DiceRollThreatMin>
@@ -59,21 +49,17 @@
           <RequestAlliance>
             <AgreementThreshold>110</AgreementThreshold>
             <PartialAgreementThreshold>80</PartialAgreementThreshold>
-            <ActionWeight>100</ActionWeight>
           </RequestAlliance>
           <RequestPeace>
             <AgreementThreshold>60</AgreementThreshold>
             <PartialAgreementThreshold>30</PartialAgreementThreshold>
-            <ActionWeight>190</ActionWeight>
           </RequestPeace>
           <RequestTraderights>
             <AgreementThreshold>90</AgreementThreshold>
             <PartialAgreementThreshold>60</PartialAgreementThreshold>
-            <ActionWeight>90</ActionWeight>
           </RequestTraderights>
           <ThreatWar>
             <AgreementThreshold>25</AgreementThreshold>
-            <ActionWeight>200</ActionWeight>
           </ThreatWar>
           <RequestCeaseFire>
             <ActionWeight>120</ActionWeight>
@@ -83,71 +69,13 @@
           <RequestNonAttack>
             <AgreementThreshold>120</AgreementThreshold>
             <PartialAgreementThreshold>80</PartialAgreementThreshold>
-            <ActionWeight>200</ActionWeight>
           </RequestNonAttack>
           <ThreatCancelTrade>
             <AgreementThreshold>10</AgreementThreshold>
-            <ActionWeight>200</ActionWeight>
           </ThreatCancelTrade>
           <ThreatCancelAlliance>
             <AgreementThreshold>16</AgreementThreshold>
-            <ActionWeight>200</ActionWeight>
           </ThreatCancelAlliance>
-          <CancelAlliance>
-            <AgreementThreshold>-999</AgreementThreshold>
-            <PartialAgreementThreshold>-999</PartialAgreementThreshold>
-            <ActionWeight>100</ActionWeight>
-          </CancelAlliance>
-          <CancelTraderights>
-            <AgreementThreshold>-999</AgreementThreshold>
-            <PartialAgreementThreshold>-999</PartialAgreementThreshold>
-            <ActionWeight>80</ActionWeight>
-          </CancelTraderights>
-          <DeclareWar>
-            <ActionWeight>200</ActionWeight>
-            <AgreementThreshold>-999</AgreementThreshold>
-            <PartialAgreementThreshold>-999</PartialAgreementThreshold>
-          </DeclareWar>
-          <DemandQuest>
-            <ActionWeight>50</ActionWeight>
-            <AgreementThreshold>-999</AgreementThreshold>
-            <PartialAgreementThreshold>-999</PartialAgreementThreshold>
-          </DemandQuest>
-          <Flatter>
-            <ActionWeight>20</ActionWeight>
-            <AgreementThreshold>-999</AgreementThreshold>
-            <PartialAgreementThreshold>-999</PartialAgreementThreshold>
-          </Flatter>
-          <GiftMoneyOneTimeGenerous>
-            <ActionWeight>5</ActionWeight>
-            <AgreementThreshold>-999</AgreementThreshold>
-            <PartialAgreementThreshold>-999</PartialAgreementThreshold>
-          </GiftMoneyOneTimeGenerous>
-          <GiftMoneyOneTimeOrdinary>
-            <ActionWeight>5</ActionWeight>
-            <AgreementThreshold>-999</AgreementThreshold>
-            <PartialAgreementThreshold>-999</PartialAgreementThreshold>
-          </GiftMoneyOneTimeOrdinary>
-          <GiftMoneyOneTimeSmall>
-            <ActionWeight>5</ActionWeight>
-            <AgreementThreshold>-999</AgreementThreshold>
-            <PartialAgreementThreshold>-999</PartialAgreementThreshold>
-          </GiftMoneyOneTimeSmall>
-          <Insult>
-            <ActionWeight>5</ActionWeight>
-            <AgreementThreshold>-999</AgreementThreshold>
-            <PartialAgreementThreshold>-999</PartialAgreementThreshold>
-          </Insult>
-          <PaymentDecreaseReputation>
-            <ActionWeight>1</ActionWeight>
-            <AgreementThreshold>50</AgreementThreshold>
-            <PartialAgreementThreshold>50</PartialAgreementThreshold>
-          </PaymentDecreaseReputation>
-          <PaymentIncreaseReputation>
-            <ActionWeight>1</ActionWeight>
-            <AgreementThreshold>50</AgreementThreshold>
-            <PartialAgreementThreshold>50</PartialAgreementThreshold>
-          </PaymentIncreaseReputation>
         </DiplomacyActionBalancing>
         <ReputationChangeCalculation>
           <PaymentGivingMoney>
@@ -173,32 +101,6 @@
             <NegativeReputationChanged>2</NegativeReputationChanged>
             <PositiveReputationChanged>2</PositiveReputationChanged>
           </MilitaryPowerTempReputation>
-          <Treaties>
-            <ReputationValues>
-              <Alliance>
-                <AddingTreaty>15</AddingTreaty>
-                <RemovingTreaty>-20</RemovingTreaty>
-              </Alliance>
-              <CeaseFire>
-                <AddingTreaty>5</AddingTreaty>
-                <RemovingTreaty>20</RemovingTreaty>
-              </CeaseFire>
-              <Peace>
-                <AddingTreaty>20</AddingTreaty>
-                <RemovingTreaty>-70</RemovingTreaty>
-              </Peace>
-              <TradeRights>
-                <AddingTreaty>10</AddingTreaty>
-                <RemovingTreaty>-15</RemovingTreaty>
-              </TradeRights>
-            </ReputationValues>
-          </Treaties>
-          <GlobalLimitTempReputation>
-            <NegBorderMin>-70</NegBorderMin>
-            <NegBorderMax>-100</NegBorderMax>
-            <PosBorderMin>25</PosBorderMin>
-            <PosBorderMax>40</PosBorderMax>
-          </GlobalLimitTempReputation>
         </ReputationChangeCalculation>
         <GiftBalancing>
           <receivePayment>
@@ -223,19 +125,15 @@
           </counterProposal>
           <giveSmall>
             <IncreasePerLevel>7</IncreasePerLevel>
-            <BaseValue>1000</BaseValue>
           </giveSmall>
           <giveOrdinary>
             <IncreasePerLevel>7</IncreasePerLevel>
-            <BaseValue>5000</BaseValue>
           </giveOrdinary>
           <giveGenerous>
             <IncreasePerLevel>7</IncreasePerLevel>
-            <BaseValue>5000</BaseValue>
           </giveGenerous>
           <givePayment>
             <IncreasePerLevel>7</IncreasePerLevel>
-            <BaseValue>400</BaseValue>
           </givePayment>
         </GiftBalancing>
         <RepeatableActionBalancing>
@@ -243,6 +141,14 @@
             <Flatter>
               <Subdivisions>
                 <Item>
+                  <VectorElement>
+                    <InheritanceMapV2>
+                      <Entry>
+                        <TemplateName>3rdParty_Pirate_Female</TemplateName>
+                        <Index>0</Index>
+                      </Entry>
+                    </InheritanceMapV2>
+                  </VectorElement>
                   <SuccessChance>55</SuccessChance>
                   <ReputationGain>2</ReputationGain>
                   <ReputationLoss>-1</ReputationLoss>
@@ -254,21 +160,35 @@
                 </Item>
                 <Item />
               </Subdivisions>
-              <ForgettingTime>1800000</ForgettingTime>
             </Flatter>
             <Insult>
               <Subdivisions>
                 <Item>
+                  <VectorElement>
+                    <InheritanceMapV2>
+                      <Entry>
+                        <TemplateName>3rdParty_Pirate_Female</TemplateName>
+                        <Index>0</Index>
+                      </Entry>
+                    </InheritanceMapV2>
+                  </VectorElement>
                   <SuccessChance>90</SuccessChance>
                   <ReputationGain>-5</ReputationGain>
                 </Item>
                 <Item />
               </Subdivisions>
-              <ForgettingTime>1800000</ForgettingTime>
             </Insult>
             <Gift>
               <Subdivisions>
                 <Item>
+                  <VectorElement>
+                    <InheritanceMapV2>
+                      <Entry>
+                        <TemplateName>3rdParty_Pirate_Female</TemplateName>
+                        <Index>0</Index>
+                      </Entry>
+                    </InheritanceMapV2>
+                  </VectorElement>
                   <SuccessChance>90</SuccessChance>
                   <ReputationGain>2</ReputationGain>
                 </Item>
@@ -278,41 +198,12 @@
                 </Item>
                 <Item />
               </Subdivisions>
-              <ForgettingTime>1800000</ForgettingTime>
             </Gift>
           </Actions>
         </RepeatableActionBalancing>
         <Memory>
           <LongTimeCheck>4200000</LongTimeCheck>
           <ReputationUpdateTimer>4260000</ReputationUpdateTimer>
-          <ShortTimeChange>50</ShortTimeChange>
-          <UpdateTable>
-            <Item>
-              <Difference>10</Difference>
-              <Change>1</Change>
-            </Item>
-            <Item>
-              <Difference>20</Difference>
-              <Change>2</Change>
-            </Item>
-            <Item>
-              <Difference>30</Difference>
-              <Change>3</Change>
-            </Item>
-            <Item>
-              <Difference>40</Difference>
-              <Change>4</Change>
-            </Item>
-            <Item>
-              <Difference>50</Difference>
-              <Change>5</Change>
-            </Item>
-            <Item>
-              <Difference>60</Difference>
-              <Change>30</Change>
-            </Item>
-          </UpdateTable>
-          <NegReputationCorrectionMax>3</NegReputationCorrectionMax>
         </Memory>
         <ActionDebuffs>
           <DebuffSettings>
@@ -320,26 +211,18 @@
               <DiceDebuff>200</DiceDebuff>
               <DebuffTime>10800000</DebuffTime>
               <DiminishingDebuff>1</DiminishingDebuff>
-              <ApplyWhenSuccesful>1</ApplyWhenSuccesful>
             </ThreatWar>
             <Peace>
               <DiceDebuff>100</DiceDebuff>
               <DebuffTime>3600000</DebuffTime>
-              <DiminishingDebuff>1</DiminishingDebuff>
             </Peace>
             <Trade>
               <DiceDebuff>200</DiceDebuff>
               <DebuffTime>10800000</DebuffTime>
-              <DiminishingDebuff>1</DiminishingDebuff>
             </Trade>
             <CeaseFire>
               <DiceDebuff>0</DiceDebuff>
-              <DebuffTime>3600000</DebuffTime>
             </CeaseFire>
-            <NonAttack>
-              <DiceDebuff>40</DiceDebuff>
-              <DebuffTime>3600000</DebuffTime>
-            </NonAttack>
           </DebuffSettings>
         </ActionDebuffs>
         <CounterProposal>
@@ -347,9 +230,6 @@
           <CounterProposalDeclineStart>30</CounterProposalDeclineStart>
           <CounterProposalDeclineIncrease>30</CounterProposalDeclineIncrease>
           <CounterProposalIncreaseModifierPercentage>1000</CounterProposalIncreaseModifierPercentage>
-          <DiceRollCounterMin>-25</DiceRollCounterMin>
-          <DiceRollCounterMax>25</DiceRollCounterMax>
-          <CounterProposalAgree>66</CounterProposalAgree>
         </CounterProposal>
         <InitialRelation>
           <DefaultReputation>0</DefaultReputation>
@@ -357,79 +237,241 @@
           <DefaultTreaties>War</DefaultTreaties>
           <Exceptions>
             <Item>
+              <VectorElement>
+                <InheritedIndex>0</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>3rdParty_Pirate</TemplateName>
+                    <Index>0</Index>
+                  </Entry>
+                  <Entry>
+                    <TemplateName>Profile_3rdParty_Pirate</TemplateName>
+                    <Index>0</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
               <Reputation>40</Reputation>
               <Memory>10</Memory>
               <Treaties>Peace</Treaties>
-              <Participant>Second_ai_01_Jorgensen</Participant>
             </Item>
             <Item>
-              <Participant>Second_ai_02_Qing</Participant>
-              <Treaties>War</Treaties>
+              <VectorElement>
+                <InheritedIndex>1</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>3rdParty_Pirate</TemplateName>
+                    <Index>1</Index>
+                  </Entry>
+                  <Entry>
+                    <TemplateName>Profile_3rdParty_Pirate</TemplateName>
+                    <Index>1</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
             </Item>
             <Item>
-              <Participant>Second_ai_03_Wibblesock</Participant>
-              <Treaties>War</Treaties>
+              <VectorElement>
+                <InheritedIndex>2</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>3rdParty_Pirate</TemplateName>
+                    <Index>2</Index>
+                  </Entry>
+                  <Entry>
+                    <TemplateName>Profile_3rdParty_Pirate</TemplateName>
+                    <Index>2</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
             </Item>
             <Item>
-              <Participant>Second_ai_04_Smith</Participant>
-              <Treaties>War</Treaties>
+              <VectorElement>
+                <InheritedIndex>3</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>3rdParty_Pirate</TemplateName>
+                    <Index>3</Index>
+                  </Entry>
+                  <Entry>
+                    <TemplateName>Profile_3rdParty_Pirate</TemplateName>
+                    <Index>3</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
             </Item>
             <Item>
+              <VectorElement>
+                <InheritedIndex>4</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>3rdParty_Pirate</TemplateName>
+                    <Index>4</Index>
+                  </Entry>
+                  <Entry>
+                    <TemplateName>Profile_3rdParty_Pirate</TemplateName>
+                    <Index>4</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
               <Memory>20</Memory>
-              <Participant>Second_ai_05_OMara</Participant>
-              <Treaties>War</Treaties>
             </Item>
             <Item>
-              <Participant>Second_ai_06_Gasparov</Participant>
-              <Treaties>War</Treaties>
+              <VectorElement>
+                <InheritedIndex>5</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>3rdParty_Pirate</TemplateName>
+                    <Index>5</Index>
+                  </Entry>
+                  <Entry>
+                    <TemplateName>Profile_3rdParty_Pirate</TemplateName>
+                    <Index>5</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
             </Item>
             <Item>
-              <Participant>Second_ai_07_von_Malching</Participant>
-              <Treaties>War</Treaties>
+              <VectorElement>
+                <InheritedIndex>6</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>3rdParty_Pirate</TemplateName>
+                    <Index>6</Index>
+                  </Entry>
+                  <Entry>
+                    <TemplateName>Profile_3rdParty_Pirate</TemplateName>
+                    <Index>6</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
             </Item>
             <Item>
+              <VectorElement>
+                <InheritedIndex>7</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>3rdParty_Pirate</TemplateName>
+                    <Index>7</Index>
+                  </Entry>
+                  <Entry>
+                    <TemplateName>Profile_3rdParty_Pirate</TemplateName>
+                    <Index>7</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
               <Memory>50</Memory>
               <Treaties>Peace</Treaties>
-              <Participant>Second_ai_08_Gravez</Participant>
             </Item>
             <Item>
+              <VectorElement>
+                <InheritedIndex>8</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>3rdParty_Pirate</TemplateName>
+                    <Index>8</Index>
+                  </Entry>
+                  <Entry>
+                    <TemplateName>Profile_3rdParty_Pirate</TemplateName>
+                    <Index>8</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
               <Reputation>90</Reputation>
               <Treaties>Peace;TradeRights</Treaties>
-              <Participant>Second_ai_09_Silva</Participant>
             </Item>
             <Item>
+              <VectorElement>
+                <InheritedIndex>9</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>3rdParty_Pirate</TemplateName>
+                    <Index>9</Index>
+                  </Entry>
+                  <Entry>
+                    <TemplateName>Profile_3rdParty_Pirate</TemplateName>
+                    <Index>9</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
               <Reputation>70</Reputation>
               <Memory>70</Memory>
               <Treaties>Peace</Treaties>
-              <Participant>Second_ai_10_Hunt</Participant>
             </Item>
             <Item>
+              <VectorElement>
+                <InheritedIndex>11</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>3rdParty_Pirate</TemplateName>
+                    <Index>11</Index>
+                  </Entry>
+                  <Entry>
+                    <TemplateName>Profile_3rdParty_Pirate</TemplateName>
+                    <Index>11</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
               <Treaties>CeaseFire</Treaties>
-              <Participant>Third_party_04_Pirate_LaFortune</Participant>
             </Item>
             <Item>
-              <Participant>Neutral</Participant>
-              <Reputation>100</Reputation>
-              <Memory>100</Memory>
-              <Treaties>Peace</Treaties>
+              <VectorElement>
+                <InheritedIndex>12</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>3rdParty_Pirate</TemplateName>
+                    <Index>12</Index>
+                  </Entry>
+                  <Entry>
+                    <TemplateName>Profile_3rdParty_Pirate</TemplateName>
+                    <Index>12</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
             </Item>
             <Item>
-              <Participant>General_Enemy</Participant>
-              <Reputation>100</Reputation>
-              <Memory>100</Memory>
-              <Treaties>Peace</Treaties>
+              <VectorElement>
+                <InheritedIndex>13</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>3rdParty_Pirate</TemplateName>
+                    <Index>13</Index>
+                  </Entry>
+                  <Entry>
+                    <TemplateName>Profile_3rdParty_Pirate</TemplateName>
+                    <Index>13</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
             </Item>
             <Item>
-              <Participant>Campaign_character_02_pyrophorian_red_blinded</Participant>
-              <Reputation>100</Reputation>
-              <Memory>100</Memory>
-              <Treaties>Peace</Treaties>
+              <VectorElement>
+                <InheritedIndex>14</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>3rdParty_Pirate</TemplateName>
+                    <Index>14</Index>
+                  </Entry>
+                  <Entry>
+                    <TemplateName>Profile_3rdParty_Pirate</TemplateName>
+                    <Index>14</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
             </Item>
             <Item>
-              <Participant>Campaign_character_02_pyrophorian_red</Participant>
-              <Reputation>100</Reputation>
-              <Memory>100</Memory>
-              <Treaties>Peace</Treaties>
+              <VectorElement>
+                <InheritedIndex>15</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>3rdParty_Pirate</TemplateName>
+                    <Index>15</Index>
+                  </Entry>
+                  <Entry>
+                    <TemplateName>Profile_3rdParty_Pirate</TemplateName>
+                    <Index>15</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
             </Item>
             <Item>
               <Participant>Third_party_07_Jailor_Bleakworth</Participant>
@@ -460,152 +502,325 @@
               <Treaties>Peace</Treaties>
             </Item>
           </Exceptions>
-          <DefaultTreatiesUndiscovered>Peace</DefaultTreatiesUndiscovered>
         </InitialRelation>
         <DiplomacyAI>
           <ReputationTrigger>
             <Item>
+              <VectorElement>
+                <InheritedIndex>0</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>3rdParty_Pirate</TemplateName>
+                    <Index>0</Index>
+                  </Entry>
+                  <Entry>
+                    <TemplateName>Profile_3rdParty_Pirate</TemplateName>
+                    <Index>0</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
               <MinTriggerReputation>95</MinTriggerReputation>
               <MaxTriggerReputation>100</MaxTriggerReputation>
               <TriggerChance>0</TriggerChance>
               <TriggerPriority>10</TriggerPriority>
-              <TriggerAction>RequestAlliance</TriggerAction>
-              <CheckMilitaryStrength>0</CheckMilitaryStrength>
-              <CheckEconomyStrength>0</CheckEconomyStrength>
             </Item>
             <Item>
+              <VectorElement>
+                <InheritedIndex>1</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>3rdParty_Pirate</TemplateName>
+                    <Index>1</Index>
+                  </Entry>
+                  <Entry>
+                    <TemplateName>Profile_3rdParty_Pirate</TemplateName>
+                    <Index>1</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
               <MinTriggerReputation>80</MinTriggerReputation>
               <MaxTriggerReputation>90</MaxTriggerReputation>
-              <TriggerAction>ThreatCancelAlliance</TriggerAction>
-              <TriggerType>ReputationDecreased</TriggerType>
-              <CheckMilitaryStrength>0</CheckMilitaryStrength>
-              <CheckEconomyStrength>0</CheckEconomyStrength>
             </Item>
             <Item>
+              <VectorElement>
+                <InheritedIndex>2</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>3rdParty_Pirate</TemplateName>
+                    <Index>2</Index>
+                  </Entry>
+                  <Entry>
+                    <TemplateName>Profile_3rdParty_Pirate</TemplateName>
+                    <Index>2</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
               <MinTriggerReputation>80</MinTriggerReputation>
               <MaxTriggerReputation>85</MaxTriggerReputation>
               <TriggerPriority>10</TriggerPriority>
-              <TriggerAction>CancelAlliance</TriggerAction>
-              <TriggerType>ReputationDecreased</TriggerType>
-              <CheckMilitaryStrength>0</CheckMilitaryStrength>
-              <CheckEconomyStrength>0</CheckEconomyStrength>
             </Item>
             <Item>
+              <VectorElement>
+                <InheritedIndex>3</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>3rdParty_Pirate</TemplateName>
+                    <Index>3</Index>
+                  </Entry>
+                  <Entry>
+                    <TemplateName>Profile_3rdParty_Pirate</TemplateName>
+                    <Index>3</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
               <MinTriggerReputation>80</MinTriggerReputation>
               <MaxTriggerReputation>85</MaxTriggerReputation>
               <TriggerPriority>10</TriggerPriority>
-              <TriggerAction>RequestTraderights</TriggerAction>
-              <CheckMilitaryStrength>0</CheckMilitaryStrength>
-              <CheckEconomyStrength>0</CheckEconomyStrength>
             </Item>
             <Item>
+              <VectorElement>
+                <InheritedIndex>4</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>3rdParty_Pirate</TemplateName>
+                    <Index>4</Index>
+                  </Entry>
+                  <Entry>
+                    <TemplateName>Profile_3rdParty_Pirate</TemplateName>
+                    <Index>4</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
               <MinTriggerReputation>60</MinTriggerReputation>
               <MaxTriggerReputation>70</MaxTriggerReputation>
-              <TriggerAction>ThreatCancelTrade</TriggerAction>
-              <TriggerType>ReputationDecreased</TriggerType>
-              <CheckMilitaryStrength>0</CheckMilitaryStrength>
-              <CheckEconomyStrength>0</CheckEconomyStrength>
             </Item>
             <Item>
+              <VectorElement>
+                <InheritedIndex>5</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>3rdParty_Pirate</TemplateName>
+                    <Index>5</Index>
+                  </Entry>
+                  <Entry>
+                    <TemplateName>Profile_3rdParty_Pirate</TemplateName>
+                    <Index>5</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
               <MinTriggerReputation>60</MinTriggerReputation>
               <MaxTriggerReputation>65</MaxTriggerReputation>
               <TriggerPriority>10</TriggerPriority>
-              <TriggerAction>CancelTraderights</TriggerAction>
-              <TriggerType>ReputationDecreased</TriggerType>
-              <CheckMilitaryStrength>0</CheckMilitaryStrength>
-              <CheckEconomyStrength>0</CheckEconomyStrength>
             </Item>
             <Item>
+              <VectorElement>
+                <InheritedIndex>6</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>3rdParty_Pirate</TemplateName>
+                    <Index>6</Index>
+                  </Entry>
+                  <Entry>
+                    <TemplateName>Profile_3rdParty_Pirate</TemplateName>
+                    <Index>6</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
               <MinTriggerReputation>60</MinTriggerReputation>
               <MaxTriggerReputation>70</MaxTriggerReputation>
               <CheckMilitaryStrength>-0.8</CheckMilitaryStrength>
               <TriggerPriority>10</TriggerPriority>
-              <TriggerAction>RequestPeace</TriggerAction>
-              <CheckEconomyStrength>0</CheckEconomyStrength>
             </Item>
             <Item>
+              <VectorElement>
+                <InheritedIndex>7</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>3rdParty_Pirate</TemplateName>
+                    <Index>7</Index>
+                  </Entry>
+                  <Entry>
+                    <TemplateName>Profile_3rdParty_Pirate</TemplateName>
+                    <Index>7</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
               <MinTriggerReputation>25</MinTriggerReputation>
               <MaxTriggerReputation>35</MaxTriggerReputation>
               <TriggerPriority>10</TriggerPriority>
-              <TriggerType>ReputationDecreased</TriggerType>
-              <CheckMilitaryStrength>0</CheckMilitaryStrength>
-              <CheckEconomyStrength>0</CheckEconomyStrength>
             </Item>
             <Item>
+              <VectorElement>
+                <InheritedIndex>8</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>3rdParty_Pirate</TemplateName>
+                    <Index>8</Index>
+                  </Entry>
+                  <Entry>
+                    <TemplateName>Profile_3rdParty_Pirate</TemplateName>
+                    <Index>8</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
               <MinTriggerReputation>50</MinTriggerReputation>
               <MaxTriggerReputation>60</MaxTriggerReputation>
-              <TriggerAction>ThreatWar</TriggerAction>
-              <TriggerType>ReputationDecreased</TriggerType>
-              <CheckMilitaryStrength>0</CheckMilitaryStrength>
-              <CheckEconomyStrength>0</CheckEconomyStrength>
             </Item>
             <Item>
+              <VectorElement>
+                <InheritedIndex>9</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>3rdParty_Pirate</TemplateName>
+                    <Index>9</Index>
+                  </Entry>
+                  <Entry>
+                    <TemplateName>Profile_3rdParty_Pirate</TemplateName>
+                    <Index>9</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
               <MinTriggerReputation>999</MinTriggerReputation>
               <MaxTriggerReputation>999</MaxTriggerReputation>
               <TriggerChance>0</TriggerChance>
-              <TriggerAction>RequestCeaseFire</TriggerAction>
-              <CheckMilitaryStrength>0</CheckMilitaryStrength>
-              <CheckEconomyStrength>0</CheckEconomyStrength>
             </Item>
             <Item>
+              <VectorElement>
+                <InheritedIndex>10</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>3rdParty_Pirate</TemplateName>
+                    <Index>10</Index>
+                  </Entry>
+                  <Entry>
+                    <TemplateName>Profile_3rdParty_Pirate</TemplateName>
+                    <Index>10</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
               <MinTriggerReputation>999</MinTriggerReputation>
               <MaxTriggerReputation>999</MaxTriggerReputation>
               <TriggerChance>0</TriggerChance>
-              <TriggerAction>RequestNonAttack</TriggerAction>
-              <CheckMilitaryStrength>0</CheckMilitaryStrength>
-              <CheckEconomyStrength>0</CheckEconomyStrength>
             </Item>
           </ReputationTrigger>
           <MaxMoneyRequest>40</MaxMoneyRequest>
           <SpecialTrigger>
             <Item>
+              <VectorElement>
+                <InheritedIndex>0</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>3rdParty_Pirate</TemplateName>
+                    <Index>0</Index>
+                  </Entry>
+                  <Entry>
+                    <TemplateName>Profile_3rdParty_Pirate</TemplateName>
+                    <Index>0</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
               <MinTriggerReputation>50</MinTriggerReputation>
               <TriggerChance>50</TriggerChance>
-              <TriggerAction>GiftMoneyOneTimeSmall</TriggerAction>
-              <TriggerType>GenericTimer</TriggerType>
-              <AddMoney>1</AddMoney>
             </Item>
             <Item>
+              <VectorElement>
+                <InheritedIndex>1</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>3rdParty_Pirate</TemplateName>
+                    <Index>1</Index>
+                  </Entry>
+                  <Entry>
+                    <TemplateName>Profile_3rdParty_Pirate</TemplateName>
+                    <Index>1</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
               <MinTriggerReputation>80</MinTriggerReputation>
               <TriggerChance>30</TriggerChance>
-              <TriggerAction>GiftMoneyOneTimeOrdinary</TriggerAction>
-              <TriggerType>GenericTimer</TriggerType>
-              <TriggerPriority>1</TriggerPriority>
-              <AddMoney>1</AddMoney>
             </Item>
             <Item>
+              <VectorElement>
+                <InheritedIndex>2</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>3rdParty_Pirate</TemplateName>
+                    <Index>2</Index>
+                  </Entry>
+                  <Entry>
+                    <TemplateName>Profile_3rdParty_Pirate</TemplateName>
+                    <Index>2</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
               <MinTriggerReputation>90</MinTriggerReputation>
               <TriggerChance>15</TriggerChance>
-              <TriggerAction>GiftMoneyOneTimeGenerous</TriggerAction>
-              <TriggerType>GenericTimer</TriggerType>
-              <TriggerPriority>2</TriggerPriority>
-              <AddMoney>1</AddMoney>
             </Item>
             <Item>
+              <VectorElement>
+                <InheritedIndex>3</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>3rdParty_Pirate</TemplateName>
+                    <Index>3</Index>
+                  </Entry>
+                  <Entry>
+                    <TemplateName>Profile_3rdParty_Pirate</TemplateName>
+                    <Index>3</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
               <TriggerChance>15</TriggerChance>
-              <TriggerAction>RequestCeaseFire</TriggerAction>
-              <TriggerPriority>1</TriggerPriority>
-              <AddMoney>1</AddMoney>
             </Item>
             <Item>
+              <VectorElement>
+                <InheritedIndex>4</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>3rdParty_Pirate</TemplateName>
+                    <Index>4</Index>
+                  </Entry>
+                  <Entry>
+                    <TemplateName>Profile_3rdParty_Pirate</TemplateName>
+                    <Index>4</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
               <TriggerChance>15</TriggerChance>
-              <TriggerAction>RequestCeaseFire</TriggerAction>
-              <TriggerType>ShipDestroyedByEnemy</TriggerType>
-              <TriggerPriority>1</TriggerPriority>
-              <AddMoney>1</AddMoney>
             </Item>
             <Item>
+              <VectorElement>
+                <InheritedIndex>5</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>3rdParty_Pirate</TemplateName>
+                    <Index>5</Index>
+                  </Entry>
+                  <Entry>
+                    <TemplateName>Profile_3rdParty_Pirate</TemplateName>
+                    <Index>5</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
               <CheckMilitaryStrength>-0.1</CheckMilitaryStrength>
               <TriggerChance>20</TriggerChance>
-              <TriggerAction>RequestPeace</TriggerAction>
-              <AddMoney>1</AddMoney>
             </Item>
             <Item>
+              <VectorElement>
+                <InheritedIndex>6</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>3rdParty_Pirate</TemplateName>
+                    <Index>6</Index>
+                  </Entry>
+                  <Entry>
+                    <TemplateName>Profile_3rdParty_Pirate</TemplateName>
+                    <Index>6</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
               <CheckMilitaryStrength>-0.1</CheckMilitaryStrength>
               <TriggerChance>20</TriggerChance>
-              <TriggerAction>RequestPeace</TriggerAction>
-              <TriggerType>ShipDestroyedByEnemy</TriggerType>
-              <AddMoney>1</AddMoney>
             </Item>
           </SpecialTrigger>
           <GenericTimerStartDelay>3600000</GenericTimerStartDelay>
@@ -615,184 +830,153 @@
               <Cooldown>3600000</Cooldown>
             </RequestCeaseFire>
           </ActionCooldown>
-          <ReputationTriggerDelayMin>20000</ReputationTriggerDelayMin>
-          <ReputationTriggerDelayMax>300000</ReputationTriggerDelayMax>
-          <ReputationMinDice>-5</ReputationMinDice>
-          <ReputationMaxDice>0</ReputationMaxDice>
-          <MaxMoneyOffering>15</MaxMoneyOffering>
-          <MinMoney>3</MinMoney>
         </DiplomacyAI>
         <AutomaticDiscovery>
           <ProgressCheckEnabled>1</ProgressCheckEnabled>
           <DesiredProgress>MidGame</DesiredProgress>
           <Time>14400000</Time>
         </AutomaticDiscovery>
-        <DiceRollProposalMin>-5</DiceRollProposalMin>
-        <DiceRollProposalMax>0</DiceRollProposalMax>
-        <ReactOnAlliance>1</ReactOnAlliance>
-        <ChancePreview>
-          <IdleTime>480000</IdleTime>
-          <RatingStates>
-            <SuccessLvl3>
-              <BelowChance>30</BelowChance>
-              <Text>10598</Text>
-            </SuccessLvl3>
-            <SuccessLvl1>
-              <BelowChance>10</BelowChance>
-              <Text>10597</Text>
-            </SuccessLvl1>
-            <SuccessLvl2>
-              <BelowChance>20</BelowChance>
-              <Text>10596</Text>
-            </SuccessLvl2>
-            <SuccessLvl4>
-              <BelowChance>40</BelowChance>
-              <Text>10594</Text>
-            </SuccessLvl4>
-            <SuccessLvl0>
-              <Text>10595</Text>
-            </SuccessLvl0>
-            <SuccessLvl10>
-              <BelowChance>99</BelowChance>
-              <Text>13040</Text>
-            </SuccessLvl10>
-            <SuccessLvl11>
-              <BelowChance>100</BelowChance>
-              <Text>13041</Text>
-            </SuccessLvl11>
-            <SuccessLvl5>
-              <BelowChance>50</BelowChance>
-              <Text>13035</Text>
-            </SuccessLvl5>
-            <SuccessLvl6>
-              <BelowChance>60</BelowChance>
-              <Text>13036</Text>
-            </SuccessLvl6>
-            <SuccessLvl7>
-              <BelowChance>70</BelowChance>
-              <Text>13037</Text>
-            </SuccessLvl7>
-            <SuccessLvl8>
-              <BelowChance>80</BelowChance>
-              <Text>13038</Text>
-            </SuccessLvl8>
-            <SuccessLvl9>
-              <BelowChance>90</BelowChance>
-              <Text>13039</Text>
-            </SuccessLvl9>
-          </RatingStates>
-        </ChancePreview>
       </Diplomacy>
       <ParticipantMessages>
         <MessageTriggers>
           <QuestAborted>
             <Reactions>
               <Item>
+                <VectorElement>
+                  <InheritanceMapV2>
+                    <Entry>
+                      <TemplateName>3rdParty_Pirate_Female</TemplateName>
+                      <Index>0</Index>
+                    </Entry>
+                  </InheritanceMapV2>
+                </VectorElement>
                 <Notification>
                   <Template>CharacterNotification</Template>
                   <Values>
                     <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-999474322</NotificationTextGroup>
-                    </BaseNotification>
+                    <BaseNotification />
                     <NotificationSubtitle>
                       <SubtitleGroup>-170407149</SubtitleGroup>
                     </NotificationSubtitle>
                   </Values>
                 </Notification>
-                <MyRole>Initiator</MyRole>
               </Item>
             </Reactions>
           </QuestAborted>
           <QuestInvitation>
             <Reactions>
               <Item>
+                <VectorElement>
+                  <InheritanceMapV2>
+                    <Entry>
+                      <TemplateName>3rdParty_Pirate_Female</TemplateName>
+                      <Index>0</Index>
+                    </Entry>
+                  </InheritanceMapV2>
+                </VectorElement>
                 <Notification>
                   <Template>CharacterNotification</Template>
                   <Values>
                     <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-607220429</NotificationTextGroup>
-                    </BaseNotification>
+                    <BaseNotification />
                     <NotificationSubtitle>
                       <SubtitleGroup>1548675746</SubtitleGroup>
                     </NotificationSubtitle>
                   </Values>
                 </Notification>
-                <MyRole>Initiator</MyRole>
               </Item>
             </Reactions>
           </QuestInvitation>
           <QuestFailed>
             <Reactions>
               <Item>
+                <VectorElement>
+                  <InheritanceMapV2>
+                    <Entry>
+                      <TemplateName>3rdParty_Pirate_Female</TemplateName>
+                      <Index>0</Index>
+                    </Entry>
+                  </InheritanceMapV2>
+                </VectorElement>
                 <Notification>
                   <Template>CharacterNotification</Template>
                   <Values>
                     <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-1928161372</NotificationTextGroup>
-                    </BaseNotification>
+                    <BaseNotification />
                     <NotificationSubtitle>
                       <SubtitleGroup>1681280696</SubtitleGroup>
                     </NotificationSubtitle>
                   </Values>
                 </Notification>
-                <MyRole>Initiator</MyRole>
               </Item>
             </Reactions>
           </QuestFailed>
           <QuestStarted>
             <Reactions>
               <Item>
+                <VectorElement>
+                  <InheritanceMapV2>
+                    <Entry>
+                      <TemplateName>3rdParty_Pirate_Female</TemplateName>
+                      <Index>0</Index>
+                    </Entry>
+                  </InheritanceMapV2>
+                </VectorElement>
                 <Notification>
                   <Template>CharacterNotification</Template>
                   <Values>
                     <CharacterNotification />
                     <BaseNotification>
                       <NotificationPriority>699</NotificationPriority>
-                      <NotificationTextGroup>-2052884805</NotificationTextGroup>
                     </BaseNotification>
                     <NotificationSubtitle>
                       <SubtitleGroup>-127377601</SubtitleGroup>
                     </NotificationSubtitle>
                   </Values>
                 </Notification>
-                <MyRole>Initiator</MyRole>
               </Item>
             </Reactions>
           </QuestStarted>
           <QuestSuccessful>
             <Reactions>
               <Item>
+                <VectorElement>
+                  <InheritanceMapV2>
+                    <Entry>
+                      <TemplateName>3rdParty_Pirate_Female</TemplateName>
+                      <Index>0</Index>
+                    </Entry>
+                  </InheritanceMapV2>
+                </VectorElement>
                 <Notification>
                   <Template>CharacterNotification</Template>
                   <Values>
                     <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>1380477898</NotificationTextGroup>
-                    </BaseNotification>
+                    <BaseNotification />
                     <NotificationSubtitle>
                       <SubtitleGroup>-536019083</SubtitleGroup>
                     </NotificationSubtitle>
                   </Values>
                 </Notification>
-                <MyRole>Initiator</MyRole>
               </Item>
             </Reactions>
           </QuestSuccessful>
           <ClickKontor>
             <Reactions>
               <Item>
+                <VectorElement>
+                  <InheritanceMapV2>
+                    <Entry>
+                      <TemplateName>3rdParty_Pirate_Female</TemplateName>
+                      <Index>0</Index>
+                    </Entry>
+                  </InheritanceMapV2>
+                </VectorElement>
                 <Notification>
                   <Template>CharacterNotification</Template>
                   <Values>
                     <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-1080710421</NotificationTextGroup>
-                      <NotificationBlockingTime>20000</NotificationBlockingTime>
-                      <DisplayTimeout>5000</DisplayTimeout>
-                    </BaseNotification>
+                    <BaseNotification />
                     <NotificationSubtitle>
                       <SubtitleGroup>981143564</SubtitleGroup>
                     </NotificationSubtitle>
@@ -804,19 +988,24 @@
           <ParticipantDiscovered>
             <Reactions>
               <Item>
+                <VectorElement>
+                  <InheritanceMapV2>
+                    <Entry>
+                      <TemplateName>3rdParty_Pirate_Female</TemplateName>
+                      <Index>0</Index>
+                    </Entry>
+                  </InheritanceMapV2>
+                </VectorElement>
                 <Notification>
                   <Template>CharacterNotification</Template>
                   <Values>
                     <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationText>10143</NotificationText>
-                    </BaseNotification>
+                    <BaseNotification />
                     <NotificationSubtitle>
                       <SubtitleGroup>866717955</SubtitleGroup>
                     </NotificationSubtitle>
                   </Values>
                 </Notification>
-                <CooldownTime>180000</CooldownTime>
               </Item>
             </Reactions>
           </ParticipantDiscovered>
@@ -840,575 +1029,55 @@
           <DiplomacyMemoryCorrectionPositive>
             <Reactions>
               <Item>
+                <VectorElement>
+                  <InheritanceMapV2>
+                    <Entry>
+                      <TemplateName>3rdParty_Pirate_Female</TemplateName>
+                      <Index>0</Index>
+                    </Entry>
+                  </InheritanceMapV2>
+                </VectorElement>
                 <Notification>
                   <Template>CharacterNotification</Template>
                   <Values>
                     <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-1700092476</NotificationTextGroup>
-                    </BaseNotification>
+                    <BaseNotification />
                     <NotificationSubtitle>
                       <SubtitleGroup>534093439</SubtitleGroup>
                     </NotificationSubtitle>
                   </Values>
                 </Notification>
-                <MyRole>Initiator</MyRole>
               </Item>
             </Reactions>
           </DiplomacyMemoryCorrectionPositive>
           <DiplomacyMemoryCorrectionNegative>
             <Reactions>
               <Item>
+                <VectorElement>
+                  <InheritanceMapV2>
+                    <Entry>
+                      <TemplateName>3rdParty_Pirate_Female</TemplateName>
+                      <Index>0</Index>
+                    </Entry>
+                  </InheritanceMapV2>
+                </VectorElement>
                 <Notification>
                   <Template>CharacterNotification</Template>
                   <Values>
                     <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-630778938</NotificationTextGroup>
-                    </BaseNotification>
+                    <BaseNotification />
                     <NotificationSubtitle>
                       <SubtitleGroup>-105227898</SubtitleGroup>
                     </NotificationSubtitle>
                   </Values>
                 </Notification>
-                <MyRole>Initiator</MyRole>
               </Item>
             </Reactions>
           </DiplomacyMemoryCorrectionNegative>
-          <QuestEscortShipSelected>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>674720140</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestEscortShipSelected>
-          <SettlePermissionAccepted>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-1827240673</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </SettlePermissionAccepted>
-          <SettlePermissionDeclined>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>221577917</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </SettlePermissionDeclined>
-          <SettlePermissionRequest>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>899995330</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </SettlePermissionRequest>
-          <ShipTradeConfirmation>
-            <Reactions>
-              <Item>
-                <SideEffect>AddReputation</SideEffect>
-                <SideEffectValue>2</SideEffectValue>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-1807749032</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <SideEffect>AddReputation</SideEffect>
-                <SideEffectValue>2</SideEffectValue>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-1807749032</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </ShipTradeConfirmation>
-          <DiplomacyAcceptFlatter>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>60079737</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </DiplomacyAcceptFlatter>
-          <SettlementRightsSeizeIsland>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>2066088125</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-              <Item>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-1783512920</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </SettlementRightsSeizeIsland>
-          <DiplomacyOffer>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>151127921</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </DiplomacyOffer>
-          <DiplomacyOfferThreat>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>284129818</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </DiplomacyOfferThreat>
-          <DiplomacyOfferAccept>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>754486854</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </DiplomacyOfferAccept>
-          <DiplomacyOfferRejected>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>645868267</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </DiplomacyOfferRejected>
-          <DiplomacyOfferThreatAccepted>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-284323475</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </DiplomacyOfferThreatAccepted>
-          <DiplomacyOfferThreatRejected>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-1939792076</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </DiplomacyOfferThreatRejected>
-          <DiplomacyDeclareWar>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-218808192</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-              <Item>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-632830325</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </DiplomacyDeclareWar>
-          <DiplomacyOfferPeaceAccepted>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>1353937510</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </DiplomacyOfferPeaceAccepted>
-          <DiplomacyOfferTraderightsAccepted>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-1995946385</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </DiplomacyOfferTraderightsAccepted>
-          <DiplomacyCancelTraderights>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-623597739</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-              <Item>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>1144458106</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </DiplomacyCancelTraderights>
-          <DiplomacyOfferAllianceAccepted>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-1957572021</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </DiplomacyOfferAllianceAccepted>
-          <DiplomacyCancelAlliance>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>1239738472</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-              <Item>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-2070662333</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </DiplomacyCancelAlliance>
-          <DiplomacyOfferGiftAccepted>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-649618500</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </DiplomacyOfferGiftAccepted>
-          <DiplomacyOfferGiftRejected>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-1552193238</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </DiplomacyOfferGiftRejected>
-          <DiplomacyAskForQuestRejected>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-225827922</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </DiplomacyAskForQuestRejected>
-          <DiplomacyRequestSupportFleetAccepted>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>834970647</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </DiplomacyRequestSupportFleetAccepted>
-          <DiplomacyRequestSupportFleetRejected>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>1170493352</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </DiplomacyRequestSupportFleetRejected>
-          <DiplomacyDeclineFlatter>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>391245361</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </DiplomacyDeclineFlatter>
-          <DiplomacyAcceptInsult>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>73657461</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </DiplomacyAcceptInsult>
-          <DiplomacyDeclineInsult>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-1987606274</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </DiplomacyDeclineInsult>
         </MessageTriggers>
       </ParticipantMessages>
       <Object>
         <DefaultParticipant>Third_party_03_Pirate_Harlow</DefaultParticipant>
-        <AddToObjectGroups>0</AddToObjectGroups>
-        <AddToEditorObjectGrid>0</AddToEditorObjectGrid>
-        <PlacableInEditor>0</PlacableInEditor>
-        <SelectableInEditor>0</SelectableInEditor>
-        <Type>GameObject</Type>
-        <Variations />
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Trader>
         <ShipTrader>1</ShipTrader>
@@ -1419,8 +1088,6 @@
             <OfferingItems>190354</OfferingItems>
             <MaxItemsToOffer>3</MaxItemsToOffer>
             <ShipProductionCooldown>300000</ShipProductionCooldown>
-            <SellBudget>2000</SellBudget>
-            <BuyBudget>2000</BuyBudget>
           </EarlyGame>
           <EarlyMidGame>
             <WarFleet>
@@ -1473,8 +1140,6 @@
             </ShipsForSale>
             <ShipsForSaleAmount>1</ShipsForSaleAmount>
             <ShipProductionCooldown>240000</ShipProductionCooldown>
-            <SellBudget>3000</SellBudget>
-            <BuyBudget>3000</BuyBudget>
           </EarlyMidGame>
           <MidGame>
             <WarFleet>
@@ -1547,8 +1212,6 @@
             </ShipsForSale>
             <ShipsForSaleAmount>1</ShipsForSaleAmount>
             <ShipProductionCooldown>180000</ShipProductionCooldown>
-            <SellBudget>3000</SellBudget>
-            <BuyBudget>3000</BuyBudget>
           </MidGame>
           <LateMidGame>
             <WarFleet>
@@ -1640,8 +1303,6 @@
             </ShipsForSale>
             <ShipsForSaleAmount>1</ShipsForSaleAmount>
             <ShipProductionCooldown>120000</ShipProductionCooldown>
-            <SellBudget>3000</SellBudget>
-            <BuyBudget>3000</BuyBudget>
           </LateMidGame>
           <LateGame>
             <WarFleet>
@@ -1756,8 +1417,6 @@
             </ShipsForSale>
             <ShipsForSaleAmount>1</ShipsForSaleAmount>
             <ShipProductionCooldown>60000</ShipProductionCooldown>
-            <SellBudget>3500</SellBudget>
-            <BuyBudget>3500</BuyBudget>
           </LateGame>
           <EndGame>
             <WarFleet>
@@ -1871,79 +1530,13 @@
               </Item>
             </ShipsForSale>
             <ShipsForSaleAmount>2</ShipsForSaleAmount>
-            <SellBudget>4000</SellBudget>
-            <BuyBudget>4000</BuyBudget>
           </EndGame>
         </Progression>
-        <TraderRerollInterval>300000</TraderRerollInterval>
-        <TraderItemRerollCosts>10000</TraderItemRerollCosts>
-        <TraderItemRerollCostIncrease>10000</TraderItemRerollCostIncrease>
-        <SellShipCooldown>900000</SellShipCooldown>
-        <BuyShipRequestNoTradeAgreementNotification>0</BuyShipRequestNoTradeAgreementNotification>
       </Trader>
       <ThirdParty>
         <AllowedRegions>Moderate</AllowedRegions>
         <IslandPlacement>InEverySession</IslandPlacement>
         <ReservationPause>60000</ReservationPause>
-        <DecoBuildings>
-          <Item>
-            <Asset>100689</Asset>
-          </Item>
-          <Item>
-            <Asset>100690</Asset>
-          </Item>
-          <Item>
-            <Asset>100720</Asset>
-          </Item>
-          <Item>
-            <Asset>100723</Asset>
-          </Item>
-          <Item>
-            <Asset>100724</Asset>
-          </Item>
-          <Item>
-            <Asset>100725</Asset>
-          </Item>
-          <Item>
-            <Asset>100726</Asset>
-          </Item>
-          <Item>
-            <Asset>100731</Asset>
-          </Item>
-          <Item>
-            <Asset>100733</Asset>
-          </Item>
-          <Item>
-            <Asset>100734</Asset>
-          </Item>
-          <Item>
-            <Asset>100735</Asset>
-          </Item>
-          <Item>
-            <Asset>100736</Asset>
-          </Item>
-          <Item>
-            <Asset>1000101</Asset>
-          </Item>
-          <Item>
-            <Asset>1000103</Asset>
-          </Item>
-          <Item>
-            <Asset>1000110</Asset>
-          </Item>
-          <Item>
-            <Asset>1000156</Asset>
-          </Item>
-          <Item>
-            <Asset>1000222</Asset>
-          </Item>
-          <Item>
-            <Asset>1000226</Asset>
-          </Item>
-          <Item>
-            <Asset>1000228</Asset>
-          </Item>
-        </DecoBuildings>
       </ThirdParty>
       <MilitaryAI>
         <StrengthLevels>
@@ -1953,9 +1546,6 @@
               <MaxEscortRatio>0</MaxEscortRatio>
               <MaxPatrolRatio>0</MaxPatrolRatio>
               <MaxDefendAllyRatio>50</MaxDefendAllyRatio>
-              <MaxStrengthRatio>140</MaxStrengthRatio>
-              <Flee>1</Flee>
-              <MaxDefendRatio>100</MaxDefendRatio>
             </Equal>
             <Inferior>
               <Flee>1</Flee>
@@ -1963,8 +1553,6 @@
               <MaxEscortRatio>0</MaxEscortRatio>
               <MaxPatrolRatio>0</MaxPatrolRatio>
               <MaxDefendAllyRatio>50</MaxDefendAllyRatio>
-              <MaxStrengthRatio>70</MaxStrengthRatio>
-              <MaxDefendRatio>100</MaxDefendRatio>
             </Inferior>
             <Superior>
               <Flee>1</Flee>
@@ -1972,11 +1560,8 @@
               <MaxDefendRatio>100</MaxDefendRatio>
               <MaxPatrolRatio>0</MaxPatrolRatio>
               <MaxDefendAllyRatio>50</MaxDefendAllyRatio>
-              <MaxStrengthRatio>2000</MaxStrengthRatio>
-              <MaxAttackRatio>100</MaxAttackRatio>
             </Superior>
           </Levels>
-          <BudgetThreshold>50</BudgetThreshold>
         </StrengthLevels>
         <Attack>
           <MilitaryStrengthRatio>90</MilitaryStrengthRatio>
@@ -2027,7 +1612,6 @@
           </AttackTargetPrio>
           <IsBlinded>IgnoreBuildings</IsBlinded>
           <OverkillAttackThreshold>100</OverkillAttackThreshold>
-          <RallyBeforeAttack>1</RallyBeforeAttack>
         </Attack>
         <Defend>
           <MinStrengthRatio>100</MinStrengthRatio>
@@ -2051,7 +1635,6 @@
           <CommandsToSupport>Defend</CommandsToSupport>
           <CommandsToAbandon>Attack</CommandsToAbandon>
           <ObservationRange>110</ObservationRange>
-          <CheckSquadLogicInterval>3000</CheckSquadLogicInterval>
         </SquadLogic>
         <SquadPriorities>
           <Commands>
@@ -2070,93 +1653,8 @@
             <DefendAlly>
               <Priority>10</Priority>
             </DefendAlly>
-            <RepairIdle>
-              <Priority>12</Priority>
-            </RepairIdle>
-            <RepairInCombat>
-              <Priority>25</Priority>
-            </RepairInCombat>
           </Commands>
-          <CanQuitAndChangeSession>Patrol;Escort</CanQuitAndChangeSession>
         </SquadPriorities>
-        <ItemUsage />
-        <Patrol>
-          <MinSize>2</MinSize>
-          <MaxSize>3</MaxSize>
-          <CheckPatrolInterval>120000</CheckPatrolInterval>
-          <RandomRadius>3</RandomRadius>
-          <MinDistanceToLand>20</MinDistanceToLand>
-        </Patrol>
-        <Escort>
-          <Priorities>
-            <Military>
-              <Value>-1</Value>
-            </Military>
-            <Idle>
-              <Value>1</Value>
-            </Idle>
-            <ActiveTrade>
-              <Value>20</Value>
-            </ActiveTrade>
-            <SettleMission>
-              <Value>30</Value>
-            </SettleMission>
-            <TradeRoute>
-              <Value>10</Value>
-            </TradeRoute>
-          </Priorities>
-        </Escort>
-        <Repair>
-          <CheckRepairInterval>30000</CheckRepairInterval>
-        </Repair>
-        <WarFleet>
-          <ShipLimits>
-            <Peace>
-              <Progress>
-                <EarlyGame>
-                  <MaxShipCount>3</MaxShipCount>
-                </EarlyGame>
-                <EarlyMidGame>
-                  <MaxShipCount>5</MaxShipCount>
-                </EarlyMidGame>
-                <EndGame>
-                  <MaxShipCount>11</MaxShipCount>
-                </EndGame>
-                <LateGame>
-                  <MaxShipCount>9</MaxShipCount>
-                </LateGame>
-                <LateMidGame>
-                  <MaxShipCount>7</MaxShipCount>
-                </LateMidGame>
-                <MidGame>
-                  <MaxShipCount>6</MaxShipCount>
-                </MidGame>
-              </Progress>
-            </Peace>
-            <War>
-              <Progress>
-                <EarlyGame>
-                  <MaxShipCount>40</MaxShipCount>
-                </EarlyGame>
-                <EarlyMidGame>
-                  <MaxShipCount>50</MaxShipCount>
-                </EarlyMidGame>
-                <EndGame>
-                  <MaxShipCount>100</MaxShipCount>
-                </EndGame>
-                <LateGame>
-                  <MaxShipCount>80</MaxShipCount>
-                </LateGame>
-                <LateMidGame>
-                  <MaxShipCount>70</MaxShipCount>
-                </LateMidGame>
-                <MidGame>
-                  <MaxShipCount>60</MaxShipCount>
-                </MidGame>
-              </Progress>
-            </War>
-          </ShipLimits>
-        </WarFleet>
       </MilitaryAI>
       <Pirate>
         <AreaOfActivity>
@@ -2176,9 +1674,6 @@
               <EarlyMidGame>
                 <GrowAreaPerMinute>1</GrowAreaPerMinute>
               </EarlyMidGame>
-              <MidGame>
-                <GrowAreaPerMinute>2</GrowAreaPerMinute>
-              </MidGame>
             </GrowPerProgress>
           </Normal>
           <Hard>
@@ -2200,9 +1695,6 @@
               <EarlyGame>
                 <GrowAreaPerMinute>0</GrowAreaPerMinute>
               </EarlyGame>
-              <EndGame>
-                <GrowAreaPerMinute>50</GrowAreaPerMinute>
-              </EndGame>
             </GrowPerProgress>
           </Hard>
         </AreaOfActivity>
@@ -2283,34 +1775,74 @@
         <PaMSyTrade>
           <ActiveTrade>
             <TradeAmountFactor>1000</TradeAmountFactor>
-            <ReputationGain>2</ReputationGain>
-            <TradeAmount>1000</TradeAmount>
-            <TradeMessage>ActiveTradeConfirmation</TradeMessage>
           </ActiveTrade>
           <PassiveTrade>
             <TradeAmountFactor>3040</TradeAmountFactor>
-            <ReputationGain>2</ReputationGain>
-            <TradeAmount>10000</TradeAmount>
-            <TradeMessage>PassiveTradeConfirmation</TradeMessage>
           </PassiveTrade>
         </PaMSyTrade>
         <PaMSyMilitaryStrength>
           <Item>
+            <VectorElement>
+              <InheritedIndex>0</InheritedIndex>
+              <InheritanceMapV2>
+                <Entry>
+                  <TemplateName>3rdParty_Pirate</TemplateName>
+                  <Index>0</Index>
+                </Entry>
+                <Entry>
+                  <TemplateName>Profile_3rdParty_Pirate</TemplateName>
+                  <Index>0</Index>
+                </Entry>
+              </InheritanceMapV2>
+            </VectorElement>
             <Range>30</Range>
           </Item>
           <Item>
-            <Range>50</Range>
+            <VectorElement>
+              <InheritedIndex>1</InheritedIndex>
+              <InheritanceMapV2>
+                <Entry>
+                  <TemplateName>3rdParty_Pirate</TemplateName>
+                  <Index>1</Index>
+                </Entry>
+                <Entry>
+                  <TemplateName>Profile_3rdParty_Pirate</TemplateName>
+                  <Index>1</Index>
+                </Entry>
+              </InheritanceMapV2>
+            </VectorElement>
           </Item>
           <Item>
-            <Range>100</Range>
+            <VectorElement>
+              <InheritedIndex>2</InheritedIndex>
+              <InheritanceMapV2>
+                <Entry>
+                  <TemplateName>3rdParty_Pirate</TemplateName>
+                  <Index>2</Index>
+                </Entry>
+                <Entry>
+                  <TemplateName>Profile_3rdParty_Pirate</TemplateName>
+                  <Index>2</Index>
+                </Entry>
+              </InheritanceMapV2>
+            </VectorElement>
           </Item>
           <Item>
-            <Range>200</Range>
+            <VectorElement>
+              <InheritedIndex>3</InheritedIndex>
+              <InheritanceMapV2>
+                <Entry>
+                  <TemplateName>3rdParty_Pirate</TemplateName>
+                  <Index>3</Index>
+                </Entry>
+                <Entry>
+                  <TemplateName>Profile_3rdParty_Pirate</TemplateName>
+                  <Index>3</Index>
+                </Entry>
+              </InheritanceMapV2>
+            </VectorElement>
           </Item>
         </PaMSyMilitaryStrength>
-        <NewspaperPropaganda />
-        <PaMSyAttractiveness />
-        <PaMSyIslandPollution />
       </Interaction>
       <ProfileCounter />
     </Values>
@@ -2322,8 +1854,6 @@
         <GUID>76</GUID>
         <Name>Third_party_04 (La Fortune)</Name>
         <IconFilename>data/ui/2kimages/main/profiles/3rd_party_04.png</IconFilename>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -2334,7 +1864,6 @@
           </English>
         </LocaText>
         <LineID>7068</LineID>
-        <Localize>1</Localize>
       </Text>
       <Profile>
         <ProfilePicture>data/ui/2kimages/main/profiles/3rd_party_04.png</ProfilePicture>
@@ -2359,13 +1888,6 @@
         <BackgroundText>14375</BackgroundText>
         <MoodImage>data/ui/2kimages/main/assets/thirdparty_islandbar/bg_islandbar_pirates.png</MoodImage>
         <ShipDropRewardPool>193206</ShipDropRewardPool>
-        <HostileTakeoverEnabled>0</HostileTakeoverEnabled>
-        <ProfileType>ThirdParty</ProfileType>
-        <TakeoverBehaviour>Destroy</TakeoverBehaviour>
-        <CreateModeMeta>Dynamically_GameSetupOrMapload</CreateModeMeta>
-        <CreateModeSession>Dynamically_MaploadOrSessionEnter</CreateModeSession>
-        <AttackableThroughPirateFlagItem>1</AttackableThroughPirateFlagItem>
-        <ChooseNPC />
       </Profile>
       <Diplomacy>
         <DiceRollThreatMin>0</DiceRollThreatMin>
@@ -2374,95 +1896,31 @@
           <RequestAlliance>
             <AgreementThreshold>100</AgreementThreshold>
             <PartialAgreementThreshold>70</PartialAgreementThreshold>
-            <ActionWeight>100</ActionWeight>
           </RequestAlliance>
           <RequestPeace>
             <PartialAgreementThreshold>30</PartialAgreementThreshold>
-            <ActionWeight>190</ActionWeight>
-            <AgreementThreshold>65</AgreementThreshold>
           </RequestPeace>
           <RequestTraderights>
             <AgreementThreshold>85</AgreementThreshold>
             <PartialAgreementThreshold>50</PartialAgreementThreshold>
-            <ActionWeight>90</ActionWeight>
           </RequestTraderights>
           <ThreatWar>
             <AgreementThreshold>25</AgreementThreshold>
-            <ActionWeight>200</ActionWeight>
           </ThreatWar>
           <RequestCeaseFire>
             <ActionWeight>120</ActionWeight>
             <PartialAgreementThreshold>-100</PartialAgreementThreshold>
-            <AgreementThreshold>45</AgreementThreshold>
           </RequestCeaseFire>
           <RequestNonAttack>
             <AgreementThreshold>120</AgreementThreshold>
             <PartialAgreementThreshold>80</PartialAgreementThreshold>
-            <ActionWeight>200</ActionWeight>
           </RequestNonAttack>
           <ThreatCancelTrade>
             <AgreementThreshold>10</AgreementThreshold>
-            <ActionWeight>200</ActionWeight>
           </ThreatCancelTrade>
           <ThreatCancelAlliance>
             <AgreementThreshold>16</AgreementThreshold>
-            <ActionWeight>200</ActionWeight>
           </ThreatCancelAlliance>
-          <CancelAlliance>
-            <AgreementThreshold>-999</AgreementThreshold>
-            <PartialAgreementThreshold>-999</PartialAgreementThreshold>
-            <ActionWeight>100</ActionWeight>
-          </CancelAlliance>
-          <CancelTraderights>
-            <AgreementThreshold>-999</AgreementThreshold>
-            <PartialAgreementThreshold>-999</PartialAgreementThreshold>
-            <ActionWeight>80</ActionWeight>
-          </CancelTraderights>
-          <DeclareWar>
-            <ActionWeight>200</ActionWeight>
-            <AgreementThreshold>-999</AgreementThreshold>
-            <PartialAgreementThreshold>-999</PartialAgreementThreshold>
-          </DeclareWar>
-          <DemandQuest>
-            <ActionWeight>50</ActionWeight>
-            <AgreementThreshold>-999</AgreementThreshold>
-            <PartialAgreementThreshold>-999</PartialAgreementThreshold>
-          </DemandQuest>
-          <Flatter>
-            <ActionWeight>20</ActionWeight>
-            <AgreementThreshold>-999</AgreementThreshold>
-            <PartialAgreementThreshold>-999</PartialAgreementThreshold>
-          </Flatter>
-          <GiftMoneyOneTimeGenerous>
-            <ActionWeight>5</ActionWeight>
-            <AgreementThreshold>-999</AgreementThreshold>
-            <PartialAgreementThreshold>-999</PartialAgreementThreshold>
-          </GiftMoneyOneTimeGenerous>
-          <GiftMoneyOneTimeOrdinary>
-            <ActionWeight>5</ActionWeight>
-            <AgreementThreshold>-999</AgreementThreshold>
-            <PartialAgreementThreshold>-999</PartialAgreementThreshold>
-          </GiftMoneyOneTimeOrdinary>
-          <GiftMoneyOneTimeSmall>
-            <ActionWeight>5</ActionWeight>
-            <AgreementThreshold>-999</AgreementThreshold>
-            <PartialAgreementThreshold>-999</PartialAgreementThreshold>
-          </GiftMoneyOneTimeSmall>
-          <Insult>
-            <ActionWeight>5</ActionWeight>
-            <AgreementThreshold>-999</AgreementThreshold>
-            <PartialAgreementThreshold>-999</PartialAgreementThreshold>
-          </Insult>
-          <PaymentDecreaseReputation>
-            <ActionWeight>1</ActionWeight>
-            <AgreementThreshold>50</AgreementThreshold>
-            <PartialAgreementThreshold>50</PartialAgreementThreshold>
-          </PaymentDecreaseReputation>
-          <PaymentIncreaseReputation>
-            <ActionWeight>1</ActionWeight>
-            <AgreementThreshold>50</AgreementThreshold>
-            <PartialAgreementThreshold>50</PartialAgreementThreshold>
-          </PaymentIncreaseReputation>
         </DiplomacyActionBalancing>
         <ReputationChangeCalculation>
           <PaymentGivingMoney>
@@ -2488,32 +1946,6 @@
             <NegativeReputationChanged>2</NegativeReputationChanged>
             <PositiveReputationChanged>2</PositiveReputationChanged>
           </MilitaryPowerTempReputation>
-          <Treaties>
-            <ReputationValues>
-              <Alliance>
-                <AddingTreaty>15</AddingTreaty>
-                <RemovingTreaty>-20</RemovingTreaty>
-              </Alliance>
-              <CeaseFire>
-                <AddingTreaty>5</AddingTreaty>
-                <RemovingTreaty>20</RemovingTreaty>
-              </CeaseFire>
-              <Peace>
-                <AddingTreaty>20</AddingTreaty>
-                <RemovingTreaty>-70</RemovingTreaty>
-              </Peace>
-              <TradeRights>
-                <AddingTreaty>10</AddingTreaty>
-                <RemovingTreaty>-15</RemovingTreaty>
-              </TradeRights>
-            </ReputationValues>
-          </Treaties>
-          <GlobalLimitTempReputation>
-            <NegBorderMin>-70</NegBorderMin>
-            <NegBorderMax>-100</NegBorderMax>
-            <PosBorderMin>25</PosBorderMin>
-            <PosBorderMax>40</PosBorderMax>
-          </GlobalLimitTempReputation>
         </ReputationChangeCalculation>
         <GiftBalancing>
           <receivePayment>
@@ -2538,19 +1970,15 @@
           </receiveGenerous>
           <giveSmall>
             <IncreasePerLevel>7</IncreasePerLevel>
-            <BaseValue>1000</BaseValue>
           </giveSmall>
           <giveOrdinary>
             <IncreasePerLevel>7</IncreasePerLevel>
-            <BaseValue>5000</BaseValue>
           </giveOrdinary>
           <giveGenerous>
             <IncreasePerLevel>7</IncreasePerLevel>
-            <BaseValue>5000</BaseValue>
           </giveGenerous>
           <givePayment>
             <IncreasePerLevel>7</IncreasePerLevel>
-            <BaseValue>400</BaseValue>
           </givePayment>
         </GiftBalancing>
         <RepeatableActionBalancing>
@@ -2558,6 +1986,23 @@
             <Flatter>
               <Subdivisions>
                 <Item>
+                  <VectorElement>
+                    <InheritedIndex>0</InheritedIndex>
+                    <InheritanceMapV2>
+                      <Entry>
+                        <TemplateName>3rdParty_Pirate_Male</TemplateName>
+                        <Index>0</Index>
+                      </Entry>
+                      <Entry>
+                        <TemplateName>3rdParty_Pirate</TemplateName>
+                        <Index>0</Index>
+                      </Entry>
+                      <Entry>
+                        <TemplateName>Profile_3rdParty_Pirate</TemplateName>
+                        <Index>0</Index>
+                      </Entry>
+                    </InheritanceMapV2>
+                  </VectorElement>
                   <SuccessChance>75</SuccessChance>
                   <ReputationGain>2</ReputationGain>
                   <ReputationLoss>-1</ReputationLoss>
@@ -2574,11 +2019,27 @@
                 </Item>
                 <Item />
               </Subdivisions>
-              <ForgettingTime>1800000</ForgettingTime>
             </Flatter>
             <Insult>
               <Subdivisions>
                 <Item>
+                  <VectorElement>
+                    <InheritedIndex>0</InheritedIndex>
+                    <InheritanceMapV2>
+                      <Entry>
+                        <TemplateName>3rdParty_Pirate_Male</TemplateName>
+                        <Index>0</Index>
+                      </Entry>
+                      <Entry>
+                        <TemplateName>3rdParty_Pirate</TemplateName>
+                        <Index>0</Index>
+                      </Entry>
+                      <Entry>
+                        <TemplateName>Profile_3rdParty_Pirate</TemplateName>
+                        <Index>0</Index>
+                      </Entry>
+                    </InheritanceMapV2>
+                  </VectorElement>
                   <SuccessChance>100</SuccessChance>
                 </Item>
                 <Item>
@@ -2587,11 +2048,27 @@
                 </Item>
                 <Item />
               </Subdivisions>
-              <ForgettingTime>1800000</ForgettingTime>
             </Insult>
             <Gift>
               <Subdivisions>
                 <Item>
+                  <VectorElement>
+                    <InheritedIndex>0</InheritedIndex>
+                    <InheritanceMapV2>
+                      <Entry>
+                        <TemplateName>3rdParty_Pirate_Male</TemplateName>
+                        <Index>0</Index>
+                      </Entry>
+                      <Entry>
+                        <TemplateName>3rdParty_Pirate</TemplateName>
+                        <Index>0</Index>
+                      </Entry>
+                      <Entry>
+                        <TemplateName>Profile_3rdParty_Pirate</TemplateName>
+                        <Index>0</Index>
+                      </Entry>
+                    </InheritanceMapV2>
+                  </VectorElement>
                   <SuccessChance>90</SuccessChance>
                   <ReputationGain>3</ReputationGain>
                 </Item>
@@ -2601,7 +2078,6 @@
                 </Item>
                 <Item />
               </Subdivisions>
-              <ForgettingTime>1800000</ForgettingTime>
             </Gift>
           </Actions>
         </RepeatableActionBalancing>
@@ -2609,33 +2085,6 @@
           <LongTimeCheck>2400000</LongTimeCheck>
           <ReputationUpdateTimer>2460000</ReputationUpdateTimer>
           <NegReputationCorrectionMax>2</NegReputationCorrectionMax>
-          <ShortTimeChange>50</ShortTimeChange>
-          <UpdateTable>
-            <Item>
-              <Difference>10</Difference>
-              <Change>1</Change>
-            </Item>
-            <Item>
-              <Difference>20</Difference>
-              <Change>2</Change>
-            </Item>
-            <Item>
-              <Difference>30</Difference>
-              <Change>3</Change>
-            </Item>
-            <Item>
-              <Difference>40</Difference>
-              <Change>4</Change>
-            </Item>
-            <Item>
-              <Difference>50</Difference>
-              <Change>5</Change>
-            </Item>
-            <Item>
-              <Difference>60</Difference>
-              <Change>30</Change>
-            </Item>
-          </UpdateTable>
         </Memory>
         <ActionDebuffs>
           <DebuffSettings>
@@ -2643,26 +2092,18 @@
               <DiceDebuff>200</DiceDebuff>
               <DebuffTime>10800000</DebuffTime>
               <DiminishingDebuff>1</DiminishingDebuff>
-              <ApplyWhenSuccesful>1</ApplyWhenSuccesful>
             </ThreatWar>
             <Peace>
               <DiceDebuff>100</DiceDebuff>
               <DebuffTime>3600000</DebuffTime>
-              <DiminishingDebuff>1</DiminishingDebuff>
             </Peace>
             <Trade>
               <DiceDebuff>200</DiceDebuff>
               <DebuffTime>10800000</DebuffTime>
-              <DiminishingDebuff>1</DiminishingDebuff>
             </Trade>
             <CeaseFire>
               <DiceDebuff>0</DiceDebuff>
-              <DebuffTime>3600000</DebuffTime>
             </CeaseFire>
-            <NonAttack>
-              <DiceDebuff>40</DiceDebuff>
-              <DebuffTime>3600000</DebuffTime>
-            </NonAttack>
           </DebuffSettings>
         </ActionDebuffs>
         <InitialRelation>
@@ -2670,242 +2111,577 @@
           <DefaultMemory>10</DefaultMemory>
           <Exceptions>
             <Item>
+              <VectorElement>
+                <InheritedIndex>0</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>3rdParty_Pirate</TemplateName>
+                    <Index>0</Index>
+                  </Entry>
+                  <Entry>
+                    <TemplateName>Profile_3rdParty_Pirate</TemplateName>
+                    <Index>0</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
               <Reputation>50</Reputation>
               <Memory>20</Memory>
               <Treaties>Peace</Treaties>
-              <Participant>Second_ai_01_Jorgensen</Participant>
             </Item>
             <Item>
+              <VectorElement>
+                <InheritedIndex>1</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>3rdParty_Pirate</TemplateName>
+                    <Index>1</Index>
+                  </Entry>
+                  <Entry>
+                    <TemplateName>Profile_3rdParty_Pirate</TemplateName>
+                    <Index>1</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
               <Reputation>20</Reputation>
               <Memory>20</Memory>
-              <Participant>Second_ai_02_Qing</Participant>
-              <Treaties>War</Treaties>
             </Item>
             <Item>
-              <Participant>Second_ai_03_Wibblesock</Participant>
-              <Treaties>War</Treaties>
+              <VectorElement>
+                <InheritedIndex>2</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>3rdParty_Pirate</TemplateName>
+                    <Index>2</Index>
+                  </Entry>
+                  <Entry>
+                    <TemplateName>Profile_3rdParty_Pirate</TemplateName>
+                    <Index>2</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
             </Item>
             <Item>
+              <VectorElement>
+                <InheritedIndex>3</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>3rdParty_Pirate</TemplateName>
+                    <Index>3</Index>
+                  </Entry>
+                  <Entry>
+                    <TemplateName>Profile_3rdParty_Pirate</TemplateName>
+                    <Index>3</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
               <Reputation>20</Reputation>
               <Memory>40</Memory>
-              <Participant>Second_ai_04_Smith</Participant>
-              <Treaties>War</Treaties>
             </Item>
             <Item>
+              <VectorElement>
+                <InheritedIndex>4</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>3rdParty_Pirate</TemplateName>
+                    <Index>4</Index>
+                  </Entry>
+                  <Entry>
+                    <TemplateName>Profile_3rdParty_Pirate</TemplateName>
+                    <Index>4</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
               <Reputation>30</Reputation>
               <Memory>20</Memory>
               <Treaties>Peace</Treaties>
-              <Participant>Second_ai_05_OMara</Participant>
             </Item>
             <Item>
+              <VectorElement>
+                <InheritedIndex>5</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>3rdParty_Pirate</TemplateName>
+                    <Index>5</Index>
+                  </Entry>
+                  <Entry>
+                    <TemplateName>Profile_3rdParty_Pirate</TemplateName>
+                    <Index>5</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
               <Reputation>20</Reputation>
-              <Participant>Second_ai_06_Gasparov</Participant>
-              <Treaties>War</Treaties>
             </Item>
             <Item>
+              <VectorElement>
+                <InheritedIndex>6</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>3rdParty_Pirate</TemplateName>
+                    <Index>6</Index>
+                  </Entry>
+                  <Entry>
+                    <TemplateName>Profile_3rdParty_Pirate</TemplateName>
+                    <Index>6</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
               <Reputation>15</Reputation>
-              <Participant>Second_ai_07_von_Malching</Participant>
-              <Treaties>War</Treaties>
             </Item>
             <Item>
+              <VectorElement>
+                <InheritedIndex>7</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>3rdParty_Pirate</TemplateName>
+                    <Index>7</Index>
+                  </Entry>
+                  <Entry>
+                    <TemplateName>Profile_3rdParty_Pirate</TemplateName>
+                    <Index>7</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
               <Reputation>50</Reputation>
               <Memory>20</Memory>
               <Treaties>Peace</Treaties>
-              <Participant>Second_ai_08_Gravez</Participant>
             </Item>
             <Item>
+              <VectorElement>
+                <InheritedIndex>8</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>3rdParty_Pirate</TemplateName>
+                    <Index>8</Index>
+                  </Entry>
+                  <Entry>
+                    <TemplateName>Profile_3rdParty_Pirate</TemplateName>
+                    <Index>8</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
               <Reputation>30</Reputation>
-              <Participant>Second_ai_09_Silva</Participant>
-              <Treaties>War</Treaties>
             </Item>
             <Item>
+              <VectorElement>
+                <InheritedIndex>9</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>3rdParty_Pirate</TemplateName>
+                    <Index>9</Index>
+                  </Entry>
+                  <Entry>
+                    <TemplateName>Profile_3rdParty_Pirate</TemplateName>
+                    <Index>9</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
               <Reputation>50</Reputation>
               <Memory>20</Memory>
-              <Participant>Second_ai_10_Hunt</Participant>
-              <Treaties>War</Treaties>
             </Item>
             <Item>
+              <VectorElement>
+                <InheritedIndex>10</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>3rdParty_Pirate</TemplateName>
+                    <Index>10</Index>
+                  </Entry>
+                  <Entry>
+                    <TemplateName>Profile_3rdParty_Pirate</TemplateName>
+                    <Index>10</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
               <Reputation>70</Reputation>
               <Memory>70</Memory>
               <Treaties>CeaseFire</Treaties>
-              <Participant>Third_party_03_Pirate_Harlow</Participant>
             </Item>
             <Item>
-              <Participant>Neutral</Participant>
-              <Reputation>100</Reputation>
-              <Memory>100</Memory>
-              <Treaties>Peace</Treaties>
+              <VectorElement>
+                <InheritedIndex>12</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>3rdParty_Pirate</TemplateName>
+                    <Index>12</Index>
+                  </Entry>
+                  <Entry>
+                    <TemplateName>Profile_3rdParty_Pirate</TemplateName>
+                    <Index>12</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
             </Item>
             <Item>
-              <Participant>General_Enemy</Participant>
-              <Reputation>100</Reputation>
-              <Memory>100</Memory>
-              <Treaties>Peace</Treaties>
+              <VectorElement>
+                <InheritedIndex>13</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>3rdParty_Pirate</TemplateName>
+                    <Index>13</Index>
+                  </Entry>
+                  <Entry>
+                    <TemplateName>Profile_3rdParty_Pirate</TemplateName>
+                    <Index>13</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
             </Item>
             <Item>
-              <Participant>Campaign_character_02_pyrophorian_red_blinded</Participant>
-              <Reputation>100</Reputation>
-              <Memory>100</Memory>
-              <Treaties>Peace</Treaties>
+              <VectorElement>
+                <InheritedIndex>14</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>3rdParty_Pirate</TemplateName>
+                    <Index>14</Index>
+                  </Entry>
+                  <Entry>
+                    <TemplateName>Profile_3rdParty_Pirate</TemplateName>
+                    <Index>14</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
             </Item>
             <Item>
-              <Participant>Campaign_character_02_pyrophorian_red</Participant>
-              <Reputation>100</Reputation>
-              <Memory>100</Memory>
-              <Treaties>Peace</Treaties>
+              <VectorElement>
+                <InheritedIndex>15</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>3rdParty_Pirate</TemplateName>
+                    <Index>15</Index>
+                  </Entry>
+                  <Entry>
+                    <TemplateName>Profile_3rdParty_Pirate</TemplateName>
+                    <Index>15</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
             </Item>
           </Exceptions>
-          <DefaultTreatiesUndiscovered>Peace</DefaultTreatiesUndiscovered>
-          <DefaultTreaties>Peace</DefaultTreaties>
         </InitialRelation>
         <DiplomacyAI>
           <ReputationTrigger>
             <Item>
+              <VectorElement>
+                <InheritedIndex>0</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>3rdParty_Pirate</TemplateName>
+                    <Index>0</Index>
+                  </Entry>
+                  <Entry>
+                    <TemplateName>Profile_3rdParty_Pirate</TemplateName>
+                    <Index>0</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
               <MinTriggerReputation>90</MinTriggerReputation>
               <MaxTriggerReputation>100</MaxTriggerReputation>
               <TriggerChance>0</TriggerChance>
-              <TriggerAction>RequestAlliance</TriggerAction>
-              <CheckMilitaryStrength>0</CheckMilitaryStrength>
-              <CheckEconomyStrength>0</CheckEconomyStrength>
             </Item>
             <Item>
+              <VectorElement>
+                <InheritedIndex>1</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>3rdParty_Pirate</TemplateName>
+                    <Index>1</Index>
+                  </Entry>
+                  <Entry>
+                    <TemplateName>Profile_3rdParty_Pirate</TemplateName>
+                    <Index>1</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
               <MinTriggerReputation>80</MinTriggerReputation>
               <MaxTriggerReputation>85</MaxTriggerReputation>
-              <TriggerAction>ThreatCancelAlliance</TriggerAction>
-              <TriggerType>ReputationDecreased</TriggerType>
-              <CheckMilitaryStrength>0</CheckMilitaryStrength>
-              <CheckEconomyStrength>0</CheckEconomyStrength>
             </Item>
             <Item>
+              <VectorElement>
+                <InheritedIndex>2</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>3rdParty_Pirate</TemplateName>
+                    <Index>2</Index>
+                  </Entry>
+                  <Entry>
+                    <TemplateName>Profile_3rdParty_Pirate</TemplateName>
+                    <Index>2</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
               <MinTriggerReputation>75</MinTriggerReputation>
               <MaxTriggerReputation>80</MaxTriggerReputation>
-              <TriggerAction>CancelAlliance</TriggerAction>
-              <TriggerType>ReputationDecreased</TriggerType>
-              <CheckMilitaryStrength>0</CheckMilitaryStrength>
-              <CheckEconomyStrength>0</CheckEconomyStrength>
             </Item>
             <Item>
+              <VectorElement>
+                <InheritedIndex>3</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>3rdParty_Pirate</TemplateName>
+                    <Index>3</Index>
+                  </Entry>
+                  <Entry>
+                    <TemplateName>Profile_3rdParty_Pirate</TemplateName>
+                    <Index>3</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
               <MinTriggerReputation>75</MinTriggerReputation>
               <MaxTriggerReputation>85</MaxTriggerReputation>
               <TriggerPriority>10</TriggerPriority>
-              <TriggerAction>RequestTraderights</TriggerAction>
-              <CheckMilitaryStrength>0</CheckMilitaryStrength>
-              <CheckEconomyStrength>0</CheckEconomyStrength>
             </Item>
             <Item>
+              <VectorElement>
+                <InheritedIndex>4</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>3rdParty_Pirate</TemplateName>
+                    <Index>4</Index>
+                  </Entry>
+                  <Entry>
+                    <TemplateName>Profile_3rdParty_Pirate</TemplateName>
+                    <Index>4</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
               <MinTriggerReputation>60</MinTriggerReputation>
               <MaxTriggerReputation>74</MaxTriggerReputation>
-              <TriggerAction>ThreatCancelTrade</TriggerAction>
-              <TriggerType>ReputationDecreased</TriggerType>
-              <CheckMilitaryStrength>0</CheckMilitaryStrength>
-              <CheckEconomyStrength>0</CheckEconomyStrength>
             </Item>
             <Item>
+              <VectorElement>
+                <InheritedIndex>5</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>3rdParty_Pirate</TemplateName>
+                    <Index>5</Index>
+                  </Entry>
+                  <Entry>
+                    <TemplateName>Profile_3rdParty_Pirate</TemplateName>
+                    <Index>5</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
               <MinTriggerReputation>55</MinTriggerReputation>
               <MaxTriggerReputation>65</MaxTriggerReputation>
               <TriggerPriority>10</TriggerPriority>
-              <TriggerAction>CancelTraderights</TriggerAction>
-              <TriggerType>ReputationDecreased</TriggerType>
-              <CheckMilitaryStrength>0</CheckMilitaryStrength>
-              <CheckEconomyStrength>0</CheckEconomyStrength>
             </Item>
             <Item>
+              <VectorElement>
+                <InheritedIndex>6</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>3rdParty_Pirate</TemplateName>
+                    <Index>6</Index>
+                  </Entry>
+                  <Entry>
+                    <TemplateName>Profile_3rdParty_Pirate</TemplateName>
+                    <Index>6</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
               <MinTriggerReputation>60</MinTriggerReputation>
               <MaxTriggerReputation>70</MaxTriggerReputation>
               <CheckMilitaryStrength>-0.8</CheckMilitaryStrength>
               <TriggerPriority>10</TriggerPriority>
-              <TriggerAction>RequestPeace</TriggerAction>
-              <CheckEconomyStrength>0</CheckEconomyStrength>
             </Item>
             <Item>
+              <VectorElement>
+                <InheritedIndex>7</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>3rdParty_Pirate</TemplateName>
+                    <Index>7</Index>
+                  </Entry>
+                  <Entry>
+                    <TemplateName>Profile_3rdParty_Pirate</TemplateName>
+                    <Index>7</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
               <MinTriggerReputation>10</MinTriggerReputation>
               <MaxTriggerReputation>20</MaxTriggerReputation>
               <TriggerPriority>10</TriggerPriority>
-              <TriggerType>ReputationDecreased</TriggerType>
-              <CheckMilitaryStrength>0</CheckMilitaryStrength>
-              <CheckEconomyStrength>0</CheckEconomyStrength>
             </Item>
             <Item>
+              <VectorElement>
+                <InheritedIndex>8</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>3rdParty_Pirate</TemplateName>
+                    <Index>8</Index>
+                  </Entry>
+                  <Entry>
+                    <TemplateName>Profile_3rdParty_Pirate</TemplateName>
+                    <Index>8</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
               <MinTriggerReputation>50</MinTriggerReputation>
               <MaxTriggerReputation>60</MaxTriggerReputation>
-              <TriggerAction>ThreatWar</TriggerAction>
-              <TriggerType>ReputationDecreased</TriggerType>
-              <CheckMilitaryStrength>0</CheckMilitaryStrength>
-              <CheckEconomyStrength>0</CheckEconomyStrength>
             </Item>
             <Item>
+              <VectorElement>
+                <InheritedIndex>9</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>3rdParty_Pirate</TemplateName>
+                    <Index>9</Index>
+                  </Entry>
+                  <Entry>
+                    <TemplateName>Profile_3rdParty_Pirate</TemplateName>
+                    <Index>9</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
               <MinTriggerReputation>999</MinTriggerReputation>
               <MaxTriggerReputation>999</MaxTriggerReputation>
               <TriggerChance>0</TriggerChance>
-              <TriggerAction>RequestCeaseFire</TriggerAction>
-              <CheckMilitaryStrength>0</CheckMilitaryStrength>
-              <CheckEconomyStrength>0</CheckEconomyStrength>
             </Item>
             <Item>
+              <VectorElement>
+                <InheritedIndex>10</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>3rdParty_Pirate</TemplateName>
+                    <Index>10</Index>
+                  </Entry>
+                  <Entry>
+                    <TemplateName>Profile_3rdParty_Pirate</TemplateName>
+                    <Index>10</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
               <MinTriggerReputation>999</MinTriggerReputation>
               <MaxTriggerReputation>999</MaxTriggerReputation>
               <TriggerChance>0</TriggerChance>
-              <TriggerAction>RequestNonAttack</TriggerAction>
-              <CheckMilitaryStrength>0</CheckMilitaryStrength>
-              <CheckEconomyStrength>0</CheckEconomyStrength>
             </Item>
           </ReputationTrigger>
           <MaxMoneyRequest>40</MaxMoneyRequest>
           <SpecialTrigger>
             <Item>
+              <VectorElement>
+                <InheritedIndex>0</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>3rdParty_Pirate</TemplateName>
+                    <Index>0</Index>
+                  </Entry>
+                  <Entry>
+                    <TemplateName>Profile_3rdParty_Pirate</TemplateName>
+                    <Index>0</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
               <MinTriggerReputation>70</MinTriggerReputation>
               <TriggerChance>50</TriggerChance>
-              <TriggerAction>GiftMoneyOneTimeSmall</TriggerAction>
-              <TriggerType>GenericTimer</TriggerType>
-              <AddMoney>1</AddMoney>
             </Item>
             <Item>
+              <VectorElement>
+                <InheritedIndex>1</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>3rdParty_Pirate</TemplateName>
+                    <Index>1</Index>
+                  </Entry>
+                  <Entry>
+                    <TemplateName>Profile_3rdParty_Pirate</TemplateName>
+                    <Index>1</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
               <MinTriggerReputation>80</MinTriggerReputation>
               <TriggerChance>30</TriggerChance>
-              <TriggerAction>GiftMoneyOneTimeOrdinary</TriggerAction>
-              <TriggerType>GenericTimer</TriggerType>
-              <TriggerPriority>1</TriggerPriority>
-              <AddMoney>1</AddMoney>
             </Item>
             <Item>
+              <VectorElement>
+                <InheritedIndex>2</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>3rdParty_Pirate</TemplateName>
+                    <Index>2</Index>
+                  </Entry>
+                  <Entry>
+                    <TemplateName>Profile_3rdParty_Pirate</TemplateName>
+                    <Index>2</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
               <MinTriggerReputation>90</MinTriggerReputation>
               <TriggerChance>15</TriggerChance>
-              <TriggerAction>GiftMoneyOneTimeGenerous</TriggerAction>
-              <TriggerType>GenericTimer</TriggerType>
-              <TriggerPriority>2</TriggerPriority>
-              <AddMoney>1</AddMoney>
             </Item>
             <Item>
+              <VectorElement>
+                <InheritedIndex>3</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>3rdParty_Pirate</TemplateName>
+                    <Index>3</Index>
+                  </Entry>
+                  <Entry>
+                    <TemplateName>Profile_3rdParty_Pirate</TemplateName>
+                    <Index>3</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
               <MinTriggerReputation>-100</MinTriggerReputation>
               <TriggerChance>15</TriggerChance>
               <TriggerPriority>0</TriggerPriority>
-              <TriggerAction>RequestCeaseFire</TriggerAction>
-              <AddMoney>1</AddMoney>
             </Item>
             <Item>
+              <VectorElement>
+                <InheritedIndex>4</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>3rdParty_Pirate</TemplateName>
+                    <Index>4</Index>
+                  </Entry>
+                  <Entry>
+                    <TemplateName>Profile_3rdParty_Pirate</TemplateName>
+                    <Index>4</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
               <MinTriggerReputation>-100</MinTriggerReputation>
               <TriggerChance>15</TriggerChance>
               <TriggerPriority>0</TriggerPriority>
-              <TriggerAction>RequestCeaseFire</TriggerAction>
-              <TriggerType>ShipDestroyedByEnemy</TriggerType>
-              <AddMoney>1</AddMoney>
             </Item>
             <Item>
+              <VectorElement>
+                <InheritedIndex>5</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>3rdParty_Pirate</TemplateName>
+                    <Index>5</Index>
+                  </Entry>
+                  <Entry>
+                    <TemplateName>Profile_3rdParty_Pirate</TemplateName>
+                    <Index>5</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
               <MinTriggerReputation>30</MinTriggerReputation>
               <CheckMilitaryStrength>-0.2</CheckMilitaryStrength>
               <TriggerChance>20</TriggerChance>
               <TriggerPriority>1</TriggerPriority>
-              <TriggerAction>RequestPeace</TriggerAction>
-              <AddMoney>1</AddMoney>
             </Item>
             <Item>
+              <VectorElement>
+                <InheritedIndex>6</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>3rdParty_Pirate</TemplateName>
+                    <Index>6</Index>
+                  </Entry>
+                  <Entry>
+                    <TemplateName>Profile_3rdParty_Pirate</TemplateName>
+                    <Index>6</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
               <MinTriggerReputation>30</MinTriggerReputation>
               <CheckMilitaryStrength>-0.2</CheckMilitaryStrength>
               <TriggerChance>20</TriggerChance>
               <TriggerPriority>1</TriggerPriority>
-              <TriggerAction>RequestPeace</TriggerAction>
-              <TriggerType>ShipDestroyedByEnemy</TriggerType>
-              <AddMoney>1</AddMoney>
             </Item>
           </SpecialTrigger>
           <GenericTimerStartDelay>3600000</GenericTimerStartDelay>
@@ -2915,102 +2691,44 @@
               <Cooldown>3600000</Cooldown>
             </RequestCeaseFire>
           </ActionCooldown>
-          <ReputationTriggerDelayMin>20000</ReputationTriggerDelayMin>
-          <ReputationTriggerDelayMax>300000</ReputationTriggerDelayMax>
-          <ReputationMinDice>-5</ReputationMinDice>
-          <ReputationMaxDice>0</ReputationMaxDice>
-          <MaxMoneyOffering>15</MaxMoneyOffering>
-          <MinMoney>3</MinMoney>
         </DiplomacyAI>
         <AutomaticDiscovery>
           <ProgressCheckEnabled>1</ProgressCheckEnabled>
           <DesiredProgress>LateMidGame</DesiredProgress>
           <Time>72000000</Time>
         </AutomaticDiscovery>
-        <DiceRollProposalMin>-5</DiceRollProposalMin>
-        <DiceRollProposalMax>0</DiceRollProposalMax>
-        <ReactOnAlliance>1</ReactOnAlliance>
-        <CounterProposal>
-          <DiceRollCounterMin>-25</DiceRollCounterMin>
-          <DiceRollCounterMax>25</DiceRollCounterMax>
-          <CounterProposalAgree>66</CounterProposalAgree>
-          <CounterProposalPartial>13</CounterProposalPartial>
-          <CounterProposalDeclineStart>10</CounterProposalDeclineStart>
-          <CounterProposalDeclineIncrease>10</CounterProposalDeclineIncrease>
-          <CounterProposalIncreaseModifierPercentage>100</CounterProposalIncreaseModifierPercentage>
-        </CounterProposal>
-        <ChancePreview>
-          <IdleTime>480000</IdleTime>
-          <RatingStates>
-            <SuccessLvl3>
-              <BelowChance>30</BelowChance>
-              <Text>10598</Text>
-            </SuccessLvl3>
-            <SuccessLvl1>
-              <BelowChance>10</BelowChance>
-              <Text>10597</Text>
-            </SuccessLvl1>
-            <SuccessLvl2>
-              <BelowChance>20</BelowChance>
-              <Text>10596</Text>
-            </SuccessLvl2>
-            <SuccessLvl4>
-              <BelowChance>40</BelowChance>
-              <Text>10594</Text>
-            </SuccessLvl4>
-            <SuccessLvl0>
-              <Text>10595</Text>
-            </SuccessLvl0>
-            <SuccessLvl10>
-              <BelowChance>99</BelowChance>
-              <Text>13040</Text>
-            </SuccessLvl10>
-            <SuccessLvl11>
-              <BelowChance>100</BelowChance>
-              <Text>13041</Text>
-            </SuccessLvl11>
-            <SuccessLvl5>
-              <BelowChance>50</BelowChance>
-              <Text>13035</Text>
-            </SuccessLvl5>
-            <SuccessLvl6>
-              <BelowChance>60</BelowChance>
-              <Text>13036</Text>
-            </SuccessLvl6>
-            <SuccessLvl7>
-              <BelowChance>70</BelowChance>
-              <Text>13037</Text>
-            </SuccessLvl7>
-            <SuccessLvl8>
-              <BelowChance>80</BelowChance>
-              <Text>13038</Text>
-            </SuccessLvl8>
-            <SuccessLvl9>
-              <BelowChance>90</BelowChance>
-              <Text>13039</Text>
-            </SuccessLvl9>
-          </RatingStates>
-        </ChancePreview>
       </Diplomacy>
       <ParticipantMessages>
         <MessageTriggers>
           <ClickKontor>
             <Reactions>
               <Item>
+                <VectorElement>
+                  <InheritedIndex>0</InheritedIndex>
+                  <InheritanceMapV2>
+                    <Entry>
+                      <TemplateName>3rdParty_Pirate_Male</TemplateName>
+                      <Index>0</Index>
+                    </Entry>
+                    <Entry>
+                      <TemplateName>3rdParty_Pirate</TemplateName>
+                      <Index>0</Index>
+                    </Entry>
+                    <Entry>
+                      <TemplateName>Profile_3rdParty_Pirate</TemplateName>
+                      <Index>0</Index>
+                    </Entry>
+                  </InheritanceMapV2>
+                </VectorElement>
                 <Notification>
                   <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
                   <Values>
                     <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-1080710421</NotificationTextGroup>
-                      <NotificationBlockingTime>20000</NotificationBlockingTime>
-                      <DisplayTimeout>5000</DisplayTimeout>
-                    </BaseNotification>
+                    <BaseNotification />
                     <NotificationSubtitle>
                       <SubtitleGroup>298463984</SubtitleGroup>
                     </NotificationSubtitle>
                   </Values>
-                  <Template>CharacterNotification</Template>
                 </Notification>
               </Item>
             </Reactions>
@@ -3018,20 +2736,33 @@
           <ParticipantDiscovered>
             <Reactions>
               <Item>
+                <VectorElement>
+                  <InheritedIndex>0</InheritedIndex>
+                  <InheritanceMapV2>
+                    <Entry>
+                      <TemplateName>3rdParty_Pirate_Male</TemplateName>
+                      <Index>0</Index>
+                    </Entry>
+                    <Entry>
+                      <TemplateName>3rdParty_Pirate</TemplateName>
+                      <Index>0</Index>
+                    </Entry>
+                    <Entry>
+                      <TemplateName>Profile_3rdParty_Pirate</TemplateName>
+                      <Index>0</Index>
+                    </Entry>
+                  </InheritanceMapV2>
+                </VectorElement>
                 <Notification>
                   <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
                   <Values>
                     <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationText>10143</NotificationText>
-                    </BaseNotification>
+                    <BaseNotification />
                     <NotificationSubtitle>
                       <SubtitleGroup>-1336360563</SubtitleGroup>
                     </NotificationSubtitle>
                   </Values>
-                  <Template>CharacterNotification</Template>
                 </Notification>
-                <CooldownTime>180000</CooldownTime>
               </Item>
             </Reactions>
           </ParticipantDiscovered>
@@ -3055,658 +2786,40 @@
           <QuestStarted>
             <Reactions>
               <Item>
+                <VectorElement>
+                  <InheritedIndex>0</InheritedIndex>
+                  <InheritanceMapV2>
+                    <Entry>
+                      <TemplateName>3rdParty_Pirate_Male</TemplateName>
+                      <Index>0</Index>
+                    </Entry>
+                    <Entry>
+                      <TemplateName>3rdParty_Pirate</TemplateName>
+                      <Index>0</Index>
+                    </Entry>
+                    <Entry>
+                      <TemplateName>Profile_3rdParty_Pirate</TemplateName>
+                      <Index>0</Index>
+                    </Entry>
+                  </InheritanceMapV2>
+                </VectorElement>
                 <Notification>
                   <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
                   <Values>
                     <CharacterNotification />
                     <BaseNotification>
                       <NotificationPriority>699</NotificationPriority>
-                      <NotificationTextGroup>-2052884805</NotificationTextGroup>
                     </BaseNotification>
                     <NotificationSubtitle />
                   </Values>
-                  <Template>CharacterNotification</Template>
                 </Notification>
-                <MyRole>Initiator</MyRole>
               </Item>
             </Reactions>
           </QuestStarted>
-          <QuestAborted>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-999474322</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestAborted>
-          <QuestInvitation>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-607220429</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestInvitation>
-          <QuestEscortShipSelected>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>674720140</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestEscortShipSelected>
-          <QuestFailed>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-1928161372</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestFailed>
-          <QuestSuccessful>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>1380477898</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </QuestSuccessful>
-          <SettlePermissionAccepted>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-1827240673</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </SettlePermissionAccepted>
-          <SettlePermissionDeclined>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>221577917</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </SettlePermissionDeclined>
-          <SettlePermissionRequest>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>899995330</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </SettlePermissionRequest>
-          <ShipTradeConfirmation>
-            <Reactions>
-              <Item>
-                <SideEffect>AddReputation</SideEffect>
-                <SideEffectValue>2</SideEffectValue>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-1807749032</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <SideEffect>AddReputation</SideEffect>
-                <SideEffectValue>2</SideEffectValue>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-1807749032</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </ShipTradeConfirmation>
-          <DiplomacyAcceptFlatter>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>60079737</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </DiplomacyAcceptFlatter>
-          <SettlementRightsSeizeIsland>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>2066088125</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-              <Item>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-1783512920</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </SettlementRightsSeizeIsland>
-          <DiplomacyOffer>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>151127921</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </DiplomacyOffer>
-          <DiplomacyOfferThreat>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>284129818</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </DiplomacyOfferThreat>
-          <DiplomacyOfferAccept>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>754486854</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </DiplomacyOfferAccept>
-          <DiplomacyOfferRejected>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>645868267</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </DiplomacyOfferRejected>
-          <DiplomacyOfferThreatAccepted>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-284323475</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </DiplomacyOfferThreatAccepted>
-          <DiplomacyOfferThreatRejected>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-1939792076</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </DiplomacyOfferThreatRejected>
-          <DiplomacyDeclareWar>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-218808192</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-              <Item>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-632830325</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </DiplomacyDeclareWar>
-          <DiplomacyOfferPeaceAccepted>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>1353937510</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </DiplomacyOfferPeaceAccepted>
-          <DiplomacyOfferTraderightsAccepted>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-1995946385</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </DiplomacyOfferTraderightsAccepted>
-          <DiplomacyCancelTraderights>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-623597739</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-              <Item>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>1144458106</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </DiplomacyCancelTraderights>
-          <DiplomacyOfferAllianceAccepted>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-1957572021</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </DiplomacyOfferAllianceAccepted>
-          <DiplomacyCancelAlliance>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>1239738472</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-              <Item>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-2070662333</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </DiplomacyCancelAlliance>
-          <DiplomacyOfferGiftAccepted>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-649618500</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </DiplomacyOfferGiftAccepted>
-          <DiplomacyOfferGiftRejected>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-1552193238</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </DiplomacyOfferGiftRejected>
-          <DiplomacyAskForQuestRejected>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-225827922</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </DiplomacyAskForQuestRejected>
-          <DiplomacyRequestSupportFleetAccepted>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>834970647</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </DiplomacyRequestSupportFleetAccepted>
-          <DiplomacyRequestSupportFleetRejected>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>1170493352</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </DiplomacyRequestSupportFleetRejected>
-          <DiplomacyDeclineFlatter>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>391245361</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </DiplomacyDeclineFlatter>
-          <DiplomacyAcceptInsult>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>73657461</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </DiplomacyAcceptInsult>
-          <DiplomacyDeclineInsult>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-1987606274</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </DiplomacyDeclineInsult>
-          <DiplomacyMemoryCorrectionPositive>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-1700092476</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </DiplomacyMemoryCorrectionPositive>
-          <DiplomacyMemoryCorrectionNegative>
-            <Reactions>
-              <Item>
-                <MyRole>Initiator</MyRole>
-                <Notification>
-                  <Template>CharacterNotification</Template>
-                  <Values>
-                    <CharacterNotification />
-                    <BaseNotification>
-                      <NotificationTextGroup>-630778938</NotificationTextGroup>
-                    </BaseNotification>
-                    <NotificationSubtitle />
-                  </Values>
-                </Notification>
-              </Item>
-            </Reactions>
-          </DiplomacyMemoryCorrectionNegative>
         </MessageTriggers>
       </ParticipantMessages>
       <Object>
         <DefaultParticipant>Third_party_04_Pirate_LaFortune</DefaultParticipant>
-        <AddToObjectGroups>0</AddToObjectGroups>
-        <AddToEditorObjectGrid>0</AddToEditorObjectGrid>
-        <PlacableInEditor>0</PlacableInEditor>
-        <SelectableInEditor>0</SelectableInEditor>
-        <Type>GameObject</Type>
-        <Variations />
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Trader>
         <ShipTrader>1</ShipTrader>
@@ -3715,8 +2828,6 @@
         <Progression>
           <EarlyGame>
             <ShipProductionCooldown>300000</ShipProductionCooldown>
-            <SellBudget>2000</SellBudget>
-            <BuyBudget>2000</BuyBudget>
           </EarlyGame>
           <EarlyMidGame>
             <GoodsProduction>
@@ -3761,8 +2872,6 @@
             </ShipsForSale>
             <ShipsForSaleAmount>1</ShipsForSaleAmount>
             <ShipProductionCooldown>240000</ShipProductionCooldown>
-            <SellBudget>3000</SellBudget>
-            <BuyBudget>3000</BuyBudget>
           </EarlyMidGame>
           <MidGame>
             <WarFleet>
@@ -3835,8 +2944,6 @@
             </ShipsForSale>
             <ShipsForSaleAmount>1</ShipsForSaleAmount>
             <ShipProductionCooldown>180000</ShipProductionCooldown>
-            <SellBudget>3000</SellBudget>
-            <BuyBudget>3000</BuyBudget>
           </MidGame>
           <LateMidGame>
             <WarFleet>
@@ -3924,8 +3031,6 @@
             </ShipsForSale>
             <ShipsForSaleAmount>1</ShipsForSaleAmount>
             <ShipProductionCooldown>120000</ShipProductionCooldown>
-            <SellBudget>3000</SellBudget>
-            <BuyBudget>3000</BuyBudget>
           </LateMidGame>
           <LateGame>
             <WarFleet>
@@ -4040,8 +3145,6 @@
             </ShipsForSale>
             <ShipsForSaleAmount>1</ShipsForSaleAmount>
             <ShipProductionCooldown>60000</ShipProductionCooldown>
-            <SellBudget>3500</SellBudget>
-            <BuyBudget>3500</BuyBudget>
           </LateGame>
           <EndGame>
             <WarFleet>
@@ -4155,79 +3258,12 @@
               </Item>
             </ShipsForSale>
             <ShipsForSaleAmount>2</ShipsForSaleAmount>
-            <SellBudget>4000</SellBudget>
-            <BuyBudget>4000</BuyBudget>
           </EndGame>
         </Progression>
-        <TraderRerollInterval>300000</TraderRerollInterval>
-        <TraderItemRerollCosts>10000</TraderItemRerollCosts>
-        <TraderItemRerollCostIncrease>10000</TraderItemRerollCostIncrease>
-        <SellShipCooldown>900000</SellShipCooldown>
-        <BuyShipRequestNoTradeAgreementNotification>0</BuyShipRequestNoTradeAgreementNotification>
       </Trader>
       <ThirdParty>
         <AllowedRegions>Colony01</AllowedRegions>
         <IslandPlacement>InEverySession</IslandPlacement>
-        <ReservationPause>600000</ReservationPause>
-        <DecoBuildings>
-          <Item>
-            <Asset>100689</Asset>
-          </Item>
-          <Item>
-            <Asset>100690</Asset>
-          </Item>
-          <Item>
-            <Asset>100720</Asset>
-          </Item>
-          <Item>
-            <Asset>100723</Asset>
-          </Item>
-          <Item>
-            <Asset>100724</Asset>
-          </Item>
-          <Item>
-            <Asset>100725</Asset>
-          </Item>
-          <Item>
-            <Asset>100726</Asset>
-          </Item>
-          <Item>
-            <Asset>100731</Asset>
-          </Item>
-          <Item>
-            <Asset>100733</Asset>
-          </Item>
-          <Item>
-            <Asset>100734</Asset>
-          </Item>
-          <Item>
-            <Asset>100735</Asset>
-          </Item>
-          <Item>
-            <Asset>100736</Asset>
-          </Item>
-          <Item>
-            <Asset>1000101</Asset>
-          </Item>
-          <Item>
-            <Asset>1000103</Asset>
-          </Item>
-          <Item>
-            <Asset>1000110</Asset>
-          </Item>
-          <Item>
-            <Asset>1000156</Asset>
-          </Item>
-          <Item>
-            <Asset>1000222</Asset>
-          </Item>
-          <Item>
-            <Asset>1000226</Asset>
-          </Item>
-          <Item>
-            <Asset>1000228</Asset>
-          </Item>
-        </DecoBuildings>
       </ThirdParty>
       <MilitaryAI>
         <StrengthLevels>
@@ -4237,9 +3273,6 @@
               <MaxEscortRatio>0</MaxEscortRatio>
               <MaxPatrolRatio>0</MaxPatrolRatio>
               <MaxDefendAllyRatio>50</MaxDefendAllyRatio>
-              <MaxStrengthRatio>140</MaxStrengthRatio>
-              <Flee>1</Flee>
-              <MaxDefendRatio>100</MaxDefendRatio>
             </Equal>
             <Inferior>
               <Flee>1</Flee>
@@ -4247,8 +3280,6 @@
               <MaxEscortRatio>0</MaxEscortRatio>
               <MaxPatrolRatio>0</MaxPatrolRatio>
               <MaxDefendAllyRatio>50</MaxDefendAllyRatio>
-              <MaxStrengthRatio>70</MaxStrengthRatio>
-              <MaxDefendRatio>100</MaxDefendRatio>
             </Inferior>
             <Superior>
               <Flee>1</Flee>
@@ -4256,11 +3287,8 @@
               <MaxDefendRatio>100</MaxDefendRatio>
               <MaxPatrolRatio>0</MaxPatrolRatio>
               <MaxDefendAllyRatio>50</MaxDefendAllyRatio>
-              <MaxStrengthRatio>2000</MaxStrengthRatio>
-              <MaxAttackRatio>100</MaxAttackRatio>
             </Superior>
           </Levels>
-          <BudgetThreshold>50</BudgetThreshold>
         </StrengthLevels>
         <Attack>
           <MilitaryStrengthRatio>90</MilitaryStrengthRatio>
@@ -4311,7 +3339,6 @@
           </AttackTargetPrio>
           <IsBlinded>IgnoreBuildings</IsBlinded>
           <OverkillAttackThreshold>100</OverkillAttackThreshold>
-          <RallyBeforeAttack>1</RallyBeforeAttack>
         </Attack>
         <Defend>
           <MinStrengthRatio>100</MinStrengthRatio>
@@ -4335,7 +3362,6 @@
           <CommandsToSupport>Defend</CommandsToSupport>
           <CommandsToAbandon>Attack</CommandsToAbandon>
           <ObservationRange>110</ObservationRange>
-          <CheckSquadLogicInterval>3000</CheckSquadLogicInterval>
         </SquadLogic>
         <SquadPriorities>
           <Commands>
@@ -4354,93 +3380,8 @@
             <DefendAlly>
               <Priority>10</Priority>
             </DefendAlly>
-            <RepairIdle>
-              <Priority>12</Priority>
-            </RepairIdle>
-            <RepairInCombat>
-              <Priority>25</Priority>
-            </RepairInCombat>
           </Commands>
-          <CanQuitAndChangeSession>Patrol;Escort</CanQuitAndChangeSession>
         </SquadPriorities>
-        <ItemUsage />
-        <Patrol>
-          <MinSize>2</MinSize>
-          <MaxSize>3</MaxSize>
-          <CheckPatrolInterval>120000</CheckPatrolInterval>
-          <RandomRadius>3</RandomRadius>
-          <MinDistanceToLand>20</MinDistanceToLand>
-        </Patrol>
-        <Escort>
-          <Priorities>
-            <Military>
-              <Value>-1</Value>
-            </Military>
-            <Idle>
-              <Value>1</Value>
-            </Idle>
-            <ActiveTrade>
-              <Value>20</Value>
-            </ActiveTrade>
-            <SettleMission>
-              <Value>30</Value>
-            </SettleMission>
-            <TradeRoute>
-              <Value>10</Value>
-            </TradeRoute>
-          </Priorities>
-        </Escort>
-        <Repair>
-          <CheckRepairInterval>30000</CheckRepairInterval>
-        </Repair>
-        <WarFleet>
-          <ShipLimits>
-            <Peace>
-              <Progress>
-                <EarlyGame>
-                  <MaxShipCount>3</MaxShipCount>
-                </EarlyGame>
-                <EarlyMidGame>
-                  <MaxShipCount>5</MaxShipCount>
-                </EarlyMidGame>
-                <EndGame>
-                  <MaxShipCount>11</MaxShipCount>
-                </EndGame>
-                <LateGame>
-                  <MaxShipCount>9</MaxShipCount>
-                </LateGame>
-                <LateMidGame>
-                  <MaxShipCount>7</MaxShipCount>
-                </LateMidGame>
-                <MidGame>
-                  <MaxShipCount>6</MaxShipCount>
-                </MidGame>
-              </Progress>
-            </Peace>
-            <War>
-              <Progress>
-                <EarlyGame>
-                  <MaxShipCount>40</MaxShipCount>
-                </EarlyGame>
-                <EarlyMidGame>
-                  <MaxShipCount>50</MaxShipCount>
-                </EarlyMidGame>
-                <EndGame>
-                  <MaxShipCount>100</MaxShipCount>
-                </EndGame>
-                <LateGame>
-                  <MaxShipCount>80</MaxShipCount>
-                </LateGame>
-                <LateMidGame>
-                  <MaxShipCount>70</MaxShipCount>
-                </LateMidGame>
-                <MidGame>
-                  <MaxShipCount>60</MaxShipCount>
-                </MidGame>
-              </Progress>
-            </War>
-          </ShipLimits>
-        </WarFleet>
       </MilitaryAI>
       <Pirate>
         <AreaOfActivity>
@@ -4567,33 +3508,75 @@
           <ActiveTrade>
             <TradeAmountFactor>350</TradeAmountFactor>
             <ReputationGain>4</ReputationGain>
-            <TradeAmount>1000</TradeAmount>
-            <TradeMessage>ActiveTradeConfirmation</TradeMessage>
           </ActiveTrade>
           <PassiveTrade>
             <TradeAmountFactor>950</TradeAmountFactor>
             <ReputationGain>4</ReputationGain>
-            <TradeAmount>10000</TradeAmount>
-            <TradeMessage>PassiveTradeConfirmation</TradeMessage>
           </PassiveTrade>
         </PaMSyTrade>
         <PaMSyMilitaryStrength>
           <Item>
+            <VectorElement>
+              <InheritedIndex>0</InheritedIndex>
+              <InheritanceMapV2>
+                <Entry>
+                  <TemplateName>3rdParty_Pirate</TemplateName>
+                  <Index>0</Index>
+                </Entry>
+                <Entry>
+                  <TemplateName>Profile_3rdParty_Pirate</TemplateName>
+                  <Index>0</Index>
+                </Entry>
+              </InheritanceMapV2>
+            </VectorElement>
             <Range>30</Range>
           </Item>
           <Item>
-            <Range>50</Range>
+            <VectorElement>
+              <InheritedIndex>1</InheritedIndex>
+              <InheritanceMapV2>
+                <Entry>
+                  <TemplateName>3rdParty_Pirate</TemplateName>
+                  <Index>1</Index>
+                </Entry>
+                <Entry>
+                  <TemplateName>Profile_3rdParty_Pirate</TemplateName>
+                  <Index>1</Index>
+                </Entry>
+              </InheritanceMapV2>
+            </VectorElement>
           </Item>
           <Item>
-            <Range>100</Range>
+            <VectorElement>
+              <InheritedIndex>2</InheritedIndex>
+              <InheritanceMapV2>
+                <Entry>
+                  <TemplateName>3rdParty_Pirate</TemplateName>
+                  <Index>2</Index>
+                </Entry>
+                <Entry>
+                  <TemplateName>Profile_3rdParty_Pirate</TemplateName>
+                  <Index>2</Index>
+                </Entry>
+              </InheritanceMapV2>
+            </VectorElement>
           </Item>
           <Item>
-            <Range>200</Range>
+            <VectorElement>
+              <InheritedIndex>3</InheritedIndex>
+              <InheritanceMapV2>
+                <Entry>
+                  <TemplateName>3rdParty_Pirate</TemplateName>
+                  <Index>3</Index>
+                </Entry>
+                <Entry>
+                  <TemplateName>Profile_3rdParty_Pirate</TemplateName>
+                  <Index>3</Index>
+                </Entry>
+              </InheritanceMapV2>
+            </VectorElement>
           </Item>
         </PaMSyMilitaryStrength>
-        <NewspaperPropaganda />
-        <PaMSyAttractiveness />
-        <PaMSyIslandPollution />
       </Interaction>
       <ProfileCounter />
     </Values>

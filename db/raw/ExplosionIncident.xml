@@ -7,8 +7,6 @@
         <GUID>141655</GUID>
         <Name>ExplosionIncident</Name>
         <ID>IndicentExplosion</ID>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <Text>
         <LocaText>
@@ -19,7 +17,6 @@
           </English>
         </LocaText>
         <LineID>25923</LineID>
-        <Localize>1</Localize>
       </Text>
       <Incident>
         <IncidentType>Explosion</IncidentType>
@@ -107,48 +104,6 @@
         </InfectionChanceSourceNameMapping>
         <InitialInfectionFactor>0.1</InitialInfectionFactor>
         <FeedbackDangerReaction>IGNORE</FeedbackDangerReaction>
-        <IncidentMurmur>None</IncidentMurmur>
-        <IncidentInfolayerIcon>0</IncidentInfolayerIcon>
-        <ResolveInfolayerIcon>0</ResolveInfolayerIcon>
-        <BuildingData>
-          <IntensityBaseIntervalMin>5000</IntensityBaseIntervalMin>
-          <IntensityBaseIntervalMax>15000</IntensityBaseIntervalMax>
-          <IntensityLimit>100</IntensityLimit>
-          <IntensityIncreaseRate>5</IntensityIncreaseRate>
-          <IntensitySelfHealRate>0.025</IntensitySelfHealRate>
-          <ProtectedTime>60000</ProtectedTime>
-          <DefaultIntensity>25</DefaultIntensity>
-          <IntensitySelfHealBaseChance>5</IntensitySelfHealBaseChance>
-          <IntensityIncreaseBaseChance>50</IntensityIncreaseBaseChance>
-          <IntensitySelfHealBlockingTicks>5</IntensitySelfHealBlockingTicks>
-          <IntensityAdditionalSelfHealChance>10</IntensityAdditionalSelfHealChance>
-        </BuildingData>
-        <InfectionData>
-          <InfectionBaseIntervalMin>10000</InfectionBaseIntervalMin>
-          <InfectionBaseIntervalMax>15000</InfectionBaseIntervalMax>
-          <InfectionLimit>
-            <EndGame>
-              <Limit>100</Limit>
-            </EndGame>
-            <LateGame>
-              <Limit>50</Limit>
-            </LateGame>
-            <MidGame>
-              <Limit>20</Limit>
-            </MidGame>
-            <EarlyMidGame>
-              <Limit>15</Limit>
-            </EarlyMidGame>
-            <LateMidGame>
-              <Limit>25</Limit>
-            </LateMidGame>
-          </InfectionLimit>
-        </InfectionData>
-        <StartBuildingSelection />
-        <ShipIncidentDefaultDebuff>0</ShipIncidentDefaultDebuff>
-        <ShipIncidentDefaultDuration>60000</ShipIncidentDefaultDuration>
-        <ResolverConfigs />
-        <FreeSpaceSpawn />
       </Incident>
       <IncidentExplosion>
         <DamageAndFireSpreadDelay>2800</DamageAndFireSpreadDelay>

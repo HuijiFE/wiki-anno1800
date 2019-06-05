@@ -7,37 +7,14 @@
         <GUID>1010489</GUID>
         <Name>monument_01_00</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_world_fair_2.png</IconFilename>
-        <InfoDescription>100027</InfoDescription>
-        <Comments />
       </Standard>
       <Building>
         <PickingAsset>1010489</PickingAsset>
         <BuildModeRandomRotation>180</BuildModeRandomRotation>
         <AssociatedRegions>Moderate</AssociatedRegions>
         <DeactivateHideWhenClippingIntoCamera>1</DeactivateHideWhenClippingIntoCamera>
-        <BuildingType>Factory</BuildingType>
-        <BuildingCategoryName>100002</BuildingCategoryName>
-        <DestructionConfirmation>1</DestructionConfirmation>
-        <Destructable>1</Destructable>
-        <Movable>1</Movable>
-        <ConstructionMenuText>0</ConstructionMenuText>
-        <HasBorderRectOutline>1</HasBorderRectOutline>
-        <SnapRadius>2</SnapRadius>
-        <TerrainType>Terrain</TerrainType>
-        <InfluencedByNeighbors />
-        <InfluencedVariationDirection />
-        <BuildingBlockPool />
-        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
-      <Blocking>
-        <HidePropsRadius>1</HidePropsRadius>
-        <DeletePropsRadius>1</DeletePropsRadius>
-        <GroundDecalAsset>0</GroundDecalAsset>
-        <GroundDecalInvisible>0</GroundDecalInvisible>
-        <StreetOutside>0</StreetOutside>
-        <RemoveGrass>1</RemoveGrass>
-        <BlocksBuilding>1</BlocksBuilding>
-      </Blocking>
+      <Blocking />
       <Cost>
         <Costs>
           <Item>
@@ -65,9 +42,6 @@
             <Amount>150</Amount>
           </Item>
         </Costs>
-        <ItemsPerCost>1</ItemsPerCost>
-        <InfluenceCostType>None</InfluenceCostType>
-        <InfluenceCostPoints>1</InfluenceCostPoints>
       </Cost>
       <Object>
         <Variations>
@@ -75,43 +49,10 @@
             <Filename>data/graphics/buildings/public/monument_01/monument_01_00/monument_01_00.cfg</Filename>
           </Item>
         </Variations>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <DefaultParticipant>Neutral</DefaultParticipant>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <Mesh>
-        <ObjectPosition>Static</ObjectPosition>
-        <MeshPlacement>Default</MeshPlacement>
-        <DefaultSequence>idle01</DefaultSequence>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
-        <LogoMode>Disabled</LogoMode>
-      </Mesh>
+      <Mesh />
       <Selection>
         <GUIType>Monument</GUIType>
-        <Selectable>1</Selectable>
-        <DestructSelectable>1</DestructSelectable>
-        <OnSelection>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnSelection>
-        <InteractionDistance>15</InteractionDistance>
-        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
-        <InfoCorner>25000131</InfoCorner>
-        <AllowedDragType />
-        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
-        <Colors />
       </Selection>
       <Text>
         <LocaText>
@@ -122,79 +63,19 @@
           </English>
         </LocaText>
         <LineID>20107</LineID>
-        <Localize>1</Localize>
       </Text>
-      <Constructable>
-        <DestructionCategory>Production</DestructionCategory>
-        <ConstructionMode>Default</ConstructionMode>
-        <DestructionType>0</DestructionType>
-      </Constructable>
-      <Locked>
-        <DefaultLockedState>1</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
-      </Locked>
+      <Constructable />
+      <Locked />
       <SoundEmitter>
         <BuildingRepaired>
           <Item>
             <Sound>203866</Sound>
           </Item>
         </BuildingRepaired>
-        <DestroySounds>
-          <Item>
-            <Sound>9818756</Sound>
-          </Item>
-        </DestroySounds>
-        <ConstructionSounds>
-          <BuildFailed>
-            <Item>
-              <Sound>9818387</Sound>
-            </Item>
-          </BuildFailed>
-          <BuildMoveStart>
-            <Item>
-              <Sound>9818755</Sound>
-            </Item>
-          </BuildMoveStart>
-          <BuildMoveSuccess>
-            <Item>
-              <Sound>203995</Sound>
-            </Item>
-          </BuildMoveSuccess>
-          <BuildMoveEnd>
-            <Item>
-              <Sound>200141</Sound>
-            </Item>
-          </BuildMoveEnd>
-        </ConstructionSounds>
-        <ActiveSounds />
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <ProjectileSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <IncidentSounds />
-        <BuildingRuined />
-        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
-      <FeedbackController>
-        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
-        <UpdateMeshSequence>1</UpdateMeshSequence>
-      </FeedbackController>
-      <Infolayer>
-        <DefaultInfoLayer>0</DefaultInfoLayer>
-      </Infolayer>
-      <RandomDummySpawner>
-        <RandomAssets />
-      </RandomDummySpawner>
+      <FeedbackController />
+      <Infolayer />
+      <RandomDummySpawner />
       <FactoryBase>
         <FactoryInputs>
           <Item>
@@ -209,25 +90,9 @@
           </Item>
         </FactoryInputs>
         <CycleTime>60</CycleTime>
-        <FactoryOutputs />
-        <BaseProductivity>100</BaseProductivity>
-        <ProductivityTimeMultiplier>5</ProductivityTimeMultiplier>
-        <ProductivityPoints>30</ProductivityPoints>
-        <WarehouseTransporterAsset>1010105</WarehouseTransporterAsset>
-        <OutputAmountFactor>100</OutputAmountFactor>
       </FactoryBase>
       <LogisticNode>
         <TransporterCountMax>2</TransporterCountMax>
-        <TransporterAsset>1010104</TransporterAsset>
-        <TrainAsset>120025</TrainAsset>
-        <QueueConfiguration>
-          <ProcessingQueueParallelCount>10</ProcessingQueueParallelCount>
-          <LoadingTimeModifier>1</LoadingTimeModifier>
-          <UnloadingTimeModifier>1</UnloadingTimeModifier>
-        </QueueConfiguration>
-        <REMOVE_THIS_LATER_FeedbackUnitTier>Level1</REMOVE_THIS_LATER_FeedbackUnitTier>
-        <NeedsTransporterQueue>1</NeedsTransporterQueue>
-        <PathLayers>Street</PathLayers>
       </LogisticNode>
       <Monument>
         <UpgradeTarget>1010490</UpgradeTarget>
@@ -235,40 +100,10 @@
         <UnfinishedIcon>500422</UnfinishedIcon>
         <FinishedIcon>500422</FinishedIcon>
         <ShutdownText>6783</ShutdownText>
-        <ConstructionStateText>
-          <Interrupted>
-            <Text>163011</Text>
-          </Interrupted>
-          <OutOfWorkforce>
-            <Text>163026</Text>
-          </OutOfWorkforce>
-          <WaitingForResources>
-            <Text>163012</Text>
-          </WaitingForResources>
-          <Processing>
-            <Text>163010</Text>
-          </Processing>
-        </ConstructionStateText>
-        <MonumentEventsCategories />
-        <FakePrerequisites />
-        <FinishButtonText>163013</FinishButtonText>
       </Monument>
-      <Culture>
-        <CultureType>Monument</CultureType>
-        <SetPages />
-        <UndiscoveredSet>0</UndiscoveredSet>
-        <ModuleListHeader>0</ModuleListHeader>
-        <OpenSetPages>0</OpenSetPages>
-      </Culture>
+      <Culture />
       <AmbientMoodProvider>
         <Murmur>MonumentConstruction</Murmur>
-        <AmbientMood>None</AmbientMood>
-        <AttractivityDependentMurmur />
-        <ProductivityDependentMurmur />
-        <SatisfactionDependentMurmur />
-        <DynamicEnvironmentType>None</DynamicEnvironmentType>
-        <HappinessDependentMurmur />
-        <IslandAttractivityDependentMurmur />
       </AmbientMoodProvider>
       <Maintenance>
         <Maintenances>
@@ -279,33 +114,17 @@
           </Item>
         </Maintenances>
         <ConsumerPriorityAlarmed>2</ConsumerPriorityAlarmed>
-        <MaintenanceAmountFactor>1</MaintenanceAmountFactor>
-        <WorkforceAmountFactor>1</WorkforceAmountFactor>
       </Maintenance>
       <Attackable>
         <MaximumHitPoints>10000</MaximumHitPoints>
         <SelfHealPerHealTick>6</SelfHealPerHealTick>
-        <IsInvulnerable>1</IsInvulnerable>
-        <HPBarOffset>6</HPBarOffset>
-        <PausedTimeIfAttacked>15000</PausedTimeIfAttacked>
-        <SelfHealPausedTimeIfAttacked>15000</SelfHealPausedTimeIfAttacked>
-        <ArmorType>Default</ArmorType>
-        <TakeOverEffect>Never</TakeOverEffect>
-        <IslandWarFlag>0</IslandWarFlag>
-        <RuinSmokeParticles />
-        <ExplosionEffects />
       </Attackable>
       <Pausable />
       <IslandUnique>
         <UniqueType>Monument01</UniqueType>
       </IslandUnique>
       <UpgradeList />
-      <Electric>
-        <BoostedByElectricity>0</BoostedByElectricity>
-        <ProductivityBoost>1</ProductivityBoost>
-        <TransporterElectricFactory>120028</TransporterElectricFactory>
-        <TransporterElectricWarehouse>120027</TransporterElectricWarehouse>
-      </Electric>
+      <Electric />
       <QuestObject />
     </Values>
   </Asset>
@@ -316,41 +135,15 @@
         <GUID>1010490</GUID>
         <Name>monument_01_01</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_world_fair_2.png</IconFilename>
-        <InfoDescription>100027</InfoDescription>
-        <Comments />
       </Standard>
       <Building>
         <PickingAsset>1010489</PickingAsset>
         <AssociatedRegions>Moderate</AssociatedRegions>
         <DeactivateHideWhenClippingIntoCamera>1</DeactivateHideWhenClippingIntoCamera>
-        <BuildingType>Factory</BuildingType>
-        <BuildingCategoryName>100002</BuildingCategoryName>
-        <DestructionConfirmation>1</DestructionConfirmation>
-        <Destructable>1</Destructable>
-        <Movable>1</Movable>
-        <ConstructionMenuText>0</ConstructionMenuText>
-        <HasBorderRectOutline>1</HasBorderRectOutline>
-        <SnapRadius>2</SnapRadius>
-        <TerrainType>Terrain</TerrainType>
-        <InfluencedByNeighbors />
-        <InfluencedVariationDirection />
-        <BuildingBlockPool />
-        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
-      <Blocking>
-        <HidePropsRadius>1</HidePropsRadius>
-        <DeletePropsRadius>1</DeletePropsRadius>
-        <GroundDecalAsset>0</GroundDecalAsset>
-        <GroundDecalInvisible>0</GroundDecalInvisible>
-        <StreetOutside>0</StreetOutside>
-        <RemoveGrass>1</RemoveGrass>
-        <BlocksBuilding>1</BlocksBuilding>
-      </Blocking>
+      <Blocking />
       <Cost>
         <Costs />
-        <ItemsPerCost>1</ItemsPerCost>
-        <InfluenceCostType>None</InfluenceCostType>
-        <InfluenceCostPoints>1</InfluenceCostPoints>
       </Cost>
       <Object>
         <Variations>
@@ -358,43 +151,10 @@
             <Filename>data/graphics/buildings/public/monument_01/monument_01_01/monument_01_01.cfg</Filename>
           </Item>
         </Variations>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <DefaultParticipant>Neutral</DefaultParticipant>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <Mesh>
-        <ObjectPosition>Static</ObjectPosition>
-        <MeshPlacement>Default</MeshPlacement>
-        <DefaultSequence>idle01</DefaultSequence>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
-        <LogoMode>Disabled</LogoMode>
-      </Mesh>
+      <Mesh />
       <Selection>
         <GUIType>Monument</GUIType>
-        <Selectable>1</Selectable>
-        <DestructSelectable>1</DestructSelectable>
-        <OnSelection>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnSelection>
-        <InteractionDistance>15</InteractionDistance>
-        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
-        <InfoCorner>25000131</InfoCorner>
-        <AllowedDragType />
-        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
-        <Colors />
       </Selection>
       <Text>
         <LocaText>
@@ -405,17 +165,10 @@
           </English>
         </LocaText>
         <LineID>20108</LineID>
-        <Localize>1</Localize>
       </Text>
-      <Constructable>
-        <DestructionCategory>Production</DestructionCategory>
-        <ConstructionMode>Default</ConstructionMode>
-        <DestructionType>0</DestructionType>
-      </Constructable>
+      <Constructable />
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
       </Locked>
       <SoundEmitter>
         <ActiveSounds>
@@ -428,60 +181,10 @@
             <Sound>203866</Sound>
           </Item>
         </BuildingRepaired>
-        <DestroySounds>
-          <Item>
-            <Sound>9818756</Sound>
-          </Item>
-        </DestroySounds>
-        <ConstructionSounds>
-          <BuildFailed>
-            <Item>
-              <Sound>9818387</Sound>
-            </Item>
-          </BuildFailed>
-          <BuildMoveStart>
-            <Item>
-              <Sound>9818755</Sound>
-            </Item>
-          </BuildMoveStart>
-          <BuildMoveSuccess>
-            <Item>
-              <Sound>203995</Sound>
-            </Item>
-          </BuildMoveSuccess>
-          <BuildMoveEnd>
-            <Item>
-              <Sound>200141</Sound>
-            </Item>
-          </BuildMoveEnd>
-        </ConstructionSounds>
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <ProjectileSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <IncidentSounds />
-        <BuildingRuined />
-        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
-      <FeedbackController>
-        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
-        <UpdateMeshSequence>1</UpdateMeshSequence>
-      </FeedbackController>
-      <Infolayer>
-        <DefaultInfoLayer>0</DefaultInfoLayer>
-      </Infolayer>
-      <RandomDummySpawner>
-        <RandomAssets />
-      </RandomDummySpawner>
+      <FeedbackController />
+      <Infolayer />
+      <RandomDummySpawner />
       <FactoryBase>
         <FactoryInputs>
           <Item>
@@ -501,25 +204,9 @@
           </Item>
         </FactoryInputs>
         <CycleTime>60</CycleTime>
-        <FactoryOutputs />
-        <BaseProductivity>100</BaseProductivity>
-        <ProductivityTimeMultiplier>5</ProductivityTimeMultiplier>
-        <ProductivityPoints>30</ProductivityPoints>
-        <WarehouseTransporterAsset>1010105</WarehouseTransporterAsset>
-        <OutputAmountFactor>100</OutputAmountFactor>
       </FactoryBase>
       <LogisticNode>
         <TransporterCountMax>2</TransporterCountMax>
-        <TransporterAsset>1010104</TransporterAsset>
-        <TrainAsset>120025</TrainAsset>
-        <QueueConfiguration>
-          <ProcessingQueueParallelCount>10</ProcessingQueueParallelCount>
-          <LoadingTimeModifier>1</LoadingTimeModifier>
-          <UnloadingTimeModifier>1</UnloadingTimeModifier>
-        </QueueConfiguration>
-        <REMOVE_THIS_LATER_FeedbackUnitTier>Level1</REMOVE_THIS_LATER_FeedbackUnitTier>
-        <NeedsTransporterQueue>1</NeedsTransporterQueue>
-        <PathLayers>Street</PathLayers>
       </LogisticNode>
       <Monument>
         <UpgradeTarget>101336</UpgradeTarget>
@@ -527,40 +214,10 @@
         <UnfinishedIcon>500414</UnfinishedIcon>
         <FinishedIcon>500418</FinishedIcon>
         <ShutdownText>6783</ShutdownText>
-        <ConstructionStateText>
-          <Interrupted>
-            <Text>163011</Text>
-          </Interrupted>
-          <OutOfWorkforce>
-            <Text>163026</Text>
-          </OutOfWorkforce>
-          <WaitingForResources>
-            <Text>163012</Text>
-          </WaitingForResources>
-          <Processing>
-            <Text>163010</Text>
-          </Processing>
-        </ConstructionStateText>
-        <MonumentEventsCategories />
-        <FakePrerequisites />
-        <FinishButtonText>163013</FinishButtonText>
       </Monument>
-      <Culture>
-        <CultureType>Monument</CultureType>
-        <SetPages />
-        <UndiscoveredSet>0</UndiscoveredSet>
-        <ModuleListHeader>0</ModuleListHeader>
-        <OpenSetPages>0</OpenSetPages>
-      </Culture>
+      <Culture />
       <AmbientMoodProvider>
         <Murmur>MonumentConstruction</Murmur>
-        <AmbientMood>None</AmbientMood>
-        <AttractivityDependentMurmur />
-        <ProductivityDependentMurmur />
-        <SatisfactionDependentMurmur />
-        <DynamicEnvironmentType>None</DynamicEnvironmentType>
-        <HappinessDependentMurmur />
-        <IslandAttractivityDependentMurmur />
       </AmbientMoodProvider>
       <Maintenance>
         <Maintenances>
@@ -571,33 +228,17 @@
           </Item>
         </Maintenances>
         <ConsumerPriorityAlarmed>2</ConsumerPriorityAlarmed>
-        <MaintenanceAmountFactor>1</MaintenanceAmountFactor>
-        <WorkforceAmountFactor>1</WorkforceAmountFactor>
       </Maintenance>
       <Attackable>
         <MaximumHitPoints>10000</MaximumHitPoints>
         <SelfHealPerHealTick>6</SelfHealPerHealTick>
-        <IsInvulnerable>1</IsInvulnerable>
-        <HPBarOffset>6</HPBarOffset>
-        <PausedTimeIfAttacked>15000</PausedTimeIfAttacked>
-        <SelfHealPausedTimeIfAttacked>15000</SelfHealPausedTimeIfAttacked>
-        <ArmorType>Default</ArmorType>
-        <TakeOverEffect>Never</TakeOverEffect>
-        <IslandWarFlag>0</IslandWarFlag>
-        <RuinSmokeParticles />
-        <ExplosionEffects />
       </Attackable>
       <Pausable />
       <IslandUnique>
         <UniqueType>Monument01</UniqueType>
       </IslandUnique>
       <UpgradeList />
-      <Electric>
-        <BoostedByElectricity>0</BoostedByElectricity>
-        <ProductivityBoost>1</ProductivityBoost>
-        <TransporterElectricFactory>120028</TransporterElectricFactory>
-        <TransporterElectricWarehouse>120027</TransporterElectricWarehouse>
-      </Electric>
+      <Electric />
       <QuestObject />
     </Values>
   </Asset>
@@ -608,41 +249,15 @@
         <GUID>101336</GUID>
         <Name>monument_01_02</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_world_fair_2.png</IconFilename>
-        <InfoDescription>100027</InfoDescription>
-        <Comments />
       </Standard>
       <Building>
         <PickingAsset>1010489</PickingAsset>
         <AssociatedRegions>Moderate</AssociatedRegions>
         <DeactivateHideWhenClippingIntoCamera>1</DeactivateHideWhenClippingIntoCamera>
-        <BuildingType>Factory</BuildingType>
-        <BuildingCategoryName>100002</BuildingCategoryName>
-        <DestructionConfirmation>1</DestructionConfirmation>
-        <Destructable>1</Destructable>
-        <Movable>1</Movable>
-        <ConstructionMenuText>0</ConstructionMenuText>
-        <HasBorderRectOutline>1</HasBorderRectOutline>
-        <SnapRadius>2</SnapRadius>
-        <TerrainType>Terrain</TerrainType>
-        <InfluencedByNeighbors />
-        <InfluencedVariationDirection />
-        <BuildingBlockPool />
-        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
-      <Blocking>
-        <HidePropsRadius>1</HidePropsRadius>
-        <DeletePropsRadius>1</DeletePropsRadius>
-        <GroundDecalAsset>0</GroundDecalAsset>
-        <GroundDecalInvisible>0</GroundDecalInvisible>
-        <StreetOutside>0</StreetOutside>
-        <RemoveGrass>1</RemoveGrass>
-        <BlocksBuilding>1</BlocksBuilding>
-      </Blocking>
+      <Blocking />
       <Cost>
         <Costs />
-        <ItemsPerCost>1</ItemsPerCost>
-        <InfluenceCostType>None</InfluenceCostType>
-        <InfluenceCostPoints>1</InfluenceCostPoints>
       </Cost>
       <Object>
         <Variations>
@@ -650,43 +265,10 @@
             <Filename>data/graphics/buildings/public/monument_01/monument_01_02/monument_01_02.cfg</Filename>
           </Item>
         </Variations>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <DefaultParticipant>Neutral</DefaultParticipant>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <Mesh>
-        <ObjectPosition>Static</ObjectPosition>
-        <MeshPlacement>Default</MeshPlacement>
-        <DefaultSequence>idle01</DefaultSequence>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
-        <LogoMode>Disabled</LogoMode>
-      </Mesh>
+      <Mesh />
       <Selection>
         <GUIType>Monument</GUIType>
-        <Selectable>1</Selectable>
-        <DestructSelectable>1</DestructSelectable>
-        <OnSelection>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnSelection>
-        <InteractionDistance>15</InteractionDistance>
-        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
-        <InfoCorner>25000131</InfoCorner>
-        <AllowedDragType />
-        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
-        <Colors />
       </Selection>
       <Text>
         <LocaText>
@@ -697,18 +279,9 @@
           </English>
         </LocaText>
         <LineID>20109</LineID>
-        <Localize>1</Localize>
       </Text>
-      <Constructable>
-        <DestructionCategory>Production</DestructionCategory>
-        <ConstructionMode>Default</ConstructionMode>
-        <DestructionType>0</DestructionType>
-      </Constructable>
-      <Locked>
-        <DefaultLockedState>1</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
-      </Locked>
+      <Constructable />
+      <Locked />
       <SoundEmitter>
         <ActiveSounds>
           <Item>
@@ -720,60 +293,10 @@
             <Sound>203866</Sound>
           </Item>
         </BuildingRepaired>
-        <DestroySounds>
-          <Item>
-            <Sound>9818756</Sound>
-          </Item>
-        </DestroySounds>
-        <ConstructionSounds>
-          <BuildFailed>
-            <Item>
-              <Sound>9818387</Sound>
-            </Item>
-          </BuildFailed>
-          <BuildMoveStart>
-            <Item>
-              <Sound>9818755</Sound>
-            </Item>
-          </BuildMoveStart>
-          <BuildMoveSuccess>
-            <Item>
-              <Sound>203995</Sound>
-            </Item>
-          </BuildMoveSuccess>
-          <BuildMoveEnd>
-            <Item>
-              <Sound>200141</Sound>
-            </Item>
-          </BuildMoveEnd>
-        </ConstructionSounds>
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <ProjectileSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <IncidentSounds />
-        <BuildingRuined />
-        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
-      <FeedbackController>
-        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
-        <UpdateMeshSequence>1</UpdateMeshSequence>
-      </FeedbackController>
-      <Infolayer>
-        <DefaultInfoLayer>0</DefaultInfoLayer>
-      </Infolayer>
-      <RandomDummySpawner>
-        <RandomAssets />
-      </RandomDummySpawner>
+      <FeedbackController />
+      <Infolayer />
+      <RandomDummySpawner />
       <FactoryBase>
         <FactoryInputs>
           <Item>
@@ -793,25 +316,9 @@
           </Item>
         </FactoryInputs>
         <CycleTime>60</CycleTime>
-        <FactoryOutputs />
-        <BaseProductivity>100</BaseProductivity>
-        <ProductivityTimeMultiplier>5</ProductivityTimeMultiplier>
-        <ProductivityPoints>30</ProductivityPoints>
-        <WarehouseTransporterAsset>1010105</WarehouseTransporterAsset>
-        <OutputAmountFactor>100</OutputAmountFactor>
       </FactoryBase>
       <LogisticNode>
         <TransporterCountMax>2</TransporterCountMax>
-        <TransporterAsset>1010104</TransporterAsset>
-        <TrainAsset>120025</TrainAsset>
-        <QueueConfiguration>
-          <ProcessingQueueParallelCount>10</ProcessingQueueParallelCount>
-          <LoadingTimeModifier>1</LoadingTimeModifier>
-          <UnloadingTimeModifier>1</UnloadingTimeModifier>
-        </QueueConfiguration>
-        <REMOVE_THIS_LATER_FeedbackUnitTier>Level1</REMOVE_THIS_LATER_FeedbackUnitTier>
-        <NeedsTransporterQueue>1</NeedsTransporterQueue>
-        <PathLayers>Street</PathLayers>
       </LogisticNode>
       <Monument>
         <UpgradeTarget>1010491</UpgradeTarget>
@@ -819,40 +326,10 @@
         <UnfinishedIcon>500415</UnfinishedIcon>
         <FinishedIcon>500419</FinishedIcon>
         <ShutdownText>6783</ShutdownText>
-        <ConstructionStateText>
-          <Interrupted>
-            <Text>163011</Text>
-          </Interrupted>
-          <OutOfWorkforce>
-            <Text>163026</Text>
-          </OutOfWorkforce>
-          <WaitingForResources>
-            <Text>163012</Text>
-          </WaitingForResources>
-          <Processing>
-            <Text>163010</Text>
-          </Processing>
-        </ConstructionStateText>
-        <MonumentEventsCategories />
-        <FakePrerequisites />
-        <FinishButtonText>163013</FinishButtonText>
       </Monument>
-      <Culture>
-        <CultureType>Monument</CultureType>
-        <SetPages />
-        <UndiscoveredSet>0</UndiscoveredSet>
-        <ModuleListHeader>0</ModuleListHeader>
-        <OpenSetPages>0</OpenSetPages>
-      </Culture>
+      <Culture />
       <AmbientMoodProvider>
         <Murmur>MonumentConstruction</Murmur>
-        <AmbientMood>None</AmbientMood>
-        <AttractivityDependentMurmur />
-        <ProductivityDependentMurmur />
-        <SatisfactionDependentMurmur />
-        <DynamicEnvironmentType>None</DynamicEnvironmentType>
-        <HappinessDependentMurmur />
-        <IslandAttractivityDependentMurmur />
       </AmbientMoodProvider>
       <Maintenance>
         <Maintenances>
@@ -863,33 +340,17 @@
           </Item>
         </Maintenances>
         <ConsumerPriorityAlarmed>2</ConsumerPriorityAlarmed>
-        <MaintenanceAmountFactor>1</MaintenanceAmountFactor>
-        <WorkforceAmountFactor>1</WorkforceAmountFactor>
       </Maintenance>
       <Attackable>
         <MaximumHitPoints>10000</MaximumHitPoints>
         <SelfHealPerHealTick>6</SelfHealPerHealTick>
-        <IsInvulnerable>1</IsInvulnerable>
-        <HPBarOffset>6</HPBarOffset>
-        <PausedTimeIfAttacked>15000</PausedTimeIfAttacked>
-        <SelfHealPausedTimeIfAttacked>15000</SelfHealPausedTimeIfAttacked>
-        <ArmorType>Default</ArmorType>
-        <TakeOverEffect>Never</TakeOverEffect>
-        <IslandWarFlag>0</IslandWarFlag>
-        <RuinSmokeParticles />
-        <ExplosionEffects />
       </Attackable>
       <Pausable />
       <IslandUnique>
         <UniqueType>Monument01</UniqueType>
       </IslandUnique>
       <UpgradeList />
-      <Electric>
-        <BoostedByElectricity>0</BoostedByElectricity>
-        <ProductivityBoost>1</ProductivityBoost>
-        <TransporterElectricFactory>120028</TransporterElectricFactory>
-        <TransporterElectricWarehouse>120027</TransporterElectricWarehouse>
-      </Electric>
+      <Electric />
       <QuestObject />
     </Values>
   </Asset>
@@ -900,41 +361,15 @@
         <GUID>1010491</GUID>
         <Name>monument_01_03</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_world_fair_2.png</IconFilename>
-        <InfoDescription>100027</InfoDescription>
-        <Comments />
       </Standard>
       <Building>
         <PickingAsset>1010489</PickingAsset>
         <AssociatedRegions>Moderate</AssociatedRegions>
         <DeactivateHideWhenClippingIntoCamera>1</DeactivateHideWhenClippingIntoCamera>
-        <BuildingType>Factory</BuildingType>
-        <BuildingCategoryName>100002</BuildingCategoryName>
-        <DestructionConfirmation>1</DestructionConfirmation>
-        <Destructable>1</Destructable>
-        <Movable>1</Movable>
-        <ConstructionMenuText>0</ConstructionMenuText>
-        <HasBorderRectOutline>1</HasBorderRectOutline>
-        <SnapRadius>2</SnapRadius>
-        <TerrainType>Terrain</TerrainType>
-        <InfluencedByNeighbors />
-        <InfluencedVariationDirection />
-        <BuildingBlockPool />
-        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
-      <Blocking>
-        <HidePropsRadius>1</HidePropsRadius>
-        <DeletePropsRadius>1</DeletePropsRadius>
-        <GroundDecalAsset>0</GroundDecalAsset>
-        <GroundDecalInvisible>0</GroundDecalInvisible>
-        <StreetOutside>0</StreetOutside>
-        <RemoveGrass>1</RemoveGrass>
-        <BlocksBuilding>1</BlocksBuilding>
-      </Blocking>
+      <Blocking />
       <Cost>
         <Costs />
-        <ItemsPerCost>1</ItemsPerCost>
-        <InfluenceCostType>None</InfluenceCostType>
-        <InfluenceCostPoints>1</InfluenceCostPoints>
       </Cost>
       <Object>
         <Variations>
@@ -942,43 +377,10 @@
             <Filename>data/graphics/buildings/public/monument_01/monument_01_03/monument_01_03.cfg</Filename>
           </Item>
         </Variations>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <DefaultParticipant>Neutral</DefaultParticipant>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <Mesh>
-        <ObjectPosition>Static</ObjectPosition>
-        <MeshPlacement>Default</MeshPlacement>
-        <DefaultSequence>idle01</DefaultSequence>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
-        <LogoMode>Disabled</LogoMode>
-      </Mesh>
+      <Mesh />
       <Selection>
         <GUIType>Monument</GUIType>
-        <Selectable>1</Selectable>
-        <DestructSelectable>1</DestructSelectable>
-        <OnSelection>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnSelection>
-        <InteractionDistance>15</InteractionDistance>
-        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
-        <InfoCorner>25000131</InfoCorner>
-        <AllowedDragType />
-        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
-        <Colors />
       </Selection>
       <Text>
         <LocaText>
@@ -989,18 +391,9 @@
           </English>
         </LocaText>
         <LineID>20110</LineID>
-        <Localize>1</Localize>
       </Text>
-      <Constructable>
-        <DestructionCategory>Production</DestructionCategory>
-        <ConstructionMode>Default</ConstructionMode>
-        <DestructionType>0</DestructionType>
-      </Constructable>
-      <Locked>
-        <DefaultLockedState>1</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
-      </Locked>
+      <Constructable />
+      <Locked />
       <SoundEmitter>
         <ActiveSounds>
           <Item>
@@ -1012,60 +405,10 @@
             <Sound>203866</Sound>
           </Item>
         </BuildingRepaired>
-        <DestroySounds>
-          <Item>
-            <Sound>9818756</Sound>
-          </Item>
-        </DestroySounds>
-        <ConstructionSounds>
-          <BuildFailed>
-            <Item>
-              <Sound>9818387</Sound>
-            </Item>
-          </BuildFailed>
-          <BuildMoveStart>
-            <Item>
-              <Sound>9818755</Sound>
-            </Item>
-          </BuildMoveStart>
-          <BuildMoveSuccess>
-            <Item>
-              <Sound>203995</Sound>
-            </Item>
-          </BuildMoveSuccess>
-          <BuildMoveEnd>
-            <Item>
-              <Sound>200141</Sound>
-            </Item>
-          </BuildMoveEnd>
-        </ConstructionSounds>
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <ProjectileSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <IncidentSounds />
-        <BuildingRuined />
-        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
-      <FeedbackController>
-        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
-        <UpdateMeshSequence>1</UpdateMeshSequence>
-      </FeedbackController>
-      <Infolayer>
-        <DefaultInfoLayer>0</DefaultInfoLayer>
-      </Infolayer>
-      <RandomDummySpawner>
-        <RandomAssets />
-      </RandomDummySpawner>
+      <FeedbackController />
+      <Infolayer />
+      <RandomDummySpawner />
       <FactoryBase>
         <FactoryInputs>
           <Item>
@@ -1085,25 +428,9 @@
           </Item>
         </FactoryInputs>
         <CycleTime>60</CycleTime>
-        <FactoryOutputs />
-        <BaseProductivity>100</BaseProductivity>
-        <ProductivityTimeMultiplier>5</ProductivityTimeMultiplier>
-        <ProductivityPoints>30</ProductivityPoints>
-        <WarehouseTransporterAsset>1010105</WarehouseTransporterAsset>
-        <OutputAmountFactor>100</OutputAmountFactor>
       </FactoryBase>
       <LogisticNode>
         <TransporterCountMax>2</TransporterCountMax>
-        <TransporterAsset>1010104</TransporterAsset>
-        <TrainAsset>120025</TrainAsset>
-        <QueueConfiguration>
-          <ProcessingQueueParallelCount>10</ProcessingQueueParallelCount>
-          <LoadingTimeModifier>1</LoadingTimeModifier>
-          <UnloadingTimeModifier>1</UnloadingTimeModifier>
-        </QueueConfiguration>
-        <REMOVE_THIS_LATER_FeedbackUnitTier>Level1</REMOVE_THIS_LATER_FeedbackUnitTier>
-        <NeedsTransporterQueue>1</NeedsTransporterQueue>
-        <PathLayers>Street</PathLayers>
       </LogisticNode>
       <Monument>
         <UpgradeTarget>1010492</UpgradeTarget>
@@ -1111,40 +438,10 @@
         <UnfinishedIcon>500416</UnfinishedIcon>
         <FinishedIcon>500420</FinishedIcon>
         <ShutdownText>6783</ShutdownText>
-        <ConstructionStateText>
-          <Interrupted>
-            <Text>163011</Text>
-          </Interrupted>
-          <OutOfWorkforce>
-            <Text>163026</Text>
-          </OutOfWorkforce>
-          <WaitingForResources>
-            <Text>163012</Text>
-          </WaitingForResources>
-          <Processing>
-            <Text>163010</Text>
-          </Processing>
-        </ConstructionStateText>
-        <MonumentEventsCategories />
-        <FakePrerequisites />
-        <FinishButtonText>163013</FinishButtonText>
       </Monument>
-      <Culture>
-        <CultureType>Monument</CultureType>
-        <SetPages />
-        <UndiscoveredSet>0</UndiscoveredSet>
-        <ModuleListHeader>0</ModuleListHeader>
-        <OpenSetPages>0</OpenSetPages>
-      </Culture>
+      <Culture />
       <AmbientMoodProvider>
         <Murmur>MonumentConstruction</Murmur>
-        <AmbientMood>None</AmbientMood>
-        <AttractivityDependentMurmur />
-        <ProductivityDependentMurmur />
-        <SatisfactionDependentMurmur />
-        <DynamicEnvironmentType>None</DynamicEnvironmentType>
-        <HappinessDependentMurmur />
-        <IslandAttractivityDependentMurmur />
       </AmbientMoodProvider>
       <Maintenance>
         <Maintenances>
@@ -1155,21 +452,10 @@
           </Item>
         </Maintenances>
         <ConsumerPriorityAlarmed>2</ConsumerPriorityAlarmed>
-        <MaintenanceAmountFactor>1</MaintenanceAmountFactor>
-        <WorkforceAmountFactor>1</WorkforceAmountFactor>
       </Maintenance>
       <Attackable>
         <MaximumHitPoints>10000</MaximumHitPoints>
         <SelfHealPerHealTick>6</SelfHealPerHealTick>
-        <IsInvulnerable>1</IsInvulnerable>
-        <HPBarOffset>6</HPBarOffset>
-        <PausedTimeIfAttacked>15000</PausedTimeIfAttacked>
-        <SelfHealPausedTimeIfAttacked>15000</SelfHealPausedTimeIfAttacked>
-        <ArmorType>Default</ArmorType>
-        <TakeOverEffect>Never</TakeOverEffect>
-        <IslandWarFlag>0</IslandWarFlag>
-        <RuinSmokeParticles />
-        <ExplosionEffects />
       </Attackable>
       <Pausable />
       <IslandUnique>
@@ -1178,10 +464,6 @@
       <UpgradeList />
       <Electric>
         <MandatoryElectricity>1</MandatoryElectricity>
-        <BoostedByElectricity>0</BoostedByElectricity>
-        <ProductivityBoost>1</ProductivityBoost>
-        <TransporterElectricFactory>120028</TransporterElectricFactory>
-        <TransporterElectricWarehouse>120027</TransporterElectricWarehouse>
       </Electric>
       <QuestObject />
     </Values>
@@ -1194,41 +476,15 @@
         <Name>monument_01_04</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_world_fair_2.png</IconFilename>
         <ID>MonumentComplete</ID>
-        <InfoDescription>100027</InfoDescription>
-        <Comments />
       </Standard>
       <Building>
         <PickingAsset>1010489</PickingAsset>
         <AssociatedRegions>Moderate</AssociatedRegions>
         <DeactivateHideWhenClippingIntoCamera>1</DeactivateHideWhenClippingIntoCamera>
-        <BuildingType>Factory</BuildingType>
-        <BuildingCategoryName>100002</BuildingCategoryName>
-        <DestructionConfirmation>1</DestructionConfirmation>
-        <Destructable>1</Destructable>
-        <Movable>1</Movable>
-        <ConstructionMenuText>0</ConstructionMenuText>
-        <HasBorderRectOutline>1</HasBorderRectOutline>
-        <SnapRadius>2</SnapRadius>
-        <TerrainType>Terrain</TerrainType>
-        <InfluencedByNeighbors />
-        <InfluencedVariationDirection />
-        <BuildingBlockPool />
-        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
-      <Blocking>
-        <HidePropsRadius>1</HidePropsRadius>
-        <DeletePropsRadius>1</DeletePropsRadius>
-        <GroundDecalAsset>0</GroundDecalAsset>
-        <GroundDecalInvisible>0</GroundDecalInvisible>
-        <StreetOutside>0</StreetOutside>
-        <RemoveGrass>1</RemoveGrass>
-        <BlocksBuilding>1</BlocksBuilding>
-      </Blocking>
+      <Blocking />
       <Cost>
         <Costs />
-        <ItemsPerCost>1</ItemsPerCost>
-        <InfluenceCostType>None</InfluenceCostType>
-        <InfluenceCostPoints>1</InfluenceCostPoints>
       </Cost>
       <Object>
         <Variations>
@@ -1245,43 +501,10 @@
             <Filename>data/graphics/buildings/public/monument_01/monument_01_05/monument_01_05_a.cfg</Filename>
           </Item>
         </Variations>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <DefaultParticipant>Neutral</DefaultParticipant>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <Mesh>
-        <ObjectPosition>Static</ObjectPosition>
-        <MeshPlacement>Default</MeshPlacement>
-        <DefaultSequence>idle01</DefaultSequence>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
-        <LogoMode>Disabled</LogoMode>
-      </Mesh>
+      <Mesh />
       <Selection>
         <GUIType>Generic</GUIType>
-        <Selectable>1</Selectable>
-        <DestructSelectable>1</DestructSelectable>
-        <OnSelection>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnSelection>
-        <InteractionDistance>15</InteractionDistance>
-        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
-        <InfoCorner>25000131</InfoCorner>
-        <AllowedDragType />
-        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
-        <Colors />
       </Selection>
       <Text>
         <LocaText>
@@ -1292,18 +515,9 @@
           </English>
         </LocaText>
         <LineID>20111</LineID>
-        <Localize>1</Localize>
       </Text>
-      <Constructable>
-        <DestructionCategory>Production</DestructionCategory>
-        <ConstructionMode>Default</ConstructionMode>
-        <DestructionType>0</DestructionType>
-      </Constructable>
-      <Locked>
-        <DefaultLockedState>1</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
-      </Locked>
+      <Constructable />
+      <Locked />
       <SoundEmitter>
         <ActiveSounds>
           <Item>
@@ -1341,26 +555,6 @@
               <Sound>201232</Sound>
             </Item>
           </BuildUpgrade>
-          <BuildFailed>
-            <Item>
-              <Sound>9818387</Sound>
-            </Item>
-          </BuildFailed>
-          <BuildMoveStart>
-            <Item>
-              <Sound>9818755</Sound>
-            </Item>
-          </BuildMoveStart>
-          <BuildMoveSuccess>
-            <Item>
-              <Sound>203995</Sound>
-            </Item>
-          </BuildMoveSuccess>
-          <BuildMoveEnd>
-            <Item>
-              <Sound>200141</Sound>
-            </Item>
-          </BuildMoveEnd>
         </ConstructionSounds>
         <SpawnSounds>
           <Item>
@@ -1372,59 +566,13 @@
             <Sound>203866</Sound>
           </Item>
         </BuildingRepaired>
-        <DestroySounds>
-          <Item>
-            <Sound>9818756</Sound>
-          </Item>
-        </DestroySounds>
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <ProjectileSounds />
-        <WeaponSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <IncidentSounds />
-        <BuildingRuined />
-        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
-      <FeedbackController>
-        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
-        <UpdateMeshSequence>1</UpdateMeshSequence>
-      </FeedbackController>
-      <Infolayer>
-        <DefaultInfoLayer>0</DefaultInfoLayer>
-      </Infolayer>
-      <RandomDummySpawner>
-        <RandomAssets />
-      </RandomDummySpawner>
-      <FactoryBase>
-        <FactoryInputs />
-        <FactoryOutputs />
-        <CycleTime>30</CycleTime>
-        <BaseProductivity>100</BaseProductivity>
-        <ProductivityTimeMultiplier>5</ProductivityTimeMultiplier>
-        <ProductivityPoints>30</ProductivityPoints>
-        <WarehouseTransporterAsset>1010105</WarehouseTransporterAsset>
-        <OutputAmountFactor>100</OutputAmountFactor>
-      </FactoryBase>
+      <FeedbackController />
+      <Infolayer />
+      <RandomDummySpawner />
+      <FactoryBase />
       <LogisticNode>
         <TransporterCountMax>2</TransporterCountMax>
-        <TransporterAsset>1010104</TransporterAsset>
-        <TrainAsset>120025</TrainAsset>
-        <QueueConfiguration>
-          <ProcessingQueueParallelCount>10</ProcessingQueueParallelCount>
-          <LoadingTimeModifier>1</LoadingTimeModifier>
-          <UnloadingTimeModifier>1</UnloadingTimeModifier>
-        </QueueConfiguration>
-        <REMOVE_THIS_LATER_FeedbackUnitTier>Level1</REMOVE_THIS_LATER_FeedbackUnitTier>
-        <NeedsTransporterQueue>1</NeedsTransporterQueue>
-        <PathLayers>Street</PathLayers>
       </LogisticNode>
       <Monument>
         <UnfinishedIcon>500417</UnfinishedIcon>
@@ -1441,62 +589,20 @@
           </Item>
         </MonumentEventsCategories>
         <ShutdownText>6783</ShutdownText>
-        <ConstructionStateText>
-          <Interrupted>
-            <Text>163011</Text>
-          </Interrupted>
-          <OutOfWorkforce>
-            <Text>163026</Text>
-          </OutOfWorkforce>
-          <WaitingForResources>
-            <Text>163012</Text>
-          </WaitingForResources>
-          <Processing>
-            <Text>163010</Text>
-          </Processing>
-        </ConstructionStateText>
-        <UpgradeTarget>0</UpgradeTarget>
-        <MicrophaseCount>10</MicrophaseCount>
-        <FakePrerequisites />
-        <FinishButtonText>163013</FinishButtonText>
       </Monument>
       <Culture>
         <Attractiveness>150</Attractiveness>
         <CultureSpawnGroup>1</CultureSpawnGroup>
-        <CultureType>Monument</CultureType>
-        <SetPages />
-        <UndiscoveredSet>0</UndiscoveredSet>
-        <ModuleListHeader>0</ModuleListHeader>
-        <OpenSetPages>0</OpenSetPages>
       </Culture>
       <AmbientMoodProvider>
         <Murmur>MonumentEvent</Murmur>
-        <AmbientMood>None</AmbientMood>
-        <AttractivityDependentMurmur />
-        <ProductivityDependentMurmur />
-        <SatisfactionDependentMurmur />
-        <DynamicEnvironmentType>None</DynamicEnvironmentType>
-        <HappinessDependentMurmur />
-        <IslandAttractivityDependentMurmur />
       </AmbientMoodProvider>
       <Maintenance>
         <ConsumerPriorityAlarmed>2</ConsumerPriorityAlarmed>
-        <Maintenances />
-        <MaintenanceAmountFactor>1</MaintenanceAmountFactor>
-        <WorkforceAmountFactor>1</WorkforceAmountFactor>
       </Maintenance>
       <Attackable>
         <MaximumHitPoints>10000</MaximumHitPoints>
         <SelfHealPerHealTick>6</SelfHealPerHealTick>
-        <IsInvulnerable>1</IsInvulnerable>
-        <HPBarOffset>6</HPBarOffset>
-        <PausedTimeIfAttacked>15000</PausedTimeIfAttacked>
-        <SelfHealPausedTimeIfAttacked>15000</SelfHealPausedTimeIfAttacked>
-        <ArmorType>Default</ArmorType>
-        <TakeOverEffect>Never</TakeOverEffect>
-        <IslandWarFlag>0</IslandWarFlag>
-        <RuinSmokeParticles />
-        <ExplosionEffects />
       </Attackable>
       <Pausable />
       <IslandUnique>
@@ -1505,10 +611,6 @@
       <UpgradeList />
       <Electric>
         <MandatoryElectricity>1</MandatoryElectricity>
-        <BoostedByElectricity>0</BoostedByElectricity>
-        <ProductivityBoost>1</ProductivityBoost>
-        <TransporterElectricFactory>120028</TransporterElectricFactory>
-        <TransporterElectricWarehouse>120027</TransporterElectricWarehouse>
       </Electric>
       <QuestObject />
     </Values>
@@ -1520,53 +622,52 @@
         <GUID>101040</GUID>
         <Name>CO_Tunnel_Entrance01</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_dynamite.png</IconFilename>
-        <InfoDescription>100027</InfoDescription>
-        <Comments />
       </Standard>
       <Building>
         <BuildingCategoryName>11151</BuildingCategoryName>
         <Destructable>0</Destructable>
         <Movable>0</Movable>
-        <BuildingType>Factory</BuildingType>
-        <DestructionConfirmation>1</DestructionConfirmation>
-        <PickingAsset>0</PickingAsset>
-        <ConstructionMenuText>0</ConstructionMenuText>
-        <HasBorderRectOutline>1</HasBorderRectOutline>
-        <SnapRadius>2</SnapRadius>
-        <TerrainType>Terrain</TerrainType>
-        <InfluencedByNeighbors />
-        <InfluencedVariationDirection />
-        <AssociatedRegions>Meta;Moderate;Colony01;Arctic</AssociatedRegions>
-        <BuildingBlockPool />
-        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
-      <Blocking>
-        <HidePropsRadius>1</HidePropsRadius>
-        <DeletePropsRadius>1</DeletePropsRadius>
-        <GroundDecalAsset>0</GroundDecalAsset>
-        <GroundDecalInvisible>0</GroundDecalInvisible>
-        <StreetOutside>0</StreetOutside>
-        <RemoveGrass>1</RemoveGrass>
-        <BlocksBuilding>1</BlocksBuilding>
-      </Blocking>
+      <Blocking />
       <Cost>
         <Costs>
           <Item>
+            <VectorElement>
+              <InheritedIndex>0</InheritedIndex>
+              <InheritanceMapV2>
+                <Entry>
+                  <TemplateName>Monument</TemplateName>
+                  <Index>0</Index>
+                </Entry>
+              </InheritanceMapV2>
+            </VectorElement>
             <Amount>2500</Amount>
-            <Ingredient>1010017</Ingredient>
           </Item>
           <Item>
+            <VectorElement>
+              <InheritedIndex>1</InheritedIndex>
+              <InheritanceMapV2>
+                <Entry>
+                  <TemplateName>Monument</TemplateName>
+                  <Index>1</Index>
+                </Entry>
+              </InheritanceMapV2>
+            </VectorElement>
             <Amount>100</Amount>
-            <Ingredient>1010196</Ingredient>
           </Item>
           <Item>
+            <VectorElement>
+              <InheritedIndex>2</InheritedIndex>
+              <InheritanceMapV2>
+                <Entry>
+                  <TemplateName>Monument</TemplateName>
+                  <Index>2</Index>
+                </Entry>
+              </InheritanceMapV2>
+            </VectorElement>
             <Amount>50</Amount>
-            <Ingredient>1010205</Ingredient>
           </Item>
         </Costs>
-        <ItemsPerCost>1</ItemsPerCost>
-        <InfluenceCostType>None</InfluenceCostType>
-        <InfluenceCostPoints>1</InfluenceCostPoints>
       </Cost>
       <Object>
         <Variations>
@@ -1574,43 +675,12 @@
             <Filename>data/graphics/campaign/buildings/tunnel/tunnel_entrance_01.cfg</Filename>
           </Item>
         </Variations>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <DefaultParticipant>Neutral</DefaultParticipant>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <InitialVisibility>0</InitialVisibility>
-        <ObjectPosition>Static</ObjectPosition>
-        <MeshPlacement>Default</MeshPlacement>
-        <DefaultSequence>idle01</DefaultSequence>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
-        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Selection>
         <GUIType>Monument</GUIType>
-        <Selectable>1</Selectable>
-        <DestructSelectable>1</DestructSelectable>
-        <OnSelection>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnSelection>
-        <InteractionDistance>15</InteractionDistance>
-        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
-        <InfoCorner>25000131</InfoCorner>
-        <AllowedDragType />
-        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
-        <Colors />
       </Selection>
       <Text>
         <LocaText>
@@ -1621,75 +691,13 @@
           </English>
         </LocaText>
         <LineID>21453</LineID>
-        <Localize>1</Localize>
       </Text>
-      <Constructable>
-        <DestructionCategory>Production</DestructionCategory>
-        <ConstructionMode>Default</ConstructionMode>
-        <DestructionType>0</DestructionType>
-      </Constructable>
-      <Locked>
-        <DefaultLockedState>1</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
-      </Locked>
-      <SoundEmitter>
-        <DestroySounds>
-          <Item>
-            <Sound>9818756</Sound>
-          </Item>
-        </DestroySounds>
-        <ConstructionSounds>
-          <BuildFailed>
-            <Item>
-              <Sound>9818387</Sound>
-            </Item>
-          </BuildFailed>
-          <BuildMoveStart>
-            <Item>
-              <Sound>9818755</Sound>
-            </Item>
-          </BuildMoveStart>
-          <BuildMoveSuccess>
-            <Item>
-              <Sound>203995</Sound>
-            </Item>
-          </BuildMoveSuccess>
-          <BuildMoveEnd>
-            <Item>
-              <Sound>200141</Sound>
-            </Item>
-          </BuildMoveEnd>
-        </ConstructionSounds>
-        <ActiveSounds />
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <ProjectileSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <IncidentSounds />
-        <BuildingRuined />
-        <BuildingRepaired />
-        <MaterialType>NONE</MaterialType>
-      </SoundEmitter>
-      <FeedbackController>
-        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
-        <UpdateMeshSequence>1</UpdateMeshSequence>
-      </FeedbackController>
-      <Infolayer>
-        <DefaultInfoLayer>0</DefaultInfoLayer>
-      </Infolayer>
-      <RandomDummySpawner>
-        <RandomAssets />
-      </RandomDummySpawner>
+      <Constructable />
+      <Locked />
+      <SoundEmitter />
+      <FeedbackController />
+      <Infolayer />
+      <RandomDummySpawner />
       <FactoryBase>
         <FactoryInputs>
           <Item>
@@ -1704,67 +712,16 @@
           </Item>
         </FactoryInputs>
         <CycleTime>20</CycleTime>
-        <FactoryOutputs />
-        <BaseProductivity>100</BaseProductivity>
-        <ProductivityTimeMultiplier>5</ProductivityTimeMultiplier>
-        <ProductivityPoints>30</ProductivityPoints>
-        <WarehouseTransporterAsset>1010105</WarehouseTransporterAsset>
-        <OutputAmountFactor>100</OutputAmountFactor>
       </FactoryBase>
-      <LogisticNode>
-        <TransporterCountMax>1</TransporterCountMax>
-        <TransporterAsset>1010104</TransporterAsset>
-        <TrainAsset>120025</TrainAsset>
-        <QueueConfiguration>
-          <ProcessingQueueParallelCount>10</ProcessingQueueParallelCount>
-          <LoadingTimeModifier>1</LoadingTimeModifier>
-          <UnloadingTimeModifier>1</UnloadingTimeModifier>
-        </QueueConfiguration>
-        <REMOVE_THIS_LATER_FeedbackUnitTier>Level1</REMOVE_THIS_LATER_FeedbackUnitTier>
-        <NeedsTransporterQueue>1</NeedsTransporterQueue>
-        <PathLayers>Street</PathLayers>
-      </LogisticNode>
+      <LogisticNode />
       <Monument>
         <UpgradeTarget>101186</UpgradeTarget>
         <MicrophaseCount>5</MicrophaseCount>
         <UnfinishedIcon>500422</UnfinishedIcon>
         <FinishedIcon>500422</FinishedIcon>
-        <ConstructionStateText>
-          <Interrupted>
-            <Text>163011</Text>
-          </Interrupted>
-          <OutOfWorkforce>
-            <Text>163026</Text>
-          </OutOfWorkforce>
-          <WaitingForResources>
-            <Text>163012</Text>
-          </WaitingForResources>
-          <Processing>
-            <Text>163010</Text>
-          </Processing>
-        </ConstructionStateText>
-        <MonumentEventsCategories />
-        <ShutdownText>0</ShutdownText>
-        <FakePrerequisites />
-        <FinishButtonText>163013</FinishButtonText>
       </Monument>
-      <Culture>
-        <CultureType>Monument</CultureType>
-        <SetPages />
-        <UndiscoveredSet>0</UndiscoveredSet>
-        <ModuleListHeader>0</ModuleListHeader>
-        <OpenSetPages>0</OpenSetPages>
-      </Culture>
-      <AmbientMoodProvider>
-        <AmbientMood>None</AmbientMood>
-        <Murmur>None</Murmur>
-        <AttractivityDependentMurmur />
-        <ProductivityDependentMurmur />
-        <SatisfactionDependentMurmur />
-        <DynamicEnvironmentType>None</DynamicEnvironmentType>
-        <HappinessDependentMurmur />
-        <IslandAttractivityDependentMurmur />
-      </AmbientMoodProvider>
+      <Culture />
+      <AmbientMoodProvider />
       <Maintenance>
         <Maintenances>
           <Item>
@@ -1773,33 +730,12 @@
             <ShutdownThreshold>0.4</ShutdownThreshold>
           </Item>
         </Maintenances>
-        <MaintenanceAmountFactor>1</MaintenanceAmountFactor>
-        <WorkforceAmountFactor>1</WorkforceAmountFactor>
       </Maintenance>
-      <Attackable>
-        <IsInvulnerable>1</IsInvulnerable>
-        <MaximumHitPoints>100</MaximumHitPoints>
-        <HPBarOffset>6</HPBarOffset>
-        <PausedTimeIfAttacked>15000</PausedTimeIfAttacked>
-        <SelfHealPerHealTick>2</SelfHealPerHealTick>
-        <SelfHealPausedTimeIfAttacked>15000</SelfHealPausedTimeIfAttacked>
-        <ArmorType>Default</ArmorType>
-        <TakeOverEffect>Never</TakeOverEffect>
-        <IslandWarFlag>0</IslandWarFlag>
-        <RuinSmokeParticles />
-        <ExplosionEffects />
-      </Attackable>
+      <Attackable />
       <Pausable />
-      <IslandUnique>
-        <UniqueType>None</UniqueType>
-      </IslandUnique>
+      <IslandUnique />
       <UpgradeList />
-      <Electric>
-        <BoostedByElectricity>0</BoostedByElectricity>
-        <ProductivityBoost>1</ProductivityBoost>
-        <TransporterElectricFactory>120028</TransporterElectricFactory>
-        <TransporterElectricWarehouse>120027</TransporterElectricWarehouse>
-      </Electric>
+      <Electric />
       <QuestObject />
     </Values>
   </Asset>
@@ -1810,53 +746,51 @@
         <GUID>101186</GUID>
         <Name>CO_Tunnel_Entrance02</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_dynamite.png</IconFilename>
-        <InfoDescription>100027</InfoDescription>
-        <Comments />
       </Standard>
       <Building>
         <Destructable>0</Destructable>
         <Movable>0</Movable>
-        <BuildingType>Factory</BuildingType>
-        <BuildingCategoryName>100002</BuildingCategoryName>
-        <DestructionConfirmation>1</DestructionConfirmation>
-        <PickingAsset>0</PickingAsset>
-        <ConstructionMenuText>0</ConstructionMenuText>
-        <HasBorderRectOutline>1</HasBorderRectOutline>
-        <SnapRadius>2</SnapRadius>
-        <TerrainType>Terrain</TerrainType>
-        <InfluencedByNeighbors />
-        <InfluencedVariationDirection />
-        <AssociatedRegions>Meta;Moderate;Colony01;Arctic</AssociatedRegions>
-        <BuildingBlockPool />
-        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
-      <Blocking>
-        <HidePropsRadius>1</HidePropsRadius>
-        <DeletePropsRadius>1</DeletePropsRadius>
-        <GroundDecalAsset>0</GroundDecalAsset>
-        <GroundDecalInvisible>0</GroundDecalInvisible>
-        <StreetOutside>0</StreetOutside>
-        <RemoveGrass>1</RemoveGrass>
-        <BlocksBuilding>1</BlocksBuilding>
-      </Blocking>
+      <Blocking />
       <Cost>
         <Costs>
           <Item>
+            <VectorElement>
+              <InheritedIndex>0</InheritedIndex>
+              <InheritanceMapV2>
+                <Entry>
+                  <TemplateName>Monument</TemplateName>
+                  <Index>0</Index>
+                </Entry>
+              </InheritanceMapV2>
+            </VectorElement>
             <Amount>2500</Amount>
-            <Ingredient>1010017</Ingredient>
           </Item>
           <Item>
+            <VectorElement>
+              <InheritedIndex>1</InheritedIndex>
+              <InheritanceMapV2>
+                <Entry>
+                  <TemplateName>Monument</TemplateName>
+                  <Index>1</Index>
+                </Entry>
+              </InheritanceMapV2>
+            </VectorElement>
             <Amount>100</Amount>
-            <Ingredient>1010196</Ingredient>
           </Item>
           <Item>
+            <VectorElement>
+              <InheritedIndex>2</InheritedIndex>
+              <InheritanceMapV2>
+                <Entry>
+                  <TemplateName>Monument</TemplateName>
+                  <Index>2</Index>
+                </Entry>
+              </InheritanceMapV2>
+            </VectorElement>
             <Amount>50</Amount>
-            <Ingredient>1010205</Ingredient>
           </Item>
         </Costs>
-        <ItemsPerCost>1</ItemsPerCost>
-        <InfluenceCostType>None</InfluenceCostType>
-        <InfluenceCostPoints>1</InfluenceCostPoints>
       </Cost>
       <Object>
         <Variations>
@@ -1864,43 +798,10 @@
             <Filename>data/graphics/campaign/buildings/tunnel/tunnel_entrance_03.cfg</Filename>
           </Item>
         </Variations>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <DefaultParticipant>Neutral</DefaultParticipant>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <Mesh>
-        <ObjectPosition>Static</ObjectPosition>
-        <MeshPlacement>Default</MeshPlacement>
-        <DefaultSequence>idle01</DefaultSequence>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
-        <LogoMode>Disabled</LogoMode>
-      </Mesh>
+      <Mesh />
       <Selection>
         <GUIType>Monument</GUIType>
-        <Selectable>1</Selectable>
-        <DestructSelectable>1</DestructSelectable>
-        <OnSelection>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnSelection>
-        <InteractionDistance>15</InteractionDistance>
-        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
-        <InfoCorner>25000131</InfoCorner>
-        <AllowedDragType />
-        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
-        <Colors />
       </Selection>
       <Text>
         <LocaText>
@@ -1911,75 +812,13 @@
           </English>
         </LocaText>
         <LineID>21454</LineID>
-        <Localize>1</Localize>
       </Text>
-      <Constructable>
-        <DestructionCategory>Production</DestructionCategory>
-        <ConstructionMode>Default</ConstructionMode>
-        <DestructionType>0</DestructionType>
-      </Constructable>
-      <Locked>
-        <DefaultLockedState>1</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
-      </Locked>
-      <SoundEmitter>
-        <DestroySounds>
-          <Item>
-            <Sound>9818756</Sound>
-          </Item>
-        </DestroySounds>
-        <ConstructionSounds>
-          <BuildFailed>
-            <Item>
-              <Sound>9818387</Sound>
-            </Item>
-          </BuildFailed>
-          <BuildMoveStart>
-            <Item>
-              <Sound>9818755</Sound>
-            </Item>
-          </BuildMoveStart>
-          <BuildMoveSuccess>
-            <Item>
-              <Sound>203995</Sound>
-            </Item>
-          </BuildMoveSuccess>
-          <BuildMoveEnd>
-            <Item>
-              <Sound>200141</Sound>
-            </Item>
-          </BuildMoveEnd>
-        </ConstructionSounds>
-        <ActiveSounds />
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <ProjectileSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <IncidentSounds />
-        <BuildingRuined />
-        <BuildingRepaired />
-        <MaterialType>NONE</MaterialType>
-      </SoundEmitter>
-      <FeedbackController>
-        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
-        <UpdateMeshSequence>1</UpdateMeshSequence>
-      </FeedbackController>
-      <Infolayer>
-        <DefaultInfoLayer>0</DefaultInfoLayer>
-      </Infolayer>
-      <RandomDummySpawner>
-        <RandomAssets />
-      </RandomDummySpawner>
+      <Constructable />
+      <Locked />
+      <SoundEmitter />
+      <FeedbackController />
+      <Infolayer />
+      <RandomDummySpawner />
       <FactoryBase>
         <FactoryInputs>
           <Item>
@@ -1989,26 +828,8 @@
           </Item>
         </FactoryInputs>
         <CycleTime>60</CycleTime>
-        <FactoryOutputs />
-        <BaseProductivity>100</BaseProductivity>
-        <ProductivityTimeMultiplier>5</ProductivityTimeMultiplier>
-        <ProductivityPoints>30</ProductivityPoints>
-        <WarehouseTransporterAsset>1010105</WarehouseTransporterAsset>
-        <OutputAmountFactor>100</OutputAmountFactor>
       </FactoryBase>
-      <LogisticNode>
-        <TransporterCountMax>1</TransporterCountMax>
-        <TransporterAsset>1010104</TransporterAsset>
-        <TrainAsset>120025</TrainAsset>
-        <QueueConfiguration>
-          <ProcessingQueueParallelCount>10</ProcessingQueueParallelCount>
-          <LoadingTimeModifier>1</LoadingTimeModifier>
-          <UnloadingTimeModifier>1</UnloadingTimeModifier>
-        </QueueConfiguration>
-        <REMOVE_THIS_LATER_FeedbackUnitTier>Level1</REMOVE_THIS_LATER_FeedbackUnitTier>
-        <NeedsTransporterQueue>1</NeedsTransporterQueue>
-        <PathLayers>Street</PathLayers>
-      </LogisticNode>
+      <LogisticNode />
       <Monument>
         <UpgradeTarget>101135</UpgradeTarget>
         <MicrophaseCount>1</MicrophaseCount>
@@ -2020,69 +841,15 @@
           </Item>
         </FakePrerequisites>
         <FinishButtonText>13469</FinishButtonText>
-        <ConstructionStateText>
-          <Interrupted>
-            <Text>163011</Text>
-          </Interrupted>
-          <OutOfWorkforce>
-            <Text>163026</Text>
-          </OutOfWorkforce>
-          <WaitingForResources>
-            <Text>163012</Text>
-          </WaitingForResources>
-          <Processing>
-            <Text>163010</Text>
-          </Processing>
-        </ConstructionStateText>
-        <MonumentEventsCategories />
-        <ShutdownText>0</ShutdownText>
       </Monument>
-      <Culture>
-        <CultureType>Monument</CultureType>
-        <SetPages />
-        <UndiscoveredSet>0</UndiscoveredSet>
-        <ModuleListHeader>0</ModuleListHeader>
-        <OpenSetPages>0</OpenSetPages>
-      </Culture>
-      <AmbientMoodProvider>
-        <AmbientMood>None</AmbientMood>
-        <Murmur>None</Murmur>
-        <AttractivityDependentMurmur />
-        <ProductivityDependentMurmur />
-        <SatisfactionDependentMurmur />
-        <DynamicEnvironmentType>None</DynamicEnvironmentType>
-        <HappinessDependentMurmur />
-        <IslandAttractivityDependentMurmur />
-      </AmbientMoodProvider>
-      <Maintenance>
-        <Maintenances />
-        <MaintenanceAmountFactor>1</MaintenanceAmountFactor>
-        <WorkforceAmountFactor>1</WorkforceAmountFactor>
-      </Maintenance>
-      <Attackable>
-        <IsInvulnerable>1</IsInvulnerable>
-        <MaximumHitPoints>100</MaximumHitPoints>
-        <HPBarOffset>6</HPBarOffset>
-        <PausedTimeIfAttacked>15000</PausedTimeIfAttacked>
-        <SelfHealPerHealTick>2</SelfHealPerHealTick>
-        <SelfHealPausedTimeIfAttacked>15000</SelfHealPausedTimeIfAttacked>
-        <ArmorType>Default</ArmorType>
-        <TakeOverEffect>Never</TakeOverEffect>
-        <IslandWarFlag>0</IslandWarFlag>
-        <RuinSmokeParticles />
-        <ExplosionEffects />
-      </Attackable>
+      <Culture />
+      <AmbientMoodProvider />
+      <Maintenance />
+      <Attackable />
       <Pausable />
-      <IslandUnique>
-        <UniqueType>None</UniqueType>
-      </IslandUnique>
+      <IslandUnique />
       <UpgradeList />
-      <Electric>
-        <BoostedByElectricity>0</BoostedByElectricity>
-        <ProductivityBoost>1</ProductivityBoost>
-        <TransporterElectricFactory>120028</TransporterElectricFactory>
-        <TransporterElectricWarehouse>120027</TransporterElectricWarehouse>
-      </Electric>
+      <Electric />
       <QuestObject />
     </Values>
   </Asset>
@@ -2093,40 +860,14 @@
         <GUID>101135</GUID>
         <Name>CO_Tunnel_Final</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_dynamite.png</IconFilename>
-        <InfoDescription>100027</InfoDescription>
-        <Comments />
       </Standard>
       <Building>
         <Destructable>0</Destructable>
         <Movable>0</Movable>
-        <BuildingType>Factory</BuildingType>
-        <BuildingCategoryName>100002</BuildingCategoryName>
-        <DestructionConfirmation>1</DestructionConfirmation>
-        <PickingAsset>0</PickingAsset>
-        <ConstructionMenuText>0</ConstructionMenuText>
-        <HasBorderRectOutline>1</HasBorderRectOutline>
-        <SnapRadius>2</SnapRadius>
-        <TerrainType>Terrain</TerrainType>
-        <InfluencedByNeighbors />
-        <InfluencedVariationDirection />
-        <AssociatedRegions>Meta;Moderate;Colony01;Arctic</AssociatedRegions>
-        <BuildingBlockPool />
-        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
-      <Blocking>
-        <HidePropsRadius>1</HidePropsRadius>
-        <DeletePropsRadius>1</DeletePropsRadius>
-        <GroundDecalAsset>0</GroundDecalAsset>
-        <GroundDecalInvisible>0</GroundDecalInvisible>
-        <StreetOutside>0</StreetOutside>
-        <RemoveGrass>1</RemoveGrass>
-        <BlocksBuilding>1</BlocksBuilding>
-      </Blocking>
+      <Blocking />
       <Cost>
         <Costs />
-        <ItemsPerCost>1</ItemsPerCost>
-        <InfluenceCostType>None</InfluenceCostType>
-        <InfluenceCostPoints>1</InfluenceCostPoints>
       </Cost>
       <Object>
         <Variations>
@@ -2134,43 +875,12 @@
             <Filename>data/graphics/campaign/buildings/tunnel/tunnel_entrance_03.cfg</Filename>
           </Item>
         </Variations>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <DefaultParticipant>Neutral</DefaultParticipant>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <Mesh>
-        <ObjectPosition>Static</ObjectPosition>
-        <MeshPlacement>Default</MeshPlacement>
-        <DefaultSequence>idle01</DefaultSequence>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
-        <LogoMode>Disabled</LogoMode>
-      </Mesh>
+      <Mesh />
       <Selection>
         <GUIType>Generic</GUIType>
         <Selectable>0</Selectable>
         <DestructSelectable>0</DestructSelectable>
-        <OnSelection>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnSelection>
-        <InteractionDistance>15</InteractionDistance>
-        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
-        <InfoCorner>25000131</InfoCorner>
-        <AllowedDragType />
-        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
-        <Colors />
       </Selection>
       <Text>
         <LocaText>
@@ -2181,75 +891,15 @@
           </English>
         </LocaText>
         <LineID>25854</LineID>
-        <Localize>1</Localize>
       </Text>
-      <Constructable>
-        <DestructionCategory>Production</DestructionCategory>
-        <ConstructionMode>Default</ConstructionMode>
-        <DestructionType>0</DestructionType>
-      </Constructable>
+      <Constructable />
       <Locked>
         <DefaultLockedState>0</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
       </Locked>
-      <SoundEmitter>
-        <DestroySounds>
-          <Item>
-            <Sound>9818756</Sound>
-          </Item>
-        </DestroySounds>
-        <ConstructionSounds>
-          <BuildFailed>
-            <Item>
-              <Sound>9818387</Sound>
-            </Item>
-          </BuildFailed>
-          <BuildMoveStart>
-            <Item>
-              <Sound>9818755</Sound>
-            </Item>
-          </BuildMoveStart>
-          <BuildMoveSuccess>
-            <Item>
-              <Sound>203995</Sound>
-            </Item>
-          </BuildMoveSuccess>
-          <BuildMoveEnd>
-            <Item>
-              <Sound>200141</Sound>
-            </Item>
-          </BuildMoveEnd>
-        </ConstructionSounds>
-        <ActiveSounds />
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <ProjectileSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <IncidentSounds />
-        <BuildingRuined />
-        <BuildingRepaired />
-        <MaterialType>NONE</MaterialType>
-      </SoundEmitter>
-      <FeedbackController>
-        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
-        <UpdateMeshSequence>1</UpdateMeshSequence>
-      </FeedbackController>
-      <Infolayer>
-        <DefaultInfoLayer>0</DefaultInfoLayer>
-      </Infolayer>
-      <RandomDummySpawner>
-        <RandomAssets />
-      </RandomDummySpawner>
+      <SoundEmitter />
+      <FeedbackController />
+      <Infolayer />
+      <RandomDummySpawner />
       <FactoryBase>
         <FactoryInputs>
           <Item>
@@ -2263,68 +913,16 @@
             <StorageAmount>25</StorageAmount>
           </Item>
         </FactoryInputs>
-        <FactoryOutputs />
-        <CycleTime>30</CycleTime>
-        <BaseProductivity>100</BaseProductivity>
-        <ProductivityTimeMultiplier>5</ProductivityTimeMultiplier>
-        <ProductivityPoints>30</ProductivityPoints>
-        <WarehouseTransporterAsset>1010105</WarehouseTransporterAsset>
-        <OutputAmountFactor>100</OutputAmountFactor>
       </FactoryBase>
       <LogisticNode>
         <TransporterCountMax>0</TransporterCountMax>
-        <TransporterAsset>1010104</TransporterAsset>
-        <TrainAsset>120025</TrainAsset>
-        <QueueConfiguration>
-          <ProcessingQueueParallelCount>10</ProcessingQueueParallelCount>
-          <LoadingTimeModifier>1</LoadingTimeModifier>
-          <UnloadingTimeModifier>1</UnloadingTimeModifier>
-        </QueueConfiguration>
-        <REMOVE_THIS_LATER_FeedbackUnitTier>Level1</REMOVE_THIS_LATER_FeedbackUnitTier>
-        <NeedsTransporterQueue>1</NeedsTransporterQueue>
-        <PathLayers>Street</PathLayers>
       </LogisticNode>
       <Monument>
         <UnfinishedIcon>500417</UnfinishedIcon>
         <FinishedIcon>500421</FinishedIcon>
-        <ConstructionStateText>
-          <Interrupted>
-            <Text>163011</Text>
-          </Interrupted>
-          <OutOfWorkforce>
-            <Text>163026</Text>
-          </OutOfWorkforce>
-          <WaitingForResources>
-            <Text>163012</Text>
-          </WaitingForResources>
-          <Processing>
-            <Text>163010</Text>
-          </Processing>
-        </ConstructionStateText>
-        <UpgradeTarget>0</UpgradeTarget>
-        <MicrophaseCount>10</MicrophaseCount>
-        <MonumentEventsCategories />
-        <ShutdownText>0</ShutdownText>
-        <FakePrerequisites />
-        <FinishButtonText>163013</FinishButtonText>
       </Monument>
-      <Culture>
-        <CultureType>Monument</CultureType>
-        <SetPages />
-        <UndiscoveredSet>0</UndiscoveredSet>
-        <ModuleListHeader>0</ModuleListHeader>
-        <OpenSetPages>0</OpenSetPages>
-      </Culture>
-      <AmbientMoodProvider>
-        <AmbientMood>None</AmbientMood>
-        <Murmur>None</Murmur>
-        <AttractivityDependentMurmur />
-        <ProductivityDependentMurmur />
-        <SatisfactionDependentMurmur />
-        <DynamicEnvironmentType>None</DynamicEnvironmentType>
-        <HappinessDependentMurmur />
-        <IslandAttractivityDependentMurmur />
-      </AmbientMoodProvider>
+      <Culture />
+      <AmbientMoodProvider />
       <Maintenance>
         <Maintenances>
           <Item>
@@ -2333,33 +931,12 @@
             <ShutdownThreshold>0.4</ShutdownThreshold>
           </Item>
         </Maintenances>
-        <MaintenanceAmountFactor>1</MaintenanceAmountFactor>
-        <WorkforceAmountFactor>1</WorkforceAmountFactor>
       </Maintenance>
-      <Attackable>
-        <IsInvulnerable>1</IsInvulnerable>
-        <MaximumHitPoints>100</MaximumHitPoints>
-        <HPBarOffset>6</HPBarOffset>
-        <PausedTimeIfAttacked>15000</PausedTimeIfAttacked>
-        <SelfHealPerHealTick>2</SelfHealPerHealTick>
-        <SelfHealPausedTimeIfAttacked>15000</SelfHealPausedTimeIfAttacked>
-        <ArmorType>Default</ArmorType>
-        <TakeOverEffect>Never</TakeOverEffect>
-        <IslandWarFlag>0</IslandWarFlag>
-        <RuinSmokeParticles />
-        <ExplosionEffects />
-      </Attackable>
+      <Attackable />
       <Pausable />
-      <IslandUnique>
-        <UniqueType>None</UniqueType>
-      </IslandUnique>
+      <IslandUnique />
       <UpgradeList />
-      <Electric>
-        <BoostedByElectricity>0</BoostedByElectricity>
-        <ProductivityBoost>1</ProductivityBoost>
-        <TransporterElectricFactory>120028</TransporterElectricFactory>
-        <TransporterElectricWarehouse>120027</TransporterElectricWarehouse>
-      </Electric>
+      <Electric />
       <QuestObject />
     </Values>
   </Asset>
@@ -2370,35 +947,14 @@
         <GUID>101951</GUID>
         <Name>CourtOfJustice_01_01</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/campaign/icon_court_of_justice.png</IconFilename>
-        <InfoDescription>100027</InfoDescription>
-        <Comments />
       </Standard>
       <Building>
         <BuildingCategoryName>100003</BuildingCategoryName>
         <Destructable>0</Destructable>
         <Movable>0</Movable>
         <AssociatedRegions>Moderate</AssociatedRegions>
-        <BuildingType>Factory</BuildingType>
-        <DestructionConfirmation>1</DestructionConfirmation>
-        <PickingAsset>0</PickingAsset>
-        <ConstructionMenuText>0</ConstructionMenuText>
-        <HasBorderRectOutline>1</HasBorderRectOutline>
-        <SnapRadius>2</SnapRadius>
-        <TerrainType>Terrain</TerrainType>
-        <InfluencedByNeighbors />
-        <InfluencedVariationDirection />
-        <BuildingBlockPool />
-        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
-      <Blocking>
-        <HidePropsRadius>1</HidePropsRadius>
-        <DeletePropsRadius>1</DeletePropsRadius>
-        <GroundDecalAsset>0</GroundDecalAsset>
-        <GroundDecalInvisible>0</GroundDecalInvisible>
-        <StreetOutside>0</StreetOutside>
-        <RemoveGrass>1</RemoveGrass>
-        <BlocksBuilding>1</BlocksBuilding>
-      </Blocking>
+      <Blocking />
       <Cost>
         <Costs>
           <Item>
@@ -2414,9 +970,6 @@
             <Amount>80</Amount>
           </Item>
         </Costs>
-        <ItemsPerCost>1</ItemsPerCost>
-        <InfluenceCostType>None</InfluenceCostType>
-        <InfluenceCostPoints>1</InfluenceCostPoints>
       </Cost>
       <Object>
         <Variations>
@@ -2424,44 +977,13 @@
             <Filename>data/graphics/campaign/buildings/courthouse/courthouse_01.cfg</Filename>
           </Item>
         </Variations>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <DefaultParticipant>Neutral</DefaultParticipant>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <InitialVisibility>0</InitialVisibility>
-        <ObjectPosition>Static</ObjectPosition>
-        <MeshPlacement>Default</MeshPlacement>
-        <DefaultSequence>idle01</DefaultSequence>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
-        <LogoMode>Disabled</LogoMode>
       </Mesh>
       <Selection>
         <GUIType>Monument</GUIType>
         <ObjectmenuHeaderImage>data/ui/2kimages/main/3dicons/campaign/icon_court_of_justice.png</ObjectmenuHeaderImage>
-        <Selectable>1</Selectable>
-        <DestructSelectable>1</DestructSelectable>
-        <OnSelection>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnSelection>
-        <InteractionDistance>15</InteractionDistance>
-        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
-        <InfoCorner>25000131</InfoCorner>
-        <AllowedDragType />
-        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
-        <Colors />
       </Selection>
       <Text>
         <LocaText>
@@ -2472,75 +994,13 @@
           </English>
         </LocaText>
         <LineID>25855</LineID>
-        <Localize>1</Localize>
       </Text>
-      <Constructable>
-        <DestructionCategory>Production</DestructionCategory>
-        <ConstructionMode>Default</ConstructionMode>
-        <DestructionType>0</DestructionType>
-      </Constructable>
-      <Locked>
-        <DefaultLockedState>1</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
-      </Locked>
-      <SoundEmitter>
-        <DestroySounds>
-          <Item>
-            <Sound>9818756</Sound>
-          </Item>
-        </DestroySounds>
-        <ConstructionSounds>
-          <BuildFailed>
-            <Item>
-              <Sound>9818387</Sound>
-            </Item>
-          </BuildFailed>
-          <BuildMoveStart>
-            <Item>
-              <Sound>9818755</Sound>
-            </Item>
-          </BuildMoveStart>
-          <BuildMoveSuccess>
-            <Item>
-              <Sound>203995</Sound>
-            </Item>
-          </BuildMoveSuccess>
-          <BuildMoveEnd>
-            <Item>
-              <Sound>200141</Sound>
-            </Item>
-          </BuildMoveEnd>
-        </ConstructionSounds>
-        <ActiveSounds />
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <ProjectileSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <IncidentSounds />
-        <BuildingRuined />
-        <BuildingRepaired />
-        <MaterialType>NONE</MaterialType>
-      </SoundEmitter>
-      <FeedbackController>
-        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
-        <UpdateMeshSequence>1</UpdateMeshSequence>
-      </FeedbackController>
-      <Infolayer>
-        <DefaultInfoLayer>0</DefaultInfoLayer>
-      </Infolayer>
-      <RandomDummySpawner>
-        <RandomAssets />
-      </RandomDummySpawner>
+      <Constructable />
+      <Locked />
+      <SoundEmitter />
+      <FeedbackController />
+      <Infolayer />
+      <RandomDummySpawner />
       <FactoryBase>
         <FactoryInputs>
           <Item>
@@ -2555,67 +1015,18 @@
           </Item>
         </FactoryInputs>
         <CycleTime>60</CycleTime>
-        <FactoryOutputs />
-        <BaseProductivity>100</BaseProductivity>
-        <ProductivityTimeMultiplier>5</ProductivityTimeMultiplier>
-        <ProductivityPoints>30</ProductivityPoints>
-        <WarehouseTransporterAsset>1010105</WarehouseTransporterAsset>
-        <OutputAmountFactor>100</OutputAmountFactor>
       </FactoryBase>
       <LogisticNode>
         <TransporterCountMax>2</TransporterCountMax>
-        <TransporterAsset>1010104</TransporterAsset>
-        <TrainAsset>120025</TrainAsset>
-        <QueueConfiguration>
-          <ProcessingQueueParallelCount>10</ProcessingQueueParallelCount>
-          <LoadingTimeModifier>1</LoadingTimeModifier>
-          <UnloadingTimeModifier>1</UnloadingTimeModifier>
-        </QueueConfiguration>
-        <REMOVE_THIS_LATER_FeedbackUnitTier>Level1</REMOVE_THIS_LATER_FeedbackUnitTier>
-        <NeedsTransporterQueue>1</NeedsTransporterQueue>
-        <PathLayers>Street</PathLayers>
       </LogisticNode>
       <Monument>
         <UpgradeTarget>101953</UpgradeTarget>
         <UnfinishedIcon>500422</UnfinishedIcon>
         <FinishedIcon>500422</FinishedIcon>
         <ShutdownText>6783</ShutdownText>
-        <ConstructionStateText>
-          <Interrupted>
-            <Text>163011</Text>
-          </Interrupted>
-          <OutOfWorkforce>
-            <Text>163026</Text>
-          </OutOfWorkforce>
-          <WaitingForResources>
-            <Text>163012</Text>
-          </WaitingForResources>
-          <Processing>
-            <Text>163010</Text>
-          </Processing>
-        </ConstructionStateText>
-        <MicrophaseCount>10</MicrophaseCount>
-        <MonumentEventsCategories />
-        <FakePrerequisites />
-        <FinishButtonText>163013</FinishButtonText>
       </Monument>
-      <Culture>
-        <CultureType>Monument</CultureType>
-        <SetPages />
-        <UndiscoveredSet>0</UndiscoveredSet>
-        <ModuleListHeader>0</ModuleListHeader>
-        <OpenSetPages>0</OpenSetPages>
-      </Culture>
-      <AmbientMoodProvider>
-        <AmbientMood>None</AmbientMood>
-        <Murmur>None</Murmur>
-        <AttractivityDependentMurmur />
-        <ProductivityDependentMurmur />
-        <SatisfactionDependentMurmur />
-        <DynamicEnvironmentType>None</DynamicEnvironmentType>
-        <HappinessDependentMurmur />
-        <IslandAttractivityDependentMurmur />
-      </AmbientMoodProvider>
+      <Culture />
+      <AmbientMoodProvider />
       <Maintenance>
         <Maintenances>
           <Item>
@@ -2625,33 +1036,14 @@
           </Item>
         </Maintenances>
         <ConsumerPriorityAlarmed>2</ConsumerPriorityAlarmed>
-        <MaintenanceAmountFactor>1</MaintenanceAmountFactor>
-        <WorkforceAmountFactor>1</WorkforceAmountFactor>
       </Maintenance>
       <Attackable>
         <MaximumHitPoints>1000</MaximumHitPoints>
-        <IsInvulnerable>1</IsInvulnerable>
-        <HPBarOffset>6</HPBarOffset>
-        <PausedTimeIfAttacked>15000</PausedTimeIfAttacked>
-        <SelfHealPerHealTick>2</SelfHealPerHealTick>
-        <SelfHealPausedTimeIfAttacked>15000</SelfHealPausedTimeIfAttacked>
-        <ArmorType>Default</ArmorType>
-        <TakeOverEffect>Never</TakeOverEffect>
-        <IslandWarFlag>0</IslandWarFlag>
-        <RuinSmokeParticles />
-        <ExplosionEffects />
       </Attackable>
       <Pausable />
-      <IslandUnique>
-        <UniqueType>None</UniqueType>
-      </IslandUnique>
+      <IslandUnique />
       <UpgradeList />
-      <Electric>
-        <BoostedByElectricity>0</BoostedByElectricity>
-        <ProductivityBoost>1</ProductivityBoost>
-        <TransporterElectricFactory>120028</TransporterElectricFactory>
-        <TransporterElectricWarehouse>120027</TransporterElectricWarehouse>
-      </Electric>
+      <Electric />
       <QuestObject />
     </Values>
   </Asset>
@@ -2662,40 +1054,16 @@
         <GUID>101953</GUID>
         <Name>CourtOfJustice_01_02</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/campaign/icon_court_of_justice.png</IconFilename>
-        <InfoDescription>100027</InfoDescription>
-        <Comments />
       </Standard>
       <Building>
         <BuildingCategoryName>100003</BuildingCategoryName>
         <Destructable>0</Destructable>
         <Movable>0</Movable>
         <AssociatedRegions>Moderate</AssociatedRegions>
-        <BuildingType>Factory</BuildingType>
-        <DestructionConfirmation>1</DestructionConfirmation>
-        <PickingAsset>0</PickingAsset>
-        <ConstructionMenuText>0</ConstructionMenuText>
-        <HasBorderRectOutline>1</HasBorderRectOutline>
-        <SnapRadius>2</SnapRadius>
-        <TerrainType>Terrain</TerrainType>
-        <InfluencedByNeighbors />
-        <InfluencedVariationDirection />
-        <BuildingBlockPool />
-        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
-      <Blocking>
-        <HidePropsRadius>1</HidePropsRadius>
-        <DeletePropsRadius>1</DeletePropsRadius>
-        <GroundDecalAsset>0</GroundDecalAsset>
-        <GroundDecalInvisible>0</GroundDecalInvisible>
-        <StreetOutside>0</StreetOutside>
-        <RemoveGrass>1</RemoveGrass>
-        <BlocksBuilding>1</BlocksBuilding>
-      </Blocking>
+      <Blocking />
       <Cost>
         <Costs />
-        <ItemsPerCost>1</ItemsPerCost>
-        <InfluenceCostType>None</InfluenceCostType>
-        <InfluenceCostPoints>1</InfluenceCostPoints>
       </Cost>
       <Object>
         <Variations>
@@ -2703,44 +1071,11 @@
             <Filename>data/graphics/campaign/buildings/courthouse/courthouse_02.cfg</Filename>
           </Item>
         </Variations>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <DefaultParticipant>Neutral</DefaultParticipant>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <Mesh>
-        <ObjectPosition>Static</ObjectPosition>
-        <MeshPlacement>Default</MeshPlacement>
-        <DefaultSequence>idle01</DefaultSequence>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
-        <LogoMode>Disabled</LogoMode>
-      </Mesh>
+      <Mesh />
       <Selection>
         <GUIType>Monument</GUIType>
         <ObjectmenuHeaderImage>data/ui/2kimages/main/3dicons/campaign/icon_court_of_justice.png</ObjectmenuHeaderImage>
-        <Selectable>1</Selectable>
-        <DestructSelectable>1</DestructSelectable>
-        <OnSelection>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnSelection>
-        <InteractionDistance>15</InteractionDistance>
-        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
-        <InfoCorner>25000131</InfoCorner>
-        <AllowedDragType />
-        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
-        <Colors />
       </Selection>
       <Text>
         <LocaText>
@@ -2751,79 +1086,19 @@
           </English>
         </LocaText>
         <LineID>25856</LineID>
-        <Localize>1</Localize>
       </Text>
-      <Constructable>
-        <DestructionCategory>Production</DestructionCategory>
-        <ConstructionMode>Default</ConstructionMode>
-        <DestructionType>0</DestructionType>
-      </Constructable>
-      <Locked>
-        <DefaultLockedState>1</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
-      </Locked>
+      <Constructable />
+      <Locked />
       <SoundEmitter>
         <ActiveSounds>
           <Item>
             <Sound>206359</Sound>
           </Item>
         </ActiveSounds>
-        <DestroySounds>
-          <Item>
-            <Sound>9818756</Sound>
-          </Item>
-        </DestroySounds>
-        <ConstructionSounds>
-          <BuildFailed>
-            <Item>
-              <Sound>9818387</Sound>
-            </Item>
-          </BuildFailed>
-          <BuildMoveStart>
-            <Item>
-              <Sound>9818755</Sound>
-            </Item>
-          </BuildMoveStart>
-          <BuildMoveSuccess>
-            <Item>
-              <Sound>203995</Sound>
-            </Item>
-          </BuildMoveSuccess>
-          <BuildMoveEnd>
-            <Item>
-              <Sound>200141</Sound>
-            </Item>
-          </BuildMoveEnd>
-        </ConstructionSounds>
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <ProjectileSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <IncidentSounds />
-        <BuildingRuined />
-        <BuildingRepaired />
-        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
-      <FeedbackController>
-        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
-        <UpdateMeshSequence>1</UpdateMeshSequence>
-      </FeedbackController>
-      <Infolayer>
-        <DefaultInfoLayer>0</DefaultInfoLayer>
-      </Infolayer>
-      <RandomDummySpawner>
-        <RandomAssets />
-      </RandomDummySpawner>
+      <FeedbackController />
+      <Infolayer />
+      <RandomDummySpawner />
       <FactoryBase>
         <FactoryInputs>
           <Item>
@@ -2838,67 +1113,18 @@
           </Item>
         </FactoryInputs>
         <CycleTime>60</CycleTime>
-        <FactoryOutputs />
-        <BaseProductivity>100</BaseProductivity>
-        <ProductivityTimeMultiplier>5</ProductivityTimeMultiplier>
-        <ProductivityPoints>30</ProductivityPoints>
-        <WarehouseTransporterAsset>1010105</WarehouseTransporterAsset>
-        <OutputAmountFactor>100</OutputAmountFactor>
       </FactoryBase>
       <LogisticNode>
         <TransporterCountMax>2</TransporterCountMax>
-        <TransporterAsset>1010104</TransporterAsset>
-        <TrainAsset>120025</TrainAsset>
-        <QueueConfiguration>
-          <ProcessingQueueParallelCount>10</ProcessingQueueParallelCount>
-          <LoadingTimeModifier>1</LoadingTimeModifier>
-          <UnloadingTimeModifier>1</UnloadingTimeModifier>
-        </QueueConfiguration>
-        <REMOVE_THIS_LATER_FeedbackUnitTier>Level1</REMOVE_THIS_LATER_FeedbackUnitTier>
-        <NeedsTransporterQueue>1</NeedsTransporterQueue>
-        <PathLayers>Street</PathLayers>
       </LogisticNode>
       <Monument>
         <UpgradeTarget>102035</UpgradeTarget>
         <UnfinishedIcon>500414</UnfinishedIcon>
         <FinishedIcon>500418</FinishedIcon>
         <ShutdownText>6783</ShutdownText>
-        <ConstructionStateText>
-          <Interrupted>
-            <Text>163011</Text>
-          </Interrupted>
-          <OutOfWorkforce>
-            <Text>163026</Text>
-          </OutOfWorkforce>
-          <WaitingForResources>
-            <Text>163012</Text>
-          </WaitingForResources>
-          <Processing>
-            <Text>163010</Text>
-          </Processing>
-        </ConstructionStateText>
-        <MicrophaseCount>10</MicrophaseCount>
-        <MonumentEventsCategories />
-        <FakePrerequisites />
-        <FinishButtonText>163013</FinishButtonText>
       </Monument>
-      <Culture>
-        <CultureType>Monument</CultureType>
-        <SetPages />
-        <UndiscoveredSet>0</UndiscoveredSet>
-        <ModuleListHeader>0</ModuleListHeader>
-        <OpenSetPages>0</OpenSetPages>
-      </Culture>
-      <AmbientMoodProvider>
-        <AmbientMood>None</AmbientMood>
-        <Murmur>None</Murmur>
-        <AttractivityDependentMurmur />
-        <ProductivityDependentMurmur />
-        <SatisfactionDependentMurmur />
-        <DynamicEnvironmentType>None</DynamicEnvironmentType>
-        <HappinessDependentMurmur />
-        <IslandAttractivityDependentMurmur />
-      </AmbientMoodProvider>
+      <Culture />
+      <AmbientMoodProvider />
       <Maintenance>
         <Maintenances>
           <Item>
@@ -2908,33 +1134,14 @@
           </Item>
         </Maintenances>
         <ConsumerPriorityAlarmed>2</ConsumerPriorityAlarmed>
-        <MaintenanceAmountFactor>1</MaintenanceAmountFactor>
-        <WorkforceAmountFactor>1</WorkforceAmountFactor>
       </Maintenance>
       <Attackable>
         <MaximumHitPoints>1000</MaximumHitPoints>
-        <IsInvulnerable>1</IsInvulnerable>
-        <HPBarOffset>6</HPBarOffset>
-        <PausedTimeIfAttacked>15000</PausedTimeIfAttacked>
-        <SelfHealPerHealTick>2</SelfHealPerHealTick>
-        <SelfHealPausedTimeIfAttacked>15000</SelfHealPausedTimeIfAttacked>
-        <ArmorType>Default</ArmorType>
-        <TakeOverEffect>Never</TakeOverEffect>
-        <IslandWarFlag>0</IslandWarFlag>
-        <RuinSmokeParticles />
-        <ExplosionEffects />
       </Attackable>
       <Pausable />
-      <IslandUnique>
-        <UniqueType>None</UniqueType>
-      </IslandUnique>
+      <IslandUnique />
       <UpgradeList />
-      <Electric>
-        <BoostedByElectricity>0</BoostedByElectricity>
-        <ProductivityBoost>1</ProductivityBoost>
-        <TransporterElectricFactory>120028</TransporterElectricFactory>
-        <TransporterElectricWarehouse>120027</TransporterElectricWarehouse>
-      </Electric>
+      <Electric />
       <QuestObject />
     </Values>
   </Asset>
@@ -2945,40 +1152,16 @@
         <GUID>102035</GUID>
         <Name>CourtOfJustice_01_03</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/campaign/icon_court_of_justice.png</IconFilename>
-        <InfoDescription>100027</InfoDescription>
-        <Comments />
       </Standard>
       <Building>
         <BuildingCategoryName>100003</BuildingCategoryName>
         <Destructable>0</Destructable>
         <Movable>0</Movable>
         <AssociatedRegions>Moderate</AssociatedRegions>
-        <BuildingType>Factory</BuildingType>
-        <DestructionConfirmation>1</DestructionConfirmation>
-        <PickingAsset>0</PickingAsset>
-        <ConstructionMenuText>0</ConstructionMenuText>
-        <HasBorderRectOutline>1</HasBorderRectOutline>
-        <SnapRadius>2</SnapRadius>
-        <TerrainType>Terrain</TerrainType>
-        <InfluencedByNeighbors />
-        <InfluencedVariationDirection />
-        <BuildingBlockPool />
-        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
-      <Blocking>
-        <HidePropsRadius>1</HidePropsRadius>
-        <DeletePropsRadius>1</DeletePropsRadius>
-        <GroundDecalAsset>0</GroundDecalAsset>
-        <GroundDecalInvisible>0</GroundDecalInvisible>
-        <StreetOutside>0</StreetOutside>
-        <RemoveGrass>1</RemoveGrass>
-        <BlocksBuilding>1</BlocksBuilding>
-      </Blocking>
+      <Blocking />
       <Cost>
         <Costs />
-        <ItemsPerCost>1</ItemsPerCost>
-        <InfluenceCostType>None</InfluenceCostType>
-        <InfluenceCostPoints>1</InfluenceCostPoints>
       </Cost>
       <Object>
         <Variations>
@@ -2986,44 +1169,11 @@
             <Filename>data/graphics/campaign/buildings/courthouse/courthouse_03.cfg</Filename>
           </Item>
         </Variations>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <DefaultParticipant>Neutral</DefaultParticipant>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <Mesh>
-        <ObjectPosition>Static</ObjectPosition>
-        <MeshPlacement>Default</MeshPlacement>
-        <DefaultSequence>idle01</DefaultSequence>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
-        <LogoMode>Disabled</LogoMode>
-      </Mesh>
+      <Mesh />
       <Selection>
         <GUIType>Monument</GUIType>
         <ObjectmenuHeaderImage>data/ui/2kimages/main/3dicons/campaign/icon_court_of_justice.png</ObjectmenuHeaderImage>
-        <Selectable>1</Selectable>
-        <DestructSelectable>1</DestructSelectable>
-        <OnSelection>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnSelection>
-        <InteractionDistance>15</InteractionDistance>
-        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
-        <InfoCorner>25000131</InfoCorner>
-        <AllowedDragType />
-        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
-        <Colors />
       </Selection>
       <Text>
         <LocaText>
@@ -3034,79 +1184,19 @@
           </English>
         </LocaText>
         <LineID>25857</LineID>
-        <Localize>1</Localize>
       </Text>
-      <Constructable>
-        <DestructionCategory>Production</DestructionCategory>
-        <ConstructionMode>Default</ConstructionMode>
-        <DestructionType>0</DestructionType>
-      </Constructable>
-      <Locked>
-        <DefaultLockedState>1</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
-      </Locked>
+      <Constructable />
+      <Locked />
       <SoundEmitter>
         <ActiveSounds>
           <Item>
             <Sound>206359</Sound>
           </Item>
         </ActiveSounds>
-        <DestroySounds>
-          <Item>
-            <Sound>9818756</Sound>
-          </Item>
-        </DestroySounds>
-        <ConstructionSounds>
-          <BuildFailed>
-            <Item>
-              <Sound>9818387</Sound>
-            </Item>
-          </BuildFailed>
-          <BuildMoveStart>
-            <Item>
-              <Sound>9818755</Sound>
-            </Item>
-          </BuildMoveStart>
-          <BuildMoveSuccess>
-            <Item>
-              <Sound>203995</Sound>
-            </Item>
-          </BuildMoveSuccess>
-          <BuildMoveEnd>
-            <Item>
-              <Sound>200141</Sound>
-            </Item>
-          </BuildMoveEnd>
-        </ConstructionSounds>
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <ProjectileSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <IncidentSounds />
-        <BuildingRuined />
-        <BuildingRepaired />
-        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
-      <FeedbackController>
-        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
-        <UpdateMeshSequence>1</UpdateMeshSequence>
-      </FeedbackController>
-      <Infolayer>
-        <DefaultInfoLayer>0</DefaultInfoLayer>
-      </Infolayer>
-      <RandomDummySpawner>
-        <RandomAssets />
-      </RandomDummySpawner>
+      <FeedbackController />
+      <Infolayer />
+      <RandomDummySpawner />
       <FactoryBase>
         <FactoryInputs>
           <Item>
@@ -3121,67 +1211,18 @@
           </Item>
         </FactoryInputs>
         <CycleTime>60</CycleTime>
-        <FactoryOutputs />
-        <BaseProductivity>100</BaseProductivity>
-        <ProductivityTimeMultiplier>5</ProductivityTimeMultiplier>
-        <ProductivityPoints>30</ProductivityPoints>
-        <WarehouseTransporterAsset>1010105</WarehouseTransporterAsset>
-        <OutputAmountFactor>100</OutputAmountFactor>
       </FactoryBase>
       <LogisticNode>
         <TransporterCountMax>2</TransporterCountMax>
-        <TransporterAsset>1010104</TransporterAsset>
-        <TrainAsset>120025</TrainAsset>
-        <QueueConfiguration>
-          <ProcessingQueueParallelCount>10</ProcessingQueueParallelCount>
-          <LoadingTimeModifier>1</LoadingTimeModifier>
-          <UnloadingTimeModifier>1</UnloadingTimeModifier>
-        </QueueConfiguration>
-        <REMOVE_THIS_LATER_FeedbackUnitTier>Level1</REMOVE_THIS_LATER_FeedbackUnitTier>
-        <NeedsTransporterQueue>1</NeedsTransporterQueue>
-        <PathLayers>Street</PathLayers>
       </LogisticNode>
       <Monument>
         <UpgradeTarget>101952</UpgradeTarget>
         <UnfinishedIcon>500416</UnfinishedIcon>
         <FinishedIcon>500420</FinishedIcon>
         <ShutdownText>6783</ShutdownText>
-        <ConstructionStateText>
-          <Interrupted>
-            <Text>163011</Text>
-          </Interrupted>
-          <OutOfWorkforce>
-            <Text>163026</Text>
-          </OutOfWorkforce>
-          <WaitingForResources>
-            <Text>163012</Text>
-          </WaitingForResources>
-          <Processing>
-            <Text>163010</Text>
-          </Processing>
-        </ConstructionStateText>
-        <MicrophaseCount>10</MicrophaseCount>
-        <MonumentEventsCategories />
-        <FakePrerequisites />
-        <FinishButtonText>163013</FinishButtonText>
       </Monument>
-      <Culture>
-        <CultureType>Monument</CultureType>
-        <SetPages />
-        <UndiscoveredSet>0</UndiscoveredSet>
-        <ModuleListHeader>0</ModuleListHeader>
-        <OpenSetPages>0</OpenSetPages>
-      </Culture>
-      <AmbientMoodProvider>
-        <AmbientMood>None</AmbientMood>
-        <Murmur>None</Murmur>
-        <AttractivityDependentMurmur />
-        <ProductivityDependentMurmur />
-        <SatisfactionDependentMurmur />
-        <DynamicEnvironmentType>None</DynamicEnvironmentType>
-        <HappinessDependentMurmur />
-        <IslandAttractivityDependentMurmur />
-      </AmbientMoodProvider>
+      <Culture />
+      <AmbientMoodProvider />
       <Maintenance>
         <Maintenances>
           <Item>
@@ -3191,33 +1232,14 @@
           </Item>
         </Maintenances>
         <ConsumerPriorityAlarmed>2</ConsumerPriorityAlarmed>
-        <MaintenanceAmountFactor>1</MaintenanceAmountFactor>
-        <WorkforceAmountFactor>1</WorkforceAmountFactor>
       </Maintenance>
       <Attackable>
         <MaximumHitPoints>1000</MaximumHitPoints>
-        <IsInvulnerable>1</IsInvulnerable>
-        <HPBarOffset>6</HPBarOffset>
-        <PausedTimeIfAttacked>15000</PausedTimeIfAttacked>
-        <SelfHealPerHealTick>2</SelfHealPerHealTick>
-        <SelfHealPausedTimeIfAttacked>15000</SelfHealPausedTimeIfAttacked>
-        <ArmorType>Default</ArmorType>
-        <TakeOverEffect>Never</TakeOverEffect>
-        <IslandWarFlag>0</IslandWarFlag>
-        <RuinSmokeParticles />
-        <ExplosionEffects />
       </Attackable>
       <Pausable />
-      <IslandUnique>
-        <UniqueType>None</UniqueType>
-      </IslandUnique>
+      <IslandUnique />
       <UpgradeList />
-      <Electric>
-        <BoostedByElectricity>0</BoostedByElectricity>
-        <ProductivityBoost>1</ProductivityBoost>
-        <TransporterElectricFactory>120028</TransporterElectricFactory>
-        <TransporterElectricWarehouse>120027</TransporterElectricWarehouse>
-      </Electric>
+      <Electric />
       <QuestObject />
     </Values>
   </Asset>
@@ -3229,7 +1251,6 @@
         <Name>CourtOfJustice_01_04</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/campaign/icon_court_of_justice.png</IconFilename>
         <InfoDescription>15535</InfoDescription>
-        <Comments />
       </Standard>
       <Building>
         <BuildingType>Other</BuildingType>
@@ -3237,31 +1258,10 @@
         <Destructable>0</Destructable>
         <Movable>0</Movable>
         <AssociatedRegions>Moderate</AssociatedRegions>
-        <DestructionConfirmation>1</DestructionConfirmation>
-        <PickingAsset>0</PickingAsset>
-        <ConstructionMenuText>0</ConstructionMenuText>
-        <HasBorderRectOutline>1</HasBorderRectOutline>
-        <SnapRadius>2</SnapRadius>
-        <TerrainType>Terrain</TerrainType>
-        <InfluencedByNeighbors />
-        <InfluencedVariationDirection />
-        <BuildingBlockPool />
-        <TakeOverTransformation>Destroy</TakeOverTransformation>
       </Building>
-      <Blocking>
-        <HidePropsRadius>1</HidePropsRadius>
-        <DeletePropsRadius>1</DeletePropsRadius>
-        <GroundDecalAsset>0</GroundDecalAsset>
-        <GroundDecalInvisible>0</GroundDecalInvisible>
-        <StreetOutside>0</StreetOutside>
-        <RemoveGrass>1</RemoveGrass>
-        <BlocksBuilding>1</BlocksBuilding>
-      </Blocking>
+      <Blocking />
       <Cost>
         <Costs />
-        <ItemsPerCost>1</ItemsPerCost>
-        <InfluenceCostType>None</InfluenceCostType>
-        <InfluenceCostPoints>1</InfluenceCostPoints>
       </Cost>
       <Object>
         <Variations>
@@ -3269,44 +1269,11 @@
             <Filename>data/graphics/campaign/buildings/courthouse/courthouse_04.cfg</Filename>
           </Item>
         </Variations>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <DefaultParticipant>Neutral</DefaultParticipant>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <Mesh>
-        <ObjectPosition>Static</ObjectPosition>
-        <MeshPlacement>Default</MeshPlacement>
-        <DefaultSequence>idle01</DefaultSequence>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
-        <LogoMode>Disabled</LogoMode>
-      </Mesh>
+      <Mesh />
       <Selection>
         <GUIType>Generic</GUIType>
         <ObjectmenuHeaderImage>data/ui/2kimages/main/3dicons/campaign/icon_court_of_justice.png</ObjectmenuHeaderImage>
-        <Selectable>1</Selectable>
-        <DestructSelectable>1</DestructSelectable>
-        <OnSelection>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnSelection>
-        <InteractionDistance>15</InteractionDistance>
-        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
-        <InfoCorner>25000131</InfoCorner>
-        <AllowedDragType />
-        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
-        <Colors />
       </Selection>
       <Text>
         <LocaText>
@@ -3317,170 +1284,36 @@
           </English>
         </LocaText>
         <LineID>25858</LineID>
-        <Localize>1</Localize>
       </Text>
-      <Constructable>
-        <DestructionCategory>Production</DestructionCategory>
-        <ConstructionMode>Default</ConstructionMode>
-        <DestructionType>0</DestructionType>
-      </Constructable>
-      <Locked>
-        <DefaultLockedState>1</DefaultLockedState>
-        <DLCDependency>0</DLCDependency>
-        <Scope>Participant</Scope>
-      </Locked>
-      <SoundEmitter>
-        <DestroySounds>
-          <Item>
-            <Sound>9818756</Sound>
-          </Item>
-        </DestroySounds>
-        <ConstructionSounds>
-          <BuildFailed>
-            <Item>
-              <Sound>9818387</Sound>
-            </Item>
-          </BuildFailed>
-          <BuildMoveStart>
-            <Item>
-              <Sound>9818755</Sound>
-            </Item>
-          </BuildMoveStart>
-          <BuildMoveSuccess>
-            <Item>
-              <Sound>203995</Sound>
-            </Item>
-          </BuildMoveSuccess>
-          <BuildMoveEnd>
-            <Item>
-              <Sound>200141</Sound>
-            </Item>
-          </BuildMoveEnd>
-        </ConstructionSounds>
-        <ActiveSounds />
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <ProjectileSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <IncidentSounds />
-        <BuildingRuined />
-        <BuildingRepaired />
-        <MaterialType>NONE</MaterialType>
-      </SoundEmitter>
-      <FeedbackController>
-        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
-        <UpdateMeshSequence>1</UpdateMeshSequence>
-      </FeedbackController>
-      <Infolayer>
-        <DefaultInfoLayer>0</DefaultInfoLayer>
-      </Infolayer>
-      <RandomDummySpawner>
-        <RandomAssets />
-      </RandomDummySpawner>
-      <FactoryBase>
-        <FactoryInputs />
-        <FactoryOutputs />
-        <CycleTime>30</CycleTime>
-        <BaseProductivity>100</BaseProductivity>
-        <ProductivityTimeMultiplier>5</ProductivityTimeMultiplier>
-        <ProductivityPoints>30</ProductivityPoints>
-        <WarehouseTransporterAsset>1010105</WarehouseTransporterAsset>
-        <OutputAmountFactor>100</OutputAmountFactor>
-      </FactoryBase>
+      <Constructable />
+      <Locked />
+      <SoundEmitter />
+      <FeedbackController />
+      <Infolayer />
+      <RandomDummySpawner />
+      <FactoryBase />
       <LogisticNode>
         <TransporterCountMax>0</TransporterCountMax>
-        <TransporterAsset>1010104</TransporterAsset>
-        <TrainAsset>120025</TrainAsset>
-        <QueueConfiguration>
-          <ProcessingQueueParallelCount>10</ProcessingQueueParallelCount>
-          <LoadingTimeModifier>1</LoadingTimeModifier>
-          <UnloadingTimeModifier>1</UnloadingTimeModifier>
-        </QueueConfiguration>
-        <REMOVE_THIS_LATER_FeedbackUnitTier>Level1</REMOVE_THIS_LATER_FeedbackUnitTier>
-        <NeedsTransporterQueue>1</NeedsTransporterQueue>
-        <PathLayers>Street</PathLayers>
       </LogisticNode>
       <Monument>
         <UnfinishedIcon>500417</UnfinishedIcon>
         <FinishedIcon>500421</FinishedIcon>
         <ShutdownText>6783</ShutdownText>
-        <ConstructionStateText>
-          <Interrupted>
-            <Text>163011</Text>
-          </Interrupted>
-          <OutOfWorkforce>
-            <Text>163026</Text>
-          </OutOfWorkforce>
-          <WaitingForResources>
-            <Text>163012</Text>
-          </WaitingForResources>
-          <Processing>
-            <Text>163010</Text>
-          </Processing>
-        </ConstructionStateText>
-        <UpgradeTarget>0</UpgradeTarget>
-        <MicrophaseCount>10</MicrophaseCount>
-        <MonumentEventsCategories />
-        <FakePrerequisites />
-        <FinishButtonText>163013</FinishButtonText>
       </Monument>
       <Culture>
         <Attractiveness>100</Attractiveness>
-        <CultureType>Monument</CultureType>
-        <SetPages />
-        <UndiscoveredSet>0</UndiscoveredSet>
-        <ModuleListHeader>0</ModuleListHeader>
-        <OpenSetPages>0</OpenSetPages>
       </Culture>
-      <AmbientMoodProvider>
-        <AmbientMood>None</AmbientMood>
-        <Murmur>None</Murmur>
-        <AttractivityDependentMurmur />
-        <ProductivityDependentMurmur />
-        <SatisfactionDependentMurmur />
-        <DynamicEnvironmentType>None</DynamicEnvironmentType>
-        <HappinessDependentMurmur />
-        <IslandAttractivityDependentMurmur />
-      </AmbientMoodProvider>
+      <AmbientMoodProvider />
       <Maintenance>
         <ConsumerPriorityAlarmed>2</ConsumerPriorityAlarmed>
-        <Maintenances />
-        <MaintenanceAmountFactor>1</MaintenanceAmountFactor>
-        <WorkforceAmountFactor>1</WorkforceAmountFactor>
       </Maintenance>
       <Attackable>
         <MaximumHitPoints>1000</MaximumHitPoints>
-        <IsInvulnerable>1</IsInvulnerable>
-        <HPBarOffset>6</HPBarOffset>
-        <PausedTimeIfAttacked>15000</PausedTimeIfAttacked>
-        <SelfHealPerHealTick>2</SelfHealPerHealTick>
-        <SelfHealPausedTimeIfAttacked>15000</SelfHealPausedTimeIfAttacked>
-        <ArmorType>Default</ArmorType>
-        <TakeOverEffect>Never</TakeOverEffect>
-        <IslandWarFlag>0</IslandWarFlag>
-        <RuinSmokeParticles />
-        <ExplosionEffects />
       </Attackable>
       <Pausable />
-      <IslandUnique>
-        <UniqueType>None</UniqueType>
-      </IslandUnique>
+      <IslandUnique />
       <UpgradeList />
-      <Electric>
-        <BoostedByElectricity>0</BoostedByElectricity>
-        <ProductivityBoost>1</ProductivityBoost>
-        <TransporterElectricFactory>120028</TransporterElectricFactory>
-        <TransporterElectricWarehouse>120027</TransporterElectricWarehouse>
-      </Electric>
+      <Electric />
       <QuestObject />
     </Values>
   </Asset>

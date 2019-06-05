@@ -6,8 +6,6 @@
       <Standard>
         <GUID>1010164</GUID>
         <Name>Horse Drawn Carriage 01 (Rear)</Name>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <Object>
         <Variations>
@@ -31,43 +29,13 @@
           </Item>
         </Variations>
         <DefaultParticipant>Human0</DefaultParticipant>
-        <AssignDefaultParticipant>1</AssignDefaultParticipant>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <MeshPlacement>OnTerrainSlope</MeshPlacement>
-        <ObjectPosition>Dynamic</ObjectPosition>
-        <LogoMode>CorporationLogoFromPlayer</LogoMode>
-        <DefaultSequence>idle01</DefaultSequence>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
       </Mesh>
       <Selection>
         <Selectable>0</Selectable>
         <DestructSelectable>0</DestructSelectable>
-        <GUIType>Vehicle</GUIType>
-        <OnSelection>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnSelection>
-        <InteractionDistance>15</InteractionDistance>
-        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
-        <InfoCorner>25000131</InfoCorner>
-        <AllowedDragType />
-        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
-        <Colors />
       </Selection>
       <Walking>
         <PathPlannerLayer>Water</PathPlannerLayer>
@@ -75,35 +43,6 @@
         <LeaningMaxAngle>10</LeaningMaxAngle>
         <ForwardSpeed>8.4</ForwardSpeed>
         <CreatePathPlannerUnit>0</CreatePathPlannerUnit>
-        <SpecialMovementType />
-        <TurnSpeed>150</TurnSpeed>
-        <CargoFullFactor>1</CargoFullFactor>
-        <DamageFullFactor>1</DamageFullFactor>
-        <MinSlowdownFactor>1</MinSlowdownFactor>
-        <WalkSequence>walk01</WalkSequence>
-        <IdleSequence2>idle01</IdleSequence2>
-        <ShortenSailsAfter>5000</ShortenSailsAfter>
-        <DiscoverRadius>50</DiscoverRadius>
-        <TurnAroundRadius>2</TurnAroundRadius>
-        <Acceleration>3</Acceleration>
-        <Deceleration>6</Deceleration>
-        <TurnRadius>3</TurnRadius>
-        <TurnSpeedInPlace>45</TurnSpeedInPlace>
-        <TurnDeceleration>0.6</TurnDeceleration>
-        <TurnMovement>100</TurnMovement>
-        <LeaningSpeed>0.3</LeaningSpeed>
-        <LeaningDamping>0.13</LeaningDamping>
-        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
-        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
-        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
-        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
-        <CargoThreshold>0.5</CargoThreshold>
-        <CargoStartFactor>1</CargoStartFactor>
-        <DamageThreshold>0.25</DamageThreshold>
-        <DamageStartFactor>1</DamageStartFactor>
-        <IgnoreWeightFactor>1</IgnoreWeightFactor>
-        <IgnoreDamageFactor>1</IgnoreDamageFactor>
-        <CurveSegmentDensity>Medium</CurveSegmentDensity>
       </Walking>
       <Text>
         <LocaText>
@@ -111,34 +50,11 @@
             <Text>Tourism Ship</Text>
           </English>
         </LocaText>
-        <Localize>1</Localize>
       </Text>
-      <SoundEmitter>
-        <ActiveSounds />
-        <DestroySounds />
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionSounds />
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <ProjectileSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <IncidentSounds />
-        <BuildingRuined />
-        <BuildingRepaired />
-        <MaterialType>NONE</MaterialType>
-      </SoundEmitter>
+      <SoundEmitter />
       <CommandQueue>
         <FollowRadius>4</FollowRadius>
         <FormationPriority>1</FormationPriority>
-        <IsDestructable>1</IsDestructable>
       </CommandQueue>
       <Drifting>
         <OverrideAssetWidthAndLength>0</OverrideAssetWidthAndLength>
@@ -148,21 +64,11 @@
         <AffectedByDriftingWhileMoving>0</AffectedByDriftingWhileMoving>
         <CausesDrifting>0</CausesDrifting>
         <UseSlowDownTactic>0</UseSlowDownTactic>
-        <FactorMovement>1</FactorMovement>
-        <FactorRotation>1</FactorRotation>
       </Drifting>
-      <MinimapToken>
-        <TokenAsset>0</TokenAsset>
-        <StrategicMapAsset>0</StrategicMapAsset>
-      </MinimapToken>
+      <MinimapToken />
       <QuestObject />
-      <Infolayer>
-        <DefaultInfoLayer>0</DefaultInfoLayer>
-      </Infolayer>
-      <FeedbackController>
-        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
-        <UpdateMeshSequence>1</UpdateMeshSequence>
-      </FeedbackController>
+      <Infolayer />
+      <FeedbackController />
     </Values>
   </Asset>
   <Asset>
@@ -171,8 +77,6 @@
       <Standard>
         <GUID>1010163</GUID>
         <Name>Horse Drawn Carriage 01 (Front)</Name>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <Object>
         <Variations>
@@ -196,43 +100,13 @@
           </Item>
         </Variations>
         <DefaultParticipant>Human0</DefaultParticipant>
-        <AssignDefaultParticipant>1</AssignDefaultParticipant>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <MeshPlacement>OnTerrainSlope</MeshPlacement>
-        <ObjectPosition>Dynamic</ObjectPosition>
-        <LogoMode>CorporationLogoFromPlayer</LogoMode>
-        <DefaultSequence>idle01</DefaultSequence>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
       </Mesh>
       <Selection>
         <Selectable>0</Selectable>
         <DestructSelectable>0</DestructSelectable>
-        <GUIType>Vehicle</GUIType>
-        <OnSelection>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnSelection>
-        <InteractionDistance>15</InteractionDistance>
-        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
-        <InfoCorner>25000131</InfoCorner>
-        <AllowedDragType />
-        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
-        <Colors />
       </Selection>
       <Walking>
         <PathPlannerLayer>Water</PathPlannerLayer>
@@ -240,35 +114,6 @@
         <LeaningMaxAngle>10</LeaningMaxAngle>
         <ForwardSpeed>8.4</ForwardSpeed>
         <CreatePathPlannerUnit>0</CreatePathPlannerUnit>
-        <SpecialMovementType />
-        <TurnSpeed>150</TurnSpeed>
-        <CargoFullFactor>1</CargoFullFactor>
-        <DamageFullFactor>1</DamageFullFactor>
-        <MinSlowdownFactor>1</MinSlowdownFactor>
-        <WalkSequence>walk01</WalkSequence>
-        <IdleSequence2>idle01</IdleSequence2>
-        <ShortenSailsAfter>5000</ShortenSailsAfter>
-        <DiscoverRadius>50</DiscoverRadius>
-        <TurnAroundRadius>2</TurnAroundRadius>
-        <Acceleration>3</Acceleration>
-        <Deceleration>6</Deceleration>
-        <TurnRadius>3</TurnRadius>
-        <TurnSpeedInPlace>45</TurnSpeedInPlace>
-        <TurnDeceleration>0.6</TurnDeceleration>
-        <TurnMovement>100</TurnMovement>
-        <LeaningSpeed>0.3</LeaningSpeed>
-        <LeaningDamping>0.13</LeaningDamping>
-        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
-        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
-        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
-        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
-        <CargoThreshold>0.5</CargoThreshold>
-        <CargoStartFactor>1</CargoStartFactor>
-        <DamageThreshold>0.25</DamageThreshold>
-        <DamageStartFactor>1</DamageStartFactor>
-        <IgnoreWeightFactor>1</IgnoreWeightFactor>
-        <IgnoreDamageFactor>1</IgnoreDamageFactor>
-        <CurveSegmentDensity>Medium</CurveSegmentDensity>
       </Walking>
       <Text>
         <LocaText>
@@ -276,34 +121,11 @@
             <Text>Tourism Ship</Text>
           </English>
         </LocaText>
-        <Localize>1</Localize>
       </Text>
-      <SoundEmitter>
-        <ActiveSounds />
-        <DestroySounds />
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionSounds />
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <ProjectileSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <IncidentSounds />
-        <BuildingRuined />
-        <BuildingRepaired />
-        <MaterialType>NONE</MaterialType>
-      </SoundEmitter>
+      <SoundEmitter />
       <CommandQueue>
         <FollowRadius>4</FollowRadius>
         <FormationPriority>1</FormationPriority>
-        <IsDestructable>1</IsDestructable>
       </CommandQueue>
       <Drifting>
         <OverrideAssetWidthAndLength>0</OverrideAssetWidthAndLength>
@@ -313,21 +135,11 @@
         <AffectedByDriftingWhileMoving>0</AffectedByDriftingWhileMoving>
         <CausesDrifting>0</CausesDrifting>
         <UseSlowDownTactic>0</UseSlowDownTactic>
-        <FactorMovement>1</FactorMovement>
-        <FactorRotation>1</FactorRotation>
       </Drifting>
-      <MinimapToken>
-        <TokenAsset>0</TokenAsset>
-        <StrategicMapAsset>0</StrategicMapAsset>
-      </MinimapToken>
+      <MinimapToken />
       <QuestObject />
-      <Infolayer>
-        <DefaultInfoLayer>0</DefaultInfoLayer>
-      </Infolayer>
-      <FeedbackController>
-        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
-        <UpdateMeshSequence>1</UpdateMeshSequence>
-      </FeedbackController>
+      <Infolayer />
+      <FeedbackController />
     </Values>
   </Asset>
   <Asset>
@@ -336,8 +148,6 @@
       <Standard>
         <GUID>1010185</GUID>
         <Name>Horse Drawn Carriage 06</Name>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <Object>
         <Variations>
@@ -346,43 +156,13 @@
           </Item>
         </Variations>
         <DefaultParticipant>Human0</DefaultParticipant>
-        <AssignDefaultParticipant>1</AssignDefaultParticipant>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <MeshPlacement>OnTerrainSlope</MeshPlacement>
-        <ObjectPosition>Dynamic</ObjectPosition>
-        <LogoMode>CorporationLogoFromPlayer</LogoMode>
-        <DefaultSequence>idle01</DefaultSequence>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
       </Mesh>
       <Selection>
         <Selectable>0</Selectable>
         <DestructSelectable>0</DestructSelectable>
-        <GUIType>Vehicle</GUIType>
-        <OnSelection>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnSelection>
-        <InteractionDistance>15</InteractionDistance>
-        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
-        <InfoCorner>25000131</InfoCorner>
-        <AllowedDragType />
-        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
-        <Colors />
       </Selection>
       <Walking>
         <PathPlannerLayer>Water</PathPlannerLayer>
@@ -391,34 +171,6 @@
         <LeaningMaxAngle>10</LeaningMaxAngle>
         <ForwardSpeed>2</ForwardSpeed>
         <CreatePathPlannerUnit>0</CreatePathPlannerUnit>
-        <SpecialMovementType />
-        <TurnSpeed>150</TurnSpeed>
-        <CargoFullFactor>1</CargoFullFactor>
-        <DamageFullFactor>1</DamageFullFactor>
-        <MinSlowdownFactor>1</MinSlowdownFactor>
-        <WalkSequence>walk01</WalkSequence>
-        <IdleSequence2>idle01</IdleSequence2>
-        <ShortenSailsAfter>5000</ShortenSailsAfter>
-        <DiscoverRadius>50</DiscoverRadius>
-        <TurnAroundRadius>2</TurnAroundRadius>
-        <Acceleration>3</Acceleration>
-        <Deceleration>6</Deceleration>
-        <TurnRadius>3</TurnRadius>
-        <TurnSpeedInPlace>45</TurnSpeedInPlace>
-        <TurnDeceleration>0.6</TurnDeceleration>
-        <LeaningSpeed>0.3</LeaningSpeed>
-        <LeaningDamping>0.13</LeaningDamping>
-        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
-        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
-        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
-        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
-        <CargoThreshold>0.5</CargoThreshold>
-        <CargoStartFactor>1</CargoStartFactor>
-        <DamageThreshold>0.25</DamageThreshold>
-        <DamageStartFactor>1</DamageStartFactor>
-        <IgnoreWeightFactor>1</IgnoreWeightFactor>
-        <IgnoreDamageFactor>1</IgnoreDamageFactor>
-        <CurveSegmentDensity>Medium</CurveSegmentDensity>
       </Walking>
       <Text>
         <LocaText>
@@ -426,34 +178,11 @@
             <Text>Tourism Ship</Text>
           </English>
         </LocaText>
-        <Localize>1</Localize>
       </Text>
-      <SoundEmitter>
-        <ActiveSounds />
-        <DestroySounds />
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionSounds />
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <ProjectileSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <IncidentSounds />
-        <BuildingRuined />
-        <BuildingRepaired />
-        <MaterialType>NONE</MaterialType>
-      </SoundEmitter>
+      <SoundEmitter />
       <CommandQueue>
         <FollowRadius>4</FollowRadius>
         <FormationPriority>1</FormationPriority>
-        <IsDestructable>1</IsDestructable>
       </CommandQueue>
       <Drifting>
         <OverrideAssetWidthAndLength>0</OverrideAssetWidthAndLength>
@@ -463,21 +192,11 @@
         <AffectedByDriftingWhileMoving>0</AffectedByDriftingWhileMoving>
         <CausesDrifting>0</CausesDrifting>
         <UseSlowDownTactic>0</UseSlowDownTactic>
-        <FactorMovement>1</FactorMovement>
-        <FactorRotation>1</FactorRotation>
       </Drifting>
-      <MinimapToken>
-        <TokenAsset>0</TokenAsset>
-        <StrategicMapAsset>0</StrategicMapAsset>
-      </MinimapToken>
+      <MinimapToken />
       <QuestObject />
-      <Infolayer>
-        <DefaultInfoLayer>0</DefaultInfoLayer>
-      </Infolayer>
-      <FeedbackController>
-        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
-        <UpdateMeshSequence>1</UpdateMeshSequence>
-      </FeedbackController>
+      <Infolayer />
+      <FeedbackController />
     </Values>
   </Asset>
   <Asset>
@@ -486,8 +205,6 @@
       <Standard>
         <GUID>101959</GUID>
         <Name>Steam Carriage</Name>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <Object>
         <Variations>
@@ -496,43 +213,13 @@
           </Item>
         </Variations>
         <DefaultParticipant>Human0</DefaultParticipant>
-        <AssignDefaultParticipant>1</AssignDefaultParticipant>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <MeshPlacement>OnTerrainSlope</MeshPlacement>
-        <ObjectPosition>Dynamic</ObjectPosition>
-        <LogoMode>CorporationLogoFromPlayer</LogoMode>
-        <DefaultSequence>idle01</DefaultSequence>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
       </Mesh>
       <Selection>
         <Selectable>0</Selectable>
         <DestructSelectable>0</DestructSelectable>
-        <GUIType>Vehicle</GUIType>
-        <OnSelection>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnSelection>
-        <InteractionDistance>15</InteractionDistance>
-        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
-        <InfoCorner>25000131</InfoCorner>
-        <AllowedDragType />
-        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
-        <Colors />
       </Selection>
       <Walking>
         <PathPlannerLayer>Water</PathPlannerLayer>
@@ -541,34 +228,6 @@
         <LeaningMaxAngle>10</LeaningMaxAngle>
         <ForwardSpeed>2</ForwardSpeed>
         <CreatePathPlannerUnit>0</CreatePathPlannerUnit>
-        <SpecialMovementType />
-        <TurnSpeed>150</TurnSpeed>
-        <CargoFullFactor>1</CargoFullFactor>
-        <DamageFullFactor>1</DamageFullFactor>
-        <MinSlowdownFactor>1</MinSlowdownFactor>
-        <WalkSequence>walk01</WalkSequence>
-        <IdleSequence2>idle01</IdleSequence2>
-        <ShortenSailsAfter>5000</ShortenSailsAfter>
-        <DiscoverRadius>50</DiscoverRadius>
-        <TurnAroundRadius>2</TurnAroundRadius>
-        <Acceleration>3</Acceleration>
-        <Deceleration>6</Deceleration>
-        <TurnRadius>3</TurnRadius>
-        <TurnSpeedInPlace>45</TurnSpeedInPlace>
-        <TurnDeceleration>0.6</TurnDeceleration>
-        <LeaningSpeed>0.3</LeaningSpeed>
-        <LeaningDamping>0.13</LeaningDamping>
-        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
-        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
-        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
-        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
-        <CargoThreshold>0.5</CargoThreshold>
-        <CargoStartFactor>1</CargoStartFactor>
-        <DamageThreshold>0.25</DamageThreshold>
-        <DamageStartFactor>1</DamageStartFactor>
-        <IgnoreWeightFactor>1</IgnoreWeightFactor>
-        <IgnoreDamageFactor>1</IgnoreDamageFactor>
-        <CurveSegmentDensity>Medium</CurveSegmentDensity>
       </Walking>
       <Text>
         <LocaText>
@@ -576,34 +235,11 @@
             <Text>Tourism Ship</Text>
           </English>
         </LocaText>
-        <Localize>1</Localize>
       </Text>
-      <SoundEmitter>
-        <ActiveSounds />
-        <DestroySounds />
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionSounds />
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <ProjectileSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <IncidentSounds />
-        <BuildingRuined />
-        <BuildingRepaired />
-        <MaterialType>NONE</MaterialType>
-      </SoundEmitter>
+      <SoundEmitter />
       <CommandQueue>
         <FollowRadius>4</FollowRadius>
         <FormationPriority>1</FormationPriority>
-        <IsDestructable>1</IsDestructable>
       </CommandQueue>
       <Drifting>
         <OverrideAssetWidthAndLength>0</OverrideAssetWidthAndLength>
@@ -613,21 +249,11 @@
         <AffectedByDriftingWhileMoving>0</AffectedByDriftingWhileMoving>
         <CausesDrifting>0</CausesDrifting>
         <UseSlowDownTactic>0</UseSlowDownTactic>
-        <FactorMovement>1</FactorMovement>
-        <FactorRotation>1</FactorRotation>
       </Drifting>
-      <MinimapToken>
-        <TokenAsset>0</TokenAsset>
-        <StrategicMapAsset>0</StrategicMapAsset>
-      </MinimapToken>
+      <MinimapToken />
       <QuestObject />
-      <Infolayer>
-        <DefaultInfoLayer>0</DefaultInfoLayer>
-      </Infolayer>
-      <FeedbackController>
-        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
-        <UpdateMeshSequence>1</UpdateMeshSequence>
-      </FeedbackController>
+      <Infolayer />
+      <FeedbackController />
     </Values>
   </Asset>
   <Asset>
@@ -636,8 +262,6 @@
       <Standard>
         <GUID>100432</GUID>
         <Name>Tourism Ship 01</Name>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <Object>
         <Variations>
@@ -646,43 +270,11 @@
           </Item>
         </Variations>
         <DefaultParticipant>Human0</DefaultParticipant>
-        <AssignDefaultParticipant>1</AssignDefaultParticipant>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <Mesh>
-        <ObjectPosition>Dynamic</ObjectPosition>
-        <MeshPlacement>OnWaterSlope</MeshPlacement>
-        <LogoMode>CorporationLogoFromPlayer</LogoMode>
-        <DefaultSequence>idle01</DefaultSequence>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
-      </Mesh>
+      <Mesh />
       <Selection>
         <Selectable>0</Selectable>
         <DestructSelectable>0</DestructSelectable>
-        <GUIType>Vehicle</GUIType>
-        <OnSelection>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnSelection>
-        <InteractionDistance>15</InteractionDistance>
-        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
-        <InfoCorner>25000131</InfoCorner>
-        <AllowedDragType />
-        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
-        <Colors />
       </Selection>
       <Walking>
         <ReservationLength>16</ReservationLength>
@@ -695,32 +287,6 @@
         <TurnSpeed>30</TurnSpeed>
         <TurnMovement>50</TurnMovement>
         <LeaningMaxAngle>10</LeaningMaxAngle>
-        <SpecialMovementType />
-        <ForwardSpeed>4</ForwardSpeed>
-        <CargoFullFactor>1</CargoFullFactor>
-        <DamageFullFactor>1</DamageFullFactor>
-        <MinSlowdownFactor>1</MinSlowdownFactor>
-        <WalkSequence>walk01</WalkSequence>
-        <IdleSequence2>idle01</IdleSequence2>
-        <ShortenSailsAfter>5000</ShortenSailsAfter>
-        <DiscoverRadius>50</DiscoverRadius>
-        <TurnRadius>3</TurnRadius>
-        <TurnSpeedInPlace>45</TurnSpeedInPlace>
-        <TurnDeceleration>0.6</TurnDeceleration>
-        <LeaningSpeed>0.3</LeaningSpeed>
-        <LeaningDamping>0.13</LeaningDamping>
-        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
-        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
-        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
-        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
-        <CargoThreshold>0.5</CargoThreshold>
-        <CargoStartFactor>1</CargoStartFactor>
-        <DamageThreshold>0.25</DamageThreshold>
-        <DamageStartFactor>1</DamageStartFactor>
-        <IgnoreWeightFactor>1</IgnoreWeightFactor>
-        <IgnoreDamageFactor>1</IgnoreDamageFactor>
-        <CreatePathPlannerUnit>1</CreatePathPlannerUnit>
-        <CurveSegmentDensity>Medium</CurveSegmentDensity>
       </Walking>
       <Text>
         <LocaText>
@@ -728,7 +294,6 @@
             <Text>Ferry</Text>
           </English>
         </LocaText>
-        <Localize>1</Localize>
       </Text>
       <SoundEmitter>
         <ActiveSounds>
@@ -736,53 +301,24 @@
             <Sound>9818383</Sound>
           </Item>
         </ActiveSounds>
-        <DestroySounds />
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionSounds />
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <ProjectileSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <IncidentSounds />
-        <BuildingRuined />
-        <BuildingRepaired />
-        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <CommandQueue>
         <FollowRadius>4</FollowRadius>
         <FormationPriority>1</FormationPriority>
-        <IsDestructable>1</IsDestructable>
       </CommandQueue>
       <Drifting>
         <OverrideAssetWidthAndLength>0</OverrideAssetWidthAndLength>
         <Length>2.75</Length>
         <Width>0.85</Width>
         <FactorRotation>0.8</FactorRotation>
-        <FactorMovement>1</FactorMovement>
-        <AffectedByDriftingWhileIdle>1</AffectedByDriftingWhileIdle>
-        <AffectedByDriftingWhileMoving>1</AffectedByDriftingWhileMoving>
-        <CausesDrifting>1</CausesDrifting>
-        <UseSlowDownTactic>1</UseSlowDownTactic>
       </Drifting>
       <MinimapToken>
         <TokenAsset>2001947</TokenAsset>
-        <StrategicMapAsset>0</StrategicMapAsset>
       </MinimapToken>
       <QuestObject />
-      <Infolayer>
-        <DefaultInfoLayer>0</DefaultInfoLayer>
-      </Infolayer>
+      <Infolayer />
       <FeedbackController>
         <DefaultFeedbackSequence>Work</DefaultFeedbackSequence>
-        <UpdateMeshSequence>1</UpdateMeshSequence>
       </FeedbackController>
     </Values>
   </Asset>
@@ -792,8 +328,6 @@
       <Standard>
         <GUID>100433</GUID>
         <Name>Tourism Ship 02</Name>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <Object>
         <Variations>
@@ -802,43 +336,11 @@
           </Item>
         </Variations>
         <DefaultParticipant>Human0</DefaultParticipant>
-        <AssignDefaultParticipant>1</AssignDefaultParticipant>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <Mesh>
-        <ObjectPosition>Dynamic</ObjectPosition>
-        <MeshPlacement>OnWaterSlope</MeshPlacement>
-        <LogoMode>CorporationLogoFromPlayer</LogoMode>
-        <DefaultSequence>idle01</DefaultSequence>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
-      </Mesh>
+      <Mesh />
       <Selection>
         <Selectable>0</Selectable>
         <DestructSelectable>0</DestructSelectable>
-        <GUIType>Vehicle</GUIType>
-        <OnSelection>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnSelection>
-        <InteractionDistance>15</InteractionDistance>
-        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
-        <InfoCorner>25000131</InfoCorner>
-        <AllowedDragType />
-        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
-        <Colors />
       </Selection>
       <Walking>
         <ReservationLength>16</ReservationLength>
@@ -851,32 +353,6 @@
         <TurnSpeed>30</TurnSpeed>
         <TurnMovement>50</TurnMovement>
         <LeaningMaxAngle>10</LeaningMaxAngle>
-        <SpecialMovementType />
-        <ForwardSpeed>4</ForwardSpeed>
-        <CargoFullFactor>1</CargoFullFactor>
-        <DamageFullFactor>1</DamageFullFactor>
-        <MinSlowdownFactor>1</MinSlowdownFactor>
-        <WalkSequence>walk01</WalkSequence>
-        <IdleSequence2>idle01</IdleSequence2>
-        <ShortenSailsAfter>5000</ShortenSailsAfter>
-        <DiscoverRadius>50</DiscoverRadius>
-        <TurnRadius>3</TurnRadius>
-        <TurnSpeedInPlace>45</TurnSpeedInPlace>
-        <TurnDeceleration>0.6</TurnDeceleration>
-        <LeaningSpeed>0.3</LeaningSpeed>
-        <LeaningDamping>0.13</LeaningDamping>
-        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
-        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
-        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
-        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
-        <CargoThreshold>0.5</CargoThreshold>
-        <CargoStartFactor>1</CargoStartFactor>
-        <DamageThreshold>0.25</DamageThreshold>
-        <DamageStartFactor>1</DamageStartFactor>
-        <IgnoreWeightFactor>1</IgnoreWeightFactor>
-        <IgnoreDamageFactor>1</IgnoreDamageFactor>
-        <CreatePathPlannerUnit>1</CreatePathPlannerUnit>
-        <CurveSegmentDensity>Medium</CurveSegmentDensity>
       </Walking>
       <Text>
         <LocaText>
@@ -884,7 +360,6 @@
             <Text>Cruiser</Text>
           </English>
         </LocaText>
-        <Localize>1</Localize>
       </Text>
       <SoundEmitter>
         <ActiveSounds>
@@ -892,53 +367,24 @@
             <Sound>9818383</Sound>
           </Item>
         </ActiveSounds>
-        <DestroySounds />
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionSounds />
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <ProjectileSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <IncidentSounds />
-        <BuildingRuined />
-        <BuildingRepaired />
-        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <CommandQueue>
         <FollowRadius>4</FollowRadius>
         <FormationPriority>1</FormationPriority>
-        <IsDestructable>1</IsDestructable>
       </CommandQueue>
       <Drifting>
         <OverrideAssetWidthAndLength>0</OverrideAssetWidthAndLength>
         <Length>6</Length>
         <Width>1.75</Width>
         <FactorRotation>0.8</FactorRotation>
-        <FactorMovement>1</FactorMovement>
-        <AffectedByDriftingWhileIdle>1</AffectedByDriftingWhileIdle>
-        <AffectedByDriftingWhileMoving>1</AffectedByDriftingWhileMoving>
-        <CausesDrifting>1</CausesDrifting>
-        <UseSlowDownTactic>1</UseSlowDownTactic>
       </Drifting>
       <MinimapToken>
         <TokenAsset>2001947</TokenAsset>
-        <StrategicMapAsset>0</StrategicMapAsset>
       </MinimapToken>
       <QuestObject />
-      <Infolayer>
-        <DefaultInfoLayer>0</DefaultInfoLayer>
-      </Infolayer>
+      <Infolayer />
       <FeedbackController>
         <DefaultFeedbackSequence>Work</DefaultFeedbackSequence>
-        <UpdateMeshSequence>1</UpdateMeshSequence>
       </FeedbackController>
     </Values>
   </Asset>
@@ -948,8 +394,6 @@
       <Standard>
         <GUID>100434</GUID>
         <Name>Tourism Ship 03</Name>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <Object>
         <Variations>
@@ -958,43 +402,11 @@
           </Item>
         </Variations>
         <DefaultParticipant>Human0</DefaultParticipant>
-        <AssignDefaultParticipant>1</AssignDefaultParticipant>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <Mesh>
-        <ObjectPosition>Dynamic</ObjectPosition>
-        <MeshPlacement>OnWaterSlope</MeshPlacement>
-        <LogoMode>CorporationLogoFromPlayer</LogoMode>
-        <DefaultSequence>idle01</DefaultSequence>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
-      </Mesh>
+      <Mesh />
       <Selection>
         <Selectable>0</Selectable>
         <DestructSelectable>0</DestructSelectable>
-        <GUIType>Vehicle</GUIType>
-        <OnSelection>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnSelection>
-        <InteractionDistance>15</InteractionDistance>
-        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
-        <InfoCorner>25000131</InfoCorner>
-        <AllowedDragType />
-        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
-        <Colors />
       </Selection>
       <Walking>
         <ReservationLength>16</ReservationLength>
@@ -1007,32 +419,6 @@
         <TurnSpeed>30</TurnSpeed>
         <TurnMovement>50</TurnMovement>
         <LeaningMaxAngle>10</LeaningMaxAngle>
-        <SpecialMovementType />
-        <ForwardSpeed>4</ForwardSpeed>
-        <CargoFullFactor>1</CargoFullFactor>
-        <DamageFullFactor>1</DamageFullFactor>
-        <MinSlowdownFactor>1</MinSlowdownFactor>
-        <WalkSequence>walk01</WalkSequence>
-        <IdleSequence2>idle01</IdleSequence2>
-        <ShortenSailsAfter>5000</ShortenSailsAfter>
-        <DiscoverRadius>50</DiscoverRadius>
-        <TurnRadius>3</TurnRadius>
-        <TurnSpeedInPlace>45</TurnSpeedInPlace>
-        <TurnDeceleration>0.6</TurnDeceleration>
-        <LeaningSpeed>0.3</LeaningSpeed>
-        <LeaningDamping>0.13</LeaningDamping>
-        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
-        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
-        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
-        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
-        <CargoThreshold>0.5</CargoThreshold>
-        <CargoStartFactor>1</CargoStartFactor>
-        <DamageThreshold>0.25</DamageThreshold>
-        <DamageStartFactor>1</DamageStartFactor>
-        <IgnoreWeightFactor>1</IgnoreWeightFactor>
-        <IgnoreDamageFactor>1</IgnoreDamageFactor>
-        <CreatePathPlannerUnit>1</CreatePathPlannerUnit>
-        <CurveSegmentDensity>Medium</CurveSegmentDensity>
       </Walking>
       <Text>
         <LocaText>
@@ -1040,7 +426,6 @@
             <Text>Yacht</Text>
           </English>
         </LocaText>
-        <Localize>1</Localize>
       </Text>
       <SoundEmitter>
         <ActiveSounds>
@@ -1048,53 +433,24 @@
             <Sound>9818383</Sound>
           </Item>
         </ActiveSounds>
-        <DestroySounds />
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionSounds />
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <ProjectileSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <IncidentSounds />
-        <BuildingRuined />
-        <BuildingRepaired />
-        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <CommandQueue>
         <FollowRadius>4</FollowRadius>
         <FormationPriority>1</FormationPriority>
-        <IsDestructable>1</IsDestructable>
       </CommandQueue>
       <Drifting>
         <OverrideAssetWidthAndLength>0</OverrideAssetWidthAndLength>
         <Length>9</Length>
         <Width>2</Width>
         <FactorRotation>0.8</FactorRotation>
-        <FactorMovement>1</FactorMovement>
-        <AffectedByDriftingWhileIdle>1</AffectedByDriftingWhileIdle>
-        <AffectedByDriftingWhileMoving>1</AffectedByDriftingWhileMoving>
-        <CausesDrifting>1</CausesDrifting>
-        <UseSlowDownTactic>1</UseSlowDownTactic>
       </Drifting>
       <MinimapToken>
         <TokenAsset>2001947</TokenAsset>
-        <StrategicMapAsset>0</StrategicMapAsset>
       </MinimapToken>
       <QuestObject />
-      <Infolayer>
-        <DefaultInfoLayer>0</DefaultInfoLayer>
-      </Infolayer>
+      <Infolayer />
       <FeedbackController>
         <DefaultFeedbackSequence>Work</DefaultFeedbackSequence>
-        <UpdateMeshSequence>1</UpdateMeshSequence>
       </FeedbackController>
     </Values>
   </Asset>
@@ -1105,8 +461,6 @@
         <GUID>1010158</GUID>
         <Name>Tourism Ship</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_ship.png</IconFilename>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <Object>
         <Variations>
@@ -1115,43 +469,11 @@
           </Item>
         </Variations>
         <DefaultParticipant>Human0</DefaultParticipant>
-        <AssignDefaultParticipant>1</AssignDefaultParticipant>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <Mesh>
-        <ObjectPosition>Dynamic</ObjectPosition>
-        <MeshPlacement>OnWaterSlope</MeshPlacement>
-        <LogoMode>CorporationLogoFromPlayer</LogoMode>
-        <DefaultSequence>idle01</DefaultSequence>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
-      </Mesh>
+      <Mesh />
       <Selection>
         <Selectable>0</Selectable>
         <DestructSelectable>0</DestructSelectable>
-        <GUIType>Vehicle</GUIType>
-        <OnSelection>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnSelection>
-        <InteractionDistance>15</InteractionDistance>
-        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
-        <InfoCorner>25000131</InfoCorner>
-        <AllowedDragType />
-        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
-        <Colors />
       </Selection>
       <Walking>
         <ReservationLength>16</ReservationLength>
@@ -1160,36 +482,6 @@
         <ExpensiveDirSmoothing>1</ExpensiveDirSmoothing>
         <LeaningMaxAngle>10</LeaningMaxAngle>
         <ForwardSpeed>8.4</ForwardSpeed>
-        <SpecialMovementType />
-        <TurnSpeed>150</TurnSpeed>
-        <CargoFullFactor>1</CargoFullFactor>
-        <DamageFullFactor>1</DamageFullFactor>
-        <MinSlowdownFactor>1</MinSlowdownFactor>
-        <WalkSequence>walk01</WalkSequence>
-        <IdleSequence2>idle01</IdleSequence2>
-        <ShortenSailsAfter>5000</ShortenSailsAfter>
-        <DiscoverRadius>50</DiscoverRadius>
-        <TurnAroundRadius>2</TurnAroundRadius>
-        <Acceleration>3</Acceleration>
-        <Deceleration>6</Deceleration>
-        <TurnRadius>3</TurnRadius>
-        <TurnSpeedInPlace>45</TurnSpeedInPlace>
-        <TurnDeceleration>0.6</TurnDeceleration>
-        <TurnMovement>100</TurnMovement>
-        <LeaningSpeed>0.3</LeaningSpeed>
-        <LeaningDamping>0.13</LeaningDamping>
-        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
-        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
-        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
-        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
-        <CargoThreshold>0.5</CargoThreshold>
-        <CargoStartFactor>1</CargoStartFactor>
-        <DamageThreshold>0.25</DamageThreshold>
-        <DamageStartFactor>1</DamageStartFactor>
-        <IgnoreWeightFactor>1</IgnoreWeightFactor>
-        <IgnoreDamageFactor>1</IgnoreDamageFactor>
-        <CreatePathPlannerUnit>1</CreatePathPlannerUnit>
-        <CurveSegmentDensity>Medium</CurveSegmentDensity>
       </Walking>
       <Text>
         <LocaText>
@@ -1197,7 +489,6 @@
             <Text>Tourism Ship</Text>
           </English>
         </LocaText>
-        <Localize>1</Localize>
       </Text>
       <SoundEmitter>
         <ActiveSounds>
@@ -1205,30 +496,10 @@
             <Sound>9818383</Sound>
           </Item>
         </ActiveSounds>
-        <DestroySounds />
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionSounds />
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <ProjectileSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <IncidentSounds />
-        <BuildingRuined />
-        <BuildingRepaired />
-        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <CommandQueue>
         <FollowRadius>4</FollowRadius>
         <FormationPriority>1</FormationPriority>
-        <IsDestructable>1</IsDestructable>
       </CommandQueue>
       <Drifting>
         <OverrideAssetWidthAndLength>0</OverrideAssetWidthAndLength>
@@ -1236,23 +507,13 @@
         <Width>0.8</Width>
         <FactorRotation>0.5</FactorRotation>
         <UseSlowDownTactic>0</UseSlowDownTactic>
-        <FactorMovement>1</FactorMovement>
-        <AffectedByDriftingWhileIdle>1</AffectedByDriftingWhileIdle>
-        <AffectedByDriftingWhileMoving>1</AffectedByDriftingWhileMoving>
-        <CausesDrifting>1</CausesDrifting>
       </Drifting>
       <MinimapToken>
         <TokenAsset>2001947</TokenAsset>
-        <StrategicMapAsset>0</StrategicMapAsset>
       </MinimapToken>
       <QuestObject />
-      <Infolayer>
-        <DefaultInfoLayer>0</DefaultInfoLayer>
-      </Infolayer>
-      <FeedbackController>
-        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
-        <UpdateMeshSequence>1</UpdateMeshSequence>
-      </FeedbackController>
+      <Infolayer />
+      <FeedbackController />
     </Values>
   </Asset>
   <Asset>
@@ -1261,8 +522,6 @@
       <Standard>
         <GUID>100737</GUID>
         <Name>Courier Ship</Name>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <Object>
         <Variations>
@@ -1271,43 +530,11 @@
           </Item>
         </Variations>
         <DefaultParticipant>Human0</DefaultParticipant>
-        <AssignDefaultParticipant>1</AssignDefaultParticipant>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <Mesh>
-        <ObjectPosition>Dynamic</ObjectPosition>
-        <MeshPlacement>OnWaterSlope</MeshPlacement>
-        <LogoMode>CorporationLogoFromPlayer</LogoMode>
-        <DefaultSequence>idle01</DefaultSequence>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
-      </Mesh>
+      <Mesh />
       <Selection>
         <Selectable>0</Selectable>
         <DestructSelectable>0</DestructSelectable>
-        <GUIType>Vehicle</GUIType>
-        <OnSelection>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnSelection>
-        <InteractionDistance>15</InteractionDistance>
-        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
-        <InfoCorner>25000131</InfoCorner>
-        <AllowedDragType />
-        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
-        <Colors />
       </Selection>
       <Walking>
         <ReservationLength>16</ReservationLength>
@@ -1316,36 +543,6 @@
         <ExpensiveDirSmoothing>1</ExpensiveDirSmoothing>
         <LeaningMaxAngle>10</LeaningMaxAngle>
         <ForwardSpeed>8.4</ForwardSpeed>
-        <SpecialMovementType />
-        <TurnSpeed>150</TurnSpeed>
-        <CargoFullFactor>1</CargoFullFactor>
-        <DamageFullFactor>1</DamageFullFactor>
-        <MinSlowdownFactor>1</MinSlowdownFactor>
-        <WalkSequence>walk01</WalkSequence>
-        <IdleSequence2>idle01</IdleSequence2>
-        <ShortenSailsAfter>5000</ShortenSailsAfter>
-        <DiscoverRadius>50</DiscoverRadius>
-        <TurnAroundRadius>2</TurnAroundRadius>
-        <Acceleration>3</Acceleration>
-        <Deceleration>6</Deceleration>
-        <TurnRadius>3</TurnRadius>
-        <TurnSpeedInPlace>45</TurnSpeedInPlace>
-        <TurnDeceleration>0.6</TurnDeceleration>
-        <TurnMovement>100</TurnMovement>
-        <LeaningSpeed>0.3</LeaningSpeed>
-        <LeaningDamping>0.13</LeaningDamping>
-        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
-        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
-        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
-        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
-        <CargoThreshold>0.5</CargoThreshold>
-        <CargoStartFactor>1</CargoStartFactor>
-        <DamageThreshold>0.25</DamageThreshold>
-        <DamageStartFactor>1</DamageStartFactor>
-        <IgnoreWeightFactor>1</IgnoreWeightFactor>
-        <IgnoreDamageFactor>1</IgnoreDamageFactor>
-        <CreatePathPlannerUnit>1</CreatePathPlannerUnit>
-        <CurveSegmentDensity>Medium</CurveSegmentDensity>
       </Walking>
       <Text>
         <LocaText>
@@ -1353,7 +550,6 @@
             <Text>Tourism Ship</Text>
           </English>
         </LocaText>
-        <Localize>1</Localize>
       </Text>
       <SoundEmitter>
         <ActiveSounds>
@@ -1361,54 +557,23 @@
             <Sound>9818383</Sound>
           </Item>
         </ActiveSounds>
-        <DestroySounds />
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionSounds />
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <ProjectileSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <IncidentSounds />
-        <BuildingRuined />
-        <BuildingRepaired />
-        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <CommandQueue>
         <FollowRadius>4</FollowRadius>
         <FormationPriority>1</FormationPriority>
-        <IsDestructable>1</IsDestructable>
       </CommandQueue>
       <Drifting>
         <OverrideAssetWidthAndLength>0</OverrideAssetWidthAndLength>
         <Length>2.7</Length>
         <Width>0.8</Width>
         <UseSlowDownTactic>0</UseSlowDownTactic>
-        <FactorMovement>1</FactorMovement>
-        <FactorRotation>1</FactorRotation>
-        <AffectedByDriftingWhileIdle>1</AffectedByDriftingWhileIdle>
-        <AffectedByDriftingWhileMoving>1</AffectedByDriftingWhileMoving>
-        <CausesDrifting>1</CausesDrifting>
       </Drifting>
       <MinimapToken>
         <TokenAsset>2001947</TokenAsset>
-        <StrategicMapAsset>0</StrategicMapAsset>
       </MinimapToken>
       <QuestObject />
-      <Infolayer>
-        <DefaultInfoLayer>0</DefaultInfoLayer>
-      </Infolayer>
-      <FeedbackController>
-        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
-        <UpdateMeshSequence>1</UpdateMeshSequence>
-      </FeedbackController>
+      <Infolayer />
+      <FeedbackController />
     </Values>
   </Asset>
   <Asset>
@@ -1418,8 +583,6 @@
         <GUID>101660</GUID>
         <Name>Fishing Boat</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_ship.png</IconFilename>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <Object>
         <Variations>
@@ -1427,44 +590,11 @@
             <Filename>data/graphics/vehicle/fishing_boat/fishing_boat.cfg</Filename>
           </Item>
         </Variations>
-        <AssignDefaultParticipant>1</AssignDefaultParticipant>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <DefaultParticipant>Neutral</DefaultParticipant>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <Mesh>
-        <ObjectPosition>Dynamic</ObjectPosition>
-        <MeshPlacement>OnWaterSlope</MeshPlacement>
-        <LogoMode>CorporationLogoFromPlayer</LogoMode>
-        <DefaultSequence>idle01</DefaultSequence>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
-      </Mesh>
+      <Mesh />
       <Selection>
         <Selectable>0</Selectable>
         <DestructSelectable>0</DestructSelectable>
-        <GUIType>Vehicle</GUIType>
-        <OnSelection>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnSelection>
-        <InteractionDistance>15</InteractionDistance>
-        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
-        <InfoCorner>25000131</InfoCorner>
-        <AllowedDragType />
-        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
-        <Colors />
       </Selection>
       <Walking>
         <ReservationLength>16</ReservationLength>
@@ -1474,35 +604,6 @@
         <LeaningMaxAngle>10</LeaningMaxAngle>
         <ForwardSpeed>8.4</ForwardSpeed>
         <CreatePathPlannerUnit>0</CreatePathPlannerUnit>
-        <SpecialMovementType />
-        <TurnSpeed>150</TurnSpeed>
-        <CargoFullFactor>1</CargoFullFactor>
-        <DamageFullFactor>1</DamageFullFactor>
-        <MinSlowdownFactor>1</MinSlowdownFactor>
-        <WalkSequence>walk01</WalkSequence>
-        <IdleSequence2>idle01</IdleSequence2>
-        <ShortenSailsAfter>5000</ShortenSailsAfter>
-        <DiscoverRadius>50</DiscoverRadius>
-        <TurnAroundRadius>2</TurnAroundRadius>
-        <Acceleration>3</Acceleration>
-        <Deceleration>6</Deceleration>
-        <TurnRadius>3</TurnRadius>
-        <TurnSpeedInPlace>45</TurnSpeedInPlace>
-        <TurnDeceleration>0.6</TurnDeceleration>
-        <TurnMovement>100</TurnMovement>
-        <LeaningSpeed>0.3</LeaningSpeed>
-        <LeaningDamping>0.13</LeaningDamping>
-        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
-        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
-        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
-        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
-        <CargoThreshold>0.5</CargoThreshold>
-        <CargoStartFactor>1</CargoStartFactor>
-        <DamageThreshold>0.25</DamageThreshold>
-        <DamageStartFactor>1</DamageStartFactor>
-        <IgnoreWeightFactor>1</IgnoreWeightFactor>
-        <IgnoreDamageFactor>1</IgnoreDamageFactor>
-        <CurveSegmentDensity>Medium</CurveSegmentDensity>
       </Walking>
       <Text>
         <LocaText>
@@ -1510,7 +611,6 @@
             <Text>Tourism Ship</Text>
           </English>
         </LocaText>
-        <Localize>1</Localize>
       </Text>
       <SoundEmitter>
         <ActiveSounds>
@@ -1518,30 +618,10 @@
             <Sound>9818383</Sound>
           </Item>
         </ActiveSounds>
-        <DestroySounds />
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionSounds />
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <ProjectileSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <IncidentSounds />
-        <BuildingRuined />
-        <BuildingRepaired />
-        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <CommandQueue>
         <FollowRadius>4</FollowRadius>
         <FormationPriority>1</FormationPriority>
-        <IsDestructable>1</IsDestructable>
       </CommandQueue>
       <Drifting>
         <OverrideAssetWidthAndLength>0</OverrideAssetWidthAndLength>
@@ -1549,23 +629,13 @@
         <Width>0.8</Width>
         <FactorRotation>0.5</FactorRotation>
         <UseSlowDownTactic>0</UseSlowDownTactic>
-        <FactorMovement>1</FactorMovement>
-        <AffectedByDriftingWhileIdle>1</AffectedByDriftingWhileIdle>
-        <AffectedByDriftingWhileMoving>1</AffectedByDriftingWhileMoving>
-        <CausesDrifting>1</CausesDrifting>
       </Drifting>
       <MinimapToken>
         <TokenAsset>2001947</TokenAsset>
-        <StrategicMapAsset>0</StrategicMapAsset>
       </MinimapToken>
       <QuestObject />
-      <Infolayer>
-        <DefaultInfoLayer>0</DefaultInfoLayer>
-      </Infolayer>
-      <FeedbackController>
-        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
-        <UpdateMeshSequence>1</UpdateMeshSequence>
-      </FeedbackController>
+      <Infolayer />
+      <FeedbackController />
     </Values>
   </Asset>
   <Asset>
@@ -1574,8 +644,6 @@
       <Standard>
         <GUID>101743</GUID>
         <Name>Workforce Ship</Name>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <Object>
         <Variations>
@@ -1583,44 +651,11 @@
             <Filename>data/graphics/vehicle/workforce_ship/workforce_ship_01.cfg</Filename>
           </Item>
         </Variations>
-        <AssignDefaultParticipant>1</AssignDefaultParticipant>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <DefaultParticipant>Neutral</DefaultParticipant>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <Mesh>
-        <ObjectPosition>Dynamic</ObjectPosition>
-        <MeshPlacement>OnWaterSlope</MeshPlacement>
-        <LogoMode>CorporationLogoFromPlayer</LogoMode>
-        <DefaultSequence>idle01</DefaultSequence>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
-      </Mesh>
+      <Mesh />
       <Selection>
         <Selectable>0</Selectable>
         <DestructSelectable>0</DestructSelectable>
-        <GUIType>Vehicle</GUIType>
-        <OnSelection>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnSelection>
-        <InteractionDistance>15</InteractionDistance>
-        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
-        <InfoCorner>25000131</InfoCorner>
-        <AllowedDragType />
-        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
-        <Colors />
       </Selection>
       <Walking>
         <ReservationLength>16</ReservationLength>
@@ -1633,32 +668,6 @@
         <TurnSpeed>30</TurnSpeed>
         <TurnMovement>50</TurnMovement>
         <LeaningMaxAngle>10</LeaningMaxAngle>
-        <SpecialMovementType />
-        <ForwardSpeed>4</ForwardSpeed>
-        <CargoFullFactor>1</CargoFullFactor>
-        <DamageFullFactor>1</DamageFullFactor>
-        <MinSlowdownFactor>1</MinSlowdownFactor>
-        <WalkSequence>walk01</WalkSequence>
-        <IdleSequence2>idle01</IdleSequence2>
-        <ShortenSailsAfter>5000</ShortenSailsAfter>
-        <DiscoverRadius>50</DiscoverRadius>
-        <TurnRadius>3</TurnRadius>
-        <TurnSpeedInPlace>45</TurnSpeedInPlace>
-        <TurnDeceleration>0.6</TurnDeceleration>
-        <LeaningSpeed>0.3</LeaningSpeed>
-        <LeaningDamping>0.13</LeaningDamping>
-        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
-        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
-        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
-        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
-        <CargoThreshold>0.5</CargoThreshold>
-        <CargoStartFactor>1</CargoStartFactor>
-        <DamageThreshold>0.25</DamageThreshold>
-        <DamageStartFactor>1</DamageStartFactor>
-        <IgnoreWeightFactor>1</IgnoreWeightFactor>
-        <IgnoreDamageFactor>1</IgnoreDamageFactor>
-        <CreatePathPlannerUnit>1</CreatePathPlannerUnit>
-        <CurveSegmentDensity>Medium</CurveSegmentDensity>
       </Walking>
       <Text>
         <LocaText>
@@ -1666,7 +675,6 @@
             <Text>Cruiser</Text>
           </English>
         </LocaText>
-        <Localize>1</Localize>
       </Text>
       <SoundEmitter>
         <ActiveSounds>
@@ -1674,53 +682,24 @@
             <Sound>9818383</Sound>
           </Item>
         </ActiveSounds>
-        <DestroySounds />
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionSounds />
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <ProjectileSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <IncidentSounds />
-        <BuildingRuined />
-        <BuildingRepaired />
-        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <CommandQueue>
         <FollowRadius>4</FollowRadius>
         <FormationPriority>1</FormationPriority>
-        <IsDestructable>1</IsDestructable>
       </CommandQueue>
       <Drifting>
         <OverrideAssetWidthAndLength>0</OverrideAssetWidthAndLength>
         <Length>6</Length>
         <Width>1.75</Width>
         <FactorRotation>0.8</FactorRotation>
-        <FactorMovement>1</FactorMovement>
-        <AffectedByDriftingWhileIdle>1</AffectedByDriftingWhileIdle>
-        <AffectedByDriftingWhileMoving>1</AffectedByDriftingWhileMoving>
-        <CausesDrifting>1</CausesDrifting>
-        <UseSlowDownTactic>1</UseSlowDownTactic>
       </Drifting>
       <MinimapToken>
         <TokenAsset>2001947</TokenAsset>
-        <StrategicMapAsset>0</StrategicMapAsset>
       </MinimapToken>
       <QuestObject />
-      <Infolayer>
-        <DefaultInfoLayer>0</DefaultInfoLayer>
-      </Infolayer>
+      <Infolayer />
       <FeedbackController>
         <DefaultFeedbackSequence>Work</DefaultFeedbackSequence>
-        <UpdateMeshSequence>1</UpdateMeshSequence>
       </FeedbackController>
     </Values>
   </Asset>
@@ -1731,8 +710,6 @@
         <GUID>102266</GUID>
         <Name>Fishing net</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_ship.png</IconFilename>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <Object>
         <Variations>
@@ -1740,44 +717,11 @@
             <Filename>data/graphics/campaign/buildings/fisher_village/fisher_village_planks_01.cfg</Filename>
           </Item>
         </Variations>
-        <AssignDefaultParticipant>1</AssignDefaultParticipant>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <DefaultParticipant>Neutral</DefaultParticipant>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <Mesh>
-        <ObjectPosition>Dynamic</ObjectPosition>
-        <MeshPlacement>OnWaterSlope</MeshPlacement>
-        <LogoMode>CorporationLogoFromPlayer</LogoMode>
-        <DefaultSequence>idle01</DefaultSequence>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
-      </Mesh>
+      <Mesh />
       <Selection>
         <Selectable>0</Selectable>
         <DestructSelectable>0</DestructSelectable>
-        <GUIType>Vehicle</GUIType>
-        <OnSelection>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnSelection>
-        <InteractionDistance>15</InteractionDistance>
-        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
-        <InfoCorner>25000131</InfoCorner>
-        <AllowedDragType />
-        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
-        <Colors />
       </Selection>
       <Walking>
         <ReservationLength>16</ReservationLength>
@@ -1786,36 +730,6 @@
         <ExpensiveDirSmoothing>1</ExpensiveDirSmoothing>
         <LeaningMaxAngle>10</LeaningMaxAngle>
         <ForwardSpeed>8.4</ForwardSpeed>
-        <SpecialMovementType />
-        <TurnSpeed>150</TurnSpeed>
-        <CargoFullFactor>1</CargoFullFactor>
-        <DamageFullFactor>1</DamageFullFactor>
-        <MinSlowdownFactor>1</MinSlowdownFactor>
-        <WalkSequence>walk01</WalkSequence>
-        <IdleSequence2>idle01</IdleSequence2>
-        <ShortenSailsAfter>5000</ShortenSailsAfter>
-        <DiscoverRadius>50</DiscoverRadius>
-        <TurnAroundRadius>2</TurnAroundRadius>
-        <Acceleration>3</Acceleration>
-        <Deceleration>6</Deceleration>
-        <TurnRadius>3</TurnRadius>
-        <TurnSpeedInPlace>45</TurnSpeedInPlace>
-        <TurnDeceleration>0.6</TurnDeceleration>
-        <TurnMovement>100</TurnMovement>
-        <LeaningSpeed>0.3</LeaningSpeed>
-        <LeaningDamping>0.13</LeaningDamping>
-        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
-        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
-        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
-        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
-        <CargoThreshold>0.5</CargoThreshold>
-        <CargoStartFactor>1</CargoStartFactor>
-        <DamageThreshold>0.25</DamageThreshold>
-        <DamageStartFactor>1</DamageStartFactor>
-        <IgnoreWeightFactor>1</IgnoreWeightFactor>
-        <IgnoreDamageFactor>1</IgnoreDamageFactor>
-        <CreatePathPlannerUnit>1</CreatePathPlannerUnit>
-        <CurveSegmentDensity>Medium</CurveSegmentDensity>
       </Walking>
       <Text>
         <LocaText>
@@ -1823,36 +737,15 @@
             <Text>Tourism Ship</Text>
           </English>
         </LocaText>
-        <Localize>1</Localize>
       </Text>
       <SoundEmitter>
         <DestroySounds>
           <Item />
         </DestroySounds>
-        <ActiveSounds />
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionSounds />
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <ProjectileSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <IncidentSounds />
-        <BuildingRuined />
-        <BuildingRepaired />
-        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <CommandQueue>
         <FollowRadius>4</FollowRadius>
         <FormationPriority>1</FormationPriority>
-        <IsDestructable>1</IsDestructable>
       </CommandQueue>
       <Drifting>
         <OverrideAssetWidthAndLength>0</OverrideAssetWidthAndLength>
@@ -1860,23 +753,13 @@
         <Width>0.8</Width>
         <FactorRotation>0.5</FactorRotation>
         <UseSlowDownTactic>0</UseSlowDownTactic>
-        <FactorMovement>1</FactorMovement>
-        <AffectedByDriftingWhileIdle>1</AffectedByDriftingWhileIdle>
-        <AffectedByDriftingWhileMoving>1</AffectedByDriftingWhileMoving>
-        <CausesDrifting>1</CausesDrifting>
       </Drifting>
       <MinimapToken>
         <TokenAsset>2001947</TokenAsset>
-        <StrategicMapAsset>0</StrategicMapAsset>
       </MinimapToken>
       <QuestObject />
-      <Infolayer>
-        <DefaultInfoLayer>0</DefaultInfoLayer>
-      </Infolayer>
-      <FeedbackController>
-        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
-        <UpdateMeshSequence>1</UpdateMeshSequence>
-      </FeedbackController>
+      <Infolayer />
+      <FeedbackController />
     </Values>
   </Asset>
   <Asset>
@@ -1885,8 +768,6 @@
       <Standard>
         <GUID>1010174</GUID>
         <Name>Railway 01</Name>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <Object>
         <Variations>
@@ -1895,79 +776,19 @@
           </Item>
         </Variations>
         <DefaultParticipant>Human0</DefaultParticipant>
-        <AssignDefaultParticipant>1</AssignDefaultParticipant>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <MeshPlacement>OnTerrainSlope</MeshPlacement>
-        <ObjectPosition>Dynamic</ObjectPosition>
-        <LogoMode>CorporationLogoFromPlayer</LogoMode>
-        <DefaultSequence>idle01</DefaultSequence>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
       </Mesh>
       <Selection>
         <Selectable>0</Selectable>
         <DestructSelectable>0</DestructSelectable>
-        <GUIType>Vehicle</GUIType>
-        <OnSelection>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnSelection>
-        <InteractionDistance>15</InteractionDistance>
-        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
-        <InfoCorner>25000131</InfoCorner>
-        <AllowedDragType />
-        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
-        <Colors />
       </Selection>
       <Walking>
         <PathPlannerLayer>Railway</PathPlannerLayer>
         <ExpensiveDirSmoothing>1</ExpensiveDirSmoothing>
         <LeaningMaxAngle>10</LeaningMaxAngle>
         <ForwardSpeed>8.4</ForwardSpeed>
-        <SpecialMovementType />
-        <TurnSpeed>150</TurnSpeed>
-        <CargoFullFactor>1</CargoFullFactor>
-        <DamageFullFactor>1</DamageFullFactor>
-        <MinSlowdownFactor>1</MinSlowdownFactor>
-        <WalkSequence>walk01</WalkSequence>
-        <IdleSequence2>idle01</IdleSequence2>
-        <ShortenSailsAfter>5000</ShortenSailsAfter>
-        <DiscoverRadius>50</DiscoverRadius>
-        <TurnAroundRadius>2</TurnAroundRadius>
-        <Acceleration>3</Acceleration>
-        <Deceleration>6</Deceleration>
-        <TurnRadius>3</TurnRadius>
-        <TurnSpeedInPlace>45</TurnSpeedInPlace>
-        <TurnDeceleration>0.6</TurnDeceleration>
-        <TurnMovement>100</TurnMovement>
-        <LeaningSpeed>0.3</LeaningSpeed>
-        <LeaningDamping>0.13</LeaningDamping>
-        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
-        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
-        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
-        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
-        <CargoThreshold>0.5</CargoThreshold>
-        <CargoStartFactor>1</CargoStartFactor>
-        <DamageThreshold>0.25</DamageThreshold>
-        <DamageStartFactor>1</DamageStartFactor>
-        <IgnoreWeightFactor>1</IgnoreWeightFactor>
-        <IgnoreDamageFactor>1</IgnoreDamageFactor>
-        <CreatePathPlannerUnit>1</CreatePathPlannerUnit>
-        <CurveSegmentDensity>Medium</CurveSegmentDensity>
       </Walking>
       <Text>
         <LocaText>
@@ -1975,34 +796,11 @@
             <Text>Tourism Ship</Text>
           </English>
         </LocaText>
-        <Localize>1</Localize>
       </Text>
-      <SoundEmitter>
-        <ActiveSounds />
-        <DestroySounds />
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionSounds />
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <ProjectileSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <IncidentSounds />
-        <BuildingRuined />
-        <BuildingRepaired />
-        <MaterialType>NONE</MaterialType>
-      </SoundEmitter>
+      <SoundEmitter />
       <CommandQueue>
         <FollowRadius>4</FollowRadius>
         <FormationPriority>1</FormationPriority>
-        <IsDestructable>1</IsDestructable>
       </CommandQueue>
       <Drifting>
         <OverrideAssetWidthAndLength>0</OverrideAssetWidthAndLength>
@@ -2012,21 +810,11 @@
         <AffectedByDriftingWhileMoving>0</AffectedByDriftingWhileMoving>
         <CausesDrifting>0</CausesDrifting>
         <UseSlowDownTactic>0</UseSlowDownTactic>
-        <FactorMovement>1</FactorMovement>
-        <FactorRotation>1</FactorRotation>
       </Drifting>
-      <MinimapToken>
-        <TokenAsset>0</TokenAsset>
-        <StrategicMapAsset>0</StrategicMapAsset>
-      </MinimapToken>
+      <MinimapToken />
       <QuestObject />
-      <Infolayer>
-        <DefaultInfoLayer>0</DefaultInfoLayer>
-      </Infolayer>
-      <FeedbackController>
-        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
-        <UpdateMeshSequence>1</UpdateMeshSequence>
-      </FeedbackController>
+      <Infolayer />
+      <FeedbackController />
     </Values>
   </Asset>
   <Asset>
@@ -2035,8 +823,6 @@
       <Standard>
         <GUID>1010175</GUID>
         <Name>Railway Cargo 01</Name>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <Object>
         <Variations>
@@ -2045,79 +831,19 @@
           </Item>
         </Variations>
         <DefaultParticipant>Human0</DefaultParticipant>
-        <AssignDefaultParticipant>1</AssignDefaultParticipant>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <MeshPlacement>OnTerrainSlope</MeshPlacement>
-        <ObjectPosition>Dynamic</ObjectPosition>
-        <LogoMode>CorporationLogoFromPlayer</LogoMode>
-        <DefaultSequence>idle01</DefaultSequence>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
       </Mesh>
       <Selection>
         <Selectable>0</Selectable>
         <DestructSelectable>0</DestructSelectable>
-        <GUIType>Vehicle</GUIType>
-        <OnSelection>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnSelection>
-        <InteractionDistance>15</InteractionDistance>
-        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
-        <InfoCorner>25000131</InfoCorner>
-        <AllowedDragType />
-        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
-        <Colors />
       </Selection>
       <Walking>
         <PathPlannerLayer>Railway</PathPlannerLayer>
         <ExpensiveDirSmoothing>1</ExpensiveDirSmoothing>
         <LeaningMaxAngle>10</LeaningMaxAngle>
         <ForwardSpeed>8.4</ForwardSpeed>
-        <SpecialMovementType />
-        <TurnSpeed>150</TurnSpeed>
-        <CargoFullFactor>1</CargoFullFactor>
-        <DamageFullFactor>1</DamageFullFactor>
-        <MinSlowdownFactor>1</MinSlowdownFactor>
-        <WalkSequence>walk01</WalkSequence>
-        <IdleSequence2>idle01</IdleSequence2>
-        <ShortenSailsAfter>5000</ShortenSailsAfter>
-        <DiscoverRadius>50</DiscoverRadius>
-        <TurnAroundRadius>2</TurnAroundRadius>
-        <Acceleration>3</Acceleration>
-        <Deceleration>6</Deceleration>
-        <TurnRadius>3</TurnRadius>
-        <TurnSpeedInPlace>45</TurnSpeedInPlace>
-        <TurnDeceleration>0.6</TurnDeceleration>
-        <TurnMovement>100</TurnMovement>
-        <LeaningSpeed>0.3</LeaningSpeed>
-        <LeaningDamping>0.13</LeaningDamping>
-        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
-        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
-        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
-        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
-        <CargoThreshold>0.5</CargoThreshold>
-        <CargoStartFactor>1</CargoStartFactor>
-        <DamageThreshold>0.25</DamageThreshold>
-        <DamageStartFactor>1</DamageStartFactor>
-        <IgnoreWeightFactor>1</IgnoreWeightFactor>
-        <IgnoreDamageFactor>1</IgnoreDamageFactor>
-        <CreatePathPlannerUnit>1</CreatePathPlannerUnit>
-        <CurveSegmentDensity>Medium</CurveSegmentDensity>
       </Walking>
       <Text>
         <LocaText>
@@ -2125,34 +851,11 @@
             <Text>Tourism Ship</Text>
           </English>
         </LocaText>
-        <Localize>1</Localize>
       </Text>
-      <SoundEmitter>
-        <ActiveSounds />
-        <DestroySounds />
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionSounds />
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <ProjectileSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <IncidentSounds />
-        <BuildingRuined />
-        <BuildingRepaired />
-        <MaterialType>NONE</MaterialType>
-      </SoundEmitter>
+      <SoundEmitter />
       <CommandQueue>
         <FollowRadius>4</FollowRadius>
         <FormationPriority>1</FormationPriority>
-        <IsDestructable>1</IsDestructable>
       </CommandQueue>
       <Drifting>
         <OverrideAssetWidthAndLength>0</OverrideAssetWidthAndLength>
@@ -2162,21 +865,11 @@
         <AffectedByDriftingWhileMoving>0</AffectedByDriftingWhileMoving>
         <CausesDrifting>0</CausesDrifting>
         <UseSlowDownTactic>0</UseSlowDownTactic>
-        <FactorMovement>1</FactorMovement>
-        <FactorRotation>1</FactorRotation>
       </Drifting>
-      <MinimapToken>
-        <TokenAsset>0</TokenAsset>
-        <StrategicMapAsset>0</StrategicMapAsset>
-      </MinimapToken>
+      <MinimapToken />
       <QuestObject />
-      <Infolayer>
-        <DefaultInfoLayer>0</DefaultInfoLayer>
-      </Infolayer>
-      <FeedbackController>
-        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
-        <UpdateMeshSequence>1</UpdateMeshSequence>
-      </FeedbackController>
+      <Infolayer />
+      <FeedbackController />
     </Values>
   </Asset>
   <Asset>
@@ -2185,8 +878,6 @@
       <Standard>
         <GUID>1010189</GUID>
         <Name>Railway 01 (for camera sequence)</Name>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
       <Object>
         <Variations>
@@ -2195,79 +886,19 @@
           </Item>
         </Variations>
         <DefaultParticipant>Human0</DefaultParticipant>
-        <AssignDefaultParticipant>1</AssignDefaultParticipant>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
       <Mesh>
         <MeshPlacement>OnTerrainSlope</MeshPlacement>
-        <ObjectPosition>Dynamic</ObjectPosition>
-        <LogoMode>CorporationLogoFromPlayer</LogoMode>
-        <DefaultSequence>idle01</DefaultSequence>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
       </Mesh>
       <Selection>
         <Selectable>0</Selectable>
         <DestructSelectable>0</DestructSelectable>
-        <GUIType>Vehicle</GUIType>
-        <OnSelection>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnSelection>
-        <InteractionDistance>15</InteractionDistance>
-        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
-        <InfoCorner>25000131</InfoCorner>
-        <AllowedDragType />
-        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
-        <Colors />
       </Selection>
       <Walking>
         <PathPlannerLayer>Railway</PathPlannerLayer>
         <ExpensiveDirSmoothing>1</ExpensiveDirSmoothing>
         <LeaningMaxAngle>10</LeaningMaxAngle>
         <ForwardSpeed>8.4</ForwardSpeed>
-        <SpecialMovementType />
-        <TurnSpeed>150</TurnSpeed>
-        <CargoFullFactor>1</CargoFullFactor>
-        <DamageFullFactor>1</DamageFullFactor>
-        <MinSlowdownFactor>1</MinSlowdownFactor>
-        <WalkSequence>walk01</WalkSequence>
-        <IdleSequence2>idle01</IdleSequence2>
-        <ShortenSailsAfter>5000</ShortenSailsAfter>
-        <DiscoverRadius>50</DiscoverRadius>
-        <TurnAroundRadius>2</TurnAroundRadius>
-        <Acceleration>3</Acceleration>
-        <Deceleration>6</Deceleration>
-        <TurnRadius>3</TurnRadius>
-        <TurnSpeedInPlace>45</TurnSpeedInPlace>
-        <TurnDeceleration>0.6</TurnDeceleration>
-        <TurnMovement>100</TurnMovement>
-        <LeaningSpeed>0.3</LeaningSpeed>
-        <LeaningDamping>0.13</LeaningDamping>
-        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
-        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
-        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
-        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
-        <CargoThreshold>0.5</CargoThreshold>
-        <CargoStartFactor>1</CargoStartFactor>
-        <DamageThreshold>0.25</DamageThreshold>
-        <DamageStartFactor>1</DamageStartFactor>
-        <IgnoreWeightFactor>1</IgnoreWeightFactor>
-        <IgnoreDamageFactor>1</IgnoreDamageFactor>
-        <CreatePathPlannerUnit>1</CreatePathPlannerUnit>
-        <CurveSegmentDensity>Medium</CurveSegmentDensity>
       </Walking>
       <Text>
         <LocaText>
@@ -2275,34 +906,11 @@
             <Text>Tourism Ship</Text>
           </English>
         </LocaText>
-        <Localize>1</Localize>
       </Text>
-      <SoundEmitter>
-        <ActiveSounds />
-        <DestroySounds />
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionSounds />
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <ProjectileSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <IncidentSounds />
-        <BuildingRuined />
-        <BuildingRepaired />
-        <MaterialType>NONE</MaterialType>
-      </SoundEmitter>
+      <SoundEmitter />
       <CommandQueue>
         <FollowRadius>4</FollowRadius>
         <FormationPriority>1</FormationPriority>
-        <IsDestructable>1</IsDestructable>
       </CommandQueue>
       <Drifting>
         <OverrideAssetWidthAndLength>0</OverrideAssetWidthAndLength>
@@ -2312,335 +920,64 @@
         <AffectedByDriftingWhileMoving>0</AffectedByDriftingWhileMoving>
         <CausesDrifting>0</CausesDrifting>
         <UseSlowDownTactic>0</UseSlowDownTactic>
-        <FactorMovement>1</FactorMovement>
-        <FactorRotation>1</FactorRotation>
       </Drifting>
-      <MinimapToken>
-        <TokenAsset>0</TokenAsset>
-        <StrategicMapAsset>0</StrategicMapAsset>
-      </MinimapToken>
+      <MinimapToken />
       <QuestObject />
-      <Infolayer>
-        <DefaultInfoLayer>0</DefaultInfoLayer>
-      </Infolayer>
-      <FeedbackController>
-        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
-        <UpdateMeshSequence>1</UpdateMeshSequence>
-      </FeedbackController>
+      <Infolayer />
+      <FeedbackController />
     </Values>
   </Asset>
   <Asset>
-    <Template>FeedbackVehicle</Template>
+    <BaseAssetGUID>1010158</BaseAssetGUID>
     <Values>
       <Standard>
         <GUID>100625</GUID>
         <Name>QO Visitor Ship (Tourism)</Name>
-        <IconFilename>data/ui/2kimages/main/3dicons/icon_ship.png</IconFilename>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
-      <Object>
-        <Variations>
-          <Item>
-            <Filename>data/graphics/vehicle/tourism_ship_02/tourism_ship_02.cfg</Filename>
-          </Item>
-        </Variations>
-        <DefaultParticipant>Human0</DefaultParticipant>
-        <AssignDefaultParticipant>1</AssignDefaultParticipant>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
-      </Object>
-      <Mesh>
-        <ObjectPosition>Dynamic</ObjectPosition>
-        <MeshPlacement>OnWaterSlope</MeshPlacement>
-        <LogoMode>CorporationLogoFromPlayer</LogoMode>
-        <DefaultSequence>idle01</DefaultSequence>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
-      </Mesh>
-      <Selection>
-        <Selectable>0</Selectable>
-        <DestructSelectable>0</DestructSelectable>
-        <GUIType>Vehicle</GUIType>
-        <OnSelection>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnSelection>
-        <InteractionDistance>15</InteractionDistance>
-        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
-        <InfoCorner>25000131</InfoCorner>
-        <AllowedDragType />
-        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
-        <Colors />
-      </Selection>
+      <Object />
+      <Mesh />
+      <Selection />
       <Walking>
         <CargoFullFactor>0.8</CargoFullFactor>
         <CurveSegmentDensity>High</CurveSegmentDensity>
-        <ReservationLength>16</ReservationLength>
-        <ReservationWidth>6</ReservationWidth>
-        <PathPlannerLayer>Water</PathPlannerLayer>
-        <ExpensiveDirSmoothing>1</ExpensiveDirSmoothing>
-        <LeaningMaxAngle>10</LeaningMaxAngle>
-        <ForwardSpeed>8.4</ForwardSpeed>
-        <SpecialMovementType />
-        <TurnSpeed>150</TurnSpeed>
-        <DamageFullFactor>1</DamageFullFactor>
-        <MinSlowdownFactor>1</MinSlowdownFactor>
-        <WalkSequence>walk01</WalkSequence>
-        <IdleSequence2>idle01</IdleSequence2>
-        <ShortenSailsAfter>5000</ShortenSailsAfter>
-        <DiscoverRadius>50</DiscoverRadius>
-        <TurnAroundRadius>2</TurnAroundRadius>
-        <Acceleration>3</Acceleration>
-        <Deceleration>6</Deceleration>
-        <TurnRadius>3</TurnRadius>
-        <TurnSpeedInPlace>45</TurnSpeedInPlace>
-        <TurnDeceleration>0.6</TurnDeceleration>
-        <TurnMovement>100</TurnMovement>
-        <LeaningSpeed>0.3</LeaningSpeed>
-        <LeaningDamping>0.13</LeaningDamping>
-        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
-        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
-        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
-        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
-        <CargoThreshold>0.5</CargoThreshold>
-        <CargoStartFactor>1</CargoStartFactor>
-        <DamageThreshold>0.25</DamageThreshold>
-        <DamageStartFactor>1</DamageStartFactor>
-        <IgnoreWeightFactor>1</IgnoreWeightFactor>
-        <IgnoreDamageFactor>1</IgnoreDamageFactor>
-        <CreatePathPlannerUnit>1</CreatePathPlannerUnit>
       </Walking>
-      <Text>
-        <LocaText>
-          <English>
-            <Text>Tourism Ship</Text>
-          </English>
-        </LocaText>
-        <Localize>1</Localize>
-      </Text>
-      <SoundEmitter>
-        <ActiveSounds>
-          <Item>
-            <Sound>9818383</Sound>
-          </Item>
-        </ActiveSounds>
-        <DestroySounds />
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionSounds />
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <ProjectileSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <IncidentSounds />
-        <BuildingRuined />
-        <BuildingRepaired />
-        <MaterialType>NONE</MaterialType>
-      </SoundEmitter>
-      <CommandQueue>
-        <FollowRadius>4</FollowRadius>
-        <FormationPriority>1</FormationPriority>
-        <IsDestructable>1</IsDestructable>
-      </CommandQueue>
+      <Text />
+      <SoundEmitter />
+      <CommandQueue />
       <Drifting>
         <Length>3.5</Length>
-        <OverrideAssetWidthAndLength>0</OverrideAssetWidthAndLength>
-        <Width>0.8</Width>
-        <FactorRotation>0.5</FactorRotation>
-        <UseSlowDownTactic>0</UseSlowDownTactic>
-        <FactorMovement>1</FactorMovement>
-        <AffectedByDriftingWhileIdle>1</AffectedByDriftingWhileIdle>
-        <AffectedByDriftingWhileMoving>1</AffectedByDriftingWhileMoving>
-        <CausesDrifting>1</CausesDrifting>
       </Drifting>
-      <MinimapToken>
-        <TokenAsset>2001947</TokenAsset>
-        <StrategicMapAsset>0</StrategicMapAsset>
-      </MinimapToken>
+      <MinimapToken />
       <QuestObject />
-      <Infolayer>
-        <DefaultInfoLayer>0</DefaultInfoLayer>
-      </Infolayer>
-      <FeedbackController>
-        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
-        <UpdateMeshSequence>1</UpdateMeshSequence>
-      </FeedbackController>
+      <Infolayer />
+      <FeedbackController />
     </Values>
   </Asset>
   <Asset>
-    <Template>FeedbackVehicle</Template>
+    <BaseAssetGUID>1010158</BaseAssetGUID>
     <Values>
       <Standard>
         <GUID>102386</GUID>
         <Name>QO Visitor Ship (Tourism) Escort</Name>
-        <IconFilename>data/ui/2kimages/main/3dicons/icon_ship.png</IconFilename>
-        <Comments />
-        <InfoDescription>0</InfoDescription>
       </Standard>
-      <Object>
-        <Variations>
-          <Item>
-            <Filename>data/graphics/vehicle/tourism_ship_02/tourism_ship_02.cfg</Filename>
-          </Item>
-        </Variations>
-        <DefaultParticipant>Human0</DefaultParticipant>
-        <AssignDefaultParticipant>1</AssignDefaultParticipant>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
-      </Object>
-      <Mesh>
-        <ObjectPosition>Dynamic</ObjectPosition>
-        <MeshPlacement>OnWaterSlope</MeshPlacement>
-        <LogoMode>CorporationLogoFromPlayer</LogoMode>
-        <DefaultSequence>idle01</DefaultSequence>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
-      </Mesh>
-      <Selection>
-        <Selectable>0</Selectable>
-        <DestructSelectable>0</DestructSelectable>
-        <GUIType>Vehicle</GUIType>
-        <OnSelection>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnSelection>
-        <InteractionDistance>15</InteractionDistance>
-        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
-        <InfoCorner>25000131</InfoCorner>
-        <AllowedDragType />
-        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
-        <Colors />
-      </Selection>
+      <Object />
+      <Mesh />
+      <Selection />
       <Walking>
         <ForwardSpeed>2.7</ForwardSpeed>
         <CargoFullFactor>0.8</CargoFullFactor>
         <CurveSegmentDensity>High</CurveSegmentDensity>
-        <ReservationLength>16</ReservationLength>
-        <ReservationWidth>6</ReservationWidth>
-        <PathPlannerLayer>Water</PathPlannerLayer>
-        <ExpensiveDirSmoothing>1</ExpensiveDirSmoothing>
-        <LeaningMaxAngle>10</LeaningMaxAngle>
-        <SpecialMovementType />
-        <TurnSpeed>150</TurnSpeed>
-        <DamageFullFactor>1</DamageFullFactor>
-        <MinSlowdownFactor>1</MinSlowdownFactor>
-        <WalkSequence>walk01</WalkSequence>
-        <IdleSequence2>idle01</IdleSequence2>
-        <ShortenSailsAfter>5000</ShortenSailsAfter>
-        <DiscoverRadius>50</DiscoverRadius>
-        <TurnAroundRadius>2</TurnAroundRadius>
-        <Acceleration>3</Acceleration>
-        <Deceleration>6</Deceleration>
-        <TurnRadius>3</TurnRadius>
-        <TurnSpeedInPlace>45</TurnSpeedInPlace>
-        <TurnDeceleration>0.6</TurnDeceleration>
-        <TurnMovement>100</TurnMovement>
-        <LeaningSpeed>0.3</LeaningSpeed>
-        <LeaningDamping>0.13</LeaningDamping>
-        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
-        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
-        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
-        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
-        <CargoThreshold>0.5</CargoThreshold>
-        <CargoStartFactor>1</CargoStartFactor>
-        <DamageThreshold>0.25</DamageThreshold>
-        <DamageStartFactor>1</DamageStartFactor>
-        <IgnoreWeightFactor>1</IgnoreWeightFactor>
-        <IgnoreDamageFactor>1</IgnoreDamageFactor>
-        <CreatePathPlannerUnit>1</CreatePathPlannerUnit>
       </Walking>
-      <Text>
-        <LocaText>
-          <English>
-            <Text>Tourism Ship</Text>
-          </English>
-        </LocaText>
-        <Localize>1</Localize>
-      </Text>
-      <SoundEmitter>
-        <ActiveSounds>
-          <Item>
-            <Sound>9818383</Sound>
-          </Item>
-        </ActiveSounds>
-        <DestroySounds />
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionSounds />
-        <ConstructionStreetSounds />
-        <VehicleSounds />
-        <ProjectileSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <IncidentSounds />
-        <BuildingRuined />
-        <BuildingRepaired />
-        <MaterialType>NONE</MaterialType>
-      </SoundEmitter>
-      <CommandQueue>
-        <FollowRadius>4</FollowRadius>
-        <FormationPriority>1</FormationPriority>
-        <IsDestructable>1</IsDestructable>
-      </CommandQueue>
+      <Text />
+      <SoundEmitter />
+      <CommandQueue />
       <Drifting>
         <Length>3.5</Length>
-        <OverrideAssetWidthAndLength>0</OverrideAssetWidthAndLength>
-        <Width>0.8</Width>
-        <FactorRotation>0.5</FactorRotation>
-        <UseSlowDownTactic>0</UseSlowDownTactic>
-        <FactorMovement>1</FactorMovement>
-        <AffectedByDriftingWhileIdle>1</AffectedByDriftingWhileIdle>
-        <AffectedByDriftingWhileMoving>1</AffectedByDriftingWhileMoving>
-        <CausesDrifting>1</CausesDrifting>
       </Drifting>
-      <MinimapToken>
-        <TokenAsset>2001947</TokenAsset>
-        <StrategicMapAsset>0</StrategicMapAsset>
-      </MinimapToken>
+      <MinimapToken />
       <QuestObject />
-      <Infolayer>
-        <DefaultInfoLayer>0</DefaultInfoLayer>
-      </Infolayer>
-      <FeedbackController>
-        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
-        <UpdateMeshSequence>1</UpdateMeshSequence>
-      </FeedbackController>
+      <Infolayer />
+      <FeedbackController />
     </Values>
   </Asset>
   <Asset>
@@ -2651,7 +988,6 @@
         <Name>CQO_Rowboat_Castaways (Quest Object)</Name>
         <IconFilename>data/ui/2kimages/main/3dicons/icon_rowing_boat.png</IconFilename>
         <InfoDescription>1083</InfoDescription>
-        <Comments />
       </Standard>
       <Object>
         <Variations>
@@ -2659,46 +995,11 @@
             <Filename>data/graphics/quest/objects/castaway_lifeboat/castaway_lifeboat_01.cfg</Filename>
           </Item>
         </Variations>
-        <AssignDefaultParticipant>1</AssignDefaultParticipant>
-        <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        <Type>GameObject</Type>
-        <DefaultParticipant>Neutral</DefaultParticipant>
-        <AddToObjectGroups>1</AddToObjectGroups>
-        <AddToEditorObjectGrid>1</AddToEditorObjectGrid>
-        <PlacableInEditor>1</PlacableInEditor>
-        <SelectableInEditor>1</SelectableInEditor>
-        <LoadFromDemoMap>1</LoadFromDemoMap>
       </Object>
-      <Mesh>
-        <ObjectPosition>Dynamic</ObjectPosition>
-        <MeshPlacement>OnWaterSlope</MeshPlacement>
-        <LogoMode>CorporationLogoFromPlayer</LogoMode>
-        <DefaultSequence>idle01</DefaultSequence>
-        <InitialVisibility>1</InitialVisibility>
-        <ConstructionEffectDuration>600</ConstructionEffectDuration>
-        <DeconstructionEffectDuration>3000</DeconstructionEffectDuration>
-        <MoveEffectDuration>600</MoveEffectDuration>
-        <ChangeGUIDEffectDuration>850</ChangeGUIDEffectDuration>
-        <ConstructionEffectScale>1</ConstructionEffectScale>
-      </Mesh>
+      <Mesh />
       <Selection>
         <ObjectmenuHeaderImage>data/ui/2kimages/main/3dicons/icon_ship.png</ObjectmenuHeaderImage>
         <SelectionPriority>1</SelectionPriority>
-        <GUIType>Vehicle</GUIType>
-        <Selectable>1</Selectable>
-        <DestructSelectable>1</DestructSelectable>
-        <OnSelection>
-          <Template>Actions</Template>
-          <Values>
-            <ActionList />
-          </Values>
-        </OnSelection>
-        <InteractionDistance>15</InteractionDistance>
-        <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
-        <InfoCorner>25000131</InfoCorner>
-        <AllowedDragType />
-        <ParticipantMessageArcheType>Human0</ParticipantMessageArcheType>
-        <Colors />
       </Selection>
       <Walking>
         <ReservationLength>9</ReservationLength>
@@ -2706,37 +1007,6 @@
         <PathPlannerLayer>Water</PathPlannerLayer>
         <ExpensiveDirSmoothing>1</ExpensiveDirSmoothing>
         <LeaningMaxAngle>27</LeaningMaxAngle>
-        <SpecialMovementType />
-        <TurnSpeed>150</TurnSpeed>
-        <ForwardSpeed>4</ForwardSpeed>
-        <CargoFullFactor>1</CargoFullFactor>
-        <DamageFullFactor>1</DamageFullFactor>
-        <MinSlowdownFactor>1</MinSlowdownFactor>
-        <WalkSequence>walk01</WalkSequence>
-        <IdleSequence2>idle01</IdleSequence2>
-        <ShortenSailsAfter>5000</ShortenSailsAfter>
-        <DiscoverRadius>50</DiscoverRadius>
-        <TurnAroundRadius>2</TurnAroundRadius>
-        <Acceleration>3</Acceleration>
-        <Deceleration>6</Deceleration>
-        <TurnRadius>3</TurnRadius>
-        <TurnSpeedInPlace>45</TurnSpeedInPlace>
-        <TurnDeceleration>0.6</TurnDeceleration>
-        <TurnMovement>100</TurnMovement>
-        <LeaningSpeed>0.3</LeaningSpeed>
-        <LeaningDamping>0.13</LeaningDamping>
-        <WindMinSlowdownFactor>1</WindMinSlowdownFactor>
-        <WindSlowdownEffectOnTurningSpeed>1</WindSlowdownEffectOnTurningSpeed>
-        <WindMaxSpeedupFactor>1</WindMaxSpeedupFactor>
-        <WindSpeedupEffectOnTurningSpeed>1</WindSpeedupEffectOnTurningSpeed>
-        <CargoThreshold>0.5</CargoThreshold>
-        <CargoStartFactor>1</CargoStartFactor>
-        <DamageThreshold>0.25</DamageThreshold>
-        <DamageStartFactor>1</DamageStartFactor>
-        <IgnoreWeightFactor>1</IgnoreWeightFactor>
-        <IgnoreDamageFactor>1</IgnoreDamageFactor>
-        <CreatePathPlannerUnit>1</CreatePathPlannerUnit>
-        <CurveSegmentDensity>Medium</CurveSegmentDensity>
       </Walking>
       <Text>
         <LocaText>
@@ -2745,7 +1015,6 @@
             <Status>Localization</Status>
           </English>
         </LocaText>
-        <Localize>1</Localize>
       </Text>
       <SoundEmitter>
         <VehicleSounds>
@@ -2755,31 +1024,11 @@
             </Item>
           </MovementStart>
         </VehicleSounds>
-        <ActiveSounds />
-        <DestroySounds />
-        <SelectionSounds>
-          <Item>
-            <Sound>9818389</Sound>
-          </Item>
-        </SelectionSounds>
-        <ConstructionSounds />
-        <ConstructionStreetSounds />
-        <ProjectileSounds />
-        <WeaponSounds />
-        <SpawnSounds />
-        <CollectedSounds />
-        <ProductionSounds />
-        <RFX />
-        <IncidentSounds />
-        <BuildingRuined />
-        <BuildingRepaired />
-        <MaterialType>NONE</MaterialType>
       </SoundEmitter>
       <CommandQueue>
         <FollowRadius>4</FollowRadius>
         <FormationPriority>1</FormationPriority>
         <TradeShipPoints>1</TradeShipPoints>
-        <IsDestructable>1</IsDestructable>
       </CommandQueue>
       <Drifting>
         <OverrideAssetWidthAndLength>0</OverrideAssetWidthAndLength>
@@ -2797,13 +1046,8 @@
         <StrategicMapAsset>500433</StrategicMapAsset>
       </MinimapToken>
       <QuestObject />
-      <Infolayer>
-        <DefaultInfoLayer>0</DefaultInfoLayer>
-      </Infolayer>
-      <FeedbackController>
-        <DefaultFeedbackSequence>Default</DefaultFeedbackSequence>
-        <UpdateMeshSequence>1</UpdateMeshSequence>
-      </FeedbackController>
+      <Infolayer />
+      <FeedbackController />
     </Values>
   </Asset>
 </Assets>

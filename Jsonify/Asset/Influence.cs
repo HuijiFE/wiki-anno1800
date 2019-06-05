@@ -109,9 +109,9 @@ namespace Anno1800.Jsonify {
       }
 
       public CompanyLevelData(XElement element) : base(element) {
-        for (int level = 1; level < 100; level++) {
-          Console.WriteLine($"{level.ToString().PadRight(3, ' ')}: {this.Population(level)}");
-        }
+        //for (int level = 1; level < 100; level++) {
+        //  Console.WriteLine($"{level.ToString().PadRight(3, ' ')}: {this.Population(level)}");
+        //}
       }
     }
 

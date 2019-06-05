@@ -285,11 +285,6 @@ namespace Anno1800.Jsonify {
       var templatesDoc = XDocument.Load(Path.Combine(input, "templates.xml"));
 
       var (assetsMap, assetsDict) = Asset.ResolveRaw(assetsDoc);
-      var templatesMap = Asset.ResolveTemplates(templatesDoc);
-      var (defaultContainerValues, defaultValues) = Asset.ResolveProperties(propertiesDoc);
-      Asset.ResolveInheritance(assetsMap, templatesMap);
-      Asset.ResolveDefaultValues(assetsMap, defaultContainerValues, defaultValues);
-      var dataDict = Asset.AdaptAll(assetsMap);
 
       foreach ((string template, List<XElement> list) in assetsDict) {
         var dest = Path.Combine(raw, $"{template}.xml");
@@ -300,6 +295,12 @@ namespace Anno1800.Jsonify {
         new XDocument(new XElement("Assets", new XAttribute("Count", list.Count), list)).SaveXML(dest);
         Console.WriteLine(dest);
       }
+
+      var templatesMap = Asset.ResolveTemplates(templatesDoc);
+      var (defaultContainerValues, defaultValues) = Asset.ResolveProperties(propertiesDoc);
+      Asset.ResolveInheritance(assetsMap, templatesMap);
+      Asset.ResolveDefaultValues(assetsMap, defaultContainerValues, defaultValues);
+      var dataDict = Asset.AdaptAll(assetsMap);
 
       foreach ((string template, List<Asset> dataList) in dataDict) {
         var dest = Path.Combine(output, $"{template}.json");
