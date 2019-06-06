@@ -81,6 +81,7 @@ namespace Anno1800.Jsonify {
     }
 
     class InterfaceInfo {
+      public Type? type;
       public string? baseInterface;
       public string name;
       public List<PropertyInfo> properties;
@@ -91,6 +92,7 @@ namespace Anno1800.Jsonify {
       }
 
       public InterfaceInfo(Type type) {
+        this.type = type;
         this.name = type.Name;
         this.baseInterface = type.BaseType.Name == "Object" ? null : type.BaseType.Name;
         this.properties = type
@@ -122,6 +124,10 @@ namespace Anno1800.Jsonify {
     }
 
     public static string GetAll(Dictionary<string, List<Asset>> dataDict, params Type[] baseTypes) {
+      var allAssets = dataDict.Values.Aggregate(new List<Asset>(), (agg, list) => {
+        agg.AddRange(list);
+        return agg;
+      });
       var result = new List<string> { "/* eslint-disable */\n" };
 
       result.Add($"export const allTemplates: string[] = [\n{string.Join('\n', dataDict.Keys.Select(k => $"  '{k}',"))}\n];\n");
@@ -132,11 +138,8 @@ namespace Anno1800.Jsonify {
 
       result.Add($"export type Template = keyof TemplateMap;\n");
 
-      result.Add(new InterfaceInfo("AssetTemplateMap", dataDict
-          .Select(kvp => kvp.Value)
-          .Aggregate<IEnumerable<Asset>>((agg, assets) => assets.Count() > 0 ? agg.Concat(assets) : agg)
-          .Select(a => new PropertyInfo(a.guid.ToString(), false, a.template))
-          )
+      result
+        .Add(new InterfaceInfo("AssetTemplateMap", allAssets.Select(a => new PropertyInfo(a.guid.ToString(), false, a.template)))
         .ToTypeDefinition(true)
         .ToString());
 
@@ -144,7 +147,15 @@ namespace Anno1800.Jsonify {
         var types = new List<Type> { type };
         types = types.Concat(type.Assembly.GetTypes().Where(t => t.IsSubclassOf(type))).ToList();
         var interfaces = types.Select(t => new InterfaceInfo(t));
-        result.AddRange(interfaces.Select(i => i.ToTypeDefinition(true).ToString()));
+        foreach (var inter in interfaces) {
+          result.Add(inter.ToTypeDefinition(true).ToString());
+          if (inter.type != null && inter.type.IsSubclassOf(typeof(Asset))) {
+            var assets = allAssets
+              .Where(a => a.GetType() == inter.type || a.GetType().IsSubclassOf(inter.type))
+              .Select(a => a.guid);
+            result.Add($"export const all{inter.name}: number[] = [\n{string.Join('\n', assets.Select(guid => $"  {guid},"))}\n];\n");
+          }
+        }
       }
 
       return String.Join("\n", result);
