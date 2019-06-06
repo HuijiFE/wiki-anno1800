@@ -130,13 +130,21 @@ namespace Anno1800.Jsonify {
       });
       var result = new List<string> { "/* eslint-disable */\n" };
 
-      result.Add($"export const allTemplates: string[] = [\n{string.Join('\n', dataDict.Keys.Select(k => $"  '{k}',"))}\n];\n");
-
-      result.Add(new InterfaceInfo("TemplateMap", dataDict.Keys.Select(k => new PropertyInfo(k, false, k)))
+      result
+        .Add(
+          new InterfaceInfo(
+            "TemplateMap",
+            typeof(Asset)
+              .Assembly
+              .GetTypes()
+              .Where(t => t.IsSubclassOf(typeof(Asset)))
+              .Select(t => new PropertyInfo(t.Name, false, t.Name))
+        )
         .ToTypeDefinition(true)
         .ToString());
-
       result.Add($"export type Template = keyof TemplateMap;\n");
+      result.Add($"export type TemplateAssetMap = {{\n  readonly [k in Template]: readonly number[];\n}}\n");
+      result.Add($"export const allTemplates: Template[] = [\n{string.Join('\n', dataDict.Keys.Select(k => $"  '{k}',"))}\n];\n");
 
       result
         .Add(new InterfaceInfo("AssetTemplateMap", allAssets.Select(a => new PropertyInfo(a.guid.ToString(), false, a.template)))
@@ -144,18 +152,11 @@ namespace Anno1800.Jsonify {
         .ToString());
 
       foreach (var type in baseTypes) {
-        var types = new List<Type> { type };
-        types = types.Concat(type.Assembly.GetTypes().Where(t => t.IsSubclassOf(type))).ToList();
-        var interfaces = types.Select(t => new InterfaceInfo(t));
-        foreach (var inter in interfaces) {
-          result.Add(inter.ToTypeDefinition(true).ToString());
-          if (inter.type != null && inter.type.IsSubclassOf(typeof(Asset))) {
-            var assets = allAssets
-              .Where(a => a.GetType() == inter.type || a.GetType().IsSubclassOf(inter.type))
-              .Select(a => a.guid);
-            result.Add($"export const all{inter.name}: number[] = [\n{string.Join('\n', assets.Select(guid => $"  {guid},"))}\n];\n");
-          }
-        }
+        result.AddRange(
+          new List<Type> { type }
+            .Concat(type.Assembly.GetTypes().Where(t => t.IsSubclassOf(type)))
+            .Select(t => new InterfaceInfo(t).ToTypeDefinition(true).ToString())
+        );
       }
 
       return String.Join("\n", result);

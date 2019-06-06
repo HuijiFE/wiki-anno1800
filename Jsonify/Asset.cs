@@ -309,6 +309,24 @@ namespace Anno1800.Jsonify {
       }
 
       {
+        var dest = Path.Combine(output, "template-asset-map.json");
+        var list = dataDict.Values.Aggregate(new List<Asset>(), (agg, cur) => {
+          agg.AddRange(cur);
+          return agg;
+        });
+        var map = typeof(Asset)
+          .Assembly
+          .GetTypes()
+          .Where(t => t.IsSubclassOf(typeof(Asset)))
+          .ToDictionary(
+            t => t.Name,
+            t => list.Where(a => a.GetType() == t || a.GetType().IsSubclassOf(t)).Select(a => a.guid).ToList()
+          );
+        IO.Save(JsonConvert.SerializeObject(map, Formatting.Indented), dest);
+        Console.WriteLine(dest);
+      }
+
+      {
         var dest = Path.Combine(output, "definition.ts");
         IO.Save(TypeScript.GetAll(dataDict, typeof(Asset), typeof(BaseAssetObject)), dest);
         Console.WriteLine(dest);

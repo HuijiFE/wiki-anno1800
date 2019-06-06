@@ -1,5 +1,10 @@
 import Vue, { PluginObject } from 'vue';
-import { allTemplates, AssetTemplateMap, Asset } from '@public/db/definition';
+import {
+  allTemplates,
+  AssetTemplateMap,
+  Asset,
+  TemplateAssetMap,
+} from '@public/db/definition';
 import { getResource } from './resource';
 
 export interface AssetDict {
@@ -30,9 +35,10 @@ declare module 'vue/types/vue' {
     readonly $dbLoad: () => Promise<void>;
   }
   interface Vue {
-    $db: AssetDict;
-    $dbList: ReadonlyArray<Asset>;
-    $dbLoad: () => Promise<void>;
+    readonly $db: AssetDict;
+    readonly $dbList: ReadonlyArray<Asset>;
+    readonly $dbTemplateAssetMap: TemplateAssetMap;
+    readonly $dbLoad: () => Promise<void>;
   }
 }
 
@@ -47,12 +53,14 @@ export const database: PluginObject<never> = {
     $$Vue = $Vue;
 
     const dbLoad = async (): Promise<void> => {
-      const dataset = await Promise.all(
-        allTemplates.map(t => getResource<Asset[]>(`/db/${t}.json`)),
-      );
+      const [dataset, templateAssetMap] = await Promise.all([
+        Promise.all(allTemplates.map(t => getResource<Asset[]>(`/db/${t}.json`))),
+        getResource<TemplateAssetMap>('/db/template-asset-map.json'),
+      ]);
       const [dict, list] = resolveDatabase(dataset);
       $Vue.prototype.$db = dict;
       $Vue.prototype.$dbList = list;
+      $Vue.prototype.$dbTemplateAssetMap = templateAssetMap;
       ($Vue.$db as any) = dict;
     };
     $Vue.prototype.$dbLoad = dbLoad;
