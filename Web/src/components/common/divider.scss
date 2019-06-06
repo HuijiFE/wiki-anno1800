@@ -1,0 +1,17 @@
+/**
+ * Components: Dividers
+ */
+%inline-divider {
+  &:first-child,
+  &:last-child {
+    display: none;
+  }
+  margin: 0 (1em * $golden-ratio / 2);
+}
+
+@include comp('divider-dot') {
+  @extend %inline-divider;
+}
+@include comp('divider-slash') {
+  @extend %inline-divider;
+}

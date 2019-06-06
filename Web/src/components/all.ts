@@ -7,7 +7,8 @@
  * All components
  */
 
-export * from './common/common';
+export * from './common/divider';
+export * from './common/icon';
 export * from './info/info';
 export * from './model';
 export * from './toggle/toggle';

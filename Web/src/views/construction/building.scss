@@ -2,21 +2,78 @@
  * Component: Building
  */
 @include comp('building') {
+  $icon-size: 128;
+
   position: relative;
-  flex: 1 1 100%;
   max-width: 100%;
-  min-width: 0;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: rem($gap-base);
 
   @include elem('icon-container') {
     position: relative;
     flex: 1 1 100%;
     max-width: 100%;
     min-width: 0;
+    width: px($icon-size + 16);
+    height: px(($icon-size + 16) / $constr-chain-ratio);
+
+    background: center/contain no-repeat $color-dark url($bgr-constr-chain-main-pattern);
+    border-radius: px($radius-base);
+    // border: px(1) solid $color-peru;
 
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-content: center;
     align-items: center;
+  }
+
+  @include elem('icon') {
+    width: px($icon-size);
+    height: px($icon-size);
+    object-fit: contain;
+  }
+
+  @include elem('label', 'description', 'sub') {
+    position: relative;
+    flex: 1 1 100%;
+    max-width: 100%;
+    min-width: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+  }
+  @include elem('label') {
+    font-size: px(16);
+    font-weight: bold;
+  }
+  @include elem('sub') {
+    opacity: $opacity-sub-text;
+  }
+
+  @include elem('info', 'info-link') {
+    position: relative;
+    flex: none;
+    max-width: 100%;
+    min-width: 0;
+    display: inline-flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    white-space: nowrap;
+    vertical-align: middle;
+
+    color: inherit;
+  }
+  @include elem('info-icon') {
+    width: 1em;
+    height: 1em;
+    object-fit: contain;
   }
 }
