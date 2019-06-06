@@ -20,16 +20,17 @@ export function createRouter(): VueRouter {
         component: VLocalization,
         children: [
           {
-            path: '',
             name: 'home',
+            path: '',
+            alias: ['home'],
             component: async () =>
               import(/* webpackChunkName: "v-home" */ './views/home'),
           },
 
           // Calculator
           {
-            path: 'calculator',
             name: 'calculator',
+            path: 'calculator',
             component: async () =>
               import(
                 /* webpackChunkName: "v-calculator" */ './views/calculator/calculator'
@@ -38,27 +39,27 @@ export function createRouter(): VueRouter {
 
           // Simple
           {
-            path: 'asset/:guid(\\d+)',
             name: 'asset',
+            path: 'asset/:guid(\\d+)',
             component: async () =>
               import(/* webpackChunkName: "v-simple" */ './views/simple/asset'),
           },
           {
-            path: 'color-config',
             name: 'color-config',
+            path: 'color-config',
             component: async () =>
               import(/* webpackChunkName: "v-simple" */ './views/simple/color-config'),
           },
 
           // Item & Product
           {
-            path: ':genre(items|products)',
             name: 'items',
+            path: ':genre(items|products)',
             component: async () =>
               import(/* webpackChunkName: "v-item" */ './views/item/items'),
           },
           {
-            path: ':genre(item|product)/guid',
+            path: ':genre(item|product)/:guid(\\d+)',
             name: 'item',
             component: async () =>
               import(/* webpackChunkName: "v-item" */ './views/item/item'),
@@ -66,11 +67,19 @@ export function createRouter(): VueRouter {
 
           // Construction
           {
-            path: 'construction',
             name: 'construction',
+            path: 'construction',
             component: async () =>
               import(
                 /* webpackChunkName: "v-construction" */ './views/construction/construction'
+              ),
+          },
+          {
+            name: 'building',
+            path: 'building/:guid(\\d+)',
+            component: async () =>
+              import(
+                /* webpackChunkName: "v-construction" */ './views/construction/building'
               ),
           },
 

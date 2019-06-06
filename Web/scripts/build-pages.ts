@@ -91,4 +91,20 @@ async function build(): Promise<void> {
   await browser.close();
 }
 
-build();
+async function test(): Promise<void> {
+  const browser = await puppeteer.launch({
+    executablePath: '/mnt/c/Program Files (x86)/Google/Chrome Dev/Application/chrome.exe',
+    devtools: false,
+    headless: false,
+    defaultViewport: {
+      width: 1920,
+      height: 1080,
+    },
+  });
+  const page = await browser.newPage();
+
+  await page.goto(`http://localhost:1800/wiki/Anno1800/zh-CN/test`);
+}
+
+// build();
+test();

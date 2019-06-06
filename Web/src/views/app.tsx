@@ -16,7 +16,6 @@ import { ENV } from '@src/utils';
 @Component
 export default class VApp extends Vue {
   private render(h: CreateElement): VNode {
-    const isDev = process.env.NODE_ENV === 'development';
     return (
       <div
         id="app"

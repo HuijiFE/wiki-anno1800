@@ -38,12 +38,12 @@ export class CToggle extends Vue {
 
   private render(h: CreateElement): VNode {
     return (
-      <ul
+      <div
         staticClass="c-toggle"
         class={{ 'is-original-color': this.originalColor, 'is-hide-icon': this.hideIcon }}
       >
         {this.itemsSource.map((item, index) => (
-          <li key={item.key} staticClass="c-toggle_item">
+          <div key={item.key} staticClass="c-toggle_item">
             <button
               staticClass="c-toggle_button"
               class={{ 'is-selected': this.index === index }}
@@ -60,9 +60,9 @@ export class CToggle extends Vue {
               <c-icon staticClass="c-toggle_icon" icon={item.icon} />
               <span staticClass="c-toggle_label">{item.label}</span>
             </button>
-          </li>
+          </div>
         ))}
-      </ul>
+      </div>
     );
   }
 }

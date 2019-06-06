@@ -36,6 +36,9 @@ async function setup(): Promise<void> {
   return new Promise<void>((resolve, reject) => {
     router.onReady(
       async () => {
+        if (process.env.NODE_ENV === 'development') {
+          utils.debug();
+        }
         await Promise.all([app.$l10nLoad(app.$route.params.language), app.$dbLoad()]);
         app.$mount('#app');
         resolve();
@@ -43,10 +46,6 @@ async function setup(): Promise<void> {
       err => reject(err),
     );
   });
-}
-
-if (process.env.NODE_ENV === 'development') {
-  // utils.debug();
 }
 
 setup();

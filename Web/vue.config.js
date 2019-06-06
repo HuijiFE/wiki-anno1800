@@ -22,7 +22,10 @@ const options = {
   css: {
     loaderOptions: {
       sass: {
-        data: `$BASE_URL: '${publicPath}';`,
+        data: `
+$NODE_ENV: '${process.env.NODE_ENV}';
+$BASE_URL: '${publicPath}';
+`,
       },
     },
   },

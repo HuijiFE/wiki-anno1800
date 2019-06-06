@@ -4,7 +4,7 @@ import { ENV } from './env';
 import { gameNameLocalization, Language } from './localization';
 
 export interface SyncDataView<T = any> {
-  title(): string;
+  title(): string | string[];
   state: T;
   syncData(): T;
 }
@@ -41,9 +41,10 @@ export const MIXIN_SYNC_DATA_VIEW: ComponentOptions<Vue> = {
     }
   },
   beforeMount(this: Vue & SyncDataView) {
+    const viewTitle = this.title();
     const title = [] as string[];
 
-    title.push(this.title());
+    title.push(...((Array.isArray(viewTitle) && viewTitle) || [viewTitle]));
     title.push(gameNameLocalization[this.$route.params.language as Language]);
     title.push(gameNameLocalization.en);
 

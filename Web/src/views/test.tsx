@@ -46,6 +46,8 @@ export default class VTest extends Vue implements SyncDataView<TestState> {
             </li>
           ))}
         </ul>
+        <h2>User Agent</h2>
+        <p>{window.navigator.userAgent}</p>
       </div>
     );
   }
